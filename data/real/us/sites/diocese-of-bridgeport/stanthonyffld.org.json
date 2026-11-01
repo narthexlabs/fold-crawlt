@@ -19,7 +19,7 @@
  "home_url": "http://www.stanthonyffld.org/",
  "final_url": "https://www.stanthonyffld.org/",
  "crawl_status": "ok",
- "crawl_env": "sandbox",
+ "crawl_env": "runner-rendered",
  "robots_note": "ok",
  "pages": [
   {
@@ -92,11 +92,48 @@
  "cms_guess": {
   "cms": "squarespace",
   "evidence": [
-   "squarespace-cdn"
+   "squarespace.com"
   ]
  },
  "template": "generic-html:squarespace",
- "groups": [],
+ "groups": [
+  {
+   "id": "stanthonyffld.org:youth_ministry",
+   "name": "Youth Ministry",
+   "category": "youth",
+   "category_label": "Youth",
+   "subcategory": "youth_ministry",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.stanthonyffld.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stanthonyffld.org/youth-ministry",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:49:37+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "stanthonyffld.org:choir",
+   "name": "Music Ministry / Choir",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "choir_music",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.stanthonyffld.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stanthonyffld.org/music-ministry",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:49:33+00:00",
+   "confidence": "low"
+  }
+ ],
  "calendar_feeds": [
   {
    "feed_id": "stanthonyffld.org:ics:6127ae0a",
@@ -109,8 +146,8 @@
    "note": "Google Calendar public feed (embedded on page)",
    "display_tz": "America/New_York",
    "last_fetch": {
-    "status": 429,
-    "fetched_at": "2026-11-01T03:45:37+00:00",
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T17:52:07+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -128,6 +165,12 @@
     "label": "Click here to view previous live streamed Masses >",
     "platform": "www.stanthonyffld.org",
     "kind": "link"
+   },
+   {
+    "url": "https://www.boxcast.com",
+    "label": "Powered by BoxCast",
+    "platform": "www.boxcast.com",
+    "kind": "link"
    }
   ]
  },
@@ -141,82 +184,12 @@
  "schedule_rows": [
   {
    "kind": "mass",
-   "day": "Monday",
-   "time": "12:30",
-   "language": null,
-   "raw": "The 12:30 daily Mass at Fairfield University is open to the public, Monday through Friday and is held at Egan Chapel on campus in Fairfield, CT",
-   "source_url": "https://www.stanthonyffld.org/mass-schedule",
-   "fetched_at": "2026-11-01T02:17:50+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "low",
-   "template": "squarespace",
-   "day_expanded_from": "daily"
-  },
-  {
-   "kind": "mass",
-   "day": "Tuesday",
-   "time": "12:30",
-   "language": null,
-   "raw": "The 12:30 daily Mass at Fairfield University is open to the public, Monday through Friday and is held at Egan Chapel on campus in Fairfield, CT",
-   "source_url": "https://www.stanthonyffld.org/mass-schedule",
-   "fetched_at": "2026-11-01T02:17:50+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "low",
-   "template": "squarespace",
-   "day_expanded_from": "daily"
-  },
-  {
-   "kind": "mass",
-   "day": "Wednesday",
-   "time": "12:30",
-   "language": null,
-   "raw": "The 12:30 daily Mass at Fairfield University is open to the public, Monday through Friday and is held at Egan Chapel on campus in Fairfield, CT",
-   "source_url": "https://www.stanthonyffld.org/mass-schedule",
-   "fetched_at": "2026-11-01T02:17:50+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "low",
-   "template": "squarespace",
-   "day_expanded_from": "daily"
-  },
-  {
-   "kind": "mass",
-   "day": "Thursday",
-   "time": "12:30",
-   "language": null,
-   "raw": "The 12:30 daily Mass at Fairfield University is open to the public, Monday through Friday and is held at Egan Chapel on campus in Fairfield, CT",
-   "source_url": "https://www.stanthonyffld.org/mass-schedule",
-   "fetched_at": "2026-11-01T02:17:50+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "low",
-   "template": "squarespace",
-   "day_expanded_from": "daily"
-  },
-  {
-   "kind": "mass",
-   "day": "Friday",
-   "time": "12:30",
-   "language": null,
-   "raw": "The 12:30 daily Mass at Fairfield University is open to the public, Monday through Friday and is held at Egan Chapel on campus in Fairfield, CT",
-   "source_url": "https://www.stanthonyffld.org/mass-schedule",
-   "fetched_at": "2026-11-01T02:17:50+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "low",
-   "template": "squarespace",
-   "day_expanded_from": "daily"
-  },
-  {
-   "kind": "mass",
    "day": "Saturday",
    "time": "17:00",
    "language": null,
    "raw": "Saturday Vigil Mass: 5 pm",
    "source_url": "https://www.stanthonyffld.org/mass-schedule",
-   "fetched_at": "2026-11-01T02:17:50+00:00",
+   "fetched_at": "2026-11-01T17:49:10+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "high",
@@ -229,7 +202,7 @@
    "language": null,
    "raw": "Sunday Masses: 8 am, 10 am, 11:30 am",
    "source_url": "https://www.stanthonyffld.org/mass-schedule",
-   "fetched_at": "2026-11-01T02:17:50+00:00",
+   "fetched_at": "2026-11-01T17:49:10+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "high",
@@ -242,7 +215,7 @@
    "language": null,
    "raw": "Sunday Masses: 8 am, 10 am, 11:30 am",
    "source_url": "https://www.stanthonyffld.org/mass-schedule",
-   "fetched_at": "2026-11-01T02:17:50+00:00",
+   "fetched_at": "2026-11-01T17:49:10+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "high",
@@ -255,15 +228,41 @@
    "language": null,
    "raw": "Sunday Masses: 8 am, 10 am, 11:30 am",
    "source_url": "https://www.stanthonyffld.org/mass-schedule",
-   "fetched_at": "2026-11-01T02:17:50+00:00",
+   "fetched_at": "2026-11-01T17:49:10+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "high",
    "template": "squarespace"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "13:00",
+   "language": null,
+   "raw": "Previous Masses: 1:00:00",
+   "source_url": "https://www.stanthonyffld.org/previous-masses",
+   "fetched_at": "2026-11-01T17:49:52+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "squarespace"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "13:05",
+   "language": null,
+   "raw": "Previous Masses: 1:05:00",
+   "source_url": "https://www.stanthonyffld.org/previous-masses",
+   "fetched_at": "2026-11-01T17:49:52+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "squarespace"
   }
  ],
  "source_url": "http://www.stanthonyffld.org/",
- "fetched_at": "2026-11-01T02:17:59+00:00",
+ "fetched_at": "2026-11-01T17:49:55+00:00",
  "schedule_template": {
   "template": "squarespace",
   "version": "ca-sites/2",
@@ -280,14 +279,19 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 4
+  "generic_rows": 11
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "dated_line": 12,
+  "prose": 5
  },
  "groups_dropped": {
   "unmatched": 2
  },
  "event_counts": {
-  "window_start": "2026-10-31",
-  "window_end_exclusive": "2027-01-29",
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
@@ -295,7 +299,21 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "office_contact": {
+  "email": "office@stanthonyffld.org",
+  "phone": "(203) 259-0358",
+  "address": "149 South Pine Creek Road, Fairfield, CT 06824",
+  "source_url": "https://www.stanthonyffld.org/contact-us",
+  "sources": {
+   "email": "https://www.stanthonyffld.org/contact-us",
+   "phone": "https://www.stanthonyffld.org/contact-us",
+   "address": "https://www.stanthonyffld.org/contact-us"
+  },
+  "fetched_at": "2026-11-01T17:49:55+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
- }
+ },
+ "fetch_mode": "rendered"
 }
