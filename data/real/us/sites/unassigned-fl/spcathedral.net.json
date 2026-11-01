@@ -19,7 +19,7 @@
  "home_url": "http://www.spcathedral.net/",
  "final_url": "https://spcathedral.org/",
  "crawl_status": "ok",
- "crawl_env": "sandbox",
+ "crawl_env": "runner-rendered",
  "robots_note": "ok",
  "pages": [
   {
@@ -90,7 +90,62 @@
   ]
  },
  "template": "generic-html:squarespace",
- "groups": [],
+ "groups": [
+  {
+   "id": "spcathedral.net:altar_society",
+   "name": "Altar Society / Environment",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "altar_society_environment",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://spcathedral.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://spcathedral.org/serve",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:49:32+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "spcathedral.net:choir",
+   "name": "Cathedral Music & Choirs",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "choir_music",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://spcathedral.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://spcathedral.org/serve",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:49:32+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "spcathedral.net:lectors",
+   "name": "Proclaiming the Dream",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "lectors",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "What does Beloved Community look like in this place? What behaviors and commitments will foster reconciliation, justice, and healing?",
+   "contact_url": "https://spcathedral.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://spcathedral.org/beloved-community",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:49:38+00:00",
+   "confidence": "medium"
+  }
+ ],
  "calendar_feeds": [
   {
    "feed_id": "spcathedral.net:ics:1f19f801",
@@ -104,7 +159,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T03:40:07+00:00",
+    "fetched_at": "2026-11-01T17:53:26+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -131,7 +186,7 @@
    },
    {
     "url": "https://www.youtube.com/@SPCathedral/streams",
-    "label": "youtube live",
+    "label": "YouTube",
     "platform": "youtube",
     "kind": "link"
    },
@@ -164,7 +219,7 @@
    "language": null,
    "raw": "Holy Eucharist, Rite I | Sunday at 8:00 am",
    "source_url": "https://spcathedral.org/worship-live-stream",
-   "fetched_at": "2026-11-01T02:16:58+00:00",
+   "fetched_at": "2026-11-01T17:49:27+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "high",
@@ -177,7 +232,7 @@
    "language": null,
    "raw": "Holy Eucharist, Rite II | Sunday at 10:15 am",
    "source_url": "https://spcathedral.org/worship-live-stream",
-   "fetched_at": "2026-11-01T02:16:58+00:00",
+   "fetched_at": "2026-11-01T17:49:27+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "high",
@@ -190,7 +245,7 @@
    "language": null,
    "raw": "12:05 pm [Mass intention withheld]",
    "source_url": "https://spcathedral.org/worship-live-stream",
-   "fetched_at": "2026-11-01T02:16:58+00:00",
+   "fetched_at": "2026-11-01T17:49:27+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -198,7 +253,7 @@
   }
  ],
  "source_url": "http://www.spcathedral.net/",
- "fetched_at": "2026-11-01T02:17:06+00:00",
+ "fetched_at": "2026-11-01T17:49:51+00:00",
  "redirected_off_host": "spcathedral.org",
  "schedule_template": {
   "template": "squarespace",
@@ -218,17 +273,18 @@
   "trusted_candidate": false,
   "generic_rows": 3
  },
+ "has_sunday": true,
  "schedule_dropped": {
   "no_kind": 3,
   "dated_line": 2
  },
  "groups_dropped": {
   "noise": 3,
-  "unmatched": 1
+  "unmatched": 3
  },
  "event_counts": {
-  "window_start": "2026-10-31",
-  "window_end_exclusive": "2027-01-29",
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
@@ -236,8 +292,20 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "office_contact": {
+  "email": null,
+  "phone": "(727) 822-4173",
+  "address": null,
+  "source_url": "https://spcathedral.org/",
+  "sources": {
+   "phone": "https://spcathedral.org/"
+  },
+  "fetched_at": "2026-11-01T17:49:25+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()",
   "intentions_withheld": 1
- }
+ },
+ "fetch_mode": "rendered"
 }
