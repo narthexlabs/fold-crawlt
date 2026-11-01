@@ -597,13 +597,12 @@
    ]
   },
   {
-   "started_at": "2026-11-01T20:24:58+00:00",
-   "ended_at": "2026-11-01T20:26:28+00:00",
-   "result": "fetched {'dns': 3, 'done': 53, 'challenge': 6, 'ssl_error': 2, 'http_5xx': 1, 'blocked_403': 3, 'ok': 34, 'parked': 1, 'timeout': 3, 'halted_egress': 0}; parsed 3 dioceses",
+   "started_at": "2026-11-01T20:25:14+00:00",
+   "ended_at": "2026-11-01T20:26:48+00:00",
+   "result": "fetched {'robots_disallowed': 2, 'done': 77, 'dns': 8, 'challenge': 17, 'ssl_error': 6, 'parked': 1, 'not_found': 1, 'ok': 42, 'halted_egress': 0}; parsed 2 dioceses",
    "touched": [
-    "diocese-of-brooklyn",
-    "diocese-of-syracuse",
-    "unassigned-ny"
+    "unassigned-co",
+    "unassigned-wi"
    ]
   }
  ],
@@ -718,8 +717,8 @@
   },
   "diocese-of-brooklyn": {
    "sites_in_list": 241,
-   "records": 241,
-   "finished": true,
+   "records": 240,
+   "finished": false,
    "ok": 179,
    "by_status": {
     "ok": 179,
@@ -975,14 +974,14 @@
   },
   "unassigned-co": {
    "sites_in_list": 159,
-   "records": 180,
+   "records": 185,
    "finished": true,
-   "ok": 106,
+   "ok": 108,
    "by_status": {
-    "ok": 106,
-    "challenge": 20,
+    "ok": 108,
+    "challenge": 21,
     "dns": 19,
-    "ssl_error": 10,
+    "ssl_error": 12,
     "timeout": 6,
     "conn_error": 5,
     "not_found": 4,
@@ -1134,9 +1133,9 @@
   },
   "diocese-of-syracuse": {
    "sites_in_list": 138,
-   "records": 138,
-   "finished": true,
-   "ok": 83,
+   "records": 135,
+   "finished": false,
+   "ok": 82,
    "by_status": {
     "ok": 83,
     "dns": 23,
@@ -1254,18 +1253,20 @@
   },
   "unassigned-wi": {
    "sites_in_list": 125,
-   "records": 57,
-   "finished": false,
-   "ok": 31,
+   "records": 129,
+   "finished": true,
+   "ok": 71,
    "by_status": {
-    "ok": 31,
-    "challenge": 12,
-    "dns": 4,
-    "not_found": 3,
+    "ok": 71,
+    "challenge": 28,
+    "dns": 12,
+    "ssl_error": 6,
+    "not_found": 4,
+    "robots_disallowed": 2,
     "timeout": 2,
-    "ssl_error": 2,
     "unreachable_via_proxy": 2,
-    "blocked_403": 1
+    "blocked_403": 1,
+    "parked": 1
    }
   },
   "archdiocese-of-detroit": {
@@ -1480,21 +1481,18 @@
   },
   "unassigned-tx": {
    "sites_in_list": 98,
-   "records": 119,
-   "finished": true,
-   "ok": 43,
+   "records": 74,
+   "finished": false,
+   "ok": 12,
    "by_status": {
-    "challenge": 56,
-    "ok": 43,
-    "dns": 5,
-    "ssl_error": 4,
-    "not_found": 3,
+    "challenge": 52,
+    "ok": 12,
     "robots_disallowed": 2,
+    "not_found": 2,
+    "dns": 2,
     "social_only": 2,
     "timeout": 1,
-    "http_202": 1,
-    "unreachable_via_proxy": 1,
-    "blocked_403": 1
+    "unreachable_via_proxy": 1
    }
   },
   "unassigned-nh": {
@@ -1662,18 +1660,15 @@
   },
   "unassigned-ny": {
    "sites_in_list": 89,
-   "records": 92,
-   "finished": true,
-   "ok": 64,
+   "records": 42,
+   "finished": false,
+   "ok": 31,
    "by_status": {
-    "ok": 64,
-    "challenge": 8,
-    "dns": 5,
+    "ok": 31,
     "not_found": 4,
-    "ssl_error": 3,
-    "blocked_403": 3,
-    "timeout": 2,
-    "parked": 1,
+    "dns": 2,
+    "challenge": 2,
+    "ssl_error": 1,
     "robots_disallowed": 1,
     "conn_error": 1
    }
@@ -1808,12 +1803,12 @@
   },
   "diocese-of-corpus-christi": {
    "sites_in_list": 84,
-   "records": 84,
-   "finished": true,
-   "ok": 37,
+   "records": 81,
+   "finished": false,
+   "ok": 35,
    "by_status": {
-    "ok": 37,
-    "challenge": 27,
+    "ok": 35,
+    "challenge": 26,
     "unreachable_via_proxy": 10,
     "social_only": 3,
     "ssl_error": 2,
@@ -3990,9 +3985,9 @@
  },
  "totals": {
   "sites_in_list": 17440,
-  "records": 16123,
-  "ok": 8386
+  "records": 16098,
+  "ok": 8361
  },
  "us_parish_pages_discovermass": 20147,
- "updated_at": "2026-11-01T20:26:36+00:00"
+ "updated_at": "2026-11-01T20:26:49+00:00"
 }
