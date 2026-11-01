@@ -1,67 +1,71 @@
 {
  "slug": "diocese-of-brooklyn",
- "generated_at": "2026-11-01T17:58:42+00:00",
+ "generated_at": "2026-11-01T18:53:19+00:00",
  "run_date": "2026-11-01",
  "input": {
   "directory_records": 166,
-  "discovermass_records": 226,
+  "discovermass_records": 310,
   "directory_without_website": 0,
   "discovermass_without_website": 0
  },
- "sites_in_list": 196,
+ "sites_in_list": 240,
  "social_only": 4,
  "crawl": {
-  "ok_total": 166,
-  "ok_via_sandbox": 166,
+  "ok_total": 179,
+  "ok_via_sandbox": 179,
   "ok_via_laptop": 0,
   "partial_via_side_doors": 0,
-  "challenge": 13,
+  "challenge": 14,
   "blocked_403_429": 2,
   "robots_disallowed": 0,
-  "laptop_pending": 26,
-  "dead": 11,
+  "laptop_pending": 53,
+  "dead": 41,
   "not_fetched": 0,
   "by_status": {
-   "ok": 166,
-   "challenge": 13,
+   "ok": 179,
+   "dns": 20,
+   "challenge": 14,
+   "ssl_error": 8,
    "unreachable_via_proxy": 4,
    "social_only": 4,
-   "ssl_error": 4,
+   "not_found": 3,
+   "timeout": 3,
    "http_202": 2,
-   "dns": 2,
-   "timeout": 1
+   "conn_error": 1,
+   "parked": 1,
+   "http_5xx": 1
   }
  },
  "laptop_attempted": 0,
  "groups": {
-  "total": 626,
-  "sites_with_groups": 106,
+  "total": 673,
+  "sites_with_groups": 111,
   "by_category": {
-   "liturgical": 211,
-   "formation": 93,
-   "prayer_devotion": 69,
-   "other": 59,
-   "youth": 43,
-   "young_adults": 37,
-   "service_mercy": 32,
+   "liturgical": 223,
+   "formation": 98,
+   "prayer_devotion": 72,
+   "other": 63,
+   "youth": 55,
+   "young_adults": 39,
+   "service_mercy": 33,
    "movements": 21,
-   "scripture_study": 15,
-   "grief_support": 15,
-   "fraternal_orders": 13,
-   "seniors": 7,
+   "scripture_study": 16,
+   "grief_support": 16,
+   "fraternal_orders": 14,
+   "seniors": 8,
    "language_cultural": 6,
-   "men": 4,
+   "men": 5,
+   "women": 2,
    "families": 1,
-   "marriage_family": 1,
-   "women": 1
+   "marriage_family": 1
   },
-  "with_meeting_time": 80
+  "with_meeting_time": 82
  },
  "calendar": {
-  "sites_with_active_feed": 31,
-  "active_feeds": 73,
+  "sites_with_active_feed": 32,
+  "active_feeds": 75,
   "feeds_by_platform": {
-   "Google Calendar": 68,
+   "Google Calendar": 70,
    "The Events Calendar (WordPress)": 3,
    "iCal": 2
   },
@@ -72,44 +76,44 @@
  },
  "social": {
   "sites_by_platform": {
-   "facebook": 122,
-   "livestream": 73,
-   "instagram": 50,
-   "youtube": 40,
-   "x": 16,
-   "flocknote": 8,
-   "tiktok": 2
+   "facebook": 129,
+   "livestream": 75,
+   "instagram": 56,
+   "youtube": 44,
+   "x": 18,
+   "flocknote": 9,
+   "tiktok": 3
   },
-  "sites_with_any_social": 128,
+  "sites_with_any_social": 135,
   "shared_links_removed_as_diocesan": []
  },
  "bulletin": {
-  "sites_with_bulletin_url": 136,
+  "sites_with_bulletin_url": 140,
   "by_kind": {
-   "pdf": 86,
-   "page": 42,
+   "pdf": 88,
+   "page": 44,
    "lpi": 7,
    "lpi_pdf": 1
   },
-  "with_date": 62
+  "with_date": 64
  },
  "schedule": {
-  "sites_with_own_site_rows": 146,
-  "rows_total": 2081,
+  "sites_with_own_site_rows": 151,
+  "rows_total": 2173,
   "rows_needs_review": 2,
   "sites_with_schedule_image_only": 4,
   "by_kind": {
-   "mass": 1692,
-   "confession": 205,
-   "adoration": 151,
+   "mass": 1778,
+   "confession": 210,
+   "adoration": 152,
    "other": 33
   }
  },
  "cms_guess": {
-  "unknown": 108,
-  "wordpress": 33,
+  "unknown": 116,
+  "wordpress": 37,
   "wix": 6,
-  "parishsoft": 4,
+  "parishsoft": 5,
   "joomla": 4,
   "duda": 3,
   "google_sites": 3,
@@ -118,16 +122,17 @@
   "weebly": 1
  },
  "template": {
-  "generic-html:unknown": 108,
-  "wordpress-html": 28,
+  "generic-html:unknown": 115,
+  "wordpress-html": 29,
+  "wordpress-rest+html": 8,
   "generic-html:wix": 6,
-  "wordpress-rest+html": 5,
-  "generic-html:parishsoft": 4,
+  "generic-html:parishsoft": 5,
   "generic-html:joomla": 4,
   "generic-html:duda": 3,
   "generic-html:google_sites": 3,
   "generic-html:godaddy": 2,
   "generic-html:squarespace": 2,
+  "none": 1,
   "generic-html:weebly": 1
  }
 }
