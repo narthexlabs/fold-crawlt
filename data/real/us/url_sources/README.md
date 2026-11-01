@@ -112,12 +112,13 @@ Candidate parish-website **domains** found from URL patterns in the Common Crawl
 (we keep URLs only, no page content).
 - **Method.** The CDX API has no path-only lookup (`*/mass-times*` answers "No Captures found"; only `*.domain` and `prefix*`
   work), so the script scans one TLD at a time (`url=*.church|catholic|org|us|net|com`, `page`/`pageSize`) with server-side
-  regex filters: status 200, path contains one of STRONG (`mass-times`, `masstimes`, `mass-schedule`, `mass-and-confession`,
-  `masses`, `confession(s)`, `reconciliation`, `adoration`, `rcia`, `parish-staff`, `parish-office`, `parish-bulletin`,
-  `holy-days` ...) or WEAK (`bulletin(s)`, `sacraments`, `baptism`, `worship`, `liturgy`) segments, and on org/us/net/com
-  the host must carry a church word (parish, catholic, st-joseph, saint-..., holy..., our-lady ...). Full lists in the file.
-- **Reduce.** Distinct registrable domains (`.org .com .net .church .us .catholic .info` only). Keep a domain with >= 1 STRONG
-  pattern or >= 2 distinct WEAK ones. Dropped: diocese sites (`dioceses.json`), LPi/DiscoverMass/USCCB/aggregators/social/
+  regex filters: status 200, path contains one of the STRONG segments (`mass-times`, `masstimes`, `mass-schedule`,
+  `mass-and-confession`, `masses`, `confession-times`, `reconciliation`, `adoration`, `rcia`, `parish-staff`, `parish-office`,
+  `parish-bulletin`, `holy-days` ...), and on org/us/net/com the host must carry a church word (parish, catholic, st-joseph,
+  saint-..., holy..., our-lady ...). Full lists in the file. First Actions run (2026-11-01): WEAK paths (`baptism`, `worship`,
+  `bulletin`, plain `confession`) gave ~all Protestant `.church` sites, so they are no longer queried and a domain needs a STRONG hit.
+  The index answered 504/502/connection errors to most filtered pages that night (page size 10); default is now 5 with retries.
+- **Reduce.** Distinct registrable domains (`.org .com .net .church .us .catholic .info` only). Keep a domain with >= 1 STRONG pattern. Dropped: diocese sites (`dioceses.json`), LPi/DiscoverMass/USCCB/aggregators/social/
   site-builder hosts, other-denomination words (baptist, lutheran, ...), school/hospital/K of C hosts, and every domain already
   in another `*.websites.json`, `discovermass/`, a diocese `parishes.json`, or `data/real/us/sites/**`.
 - **Output.** `XX.websites.json` (DiscoverMass shape; state `XX` = unknown, so `run_state.build_inputs` files them under

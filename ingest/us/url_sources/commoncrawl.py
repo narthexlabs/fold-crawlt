@@ -50,12 +50,13 @@ KEEP_TLDS = {"org", "com", "net", "church", "us", "catholic", "info"}
 
 # ---- patterns. STRONG = pages Catholic parishes have and most other churches do not; WEAK = common to any church.
 STRONG = ["mass-times", "mass-time", "masstimes", "masstime", "mass-schedule", "massschedule", "mass-schedules",
-          "mass-and-confession", "mass-and-confessions", "masses", "weekend-masses", "daily-mass", "confession",
-          "confessions", "confession-times", "reconciliation", "sacrament-of-reconciliation", "eucharistic-adoration",
-          "adoration", "rcia", "parish-staff", "parish-office", "parish-bulletin", "holy-days", "holydays",
-          "holy-days-of-obligation"]
-WEAK = ["bulletin", "bulletins", "sacraments", "sacrament", "baptism", "worship", "liturgy"]
-PATH_RE = r"/(?:%s)(?:[/._?#-]|$)" % "|".join(sorted(set(STRONG + WEAK), key=len, reverse=True))
+          "mass-and-confession", "mass-and-confessions", "masses", "weekend-masses", "daily-mass", "confession-times",
+          "reconciliation", "sacrament-of-reconciliation", "eucharistic-adoration", "adoration", "rcia", "parish-staff",
+          "parish-office", "parish-bulletin", "holy-days", "holydays", "holy-days-of-obligation"]
+# WEAK paths (bulletin, sacraments, baptism, worship, liturgy, plain "confession") are NOT queried: the first Actions run
+# (2026-11-01) showed they are overwhelmingly Protestant/Anglican pages on .church. Kept only to describe evidence.
+WEAK = ["bulletin", "bulletins", "sacraments", "sacrament"]
+PATH_RE = r"/(?:%s)(?:[/._?#-]|$)" % "|".join(sorted(set(STRONG), key=len, reverse=True))
 
 # church words in a host (applied server-side on the big TLDs)
 SAINTS = ("joseph|mary|marys|peter|paul|john|johns|anne|annes|ann|thomas|francis|michael|patrick|anthony|mark|luke|james|"
@@ -132,7 +133,7 @@ class Api:
         self.consec_fail = 0
         self.requests = 0
 
-    def get(self, url: str, tries: int = 6) -> tuple[int | None, str]:
+    def get(self, url: str, tries: int = 4) -> tuple[int | None, str]:
         """(status, body). 503/429/5xx/reset are retried with backoff (Retry-After honoured); never faster than MIN_GAP."""
         delay = 4.0
         for i in range(tries):
@@ -349,7 +350,7 @@ def build(log) -> dict:
     try:
         for d in json.loads(OUT_EVIDENCE.read_text()).get("domains", []):
             ev[d["domain"]] = {"hosts": Counter(d.get("hosts", {})), "urls": list(d.get("evidence_urls", [])),
-                               "patterns": set(d.get("patterns", [])), "strong": set(d.get("strong_patterns", [])),
+                               "patterns": set(d.get("patterns", [])), "strong": set(d.get("patterns", [])) & set(STRONG),
                                "crawls": set(d.get("crawls", []))}
     except (OSError, ValueError):
         pass
@@ -384,8 +385,8 @@ def build(log) -> dict:
             drop["other_denomination_or_non_parish_word"] += 1
         elif SCHOOL_OTHER.search(dom) and not re.search(r"parish|church|cathedral|basilica", dom):
             drop["school_hospital_or_group_host"] += 1
-        elif not e["strong"] and len(e["patterns"]) < 2:
-            drop["weak_evidence_only"] += 1
+        elif not e["strong"]:
+            drop["no_strong_catholic_page"] += 1
         elif dom in have:
             drop["already_known_or_crawled"] += 1
         else:
@@ -425,7 +426,7 @@ def main() -> int:
     ap.add_argument("--minutes", type=float, default=0, help="scan for N minutes (resumable); 0 = no scan")
     ap.add_argument("--crawls", type=int, default=3)
     ap.add_argument("--tlds", default=",".join(DEFAULT_TLDS))
-    ap.add_argument("--page-size", type=int, default=10)
+    ap.add_argument("--page-size", type=int, default=5)
     ap.add_argument("--build", action="store_true", help="rebuild outputs from the cache and earlier evidence")
     ap.add_argument("--probe", action="store_true")
     a = ap.parse_args()

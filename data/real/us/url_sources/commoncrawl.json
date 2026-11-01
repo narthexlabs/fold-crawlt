@@ -1,7 +1,7 @@
 {
  "source": "Common Crawl index",
  "attribution": "Common Crawl index (https://commoncrawl.org/terms-of-use): URLs only",
- "built_at": "2026-11-01T07:09:46+00:00",
+ "built_at": "2026-11-01T07:11:56+00:00",
  "crawls": [
   "CC-MAIN-2026-43",
   "CC-MAIN-2026-39",
@@ -21,8 +21,6 @@
    "masses",
    "weekend-masses",
    "daily-mass",
-   "confession",
-   "confessions",
    "confession-times",
    "reconciliation",
    "sacrament-of-reconciliation",
@@ -40,22 +38,19 @@
    "bulletin",
    "bulletins",
    "sacraments",
-   "sacrament",
-   "baptism",
-   "worship",
-   "liturgy"
+   "sacrament"
   ],
-  "path_regex": "/(?:sacrament-of-reconciliation|holy-days-of-obligation|eucharistic-adoration|mass-and-confessions|mass-and-confession|confession-times|parish-bulletin|reconciliation|weekend-masses|mass-schedules|parish-office|mass-schedule|parish-staff|massschedule|confessions|daily-mass|confession|mass-times|sacraments|adoration|sacrament|masstimes|holy-days|bulletins|mass-time|masstime|holydays|bulletin|baptism|worship|liturgy|masses|rcia)(?:[/._?#-]|$)",
+  "path_regex": "/(?:sacrament-of-reconciliation|holy-days-of-obligation|eucharistic-adoration|mass-and-confessions|mass-and-confession|confession-times|parish-bulletin|weekend-masses|reconciliation|mass-schedules|parish-office|mass-schedule|parish-staff|massschedule|daily-mass|mass-times|masstimes|holy-days|mass-time|adoration|masstime|holydays|masses|rcia)(?:[/._?#-]|$)",
   "host_regex": "^https?://[^/]*(?:church|parish|catholic|cathedral|basilica|shrine|saint|holy|sacred|immaculate|ourlady|our-lady|blessed|assumption|annunciation|nativity|transfiguration|ascension|epiphany|resurrection|christtheking|corpuschristi|mission|newman|rosary|trinity|angels|guadalupe|carmel|loyola|vianney|st[-_.]?(?:joseph|mary|marys|peter|paul|john|johns|anne|annes|ann|thomas|francis|michael|patrick|anthony|mark|luke|james|matthew|catherine|agnes|bernard|benedict|dominic|ignatius|jude|margaret|teresa|theresa|elizabeth|rose|gregory|cecilia|basil|monica|vincent|lawrence|charles|edward|george|philip|leo|jerome|martin|augustine|ambrose|andrew|bartholomew|boniface|brendan|bridget|casimir|clare|columba|cyril|denis|eugene|frances|gabriel|gerard|helen|hubert|isidore|joan|joachim|jean|justin|kateri|kevin|lucy|louis|maximilian|nicholas|norbert|pius|raphael|robert|stephen|sylvester|timothy|ursula|veronica|victor|vitus|wenceslaus|william|barnabas|blase|bonaventure|cornelius|damien|dismas|edmund|gertrude|hedwig|hyacinth|jane|julie|katharine|lucia|matilda|rita|scholastica|sebastian|simon|therese)|saint[-_]?(?:joseph|mary|marys|peter|paul|john|johns|anne|annes|ann|thomas|francis|michael|patrick|anthony|mark|luke|james|matthew|catherine|agnes|bernard|benedict|dominic|ignatius|jude|margaret|teresa|theresa|elizabeth|rose|gregory|cecilia|basil|monica|vincent|lawrence|charles|edward|george|philip|leo|jerome|martin|augustine|ambrose|andrew|bartholomew|boniface|brendan|bridget|casimir|clare|columba|cyril|denis|eugene|frances|gabriel|gerard|helen|hubert|isidore|joan|joachim|jean|justin|kateri|kevin|lucy|louis|maximilian|nicholas|norbert|pius|raphael|robert|stephen|sylvester|timothy|ursula|veronica|victor|vitus|wenceslaus|william|barnabas|blase|bonaventure|cornelius|damien|dismas|edmund|gertrude|hedwig|hyacinth|jane|julie|katharine|lucia|matilda|rita|scholastica|sebastian|simon|therese))"
  },
  "counts": {
-  "matched_urls_in_cache": 872,
+  "matched_urls_in_cache": 0,
   "candidate_domains": 79,
   "excluded": {
-   "weak_evidence_only": 51,
+   "no_strong_catholic_page": 65,
    "other_denomination_or_non_parish_word": 10
   },
-  "written_to_XX_websites": 18
+  "written_to_XX_websites": 4
  },
  "domains": [
   {
@@ -259,7 +254,7 @@
    "crawls": [
     "CC-MAIN-2026-43"
    ],
-   "kept": true
+   "kept": false
   },
   {
    "domain": "aogbasildon.church",
@@ -298,7 +293,7 @@
    "crawls": [
     "CC-MAIN-2026-43"
    ],
-   "kept": true
+   "kept": false
   },
   {
    "domain": "argylepresbyterian.church",
@@ -348,7 +343,6 @@
     "reconciliation"
    ],
    "strong_patterns": [
-    "confession",
     "reconciliation"
    ],
    "crawls": [
@@ -373,7 +367,7 @@
    "crawls": [
     "CC-MAIN-2026-43"
    ],
-   "kept": true
+   "kept": false
   },
   {
    "domain": "autumnridge.church",
@@ -486,7 +480,7 @@
    "crawls": [
     "CC-MAIN-2026-43"
    ],
-   "kept": true
+   "kept": false
   },
   {
    "domain": "bcf.church",
@@ -509,7 +503,7 @@
    "crawls": [
     "CC-MAIN-2026-43"
    ],
-   "kept": true
+   "kept": false
   },
   {
    "domain": "bcoming.church",
@@ -597,7 +591,7 @@
    "crawls": [
     "CC-MAIN-2026-43"
    ],
-   "kept": true
+   "kept": false
   },
   {
    "domain": "berlin.church",
@@ -633,13 +627,11 @@
     "confession",
     "worship"
    ],
-   "strong_patterns": [
-    "confession"
-   ],
+   "strong_patterns": [],
    "crawls": [
     "CC-MAIN-2026-43"
    ],
-   "kept": true
+   "kept": false
   },
   {
    "domain": "bighouse.church",
@@ -765,13 +757,11 @@
    "patterns": [
     "confession"
    ],
-   "strong_patterns": [
-    "confession"
-   ],
+   "strong_patterns": [],
    "crawls": [
     "CC-MAIN-2026-43"
    ],
-   "kept": true
+   "kept": false
   },
   {
    "domain": "bpri.church",
@@ -792,7 +782,7 @@
    "crawls": [
     "CC-MAIN-2026-43"
    ],
-   "kept": true
+   "kept": false
   },
   {
    "domain": "clp.church",
@@ -890,13 +880,11 @@
    "patterns": [
     "confession"
    ],
-   "strong_patterns": [
-    "confession"
-   ],
+   "strong_patterns": [],
    "crawls": [
     "CC-MAIN-2026-43"
    ],
-   "kept": true
+   "kept": false
   },
   {
    "domain": "communityofgrace.church",
@@ -932,7 +920,7 @@
    "crawls": [
     "CC-MAIN-2026-43"
    ],
-   "kept": true
+   "kept": false
   },
   {
    "domain": "concord.church",
@@ -1387,7 +1375,7 @@
    "crawls": [
     "CC-MAIN-2026-43"
    ],
-   "kept": true
+   "kept": false
   },
   {
    "domain": "definition.church",
@@ -1423,7 +1411,7 @@
    "crawls": [
     "CC-MAIN-2026-43"
    ],
-   "kept": true
+   "kept": false
   },
   {
    "domain": "doxa.church",
@@ -1515,7 +1503,7 @@
    "crawls": [
     "CC-MAIN-2026-43"
    ],
-   "kept": true
+   "kept": false
   }
  ]
 }
