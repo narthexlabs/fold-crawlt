@@ -19,7 +19,7 @@
  "home_url": "http://www.saintjosephchurch.net/",
  "final_url": "https://www.saintjosephchurch.net/",
  "crawl_status": "ok",
- "crawl_env": "sandbox",
+ "crawl_env": "runner-rendered",
  "robots_note": "not_found",
  "pages": [
   {
@@ -84,7 +84,44 @@
   ]
  },
  "template": "generic-html:google_sites",
- "groups": [],
+ "groups": [
+  {
+   "id": "saintjosephchurch.net:rosary|altar",
+   "name": "Altar & Rosary",
+   "category": "prayer_devotion",
+   "category_label": "Prayer & devotion",
+   "subcategory": "rosary",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.saintjosephchurch.net/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.saintjosephchurch.net/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:46:14+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "saintjosephchurch.net:choir",
+   "name": "Music Ministry / Choir",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "choir_music",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.saintjosephchurch.net/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.saintjosephchurch.net/get-involved/music-ministry",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:46:20+00:00",
+   "confidence": "low"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
  "social": {
@@ -107,7 +144,7 @@
    "language": null,
    "raw": "Weekend Masses:: Saturday 5:00 pm",
    "source_url": "https://www.saintjosephchurch.net/",
-   "fetched_at": "2026-11-01T02:11:46+00:00",
+   "fetched_at": "2026-11-01T17:46:14+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -120,7 +157,7 @@
    "language": null,
    "raw": "Weekend Masses:: Sunday 10:00 am",
    "source_url": "https://www.saintjosephchurch.net/",
-   "fetched_at": "2026-11-01T02:11:46+00:00",
+   "fetched_at": "2026-11-01T17:46:14+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -133,7 +170,7 @@
    "language": null,
    "raw": "Weekday Masses:: Tuesday 6:15 pm",
    "source_url": "https://www.saintjosephchurch.net/",
-   "fetched_at": "2026-11-01T02:11:46+00:00",
+   "fetched_at": "2026-11-01T17:46:14+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -146,7 +183,7 @@
    "language": null,
    "raw": "Weekday Masses:: Wednesday 8:00 am",
    "source_url": "https://www.saintjosephchurch.net/",
-   "fetched_at": "2026-11-01T02:11:46+00:00",
+   "fetched_at": "2026-11-01T17:46:14+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -159,7 +196,7 @@
    "language": null,
    "raw": "Weekday Masses:: Friday 8:00 am",
    "source_url": "https://www.saintjosephchurch.net/",
-   "fetched_at": "2026-11-01T02:11:46+00:00",
+   "fetched_at": "2026-11-01T17:46:14+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -172,7 +209,7 @@
    "language": null,
    "raw": "Weekday Masses:: Saturday 9:00 am",
    "source_url": "https://www.saintjosephchurch.net/",
-   "fetched_at": "2026-11-01T02:11:46+00:00",
+   "fetched_at": "2026-11-01T17:46:14+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -185,7 +222,7 @@
    "language": null,
    "raw": "Eucharistic Adoration: Tuesdays 11 am - 6 pm",
    "source_url": "https://www.saintjosephchurch.net/",
-   "fetched_at": "2026-11-01T02:11:46+00:00",
+   "fetched_at": "2026-11-01T17:46:14+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -198,7 +235,7 @@
    "language": null,
    "raw": "Reconciliation: Saturday 3:30 pm - 4:30 pm or by appointment",
    "source_url": "https://www.saintjosephchurch.net/",
-   "fetched_at": "2026-11-01T02:11:46+00:00",
+   "fetched_at": "2026-11-01T17:46:14+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -206,7 +243,7 @@
   }
  ],
  "source_url": "http://www.saintjosephchurch.net/",
- "fetched_at": "2026-11-01T02:11:54+00:00",
+ "fetched_at": "2026-11-01T17:46:27+00:00",
  "schedule_template": {
   "template": "generic_strict",
   "version": "ca-sites/2",
@@ -225,13 +262,14 @@
   "trusted_candidate": false,
   "generic_rows": 4
  },
+ "has_sunday": true,
  "schedule_dropped": {
   "benediction_end": 1
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-10-31",
-  "window_end_exclusive": "2027-01-29",
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
@@ -239,7 +277,21 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "office_contact": {
+  "email": "office@saintjosephchurch.net",
+  "phone": "(515) 462-1083",
+  "address": "1026 N 8th Ave Winterset, IA 50273",
+  "source_url": "https://www.saintjosephchurch.net/contact-us",
+  "sources": {
+   "email": "https://www.saintjosephchurch.net/contact-us",
+   "phone": "https://www.saintjosephchurch.net/contact-us",
+   "address": "https://www.saintjosephchurch.net/contact-us"
+  },
+  "fetched_at": "2026-11-01T17:46:27+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
- }
+ },
+ "fetch_mode": "rendered"
 }
