@@ -197,7 +197,41 @@
   "text": "Bulletins",
   "source_url": "https://www.mpbptulsa.com/"
  },
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:30",
+   "language": null,
+   "raw": "Sunday 8:30 am Low, 10:30 am High, 1:00 pm Low",
+   "source_url": "https://www.mpbptulsa.com/",
+   "fetched_at": "2026-11-01T07:19:42+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:30",
+   "language": null,
+   "raw": "Sunday 8:30 am Low, 10:30 am High, 1:00 pm Low",
+   "source_url": "https://www.mpbptulsa.com/",
+   "fetched_at": "2026-11-01T07:19:42+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "13:00",
+   "language": null,
+   "raw": "Sunday 8:30 am Low, 10:30 am High, 1:00 pm Low",
+   "source_url": "https://www.mpbptulsa.com/",
+   "fetched_at": "2026-11-01T07:19:42+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  }
+ ],
  "source_url": "https://www.mpbptulsa.com/",
  "fetched_at": "2026-11-01T07:19:49+00:00",
  "schedule_template": {
@@ -218,10 +252,11 @@
   "trusted_candidate": false,
   "generic_rows": 5
  },
- "has_sunday": false,
+ "has_sunday": true,
  "schedule_dropped": {
   "skipped_section": 11,
-  "other_location": 2
+  "other_location": 2,
+  "weekend_rescue_added": 3
  },
  "groups_dropped": {
   "unmatched": 3
