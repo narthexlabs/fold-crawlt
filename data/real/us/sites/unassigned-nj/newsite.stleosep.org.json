@@ -323,7 +323,7 @@
    "feed_key": "72fbec702c36",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T22:17:25+00:00",
+    "fetched_at": "2026-11-01T23:31:01+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -361,6 +361,50 @@
    "review_reason": null,
    "confidence": "high",
    "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Saturday 5:00 pm (English)",
+   "source_url": "https://newsite.stleosep.org/first-reconciliation/",
+   "fetched_at": "2026-11-01T22:16:32+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:30",
+   "language": null,
+   "raw": "Sunday 8:30 am (English)",
+   "source_url": "https://newsite.stleosep.org/first-reconciliation/",
+   "fetched_at": "2026-11-01T22:16:32+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:30",
+   "language": null,
+   "raw": "Sunday 10:30 am (English)",
+   "source_url": "https://newsite.stleosep.org/first-reconciliation/",
+   "fetched_at": "2026-11-01T22:16:32+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "12:30",
+   "language": null,
+   "raw": "Sunday 12:30 pm (Español)",
+   "source_url": "https://newsite.stleosep.org/first-reconciliation/",
+   "fetched_at": "2026-11-01T22:16:32+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
   }
  ],
  "source_url": "https://newsite.stleosep.org/",
@@ -383,10 +427,10 @@
   "trusted_candidate": false,
   "generic_rows": 1
  },
- "has_sunday": false,
- "schedule_partial": true,
+ "has_sunday": true,
  "schedule_dropped": {
-  "no_kind": 1
+  "no_kind": 1,
+  "weekend_rescue_added": 4
  },
  "groups_dropped": {
   "noise": 1

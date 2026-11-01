@@ -45,7 +45,41 @@
  "events": [],
  "social": {},
  "bulletin": null,
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Sobota: 5:00pm (z niedzieli)",
+   "source_url": "https://veronasds.com/",
+   "fetched_at": "2026-11-01T22:16:30+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Niedziela: 8:00am i 11:00am",
+   "source_url": "https://veronasds.com/",
+   "fetched_at": "2026-11-01T22:16:30+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:00",
+   "language": null,
+   "raw": "Niedziela: 8:00am i 11:00am",
+   "source_url": "https://veronasds.com/",
+   "fetched_at": "2026-11-01T22:16:30+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  }
+ ],
  "source_url": "https://veronasds.com/",
  "fetched_at": "2026-11-01T22:16:39+00:00",
  "schedule_template": {
@@ -66,7 +100,10 @@
   "trusted_candidate": false,
   "generic_rows": 0
  },
- "has_sunday": false,
+ "has_sunday": true,
+ "schedule_dropped": {
+  "weekend_rescue_added": 3
+ },
  "groups_dropped": {},
  "event_counts": {
   "window_start": "2026-11-01",

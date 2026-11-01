@@ -53,7 +53,19 @@
  "events": [],
  "social": {},
  "bulletin": null,
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:30",
+   "language": null,
+   "raw": "Divine Liturgy, Sundays at 10:30 am",
+   "source_url": "https://www.standrewswestbury.org/",
+   "fetched_at": "2026-11-01T22:16:30+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  }
+ ],
  "source_url": "https://www.standrewswestbury.org/",
  "fetched_at": "2026-11-01T22:16:32+00:00",
  "schedule_template": {
@@ -74,7 +86,10 @@
   "trusted_candidate": false,
   "generic_rows": 0
  },
- "has_sunday": false,
+ "has_sunday": true,
+ "schedule_dropped": {
+  "weekend_rescue_added": 1
+ },
  "groups_dropped": {},
  "event_counts": {
   "window_start": "2026-11-01",
