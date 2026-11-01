@@ -32,7 +32,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | archdiocese-of-chicago | 476 | 469 | 238 | 37 | 9 | 149 | 2 |
 | archdiocese-of-new-york | 391 | 393 | 87 | 253 | 2 | 51 | 0 |
 | unassigned-nm | 259 | 263 | 163 | 50 | 4 | 46 | 0 |
-| archdiocese-of-boston | 257 | 257 | 81 | 11 | 2 | 123 | 0 |
+| archdiocese-of-boston | 257 | 258 | 82 | 11 | 2 | 123 | 0 |
 | diocese-of-brooklyn | 241 | 241 | 179 | 14 | 2 | 41 | 5 |
 | unassigned-oh | 217 | 107 | 57 | 22 | 2 | 26 | 0 |
 | diocese-of-cleveland | 214 | 250 | 145 | 49 | 1 | 55 | 0 |
@@ -88,7 +88,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | archdiocese-of-hartford | 93 | 95 | 73 | 1 | 0 | 21 | 0 |
 | unassigned-mt | 93 | 105 | 66 | 17 | 0 | 22 | 0 |
 | diocese-of-rochester | 92 | 92 | 60 | 19 | 1 | 12 | 0 |
-| unassigned-ms | 92 | 96 | 43 | 31 | 1 | 21 | 0 |
+| unassigned-ms | 92 | 98 | 45 | 31 | 1 | 21 | 0 |
 | unassigned-ny | 89 | 92 | 64 | 8 | 4 | 16 | 0 |
 | diocese-of-harrisburg | 88 | 89 | 57 | 30 | 0 | 2 | 0 |
 | diocese-of-la-crosse | 88 | 90 | 64 | 19 | 2 | 5 | 0 |
