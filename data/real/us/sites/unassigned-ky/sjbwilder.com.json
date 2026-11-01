@@ -1,0 +1,158 @@
+{
+ "domain": "sjbwilder.com",
+ "diocese": "unassigned-ky",
+ "matched_church_ids": [
+  "brave:KY|john baptist wilder|"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "brave:KY|john baptist wilder|"
+  ]
+ },
+ "names": [
+  "St John The Baptist"
+ ],
+ "cities": [
+  "Wilder"
+ ],
+ "home_url": "https://sjbwilder.com/",
+ "final_url": "https://sjbwilder.com/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://sjbwilder.com/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://sjbwilder.com/confession/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://sjbwilder.com/mass/",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-content"
+  ]
+ },
+ "template": "wordpress-rest+html",
+ "groups": [],
+ "calendar_feeds": [],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/744336075422200",
+   "https://www.facebook.com/sjbwilder",
+   "https://www.facebook.com/744336075422200_122197459760938751"
+  ]
+ },
+ "bulletin": null,
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "16:00",
+   "language": null,
+   "raw": "Saturday Vigil Mass: 4:00 PM",
+   "source_url": "https://sjbwilder.com/mass/",
+   "fetched_at": "2026-11-01T09:05:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": null,
+   "raw": "Sunday Mass: 10:00 AM",
+   "source_url": "https://sjbwilder.com/mass/",
+   "fetched_at": "2026-11-01T09:05:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Daily Mass: Tuesdays and Thursdays at 8:00 AM",
+   "source_url": "https://sjbwilder.com/mass/",
+   "fetched_at": "2026-11-01T09:05:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "Tuesdays and Thursdays"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Daily Mass: Tuesdays and Thursdays at 8:00 AM",
+   "source_url": "https://sjbwilder.com/mass/",
+   "fetched_at": "2026-11-01T09:05:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "Tuesdays and Thursdays",
+   "day_parsed": "Tuesday",
+   "day_bound_from_line": true
+  }
+ ],
+ "source_url": "https://sjbwilder.com/",
+ "fetched_at": "2026-11-01T09:05:02+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": true
+   },
+   "score": "high"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 12
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "prose": 2
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}
