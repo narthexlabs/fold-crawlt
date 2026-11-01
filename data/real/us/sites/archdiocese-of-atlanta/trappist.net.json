@@ -110,6 +110,17 @@
    "confidence": "high",
    "template": "wordpress",
    "kind_parsed": "mass"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": null,
+   "raw": "9:00 AM Sunday [Mass intention withheld]",
+   "source_url": "https://trappist.net/plan-your-visit/schedules/",
+   "fetched_at": "2026-11-01T18:52:17+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
   }
  ],
  "source_url": "https://trappist.net/",
@@ -132,11 +143,11 @@
   "trusted_candidate": false,
   "generic_rows": 17
  },
- "has_sunday": false,
- "schedule_partial": true,
+ "has_sunday": true,
  "schedule_dropped": {
   "not_a_service": 6,
-  "other_location": 54
+  "other_location": 54,
+  "weekend_rescue_added": 1
  },
  "groups_dropped": {
   "schedule": 1,
@@ -164,6 +175,7 @@
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
  },
  "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
+  "screened_by": "ingest/public/privacy.py screen()",
+  "intentions_withheld": 1
  }
 }
