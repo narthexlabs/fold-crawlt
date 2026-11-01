@@ -18,32 +18,124 @@
  ],
  "home_url": "https://hfpgb.org/",
  "final_url": "https://hfpgb.org/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "crawl_status": "wayback-2026-04-07",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
    "url": "https://hfpgb.org/",
-   "status": 403,
-   "class": "challenge"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://hfpgb.org/mass-times",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://hfpgb.org/sacraments-1",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "ministries",
+   "url": "https://hfpgb.org/faith-formation-registration",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "ministries",
+   "url": "https://hfpgb.org/elementary-faith-formation",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "ministries",
+   "url": "https://hfpgb.org/ministries",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://hfpgb.org/bulletins",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
+ "template": "ecatholic-fastpath",
  "groups": [],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
+ "social": {
+  "flocknote": [
+   "https://hfparish.flocknote.com"
+  ]
+ },
+ "bulletin": {
+  "url": "https://hfparish.flocknote.com/",
+  "date": null,
+  "kind": "page",
+  "text": "Flocknote",
+  "source_url": "https://hfpgb.org/"
+ },
  "schedule_rows": [],
  "source_url": "https://hfpgb.org/",
- "fetched_at": "2026-11-01T17:21:22+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-01T22:23:48+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "has_sunday": false,
+ "groups_dropped": {},
+ "office_contact": {
+  "email": null,
+  "phone": "(409) 762-9646",
+  "address": null,
+  "source_url": "https://hfpgb.org/",
+  "sources": {
+   "phone": "https://hfpgb.org/"
+  },
+  "fetched_at": "2026-04-07T03:34:31+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2026-04-07",
+  "capture_age_days": 208,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://hfpgb.org/",
+    "capture": "2026-04-07",
+    "archive_url": "https://web.archive.org/web/20260407033431/https://hfpgb.org/"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }

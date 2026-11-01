@@ -21,33 +21,449 @@
   "Houston"
  ],
  "home_url": "https://www.staugustinecc.org/",
- "final_url": "https://www.staugustinecc.org/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "final_url": "https://staugustinecc.org/",
+ "crawl_status": "wayback-2026-09-24",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
-   "url": "https://www.staugustinecc.org/",
-   "status": 403,
-   "class": "challenge"
+   "url": "https://staugustinecc.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://staugustinecc.org/mass-times",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://staugustinecc.org/events/confessions-1/20260924",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "ministries",
+   "url": "https://staugustinecc.org/faithformation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://staugustinecc.org/bulletins",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.staugustinecc.org/calendar",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://staugustinecc.org/events?page=1",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://staugustinecc.org/contact-us",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "staugustinecc.org:catechists|assistant",
+   "name": "Catechist/Assistant",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "catechists",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://staugustinecc.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://staugustinecc.org/faithformation",
+   "source_kind": "website",
+   "fetched_at": "2025-10-10T09:35:20+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-09-24"
+  },
+  {
+   "id": "staugustinecc.org:children_ff|life+long",
+   "name": "Life Long Faith Formation Classes",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "children_faith_formation",
+   "audience": "families",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://staugustinecc.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://staugustinecc.org/faithformation",
+   "source_kind": "website",
+   "fetched_at": "2025-10-10T09:35:20+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-09-24"
+  },
+  {
+   "id": "staugustinecc.org:ocia",
+   "name": "OCIA (becoming Catholic)",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "ocia",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://staugustinecc.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://staugustinecc.org/faithformation",
+   "source_kind": "website",
+   "fetched_at": "2025-10-10T09:35:20+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-09-24"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/staugustinecc"
+  ],
+  "flocknote": [
+   "https://staugustinecatholicchur6.flocknote.com"
+  ]
+ },
+ "bulletin": {
+  "url": "https://files.ecatholic.com/24996/bulletins/20251012.pdf?t=1760043613000",
+  "date": "2025-10-12",
+  "kind": "ecatholic_pdf",
+  "text": "October 12 , 2025",
+  "source_url": "https://staugustinecc.org/bulletins"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "08:30",
+   "language": "English",
+   "raw": "Weekday Mass Schedule:: Tuesdays, Wednesdays, Fridays – 8:30 am (English)",
+   "source_url": "https://staugustinecc.org/mass-times",
+   "fetched_at": "2025-10-10T09:03:38+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-09-24: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "day_expanded_from": "Tuesdays, Wednesdays, Fridays",
+   "source": "wayback-2026-09-24",
+   "archive_url": "https://web.archive.org/web/20251010090338/https://staugustinecc.org/mass-times",
+   "capture_date": "2025-10-10"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "08:30",
+   "language": "English",
+   "raw": "Weekday Mass Schedule:: Tuesdays, Wednesdays, Fridays – 8:30 am (English)",
+   "source_url": "https://staugustinecc.org/mass-times",
+   "fetched_at": "2025-10-10T09:03:38+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-09-24: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "day_expanded_from": "Tuesdays, Wednesdays, Fridays",
+   "day_parsed": "Tuesday",
+   "day_bound_from_line": true,
+   "source": "wayback-2026-09-24",
+   "archive_url": "https://web.archive.org/web/20251010090338/https://staugustinecc.org/mass-times",
+   "capture_date": "2025-10-10"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "08:30",
+   "language": "English",
+   "raw": "Weekday Mass Schedule:: Tuesdays, Wednesdays, Fridays – 8:30 am (English)",
+   "source_url": "https://staugustinecc.org/mass-times",
+   "fetched_at": "2025-10-10T09:03:38+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-09-24: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "day_expanded_from": "Tuesdays, Wednesdays, Fridays",
+   "day_parsed": "Tuesday",
+   "day_bound_from_line": true,
+   "source": "wayback-2026-09-24",
+   "archive_url": "https://web.archive.org/web/20251010090338/https://staugustinecc.org/mass-times",
+   "capture_date": "2025-10-10"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "18:30",
+   "language": "Spanish",
+   "raw": "Weekday Mass Schedule:: Thursdays: 6:30 pm (Spanish)",
+   "source_url": "https://staugustinecc.org/mass-times",
+   "fetched_at": "2025-10-10T09:03:38+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-09-24: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-09-24",
+   "archive_url": "https://web.archive.org/web/20251010090338/https://staugustinecc.org/mass-times",
+   "capture_date": "2025-10-10"
+  },
+  {
+   "kind": "mass",
+   "day": "First Saturday of the month",
+   "time": "08:30",
+   "language": "English",
+   "raw": "Weekday Mass Schedule:: First Saturday of the Month: 8:30 am (English)",
+   "source_url": "https://staugustinecc.org/mass-times",
+   "fetched_at": "2025-10-10T09:03:38+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-09-24: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-09-24",
+   "archive_url": "https://web.archive.org/web/20251010090338/https://staugustinecc.org/mass-times",
+   "capture_date": "2025-10-10"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": "English",
+   "raw": "Saturday Vigil Mass: 5:00 pm in English",
+   "source_url": "https://staugustinecc.org/mass-times",
+   "fetched_at": "2025-10-10T09:03:38+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-09-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-09-24",
+   "archive_url": "https://web.archive.org/web/20251010090338/https://staugustinecc.org/mass-times",
+   "capture_date": "2025-10-10"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": "English",
+   "raw": "Weekend Mass Schedule:: Sunday: 9:00 am (English), 11:00 am (Spanish) 1:00 pm (Spanish)",
+   "source_url": "https://staugustinecc.org/mass-times",
+   "fetched_at": "2025-10-10T09:03:38+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-09-24: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-09-24",
+   "archive_url": "https://web.archive.org/web/20251010090338/https://staugustinecc.org/mass-times",
+   "capture_date": "2025-10-10"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:00",
+   "language": "Spanish",
+   "raw": "Weekend Mass Schedule:: Sunday: 9:00 am (English), 11:00 am (Spanish) 1:00 pm (Spanish)",
+   "source_url": "https://staugustinecc.org/mass-times",
+   "fetched_at": "2025-10-10T09:03:38+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-09-24: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-09-24",
+   "archive_url": "https://web.archive.org/web/20251010090338/https://staugustinecc.org/mass-times",
+   "capture_date": "2025-10-10"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "13:00",
+   "language": "Spanish",
+   "raw": "Weekend Mass Schedule:: Sunday: 9:00 am (English), 11:00 am (Spanish) 1:00 pm (Spanish)",
+   "source_url": "https://staugustinecc.org/mass-times",
+   "fetched_at": "2025-10-10T09:03:38+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-09-24: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-09-24",
+   "archive_url": "https://web.archive.org/web/20251010090338/https://staugustinecc.org/mass-times",
+   "capture_date": "2025-10-10"
+  },
+  {
+   "kind": "confession",
+   "day": "Thursday",
+   "time": "17:45-18:15",
+   "language": null,
+   "raw": "Sacrament of Reconciliation:: Thursdays: 5:45 pm – 6:15 pm in Church",
+   "source_url": "https://staugustinecc.org/mass-times",
+   "fetched_at": "2025-10-10T09:03:38+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-09-24: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-09-24",
+   "archive_url": "https://web.archive.org/web/20251010090338/https://staugustinecc.org/mass-times",
+   "capture_date": "2025-10-10"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "16:00-16:30",
+   "language": null,
+   "raw": "Sacrament of Reconciliation:: Saturdays: 4:00 pm - 4:30 pm",
+   "source_url": "https://staugustinecc.org/mass-times",
+   "fetched_at": "2025-10-10T09:03:38+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-09-24: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-09-24",
+   "archive_url": "https://web.archive.org/web/20251010090338/https://staugustinecc.org/mass-times",
+   "capture_date": "2025-10-10"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "09:00-20:00",
+   "language": null,
+   "raw": "Exposition of the Blessed Sacrament:: Wednesdays: 9:00 am - 8:00 pm",
+   "source_url": "https://staugustinecc.org/mass-times",
+   "fetched_at": "2025-10-10T09:03:38+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-09-24: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-09-24",
+   "archive_url": "https://web.archive.org/web/20251010090338/https://staugustinecc.org/mass-times",
+   "capture_date": "2025-10-10"
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "19:00",
+   "language": null,
+   "raw": "Hora Santa:: Jueves: 7:00 pm",
+   "source_url": "https://staugustinecc.org/mass-times",
+   "fetched_at": "2025-10-10T09:03:38+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-09-24: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-09-24",
+   "archive_url": "https://web.archive.org/web/20251010090338/https://staugustinecc.org/mass-times",
+   "capture_date": "2025-10-10"
+  }
+ ],
  "source_url": "https://www.staugustinecc.org/",
- "fetched_at": "2026-11-01T07:34:48+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-01T22:58:02+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 20
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "text:dated_line": 6
+ },
+ "groups_dropped": {
+  "sacrament_prep": 1
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(713) 946-8968",
+  "address": null,
+  "source_url": "https://staugustinecc.org/contact-us",
+  "sources": {
+   "phone": "https://staugustinecc.org/contact-us"
+  },
+  "fetched_at": "2025-10-10T08:50:03+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2026-09-24",
+  "capture_age_days": 38,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://staugustinecc.org/",
+    "capture": "2026-09-24",
+    "archive_url": "https://web.archive.org/web/20260924173019/https://staugustinecc.org/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://staugustinecc.org/mass-times",
+    "capture": "2025-10-10",
+    "archive_url": "https://web.archive.org/web/20251010090338/https://staugustinecc.org/mass-times"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://staugustinecc.org/faithformation",
+    "capture": "2025-10-10",
+    "archive_url": "https://web.archive.org/web/20251010093520/https://staugustinecc.org/faithformation"
+   },
+   {
+    "kind": "bulletin",
+    "original": "https://staugustinecc.org/bulletins",
+    "capture": "2025-10-10",
+    "archive_url": "https://web.archive.org/web/20251010083848/https://staugustinecc.org/bulletins"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://www.staugustinecc.org/calendar",
+    "capture": "2025-02-16",
+    "archive_url": "https://web.archive.org/web/20250216140612/https://www.staugustinecc.org/calendar"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://staugustinecc.org/events?page=1",
+    "capture": "2025-10-10",
+    "archive_url": "https://web.archive.org/web/20251010102629/https://staugustinecc.org/events?page=1"
+   },
+   {
+    "kind": "contact",
+    "original": "https://staugustinecc.org/contact-us",
+    "capture": "2025-10-10",
+    "archive_url": "https://web.archive.org/web/20251010085003/https://staugustinecc.org/contact-us"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }

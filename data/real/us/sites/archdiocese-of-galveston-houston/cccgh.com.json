@@ -17,33 +17,453 @@
   "Houston"
  ],
  "home_url": "https://www.cccgh.com/",
- "final_url": "https://www.cccgh.com/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "final_url": "https://cccgh.com/",
+ "crawl_status": "wayback-2026-06-08",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
-   "url": "https://www.cccgh.com/",
-   "status": 403,
-   "class": "challenge"
+   "url": "https://cccgh.com/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.cccgh.com/mass-times",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.cccgh.com/confession-times",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.cccgh.com/mens-saturday-prayer-group",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://cccgh.com/houston-catholic-charismatic-prayer-groups",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.cccgh.com/adore-ministry",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://www.cccgh.com/bulletin",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://cccgh.com/events-of-the-companions-of-the-cross",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://cccgh.com/eventos-y-activdades-comunidad-hispana",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "live",
+   "url": "https://cccgh.com/livestream",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "contact",
+   "url": "https://cccgh.com/contact-us",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "cccgh.com:charismatic",
+   "name": "Catholic Charismatic Center",
+   "category": "movements",
+   "category_label": "Movements",
+   "subcategory": "charismatic_renewal",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://cccgh.com/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.cccgh.com/mens-saturday-prayer-group",
+   "source_kind": "website",
+   "fetched_at": "2026-05-16T05:11:33+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-06-08"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/CatholicCharismaticCenter"
+  ],
+  "youtube": [
+   "https://www.youtube.com/@isaaclongworthcc"
+  ],
+  "livestream": [
+   {
+    "url": "https://cccgh.com/livestream",
+    "label": "Livestream",
+    "platform": "cccgh.com",
+    "kind": "link"
+   },
+   {
+    "url": "https://www.cccgh.com/livestream",
+    "label": "Livestream",
+    "platform": "www.cccgh.com",
+    "kind": "link"
+   }
+  ]
+ },
+ "bulletin": {
+  "url": "https://parishesonline.com/organization/catholic-charismatic-center",
+  "date": null,
+  "kind": "lpi",
+  "text": "https://parishesonline.com/organization/catholic-charismatic-center",
+  "source_url": "https://www.cccgh.com/bulletin"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:30",
+   "language": "English",
+   "raw": "Sunday: 10:30 AM English",
+   "source_url": "https://www.cccgh.com/mass-times",
+   "fetched_at": "2026-06-15T17:40:42+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-06-08: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-06-08",
+   "archive_url": "https://web.archive.org/web/20260615174042/https://www.cccgh.com/mass-times",
+   "capture_date": "2026-06-15"
+  },
+  {
+   "kind": "mass",
+   "day": "Second Sunday of the month",
+   "time": "13:30",
+   "language": "English",
+   "raw": "Sunday: 1:30 PM English Nigerian Mass every 2nd Sunday",
+   "source_url": "https://www.cccgh.com/mass-times",
+   "fetched_at": "2026-06-15T17:40:42+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-06-08: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-06-08",
+   "archive_url": "https://web.archive.org/web/20260615174042/https://www.cccgh.com/mass-times",
+   "capture_date": "2026-06-15"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "12:00",
+   "language": "English",
+   "raw": "Tuesday: 12:00 PM English",
+   "source_url": "https://www.cccgh.com/mass-times",
+   "fetched_at": "2026-06-15T17:40:42+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-06-08: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-06-08",
+   "archive_url": "https://web.archive.org/web/20260615174042/https://www.cccgh.com/mass-times",
+   "capture_date": "2026-06-15"
+  },
+  {
+   "kind": "mass",
+   "day": "First Tuesday of the month",
+   "time": "19:00",
+   "language": "Vietnamese",
+   "raw": "Tuesday: 7:00 PM Vietnamese Mass every 1st Tuesday",
+   "source_url": "https://www.cccgh.com/mass-times",
+   "fetched_at": "2026-06-15T17:40:42+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-06-08: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-06-08",
+   "archive_url": "https://web.archive.org/web/20260615174042/https://www.cccgh.com/mass-times",
+   "capture_date": "2026-06-15"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "12:00",
+   "language": "Spanish",
+   "raw": "Wednesday: 12:00 PM Spanish",
+   "source_url": "https://www.cccgh.com/mass-times",
+   "fetched_at": "2026-06-15T17:40:42+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-06-08: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-06-08",
+   "archive_url": "https://web.archive.org/web/20260615174042/https://www.cccgh.com/mass-times",
+   "capture_date": "2026-06-15"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "19:30",
+   "language": "English",
+   "raw": "Thursday: 7:30 PM English",
+   "source_url": "https://www.cccgh.com/mass-times",
+   "fetched_at": "2026-06-15T17:40:42+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-06-08: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-06-08",
+   "archive_url": "https://web.archive.org/web/20260615174042/https://www.cccgh.com/mass-times",
+   "capture_date": "2026-06-15"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "12:00",
+   "language": "English",
+   "raw": "Friday: 12:00 PM English",
+   "source_url": "https://www.cccgh.com/mass-times",
+   "fetched_at": "2026-06-15T17:40:42+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-06-08: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-06-08",
+   "archive_url": "https://web.archive.org/web/20260615174042/https://www.cccgh.com/mass-times",
+   "capture_date": "2026-06-15"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "20:30",
+   "language": "Spanish",
+   "raw": "Friday: 8:30 PM Spanish",
+   "source_url": "https://www.cccgh.com/mass-times",
+   "fetched_at": "2026-06-15T17:40:42+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-06-08: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-06-08",
+   "archive_url": "https://web.archive.org/web/20260615174042/https://www.cccgh.com/mass-times",
+   "capture_date": "2026-06-15"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "08:30",
+   "language": "English",
+   "raw": "Saturday: 8:30 AM English",
+   "source_url": "https://www.cccgh.com/mass-times",
+   "fetched_at": "2026-06-15T17:40:42+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-06-08: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-06-08",
+   "archive_url": "https://web.archive.org/web/20260615174042/https://www.cccgh.com/mass-times",
+   "capture_date": "2026-06-15"
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "09:15-10:15",
+   "language": null,
+   "raw": "Confessions: 9:15 am - 10:15 am",
+   "source_url": "https://www.cccgh.com/confession-times",
+   "fetched_at": "2026-06-15T17:25:18+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-06-08: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-06-08",
+   "archive_url": "https://web.archive.org/web/20260615172518/https://www.cccgh.com/confession-times",
+   "capture_date": "2026-06-15"
+  },
+  {
+   "kind": "confession",
+   "day": "Wednesday",
+   "time": "11:00-11:50",
+   "language": null,
+   "raw": "Confessions: 11:00 am - 11:50 am",
+   "source_url": "https://www.cccgh.com/confession-times",
+   "fetched_at": "2026-06-15T17:25:18+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-06-08: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-06-08",
+   "archive_url": "https://web.archive.org/web/20260615172518/https://www.cccgh.com/confession-times",
+   "capture_date": "2026-06-15"
+  },
+  {
+   "kind": "confession",
+   "day": "Thursday",
+   "time": "18:15-19:15",
+   "language": null,
+   "raw": "Confessions: 6:15 pm - 7:15 pm",
+   "source_url": "https://www.cccgh.com/confession-times",
+   "fetched_at": "2026-06-15T17:25:18+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-06-08: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-06-08",
+   "archive_url": "https://web.archive.org/web/20260615172518/https://www.cccgh.com/confession-times",
+   "capture_date": "2026-06-15"
+  },
+  {
+   "kind": "confession",
+   "day": "Friday",
+   "time": "18:30-19:20",
+   "language": null,
+   "raw": "Confessions: 6:30 pm - 7:20 pm",
+   "source_url": "https://www.cccgh.com/confession-times",
+   "fetched_at": "2026-06-15T17:25:18+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-06-08: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-06-08",
+   "archive_url": "https://web.archive.org/web/20260615172518/https://www.cccgh.com/confession-times",
+   "capture_date": "2026-06-15"
+  }
+ ],
  "source_url": "https://www.cccgh.com/",
- "fetched_at": "2026-11-01T08:04:54+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-01T22:12:06+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": true
+   },
+   "score": "high"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 18
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "text:relative_time": 3
+ },
+ "groups_dropped": {},
+ "office_contact": {
+  "email": null,
+  "phone": "(713) 236-9977",
+  "address": "1949 Cullen Blvd, Houston TX 77023",
+  "source_url": "https://cccgh.com/contact-us",
+  "sources": {
+   "phone": "https://cccgh.com/contact-us",
+   "address": "https://cccgh.com/contact-us"
+  },
+  "fetched_at": "2026-05-11T11:44:42+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2026-06-08",
+  "capture_age_days": 146,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://cccgh.com/",
+    "capture": "2026-06-08",
+    "archive_url": "https://web.archive.org/web/20260608051443/https://cccgh.com/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://www.cccgh.com/mass-times",
+    "capture": "2026-06-15",
+    "archive_url": "https://web.archive.org/web/20260615174042/https://www.cccgh.com/mass-times"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://www.cccgh.com/confession-times",
+    "capture": "2026-06-15",
+    "archive_url": "https://web.archive.org/web/20260615172518/https://www.cccgh.com/confession-times"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://www.cccgh.com/mens-saturday-prayer-group",
+    "capture": "2026-05-16",
+    "archive_url": "https://web.archive.org/web/20260516051133/https://www.cccgh.com/mens-saturday-prayer-group"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://cccgh.com/houston-catholic-charismatic-prayer-groups",
+    "capture": "2026-06-08",
+    "archive_url": "https://web.archive.org/web/20260608044451/https://cccgh.com/houston-catholic-charismatic-prayer-groups"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://www.cccgh.com/adore-ministry",
+    "capture": "2026-05-16",
+    "archive_url": "https://web.archive.org/web/20260516050553/https://www.cccgh.com/adore-ministry"
+   },
+   {
+    "kind": "bulletin",
+    "original": "https://www.cccgh.com/bulletin",
+    "capture": "2026-05-16",
+    "archive_url": "https://web.archive.org/web/20260516043652/https://www.cccgh.com/bulletin"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://cccgh.com/events-of-the-companions-of-the-cross",
+    "capture": "2026-06-08",
+    "archive_url": "https://web.archive.org/web/20260608053644/https://cccgh.com/events-of-the-companions-of-the-cross"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://cccgh.com/eventos-y-activdades-comunidad-hispana",
+    "capture": "2026-04-12",
+    "archive_url": "https://web.archive.org/web/20260412224824/https://cccgh.com/eventos-y-activdades-comunidad-hispana"
+   },
+   {
+    "kind": "contact",
+    "original": "https://cccgh.com/contact-us",
+    "capture": "2026-05-11",
+    "archive_url": "https://web.archive.org/web/20260511114442/https://cccgh.com/contact-us"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }
