@@ -10,7 +10,7 @@ import traceback
 import dirlib as DL
 import common_fetch as CF
 
-CONF = {"rest": "rest", "page": "page", "list": "html-generic", "vendor": "html-vendor"}
+CONF = {"rest": "rest", "page": "page", "list": "html-generic", "vendor": "html-vendor", "api": "api"}
 
 
 def load():
@@ -28,7 +28,7 @@ def better(new: dict, old: dict | None) -> bool:
 
 def save(slug, see, base, recs, log, script, label, method, reader, prev_status):
     recs_out = []
-    for conf in ("vendor", "list", "page", "rest"):
+    for conf in ("api", "vendor", "list", "page", "rest"):
         part = [r for r in recs if r.get("_conf") == conf]
         recs_out += DL.finalize_records(part, CONF[conf], f"{script} ({reader})", filter_names=(reader != "rest+page"))
     # drop list entries that are obviously not parishes when the list is mostly websites of other things
@@ -46,12 +46,17 @@ def save(slug, see, base, recs, log, script, label, method, reader, prev_status)
         # the probe's REST files are replaced only by a list with more websites
         mine = bool(old and str(old.get("method", "")).startswith("ingest/us/dioceses/directory_"))
         if mine or better(meta_new, old):
-            src = (log.get("lists") or [{}])[0].get("url") if any(r.get("_conf") in ("list", "vendor") for r in recs) else base
+            src = (log.get("lists") or [{}])[0].get("url") if any(r.get("_conf") in ("list", "vendor", "api") for r in recs) else base
+            note = ("Read from the public data request the diocese's own JavaScript parish finder makes (source = that "
+                    "endpoint; the finder page is in reader_status.json). Kept: name, address, city, state, zip, "
+                    "coordinates, website, and the parish office's phone / e-mail; no pastor, staff or other personal "
+                    "names." if label == "diocese-directory-api" else
+                    "Read by a generic directory reader: name, address, city, zip and coordinates from the "
+                    "diocese's own pages; website = the parish's own domain linked from its entry (website_basis "
+                    "says how it was chosen). No phones, e-mails or personal names kept. Spot-check before "
+                    "treating as the official list.")
             DL.write_parishes(slug, see["name"], src or base, label, method, log.get("cms_guess") or "unknown", recs_out,
-                              "Read by a generic directory reader: name, address, city, zip and coordinates from the "
-                              "diocese's own pages; website = the parish's own domain linked from its entry (website_basis "
-                              "says how it was chosen). No phones, e-mails or personal names kept. Spot-check before "
-                              "treating as the official list.")
+                              note)
             res["result"] = "written"
         else:
             res["result"] = "kept-existing"

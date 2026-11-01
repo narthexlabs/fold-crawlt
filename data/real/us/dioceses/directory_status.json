@@ -808,11 +808,11 @@
    },
    "requests": 4,
    "reader": {
+    "state": "challenge",
+    "why": "sdcatholic.org answers 403 challenge",
     "result": "no-list",
-    "reader": "generic",
-    "cms_guess": null,
-    "checked_at": "2026-11-01T03:22:53+00:00",
-    "parishes_json": null
+    "checked_at": "2026-11-01T07:27:06+00:00",
+    "by": "ingest/us/dioceses/directory_html.py --js-finders (vendors.py JS finders)"
    }
   },
   "diocese-of-san-jose": {
@@ -1079,11 +1079,11 @@
    "directory_page": "https://www.diopueblo.org/parishes",
    "requests": 3,
    "reader": {
+    "state": "needs_js",
+    "why": "Wix dynamic page: repeater data comes from Wix's data API with a per-visit instance token; warmup data in the HTML holds only menu items",
     "result": "no-list",
-    "reader": "generic",
-    "cms_guess": "wix",
-    "checked_at": "2026-11-01T03:22:56+00:00",
-    "parishes_json": null
+    "checked_at": "2026-11-01T07:27:06+00:00",
+    "by": "ingest/us/dioceses/directory_html.py --js-finders (vendors.py JS finders)"
    }
   },
   "archdiocese-of-hartford": {
@@ -1248,11 +1248,11 @@
    },
    "requests": 5,
    "reader": {
+    "state": "unreachable_via_proxy",
+    "why": "bridgeportdiocese.com dns failure from the sandbox",
     "result": "no-list",
-    "reader": "generic",
-    "cms_guess": null,
-    "checked_at": "2026-11-01T03:22:52+00:00",
-    "parishes_json": null
+    "checked_at": "2026-11-01T07:27:06+00:00",
+    "by": "ingest/us/dioceses/directory_html.py --js-finders (vendors.py JS finders)"
    }
   },
   "diocese-of-norwich": {
@@ -1298,11 +1298,15 @@
    },
    "requests": 5,
    "reader": {
-    "result": "no-list",
-    "reader": "generic",
-    "cms_guess": "dnn",
-    "checked_at": "2026-11-01T03:23:01+00:00",
-    "parishes_json": null
+    "state": "api",
+    "vendor": "mymaps_kml",
+    "endpoint": "https://www.google.com/maps/d/kml?mid=1VTpfhm6bXf8ZfwM_tX0Ikl--m9E8l7a5&forcekml=1",
+    "finder_page": "https://www.norwichdiocese.org/Find/Parish-Communities",
+    "result": "written",
+    "records": 75,
+    "with_website": 61,
+    "checked_at": "2026-11-01T07:27:07+00:00",
+    "by": "ingest/us/dioceses/directory_html.py --js-finders (vendors.py JS finders)"
    }
   },
   "ukrainian-catholic-eparchy-of-stamford": {
@@ -1352,11 +1356,11 @@
    "directory_page": "https://www.stamforddio.org/parishes/",
    "requests": 3,
    "reader": {
+    "state": "needs_js",
+    "why": "mywebsitebuilder.com site: /parishes/ page structure JS holds no parish list (content rendered from the builder's API)",
     "result": "no-list",
-    "reader": "generic",
-    "cms_guess": "unknown",
-    "checked_at": "2026-11-01T03:22:53+00:00",
-    "parishes_json": null
+    "checked_at": "2026-11-01T07:27:06+00:00",
+    "by": "ingest/us/dioceses/directory_html.py --js-finders (vendors.py JS finders)"
    }
   },
   "diocese-of-wilmington": {
@@ -1491,11 +1495,11 @@
    },
    "requests": 5,
    "reader": {
+    "state": "unreachable_via_proxy",
+    "why": "miamiarch.org not reachable from the sandbox proxy",
     "result": "no-list",
-    "reader": "generic",
-    "cms_guess": "unknown",
-    "checked_at": "2026-11-01T03:22:56+00:00",
-    "parishes_json": null
+    "checked_at": "2026-11-01T07:27:06+00:00",
+    "by": "ingest/us/dioceses/directory_html.py --js-finders (vendors.py JS finders)"
    }
   },
   "diocese-of-orlando": {
@@ -2274,11 +2278,15 @@
    "directory_page": "https://www.archchicago.org/parish-map",
    "requests": 3,
    "reader": {
-    "result": "no-list",
-    "reader": "generic",
-    "cms_guess": "unknown",
-    "checked_at": "2026-11-01T03:23:01+00:00",
-    "parishes_json": null
+    "state": "api",
+    "vendor": "js_bundle",
+    "endpoint": "https://api.archchicago.org/parishes",
+    "finder_page": "https://www.archchicago.org/parish-map",
+    "result": "written",
+    "records": 248,
+    "with_website": 231,
+    "checked_at": "2026-11-01T07:27:11+00:00",
+    "by": "ingest/us/dioceses/directory_html.py --js-finders (vendors.py JS finders)"
    }
   },
   "diocese-of-belleville": {
@@ -2358,11 +2366,15 @@
    "directory_page": "https://www.diojoliet.org/parishes/",
    "requests": 3,
    "reader": {
-    "result": "no-list",
-    "reader": "generic",
-    "cms_guess": "unknown",
-    "checked_at": "2026-11-01T03:22:56+00:00",
-    "parishes_json": null
+    "state": "api",
+    "vendor": "js_bundle",
+    "endpoint": "https://diojoliet.org/o/org.diojoliet.maps.web/api/parishes.json",
+    "finder_page": "https://www.diojoliet.org/parishes/",
+    "result": "written",
+    "records": 114,
+    "with_website": 106,
+    "checked_at": "2026-11-01T07:27:12+00:00",
+    "by": "ingest/us/dioceses/directory_html.py --js-finders (vendors.py JS finders)"
    }
   },
   "diocese-of-peoria": {
@@ -2688,11 +2700,11 @@
    },
    "requests": 5,
    "reader": {
+    "state": "challenge",
+    "why": "parishes-map.html embeds batchgeo.com/map/ecdparishes, which answers 403 challenge",
     "result": "rejected-not-a-parish-list",
-    "reader": "generic",
-    "cms_guess": "wordpress",
-    "checked_at": "2026-11-01T03:23:06+00:00",
-    "parishes_json": null
+    "checked_at": "2026-11-01T07:27:06+00:00",
+    "by": "ingest/us/dioceses/directory_html.py --js-finders (vendors.py JS finders)"
    }
   },
   "diocese-of-fort-wayne-south-bend": {
@@ -3192,11 +3204,15 @@
    },
    "requests": 4,
    "reader": {
-    "result": "no-list",
-    "reader": "generic",
-    "cms_guess": "wordpress",
-    "checked_at": "2026-11-01T03:23:29+00:00",
-    "parishes_json": null
+    "state": "api",
+    "vendor": "locator_list",
+    "endpoint": "https://catholicdioceseofwichita.org/parishes/",
+    "finder_page": "https://catholicdioceseofwichita.org/parishes/",
+    "result": "written",
+    "records": 93,
+    "with_website": 77,
+    "checked_at": "2026-11-01T07:26:18+00:00",
+    "by": "ingest/us/dioceses/directory_html.py --js-finders (vendors.py JS finders)"
    }
   },
   "archdiocese-of-louisville": {
@@ -4177,16 +4193,11 @@
    "directory_page": "https://www.aod.org/parishes/",
    "requests": 3,
    "reader": {
+    "state": "vendor_search_only",
+    "why": "aod.org/parishes uses Algolia search (index 'aod'); the existing file came from parish pages; Algolia not queried",
     "result": "written",
-    "reader": "generic",
-    "cms_guess": "hubspot",
-    "checked_at": "2026-11-01T03:27:16+00:00",
-    "parishes_json": {
-     "count": 217,
-     "with_website": 0,
-     "method": "ingest/us/dioceses/directory_html.py",
-     "source_label": "diocese-directory-html"
-    }
+    "checked_at": "2026-11-01T07:27:06+00:00",
+    "by": "ingest/us/dioceses/directory_html.py --js-finders (vendors.py JS finders)"
    }
   },
   "chaldean-eparchy-of-saint-thomas-the-apostle": {
@@ -4559,11 +4570,11 @@
    "directory_page": "https://www.dioceseoflansing.org/general/parishes",
    "requests": 3,
    "reader": {
+    "state": "unreachable_via_proxy",
+    "why": "timeout",
     "result": "no-list",
-    "reader": "generic",
-    "cms_guess": "drupal",
-    "checked_at": "2026-11-01T03:23:25+00:00",
-    "parishes_json": null
+    "checked_at": "2026-11-01T07:27:06+00:00",
+    "by": "ingest/us/dioceses/directory_html.py --js-finders (vendors.py JS finders)"
    }
   },
   "diocese-of-marquette": {
@@ -5379,11 +5390,11 @@
    },
    "requests": 5,
    "reader": {
+    "state": "needs_js",
+    "why": "Wix dynamic page (store_locator app); data needs a Wix instance token",
     "result": "no-list",
-    "reader": "generic",
-    "cms_guess": "wix",
-    "checked_at": "2026-11-01T03:23:05+00:00",
-    "parishes_json": null
+    "checked_at": "2026-11-01T07:27:06+00:00",
+    "by": "ingest/us/dioceses/directory_html.py --js-finders (vendors.py JS finders)"
    }
   },
   "diocese-of-great-falls-billings": {
@@ -5431,11 +5442,11 @@
    "directory_page": "https://www.diocesegfb.org/find-a-parish",
    "requests": 4,
    "reader": {
+    "state": "unreachable_via_proxy",
+    "why": "conn_error",
     "result": "no-list",
-    "reader": "generic",
-    "cms_guess": "parishsoft",
-    "checked_at": "2026-11-01T03:23:16+00:00",
-    "parishes_json": null
+    "checked_at": "2026-11-01T07:27:06+00:00",
+    "by": "ingest/us/dioceses/directory_html.py --js-finders (vendors.py JS finders)"
    }
   },
   "diocese-of-helena": {
@@ -5647,11 +5658,11 @@
    },
    "requests": 5,
    "reader": {
+    "state": "unreachable_via_proxy",
+    "why": "conn_error",
     "result": "no-list",
-    "reader": "generic",
-    "cms_guess": null,
-    "checked_at": "2026-11-01T03:23:07+00:00",
-    "parishes_json": null
+    "checked_at": "2026-11-01T07:27:06+00:00",
+    "by": "ingest/us/dioceses/directory_html.py --js-finders (vendors.py JS finders)"
    }
   },
   "diocese-of-manchester": {
@@ -5690,16 +5701,11 @@
    "directory_page": "https://www.catholicnh.org/parishes/",
    "requests": 3,
    "reader": {
+    "state": "no_api",
+    "why": "directory.catholicnh.org/churchmap prints h-cards (name, address, lat/lng) in HTML, no website field; existing generic read kept",
     "result": "written",
-    "reader": "generic",
-    "cms_guess": "silverstripe",
-    "checked_at": "2026-11-01T03:26:25+00:00",
-    "parishes_json": {
-     "count": 118,
-     "with_website": 0,
-     "method": "ingest/us/dioceses/directory_html.py",
-     "source_label": "diocese-directory-html"
-    }
+    "checked_at": "2026-11-01T07:27:06+00:00",
+    "by": "ingest/us/dioceses/directory_html.py --js-finders (vendors.py JS finders)"
    }
   },
   "archdiocese-of-newark": {
@@ -5910,11 +5916,15 @@
    },
    "requests": 4,
    "reader": {
-    "result": "no-list",
-    "reader": "generic",
-    "cms_guess": "ecatholic",
-    "checked_at": "2026-11-01T03:23:49+00:00",
-    "parishes_json": null
+    "state": "api",
+    "vendor": "slp",
+    "endpoint": "https://www.camdendiocese.org/wp-admin/admin-ajax.php?action=csl_ajax_onload&lat=39.945461&lng=-75.118439&radius=500&options%5Binitial_results_returned%5D=500",
+    "finder_page": "https://www.camdendiocese.org/psl/",
+    "result": "written",
+    "records": 67,
+    "with_website": 62,
+    "checked_at": "2026-11-01T07:26:19+00:00",
+    "by": "ingest/us/dioceses/directory_html.py --js-finders (vendors.py JS finders)"
    }
   },
   "diocese-of-metuchen": {
@@ -6523,11 +6533,15 @@
    },
    "requests": 4,
    "reader": {
-    "result": "no-list",
-    "reader": "generic",
-    "cms_guess": "wordpress",
-    "checked_at": "2026-11-01T03:23:56+00:00",
-    "parishes_json": null
+    "state": "api",
+    "vendor": "wpsl",
+    "endpoint": "https://www.buffalodiocese.org/wp-admin/admin-ajax.php?action=store_search&lat=42.8864468&lng=-78.8783689&max_results=500&search_radius=500&autoload=1",
+    "finder_page": "https://www.buffalodiocese.org/parish-finder/",
+    "result": "written",
+    "records": 163,
+    "with_website": 130,
+    "checked_at": "2026-11-01T07:26:20+00:00",
+    "by": "ingest/us/dioceses/directory_html.py --js-finders (vendors.py JS finders)"
    }
   },
   "diocese-of-ogdensburg": {
@@ -6684,11 +6698,11 @@
    },
    "requests": 4,
    "reader": {
+    "state": "unreachable_via_proxy",
+    "why": "dor.org conn_error from the sandbox",
     "result": "no-list",
-    "reader": "generic",
-    "cms_guess": "wordpress",
-    "checked_at": "2026-11-01T03:24:01+00:00",
-    "parishes_json": null
+    "checked_at": "2026-11-01T07:27:06+00:00",
+    "by": "ingest/us/dioceses/directory_html.py --js-finders (vendors.py JS finders)"
    }
   },
   "diocese-of-rockville-centre": {
@@ -6840,11 +6854,11 @@
    },
    "requests": 5,
    "reader": {
+    "state": "no_list_on_page",
+    "why": "Squarespace page only links per-state sub-pages; ?format=json is robots-disallowed",
     "result": "no-list",
-    "reader": "generic",
-    "cms_guess": "squarespace",
-    "checked_at": "2026-11-01T03:23:25+00:00",
-    "parishes_json": null
+    "checked_at": "2026-11-01T07:27:06+00:00",
+    "by": "ingest/us/dioceses/directory_html.py --js-finders (vendors.py JS finders)"
    }
   },
   "syro-malankara-catholic-eparchy-in-the-usa": {
@@ -7702,11 +7716,11 @@
    },
    "requests": 5,
    "reader": {
+    "state": "unreachable_via_proxy",
+    "why": "conn_error",
     "result": "no-list",
-    "reader": "generic",
-    "cms_guess": null,
-    "checked_at": "2026-11-01T03:23:29+00:00",
-    "parishes_json": null
+    "checked_at": "2026-11-01T07:27:06+00:00",
+    "by": "ingest/us/dioceses/directory_html.py --js-finders (vendors.py JS finders)"
    }
   },
   "diocese-of-allentown": {
@@ -7861,11 +7875,11 @@
    },
    "requests": 5,
    "reader": {
+    "state": "needs_post",
+    "why": "find-parish-school.php -> js/doelocator.js POSTs a form body to doegetjson.php (a GET answers 'No latitude parameter passed!'); our fetcher is GET-only, so not read",
     "result": "no-list",
-    "reader": "generic",
-    "cms_guess": "unknown",
-    "checked_at": "2026-11-01T03:23:37+00:00",
-    "parishes_json": null
+    "checked_at": "2026-11-01T07:27:06+00:00",
+    "by": "ingest/us/dioceses/directory_html.py --js-finders (vendors.py JS finders)"
    }
   },
   "diocese-of-greensburg": {
@@ -8218,11 +8232,11 @@
    "directory_page": "https://ukrcatholic.org/parishes/",
    "requests": 3,
    "reader": {
+    "state": "unreachable_via_proxy",
+    "why": "ukrcatholic.org conn_error",
     "result": "no-list",
-    "reader": "generic",
-    "cms_guess": "unknown",
-    "checked_at": "2026-11-01T03:23:51+00:00",
-    "parishes_json": null
+    "checked_at": "2026-11-01T07:27:06+00:00",
+    "by": "ingest/us/dioceses/directory_html.py --js-finders (vendors.py JS finders)"
    }
   },
   "diocese-of-providence": {
@@ -8425,11 +8439,15 @@
    },
    "requests": 4,
    "reader": {
-    "result": "no-list",
-    "reader": "generic",
-    "cms_guess": "wordpress",
-    "checked_at": "2026-11-01T03:24:17+00:00",
-    "parishes_json": null
+    "state": "api",
+    "vendor": "elfsight",
+    "endpoint": "https://core.service.elfsight.com/p/boot/?w=fd81228b-139c-4057-b4b6-6a5c4f103581",
+    "finder_page": "https://www.rapidcitydiocese.org/parishes/",
+    "result": "written",
+    "records": 69,
+    "with_website": 18,
+    "checked_at": "2026-11-01T07:26:23+00:00",
+    "by": "ingest/us/dioceses/directory_html.py --js-finders (vendors.py JS finders)"
    }
   },
   "diocese-of-sioux-falls": {
@@ -8706,11 +8724,11 @@
    },
    "requests": 4,
    "reader": {
+    "state": "unreachable_via_proxy",
+    "why": "conn_error",
     "result": "no-list",
-    "reader": "generic",
-    "cms_guess": null,
-    "checked_at": "2026-11-01T03:24:19+00:00",
-    "parishes_json": null
+    "checked_at": "2026-11-01T07:27:06+00:00",
+    "by": "ingest/us/dioceses/directory_html.py --js-finders (vendors.py JS finders)"
    }
   },
   "archdiocese-of-galveston-houston": {
@@ -9091,11 +9109,15 @@
    "directory_page": "https://catholiclubbock.church",
    "requests": 3,
    "reader": {
-    "result": "no-list",
-    "reader": "generic",
-    "cms_guess": "unknown",
-    "checked_at": "2026-11-01T03:24:23+00:00",
-    "parishes_json": null
+    "state": "api",
+    "vendor": "mymaps_kml",
+    "endpoint": "https://www.google.com/maps/d/kml?mid=130FpeLFTogMm_AqkkOF_HIC6-3L8mmc&forcekml=1",
+    "finder_page": "https://catholiclubbock.church/Parishes.html",
+    "result": "written",
+    "records": 51,
+    "with_website": 0,
+    "checked_at": "2026-11-01T07:26:37+00:00",
+    "by": "ingest/us/dioceses/directory_html.py --js-finders (vendors.py JS finders)"
    }
   },
   "diocese-of-san-angelo": {
@@ -9629,11 +9651,11 @@
    "directory_page": "https://www.dioceseofspokane.org/parish-directory/",
    "requests": 5,
    "reader": {
-    "result": "no-list",
-    "reader": "generic",
-    "cms_guess": "squarespace",
-    "checked_at": "2026-11-01T03:24:43+00:00",
-    "parishes_json": null
+    "state": "no_api_found",
+    "why": "no data request found in the finder page HTML",
+    "result": "written",
+    "checked_at": "2026-11-01T07:26:21+00:00",
+    "by": "ingest/us/dioceses/directory_html.py --js-finders (vendors.py JS finders)"
    }
   },
   "diocese-of-yakima": {
@@ -10098,11 +10120,11 @@
    },
    "requests": 4,
    "reader": {
+    "state": "unreachable_via_proxy",
+    "why": "conn_error",
     "result": "no-list",
-    "reader": "generic",
-    "cms_guess": "wordpress",
-    "checked_at": "2026-11-01T03:24:40+00:00",
-    "parishes_json": null
+    "checked_at": "2026-11-01T07:27:06+00:00",
+    "by": "ingest/us/dioceses/directory_html.py --js-finders (vendors.py JS finders)"
    }
   },
   "diocese-of-la-crosse": {
