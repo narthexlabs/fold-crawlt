@@ -22,31 +22,252 @@
  ],
  "home_url": "https://sacredheartcolwich.org/",
  "final_url": "https://sacredheartcolwich.org/",
- "crawl_status": "timeout",
+ "crawl_status": "ok",
  "crawl_env": "sandbox",
- "robots_note": "timeout",
+ "robots_note": "ok",
  "pages": [
   {
    "category": "home",
    "url": "https://sacredheartcolwich.org/",
-   "status": null,
-   "class": "timeout"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://sacredheartcolwich.org/ministry-schedule",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://sacredheartcolwich.org/sacraments",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://sacredheartcolwich.org/get-involved",
+   "status": 429,
+   "class": "blocked_429"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "joomla",
+  "evidence": [
+   "content=\"joomla"
+  ]
  },
- "template": "none",
+ "template": "generic-html:joomla",
  "groups": [],
- "calendar_feeds": [],
+ "calendar_feeds": [
+  {
+   "feed_id": "sacredheartcolwich.org:ics:b90caa13",
+   "type": "ics",
+   "platform": "Microsoft 365 (Outlook)",
+   "url": "https://outlook.office365.com/owa/calendar/3acdb773d58b4076a689f754cdefb91f@sacredheartcolwich.org/123c178f90bb4d93bc12a00b5cf9e50c13104101344196807749/calendar.ics",
+   "page_url": "https://sacredheartcolwich.org/",
+   "label": null,
+   "status": "active",
+   "note": "Microsoft 365 published calendar",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T17:40:15+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/sacredheartcolwich.org"
+  ],
+  "instagram": [
+   "https://www.instagram.com/sacredheartcolwich/"
+  ],
+  "youtube": [
+   "https://www.youtube.com/@sacredheartchurch-colwich6940",
+   "https://www.youtube.com/channel/UCtRpY-aWdPeU-Rbzuzrb9dA"
+  ],
+  "livestream": [
+   {
+    "url": "https://www.youtube.com/@sacredheartchurch-colwich6940/streams",
+    "label": "Live Mass",
+    "platform": "youtube",
+    "kind": "link"
+   }
+  ]
+ },
+ "bulletin": {
+  "url": "https://sacredheartcolwich.org/Bulletin",
+  "date": null,
+  "kind": "page",
+  "text": "Bulletin",
+  "source_url": "https://sacredheartcolwich.org/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "16:30",
+   "language": null,
+   "raw": "Weekend Mass: Saturday - 4:30 PM",
+   "source_url": "https://sacredheartcolwich.org/",
+   "fetched_at": "2026-11-01T17:28:16+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Weekend Mass: Sunday - 8:00 AM, 10:00 AM",
+   "source_url": "https://sacredheartcolwich.org/",
+   "fetched_at": "2026-11-01T17:28:16+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": null,
+   "raw": "Weekend Mass: Sunday - 8:00 AM, 10:00 AM",
+   "source_url": "https://sacredheartcolwich.org/",
+   "fetched_at": "2026-11-01T17:28:16+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "10:00",
+   "language": null,
+   "raw": "Weekday Mass: Monday - 10:00 AM",
+   "source_url": "https://sacredheartcolwich.org/",
+   "fetched_at": "2026-11-01T17:28:16+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "07:30",
+   "language": null,
+   "raw": "Weekday Mass: Tuesday, Thursday & Friday - 7:30 AM",
+   "source_url": "https://sacredheartcolwich.org/",
+   "fetched_at": "2026-11-01T17:28:16+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Tuesday, Thursday & Friday"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "07:30",
+   "language": null,
+   "raw": "Weekday Mass: Tuesday, Thursday & Friday - 7:30 AM",
+   "source_url": "https://sacredheartcolwich.org/",
+   "fetched_at": "2026-11-01T17:28:16+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Tuesday, Thursday & Friday",
+   "day_parsed": "Tuesday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "07:30",
+   "language": null,
+   "raw": "Weekday Mass: Tuesday, Thursday & Friday - 7:30 AM",
+   "source_url": "https://sacredheartcolwich.org/",
+   "fetched_at": "2026-11-01T17:28:16+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Tuesday, Thursday & Friday",
+   "day_parsed": "Tuesday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "17:30",
+   "language": null,
+   "raw": "Weekday Mass: Wednesday - 5:30 PM",
+   "source_url": "https://sacredheartcolwich.org/",
+   "fetched_at": "2026-11-01T17:28:16+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  }
+ ],
  "source_url": "https://sacredheartcolwich.org/",
- "fetched_at": "2026-11-01T07:28:20+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-01T17:28:19+00:00",
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": true,
+  "trusted_candidate": false,
+  "generic_rows": 6
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "range_not_a_mass": 1
+ },
+ "groups_dropped": {
+  "noise": 2
+ },
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": "office@sacredheartcolwich.org",
+  "phone": "(316) 796-1224",
+  "address": "PO Box 578, Colwich, KS 67030",
+  "source_url": "https://sacredheartcolwich.org/",
+  "sources": {
+   "email": "https://sacredheartcolwich.org/",
+   "phone": "https://sacredheartcolwich.org/",
+   "address": "https://sacredheartcolwich.org/"
+  },
+  "fetched_at": "2026-11-01T17:28:16+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
  }

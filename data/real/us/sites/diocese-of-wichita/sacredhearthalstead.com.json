@@ -21,32 +21,98 @@
   "Halstead"
  ],
  "home_url": "https://sacredhearthalstead.com/",
- "final_url": "https://www.sacredhearthalstead.com/",
- "crawl_status": "timeout",
+ "final_url": "https://sacredhearthalstead.com/",
+ "crawl_status": "ok",
  "crawl_env": "sandbox",
- "robots_note": "timeout",
+ "robots_note": "ok",
  "pages": [
   {
    "category": "home",
-   "url": "https://www.sacredhearthalstead.com/",
-   "status": null,
-   "class": "timeout"
+   "url": "https://sacredhearthalstead.com/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://sacredhearthalstead.com/about-us/mass-confession-times",
+   "status": 429,
+   "class": "blocked_429"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "joomla",
+  "evidence": [
+   "content=\"joomla"
+  ]
  },
- "template": "none",
+ "template": "generic-html:joomla",
  "groups": [],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/Sacred-Heart-Catholic-Church-Halstead-KS-118787924803022"
+  ],
+  "flocknote": [
+   "https://new.flocknote.com"
+  ]
+ },
+ "bulletin": {
+  "url": "https://sacredhearthalstead.com/news-events/flocknotes",
+  "date": null,
+  "kind": "page",
+  "text": "Flocknotes",
+  "source_url": "https://sacredhearthalstead.com/"
+ },
  "schedule_rows": [],
  "source_url": "https://sacredhearthalstead.com/",
- "fetched_at": "2026-11-01T07:28:21+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-01T17:28:19+00:00",
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": true,
+  "trusted_candidate": false,
+  "generic_rows": 3
+ },
+ "has_sunday": false,
+ "schedule_dropped": {
+  "no_day": 5,
+  "not_a_service": 1
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": "office@sacredhearthalstead.com",
+  "phone": "(316) 830-2818",
+  "address": null,
+  "source_url": "https://sacredhearthalstead.com/",
+  "sources": {
+   "email": "https://sacredhearthalstead.com/",
+   "phone": "https://sacredhearthalstead.com/"
+  },
+  "fetched_at": "2026-11-01T17:28:18+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
  }
