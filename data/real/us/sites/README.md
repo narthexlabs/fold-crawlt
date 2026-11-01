@@ -80,7 +80,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-columbus | 88 | 88 | 33 | 19 | 1 | 35 | 0 |
 | archdiocese-of-san-francisco | 87 | 36 | 21 | 6 | 0 | 9 | 0 |
 | unassigned-il | 87 | 18 | 13 | 1 | 0 | 4 | 0 |
-| unassigned-tn | 87 | 87 | 54 | 25 | 1 | 7 | 0 |
+| unassigned-tn | 87 | 4 | 4 | 0 | 0 | 0 | 0 |
 | unassigned-nd | 85 | 85 | 48 | 32 | 1 | 4 | 0 |
 | unassigned-or | 83 | 84 | 45 | 26 | 0 | 13 | 0 |
 | unassigned-dc | 83 | 83 | 58 | 14 | 5 | 6 | 0 |
