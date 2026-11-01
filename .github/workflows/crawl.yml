@@ -15,7 +15,7 @@ on:
   workflow_dispatch:
     inputs:
       job:
-        description: 'which job (sites | discovermass | gcatholic | commoncrawl | bulletins | all)'
+        description: 'which job (sites | discovermass | gcatholic | commoncrawl | osm | bulletins | all)'
         default: 'all'
       minutes:
         description: 'minutes per chunk'
@@ -146,6 +146,34 @@ jobs:
           python3 -I ingest/us/url_sources/commoncrawl.py --build
           git add data/real/us/url_sources/commoncrawl data/real/us/url_sources/commoncrawl.json
           git commit -q -m "Common Crawl index: parish domains (Actions $(date -u +%FT%H:%MZ))" -m "Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>" -m "Claude-Session: https://claude.ai/code/session_01SXKUYETifPNNjUVPkZ7qG5" || true
+          git pull --rebase --autostash -q origin main && git push -q origin HEAD:main
+
+  osm:
+    # one-off style: not on the schedule; dispatch job=osm until every state is done (resumable per state)
+    if: ${{ github.event.inputs.job == 'osm' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 140
+    concurrency: { group: crawl-osm, cancel-in-progress: false }
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 1 }
+      - run: git config user.name "Matthew" && git config user.email "mcolt4@gmail.com"
+      - run: |
+          sudo apt-get -qq update && sudo apt-get -qq install -y osmium-tool >/dev/null || true
+          pip install osmium
+          df -h / | tail -1
+      - uses: actions/cache@v4
+        with:
+          path: data/raw/us/url_sources/osm
+          key: raw-osm-${{ github.run_id }}
+          restore-keys: raw-osm-
+      - name: OpenStreetMap Geofabrik state extracts -> Catholic churches with a website tag (one state at a time, file deleted after)
+        run: |
+          set -e
+          python3 -u ingest/us/url_sources/osm_pbf.py --minutes "$MINUTES" || true
+          python3 -I ingest/us/url_sources/osm_pbf.py --build
+          git add data/real/us/url_sources/osm data/real/us/url_sources/osm.json
+          git commit -q -m "OpenStreetMap (Geofabrik) parish websites (Actions $(date -u +%FT%H:%MZ))" -m "Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>" -m "Claude-Session: https://claude.ai/code/session_01SXKUYETifPNNjUVPkZ7qG5" || true
           git pull --rebase --autostash -q origin main && git push -q origin HEAD:main
 
   bulletins:

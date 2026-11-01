@@ -33,3 +33,21 @@ already done. See each `data/real/us/<source>/README.md`. To stop everything: Ac
 **Licence**: all rights reserved (see LICENSE). The repo is public for transparency and so the crawl can run on
 GitHub Actions, not as a grant to reuse the code or data. Each data record names its source; the sources' own terms
 apply to their material (GCatholic.org, Wikidata CC0, Wikipedia CC BY-SA for text).
+
+## OpenStreetMap parish websites (Geofabrik extracts, `osm` job)
+`ingest/us/url_sources/osm_pbf.py` reads each state's extract from `https://download.geofabrik.de/north-america/us/<state>-latest.osm.pbf`
+(no Overpass API), one state at a time: stream to a temp file, filter with `osmium tags-filter` + pyosmium, **delete the file**,
+keep only the extracted facts. Filter: `amenity=place_of_worship`, `religion=christian`, `denomination` in (`catholic`,
+`roman_catholic`), and a `website` / `contact:website` / `url` tag; name, website, lat/lng (way centroid = mean of node
+locations; relations carry no coordinates), `addr:city`, state.
+Attribution: **© OpenStreetMap contributors, ODbL 1.0** (https://www.openstreetmap.org/copyright). We use OSM as a lookup of
+facts (which church has which website), not as a redistributed database; each record carries its OSM object URL.
+Outputs: `data/real/us/url_sources/osm.json` (all records + counts) and `data/real/us/url_sources/osm/<ST>.websites.json`
+(the shape `run_state.py` reads; deduplicated by host; diocese/school/social/aggregator hosts dropped as in `merge.py`;
+hosts already in other websites files or already crawled under `data/real/us/sites/**` excluded).
+Run: Actions -> "National crawl" -> job `osm`, minutes 110 (not on the schedule; each run does as many states as fit, smallest
+first, and skips finished ones). **Resume command** (locally or on a runner): `python3 -u ingest/us/url_sources/osm_pbf.py --minutes 110`;
+single states: `--states TX,CA`; rebuild outputs only: `python3 -I ingest/us/url_sources/osm_pbf.py --build`.
+
+Counts per state: see `counts.by_state` in `data/real/us/url_sources/osm.json` (filled in by the first runs; table below).
+<!-- osm-counts -->
