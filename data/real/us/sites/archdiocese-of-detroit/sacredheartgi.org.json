@@ -17,33 +17,330 @@
   "Grosse Ile"
  ],
  "home_url": "http://www.sacredheartgi.org/",
- "final_url": "https://www.sacredheartgi.org/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "final_url": "https://sacredheartgi.org/",
+ "crawl_status": "wayback-2026-09-11",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
-   "url": "https://www.sacredheartgi.org/",
-   "status": 403,
-   "class": "challenge"
+   "url": "https://sacredheartgi.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://sacredheartgi.org/mass-times",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.sacredheartgi.org/worship",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://sacredheartgi.org/parish-life",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://sacredheartgi.org/music-ministry",
+   "status": null,
+   "class": "timeout"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "sacredheartgi.org:rosary|maker",
+   "name": "Sacred Heart Rosary Makers",
+   "category": "prayer_devotion",
+   "category_label": "Prayer & devotion",
+   "subcategory": "rosary",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://sacredheartgi.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://sacredheartgi.org/parish-life",
+   "source_kind": "website",
+   "fetched_at": "2025-10-08T13:30:14+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-09-11"
+  },
+  {
+   "id": "sacredheartgi.org:adult_formation",
+   "name": "Adult Faith Formation",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "adult_formation",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://sacredheartgi.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://sacredheartgi.org/parish-life",
+   "source_kind": "website",
+   "fetched_at": "2025-10-08T13:30:14+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-09-11"
+  },
+  {
+   "id": "sacredheartgi.org:youth_ministry",
+   "name": "Youth",
+   "category": "youth",
+   "category_label": "Youth",
+   "subcategory": "youth_ministry",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://sacredheartgi.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://sacredheartgi.org/parish-life",
+   "source_kind": "website",
+   "fetched_at": "2025-10-08T13:30:14+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-09-11"
+  },
+  {
+   "id": "sacredheartgi.org:kofc",
+   "name": "Knights of Columbus",
+   "category": "fraternal_orders",
+   "category_label": "Fraternal & orders",
+   "subcategory": "knights_of_columbus",
+   "audience": "men",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://sacredheartgi.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://sacredheartgi.org/parish-life",
+   "source_kind": "website",
+   "fetched_at": "2025-10-08T13:30:14+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-09-11"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/SacredHeartCatholicCommunity"
+  ],
+  "instagram": [
+   "https://www.instagram.com/shgicatholic/"
+  ],
+  "livestream": [
+   {
+    "url": "https://sacredheartgi.org/live-streamed-mass",
+    "label": "Live-Streamed Mass",
+    "platform": "sacredheartgi.org",
+    "kind": "link"
+   },
+   {
+    "url": "https://sacredheartgi.org/",
+    "label": "LIVE-STREAM",
+    "platform": "sacredheartgi.org",
+    "kind": "link"
+   },
+   {
+    "url": "https://sacredheartgi.org/live-videos",
+    "label": "live-streamed mass schedule",
+    "platform": "sacredheartgi.org",
+    "kind": "link"
+   },
+   {
+    "url": "https://www.sacredheartgi.org/live-streamed-mass",
+    "label": "Live-Streamed Mass",
+    "platform": "www.sacredheartgi.org",
+    "kind": "link"
+   }
+  ]
+ },
+ "bulletin": {
+  "url": "https://sacredheartgi.org/bulletins",
+  "date": null,
+  "kind": "page",
+  "text": "Bulletins",
+  "source_url": "https://sacredheartgi.org/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:00",
+   "language": "English",
+   "raw": "Sunday: 11:00 AM English Church",
+   "source_url": "https://sacredheartgi.org/",
+   "fetched_at": "2026-09-11T09:32:04+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-09-11: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-09-11",
+   "archive_url": "https://web.archive.org/web/20260911093204/https://sacredheartgi.org/",
+   "capture_date": "2026-09-11"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "17:00",
+   "language": "English",
+   "raw": "Sunday: 5:00 PM English Sacred Heart Church",
+   "source_url": "https://sacredheartgi.org/",
+   "fetched_at": "2026-09-11T09:32:04+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-09-11: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-09-11",
+   "archive_url": "https://web.archive.org/web/20260911093204/https://sacredheartgi.org/",
+   "capture_date": "2026-09-11"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "12:00",
+   "language": "English",
+   "raw": "Monday: 12:00 PM English Church",
+   "source_url": "https://sacredheartgi.org/",
+   "fetched_at": "2026-09-11T09:32:04+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-09-11: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-09-11",
+   "archive_url": "https://web.archive.org/web/20260911093204/https://sacredheartgi.org/",
+   "capture_date": "2026-09-11"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "08:30",
+   "language": "English",
+   "raw": "Wednesday: 8:30 AM English Chapel",
+   "source_url": "https://sacredheartgi.org/",
+   "fetched_at": "2026-09-11T09:32:04+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-09-11: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-09-11",
+   "archive_url": "https://web.archive.org/web/20260911093204/https://sacredheartgi.org/",
+   "capture_date": "2026-09-11"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "17:00",
+   "language": null,
+   "raw": "Beginning on the Solemnity of Corpus Christi (mid-June) the Sunday Mass at 5:00 PM will be celebrated outside on the front lawn of the Rectory on East River Road.",
+   "source_url": "https://sacredheartgi.org/",
+   "fetched_at": "2026-09-11T09:32:04+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-09-11: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic+generic_strict",
+   "kind_parsed": "mass",
+   "source": "wayback-2026-09-11",
+   "archive_url": "https://web.archive.org/web/20260911093204/https://sacredheartgi.org/",
+   "capture_date": "2026-09-11"
+  }
+ ],
  "source_url": "http://www.sacredheartgi.org/",
- "fetched_at": "2026-11-01T18:51:44+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-01T20:46:00+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": true
+   },
+   "score": "high"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 6
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "other_location": 20,
+  "text:relative_time": 1,
+  "text:other_location": 5,
+  "text:no_kind": 1,
+  "prose": 1
+ },
+ "groups_dropped": {
+  "noise": 2,
+  "unmatched": 1
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(734) 676-1378",
+  "address": "21599 Parke Lane, Grosse Ile, MI 48138",
+  "source_url": "https://sacredheartgi.org/",
+  "sources": {
+   "phone": "https://sacredheartgi.org/",
+   "address": "https://sacredheartgi.org/"
+  },
+  "fetched_at": "2026-09-11T09:32:04+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2026-09-11",
+  "capture_age_days": 51,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://sacredheartgi.org/",
+    "capture": "2026-09-11",
+    "archive_url": "https://web.archive.org/web/20260911093204/https://sacredheartgi.org/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://sacredheartgi.org/mass-times",
+    "capture": "2026-03-03",
+    "archive_url": "https://web.archive.org/web/20260303085948/https://sacredheartgi.org/mass-times"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://www.sacredheartgi.org/worship",
+    "capture": "2025-03-20",
+    "archive_url": "https://web.archive.org/web/20250320134536/https://www.sacredheartgi.org/worship"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://sacredheartgi.org/parish-life",
+    "capture": "2025-10-08",
+    "archive_url": "https://web.archive.org/web/20251008133014/https://sacredheartgi.org/parish-life"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }

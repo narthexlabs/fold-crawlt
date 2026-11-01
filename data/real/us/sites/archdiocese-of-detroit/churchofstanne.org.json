@@ -18,32 +18,404 @@
  ],
  "home_url": "http://www.churchofstanne.org/",
  "final_url": "https://www.churchofstanne.org/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "crawl_status": "wayback-2025-06-17",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
    "url": "https://www.churchofstanne.org/",
-   "status": 403,
-   "class": "challenge"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://churchofstanne.org/mass-times",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.churchofstanne.org/class-info-schedules",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://churchofstanne.org/middle-school-ministry",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://churchofstanne.org/high-school-ministry",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://churchofstanne.org/adult-faith-formation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://www.churchofstanne.org/bulletins",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://churchofstanne.org/events-1",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://churchofstanne.org/calendar",
+   "status": null,
+   "class": "timeout"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "churchofstanne.org:adult_formation",
+   "name": "Adult Faith Formation",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "adult_formation",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.churchofstanne.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://churchofstanne.org/adult-faith-formation",
+   "source_kind": "website",
+   "fetched_at": "2025-10-05T21:24:13+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-06-17"
+  },
+  {
+   "id": "churchofstanne.org:ocia",
+   "name": "OCIA",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "ocia",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.churchofstanne.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://churchofstanne.org/adult-faith-formation",
+   "source_kind": "website",
+   "fetched_at": "2025-10-05T21:24:13+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-06-17"
+  },
+  {
+   "id": "churchofstanne.org:youth_ministry",
+   "name": "Feb. 4, 2024 RISE Youth Conference",
+   "category": "youth",
+   "category_label": "Youth",
+   "subcategory": "youth_ministry",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.churchofstanne.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://churchofstanne.org/high-school-ministry",
+   "source_kind": "website",
+   "fetched_at": "2025-02-11T21:23:27+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-06-17"
+  },
+  {
+   "id": "churchofstanne.org:kofc",
+   "name": "Knights of Columbus",
+   "category": "fraternal_orders",
+   "category_label": "Fraternal & orders",
+   "subcategory": "knights_of_columbus",
+   "audience": "men",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.churchofstanne.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://churchofstanne.org/adult-faith-formation",
+   "source_kind": "website",
+   "fetched_at": "2025-10-05T21:24:13+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-06-17"
+  },
+  {
+   "id": "churchofstanne.org:chinese|year",
+   "name": "Chinese New Year",
+   "category": "language_cultural",
+   "category_label": "Language & cultural communities",
+   "subcategory": "chinese",
+   "audience": "all",
+   "language": "zh",
+   "language_assumed": false,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.churchofstanne.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://churchofstanne.org/high-school-ministry",
+   "source_kind": "website",
+   "fetched_at": "2025-02-11T21:23:27+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-06-17"
+  },
+  {
+   "id": "churchofstanne.org:other_newman_ministry",
+   "name": "Newman Ministry",
+   "category": "other",
+   "category_label": "Other",
+   "subcategory": "unclassified",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.churchofstanne.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://churchofstanne.org/high-school-ministry",
+   "source_kind": "website",
+   "fetched_at": "2025-02-11T21:23:27+00:00",
+   "confidence": "low",
+   "source": "wayback-2025-06-17"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/stannecatholicchurchofortonvillemi"
+  ],
+  "flocknote": [
+   "https://stanne27.flocknote.com"
+  ]
+ },
+ "bulletin": {
+  "url": "https://files.ecatholic.com/28148/bulletins/20251019.pdf?t=1760465083000",
+  "date": "2025-10-19",
+  "kind": "ecatholic_pdf",
+  "text": "October 19 , 2025",
+  "source_url": "https://www.churchofstanne.org/bulletins"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "16:00",
+   "language": "English",
+   "raw": "Saturday Vigil: 4:00 PM English",
+   "source_url": "https://www.churchofstanne.org/",
+   "fetched_at": "2025-06-17T16:02:22+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-06-17: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-06-17",
+   "archive_url": "https://web.archive.org/web/20250617160222/https://www.churchofstanne.org/",
+   "capture_date": "2025-06-17"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:30",
+   "language": "English",
+   "raw": "Sunday: 8:30 AM English",
+   "source_url": "https://www.churchofstanne.org/",
+   "fetched_at": "2025-06-17T16:02:22+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-06-17: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-06-17",
+   "archive_url": "https://web.archive.org/web/20250617160222/https://www.churchofstanne.org/",
+   "capture_date": "2025-06-17"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:30",
+   "language": "English",
+   "raw": "Sunday: 10:30 AM English",
+   "source_url": "https://www.churchofstanne.org/",
+   "fetched_at": "2025-06-17T16:02:22+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-06-17: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-06-17",
+   "archive_url": "https://web.archive.org/web/20250617160222/https://www.churchofstanne.org/",
+   "capture_date": "2025-06-17"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:00",
+   "language": null,
+   "raw": "Sat: 3:00 PM or by appointment",
+   "source_url": "https://www.churchofstanne.org/",
+   "fetched_at": "2025-06-17T16:02:22+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-06-17: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-06-17",
+   "archive_url": "https://web.archive.org/web/20250617160222/https://www.churchofstanne.org/",
+   "capture_date": "2025-06-17"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "09:00",
+   "language": "English",
+   "raw": "November 1: 9:00 AM English",
+   "source_url": "https://churchofstanne.org/mass-times",
+   "fetched_at": "2025-10-05T21:55:46+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-06-17: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "kind_parsed": "mass",
+   "source": "wayback-2025-06-17",
+   "archive_url": "https://web.archive.org/web/20251005215546/https://churchofstanne.org/mass-times",
+   "capture_date": "2025-10-05"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "19:00",
+   "language": "English",
+   "raw": "November 1: 7:00 PM English Please note time change.",
+   "source_url": "https://churchofstanne.org/mass-times",
+   "fetched_at": "2025-10-05T21:55:46+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-06-17: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "kind_parsed": "mass",
+   "source": "wayback-2025-06-17",
+   "archive_url": "https://web.archive.org/web/20251005215546/https://churchofstanne.org/mass-times",
+   "capture_date": "2025-10-05"
+  }
+ ],
  "source_url": "http://www.churchofstanne.org/",
- "fetched_at": "2026-11-01T18:51:44+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-01T20:40:58+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": true
+   },
+   "score": "high"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 4
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "not_a_service": 2,
+  "text:skipped_section": 3,
+  "text:dated_line": 4
+ },
+ "groups_dropped": {
+  "unmatched": 1,
+  "noise": 1
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(248) 627-3965",
+  "address": "925 N. Lapeer Rd Suite 197, Oxford, MI 48371",
+  "source_url": "https://www.churchofstanne.org/",
+  "sources": {
+   "phone": "https://www.churchofstanne.org/",
+   "address": "https://www.churchofstanne.org/"
+  },
+  "fetched_at": "2025-06-17T16:02:22+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2025-06-17",
+  "capture_age_days": 502,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://www.churchofstanne.org/",
+    "capture": "2025-06-17",
+    "archive_url": "https://web.archive.org/web/20250617160222/https://www.churchofstanne.org/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://churchofstanne.org/mass-times",
+    "capture": "2025-10-05",
+    "archive_url": "https://web.archive.org/web/20251005215546/https://churchofstanne.org/mass-times"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://www.churchofstanne.org/class-info-schedules",
+    "capture": "2025-05-15",
+    "archive_url": "https://web.archive.org/web/20250515043230/https://www.churchofstanne.org/class-info-schedules"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://churchofstanne.org/middle-school-ministry",
+    "capture": "2025-10-05",
+    "archive_url": "https://web.archive.org/web/20251005222736/https://churchofstanne.org/middle-school-ministry"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://churchofstanne.org/high-school-ministry",
+    "capture": "2025-02-11",
+    "archive_url": "https://web.archive.org/web/20250211212327/https://churchofstanne.org/high-school-ministry"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://churchofstanne.org/adult-faith-formation",
+    "capture": "2025-10-05",
+    "archive_url": "https://web.archive.org/web/20251005212413/https://churchofstanne.org/adult-faith-formation"
+   },
+   {
+    "kind": "bulletin",
+    "original": "https://www.churchofstanne.org/bulletins",
+    "capture": "2025-10-17",
+    "archive_url": "https://web.archive.org/web/20251017131256/https://www.churchofstanne.org/bulletins"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://churchofstanne.org/events-1",
+    "capture": "2025-10-05",
+    "archive_url": "https://web.archive.org/web/20251005230120/https://churchofstanne.org/events-1"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }
