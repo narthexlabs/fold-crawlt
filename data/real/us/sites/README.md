@@ -29,7 +29,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 |---|---:|---:|---:|---:|---:|---:|---:|
 | archdiocese-of-new-york | 372 | 319 | 69 | 226 | 0 | 24 | 0 |
 | unassigned-nm | 263 | 263 | 163 | 50 | 4 | 46 | 0 |
-| archdiocese-of-boston | 257 | 251 | 75 | 14 | 2 | 123 | 0 |
+| archdiocese-of-boston | 257 | 257 | 81 | 14 | 2 | 123 | 0 |
 | archdiocese-of-chicago | 250 | 57 | 30 | 6 | 4 | 15 | 0 |
 | unassigned-mo | 216 | 2 | 2 | 0 | 0 | 0 | 0 |
 | unassigned-ne | 211 | 2 | 2 | 0 | 0 | 0 | 0 |
@@ -49,7 +49,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | archdiocese-of-milwaukee | 145 | 146 | 116 | 18 | 2 | 10 | 0 |
 | diocese-of-austin | 145 | 146 | 31 | 86 | 0 | 28 | 1 |
 | archdiocese-of-st-louis | 144 | 144 | 83 | 50 | 0 | 11 | 0 |
-| unassigned-ks | 143 | 3 | 3 | 0 | 0 | 0 | 0 |
+| unassigned-ks | 143 | 143 | 78 | 20 | 3 | 42 | 0 |
 | diocese-of-providence | 139 | 139 | 75 | 23 | 3 | 38 | 0 |
 | unassigned-ky | 135 | 2 | 1 | 0 | 0 | 1 | 0 |
 | diocese-of-syracuse | 134 | 4 | 3 | 0 | 0 | 1 | 0 |
@@ -104,7 +104,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-fresno | 75 | 33 | 11 | 9 | 0 | 13 | 0 |
 | diocese-of-lafayette-in-louisiana | 75 | 75 | 32 | 15 | 2 | 26 | 0 |
 | diocese-of-fort-wayne-south-bend | 73 | 73 | 45 | 21 | 0 | 7 | 0 |
-| archdiocese-of-kansas-city-in-kansas | 73 | 1 | 0 | 1 | 0 | 0 | 0 |
+| archdiocese-of-kansas-city-in-kansas | 73 | 73 | 22 | 18 | 0 | 30 | 3 |
 | diocese-of-pittsburgh | 72 | 72 | 8 | 61 | 0 | 3 | 0 |
 | diocese-of-ogdensburg | 71 | 55 | 21 | 19 | 1 | 14 | 0 |
 | diocese-of-wichita | 70 | 74 | 21 | 6 | 0 | 47 | 0 |
@@ -195,8 +195,8 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | unassigned-wa | 29 | 31 | 13 | 7 | 0 | 11 | 0 |
 | diocese-of-lafayette-in-indiana | 28 | 28 | 0 | 18 | 0 | 10 | 0 |
 | diocese-of-portland-in-maine | 27 | 27 | 4 | 15 | 0 | 8 | 0 |
-| unassigned-mn | 27 | 6 | 4 | 2 | 0 | 0 | 0 |
-| diocese-of-bismarck | 26 | 23 | 6 | 13 | 0 | 4 | 0 |
+| unassigned-mn | 27 | 31 | 16 | 7 | 0 | 8 | 0 |
+| diocese-of-bismarck | 26 | 26 | 7 | 14 | 1 | 4 | 0 |
 | diocese-of-pensacola-tallahassee | 26 | 26 | 8 | 7 | 1 | 10 | 0 |
 | unassigned-ak | 24 | 6 | 2 | 2 | 0 | 2 | 0 |
 | unassigned-nj | 23 | 8 | 6 | 1 | 0 | 1 | 0 |
@@ -269,7 +269,6 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 
 ## Chunk log
 
-- 2026-11-01T07:27:47+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-01T07:34:43+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-01T07:34:53+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-01T07:49:45+00:00: fetched {}; parsed 0 dioceses
@@ -284,3 +283,4 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-01T16:02:20+00:00: fetched {'dns': 2, 'done': 5, 'challenge': 1, 'parked': 1, 'ok': 1, 'halted_egress': 0}; parsed 0 dioceses
 - 2026-11-01T17:21:18+00:00: fetched {'dns': 41, 'done': 262, 'conn_error': 4, 'robots_disallowed': 2, 'challenge': 53, 'ssl_error': 15, 'not_found': 9, 'ok': 120, 'blocked_403': 2, 'parked': 3, 'http_307': 1, 'http_5xx': 3, 'not_html': 1, 'timeout': 9, 'cut': 1, 'halted_egress': 0}; parsed 15 dioceses
 - 2026-11-01T17:33:53+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-01T17:35:01+00:00: fetched {}; parsed 0 dioceses
