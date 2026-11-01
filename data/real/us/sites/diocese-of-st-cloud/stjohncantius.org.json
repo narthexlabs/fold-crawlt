@@ -19,7 +19,7 @@
  "home_url": "http://www.stjohncantius.org/",
  "final_url": "https://www.stjohncantius.org/",
  "crawl_status": "ok",
- "crawl_env": "sandbox",
+ "crawl_env": "runner-rendered",
  "robots_note": "ok",
  "pages": [
   {
@@ -71,7 +71,7 @@
    "language": null,
    "raw": "Mass Schedule: Sunday 10:45 am",
    "source_url": "https://www.stjohncantius.org/",
-   "fetched_at": "2026-11-01T02:10:57+00:00",
+   "fetched_at": "2026-11-01T17:48:40+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -84,7 +84,7 @@
    "language": null,
    "raw": "Mass Schedule: Wednesday 8:00 am",
    "source_url": "https://www.stjohncantius.org/",
-   "fetched_at": "2026-11-01T02:10:57+00:00",
+   "fetched_at": "2026-11-01T17:48:40+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -92,7 +92,7 @@
   }
  ],
  "source_url": "http://www.stjohncantius.org/",
- "fetched_at": "2026-11-01T02:10:59+00:00",
+ "fetched_at": "2026-11-01T17:48:47+00:00",
  "schedule_template": {
   "template": "wix",
   "version": "ca-sites/2",
@@ -111,14 +111,15 @@
   "trusted_candidate": false,
   "generic_rows": 4
  },
+ "has_sunday": true,
  "groups_dropped": {
   "sentence": 2,
   "unmatched": 1,
   "noise": 1
  },
  "event_counts": {
-  "window_start": "2026-10-31",
-  "window_end_exclusive": "2027-01-29",
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
@@ -126,7 +127,20 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "office_contact": {
+  "email": null,
+  "phone": "(320) 251-4455",
+  "address": "1515 North 3rd St, St. Cloud, MN 56303-4517",
+  "source_url": "https://www.stjohncantius.org/",
+  "sources": {
+   "phone": "https://www.stjohncantius.org/",
+   "address": "https://www.stjohncantius.org/"
+  },
+  "fetched_at": "2026-11-01T17:48:40+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
- }
+ },
+ "fetch_mode": "rendered"
 }
