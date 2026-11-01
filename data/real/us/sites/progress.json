@@ -585,10 +585,11 @@
   },
   {
    "started_at": "2026-11-01T18:51:39+00:00",
-   "ended_at": "2026-11-01T18:52:35+00:00",
-   "result": "fetched {'dns': 9, 'done': 20, 'conn_error': 1, 'ok': 7, 'not_found': 1, 'timeout': 2, 'halted_egress': 0}; parsed 1 dioceses",
+   "ended_at": "2026-11-01T18:52:46+00:00",
+   "result": "fetched {'dns': 33, 'done': 82, 'challenge': 7, 'ssl_error': 12, 'conn_error': 1, 'parked': 3, 'ok': 16, 'http_5xx': 2, 'not_found': 1, 'timeout': 7, 'halted_egress': 0}; parsed 2 dioceses",
    "touched": [
-    "archdiocese-of-denver"
+    "diocese-of-cleveland",
+    "diocese-of-burlington"
    ]
   }
  ],
@@ -690,19 +691,20 @@
   },
   "diocese-of-cleveland": {
    "sites_in_list": 214,
-   "records": 202,
-   "finished": false,
-   "ok": 132,
+   "records": 250,
+   "finished": true,
+   "ok": 145,
    "by_status": {
-    "ok": 132,
-    "challenge": 46,
-    "conn_error": 7,
-    "ssl_error": 6,
-    "dns": 4,
+    "ok": 145,
+    "challenge": 49,
+    "dns": 22,
+    "ssl_error": 14,
+    "conn_error": 8,
+    "parked": 4,
     "not_found": 3,
+    "timeout": 2,
     "robots_disallowed": 1,
     "unreachable_via_proxy": 1,
-    "parked": 1,
     "http_5xx": 1
    }
   },
@@ -1024,20 +1026,17 @@
   },
   "archdiocese-of-denver": {
    "sites_in_list": 142,
-   "records": 142,
-   "finished": true,
-   "ok": 105,
+   "records": 102,
+   "finished": false,
+   "ok": 91,
    "by_status": {
-    "ok": 105,
-    "dns": 11,
-    "challenge": 5,
-    "ssl_error": 5,
+    "ok": 91,
     "wayback": 4,
-    "conn_error": 3,
-    "timeout": 3,
-    "not_found": 3,
     "unreachable_via_proxy": 2,
-    "http_5xx": 1
+    "ssl_error": 2,
+    "conn_error": 1,
+    "challenge": 1,
+    "not_found": 1
    }
   },
   "diocese-of-providence": {
@@ -1277,14 +1276,18 @@
   },
   "diocese-of-burlington": {
    "sites_in_list": 98,
-   "records": 66,
-   "finished": false,
-   "ok": 9,
+   "records": 101,
+   "finished": true,
+   "ok": 13,
    "by_status": {
-    "challenge": 55,
-    "ok": 9,
+    "challenge": 59,
+    "dns": 15,
+    "ok": 13,
+    "ssl_error": 5,
+    "timeout": 5,
+    "http_5xx": 2,
     "robots_disallowed": 1,
-    "ssl_error": 1
+    "not_found": 1
    }
   },
   "unassigned-nh": {
@@ -1547,15 +1550,14 @@
   },
   "diocese-of-allentown": {
    "sites_in_list": 84,
-   "records": 86,
-   "finished": true,
-   "ok": 57,
+   "records": 67,
+   "finished": false,
+   "ok": 49,
    "by_status": {
-    "ok": 57,
-    "dns": 8,
-    "challenge": 7,
-    "conn_error": 5,
+    "ok": 49,
+    "challenge": 6,
     "ssl_error": 4,
+    "conn_error": 3,
     "unreachable_via_proxy": 2,
     "http_5xx": 1,
     "robots_disallowed": 1,
@@ -2079,19 +2081,16 @@
   },
   "diocese-of-altoona-johnstown": {
    "sites_in_list": 63,
-   "records": 63,
-   "finished": true,
-   "ok": 35,
+   "records": 45,
+   "finished": false,
+   "ok": 29,
    "by_status": {
-    "ok": 35,
-    "challenge": 8,
-    "dns": 7,
-    "ssl_error": 4,
+    "ok": 29,
+    "challenge": 6,
     "conn_error": 4,
+    "ssl_error": 3,
     "http_5xx": 1,
-    "not_found": 1,
     "unreachable_via_proxy": 1,
-    "parked": 1,
     "robots_disallowed": 1
    }
   },
@@ -3308,14 +3307,12 @@
   },
   "diocese-of-alexandria": {
    "sites_in_list": 19,
-   "records": 19,
-   "finished": true,
-   "ok": 9,
+   "records": 14,
+   "finished": false,
+   "ok": 8,
    "by_status": {
-    "ok": 9,
-    "challenge": 6,
-    "dns": 3,
-    "not_found": 1
+    "ok": 8,
+    "challenge": 6
    }
   },
   "diocese-of-helena": {
@@ -3867,9 +3864,9 @@
  },
  "totals": {
   "sites_in_list": 15394,
-  "records": 14619,
-  "ok": 7984
+  "records": 14620,
+  "ok": 7972
  },
  "us_parish_pages_discovermass": 20147,
- "updated_at": "2026-11-01T18:52:42+00:00"
+ "updated_at": "2026-11-01T18:52:47+00:00"
 }
