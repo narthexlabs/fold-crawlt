@@ -211,7 +211,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-shreveport | 20 | 20 | 8 | 9 | 0 | 3 | 0 |
 | diocese-of-sioux-city | 20 | 20 | 2 | 5 | 0 | 13 | 0 |
 | unassigned-ia | 20 | 20 | 11 | 6 | 0 | 3 | 0 |
-| diocese-of-alexandria | 19 | 14 | 8 | 6 | 0 | 0 | 0 |
+| diocese-of-alexandria | 19 | 19 | 9 | 6 | 0 | 4 | 0 |
 | diocese-of-helena | 19 | 19 | 14 | 4 | 0 | 1 | 0 |
 | diocese-of-orange | 19 | 20 | 20 | 0 | 0 | 0 | 0 |
 | archdiocese-of-cincinnati | 18 | 18 | 12 | 1 | 1 | 1 | 0 |
@@ -283,4 +283,4 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-01T17:52:14+00:00: fetched {'ok': 1, 'done': 1, 'halted_egress': 0}; parsed 1 dioceses
 - 2026-11-01T17:53:22+00:00: fetched {'ok': 11, 'done': 11, 'challenge': 1, 'dns': 1, 'cut': 2, 'halted_egress': 0}; parsed 5 dioceses
 - 2026-11-01T18:03:07+00:00: fetched {'ok': 1, 'done': 1, 'halted_egress': 0}; parsed 1 dioceses
-- 2026-11-01T18:51:38+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-01T18:51:37+00:00: fetched {'dns': 3, 'done': 5, 'not_found': 1, 'ok': 1, 'halted_egress': 0}; parsed 1 dioceses

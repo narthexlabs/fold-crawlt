@@ -584,10 +584,12 @@
    ]
   },
   {
-   "started_at": "2026-11-01T18:51:38+00:00",
-   "ended_at": "2026-11-01T18:51:40+00:00",
-   "result": "fetched {}; parsed 0 dioceses",
-   "touched": []
+   "started_at": "2026-11-01T18:51:37+00:00",
+   "ended_at": "2026-11-01T18:51:51+00:00",
+   "result": "fetched {'dns': 3, 'done': 5, 'not_found': 1, 'ok': 1, 'halted_egress': 0}; parsed 1 dioceses",
+   "touched": [
+    "diocese-of-alexandria"
+   ]
   }
  ],
  "dioceses": {
@@ -3299,12 +3301,14 @@
   },
   "diocese-of-alexandria": {
    "sites_in_list": 19,
-   "records": 14,
-   "finished": false,
-   "ok": 8,
+   "records": 19,
+   "finished": true,
+   "ok": 9,
    "by_status": {
-    "ok": 8,
-    "challenge": 6
+    "ok": 9,
+    "challenge": 6,
+    "dns": 3,
+    "not_found": 1
    }
   },
   "diocese-of-helena": {
@@ -3856,9 +3860,9 @@
  },
  "totals": {
   "sites_in_list": 15394,
-  "records": 14537,
-  "ok": 7955
+  "records": 14542,
+  "ok": 7956
  },
  "us_parish_pages_discovermass": 20147,
- "updated_at": "2026-11-01T18:51:46+00:00"
+ "updated_at": "2026-11-01T18:51:53+00:00"
 }
