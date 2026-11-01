@@ -19,7 +19,7 @@
  "home_url": "http://stjosephparis.org/",
  "final_url": "https://www.stjosephparisar.org/",
  "crawl_status": "ok",
- "crawl_env": "sandbox",
+ "crawl_env": "runner-rendered",
  "robots_note": "ok",
  "pages": [
   {
@@ -60,7 +60,44 @@
   ]
  },
  "template": "generic-html:wix",
- "groups": [],
+ "groups": [
+  {
+   "id": "stjosephparis.org:youth_ministry",
+   "name": "Catholic Youth Ministry",
+   "category": "youth",
+   "category_label": "Youth",
+   "subcategory": "youth_ministry",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.stjosephparisar.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stjosephparisar.org/ministries",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:47:21+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "stjosephparis.org:altar_society|mother",
+   "name": "Mother's/Altar Society",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "altar_society_environment",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": "Second Sunday",
+   "description": null,
+   "contact_url": "https://www.stjosephparisar.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stjosephparisar.org/ministries",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:47:21+00:00",
+   "confidence": "medium"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
  "social": {
@@ -83,7 +120,7 @@
    "language": null,
    "raw": "First Communion is held during a 9:00 Sunday Mass sometime after Easter.",
    "source_url": "https://www.stjosephparisar.org/sacraments",
-   "fetched_at": "2026-11-01T02:28:18+00:00",
+   "fetched_at": "2026-11-01T17:47:13+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "low",
@@ -97,7 +134,7 @@
    "language": null,
    "raw": "Reconciliation: Thursday - 7 to 7:45 pm",
    "source_url": "https://www.stjosephparisar.org/",
-   "fetched_at": "2026-11-01T02:28:17+00:00",
+   "fetched_at": "2026-11-01T17:47:09+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -110,7 +147,7 @@
    "language": null,
    "raw": "Reconciliation: Sunday - 8:15 to 8:45 am",
    "source_url": "https://www.stjosephparisar.org/",
-   "fetched_at": "2026-11-01T02:28:17+00:00",
+   "fetched_at": "2026-11-01T17:47:09+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -123,7 +160,7 @@
    "language": null,
    "raw": "Reconciliation: Saturday - 6 pm",
    "source_url": "https://www.stjosephparisar.org/",
-   "fetched_at": "2026-11-01T02:28:17+00:00",
+   "fetched_at": "2026-11-01T17:47:09+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -136,7 +173,7 @@
    "language": null,
    "raw": "Reconciliation: Sunday - 9 am",
    "source_url": "https://www.stjosephparisar.org/",
-   "fetched_at": "2026-11-01T02:28:17+00:00",
+   "fetched_at": "2026-11-01T17:47:09+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -149,7 +186,7 @@
    "language": null,
    "raw": "Reconciliation: Tuesday - 7:30 pm",
    "source_url": "https://www.stjosephparisar.org/",
-   "fetched_at": "2026-11-01T02:28:17+00:00",
+   "fetched_at": "2026-11-01T17:47:09+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -162,7 +199,7 @@
    "language": null,
    "raw": "Reconciliation: Wed and Fri - 8 am",
    "source_url": "https://www.stjosephparisar.org/",
-   "fetched_at": "2026-11-01T02:28:17+00:00",
+   "fetched_at": "2026-11-01T17:47:09+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -176,16 +213,75 @@
    "language": null,
    "raw": "Reconciliation: Wed and Fri - 8 am",
    "source_url": "https://www.stjosephparisar.org/",
-   "fetched_at": "2026-11-01T02:28:17+00:00",
+   "fetched_at": "2026-11-01T17:47:09+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "wix",
-   "day_expanded_from": "Wed and Fri"
+   "day_expanded_from": "Wed and Fri",
+   "day_parsed": "Wednesday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "18:00",
+   "language": null,
+   "raw": "Saturday - 6 pm",
+   "source_url": "https://www.stjosephparisar.org/",
+   "fetched_at": "2026-11-01T17:47:09+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Sunday - 9 am",
+   "source_url": "https://www.stjosephparisar.org/",
+   "fetched_at": "2026-11-01T17:47:09+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "19:30",
+   "language": null,
+   "raw": "Tuesday - 7:30 pm",
+   "source_url": "https://www.stjosephparisar.org/",
+   "fetched_at": "2026-11-01T17:47:09+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Wed and Fri - 8 am",
+   "source_url": "https://www.stjosephparisar.org/",
+   "fetched_at": "2026-11-01T17:47:09+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Wed and Fri - 8 am",
+   "source_url": "https://www.stjosephparisar.org/",
+   "fetched_at": "2026-11-01T17:47:09+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box",
+   "day_parsed": "Wednesday",
+   "day_bound_from_line": true
   }
  ],
  "source_url": "http://stjosephparis.org/",
- "fetched_at": "2026-11-01T02:28:22+00:00",
+ "fetched_at": "2026-11-01T17:47:25+00:00",
  "redirected_off_host": "stjosephparisar.org",
  "schedule_template": {
   "template": "wix",
@@ -205,10 +301,14 @@
   "trusted_candidate": false,
   "generic_rows": 2
  },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "box_rows_added": 5
+ },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-10-31",
-  "window_end_exclusive": "2027-01-29",
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
@@ -216,7 +316,19 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "office_contact": {
+  "email": null,
+  "phone": null,
+  "address": "15 South Spruce Street, Paris, AR 72855",
+  "source_url": "https://www.stjosephparisar.org/",
+  "sources": {
+   "address": "https://www.stjosephparisar.org/"
+  },
+  "fetched_at": "2026-11-01T17:47:09+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
- }
+ },
+ "fetch_mode": "rendered"
 }
