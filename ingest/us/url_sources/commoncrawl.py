@@ -51,7 +51,7 @@ KEEP_TLDS = {"org", "com", "net", "church", "us", "catholic", "info"}
 # ---- patterns. STRONG = pages Catholic parishes have and most other churches do not; WEAK = common to any church.
 STRONG = ["mass-times", "mass-time", "masstimes", "masstime", "mass-schedule", "massschedule", "mass-schedules",
           "mass-and-confession", "mass-and-confessions", "masses", "weekend-masses", "daily-mass", "confession-times",
-          "reconciliation", "sacrament-of-reconciliation", "eucharistic-adoration", "adoration", "rcia", "parish-staff",
+          "sacrament-of-reconciliation", "eucharistic-adoration", "rcia", "parish-staff",
           "parish-office", "parish-bulletin", "holy-days", "holydays", "holy-days-of-obligation"]
 # WEAK paths (bulletin, sacraments, baptism, worship, liturgy, plain "confession") are NOT queried: the first Actions run
 # (2026-11-01) showed they are overwhelmingly Protestant/Anglican pages on .church. Kept only to describe evidence.

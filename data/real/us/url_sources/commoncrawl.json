@@ -1,7 +1,7 @@
 {
  "source": "Common Crawl index",
  "attribution": "Common Crawl index (https://commoncrawl.org/terms-of-use): URLs only",
- "built_at": "2026-11-01T07:30:25+00:00",
+ "built_at": "2026-11-01T07:30:59+00:00",
  "crawls": [
   "CC-MAIN-2026-43",
   "CC-MAIN-2026-39",
@@ -22,10 +22,8 @@
    "weekend-masses",
    "daily-mass",
    "confession-times",
-   "reconciliation",
    "sacrament-of-reconciliation",
    "eucharistic-adoration",
-   "adoration",
    "rcia",
    "parish-staff",
    "parish-office",
@@ -40,18 +38,18 @@
    "sacraments",
    "sacrament"
   ],
-  "path_regex": "/(?:sacrament-of-reconciliation|holy-days-of-obligation|eucharistic-adoration|mass-and-confessions|mass-and-confession|confession-times|parish-bulletin|mass-schedules|reconciliation|weekend-masses|mass-schedule|parish-office|parish-staff|massschedule|daily-mass|mass-times|masstimes|adoration|holy-days|mass-time|holydays|masstime|masses|rcia)(?:[/._?#-]|$)",
+  "path_regex": "/(?:sacrament-of-reconciliation|holy-days-of-obligation|eucharistic-adoration|mass-and-confessions|mass-and-confession|confession-times|parish-bulletin|weekend-masses|mass-schedules|mass-schedule|parish-office|massschedule|parish-staff|mass-times|daily-mass|holy-days|mass-time|masstimes|masstime|holydays|masses|rcia)(?:[/._?#-]|$)",
   "host_regex": "^https?://[^/]*(?:church|parish|catholic|cathedral|basilica|shrine|saint|holy|sacred|immaculate|ourlady|our-lady|blessed|assumption|annunciation|nativity|transfiguration|ascension|epiphany|resurrection|christtheking|corpuschristi|mission|newman|rosary|trinity|angels|guadalupe|carmel|loyola|vianney|st[-_.]?(?:joseph|mary|marys|peter|paul|john|johns|anne|annes|ann|thomas|francis|michael|patrick|anthony|mark|luke|james|matthew|catherine|agnes|bernard|benedict|dominic|ignatius|jude|margaret|teresa|theresa|elizabeth|rose|gregory|cecilia|basil|monica|vincent|lawrence|charles|edward|george|philip|leo|jerome|martin|augustine|ambrose|andrew|bartholomew|boniface|brendan|bridget|casimir|clare|columba|cyril|denis|eugene|frances|gabriel|gerard|helen|hubert|isidore|joan|joachim|jean|justin|kateri|kevin|lucy|louis|maximilian|nicholas|norbert|pius|raphael|robert|stephen|sylvester|timothy|ursula|veronica|victor|vitus|wenceslaus|william|barnabas|blase|bonaventure|cornelius|damien|dismas|edmund|gertrude|hedwig|hyacinth|jane|julie|katharine|lucia|matilda|rita|scholastica|sebastian|simon|therese)|saint[-_]?(?:joseph|mary|marys|peter|paul|john|johns|anne|annes|ann|thomas|francis|michael|patrick|anthony|mark|luke|james|matthew|catherine|agnes|bernard|benedict|dominic|ignatius|jude|margaret|teresa|theresa|elizabeth|rose|gregory|cecilia|basil|monica|vincent|lawrence|charles|edward|george|philip|leo|jerome|martin|augustine|ambrose|andrew|bartholomew|boniface|brendan|bridget|casimir|clare|columba|cyril|denis|eugene|frances|gabriel|gerard|helen|hubert|isidore|joan|joachim|jean|justin|kateri|kevin|lucy|louis|maximilian|nicholas|norbert|pius|raphael|robert|stephen|sylvester|timothy|ursula|veronica|victor|vitus|wenceslaus|william|barnabas|blase|bonaventure|cornelius|damien|dismas|edmund|gertrude|hedwig|hyacinth|jane|julie|katharine|lucia|matilda|rita|scholastica|sebastian|simon|therese))"
  },
  "counts": {
-  "matched_urls_in_cache": 886,
+  "matched_urls_in_cache": 0,
   "candidate_domains": 88,
   "excluded": {
-   "no_strong_catholic_page": 65,
+   "no_strong_catholic_page": 73,
    "other_denomination_or_non_parish_word": 10,
-   "already_known_or_crawled": 2
+   "already_known_or_crawled": 1
   },
-  "written_to_XX_websites": 11
+  "written_to_XX_websites": 4
  },
  "domains": [
   {
@@ -343,13 +341,11 @@
     "confession",
     "reconciliation"
    ],
-   "strong_patterns": [
-    "reconciliation"
-   ],
+   "strong_patterns": [],
    "crawls": [
     "CC-MAIN-2026-43"
    ],
-   "kept": true
+   "kept": false
   },
   {
    "domain": "australiaforchrist.church",
@@ -796,9 +792,7 @@
    "patterns": [
     "adoration"
    ],
-   "strong_patterns": [
-    "adoration"
-   ],
+   "strong_patterns": [],
    "crawls": [
     "CC-MAIN-2026-43"
    ],
@@ -1172,7 +1166,6 @@
     "sacraments"
    ],
    "strong_patterns": [
-    "adoration",
     "rcia"
    ],
    "crawls": [
@@ -1213,13 +1206,11 @@
     "reconciliation",
     "worship"
    ],
-   "strong_patterns": [
-    "reconciliation"
-   ],
+   "strong_patterns": [],
    "crawls": [
     "CC-MAIN-2026-43"
    ],
-   "kept": true
+   "kept": false
   },
   {
    "domain": "crosscreek.church",
@@ -1538,13 +1529,11 @@
    "patterns": [
     "reconciliation"
    ],
-   "strong_patterns": [
-    "reconciliation"
-   ],
+   "strong_patterns": [],
    "crawls": [
     "CC-MAIN-2026-43"
    ],
-   "kept": true
+   "kept": false
   },
   {
    "domain": "gtwy.church",
@@ -1557,13 +1546,11 @@
    "patterns": [
     "reconciliation"
    ],
-   "strong_patterns": [
-    "reconciliation"
-   ],
+   "strong_patterns": [],
    "crawls": [
     "CC-MAIN-2026-43"
    ],
-   "kept": true
+   "kept": false
   },
   {
    "domain": "holyfamily-amcan.church",
@@ -1595,13 +1582,11 @@
    "patterns": [
     "reconciliation"
    ],
-   "strong_patterns": [
-    "reconciliation"
-   ],
+   "strong_patterns": [],
    "crawls": [
     "CC-MAIN-2026-43"
    ],
-   "kept": true
+   "kept": false
   },
   {
    "domain": "midtowncatholic.church",
@@ -1652,13 +1637,11 @@
    "patterns": [
     "reconciliation"
    ],
-   "strong_patterns": [
-    "reconciliation"
-   ],
+   "strong_patterns": [],
    "crawls": [
     "CC-MAIN-2026-43"
    ],
-   "kept": true
+   "kept": false
   },
   {
    "domain": "newportcov.church",
@@ -1671,13 +1654,11 @@
    "patterns": [
     "adoration"
    ],
-   "strong_patterns": [
-    "adoration"
-   ],
+   "strong_patterns": [],
    "crawls": [
     "CC-MAIN-2026-43"
    ],
-   "kept": true
+   "kept": false
   }
  ]
 }
