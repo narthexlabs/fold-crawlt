@@ -31,7 +31,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | archdiocese-of-new-york | 391 | 393 | 87 | 253 | 2 | 51 | 0 |
 | unassigned-nm | 263 | 263 | 163 | 50 | 4 | 46 | 0 |
 | archdiocese-of-boston | 257 | 257 | 81 | 14 | 2 | 123 | 0 |
-| diocese-of-brooklyn | 240 | 240 | 179 | 14 | 2 | 41 | 4 |
+| diocese-of-brooklyn | 240 | 196 | 166 | 13 | 2 | 11 | 4 |
 | diocese-of-cleveland | 214 | 250 | 145 | 49 | 1 | 55 | 0 |
 | unassigned-mo | 214 | 214 | 144 | 24 | 2 | 44 | 0 |
 | unassigned-ne | 210 | 211 | 152 | 19 | 8 | 32 | 0 |
