@@ -605,23 +605,22 @@
    ]
   },
   {
-   "started_at": "2026-11-01T22:15:18+00:00",
-   "ended_at": "2026-11-01T22:19:56+00:00",
-   "result": "fetched {'robots_disallowed': 1, 'done': 84, 'ok': 49, 'dns': 20, 'challenge': 7, 'ssl_error': 3, 'parked': 1, 'http_5xx': 1, 'not_found': 1, 'conn_error': 1, 'timeout': 6, 'cut': 6, 'halted_egress': 0}; parsed 4 dioceses",
+   "started_at": "2026-11-01T22:15:19+00:00",
+   "ended_at": "2026-11-01T22:20:01+00:00",
+   "result": "fetched {'robots_disallowed': 2, 'done': 105, 'dns': 6, 'challenge': 14, 'conn_error': 1, 'ssl_error': 6, 'ok': 75, 'blocked_403': 1, 'http_202': 1, 'cut': 1, 'halted_egress': 0}; parsed 3 dioceses",
    "touched": [
-    "unassigned-pa",
-    "diocese-of-harrisburg",
-    "diocese-of-erie",
-    "diocese-of-greensburg"
+    "unassigned-wa",
+    "unassigned-mn",
+    "diocese-of-winona-rochester"
    ]
   }
  ],
  "dioceses": {
   "unassigned-pa": {
    "sites_in_list": 511,
-   "records": 594,
+   "records": 564,
    "finished": true,
-   "ok": 424,
+   "ok": 397,
    "by_status": {
     "ok": 424,
     "challenge": 87,
@@ -1334,17 +1333,18 @@
   },
   "unassigned-wa": {
    "sites_in_list": 136,
-   "records": 120,
-   "finished": false,
-   "ok": 63,
+   "records": 142,
+   "finished": true,
+   "ok": 80,
    "by_status": {
-    "ok": 63,
-    "challenge": 31,
+    "ok": 80,
+    "challenge": 33,
+    "ssl_error": 12,
     "dns": 10,
-    "ssl_error": 10,
     "not_found": 3,
     "http_5xx": 1,
     "conn_error": 1,
+    "blocked_403": 1,
     "http_4xx": 1
    }
   },
@@ -1435,17 +1435,19 @@
   },
   "unassigned-mn": {
    "sites_in_list": 126,
-   "records": 82,
-   "finished": false,
-   "ok": 46,
+   "records": 152,
+   "finished": true,
+   "ok": 94,
    "by_status": {
-    "ok": 46,
-    "challenge": 23,
-    "dns": 4,
-    "ssl_error": 3,
+    "ok": 94,
+    "challenge": 32,
+    "dns": 9,
+    "ssl_error": 7,
+    "conn_error": 3,
+    "robots_disallowed": 2,
     "not_found": 2,
-    "conn_error": 2,
     "http_5xx": 1,
+    "http_202": 1,
     "unreachable_via_proxy": 1
    }
   },
@@ -1845,7 +1847,7 @@
   },
   "diocese-of-harrisburg": {
    "sites_in_list": 89,
-   "records": 90,
+   "records": 89,
    "finished": true,
    "ok": 57,
    "by_status": {
@@ -2466,14 +2468,14 @@
   },
   "diocese-of-winona-rochester": {
    "sites_in_list": 70,
-   "records": 49,
-   "finished": false,
-   "ok": 18,
+   "records": 70,
+   "finished": true,
+   "ok": 32,
    "by_status": {
-    "ok": 18,
-    "dns": 13,
-    "challenge": 11,
-    "ssl_error": 4,
+    "ok": 32,
+    "challenge": 15,
+    "dns": 15,
+    "ssl_error": 5,
     "timeout": 2,
     "http_5xx": 1
    }
@@ -2510,19 +2512,11 @@
   },
   "diocese-of-erie": {
    "sites_in_list": 67,
-   "records": 67,
-   "finished": true,
-   "ok": 38,
+   "records": 1,
+   "finished": false,
+   "ok": 1,
    "by_status": {
-    "ok": 38,
-    "dns": 16,
-    "timeout": 3,
-    "robots_disallowed": 2,
-    "challenge": 2,
-    "ssl_error": 2,
-    "conn_error": 2,
-    "parked": 1,
-    "http_5xx": 1
+    "ok": 1
    }
   },
   "archdiocese-of-oklahoma-city": {
@@ -2794,16 +2788,11 @@
   },
   "diocese-of-greensburg": {
    "sites_in_list": 55,
-   "records": 57,
-   "finished": true,
-   "ok": 43,
+   "records": 11,
+   "finished": false,
+   "ok": 11,
    "by_status": {
-    "ok": 43,
-    "dns": 5,
-    "challenge": 5,
-    "timeout": 2,
-    "conn_error": 1,
-    "not_found": 1
+    "ok": 11
    }
   },
   "diocese-of-birmingham": {
@@ -4119,9 +4108,9 @@
  },
  "totals": {
   "sites_in_list": 19262,
-  "records": 18644,
-  "ok": 9898
+  "records": 17820,
+  "ok": 9500
  },
  "us_parish_pages_discovermass": 20147,
- "updated_at": "2026-11-01T22:20:03+00:00"
+ "updated_at": "2026-11-01T22:20:02+00:00"
 }
