@@ -19,7 +19,7 @@
  "home_url": "http://www.abvmparish.org/",
  "final_url": "https://www.abvmparish.org/",
  "crawl_status": "ok",
- "crawl_env": "sandbox",
+ "crawl_env": "runner-rendered",
  "robots_note": "ok",
  "pages": [
   {
@@ -72,14 +72,33 @@
   ]
  },
  "template": "generic-html:wix",
- "groups": [],
+ "groups": [
+  {
+   "id": "abvmparish.org:choir|clip",
+   "name": "Music Clips",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "choir_music",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.abvmparish.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.abvmparish.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:46:26+00:00",
+   "confidence": "medium"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
  "social": {
   "facebook": [
    "https://www.facebook.com/AssumptionHall",
    "https://www.facebook.com/pages/Assumption-of-the-Blessed-Virgin-Mary-Catholic-Church/166769076790614",
-   "https://www.facebook.com/AssumptionBVMParish"
+   "https://www.facebook.com/v2.4"
   ]
  },
  "bulletin": {
@@ -97,7 +116,7 @@
    "language": null,
    "raw": "Mass Times: Saturday at 4 p.m.",
    "source_url": "https://www.abvmparish.org/",
-   "fetched_at": "2026-11-01T02:12:52+00:00",
+   "fetched_at": "2026-11-01T17:46:26+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -110,7 +129,7 @@
    "language": null,
    "raw": "Mass Times: Sunday at 10 a.m.",
    "source_url": "https://www.abvmparish.org/",
-   "fetched_at": "2026-11-01T02:12:52+00:00",
+   "fetched_at": "2026-11-01T17:46:26+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -123,7 +142,7 @@
    "language": null,
    "raw": "Mass Times: Weekdays at 8 a.m.",
    "source_url": "https://www.abvmparish.org/",
-   "fetched_at": "2026-11-01T02:12:52+00:00",
+   "fetched_at": "2026-11-01T17:46:26+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -137,7 +156,7 @@
    "language": null,
    "raw": "Mass Times: Weekdays at 8 a.m.",
    "source_url": "https://www.abvmparish.org/",
-   "fetched_at": "2026-11-01T02:12:52+00:00",
+   "fetched_at": "2026-11-01T17:46:26+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -151,7 +170,7 @@
    "language": null,
    "raw": "Mass Times: Weekdays at 8 a.m.",
    "source_url": "https://www.abvmparish.org/",
-   "fetched_at": "2026-11-01T02:12:52+00:00",
+   "fetched_at": "2026-11-01T17:46:26+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -165,7 +184,7 @@
    "language": null,
    "raw": "Mass Times: Weekdays at 8 a.m.",
    "source_url": "https://www.abvmparish.org/",
-   "fetched_at": "2026-11-01T02:12:52+00:00",
+   "fetched_at": "2026-11-01T17:46:26+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -179,29 +198,16 @@
    "language": null,
    "raw": "Mass Times: Weekdays at 8 a.m.",
    "source_url": "https://www.abvmparish.org/",
-   "fetched_at": "2026-11-01T02:12:52+00:00",
+   "fetched_at": "2026-11-01T17:46:26+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "wix",
    "day_expanded_from": "Weekdays"
-  },
-  {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "15:00-15:30",
-   "language": null,
-   "raw": "Confessions are heard from 3 to 3:30 p.m. Saturday, or by appointment. Confessions may be face-to-face or behind a screen.",
-   "source_url": "https://www.abvmparish.org/",
-   "fetched_at": "2026-11-01T02:12:52+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "wix"
   }
  ],
  "source_url": "http://www.abvmparish.org/",
- "fetched_at": "2026-11-01T02:12:58+00:00",
+ "fetched_at": "2026-11-01T17:46:38+00:00",
  "schedule_template": {
   "template": "wix",
   "version": "ca-sites/2",
@@ -220,16 +226,18 @@
   "trusted_candidate": false,
   "generic_rows": 7
  },
+ "has_sunday": true,
  "schedule_dropped": {
-  "not_a_service": 1
+  "not_a_service": 1,
+  "prose": 1
  },
  "groups_dropped": {
   "noise": 1,
   "fragment": 2
  },
  "event_counts": {
-  "window_start": "2026-10-31",
-  "window_end_exclusive": "2027-01-29",
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
@@ -237,7 +245,19 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "office_contact": {
+  "email": null,
+  "phone": "(219) 962-7331",
+  "address": null,
+  "source_url": "https://www.abvmparish.org/",
+  "sources": {
+   "phone": "https://www.abvmparish.org/"
+  },
+  "fetched_at": "2026-11-01T17:46:26+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
- }
+ },
+ "fetch_mode": "rendered"
 }
