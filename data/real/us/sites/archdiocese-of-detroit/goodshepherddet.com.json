@@ -17,23 +17,49 @@
   "Detroit"
  ],
  "home_url": "http://www.goodshepherddet.com/",
- "final_url": "https://www.goodshepherddet.com/",
- "crawl_status": "blocked_403",
- "crawl_env": "sandbox",
- "robots_note": "blocked_403",
+ "final_url": "http://goodshepherddet.com/",
+ "crawl_status": "wayback-2024-05-24",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
-   "url": "https://www.goodshepherddet.com/",
-   "status": 403,
-   "class": "blocked_403"
+   "url": "http://goodshepherddet.com/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "http://goodshepherddet.com/stories/?pg=4&pgtitle=ready-to-go-serve-full-time-in-india",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "ministries",
+   "url": "http://goodshepherddet.com/stories/?pg=11&pgtitle=as-the-debate-on-homosexual-marriage-rages-in-western-society",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "calendar",
+   "url": "http://goodshepherddet.com/events/",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "contact",
+   "url": "http://goodshepherddet.com/contact/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "wordpress",
+  "evidence": [
+   "wp-includes"
+  ]
  },
- "template": "none",
+ "template": "wordpress-html",
  "groups": [],
  "calendar_feeds": [],
  "events": [],
@@ -41,9 +67,52 @@
  "bulletin": null,
  "schedule_rows": [],
  "source_url": "http://www.goodshepherddet.com/",
- "fetched_at": "2026-11-01T18:51:44+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-01T20:32:19+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "has_sunday": false,
+ "groups_dropped": {
+  "fragment": 25,
+  "unmatched": 6,
+  "noise": 5
+ },
+ "wayback": {
+  "capture_date": "2024-05-24",
+  "capture_age_days": 891,
+  "prior_status": "blocked_403",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "http://goodshepherddet.com/",
+    "capture": "2024-05-24",
+    "archive_url": "https://web.archive.org/web/20240524184612/http://goodshepherddet.com/"
+   },
+   {
+    "kind": "contact",
+    "original": "http://goodshepherddet.com/contact/",
+    "capture": "2024-05-24",
+    "archive_url": "https://web.archive.org/web/20240524193552/http://goodshepherddet.com/contact/"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }

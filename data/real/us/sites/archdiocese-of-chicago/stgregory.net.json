@@ -17,33 +17,82 @@
   "Chicago"
  ],
  "home_url": "http://www.stgregory.net/",
- "final_url": "https://1stchoiceautoglassllc.com",
- "crawl_status": "blocked_429",
- "crawl_env": "sandbox",
- "robots_note": "ok",
+ "final_url": "https://stgregory.net/",
+ "crawl_status": "wayback-2026-04-20",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
-   "url": "https://1stchoiceautoglassllc.com",
-   "status": 429,
-   "class": "blocked_429"
+   "url": "https://stgregory.net/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "live",
+   "url": "https://stgregory.net/ipc.html",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
   "cms": "unknown",
   "evidence": []
  },
- "template": "none",
+ "template": "generic-html:unknown",
  "groups": [],
  "calendar_feeds": [],
  "events": [],
- "social": {},
+ "social": {
+  "instagram": [
+   "https://www.instagram.com/vavada.inst/"
+  ],
+  "youtube": [
+   "https://www.youtube.com/@vavadaofficial"
+  ],
+  "x": [
+   "https://x.com/vavada_eu"
+  ]
+ },
  "bulletin": null,
  "schedule_rows": [],
  "source_url": "http://www.stgregory.net/",
- "fetched_at": "2026-11-01T18:51:48+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-01T20:15:59+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": true,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "has_sunday": false,
+ "groups_dropped": {},
+ "wayback": {
+  "capture_date": "2026-04-20",
+  "capture_age_days": 195,
+  "prior_status": "blocked_429",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://stgregory.net/",
+    "capture": "2026-04-20",
+    "archive_url": "https://web.archive.org/web/20260420204707/https://stgregory.net/"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }
