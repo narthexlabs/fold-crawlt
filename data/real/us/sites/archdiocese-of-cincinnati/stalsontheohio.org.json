@@ -19,7 +19,7 @@
  "home_url": "https://www.stalsontheohio.org/",
  "final_url": "https://www.stalsontheohio.org/",
  "crawl_status": "ok",
- "crawl_env": "sandbox",
+ "crawl_env": "runner-rendered",
  "robots_note": "ok",
  "pages": [
   {
@@ -61,7 +61,7 @@
    "language": null,
    "raw": "MASS: Tuesdays 8:00 AM",
    "source_url": "https://www.stalsontheohio.org/",
-   "fetched_at": "2026-11-01T02:16:49+00:00",
+   "fetched_at": "2026-11-01T17:50:27+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -74,7 +74,7 @@
    "language": null,
    "raw": "MASS: Thursdays 8:00 AM",
    "source_url": "https://www.stalsontheohio.org/",
-   "fetched_at": "2026-11-01T02:16:49+00:00",
+   "fetched_at": "2026-11-01T17:50:27+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -87,7 +87,7 @@
    "language": null,
    "raw": "MASS: Saturdays 5:00 PM",
    "source_url": "https://www.stalsontheohio.org/",
-   "fetched_at": "2026-11-01T02:16:49+00:00",
+   "fetched_at": "2026-11-01T17:50:27+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -100,7 +100,7 @@
    "language": null,
    "raw": "MASS: Sundays 9:30 AM",
    "source_url": "https://www.stalsontheohio.org/",
-   "fetched_at": "2026-11-01T02:16:49+00:00",
+   "fetched_at": "2026-11-01T17:50:27+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -113,7 +113,7 @@
    "language": null,
    "raw": "CONFESSION: Saturday: 4:00PM to 4:30PM",
    "source_url": "https://www.stalsontheohio.org/",
-   "fetched_at": "2026-11-01T02:16:49+00:00",
+   "fetched_at": "2026-11-01T17:50:27+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -121,7 +121,7 @@
   }
  ],
  "source_url": "https://www.stalsontheohio.org/",
- "fetched_at": "2026-11-01T02:16:50+00:00",
+ "fetched_at": "2026-11-01T17:50:35+00:00",
  "schedule_template": {
   "template": "wix",
   "version": "ca-sites/2",
@@ -140,13 +140,14 @@
   "trusted_candidate": false,
   "generic_rows": 5
  },
+ "has_sunday": true,
  "schedule_dropped": {
   "relative_time": 1
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-10-31",
-  "window_end_exclusive": "2027-01-29",
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
@@ -154,7 +155,21 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "office_contact": {
+  "email": "info@mysite.com",
+  "phone": "(513) 941-3656",
+  "address": "825 Pontius Rd. Cincinnati, OH 45233",
+  "source_url": "https://www.stalsontheohio.org/",
+  "sources": {
+   "email": "https://www.stalsontheohio.org/",
+   "phone": "https://www.stalsontheohio.org/contact",
+   "address": "https://www.stalsontheohio.org/contact"
+  },
+  "fetched_at": "2026-11-01T17:50:27+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
- }
+ },
+ "fetch_mode": "rendered"
 }
