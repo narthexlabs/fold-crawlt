@@ -1,0 +1,186 @@
+{
+ "domain": "flagstafftabernacle.com",
+ "diocese": "unassigned-az",
+ "matched_church_ids": [
+  "osm-way-584483472"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "osm-way-584483472"
+  ]
+ },
+ "names": [
+  "Flagstaff Tabernacle"
+ ],
+ "cities": [
+  "Flagstaff"
+ ],
+ "home_url": "http://flagstafftabernacle.com/",
+ "final_url": "https://flagstafftabernacle.com/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://flagstafftabernacle.com/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "live",
+   "url": "https://flagstafftabernacle.com/live-stream/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://flagstafftabernacle.com/contact/",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-json"
+  ]
+ },
+ "template": "wordpress-rest+html",
+ "groups": [],
+ "calendar_feeds": [
+  {
+   "feed_id": "flagstafftabernacle.com:tribe_rest:4b58d10e",
+   "type": "tribe_rest",
+   "platform": "The Events Calendar (WordPress)",
+   "url": "https://flagstafftabernacle.com/wp-json/tribe/events/v1/events",
+   "page_url": "https://flagstafftabernacle.com/",
+   "label": null,
+   "status": "active",
+   "note": "The Events Calendar (WordPress) REST API",
+   "last_fetch": {
+    "status": 200,
+    "fetched_at": "2026-11-01T17:22:36+00:00",
+    "events_in_window": 3,
+    "kept": 1,
+    "excluded": {
+     "names_person": 2
+    }
+   }
+  }
+ ],
+ "events": [
+  {
+   "id": "6fe79e8b3ed4270b",
+   "title": "Womens Brunch",
+   "start": "2026-11-07T08:00:00-08:00",
+   "end": "2026-11-07T10:00:00-08:00",
+   "all_day": false,
+   "location": null,
+   "category": "community",
+   "recurring": false,
+   "source_url": "https://flagstafftabernacle.com/event/womens-brunch/",
+   "feed_id": "flagstafftabernacle.com:tribe_rest:4b58d10e",
+   "fetched_at": "2026-11-01T17:22:36+00:00"
+  }
+ ],
+ "social": {
+  "livestream": [
+   {
+    "url": "https://flagstafftabernacle.com/live-stream/",
+    "label": "Live Stream",
+    "platform": "flagstafftabernacle.com",
+    "kind": "link"
+   }
+  ]
+ },
+ "bulletin": null,
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:30",
+   "language": null,
+   "raw": "Sunday Service 10:30am",
+   "source_url": "https://flagstafftabernacle.com/",
+   "fetched_at": "2026-11-01T17:21:22+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "19:00",
+   "language": null,
+   "raw": "Wednesday Evening Service 7:00pm",
+   "source_url": "https://flagstafftabernacle.com/",
+   "fetched_at": "2026-11-01T17:21:22+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "15:30",
+   "language": null,
+   "raw": "Every other Sunday we have service at 3:30pm",
+   "source_url": "https://flagstafftabernacle.com/",
+   "fetched_at": "2026-11-01T17:21:22+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  }
+ ],
+ "source_url": "http://flagstafftabernacle.com/",
+ "fetched_at": "2026-11-01T17:22:01+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "box_rows_added": 3
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 3,
+  "kept_after_privacy": 1,
+  "stored": 1,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {
+   "names_person": 2
+  }
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(928) 779-6156",
+  "address": "Po Box 236, Flagstaff, AZ 86002",
+  "source_url": "https://flagstafftabernacle.com/contact/",
+  "sources": {
+   "phone": "https://flagstafftabernacle.com/contact/",
+   "address": "https://flagstafftabernacle.com/contact/"
+  },
+  "fetched_at": "2026-11-01T17:21:50+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

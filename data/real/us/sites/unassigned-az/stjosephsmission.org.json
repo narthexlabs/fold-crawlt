@@ -1,0 +1,144 @@
+{
+ "domain": "stjosephsmission.org",
+ "diocese": "unassigned-az",
+ "matched_church_ids": [
+  "brave:AZ|joseph mayer|"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "brave:AZ|joseph mayer|"
+  ]
+ },
+ "names": [
+  "St Joseph Mayer"
+ ],
+ "cities": [],
+ "home_url": "https://stjosephsmission.org/",
+ "final_url": "https://stjosephsmission.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://stjosephsmission.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stjosephsmission.org/events-calendar/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://stjosephsmission.org/contact-us/",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-json"
+  ]
+ },
+ "template": "wordpress-rest+html",
+ "groups": [],
+ "calendar_feeds": [
+  {
+   "feed_id": "stjosephsmission.org:ics:34e17673",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": null,
+   "page_url": "https://stjosephsmission.org/events-calendar/",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (embedded on page)",
+   "url_withheld": "calendar id is an e-mail address; not stored",
+   "feed_key": "34e1767310ff",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T17:23:53+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
+ "events": [],
+ "social": {
+  "flocknote": [
+   "https://stgermaineinpv.flocknote.com"
+  ]
+ },
+ "bulletin": {
+  "url": "https://parishesonline.com/organization/st-germaine-roman-catholic-parish",
+  "date": null,
+  "kind": "lpi",
+  "text": "",
+  "source_url": "https://stjosephsmission.org/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:30",
+   "language": null,
+   "raw": "Sunday Mass: 8:30 AM & More",
+   "source_url": "https://stjosephsmission.org/",
+   "fetched_at": "2026-11-01T07:19:50+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  }
+ ],
+ "source_url": "https://stjosephsmission.org/",
+ "fetched_at": "2026-11-01T07:19:59+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": true
+   },
+   "score": "high"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "has_sunday": true,
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(928) 772-6350",
+  "address": null,
+  "source_url": "https://stjosephsmission.org/contact-us/",
+  "sources": {
+   "phone": "https://stjosephsmission.org/contact-us/"
+  },
+  "fetched_at": "2026-11-01T07:19:57+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

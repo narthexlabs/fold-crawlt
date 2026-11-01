@@ -1,0 +1,143 @@
+{
+ "domain": "tabella.app",
+ "diocese": "unassigned-az",
+ "matched_church_ids": [
+  "brave:AZ|cross gilbert|"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "brave:AZ|cross gilbert|"
+  ]
+ },
+ "names": [
+  "Holy Cross Gilbert"
+ ],
+ "cities": [],
+ "home_url": "https://tabella.app/",
+ "final_url": "https://tabella.app/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://tabella.app/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://tabella.app/groups",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://tabella.app/mass-times",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://tabella.app/mass-schedule",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://tabella.app/bulletins",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://tabella.app/",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "ecatholic",
+  "evidence": [
+   "ecatholic.com"
+  ]
+ },
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "tabella.app:novena_es",
+   "name": "Grupo de la Novena Intercontinental Guadalupana",
+   "category": "prayer_devotion",
+   "category_label": "Prayer & devotion",
+   "subcategory": "novena",
+   "audience": "all",
+   "language": "es",
+   "language_assumed": false,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://tabella.app/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://tabella.app/groups",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T07:19:55+00:00",
+   "confidence": "medium"
+  }
+ ],
+ "calendar_feeds": [],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/tabellaapp"
+  ],
+  "instagram": [
+   "https://www.instagram.com/tabella.app/"
+  ],
+  "youtube": [
+   "https://www.youtube.com/channel/UC_4xlOhSJGu75M-Hl607psg",
+   "https://www.youtube.com/@tabella_app"
+  ],
+  "x": [
+   "https://x.com/tabella_app"
+  ]
+ },
+ "bulletin": null,
+ "schedule_rows": [],
+ "source_url": "https://tabella.app/",
+ "fetched_at": "2026-11-01T07:20:02+00:00",
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": true,
+  "trusted_candidate": false,
+  "generic_rows": 8
+ },
+ "has_sunday": false,
+ "groups_dropped": {
+  "unmatched": 4
+ },
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}
