@@ -1,0 +1,23 @@
+"""Diocese of Fresno: the diocesan site (www.dioceseoffresno.org) answers a Cloudflare challenge ("Just a moment...") to our client, including
+/robots.txt and /wp-json/. Nothing is collected; the evidence is written to data/real/california/dioceses/fresno/.
+
+    python -I ingest/california/directories/fresno.py
+"""
+from __future__ import annotations
+
+import json
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import common as C  # noqa: E402
+
+LAPTOP_NOTE = (
+    "the same Cloudflare challenge page (HTTP 403, 'Just a moment...') for /robots.txt at about 08:17 UTC; not retried."
+)
+
+HINT = ("A web-search result showed what looks like an eCatholic-hosted copy of the diocese site (`30560.sites.ecatholic.com`). It was NOT used: it would route "
+        "around the Cloudflare challenge on dioceseoffresno.org. Whether to use it is a decision for a person.")
+
+if __name__ == "__main__":
+    print(json.dumps(C.blocked_diocese("fresno", "Diocese of Fresno", ["www.dioceseoffresno.org"], LAPTOP_NOTE, "fresno.py", HINT), indent=2))

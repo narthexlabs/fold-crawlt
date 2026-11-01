@@ -1,0 +1,153 @@
+{
+ "domain": "plattecenter.com",
+ "diocese": "archdiocese-of-omaha",
+ "matched_church_ids": [
+  "archdiocese-of-omaha:St. Joseph Parish - Platte Center"
+ ],
+ "matched": {
+  "directory": [
+   "archdiocese-of-omaha:St. Joseph Parish - Platte Center"
+  ],
+  "discovermass": []
+ },
+ "names": [
+  "St. Joseph Parish - Platte Center"
+ ],
+ "cities": [],
+ "home_url": "https://plattecenter.com/worship",
+ "final_url": "https://plattecenter.com/worship",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://plattecenter.com/worship",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://plattecenter.com/calendar-of-events",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.plattecenter.com/calendar-of-events",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://plattecenter.com/contact-us",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "unknown",
+  "evidence": []
+ },
+ "template": "generic-html:unknown",
+ "groups": [],
+ "calendar_feeds": [
+  {
+   "feed_id": "plattecenter.com:ics:21ece6ce",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": "https://calendar.google.com/calendar/ical/a8e6370b3b6cdd026fb241ead8201e6662e4f77794a5a4d53a8084c81a93e801%40group.calendar.google.com/public/basic.ics",
+   "page_url": "https://plattecenter.com/calendar-of-events",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (embedded on page)",
+   "display_tz": "America/Chicago",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T05:28:46+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
+ "events": [],
+ "social": {},
+ "bulletin": null,
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "19:30",
+   "language": null,
+   "raw": "Mass Times:: 7:30 PM Saturday Night",
+   "source_url": "https://plattecenter.com/worship",
+   "fetched_at": "2026-11-01T05:12:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": null,
+   "raw": "Mass Times:: Sunday Service 10 a.m.",
+   "source_url": "https://plattecenter.com/worship",
+   "fetched_at": "2026-11-01T05:12:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  }
+ ],
+ "source_url": "https://plattecenter.com/worship",
+ "fetched_at": "2026-11-01T05:12:56+00:00",
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": true,
+  "trusted_candidate": false,
+  "generic_rows": 1
+ },
+ "schedule_dropped": {
+  "other_location": 1
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(402) 942-2904",
+  "address": "PO Box 125, Platte Center, NE 68653",
+  "source_url": "https://plattecenter.com/contact-us",
+  "sources": {
+   "phone": "https://plattecenter.com/contact-us",
+   "address": "https://plattecenter.com/contact-us"
+  },
+  "fetched_at": "2026-11-01T05:12:56+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

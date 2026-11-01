@@ -1,0 +1,147 @@
+{
+ "domain": "strichard.org",
+ "diocese": "diocese-of-allentown",
+ "matched_church_ids": [
+  "diocese-of-allentown:St. Richard"
+ ],
+ "matched": {
+  "directory": [
+   "diocese-of-allentown:St. Richard"
+  ],
+  "discovermass": []
+ },
+ "names": [
+  "St. Richard"
+ ],
+ "cities": [],
+ "home_url": "https://strichard.org/",
+ "final_url": "https://strichard.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "timeout",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://strichard.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://strichard.org/bulletins",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://strichard.org/contact-us",
+   "status": null,
+   "class": "conn_error"
+  }
+ ],
+ "cms_guess": {
+  "cms": "godaddy",
+  "evidence": [
+   "content=\"starfield"
+  ]
+ },
+ "template": "generic-html:godaddy",
+ "groups": [],
+ "calendar_feeds": [
+  {
+   "feed_id": "strichard.org:ics:01c70471",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": null,
+   "page_url": "https://strichard.org/",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (embedded on page)",
+   "display_tz": "America/New_York",
+   "url_withheld": "calendar id is an e-mail address; not stored",
+   "feed_key": "01c70471af1c",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T04:32:17+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
+ "events": [],
+ "social": {
+  "youtube": [
+   "https://www.youtube.com/channel/UC5YO_SqC1KeZsyFjO4vpw3Q"
+  ]
+ },
+ "bulletin": {
+  "url": "https://img1.wsimg.com/blobby/go/221ef74a-fe40-45f6-ad35-d66c00145d57/downloads/1a34fb8e-37c0-48e3-81e9-a6b663e53a4b/Twin%20Bulletin%20-%20StR%20and%20StJ23%20(10-25-2026).pdf?ver=1792952651235",
+  "date": "2026-10-25",
+  "kind": "pdf",
+  "text": "Twin Bulletin - StR and StJ23 (10-25-2026) (pdf) Download",
+  "source_url": "https://strichard.org/bulletins"
+ },
+ "schedule_rows": [
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "17:00-17:15",
+   "language": null,
+   "raw": "Sacrament of Reconciliation: Saturdays @ 5:00 pm -5:15 pm or call the rectory to schedule an appointment.",
+   "source_url": "https://strichard.org/",
+   "fetched_at": "2026-11-01T03:59:31+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "godaddy"
+  }
+ ],
+ "source_url": "https://strichard.org/",
+ "fetched_at": "2026-11-01T03:59:48+00:00",
+ "schedule_template": {
+  "template": "godaddy",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 9
+ },
+ "schedule_dropped": {
+  "dated_block": 4
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-10-31",
+  "window_end_exclusive": "2027-01-29",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(570) 467-2315",
+  "address": null,
+  "source_url": "https://strichard.org/",
+  "sources": {
+   "phone": "https://strichard.org/"
+  },
+  "fetched_at": "2026-11-01T03:59:31+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

@@ -1,0 +1,182 @@
+{
+ "domain": "holy-trinity.org",
+ "diocese": "unassigned-ca",
+ "matched_church_ids": [
+  "wd-Q11806220",
+  "wd-Q9338999"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "wd-Q9338999",
+   "wd-Q11806220"
+  ]
+ },
+ "names": [
+  "Holy Trinity Orthodox Cathedral in San Francisco",
+  "Holy Trinity Parish in San Francisco"
+ ],
+ "cities": [
+  "San Francisco"
+ ],
+ "home_url": "https://holy-trinity.org/",
+ "final_url": "https://holy-trinity.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://holy-trinity.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://holy-trinity.org/about/schedule.html",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://holy-trinity.org/about/schedule.html",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://holy-trinity.org/ministries",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://holy-trinity.org/ministries/study-groups",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://holy-trinity.org/ministries/children-church-school",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://holy-trinity.org/weekly-bulletin/2026-1011",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://holy-trinity.org/contact-us",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-json"
+  ]
+ },
+ "template": "wordpress-html",
+ "groups": [
+  {
+   "id": "holy-trinity.org:choir",
+   "name": "Music Ministry / Choir",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "choir_music",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": "Every Sunday",
+   "description": null,
+   "contact_url": "https://holy-trinity.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://holy-trinity.org/ministries",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T02:12:20+00:00",
+   "confidence": "low"
+  }
+ ],
+ "calendar_feeds": [
+  {
+   "feed_id": "holy-trinity.org:ics:4421dff1",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": "https://calendar.google.com/calendar/ical/epavdfcpre74nd7hchmjn549j0%40group.calendar.google.com/public/basic.ics",
+   "page_url": "https://holy-trinity.org/about/schedule.html",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (embedded on page)",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T03:25:33+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/holytrinitycathedral"
+  ],
+  "instagram": [
+   "https://www.instagram.com/holytrinitycathedral_sf/"
+  ],
+  "youtube": [
+   "https://www.youtube.com/channel/UCRcj3JAzlyrlHP5BYcJWWnQ"
+  ],
+  "x": [
+   "https://x.com/holytrinitysf",
+   "https://x.com/HolyTrinitySF"
+  ]
+ },
+ "bulletin": {
+  "url": "https://holy-trinity.org/about/weekly/2026-1011 Weekly Bulletin.pdf",
+  "date": "2026-10-11",
+  "kind": "pdf",
+  "text": "Sunday, October 11, 2026",
+  "source_url": "https://holy-trinity.org/weekly-bulletin/2026-1011"
+ },
+ "schedule_rows": [],
+ "source_url": "https://holy-trinity.org/",
+ "fetched_at": "2026-11-01T02:12:26+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 12
+ },
+ "groups_dropped": {
+  "noise": 1
+ },
+ "event_counts": {
+  "window_start": "2026-10-31",
+  "window_end_exclusive": "2027-01-29",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

@@ -1,0 +1,330 @@
+{
+ "domain": "stanthonykc.org",
+ "diocese": "diocese-of-kansas-city-st-joseph",
+ "matched_church_ids": [
+  "diocese-of-kansas-city-st-joseph:St. Anthony"
+ ],
+ "matched": {
+  "directory": [
+   "diocese-of-kansas-city-st-joseph:St. Anthony"
+  ],
+  "discovermass": []
+ },
+ "names": [
+  "St. Anthony"
+ ],
+ "cities": [
+  "Kansas City"
+ ],
+ "home_url": "https://stanthonykc.org/",
+ "final_url": "https://stanthonykc.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://stanthonykc.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stanthonykc.org/sacraments/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://stanthonykc.org/altar-rosary-bake-sale/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://stanthonykc.org/archived-bulletins/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://stanthonykc.org/stanthonyevents/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://stanthonykc.org/event-pictures/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://stanthonykc.org/contact/",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-json"
+  ]
+ },
+ "template": "wordpress-rest+html",
+ "groups": [
+  {
+   "id": "stanthonykc.org:rosary",
+   "name": "Altar & Rosary Society",
+   "category": "prayer_devotion",
+   "category_label": "Prayer & devotion",
+   "subcategory": "rosary",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stanthonykc.org/contact/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stanthonykc.org/altar-rosary-bake-sale/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T05:16:24+00:00",
+   "confidence": "medium"
+  }
+ ],
+ "calendar_feeds": [
+  {
+   "feed_id": "stanthonykc.org:tribe_rest:6b554ef1",
+   "type": "tribe_rest",
+   "platform": "The Events Calendar (WordPress)",
+   "url": "https://stanthonykc.org/wp-json/tribe/events/v1/events",
+   "page_url": "https://stanthonykc.org/",
+   "label": null,
+   "status": "active",
+   "note": "The Events Calendar (WordPress) REST API",
+   "last_fetch": {
+    "status": 200,
+    "fetched_at": "2026-11-01T05:43:42+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  },
+  {
+   "feed_id": "stanthonykc.org:ics:07ef3e6b",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": null,
+   "page_url": "https://stanthonykc.org/stanthonyevents/",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (embedded on page)",
+   "display_tz": "America/Chicago",
+   "url_withheld": "calendar id is an e-mail address; not stored",
+   "feed_key": "07ef3e6b8530",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T05:43:42+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  },
+  {
+   "feed_id": "stanthonykc.org:ics:6d2f2d8b",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": "https://calendar.google.com/calendar/ical/8kvp7oc576dggvtte93u688hq4%40group.calendar.google.com/public/basic.ics",
+   "page_url": "https://stanthonykc.org/stanthonyevents/",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (embedded on page)",
+   "display_tz": "America/Chicago",
+   "last_fetch": {
+    "status": 404,
+    "fetched_at": "2026-11-01T05:43:43+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
+ "events": [],
+ "social": {},
+ "bulletin": {
+  "url": "https://stanthonykc.org/archived-bulletins/",
+  "date": null,
+  "kind": "page",
+  "text": "Bulletins",
+  "source_url": "https://stanthonykc.org/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": "English",
+   "raw": "Sunday Masses:: English 9 am",
+   "source_url": "https://stanthonykc.org/",
+   "fetched_at": "2026-11-01T05:16:21+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:00",
+   "language": "Spanish",
+   "raw": "Sunday Masses:: Spanish 11 am & 1 pm",
+   "source_url": "https://stanthonykc.org/",
+   "fetched_at": "2026-11-01T05:16:21+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "13:00",
+   "language": "Spanish",
+   "raw": "Sunday Masses:: Spanish 11 am & 1 pm",
+   "source_url": "https://stanthonykc.org/",
+   "fetched_at": "2026-11-01T05:16:21+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Weekday Masses:: Tuesday- Friday: 8 am",
+   "source_url": "https://stanthonykc.org/",
+   "fetched_at": "2026-11-01T05:16:21+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Tuesday- Friday"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Weekday Masses:: Tuesday- Friday: 8 am",
+   "source_url": "https://stanthonykc.org/",
+   "fetched_at": "2026-11-01T05:16:21+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Tuesday- Friday"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Weekday Masses:: Tuesday- Friday: 8 am",
+   "source_url": "https://stanthonykc.org/",
+   "fetched_at": "2026-11-01T05:16:21+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Tuesday- Friday"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Weekday Masses:: Tuesday- Friday: 8 am",
+   "source_url": "https://stanthonykc.org/",
+   "fetched_at": "2026-11-01T05:16:21+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Tuesday- Friday"
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "18:00-19:00",
+   "language": null,
+   "raw": "Holy Hour:: Thursday 6-7 pm",
+   "source_url": "https://stanthonykc.org/",
+   "fetched_at": "2026-11-01T05:16:21+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Friday",
+   "time": "17:00-18:00",
+   "language": null,
+   "raw": "Confessions:: Friday 5-6 pm or by appointment",
+   "source_url": "https://stanthonykc.org/",
+   "fetched_at": "2026-11-01T05:16:21+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  }
+ ],
+ "source_url": "https://stanthonykc.org/",
+ "fetched_at": "2026-11-01T05:16:29+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 8
+ },
+ "groups_dropped": {
+  "noise": 1
+ },
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": "stanthonyoffice@stanthonykc.org",
+  "phone": "(816) 231-5445",
+  "address": "309 BENTON BLVD KANSAS CITY, MO 64124",
+  "source_url": "https://stanthonykc.org/contact/",
+  "sources": {
+   "email": "https://stanthonykc.org/contact/",
+   "phone": "https://stanthonykc.org/contact/",
+   "address": "https://stanthonykc.org/contact/"
+  },
+  "fetched_at": "2026-11-01T05:16:28+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

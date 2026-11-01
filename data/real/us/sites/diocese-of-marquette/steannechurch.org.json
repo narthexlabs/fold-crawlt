@@ -1,0 +1,149 @@
+{
+ "domain": "steannechurch.org",
+ "diocese": "diocese-of-marquette",
+ "matched_church_ids": [
+  "wikipedia:sainte-anne-church-mackinac-island"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "wikipedia:sainte-anne-church-mackinac-island"
+  ]
+ },
+ "names": [
+  "Sainte Anne"
+ ],
+ "cities": [],
+ "home_url": "https://steannechurch.org/",
+ "final_url": "https://steannechurch.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://steannechurch.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://steannechurch.org/sacraments/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://steannechurch.org/bulletins/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://steannechurch.org/calendar/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://steannechurch.org/contact/",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-json"
+  ]
+ },
+ "template": "wordpress-rest+html",
+ "groups": [],
+ "calendar_feeds": [
+  {
+   "feed_id": "steannechurch.org:ics:02089908",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": null,
+   "page_url": "https://steannechurch.org/",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (embedded on page)",
+   "display_tz": "America/New_York",
+   "url_withheld": "calendar id is an e-mail address; not stored",
+   "feed_key": "02089908eb91",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T03:49:55+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/steanneschurch"
+  ]
+ },
+ "bulletin": {
+  "url": "https://steannechurch.org/wp-content/uploads/2026/10/Ste.-Annes-Bulletin-11-1-26.pdf",
+  "date": "2026-11-01",
+  "kind": "pdf",
+  "text": "Ste. Anne's Bulletin 11-1-26",
+  "source_url": "https://steannechurch.org/bulletins/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Saturday: Before 5:30 PM Mass beginning at 5:00 PM",
+   "source_url": "https://steannechurch.org/sacraments/",
+   "fetched_at": "2026-11-01T03:06:42+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  }
+ ],
+ "source_url": "https://steannechurch.org/",
+ "fetched_at": "2026-11-01T03:06:49+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": true
+   },
+   "score": "high"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 7
+ },
+ "schedule_dropped": {
+  "no_day": 1,
+  "relative_time": 1
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-10-31",
+  "window_end_exclusive": "2027-01-29",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

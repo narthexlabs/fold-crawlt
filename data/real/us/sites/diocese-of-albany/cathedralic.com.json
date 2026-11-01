@@ -1,0 +1,173 @@
+{
+ "domain": "cathedralic.com",
+ "diocese": "diocese-of-albany",
+ "matched_church_ids": [
+  "diocese-of-albany:Cathedral of the Immaculate Conception",
+  "wd-Q2942863"
+ ],
+ "matched": {
+  "directory": [
+   "diocese-of-albany:Cathedral of the Immaculate Conception"
+  ],
+  "discovermass": [
+   "wd-Q2942863"
+  ]
+ },
+ "names": [
+  "Cathedral of the Immaculate Conception"
+ ],
+ "cities": [
+  "Albany"
+ ],
+ "home_url": "http://www.cathedralic.com/",
+ "final_url": "https://cathedralic.com/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://cathedralic.com/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://cathedralic.com/mass-schedule/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://cathedralic.com/lent-holy-week-easter-mass-schedule/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://cathedralic.com/administration/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://cathedralic.com/bulletin/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://cathedralic.com/contact-cathedral-music/",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-includes"
+  ]
+ },
+ "template": "wordpress-html",
+ "groups": [
+  {
+   "id": "cathedralic.com:choir",
+   "name": "Cathedral Music",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "choir_music",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://cathedralic.com/contact-cathedral-music/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://cathedralic.com/administration/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T02:07:51+00:00",
+   "confidence": "medium"
+  }
+ ],
+ "calendar_feeds": [],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/165150043844980",
+   "https://www.facebook.com/cathedralalbany",
+   "https://www.facebook.com/165150043844980_1665373535627015"
+  ]
+ },
+ "bulletin": {
+  "url": "https://cathedralic.com/bulletin/",
+  "date": null,
+  "kind": "page",
+  "text": "Bulletin",
+  "source_url": "https://cathedralic.com/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:00",
+   "language": null,
+   "raw": "The Holy Eucharist (Mass): 11:00 a.m., and 5:00 p.m. on Sunday",
+   "source_url": "https://cathedralic.com/mass-schedule/",
+   "fetched_at": "2026-11-01T02:07:48+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "17:00",
+   "language": null,
+   "raw": "The Holy Eucharist (Mass): 11:00 a.m., and 5:00 p.m. on Sunday",
+   "source_url": "https://cathedralic.com/mass-schedule/",
+   "fetched_at": "2026-11-01T02:07:48+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  }
+ ],
+ "source_url": "http://www.cathedralic.com/",
+ "fetched_at": "2026-11-01T02:07:57+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 7
+ },
+ "groups_dropped": {
+  "unmatched": 2,
+  "noise": 2
+ },
+ "event_counts": {
+  "window_start": "2026-10-31",
+  "window_end_exclusive": "2027-01-29",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

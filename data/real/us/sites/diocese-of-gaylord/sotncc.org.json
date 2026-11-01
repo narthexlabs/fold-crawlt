@@ -1,0 +1,177 @@
+{
+ "domain": "sotncc.org",
+ "diocese": "diocese-of-gaylord",
+ "matched_church_ids": [
+  "diocese-of-gaylord:Holy Family",
+  "diocese-of-gaylord:St. Joseph"
+ ],
+ "matched": {
+  "directory": [
+   "diocese-of-gaylord:St. Joseph",
+   "diocese-of-gaylord:Holy Family"
+  ],
+  "discovermass": []
+ },
+ "names": [
+  "St. Joseph",
+  "Holy Family"
+ ],
+ "cities": [
+  "West Branch"
+ ],
+ "home_url": "https://www.sotncc.org/",
+ "final_url": "https://www.sotncc.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://www.sotncc.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.sotncc.org/sacraments",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.sotncc.org/ministries",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://www.sotncc.org/bulletins",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "duda",
+  "evidence": [
+   "static.cdn-website.com"
+  ]
+ },
+ "template": "generic-html:duda",
+ "groups": [],
+ "calendar_feeds": [],
+ "events": [],
+ "social": {},
+ "bulletin": {
+  "url": "https://discovermass.com/church/holy-family-west-branch-mi",
+  "date": null,
+  "kind": "discovermass",
+  "text": "Bulletin – Holy Family Church",
+  "source_url": "https://www.sotncc.org/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": null,
+   "raw": "[St. Joseph] Saturday (Vigil Mass): 5:00pm, St. Joseph",
+   "source_url": "https://www.sotncc.org/sacraments",
+   "fetched_at": "2026-11-01T02:14:05+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "[St. Joseph] Saturday (Vigil Mass): 8:00am, St. Joseph",
+   "source_url": "https://www.sotncc.org/sacraments",
+   "fetched_at": "2026-11-01T02:14:05+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": null,
+   "raw": "[Holy Family] Saturday (Vigil Mass): 10:00am, Holy Family",
+   "source_url": "https://www.sotncc.org/sacraments",
+   "fetched_at": "2026-11-01T02:14:05+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "12:00",
+   "language": null,
+   "raw": "[St. Joseph] Saturday (Vigil Mass): 12:00pm, St. Joseph",
+   "source_url": "https://www.sotncc.org/sacraments",
+   "fetched_at": "2026-11-01T02:14:05+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "14:30-16:30",
+   "language": null,
+   "raw": "[St. Joseph] Confession Times: — 2:30–4:30pm, St. Joseph",
+   "source_url": "https://www.sotncc.org/",
+   "fetched_at": "2026-11-01T02:14:04+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  }
+ ],
+ "source_url": "https://www.sotncc.org/",
+ "fetched_at": "2026-11-01T02:14:07+00:00",
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": true,
+  "trusted_candidate": false,
+  "generic_rows": 4
+ },
+ "schedule_dropped": {
+  "other_location": 3
+ },
+ "groups_dropped": {
+  "sentence": 2
+ },
+ "event_counts": {
+  "window_start": "2026-10-31",
+  "window_end_exclusive": "2027-01-29",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

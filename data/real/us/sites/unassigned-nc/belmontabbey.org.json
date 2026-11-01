@@ -1,0 +1,183 @@
+{
+ "domain": "belmontabbey.org",
+ "diocese": "unassigned-nc",
+ "matched_church_ids": [
+  "wikipedia:belmont-abbey-north-carolina"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "wikipedia:belmont-abbey-north-carolina"
+  ]
+ },
+ "names": [
+  "Basilica of Mary Help of Christians",
+  "Belmont Abbey"
+ ],
+ "cities": [
+  "North Carolina"
+ ],
+ "home_url": "http://www.belmontabbey.org/",
+ "final_url": "https://belmontabbey.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://belmontabbey.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://belmontabbey.org/our-liturgy-schedule/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://belmontabbey.org/our-daily-schedule/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://belmontabbey.org/belmont-abbey-college/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://belmontabbey.org/events",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "live",
+   "url": "https://belmontabbey.org/livestream-mass/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://belmontabbey.org/contact-us/",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-content"
+  ]
+ },
+ "template": "wordpress-rest+html",
+ "groups": [],
+ "calendar_feeds": [
+  {
+   "feed_id": "belmontabbey.org:tribe_rest:a6f52e37",
+   "type": "tribe_rest",
+   "platform": "The Events Calendar (WordPress)",
+   "url": "https://belmontabbey.org/wp-json/tribe/events/v1/events",
+   "page_url": "https://belmontabbey.org/",
+   "label": null,
+   "status": "no_public_feed",
+   "note": "The Events Calendar markers on the site, but its REST route is not available"
+  }
+ ],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/BelmontAbbeyOSB"
+  ],
+  "youtube": [
+   "https://www.youtube.com/@belmontabbeycollege"
+  ],
+  "livestream": [
+   {
+    "url": "https://belmontabbey.org/livestream-mass",
+    "label": "LIVESTREAM MASS",
+    "platform": "belmontabbey.org",
+    "kind": "link"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=TJjKFAgNQzA&list=PLvcZs0cBuvsjebdW2OVDYW-iRjR0PVlQw",
+    "label": "WATCH OUR MASS LIVESTREAMS",
+    "platform": "www.youtube.com",
+    "kind": "link"
+   },
+   {
+    "url": "https://belmontabbey.org/our-daily-schedule/",
+    "label": "WATCH SUNDAY LIVESTREAM",
+    "platform": "belmontabbey.org",
+    "kind": "link"
+   },
+   {
+    "url": "https://www.youtube.com/@belmontabbeycollege/streams",
+    "label": "visit Belmont Abbey College’s YouTube page and click on the ",
+    "platform": "youtube",
+    "kind": "link"
+   }
+  ]
+ },
+ "bulletin": null,
+ "schedule_rows": [],
+ "source_url": "http://www.belmontabbey.org/",
+ "fetched_at": "2026-11-01T03:06:39+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "schedule_images": [
+  {
+   "url": "https://belmontabbey.org/wp-content/uploads/2022/06/BEL-2022-06-07-Mass-Schedule-Hero.jpg",
+   "alt": "",
+   "page": "https://belmontabbey.org/our-liturgy-schedule/"
+  },
+  {
+   "url": "https://belmontabbey.org/wp-content/uploads/2022/06/BEL-2022-06-07-Daily-Schedule-Hero.jpg",
+   "alt": "",
+   "page": "https://belmontabbey.org/our-daily-schedule/"
+  },
+  {
+   "url": "https://belmontabbey.org/wp-content/uploads/2022/06/BEL-2022-06-07-Daily-Schedule-Body-Image.jpg",
+   "alt": "",
+   "page": "https://belmontabbey.org/our-daily-schedule/"
+  },
+  {
+   "url": "https://belmontabbey.org/wp-content/uploads/2021/09/Schedule-a-visit.png",
+   "alt": "",
+   "page": "https://belmontabbey.org/"
+  }
+ ],
+ "schedule_note": "schedule appears to be an image; times not read (needs_review)",
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-10-31",
+  "window_end_exclusive": "2027-01-29",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

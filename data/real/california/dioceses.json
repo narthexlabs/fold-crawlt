@@ -1,0 +1,766 @@
+{
+  "built_at": "2026-10-31T08:24:46+00:00",
+  "about": "California's 12 Latin-rite Catholic dioceses. Each is a set of whole counties; the 58 counties are each in exactly one. Use county_index (Census county GEOID -> diocese slug) or public/ca-dioceses.geojson (point in polygon) to assign a church.",
+  "boundary_source": "https://www2.census.gov/geo/tiger/GENZ2024/shp/cb_2024_us_county_500k.zip",
+  "boundary_note": "US Census Bureau cartographic boundary counties 2024, 1:500k, public domain",
+  "dioceses": [
+    {
+      "slug": "los-angeles",
+      "name": "Archdiocese of Los Angeles",
+      "short_name": "Los Angeles",
+      "rank": "archdiocese",
+      "province": "los-angeles",
+      "see_city": "Los Angeles",
+      "website": "https://lacatholics.org",
+      "cathedral": {
+        "name": "Cathedral of Our Lady of the Angels",
+        "address": "555 W Temple St, Los Angeles, CA 90012",
+        "lat": 34.057807,
+        "lng": -118.245953,
+        "coords_source": "US Census Geocoder (Public_AR_Current)",
+        "geocoder_matched": "555 W TEMPLE ST, LOS ANGELES, CA, 90012"
+      },
+      "counties": [
+        {
+          "name": "Los Angeles",
+          "geoid": "06037"
+        },
+        {
+          "name": "Santa Barbara",
+          "geoid": "06083"
+        },
+        {
+          "name": "Ventura",
+          "geoid": "06111"
+        }
+      ],
+      "source_url": "https://lacatholics.org/santa-barbara-pastoral-region/",
+      "sources": [
+        {
+          "kind": "read",
+          "url": "https://lacatholics.org/santa-barbara-pastoral-region/",
+          "says": "Pastoral Region Area: Santa Barbara and Ventura Counties",
+          "fetched_at": "2026-10-31"
+        },
+        {
+          "kind": "read",
+          "url": "https://lacatholics.org/san-pedro-pastoral-region/",
+          "says": "Long Beach and Southern Los Angeles County",
+          "fetched_at": "2026-10-31"
+        },
+        {
+          "kind": "reference",
+          "url": "https://en.wikipedia.org/wiki/Roman_Catholic_Archdiocese_of_Los_Angeles",
+          "says": null,
+          "fetched_at": null
+        }
+      ],
+      "counties_verified_from_diocese_site": true,
+      "fetched_at": "2026-10-31"
+    },
+    {
+      "slug": "san-francisco",
+      "name": "Archdiocese of San Francisco",
+      "short_name": "San Francisco",
+      "rank": "archdiocese",
+      "province": "san-francisco",
+      "see_city": "San Francisco",
+      "website": "https://sfarch.org",
+      "cathedral": {
+        "name": "Cathedral of Saint Mary of the Assumption",
+        "address": "1111 Gough St, San Francisco, CA 94109",
+        "lat": 37.784394,
+        "lng": -122.42457,
+        "coords_source": "US Census Geocoder (Public_AR_Current)",
+        "geocoder_matched": "1111 GOUGH ST, SAN FRANCISCO, CA, 94109"
+      },
+      "counties": [
+        {
+          "name": "Marin",
+          "geoid": "06041"
+        },
+        {
+          "name": "San Francisco",
+          "geoid": "06075"
+        },
+        {
+          "name": "San Mateo",
+          "geoid": "06081"
+        }
+      ],
+      "source_url": "https://sfarch.org/wp-json/wp/v2/pages?search=Marin",
+      "sources": [
+        {
+          "kind": "read",
+          "url": "https://sfarch.org/wp-json/wp/v2/pages?search=Marin",
+          "says": "Restorative Justice Ministry page: within Marin, San Francisco, and San Mateo counties",
+          "fetched_at": "2026-10-31"
+        },
+        {
+          "kind": "reference",
+          "url": "https://en.wikipedia.org/wiki/Roman_Catholic_Archdiocese_of_San_Francisco",
+          "says": null,
+          "fetched_at": null
+        }
+      ],
+      "counties_verified_from_diocese_site": true,
+      "fetched_at": "2026-10-31"
+    },
+    {
+      "slug": "fresno",
+      "name": "Diocese of Fresno",
+      "short_name": "Fresno",
+      "rank": "diocese",
+      "province": "los-angeles",
+      "see_city": "Fresno",
+      "website": "https://dioceseoffresno.org",
+      "cathedral": {
+        "name": "St. John's Cathedral",
+        "address": "2814 Mariposa St, Fresno, CA 93721",
+        "lat": 36.740796,
+        "lng": -119.782797,
+        "coords_source": "US Census Geocoder (Public_AR_Current)",
+        "geocoder_matched": "2814 MARIPOSA ST, FRESNO, CA, 93721"
+      },
+      "counties": [
+        {
+          "name": "Fresno",
+          "geoid": "06019"
+        },
+        {
+          "name": "Inyo",
+          "geoid": "06027"
+        },
+        {
+          "name": "Kern",
+          "geoid": "06029"
+        },
+        {
+          "name": "Kings",
+          "geoid": "06031"
+        },
+        {
+          "name": "Madera",
+          "geoid": "06039"
+        },
+        {
+          "name": "Mariposa",
+          "geoid": "06043"
+        },
+        {
+          "name": "Merced",
+          "geoid": "06047"
+        },
+        {
+          "name": "Tulare",
+          "geoid": "06107"
+        }
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Roman_Catholic_Diocese_of_Fresno",
+      "sources": [
+        {
+          "kind": "reference",
+          "url": "https://en.wikipedia.org/wiki/Roman_Catholic_Diocese_of_Fresno",
+          "says": null,
+          "fetched_at": null
+        }
+      ],
+      "counties_verified_from_diocese_site": false,
+      "fetched_at": "2026-10-31"
+    },
+    {
+      "slug": "monterey",
+      "name": "Diocese of Monterey",
+      "short_name": "Monterey",
+      "rank": "diocese",
+      "province": "los-angeles",
+      "see_city": "Monterey",
+      "website": "https://www.dioceseofmonterey.org",
+      "cathedral": {
+        "name": "Cathedral of San Carlos Borromeo",
+        "address": "500 Church St, Monterey, CA 93940",
+        "lat": 36.595923,
+        "lng": -121.890785,
+        "coords_source": "US Census Geocoder (Public_AR_Current)",
+        "geocoder_matched": "500 CHURCH ST, MONTEREY, CA, 93940"
+      },
+      "counties": [
+        {
+          "name": "Monterey",
+          "geoid": "06053"
+        },
+        {
+          "name": "San Benito",
+          "geoid": "06069"
+        },
+        {
+          "name": "San Luis Obispo",
+          "geoid": "06079"
+        },
+        {
+          "name": "Santa Cruz",
+          "geoid": "06087"
+        }
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Roman_Catholic_Diocese_of_Monterey_in_California",
+      "sources": [
+        {
+          "kind": "reference",
+          "url": "https://en.wikipedia.org/wiki/Roman_Catholic_Diocese_of_Monterey_in_California",
+          "says": null,
+          "fetched_at": null
+        }
+      ],
+      "counties_verified_from_diocese_site": false,
+      "fetched_at": "2026-10-31"
+    },
+    {
+      "slug": "oakland",
+      "name": "Diocese of Oakland",
+      "short_name": "Oakland",
+      "rank": "diocese",
+      "province": "san-francisco",
+      "see_city": "Oakland",
+      "website": "https://oakdiocese.org",
+      "cathedral": {
+        "name": "Cathedral of Christ the Light",
+        "address": "2121 Harrison St, Oakland, CA 94612",
+        "lat": 37.809575,
+        "lng": -122.263023,
+        "coords_source": "US Census Geocoder (Public_AR_Current)",
+        "geocoder_matched": "2121 HARRISON ST, OAKLAND, CA, 94612"
+      },
+      "counties": [
+        {
+          "name": "Alameda",
+          "geoid": "06001"
+        },
+        {
+          "name": "Contra Costa",
+          "geoid": "06013"
+        }
+      ],
+      "source_url": "https://www.oakdiocese.org/history-of-our-diocese/",
+      "sources": [
+        {
+          "kind": "read",
+          "url": "https://www.oakdiocese.org/history-of-our-diocese/",
+          "says": "covers Alameda and Contra Costa counties (read for docs/research/09-diocese-of-oakland.md)",
+          "fetched_at": "2026-10-31"
+        },
+        {
+          "kind": "reference",
+          "url": "https://en.wikipedia.org/wiki/Roman_Catholic_Diocese_of_Oakland",
+          "says": null,
+          "fetched_at": null
+        }
+      ],
+      "counties_verified_from_diocese_site": true,
+      "fetched_at": "2026-10-31"
+    },
+    {
+      "slug": "orange",
+      "name": "Diocese of Orange",
+      "short_name": "Orange",
+      "rank": "diocese",
+      "province": "los-angeles",
+      "see_city": "Orange",
+      "website": "https://www.rcbo.org",
+      "cathedral": {
+        "name": "Christ Cathedral",
+        "address": "13280 Chapman Ave, Garden Grove, CA 92840",
+        "lat": 33.788836,
+        "lng": -117.90212,
+        "coords_source": "US Census Geocoder (Public_AR_Census2020)",
+        "geocoder_matched": "13280 W CHAPMAN AVE, GARDEN GROVE, CA, 92840"
+      },
+      "counties": [
+        {
+          "name": "Orange",
+          "geoid": "06059"
+        }
+      ],
+      "source_url": "https://www.rcbo.org/",
+      "sources": [
+        {
+          "kind": "read",
+          "url": "https://www.rcbo.org/",
+          "says": "In the heart of Orange County",
+          "fetched_at": "2026-10-31"
+        },
+        {
+          "kind": "reference",
+          "url": "https://en.wikipedia.org/wiki/Roman_Catholic_Diocese_of_Orange",
+          "says": null,
+          "fetched_at": null
+        }
+      ],
+      "counties_verified_from_diocese_site": true,
+      "fetched_at": "2026-10-31"
+    },
+    {
+      "slug": "sacramento",
+      "name": "Diocese of Sacramento",
+      "short_name": "Sacramento",
+      "rank": "diocese",
+      "province": "san-francisco",
+      "see_city": "Sacramento",
+      "website": "https://www.scd.org",
+      "cathedral": {
+        "name": "Cathedral of the Blessed Sacrament",
+        "address": "1017 11th St, Sacramento, CA 95814",
+        "lat": 38.579808,
+        "lng": -121.492101,
+        "coords_source": "US Census Geocoder (Public_AR_Current)",
+        "geocoder_matched": "1017 11TH ST, SACRAMENTO, CA, 95814"
+      },
+      "counties": [
+        {
+          "name": "Amador",
+          "geoid": "06005"
+        },
+        {
+          "name": "Butte",
+          "geoid": "06007"
+        },
+        {
+          "name": "Colusa",
+          "geoid": "06011"
+        },
+        {
+          "name": "El Dorado",
+          "geoid": "06017"
+        },
+        {
+          "name": "Glenn",
+          "geoid": "06021"
+        },
+        {
+          "name": "Lassen",
+          "geoid": "06035"
+        },
+        {
+          "name": "Modoc",
+          "geoid": "06049"
+        },
+        {
+          "name": "Nevada",
+          "geoid": "06057"
+        },
+        {
+          "name": "Placer",
+          "geoid": "06061"
+        },
+        {
+          "name": "Plumas",
+          "geoid": "06063"
+        },
+        {
+          "name": "Sacramento",
+          "geoid": "06067"
+        },
+        {
+          "name": "Shasta",
+          "geoid": "06089"
+        },
+        {
+          "name": "Sierra",
+          "geoid": "06091"
+        },
+        {
+          "name": "Siskiyou",
+          "geoid": "06093"
+        },
+        {
+          "name": "Solano",
+          "geoid": "06095"
+        },
+        {
+          "name": "Sutter",
+          "geoid": "06101"
+        },
+        {
+          "name": "Tehama",
+          "geoid": "06103"
+        },
+        {
+          "name": "Trinity",
+          "geoid": "06105"
+        },
+        {
+          "name": "Yolo",
+          "geoid": "06113"
+        },
+        {
+          "name": "Yuba",
+          "geoid": "06115"
+        }
+      ],
+      "source_url": "https://www.scd.org/",
+      "sources": [
+        {
+          "kind": "read",
+          "url": "https://www.scd.org/",
+          "says": "serves 20 counties of northern California (the count; the list is from the reference)",
+          "fetched_at": "2026-10-31"
+        },
+        {
+          "kind": "reference",
+          "url": "https://en.wikipedia.org/wiki/Roman_Catholic_Diocese_of_Sacramento",
+          "says": null,
+          "fetched_at": null
+        }
+      ],
+      "counties_verified_from_diocese_site": true,
+      "fetched_at": "2026-10-31"
+    },
+    {
+      "slug": "san-bernardino",
+      "name": "Diocese of San Bernardino",
+      "short_name": "San Bernardino",
+      "rank": "diocese",
+      "province": "los-angeles",
+      "see_city": "San Bernardino",
+      "website": "https://www.sbdcatholics.org",
+      "cathedral": {
+        "name": "Cathedral of Our Lady of the Rosary",
+        "address": "2525 N Arrowhead Ave, San Bernardino, CA 92405",
+        "lat": 34.138919,
+        "lng": -117.289589,
+        "coords_source": "US Census Geocoder (Public_AR_Current)",
+        "geocoder_matched": "2525 N ARROWHEAD AVE, SAN BERNARDINO, CA, 92405"
+      },
+      "counties": [
+        {
+          "name": "Riverside",
+          "geoid": "06065"
+        },
+        {
+          "name": "San Bernardino",
+          "geoid": "06071"
+        }
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Roman_Catholic_Diocese_of_San_Bernardino",
+      "sources": [
+        {
+          "kind": "reference",
+          "url": "https://en.wikipedia.org/wiki/Roman_Catholic_Diocese_of_San_Bernardino",
+          "says": null,
+          "fetched_at": null
+        }
+      ],
+      "counties_verified_from_diocese_site": true,
+      "fetched_at": "2026-10-31",
+      "counties_source_url": "https://sbdcatholics.org/about/",
+      "counties_note": "Verified 2026-10-31 from the diocese site (About FAQ and wp-json: San Bernardino and Riverside counties); see data/real/california/dioceses/san-bernardino/structure.json"
+    },
+    {
+      "slug": "san-diego",
+      "name": "Diocese of San Diego",
+      "short_name": "San Diego",
+      "rank": "diocese",
+      "province": "los-angeles",
+      "see_city": "San Diego",
+      "website": "https://sdcatholic.org",
+      "cathedral": {
+        "name": "St. Joseph Cathedral",
+        "address": "1535 3rd Ave, San Diego, CA 92101",
+        "lat": 32.721312,
+        "lng": -117.161966,
+        "coords_source": "US Census Geocoder (Public_AR_Current)",
+        "geocoder_matched": "1535 3RD AVE, SAN DIEGO, CA, 92101"
+      },
+      "counties": [
+        {
+          "name": "Imperial",
+          "geoid": "06025"
+        },
+        {
+          "name": "San Diego",
+          "geoid": "06073"
+        }
+      ],
+      "source_url": "https://www.sdcatholic.org/wp-json/wp/v2/pages?search=Imperial",
+      "sources": [
+        {
+          "kind": "read",
+          "url": "https://www.sdcatholic.org/wp-json/wp/v2/pages?search=Imperial",
+          "says": "96 parishes and 13 missions across 9,000 square miles of San Diego and Imperial Counties",
+          "fetched_at": "2026-10-31"
+        },
+        {
+          "kind": "reference",
+          "url": "https://en.wikipedia.org/wiki/Roman_Catholic_Diocese_of_San_Diego",
+          "says": null,
+          "fetched_at": null
+        }
+      ],
+      "counties_verified_from_diocese_site": true,
+      "fetched_at": "2026-10-31"
+    },
+    {
+      "slug": "san-jose",
+      "name": "Diocese of San Jose",
+      "short_name": "San Jose",
+      "rank": "diocese",
+      "province": "san-francisco",
+      "see_city": "San Jose",
+      "website": "https://dsj.org",
+      "cathedral": {
+        "name": "Cathedral Basilica of St. Joseph",
+        "address": "80 S Market St, San Jose, CA 95113",
+        "lat": 37.333988,
+        "lng": -121.890873,
+        "coords_source": "US Census Geocoder (Public_AR_Current)",
+        "geocoder_matched": "80 S MARKET ST, SAN JOSE, CA, 95113"
+      },
+      "counties": [
+        {
+          "name": "Santa Clara",
+          "geoid": "06085"
+        }
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Roman_Catholic_Diocese_of_San_Jose_in_California",
+      "sources": [
+        {
+          "kind": "reference",
+          "url": "https://en.wikipedia.org/wiki/Roman_Catholic_Diocese_of_San_Jose_in_California",
+          "says": null,
+          "fetched_at": null
+        }
+      ],
+      "counties_verified_from_diocese_site": true,
+      "fetched_at": "2026-10-31",
+      "counties_source_url": "https://www.dsj.org/about-us/",
+      "counties_note": "Verified 2026-10-31 from the diocese site (\"serves all of Santa Clara County\")"
+    },
+    {
+      "slug": "santa-rosa",
+      "name": "Diocese of Santa Rosa",
+      "short_name": "Santa Rosa",
+      "rank": "diocese",
+      "province": "san-francisco",
+      "see_city": "Santa Rosa",
+      "website": "https://srdiocese.org",
+      "cathedral": {
+        "name": "Cathedral of St. Eugene",
+        "address": "2323 Montgomery Dr, Santa Rosa, CA 95405",
+        "lat": 38.447011,
+        "lng": -122.686584,
+        "coords_source": "US Census Geocoder (Public_AR_Current)",
+        "geocoder_matched": "2323 MONTGOMERY DR, SANTA ROSA, CA, 95405"
+      },
+      "counties": [
+        {
+          "name": "Del Norte",
+          "geoid": "06015"
+        },
+        {
+          "name": "Humboldt",
+          "geoid": "06023"
+        },
+        {
+          "name": "Lake",
+          "geoid": "06033"
+        },
+        {
+          "name": "Mendocino",
+          "geoid": "06045"
+        },
+        {
+          "name": "Napa",
+          "geoid": "06055"
+        },
+        {
+          "name": "Sonoma",
+          "geoid": "06097"
+        }
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Roman_Catholic_Diocese_of_Santa_Rosa_in_California",
+      "sources": [
+        {
+          "kind": "reference",
+          "url": "https://en.wikipedia.org/wiki/Roman_Catholic_Diocese_of_Santa_Rosa_in_California",
+          "says": null,
+          "fetched_at": null
+        }
+      ],
+      "counties_verified_from_diocese_site": false,
+      "fetched_at": "2026-10-31"
+    },
+    {
+      "slug": "stockton",
+      "name": "Diocese of Stockton",
+      "short_name": "Stockton",
+      "rank": "diocese",
+      "province": "san-francisco",
+      "see_city": "Stockton",
+      "website": "https://stocktondiocese.org",
+      "cathedral": {
+        "name": "Cathedral of the Annunciation",
+        "address": "425 W Magnolia St, Stockton, CA 95203",
+        "lat": 37.962465,
+        "lng": -121.299625,
+        "coords_source": "US Census Geocoder (Public_AR_Current)",
+        "geocoder_matched": "425 W MAGNOLIA ST, STOCKTON, CA, 95203"
+      },
+      "counties": [
+        {
+          "name": "Alpine",
+          "geoid": "06003"
+        },
+        {
+          "name": "Calaveras",
+          "geoid": "06009"
+        },
+        {
+          "name": "Mono",
+          "geoid": "06051"
+        },
+        {
+          "name": "San Joaquin",
+          "geoid": "06077"
+        },
+        {
+          "name": "Stanislaus",
+          "geoid": "06099"
+        },
+        {
+          "name": "Tuolumne",
+          "geoid": "06109"
+        }
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Roman_Catholic_Diocese_of_Stockton",
+      "sources": [
+        {
+          "kind": "reference",
+          "url": "https://en.wikipedia.org/wiki/Roman_Catholic_Diocese_of_Stockton",
+          "says": null,
+          "fetched_at": null
+        }
+      ],
+      "counties_verified_from_diocese_site": false,
+      "fetched_at": "2026-10-31"
+    }
+  ],
+  "county_index": {
+    "06001": "oakland",
+    "06003": "stockton",
+    "06005": "sacramento",
+    "06007": "sacramento",
+    "06009": "stockton",
+    "06011": "sacramento",
+    "06013": "oakland",
+    "06015": "santa-rosa",
+    "06017": "sacramento",
+    "06019": "fresno",
+    "06021": "sacramento",
+    "06023": "santa-rosa",
+    "06025": "san-diego",
+    "06027": "fresno",
+    "06029": "fresno",
+    "06031": "fresno",
+    "06033": "santa-rosa",
+    "06035": "sacramento",
+    "06037": "los-angeles",
+    "06039": "fresno",
+    "06041": "san-francisco",
+    "06043": "fresno",
+    "06045": "santa-rosa",
+    "06047": "fresno",
+    "06049": "sacramento",
+    "06051": "stockton",
+    "06053": "monterey",
+    "06055": "santa-rosa",
+    "06057": "sacramento",
+    "06059": "orange",
+    "06061": "sacramento",
+    "06063": "sacramento",
+    "06065": "san-bernardino",
+    "06067": "sacramento",
+    "06069": "monterey",
+    "06071": "san-bernardino",
+    "06073": "san-diego",
+    "06075": "san-francisco",
+    "06077": "stockton",
+    "06079": "monterey",
+    "06081": "san-francisco",
+    "06083": "los-angeles",
+    "06085": "san-jose",
+    "06087": "monterey",
+    "06089": "sacramento",
+    "06091": "sacramento",
+    "06093": "sacramento",
+    "06095": "sacramento",
+    "06097": "santa-rosa",
+    "06099": "stockton",
+    "06101": "sacramento",
+    "06103": "sacramento",
+    "06105": "sacramento",
+    "06107": "fresno",
+    "06109": "stockton",
+    "06111": "los-angeles",
+    "06113": "sacramento",
+    "06115": "sacramento"
+  },
+  "county_names": {
+    "06001": "Alameda",
+    "06003": "Alpine",
+    "06005": "Amador",
+    "06007": "Butte",
+    "06009": "Calaveras",
+    "06011": "Colusa",
+    "06013": "Contra Costa",
+    "06015": "Del Norte",
+    "06017": "El Dorado",
+    "06019": "Fresno",
+    "06021": "Glenn",
+    "06023": "Humboldt",
+    "06025": "Imperial",
+    "06027": "Inyo",
+    "06029": "Kern",
+    "06031": "Kings",
+    "06033": "Lake",
+    "06035": "Lassen",
+    "06037": "Los Angeles",
+    "06039": "Madera",
+    "06041": "Marin",
+    "06043": "Mariposa",
+    "06045": "Mendocino",
+    "06047": "Merced",
+    "06049": "Modoc",
+    "06051": "Mono",
+    "06053": "Monterey",
+    "06055": "Napa",
+    "06057": "Nevada",
+    "06059": "Orange",
+    "06061": "Placer",
+    "06063": "Plumas",
+    "06065": "Riverside",
+    "06067": "Sacramento",
+    "06069": "San Benito",
+    "06071": "San Bernardino",
+    "06073": "San Diego",
+    "06075": "San Francisco",
+    "06077": "San Joaquin",
+    "06079": "San Luis Obispo",
+    "06081": "San Mateo",
+    "06083": "Santa Barbara",
+    "06085": "Santa Clara",
+    "06087": "Santa Cruz",
+    "06089": "Shasta",
+    "06091": "Sierra",
+    "06093": "Siskiyou",
+    "06095": "Solano",
+    "06097": "Sonoma",
+    "06099": "Stanislaus",
+    "06101": "Sutter",
+    "06103": "Tehama",
+    "06105": "Trinity",
+    "06107": "Tulare",
+    "06109": "Tuolumne",
+    "06111": "Ventura",
+    "06113": "Yolo",
+    "06115": "Yuba"
+  }
+}

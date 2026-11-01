@@ -1,0 +1,146 @@
+{
+ "diocese": "archdiocese-of-st-louis",
+ "domain": "cathedralstl.org",
+ "site_key": "cathedralstl.org",
+ "site_file": "data/real/us/sites/archdiocese-of-st-louis/cathedralstl.org.json",
+ "parishes": [
+  {
+   "church_id": "archdiocese-of-st-louis:15613",
+   "name": "Cathedral Basilica of Saint Louis",
+   "city": null
+  }
+ ],
+ "bulletin_link": {
+  "url": "https://cathedralstl.org/sites/cbstl/files/bulletins/2026/01-01210_11-01-2026-FINAL.pdf",
+  "kind": "pdf",
+  "date": "2026-11-01",
+  "text": "Download Bulletin for November 1, 2026",
+  "source_url": "https://cathedralstl.org/bulletins"
+ },
+ "status": "ok",
+ "had_mass_times": true,
+ "site_groups_before": 6,
+ "gained_first_groups": false,
+ "issues": [
+  {
+   "url": "https://container.parishesonline.com/bulletins/01/1210/20261101B.pdf",
+   "date": "2026-11-01",
+   "date_source": "link",
+   "pages": 12,
+   "ocr": false,
+   "ocr_pages": [],
+   "found_via": "LPi container, code 01-1210 seen on https://cathedralstl.org/bulletins",
+   "fetched_at": "2026-11-01T03:21:39+00:00"
+  },
+  {
+   "url": "https://cathedralstl.org/sites/cbstl/files/bulletins/2026/01-01210_11-01-2026-FINAL.pdf",
+   "date": "2026-11-01",
+   "date_source": "link",
+   "pages": 10,
+   "ocr": false,
+   "ocr_pages": [],
+   "found_via": "link on https://cathedralstl.org/bulletins ('Download Bulletin for November 1, 2026')",
+   "fetched_at": "2026-11-01T03:21:40+00:00"
+  }
+ ],
+ "notes": [],
+ "tried": [],
+ "checked_at": "2026-11-01T03:21:24+00:00",
+ "built_at": "2026-11-01T03:21:41+00:00",
+ "built_by": "ingest/us/bulletins/run.py (California's fetch.py / extract_groups.py)",
+ "privacy": "no lay names, phones or e-mails; contact is 'ask the parish office'; names and places pass ingest/public/privacy.py and ingest/connectors/calendars/privacy.py",
+ "privacy_dropped": 0,
+ "groups": [
+  {
+   "id": "cathedralstl.org:bulletin:ocia:",
+   "name": "Order of Christian Initiation for Adults",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "ocia",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "informal": true,
+   "informal_kind": "ocia_inquiry",
+   "meets": null,
+   "next_meeting": null,
+   "location": null,
+   "contact": "ask the parish office",
+   "source_kind": "bulletin",
+   "source_label": "From the parish bulletin, November 1, 2026",
+   "source_url": "https://container.parishesonline.com/bulletins/01/1210/20261101B.pdf",
+   "last_seen": "2026-11-01",
+   "seen_in_issues": 1,
+   "sources": [
+    {
+     "url": "https://container.parishesonline.com/bulletins/01/1210/20261101B.pdf",
+     "issue_date": "2026-11-01",
+     "page": 10,
+     "ocr": false
+    },
+    {
+     "url": "https://cathedralstl.org/sites/cbstl/files/bulletins/2026/01-01210_11-01-2026-FINAL.pdf",
+     "issue_date": "2026-11-01",
+     "page": 10,
+     "ocr": false
+    }
+   ],
+   "confidence": "medium",
+   "flags": [],
+   "also_on_parish_website": false
+  },
+  {
+   "id": "cathedralstl.org:bulletin:svdp:",
+   "name": "St. Vincent de Paul",
+   "category": "service_mercy",
+   "category_label": "Service & mercy",
+   "subcategory": "st_vincent_de_paul",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "informal": true,
+   "informal_kind": "svdp",
+   "meets": null,
+   "next_meeting": {
+    "date": "2026-11-07",
+    "time": null
+   },
+   "location": null,
+   "contact": "ask the parish office",
+   "source_kind": "bulletin",
+   "source_label": "From the parish bulletin, November 1, 2026",
+   "source_url": "https://container.parishesonline.com/bulletins/01/1210/20261101B.pdf",
+   "last_seen": "2026-11-01",
+   "seen_in_issues": 1,
+   "sources": [
+    {
+     "url": "https://container.parishesonline.com/bulletins/01/1210/20261101B.pdf",
+     "issue_date": "2026-11-01",
+     "page": 6,
+     "ocr": false
+    },
+    {
+     "url": "https://container.parishesonline.com/bulletins/01/1210/20261101B.pdf",
+     "issue_date": "2026-11-01",
+     "page": 7,
+     "ocr": false
+    },
+    {
+     "url": "https://cathedralstl.org/sites/cbstl/files/bulletins/2026/01-01210_11-01-2026-FINAL.pdf",
+     "issue_date": "2026-11-01",
+     "page": 6,
+     "ocr": false
+    },
+    {
+     "url": "https://cathedralstl.org/sites/cbstl/files/bulletins/2026/01-01210_11-01-2026-FINAL.pdf",
+     "issue_date": "2026-11-01",
+     "page": 7,
+     "ocr": false
+    }
+   ],
+   "confidence": "high",
+   "flags": [],
+   "also_on_parish_website": true
+  }
+ ]
+}

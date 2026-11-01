@@ -1,0 +1,147 @@
+# National crawl on GitHub Actions (public repo: free runners). Runs the resumable chunk scripts every two hours and
+# commits the data back; narthexlabs/fold-app syncs data/real/us/ from here.
+#
+# Rules the scripts enforce (do not change here): honest user agent "FindTheChurch/0.1 (+https://oakland-diocese-dashboard.vercel.app/about)",
+# robots.txt and Crawl-delay honoured, <=1 request/s per host, one request at a time per host, one crawler per host
+# (discovermass.com: 10.5 s, ONE job; gcatholic.org: ONE job), challenges/403/429 recorded and never evaded, privacy
+# screen on everything saved. The site-crawl matrix runs on DISJOINT state groups, so no host sees two runners.
+#
+# Disable: Actions tab -> "National crawl" -> Disable workflow. Run by hand: "Run workflow" (job, minutes).
+name: National crawl
+
+on:
+  schedule:
+    - cron: '7 */2 * * *'        # every 2 h (UTC); a job still running makes the next one wait (no overlap per host)
+  workflow_dispatch:
+    inputs:
+      job:
+        description: 'which job (sites | discovermass | gcatholic | bulletins | all)'
+        default: 'all'
+      minutes:
+        description: 'minutes per chunk'
+        default: '110'
+
+permissions:
+  contents: write
+
+env:
+  MINUTES: ${{ github.event.inputs.minutes || '110' }}
+  PYTHONDONTWRITEBYTECODE: '1'
+
+jobs:
+  sites:
+    if: ${{ github.event_name == 'schedule' || github.event.inputs.job == 'all' || github.event.inputs.job == 'sites' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 140
+    strategy:
+      fail-fast: false
+      matrix:
+        # eight disjoint state groups balanced by church count (CA is built in the main repo). Add entries to go faster.
+        states:
+          - 'NY,KY,NC,MS,WY,UT'
+          - 'PA,CT,NM,ME,VT,DC'
+          - 'TX,IA,OR,AL,NH'
+          - 'IL,MO,WA,MT,TN,AK,DE'
+          - 'OH,LA,KS,VA,SD,SC'
+          - 'MI,FL,IN,AZ,GA,ID,NV'
+          - 'WI,MA,MD,ND,RI,WV'
+          - 'NJ,MN,NE,CO,OK,AR,HI'
+    concurrency:
+      group: crawl-sites-${{ matrix.states }}
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 1 }
+      - run: git config user.name "fold-crawl[bot]" && git config user.email "crawl@narthexlabs.invalid"
+      - uses: actions/cache@v4
+        with:
+          path: data/raw/us/sites
+          key: raw-sites-${{ matrix.states }}-${{ github.run_id }}
+          restore-keys: raw-sites-${{ matrix.states }}-
+      - name: Parish-website crawl chunk (128 hosts in parallel, one request at a time per host)
+        env:
+          WORKERS: '128'
+          STATES: ${{ matrix.states }}
+        run: bash scripts/us/sites_chunk.sh "$MINUTES"
+
+  reparse:
+    needs: sites
+    if: ${{ always() && (github.event_name == 'schedule' || github.event.inputs.job == 'all' || github.event.inputs.job == 'sites') }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    concurrency: { group: crawl-reparse, cancel-in-progress: false }
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 1 }
+      - run: git config user.name "fold-crawl[bot]" && git config user.email "crawl@narthexlabs.invalid"
+      - name: Re-parse every crawled diocese with the current parser, commit, push
+        run: |
+          set -e
+          for d in data/real/us/sites/*/; do
+            s=$(basename "$d"); [ "$s" = "_inputs" ] && continue
+            timeout 600 python3 -I ingest/us/sites/run_state.py parse "$s" >/dev/null 2>&1 || true
+          done
+          git add data/real/us/sites && git commit -q -m "US parish sites: re-parse (Actions $(date -u +%FT%H:%MZ))" || true
+          git pull --rebase --autostash -q origin main && git push -q origin HEAD:main
+
+  discovermass:
+    if: ${{ github.event_name == 'schedule' || github.event.inputs.job == 'all' || github.event.inputs.job == 'discovermass' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 140
+    concurrency: { group: crawl-discovermass, cancel-in-progress: false }   # ONE crawler on this host, ever
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 1 }
+      - run: git config user.name "fold-crawl[bot]" && git config user.email "crawl@narthexlabs.invalid"
+      - uses: actions/cache@v4
+        with:
+          path: data/raw/us/discovermass
+          key: raw-discovermass-${{ github.run_id }}
+          restore-keys: raw-discovermass-
+      - name: DiscoverMass address-book chunk (10.5 s between requests; secondary source)
+        run: bash scripts/us/discovermass_chunk.sh "$MINUTES" "$GITHUB_WORKSPACE"
+
+  gcatholic:
+    if: ${{ github.event_name == 'schedule' || github.event.inputs.job == 'all' || github.event.inputs.job == 'gcatholic' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 140
+    concurrency: { group: crawl-gcatholic, cancel-in-progress: false }      # one crawler on this host
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 1 }
+      - run: git config user.name "fold-crawl[bot]" && git config user.email "crawl@narthexlabs.invalid"
+      - uses: actions/cache@v4
+        with:
+          path: data/raw/us/url_sources/gcatholic
+          key: raw-gcatholic-${{ github.run_id }}
+          restore-keys: raw-gcatholic-
+      - name: GCatholic church pages → parish website lists (1 request/s)
+        run: |
+          set -e
+          python3 -u ingest/us/url_sources/gcatholic.py --minutes "$MINUTES" || true
+          python3 -I ingest/us/url_sources/gcatholic.py --build
+          git add data/real/us/url_sources/gcatholic data/real/us/url_sources/gcatholic.json
+          git commit -q -m "G8: GCatholic progress (Actions $(date -u +%FT%H:%MZ))" || true
+          git pull --rebase --autostash -q origin main && git push -q origin HEAD:main
+
+  bulletins:
+    if: ${{ github.event_name == 'schedule' || github.event.inputs.job == 'all' || github.event.inputs.job == 'bulletins' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 140
+    concurrency: { group: crawl-bulletins, cancel-in-progress: false }
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 1 }
+      - run: git config user.name "fold-crawl[bot]" && git config user.email "crawl@narthexlabs.invalid"
+      - run: sudo apt-get -qq update && sudo apt-get -qq install -y poppler-utils tesseract-ocr >/dev/null
+      - uses: actions/cache@v4
+        with:
+          path: data/raw/us/bulletins
+          key: raw-bulletins-${{ github.run_id }}
+          restore-keys: raw-bulletins-
+      - name: Bulletins → groups chunk (only bulletin links already seen; never discovermass.com)
+        run: |
+          set -e
+          bash scripts/us/bulletins_chunk.sh "$MINUTES" || true
+          git add data/real/us/bulletins && git commit -q -m "US parish bulletins (Actions $(date -u +%FT%H:%MZ))" || true
+          git pull --rebase --autostash -q origin main && git push -q origin HEAD:main

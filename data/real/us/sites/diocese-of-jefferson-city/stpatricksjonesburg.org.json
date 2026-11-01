@@ -1,0 +1,174 @@
+{
+ "domain": "stpatricksjonesburg.org",
+ "diocese": "diocese-of-jefferson-city",
+ "matched_church_ids": [
+  "diocese-of-jefferson-city:St. Patrick (Jonesburg)"
+ ],
+ "matched": {
+  "directory": [
+   "diocese-of-jefferson-city:St. Patrick (Jonesburg)"
+  ],
+  "discovermass": []
+ },
+ "names": [
+  "St. Patrick (Jonesburg)"
+ ],
+ "cities": [
+  "Jonesburg"
+ ],
+ "home_url": "https://stpatricksjonesburg.org/",
+ "final_url": "https://stpatricksjonesburg.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://stpatricksjonesburg.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stpatricksjonesburg.org/events/sunday-mass",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stpatricksjonesburg.org/events/wednesday-mass",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://stpatricksjonesburg.org/bulletins",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://stpatricksjonesburg.org/upcoming-events",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://stpatricksjonesburg.org/contactus",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-content"
+  ]
+ },
+ "template": "wordpress-rest+html",
+ "groups": [],
+ "calendar_feeds": [
+  {
+   "feed_id": "stpatricksjonesburg.org:tribe_rest:3825427f",
+   "type": "tribe_rest",
+   "platform": "The Events Calendar (WordPress)",
+   "url": "https://stpatricksjonesburg.org/wp-json/tribe/events/v1/events",
+   "page_url": "https://stpatricksjonesburg.org/",
+   "label": null,
+   "status": "no_public_feed",
+   "note": "The Events Calendar markers on the site, but its REST route is not available"
+  }
+ ],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/St-Patrick-Catholic-Church-Jonesburg-MO-107574807342505"
+  ]
+ },
+ "bulletin": {
+  "url": "https://stpatricksjonesburg.org/bulletins",
+  "date": null,
+  "kind": "page",
+  "text": "Bulletins",
+  "source_url": "https://stpatricksjonesburg.org/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Sunday Mass: 8:00 am",
+   "source_url": "https://stpatricksjonesburg.org/events/sunday-mass",
+   "fetched_at": "2026-11-01T02:14:47+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "08:30",
+   "language": null,
+   "raw": "Wednesday Mass — Postponed until further notice: 8:30 am – 9:30 am",
+   "source_url": "https://stpatricksjonesburg.org/events/wednesday-mass",
+   "fetched_at": "2026-11-01T02:14:48+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "09:30",
+   "language": null,
+   "raw": "Wednesday Mass — Postponed until further notice: 8:30 am – 9:30 am",
+   "source_url": "https://stpatricksjonesburg.org/events/wednesday-mass",
+   "fetched_at": "2026-11-01T02:14:48+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  }
+ ],
+ "source_url": "https://stpatricksjonesburg.org/",
+ "fetched_at": "2026-11-01T02:14:52+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 3
+ },
+ "schedule_dropped": {
+  "dated_block": 2,
+  "other_location": 2
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-10-31",
+  "window_end_exclusive": "2027-01-29",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

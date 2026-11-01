@@ -1,0 +1,145 @@
+{
+ "domain": "olocnh.org",
+ "diocese": "eparchy-of-newton",
+ "matched_church_ids": [
+  "eparchy-of-newton:Parish Locator | Melkite"
+ ],
+ "matched": {
+  "directory": [
+   "eparchy-of-newton:Parish Locator | Melkite"
+  ],
+  "discovermass": []
+ },
+ "names": [
+  "Parish Locator | Melkite"
+ ],
+ "cities": [
+  "Manchester"
+ ],
+ "home_url": "https://olocnh.org/",
+ "final_url": "https://www.olocnh.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://www.olocnh.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.olocnh.org/service-schedule",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.olocnh.org/copy-of-service-schedule",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://www.olocnh.org/bulletin",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wix",
+  "evidence": [
+   "content=\"wix.com website builder"
+  ]
+ },
+ "template": "generic-html:wix",
+ "groups": [],
+ "calendar_feeds": [],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/OurLadyoftheCedars"
+  ],
+  "livestream": [
+   {
+    "url": "https://www.facebook.com/OurLadyoftheCedars/live/",
+    "label": "Watch Live",
+    "platform": "facebook",
+    "kind": "link"
+   }
+  ]
+ },
+ "bulletin": {
+  "url": "https://www.olocnh.org/bulletin",
+  "date": null,
+  "kind": "page",
+  "text": "Bulletin",
+  "source_url": "https://www.olocnh.org/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "16:30",
+   "language": null,
+   "raw": "Sunday Divine Liturgy: Saturday -- 4:30 PM",
+   "source_url": "https://www.olocnh.org/service-schedule",
+   "fetched_at": "2026-11-01T02:14:21+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:30",
+   "language": null,
+   "raw": "Sunday Divine Liturgy: Sunday -- 10:30 AM",
+   "source_url": "https://www.olocnh.org/service-schedule",
+   "fetched_at": "2026-11-01T02:14:21+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix"
+  }
+ ],
+ "source_url": "https://olocnh.org/",
+ "fetched_at": "2026-11-01T02:14:24+00:00",
+ "schedule_template": {
+  "template": "wix",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 2
+ },
+ "schedule_dropped": {
+  "not_a_service": 1
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-10-31",
+  "window_end_exclusive": "2027-01-29",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

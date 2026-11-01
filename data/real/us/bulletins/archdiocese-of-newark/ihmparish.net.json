@@ -1,0 +1,331 @@
+{
+ "diocese": "archdiocese-of-newark",
+ "domain": "ihmparish.net",
+ "site_key": "ihmparish.net",
+ "site_file": "data/real/us/sites/archdiocese-of-newark/ihmparish.net.json",
+ "parishes": [
+  {
+   "church_id": "archdiocese-of-newark:Immaculate Heart of Mary Parish 1571 S Martine Avenue, Scotch Plains, NJ 07076",
+   "name": "Immaculate Heart of Mary Parish 1571 S Martine Avenue, Scotch Plains, NJ 07076",
+   "city": "Scotch Plains"
+  }
+ ],
+ "bulletin_link": {
+  "url": "https://ihmparish.net/s/Bulletin11012026.pdf",
+  "kind": "pdf",
+  "date": "2026-11-01",
+  "text": "November 1, 2026",
+  "source_url": "https://ihmparish.net/bulletins"
+ },
+ "status": "ok",
+ "had_mass_times": true,
+ "site_groups_before": 0,
+ "gained_first_groups": true,
+ "issues": [
+  {
+   "url": "https://ihmparish.net/s/Bulletin11012026.pdf",
+   "date": "2026-11-01",
+   "date_source": "link",
+   "pages": 12,
+   "ocr": true,
+   "ocr_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "found_via": "link on https://ihmparish.net/bulletins ('November 1, 2026')",
+   "fetched_at": "2026-11-01T05:14:20+00:00"
+  },
+  {
+   "url": "https://ihmparish.net/s/Bulletin10252026.pdf",
+   "date": "2026-10-25",
+   "date_source": "link",
+   "pages": 12,
+   "ocr": true,
+   "ocr_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "found_via": "link on https://ihmparish.net/bulletins ('October 25, 2026')",
+   "fetched_at": "2026-11-01T05:15:25+00:00"
+  }
+ ],
+ "notes": [],
+ "tried": [],
+ "checked_at": "2026-11-01T05:14:17+00:00",
+ "built_at": "2026-11-01T05:16:40+00:00",
+ "built_by": "ingest/us/bulletins/run.py (California's fetch.py / extract_groups.py)",
+ "privacy": "no lay names, phones or e-mails; contact is 'ask the parish office'; names and places pass ingest/public/privacy.py and ingest/connectors/calendars/privacy.py",
+ "privacy_dropped": 0,
+ "groups": [
+  {
+   "id": "ihmparish.net:bulletin:ocia:",
+   "name": "OCIA (becoming Catholic)",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "ocia",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "informal": true,
+   "informal_kind": "ocia_inquiry",
+   "meets": null,
+   "next_meeting": null,
+   "location": null,
+   "contact": "ask the parish office",
+   "source_kind": "bulletin",
+   "source_label": "From the parish bulletin, November 1, 2026",
+   "source_url": "https://ihmparish.net/s/Bulletin11012026.pdf",
+   "last_seen": "2026-11-01",
+   "seen_in_issues": 2,
+   "sources": [
+    {
+     "url": "https://ihmparish.net/s/Bulletin11012026.pdf",
+     "issue_date": "2026-11-01",
+     "page": 10,
+     "ocr": true
+    },
+    {
+     "url": "https://ihmparish.net/s/Bulletin10252026.pdf",
+     "issue_date": "2026-10-25",
+     "page": 10,
+     "ocr": true
+    }
+   ],
+   "confidence": "medium",
+   "flags": [
+    "ocr"
+   ],
+   "also_on_parish_website": false
+  },
+  {
+   "id": "ihmparish.net:bulletin:kofc:",
+   "name": "Knights of Columbus",
+   "category": "fraternal_orders",
+   "category_label": "Fraternal & orders",
+   "subcategory": "knights_of_columbus",
+   "audience": "men",
+   "language": "en",
+   "language_assumed": true,
+   "informal": true,
+   "informal_kind": "kofc",
+   "meets": null,
+   "next_meeting": {
+    "date": "2026-10-29",
+    "time": "19:30"
+   },
+   "location": null,
+   "contact": "ask the parish office",
+   "source_kind": "bulletin",
+   "source_label": "From the parish bulletin, November 1, 2026",
+   "source_url": "https://ihmparish.net/s/Bulletin11012026.pdf",
+   "last_seen": "2026-11-01",
+   "seen_in_issues": 2,
+   "sources": [
+    {
+     "url": "https://ihmparish.net/s/Bulletin11012026.pdf",
+     "issue_date": "2026-11-01",
+     "page": 10,
+     "ocr": true
+    },
+    {
+     "url": "https://ihmparish.net/s/Bulletin10252026.pdf",
+     "issue_date": "2026-10-25",
+     "page": 10,
+     "ocr": true
+    }
+   ],
+   "confidence": "medium",
+   "flags": [
+    "ocr"
+   ],
+   "also_on_parish_website": false
+  },
+  {
+   "id": "ihmparish.net:bulletin:prayer_group:",
+   "name": "Prayer Group",
+   "category": "prayer_devotion",
+   "category_label": "Prayer & devotion",
+   "subcategory": "prayer_group",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "informal": true,
+   "informal_kind": "prayer_group",
+   "meets": {
+    "days": [
+     "Wednesday"
+    ],
+    "time": null,
+    "frequency": "monthly (1st Wednesday)",
+    "text": "1st Wednesday of the month"
+   },
+   "next_meeting": null,
+   "location": null,
+   "contact": "ask the parish office",
+   "source_kind": "bulletin",
+   "source_label": "From the parish bulletin, October 25, 2026",
+   "source_url": "https://ihmparish.net/s/Bulletin10252026.pdf",
+   "last_seen": "2026-10-25",
+   "seen_in_issues": 1,
+   "sources": [
+    {
+     "url": "https://ihmparish.net/s/Bulletin10252026.pdf",
+     "issue_date": "2026-10-25",
+     "page": 4,
+     "ocr": true
+    },
+    {
+     "url": "https://ihmparish.net/s/Bulletin10252026.pdf",
+     "issue_date": "2026-10-25",
+     "page": 5,
+     "ocr": true
+    }
+   ],
+   "confidence": "medium",
+   "flags": [
+    "ocr"
+   ],
+   "also_on_parish_website": false
+  },
+  {
+   "id": "ihmparish.net:bulletin:rosary_group:",
+   "name": "Rosary Group",
+   "category": "prayer_devotion",
+   "category_label": "Prayer & devotion",
+   "subcategory": "rosary",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "informal": true,
+   "informal_kind": "rosary_group",
+   "meets": null,
+   "next_meeting": {
+    "date": "2026-12-03",
+    "time": null
+   },
+   "location": null,
+   "contact": "ask the parish office",
+   "source_kind": "bulletin",
+   "source_label": "From the parish bulletin, November 1, 2026",
+   "source_url": "https://ihmparish.net/s/Bulletin11012026.pdf",
+   "last_seen": "2026-11-01",
+   "seen_in_issues": 2,
+   "sources": [
+    {
+     "url": "https://ihmparish.net/s/Bulletin11012026.pdf",
+     "issue_date": "2026-11-01",
+     "page": 8,
+     "ocr": true
+    },
+    {
+     "url": "https://ihmparish.net/s/Bulletin10252026.pdf",
+     "issue_date": "2026-10-25",
+     "page": 5,
+     "ocr": true
+    }
+   ],
+   "confidence": "medium",
+   "flags": [
+    "ocr"
+   ],
+   "also_on_parish_website": false
+  },
+  {
+   "id": "ihmparish.net:bulletin:young_adults:",
+   "name": "Young Adult Group",
+   "category": "young_adults",
+   "category_label": "Young adults",
+   "subcategory": "young_adult_group",
+   "audience": "young_adult",
+   "language": "en",
+   "language_assumed": true,
+   "informal": true,
+   "informal_kind": "young_adults",
+   "meets": null,
+   "next_meeting": null,
+   "location": null,
+   "contact": "ask the parish office",
+   "source_kind": "bulletin",
+   "source_label": "From the parish bulletin, October 25, 2026",
+   "source_url": "https://ihmparish.net/s/Bulletin10252026.pdf",
+   "last_seen": "2026-10-25",
+   "seen_in_issues": 1,
+   "sources": [
+    {
+     "url": "https://ihmparish.net/s/Bulletin10252026.pdf",
+     "issue_date": "2026-10-25",
+     "page": 8,
+     "ocr": true
+    }
+   ],
+   "confidence": "medium",
+   "flags": [
+    "ocr"
+   ],
+   "also_on_parish_website": false
+  },
+  {
+   "id": "ihmparish.net:bulletin:youth_ministry:upcomingyouthevents:",
+   "name": "Upcoming Youth Ministry Events",
+   "category": "youth",
+   "category_label": "Youth",
+   "subcategory": "youth_ministry",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "informal": true,
+   "informal_kind": "youth",
+   "meets": null,
+   "next_meeting": {
+    "date": "2026-11-15",
+    "time": "18:00"
+   },
+   "location": null,
+   "contact": "ask the parish office",
+   "source_kind": "bulletin",
+   "source_label": "From the parish bulletin, November 1, 2026",
+   "source_url": "https://ihmparish.net/s/Bulletin11012026.pdf",
+   "last_seen": "2026-11-01",
+   "seen_in_issues": 2,
+   "sources": [
+    {
+     "url": "https://ihmparish.net/s/Bulletin11012026.pdf",
+     "issue_date": "2026-11-01",
+     "page": 6,
+     "ocr": true
+    },
+    {
+     "url": "https://ihmparish.net/s/Bulletin10252026.pdf",
+     "issue_date": "2026-10-25",
+     "page": 6,
+     "ocr": true
+    }
+   ],
+   "confidence": "medium",
+   "flags": [
+    "ocr"
+   ],
+   "also_on_parish_website": false
+  }
+ ]
+}

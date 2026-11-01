@@ -1,0 +1,136 @@
+{
+ "domain": "corpuschristibuffalo.org",
+ "diocese": "diocese-of-buffalo",
+ "matched_church_ids": [
+  "wd-Q11803017"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "wd-Q11803017"
+  ]
+ },
+ "names": [],
+ "cities": [
+  "Buffalo"
+ ],
+ "home_url": "http://corpuschristibuffalo.org/",
+ "final_url": "https://corpuschristibuffalo.org/site/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "not_found",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://corpuschristibuffalo.org/site/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://corpuschristibuffalo.org/site/?tag=bulletin",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://corpuschristibuffalo.org/site/?cat=3",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://corpuschristibuffalo.org/site/?page_id=34",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "content=\"wordpress"
+  ]
+ },
+ "template": "wordpress-html",
+ "groups": [],
+ "calendar_feeds": [],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/CorpusChristiChurch"
+  ]
+ },
+ "bulletin": {
+  "url": "https://files.ecatholic.com/35834/bulletins/20261011.pdf?t=1791313174000",
+  "date": "2026-10-11",
+  "kind": "ecatholic_pdf",
+  "text": "Click here to view our latest bulletin —>",
+  "source_url": "https://corpuschristibuffalo.org/site/?tag=bulletin"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:15",
+   "language": "English",
+   "raw": "Mass Schedule: Sunday – 9:15 am – English",
+   "source_url": "https://corpuschristibuffalo.org/site/",
+   "fetched_at": "2026-11-01T02:17:12+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "First Thursday of the month",
+   "time": "18:00-20:30",
+   "language": null,
+   "raw": "Exposition of the Blessed Sacrament on First Thursdays from 6:00-8:30 pm weather permitting in Parish chapel.",
+   "source_url": "https://corpuschristibuffalo.org/site/",
+   "fetched_at": "2026-11-01T02:17:12+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  }
+ ],
+ "source_url": "http://corpuschristibuffalo.org/",
+ "fetched_at": "2026-11-01T02:17:17+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 3
+ },
+ "schedule_dropped": {
+  "not_a_service": 2,
+  "skipped_section": 1
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-10-31",
+  "window_end_exclusive": "2027-01-29",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

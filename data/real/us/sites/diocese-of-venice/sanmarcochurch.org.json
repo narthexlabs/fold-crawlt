@@ -1,0 +1,171 @@
+{
+ "domain": "sanmarcochurch.org",
+ "diocese": "diocese-of-venice",
+ "matched_church_ids": [
+  "diocese-of-venice:Holy Family Mission",
+  "diocese-of-venice:San Marco Parish"
+ ],
+ "matched": {
+  "directory": [
+   "diocese-of-venice:Holy Family Mission",
+   "diocese-of-venice:San Marco Parish"
+  ],
+  "discovermass": []
+ },
+ "names": [
+  "Holy Family Mission",
+  "San Marco Parish"
+ ],
+ "cities": [
+  "Everglades City",
+  "Marco Island"
+ ],
+ "home_url": "http://sanmarcochurch.org/",
+ "final_url": "https://sanmarcochurch.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://sanmarcochurch.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://sanmarcochurch.org/mass-schedules/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://sanmarcochurch.org/sacraments/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://sanmarcochurch.org/adult-faith-formation-2/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://sanmarcochurch.org/sunday-bulletin/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://sanmarcochurch.org/upcoming-events/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://sanmarcochurch.org/contact-us/",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-content"
+  ]
+ },
+ "template": "wordpress-html",
+ "groups": [
+  {
+   "id": "sanmarcochurch.org:ocia",
+   "name": "What is the OCIA?",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "ocia",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "The Order of Christian Initiation of Adults (OCIA) is the class where an adult of any background, non-religious or faith, is able to learn about Catholicism to consider joining the Catholic Church and also where a baptized Catholic adult is…",
+   "contact_url": "https://sanmarcochurch.org/contact-us/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://sanmarcochurch.org/adult-faith-formation-2/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T02:09:27+00:00",
+   "confidence": "medium"
+  }
+ ],
+ "calendar_feeds": [],
+ "events": [],
+ "social": {},
+ "bulletin": {
+  "url": "http://discovermass.com/church/san-marco-catholic-church-marco-island-fl/",
+  "date": null,
+  "kind": "discovermass",
+  "text": "DiscoverMass here",
+  "source_url": "https://sanmarcochurch.org/sunday-bulletin/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "16:00-17:00",
+   "language": null,
+   "raw": "Penance and Reconciliation: (May to December) Saturday from 4:00 pm. to 5:00 pm.",
+   "source_url": "https://sanmarcochurch.org/sacraments/",
+   "fetched_at": "2026-11-01T02:09:26+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "13:00-14:00",
+   "language": null,
+   "raw": "Penance and Reconciliation: (January thru Palm Sunday) Saturday from 1:00 pm to 2:00 pm",
+   "source_url": "https://sanmarcochurch.org/sacraments/",
+   "fetched_at": "2026-11-01T02:09:26+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  }
+ ],
+ "source_url": "http://sanmarcochurch.org/",
+ "fetched_at": "2026-11-01T02:09:32+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 2
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-10-31",
+  "window_end_exclusive": "2027-01-29",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

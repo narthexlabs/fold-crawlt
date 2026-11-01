@@ -1,0 +1,956 @@
+{
+ "domain": "sacredhearteureka.org",
+ "diocese": "archdiocese-of-st-louis",
+ "matched_church_ids": [
+  "archdiocese-of-st-louis:15661"
+ ],
+ "matched": {
+  "directory": [
+   "archdiocese-of-st-louis:15661"
+  ],
+  "discovermass": []
+ },
+ "names": [
+  "Most Sacred Heart (Eureka)"
+ ],
+ "cities": [],
+ "home_url": "http://www.sacredhearteureka.org/",
+ "final_url": "https://www.sacredhearteureka.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://www.sacredhearteureka.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.sacredhearteureka.org/priests-schedule",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.sacredhearteureka.org/sacraments",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.sacredhearteureka.org/ministries-organizations",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.sacredhearteureka.org/faith-formation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.sacredhearteureka.org/youth-ministry",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://www.sacredhearteureka.org/find-the-bulletin",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.sacredhearteureka.org/calendar",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-json"
+  ]
+ },
+ "template": "wordpress-rest+html",
+ "groups": [
+  {
+   "id": "sacredhearteureka.org:youth_ministry",
+   "name": "Youth",
+   "category": "youth",
+   "category_label": "Youth",
+   "subcategory": "youth_ministry",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.sacredhearteureka.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.sacredhearteureka.org/ministries-organizations",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T01:19:44+00:00",
+   "confidence": "medium"
+  }
+ ],
+ "calendar_feeds": [
+  {
+   "feed_id": "sacredhearteureka.org:tribe_rest:2c42da8e",
+   "type": "tribe_rest",
+   "platform": "The Events Calendar (WordPress)",
+   "url": "https://www.sacredhearteureka.org/wp-json/tribe/events/v1/events",
+   "page_url": "https://www.sacredhearteureka.org/",
+   "label": null,
+   "status": "active",
+   "note": "The Events Calendar (WordPress) REST API",
+   "last_fetch": {
+    "status": 200,
+    "fetched_at": "2026-11-01T01:22:45+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  },
+  {
+   "feed_id": "sacredhearteureka.org:mce_json:5eb862c8",
+   "type": "mce_json",
+   "platform": "iCal",
+   "url": "https://mceproduction2.blob.core.windows.net/calendar-json/74081743.json",
+   "page_url": "https://www.sacredhearteureka.org/calendar",
+   "label": null,
+   "status": "active",
+   "note": "MyChurchEvents published calendar JSON (what its public page loads)",
+   "last_fetch": {
+    "status": 200,
+    "fetched_at": "2026-11-01T01:22:45+00:00",
+    "events_in_window": 164,
+    "kept": 161,
+    "excluded": {
+     "names_person": 3
+    }
+   }
+  }
+ ],
+ "events": [
+  {
+   "id": "467bece984c30e7f",
+   "title": "Reconciliation",
+   "start": "2026-10-31T13:30:00-07:00",
+   "end": "2026-10-31T14:15:00-07:00",
+   "all_day": false,
+   "location": "Church",
+   "category": "reconciliation",
+   "recurring": true,
+   "source_url": "https://www.sacredhearteureka.org/calendar",
+   "feed_id": "sacredhearteureka.org:mce_json:5eb862c8",
+   "fetched_at": "2026-11-01T01:22:45+00:00"
+  },
+  {
+   "id": "b2ac552f8fec8246",
+   "title": "Mass",
+   "start": "2026-10-31T15:00:00-07:00",
+   "end": "2026-10-31T16:00:00-07:00",
+   "all_day": false,
+   "location": null,
+   "category": "liturgy",
+   "recurring": true,
+   "source_url": "https://www.sacredhearteureka.org/calendar",
+   "feed_id": "sacredhearteureka.org:mce_json:5eb862c8",
+   "fetched_at": "2026-11-01T01:22:45+00:00"
+  },
+  {
+   "id": "e0a8d5deee96d302",
+   "title": "Mass",
+   "start": "2026-11-01T05:30:00-08:00",
+   "end": "2026-11-01T06:30:00-08:00",
+   "all_day": false,
+   "location": "Church",
+   "category": "liturgy",
+   "recurring": true,
+   "source_url": "https://www.sacredhearteureka.org/calendar",
+   "feed_id": "sacredhearteureka.org:mce_json:5eb862c8",
+   "fetched_at": "2026-11-01T01:22:45+00:00"
+  },
+  {
+   "id": "74ea57ed45b2c51b",
+   "title": "Children's Liturgy of the Word",
+   "start": "2026-11-01T07:30:00-08:00",
+   "end": "2026-11-01T08:00:00-08:00",
+   "all_day": false,
+   "location": "Father Dowling Hall",
+   "category": "liturgy",
+   "recurring": false,
+   "source_url": "https://www.sacredhearteureka.org/calendar",
+   "feed_id": "sacredhearteureka.org:mce_json:5eb862c8",
+   "fetched_at": "2026-11-01T01:22:45+00:00"
+  },
+  {
+   "id": "5354a4f3e13c0363",
+   "title": "Mass",
+   "start": "2026-11-01T07:30:00-08:00",
+   "end": "2026-11-01T08:30:00-08:00",
+   "all_day": false,
+   "location": "Church",
+   "category": "liturgy",
+   "recurring": true,
+   "source_url": "https://www.sacredhearteureka.org/calendar",
+   "feed_id": "sacredhearteureka.org:mce_json:5eb862c8",
+   "fetched_at": "2026-11-01T01:22:45+00:00"
+  },
+  {
+   "id": "9a31e5f764625b66",
+   "title": "Mass",
+   "start": "2026-11-01T09:30:00-08:00",
+   "end": "2026-11-01T10:30:00-08:00",
+   "all_day": false,
+   "location": "Church",
+   "category": "liturgy",
+   "recurring": true,
+   "source_url": "https://www.sacredhearteureka.org/calendar",
+   "feed_id": "sacredhearteureka.org:mce_json:5eb862c8",
+   "fetched_at": "2026-11-01T01:22:45+00:00"
+  },
+  {
+   "id": "ac09e05bf89405ca",
+   "title": "Mass",
+   "start": "2026-11-02T05:30:00-08:00",
+   "end": "2026-11-02T06:00:00-08:00",
+   "all_day": false,
+   "location": "Church",
+   "category": "liturgy",
+   "recurring": true,
+   "source_url": "https://www.sacredhearteureka.org/calendar",
+   "feed_id": "sacredhearteureka.org:mce_json:5eb862c8",
+   "fetched_at": "2026-11-01T01:22:45+00:00"
+  },
+  {
+   "id": "b09852f2b1018642",
+   "title": "Mass of Remembrance",
+   "start": "2026-11-02T17:00:00-08:00",
+   "end": "2026-11-02T18:00:00-08:00",
+   "all_day": false,
+   "location": "Father Dowling Hall, Church",
+   "category": "liturgy",
+   "recurring": false,
+   "source_url": "https://www.sacredhearteureka.org/calendar",
+   "feed_id": "sacredhearteureka.org:mce_json:5eb862c8",
+   "fetched_at": "2026-11-01T01:22:45+00:00"
+  },
+  {
+   "id": "8ecb2fe24f096644",
+   "title": "Mass",
+   "start": "2026-11-03T05:30:00-08:00",
+   "end": "2026-11-03T06:00:00-08:00",
+   "all_day": false,
+   "location": "Church",
+   "category": "liturgy",
+   "recurring": true,
+   "source_url": "https://www.sacredhearteureka.org/calendar",
+   "feed_id": "sacredhearteureka.org:mce_json:5eb862c8",
+   "fetched_at": "2026-11-01T01:22:45+00:00"
+  },
+  {
+   "id": "8eaac6819e5ae1e4",
+   "title": "Mass",
+   "start": "2026-11-04T05:30:00-08:00",
+   "end": "2026-11-04T06:00:00-08:00",
+   "all_day": false,
+   "location": "Church",
+   "category": "liturgy",
+   "recurring": true,
+   "source_url": "https://www.sacredhearteureka.org/calendar",
+   "feed_id": "sacredhearteureka.org:mce_json:5eb862c8",
+   "fetched_at": "2026-11-01T01:22:45+00:00"
+  },
+  {
+   "id": "000214d9d70aeaf2",
+   "title": "A Few Good Men",
+   "start": "2026-11-04T17:00:00-08:00",
+   "end": "2026-11-04T18:00:00-08:00",
+   "all_day": false,
+   "location": "Parish Library",
+   "category": "formation",
+   "recurring": true,
+   "source_url": "https://www.sacredhearteureka.org/calendar",
+   "feed_id": "sacredhearteureka.org:mce_json:5eb862c8",
+   "fetched_at": "2026-11-01T01:22:45+00:00"
+  },
+  {
+   "id": "9d83cf698308828e",
+   "title": "Mass",
+   "start": "2026-11-05T05:30:00-08:00",
+   "end": "2026-11-05T06:00:00-08:00",
+   "all_day": false,
+   "location": "Church",
+   "category": "liturgy",
+   "recurring": true,
+   "source_url": "https://www.sacredhearteureka.org/calendar",
+   "feed_id": "sacredhearteureka.org:mce_json:5eb862c8",
+   "fetched_at": "2026-11-01T01:22:45+00:00"
+  },
+  {
+   "id": "daae82fdbc23c594",
+   "title": "Mass",
+   "start": "2026-11-06T05:30:00-08:00",
+   "end": "2026-11-06T06:00:00-08:00",
+   "all_day": false,
+   "location": "Church",
+   "category": "liturgy",
+   "recurring": true,
+   "source_url": "https://www.sacredhearteureka.org/calendar",
+   "feed_id": "sacredhearteureka.org:mce_json:5eb862c8",
+   "fetched_at": "2026-11-01T01:22:45+00:00"
+  },
+  {
+   "id": "5381285307bc4b1e",
+   "title": "Reconciliation",
+   "start": "2026-11-07T13:30:00-08:00",
+   "end": "2026-11-07T14:15:00-08:00",
+   "all_day": false,
+   "location": "Church",
+   "category": "reconciliation",
+   "recurring": true,
+   "source_url": "https://www.sacredhearteureka.org/calendar",
+   "feed_id": "sacredhearteureka.org:mce_json:5eb862c8",
+   "fetched_at": "2026-11-01T01:22:45+00:00"
+  },
+  {
+   "id": "0b4e54f295aef66a",
+   "title": "Mass",
+   "start": "2026-11-07T15:00:00-08:00",
+   "end": "2026-11-07T16:00:00-08:00",
+   "all_day": false,
+   "location": null,
+   "category": "liturgy",
+   "recurring": true,
+   "source_url": "https://www.sacredhearteureka.org/calendar",
+   "feed_id": "sacredhearteureka.org:mce_json:5eb862c8",
+   "fetched_at": "2026-11-01T01:22:45+00:00"
+  },
+  {
+   "id": "19ba72373a929d26",
+   "title": "Mass",
+   "start": "2026-11-08T05:30:00-08:00",
+   "end": "2026-11-08T06:30:00-08:00",
+   "all_day": false,
+   "location": "Church",
+   "category": "liturgy",
+   "recurring": true,
+   "source_url": "https://www.sacredhearteureka.org/calendar",
+   "feed_id": "sacredhearteureka.org:mce_json:5eb862c8",
+   "fetched_at": "2026-11-01T01:22:45+00:00"
+  },
+  {
+   "id": "5620a3a91069f2a3",
+   "title": "Blood Drive",
+   "start": "2026-11-08T06:30:00-08:00",
+   "end": "2026-11-08T11:00:00-08:00",
+   "all_day": false,
+   "location": "Dining Room",
+   "category": "charity_service",
+   "recurring": false,
+   "source_url": "https://www.sacredhearteureka.org/calendar",
+   "feed_id": "sacredhearteureka.org:mce_json:5eb862c8",
+   "fetched_at": "2026-11-01T01:22:45+00:00"
+  },
+  {
+   "id": "e4613998789647c6",
+   "title": "Children's Liturgy of the Word",
+   "start": "2026-11-08T07:30:00-08:00",
+   "end": "2026-11-08T08:00:00-08:00",
+   "all_day": false,
+   "location": "Father Dowling Hall",
+   "category": "liturgy",
+   "recurring": false,
+   "source_url": "https://www.sacredhearteureka.org/calendar",
+   "feed_id": "sacredhearteureka.org:mce_json:5eb862c8",
+   "fetched_at": "2026-11-01T01:22:45+00:00"
+  },
+  {
+   "id": "30f9f5720b421a2b",
+   "title": "Mass",
+   "start": "2026-11-08T07:30:00-08:00",
+   "end": "2026-11-08T08:30:00-08:00",
+   "all_day": false,
+   "location": "Church",
+   "category": "liturgy",
+   "recurring": true,
+   "source_url": "https://www.sacredhearteureka.org/calendar",
+   "feed_id": "sacredhearteureka.org:mce_json:5eb862c8",
+   "fetched_at": "2026-11-01T01:22:45+00:00"
+  },
+  {
+   "id": "46a6781b29fb601c",
+   "title": "Mass",
+   "start": "2026-11-08T09:30:00-08:00",
+   "end": "2026-11-08T10:30:00-08:00",
+   "all_day": false,
+   "location": "Church",
+   "category": "liturgy",
+   "recurring": true,
+   "source_url": "https://www.sacredhearteureka.org/calendar",
+   "feed_id": "sacredhearteureka.org:mce_json:5eb862c8",
+   "fetched_at": "2026-11-01T01:22:45+00:00"
+  },
+  {
+   "id": "1655d1ad63b414da",
+   "title": "Mass",
+   "start": "2026-11-09T05:30:00-08:00",
+   "end": "2026-11-09T06:00:00-08:00",
+   "all_day": false,
+   "location": "Church",
+   "category": "liturgy",
+   "recurring": true,
+   "source_url": "https://www.sacredhearteureka.org/calendar",
+   "feed_id": "sacredhearteureka.org:mce_json:5eb862c8",
+   "fetched_at": "2026-11-01T01:22:45+00:00"
+  },
+  {
+   "id": "63d3090cb7f94c5e",
+   "title": "Grace in Grief",
+   "start": "2026-11-09T17:00:00-08:00",
+   "end": "2026-11-09T18:30:00-08:00",
+   "all_day": false,
+   "location": "Father Dowling Hall",
+   "category": "other",
+   "recurring": false,
+   "source_url": "https://www.sacredhearteureka.org/calendar",
+   "feed_id": "sacredhearteureka.org:mce_json:5eb862c8",
+   "fetched_at": "2026-11-01T01:22:45+00:00"
+  },
+  {
+   "id": "a1cf6fa5eb4c4222",
+   "title": "Mass",
+   "start": "2026-11-10T05:30:00-08:00",
+   "end": "2026-11-10T06:00:00-08:00",
+   "all_day": false,
+   "location": "Church",
+   "category": "liturgy",
+   "recurring": true,
+   "source_url": "https://www.sacredhearteureka.org/calendar",
+   "feed_id": "sacredhearteureka.org:mce_json:5eb862c8",
+   "fetched_at": "2026-11-01T01:22:45+00:00"
+  },
+  {
+   "id": "e564f6b470298576",
+   "title": "Mass",
+   "start": "2026-11-11T05:30:00-08:00",
+   "end": "2026-11-11T06:00:00-08:00",
+   "all_day": false,
+   "location": "Church",
+   "category": "liturgy",
+   "recurring": true,
+   "source_url": "https://www.sacredhearteureka.org/calendar",
+   "feed_id": "sacredhearteureka.org:mce_json:5eb862c8",
+   "fetched_at": "2026-11-01T01:22:45+00:00"
+  },
+  {
+   "id": "6d8b5bbf712c2f2e",
+   "title": "A Few Good Men",
+   "start": "2026-11-11T17:00:00-08:00",
+   "end": "2026-11-11T18:00:00-08:00",
+   "all_day": false,
+   "location": "Parish Library",
+   "category": "formation",
+   "recurring": true,
+   "source_url": "https://www.sacredhearteureka.org/calendar",
+   "feed_id": "sacredhearteureka.org:mce_json:5eb862c8",
+   "fetched_at": "2026-11-01T01:22:45+00:00"
+  },
+  {
+   "id": "0756a22273d9fecb",
+   "title": "Mass",
+   "start": "2026-11-12T05:30:00-08:00",
+   "end": "2026-11-12T06:00:00-08:00",
+   "all_day": false,
+   "location": "Church",
+   "category": "liturgy",
+   "recurring": true,
+   "source_url": "https://www.sacredhearteureka.org/calendar",
+   "feed_id": "sacredhearteureka.org:mce_json:5eb862c8",
+   "fetched_at": "2026-11-01T01:22:45+00:00"
+  },
+  {
+   "id": "554b653422c29178",
+   "title": "Mass",
+   "start": "2026-11-13T05:30:00-08:00",
+   "end": "2026-11-13T06:00:00-08:00",
+   "all_day": false,
+   "location": "Church",
+   "category": "liturgy",
+   "recurring": true,
+   "source_url": "https://www.sacredhearteureka.org/calendar",
+   "feed_id": "sacredhearteureka.org:mce_json:5eb862c8",
+   "fetched_at": "2026-11-01T01:22:45+00:00"
+  },
+  {
+   "id": "cc186454864f4cc8",
+   "title": "Reconciliation",
+   "start": "2026-11-14T13:30:00-08:00",
+   "end": "2026-11-14T14:15:00-08:00",
+   "all_day": false,
+   "location": "Church",
+   "category": "reconciliation",
+   "recurring": true,
+   "source_url": "https://www.sacredhearteureka.org/calendar",
+   "feed_id": "sacredhearteureka.org:mce_json:5eb862c8",
+   "fetched_at": "2026-11-01T01:22:45+00:00"
+  },
+  {
+   "id": "6f646fb7319b10e0",
+   "title": "Mass",
+   "start": "2026-11-14T15:00:00-08:00",
+   "end": "2026-11-14T16:00:00-08:00",
+   "all_day": false,
+   "location": null,
+   "category": "liturgy",
+   "recurring": true,
+   "source_url": "https://www.sacredhearteureka.org/calendar",
+   "feed_id": "sacredhearteureka.org:mce_json:5eb862c8",
+   "fetched_at": "2026-11-01T01:22:45+00:00"
+  },
+  {
+   "id": "b1e6e5e4aa40f77d",
+   "title": "Mass",
+   "start": "2026-11-15T05:30:00-08:00",
+   "end": "2026-11-15T06:30:00-08:00",
+   "all_day": false,
+   "location": "Church",
+   "category": "liturgy",
+   "recurring": true,
+   "source_url": "https://www.sacredhearteureka.org/calendar",
+   "feed_id": "sacredhearteureka.org:mce_json:5eb862c8",
+   "fetched_at": "2026-11-01T01:22:45+00:00"
+  },
+  {
+   "id": "b27173917c4239bf",
+   "title": "Children's Liturgy of the Word",
+   "start": "2026-11-15T07:30:00-08:00",
+   "end": "2026-11-15T08:00:00-08:00",
+   "all_day": false,
+   "location": "Father Dowling Hall",
+   "category": "liturgy",
+   "recurring": false,
+   "source_url": "https://www.sacredhearteureka.org/calendar",
+   "feed_id": "sacredhearteureka.org:mce_json:5eb862c8",
+   "fetched_at": "2026-11-01T01:22:45+00:00"
+  },
+  {
+   "id": "74087e8bf38ec90d",
+   "title": "Mass",
+   "start": "2026-11-15T07:30:00-08:00",
+   "end": "2026-11-15T08:30:00-08:00",
+   "all_day": false,
+   "location": "Church",
+   "category": "liturgy",
+   "recurring": true,
+   "source_url": "https://www.sacredhearteureka.org/calendar",
+   "feed_id": "sacredhearteureka.org:mce_json:5eb862c8",
+   "fetched_at": "2026-11-01T01:22:45+00:00"
+  },
+  {
+   "id": "e199cab90f47da38",
+   "title": "Mass",
+   "start": "2026-11-15T09:30:00-08:00",
+   "end": "2026-11-15T10:30:00-08:00",
+   "all_day": false,
+   "location": "Church",
+   "category": "liturgy",
+   "recurring": true,
+   "source_url": "https://www.sacredhearteureka.org/calendar",
+   "feed_id": "sacredhearteureka.org:mce_json:5eb862c8",
+   "fetched_at": "2026-11-01T01:22:45+00:00"
+  },
+  {
+   "id": "b2489a9a527b3e61",
+   "title": "Mass",
+   "start": "2026-11-16T05:30:00-08:00",
+   "end": "2026-11-16T06:00:00-08:00",
+   "all_day": false,
+   "location": "Church",
+   "category": "liturgy",
+   "recurring": true,
+   "source_url": "https://www.sacredhearteureka.org/calendar",
+   "feed_id": "sacredhearteureka.org:mce_json:5eb862c8",
+   "fetched_at": "2026-11-01T01:22:45+00:00"
+  },
+  {
+   "id": "592869371f8697bc",
+   "title": "A Few Good Men",
+   "start": "2026-11-18T17:00:00-08:00",
+   "end": "2026-11-18T18:00:00-08:00",
+   "all_day": false,
+   "location": "Parish Library",
+   "category": "formation",
+   "recurring": true,
+   "source_url": "https://www.sacredhearteureka.org/calendar",
+   "feed_id": "sacredhearteureka.org:mce_json:5eb862c8",
+   "fetched_at": "2026-11-01T01:22:45+00:00"
+  },
+  {
+   "id": "40573ec15a4b17aa",
+   "title": "A Few Good Men",
+   "start": "2026-11-25T17:00:00-08:00",
+   "end": "2026-11-25T18:00:00-08:00",
+   "all_day": false,
+   "location": "Parish Library",
+   "category": "formation",
+   "recurring": true,
+   "source_url": "https://www.sacredhearteureka.org/calendar",
+   "feed_id": "sacredhearteureka.org:mce_json:5eb862c8",
+   "fetched_at": "2026-11-01T01:22:45+00:00"
+  },
+  {
+   "id": "f5c699aaab32f0bb",
+   "title": "Advent By Candlelight",
+   "start": "2026-11-29T15:00:00-08:00",
+   "end": "2026-11-29T18:00:00-08:00",
+   "all_day": false,
+   "location": "Father Dowling Hall",
+   "category": "other",
+   "recurring": false,
+   "source_url": "https://www.sacredhearteureka.org/calendar",
+   "feed_id": "sacredhearteureka.org:mce_json:5eb862c8",
+   "fetched_at": "2026-11-01T01:22:45+00:00"
+  },
+  {
+   "id": "5d001fc943fc678d",
+   "title": "A Few Good Men",
+   "start": "2026-12-02T17:00:00-08:00",
+   "end": "2026-12-02T18:00:00-08:00",
+   "all_day": false,
+   "location": "Parish Library",
+   "category": "formation",
+   "recurring": true,
+   "source_url": "https://www.sacredhearteureka.org/calendar",
+   "feed_id": "sacredhearteureka.org:mce_json:5eb862c8",
+   "fetched_at": "2026-11-01T01:22:45+00:00"
+  },
+  {
+   "id": "4a051bb677fd00f9",
+   "title": "Immaculate Conception",
+   "start": "2026-12-08T17:00:00-08:00",
+   "end": "2026-12-08T18:00:00-08:00",
+   "all_day": false,
+   "location": "Church",
+   "category": "other",
+   "recurring": false,
+   "source_url": "https://www.sacredhearteureka.org/calendar",
+   "feed_id": "sacredhearteureka.org:mce_json:5eb862c8",
+   "fetched_at": "2026-11-01T01:22:45+00:00"
+  },
+  {
+   "id": "9c683298ed026b8b",
+   "title": "A Few Good Men",
+   "start": "2026-12-09T17:00:00-08:00",
+   "end": "2026-12-09T18:00:00-08:00",
+   "all_day": false,
+   "location": "Parish Library",
+   "category": "formation",
+   "recurring": true,
+   "source_url": "https://www.sacredhearteureka.org/calendar",
+   "feed_id": "sacredhearteureka.org:mce_json:5eb862c8",
+   "fetched_at": "2026-11-01T01:22:45+00:00"
+  },
+  {
+   "id": "dfaf10d3ea67ae98",
+   "title": "A Few Good Men",
+   "start": "2026-12-16T17:00:00-08:00",
+   "end": "2026-12-16T18:00:00-08:00",
+   "all_day": false,
+   "location": "Parish Library",
+   "category": "formation",
+   "recurring": true,
+   "source_url": "https://www.sacredhearteureka.org/calendar",
+   "feed_id": "sacredhearteureka.org:mce_json:5eb862c8",
+   "fetched_at": "2026-11-01T01:22:45+00:00"
+  },
+  {
+   "id": "9de09afa92fac802",
+   "title": "A Few Good Men",
+   "start": "2026-12-23T17:00:00-08:00",
+   "end": "2026-12-23T18:00:00-08:00",
+   "all_day": false,
+   "location": "Parish Library",
+   "category": "formation",
+   "recurring": true,
+   "source_url": "https://www.sacredhearteureka.org/calendar",
+   "feed_id": "sacredhearteureka.org:mce_json:5eb862c8",
+   "fetched_at": "2026-11-01T01:22:45+00:00"
+  },
+  {
+   "id": "b4acdee52310ff9d",
+   "title": "A Few Good Men",
+   "start": "2026-12-30T17:00:00-08:00",
+   "end": "2026-12-30T18:00:00-08:00",
+   "all_day": false,
+   "location": "Parish Library",
+   "category": "formation",
+   "recurring": true,
+   "source_url": "https://www.sacredhearteureka.org/calendar",
+   "feed_id": "sacredhearteureka.org:mce_json:5eb862c8",
+   "fetched_at": "2026-11-01T01:22:45+00:00"
+  },
+  {
+   "id": "0a56d31bcbc389fc",
+   "title": "A Few Good Men",
+   "start": "2027-01-06T17:00:00-08:00",
+   "end": "2027-01-06T18:00:00-08:00",
+   "all_day": false,
+   "location": "Parish Library",
+   "category": "formation",
+   "recurring": true,
+   "source_url": "https://www.sacredhearteureka.org/calendar",
+   "feed_id": "sacredhearteureka.org:mce_json:5eb862c8",
+   "fetched_at": "2026-11-01T01:22:45+00:00"
+  },
+  {
+   "id": "41829aaf6fa90820",
+   "title": "A Few Good Men",
+   "start": "2027-01-13T17:00:00-08:00",
+   "end": "2027-01-13T18:00:00-08:00",
+   "all_day": false,
+   "location": "Parish Library",
+   "category": "formation",
+   "recurring": true,
+   "source_url": "https://www.sacredhearteureka.org/calendar",
+   "feed_id": "sacredhearteureka.org:mce_json:5eb862c8",
+   "fetched_at": "2026-11-01T01:22:45+00:00"
+  },
+  {
+   "id": "4fc16ffeeab62643",
+   "title": "A Few Good Men",
+   "start": "2027-01-20T17:00:00-08:00",
+   "end": "2027-01-20T18:00:00-08:00",
+   "all_day": false,
+   "location": "Parish Library",
+   "category": "formation",
+   "recurring": true,
+   "source_url": "https://www.sacredhearteureka.org/calendar",
+   "feed_id": "sacredhearteureka.org:mce_json:5eb862c8",
+   "fetched_at": "2026-11-01T01:22:45+00:00"
+  },
+  {
+   "id": "72c9d4a1413ad4fc",
+   "title": "A Few Good Men",
+   "start": "2027-01-27T17:00:00-08:00",
+   "end": "2027-01-27T18:00:00-08:00",
+   "all_day": false,
+   "location": "Parish Library",
+   "category": "formation",
+   "recurring": true,
+   "source_url": "https://www.sacredhearteureka.org/calendar",
+   "feed_id": "sacredhearteureka.org:mce_json:5eb862c8",
+   "fetched_at": "2026-11-01T01:22:45+00:00"
+  }
+ ],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/MSHEureka"
+  ],
+  "instagram": [
+   "https://www.instagram.com/msh_eurekamo/"
+  ],
+  "youtube": [
+   "https://www.youtube.com/channel/UCpS6Wlo2t9PC1SwZkYS4eFw"
+  ],
+  "livestream": [
+   {
+    "url": "https://www.youtube.com/channel/UCpS6Wlo2t9PC1SwZkYS4eFw/live",
+    "label": "Mass",
+    "platform": "youtube",
+    "kind": "link"
+   }
+  ]
+ },
+ "bulletin": {
+  "url": "https://container.parishesonline.com/bulletins/01/1256/20261101B.pdf",
+  "date": "2026-11-01",
+  "kind": "lpi_pdf",
+  "text": "",
+  "source_url": "https://www.sacredhearteureka.org/find-the-bulletin"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "07:30",
+   "language": null,
+   "raw": "Mass Times: Weekdays: 7:30 AM",
+   "source_url": "https://www.sacredhearteureka.org/sacraments",
+   "fetched_at": "2026-11-01T01:19:43+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Weekdays"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "07:30",
+   "language": null,
+   "raw": "Mass Times: Weekdays: 7:30 AM",
+   "source_url": "https://www.sacredhearteureka.org/sacraments",
+   "fetched_at": "2026-11-01T01:19:43+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Weekdays"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "07:30",
+   "language": null,
+   "raw": "Mass Times: Weekdays: 7:30 AM",
+   "source_url": "https://www.sacredhearteureka.org/sacraments",
+   "fetched_at": "2026-11-01T01:19:43+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Weekdays"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "07:30",
+   "language": null,
+   "raw": "Mass Times: Weekdays: 7:30 AM",
+   "source_url": "https://www.sacredhearteureka.org/sacraments",
+   "fetched_at": "2026-11-01T01:19:43+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Weekdays"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "07:30",
+   "language": null,
+   "raw": "Mass Times: Weekdays: 7:30 AM",
+   "source_url": "https://www.sacredhearteureka.org/sacraments",
+   "fetched_at": "2026-11-01T01:19:43+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Weekdays"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Mass Times: Saturday: 5:00 PM",
+   "source_url": "https://www.sacredhearteureka.org/sacraments",
+   "fetched_at": "2026-11-01T01:19:43+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "07:30",
+   "language": null,
+   "raw": "Mass Times: Sunday: 7:30, 9:30, 11:30 AM",
+   "source_url": "https://www.sacredhearteureka.org/sacraments",
+   "fetched_at": "2026-11-01T01:19:43+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:30",
+   "language": null,
+   "raw": "Mass Times: Sunday: 7:30, 9:30, 11:30 AM",
+   "source_url": "https://www.sacredhearteureka.org/sacraments",
+   "fetched_at": "2026-11-01T01:19:43+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:30",
+   "language": null,
+   "raw": "Mass Times: Sunday: 7:30, 9:30, 11:30 AM",
+   "source_url": "https://www.sacredhearteureka.org/sacraments",
+   "fetched_at": "2026-11-01T01:19:43+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:30-16:15",
+   "language": null,
+   "raw": "Reconciliation: This Sacrament is routinely scheduled on Saturday afternoons from 3:30-4:15.",
+   "source_url": "https://www.sacredhearteureka.org/sacraments",
+   "fetched_at": "2026-11-01T01:19:43+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "wordpress"
+  }
+ ],
+ "source_url": "http://www.sacredhearteureka.org/",
+ "fetched_at": "2026-11-01T01:19:49+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 16
+ },
+ "schedule_dropped": {
+  "dated_line": 12,
+  "no_day": 12,
+  "not_a_service": 2
+ },
+ "groups_dropped": {
+  "noise": 1,
+  "unmatched": 1
+ },
+ "event_counts": {
+  "window_start": "2026-10-31",
+  "window_end_exclusive": "2027-01-29",
+  "days": 90,
+  "in_window": 164,
+  "kept_after_privacy": 161,
+  "stored": 47,
+  "liturgy_and_confession_instances_total": 144,
+  "excluded_by_reason": {
+   "names_person": 3
+  }
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

@@ -1,0 +1,152 @@
+{
+ "domain": "stmaryspylesville.org",
+ "diocese": "archdiocese-of-baltimore",
+ "matched_church_ids": [
+  "archdiocese-of-baltimore:St. Mary of the Assumption (Pylesville)"
+ ],
+ "matched": {
+  "directory": [
+   "archdiocese-of-baltimore:St. Mary of the Assumption (Pylesville)"
+  ],
+  "discovermass": []
+ },
+ "names": [
+  "St. Mary of the Assumption (Pylesville)"
+ ],
+ "cities": [
+  "Pylesville"
+ ],
+ "home_url": "https://www.stmaryspylesville.org/",
+ "final_url": "https://stmaryspylesville.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "not_found",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://stmaryspylesville.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stmaryspylesville.org/mass-times",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stmaryspylesville.org/mass-schedule",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "ministries",
+   "url": "https://stmaryspylesville.org/ministries",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://stmaryspylesville.org/bulletins",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://stmaryspylesville.org/bulletin",
+   "status": 404,
+   "class": "not_found"
+  }
+ ],
+ "cms_guess": {
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
+ },
+ "template": "ecatholic-fastpath",
+ "groups": [],
+ "calendar_feeds": [
+  {
+   "feed_id": "stmaryspylesville.org:ics:7a949ed8",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": "https://calendar.google.com/calendar/ical/c_ebbc42951079e696d7e2e08940844bbb215a47d287a77894ef153201b739054a%40group.calendar.google.com/public/basic.ics",
+   "page_url": "https://stmaryspylesville.org/",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (embedded on page)",
+   "display_tz": "America/New_York",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T02:53:30+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  },
+  {
+   "feed_id": "stmaryspylesville.org:ics:99cb7524",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": null,
+   "page_url": "https://stmaryspylesville.org/",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (embedded on page)",
+   "url_withheld": "calendar id is an e-mail address; not stored",
+   "feed_key": "99cb7524f81a",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T02:53:31+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/StMarysOfTheAssumptionCatholicChurch"
+  ],
+  "instagram": [
+   "https://www.instagram.com/smapylesville/"
+  ]
+ },
+ "bulletin": null,
+ "schedule_rows": [],
+ "source_url": "https://www.stmaryspylesville.org/",
+ "fetched_at": "2026-11-01T02:04:30+00:00",
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": true,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-10-31",
+  "window_end_exclusive": "2027-01-29",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

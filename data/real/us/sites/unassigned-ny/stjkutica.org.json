@@ -1,0 +1,194 @@
+{
+ "domain": "stjkutica.org",
+ "diocese": "unassigned-ny",
+ "matched_church_ids": [
+  "wd-Q11808900"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "wd-Q11808900"
+  ]
+ },
+ "names": [],
+ "cities": [
+  "Utica"
+ ],
+ "home_url": "http://stjkutica.org/",
+ "final_url": "https://stjkutica.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://stjkutica.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stjkutica.org/schedule",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://stjkutica.org/administration",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://stjkutica.org/calendar.html",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://stjkutica.org/contact",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "unknown",
+  "evidence": []
+ },
+ "template": "generic-html:unknown",
+ "groups": [],
+ "calendar_feeds": [
+  {
+   "feed_id": "stjkutica.org:ics:383643b1",
+   "type": "ics",
+   "platform": "iCal",
+   "url": "https://www.google.com/calendar/render?cid=https%3A%2F%2Fstjkutica.org%2Fcalendar%2Fsync.ics",
+   "page_url": "https://stjkutica.org/",
+   "label": null,
+   "status": "active",
+   "note": "iCal link on page",
+   "last_fetch": {
+    "status": "not_ical",
+    "fetched_at": "2026-11-01T03:37:42+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  },
+  {
+   "feed_id": "stjkutica.org:ics:2852c396",
+   "type": "ics",
+   "platform": "iCal",
+   "url": "https://stjkutica.org/calendar/sync.ics",
+   "page_url": "https://stjkutica.org/",
+   "label": null,
+   "status": "active",
+   "note": "iCal link on page",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T03:37:42+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
+ "events": [],
+ "social": {},
+ "bulletin": null,
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "09:30",
+   "language": null,
+   "raw": "Divine Liturgy – 9:30 am. Vigil – 5:00 pm.",
+   "source_url": "https://stjkutica.org/schedule",
+   "fetched_at": "2026-11-01T02:16:29+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Divine Liturgy – 9:30 am. Vigil – 5:00 pm.",
+   "source_url": "https://stjkutica.org/schedule",
+   "fetched_at": "2026-11-01T02:16:29+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "09:30",
+   "language": null,
+   "raw": "Divine Liturgy – 9:30 am",
+   "source_url": "https://stjkutica.org/schedule",
+   "fetched_at": "2026-11-01T02:16:29+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:30",
+   "language": null,
+   "raw": "Palestine. Tone 2. Divine Liturgy - 9:30 am",
+   "source_url": "https://stjkutica.org/schedule",
+   "fetched_at": "2026-11-01T02:16:29+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  }
+ ],
+ "source_url": "http://stjkutica.org/",
+ "fetched_at": "2026-11-01T02:18:29+00:00",
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": true,
+  "trusted_candidate": false,
+  "generic_rows": 6
+ },
+ "schedule_dropped": {
+  "dated_line": 10,
+  "no_kind": 3,
+  "not_a_service": 2,
+  "skipped_section": 43
+ },
+ "groups_dropped": {
+  "unmatched": 3,
+  "sentence": 2
+ },
+ "event_counts": {
+  "window_start": "2026-10-31",
+  "window_end_exclusive": "2027-01-29",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

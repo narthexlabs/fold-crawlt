@@ -1,0 +1,183 @@
+{
+ "diocese": "diocese-of-peoria",
+ "domain": "ihmcatholic.church",
+ "site_key": "ihmcatholic.church",
+ "site_file": "data/real/us/sites/diocese-of-peoria/ihmcatholic.church.json",
+ "parishes": [
+  {
+   "church_id": "diocese-of-peoria:Immaculate Heart of Mary Parish - Henry",
+   "name": "Immaculate Heart of Mary Parish - Henry",
+   "city": "Lacon"
+  }
+ ],
+ "bulletin_link": {
+  "url": "https://container.parishesonline.com/bulletins/01/1285/20261101B.pdf",
+  "kind": "lpi_pdf",
+  "date": "2026-11-01",
+  "text": "",
+  "source_url": "https://ihmcatholic.church/"
+ },
+ "status": "ok",
+ "had_mass_times": true,
+ "site_groups_before": 2,
+ "gained_first_groups": false,
+ "issues": [
+  {
+   "url": "https://container.parishesonline.com/bulletins/01/1285/20261101B.pdf",
+   "date": "2026-11-01",
+   "date_source": "link",
+   "pages": 6,
+   "ocr": true,
+   "ocr_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "found_via": "LPi container, code 01-1285 seen on https://ihmcatholic.church/",
+   "fetched_at": "2026-11-01T03:27:43+00:00"
+  },
+  {
+   "url": "https://container.parishesonline.com/bulletins/01/1285/20261025B.pdf",
+   "date": "2026-10-25",
+   "date_source": "link",
+   "pages": 6,
+   "ocr": true,
+   "ocr_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "found_via": "LPi container, code 01-1285 seen on https://ihmcatholic.church/",
+   "fetched_at": "2026-11-01T03:28:52+00:00"
+  }
+ ],
+ "notes": [],
+ "tried": [
+  {
+   "url": "https://ihmcatholic.church/wp-content/themes/ihm-theme/assets/vendor/pdfjs/viewer.html?file=https%3A%2F%2Fihmcatholic.church%2F%3Fihm_bulletin_pdf%3D01%2F1285%2F20261101B.pdf",
+   "cls": "not_a_pdf",
+   "status": 200
+  }
+ ],
+ "checked_at": "2026-11-01T03:27:35+00:00",
+ "built_at": "2026-11-01T03:29:58+00:00",
+ "built_by": "ingest/us/bulletins/run.py (California's fetch.py / extract_groups.py)",
+ "privacy": "no lay names, phones or e-mails; contact is 'ask the parish office'; names and places pass ingest/public/privacy.py and ingest/connectors/calendars/privacy.py",
+ "privacy_dropped": 0,
+ "groups": [
+  {
+   "id": "ihmcatholic.church:bulletin:kofc:",
+   "name": "Knights of Columbus",
+   "category": "fraternal_orders",
+   "category_label": "Fraternal & orders",
+   "subcategory": "knights_of_columbus",
+   "audience": "men",
+   "language": "en",
+   "language_assumed": true,
+   "informal": true,
+   "informal_kind": "kofc",
+   "meets": null,
+   "next_meeting": null,
+   "location": null,
+   "contact": "ask the parish office",
+   "source_kind": "bulletin",
+   "source_label": "From the parish bulletin, October 25, 2026",
+   "source_url": "https://container.parishesonline.com/bulletins/01/1285/20261025B.pdf",
+   "last_seen": "2026-10-25",
+   "seen_in_issues": 1,
+   "sources": [
+    {
+     "url": "https://container.parishesonline.com/bulletins/01/1285/20261025B.pdf",
+     "issue_date": "2026-10-25",
+     "page": 2,
+     "ocr": true
+    }
+   ],
+   "confidence": "medium",
+   "flags": [
+    "ocr"
+   ],
+   "also_on_parish_website": false
+  },
+  {
+   "id": "ihmcatholic.church:bulletin:prayer_group:prayerline:",
+   "name": "Prayer line",
+   "category": "prayer_devotion",
+   "category_label": "Prayer & devotion",
+   "subcategory": "prayer_group",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "informal": true,
+   "informal_kind": "prayer_group",
+   "meets": null,
+   "next_meeting": null,
+   "location": null,
+   "contact": "ask the parish office",
+   "source_kind": "bulletin",
+   "source_label": "From the parish bulletin, November 1, 2026",
+   "source_url": "https://container.parishesonline.com/bulletins/01/1285/20261101B.pdf",
+   "last_seen": "2026-11-01",
+   "seen_in_issues": 2,
+   "sources": [
+    {
+     "url": "https://container.parishesonline.com/bulletins/01/1285/20261101B.pdf",
+     "issue_date": "2026-11-01",
+     "page": 2,
+     "ocr": true
+    },
+    {
+     "url": "https://container.parishesonline.com/bulletins/01/1285/20261025B.pdf",
+     "issue_date": "2026-10-25",
+     "page": 2,
+     "ocr": true
+    }
+   ],
+   "confidence": "medium",
+   "flags": [
+    "ocr"
+   ],
+   "also_on_parish_website": false
+  },
+  {
+   "id": "ihmcatholic.church:bulletin:t:servers:altarserver:",
+   "name": "Altar Server",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "altar_servers",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "informal": false,
+   "informal_kind": null,
+   "meets": null,
+   "next_meeting": null,
+   "location": null,
+   "contact": "ask the parish office",
+   "source_kind": "bulletin",
+   "source_label": "From the parish bulletin, November 1, 2026",
+   "source_url": "https://container.parishesonline.com/bulletins/01/1285/20261101B.pdf",
+   "last_seen": "2026-11-01",
+   "seen_in_issues": 1,
+   "sources": [
+    {
+     "url": "https://container.parishesonline.com/bulletins/01/1285/20261101B.pdf",
+     "issue_date": "2026-11-01",
+     "page": 2,
+     "ocr": true
+    }
+   ],
+   "confidence": "low",
+   "flags": [
+    "ocr"
+   ],
+   "also_on_parish_website": false
+  }
+ ]
+}

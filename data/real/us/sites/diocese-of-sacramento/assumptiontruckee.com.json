@@ -1,0 +1,180 @@
+{
+ "domain": "assumptiontruckee.com",
+ "diocese": "diocese-of-sacramento",
+ "matched_church_ids": [
+  "diocese-of-sacramento:Assumption of the Blessed Virgin Mary - Truckee"
+ ],
+ "matched": {
+  "directory": [
+   "diocese-of-sacramento:Assumption of the Blessed Virgin Mary - Truckee"
+  ],
+  "discovermass": []
+ },
+ "names": [
+  "Assumption of the Blessed Virgin Mary - Truckee"
+ ],
+ "cities": [],
+ "home_url": "http://assumptiontruckee.com/",
+ "final_url": "https://www.assumptiontruckee.com/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://www.assumptiontruckee.com/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.assumptiontruckee.com/sacraments/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://www.assumptiontruckee.com/contact/",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "parishsoft",
+  "evidence": [
+   "parishsoft.com"
+  ]
+ },
+ "template": "generic-html:parishsoft",
+ "groups": [],
+ "calendar_feeds": [],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/assumptiontruckee"
+  ]
+ },
+ "bulletin": null,
+ "schedule_rows": [
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:30-16:30",
+   "language": null,
+   "raw": "CONFESSION HOURS :: Saturday 3:30 - 4:30 p.m.",
+   "source_url": "https://www.assumptiontruckee.com/sacraments/",
+   "fetched_at": "2026-11-01T05:15:07+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "08:00",
+   "language": null,
+   "raw": "MONDAY, NOVEMBER 2 — ALL SOULS’ DAY: 8:00 AM Daily Mass is canceled",
+   "source_url": "https://www.assumptiontruckee.com/",
+   "fetched_at": "2026-11-01T05:14:47+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "18:00",
+   "language": "Bilingual",
+   "raw": "6:00 PM — Bilingual Mass | Truckee",
+   "source_url": "https://www.assumptiontruckee.com/",
+   "fetched_at": "2026-11-01T05:14:47+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "19:30",
+   "language": "Bilingual",
+   "raw": "7:30 PM [Mass intention withheld]",
+   "source_url": "https://www.assumptiontruckee.com/",
+   "fetched_at": "2026-11-01T05:14:47+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "08:30-09:30",
+   "language": null,
+   "raw": "• HOLY HOUR WITH BENEDICTION: Friday 8:30 - 9:30 a.m.",
+   "source_url": "https://www.assumptiontruckee.com/",
+   "fetched_at": "2026-11-01T05:14:47+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  }
+ ],
+ "source_url": "http://assumptiontruckee.com/",
+ "fetched_at": "2026-11-01T05:15:27+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 5
+ },
+ "schedule_dropped": {
+  "no_kind": 4,
+  "not_a_service": 2,
+  "no_day": 1,
+  "other_location": 1
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": "info@assumptiontruckee.com",
+  "phone": "(530) 587-3595",
+  "address": "10930 Alder Dr. Truckee CA. 96161",
+  "source_url": "https://www.assumptiontruckee.com/contact/",
+  "sources": {
+   "email": "https://www.assumptiontruckee.com/contact/",
+   "phone": "https://www.assumptiontruckee.com/contact/",
+   "address": "https://www.assumptiontruckee.com/contact/"
+  },
+  "fetched_at": "2026-11-01T05:15:17+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()",
+  "intentions_withheld": 1
+ }
+}

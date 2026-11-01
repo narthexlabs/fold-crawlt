@@ -1,0 +1,155 @@
+{
+ "domain": "stkateri.net",
+ "diocese": "diocese-of-belleville",
+ "matched_church_ids": [
+  "gc-30449",
+  "gc-30456",
+  "gc-30468"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "gc-30456",
+   "gc-30468",
+   "gc-30449"
+  ]
+ },
+ "names": [
+  "St. Kateri Tekakwitha, Lily of the Mohawks",
+  "St. Mary",
+  "St. Patrick"
+ ],
+ "cities": [
+  "Ridgway",
+  "Shawneetown"
+ ],
+ "home_url": "http://www.stkateri.net/",
+ "final_url": "https://stkateri.net/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://stkateri.net/",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-content"
+  ]
+ },
+ "template": "wordpress-html",
+ "groups": [],
+ "calendar_feeds": [
+  {
+   "feed_id": "stkateri.net:ics:37635983",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": "https://calendar.google.com/calendar/ical/q5niqd4pc1ftcueuacv1url84g%40group.calendar.google.com/public/basic.ics",
+   "page_url": "https://stkateri.net/",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (embedded on page)",
+   "display_tz": "America/Chicago",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T04:34:25+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/pg"
+  ],
+  "youtube": [
+   "https://www.youtube.com/channel/UCKuEQNWlk6k5mYILmGWXEJg"
+  ]
+ },
+ "bulletin": {
+  "url": "https://stkateri.net/wp-content/uploads/2026/10/bulleitn.pdf",
+  "date": null,
+  "kind": "pdf",
+  "text": "Bulletin",
+  "source_url": "https://stkateri.net/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Weekly Mass: Saturday 5:00pm and Sunday 10:30am",
+   "source_url": "https://stkateri.net/",
+   "fetched_at": "2026-11-01T03:59:37+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:30",
+   "language": null,
+   "raw": "Weekly Mass: Saturday 5:00pm and Sunday 10:30am",
+   "source_url": "https://stkateri.net/",
+   "fetched_at": "2026-11-01T03:59:37+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  }
+ ],
+ "source_url": "http://www.stkateri.net/",
+ "fetched_at": "2026-11-01T03:59:39+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-10-31",
+  "window_end_exclusive": "2027-01-29",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": null,
+  "address": "P.O. Box 190 Ridgway, IL 62979",
+  "source_url": "https://stkateri.net/",
+  "sources": {
+   "address": "https://stkateri.net/"
+  },
+  "fetched_at": "2026-11-01T03:59:37+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

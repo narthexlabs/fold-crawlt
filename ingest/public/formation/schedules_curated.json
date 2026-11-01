@@ -1,0 +1,817 @@
+{
+  "_meta": {
+    "what": "Regular weekly schedules (Masses, confession, Eucharistic adoration) transcribed from each parish's own website, for the 37 parishes whose sites crawled OK.",
+    "source_snapshot": "Pages cached by ingest/public/parish_sites.py on 2026-10-25/26 (data/raw/parish_sites/<id>/, gitignored). Page URLs are in each entry's src.",
+    "curated_on": "2026-10-26",
+    "curated_by": "Research agent (Claude Opus 5.5) reading the cached page text; every entry carries an evidence snippet (ev, at most 15 words) that build_offerings.py re-checks against the cached page.",
+    "rules": [
+      "Only the regular schedule is transcribed. Holiday, Holy Day, Christmas/Easter, Simbang Gabi and other dated one-off schedules are skipped.",
+      "Parish office / rectory / building hours are never counted.",
+      "season: regular (default) | school_year (counted, flagged) | advent_lent or lent (NOT counted in weekly totals).",
+      "freq: weekly (default) | monthly (counted as 12/52 of a week, flagged).",
+      "end: null means the site gives a start time only (open-ended); hours are then not stated.",
+      "lang: ISO 639-1 code; lang_stated=false means the site does not name the language (almost always English).",
+      "days: Sun Mon Tue Wed Thu Fri Sat, ranges like Mon-Fri, lists like Mon,Wed,Fri, or Daily."
+    ]
+  },
+  "parishes": {
+    "barnabas-alameda": {
+      "masses": [
+        {"days": "Sat", "times": ["16:30"], "lang": "en", "lang_stated": false, "src": "https://sbarnabas.weebly.com/mass-times-offerings-prayer-list.html", "ev": "Saturday (Vigil)"},
+        {"days": "Sun", "times": ["09:00", "11:00"], "lang": "en", "lang_stated": false, "src": "https://sbarnabas.weebly.com/mass-times-offerings-prayer-list.html", "ev": "- 9:00 AM & 11:00 AM"},
+        {"days": "Mon-Fri", "times": ["12:10"], "lang": "en", "lang_stated": false, "src": "https://sbarnabas.weebly.com/mass-times-offerings-prayer-list.html", "ev": "Monday to Friday - 12:10 PM"}
+      ],
+      "confession": [
+        {"days": "Sat", "start": "15:30", "end": "16:00", "src": "https://sbarnabas.weebly.com/mass-times-offerings-prayer-list.html", "ev": "Reconciliation is held on Saturdays from 3:30 - 4:00 PM and by appointment"}
+      ],
+      "confession_by_appointment": true,
+      "adoration": [],
+      "flags": ["listed_for_closure_2026", "ministries_page_not_fetched"],
+      "notes": "Ministries and office-hours pages returned HTTP 429, so adoration or groups listed there were not seen.",
+      "confidence": {"masses": "high", "confession": "high", "adoration": "low"}
+    },
+    "philip-neri-albert-great-alameda": {
+      "masses": [
+        {"days": "Mon-Sat", "times": ["08:30"], "lang": "en", "lang_stated": false, "site": "St. Philip Neri", "src": "https://www.spnsa.org/mass-schedule", "ev": "Monday thru Saturday: 8:30 AM"},
+        {"days": "Sat", "times": ["17:15"], "lang": "en", "lang_stated": false, "site": "St. Philip Neri", "src": "https://www.spnsa.org/mass-schedule", "ev": "Saturday Vigil: 5:15 PM"},
+        {"days": "Sun", "times": ["09:00", "11:30"], "lang": "en", "lang_stated": false, "site": "St. Philip Neri", "src": "https://www.spnsa.org/mass-schedule", "ev": "Sunday: 9:00 AM &11:30 AM"},
+        {"days": "Mon-Sat", "times": ["07:30"], "lang": "en", "lang_stated": false, "site": "St. Albert the Great", "src": "https://www.spnsa.org/mass-schedule", "ev": "Monday thru Saturday: 7:30 AM"},
+        {"days": "Sat", "times": ["16:00"], "lang": "en", "lang_stated": false, "site": "St. Albert the Great", "src": "https://www.spnsa.org/mass-schedule", "ev": "Saturday Vigil: 4:00 PM"},
+        {"days": "Sun", "times": ["08:00", "10:30"], "lang": "en", "lang_stated": false, "site": "St. Albert the Great", "src": "https://www.spnsa.org/mass-schedule", "ev": "Sunday: 8:00 AM and 10:30 AM"}
+      ],
+      "confession": [
+        {"days": "Sat", "start": "16:30", "end": null, "site": "St. Philip Neri", "src": "https://www.spnsa.org/mass-schedule", "ev": "Confession: Saturday at 4:30 PM or by appointment"},
+        {"days": "Sat", "start": "15:30", "end": null, "site": "St. Albert the Great", "src": "https://www.spnsa.org/mass-schedule", "ev": "Confession: Saturday at 3:30 PM or by appointment"}
+      ],
+      "confession_by_appointment": true,
+      "adoration": [
+        {"days": "Fri", "start": "09:00", "end": "13:00", "freq": "monthly", "which": "1st Fri", "site": "St. Philip Neri", "src": "https://www.spnsa.org/ministries", "ev": "from 9:00AM to 1:00PM"},
+        {"days": "Wed", "start": "18:00", "end": "19:00", "site": "St. Albert the Great", "src": "https://www.spnsa.org/mass-schedule", "ev": "Every Wednesday evening - 6:00 to 7:00 PM."}
+      ],
+      "flags": ["multi_site", "site_listed_for_closure_2026"],
+      "notes": "Two churches. St. Albert the Great is one of the sites named in the April 2026 closure announcement. The home page lists the Sunday 11:30 Mass as 'PM' (typo); the Mass-schedule page is used.",
+      "confidence": {"masses": "high", "confession": "medium", "adoration": "high"}
+    },
+    "our-lady-queen-world-bay-point": {
+      "masses": [
+        {"days": "Sat", "times": ["17:00"], "lang": "en", "lang_stated": true, "src": "https://olqw.org/need-mass-times/", "ev": "Saturday Mass – English 5:00 PM; Spanish 7:00 PM"},
+        {"days": "Sat", "times": ["19:00"], "lang": "es", "lang_stated": true, "src": "https://olqw.org/need-mass-times/", "ev": "Saturday Mass – English 5:00 PM; Spanish 7:00 PM"},
+        {"days": "Sun", "times": ["08:00", "10:00", "12:00"], "lang": "en", "lang_stated": true, "src": "https://olqw.org/need-mass-times/", "ev": "Sunday Mass – English 8:00 AM, 10:00 AM, 12:00 PM; Vietnamese 4:00 PM"},
+        {"days": "Sun", "times": ["16:00"], "lang": "vi", "lang_stated": true, "src": "https://olqw.org/need-mass-times/", "ev": "Sunday Mass – English 8:00 AM, 10:00 AM, 12:00 PM; Vietnamese 4:00 PM"},
+        {"days": "Mon-Fri", "times": ["07:30"], "lang": "en", "lang_stated": false, "src": "https://olqw.org/need-mass-times/", "ev": "Daily Mass – Monday thru Friday 7:30 AM; Saturday 8:00 AM"},
+        {"days": "Sat", "times": ["08:00"], "lang": "en", "lang_stated": false, "src": "https://olqw.org/need-mass-times/", "ev": "Daily Mass – Monday thru Friday 7:30 AM; Saturday 8:00 AM"}
+      ],
+      "confession": [
+        {"days": "Sat", "start": "16:00", "end": "17:00", "src": "https://olqw.org/need-mass-times/", "ev": "Every Saturday – 4:00 PM to 5:00 PM, or by appointment"}
+      ],
+      "confession_by_appointment": true,
+      "adoration": [
+        {"days": "Fri", "start": "08:00", "end": null, "src": "https://olqw.org/need-mass-times/", "ev": "Adoration of the Blessed Sacrament & Benediction – Fridays after morning mass"}
+      ],
+      "devotions": [
+        {"name": "Our Lady of Perpetual Help Novena", "days": "Wed"},
+        {"name": "Chaplet of Divine Mercy", "days": "Mon-Sat"}
+      ],
+      "flags": [],
+      "notes": "Adoration start is after the 7:30 AM Friday Mass (taken as 08:00); no end time given.",
+      "confidence": {"masses": "high", "confession": "high", "adoration": "medium"}
+    },
+    "holy-spirit-newman-hall-berkeley": {
+      "masses": [
+        {"days": "Sat", "times": ["17:00"], "lang": "en", "lang_stated": false, "src": "https://www.calnewman.org/sacraments", "ev": "Saturday (vigil):"},
+        {"days": "Sun", "times": ["08:00", "10:00", "17:00", "21:00"], "lang": "en", "lang_stated": false, "src": "https://www.calnewman.org/sacraments", "ev": "8am, 10am, 5pm, 9pm (candlelight)"},
+        {"days": "Mon-Sat", "times": ["12:10"], "lang": "en", "lang_stated": false, "src": "https://www.calnewman.org/sacraments", "ev": "Monday to Saturday:"},
+        {"days": "Thu", "times": ["20:00"], "lang": "en", "lang_stated": false, "season": "school_year", "src": "https://www.calnewman.org/sacraments", "ev": "(During school year only)"}
+      ],
+      "confession": [
+        {"days": "Sat", "start": "11:00", "end": "12:00", "src": "https://www.calnewman.org/sacraments", "ev": "Saturdays from 11:00 a.m. to 12:00"},
+        {"days": "Thu", "start": "19:00", "end": "20:00", "season": "school_year", "src": "https://www.calnewman.org/sacraments", "ev": "Thursday nights from 7-8 pm"}
+      ],
+      "confession_by_appointment": true,
+      "adoration": [
+        {"days": "Mon,Tue,Wed,Fri", "start": "11:00", "end": "12:00", "season": "school_year", "src": "https://www.calnewman.org/sacraments", "ev": "Holy Hour is offered only when Cal is in session"},
+        {"days": "Thu", "start": "19:00", "end": "20:00", "season": "school_year", "src": "https://www.calnewman.org/sacraments", "ev": "Holy Hour is offered only when Cal is in session"}
+      ],
+      "flags": ["university_parish"],
+      "notes": "Campus (UC Berkeley) parish. Thursday Mass, Thursday confession and all Holy Hours run only while classes are in session; they are counted but flagged school_year.",
+      "confidence": {"masses": "high", "confession": "high", "adoration": "high"}
+    },
+    "mary-magdalen-berkeley": {
+      "masses": [
+        {"days": "Mon,Wed,Fri", "times": ["17:30"], "lang": "en", "lang_stated": false, "src": "https://marymagdalen.org/massprayertimes-2/", "ev": "Mass Times"},
+        {"days": "Tue,Thu,Sat", "times": ["08:30"], "lang": "en", "lang_stated": false, "src": "https://marymagdalen.org/massprayertimes-2/", "ev": "Mass Times"},
+        {"days": "Sat", "times": ["17:30"], "lang": "en", "lang_stated": false, "src": "https://marymagdalen.org/massprayertimes-2/", "ev": "Mass Times"},
+        {"days": "Sun", "times": ["08:00", "09:30", "11:30"], "lang": "en", "lang_stated": false, "src": "https://marymagdalen.org/massprayertimes-2/", "ev": "Mass Times"}
+      ],
+      "confession": [
+        {"days": "Sat", "start": "16:00", "end": "17:00", "src": "https://marymagdalen.org/massprayertimes-2/", "ev": "Saturdays 4:00 – 5:00 pm or by appointment"}
+      ],
+      "confession_by_appointment": true,
+      "adoration": [
+        {"days": "Fri", "start": "18:00", "end": null, "freq": "monthly", "which": "1st Fri", "src": "https://marymagdalen.org/massprayertimes-2/", "ev": "First Friday of each month after the 5:30 pm Mass."},
+        {"days": "Mon", "start": "18:00", "end": null, "season": "lent", "src": "https://marymagdalen.org/massprayertimes-2/", "ev": "During Lent Adoration is held on Monday’s after the 5:30 pm Mass."}
+      ],
+      "devotions": [
+        {"name": "Morning Prayer (Liturgy of the Hours)", "days": "Mon-Sat"},
+        {"name": "Evening Prayer (Liturgy of the Hours)", "days": "Mon,Wed,Fri"}
+      ],
+      "flags": [],
+      "notes": "Masses are an HTML table (day columns); times were mapped from the table cells, not the flattened text.",
+      "confidence": {"masses": "high", "confession": "high", "adoration": "medium"}
+    },
+    "our-lady-grace-castro-valley": {
+      "masses": [
+        {"days": "Sat", "times": ["17:00"], "lang": "en", "lang_stated": false, "src": "https://olgcv.org/mass-times/", "ev": "Vigil Mass 5:00 PM"},
+        {"days": "Sun", "times": ["07:30", "09:00", "11:00"], "lang": "en", "lang_stated": false, "src": "https://olgcv.org/mass-times/", "ev": "7:30 AM, 9:00 AM, 11:00 AM, 1:00 PM (Spanish)"},
+        {"days": "Sun", "times": ["13:00"], "lang": "es", "lang_stated": true, "src": "https://olgcv.org/mass-times/", "ev": "7:30 AM, 9:00 AM, 11:00 AM, 1:00 PM (Spanish)"},
+        {"days": "Mon-Sat", "times": ["08:15"], "lang": "en", "lang_stated": false, "src": "https://olgcv.org/mass-times/", "ev": "Mondays to Saturdays:"},
+        {"days": "Mon-Fri", "times": ["07:00"], "lang": "en", "lang_stated": false, "site": "St. Joseph of Cupertino Friary", "src": "https://olgcv.org/mass-times/", "ev": "Weekday Masses at St. Joseph of Cupertino Friary"}
+      ],
+      "confession": [
+        {"days": "Thu", "start": "18:00", "end": "19:00", "src": "https://olgcv.org/mass-times/", "ev": "Reconciliation (Confession) & Adoration"},
+        {"days": "Sat", "start": "09:00", "end": "10:00", "src": "https://olgcv.org/mass-times/", "ev": "Reconciliation (Confession) & Adoration"}
+      ],
+      "confession_by_appointment": false,
+      "adoration": [
+        {"days": "Thu", "start": "18:00", "end": "19:00", "src": "https://olgcv.org/mass-times/", "ev": "Reconciliation (Confession) & Adoration"},
+        {"days": "Sat", "start": "09:00", "end": "10:00", "src": "https://olgcv.org/mass-times/", "ev": "Reconciliation (Confession) & Adoration"},
+        {"days": "Fri", "start": "09:00", "end": null, "freq": "monthly", "which": "1st Fri", "src": "https://olgcv.org/mass-times/", "ev": "First Fridays Exposition & Benediction"}
+      ],
+      "flags": ["lists_friary_masses"],
+      "notes": "The page also lists the sister parish Transfiguration's schedule; that is excluded here and counted under Transfiguration. Weekday 7:00 AM Masses at the Franciscan friary chapel are listed on the parish page and counted with a site label.",
+      "confidence": {"masses": "high", "confession": "high", "adoration": "high"}
+    },
+    "transfiguration-castro-valley": {
+      "masses": [
+        {"days": "Mon-Fri", "times": ["08:00"], "lang": "en", "lang_stated": false, "src": "https://transfigchurchcv.org/mass-schedule/", "ev": "-Monday thru Friday ("},
+        {"days": "Sat", "times": ["16:00"], "lang": "en", "lang_stated": false, "src": "https://transfigchurchcv.org/mass-schedule/", "ev": "Regular Weekend Schedule"},
+        {"days": "Sun", "times": ["07:30", "09:00", "11:00"], "lang": "en", "lang_stated": false, "src": "https://transfigchurchcv.org/mass-schedule/", "ev": "Sunday Masses"}
+      ],
+      "confession": [
+        {"days": "Sat", "start": "15:00", "end": null, "src": "https://transfigchurchcv.org/mass-schedule/", "ev": "Reconciliation Schedule"}
+      ],
+      "confession_by_appointment": false,
+      "adoration": [],
+      "flags": ["listed_for_closure_2026"],
+      "notes": "First Friday weekday Mass moves to 9:30 AM (same count). No adoration listed on the crawled pages.",
+      "confidence": {"masses": "high", "confession": "medium", "adoration": "medium"}
+    },
+    "queen-all-concord": {
+      "masses": [
+        {"days": "Sat", "times": ["16:30"], "lang": "en", "lang_stated": true, "src": "https://qaschurch.org/pray/mass-confession-times", "ev": "4:30PM (English)"},
+        {"days": "Sat", "times": ["18:30"], "lang": "es", "lang_stated": true, "src": "https://qaschurch.org/pray/mass-confession-times", "ev": "6:30PM (Español)"},
+        {"days": "Sun", "times": ["07:15", "10:30"], "lang": "en", "lang_stated": true, "src": "https://qaschurch.org/pray/mass-confession-times", "ev": "7:15AM (English)"},
+        {"days": "Sun", "times": ["08:30", "12:00", "14:00"], "lang": "es", "lang_stated": true, "src": "https://qaschurch.org/pray/mass-confession-times", "ev": "8:30AM (Español)"},
+        {"days": "Sun", "times": ["16:30"], "lang": "en", "lang_stated": true, "src": "https://qaschurch.org/", "ev": "4:30 pm YOUTH Mass (English)"},
+        {"days": "Mon-Fri", "times": ["08:30"], "lang": "en", "lang_stated": true, "src": "https://qaschurch.org/pray/mass-confession-times", "ev": "English: Mon-Fri @ 8:30 AM"},
+        {"days": "Mon,Wed,Thu,Fri", "times": ["18:30"], "lang": "es", "lang_stated": true, "src": "https://qaschurch.org/pray/mass-confession-times", "ev": "Español: Lunes, Miércoles, Jueves, a Viernes @ 6:30pm"}
+      ],
+      "confession": [
+        {"days": "Fri", "start": "16:00", "end": "18:15", "lang": "es", "src": "https://qaschurch.org/pray/mass-confession-times", "ev": "Español: 4:00-6:15PM"},
+        {"days": "Sat", "start": "15:00", "end": "16:00", "lang": "en", "src": "https://qaschurch.org/pray/mass-confession-times", "ev": "English: 3-4PM"},
+        {"days": "Sat", "start": "17:00", "end": "18:15", "lang": "es", "src": "https://qaschurch.org/pray/mass-confession-times", "ev": "Espanol: 5-6:15PM"}
+      ],
+      "confession_by_appointment": true,
+      "adoration": [],
+      "flags": ["adoration_page_not_fetched", "pages_disagree"],
+      "notes": "The 4:30 PM Sunday youth Mass appears on the home page only. The FAQ page gives older Spanish confession times (Thu/Fri 5:15-6:15, Sat 5:30-6:30); the Mass & Confession page is used. The site has an Adoration page that the crawl did not fetch.",
+      "confidence": {"masses": "medium", "confession": "medium", "adoration": "low"}
+    },
+    "agnes-concord": {
+      "masses": [
+        {"days": "Sat", "times": ["17:00"], "lang": "en", "lang_stated": false, "src": "https://stagnesparish.net/news/mass-confession-times", "ev": "Saturday Vigil: 5:00 pm"},
+        {"days": "Sun", "times": ["07:00", "09:00", "11:00", "17:00"], "lang": "en", "lang_stated": false, "src": "https://stagnesparish.net/news/mass-confession-times", "ev": "Sunday: 7:00 am, 9:00am, 11:00 am, and 5:00 pm"},
+        {"days": "Mon,Tue,Thu,Fri,Sat", "times": ["08:00"], "lang": "en", "lang_stated": false, "src": "https://stagnesparish.net/news/mass-confession-times", "ev": "Daily: 8:00 am (no Mass on Wednesdays)"}
+      ],
+      "confession": [
+        {"days": "Sat", "start": "15:30", "end": null, "src": "https://stagnesparish.net/news/mass-confession-times", "ev": "Saturday at 3:30 pm in the church"}
+      ],
+      "confession_by_appointment": false,
+      "adoration": [
+        {"days": "Daily", "start": "06:00", "end": "21:00", "src": "https://stagnesparish.net/news/mass-confession-times", "ev": "Chapel daily from 6:00 am to 9:00 pm"}
+      ],
+      "flags": ["perpetual_adoration_program_described"],
+      "notes": "The Worship page describes a Perpetual Eucharistic Adoration program (day and night, with committed adorers); the public schedule says chapel daily 6 AM-9 PM, which is what is counted. A stray line 'Weekdays before Mass' near the Mass block is not interpreted.",
+      "confidence": {"masses": "high", "confession": "medium", "adoration": "medium"}
+    },
+    "francis-assisi-concord": {
+      "masses": [
+        {"days": "Sat", "times": ["17:30"], "lang": "en", "lang_stated": true, "src": "https://sfaconcord.com/news/mass-schedule", "ev": "Saturday Vigil"},
+        {"days": "Sat", "times": ["19:00"], "lang": "es", "lang_stated": true, "src": "https://sfaconcord.com/news/mass-schedule", "ev": "Saturday Vigil"},
+        {"days": "Sun", "times": ["07:00", "10:00", "11:30"], "lang": "en", "lang_stated": true, "src": "https://sfaconcord.com/news/mass-schedule", "ev": "7:00 am, 10:00 am, 11:30 am"},
+        {"days": "Sun", "times": ["08:15", "13:00", "19:00"], "lang": "es", "lang_stated": true, "src": "https://sfaconcord.com/news/mass-schedule", "ev": "8:15 am, 1:00 pm, 7:00 pm"},
+        {"days": "Sun", "times": ["15:00"], "lang": "pt", "lang_stated": true, "src": "https://sfaconcord.com/news/mass-schedule", "ev": "Portuguese:"},
+        {"days": "Mon-Sat", "times": ["08:30"], "lang": "en", "lang_stated": true, "src": "https://sfaconcord.com/news/mass-schedule", "ev": "8:30 am - English"},
+        {"days": "Tue,Thu", "times": ["19:00"], "lang": "es", "lang_stated": true, "src": "https://sfaconcord.com/news/mass-schedule", "ev": "7:00 pm - Spanish"}
+      ],
+      "masses_monthly": [
+        {"which": "1st Fri", "time": "19:00", "lang": "es", "src": "https://sfaconcord.com/news/mass-schedule", "ev": "First Friday Mass: 7:00pm - Spanish"},
+        {"which": "4th or last Wed", "time": "19:00", "lang": "en+tl", "src": "https://sfaconcord.com/news/mass-schedule", "ev": "(Mother of Perpetual Help Mass) - English & Filipino"}
+      ],
+      "confession": [
+        {"days": "Wed,Thu", "start": "18:00", "end": "19:00", "lang": "en+es", "src": "https://sfaconcord.com/news/mass-schedule", "ev": "00pm - 7:00pm - English & Spanish"},
+        {"days": "Sat", "start": "16:00", "end": "17:15", "lang": "en+es", "src": "https://sfaconcord.com/news/mass-schedule", "ev": "4:00 pm to 5:15 pm - English & Spanish"},
+        {"days": "Fri", "start": "17:30", "end": "18:30", "freq": "monthly", "which": "1st Fri", "src": "https://sfaconcord.com/news/mass-schedule", "ev": "5:30pm - 6:30pm"},
+        {"days": "Tue,Fri", "start": "07:30", "end": "08:15", "season": "advent_lent", "src": "https://sfaconcord.com/news/mass-schedule", "ev": "(Below are Extra Confession Times during Advent & Lent)"}
+      ],
+      "confession_by_appointment": true,
+      "adoration": [
+        {"days": "Mon-Thu", "start": "15:00", "end": "18:30", "src": "https://sfaconcord.com/sacraments-liturgy", "ev": "Adoration is offered Monday - Thursdat from 3:00pm-6:30pm in the chapel."},
+        {"days": "Fri", "start": "09:15", "end": "18:30", "src": "https://sfaconcord.com/sacraments-liturgy", "ev": "Friday after 8:30am Mass till 6:30pm"},
+        {"days": "Thu", "start": "20:00", "end": "21:00", "freq": "monthly", "which": "4th Thu", "src": "https://sfaconcord.com/", "ev": "followed by Holy Adoration till 9:00pm"}
+      ],
+      "flags": [],
+      "notes": "Monthly themed Thursday 7 PM Spanish Masses (healing, St. Jude, young adults) are the regular Thursday Mass and are not counted twice. Friday adoration starts after the 8:30 AM Mass (taken as 09:15). No adoration on holidays.",
+      "confidence": {"masses": "high", "confession": "high", "adoration": "high"}
+    },
+    "isidore-danville": {
+      "masses": [
+        {"days": "Sun", "times": ["07:30", "09:00", "11:00", "17:00"], "lang": "en", "lang_stated": false, "src": "https://stisidoredanville.com/mass-times", "ev": "Parish Mass Times"},
+        {"days": "Mon-Fri", "times": ["08:10"], "lang": "en", "lang_stated": false, "src": "https://stisidoredanville.com/mass-times", "ev": "Monday – Friday"},
+        {"days": "Sat", "times": ["08:30", "16:00"], "lang": "en", "lang_stated": false, "src": "https://stisidoredanville.com/mass-times", "ev": "(Sunday's Liturgy)"}
+      ],
+      "masses_monthly": [
+        {"which": "1st Fri", "time": "18:00", "lang": "en", "src": "https://stisidoredanville.com/mass-times", "ev": "1st Friday"}
+      ],
+      "confession": [
+        {"days": "Fri", "start": "18:00", "end": "19:30", "src": "https://stisidoredanville.com/mass-times", "ev": "Except on the 1st Friday of the month when confessions will begin at 6:30 PM"},
+        {"days": "Sat", "start": "15:00", "end": null, "src": "https://stisidoredanville.com/mass-times", "ev": "Also available at least 30 minutes prior to each Mass"}
+      ],
+      "confession_by_appointment": true,
+      "confession_before_masses": true,
+      "adoration": [
+        {"days": "Mon-Fri", "start": "09:00", "end": "21:00", "src": "https://stisidoredanville.com/mass-times", "ev": "Adoration is available every day from 9 AM to 9 PM Monday through Friday"},
+        {"days": "Fri", "start": "21:00", "end": "08:30", "freq": "monthly", "which": "1st Fri overnight", "src": "https://stisidoredanville.com/mass-times", "ev": "9pm on Friday - 8:30 AM on Saturday"}
+      ],
+      "flags": [],
+      "notes": "Confession is also offered at least 30 minutes before each Mass (not counted in hours). First-Friday confession starts 30 minutes later (6:30-7:30), so the weekly figure slightly overstates that week.",
+      "confidence": {"masses": "high", "confession": "high", "adoration": "high"}
+    },
+    "jerome-el-cerrito": {
+      "masses": [
+        {"days": "Mon-Fri", "times": ["08:30"], "lang": "en", "lang_stated": false, "src": "https://www.stjeromeec.org/regularschedulemass", "ev": "+ Daily Mass: Mon – Fri. 8:30am"},
+        {"days": "Sat", "times": ["17:00"], "lang": "en", "lang_stated": false, "src": "https://www.stjeromeec.org/regularschedulemass", "ev": "+ Saturday: 5:00pm"},
+        {"days": "Sun", "times": ["08:00", "10:00"], "lang": "en", "lang_stated": false, "src": "https://www.stjeromeec.org/regularschedulemass", "ev": "+ Sunday: 8:00am and 10:00am"}
+      ],
+      "confession": [
+        {"days": "Sat", "start": "16:00", "end": null, "src": "https://www.stjeromeec.org/regularschedulemass", "ev": "Every Saturday at 4pm PT"}
+      ],
+      "confession_by_appointment": true,
+      "adoration": [],
+      "flags": [],
+      "notes": "The page tells visitors to check the bulletin for confession changes. Three subpages returned 404; no adoration seen.",
+      "confidence": {"masses": "high", "confession": "medium", "adoration": "low"}
+    },
+    "callistus-el-sobrante": {
+      "masses": [
+        {"days": "Sun", "times": ["08:00", "10:00", "12:00"], "lang": "en", "lang_stated": false, "src": "https://www.saintcallistus.org/mass-schedule", "ev": "SUNDAY"},
+        {"days": "Sat", "times": ["17:30"], "lang": "en", "lang_stated": false, "src": "https://www.saintcallistus.org/mass-schedule", "ev": "5:30 PM, Rosary at 5:00 PM"},
+        {"days": "Mon-Sat", "times": ["09:00"], "lang": "en", "lang_stated": false, "src": "https://www.saintcallistus.org/mass-schedule", "ev": "DAILY (MONDAY-SATURDAY)"}
+      ],
+      "confession": [
+        {"days": "Sat", "start": "16:30", "end": "17:15", "src": "https://www.saintcallistus.org/sacraments", "ev": "Saturday: 4:30 - 5:15 pm"}
+      ],
+      "confession_by_appointment": false,
+      "confession_before_masses": true,
+      "adoration": [],
+      "devotions": [
+        {"name": "Rosary before each weekend Mass", "days": "Sat,Sun"},
+        {"name": "Devotional prayers before daily Mass", "days": "Mon-Sat"}
+      ],
+      "flags": [],
+      "notes": "Confession also half an hour before all Sunday Masses (not counted in hours). No adoration seen on crawled pages.",
+      "confidence": {"masses": "high", "confession": "high", "adoration": "low"}
+    },
+    "corpus-christi-fremont": {
+      "masses": [
+        {"days": "Sat", "times": ["16:00"], "lang": "en", "lang_stated": true, "src": "https://corpuschristifremont.org/content/sacrament-baptism", "ev": "4:00 p.m. (Vigil) — English"},
+        {"days": "Sun", "times": ["08:30"], "lang": "en", "lang_stated": true, "src": "https://corpuschristifremont.org/content/sacrament-baptism", "ev": "8:30 a.m. — English"},
+        {"days": "Sun", "times": ["10:30", "12:00"], "lang": "es", "lang_stated": true, "src": "https://corpuschristifremont.org/content/sacrament-baptism", "ev": "12:00 p.m. — español (temporal)"},
+        {"days": "Tue-Fri", "times": ["08:30"], "lang": "en", "lang_stated": true, "src": "https://corpuschristifremont.org/content/sacrament-baptism", "ev": "Daily Tuesday-Friday/ Diaria martes-viernes"}
+      ],
+      "masses_monthly": [
+        {"which": "1st Sat", "time": "09:00", "lang": "en", "src": "https://corpuschristifremont.org/content/sacrament-baptism", "ev": "sábado Misa de sanación"}
+      ],
+      "confession": [
+        {"days": "Sat", "start": "15:00", "end": null, "src": "https://corpuschristifremont.org/content/sacrament-baptism", "ev": "Reconciliation/Confesiones"},
+        {"days": "Thu", "start": "19:00", "end": "20:00", "src": "https://corpuschristifremont.org/content/sacrament-baptism", "ev": "(during Holy Hour/durante la Hora Santa)"}
+      ],
+      "confession_by_appointment": false,
+      "adoration": [
+        {"days": "Thu", "start": "19:00", "end": "20:00", "src": "https://corpuschristifremont.org/content/sacrament-baptism", "ev": "(during Holy Hour/durante la Hora Santa)"}
+      ],
+      "flags": [],
+      "notes": "The Mass block sits on the site's baptism page. The 12:00 Spanish Mass is marked temporary. Thursday confession is heard during a Holy Hour; a Holy Hour is taken as one hour.",
+      "confidence": {"masses": "high", "confession": "medium", "adoration": "medium"}
+    },
+    "james-apostle-fremont": {
+      "masses": [
+        {"days": "Mon-Sat", "times": ["08:30"], "lang": "en", "lang_stated": false, "src": "https://sjapostle.net/mass-schedule/", "ev": "Monday-Saturday Mass"},
+        {"days": "Sat", "times": ["17:00"], "lang": "en", "lang_stated": false, "src": "https://sjapostle.net/mass-schedule/", "ev": "Saturday Evening"},
+        {"days": "Sun", "times": ["08:30", "10:00", "12:00"], "lang": "en", "lang_stated": false, "src": "https://sjapostle.net/mass-schedule/", "ev": "8:30am, 10:00am, 12:00noon"}
+      ],
+      "masses_monthly": [
+        {"which": "1st Fri", "time": "19:30", "lang": "en", "src": "https://sjapostle.net/mass-schedule/", "ev": "Begins at 8:30am Mass, adoration during the day, 6:30pm Rosary, 7:30pm Mass"}
+      ],
+      "confession": [],
+      "confession_by_appointment": null,
+      "adoration": [
+        {"days": "Fri", "start": "09:00", "end": null, "freq": "monthly", "which": "1st Fri", "src": "https://sjapostle.net/mass-schedule/", "ev": "Begins at 8:30am Mass, adoration during the day, 6:30pm Rosary, 7:30pm Mass"}
+      ],
+      "devotions": [
+        {"name": "Legion of Mary", "days": "Thu"},
+        {"name": "Hour of Great Mercy (online)", "days": "Fri"},
+        {"name": "Virtual Rosary (online, nightly)", "days": "Daily"}
+      ],
+      "flags": ["confession_times_not_found"],
+      "notes": "No confession times appear on the crawled pages (likely in the bulletin). First-Friday adoration runs 'during the day' with no stated hours.",
+      "confidence": {"masses": "high", "confession": "low", "adoration": "medium"}
+    },
+    "joseph-fremont": {
+      "masses": [
+        {"days": "Sat", "times": ["17:30"], "lang": "en", "lang_stated": false, "site": "Main Church", "src": "https://www.saintjosephmsj.org/mass-schedule/", "ev": "5:30 PM – Main Church"},
+        {"days": "Sun", "times": ["08:00"], "lang": "en", "lang_stated": false, "site": "Mission Church", "src": "https://www.saintjosephmsj.org/mass-schedule/", "ev": "8:00 AM – Mission Church"},
+        {"days": "Sun", "times": ["10:00", "12:00"], "lang": "en", "lang_stated": false, "site": "Main Church", "src": "https://www.saintjosephmsj.org/mass-schedule/", "ev": "12:00 PM – Main Church – Mass with Youth & Family of Faith"},
+        {"days": "Sun", "times": ["15:00"], "lang": "vi", "lang_stated": true, "site": "Main Church", "src": "https://www.saintjosephmsj.org/mass-schedule/", "ev": "3:00 PM – Mass in Vietnamese – Main Church"},
+        {"days": "Sun", "times": ["17:00"], "lang": "zh", "lang_stated": true, "site": "Main Church", "src": "https://www.saintjosephmsj.org/mass-schedule/", "ev": "5:00 PM – Mass in Mandarin – Main Church"},
+        {"days": "Mon-Sat", "times": ["08:00"], "lang": "en", "lang_stated": false, "site": "Mission Church", "src": "https://www.saintjosephmsj.org/mass-schedule/", "ev": "Monday to Saturday – Mission Church"},
+        {"days": "Thu", "times": ["19:00"], "lang": "vi", "lang_stated": true, "site": "Main Church", "src": "https://www.saintjosephmsj.org/mass-schedule/", "ev": "7:00 PM – Mass in Vietnamese – Main Church"}
+      ],
+      "masses_monthly": [
+        {"which": "1st Sun", "time": "19:00", "lang": "en", "note": "ad orientem, Mission Church", "src": "https://www.saintjosephmsj.org/mass-schedule/", "ev": "Mass Ad Orientem"},
+        {"which": "2nd Sun", "time": "19:00", "lang": "es", "src": "https://www.saintjosephmsj.org/mass-schedule/", "ev": "Santa Misa EN ESPAÑOL"},
+        {"which": "1st Wed", "time": "19:00", "lang": "en", "note": "Devotion to St. Joseph", "src": "https://www.saintjosephmsj.org/mass-schedule/", "ev": "Devotion to Saint Joseph – first Wednesday of the month at 7PM."},
+        {"which": "19th of month", "time": "08:00", "lang": "en", "note": "Chapel of Healing", "src": "https://www.saintjosephmsj.org/mass-schedule/", "ev": "8:00 AM every 19th of the month except Sunday"}
+      ],
+      "confession": [
+        {"days": "Sat", "start": "16:00", "end": "17:00", "src": "https://www.saintjosephmsj.org/mass-schedule/", "ev": "Saturday – 4:00 PM to 5:00 PM"},
+        {"days": "Wed-Fri", "start": "07:30", "end": null, "site": "Mission Church", "src": "https://www.saintjosephmsj.org/mass-schedule/", "ev": "Wednesday to Friday – 7:30 AM – Mission Church"}
+      ],
+      "confession_by_appointment": true,
+      "adoration": [
+        {"days": "Mon-Fri", "start": "09:00", "end": "20:00", "site": "Adoration Chapel (Main Church)", "src": "https://www.saintjosephmsj.org/mass-schedule/", "ev": "Monday to Friday, 9:00 AM – 8:00 PM,"},
+        {"days": "Thu", "start": "17:00", "end": "18:00", "site": "Main Church", "src": "https://www.saintjosephmsj.org/mass-schedule/", "ev": "5:00 PM – Holy Hour – Main Church"},
+        {"days": "Fri", "start": "09:00", "end": "07:30", "freq": "monthly", "which": "1st Fri 24-hour", "src": "https://www.saintjosephmsj.org/mass-schedule/", "ev": "24-Hour Adoration is on the First Friday after the 8:00 AM mass"}
+      ],
+      "devotions": [
+        {"name": "Rosary before Mass", "days": "Mon-Sat"},
+        {"name": "Chaplet of Divine Mercy after daily Mass", "days": "Mon-Sat"},
+        {"name": "Vespers with Benediction", "days": "Thu"}
+      ],
+      "flags": ["multi_site"],
+      "notes": "Two worship spaces (Main Church and the historic Mission Church). Thursday Holy Hour in the Main Church overlaps chapel adoration hours; overlapping hours are counted once. The 24-hour First-Friday adoration ends with Benediction Saturday 7:30 AM.",
+      "confidence": {"masses": "high", "confession": "high", "adoration": "high"}
+    },
+    "clement-hayward": {
+      "masses": null,
+      "confession": [],
+      "confession_by_appointment": null,
+      "adoration": [
+        {"days": "Sat", "start": "19:00", "end": "05:00", "freq": "monthly", "which": "2nd Sat overnight", "src": "https://saintclementchurch.com/ministries/", "ev": "every second Saturday of the month, from 7:00 PM to 5:00 AM."}
+      ],
+      "flags": ["schedule_not_in_page_text"],
+      "notes": "The Schedule Mass page has no schedule in its text (probably an image or script), so Masses and confession are unknown, not zero. Nocturnal adoration is from the ministries page.",
+      "confidence": {"masses": "none", "confession": "none", "adoration": "medium"}
+    },
+    "joachim-hayward": {
+      "masses": [
+        {"days": "Sat", "times": ["16:30"], "lang": "en", "lang_stated": true, "src": "https://saintjoachim.net/", "ev": "Saturday 4:30 PM"},
+        {"days": "Sun", "times": ["07:30", "09:00", "10:30", "12:15"], "lang": "en", "lang_stated": true, "src": "https://saintjoachim.net/", "ev": "Sunday Mass in English"},
+        {"days": "Mon-Sat", "times": ["08:30"], "lang": "en", "lang_stated": true, "src": "https://saintjoachim.net/", "ev": "8:30 AM English"},
+        {"days": "Wed", "times": ["19:00"], "lang": "es", "lang_stated": true, "src": "https://saintjoachim.net/", "ev": "7:00 PM Español Miércoles solo"},
+        {"days": "Sat", "times": ["18:00"], "lang": "es", "lang_stated": true, "src": "https://saintjoachim.net/", "ev": "Sábado 6:00 PM"},
+        {"days": "Sun", "times": ["14:00", "18:00"], "lang": "es", "lang_stated": true, "src": "https://saintjoachim.net/about-us/", "ev": "Domingo 2:00pm, 6:00pm"}
+      ],
+      "confession": [
+        {"days": "Wed", "start": "18:00", "end": "19:00", "lang": "en+es", "src": "https://saintjoachim.net/about-us/", "ev": "Wednesday 6:00-7:00pm, Saturday 3:00-4:00pm"},
+        {"days": "Sat", "start": "15:00", "end": "16:00", "src": "https://saintjoachim.net/about-us/", "ev": "Wednesday 6:00-7:00pm, Saturday 3:00-4:00pm"}
+      ],
+      "confession_by_appointment": false,
+      "adoration": [
+        {"days": "Fri", "start": "09:00", "end": "13:00", "freq": "monthly", "which": "1st Fri", "src": "https://saintjoachim.net/about-us/", "ev": "Every First Friday 9-1"}
+      ],
+      "flags": ["pages_disagree"],
+      "notes": "The 10/25/26 bulletin page lists Sunday Spanish Mass at 2:00 PM only; the home and About pages also list 6:00 PM. Both are counted.",
+      "confidence": {"masses": "medium", "confession": "high", "adoration": "high"}
+    },
+    "charles-borromeo-livermore": {
+      "masses": [
+        {"days": "Mon-Fri", "times": ["08:30"], "lang": "en", "lang_stated": false, "src": "https://stcharleslivermore.org/mass-schedule", "ev": "8:30 a.m. — Holy Mass in the Chapel"},
+        {"days": "Sat", "times": ["17:00"], "lang": "en", "lang_stated": false, "src": "https://stcharleslivermore.org/mass-schedule", "ev": "5:00 p.m. — Vigil Mass"},
+        {"days": "Sun", "times": ["07:30", "09:30", "11:30"], "lang": "en", "lang_stated": false, "src": "https://stcharleslivermore.org/mass-schedule", "ev": "SUNDAY MASS — Three Options:"}
+      ],
+      "confession": [
+        {"days": "Sat", "start": "16:00", "end": "16:30", "src": "https://stcharleslivermore.org/mass-schedule", "ev": "4:00 p.m. - 4:30 p.m. —"}
+      ],
+      "confession_by_appointment": null,
+      "adoration": [],
+      "flags": [],
+      "notes": "Schedule page marked 'UPDATED July 13, 2026'. No adoration seen on crawled pages.",
+      "confidence": {"masses": "high", "confession": "high", "adoration": "low"}
+    },
+    "michael-livermore": {
+      "masses": [
+        {"days": "Sat", "times": ["17:00"], "lang": "en", "lang_stated": true, "src": "https://stmichaellivermore.com/Worship", "ev": "5:00 pm in English"},
+        {"days": "Sat", "times": ["19:00"], "lang": "es", "lang_stated": true, "src": "https://stmichaellivermore.com/Worship", "ev": "7:00 pm in Spanish"},
+        {"days": "Sun", "times": ["06:45", "09:30", "11:00", "17:00"], "lang": "en", "lang_stated": true, "src": "https://stmichaellivermore.com/Worship", "ev": "6:45 am (English)"},
+        {"days": "Sun", "times": ["08:00"], "lang": "la", "lang_stated": true, "form": "extraordinary", "src": "https://stmichaellivermore.com/Worship", "ev": "8:00 am (Traditional Latin)"},
+        {"days": "Sun", "times": ["12:30", "19:00"], "lang": "es", "lang_stated": true, "src": "https://stmichaellivermore.com/Worship", "ev": "7:00 pm (Spanish)"},
+        {"days": "Mon-Sat", "times": ["06:45", "08:30"], "lang": "en", "lang_stated": false, "src": "https://stmichaellivermore.com/Worship", "ev": "Monday - Saturday"},
+        {"days": "Wed,Fri", "times": ["19:00"], "lang": "es", "lang_stated": true, "src": "https://stmichaellivermore.com/Worship", "ev": "7:00 pm (Spanish)"}
+      ],
+      "masses_monthly": [
+        {"which": "1st Mon", "time": "19:00", "lang": "es", "src": "https://stmichaellivermore.com/Worship", "ev": "7:00 pm en Español"},
+        {"which": "1st Fri", "time": "11:00", "lang": "en", "note": "Sacred Heart, chapel", "src": "https://stmichaellivermore.com/Worship", "ev": "11:00 am in the Chapel"},
+        {"which": "3rd Sun", "time": "15:30", "lang": "tl", "src": "https://stmichaellivermore.com/Worship", "ev": "3rd Sunday: Filipino Mass in Tagalog"},
+        {"which": "2nd Sun", "time": "15:15", "lang": "vi", "src": "https://stmichaellivermore.com/Worship", "ev": "2nd and 4th Sunday: Mass in Vietnamese"},
+        {"which": "4th Sun", "time": "15:15", "lang": "vi", "src": "https://stmichaellivermore.com/Worship", "ev": "2nd and 4th Sunday: Mass in Vietnamese"},
+        {"which": "4th Wed", "time": "18:00", "lang": "en", "note": "Our Lady of Perpetual Help, chapel", "src": "https://stmichaellivermore.com/Worship", "ev": "4th Wednesday: Our Lady of Perpetual Help"}
+      ],
+      "confession": [
+        {"days": "Wed", "start": "17:45", "end": "18:45", "src": "https://stmichaellivermore.com/Confession", "ev": "Wednesdays: 5:45 ﻿- 6:45 pm in the Church with Adoration"},
+        {"days": "Sat", "start": "09:15", "end": "10:30", "src": "https://stmichaellivermore.com/Confession", "ev": "Saturdays: 9:15 - 1﻿0:30 am in the Church with Adoration"},
+        {"days": "Sun", "start": "07:00", "end": "08:00", "src": "https://stmichaellivermore.com/Confession", "ev": "Sundays: 7:00 - 8:00 am in the Chapel/Conference Room"}
+      ],
+      "confession_by_appointment": true,
+      "adoration": [
+        {"days": "Wed", "start": "17:45", "end": "18:45", "src": "https://stmichaellivermore.com/Confession", "ev": "Wednesdays: 5:45 ﻿- 6:45 pm in the Church with Adoration"},
+        {"days": "Sat", "start": "09:15", "end": "10:30", "src": "https://stmichaellivermore.com/Confession", "ev": "Saturdays: 9:15 - 1﻿0:30 am in the Church with Adoration"}
+      ],
+      "flags": ["adoration_page_not_fetched"],
+      "notes": "Tuesday and Thursday confessions were discontinued 'until further notice'. The site has an Adoration Chapel page that was not fetched, so adoration hours are a floor (only the hours paired with confession are counted).",
+      "confidence": {"masses": "high", "confession": "high", "adoration": "low"}
+    },
+    "catherine-siena-martinez": {
+      "masses": [
+        {"days": "Sat", "times": ["16:00"], "lang": "en", "lang_stated": false, "src": "https://www.stcmtz.org/", "ev": "Saturday Vigil:"},
+        {"days": "Sun", "times": ["08:30", "11:00"], "lang": "en", "lang_stated": false, "src": "https://www.stcmtz.org/", "ev": ", 11:00am"},
+        {"days": "Mon-Fri", "times": ["08:00"], "lang": "en", "lang_stated": false, "src": "https://www.stcmtz.org/", "ev": "Monday to Friday:"},
+        {"days": "Sat", "times": ["08:00"], "lang": "en", "lang_stated": false, "src": "https://www.stcmtz.org/", "ev": "Mother of Perpetual Help"}
+      ],
+      "confession": [
+        {"days": "Mon", "start": "07:15", "end": "07:45", "src": "https://www.stcmtz.org/", "ev": "7:15 am - 7:45 am"},
+        {"days": "Sat", "start": "14:30", "end": "15:30", "src": "https://www.stcmtz.org/", "ev": "2:30 pm - 3:30 pm"}
+      ],
+      "confession_by_appointment": true,
+      "adoration": [
+        {"days": "Thu", "start": "15:00", "end": "19:00", "src": "https://www.stcmtz.org/", "ev": "3:00 pm - 7:00 pm"}
+      ],
+      "devotions": [
+        {"name": "Rosary before daily Mass", "days": "Mon-Sat"},
+        {"name": "Divine Mercy Chaplet after daily Mass", "days": "Mon-Sat"},
+        {"name": "Mother of Perpetual Help devotions", "days": "Sat"}
+      ],
+      "flags": ["pages_disagree"],
+      "notes": "The Mass-intentions form says there is no daily Mass on Tuesday mornings; the home page lists Monday-Friday. The home-page schedule is counted.",
+      "confidence": {"masses": "medium", "confession": "high", "adoration": "high"}
+    },
+    "edward-newark": {
+      "masses": [
+        {"days": "Sat", "times": ["17:00"], "lang": "en", "lang_stated": false, "src": "https://www.stedwardcatholic.com/", "ev": "Saturday 5:00pm"},
+        {"days": "Sun", "times": ["07:15", "09:00", "11:00"], "lang": "en", "lang_stated": false, "src": "https://www.stedwardcatholic.com/", "ev": "Sunday 7:15am"},
+        {"days": "Sun", "times": ["12:30"], "lang": "es", "lang_stated": true, "src": "https://www.stedwardcatholic.com/", "ev": "en español 12:30pm"},
+        {"days": "Sun", "times": ["19:00"], "lang": "und", "lang_stated": false, "src": "https://www.stedwardcatholic.com/", "ev": "en español 12:30pm"},
+        {"days": "Mon-Sat", "times": ["09:00"], "lang": "en", "lang_stated": false, "src": "https://www.stedwardcatholic.com/", "ev": "Weekdays, Monday-Saturday 9:00am"},
+        {"days": "Thu", "times": ["19:00"], "lang": "la", "lang_stated": true, "src": "https://www.stedwardcatholic.com/", "ev": "Thursdays (Latin Mass) 7:00pm"}
+      ],
+      "confession": [
+        {"days": "Sat", "start": "15:00", "end": null, "src": "https://www.stedwardcatholic.com/", "ev": "Saturdays at 3:00 p.m."}
+      ],
+      "confession_by_appointment": null,
+      "adoration": [],
+      "flags": [],
+      "notes": "The Sunday 7:00 PM Mass follows 'en español 12:30pm' on its own line, so its language is unclear (recorded as undetermined). No adoration listed; the ministries page lists prayer groups.",
+      "confidence": {"masses": "medium", "confession": "medium", "adoration": "medium"}
+    },
+    "leo-great-oakland": {
+      "masses": null,
+      "confession": [],
+      "confession_by_appointment": null,
+      "adoration": [],
+      "flags": ["no_schedule_page_found"],
+      "notes": "The crawl found no Mass-times page (home, about, pastor's welcome and donate pages only). Schedules are unknown, not zero.",
+      "confidence": {"masses": "none", "confession": "none", "adoration": "none"}
+    },
+    "margaret-mary-oakland": {
+      "masses": [
+        {"days": "Mon-Fri", "times": ["08:00"], "lang": "en", "lang_stated": false, "form": "ordinary", "src": "https://www.stmargaretmaryoak.org/", "ev": "y Form: OF) and"},
+        {"days": "Mon,Tue,Wed,Fri", "times": ["18:00"], "lang": "la", "lang_stated": true, "form": "extraordinary", "src": "https://www.stmargaretmaryoak.org/", "ev": "(Extraordinary Form: EF). On Thursday, the Mass in the EF is offered at"},
+        {"days": "Thu", "times": ["12:00"], "lang": "la", "lang_stated": true, "form": "extraordinary", "src": "https://www.stmargaretmaryoak.org/", "ev": "(Extraordinary Form: EF). On Thursday, the Mass in the EF is offered at"},
+        {"days": "Sat", "times": ["08:00", "17:00"], "lang": "en", "lang_stated": false, "form": "ordinary", "src": "https://www.stmargaretmaryoak.org/", "ev": "(Vigil: OF)"},
+        {"days": "Sat", "times": ["10:00"], "lang": "la", "lang_stated": true, "form": "extraordinary", "src": "https://www.stmargaretmaryoak.org/", "ev": "(EF)"},
+        {"days": "Sun", "times": ["07:00", "12:30"], "lang": "la", "lang_stated": true, "form": "extraordinary", "src": "https://www.stmargaretmaryoak.org/", "ev": "(EF: Low Mass),"},
+        {"days": "Sun", "times": ["08:30"], "lang": "en", "lang_stated": true, "form": "ordinary", "src": "https://www.stmargaretmaryoak.org/", "ev": "(OF: English),"},
+        {"days": "Sun", "times": ["10:30"], "lang": "la", "lang_stated": true, "form": "ordinary", "src": "https://www.stmargaretmaryoak.org/", "ev": "(OF: Latin Chanted), and"}
+      ],
+      "confession": [
+        {"days": "Sat", "start": "16:00", "end": "16:40", "src": "https://www.stmargaretmaryoak.org/", "ev": "Saturday 4pm-4:40pm"}
+      ],
+      "confession_by_appointment": true,
+      "confession_before_masses": true,
+      "adoration": [
+        {"days": "Fri", "start": "08:30", "end": null, "freq": "monthly", "which": "1st Fri", "src": "https://www.stmargaretmaryoak.org/", "ev": "Adoration of the Blessed Sacrament with recitation or chant of the Litany of the Sacred Heart"},
+        {"days": "Sat", "start": "11:00", "end": null, "freq": "monthly", "which": "1st Sat", "src": "https://www.stmargaretmaryoak.org/", "ev": "After the 10am Mass: Adoration and chanting of the Litany of Our Lady of Loreto"}
+      ],
+      "devotions": [
+        {"name": "Mother of Perpetual Help", "days": "Tue"}
+      ],
+      "flags": [],
+      "notes": "Ordinary Form (OF) and Extraordinary Form (EF, 1962 Missal) Masses; language 'la' covers both EF Masses and the chanted Latin OF Mass. Confessions are heard 30 minutes before Masses (except Monday evenings and Wednesday mornings), which is not counted in hours.",
+      "confidence": {"masses": "high", "confession": "high", "adoration": "medium"}
+    },
+    "theresa-oakland": {
+      "masses": [
+        {"days": "Mon-Fri", "times": ["08:30"], "lang": "en", "lang_stated": false, "src": "https://sttheresaoakland.org/pray/mass-and-confession-times", "ev": "Monday - Friday ~ 8:30 AM"},
+        {"days": "Sat", "times": ["17:00"], "lang": "en", "lang_stated": false, "src": "https://sttheresaoakland.org/pray/mass-and-confession-times", "ev": "Saturday Vigil ~ 5:00 pm"},
+        {"days": "Sun", "times": ["09:00"], "lang": "en", "lang_stated": false, "src": "https://sttheresaoakland.org/pray/mass-and-confession-times", "ev": "Sunday ~ 9:00 am"}
+      ],
+      "confession": [
+        {"days": "Sat", "start": "16:00", "end": "16:30", "src": "https://sttheresaoakland.org/pray/mass-and-confession-times", "ev": "Saturday: 4:00-4:30 PM"}
+      ],
+      "confession_by_appointment": true,
+      "adoration": [
+        {"days": "Fri", "start": "09:00", "end": "16:30", "freq": "monthly", "which": "1st Fri", "src": "https://sttheresaoakland.org/about-us/parish-staff", "ev": "First Friday of the Month"}
+      ],
+      "flags": [],
+      "notes": "",
+      "confidence": {"masses": "high", "confession": "high", "adoration": "high"}
+    },
+    "christ-king-stephen-pleasant-hill": {
+      "masses": [
+        {"days": "Sat", "times": ["16:00"], "lang": "en", "lang_stated": false, "site": "Christ the King", "src": "https://www.ctkph.org/", "ev": "Christ the King Campus"},
+        {"days": "Sun", "times": ["07:30", "09:00", "10:30", "16:00"], "lang": "en", "lang_stated": false, "site": "Christ the King", "src": "https://www.ctkph.org/", "ev": ": 7:30 a.m., 9:00 a.m., 10:30 a.m., and 4:00 p.m."},
+        {"days": "Sat", "times": ["17:00"], "lang": "en", "lang_stated": false, "site": "St. Stephen", "src": "https://www.ctkph.org/", "ev": "St. Stephen Campus"},
+        {"days": "Sun", "times": ["09:30"], "lang": "en", "lang_stated": false, "site": "St. Stephen", "src": "https://www.ctkph.org/", "ev": "St. Stephen Campus"},
+        {"days": "Mon,Wed,Fri", "times": ["09:00"], "lang": "en", "lang_stated": false, "site": "St. Stephen", "src": "https://www.ctkph.org/", "ev": "Monday, Wednesday, Friday – St. Stephen"},
+        {"days": "Tue,Thu,Sat", "times": ["09:00"], "lang": "en", "lang_stated": false, "site": "Christ the King", "src": "https://www.ctkph.org/", "ev": "Tuesday, Thursday, Saturday – Christ the King"}
+      ],
+      "confession": [
+        {"days": "Sat", "start": "15:00", "end": "15:30", "site": "Christ the King", "src": "https://www.ctkph.org/", "ev": "Private Confessions Saturday"},
+        {"days": "Sat", "start": null, "end": "17:00", "site": "St. Stephen", "src": "https://www.ctkph.org/", "ev": "before the 5:00 p.m. Mass"}
+      ],
+      "confession_by_appointment": null,
+      "adoration": [
+        {"days": "Fri", "start": "15:00", "end": "17:00", "site": "CTK Ministry Center chapel", "src": "https://www.ctkph.org/", "ev": "Eucharistic Adoration every Friday from 3pm to 5pm"},
+        {"days": "Fri", "start": "08:15", "end": "08:45", "freq": "monthly", "which": "1st Fri", "site": "St. Stephen", "src": "https://www.ctkph.org/", "ev": "which begins at 8:15am, followed by Benediction at 8:45am"}
+      ],
+      "flags": ["multi_site", "site_listed_for_closure_2026"],
+      "notes": "Two campuses. St. Stephen (Walnut Creek) is one of the sites named in the April 2026 closure announcement, and the parish home page shows a CTK-St. Stephen transition committee holding listening sessions.",
+      "confidence": {"masses": "high", "confession": "medium", "adoration": "high"}
+    },
+    "david-richmond": {
+      "masses": [
+        {"days": "Mon-Thu", "times": ["18:00"], "lang": "en", "lang_stated": true, "src": "https://stdavidofwales.com/", "ev": "(Mass in ENGLISH except as noted)"},
+        {"days": "Fri", "times": ["18:00"], "lang": "es", "lang_stated": true, "src": "https://stdavidofwales.com/", "ev": "6:00 pm (ESPANOL)"},
+        {"days": "Sat", "times": ["08:00", "17:00"], "lang": "en", "lang_stated": true, "src": "https://stdavidofwales.com/", "ev": "5:00 pm Vigil (ENGLISH)"},
+        {"days": "Sat", "times": ["09:00"], "lang": "kjg", "lang_stated": true, "src": "https://stdavidofwales.com/", "ev": "9:00 am Vigil (KMHMU)"},
+        {"days": "Sun", "times": ["08:00", "11:30"], "lang": "en", "lang_stated": true, "src": "https://stdavidofwales.com/", "ev": "(Mass in ENGLISH except as noted)"},
+        {"days": "Sun", "times": ["09:30"], "lang": "es", "lang_stated": true, "src": "https://stdavidofwales.com/", "ev": "09:30 am (ESPANOL)"}
+      ],
+      "masses_monthly": [
+        {"which": "3rd Sun", "time": "13:30", "lang": "sw", "src": "https://stdavidofwales.com/", "ev": "01:30 pm SWAHILI (monthly on Third Sunday)"}
+      ],
+      "confession": [
+        {"days": "Thu", "start": "17:05", "end": "17:45", "src": "https://stdavidofwales.com/", "ev": "THU 5:05 pm to 5:45 pm"},
+        {"days": "Sat", "start": "16:00", "end": "16:45", "src": "https://stdavidofwales.com/", "ev": "SAT 4:00 pm to 4:45 pm"}
+      ],
+      "confession_by_appointment": null,
+      "adoration": [
+        {"days": "Thu", "start": "17:00", "end": "17:50", "src": "https://stdavidofwales.com/", "ev": "5:00 pm Adoration . Rosary . DivineMercy . Litany . Silence"},
+        {"days": "Fri", "start": "17:00", "end": "18:00", "src": "https://stdavidofwales.com/", "ev": "5:00 pm Adoration"}
+      ],
+      "devotions": [
+        {"name": "Morning Rosary and Divine Mercy Chaplet (online)", "days": "Mon-Sat"}
+      ],
+      "flags": ["schedule_change_2026_11"],
+      "notes": "Single-page site. The schedule effective Nov 1, 2026 is used (weekday Masses 6:00 PM; the Sept 6 schedule had 6:30 PM, same count); confession uses the Nov 2 schedule. Saturday 9:00 AM Mass is in Kmhmu (Khmu, ISO 639-3 kjg). Friday adoration end is taken from the 6:00 PM Mass that follows it.",
+      "confidence": {"masses": "high", "confession": "high", "adoration": "medium"}
+    },
+    "patrick-rodeo": {
+      "masses": [
+        {"days": "Mon-Sat", "times": ["07:30"], "lang": "en", "lang_stated": false, "src": "https://www.stpatrickrodeo.org/sacraments/", "ev": "Daily Mass: Monday - Saturday, 7:30am"},
+        {"days": "Sat", "times": ["17:00"], "lang": "en", "lang_stated": false, "src": "https://www.stpatrickrodeo.org/sacraments/", "ev": "Saturday, Vigil Mass: 5:00pm"},
+        {"days": "Sun", "times": ["07:30", "09:30", "11:30"], "lang": "en", "lang_stated": false, "src": "https://www.stpatrickrodeo.org/sacraments/", "ev": "Sunday: 7:30, 9:30, 11:30am"}
+      ],
+      "confession": [
+        {"days": "Sat", "start": "15:30", "end": "16:30", "src": "https://www.stpatrickrodeo.org/sacraments/", "ev": "Confession, 3:30-4:30pm"}
+      ],
+      "confession_by_appointment": null,
+      "adoration": [
+        {"days": "Fri", "start": "08:00", "end": "09:00", "freq": "monthly", "which": "1st Fri", "src": "https://www.stpatrickrodeo.org/sacraments/", "ev": "Holy Hour & Benediction: 8:00 - 9:00am"}
+      ],
+      "devotions": [
+        {"name": "Legion of Mary Rosary", "days": "Sat"},
+        {"name": "Our Lady of Perpetual Help Novena", "days": "Wed"},
+        {"name": "Santo Niño Novena", "days": "Fri"}
+      ],
+      "flags": [],
+      "notes": "Confession time comes from the parish 'week at a glance' (one week); no standing confession schedule was found.",
+      "confidence": {"masses": "high", "confession": "medium", "adoration": "high"}
+    },
+    "our-lady-good-counsel-san-leandro": {
+      "masses": [
+        {"days": "Mon-Fri", "times": ["09:00"], "lang": "en", "lang_stated": true, "src": "https://olgcsanleandro.com/mass-schedule/", "ev": "Weekdays (Monday-Friday):"},
+        {"days": "Sat", "times": ["17:00"], "lang": "en", "lang_stated": true, "src": "https://olgcsanleandro.com/", "ev": "Confession at 4:00 PM"},
+        {"days": "Sun", "times": ["09:00", "11:00"], "lang": "en", "lang_stated": true, "src": "https://olgcsanleandro.com/mass-schedule/", "ev": "(click here to attend via Zoom)"},
+        {"days": "Sun", "times": ["13:00"], "lang": "pl", "lang_stated": true, "src": "https://olgcsanleandro.com/mass-schedule/", "ev": "MSZA SW. W JEZYKU POLSKIM"}
+      ],
+      "masses_monthly": [
+        {"which": "1st Sat", "time": "09:00", "lang": "en", "src": "https://olgcsanleandro.com/mass-schedule/", "ev": "Saturday (1st Saturday of the month):"},
+        {"which": "3rd Sun", "time": "14:00", "lang": "und", "note": "Our Lady of Peñafrancia community", "src": "https://olgcsanleandro.com/prayer-groups/", "ev": "Monthly Mass – third Sunday at 2:00 pm"},
+        {"which": "2nd Sun", "time": "15:00", "lang": "und", "note": "El-Shaddai community", "src": "https://olgcsanleandro.com/prayer-groups/", "ev": "Monthly Mass – second Sunday at 3:00 pm"}
+      ],
+      "confession": [
+        {"days": "Sat", "start": "16:00", "end": null, "src": "https://olgcsanleandro.com/", "ev": "Confession at 4:00 PM"}
+      ],
+      "confession_by_appointment": null,
+      "adoration": [
+        {"days": "Fri", "start": "09:30", "end": "24:00", "freq": "monthly", "which": "1st Fri", "src": "https://olgcsanleandro.com/prayer-groups/", "ev": "Adoration of the Blessed Sacrament in the Chapel from 9:30 am till midnight"}
+      ],
+      "devotions": [
+        {"name": "St. Anthony devotion", "days": "Tue"},
+        {"name": "Our Lady of Perpetual Help devotion", "days": "Wed"},
+        {"name": "St. Jude devotion", "days": "Thu"},
+        {"name": "La Pieta devotion", "days": "Fri"},
+        {"name": "El-Shaddai prayer meeting", "days": "Sun"}
+      ],
+      "flags": ["pages_disagree"],
+      "notes": "The Polish Mass is listed at 1:00 PM, while the Polish-language paragraph says 12:30 PM. The Saturday 5:00 PM Mass appears on the home page only. Peñafrancia and El-Shaddai monthly Masses are listed on the prayer-groups page; their language is not stated.",
+      "confidence": {"masses": "medium", "confession": "medium", "adoration": "high"}
+    },
+    "felicitas-san-leandro": {
+      "masses": [
+        {"days": "Sun", "times": ["07:30", "09:00", "10:30"], "lang": "en", "lang_stated": true, "src": "https://stfelicitassl.org/2023-mass-times/", "ev": "7:30 am – 9:00 am – 10:30 am (English)"},
+        {"days": "Sun", "times": ["12:30"], "lang": "es", "lang_stated": true, "src": "https://stfelicitassl.org/2023-mass-times/", "ev": "12:30 pm (Spanish) 4:30 pm (Vietnamese)"},
+        {"days": "Sun", "times": ["16:30"], "lang": "vi", "lang_stated": true, "src": "https://stfelicitassl.org/2023-mass-times/", "ev": "12:30 pm (Spanish) 4:30 pm (Vietnamese)"},
+        {"days": "Sat", "times": ["07:00", "16:00"], "lang": "en", "lang_stated": false, "src": "https://stfelicitassl.org/2023-mass-times/", "ev": "7:00 am – 4:00 pm (Vigil)"},
+        {"days": "Mon-Fri", "times": ["07:00", "08:15"], "lang": "en", "lang_stated": false, "src": "https://stfelicitassl.org/2023-mass-times/", "ev": "(Monday to Friday) 7:00 am & 8:15 am"}
+      ],
+      "confession": [
+        {"days": "Mon-Fri", "start": "07:30", "end": "08:00", "src": "https://stfelicitassl.org/2023-mass-times/", "ev": "Monday to Friday – 7:30 am to 8:00 am"},
+        {"days": "Sat", "start": "15:00", "end": "16:00", "src": "https://stfelicitassl.org/2023-mass-times/", "ev": "Saturday, 3:00 p.m.– 4:00 p.m. or by appointment"}
+      ],
+      "confession_by_appointment": true,
+      "adoration": [
+        {"days": "Mon-Fri", "start": "09:00", "end": "16:00", "site": "Adoration Chapel", "src": "https://stfelicitassl.org/2023-mass-times/", "ev": "9:00 am -4:00 pm (Monday-Friday)"}
+      ],
+      "flags": ["schedule_page_labeled_2023"],
+      "notes": "The schedule page is titled '2023 Masses Schedule' but is the page the site links as current; treat with care.",
+      "confidence": {"masses": "medium", "confession": "medium", "adoration": "medium"}
+    },
+    "leander-san-leandro": {
+      "masses": [
+        {"days": "Mon,Tue,Wed,Fri", "times": ["07:00"], "lang": "en", "lang_stated": true, "src": "https://stleanderchurch.org/worship/", "ev": "7:00am English (Mondays – Wednesdays and Fridays)"},
+        {"days": "Thu", "times": ["07:00"], "lang": "es", "lang_stated": true, "src": "https://stleanderchurch.org/worship/", "ev": "7:00am Espanol (Thursdays)"},
+        {"days": "Mon-Fri", "times": ["12:15"], "lang": "en", "lang_stated": true, "src": "https://stleanderchurch.org/worship/", "ev": "12:15pm English (Monday – Friday)"},
+        {"days": "Sat", "times": ["16:30"], "lang": "en", "lang_stated": true, "src": "https://stleanderchurch.org/worship/", "ev": "4:30pm English"},
+        {"days": "Sat", "times": ["18:30"], "lang": "es", "lang_stated": true, "src": "https://stleanderchurch.org/worship/", "ev": "6:30pm Spanish"},
+        {"days": "Sun", "times": ["07:00", "11:00"], "lang": "en", "lang_stated": true, "src": "https://stleanderchurch.org/worship/", "ev": "SUNDAY MASSES:"},
+        {"days": "Sun", "times": ["09:00", "13:00"], "lang": "es", "lang_stated": true, "src": "https://stleanderchurch.org/worship/", "ev": "SUNDAY MASSES:"},
+        {"days": "Sun", "times": ["15:00"], "lang": "zh", "lang_stated": true, "src": "https://stleanderchurch.org/worship/", "ev": "Chinese:"}
+      ],
+      "masses_monthly": [
+        {"which": "1st Sun", "time": "17:00", "lang": "pt", "src": "https://stleanderchurch.org/worship/", "ev": "First Sundays of the month, 5:00pm"}
+      ],
+      "confession": [
+        {"days": "Sat", "start": "15:00", "end": "16:00", "src": "https://stleanderchurch.org/worship/", "ev": "3:00pm – 4:00pm on Saturdays in the Church"}
+      ],
+      "confession_by_appointment": null,
+      "adoration": [
+        {"days": "Fri", "start": "07:30", "end": "08:30", "src": "https://stleanderchurch.org/worship/", "ev": "Adoration of the Blessed Sacrament – Fridays after 7am mass"},
+        {"days": "Fri", "start": "18:00", "end": null, "freq": "monthly", "which": "1st Fri", "lang": "es", "src": "https://stleanderchurch.org/worship/", "ev": "los primeros viernes a las 6 pm"}
+      ],
+      "flags": [],
+      "notes": "Chinese Mass dialect not stated (recorded as zh). Friday adoration hours are from the parish calendar entry (7:30-8:30 AM); one calendar note about adoration resuming in December looks stale.",
+      "confidence": {"masses": "high", "confession": "high", "adoration": "medium"}
+    },
+    "john-baptist-san-lorenzo": {
+      "masses": [
+        {"days": "Mon-Fri", "times": ["08:30"], "lang": "en", "lang_stated": true, "src": "https://stjohnsanlorenzo.org/mass-parish-hours/", "ev": "MASS SCHEDULE"},
+        {"days": "Sat", "times": ["16:30"], "lang": "en", "lang_stated": true, "src": "https://stjohnsanlorenzo.org/mass-parish-hours/", "ev": "Saturday (Vigil):"},
+        {"days": "Sun", "times": ["07:30", "09:30"], "lang": "en", "lang_stated": true, "src": "https://stjohnsanlorenzo.org/mass-parish-hours/", "ev": "7:30 am, 9:30 am"},
+        {"days": "Tue,Thu", "times": ["18:00"], "lang": "es", "lang_stated": true, "src": "https://stjohnsanlorenzo.org/mass-parish-hours/", "ev": "Martes y Jueves:"},
+        {"days": "Sat", "times": ["18:30"], "lang": "es", "lang_stated": true, "src": "https://stjohnsanlorenzo.org/mass-parish-hours/", "ev": "Sabado (Vigilia):"},
+        {"days": "Sun", "times": ["11:30", "13:30"], "lang": "es", "lang_stated": true, "src": "https://stjohnsanlorenzo.org/mass-parish-hours/", "ev": "11:30 am, 1:30 pm"}
+      ],
+      "masses_monthly": [
+        {"which": "1st Fri", "time": "20:00", "lang": "es", "src": "https://stjohnsanlorenzo.org/mass-parish-hours/", "ev": "followed by a mass in Spanish."}
+      ],
+      "confession": [
+        {"days": "Tue,Thu", "start": "16:30", "end": null, "lang": "en+es", "src": "https://stjohnsanlorenzo.org/mass-parish-hours/", "ev": "Tuesday and Thursdays:"}
+      ],
+      "confession_by_appointment": null,
+      "adoration": [
+        {"days": "Wed,Fri", "start": "09:00", "end": "10:00", "src": "https://stjohnsanlorenzo.org/mass-parish-hours/", "ev": "Adoration with Divine Mercy Novena"},
+        {"days": "Fri", "start": "09:00", "end": "20:00", "freq": "monthly", "which": "1st Fri", "src": "https://stjohnsanlorenzo.org/mass-parish-hours/", "ev": "Every first Friday:"}
+      ],
+      "flags": ["pages_disagree"],
+      "notes": "The music page puts the Spanish choir at a 2:00 PM Sunday Mass; the schedule page says 1:30 PM, which is used. The first-Friday Spanish Mass time after adoration is approximate (adoration ends 8:00 PM).",
+      "confidence": {"masses": "high", "confession": "medium", "adoration": "high"}
+    },
+    "paul-san-pablo": {
+      "masses": [
+        {"days": "Mon-Sat", "times": ["07:30"], "lang": "en", "lang_stated": true, "src": "https://www.stpaulchurchsanpablo.org/", "ev": "Mass Schedule | Horario De Misas"},
+        {"days": "Sat", "times": ["17:00"], "lang": "en", "lang_stated": true, "src": "https://www.stpaulchurchsanpablo.org/", "ev": "Mass Schedule | Horario De Misas"},
+        {"days": "Sat", "times": ["18:30"], "lang": "es", "lang_stated": true, "src": "https://www.stpaulchurchsanpablo.org/", "ev": "Mass Schedule | Horario De Misas"},
+        {"days": "Sun", "times": ["07:30", "10:30", "12:00"], "lang": "en", "lang_stated": true, "src": "https://www.stpaulchurchsanpablo.org/", "ev": "Mass Schedule | Horario De Misas"},
+        {"days": "Sun", "times": ["08:50", "18:00"], "lang": "es", "lang_stated": true, "src": "https://www.stpaulchurchsanpablo.org/", "ev": "Mass Schedule | Horario De Misas"},
+        {"days": "Sun", "times": ["16:00"], "lang": "vi", "lang_stated": true, "src": "https://www.stpaulchurchsanpablo.org/", "ev": "Mass Schedule | Horario De Misas"}
+      ],
+      "masses_monthly": [
+        {"which": "2nd Sun", "time": "14:00", "lang": "tl", "src": "https://www.stpaulchurchsanpablo.org/", "ev": "(Tagalo)"}
+      ],
+      "confession": [
+        {"days": "Sat", "start": "15:30", "end": "16:30", "src": "https://www.stpaulchurchsanpablo.org/sacraments", "ev": "Reconciliation is held on Saturdays from 3:30 PM to 4:30 PM, or by appointment."}
+      ],
+      "confession_by_appointment": true,
+      "adoration": [],
+      "devotions": [
+        {"name": "Our Lady of Perpetual Help Novena", "days": "Wed"}
+      ],
+      "flags": [],
+      "notes": "Each Mass time is followed by its language in parentheses on the home page. No adoration seen.",
+      "confidence": {"masses": "high", "confession": "high", "adoration": "low"}
+    },
+    "joan-arc-san-ramon": {
+      "masses": [
+        {"days": "Sat", "times": ["16:30"], "lang": "en", "lang_stated": false, "src": "https://www.sjasr.org/mass-sacraments", "ev": "Saturday Vigil:"},
+        {"days": "Sun", "times": ["08:00", "10:00", "12:00"], "lang": "en", "lang_stated": false, "src": "https://www.sjasr.org/mass-sacraments", "ev": ": 8 am (live-streamed) | 10 am | 12 noon"},
+        {"days": "Mon-Fri", "times": ["09:00"], "lang": "en", "lang_stated": false, "src": "https://www.sjasr.org/mass-sacraments", "ev": "Monday - Friday - 9 am (live-streamed)"}
+      ],
+      "confession": [
+        {"days": "Sat", "start": "15:00", "end": "16:00", "src": "https://www.sjasr.org/mass-sacraments", "ev": "The sacrament of reconciliation is offered every Saturday from 3 – 4 PM"}
+      ],
+      "confession_by_appointment": true,
+      "adoration": [
+        {"days": "Daily", "start": "06:00", "end": "21:00", "site": "Adoration Chapel", "src": "https://www.sjasr.org/mass-sacraments", "ev": "Open Daily for Eucharistic Adoration and Prayer: 6 am - 9 pm"}
+      ],
+      "flags": [],
+      "notes": "",
+      "confidence": {"masses": "high", "confession": "high", "adoration": "high"}
+    },
+    "our-lady-rosary-union-city": {
+      "masses": [
+        {"days": "Tue-Fri", "times": ["08:00"], "lang": "en", "lang_stated": false, "src": "https://www.olrchurch.org", "ev": "8:00 a.m. Tuesday - Friday: Daily Mass at Our Lady of the Rosary"},
+        {"days": "Sat", "times": ["17:00"], "lang": "en+yue", "lang_stated": true, "src": "https://www.olrchurch.org", "ev": "5:00 p.m. - English / Cantonese"},
+        {"days": "Sun", "times": ["07:00", "10:00"], "lang": "es", "lang_stated": true, "src": "https://www.olrchurch.org", "ev": "7:00 a.m. - Spanish"},
+        {"days": "Sun", "times": ["08:30"], "lang": "en", "lang_stated": true, "src": "https://www.olrchurch.org", "ev": "8:30 a.m. – English *"},
+        {"days": "Sun", "times": ["12:00"], "lang": "und", "lang_stated": false, "src": "https://www.olrchurch.org", "ev": "12:00 p.m. Noon – English"}
+      ],
+      "confession": [
+        {"days": "Wed", "start": "18:00", "end": "19:00", "src": "https://www.olrchurch.org", "ev": "6:00 p.m. - 7:00 p.m. Wednesday: Blessed Sacrament and Reconciliation"}
+      ],
+      "confession_by_appointment": null,
+      "adoration": [
+        {"days": "Wed", "start": "18:00", "end": "19:00", "src": "https://www.olrchurch.org", "ev": "6:00 p.m. - 7:00 p.m. Wednesday: Blessed Sacrament and Reconciliation"}
+      ],
+      "flags": ["pages_disagree", "shares_clergy_with_corpus_christi"],
+      "notes": "The Sunday noon Mass is 'English' in the English list and 'español' in the Spanish list (recorded as undetermined). Weekday 8:30 AM Masses at Corpus Christi, Fremont, listed here, are counted under Corpus Christi. The 'new schedule starting August 16, 2026' block is office hours and is excluded.",
+      "confidence": {"masses": "medium", "confession": "high", "adoration": "high"}
+    },
+    "john-vianney-walnut-creek": {
+      "masses": [
+        {"days": "Mon-Sat", "times": ["08:30"], "lang": "en", "lang_stated": false, "src": "https://sjvianney.org/liturgy-sacraments/liturgy", "ev": ": 8:30am (preceded by the Rosary at 8:00am)"},
+        {"days": "Sat", "times": ["17:00"], "lang": "en", "lang_stated": false, "src": "https://sjvianney.org/liturgy-sacraments/liturgy", "ev": "Saturday Vigil"},
+        {"days": "Sun", "times": ["08:30", "10:30", "17:00"], "lang": "en", "lang_stated": false, "src": "https://sjvianney.org/liturgy-sacraments/liturgy", "ev": ": 8:30am, 10:30am, 5:00pm"}
+      ],
+      "masses_monthly": [
+        {"which": "1st Fri", "time": "18:00", "lang": "en", "note": "with Anointing of the Sick", "src": "https://sjvianney.org/", "ev": "mass with anointing of the sick at 6:00pm"}
+      ],
+      "confession": [
+        {"days": "Mon-Sat", "start": "08:15", "end": "08:30", "src": "https://sjvianney.org/liturgy-sacraments/liturgy", "ev": "8:15am, prior to morning Mass"},
+        {"days": "Sat", "start": "16:00", "end": "16:45", "src": "https://sjvianney.org/liturgy-sacraments/liturgy", "ev": "4:00pm - 4:45pm in the Church"},
+        {"days": "Fri", "start": null, "end": "18:00", "freq": "monthly", "which": "1st Fri", "src": "https://sjvianney.org/", "ev": "First Fridays, there is reconciliation"}
+      ],
+      "confession_by_appointment": null,
+      "adoration": [
+        {"days": "Fri", "start": null, "end": "18:00", "freq": "monthly", "which": "1st Fri", "src": "https://sjvianney.org/", "ev": "First Fridays, there is reconciliation"}
+      ],
+      "devotions": [
+        {"name": "Rosary before daily Mass", "days": "Mon-Sat"},
+        {"name": "Divine Mercy Chaplet after daily Mass", "days": "Mon-Fri"}
+      ],
+      "flags": ["pages_disagree"],
+      "notes": "The Liturgy page lists daily Mass Monday-Saturday; the home page says Monday-Friday. The Liturgy page is used. First-Friday reconciliation and adoration precede the 6:00 PM Mass; hours not stated.",
+      "confidence": {"masses": "medium", "confession": "high", "adoration": "low"}
+    },
+    "mary-walnut-creek": {
+      "masses": [
+        {"days": "Mon-Fri", "times": ["06:30", "12:05"], "lang": "en", "lang_stated": false, "src": "https://www.stmary-wc.org/about/mass-times", "ev": "Monday - Friday: 6:30AM & 12:05PM"},
+        {"days": "Sat", "times": ["16:00"], "lang": "en", "lang_stated": false, "src": "https://www.stmary-wc.org/about/mass-times", "ev": "Saturday Vigil Mass"},
+        {"days": "Sun", "times": ["07:00", "09:30", "11:30"], "lang": "en", "lang_stated": false, "src": "https://www.stmary-wc.org/", "ev": "Sunday Mass: 7:00AM, 9:30AM, 11:30AM & 1:30PM SPANISH"},
+        {"days": "Sun", "times": ["13:30"], "lang": "es", "lang_stated": true, "src": "https://www.stmary-wc.org/", "ev": "Sunday Mass: 7:00AM, 9:30AM, 11:30AM & 1:30PM SPANISH"}
+      ],
+      "masses_monthly": [
+        {"which": "1st Sat", "time": "08:30", "lang": "en", "src": "https://www.stmary-wc.org/", "ev": "First Saturdays: 8:30AM"}
+      ],
+      "confession": [
+        {"days": "Sat", "start": "15:00", "end": "15:45", "src": "https://www.stmary-wc.org/", "ev": "Saturday: 3:00PM - 3:45PM - in church"}
+      ],
+      "confession_by_appointment": null,
+      "adoration": [],
+      "flags": ["adoration_page_not_fetched"],
+      "notes": "The site has Adoration Chapel and Eucharistic Adoration pages that the crawl did not fetch, so adoration hours are unknown, not zero.",
+      "confidence": {"masses": "high", "confession": "high", "adoration": "none"}
+    }
+  }
+}

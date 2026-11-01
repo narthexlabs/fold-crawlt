@@ -1,0 +1,115 @@
+{
+ "domain": "sfxtaos.com",
+ "diocese": "diocese-of-jefferson-city",
+ "matched_church_ids": [
+  "diocese-of-jefferson-city:St. Francis Xavier (Taos)"
+ ],
+ "matched": {
+  "directory": [
+   "diocese-of-jefferson-city:St. Francis Xavier (Taos)"
+  ],
+  "discovermass": []
+ },
+ "names": [
+  "St. Francis Xavier (Taos)"
+ ],
+ "cities": [
+  "Jefferson City"
+ ],
+ "home_url": "http://www.sfxtaos.com/",
+ "final_url": "https://sfxtaos.com/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "timeout",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://sfxtaos.com/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://sfxtaos.com/parish-organizations/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://sfxtaos.com/faith-formation/",
+   "status": null,
+   "class": "conn_error"
+  },
+  {
+   "category": "calendar",
+   "url": "https://sfxtaos.com/gym-calendar/",
+   "status": null,
+   "class": "conn_error"
+  },
+  {
+   "category": "calendar",
+   "url": "https://sfxtaos.com/home-lunch-calendars/",
+   "status": null,
+   "class": "conn_error"
+  },
+  {
+   "category": "contact",
+   "url": "https://sfxtaos.com/contact-us/",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-json"
+  ]
+ },
+ "template": "wordpress-rest+html",
+ "groups": [],
+ "calendar_feeds": [],
+ "events": [],
+ "social": {},
+ "bulletin": {
+  "url": "https://sfxtaos.com/wp-content/uploads/2026/10/Ministers-for-Bulletin-Nov-1028.pdf",
+  "date": null,
+  "kind": "pdf",
+  "text": "Lit. Ministers",
+  "source_url": "https://sfxtaos.com/parish-organizations/"
+ },
+ "schedule_rows": [],
+ "source_url": "http://www.sfxtaos.com/",
+ "fetched_at": "2026-11-01T02:15:33+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-10-31",
+  "window_end_exclusive": "2027-01-29",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

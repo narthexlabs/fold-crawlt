@@ -1,0 +1,49 @@
+{
+  "_doc": "Weights and thresholds for ingest/public/media/rank.py. Explained in docs/design/media-ranking.md. Change here, rerun rank.py.",
+  "version": "2026-10-29.1",
+  "llm": {
+    "model": "claude-sonnet-4-5",
+    "endpoint": "https://api.anthropic.com/v1/messages",
+    "batch_size": 8,
+    "max_tokens": 4000,
+    "caption_chars": 6000
+  },
+  "blend": { "judgment": 0.6, "signals": 0.4 },
+  "judgment_weights": { "substance": 0.35, "timelessness": 0.2, "completeness": 0.15, "production": 0.1, "breadth": 0.2 },
+  "breadth_value": { "one_parish": 0.25, "deanery": 0.45, "diocese": 0.75, "universal_church": 1.0 },
+  "content_type_multiplier": {
+    "teaching": 1.15, "witness": 1.1, "liturgy_special": 1.1, "news": 0.9, "event_promo": 0.8,
+    "fundraising": 0.75, "other": 0.8, "school_internal": 0.6, "liturgy_routine": 0.35
+  },
+  "signal_weights": { "duration": 0.35, "thumbnail": 0.15, "description": 0.1, "view_velocity": 0.2, "upload_not_stream": 0.2 },
+  "duration_bands": [
+    { "max_s": 59, "score": 0.45, "label": "under 1 min" },
+    { "max_s": 480, "score": 1.0, "label": "1-8 min" },
+    { "max_s": 1200, "score": 0.85, "label": "8-20 min" },
+    { "max_s": 5400, "score": 0.45, "label": "20-90 min", "liturgy_special_score": 0.85 },
+    { "max_s": 1000000, "score": 0.3, "label": "over 90 min", "liturgy_special_score": 0.75 }
+  ],
+  "duration_unknown": 0.6,
+  "non_video_duration_score": { "episode": 0.8, "news": 0.7, "event": 0.6, "bulletin_item": 0.3, "photo_post": 0.7 },
+  "view_velocity_full_at_per_day": 50,
+  "view_velocity_unknown": 0.5,
+  "stream_score": { "upload": 1.0, "livestream": 0.4, "livestream_liturgy_special": 0.9 },
+  "freshness": { "half_life_min_days": 21, "half_life_max_days": 365, "upcoming_half_life_days": 30, "upcoming_factor": 0.9, "floor": 0.08 },
+  "rarity": { "window_days": 60, "boost": 1.15 },
+  "kind_weight": { "video": 1.0, "news": 1.0, "episode": 0.9, "photo_post": 0.9, "event": 0.85, "bulletin_item": 0.55 },
+  "org_scope_weight": { "religious_institute": 0.75, "higher_education": 0.9, "default": 1.0 },
+  "diversity": {
+    "cap_per_org_per_week": 2,
+    "same_org_penalty": 0.6, "org_window": 6,
+    "same_org_type_penalty": 0.85, "org_type_window": 4,
+    "same_pillar_penalty": 0.9, "pillar_window": 3
+  },
+  "auto_status": {
+    "approve_threshold": 0.3,
+    "feature_count": 8,
+    "feature_threshold": 0.45,
+    "feature_kinds": ["video", "news", "episode", "photo_post"],
+    "feature_max_per_org": 1
+  },
+  "off_diocesan_feed": ["school_internal", "liturgy_routine"]
+}

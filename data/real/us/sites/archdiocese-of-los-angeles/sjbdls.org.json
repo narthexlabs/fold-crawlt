@@ -1,0 +1,101 @@
+{
+ "domain": "sjbdls.org",
+ "diocese": "archdiocese-of-los-angeles",
+ "matched_church_ids": [
+  "archdiocese-of-los-angeles:St. John Baptist de la Salle School"
+ ],
+ "matched": {
+  "directory": [
+   "archdiocese-of-los-angeles:St. John Baptist de la Salle School"
+  ],
+  "discovermass": []
+ },
+ "names": [
+  "St. John Baptist de la Salle School"
+ ],
+ "cities": [],
+ "home_url": "https://www.sjbdls.org/",
+ "final_url": "https://www.sjbdls.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://www.sjbdls.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.sjbdls.org/apps/bell_schedules/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://www.sjbdls.org/apps/pages/index.jsp?uREC_ID=307069&type=d&pREC_ID=721012",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.sjbdls.org/apps/events/?id=0",
+   "status": 403,
+   "class": "challenge"
+  }
+ ],
+ "cms_guess": {
+  "cms": "unknown",
+  "evidence": []
+ },
+ "template": "generic-html:unknown",
+ "groups": [],
+ "calendar_feeds": [],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/pages/St-John-Baptist-De-La-Salle-School-Granada-Hills/775377749174566"
+  ]
+ },
+ "bulletin": null,
+ "schedule_rows": [],
+ "source_url": "https://www.sjbdls.org/",
+ "fetched_at": "2026-11-01T02:13:39+00:00",
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": true,
+  "trusted_candidate": false,
+  "generic_rows": 3
+ },
+ "schedule_dropped": {
+  "dated_block": 4,
+  "not_a_service": 46
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-10-31",
+  "window_end_exclusive": "2027-01-29",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

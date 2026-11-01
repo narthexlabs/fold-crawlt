@@ -1,0 +1,134 @@
+{
+ "measured_at": "2026-10-31",
+ "measured_by": "scripts/california/eval_templates.py, last full run as recorded in ingest/california/sites/templates/README.md (Status / resume)",
+ "caveat": "Copied from the README table, not re-run: the raw page cache (data/raw/california/sites/) was not in the clone that wired Phase B. The last template edits (stricter eCatholic detection, holidays as kind other, 'no Mass at' negation, sticky kind for Mass lists) are unmeasured. Re-run `python3 -I scripts/california/eval_templates.py --write-grades` before the next re-parse; it rewrites this file.",
+ "bar": {
+  "truth_set": "oakland",
+  "min_units": 10,
+  "precision": 0.9,
+  "sunday_recall": 0.85,
+  "referee_precision": 0.75
+ },
+ "templates": {
+  "generic_strict": {
+   "oakland": {
+    "n": 14,
+    "precision": 0.928,
+    "recall": 0.844,
+    "sunday_recall": 0.857
+   },
+   "referee": {
+    "n": 117,
+    "precision": 0.787,
+    "recall": 0.467,
+    "sunday_recall": 0.504
+   },
+   "passed": true,
+   "why": "meets the bar"
+  },
+  "wordpress": {
+   "oakland": {
+    "n": 12,
+    "precision": 0.923,
+    "recall": 0.775,
+    "sunday_recall": 0.778
+   },
+   "referee": {
+    "n": 118,
+    "precision": 0.762,
+    "recall": 0.581,
+    "sunday_recall": 0.646
+   },
+   "passed": false,
+   "why": "Sunday recall 77.8% < 85%"
+  },
+  "ecatholic": {
+   "oakland": null,
+   "referee": {
+    "n": 33,
+    "precision": 0.787,
+    "recall": 0.757,
+    "sunday_recall": 0.818
+   },
+   "passed": false,
+   "why": "too few truth parishes"
+  },
+  "wix": {
+   "oakland": {
+    "n": 3,
+    "precision": 0.9
+   },
+   "referee": {
+    "n": 92,
+    "precision": 0.736,
+    "recall": 0.621,
+    "sunday_recall": 0.633
+   },
+   "passed": false,
+   "why": "too few truth parishes"
+  },
+  "squarespace": {
+   "oakland": {
+    "n": 2,
+    "precision": 0.897
+   },
+   "referee": {
+    "n": 35,
+    "precision": 0.709
+   },
+   "passed": false,
+   "why": "too few truth parishes"
+  },
+  "weebly": {
+   "oakland": {
+    "n": 2,
+    "precision": 0.844
+   },
+   "referee": {
+    "n": 38,
+    "precision": 0.722
+   },
+   "passed": false,
+   "why": "too few truth parishes"
+  },
+  "godaddy": {
+   "oakland": {
+    "n": 2,
+    "precision": 1.0
+   },
+   "referee": {
+    "n": 25,
+    "precision": 0.798
+   },
+   "passed": false,
+   "why": "too few truth parishes"
+  },
+  "parishsoft": {
+   "oakland": null,
+   "referee": null,
+   "passed": false,
+   "why": "too few truth parishes"
+  }
+ },
+ "all": {
+  "oakland": {
+   "n": 36,
+   "precision": 0.909,
+   "recall": 0.796,
+   "sunday_recall": 0.81
+  },
+  "review15": {
+   "n": 8,
+   "precision": 0.938,
+   "recall": 0.883,
+   "sunday_recall": 0.975,
+   "error_rate": 0.117
+  },
+  "referee": {
+   "n": 458,
+   "precision": 0.757,
+   "recall": 0.585,
+   "sunday_recall": 0.615
+  }
+ }
+}

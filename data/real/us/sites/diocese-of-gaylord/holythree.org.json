@@ -1,0 +1,159 @@
+{
+ "domain": "holythree.org",
+ "diocese": "diocese-of-gaylord",
+ "matched_church_ids": [
+  "diocese-of-gaylord:St. Pius X",
+  "diocese-of-gaylord:St. Stephen King of Hungary"
+ ],
+ "matched": {
+  "directory": [
+   "diocese-of-gaylord:St. Pius X",
+   "diocese-of-gaylord:St. Stephen King of Hungary"
+  ],
+  "discovermass": []
+ },
+ "names": [
+  "St. Pius X",
+  "St. Stephen King of Hungary"
+ ],
+ "cities": [
+  "Hale",
+  "Prescott"
+ ],
+ "home_url": "https://www.holythree.org/",
+ "final_url": "https://www.holythree.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://www.holythree.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.holythree.org/ministries/organizations",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://www.holythree.org/bulletin9ab2b387",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.holythree.org/calendar",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://www.holythree.org/contact",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "duda",
+  "evidence": [
+   "irp.cdn-website"
+  ]
+ },
+ "template": "generic-html:duda",
+ "groups": [],
+ "calendar_feeds": [
+  {
+   "feed_id": "holythree.org:ics:85a2a69a",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": null,
+   "page_url": "https://www.holythree.org/calendar",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (website-builder widget)",
+   "url_withheld": "calendar id is an e-mail address; not stored",
+   "feed_key": "85a2a69a46b6",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T03:32:39+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
+ "events": [],
+ "social": {},
+ "bulletin": {
+  "url": "https://www.4lpi.com/weconnect-sponsorship-advertising-form",
+  "date": null,
+  "kind": "lpi",
+  "text": "Visit Website",
+  "source_url": "https://www.holythree.org/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:00",
+   "language": null,
+   "raw": "Weekend Masses: Sunday: 11:00 am",
+   "source_url": "https://www.holythree.org/",
+   "fetched_at": "2026-11-01T02:13:57+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "09:30",
+   "language": null,
+   "raw": "Weekday Masses: Friday: 9:30 am",
+   "source_url": "https://www.holythree.org/",
+   "fetched_at": "2026-11-01T02:13:57+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  }
+ ],
+ "source_url": "https://www.holythree.org/",
+ "fetched_at": "2026-11-01T02:14:01+00:00",
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": true,
+  "trusted_candidate": false,
+  "generic_rows": 3
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-10-31",
+  "window_end_exclusive": "2027-01-29",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

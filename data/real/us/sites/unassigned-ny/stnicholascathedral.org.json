@@ -1,0 +1,172 @@
+{
+ "domain": "stnicholascathedral.org",
+ "diocese": "unassigned-ny",
+ "matched_church_ids": [
+  "wd-Q22329606"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "wd-Q22329606"
+  ]
+ },
+ "names": [
+  "St. Nicholas Antiochian Orthodox Cathedral, New York"
+ ],
+ "cities": [
+  "New York"
+ ],
+ "home_url": "https://stnicholascathedral.org/",
+ "final_url": "https://stnicholascathedral.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://stnicholascathedral.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stnicholascathedral.org/schedule",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://stnicholascathedral.org/organizations",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://stnicholascathedral.org/administration",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://stnicholascathedral.org/church_bulletin",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "live",
+   "url": "https://stnicholascathedral.org/livestream",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://stnicholascathedral.org/contact",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "unknown",
+  "evidence": []
+ },
+ "template": "generic-html:unknown",
+ "groups": [],
+ "calendar_feeds": [
+  {
+   "feed_id": "stnicholascathedral.org:ics:31a67817",
+   "type": "ics",
+   "platform": "iCal",
+   "url": "https://www.google.com/calendar/render?cid=https%3A%2F%2Fstnicholascathedral.org%2Fcalendar%2Fsync.ics",
+   "page_url": "https://stnicholascathedral.org/schedule",
+   "label": null,
+   "status": "active",
+   "note": "iCal link on page",
+   "last_fetch": {
+    "status": "not_ical",
+    "fetched_at": "2026-11-01T03:37:44+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  },
+  {
+   "feed_id": "stnicholascathedral.org:ics:a47ecea2",
+   "type": "ics",
+   "platform": "iCal",
+   "url": "https://stnicholascathedral.org/calendar/sync.ics",
+   "page_url": "https://stnicholascathedral.org/schedule",
+   "label": null,
+   "status": "active",
+   "note": "iCal link on page",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T03:37:44+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/StNicholasAntiochianOrthodoxCathedral"
+  ],
+  "livestream": [
+   {
+    "url": "https://stnicholascathedral.org/livestream.html",
+    "label": "Live Stream",
+    "platform": "stnicholascathedral.org",
+    "kind": "link"
+   }
+  ]
+ },
+ "bulletin": {
+  "url": "https://stnicholascathedral.org/church_bulletin.html",
+  "date": null,
+  "kind": "page",
+  "text": "Church Bulletin",
+  "source_url": "https://stnicholascathedral.org/"
+ },
+ "schedule_rows": [],
+ "source_url": "https://stnicholascathedral.org/",
+ "fetched_at": "2026-11-01T02:29:16+00:00",
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": true,
+  "trusted_candidate": false,
+  "generic_rows": 1
+ },
+ "schedule_dropped": {
+  "dated_line": 2,
+  "skipped_section": 28,
+  "dated_block": 1
+ },
+ "groups_dropped": {
+  "unmatched": 1,
+  "noise": 1
+ },
+ "event_counts": {
+  "window_start": "2026-10-31",
+  "window_end_exclusive": "2027-01-29",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

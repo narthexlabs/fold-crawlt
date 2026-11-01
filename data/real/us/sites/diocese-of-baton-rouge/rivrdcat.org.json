@@ -1,0 +1,220 @@
+{
+ "domain": "rivrdcat.org",
+ "diocese": "diocese-of-baton-rouge",
+ "matched_church_ids": [
+  "gc-35129",
+  "gc-35136",
+  "gc-35175",
+  "gc-35188"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "gc-35188",
+   "gc-35129",
+   "gc-35136",
+   "gc-35175"
+  ]
+ },
+ "names": [
+  "St. Michael the Archangel",
+  "Sacred Heart of Jesus",
+  "Our Lady of Prompt Succor",
+  "St. Joseph"
+ ],
+ "cities": [
+  "Convent",
+  "Gramercy",
+  "Lutcher",
+  "Paulina"
+ ],
+ "home_url": "http://www.rivrdcat.org/",
+ "final_url": "https://www.rivrdcat.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://www.rivrdcat.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.rivrdcat.org/spiritual-life---worship",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.rivrdcat.org/mass-schedule",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.rivrdcat.org/faith-formation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.rivrdcat.org/elementary-faith-formation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.rivrdcat.org/ministries",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://www.rivrdcat.org/bulletins",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.rivrdcat.org/parish-calendar",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://www.rivrdcat.org/contact-us",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "duda",
+  "evidence": [
+   "irp.cdn-website"
+  ]
+ },
+ "template": "generic-html:duda",
+ "groups": [],
+ "calendar_feeds": [
+  {
+   "feed_id": "rivrdcat.org:ics:85a2a69a",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": null,
+   "page_url": "https://www.rivrdcat.org/parish-calendar",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (website-builder widget)",
+   "url_withheld": "calendar id is an e-mail address; not stored",
+   "feed_key": "85a2a69a46b6",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T03:29:23+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/TheCatholicChurchInEastStJamesParish"
+  ],
+  "youtube": [
+   "https://www.youtube.com/channel/UC_v7jFWO7ciIeTlWFyCgnUQ",
+   "https://www.youtube.com/@thecatholicchurchineaststj9996"
+  ]
+ },
+ "bulletin": {
+  "url": "https://www.4lpi.com/weconnect-sponsorship-advertising-form",
+  "date": null,
+  "kind": "lpi",
+  "text": "Visit Website",
+  "source_url": "https://www.rivrdcat.org/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "18:30",
+   "language": null,
+   "raw": "[Sacred Heart of Jesus] Mass: Meetings are held on Wednesdays at 6:30pm in the Sacred Heart PSR building and end by 8:00pm.",
+   "source_url": "https://www.rivrdcat.org/spiritual-life---worship",
+   "fetched_at": "2026-11-01T03:04:35+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "07:00-07:50",
+   "language": null,
+   "raw": "[St. Michael the Archangel] 7 - 7:50AM Confession",
+   "source_url": "https://www.rivrdcat.org/mass-schedule",
+   "fetched_at": "2026-11-01T03:04:36+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "[St. Michael the Archangel] 8AM Mass",
+   "source_url": "https://www.rivrdcat.org/mass-schedule",
+   "fetched_at": "2026-11-01T03:04:36+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  }
+ ],
+ "source_url": "http://www.rivrdcat.org/",
+ "fetched_at": "2026-11-01T03:04:42+00:00",
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": true,
+  "trusted_candidate": false,
+  "generic_rows": 7
+ },
+ "schedule_dropped": {
+  "other_location": 18,
+  "not_a_service": 9,
+  "dated_line": 1,
+  "skipped_section": 1,
+  "dated_block": 1,
+  "relative_time": 1
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-10-31",
+  "window_end_exclusive": "2027-01-29",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

@@ -1,0 +1,136 @@
+{
+ "domain": "orlandobyzantine.com",
+ "diocese": "diocese-of-orlando",
+ "matched_church_ids": [
+  "diocese-of-orlando:St. Nicholas of Myra Byzantine Catholic Church - Eastern Rite"
+ ],
+ "matched": {
+  "directory": [
+   "diocese-of-orlando:St. Nicholas of Myra Byzantine Catholic Church - Eastern Rite"
+  ],
+  "discovermass": []
+ },
+ "names": [
+  "St. Nicholas of Myra Byzantine Catholic Church - Eastern Rite"
+ ],
+ "cities": [
+  "Orlando"
+ ],
+ "home_url": "http://orlandobyzantine.com/",
+ "final_url": "https://orlandobyzantine.com/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://orlandobyzantine.com/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://orlandobyzantine.com/liturgy",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://orlandobyzantine.com/4658-bulletins",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://orlandobyzantine.com/calendar",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "joomla",
+  "evidence": [
+   "content=\"joomla"
+  ]
+ },
+ "template": "generic-html:joomla",
+ "groups": [],
+ "calendar_feeds": [],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/St.Nicholas.BC"
+  ],
+  "youtube": [
+   "https://www.youtube.com/@stnicholasbyzantineTV"
+  ],
+  "livestream": [
+   {
+    "url": "https://www.youtube.com/@stnicholasbyzantineTV/streams",
+    "label": "youtube live",
+    "platform": "youtube",
+    "kind": "link"
+   }
+  ]
+ },
+ "bulletin": {
+  "url": "https://orlandobyzantine.com/component/fileman/file/documents/Sept_20_bulletin.pdf?routed=1&container=fileman-files",
+  "date": null,
+  "kind": "pdf",
+  "text": "September 20",
+  "source_url": "https://orlandobyzantine.com/4658-bulletins"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:30",
+   "language": null,
+   "raw": "Divine Liturgy (Mass) Schedule: Sundays - 10:30 AM",
+   "source_url": "https://orlandobyzantine.com/",
+   "fetched_at": "2026-11-01T02:27:25+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  }
+ ],
+ "source_url": "http://orlandobyzantine.com/",
+ "fetched_at": "2026-11-01T02:27:29+00:00",
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": true,
+  "trusted_candidate": false,
+  "generic_rows": 3
+ },
+ "schedule_dropped": {
+  "dated_line": 3,
+  "no_day": 1
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-10-31",
+  "window_end_exclusive": "2027-01-29",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

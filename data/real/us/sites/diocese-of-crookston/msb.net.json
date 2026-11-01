@@ -1,0 +1,149 @@
+{
+ "domain": "msb.net",
+ "diocese": "diocese-of-crookston",
+ "matched_church_ids": [
+  "gc-42019"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "gc-42019"
+  ]
+ },
+ "names": [
+  "St. Benedict"
+ ],
+ "cities": [
+  "Crookston"
+ ],
+ "home_url": "http://www.msb.net/",
+ "final_url": "https://msb.net/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://msb.net/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://msb.net/about-us/ministries/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://msb.net/newsletter/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://msb.net/contact-us/",
+   "status": 403,
+   "class": "blocked_403"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-json"
+  ]
+ },
+ "template": "wordpress-rest+html",
+ "groups": [
+  {
+   "id": "msb.net:homeless",
+   "name": "Care Of The Homeless",
+   "category": "service_mercy",
+   "category_label": "Service & mercy",
+   "subcategory": "homeless_outreach",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "Through Care and Share Shelter of Crookston, founded in 1986 through the inspiration and ministry of Sister Justina Violette. Care and Share continues to serve individuals and families of Crookston and the surrounding communities as a homeless shelter, transitional housing,…",
+   "contact_url": "https://msb.net/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://msb.net/about-us/ministries/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T05:18:20+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "msb.net:justice",
+   "name": "Peace & Justice Work",
+   "category": "service_mercy",
+   "category_label": "Service & mercy",
+   "subcategory": "social_justice",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://msb.net/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://msb.net/about-us/ministries/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T05:18:20+00:00",
+   "confidence": "medium"
+  }
+ ],
+ "calendar_feeds": [],
+ "events": [],
+ "social": {},
+ "bulletin": null,
+ "schedule_rows": [],
+ "source_url": "http://www.msb.net/",
+ "fetched_at": "2026-11-01T05:19:19+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "groups_dropped": {
+  "noise": 1,
+  "unmatched": 1
+ },
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(218) 281-3441",
+  "address": "620 Summit Avenue, Crookston, MN 56716",
+  "source_url": "https://msb.net/",
+  "sources": {
+   "phone": "https://msb.net/",
+   "address": "https://msb.net/"
+  },
+  "fetched_at": "2026-11-01T05:17:40+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

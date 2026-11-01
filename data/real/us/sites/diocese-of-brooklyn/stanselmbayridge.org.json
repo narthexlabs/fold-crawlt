@@ -1,0 +1,193 @@
+{
+ "domain": "stanselmbayridge.org",
+ "diocese": "diocese-of-brooklyn",
+ "matched_church_ids": [
+  "diocese-of-brooklyn:St. Anselm"
+ ],
+ "matched": {
+  "directory": [
+   "diocese-of-brooklyn:St. Anselm"
+  ],
+  "discovermass": []
+ },
+ "names": [
+  "St. Anselm"
+ ],
+ "cities": [
+  "Brooklyn"
+ ],
+ "home_url": "https://stanselmbayridge.org/",
+ "final_url": "https://stanselmbayridge.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://stanselmbayridge.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stanselmbayridge.org/sacraments/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stanselmbayridge.org/worship/mass-schedule/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://stanselmbayridge.org/organizations/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://stanselmbayridge.org/organizations/bible-study-group/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://stanselmbayridge.org/organizations/publicity-committee/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://stanselmbayridge.org/bulletins/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://stanselmbayridge.org/events/upcoming-events/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://stanselmbayridge.org/st-anselm-roman-catholic-church/calendar/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://stanselmbayridge.org/important-information/contact-us/",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-json"
+  ]
+ },
+ "template": "wordpress-rest+html",
+ "groups": [],
+ "calendar_feeds": [
+  {
+   "feed_id": "stanselmbayridge.org:ics:7d057bd1",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": null,
+   "page_url": "https://stanselmbayridge.org/",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (embedded on page)",
+   "display_tz": "America/New_York",
+   "url_withheld": "calendar id is an e-mail address; not stored",
+   "feed_key": "7d057bd16b6d",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T02:31:07+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/121588407853332"
+  ]
+ },
+ "bulletin": {
+  "url": "https://stanselmbayridge.org/wp-content/uploads/sites/18/2025/10/anselm-bulletin-10-12-25.pdf",
+  "date": "2025-10-12",
+  "kind": "pdf",
+  "text": "October 12, 2025",
+  "source_url": "https://stanselmbayridge.org/bulletins/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "11:30-12:15",
+   "language": null,
+   "raw": "Reconciliation (Confession): Saturdays: 11:30 am – 12:15 pm. Other times, by appointment only.",
+   "source_url": "https://stanselmbayridge.org/sacraments/",
+   "fetched_at": "2026-11-01T01:59:20+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Third Saturday of the month",
+   "time": "11:00",
+   "language": null,
+   "raw": "Anointing of the Sick is regularly offered on the Third Saturday of the month at the 11 am Mass.",
+   "source_url": "https://stanselmbayridge.org/sacraments/",
+   "fetched_at": "2026-11-01T01:59:20+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  }
+ ],
+ "source_url": "https://stanselmbayridge.org/",
+ "fetched_at": "2026-11-01T01:59:30+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 9
+ },
+ "schedule_dropped": {
+  "not_a_service": 2
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-10-31",
+  "window_end_exclusive": "2027-01-29",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

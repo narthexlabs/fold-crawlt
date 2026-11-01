@@ -1,0 +1,179 @@
+{
+ "domain": "sacredheartmargaretville.org",
+ "diocese": "diocese-of-albany",
+ "matched_church_ids": [
+  "diocese-of-albany:Sacred Heart Church"
+ ],
+ "matched": {
+  "directory": [
+   "diocese-of-albany:Sacred Heart Church"
+  ],
+  "discovermass": []
+ },
+ "names": [
+  "Sacred Heart Church"
+ ],
+ "cities": [
+  "Margaretville"
+ ],
+ "home_url": "http://sacredheartmargaretville.org/",
+ "final_url": "https://sacredheartmargaretville.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://sacredheartmargaretville.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://sacredheartmargaretville.org/mass/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://sacredheartmargaretville.org/today-mass-at-st-annes-church-in-andes-is-canceled/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://sacredheartmargaretville.org/get-involved/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://sacredheartmargaretville.org/youth-faith-formation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://sacredheartmargaretville.org/bulletins/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://sacredheartmargaretville.org/calendar/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://sacredheartmargaretville.org/calendar/",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-json"
+  ]
+ },
+ "template": "wordpress-html",
+ "groups": [
+  {
+   "id": "sacredheartmargaretville.org:choir",
+   "name": "Music Ministry / Choir",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "choir_music",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://sacredheartmargaretville.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://sacredheartmargaretville.org/get-involved/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T02:08:03+00:00",
+   "confidence": "low"
+  }
+ ],
+ "calendar_feeds": [],
+ "events": [],
+ "social": {},
+ "bulletin": {
+  "url": "https://sacredheartmargaretville.org/bulletins/",
+  "date": null,
+  "kind": "page",
+  "text": "Bulletins",
+  "source_url": "https://sacredheartmargaretville.org/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": null,
+   "raw": "WEEKEND MASSES: Sunday 9 a.m. – Sacred Heart Church in Margaretville",
+   "source_url": "https://sacredheartmargaretville.org/mass/",
+   "fetched_at": "2026-11-01T02:07:58+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "16:00",
+   "language": null,
+   "raw": "WEEKEND MASSES: Saturday 4 p.m. – St. Anne’s Mission Church in Andes",
+   "source_url": "https://sacredheartmargaretville.org/mass/",
+   "fetched_at": "2026-11-01T02:07:58+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  }
+ ],
+ "source_url": "http://sacredheartmargaretville.org/",
+ "fetched_at": "2026-11-01T02:08:12+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 4
+ },
+ "schedule_dropped": {
+  "dated_block": 3,
+  "dated_line": 2
+ },
+ "groups_dropped": {
+  "noise": 3
+ },
+ "event_counts": {
+  "window_start": "2026-10-31",
+  "window_end_exclusive": "2027-01-29",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

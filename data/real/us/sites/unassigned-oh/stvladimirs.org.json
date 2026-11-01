@@ -1,0 +1,176 @@
+{
+ "domain": "stvladimirs.org",
+ "diocese": "unassigned-oh",
+ "matched_church_ids": [
+  "wd-Q65096292"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "wd-Q65096292"
+  ]
+ },
+ "names": [
+  "St. Vladimir's Ukrainian Orthodox Cathedral"
+ ],
+ "cities": [
+  "Parma"
+ ],
+ "home_url": "https://www.stvladimirs.org/",
+ "final_url": "https://www.stvladimirs.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://www.stvladimirs.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.stvladimirs.org/sacraments",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.stvladimirs.org/churchorgs",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.stvladimirs.org/parishadmin",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.stvladimirs.org/pyrohygroup",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://www.stvladimirs.org/bulletins",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.stvladimirs.org/monthlycalendar",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "unknown",
+  "evidence": []
+ },
+ "template": "generic-html:unknown",
+ "groups": [
+  {
+   "id": "stvladimirs.org:choir",
+   "name": "Church Choir",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "choir_music",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.stvladimirs.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stvladimirs.org/churchorgs",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T02:18:34+00:00",
+   "confidence": "medium"
+  }
+ ],
+ "calendar_feeds": [
+  {
+   "feed_id": "stvladimirs.org:ics:ccff552d",
+   "type": "ics",
+   "platform": "iCal",
+   "url": "https://www.google.com/calendar/render?cid=https%3A%2F%2Fwww.stvladimirs.org%2Fcalendar%2Fsync.ics",
+   "page_url": "https://www.stvladimirs.org/monthlycalendar",
+   "label": null,
+   "status": "active",
+   "note": "iCal link on page",
+   "last_fetch": {
+    "status": "not_ical",
+    "fetched_at": "2026-11-01T03:41:20+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  },
+  {
+   "feed_id": "stvladimirs.org:ics:dbc06a26",
+   "type": "ics",
+   "platform": "iCal",
+   "url": "https://www.stvladimirs.org/calendar/sync.ics",
+   "page_url": "https://www.stvladimirs.org/monthlycalendar",
+   "label": null,
+   "status": "active",
+   "note": "iCal link on page",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T03:41:20+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/St-Vladimir-Ukrainian-Orthodox-Cathedral-Кафедральний-собор-св-Володимира-497302415586",
+   "https://www.facebook.com/St-Vladimir-Ukrainian-Orthodox-Cathedral-"
+  ]
+ },
+ "bulletin": {
+  "url": "https://www.stvladimirs.org/files/bulletins/2026-11-01.pdf",
+  "date": "2026-11-01",
+  "kind": "pdf",
+  "text": "Sunday, November 1",
+  "source_url": "https://www.stvladimirs.org/bulletins"
+ },
+ "schedule_rows": [],
+ "source_url": "https://www.stvladimirs.org/",
+ "fetched_at": "2026-11-01T02:29:31+00:00",
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": true,
+  "trusted_candidate": false,
+  "generic_rows": 5
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-10-31",
+  "window_end_exclusive": "2027-01-29",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

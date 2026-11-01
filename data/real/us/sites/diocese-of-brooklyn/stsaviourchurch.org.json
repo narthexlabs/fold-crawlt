@@ -1,0 +1,194 @@
+{
+ "domain": "stsaviourchurch.org",
+ "diocese": "diocese-of-brooklyn",
+ "matched_church_ids": [
+  "diocese-of-brooklyn:St. Saviour"
+ ],
+ "matched": {
+  "directory": [
+   "diocese-of-brooklyn:St. Saviour"
+  ],
+  "discovermass": []
+ },
+ "names": [
+  "St. Saviour"
+ ],
+ "cities": [
+  "Brooklyn"
+ ],
+ "home_url": "https://stsaviourchurch.org/",
+ "final_url": "https://stsaviourchurch.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://stsaviourchurch.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stsaviourchurch.org/mass-times/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stsaviourchurch.org/sacraments/confession-times/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://stsaviourchurch.org/education/faith-formation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://stsaviourchurch.org/worship/ministries/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://stsaviourchurch.org/worship/ministries/childrens-lectors/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://stsaviourchurch.org/events/bulletin/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://stsaviourchurch.org/events/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://stsaviourchurch.org/events/parish-calendar/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://stsaviourchurch.org/contact-us/",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-json"
+  ]
+ },
+ "template": "wordpress-html",
+ "groups": [],
+ "calendar_feeds": [
+  {
+   "feed_id": "stsaviourchurch.org:ics:fbe53f61",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": null,
+   "page_url": "https://stsaviourchurch.org/events/parish-calendar/",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (embedded on page)",
+   "display_tz": "America/New_York",
+   "url_withheld": "calendar id is an e-mail address; not stored",
+   "feed_key": "fbe53f614d4a",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T02:32:15+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
+ "events": [],
+ "social": {
+  "flocknote": [
+   "https://stsaviourchurch.flocknote.com"
+  ]
+ },
+ "bulletin": {
+  "url": "https://stsaviourchurch.org/wp-content/uploads/sites/103/2026/04/apr5_2026_easterBulletin_compressed.pdf",
+  "date": "2026-04-05",
+  "kind": "pdf",
+  "text": "April 5, 2026",
+  "source_url": "https://stsaviourchurch.org/events/bulletin/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Saturday 5:00 PM Vigil",
+   "source_url": "https://stsaviourchurch.org/mass-times/",
+   "fetched_at": "2026-11-01T01:59:45+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:30",
+   "language": null,
+   "raw": "Sunday 9:30 AM Family Mass",
+   "source_url": "https://stsaviourchurch.org/mass-times/",
+   "fetched_at": "2026-11-01T01:59:45+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  }
+ ],
+ "source_url": "https://stsaviourchurch.org/",
+ "fetched_at": "2026-11-01T01:59:54+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 5
+ },
+ "schedule_dropped": {
+  "not_a_service": 1,
+  "other_location": 1
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-10-31",
+  "window_end_exclusive": "2027-01-29",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

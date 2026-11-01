@@ -1,0 +1,201 @@
+{
+ "domain": "stjames-franklin.org",
+ "diocese": "archdiocese-of-milwaukee",
+ "matched_church_ids": [
+  "archdiocese-of-milwaukee:St. James"
+ ],
+ "matched": {
+  "directory": [
+   "archdiocese-of-milwaukee:St. James"
+  ],
+  "discovermass": []
+ },
+ "names": [
+  "St. James"
+ ],
+ "cities": [
+  "Franklin"
+ ],
+ "home_url": "http://www.stjames-franklin.org/",
+ "final_url": "https://www.stjames-franklin.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://www.stjames-franklin.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.stjames-franklin.org/reconciliation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.stjames-franklin.org/children-s-liturgy-of-the-word",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.stjames-franklin.org/music-ministry",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://www.stjames-franklin.org/bulletin9ab2b387",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.stjames-franklin.org/calendar",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://www.stjames-franklin.org/contact",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "duda",
+  "evidence": [
+   "irp.cdn-website"
+  ]
+ },
+ "template": "generic-html:duda",
+ "groups": [],
+ "calendar_feeds": [
+  {
+   "feed_id": "stjames-franklin.org:ics:1c2061f3",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": null,
+   "page_url": "https://www.stjames-franklin.org/calendar",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (website-builder widget)",
+   "url_withheld": "calendar id is an e-mail address; not stored",
+   "feed_key": "1c2061f3a064",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T02:36:59+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/stjamescatholicchurchfranklinwi"
+  ],
+  "youtube": [
+   "https://www.youtube.com/@stjamescatholicchurch-fran2027"
+  ],
+  "livestream": [
+   {
+    "url": "https://urldefense.proofpoint.com/v2/url?u=https-3A__www.youtube.com_-40stjamescatholicchurch-2Dfran2027&d=DwMGaQ&c=euGZstcaTDllvimEN8b7jXrwqOf-v5A_CdpgnVfiiMM&r=dt1Ln-wOQgBVZO5AvAQp_Q&m=xDKKQk1j0g-fj",
+    "label": "Watch Live",
+    "platform": "urldefense.proofpoint.com",
+    "kind": "link"
+   },
+   {
+    "url": "https://www.youtube.com/@stjamescatholicchurch-fran2027/streams",
+    "label": "youtube",
+    "platform": "youtube",
+    "kind": "link"
+   }
+  ]
+ },
+ "bulletin": {
+  "url": "https://www.parishesonline.com/st-james-catholic-church-53132",
+  "date": null,
+  "kind": "lpi",
+  "text": "Sign Up Today",
+  "source_url": "https://www.stjames-franklin.org/bulletin9ab2b387"
+ },
+ "schedule_rows": [
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:00-15:45",
+   "language": null,
+   "raw": "When is reconciliation offered?: Saturdays, 3:00 PM - 3:45 PM, or by appointment.",
+   "source_url": "https://www.stjames-franklin.org/reconciliation",
+   "fetched_at": "2026-11-01T02:00:21+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": null,
+   "raw": "Children’s Liturgy of the Word is offered year round during the Sunday, 10:00AM Mass.",
+   "source_url": "https://www.stjames-franklin.org/children-s-liturgy-of-the-word",
+   "fetched_at": "2026-11-01T02:00:22+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "First Friday of the month",
+   "time": "12:00",
+   "language": null,
+   "raw": "Eucharistic Adoration: 1st Friday's of the Month: 12:00 PM",
+   "source_url": "https://www.stjames-franklin.org/",
+   "fetched_at": "2026-11-01T02:00:20+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  }
+ ],
+ "source_url": "http://www.stjames-franklin.org/",
+ "fetched_at": "2026-11-01T02:00:27+00:00",
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": true,
+  "trusted_candidate": false,
+  "generic_rows": 19
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-10-31",
+  "window_end_exclusive": "2027-01-29",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

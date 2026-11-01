@@ -1,0 +1,183 @@
+{
+ "domain": "goodshepherdubly.com",
+ "diocese": "diocese-of-saginaw",
+ "matched_church_ids": [
+  "diocese-of-saginaw:Good Shepherd Parish of Ubly"
+ ],
+ "matched": {
+  "directory": [
+   "diocese-of-saginaw:Good Shepherd Parish of Ubly"
+  ],
+  "discovermass": []
+ },
+ "names": [
+  "Good Shepherd Parish of Ubly"
+ ],
+ "cities": [
+  "Argyle"
+ ],
+ "home_url": "https://goodshepherdubly.com/",
+ "final_url": "https://goodshepherdubly.com/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://goodshepherdubly.com/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://goodshepherdubly.com/mass-schedule/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://goodshepherdubly.com/httpgoodshepherdubly-comwp-contentuploads201612christian-mothers-2016-2017-schedule-pdf/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://goodshepherdubly.com/youth-group/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://goodshepherdubly.com/bulletins/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://goodshepherdubly.com/calendar/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://goodshepherdubly.com/staff-contact/",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-content"
+  ]
+ },
+ "template": "wordpress-html",
+ "groups": [
+  {
+   "id": "goodshepherdubly.com:youth_ministry",
+   "name": "Youth Group",
+   "category": "youth",
+   "category_label": "Youth",
+   "subcategory": "youth_ministry",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://goodshepherdubly.com/staff-contact/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://goodshepherdubly.com/youth-group/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T03:59:46+00:00",
+   "confidence": "medium"
+  }
+ ],
+ "calendar_feeds": [
+  {
+   "feed_id": "goodshepherdubly.com:ics:c7f8ba45",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": null,
+   "page_url": "https://goodshepherdubly.com/calendar/",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (embedded on page)",
+   "display_tz": "America/New_York",
+   "url_withheld": "calendar id is an e-mail address; not stored",
+   "feed_key": "c7f8ba4526bc",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T04:34:38+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/goodshepherdubly"
+  ],
+  "flocknote": [
+   "https://goodshepherdubly.flocknote.com"
+  ]
+ },
+ "bulletin": {
+  "url": "http://goodshepherdubly.com/wp-content/uploads/2024/03/3.31.2024-Bulletin-1.pdf",
+  "date": "2031-03-03",
+  "kind": "pdf",
+  "text": "March 31, 2024",
+  "source_url": "https://goodshepherdubly.com/bulletins/"
+ },
+ "schedule_rows": [],
+ "source_url": "https://goodshepherdubly.com/",
+ "fetched_at": "2026-11-01T03:59:54+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 3
+ },
+ "schedule_dropped": {
+  "skipped_section": 4
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-10-31",
+  "window_end_exclusive": "2027-01-29",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": "office@goodshepherd.diosag.org",
+  "phone": "(989) 658-8824",
+  "address": "1826 Cumber Rd., Ubly, MI 48475",
+  "source_url": "https://goodshepherdubly.com/staff-contact/",
+  "sources": {
+   "email": "https://goodshepherdubly.com/staff-contact/",
+   "phone": "https://goodshepherdubly.com/staff-contact/",
+   "address": "https://goodshepherdubly.com/staff-contact/"
+  },
+  "fetched_at": "2026-11-01T03:59:52+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

@@ -1,0 +1,168 @@
+{
+ "diocese": "diocese-of-grand-rapids",
+ "domain": "stfrancisholland.org",
+ "site_key": "stfrancisholland.org",
+ "site_file": "data/real/us/sites/diocese-of-grand-rapids/stfrancisholland.org.json",
+ "parishes": [
+  {
+   "church_id": "diocese-of-grand-rapids:Saint Francis de Sales Parish, Holland",
+   "name": "Saint Francis de Sales Parish, Holland",
+   "city": "Holland"
+  }
+ ],
+ "bulletin_link": {
+  "url": "https://www.stfrancisholland.org/sites/default/files/bulletins/upload/2-23-25.pdf",
+  "kind": "pdf",
+  "date": "2025-02-23",
+  "text": "Bulletin for 02/23/2025",
+  "source_url": "https://www.stfrancisholland.org/bulletins"
+ },
+ "status": "ok",
+ "had_mass_times": true,
+ "site_groups_before": 3,
+ "gained_first_groups": false,
+ "issues": [
+  {
+   "url": "https://www.stfrancisholland.org/sites/default/files/bulletins/upload/2-23-25.pdf",
+   "date": "2025-02-23",
+   "date_source": "link",
+   "pages": 7,
+   "ocr": false,
+   "ocr_pages": [],
+   "found_via": "link on https://www.stfrancisholland.org/bulletins ('Bulletin for 02/23/2025')",
+   "fetched_at": "2026-11-01T03:26:36+00:00"
+  },
+  {
+   "url": "https://www.stfrancisholland.org/sites/default/files/bulletins/upload/2-16-25.pdf",
+   "date": "2025-02-16",
+   "date_source": "link",
+   "pages": 7,
+   "ocr": true,
+   "ocr_pages": [
+    4,
+    6,
+    7
+   ],
+   "found_via": "link on https://www.stfrancisholland.org/bulletins ('Bulletin for 02/16/2025')",
+   "fetched_at": "2026-11-01T03:26:46+00:00"
+  }
+ ],
+ "notes": [],
+ "tried": [],
+ "checked_at": "2026-11-01T03:26:24+00:00",
+ "built_at": "2026-11-01T03:27:36+00:00",
+ "built_by": "ingest/us/bulletins/run.py (California's fetch.py / extract_groups.py)",
+ "privacy": "no lay names, phones or e-mails; contact is 'ask the parish office'; names and places pass ingest/public/privacy.py and ingest/connectors/calendars/privacy.py",
+ "privacy_dropped": 0,
+ "groups": [
+  {
+   "id": "stfrancisholland.org:bulletin:ocia:",
+   "name": "OCIA (becoming Catholic)",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "ocia",
+   "audience": "all",
+   "language": "es",
+   "language_assumed": true,
+   "informal": true,
+   "informal_kind": "ocia_inquiry",
+   "meets": null,
+   "next_meeting": null,
+   "location": null,
+   "contact": "ask the parish office",
+   "source_kind": "bulletin",
+   "source_label": "From the parish bulletin, February 23, 2025",
+   "source_url": "https://www.stfrancisholland.org/sites/default/files/bulletins/upload/2-23-25.pdf",
+   "last_seen": "2025-02-23",
+   "seen_in_issues": 2,
+   "sources": [
+    {
+     "url": "https://www.stfrancisholland.org/sites/default/files/bulletins/upload/2-23-25.pdf",
+     "issue_date": "2025-02-23",
+     "page": 2,
+     "ocr": false
+    },
+    {
+     "url": "https://www.stfrancisholland.org/sites/default/files/bulletins/upload/2-16-25.pdf",
+     "issue_date": "2025-02-16",
+     "page": 2,
+     "ocr": false
+    }
+   ],
+   "confidence": "medium",
+   "flags": [
+    "issue_older_than_120_days"
+   ],
+   "also_on_parish_website": false
+  },
+  {
+   "id": "stfrancisholland.org:bulletin:svdp:",
+   "name": "St. Vincent de Paul Society",
+   "category": "service_mercy",
+   "category_label": "Service & mercy",
+   "subcategory": "st_vincent_de_paul",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "informal": true,
+   "informal_kind": "svdp",
+   "meets": null,
+   "next_meeting": null,
+   "location": null,
+   "contact": "ask the parish office",
+   "source_kind": "bulletin",
+   "source_label": "From the parish bulletin, February 23, 2025",
+   "source_url": "https://www.stfrancisholland.org/sites/default/files/bulletins/upload/2-23-25.pdf",
+   "last_seen": "2025-02-23",
+   "seen_in_issues": 1,
+   "sources": [
+    {
+     "url": "https://www.stfrancisholland.org/sites/default/files/bulletins/upload/2-23-25.pdf",
+     "issue_date": "2025-02-23",
+     "page": 6,
+     "ocr": false
+    }
+   ],
+   "confidence": "medium",
+   "flags": [
+    "issue_older_than_120_days"
+   ],
+   "also_on_parish_website": false
+  },
+  {
+   "id": "stfrancisholland.org:bulletin:t:mental_health:mentalhealth:",
+   "name": "Mental Health",
+   "category": "grief_support",
+   "category_label": "Grief & support",
+   "subcategory": "mental_health",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "informal": false,
+   "informal_kind": null,
+   "meets": null,
+   "next_meeting": null,
+   "location": null,
+   "contact": "ask the parish office",
+   "source_kind": "bulletin",
+   "source_label": "From the parish bulletin, February 16, 2025",
+   "source_url": "https://www.stfrancisholland.org/sites/default/files/bulletins/upload/2-16-25.pdf",
+   "last_seen": "2025-02-16",
+   "seen_in_issues": 1,
+   "sources": [
+    {
+     "url": "https://www.stfrancisholland.org/sites/default/files/bulletins/upload/2-16-25.pdf",
+     "issue_date": "2025-02-16",
+     "page": 4,
+     "ocr": true
+    }
+   ],
+   "confidence": "low",
+   "flags": [
+    "ocr",
+    "issue_older_than_120_days"
+   ],
+   "also_on_parish_website": false
+  }
+ ]
+}

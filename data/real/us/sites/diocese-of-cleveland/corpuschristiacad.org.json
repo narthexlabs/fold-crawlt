@@ -1,0 +1,126 @@
+{
+ "domain": "corpuschristiacad.org",
+ "diocese": "diocese-of-cleveland",
+ "matched_church_ids": [
+  "diocese-of-cleveland:Corpus Christi Academy"
+ ],
+ "matched": {
+  "directory": [
+   "diocese-of-cleveland:Corpus Christi Academy"
+  ],
+  "discovermass": []
+ },
+ "names": [
+  "Corpus Christi Academy"
+ ],
+ "cities": [
+  "Lyndhurst"
+ ],
+ "home_url": "http://www.corpuschristiacad.org/",
+ "final_url": "https://www.corpuschristiacad.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://www.corpuschristiacad.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.corpuschristiacad.org/student-clubsactivities/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.corpuschristiacad.org/events-calendar/",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-json"
+  ]
+ },
+ "template": "wordpress-html",
+ "groups": [],
+ "calendar_feeds": [
+  {
+   "feed_id": "corpuschristiacad.org:ics:810cd81d",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": null,
+   "page_url": "https://www.corpuschristiacad.org/events-calendar/",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (embedded on page)",
+   "display_tz": "America/New_York",
+   "url_withheld": "calendar id is an e-mail address; not stored",
+   "feed_key": "810cd81d7967",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T02:31:35+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/corpuschristiacad.org"
+  ],
+  "x": [
+   "https://x.com/CCASoars"
+  ]
+ },
+ "bulletin": null,
+ "schedule_rows": [],
+ "source_url": "http://www.corpuschristiacad.org/",
+ "fetched_at": "2026-11-01T02:24:53+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "schedule_images": [
+  {
+   "url": "https://www.corpuschristiacad.org/wp-content/uploads/2019/01/schedule-a-tour.jpg",
+   "alt": "",
+   "page": "https://www.corpuschristiacad.org/"
+  }
+ ],
+ "schedule_note": "schedule appears to be an image; times not read (needs_review)",
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-10-31",
+  "window_end_exclusive": "2027-01-29",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

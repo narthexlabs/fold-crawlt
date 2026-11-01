@@ -1,0 +1,141 @@
+{
+ "diocese": "archdiocese-of-denver",
+ "domain": "stmarybrush.org",
+ "site_key": "stmarybrush.org",
+ "site_file": "data/real/us/sites/archdiocese-of-denver/stmarybrush.org.json",
+ "parishes": [
+  {
+   "church_id": "archdiocese-of-denver:St. John - Mission-Stoneham (St. Mary Parish, Brush)",
+   "name": "St. John - Mission-Stoneham (St. Mary Parish, Brush)",
+   "city": null
+  },
+  {
+   "church_id": "archdiocese-of-denver:St. Joseph - Akron",
+   "name": "St. Joseph - Akron",
+   "city": null
+  },
+  {
+   "church_id": "archdiocese-of-denver:St. Mary - Brush",
+   "name": "St. Mary - Brush",
+   "city": null
+  }
+ ],
+ "bulletin_link": {
+  "url": "https://www.stmarybrush.org/uploads/5/5/1/9/5519406/bulletin_2026-11-01.pdf",
+  "kind": "pdf",
+  "date": "2026-11-01",
+  "text": "",
+  "source_url": "https://www.stmarybrush.org/bulletins.html"
+ },
+ "status": "ok",
+ "had_mass_times": true,
+ "site_groups_before": 2,
+ "gained_first_groups": false,
+ "issues": [
+  {
+   "url": "https://www.stmarybrush.org/uploads/5/5/1/9/5519406/bulletin_2026-11-01.pdf",
+   "date": "2026-11-01",
+   "date_source": "link",
+   "pages": 4,
+   "ocr": true,
+   "ocr_pages": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "found_via": "link on https://www.stmarybrush.org/bulletins.html",
+   "fetched_at": "2026-11-01T05:32:13+00:00"
+  },
+  {
+   "url": "https://www.stmarybrush.org/uploads/5/5/1/9/5519406/akron_bulletin_2026-11-01.pdf",
+   "date": "2026-11-01",
+   "date_source": "link",
+   "pages": 4,
+   "ocr": true,
+   "ocr_pages": [
+    1,
+    4
+   ],
+   "found_via": "link on https://www.stmarybrush.org/bulletins.html",
+   "fetched_at": "2026-11-01T05:32:23+00:00"
+  }
+ ],
+ "notes": [],
+ "tried": [],
+ "checked_at": "2026-11-01T05:32:10+00:00",
+ "built_at": "2026-11-01T05:32:31+00:00",
+ "built_by": "ingest/us/bulletins/run.py (California's fetch.py / extract_groups.py)",
+ "privacy": "no lay names, phones or e-mails; contact is 'ask the parish office'; names and places pass ingest/public/privacy.py and ingest/connectors/calendars/privacy.py",
+ "privacy_dropped": 0,
+ "groups": [
+  {
+   "id": "stmarybrush.org:bulletin:bible_study:",
+   "name": "Bible Study",
+   "category": "scripture_study",
+   "category_label": "Scripture & study",
+   "subcategory": "bible_study",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "informal": true,
+   "informal_kind": "bible_study",
+   "meets": null,
+   "next_meeting": null,
+   "location": "RE Building",
+   "contact": "ask the parish office",
+   "source_kind": "bulletin",
+   "source_label": "From the parish bulletin, November 1, 2026",
+   "source_url": "https://www.stmarybrush.org/uploads/5/5/1/9/5519406/bulletin_2026-11-01.pdf",
+   "last_seen": "2026-11-01",
+   "seen_in_issues": 1,
+   "sources": [
+    {
+     "url": "https://www.stmarybrush.org/uploads/5/5/1/9/5519406/bulletin_2026-11-01.pdf",
+     "issue_date": "2026-11-01",
+     "page": 3,
+     "ocr": true
+    }
+   ],
+   "confidence": "medium",
+   "flags": [
+    "ocr"
+   ],
+   "also_on_parish_website": false
+  },
+  {
+   "id": "stmarybrush.org:bulletin:youth_ministry:",
+   "name": "Youth Ministry",
+   "category": "youth",
+   "category_label": "Youth",
+   "subcategory": "youth_ministry",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "informal": true,
+   "informal_kind": "youth",
+   "meets": null,
+   "next_meeting": null,
+   "location": null,
+   "contact": "ask the parish office",
+   "source_kind": "bulletin",
+   "source_label": "From the parish bulletin, November 1, 2026",
+   "source_url": "https://www.stmarybrush.org/uploads/5/5/1/9/5519406/bulletin_2026-11-01.pdf",
+   "last_seen": "2026-11-01",
+   "seen_in_issues": 1,
+   "sources": [
+    {
+     "url": "https://www.stmarybrush.org/uploads/5/5/1/9/5519406/bulletin_2026-11-01.pdf",
+     "issue_date": "2026-11-01",
+     "page": 3,
+     "ocr": true
+    }
+   ],
+   "confidence": "medium",
+   "flags": [
+    "ocr"
+   ],
+   "also_on_parish_website": false
+  }
+ ]
+}

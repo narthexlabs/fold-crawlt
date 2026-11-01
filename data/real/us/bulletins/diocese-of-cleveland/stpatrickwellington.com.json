@@ -1,0 +1,98 @@
+{
+ "diocese": "diocese-of-cleveland",
+ "domain": "stpatrickwellington.com",
+ "site_key": "stpatrickwellington.com",
+ "site_file": "data/real/us/sites/diocese-of-cleveland/stpatrickwellington.com.json",
+ "parishes": [
+  {
+   "church_id": "diocese-of-cleveland:St. Patrick Parish – Wellington",
+   "name": "St. Patrick Parish – Wellington",
+   "city": "Wellington"
+  }
+ ],
+ "bulletin_link": {
+  "url": "https://stpatrick.cc/PDFs/SPWsec/ThisWeeksBulletin.pdf",
+  "kind": "pdf",
+  "date": null,
+  "text": "",
+  "source_url": "https://stpatrick.cc/publications/"
+ },
+ "status": "ok",
+ "had_mass_times": true,
+ "site_groups_before": 0,
+ "gained_first_groups": true,
+ "issues": [
+  {
+   "url": "https://stpatrick.cc/PDFs/SPWsec/ThisWeeksBulletin.pdf",
+   "date": "2026-10-31",
+   "date_source": "printed in the bulletin",
+   "pages": 2,
+   "ocr": false,
+   "ocr_pages": [],
+   "found_via": "link on https://stpatrick.cc/publications/",
+   "fetched_at": "2026-11-01T05:21:26+00:00"
+  },
+  {
+   "url": "https://stpatrick.cc/PDFs/SPWsec/LastWeeksBulletin.pdf",
+   "date": "2026-10-24",
+   "date_source": "printed in the bulletin",
+   "pages": 2,
+   "ocr": false,
+   "ocr_pages": [],
+   "found_via": "link on https://stpatrick.cc/publications/",
+   "fetched_at": "2026-11-01T05:21:27+00:00"
+  }
+ ],
+ "notes": [],
+ "tried": [
+  {
+   "url": "https://stpatrick.cc/pdfs/spwsec/thisweeksbulletin.pdf",
+   "cls": "not_found",
+   "status": 404
+  },
+  {
+   "url": "https://stpatrick.cc/pdfs/spwsec/lastweeksbulletin.pdf",
+   "cls": "not_found",
+   "status": 404
+  }
+ ],
+ "checked_at": "2026-11-01T05:21:24+00:00",
+ "built_at": "2026-11-01T05:21:30+00:00",
+ "built_by": "ingest/us/bulletins/run.py (California's fetch.py / extract_groups.py)",
+ "privacy": "no lay names, phones or e-mails; contact is 'ask the parish office'; names and places pass ingest/public/privacy.py and ingest/connectors/calendars/privacy.py",
+ "privacy_dropped": 0,
+ "groups": [
+  {
+   "id": "stpatrickwellington.com:bulletin:bible_study:",
+   "name": "Bible Study",
+   "category": "scripture_study",
+   "category_label": "Scripture & study",
+   "subcategory": "bible_study",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "informal": true,
+   "informal_kind": "bible_study",
+   "meets": null,
+   "next_meeting": null,
+   "location": null,
+   "contact": "ask the parish office",
+   "source_kind": "bulletin",
+   "source_label": "From the parish bulletin, October 31, 2026",
+   "source_url": "https://stpatrick.cc/PDFs/SPWsec/ThisWeeksBulletin.pdf",
+   "last_seen": "2026-10-31",
+   "seen_in_issues": 1,
+   "sources": [
+    {
+     "url": "https://stpatrick.cc/PDFs/SPWsec/ThisWeeksBulletin.pdf",
+     "issue_date": "2026-10-31",
+     "page": 2,
+     "ocr": false
+    }
+   ],
+   "confidence": "medium",
+   "flags": [],
+   "also_on_parish_website": false
+  }
+ ]
+}

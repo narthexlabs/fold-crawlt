@@ -1,0 +1,180 @@
+{
+ "domain": "saintmarygrand.org",
+ "diocese": "archdiocese-of-new-york",
+ "matched_church_ids": [
+  "archdiocese-of-new-york:St. Mary Church"
+ ],
+ "matched": {
+  "directory": [
+   "archdiocese-of-new-york:St. Mary Church"
+  ],
+  "discovermass": []
+ },
+ "names": [
+  "St. Mary Church"
+ ],
+ "cities": [
+  "Manhattan"
+ ],
+ "home_url": "https://www.saintmarygrand.org/",
+ "final_url": "https://www.saintmarygrand.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://www.saintmarygrand.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.saintmarygrand.org/mass-schedule/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.saintmarygrand.org/sacraments/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://www.saintmarygrand.org/10-11-26-bulletin/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.saintmarygrand.org/calendar/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.saintmarygrand.org/events/",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "contact",
+   "url": "https://www.saintmarygrand.org/contact/",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-content"
+  ]
+ },
+ "template": "wordpress-rest+html",
+ "groups": [],
+ "calendar_feeds": [
+  {
+   "feed_id": "saintmarygrand.org:ics:40a7a884",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": null,
+   "page_url": "https://www.saintmarygrand.org/calendar/",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (embedded on page)",
+   "display_tz": "America/New_York",
+   "url_withheld": "calendar id is an e-mail address; not stored",
+   "feed_key": "40a7a8847549",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T02:22:40+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/StMaryGrand"
+  ],
+  "instagram": [
+   "https://www.instagram.com/saintmarygrand/"
+  ]
+ },
+ "bulletin": {
+  "url": "https://www.saintmarygrand.org/wp-content/uploads/2026/10/10.11.26-Saint-Mary-bulletin.pdf",
+  "date": "2026-10-10",
+  "kind": "pdf",
+  "text": "10.11.26-Saint-Mary-bulletin",
+  "source_url": "https://www.saintmarygrand.org/10-11-26-bulletin/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "16:00-17:00",
+   "language": null,
+   "raw": "Reconciliation: Mary’s every Saturday from 4:00-5:00pm and also by appointment.",
+   "source_url": "https://www.saintmarygrand.org/sacraments/",
+   "fetched_at": "2026-11-01T01:57:33+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "First Friday of the month",
+   "time": "09:00",
+   "language": null,
+   "raw": "Anointing \u0003of the Sick is given at the 9:00am Mass on the First Friday of each month.",
+   "source_url": "https://www.saintmarygrand.org/sacraments/",
+   "fetched_at": "2026-11-01T01:57:33+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  }
+ ],
+ "source_url": "https://www.saintmarygrand.org/",
+ "fetched_at": "2026-11-01T01:58:23+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 29
+ },
+ "schedule_dropped": {
+  "skipped_section": 18,
+  "range_not_a_mass": 2,
+  "not_a_service": 3
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-10-31",
+  "window_end_exclusive": "2027-01-29",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

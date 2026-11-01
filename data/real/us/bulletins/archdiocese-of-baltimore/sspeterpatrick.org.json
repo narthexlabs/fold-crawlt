@@ -1,0 +1,139 @@
+{
+ "diocese": "archdiocese-of-baltimore",
+ "domain": "sspeterpatrick.org",
+ "site_key": "sspeterpatrick.org",
+ "site_file": "data/real/us/sites/archdiocese-of-baltimore/sspeterpatrick.org.json",
+ "parishes": [
+  {
+   "church_id": "archdiocese-of-baltimore:St. Patrick (Little Orleans)",
+   "name": "St. Patrick (Little Orleans)",
+   "city": "Little Orleans"
+  },
+  {
+   "church_id": "archdiocese-of-baltimore:St. Peter (Hancock)",
+   "name": "St. Peter (Hancock)",
+   "city": "Hancock"
+  }
+ ],
+ "bulletin_link": {
+  "url": "https://sspeterpatrick.org/s/Bulletin-2026-10-Oct-25-2026.pdf",
+  "kind": "pdf",
+  "date": "2026-10-25",
+  "text": "Bulletin",
+  "source_url": "https://sspeterpatrick.org/home-copy"
+ },
+ "status": "ok",
+ "had_mass_times": true,
+ "site_groups_before": 1,
+ "gained_first_groups": false,
+ "issues": [
+  {
+   "url": "https://sspeterpatrick.org/s/Bulletin-2026-10-Oct-18-2026.pdf",
+   "date": "2026-10-18",
+   "date_source": "link",
+   "pages": 2,
+   "ocr": false,
+   "ocr_pages": [],
+   "found_via": "link on https://sspeterpatrick.org/home-copy ('Bulletin')",
+   "fetched_at": "2026-11-01T05:28:19+00:00"
+  },
+  {
+   "url": "https://sspeterpatrick.org/s/Bulletin-2026-10-Oct-11-2026.pdf",
+   "date": "2026-10-11",
+   "date_source": "link",
+   "pages": 2,
+   "ocr": false,
+   "ocr_pages": [],
+   "found_via": "link on https://sspeterpatrick.org/home-copy ('Bulletin')",
+   "fetched_at": "2026-11-01T05:28:21+00:00"
+  }
+ ],
+ "notes": [],
+ "tried": [],
+ "checked_at": "2026-11-01T05:28:17+00:00",
+ "built_at": "2026-11-01T05:28:21+00:00",
+ "built_by": "ingest/us/bulletins/run.py (California's fetch.py / extract_groups.py)",
+ "privacy": "no lay names, phones or e-mails; contact is 'ask the parish office'; names and places pass ingest/public/privacy.py and ingest/connectors/calendars/privacy.py",
+ "privacy_dropped": 0,
+ "groups": [
+  {
+   "id": "sspeterpatrick.org:bulletin:bible_study:",
+   "name": "Bible Study",
+   "category": "scripture_study",
+   "category_label": "Scripture & study",
+   "subcategory": "bible_study",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "informal": true,
+   "informal_kind": "bible_study",
+   "meets": null,
+   "next_meeting": null,
+   "location": null,
+   "contact": "ask the parish office",
+   "source_kind": "bulletin",
+   "source_label": "From the parish bulletin, October 18, 2026",
+   "source_url": "https://sspeterpatrick.org/s/Bulletin-2026-10-Oct-18-2026.pdf",
+   "last_seen": "2026-10-18",
+   "seen_in_issues": 1,
+   "sources": [
+    {
+     "url": "https://sspeterpatrick.org/s/Bulletin-2026-10-Oct-18-2026.pdf",
+     "issue_date": "2026-10-18",
+     "page": 2,
+     "ocr": false
+    }
+   ],
+   "confidence": "medium",
+   "flags": [],
+   "also_on_parish_website": false
+  },
+  {
+   "id": "sspeterpatrick.org:bulletin:svdp:",
+   "name": "St. Vincent de Paul Society",
+   "category": "service_mercy",
+   "category_label": "Service & mercy",
+   "subcategory": "st_vincent_de_paul",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "informal": true,
+   "informal_kind": "svdp",
+   "meets": null,
+   "next_meeting": {
+    "date": "2026-10-23",
+    "time": "09:00"
+   },
+   "location": null,
+   "contact": "ask the parish office",
+   "source_kind": "bulletin",
+   "source_label": "From the parish bulletin, October 18, 2026",
+   "source_url": "https://sspeterpatrick.org/s/Bulletin-2026-10-Oct-18-2026.pdf",
+   "last_seen": "2026-10-18",
+   "seen_in_issues": 2,
+   "sources": [
+    {
+     "url": "https://sspeterpatrick.org/s/Bulletin-2026-10-Oct-18-2026.pdf",
+     "issue_date": "2026-10-18",
+     "page": 1,
+     "ocr": false
+    },
+    {
+     "url": "https://sspeterpatrick.org/s/Bulletin-2026-10-Oct-18-2026.pdf",
+     "issue_date": "2026-10-18",
+     "page": 2,
+     "ocr": false
+    },
+    {
+     "url": "https://sspeterpatrick.org/s/Bulletin-2026-10-Oct-11-2026.pdf",
+     "issue_date": "2026-10-11",
+     "page": 2,
+     "ocr": false
+    }
+   ],
+   "confidence": "high",
+   "flags": [],
+   "also_on_parish_website": false
+  }
+ ]
+}

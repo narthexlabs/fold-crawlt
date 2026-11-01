@@ -1,0 +1,151 @@
+{
+ "diocese": "diocese-of-harrisburg",
+ "domain": "sanjuanbautistalancaster.com",
+ "site_key": "sanjuanbautistalancaster.com",
+ "site_file": "data/real/us/sites/diocese-of-harrisburg/sanjuanbautistalancaster.com.json",
+ "parishes": [
+  {
+   "church_id": "diocese-of-harrisburg:San Juan Bautista",
+   "name": "San Juan Bautista",
+   "city": "Lancaster"
+  }
+ ],
+ "bulletin_link": {
+  "url": "https://sanjuanbautistalancaster.com/s/Bulletin-11-01-2026.pdf",
+  "kind": "pdf",
+  "date": "2026-11-01",
+  "text": "11/01/2026",
+  "source_url": "https://sanjuanbautistalancaster.com/"
+ },
+ "status": "ok",
+ "had_mass_times": true,
+ "site_groups_before": 0,
+ "gained_first_groups": true,
+ "issues": [
+  {
+   "url": "https://sanjuanbautistalancaster.com/s/Bulletin-11-01-2026.pdf",
+   "date": "2026-11-01",
+   "date_source": "link",
+   "pages": 8,
+   "ocr": true,
+   "ocr_pages": [
+    1,
+    6,
+    7,
+    8
+   ],
+   "found_via": "link on https://sanjuanbautistalancaster.com/ ('11/01/2026')",
+   "fetched_at": "2026-11-01T05:22:43+00:00"
+  },
+  {
+   "url": "https://sanjuanbautistalancaster.com/s/Bulletin-10-25-2026.pdf",
+   "date": "2026-10-25",
+   "date_source": "link",
+   "pages": 8,
+   "ocr": true,
+   "ocr_pages": [
+    1,
+    5,
+    6,
+    7,
+    8
+   ],
+   "found_via": "link on https://sanjuanbautistalancaster.com/ ('10/25/2026')",
+   "fetched_at": "2026-11-01T05:22:56+00:00"
+  }
+ ],
+ "notes": [],
+ "tried": [],
+ "checked_at": "2026-11-01T05:22:40+00:00",
+ "built_at": "2026-11-01T05:23:07+00:00",
+ "built_by": "ingest/us/bulletins/run.py (California's fetch.py / extract_groups.py)",
+ "privacy": "no lay names, phones or e-mails; contact is 'ask the parish office'; names and places pass ingest/public/privacy.py and ingest/connectors/calendars/privacy.py",
+ "privacy_dropped": 0,
+ "groups": [
+  {
+   "id": "sanjuanbautistalancaster.com:bulletin:ocia:",
+   "name": "OCIA (becoming Catholic)",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "ocia",
+   "audience": "all",
+   "language": "es",
+   "language_assumed": true,
+   "informal": true,
+   "informal_kind": "ocia_inquiry",
+   "meets": {
+    "days": [
+     "Wednesday"
+    ],
+    "time": null,
+    "frequency": "weekly",
+    "text": "Wednesdays"
+   },
+   "next_meeting": null,
+   "location": null,
+   "contact": "ask the parish office",
+   "source_kind": "bulletin",
+   "source_label": "From the parish bulletin, November 1, 2026",
+   "source_url": "https://sanjuanbautistalancaster.com/s/Bulletin-11-01-2026.pdf",
+   "last_seen": "2026-11-01",
+   "seen_in_issues": 2,
+   "sources": [
+    {
+     "url": "https://sanjuanbautistalancaster.com/s/Bulletin-11-01-2026.pdf",
+     "issue_date": "2026-11-01",
+     "page": 3,
+     "ocr": false
+    },
+    {
+     "url": "https://sanjuanbautistalancaster.com/s/Bulletin-10-25-2026.pdf",
+     "issue_date": "2026-10-25",
+     "page": 3,
+     "ocr": false
+    }
+   ],
+   "confidence": "high",
+   "flags": [],
+   "also_on_parish_website": false
+  },
+  {
+   "id": "sanjuanbautistalancaster.com:bulletin:t:food:soupkitchen:",
+   "name": "Soup Kitchen",
+   "category": "service_mercy",
+   "category_label": "Service & mercy",
+   "subcategory": "food_ministry",
+   "audience": "all",
+   "language": "es",
+   "language_assumed": true,
+   "informal": false,
+   "informal_kind": null,
+   "meets": null,
+   "next_meeting": null,
+   "location": null,
+   "contact": "ask the parish office",
+   "source_kind": "bulletin",
+   "source_label": "From the parish bulletin, November 1, 2026",
+   "source_url": "https://sanjuanbautistalancaster.com/s/Bulletin-11-01-2026.pdf",
+   "last_seen": "2026-11-01",
+   "seen_in_issues": 2,
+   "sources": [
+    {
+     "url": "https://sanjuanbautistalancaster.com/s/Bulletin-11-01-2026.pdf",
+     "issue_date": "2026-11-01",
+     "page": 6,
+     "ocr": true
+    },
+    {
+     "url": "https://sanjuanbautistalancaster.com/s/Bulletin-10-25-2026.pdf",
+     "issue_date": "2026-10-25",
+     "page": 5,
+     "ocr": true
+    }
+   ],
+   "confidence": "medium",
+   "flags": [
+    "ocr"
+   ],
+   "also_on_parish_website": false
+  }
+ ]
+}

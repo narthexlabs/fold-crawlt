@@ -1,0 +1,100 @@
+{
+ "diocese": "diocese-of-peoria",
+ "domain": "stmaryselpaso.org",
+ "site_key": "stmaryselpaso.org",
+ "site_file": "data/real/us/sites/diocese-of-peoria/stmaryselpaso.org.json",
+ "parishes": [
+  {
+   "church_id": "diocese-of-peoria:St. John - Benson",
+   "name": "St. John - Benson",
+   "city": "Benson"
+  },
+  {
+   "church_id": "diocese-of-peoria:St. Mary - El Paso",
+   "name": "St. Mary - El Paso",
+   "city": "El Paso"
+  }
+ ],
+ "bulletin_link": {
+  "url": "https://irp.cdn-website.com/d5cb6a28/files/uploaded/CCD+Bulletin+-+2026-02-27T082609.364.pdf",
+  "kind": "pdf",
+  "date": "2026-02-27",
+  "text": "Download",
+  "source_url": "https://www.stmaryselpaso.org/bulletin"
+ },
+ "status": "ok",
+ "had_mass_times": true,
+ "site_groups_before": 0,
+ "gained_first_groups": true,
+ "issues": [
+  {
+   "url": "https://irp.cdn-website.com/d5cb6a28/files/uploaded/CCD+Bulletin+-+2026-02-27T082609.364.pdf",
+   "date": "2026-02-27",
+   "date_source": "link",
+   "pages": 1,
+   "ocr": false,
+   "ocr_pages": [],
+   "found_via": "link on https://www.stmaryselpaso.org/bulletin ('Download')",
+   "fetched_at": "2026-11-01T03:20:58+00:00"
+  },
+  {
+   "url": "https://irp.cdn-website.com/d5cb6a28/files/uploaded/CCD+Bulletin+-+2026-01-09T081204.033.pdf",
+   "date": "2026-01-09",
+   "date_source": "link",
+   "pages": 1,
+   "ocr": false,
+   "ocr_pages": [],
+   "found_via": "link on https://www.stmaryselpaso.org/bulletin ('Download')",
+   "fetched_at": "2026-11-01T03:20:59+00:00"
+  }
+ ],
+ "notes": [],
+ "tried": [],
+ "checked_at": "2026-11-01T03:20:55+00:00",
+ "built_at": "2026-11-01T03:20:59+00:00",
+ "built_by": "ingest/us/bulletins/run.py (California's fetch.py / extract_groups.py)",
+ "privacy": "no lay names, phones or e-mails; contact is 'ask the parish office'; names and places pass ingest/public/privacy.py and ingest/connectors/calendars/privacy.py",
+ "privacy_dropped": 0,
+ "groups": [
+  {
+   "id": "stmaryselpaso.org:bulletin:t:confirmation:confirmation:",
+   "name": "Confirmation",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "confirmation_prep",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "informal": false,
+   "informal_kind": null,
+   "meets": null,
+   "next_meeting": null,
+   "location": null,
+   "contact": "ask the parish office",
+   "source_kind": "bulletin",
+   "source_label": "From the parish bulletin, February 27, 2026",
+   "source_url": "https://irp.cdn-website.com/d5cb6a28/files/uploaded/CCD+Bulletin+-+2026-02-27T082609.364.pdf",
+   "last_seen": "2026-02-27",
+   "seen_in_issues": 2,
+   "sources": [
+    {
+     "url": "https://irp.cdn-website.com/d5cb6a28/files/uploaded/CCD+Bulletin+-+2026-02-27T082609.364.pdf",
+     "issue_date": "2026-02-27",
+     "page": 1,
+     "ocr": false
+    },
+    {
+     "url": "https://irp.cdn-website.com/d5cb6a28/files/uploaded/CCD+Bulletin+-+2026-01-09T081204.033.pdf",
+     "issue_date": "2026-01-09",
+     "page": 1,
+     "ocr": false
+    }
+   ],
+   "confidence": "medium",
+   "flags": [
+    "issue_older_than_120_days"
+   ],
+   "also_on_parish_website": false
+  }
+ ]
+}

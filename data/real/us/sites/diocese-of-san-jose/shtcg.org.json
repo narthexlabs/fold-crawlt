@@ -1,0 +1,221 @@
+{
+ "domain": "shtcg.org",
+ "diocese": "diocese-of-san-jose",
+ "matched_church_ids": [
+  "diocese-of-san-jose:5051"
+ ],
+ "matched": {
+  "directory": [
+   "diocese-of-san-jose:5051"
+  ],
+  "discovermass": []
+ },
+ "names": [
+  "Church of the Resurrection"
+ ],
+ "cities": [],
+ "home_url": "http://www.shtcg.org/",
+ "final_url": "https://www.shtcg.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://www.shtcg.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.shtcg.org/schedule.php",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.shtcg.org/mass.php",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.shtcg.org/get-involved.php",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.shtcg.org/catechism.php",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.shtcg.org/prayer.php",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.shtcg.org/event-calendar.php",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://www.shtcg.org/contact.php",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "blogger",
+  "evidence": [
+   "blogspot.com"
+  ]
+ },
+ "template": "generic-html:blogger",
+ "groups": [
+  {
+   "id": "shtcg.org:children_ff",
+   "name": "Children's Faith Formation",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "children_faith_formation",
+   "audience": "families",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.shtcg.org/contact.php",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.shtcg.org/catechism.php",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T01:20:50+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "shtcg.org:choir",
+   "name": "Musicians",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "choir_music",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "Kids practice songs in Tamil so they sing the closing song during our Holy Mass. Kids are also allowed to play the instrument that are most comfortable in for the song that all the children sing.",
+   "contact_url": "https://www.shtcg.org/contact.php",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.shtcg.org/catechism.php",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T01:20:50+00:00",
+   "confidence": "medium"
+  }
+ ],
+ "calendar_feeds": [
+  {
+   "feed_id": "shtcg.org:ics:24763900",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": null,
+   "page_url": "https://www.shtcg.org/event-calendar.php",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (embedded on page)",
+   "url_withheld": "calendar id is an e-mail address; not stored",
+   "feed_key": "24763900055e",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T01:25:12+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/shtcg"
+  ],
+  "youtube": [
+   "https://www.youtube.com/channel/UCz2vvzALb1DQXaMN96xAr4g"
+  ],
+  "x": [
+   "https://x.com/sacredhtcg"
+  ]
+ },
+ "bulletin": null,
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "19:00",
+   "language": null,
+   "raw": "Weekly Tamil Mass: Every Saturday, 7:00 pm",
+   "source_url": "https://www.shtcg.org/schedule.php",
+   "fetched_at": "2026-11-01T01:20:48+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "12:00",
+   "language": null,
+   "raw": "Mass: Easter Picnic: Sun, Mar 31 at noon (park TBD)",
+   "source_url": "https://www.shtcg.org/schedule.php",
+   "fetched_at": "2026-11-01T01:20:48+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "generic_strict",
+   "kind_parsed": "mass"
+  }
+ ],
+ "source_url": "http://www.shtcg.org/",
+ "fetched_at": "2026-11-01T01:20:53+00:00",
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": true,
+  "trusted_candidate": false,
+  "generic_rows": 11
+ },
+ "schedule_dropped": {
+  "not_a_service": 2,
+  "skipped_section": 13,
+  "dated_line": 1
+ },
+ "groups_dropped": {
+  "unmatched": 4,
+  "noise": 1
+ },
+ "event_counts": {
+  "window_start": "2026-10-31",
+  "window_end_exclusive": "2027-01-29",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

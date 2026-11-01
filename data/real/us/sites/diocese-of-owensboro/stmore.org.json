@@ -1,0 +1,204 @@
+{
+ "domain": "stmore.org",
+ "diocese": "diocese-of-owensboro",
+ "matched_church_ids": [
+  "diocese-of-owensboro:St. Thomas More Parish"
+ ],
+ "matched": {
+  "directory": [
+   "diocese-of-owensboro:St. Thomas More Parish"
+  ],
+  "discovermass": []
+ },
+ "names": [
+  "St. Thomas More Parish"
+ ],
+ "cities": [
+  "Paducah"
+ ],
+ "home_url": "http://www.stmore.org/",
+ "final_url": "https://www.stmore.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://www.stmore.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.stmore.org/sacraments",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.stmore.org/page-template-1",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.stmore.org/get-involved",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.stmore.org/paducah-faith-formation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://www.stmore.org/bulletin",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.stmore.org/calendar",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://www.stmore.org/contact",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "duda",
+  "evidence": [
+   "irp.cdn-website"
+  ]
+ },
+ "template": "generic-html:duda",
+ "groups": [],
+ "calendar_feeds": [
+  {
+   "feed_id": "stmore.org:ics:85a2a69a",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": null,
+   "page_url": "https://www.stmore.org/calendar",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (website-builder widget)",
+   "url_withheld": "calendar id is an e-mail address; not stored",
+   "feed_key": "85a2a69a46b6",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T03:29:05+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/stmorepaducah"
+  ],
+  "instagram": [
+   "https://www.instagram.com/stmorepaducah/"
+  ],
+  "livestream": [
+   {
+    "url": "https://vimeo.com/event/4249924",
+    "label": "Watch Live",
+    "platform": "vimeo.com",
+    "kind": "link"
+   }
+  ]
+ },
+ "bulletin": {
+  "url": "https://www.4lpi.com/",
+  "date": null,
+  "kind": "lpi",
+  "text": "LPi",
+  "source_url": "https://www.stmore.org/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "confession",
+   "day": "Thursday",
+   "time": "17:30-18:00",
+   "language": null,
+   "raw": "Hours of Reconciliation:: Thursday (Works of Mercy Chapel) 5:30 - 6:00 p.m.",
+   "source_url": "https://www.stmore.org/sacraments",
+   "fetched_at": "2026-11-01T02:12:12+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "16:00-17:00",
+   "language": null,
+   "raw": "Hours of Reconciliation:: Saturday (Church) 4:00 – 5:00 p.m.",
+   "source_url": "https://www.stmore.org/sacraments",
+   "fetched_at": "2026-11-01T02:12:12+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "18:00",
+   "language": null,
+   "raw": "Celebrated 1 st Monday of each month during 6:00 p.m. Mass.",
+   "source_url": "https://www.stmore.org/sacraments",
+   "fetched_at": "2026-11-01T02:12:12+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict"
+  }
+ ],
+ "source_url": "http://www.stmore.org/",
+ "fetched_at": "2026-11-01T02:12:18+00:00",
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": true,
+  "trusted_candidate": false,
+  "generic_rows": 9
+ },
+ "groups_dropped": {
+  "noise": 1,
+  "unmatched": 1
+ },
+ "event_counts": {
+  "window_start": "2026-10-31",
+  "window_end_exclusive": "2027-01-29",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

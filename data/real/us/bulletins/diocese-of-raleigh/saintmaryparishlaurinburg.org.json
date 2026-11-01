@@ -1,0 +1,365 @@
+{
+ "diocese": "diocese-of-raleigh",
+ "domain": "saintmaryparishlaurinburg.org",
+ "site_key": "saintmaryparishlaurinburg.org",
+ "site_file": "data/real/us/sites/diocese-of-raleigh/saintmaryparishlaurinburg.org.json",
+ "parishes": [
+  {
+   "church_id": "diocese-of-raleigh:Saint Mary",
+   "name": "Saint Mary",
+   "city": "Laurinburg"
+  }
+ ],
+ "bulletin_link": {
+  "url": "https://www.saintmaryparishlaurinburg.org/bulletin",
+  "kind": "page",
+  "date": null,
+  "text": "BULLETIN",
+  "source_url": "https://www.saintmaryparishlaurinburg.org/"
+ },
+ "status": "ok",
+ "had_mass_times": true,
+ "site_groups_before": 0,
+ "gained_first_groups": true,
+ "issues": [
+  {
+   "url": "https://www.saintmaryparishlaurinburg.org/_files/ugd/6a10ed_c4a1b28e29ca40098fa6e8b0541cae4c.pdf",
+   "date": "2026-10-18",
+   "date_source": "printed in the bulletin",
+   "pages": 4,
+   "ocr": true,
+   "ocr_pages": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "found_via": "link on https://www.saintmaryparishlaurinburg.org/bulletin",
+   "fetched_at": "2026-11-01T03:21:08+00:00"
+  },
+  {
+   "url": "https://www.saintmaryparishlaurinburg.org/_files/ugd/6a10ed_56b2c44650f246f192944fa09021ae06.pdf",
+   "date": "2026-11-01",
+   "date_source": "printed in the bulletin",
+   "pages": 4,
+   "ocr": true,
+   "ocr_pages": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "found_via": "link on https://www.saintmaryparishlaurinburg.org/bulletin",
+   "fetched_at": "2026-11-01T03:21:59+00:00"
+  }
+ ],
+ "notes": [],
+ "tried": [],
+ "checked_at": "2026-11-01T03:21:05+00:00",
+ "built_at": "2026-11-01T03:27:25+00:00",
+ "built_by": "ingest/us/bulletins/run.py (California's fetch.py / extract_groups.py)",
+ "privacy": "no lay names, phones or e-mails; contact is 'ask the parish office'; names and places pass ingest/public/privacy.py and ingest/connectors/calendars/privacy.py",
+ "privacy_dropped": 0,
+ "groups": [
+  {
+   "id": "saintmaryparishlaurinburg.org:bulletin:ocia:",
+   "name": "OCIA (becoming Catholic)",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "ocia",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "informal": true,
+   "informal_kind": "ocia_inquiry",
+   "meets": {
+    "days": [
+     "Sunday"
+    ],
+    "time": "10:15",
+    "frequency": "weekly",
+    "text": "Sundays, 10:15 am"
+   },
+   "next_meeting": null,
+   "location": null,
+   "contact": "ask the parish office",
+   "source_kind": "bulletin",
+   "source_label": "From the parish bulletin, October 18, 2026",
+   "source_url": "https://www.saintmaryparishlaurinburg.org/_files/ugd/6a10ed_c4a1b28e29ca40098fa6e8b0541cae4c.pdf",
+   "last_seen": "2026-10-18",
+   "seen_in_issues": 1,
+   "sources": [
+    {
+     "url": "https://www.saintmaryparishlaurinburg.org/_files/ugd/6a10ed_c4a1b28e29ca40098fa6e8b0541cae4c.pdf",
+     "issue_date": "2026-10-18",
+     "page": 3,
+     "ocr": true
+    }
+   ],
+   "confidence": "medium",
+   "flags": [
+    "ocr"
+   ],
+   "also_on_parish_website": false
+  },
+  {
+   "id": "saintmaryparishlaurinburg.org:bulletin:mens_group:",
+   "name": "Men's Group",
+   "category": "men",
+   "category_label": "Men",
+   "subcategory": "mens_group",
+   "audience": "men",
+   "language": "en",
+   "language_assumed": true,
+   "informal": true,
+   "informal_kind": "mens",
+   "meets": {
+    "days": [
+     "Wednesday"
+    ],
+    "time": null,
+    "frequency": "monthly (3rd Wednesday)",
+    "text": "3rd Wednesday of the month"
+   },
+   "next_meeting": null,
+   "location": null,
+   "contact": "ask the parish office",
+   "source_kind": "bulletin",
+   "source_label": "From the parish bulletin, November 1, 2026",
+   "source_url": "https://www.saintmaryparishlaurinburg.org/_files/ugd/6a10ed_56b2c44650f246f192944fa09021ae06.pdf",
+   "last_seen": "2026-11-01",
+   "seen_in_issues": 2,
+   "sources": [
+    {
+     "url": "https://www.saintmaryparishlaurinburg.org/_files/ugd/6a10ed_56b2c44650f246f192944fa09021ae06.pdf",
+     "issue_date": "2026-11-01",
+     "page": 4,
+     "ocr": true
+    },
+    {
+     "url": "https://www.saintmaryparishlaurinburg.org/_files/ugd/6a10ed_c4a1b28e29ca40098fa6e8b0541cae4c.pdf",
+     "issue_date": "2026-10-18",
+     "page": 4,
+     "ocr": true
+    }
+   ],
+   "confidence": "medium",
+   "flags": [
+    "ocr"
+   ],
+   "also_on_parish_website": false
+  },
+  {
+   "id": "saintmaryparishlaurinburg.org:bulletin:bible_study:",
+   "name": "Bible Study",
+   "category": "scripture_study",
+   "category_label": "Scripture & study",
+   "subcategory": "bible_study",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "informal": true,
+   "informal_kind": "bible_study",
+   "meets": {
+    "days": [
+     "Thursday"
+    ],
+    "time": null,
+    "frequency": null,
+    "text": "Thursday"
+   },
+   "next_meeting": {
+    "date": "2026-11-05",
+    "time": "10:00"
+   },
+   "location": null,
+   "contact": "ask the parish office",
+   "source_kind": "bulletin",
+   "source_label": "From the parish bulletin, November 1, 2026",
+   "source_url": "https://www.saintmaryparishlaurinburg.org/_files/ugd/6a10ed_56b2c44650f246f192944fa09021ae06.pdf",
+   "last_seen": "2026-11-01",
+   "seen_in_issues": 2,
+   "sources": [
+    {
+     "url": "https://www.saintmaryparishlaurinburg.org/_files/ugd/6a10ed_56b2c44650f246f192944fa09021ae06.pdf",
+     "issue_date": "2026-11-01",
+     "page": 2,
+     "ocr": true
+    },
+    {
+     "url": "https://www.saintmaryparishlaurinburg.org/_files/ugd/6a10ed_c4a1b28e29ca40098fa6e8b0541cae4c.pdf",
+     "issue_date": "2026-10-18",
+     "page": 2,
+     "ocr": true
+    }
+   ],
+   "confidence": "medium",
+   "flags": [
+    "ocr"
+   ],
+   "also_on_parish_website": false
+  },
+  {
+   "id": "saintmaryparishlaurinburg.org:bulletin:womens_group:ladiesguild:",
+   "name": "Ladies’ Guild",
+   "category": "women",
+   "category_label": "Women",
+   "subcategory": "womens_group",
+   "audience": "women",
+   "language": "en",
+   "language_assumed": true,
+   "informal": true,
+   "informal_kind": "womens",
+   "meets": {
+    "days": [
+     "Saturday"
+    ],
+    "time": null,
+    "frequency": null,
+    "text": "Saturday"
+   },
+   "next_meeting": null,
+   "location": null,
+   "contact": "ask the parish office",
+   "source_kind": "bulletin",
+   "source_label": "From the parish bulletin, November 1, 2026",
+   "source_url": "https://www.saintmaryparishlaurinburg.org/_files/ugd/6a10ed_56b2c44650f246f192944fa09021ae06.pdf",
+   "last_seen": "2026-11-01",
+   "seen_in_issues": 1,
+   "sources": [
+    {
+     "url": "https://www.saintmaryparishlaurinburg.org/_files/ugd/6a10ed_56b2c44650f246f192944fa09021ae06.pdf",
+     "issue_date": "2026-11-01",
+     "page": 2,
+     "ocr": true
+    }
+   ],
+   "confidence": "medium",
+   "flags": [
+    "ocr"
+   ],
+   "also_on_parish_website": false
+  },
+  {
+   "id": "saintmaryparishlaurinburg.org:bulletin:womens_group:ladiesguildchrist:",
+   "name": "Ladies’ Guild Christ",
+   "category": "women",
+   "category_label": "Women",
+   "subcategory": "womens_group",
+   "audience": "women",
+   "language": "en",
+   "language_assumed": true,
+   "informal": true,
+   "informal_kind": "womens",
+   "meets": null,
+   "next_meeting": {
+    "date": "2026-11-22",
+    "time": "08:00"
+   },
+   "location": null,
+   "contact": "ask the parish office",
+   "source_kind": "bulletin",
+   "source_label": "From the parish bulletin, October 18, 2026",
+   "source_url": "https://www.saintmaryparishlaurinburg.org/_files/ugd/6a10ed_c4a1b28e29ca40098fa6e8b0541cae4c.pdf",
+   "last_seen": "2026-10-18",
+   "seen_in_issues": 1,
+   "sources": [
+    {
+     "url": "https://www.saintmaryparishlaurinburg.org/_files/ugd/6a10ed_c4a1b28e29ca40098fa6e8b0541cae4c.pdf",
+     "issue_date": "2026-10-18",
+     "page": 3,
+     "ocr": true
+    }
+   ],
+   "confidence": "medium",
+   "flags": [
+    "ocr"
+   ],
+   "also_on_parish_website": false
+  },
+  {
+   "id": "saintmaryparishlaurinburg.org:bulletin:womens_group:ladiesguildchristmasbazaar:",
+   "name": "Ladies’ Guild Christmas Bazaar",
+   "category": "women",
+   "category_label": "Women",
+   "subcategory": "womens_group",
+   "audience": "women",
+   "language": "en",
+   "language_assumed": true,
+   "informal": true,
+   "informal_kind": "womens",
+   "meets": null,
+   "next_meeting": {
+    "date": "2026-11-21",
+    "time": "08:00"
+   },
+   "location": null,
+   "contact": "ask the parish office",
+   "source_kind": "bulletin",
+   "source_label": "From the parish bulletin, November 1, 2026",
+   "source_url": "https://www.saintmaryparishlaurinburg.org/_files/ugd/6a10ed_56b2c44650f246f192944fa09021ae06.pdf",
+   "last_seen": "2026-11-01",
+   "seen_in_issues": 1,
+   "sources": [
+    {
+     "url": "https://www.saintmaryparishlaurinburg.org/_files/ugd/6a10ed_56b2c44650f246f192944fa09021ae06.pdf",
+     "issue_date": "2026-11-01",
+     "page": 2,
+     "ocr": true
+    }
+   ],
+   "confidence": "medium",
+   "flags": [
+    "ocr"
+   ],
+   "also_on_parish_website": false
+  },
+  {
+   "id": "saintmaryparishlaurinburg.org:bulletin:womens_group:",
+   "name": "Women's Group",
+   "category": "women",
+   "category_label": "Women",
+   "subcategory": "womens_group",
+   "audience": "women",
+   "language": "en",
+   "language_assumed": true,
+   "informal": true,
+   "informal_kind": "womens",
+   "meets": {
+    "days": [
+     "Saturday"
+    ],
+    "time": "10:00",
+    "frequency": "monthly (1st Saturday)",
+    "text": "1st Saturday of the month, 10:00 am"
+   },
+   "next_meeting": null,
+   "location": null,
+   "contact": "ask the parish office",
+   "source_kind": "bulletin",
+   "source_label": "From the parish bulletin, November 1, 2026",
+   "source_url": "https://www.saintmaryparishlaurinburg.org/_files/ugd/6a10ed_56b2c44650f246f192944fa09021ae06.pdf",
+   "last_seen": "2026-11-01",
+   "seen_in_issues": 1,
+   "sources": [
+    {
+     "url": "https://www.saintmaryparishlaurinburg.org/_files/ugd/6a10ed_56b2c44650f246f192944fa09021ae06.pdf",
+     "issue_date": "2026-11-01",
+     "page": 3,
+     "ocr": true
+    },
+    {
+     "url": "https://www.saintmaryparishlaurinburg.org/_files/ugd/6a10ed_56b2c44650f246f192944fa09021ae06.pdf",
+     "issue_date": "2026-11-01",
+     "page": 4,
+     "ocr": true
+    }
+   ],
+   "confidence": "medium",
+   "flags": [
+    "ocr"
+   ],
+   "also_on_parish_website": false
+  }
+ ]
+}

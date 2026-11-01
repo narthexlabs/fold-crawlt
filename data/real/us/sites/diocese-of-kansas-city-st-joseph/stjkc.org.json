@@ -1,0 +1,243 @@
+{
+ "domain": "stjkc.org",
+ "diocese": "diocese-of-kansas-city-st-joseph",
+ "matched_church_ids": [
+  "diocese-of-kansas-city-st-joseph:St. James"
+ ],
+ "matched": {
+  "directory": [
+   "diocese-of-kansas-city-st-joseph:St. James"
+  ],
+  "discovermass": []
+ },
+ "names": [
+  "St. James"
+ ],
+ "cities": [
+  "Kansas City"
+ ],
+ "home_url": "https://stjkc.org/",
+ "final_url": "https://stjkc.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://stjkc.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stjkc.org/ministry-schedules",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stjkc.org/we-worship-and-pray",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://stjkc.org/we-serve",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://stjkc.org/bulletin",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://stjkc.org/social-justice-calendar",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "live",
+   "url": "https://stjkc.org/live-streams",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://stjkc.org/contact-us",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-content"
+  ]
+ },
+ "template": "wordpress-rest+html",
+ "groups": [
+  {
+   "id": "stjkc.org:immigration",
+   "name": "Justice For Immigrants",
+   "category": "service_mercy",
+   "category_label": "Service & mercy",
+   "subcategory": "immigrant_support",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stjkc.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stjkc.org/we-serve",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T05:16:54+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "stjkc.org:justice",
+   "name": "Social Justice Significant Events and People",
+   "category": "service_mercy",
+   "category_label": "Service & mercy",
+   "subcategory": "social_justice",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stjkc.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stjkc.org/ministry-schedules",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T05:16:34+00:00",
+   "confidence": "medium"
+  }
+ ],
+ "calendar_feeds": [
+  {
+   "feed_id": "stjkc.org:ics:6ad7bfc1",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": null,
+   "page_url": "https://stjkc.org/",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (embedded on page)",
+   "display_tz": "America/Chicago",
+   "url_withheld": "calendar id is an e-mail address; not stored",
+   "feed_key": "6ad7bfc18bf3",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T05:43:51+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  },
+  {
+   "feed_id": "stjkc.org:tribe_rest:2559e947",
+   "type": "tribe_rest",
+   "platform": "The Events Calendar (WordPress)",
+   "url": "https://stjkc.org/wp-json/tribe/events/v1/events",
+   "page_url": "https://stjkc.org/",
+   "label": null,
+   "status": "active",
+   "note": "The Events Calendar (WordPress) REST API",
+   "last_fetch": {
+    "status": 200,
+    "fetched_at": "2026-11-01T05:43:51+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
+ "events": [],
+ "social": {
+  "livestream": [
+   {
+    "url": "https://stjkc.org/live-streams",
+    "label": "Live Stream Archives",
+    "platform": "stjkc.org",
+    "kind": "link"
+   }
+  ]
+ },
+ "bulletin": {
+  "url": "https://stjkc.org/bulletin",
+  "date": null,
+  "kind": "page",
+  "text": "Sunday at St. James",
+  "source_url": "https://stjkc.org/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": null,
+   "raw": "We invite you to join us for Mass at St. James on Sunday morning at 10:00 am. Special times will be posted when applicable.",
+   "source_url": "https://stjkc.org/we-worship-and-pray",
+   "fetched_at": "2026-11-01T05:16:44+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  }
+ ],
+ "source_url": "https://stjkc.org/",
+ "fetched_at": "2026-11-01T05:17:45+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": true
+   },
+   "score": "high"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 1
+ },
+ "schedule_dropped": {
+  "no_kind": 1,
+  "skipped_section": 1
+ },
+ "groups_dropped": {
+  "noise": 4,
+  "unmatched": 2
+ },
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": "parishstaff@stjkc.org",
+  "phone": "(816) 561-8512",
+  "address": "PO Box 30388, Kansas City, MO 64112",
+  "source_url": "https://stjkc.org/contact-us",
+  "sources": {
+   "email": "https://stjkc.org/contact-us",
+   "phone": "https://stjkc.org/contact-us",
+   "address": "https://stjkc.org/contact-us"
+  },
+  "fetched_at": "2026-11-01T05:17:34+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

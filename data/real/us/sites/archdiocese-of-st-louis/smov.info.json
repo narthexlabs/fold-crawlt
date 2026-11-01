@@ -1,0 +1,126 @@
+{
+ "domain": "smov.info",
+ "diocese": "archdiocese-of-st-louis",
+ "matched_church_ids": [
+  "archdiocese-of-st-louis:15640"
+ ],
+ "matched": {
+  "directory": [
+   "archdiocese-of-st-louis:15640"
+  ],
+  "discovermass": []
+ },
+ "names": [
+  "St. Mary of Victories Chapel (St. Louis)"
+ ],
+ "cities": [],
+ "home_url": "http://www.smov.info/",
+ "final_url": "https://www.smov.info/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://www.smov.info/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.smov.info/pages/mass-times.html",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.smov.info/pages/latin-mass.html",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://www.smov.info/pages/bulletins.html",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.smov.info/public-calendar.php",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "unknown",
+  "evidence": []
+ },
+ "template": "generic-html:unknown",
+ "groups": [],
+ "calendar_feeds": [],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/stmaryofvictories"
+  ],
+  "youtube": [
+   "https://www.youtube.com/@smovinfo1"
+  ]
+ },
+ "bulletin": {
+  "url": "https://www.smov.info/pages/bulletins.html",
+  "date": null,
+  "kind": "page",
+  "text": "Bulletins",
+  "source_url": "https://www.smov.info/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:00",
+   "language": null,
+   "raw": "Sunday Mass: 11:00 AM",
+   "source_url": "https://www.smov.info/pages/mass-times.html",
+   "fetched_at": "2026-11-01T01:19:51+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  }
+ ],
+ "source_url": "http://www.smov.info/",
+ "fetched_at": "2026-11-01T01:19:56+00:00",
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": true,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-10-31",
+  "window_end_exclusive": "2027-01-29",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

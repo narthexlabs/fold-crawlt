@@ -1,0 +1,183 @@
+{
+ "domain": "marysacc.org",
+ "diocese": "diocese-of-st-cloud",
+ "matched_church_ids": [
+  "diocese-of-st-cloud:Blue Grass - St. Hubert",
+  "diocese-of-st-cloud:Menahga - Assumption of Our Lady",
+  "diocese-of-st-cloud:Motley - St. Michael",
+  "diocese-of-st-cloud:Staples - Sacred Heart",
+  "diocese-of-st-cloud:Verndale - St. Frederick",
+  "diocese-of-st-cloud:Wadena - St. Ann"
+ ],
+ "matched": {
+  "directory": [
+   "diocese-of-st-cloud:Blue Grass - St. Hubert",
+   "diocese-of-st-cloud:Menahga - Assumption of Our Lady",
+   "diocese-of-st-cloud:Motley - St. Michael",
+   "diocese-of-st-cloud:Staples - Sacred Heart",
+   "diocese-of-st-cloud:Verndale - St. Frederick",
+   "diocese-of-st-cloud:Wadena - St. Ann"
+  ],
+  "discovermass": []
+ },
+ "names": [
+  "Blue Grass - St. Hubert",
+  "Menahga - Assumption of Our Lady",
+  "Motley - St. Michael",
+  "Staples - Sacred Heart",
+  "Verndale - St. Frederick",
+  "Wadena - St. Ann"
+ ],
+ "cities": [
+  "Verndale",
+  "Menahga",
+  "Motley",
+  "Staples",
+  "Wadena"
+ ],
+ "home_url": "https://www.marysacc.org/",
+ "final_url": "https://www.marysacc.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://www.marysacc.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.marysacc.org/sacraments",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.marysacc.org/liturgical-ministers",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://www.marysacc.org/newsletters",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.marysacc.org/communitycalendar",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.marysacc.org/communitycalendar",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "unknown",
+  "evidence": []
+ },
+ "template": "generic-html:unknown",
+ "groups": [],
+ "calendar_feeds": [
+  {
+   "feed_id": "marysacc.org:ics:a212f02a",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": null,
+   "page_url": "https://www.marysacc.org/communitycalendar",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (embedded on page)",
+   "display_tz": "America/Chicago",
+   "url_withheld": "calendar id is an e-mail address; not stored",
+   "feed_key": "a212f02a1711",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T03:23:06+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  },
+  {
+   "feed_id": "marysacc.org:ics:d4af6606",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": null,
+   "page_url": "https://www.marysacc.org/communitycalendar",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (embedded on page)",
+   "url_withheld": "calendar id is an e-mail address; not stored",
+   "feed_key": "d4af660670ef",
+   "last_fetch": {
+    "status": 404,
+    "fetched_at": "2026-11-01T03:23:07+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/MarysACC"
+  ],
+  "youtube": [
+   "https://www.youtube.com/channel/UCYmApPe3Mmy-Feg66vIA-Jw"
+  ]
+ },
+ "bulletin": {
+  "url": "https://www.parishesonline.com/organization/st-ann-church-mary-mother-of-the-church-acc",
+  "date": null,
+  "kind": "lpi",
+  "text": "Sunday Bulletin",
+  "source_url": "https://www.marysacc.org/"
+ },
+ "schedule_rows": [],
+ "source_url": "https://www.marysacc.org/",
+ "fetched_at": "2026-11-01T02:10:53+00:00",
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": true,
+  "trusted_candidate": false,
+  "generic_rows": 2
+ },
+ "schedule_dropped": {
+  "other_location": 1,
+  "no_kind": 1
+ },
+ "groups_dropped": {
+  "unmatched": 1
+ },
+ "event_counts": {
+  "window_start": "2026-10-31",
+  "window_end_exclusive": "2027-01-29",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

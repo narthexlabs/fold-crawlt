@@ -1,0 +1,380 @@
+{
+ "diocese": "diocese-of-brooklyn",
+ "domain": "stclementpopechurch.org",
+ "site_key": "stclementpopechurch.org",
+ "site_file": "data/real/us/sites/diocese-of-brooklyn/stclementpopechurch.org.json",
+ "parishes": [
+  {
+   "church_id": "diocese-of-brooklyn:St. Clement Pope",
+   "name": "St. Clement Pope",
+   "city": "Jamaica"
+  }
+ ],
+ "bulletin_link": {
+  "url": "https://stclementpopechurch.org/wp-content/uploads/2026/10/BulletinCover-and-insertNov12026.pdf",
+  "kind": "pdf",
+  "date": "2026-11-01",
+  "text": "Bulletin 11/01/2026",
+  "source_url": "https://stclementpopechurch.org/"
+ },
+ "status": "ok",
+ "had_mass_times": true,
+ "site_groups_before": 0,
+ "gained_first_groups": true,
+ "issues": [
+  {
+   "url": "https://stclementpopechurch.org/wp-content/uploads/2026/10/BulletinCover-and-insertNov12026.pdf",
+   "date": "2026-11-01",
+   "date_source": "link",
+   "pages": 4,
+   "ocr": true,
+   "ocr_pages": [
+    4
+   ],
+   "found_via": "link on https://stclementpopechurch.org/ ('Bulletin 11/01/2026')",
+   "fetched_at": "2026-11-01T05:19:47+00:00"
+  },
+  {
+   "url": "https://stclementpopechurch.org/wp-content/uploads/2026/10/Bulletin10252026.pdf",
+   "date": "2026-10-25",
+   "date_source": "link",
+   "pages": 4,
+   "ocr": true,
+   "ocr_pages": [
+    4
+   ],
+   "found_via": "link on https://stclementpopechurch.org/ ('Bulletin 10/25/2026')",
+   "fetched_at": "2026-11-01T05:19:57+00:00"
+  }
+ ],
+ "notes": [],
+ "tried": [],
+ "checked_at": "2026-11-01T05:19:35+00:00",
+ "built_at": "2026-11-01T05:20:15+00:00",
+ "built_by": "ingest/us/bulletins/run.py (California's fetch.py / extract_groups.py)",
+ "privacy": "no lay names, phones or e-mails; contact is 'ask the parish office'; names and places pass ingest/public/privacy.py and ingest/connectors/calendars/privacy.py",
+ "privacy_dropped": 0,
+ "groups": [
+  {
+   "id": "stclementpopechurch.org:bulletin:ocia:",
+   "name": "OCIA (becoming Catholic)",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "ocia",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "informal": true,
+   "informal_kind": "ocia_inquiry",
+   "meets": null,
+   "next_meeting": null,
+   "location": null,
+   "contact": "ask the parish office",
+   "source_kind": "bulletin",
+   "source_label": "From the parish bulletin, November 1, 2026",
+   "source_url": "https://stclementpopechurch.org/wp-content/uploads/2026/10/BulletinCover-and-insertNov12026.pdf",
+   "last_seen": "2026-11-01",
+   "seen_in_issues": 2,
+   "sources": [
+    {
+     "url": "https://stclementpopechurch.org/wp-content/uploads/2026/10/BulletinCover-and-insertNov12026.pdf",
+     "issue_date": "2026-11-01",
+     "page": 1,
+     "ocr": false
+    },
+    {
+     "url": "https://stclementpopechurch.org/wp-content/uploads/2026/10/Bulletin10252026.pdf",
+     "issue_date": "2026-10-25",
+     "page": 1,
+     "ocr": false
+    }
+   ],
+   "confidence": "medium",
+   "flags": [],
+   "also_on_parish_website": false
+  },
+  {
+   "id": "stclementpopechurch.org:bulletin:charismatic:",
+   "name": "Charismatic Prayer Group",
+   "category": "movements",
+   "category_label": "Movements",
+   "subcategory": "charismatic_renewal",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "informal": true,
+   "informal_kind": "charismatic",
+   "meets": {
+    "days": [
+     "Wednesday",
+     "Friday"
+    ],
+    "time": "19:00",
+    "frequency": null,
+    "text": "Wednesday and Friday, 7:00 pm"
+   },
+   "next_meeting": null,
+   "location": null,
+   "contact": "ask the parish office",
+   "source_kind": "bulletin",
+   "source_label": "From the parish bulletin, November 1, 2026",
+   "source_url": "https://stclementpopechurch.org/wp-content/uploads/2026/10/BulletinCover-and-insertNov12026.pdf",
+   "last_seen": "2026-11-01",
+   "seen_in_issues": 2,
+   "sources": [
+    {
+     "url": "https://stclementpopechurch.org/wp-content/uploads/2026/10/BulletinCover-and-insertNov12026.pdf",
+     "issue_date": "2026-11-01",
+     "page": 1,
+     "ocr": false
+    },
+    {
+     "url": "https://stclementpopechurch.org/wp-content/uploads/2026/10/Bulletin10252026.pdf",
+     "issue_date": "2026-10-25",
+     "page": 1,
+     "ocr": false
+    }
+   ],
+   "confidence": "high",
+   "flags": [],
+   "also_on_parish_website": false
+  },
+  {
+   "id": "stclementpopechurch.org:bulletin:rosary_group:",
+   "name": "Rosary Society",
+   "category": "prayer_devotion",
+   "category_label": "Prayer & devotion",
+   "subcategory": "rosary",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "informal": true,
+   "informal_kind": "rosary_group",
+   "meets": {
+    "days": [
+     "Sunday"
+    ],
+    "time": "09:30",
+    "frequency": "monthly (3rd Sunday)",
+    "text": "3rd Sunday of the month, 9:30 am"
+   },
+   "next_meeting": null,
+   "location": null,
+   "contact": "ask the parish office",
+   "source_kind": "bulletin",
+   "source_label": "From the parish bulletin, November 1, 2026",
+   "source_url": "https://stclementpopechurch.org/wp-content/uploads/2026/10/BulletinCover-and-insertNov12026.pdf",
+   "last_seen": "2026-11-01",
+   "seen_in_issues": 1,
+   "sources": [
+    {
+     "url": "https://stclementpopechurch.org/wp-content/uploads/2026/10/BulletinCover-and-insertNov12026.pdf",
+     "issue_date": "2026-11-01",
+     "page": 1,
+     "ocr": false
+    }
+   ],
+   "confidence": "high",
+   "flags": [],
+   "also_on_parish_website": false
+  },
+  {
+   "id": "stclementpopechurch.org:bulletin:prayer_group:clementprayer:",
+   "name": "St. Clement Prayer Group",
+   "category": "prayer_devotion",
+   "category_label": "Prayer & devotion",
+   "subcategory": "prayer_group",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "informal": true,
+   "informal_kind": "prayer_group",
+   "meets": {
+    "days": [
+     "Friday"
+    ],
+    "time": "19:30",
+    "frequency": "monthly (2nd and 4th Friday)",
+    "text": "2nd and 4th Friday of the month, 7:30 pm"
+   },
+   "next_meeting": null,
+   "location": null,
+   "contact": "ask the parish office",
+   "source_kind": "bulletin",
+   "source_label": "From the parish bulletin, November 1, 2026",
+   "source_url": "https://stclementpopechurch.org/wp-content/uploads/2026/10/BulletinCover-and-insertNov12026.pdf",
+   "last_seen": "2026-11-01",
+   "seen_in_issues": 2,
+   "sources": [
+    {
+     "url": "https://stclementpopechurch.org/wp-content/uploads/2026/10/BulletinCover-and-insertNov12026.pdf",
+     "issue_date": "2026-11-01",
+     "page": 1,
+     "ocr": false
+    },
+    {
+     "url": "https://stclementpopechurch.org/wp-content/uploads/2026/10/Bulletin10252026.pdf",
+     "issue_date": "2026-10-25",
+     "page": 1,
+     "ocr": false
+    }
+   ],
+   "confidence": "high",
+   "flags": [],
+   "also_on_parish_website": false
+  },
+  {
+   "id": "stclementpopechurch.org:bulletin:small_groups:faithsharing:",
+   "name": "Faith Sharing",
+   "category": "scripture_study",
+   "category_label": "Scripture & study",
+   "subcategory": "small_faith_groups",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "informal": true,
+   "informal_kind": "small_groups",
+   "meets": null,
+   "next_meeting": null,
+   "location": null,
+   "contact": "ask the parish office",
+   "source_kind": "bulletin",
+   "source_label": "From the parish bulletin, October 25, 2026",
+   "source_url": "https://stclementpopechurch.org/wp-content/uploads/2026/10/Bulletin10252026.pdf",
+   "last_seen": "2026-10-25",
+   "seen_in_issues": 1,
+   "sources": [
+    {
+     "url": "https://stclementpopechurch.org/wp-content/uploads/2026/10/Bulletin10252026.pdf",
+     "issue_date": "2026-10-25",
+     "page": 1,
+     "ocr": false
+    }
+   ],
+   "confidence": "medium",
+   "flags": [],
+   "also_on_parish_website": false
+  },
+  {
+   "id": "stclementpopechurch.org:bulletin:small_groups:faithsharingviazoom:",
+   "name": "Faith Sharing- Via Zoom",
+   "category": "scripture_study",
+   "category_label": "Scripture & study",
+   "subcategory": "small_faith_groups",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "informal": true,
+   "informal_kind": "small_groups",
+   "meets": null,
+   "next_meeting": null,
+   "location": null,
+   "contact": "ask the parish office",
+   "source_kind": "bulletin",
+   "source_label": "From the parish bulletin, November 1, 2026",
+   "source_url": "https://stclementpopechurch.org/wp-content/uploads/2026/10/BulletinCover-and-insertNov12026.pdf",
+   "last_seen": "2026-11-01",
+   "seen_in_issues": 1,
+   "sources": [
+    {
+     "url": "https://stclementpopechurch.org/wp-content/uploads/2026/10/BulletinCover-and-insertNov12026.pdf",
+     "issue_date": "2026-11-01",
+     "page": 1,
+     "ocr": false
+    }
+   ],
+   "confidence": "medium",
+   "flags": [],
+   "also_on_parish_website": false
+  },
+  {
+   "id": "stclementpopechurch.org:bulletin:youth_ministry:",
+   "name": "Youth Ministry",
+   "category": "youth",
+   "category_label": "Youth",
+   "subcategory": "youth_ministry",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "informal": true,
+   "informal_kind": "youth",
+   "meets": null,
+   "next_meeting": null,
+   "location": null,
+   "contact": "ask the parish office",
+   "source_kind": "bulletin",
+   "source_label": "From the parish bulletin, November 1, 2026",
+   "source_url": "https://stclementpopechurch.org/wp-content/uploads/2026/10/BulletinCover-and-insertNov12026.pdf",
+   "last_seen": "2026-11-01",
+   "seen_in_issues": 2,
+   "sources": [
+    {
+     "url": "https://stclementpopechurch.org/wp-content/uploads/2026/10/BulletinCover-and-insertNov12026.pdf",
+     "issue_date": "2026-11-01",
+     "page": 1,
+     "ocr": false
+    },
+    {
+     "url": "https://stclementpopechurch.org/wp-content/uploads/2026/10/Bulletin10252026.pdf",
+     "issue_date": "2026-10-25",
+     "page": 1,
+     "ocr": false
+    }
+   ],
+   "confidence": "medium",
+   "flags": [],
+   "also_on_parish_website": false
+  },
+  {
+   "id": "stclementpopechurch.org:bulletin:t:food:foodpantry:",
+   "name": "Food Pantry",
+   "category": "service_mercy",
+   "category_label": "Service & mercy",
+   "subcategory": "food_ministry",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "informal": false,
+   "informal_kind": null,
+   "meets": {
+    "days": [
+     "Thursday"
+    ],
+    "time": "16:00",
+    "frequency": "monthly (1st and 3rd Thursday)",
+    "text": "1st and 3rd Thursday of the month, 4:00 pm"
+   },
+   "next_meeting": null,
+   "location": null,
+   "contact": "ask the parish office",
+   "source_kind": "bulletin",
+   "source_label": "From the parish bulletin, November 1, 2026",
+   "source_url": "https://stclementpopechurch.org/wp-content/uploads/2026/10/BulletinCover-and-insertNov12026.pdf",
+   "last_seen": "2026-11-01",
+   "seen_in_issues": 2,
+   "sources": [
+    {
+     "url": "https://stclementpopechurch.org/wp-content/uploads/2026/10/BulletinCover-and-insertNov12026.pdf",
+     "issue_date": "2026-11-01",
+     "page": 1,
+     "ocr": false
+    },
+    {
+     "url": "https://stclementpopechurch.org/wp-content/uploads/2026/10/BulletinCover-and-insertNov12026.pdf",
+     "issue_date": "2026-11-01",
+     "page": 3,
+     "ocr": false
+    },
+    {
+     "url": "https://stclementpopechurch.org/wp-content/uploads/2026/10/Bulletin10252026.pdf",
+     "issue_date": "2026-10-25",
+     "page": 3,
+     "ocr": false
+    }
+   ],
+   "confidence": "medium",
+   "flags": [],
+   "also_on_parish_website": false
+  }
+ ]
+}

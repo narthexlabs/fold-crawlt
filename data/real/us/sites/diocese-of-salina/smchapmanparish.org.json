@@ -1,0 +1,175 @@
+{
+ "domain": "smchapmanparish.org",
+ "diocese": "diocese-of-salina",
+ "matched_church_ids": [
+  "diocese-of-salina:St. Michael Parish - Chapman"
+ ],
+ "matched": {
+  "directory": [
+   "diocese-of-salina:St. Michael Parish - Chapman"
+  ],
+  "discovermass": []
+ },
+ "names": [
+  "St. Michael Parish - Chapman"
+ ],
+ "cities": [
+  "Chapman"
+ ],
+ "home_url": "http://www.smchapmanparish.org/",
+ "final_url": "https://smchapmanparish.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://smchapmanparish.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://smchapmanparish.org/organizations/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://smchapmanparish.org/weekly-bulletins/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://smchapmanparish.org/events/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://smchapmanparish.org/events/",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-json"
+  ]
+ },
+ "template": "wordpress-rest+html",
+ "groups": [
+  {
+   "id": "smchapmanparish.org:kofc",
+   "name": "Knights of Columbus",
+   "category": "fraternal_orders",
+   "category_label": "Fraternal & orders",
+   "subcategory": "knights_of_columbus",
+   "audience": "men",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "The Knights of Columbus is a fraternal organization that provides service to the parish, emphasizes the family, is involved with the community, and aspires to increase the spirituality of its members. They are dedicated to charity, unity, fraternity, patriotism and…",
+   "contact_url": "https://smchapmanparish.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://smchapmanparish.org/organizations/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T04:00:04+00:00",
+   "confidence": "medium"
+  }
+ ],
+ "calendar_feeds": [
+  {
+   "feed_id": "smchapmanparish.org:tribe_rest:a4b881a7",
+   "type": "tribe_rest",
+   "platform": "The Events Calendar (WordPress)",
+   "url": "https://smchapmanparish.org/wp-json/tribe/events/v1/events",
+   "page_url": "https://smchapmanparish.org/",
+   "label": null,
+   "status": "active",
+   "note": "The Events Calendar (WordPress) REST API",
+   "last_fetch": {
+    "status": 200,
+    "fetched_at": "2026-11-01T04:46:43+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/stmichaelschapman"
+  ]
+ },
+ "bulletin": {
+  "url": "https://smchapmanparish.org/wp-content/uploads/2026/08/August-9-2026.pdf",
+  "date": "2026-08-09",
+  "kind": "pdf",
+  "text": "View Bulletin",
+  "source_url": "https://smchapmanparish.org/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Sunday Mass: 9:00 am",
+   "source_url": "https://smchapmanparish.org/",
+   "fetched_at": "2026-11-01T03:59:59+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  }
+ ],
+ "source_url": "http://www.smchapmanparish.org/",
+ "fetched_at": "2026-11-01T04:00:13+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 2
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-10-31",
+  "window_end_exclusive": "2027-01-29",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(785) 922-6509",
+  "address": "218 N. Washington Street, Junction City, KS 66441",
+  "source_url": "https://smchapmanparish.org/",
+  "sources": {
+   "phone": "https://smchapmanparish.org/",
+   "address": "https://smchapmanparish.org/"
+  },
+  "fetched_at": "2026-11-01T03:59:59+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

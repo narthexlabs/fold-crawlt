@@ -1,0 +1,134 @@
+{
+ "diocese": "archdiocese-of-boston",
+ "domain": "stmikes.org",
+ "site_key": "stmikes.org",
+ "site_file": "data/real/us/sites/archdiocese-of-boston/stmikes.org.json",
+ "parishes": [
+  {
+   "church_id": "gc-22842",
+   "name": "St. Michael",
+   "city": "Hudson"
+  }
+ ],
+ "bulletin_link": {
+  "url": "https://irp.cdn-website.com/52609b29/files/uploaded/July+6+Bulletin+parish+online.pdf",
+  "kind": "pdf",
+  "date": "2025-07-06",
+  "text": "July 6, 2025 14th Sunday in Ordinary Time",
+  "source_url": "https://www.stmikes.org/bulletin"
+ },
+ "status": "ok",
+ "had_mass_times": true,
+ "site_groups_before": 12,
+ "gained_first_groups": false,
+ "issues": [
+  {
+   "url": "https://irp.cdn-website.com/52609b29/files/uploaded/July+6+Bulletin+parish+online.pdf",
+   "date": "2025-07-06",
+   "date_source": "link",
+   "pages": 16,
+   "ocr": false,
+   "ocr_pages": [],
+   "found_via": "link on https://www.stmikes.org/bulletin ('July 6, 2025 14th Sunday in Ordinary Time')",
+   "fetched_at": "2026-11-01T05:30:47+00:00"
+  },
+  {
+   "url": "https://irp.cdn-website.com/52609b29/files/uploaded/Trinity_Sunday_Bulletin_Final_%281%29.pdf",
+   "date": "2025-06-15",
+   "date_source": "link",
+   "pages": 14,
+   "ocr": true,
+   "ocr_pages": [
+    1,
+    9,
+    13,
+    14
+   ],
+   "found_via": "link on https://www.stmikes.org/bulletin ('June 15, 2025, Solemnity of the Most Holy Trinity')",
+   "fetched_at": "2026-11-01T05:30:48+00:00"
+  }
+ ],
+ "notes": [],
+ "tried": [],
+ "checked_at": "2026-11-01T05:30:32+00:00",
+ "built_at": "2026-11-01T05:31:09+00:00",
+ "built_by": "ingest/us/bulletins/run.py (California's fetch.py / extract_groups.py)",
+ "privacy": "no lay names, phones or e-mails; contact is 'ask the parish office'; names and places pass ingest/public/privacy.py and ingest/connectors/calendars/privacy.py",
+ "privacy_dropped": 0,
+ "groups": [
+  {
+   "id": "stmikes.org:bulletin:svdp:",
+   "name": "St. Vincent de Paul",
+   "category": "service_mercy",
+   "category_label": "Service & mercy",
+   "subcategory": "st_vincent_de_paul",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "informal": true,
+   "informal_kind": "svdp",
+   "meets": null,
+   "next_meeting": null,
+   "location": null,
+   "contact": "ask the parish office",
+   "source_kind": "bulletin",
+   "source_label": "From the parish bulletin, July 6, 2025",
+   "source_url": "https://irp.cdn-website.com/52609b29/files/uploaded/July+6+Bulletin+parish+online.pdf",
+   "last_seen": "2025-07-06",
+   "seen_in_issues": 2,
+   "sources": [
+    {
+     "url": "https://irp.cdn-website.com/52609b29/files/uploaded/July+6+Bulletin+parish+online.pdf",
+     "issue_date": "2025-07-06",
+     "page": 11,
+     "ocr": false
+    },
+    {
+     "url": "https://irp.cdn-website.com/52609b29/files/uploaded/Trinity_Sunday_Bulletin_Final_%281%29.pdf",
+     "issue_date": "2025-06-15",
+     "page": 12,
+     "ocr": false
+    }
+   ],
+   "confidence": "medium",
+   "flags": [
+    "issue_older_than_120_days"
+   ],
+   "also_on_parish_website": true
+  },
+  {
+   "id": "stmikes.org:bulletin:t:first_communion:firstholycommunion:",
+   "name": "First Holy Communion",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "first_communion_prep",
+   "audience": "families",
+   "language": "en",
+   "language_assumed": true,
+   "informal": false,
+   "informal_kind": null,
+   "meets": null,
+   "next_meeting": null,
+   "location": null,
+   "contact": "ask the parish office",
+   "source_kind": "bulletin",
+   "source_label": "From the parish bulletin, June 15, 2025",
+   "source_url": "https://irp.cdn-website.com/52609b29/files/uploaded/Trinity_Sunday_Bulletin_Final_%281%29.pdf",
+   "last_seen": "2025-06-15",
+   "seen_in_issues": 1,
+   "sources": [
+    {
+     "url": "https://irp.cdn-website.com/52609b29/files/uploaded/Trinity_Sunday_Bulletin_Final_%281%29.pdf",
+     "issue_date": "2025-06-15",
+     "page": 12,
+     "ocr": false
+    }
+   ],
+   "confidence": "low",
+   "flags": [
+    "issue_older_than_120_days"
+   ],
+   "also_on_parish_website": false
+  }
+ ]
+}

@@ -1,0 +1,128 @@
+{
+ "domain": "stceciliakearny.org",
+ "diocese": "archdiocese-of-newark",
+ "matched_church_ids": [
+  "archdiocese-of-newark:St. Cecilia Parish en"
+ ],
+ "matched": {
+  "directory": [
+   "archdiocese-of-newark:St. Cecilia Parish en"
+  ],
+  "discovermass": []
+ },
+ "names": [
+  "St. Cecilia Parish en"
+ ],
+ "cities": [
+  "Kearny"
+ ],
+ "home_url": "https://stceciliakearny.org/",
+ "final_url": "https://stceciliakearny.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://stceciliakearny.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stceciliakearny.org/sacraments/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://stceciliakearny.org/religious-education/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://stceciliakearny.org/news-events/",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-json"
+  ]
+ },
+ "template": "wordpress-rest+html",
+ "groups": [],
+ "calendar_feeds": [],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/Stceciliakearny",
+   "https://www.facebook.com/stceciliakearny"
+  ]
+ },
+ "bulletin": {
+  "url": "http://www.jppc.net/onlinebulletins/630template.pdf",
+  "date": null,
+  "kind": "pdf",
+  "text": "Current Bulletin",
+  "source_url": "https://stceciliakearny.org/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "confession",
+   "day": "Saturday (cuaresma)",
+   "time": "16:00",
+   "language": null,
+   "raw": "Sacrament of Reconciliation: Saturday at 4PM.",
+   "source_url": "https://stceciliakearny.org/sacraments/",
+   "fetched_at": "2026-11-01T01:58:19+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  }
+ ],
+ "source_url": "https://stceciliakearny.org/",
+ "fetched_at": "2026-11-01T01:58:22+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 20
+ },
+ "schedule_dropped": {
+  "not_a_service": 4
+ },
+ "groups_dropped": {
+  "noise": 2,
+  "unmatched": 1
+ },
+ "event_counts": {
+  "window_start": "2026-10-31",
+  "window_end_exclusive": "2027-01-29",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

@@ -1,0 +1,150 @@
+{
+ "domain": "sjsmmc.com",
+ "diocese": "diocese-of-la-crosse",
+ "matched_church_ids": [
+  "diocese-of-la-crosse:St. James Catholic Church",
+  "diocese-of-la-crosse:St. Mary of Mt. Carmel Catholic Church"
+ ],
+ "matched": {
+  "directory": [
+   "diocese-of-la-crosse:St. James Catholic Church",
+   "diocese-of-la-crosse:St. Mary of Mt. Carmel Catholic Church"
+  ],
+  "discovermass": []
+ },
+ "names": [
+  "St. James Catholic Church",
+  "St. Mary of Mt. Carmel Catholic Church"
+ ],
+ "cities": [
+  "Amherst"
+ ],
+ "home_url": "https://www.sjsmmc.com/",
+ "final_url": "https://www.sjsmmc.com/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://www.sjsmmc.com/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.sjsmmc.com/reconciliation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.sjsmmc.com/smdedication",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://www.sjsmmc.com/bulletins",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://www.sjsmmc.com/contact",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wix",
+  "evidence": [
+   "content=\"wix.com website builder"
+  ]
+ },
+ "template": "generic-html:wix",
+ "groups": [],
+ "calendar_feeds": [],
+ "events": [],
+ "social": {
+  "livestream": [
+   {
+    "url": "https://www.youtube.com/playlist?list=PLg5mBKKYwnusIKb48skw8PPDRRiLk4MMA",
+    "label": "Diocesan Live Stream Mass",
+    "platform": "www.youtube.com",
+    "kind": "link"
+   }
+  ]
+ },
+ "bulletin": {
+  "url": "https://www.sjsmmc.com/bulletins",
+  "date": null,
+  "kind": "page",
+  "text": "Bulletins",
+  "source_url": "https://www.sjsmmc.com/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "15:30",
+   "language": null,
+   "raw": "After Weekday Masses*: Saturdays: 3:30pm",
+   "source_url": "https://www.sjsmmc.com/reconciliation",
+   "fetched_at": "2026-11-01T05:11:59+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix"
+  }
+ ],
+ "source_url": "https://www.sjsmmc.com/",
+ "fetched_at": "2026-11-01T05:12:02+00:00",
+ "schedule_template": {
+  "template": "wix",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 8
+ },
+ "schedule_dropped": {
+  "relative_time": 2
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(715) 824-3455",
+  "address": "PO Box 280, Amherst, WI 54406",
+  "source_url": "https://www.sjsmmc.com/contact",
+  "sources": {
+   "phone": "https://www.sjsmmc.com/contact",
+   "address": "https://www.sjsmmc.com/contact"
+  },
+  "fetched_at": "2026-11-01T05:12:02+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

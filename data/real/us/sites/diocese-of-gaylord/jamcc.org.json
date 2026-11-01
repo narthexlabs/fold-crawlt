@@ -1,0 +1,178 @@
+{
+ "domain": "jamcc.org",
+ "diocese": "diocese-of-gaylord",
+ "matched_church_ids": [
+  "diocese-of-gaylord:St. Augustine",
+  "diocese-of-gaylord:St. Matthew"
+ ],
+ "matched": {
+  "directory": [
+   "diocese-of-gaylord:St. Matthew",
+   "diocese-of-gaylord:St. Augustine"
+  ],
+  "discovermass": []
+ },
+ "names": [
+  "St. Matthew",
+  "St. Augustine"
+ ],
+ "cities": [
+  "Boyne City",
+  "Boyne Falls"
+ ],
+ "home_url": "http://www.jamcc.org/",
+ "final_url": "https://jamcc.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://jamcc.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://jamcc.org/mass-times/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://jamcc.org/ministry-schedule/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://jamcc.org/formation-and-education/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://jamcc.org/book-club/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://jamcc.org/bulletins/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://jamcc.org/calendar/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://jamcc.org/contact-us/",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "parishsoft",
+  "evidence": [
+   "parishsoft.com"
+  ]
+ },
+ "template": "generic-html:parishsoft",
+ "groups": [],
+ "calendar_feeds": [],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/boynevalleycc"
+  ]
+ },
+ "bulletin": {
+  "url": "https://www.diocesan.com",
+  "date": null,
+  "kind": "discovermass",
+  "text": "Diocesan",
+  "source_url": "https://jamcc.org/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": null,
+   "raw": "[St. Matthew] Mass Times: 9:00 am",
+   "source_url": "https://jamcc.org/mass-times/",
+   "fetched_at": "2026-11-01T02:13:59+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "17:00",
+   "language": null,
+   "raw": "[St. Matthew] Mass Times: 5:00 pm",
+   "source_url": "https://jamcc.org/mass-times/",
+   "fetched_at": "2026-11-01T02:13:59+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "08:30",
+   "language": null,
+   "raw": "[St. Matthew] Confessions: 8:30 am",
+   "source_url": "https://jamcc.org/mass-times/",
+   "fetched_at": "2026-11-01T02:13:59+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  }
+ ],
+ "source_url": "http://www.jamcc.org/",
+ "fetched_at": "2026-11-01T02:14:07+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 14
+ },
+ "schedule_dropped": {
+  "no_day": 3
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-10-31",
+  "window_end_exclusive": "2027-01-29",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

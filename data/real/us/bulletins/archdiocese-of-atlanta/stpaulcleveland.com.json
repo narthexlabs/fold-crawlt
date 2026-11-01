@@ -1,0 +1,288 @@
+{
+ "diocese": "archdiocese-of-atlanta",
+ "domain": "stpaulcleveland.com",
+ "site_key": "stpaulcleveland.com",
+ "site_file": "data/real/us/sites/archdiocese-of-atlanta/stpaulcleveland.com.json",
+ "parishes": [
+  {
+   "church_id": "archdiocese-of-atlanta:Saint Paul the Apostle, Cleveland",
+   "name": "Saint Paul the Apostle, Cleveland",
+   "city": "Cleveland"
+  }
+ ],
+ "bulletin_link": {
+  "url": "https://stpaulcleveland.com/wp-content/uploads/2026/06/Bulletin-Insert-6-14-27.pdf",
+  "kind": "pdf",
+  "date": "2027-06-14",
+  "text": "Bulletin Insert 6-14-27",
+  "source_url": "https://stpaulcleveland.com/weekly-bulletin/"
+ },
+ "status": "ok",
+ "had_mass_times": true,
+ "site_groups_before": 1,
+ "gained_first_groups": false,
+ "issues": [
+  {
+   "url": "https://stpaulcleveland.com/wp-content/uploads/2026/10/Bulletin-Cover-10-25-26.pdf",
+   "date": "2026-10-25",
+   "date_source": "link",
+   "pages": 3,
+   "ocr": false,
+   "ocr_pages": [],
+   "found_via": "link on https://stpaulcleveland.com/weekly-bulletin/ ('Bulletin Cover 10-25-26')",
+   "fetched_at": "2026-11-01T05:28:00+00:00"
+  },
+  {
+   "url": "https://stpaulcleveland.com/wp-content/uploads/2026/10/Bulletin-Insert-10-25-26-1.pdf",
+   "date": "2026-10-25",
+   "date_source": "link",
+   "pages": 4,
+   "ocr": true,
+   "ocr_pages": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "found_via": "link on https://stpaulcleveland.com/weekly-bulletin/ ('Bulletin Insert 10-25-26')",
+   "fetched_at": "2026-11-01T05:28:01+00:00"
+  }
+ ],
+ "notes": [],
+ "tried": [],
+ "checked_at": "2026-11-01T05:27:57+00:00",
+ "built_at": "2026-11-01T05:28:25+00:00",
+ "built_by": "ingest/us/bulletins/run.py (California's fetch.py / extract_groups.py)",
+ "privacy": "no lay names, phones or e-mails; contact is 'ask the parish office'; names and places pass ingest/public/privacy.py and ingest/connectors/calendars/privacy.py",
+ "privacy_dropped": 0,
+ "groups": [
+  {
+   "id": "stpaulcleveland.com:bulletin:ocia:",
+   "name": "OCIA (becoming Catholic)",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "ocia",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "informal": true,
+   "informal_kind": "ocia_inquiry",
+   "meets": null,
+   "next_meeting": null,
+   "location": null,
+   "contact": "ask the parish office",
+   "source_kind": "bulletin",
+   "source_label": "From the parish bulletin, October 25, 2026",
+   "source_url": "https://stpaulcleveland.com/wp-content/uploads/2026/10/Bulletin-Cover-10-25-26.pdf",
+   "last_seen": "2026-10-25",
+   "seen_in_issues": 1,
+   "sources": [
+    {
+     "url": "https://stpaulcleveland.com/wp-content/uploads/2026/10/Bulletin-Cover-10-25-26.pdf",
+     "issue_date": "2026-10-25",
+     "page": 3,
+     "ocr": false
+    }
+   ],
+   "confidence": "medium",
+   "flags": [],
+   "also_on_parish_website": false
+  },
+  {
+   "id": "stpaulcleveland.com:bulletin:kofc:",
+   "name": "Knights of Columbus",
+   "category": "fraternal_orders",
+   "category_label": "Fraternal & orders",
+   "subcategory": "knights_of_columbus",
+   "audience": "men",
+   "language": "en+es",
+   "language_assumed": false,
+   "informal": true,
+   "informal_kind": "kofc",
+   "meets": {
+    "days": [
+     "Monday"
+    ],
+    "time": "18:00",
+    "frequency": "weekly",
+    "text": "Mondays, 6:00 pm"
+   },
+   "next_meeting": null,
+   "location": null,
+   "contact": "ask the parish office",
+   "source_kind": "bulletin",
+   "source_label": "From the parish bulletin, October 25, 2026",
+   "source_url": "https://stpaulcleveland.com/wp-content/uploads/2026/10/Bulletin-Cover-10-25-26.pdf",
+   "last_seen": "2026-10-25",
+   "seen_in_issues": 1,
+   "sources": [
+    {
+     "url": "https://stpaulcleveland.com/wp-content/uploads/2026/10/Bulletin-Cover-10-25-26.pdf",
+     "issue_date": "2026-10-25",
+     "page": 3,
+     "ocr": false
+    },
+    {
+     "url": "https://stpaulcleveland.com/wp-content/uploads/2026/10/Bulletin-Insert-10-25-26-1.pdf",
+     "issue_date": "2026-10-25",
+     "page": 1,
+     "ocr": true
+    },
+    {
+     "url": "https://stpaulcleveland.com/wp-content/uploads/2026/10/Bulletin-Insert-10-25-26-1.pdf",
+     "issue_date": "2026-10-25",
+     "page": 2,
+     "ocr": true
+    }
+   ],
+   "confidence": "medium",
+   "flags": [
+    "ocr"
+   ],
+   "also_on_parish_website": false
+  },
+  {
+   "id": "stpaulcleveland.com:bulletin:bereavement:",
+   "name": "Bereavement",
+   "category": "grief_support",
+   "category_label": "Grief & support",
+   "subcategory": "bereavement",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "informal": true,
+   "informal_kind": "grief",
+   "meets": null,
+   "next_meeting": null,
+   "location": null,
+   "contact": "ask the parish office",
+   "source_kind": "bulletin",
+   "source_label": "From the parish bulletin, October 25, 2026",
+   "source_url": "https://stpaulcleveland.com/wp-content/uploads/2026/10/Bulletin-Cover-10-25-26.pdf",
+   "last_seen": "2026-10-25",
+   "seen_in_issues": 1,
+   "sources": [
+    {
+     "url": "https://stpaulcleveland.com/wp-content/uploads/2026/10/Bulletin-Cover-10-25-26.pdf",
+     "issue_date": "2026-10-25",
+     "page": 2,
+     "ocr": false
+    },
+    {
+     "url": "https://stpaulcleveland.com/wp-content/uploads/2026/10/Bulletin-Cover-10-25-26.pdf",
+     "issue_date": "2026-10-25",
+     "page": 3,
+     "ocr": false
+    }
+   ],
+   "confidence": "medium",
+   "flags": [],
+   "also_on_parish_website": false
+  },
+  {
+   "id": "stpaulcleveland.com:bulletin:couples:matrimonios:es",
+   "name": "Grupo de Matrimonios",
+   "category": "marriage_family",
+   "category_label": "Marriage & family",
+   "subcategory": "couples_group",
+   "audience": "all",
+   "language": "es",
+   "language_assumed": false,
+   "informal": true,
+   "informal_kind": "couples",
+   "meets": null,
+   "next_meeting": null,
+   "location": null,
+   "contact": "ask the parish office",
+   "source_kind": "bulletin",
+   "source_label": "From the parish bulletin, October 25, 2026",
+   "source_url": "https://stpaulcleveland.com/wp-content/uploads/2026/10/Bulletin-Cover-10-25-26.pdf",
+   "last_seen": "2026-10-25",
+   "seen_in_issues": 1,
+   "sources": [
+    {
+     "url": "https://stpaulcleveland.com/wp-content/uploads/2026/10/Bulletin-Cover-10-25-26.pdf",
+     "issue_date": "2026-10-25",
+     "page": 3,
+     "ocr": false
+    }
+   ],
+   "confidence": "medium",
+   "flags": [],
+   "also_on_parish_website": false
+  },
+  {
+   "id": "stpaulcleveland.com:bulletin:womens_group:es",
+   "name": "Women's Group",
+   "category": "women",
+   "category_label": "Women",
+   "subcategory": "womens_group",
+   "audience": "women",
+   "language": "es",
+   "language_assumed": false,
+   "informal": true,
+   "informal_kind": "womens",
+   "meets": {
+    "days": [
+     "Tuesday"
+    ],
+    "time": "13:00",
+    "frequency": "weekly",
+    "text": "Tuesdays, 1:00 pm"
+   },
+   "next_meeting": null,
+   "location": null,
+   "contact": "ask the parish office",
+   "source_kind": "bulletin",
+   "source_label": "From the parish bulletin, October 25, 2026",
+   "source_url": "https://stpaulcleveland.com/wp-content/uploads/2026/10/Bulletin-Insert-10-25-26-1.pdf",
+   "last_seen": "2026-10-25",
+   "seen_in_issues": 1,
+   "sources": [
+    {
+     "url": "https://stpaulcleveland.com/wp-content/uploads/2026/10/Bulletin-Insert-10-25-26-1.pdf",
+     "issue_date": "2026-10-25",
+     "page": 2,
+     "ocr": true
+    }
+   ],
+   "confidence": "medium",
+   "flags": [
+    "ocr"
+   ],
+   "also_on_parish_website": false
+  },
+  {
+   "id": "stpaulcleveland.com:bulletin:youth_ministry:",
+   "name": "Youth Ministry",
+   "category": "youth",
+   "category_label": "Youth",
+   "subcategory": "youth_ministry",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "informal": true,
+   "informal_kind": "youth",
+   "meets": null,
+   "next_meeting": null,
+   "location": null,
+   "contact": "ask the parish office",
+   "source_kind": "bulletin",
+   "source_label": "From the parish bulletin, October 25, 2026",
+   "source_url": "https://stpaulcleveland.com/wp-content/uploads/2026/10/Bulletin-Cover-10-25-26.pdf",
+   "last_seen": "2026-10-25",
+   "seen_in_issues": 1,
+   "sources": [
+    {
+     "url": "https://stpaulcleveland.com/wp-content/uploads/2026/10/Bulletin-Cover-10-25-26.pdf",
+     "issue_date": "2026-10-25",
+     "page": 3,
+     "ocr": false
+    }
+   ],
+   "confidence": "medium",
+   "flags": [],
+   "also_on_parish_website": false
+  }
+ ]
+}

@@ -1,0 +1,128 @@
+{
+ "domain": "ourladyofgrace.co",
+ "diocese": "archdiocese-of-los-angeles",
+ "matched_church_ids": [
+  "archdiocese-of-los-angeles:Our Lady of Grace School/Parish"
+ ],
+ "matched": {
+  "directory": [
+   "archdiocese-of-los-angeles:Our Lady of Grace School/Parish"
+  ],
+  "discovermass": []
+ },
+ "names": [
+  "Our Lady of Grace School/Parish"
+ ],
+ "cities": [],
+ "home_url": "https://www.ourladyofgrace.co/",
+ "final_url": "https://www.ourladyofgrace.co/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://www.ourladyofgrace.co/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.ourladyofgrace.co/apps/pages/index.jsp?uREC_ID=2482064&type=d&pREC_ID=2241337",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://www.ourladyofgrace.co/apps/pages/index.jsp?uREC_ID=1251921&type=d&pREC_ID=1477307",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.ourladyofgrace.co/apps/events/",
+   "status": 403,
+   "class": "challenge"
+  }
+ ],
+ "cms_guess": {
+  "cms": "unknown",
+  "evidence": []
+ },
+ "template": "generic-html:unknown",
+ "groups": [],
+ "calendar_feeds": [
+  {
+   "feed_id": "ourladyofgrace.co:ics:344e7fc9",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": null,
+   "page_url": "https://www.ourladyofgrace.co/",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (embedded on page)",
+   "url_withheld": "calendar id is an e-mail address; not stored",
+   "feed_key": "344e7fc9aee7",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T03:32:08+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/OurLadyofGraceSchool"
+  ],
+  "x": [
+   "https://x.com/OLG_School"
+  ]
+ },
+ "bulletin": {
+  "url": "https://4.files.edl.io/7190/12/18/25/205707-03fa3dd8-3ed3-458f-991d-380995bd7e12.pdf",
+  "date": "2057-07-03",
+  "kind": "pdf",
+  "text": "#16 - Family Bulletin * December 15, 2025",
+  "source_url": "https://www.ourladyofgrace.co/apps/pages/index.jsp?uREC_ID=1251921&type=d&pREC_ID=1477307"
+ },
+ "schedule_rows": [],
+ "source_url": "https://www.ourladyofgrace.co/",
+ "fetched_at": "2026-11-01T02:13:32+00:00",
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": true,
+  "trusted_candidate": false,
+  "generic_rows": 10
+ },
+ "schedule_dropped": {
+  "not_a_service": 1
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-10-31",
+  "window_end_exclusive": "2027-01-29",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

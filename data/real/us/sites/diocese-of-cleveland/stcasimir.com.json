@@ -1,0 +1,161 @@
+{
+ "domain": "stcasimir.com",
+ "diocese": "diocese-of-cleveland",
+ "matched_church_ids": [
+  "diocese-of-cleveland:St. Casimir (Polish)",
+  "diocese-of-cleveland:St. Casimir (Polish) 8223 Sowinski Ave Cleveland, OH 44103",
+  "wd-Q11809365"
+ ],
+ "matched": {
+  "directory": [
+   "diocese-of-cleveland:St. Casimir (Polish) 8223 Sowinski Ave Cleveland, OH 44103",
+   "diocese-of-cleveland:St. Casimir (Polish)"
+  ],
+  "discovermass": [
+   "wd-Q11809365"
+  ]
+ },
+ "names": [
+  "St. Casimir (Polish) 8223 Sowinski Ave Cleveland, OH 44103",
+  "St. Casimir (Polish)"
+ ],
+ "cities": [
+  "Cleveland"
+ ],
+ "home_url": "https://www.stcasimir.com/",
+ "final_url": "https://www.stcasimir.com/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://www.stcasimir.com/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.stcasimir.com/mass-schedule",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.stcasimir.com/calendar",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://www.stcasimir.com/bulletin",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.stcasimir.com/mass-schedule",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "live",
+   "url": "https://www.stcasimir.com/virtual-masses",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://www.stcasimir.com/contact",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "squarespace",
+  "evidence": [
+   "squarespace-cdn"
+  ]
+ },
+ "template": "generic-html:squarespace",
+ "groups": [],
+ "calendar_feeds": [],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/CasimirCleveland",
+   "https://www.facebook.com/2008"
+  ],
+  "youtube": [
+   "https://www.youtube.com/channel/UC1A1rBJurs1Sm2s2Qix53kg"
+  ],
+  "livestream": [
+   {
+    "url": "https://www.stcasimir.com/virtual-masses",
+    "label": "Virtual Masses",
+    "platform": "www.stcasimir.com",
+    "kind": "link"
+   }
+  ]
+ },
+ "bulletin": {
+  "url": "https://www.stcasimir.com/s/Bulletin-English-2026-10-18.pdf",
+  "date": "2026-10-18",
+  "kind": "pdf",
+  "text": "English",
+  "source_url": "https://www.stcasimir.com/bulletin"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:30",
+   "language": null,
+   "raw": "Typical Mass is celebrated every Sunday at 11:30 AM.",
+   "source_url": "https://www.stcasimir.com/mass-schedule",
+   "fetched_at": "2026-11-01T02:18:58+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "squarespace"
+  }
+ ],
+ "source_url": "https://www.stcasimir.com/",
+ "fetched_at": "2026-11-01T02:19:03+00:00",
+ "schedule_template": {
+  "template": "squarespace",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": true
+   },
+   "score": "high"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 2
+ },
+ "schedule_dropped": {
+  "other_location": 1,
+  "no_day": 1
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-10-31",
+  "window_end_exclusive": "2027-01-29",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}
