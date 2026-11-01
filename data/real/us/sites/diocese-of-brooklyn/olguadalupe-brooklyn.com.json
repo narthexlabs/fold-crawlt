@@ -2,13 +2,16 @@
  "domain": "olguadalupe-brooklyn.com",
  "diocese": "diocese-of-brooklyn",
  "matched_church_ids": [
-  "diocese-of-brooklyn:Our Lady of Guadalupe"
+  "diocese-of-brooklyn:Our Lady of Guadalupe",
+  "our-lady-of-guadalupe-brooklyn-ny"
  ],
  "matched": {
   "directory": [
    "diocese-of-brooklyn:Our Lady of Guadalupe"
   ],
-  "discovermass": []
+  "discovermass": [
+   "our-lady-of-guadalupe-brooklyn-ny"
+  ]
  },
  "names": [
   "Our Lady of Guadalupe"
@@ -16,10 +19,10 @@
  "cities": [
   "Brooklyn"
  ],
- "home_url": "https://www.olguadalupe-brooklyn.com/",
+ "home_url": "https://olguadalupe-brooklyn.com/",
  "final_url": "https://www.olguadalupe-brooklyn.com/",
  "crawl_status": "ok",
- "crawl_env": "sandbox",
+ "crawl_env": "runner-rendered",
  "robots_note": "ok",
  "pages": [
   {
@@ -84,7 +87,62 @@
   ]
  },
  "template": "generic-html:wix",
- "groups": [],
+ "groups": [
+  {
+   "id": "olguadalupe-brooklyn.com:prayer_group_es",
+   "name": "Grupo De Oracion",
+   "category": "prayer_devotion",
+   "category_label": "Prayer & devotion",
+   "subcategory": "prayer_group",
+   "audience": "all",
+   "language": "es",
+   "language_assumed": false,
+   "meets": null,
+   "description": "The Prayer Group is a parish ministry dedicated to communal prayer, praise, and spiritual growth. Its members gather to listen to the Word of God, share their faith, intercede for the needs of the community, and strengthen their relationship with…",
+   "contact_url": "https://www.olguadalupe-brooklyn.com/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.olguadalupe-brooklyn.com/ministries",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:47:08+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "olguadalupe-brooklyn.com:lectors",
+   "name": "Lector and Eucharistic Ministers",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "lectors",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "Lectors and Extraordinary Ministers of Holy Communion play an important role in the life of the Church. Lectors proclaim the Word of God at Mass, helping the faithful hear and reflect on Sacred Scripture. Extraordinary Ministers of Holy Communion assist…",
+   "contact_url": "https://www.olguadalupe-brooklyn.com/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.olguadalupe-brooklyn.com/ministries",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:47:08+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "olguadalupe-brooklyn.com:other_italian_apostolate",
+   "name": "Italian Apostolate",
+   "category": "other",
+   "category_label": "Other",
+   "subcategory": "unclassified",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "The Italian Apostolate is a parish ministry that serves the Italian-speaking community by preserving faith, language, and cultural traditions. Members support prayer gatherings, devotional celebrations, feast days, and social events that honor Italian Catholic heritage and strengthen parish unity. The…",
+   "contact_url": "https://www.olguadalupe-brooklyn.com/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.olguadalupe-brooklyn.com/ministries",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:47:08+00:00",
+   "confidence": "low"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
  "social": {
@@ -124,7 +182,7 @@
    "language": "English",
    "raw": "Confessions are held in the church every:: Saturdays 4:30-5:15 p.m. in English",
    "source_url": "https://www.olguadalupe-brooklyn.com/reconciliation",
-   "fetched_at": "2026-11-01T01:58:55+00:00",
+   "fetched_at": "2026-11-01T17:46:46+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -137,7 +195,7 @@
    "language": "Spanish/Italian",
    "raw": "Confessions are held in the church every:: Saturdays from 6:30-6:55 p.m. in Spanish and Italian",
    "source_url": "https://www.olguadalupe-brooklyn.com/reconciliation",
-   "fetched_at": "2026-11-01T01:58:55+00:00",
+   "fetched_at": "2026-11-01T17:46:46+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -150,7 +208,7 @@
    "language": null,
    "raw": "Mass Schedule: Monday - Friday: 8:30 am",
    "source_url": "https://www.olguadalupe-brooklyn.com/",
-   "fetched_at": "2026-11-01T01:58:54+00:00",
+   "fetched_at": "2026-11-01T17:46:39+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -164,12 +222,14 @@
    "language": null,
    "raw": "Mass Schedule: Monday - Friday: 8:30 am",
    "source_url": "https://www.olguadalupe-brooklyn.com/",
-   "fetched_at": "2026-11-01T01:58:54+00:00",
+   "fetched_at": "2026-11-01T17:46:39+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "wix",
-   "day_expanded_from": "Monday - Friday"
+   "day_expanded_from": "Monday - Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
   },
   {
    "kind": "mass",
@@ -178,12 +238,14 @@
    "language": null,
    "raw": "Mass Schedule: Monday - Friday: 8:30 am",
    "source_url": "https://www.olguadalupe-brooklyn.com/",
-   "fetched_at": "2026-11-01T01:58:54+00:00",
+   "fetched_at": "2026-11-01T17:46:39+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "wix",
-   "day_expanded_from": "Monday - Friday"
+   "day_expanded_from": "Monday - Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
   },
   {
    "kind": "mass",
@@ -192,12 +254,14 @@
    "language": null,
    "raw": "Mass Schedule: Monday - Friday: 8:30 am",
    "source_url": "https://www.olguadalupe-brooklyn.com/",
-   "fetched_at": "2026-11-01T01:58:54+00:00",
+   "fetched_at": "2026-11-01T17:46:39+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "wix",
-   "day_expanded_from": "Monday - Friday"
+   "day_expanded_from": "Monday - Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
   },
   {
    "kind": "mass",
@@ -206,12 +270,14 @@
    "language": null,
    "raw": "Mass Schedule: Monday - Friday: 8:30 am",
    "source_url": "https://www.olguadalupe-brooklyn.com/",
-   "fetched_at": "2026-11-01T01:58:54+00:00",
+   "fetched_at": "2026-11-01T17:46:39+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "wix",
-   "day_expanded_from": "Monday - Friday"
+   "day_expanded_from": "Monday - Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
   },
   {
    "kind": "mass",
@@ -220,15 +286,70 @@
    "language": null,
    "raw": "Mass Schedule: Saturday: 8:30 am",
    "source_url": "https://www.olguadalupe-brooklyn.com/",
-   "fetched_at": "2026-11-01T01:58:54+00:00",
+   "fetched_at": "2026-11-01T17:46:39+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "wix"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:30",
+   "language": null,
+   "raw": "5:30 pm",
+   "source_url": "https://www.olguadalupe-brooklyn.com/",
+   "fetched_at": "2026-11-01T17:46:39+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "19:00",
+   "language": "Spanish",
+   "raw": "7:00 pm (Spanish)",
+   "source_url": "https://www.olguadalupe-brooklyn.com/",
+   "fetched_at": "2026-11-01T17:46:39+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Sunday: 8:00 am",
+   "source_url": "https://www.olguadalupe-brooklyn.com/",
+   "fetched_at": "2026-11-01T17:46:39+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": "Italian",
+   "raw": "9:00 am (Italian)",
+   "source_url": "https://www.olguadalupe-brooklyn.com/",
+   "fetched_at": "2026-11-01T17:46:39+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:15",
+   "language": null,
+   "raw": "11:15 am",
+   "source_url": "https://www.olguadalupe-brooklyn.com/",
+   "fetched_at": "2026-11-01T17:46:39+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
   }
  ],
- "source_url": "https://www.olguadalupe-brooklyn.com/",
- "fetched_at": "2026-11-01T01:59:02+00:00",
+ "source_url": "https://olguadalupe-brooklyn.com/",
+ "fetched_at": "2026-11-01T17:47:34+00:00",
  "schedule_template": {
   "template": "wix",
   "version": "ca-sites/2",
@@ -247,13 +368,15 @@
   "trusted_candidate": false,
   "generic_rows": 10
  },
+ "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 1
+  "other_location": 1,
+  "box_rows_added": 5
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-10-31",
-  "window_end_exclusive": "2027-01-29",
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
@@ -261,7 +384,21 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "office_contact": {
+  "email": "olgchurch@aol.com",
+  "phone": "(718) 236-8300",
+  "address": "7201 15th Ave, Brooklyn NY, 11228",
+  "source_url": "https://www.olguadalupe-brooklyn.com/contact-us",
+  "sources": {
+   "email": "https://www.olguadalupe-brooklyn.com/contact-us",
+   "phone": "https://www.olguadalupe-brooklyn.com/contact-us",
+   "address": "https://www.olguadalupe-brooklyn.com/contact-us"
+  },
+  "fetched_at": "2026-11-01T17:47:34+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
- }
+ },
+ "fetch_mode": "rendered"
 }
