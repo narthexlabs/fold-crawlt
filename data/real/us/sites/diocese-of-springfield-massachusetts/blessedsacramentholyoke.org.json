@@ -1,0 +1,212 @@
+{
+ "domain": "blessedsacramentholyoke.org",
+ "diocese": "diocese-of-springfield-massachusetts",
+ "matched_church_ids": [
+  "gc-23004"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "gc-23004"
+  ]
+ },
+ "names": [
+  "Blessed Sacrament"
+ ],
+ "cities": [
+  "Holyoke"
+ ],
+ "home_url": "http://www.blessedsacramentholyoke.org/",
+ "final_url": "https://www.blessedsacramentholyoke.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://www.blessedsacramentholyoke.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.blessedsacramentholyoke.org/lay-ministry-schedules/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.blessedsacramentholyoke.org/church/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.blessedsacramentholyoke.org/300-club/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.blessedsacramentholyoke.org/first-communion-formation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.blessedsacramentholyoke.org/calendar-2/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.blessedsacramentholyoke.org/calendar/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://www.blessedsacramentholyoke.org/staff/",
+   "status": 500,
+   "class": "http_5xx"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-json"
+  ]
+ },
+ "template": "wordpress-rest+html",
+ "groups": [],
+ "calendar_feeds": [
+  {
+   "feed_id": "blessedsacramentholyoke.org:tribe_rest:6f72bc35",
+   "type": "tribe_rest",
+   "platform": "The Events Calendar (WordPress)",
+   "url": "https://www.blessedsacramentholyoke.org/wp-json/tribe/events/v1/events",
+   "page_url": "https://www.blessedsacramentholyoke.org/",
+   "label": null,
+   "status": "no_public_feed",
+   "note": "The Events Calendar markers on the site, but its REST route is not available"
+  }
+ ],
+ "events": [],
+ "social": {},
+ "bulletin": {
+  "url": "https://parishesonline.com/organization/blessed-sacrament-parish-01040",
+  "date": null,
+  "kind": "lpi",
+  "text": "Bulletin – Online",
+  "source_url": "https://www.blessedsacramentholyoke.org/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "16:00",
+   "language": null,
+   "raw": "4:00pm Saturday Mass",
+   "source_url": "https://www.blessedsacramentholyoke.org/lay-ministry-schedules/",
+   "fetched_at": "2026-11-01T17:21:48+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:30",
+   "language": null,
+   "raw": "8:30am Sunday Mass",
+   "source_url": "https://www.blessedsacramentholyoke.org/lay-ministry-schedules/",
+   "fetched_at": "2026-11-01T17:21:48+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:30",
+   "language": null,
+   "raw": "10:30am Sunday Mass",
+   "source_url": "https://www.blessedsacramentholyoke.org/lay-ministry-schedules/",
+   "fetched_at": "2026-11-01T17:21:48+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "08:00",
+   "language": null,
+   "raw": "Daily Mass: Legal Holidays ................... 8:00am",
+   "source_url": "https://www.blessedsacramentholyoke.org/",
+   "fetched_at": "2026-11-01T17:21:33+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "kind_parsed": "mass"
+  }
+ ],
+ "source_url": "http://www.blessedsacramentholyoke.org/",
+ "fetched_at": "2026-11-01T17:22:10+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 9
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "other_location": 6
+ },
+ "groups_dropped": {
+  "unmatched": 1,
+  "label_not_group": 1
+ },
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": "parishoffice@blessedsacramentholyoke.org",
+  "phone": "(413) 532-0713",
+  "address": "1945 Northampton St, Holyoke, MA 01040",
+  "source_url": "https://www.blessedsacramentholyoke.org/",
+  "sources": {
+   "email": "https://www.blessedsacramentholyoke.org/",
+   "phone": "https://www.blessedsacramentholyoke.org/",
+   "address": "https://www.blessedsacramentholyoke.org/"
+  },
+  "fetched_at": "2026-11-01T17:21:33+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}
