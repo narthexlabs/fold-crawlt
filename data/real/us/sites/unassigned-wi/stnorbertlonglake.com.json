@@ -47,7 +47,19 @@
  "events": [],
  "social": {},
  "bulletin": null,
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:30",
+   "language": null,
+   "raw": "Mass Schedule Sunday's at 10:30 am",
+   "source_url": "https://www.stnorbertlonglake.com/",
+   "fetched_at": "2026-11-01T22:15:27+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  }
+ ],
  "source_url": "https://www.stnorbertlonglake.com/",
  "fetched_at": "2026-11-01T22:15:29+00:00",
  "schedule_template": {
@@ -68,7 +80,10 @@
   "trusted_candidate": false,
   "generic_rows": 1
  },
- "has_sunday": false,
+ "has_sunday": true,
+ "schedule_dropped": {
+  "weekend_rescue_added": 1
+ },
  "groups_dropped": {},
  "event_counts": {
   "window_start": "2026-11-01",

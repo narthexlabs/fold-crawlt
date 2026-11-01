@@ -400,6 +400,50 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wix"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Sunday 8:00 AM Mass",
+   "source_url": "https://www.stthomasnewton.org/",
+   "fetched_at": "2026-11-01T20:25:17+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": null,
+   "raw": "Sunday 10:00 AM Mass",
+   "source_url": "https://www.stthomasnewton.org/",
+   "fetched_at": "2026-11-01T20:25:17+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "13:00",
+   "language": null,
+   "raw": "Sunday 1:00 PM Mass",
+   "source_url": "https://www.stthomasnewton.org/",
+   "fetched_at": "2026-11-01T20:25:17+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "16:30",
+   "language": null,
+   "raw": "4:30 PM Mass Sunday",
+   "source_url": "https://www.stthomasnewton.org/",
+   "fetched_at": "2026-11-01T20:25:17+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
   }
  ],
  "source_url": "https://www.stthomasnewton.org/",
@@ -422,8 +466,10 @@
   "trusted_candidate": false,
   "generic_rows": 8
  },
- "has_sunday": false,
- "schedule_partial": true,
+ "has_sunday": true,
+ "schedule_dropped": {
+  "weekend_rescue_added": 4
+ },
  "groups_dropped": {
   "noise": 1
  },

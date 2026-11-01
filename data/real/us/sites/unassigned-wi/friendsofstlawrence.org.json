@@ -51,7 +51,19 @@
  "events": [],
  "social": {},
  "bulletin": null,
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Masses are held at St. Lawrence on Sundays at 8:00 AM and Wednesday at 8:00 AM.",
+   "source_url": "https://friendsofstlawrence.org/",
+   "fetched_at": "2026-11-01T22:15:24+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  }
+ ],
  "source_url": "https://friendsofstlawrence.org/",
  "fetched_at": "2026-11-01T22:15:27+00:00",
  "schedule_template": {
@@ -72,15 +84,10 @@
   "trusted_candidate": false,
   "generic_rows": 0
  },
- "has_sunday": false,
- "schedule_images": [
-  {
-   "url": "https://friendsofstlawrence.org/img/bg/mass-gathering-horizontal.jpg",
-   "alt": "",
-   "page": "https://friendsofstlawrence.org/"
-  }
- ],
- "schedule_note": "schedule appears to be an image; times not read (needs_review)",
+ "has_sunday": true,
+ "schedule_dropped": {
+  "weekend_rescue_added": 1
+ },
  "groups_dropped": {},
  "event_counts": {
   "window_start": "2026-11-01",
