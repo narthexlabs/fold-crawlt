@@ -1,0 +1,165 @@
+{
+ "domain": "madeliamn.com",
+ "diocese": "unassigned-mn",
+ "matched_church_ids": [
+  "brave:MN|mary|madelia"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "brave:MN|mary|madelia"
+  ]
+ },
+ "names": [
+  "St. Mary"
+ ],
+ "cities": [
+  "Madelia"
+ ],
+ "home_url": "https://www.madeliamn.com/",
+ "final_url": "https://www.madeliamn.com/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://www.madeliamn.com/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.madeliamn.com/city-government/administration/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.madeliamn.com/directory/categories/faith-non-profits-schools",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://www.madeliamn.com/november-2026-newsletter/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.madeliamn.com/news-events/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.madeliamn.com/events/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://www.madeliamn.com/contact-us/",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-content"
+  ]
+ },
+ "template": "wordpress-rest+html",
+ "groups": [],
+ "calendar_feeds": [
+  {
+   "feed_id": "madeliamn.com:ics:b71eebca",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": "https://calendar.google.com/calendar/ical/mht3eli4a0il8mj5od7j6oougo%40group.calendar.google.com/public/basic.ics",
+   "page_url": "https://www.madeliamn.com/",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (embedded on page)",
+   "display_tz": "America/Chicago",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T20:29:07+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  },
+  {
+   "feed_id": "madeliamn.com:tribe_rest:fd824127",
+   "type": "tribe_rest",
+   "platform": "The Events Calendar (WordPress)",
+   "url": "https://www.madeliamn.com/wp-json/tribe/events/v1/events",
+   "page_url": "https://www.madeliamn.com/",
+   "label": null,
+   "status": "no_public_feed",
+   "note": "The Events Calendar markers on the site, but its REST route is not available"
+  }
+ ],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/madeliamn"
+  ],
+  "youtube": [
+   "https://www.youtube.com/@cityofmadelia2581"
+  ]
+ },
+ "bulletin": null,
+ "schedule_rows": [],
+ "source_url": "https://www.madeliamn.com/",
+ "fetched_at": "2026-11-01T20:25:12+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "has_sunday": false,
+ "groups_dropped": {
+  "unmatched": 1
+ },
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(507) 642-3245",
+  "address": "PO Box 158, Madelia, MN 56062",
+  "source_url": "https://www.madeliamn.com/contact-us/",
+  "sources": {
+   "phone": "https://www.madeliamn.com/contact-us/",
+   "address": "https://www.madeliamn.com/contact-us/"
+  },
+  "fetched_at": "2026-11-01T20:25:11+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}
