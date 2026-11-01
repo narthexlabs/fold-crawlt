@@ -56,7 +56,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T17:43:27+00:00",
+    "fetched_at": "2026-11-01T23:41:47+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -75,7 +75,52 @@
   "text": "Bulletin",
   "source_url": "https://www.sacredheartepri.com/"
  },
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "15:30",
+   "language": null,
+   "raw": "Saturday Vigil 3:30 PM (City View Manor), 5:00 PM",
+   "source_url": "https://www.sacredheartepri.com/",
+   "fetched_at": "2026-11-01T17:27:30+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Saturday Vigil 3:30 PM (City View Manor), 5:00 PM",
+   "source_url": "https://www.sacredheartepri.com/",
+   "fetched_at": "2026-11-01T17:27:30+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Sunday Masses 9:00 AM, 11:30 AM",
+   "source_url": "https://www.sacredheartepri.com/",
+   "fetched_at": "2026-11-01T17:27:30+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:30",
+   "language": null,
+   "raw": "Sunday Masses 9:00 AM, 11:30 AM",
+   "source_url": "https://www.sacredheartepri.com/",
+   "fetched_at": "2026-11-01T17:27:30+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  }
+ ],
  "source_url": "https://www.sacredheartepri.com/",
  "fetched_at": "2026-11-01T17:27:31+00:00",
  "schedule_template": {
@@ -96,7 +141,10 @@
   "trusted_candidate": false,
   "generic_rows": 18
  },
- "has_sunday": false,
+ "has_sunday": true,
+ "schedule_dropped": {
+  "weekend_rescue_added": 4
+ },
  "groups_dropped": {},
  "event_counts": {
   "window_start": "2026-11-01",
