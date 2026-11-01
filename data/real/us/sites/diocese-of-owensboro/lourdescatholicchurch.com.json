@@ -19,7 +19,7 @@
  "home_url": "http://lourdescatholicchurch.com/",
  "final_url": "https://www.lourdescatholicchurch.com/",
  "crawl_status": "ok",
- "crawl_env": "sandbox",
+ "crawl_env": "runner-rendered",
  "robots_note": "ok",
  "pages": [
   {
@@ -78,7 +78,44 @@
   ]
  },
  "template": "generic-html:wix",
- "groups": [],
+ "groups": [
+  {
+   "id": "lourdescatholicchurch.com:children_ff",
+   "name": "Religious Education",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "children_faith_formation",
+   "audience": "families",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.lourdescatholicchurch.com/contacts",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.lourdescatholicchurch.com/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:46:55+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "lourdescatholicchurch.com:youth_ministry",
+   "name": "Youth Ministry",
+   "category": "youth",
+   "category_label": "Youth",
+   "subcategory": "youth_ministry",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.lourdescatholicchurch.com/contacts",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.lourdescatholicchurch.com/youth-ministry",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:47:07+00:00",
+   "confidence": "medium"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
  "social": {
@@ -105,7 +142,7 @@
    "language": null,
    "raw": "Reconciliation: Wednesday 4:30pm – 5:15pm",
    "source_url": "https://www.lourdescatholicchurch.com/sacraments",
-   "fetched_at": "2026-11-01T02:12:04+00:00",
+   "fetched_at": "2026-11-01T17:47:02+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -118,7 +155,7 @@
    "language": null,
    "raw": "Reconciliation: and Saturday 3:00pm – 4:00pm",
    "source_url": "https://www.lourdescatholicchurch.com/sacraments",
-   "fetched_at": "2026-11-01T02:12:04+00:00",
+   "fetched_at": "2026-11-01T17:47:02+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -131,15 +168,114 @@
    "language": null,
    "raw": "Quarterly (March, June, September, & December) on the first Friday of the month at 12:05pm Mass.",
    "source_url": "https://www.lourdescatholicchurch.com/sacraments",
-   "fetched_at": "2026-11-01T02:12:04+00:00",
+   "fetched_at": "2026-11-01T17:47:02+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "high",
    "template": "wix"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "12:05",
+   "language": null,
+   "raw": "Monday: 12:05pm",
+   "source_url": "https://www.lourdescatholicchurch.com/",
+   "fetched_at": "2026-11-01T17:46:55+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "07:00",
+   "language": null,
+   "raw": "Tuesday: 7:00am",
+   "source_url": "https://www.lourdescatholicchurch.com/",
+   "fetched_at": "2026-11-01T17:46:55+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "12:05",
+   "language": null,
+   "raw": "Wednesday: 12:05pm & 5:30pm",
+   "source_url": "https://www.lourdescatholicchurch.com/",
+   "fetched_at": "2026-11-01T17:46:55+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "17:30",
+   "language": null,
+   "raw": "Wednesday: 12:05pm & 5:30pm",
+   "source_url": "https://www.lourdescatholicchurch.com/",
+   "fetched_at": "2026-11-01T17:46:55+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "07:00",
+   "language": null,
+   "raw": "Thursday: 7:00am",
+   "source_url": "https://www.lourdescatholicchurch.com/",
+   "fetched_at": "2026-11-01T17:46:55+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "12:05",
+   "language": null,
+   "raw": "Friday: 12:05pm",
+   "source_url": "https://www.lourdescatholicchurch.com/",
+   "fetched_at": "2026-11-01T17:46:55+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "16:30",
+   "language": null,
+   "raw": "Saturday: 4:30pm",
+   "source_url": "https://www.lourdescatholicchurch.com/",
+   "fetched_at": "2026-11-01T17:46:55+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Sunday: 8:00am & 10:30am",
+   "source_url": "https://www.lourdescatholicchurch.com/",
+   "fetched_at": "2026-11-01T17:46:55+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:30",
+   "language": null,
+   "raw": "Sunday: 8:00am & 10:30am",
+   "source_url": "https://www.lourdescatholicchurch.com/",
+   "fetched_at": "2026-11-01T17:46:55+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
   }
  ],
  "source_url": "http://lourdescatholicchurch.com/",
- "fetched_at": "2026-11-01T02:12:09+00:00",
+ "fetched_at": "2026-11-01T17:47:26+00:00",
  "schedule_template": {
   "template": "wix",
   "version": "ca-sites/2",
@@ -158,13 +294,15 @@
   "trusted_candidate": false,
   "generic_rows": 16
  },
+ "has_sunday": true,
  "schedule_dropped": {
-  "not_a_service": 5
+  "not_a_service": 5,
+  "box_rows_added": 9
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-10-31",
-  "window_end_exclusive": "2027-01-29",
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
@@ -172,7 +310,20 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "office_contact": {
+  "email": null,
+  "phone": "(270) 684-5369",
+  "address": "4029 Frederica St., Owensboro, KY 42301",
+  "source_url": "https://www.lourdescatholicchurch.com/contacts",
+  "sources": {
+   "phone": "https://www.lourdescatholicchurch.com/contacts",
+   "address": "https://www.lourdescatholicchurch.com/contacts"
+  },
+  "fetched_at": "2026-11-01T17:47:26+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
- }
+ },
+ "fetch_mode": "rendered"
 }
