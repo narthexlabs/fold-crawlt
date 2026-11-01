@@ -92,7 +92,7 @@
    "contact_role": "parish office (see contact page)",
    "source_url": "https://sacredheartverona.org/liturgical-ministries",
    "source_kind": "website",
-   "fetched_at": "2026-11-01T09:04:58+00:00",
+   "fetched_at": "2026-11-01T17:27:02+00:00",
    "confidence": "medium"
   },
   {
@@ -110,7 +110,7 @@
    "contact_role": "parish office (see contact page)",
    "source_url": "https://sacredheartverona.org/liturgical-ministries",
    "source_kind": "website",
-   "fetched_at": "2026-11-01T09:04:58+00:00",
+   "fetched_at": "2026-11-01T17:27:02+00:00",
    "confidence": "low"
   },
   {
@@ -128,7 +128,7 @@
    "contact_role": "parish office (see contact page)",
    "source_url": "https://sacredheartverona.org/liturgical-ministries",
    "source_kind": "website",
-   "fetched_at": "2026-11-01T09:04:58+00:00",
+   "fetched_at": "2026-11-01T17:27:02+00:00",
    "confidence": "medium"
   },
   {
@@ -146,7 +146,7 @@
    "contact_role": "parish office (see contact page)",
    "source_url": "https://sacredheartverona.org/liturgical-ministries",
    "source_kind": "website",
-   "fetched_at": "2026-11-01T09:04:58+00:00",
+   "fetched_at": "2026-11-01T17:27:02+00:00",
    "confidence": "medium"
   }
  ],
@@ -168,7 +168,7 @@
    "language": null,
    "raw": "Mass: Wednesday - 8:00 a.m.",
    "source_url": "https://sacredheartverona.org/mass-times",
-   "fetched_at": "2026-11-01T09:04:56+00:00",
+   "fetched_at": "2026-11-01T17:26:59+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "low",
@@ -181,7 +181,7 @@
    "language": null,
    "raw": "Mass: Friday - 8:00 a.m.",
    "source_url": "https://sacredheartverona.org/mass-times",
-   "fetched_at": "2026-11-01T09:04:56+00:00",
+   "fetched_at": "2026-11-01T17:26:59+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -194,16 +194,38 @@
    "language": "English",
    "raw": "No Mass: 7:30 p.m. (English)",
    "source_url": "https://sacredheartverona.org/mass-times",
-   "fetched_at": "2026-11-01T09:04:56+00:00",
+   "fetched_at": "2026-11-01T17:26:59+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict",
    "kind_parsed": "mass"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "18:30",
+   "language": null,
+   "raw": "Saturday 6:30 p.m.",
+   "source_url": "https://sacredheartverona.org/",
+   "fetched_at": "2026-11-01T17:26:56+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Sunday 8:00 a.m.",
+   "source_url": "https://sacredheartverona.org/",
+   "fetched_at": "2026-11-01T17:26:56+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
   }
  ],
  "source_url": "https://sacredheartverona.org/",
- "fetched_at": "2026-11-01T09:05:04+00:00",
+ "fetched_at": "2026-11-01T17:27:12+00:00",
  "schedule_template": {
   "template": "generic_strict",
   "version": "ca-sites/2",
@@ -222,13 +244,13 @@
   "trusted_candidate": false,
   "generic_rows": 6
  },
- "has_sunday": false,
- "schedule_partial": true,
+ "has_sunday": true,
  "schedule_dropped": {
   "no_day": 1,
   "no_kind": 2,
   "other_location": 1,
-  "dated_block": 2
+  "dated_block": 2,
+  "weekend_rescue_added": 2
  },
  "groups_dropped": {
   "noise": 3,
@@ -253,7 +275,7 @@
   "sources": {
    "phone": "https://sacredheartverona.org/contact"
   },
-  "fetched_at": "2026-11-01T09:05:03+00:00",
+  "fetched_at": "2026-11-01T17:27:10+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
  },
  "privacy": {

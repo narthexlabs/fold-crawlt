@@ -70,9 +70,32 @@
   "text": "",
   "source_url": "https://traditionfortomorrow.com/"
  },
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Sunday 8:00 AM [Mass intention withheld]",
+   "source_url": "https://traditionfortomorrow.com/",
+   "fetched_at": "2026-11-01T17:27:06+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:30",
+   "language": null,
+   "raw": "Sunday Masses 10:30 AM High Mass",
+   "source_url": "https://traditionfortomorrow.com/",
+   "fetched_at": "2026-11-01T17:27:06+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  }
+ ],
  "source_url": "https://www.traditionfortomorrow.com/",
- "fetched_at": "2026-11-01T17:21:30+00:00",
+ "fetched_at": "2026-11-01T17:27:11+00:00",
  "schedule_template": {
   "template": "generic_strict",
   "version": "ca-sites/2",
@@ -91,9 +114,10 @@
   "trusted_candidate": true,
   "generic_rows": 8
  },
- "has_sunday": false,
+ "has_sunday": true,
  "schedule_dropped": {
-  "prose": 1
+  "prose": 1,
+  "weekend_rescue_added": 2
  },
  "groups_dropped": {},
  "event_counts": {
@@ -115,10 +139,11 @@
    "phone": "https://traditionfortomorrow.com/contact",
    "address": "https://traditionfortomorrow.com/"
   },
-  "fetched_at": "2026-11-01T17:21:29+00:00",
+  "fetched_at": "2026-11-01T17:27:09+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
  },
  "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
+  "screened_by": "ingest/public/privacy.py screen()",
+  "intentions_withheld": 1
  }
 }
