@@ -16,31 +16,89 @@
  "cities": [],
  "home_url": "https://ukrainiancatholicbvm.org/",
  "final_url": "https://ukrainiancatholicbvm.org/",
- "crawl_status": "http_202",
+ "crawl_status": "ok",
  "crawl_env": "sandbox",
- "robots_note": "http_202",
+ "robots_note": "ok",
  "pages": [
   {
    "category": "home",
    "url": "https://ukrainiancatholicbvm.org/",
-   "status": 202,
-   "class": "http_202"
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "wordpress",
+  "evidence": [
+   "wp-content"
+  ]
  },
- "template": "none",
+ "template": "wordpress-rest+html",
  "groups": [],
  "calendar_feeds": [],
  "events": [],
  "social": {},
  "bulletin": null,
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:30",
+   "language": null,
+   "raw": "Divine Liturgy: Sundays 9:30 a.m.",
+   "source_url": "https://ukrainiancatholicbvm.org/",
+   "fetched_at": "2026-11-01T17:27:04+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  }
+ ],
  "source_url": "https://ukrainiancatholicbvm.org/",
- "fetched_at": "2026-11-01T08:05:05+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-01T17:27:08+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "has_sunday": true,
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": "info@ukrainiancatholicbvm.org",
+  "phone": "(402) 345-1552",
+  "address": "2301 South 16th Street, Omaha, NE 68108",
+  "source_url": "https://ukrainiancatholicbvm.org/",
+  "sources": {
+   "email": "https://ukrainiancatholicbvm.org/",
+   "phone": "https://ukrainiancatholicbvm.org/",
+   "address": "https://ukrainiancatholicbvm.org/"
+  },
+  "fetched_at": "2026-11-01T17:27:04+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
  }
