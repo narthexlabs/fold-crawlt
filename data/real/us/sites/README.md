@@ -78,7 +78,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-dallas | 100 | 101 | 39 | 45 | 0 | 17 | 0 |
 | diocese-of-burlington | 98 | 101 | 13 | 59 | 1 | 28 | 0 |
 | diocese-of-rockford | 98 | 69 | 27 | 24 | 0 | 18 | 0 |
-| unassigned-tx | 98 | 74 | 12 | 52 | 2 | 6 | 2 |
+| unassigned-tx | 98 | 119 | 43 | 56 | 4 | 14 | 2 |
 | unassigned-nh | 98 | 99 | 56 | 33 | 0 | 10 | 0 |
 | diocese-of-belleville | 96 | 96 | 59 | 8 | 0 | 29 | 0 |
 | diocese-of-trenton | 96 | 96 | 36 | 13 | 3 | 44 | 0 |
@@ -98,7 +98,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | unassigned-ok | 87 | 105 | 52 | 34 | 4 | 15 | 0 |
 | diocese-of-allentown | 84 | 86 | 57 | 7 | 1 | 21 | 0 |
 | diocese-of-camden | 84 | 84 | 40 | 5 | 2 | 37 | 0 |
-| diocese-of-corpus-christi | 84 | 81 | 35 | 26 | 1 | 16 | 3 |
+| diocese-of-corpus-christi | 84 | 84 | 37 | 27 | 1 | 16 | 3 |
 | unassigned-il | 84 | 100 | 68 | 14 | 0 | 18 | 0 |
 | archdiocese-of-dubuque | 83 | 87 | 24 | 13 | 0 | 34 | 0 |
 | unassigned-nd | 83 | 99 | 48 | 46 | 1 | 4 | 0 |
