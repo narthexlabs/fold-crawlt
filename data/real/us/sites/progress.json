@@ -574,6 +574,14 @@
     "archdiocese-of-louisville",
     "byzantine-catholic-eparchy-of-passaic"
    ]
+  },
+  {
+   "started_at": "2026-11-01T18:03:07+00:00",
+   "ended_at": "2026-11-01T18:03:10+00:00",
+   "result": "fetched {'ok': 1, 'done': 1, 'halted_egress': 0}; parsed 1 dioceses",
+   "touched": [
+    "unassigned-il"
+   ]
   }
  ],
  "dioceses": {
@@ -1063,12 +1071,12 @@
   },
   "diocese-of-paterson": {
    "sites_in_list": 126,
-   "records": 125,
-   "finished": false,
-   "ok": 11,
+   "records": 126,
+   "finished": true,
+   "ok": 12,
    "by_status": {
     "challenge": 101,
-    "ok": 11,
+    "ok": 12,
     "dns": 7,
     "parked": 2,
     "unreachable_via_proxy": 1,
@@ -1308,11 +1316,11 @@
   },
   "diocese-of-rochester": {
    "sites_in_list": 92,
-   "records": 91,
-   "finished": false,
-   "ok": 59,
+   "records": 92,
+   "finished": true,
+   "ok": 60,
    "by_status": {
-    "ok": 59,
+    "ok": 60,
     "challenge": 19,
     "dns": 3,
     "not_found": 2,
@@ -1355,22 +1363,6 @@
     "ssl_error": 6,
     "timeout": 2,
     "parked": 2
-   }
-  },
-  "archdiocese-of-dubuque": {
-   "sites_in_list": 88,
-   "records": 87,
-   "finished": false,
-   "ok": 24,
-   "by_status": {
-    "ok": 24,
-    "challenge": 23,
-    "unreachable_via_proxy": 17,
-    "ssl_error": 12,
-    "wayback": 6,
-    "not_found": 3,
-    "conn_error": 2,
-    "error:TooManyRedirects": 1
    }
   },
   "diocese-of-harrisburg": {
@@ -1446,11 +1438,11 @@
   },
   "unassigned-il": {
    "sites_in_list": 87,
-   "records": 88,
+   "records": 89,
    "finished": true,
-   "ok": 66,
+   "ok": 67,
    "by_status": {
-    "ok": 66,
+    "ok": 67,
     "challenge": 6,
     "dns": 5,
     "ssl_error": 4,
@@ -1488,6 +1480,22 @@
     "robots_disallowed": 1,
     "dns": 1,
     "ssl_error": 1
+   }
+  },
+  "archdiocese-of-dubuque": {
+   "sites_in_list": 83,
+   "records": 87,
+   "finished": true,
+   "ok": 24,
+   "by_status": {
+    "ok": 24,
+    "challenge": 19,
+    "unreachable_via_proxy": 17,
+    "ssl_error": 12,
+    "wayback": 10,
+    "not_found": 3,
+    "conn_error": 2,
+    "error:TooManyRedirects": 1
    }
   },
   "unassigned-or": {
@@ -3841,10 +3849,10 @@
   }
  },
  "totals": {
-  "sites_in_list": 14585,
-  "records": 14524,
-  "ok": 7943
+  "sites_in_list": 14580,
+  "records": 14537,
+  "ok": 7955
  },
  "us_parish_pages_discovermass": 20147,
- "updated_at": "2026-11-01T18:02:43+00:00"
+ "updated_at": "2026-11-01T18:03:11+00:00"
 }

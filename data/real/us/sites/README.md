@@ -51,10 +51,10 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | archdiocese-of-st-louis | 144 | 144 | 83 | 50 | 0 | 11 | 0 |
 | unassigned-ks | 143 | 143 | 89 | 20 | 12 | 22 | 0 |
 | diocese-of-providence | 139 | 139 | 75 | 23 | 2 | 39 | 0 |
-| unassigned-ky | 135 | 135 | 79 | 20 | 3 | 33 | 0 |
+| unassigned-ky | 137 | 138 | 81 | 20 | 3 | 34 | 0 |
 | diocese-of-syracuse | 134 | 134 | 81 | 13 | 1 | 39 | 0 |
 | archdiocese-of-new-orleans | 131 | 131 | 21 | 91 | 0 | 19 | 0 |
-| diocese-of-paterson | 126 | 125 | 11 | 101 | 1 | 12 | 0 |
+| diocese-of-paterson | 126 | 126 | 12 | 101 | 1 | 12 | 0 |
 | unassigned-wv | 119 | 119 | 97 | 3 | 3 | 16 | 0 |
 | archdiocese-of-seattle | 117 | 117 | 81 | 30 | 0 | 6 | 0 |
 | diocese-of-richmond | 114 | 124 | 89 | 19 | 1 | 15 | 0 |
@@ -62,7 +62,6 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | archdiocese-of-atlanta | 105 | 106 | 83 | 4 | 0 | 8 | 0 |
 | unassigned-sd | 105 | 104 | 63 | 17 | 1 | 23 | 0 |
 | archdiocese-of-baltimore | 104 | 104 | 57 | 8 | 1 | 6 | 0 |
-| unassigned-sd | 104 | 104 | 63 | 17 | 1 | 23 | 0 |
 | archdiocese-of-denver | 101 | 102 | 91 | 1 | 0 | 6 | 0 |
 | unassigned-mt | 101 | 101 | 66 | 14 | 0 | 21 | 0 |
 | diocese-of-dallas | 100 | 101 | 39 | 45 | 0 | 17 | 0 |
@@ -70,19 +69,19 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-trenton | 96 | 96 | 36 | 13 | 3 | 44 | 0 |
 | diocese-of-joliet | 95 | 95 | 70 | 22 | 0 | 3 | 0 |
 | archdiocese-of-hartford | 94 | 95 | 73 | 1 | 0 | 21 | 0 |
-| diocese-of-metuchen | 94 | 93 | 31 | 36 | 0 | 26 | 0 |
-| diocese-of-rochester | 92 | 91 | 59 | 19 | 1 | 12 | 0 |
+| diocese-of-metuchen | 94 | 94 | 32 | 36 | 0 | 26 | 0 |
+| diocese-of-rochester | 92 | 92 | 60 | 19 | 1 | 12 | 0 |
 | unassigned-ms | 92 | 92 | 43 | 29 | 1 | 19 | 0 |
 | unassigned-la | 89 | 90 | 43 | 27 | 0 | 20 | 0 |
-| archdiocese-of-dubuque | 88 | 87 | 24 | 23 | 0 | 34 | 0 |
 | diocese-of-harrisburg | 88 | 89 | 57 | 30 | 0 | 2 | 0 |
 | diocese-of-la-crosse | 88 | 90 | 64 | 19 | 2 | 5 | 0 |
 | diocese-of-raleigh | 88 | 93 | 61 | 24 | 1 | 7 | 0 |
 | diocese-of-columbus | 88 | 88 | 33 | 19 | 1 | 35 | 0 |
 | archdiocese-of-san-francisco | 87 | 36 | 21 | 6 | 0 | 9 | 0 |
-| unassigned-il | 87 | 88 | 66 | 6 | 0 | 16 | 0 |
+| unassigned-il | 87 | 89 | 67 | 6 | 0 | 16 | 0 |
 | unassigned-tn | 87 | 87 | 54 | 25 | 1 | 7 | 0 |
 | unassigned-nd | 85 | 85 | 48 | 32 | 1 | 4 | 0 |
+| archdiocese-of-dubuque | 83 | 87 | 24 | 19 | 0 | 34 | 0 |
 | unassigned-or | 83 | 84 | 45 | 26 | 0 | 13 | 0 |
 | unassigned-dc | 83 | 83 | 59 | 14 | 4 | 6 | 0 |
 | diocese-of-orlando | 82 | 83 | 73 | 6 | 0 | 4 | 0 |
@@ -155,7 +154,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-des-moines | 47 | 51 | 33 | 13 | 1 | 4 | 0 |
 | diocese-of-baton-rouge | 47 | 48 | 19 | 12 | 0 | 16 | 1 |
 | diocese-of-duluth | 46 | 46 | 9 | 20 | 0 | 17 | 0 |
-| byzantine-catholic-eparchy-of-passaic | 45 | 38 | 32 | 4 | 0 | 2 | 0 |
+| byzantine-catholic-eparchy-of-passaic | 45 | 43 | 37 | 4 | 0 | 2 | 0 |
 | diocese-of-altoona-johnstown | 45 | 45 | 29 | 6 | 1 | 9 | 0 |
 | unassigned-ar | 45 | 45 | 28 | 5 | 0 | 12 | 0 |
 | unassigned-nv | 44 | 45 | 26 | 15 | 0 | 4 | 0 |
@@ -199,7 +198,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | unassigned-mn | 27 | 31 | 16 | 7 | 0 | 8 | 0 |
 | diocese-of-bismarck | 26 | 26 | 7 | 14 | 1 | 4 | 0 |
 | diocese-of-pensacola-tallahassee | 26 | 26 | 8 | 7 | 1 | 10 | 0 |
-| unassigned-ak | 24 | 25 | 10 | 4 | 3 | 5 | 3 |
+| unassigned-ak | 24 | 25 | 11 | 4 | 2 | 5 | 3 |
 | unassigned-nj | 23 | 24 | 15 | 5 | 1 | 3 | 0 |
 | diocese-of-marquette | 23 | 23 | 9 | 2 | 0 | 11 | 1 |
 | diocese-of-cheyenne | 22 | 22 | 8 | 7 | 0 | 7 | 0 |
@@ -270,7 +269,6 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 
 ## Chunk log
 
-- 2026-11-01T07:34:53+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-01T07:49:45+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-01T08:04:48+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-01T08:19:52+00:00: fetched {}; parsed 0 dioceses
@@ -285,3 +283,4 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-01T17:42:30+00:00: fetched {'robots_disallowed': 1, 'done': 46, 'dns': 3, 'challenge': 14, 'ssl_error': 2, 'blocked_403': 2, 'not_found': 2, 'ok': 21, 'timeout': 1, 'halted_egress': 0}; parsed 3 dioceses
 - 2026-11-01T17:52:14+00:00: fetched {'ok': 1, 'done': 1, 'halted_egress': 0}; parsed 1 dioceses
 - 2026-11-01T17:53:22+00:00: fetched {'ok': 11, 'done': 11, 'challenge': 1, 'dns': 1, 'cut': 2, 'halted_egress': 0}; parsed 5 dioceses
+- 2026-11-01T18:03:07+00:00: fetched {'ok': 1, 'done': 1, 'halted_egress': 0}; parsed 1 dioceses
