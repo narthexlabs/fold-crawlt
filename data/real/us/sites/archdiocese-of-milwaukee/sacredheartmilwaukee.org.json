@@ -19,7 +19,7 @@
  "home_url": "http://www.sacredheartmilwaukee.org/",
  "final_url": "https://www.sacredheartmilwaukee.org/",
  "crawl_status": "ok",
- "crawl_env": "sandbox",
+ "crawl_env": "runner-rendered",
  "robots_note": "ok",
  "pages": [
   {
@@ -69,7 +69,7 @@
    "feed_key": "9a309417cae2",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T02:34:07+00:00",
+    "fetched_at": "2026-11-01T17:51:34+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -91,12 +91,27 @@
  "schedule_rows": [
   {
    "kind": "mass",
+   "day": "Saturday",
+   "time": "09:00",
+   "language": "English",
+   "raw": "No Mass on Saturdays: Sunday | 9:00 AM (English)",
+   "source_url": "https://www.sacredheartmilwaukee.org/",
+   "fetched_at": "2026-11-01T17:43:25+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_parsed": "Sunday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
    "day": "Sunday",
    "time": "09:00",
    "language": "English",
    "raw": "No Mass on Saturdays: Sunday | 9:00 AM (English)",
    "source_url": "https://www.sacredheartmilwaukee.org/",
-   "fetched_at": "2026-11-01T02:00:03+00:00",
+   "fetched_at": "2026-11-01T17:43:25+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -109,7 +124,7 @@
    "language": "Croatian",
    "raw": "10:30 AM [Mass intention withheld]",
    "source_url": "https://www.sacredheartmilwaukee.org/",
-   "fetched_at": "2026-11-01T02:00:03+00:00",
+   "fetched_at": "2026-11-01T17:43:25+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -122,7 +137,7 @@
    "language": null,
    "raw": "Weekday Masses: 7:45 am",
    "source_url": "https://www.sacredheartmilwaukee.org/",
-   "fetched_at": "2026-11-01T02:00:03+00:00",
+   "fetched_at": "2026-11-01T17:43:25+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -136,7 +151,7 @@
    "language": null,
    "raw": "Weekday Masses: 7:45 am",
    "source_url": "https://www.sacredheartmilwaukee.org/",
-   "fetched_at": "2026-11-01T02:00:03+00:00",
+   "fetched_at": "2026-11-01T17:43:25+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -150,7 +165,7 @@
    "language": null,
    "raw": "Weekday Masses: 7:45 am",
    "source_url": "https://www.sacredheartmilwaukee.org/",
-   "fetched_at": "2026-11-01T02:00:03+00:00",
+   "fetched_at": "2026-11-01T17:43:25+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -164,7 +179,7 @@
    "language": null,
    "raw": "Weekday Masses: 7:45 am",
    "source_url": "https://www.sacredheartmilwaukee.org/",
-   "fetched_at": "2026-11-01T02:00:03+00:00",
+   "fetched_at": "2026-11-01T17:43:25+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -178,7 +193,7 @@
    "language": null,
    "raw": "Confession: 2nd & 4th Friday | 6:00 PM",
    "source_url": "https://www.sacredheartmilwaukee.org/",
-   "fetched_at": "2026-11-01T02:00:03+00:00",
+   "fetched_at": "2026-11-01T17:43:25+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -186,7 +201,7 @@
   }
  ],
  "source_url": "http://www.sacredheartmilwaukee.org/",
- "fetched_at": "2026-11-01T02:00:06+00:00",
+ "fetched_at": "2026-11-01T17:43:32+00:00",
  "schedule_template": {
   "template": "generic_strict",
   "version": "ca-sites/2",
@@ -205,13 +220,14 @@
   "trusted_candidate": false,
   "generic_rows": 10
  },
+ "has_sunday": true,
  "schedule_dropped": {
   "not_a_service": 1
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-10-31",
-  "window_end_exclusive": "2027-01-29",
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
@@ -219,8 +235,21 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "office_contact": {
+  "email": null,
+  "phone": "(414) 774-9418",
+  "address": "917 N 49TH St, Milwaukee, WI 53208",
+  "source_url": "https://www.sacredheartmilwaukee.org/contact",
+  "sources": {
+   "phone": "https://www.sacredheartmilwaukee.org/contact",
+   "address": "https://www.sacredheartmilwaukee.org/contact"
+  },
+  "fetched_at": "2026-11-01T17:43:32+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()",
   "intentions_withheld": 1
- }
+ },
+ "fetch_mode": "rendered"
 }
