@@ -29,7 +29,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 |---|---:|---:|---:|---:|---:|---:|---:|
 | archdiocese-of-new-york | 372 | 319 | 69 | 226 | 0 | 24 | 0 |
 | unassigned-nm | 263 | 263 | 163 | 50 | 4 | 46 | 0 |
-| archdiocese-of-boston | 257 | 257 | 81 | 14 | 2 | 123 | 0 |
+| archdiocese-of-boston | 257 | 251 | 75 | 14 | 2 | 123 | 0 |
 | archdiocese-of-chicago | 250 | 57 | 30 | 6 | 4 | 15 | 0 |
 | unassigned-mo | 216 | 2 | 2 | 0 | 0 | 0 | 0 |
 | unassigned-ne | 211 | 2 | 2 | 0 | 0 | 0 | 0 |
@@ -195,8 +195,8 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | unassigned-wa | 29 | 31 | 13 | 7 | 0 | 11 | 0 |
 | diocese-of-lafayette-in-indiana | 28 | 28 | 0 | 18 | 0 | 10 | 0 |
 | diocese-of-portland-in-maine | 27 | 27 | 4 | 15 | 0 | 8 | 0 |
-| unassigned-mn | 27 | 31 | 16 | 7 | 0 | 8 | 0 |
-| diocese-of-bismarck | 26 | 26 | 7 | 14 | 1 | 4 | 0 |
+| unassigned-mn | 27 | 6 | 4 | 2 | 0 | 0 | 0 |
+| diocese-of-bismarck | 26 | 23 | 6 | 13 | 0 | 4 | 0 |
 | diocese-of-pensacola-tallahassee | 26 | 26 | 8 | 7 | 1 | 10 | 0 |
 | unassigned-ak | 24 | 6 | 2 | 2 | 0 | 2 | 0 |
 | unassigned-nj | 23 | 8 | 6 | 1 | 0 | 1 | 0 |
