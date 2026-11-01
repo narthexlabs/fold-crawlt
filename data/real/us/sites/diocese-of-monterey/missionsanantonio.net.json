@@ -19,7 +19,7 @@
  "home_url": "http://www.missionsanantonio.net/",
  "final_url": "https://www.missionsanantonio.net/",
  "crawl_status": "ok",
- "crawl_env": "sandbox",
+ "crawl_env": "runner-rendered",
  "robots_note": "ok",
  "pages": [
   {
@@ -30,9 +30,9 @@
   },
   {
    "category": "ministries",
-   "url": "https://www.missionsanantonio.net/affiliate-organizations",
-   "status": null,
-   "class": "dns"
+   "url": "https://www.fhsam.org/",
+   "status": 200,
+   "class": "ok"
   },
   {
    "category": "calendar",
@@ -65,7 +65,7 @@
    "language": null,
    "raw": "Sunday Mass: 10:30am",
    "source_url": "https://www.missionsanantonio.net/",
-   "fetched_at": "2026-11-01T03:06:25+00:00",
+   "fetched_at": "2026-11-01T17:51:36+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "high",
@@ -73,7 +73,7 @@
   }
  ],
  "source_url": "http://www.missionsanantonio.net/",
- "fetched_at": "2026-11-01T03:06:28+00:00",
+ "fetched_at": "2026-11-01T17:51:41+00:00",
  "schedule_template": {
   "template": "squarespace",
   "version": "ca-sites/2",
@@ -92,10 +92,11 @@
   "trusted_candidate": false,
   "generic_rows": 1
  },
+ "has_sunday": true,
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-10-31",
-  "window_end_exclusive": "2027-01-29",
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
@@ -103,7 +104,21 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "office_contact": {
+  "email": "office@missionsanantonio.net",
+  "phone": "(831) 385-4478",
+  "address": "P.O. Box 803, Jolon, CA 93928",
+  "source_url": "https://www.missionsanantonio.net/",
+  "sources": {
+   "email": "https://www.missionsanantonio.net/",
+   "phone": "https://www.missionsanantonio.net/",
+   "address": "https://www.missionsanantonio.net/"
+  },
+  "fetched_at": "2026-11-01T17:51:36+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
- }
+ },
+ "fetch_mode": "rendered"
 }
