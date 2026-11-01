@@ -51,7 +51,30 @@
   ]
  },
  "bulletin": null,
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Domingo: 8:00 am y 11:00 am",
+   "source_url": "https://stanthonysseminary.org/servicios-y-contacto/",
+   "fetched_at": "2026-11-01T22:15:25+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:00",
+   "language": null,
+   "raw": "Domingo: 8:00 am y 11:00 am",
+   "source_url": "https://stanthonysseminary.org/servicios-y-contacto/",
+   "fetched_at": "2026-11-01T22:15:25+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  }
+ ],
  "source_url": "http://www.stanthonysseminary.org/",
  "fetched_at": "2026-11-01T22:15:26+00:00",
  "schedule_template": {
@@ -72,7 +95,10 @@
   "trusted_candidate": false,
   "generic_rows": 5
  },
- "has_sunday": false,
+ "has_sunday": true,
+ "schedule_dropped": {
+  "weekend_rescue_added": 2
+ },
  "groups_dropped": {},
  "event_counts": {
   "window_start": "2026-11-01",
