@@ -18,31 +18,231 @@
  ],
  "home_url": "https://www.stamcc.org/",
  "final_url": "https://www.stamcc.org/",
- "crawl_status": "conn_error",
+ "crawl_status": "ok",
  "crawl_env": "sandbox",
- "robots_note": "conn_error",
+ "robots_note": "ok",
  "pages": [
   {
    "category": "home",
    "url": "https://www.stamcc.org/",
-   "status": null,
-   "class": "conn_error"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.stamcc.org/mass-times",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.stamcc.org/sacraments/confession",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.stamcc.org/stories/first-holy-communion-2025",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://www.stamcc.org/bulletins",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://www.stamcc.org/contact",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "duda",
+  "evidence": [
+   "irp.cdn-website"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "generic-html:duda",
+ "groups": [
+  {
+   "id": "stamcc.org:children_ff",
+   "name": "Religious Education",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "children_faith_formation",
+   "audience": "families",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.stamcc.org/contact",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stamcc.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T09:04:53+00:00",
+   "confidence": "medium"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/profile.php?id=100081914017305"
+  ]
+ },
+ "bulletin": {
+  "url": "https://discovermass.com/church/st-anthony-hardeeville-sc/",
+  "date": null,
+  "kind": "discovermass",
+  "text": "VIEW BULLETIN",
+  "source_url": "https://www.stamcc.org/bulletins"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": "English",
+   "raw": "Mass Times: Saturday 5pm (at the Church in English)",
+   "source_url": "https://www.stamcc.org/mass-times",
+   "fetched_at": "2026-11-01T09:04:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "19:00",
+   "language": "Spanish",
+   "raw": "Mass Times: Saturday 7pm (at the Church in Spanish)",
+   "source_url": "https://www.stamcc.org/mass-times",
+   "fetched_at": "2026-11-01T09:04:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:30",
+   "language": "English",
+   "raw": "Mass Times: Sunday 8:30am (at the Church in English)",
+   "source_url": "https://www.stamcc.org/mass-times",
+   "fetched_at": "2026-11-01T09:04:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:30",
+   "language": "Spanish",
+   "raw": "Mass Times: Sunday 10:30am (at the Church in Spanish)",
+   "source_url": "https://www.stamcc.org/mass-times",
+   "fetched_at": "2026-11-01T09:04:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "17:30",
+   "language": "Spanish",
+   "raw": "Mass Times: Sunday 5:30pm (at the Church in Spanish)",
+   "source_url": "https://www.stamcc.org/mass-times",
+   "fetched_at": "2026-11-01T09:04:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "19:00",
+   "language": null,
+   "raw": "Adoration: Wednesday 7pm- Thursday 7pm (at the Chapel)",
+   "source_url": "https://www.stamcc.org/mass-times",
+   "fetched_at": "2026-11-01T09:04:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "19:00",
+   "language": null,
+   "raw": "Adoration: Wednesday 7pm- Thursday 7pm (at the Chapel)",
+   "source_url": "https://www.stamcc.org/mass-times",
+   "fetched_at": "2026-11-01T09:04:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "day_parsed": "Wednesday",
+   "day_bound_from_line": true
+  }
+ ],
  "source_url": "https://www.stamcc.org/",
- "fetched_at": "2026-11-01T17:27:00+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-01T09:04:58+00:00",
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": true,
+  "trusted_candidate": false,
+  "generic_rows": 7
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "benediction_end": 4,
+  "skipped_section": 6
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(843) 784-2943",
+  "address": "PO Box 687, Hardeeville, SC 29927",
+  "source_url": "https://www.stamcc.org/contact",
+  "sources": {
+   "phone": "https://www.stamcc.org/contact",
+   "address": "https://www.stamcc.org/contact"
+  },
+  "fetched_at": "2026-11-01T09:04:58+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
  }

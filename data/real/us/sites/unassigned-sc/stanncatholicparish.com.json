@@ -18,31 +18,314 @@
  ],
  "home_url": "https://www.stanncatholicparish.com/",
  "final_url": "https://www.stanncatholicparish.com/",
- "crawl_status": "ssl_error",
+ "crawl_status": "ok",
  "crawl_env": "sandbox",
- "robots_note": "ssl_error",
+ "robots_note": "ok",
  "pages": [
   {
    "category": "home",
    "url": "https://www.stanncatholicparish.com/",
-   "status": null,
-   "class": "ssl_error"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.stanncatholicparish.com/ministries",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.stanncatholicparish.com/parish-life",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.stanncatholicparish.com/youth-ccd-catechectical-formation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://www.stanncatholicparish.com/bulletin",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.stanncatholicparish.com/calendar",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.stanncatholicparish.com/sept-2026-st-ann-calendar-of-events",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://www.stanncatholicparish.com/newpage434a5ec4",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "duda",
+  "evidence": [
+   "irp.cdn-website"
+  ]
  },
- "template": "none",
- "groups": [],
- "calendar_feeds": [],
+ "template": "generic-html:duda",
+ "groups": [
+  {
+   "id": "stanncatholicparish.com:children_ff_youth|catechectical",
+   "name": "Youth CCD Catechectical Formation",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "children_faith_formation",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.stanncatholicparish.com/newpage434a5ec4",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stanncatholicparish.com/youth-ccd-catechectical-formation",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T09:04:56+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "stanncatholicparish.com:food",
+   "name": "Food Ministry",
+   "category": "service_mercy",
+   "category_label": "Service & mercy",
+   "subcategory": "food_ministry",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.stanncatholicparish.com/newpage434a5ec4",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stanncatholicparish.com/ministries",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T09:04:54+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "stanncatholicparish.com:servers",
+   "name": "Altar Server Ministry",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "altar_servers",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "Altar servers have an important role of assisting the priest at all Liturgical Celebrations in the Church.....",
+   "contact_url": "https://www.stanncatholicparish.com/newpage434a5ec4",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stanncatholicparish.com/ministries",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T09:04:54+00:00",
+   "confidence": "medium"
+  }
+ ],
+ "calendar_feeds": [
+  {
+   "feed_id": "stanncatholicparish.com:ics:ad37d0d8",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": null,
+   "page_url": "https://www.stanncatholicparish.com/calendar",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (website-builder widget)",
+   "url_withheld": "calendar id is an e-mail address; not stored",
+   "feed_key": "ad37d0d83cfa",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T17:31:51+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/StAnnFlorence"
+  ],
+  "youtube": [
+   "https://www.youtube.com/@saintanncatholicchurchflor9543"
+  ],
+  "flocknote": [
+   "https://email-mg.flocknote.com"
+  ]
+ },
+ "bulletin": {
+  "url": "https://www.stanncatholicparish.com/bulletin",
+  "date": null,
+  "kind": "page",
+  "text": "Bulletin",
+  "source_url": "https://www.stanncatholicparish.com/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Saturday Vigil: 5:00 PM",
+   "source_url": "https://www.stanncatholicparish.com/",
+   "fetched_at": "2026-11-01T09:04:53+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Mass Schedules: Sunday: 8:00 & 10:30 AM",
+   "source_url": "https://www.stanncatholicparish.com/",
+   "fetched_at": "2026-11-01T09:04:53+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:30",
+   "language": null,
+   "raw": "Mass Schedules: Sunday: 8:00 & 10:30 AM",
+   "source_url": "https://www.stanncatholicparish.com/",
+   "fetched_at": "2026-11-01T09:04:53+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "12:00",
+   "language": null,
+   "raw": "Daily Mass Schedule: Weekdays: Tuesday - Friday, 12:00 PM",
+   "source_url": "https://www.stanncatholicparish.com/",
+   "fetched_at": "2026-11-01T09:04:53+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Tuesday - Friday"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "12:00",
+   "language": null,
+   "raw": "Daily Mass Schedule: Weekdays: Tuesday - Friday, 12:00 PM",
+   "source_url": "https://www.stanncatholicparish.com/",
+   "fetched_at": "2026-11-01T09:04:53+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Tuesday - Friday",
+   "day_parsed": "Tuesday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "12:00",
+   "language": null,
+   "raw": "Daily Mass Schedule: Weekdays: Tuesday - Friday, 12:00 PM",
+   "source_url": "https://www.stanncatholicparish.com/",
+   "fetched_at": "2026-11-01T09:04:53+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Tuesday - Friday",
+   "day_parsed": "Tuesday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "12:00",
+   "language": null,
+   "raw": "Daily Mass Schedule: Weekdays: Tuesday - Friday, 12:00 PM",
+   "source_url": "https://www.stanncatholicparish.com/",
+   "fetched_at": "2026-11-01T09:04:53+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Tuesday - Friday",
+   "day_parsed": "Tuesday",
+   "day_bound_from_line": true
+  }
+ ],
  "source_url": "https://www.stanncatholicparish.com/",
- "fetched_at": "2026-11-01T17:27:00+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-01T09:05:00+00:00",
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": true,
+  "trusted_candidate": false,
+  "generic_rows": 12
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "other_location": 3,
+  "not_a_service": 2
+ },
+ "groups_dropped": {
+  "label_not_group": 1
+ },
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(843) 661-5012",
+  "address": "113 S Kemp St, Florence, SC 29506",
+  "source_url": "https://www.stanncatholicparish.com/newpage434a5ec4",
+  "sources": {
+   "phone": "https://www.stanncatholicparish.com/newpage434a5ec4",
+   "address": "https://www.stanncatholicparish.com/newpage434a5ec4"
+  },
+  "fetched_at": "2026-11-01T09:05:00+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
  }

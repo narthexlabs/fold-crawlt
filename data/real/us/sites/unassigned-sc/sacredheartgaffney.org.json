@@ -18,31 +18,446 @@
  ],
  "home_url": "https://www.sacredheartgaffney.org/",
  "final_url": "https://www.sacredheartgaffney.org/",
- "crawl_status": "ssl_error",
+ "crawl_status": "ok",
  "crawl_env": "sandbox",
- "robots_note": "ssl_error",
+ "robots_note": "ok",
  "pages": [
   {
    "category": "home",
    "url": "https://www.sacredheartgaffney.org/",
-   "status": null,
-   "class": "ssl_error"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.sacredheartgaffney.org/mass-times",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.sacredheartgaffney.org/how-to-make-a-good-confession",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.sacredheartgaffney.org/parish-life",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.sacredheartgaffney.org/ministries",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://www.sacredheartgaffney.org/sunday-bulletin",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.sacredheartgaffney.org/upcoming-events",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.sacredheartgaffney.org/st-augustine-upcoming-events",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "live",
+   "url": "https://www.sacredheartgaffney.org/sunday-mass-live-stream",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://www.sacredheartgaffney.org/contact-us",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "duda",
+  "evidence": [
+   "irp.cdn-website"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "generic-html:duda",
+ "groups": [
+  {
+   "id": "sacredheartgaffney.org:ocia",
+   "name": "Ocia/rica",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "ocia",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.sacredheartgaffney.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.sacredheartgaffney.org/ministries",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T09:04:57+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "sacredheartgaffney.org:emhc",
+   "name": "Extraordinary Minister of Holy Communion",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "emhc",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "Extraordinary Ministers of Communion who serve the Body and Blood of Christ at Mass and to the sick and homebound. Must be a practicing Catholic. For Homebound needs to be clear for driving. Insurance must be 100/300.",
+   "contact_url": "https://www.sacredheartgaffney.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.sacredheartgaffney.org/ministries",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T09:04:57+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "sacredheartgaffney.org:altar_society|ground",
+   "name": "Flowers & Grounds Ministry",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "altar_society_environment",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "Volunteers who care for and beautify the grounds and church",
+   "contact_url": "https://www.sacredheartgaffney.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.sacredheartgaffney.org/ministries",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T09:04:57+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "sacredheartgaffney.org:lectors",
+   "name": "Lector Ministry",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "lectors",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "Reader who proclaims the Scriptures at Mass and other services. Must be a practicing Catholic.",
+   "contact_url": "https://www.sacredheartgaffney.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.sacredheartgaffney.org/ministries",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T09:04:57+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "sacredheartgaffney.org:choir",
+   "name": "Music Ministry / Choir",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "choir_music",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.sacredheartgaffney.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.sacredheartgaffney.org/ministries",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T09:04:57+00:00",
+   "confidence": "low"
+  },
+  {
+   "id": "sacredheartgaffney.org:sacristans",
+   "name": "Sacristan Ministry",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "sacristans",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "Duties include preparing the altar for Mass and cleaning the altar following Mass. Must be a practicing Catholic.",
+   "contact_url": "https://www.sacredheartgaffney.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.sacredheartgaffney.org/ministries",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T09:04:57+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "sacredheartgaffney.org:ushers",
+   "name": "Usher/Greeter Ministry",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "ushers_greeters",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "Volunteers who assist people to their seat if necessary. They also take up the collection / Parish volunteers who warmly welcome parishioners as they enter the Church for Mass.",
+   "contact_url": "https://www.sacredheartgaffney.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.sacredheartgaffney.org/ministries",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T09:04:57+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "sacredheartgaffney.org:kofc",
+   "name": "Knights of Columbus",
+   "category": "fraternal_orders",
+   "category_label": "Fraternal & orders",
+   "subcategory": "knights_of_columbus",
+   "audience": "men",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.sacredheartgaffney.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.sacredheartgaffney.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T09:04:53+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "sacredheartgaffney.org:filipino",
+   "name": "Filipino Community",
+   "category": "language_cultural",
+   "category_label": "Language & cultural communities",
+   "subcategory": "filipino",
+   "audience": "all",
+   "language": "vi",
+   "language_assumed": false,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.sacredheartgaffney.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.sacredheartgaffney.org/parish-life",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T09:04:56+00:00",
+   "confidence": "medium"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/Sacred-Heart-Parish-Gaffney-SC-127312890687631"
+  ],
+  "youtube": [
+   "https://www.youtube.com/channel/UCaiioNt7YEP3YgkA2xVoqAw"
+  ],
+  "livestream": [
+   {
+    "url": "https://www.sacredheartgaffney.org/sunday-mass-live-stream",
+    "label": "Mass Live Stream",
+    "platform": "www.sacredheartgaffney.org",
+    "kind": "link"
+   }
+  ]
+ },
+ "bulletin": {
+  "url": "https://irp.cdn-website.com/3872cd22/files/uploaded/September+6+2026+-+SH.pdf",
+  "date": null,
+  "kind": "pdf",
+  "text": "Bulletin - English",
+  "source_url": "https://www.sacredheartgaffney.org/sunday-bulletin"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "12:00",
+   "language": null,
+   "raw": "Monday No Mass: Tuesday 12:00 noon",
+   "source_url": "https://www.sacredheartgaffney.org/mass-times",
+   "fetched_at": "2026-11-01T09:04:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Monday No Mass: Wednesday 8:00 a.m.",
+   "source_url": "https://www.sacredheartgaffney.org/mass-times",
+   "fetched_at": "2026-11-01T09:04:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "19:00",
+   "language": null,
+   "raw": "Monday No Mass: Thursday 7:00 p.m.",
+   "source_url": "https://www.sacredheartgaffney.org/mass-times",
+   "fetched_at": "2026-11-01T09:04:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Monday No Mass: Friday 8:00 a.m.",
+   "source_url": "https://www.sacredheartgaffney.org/mass-times",
+   "fetched_at": "2026-11-01T09:04:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "16:00",
+   "language": "Bilingual",
+   "raw": "Saturday Vigil Mass: 4:00 p.m. Bilingual",
+   "source_url": "https://www.sacredheartgaffney.org/mass-times",
+   "fetched_at": "2026-11-01T09:04:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "18:00",
+   "language": null,
+   "raw": "Saturday Vigil Mass: 6:00 p.m. Saint Augustine",
+   "source_url": "https://www.sacredheartgaffney.org/mass-times",
+   "fetched_at": "2026-11-01T09:04:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": "English",
+   "raw": "Sunday Mass: 10:00 a.m. English",
+   "source_url": "https://www.sacredheartgaffney.org/mass-times",
+   "fetched_at": "2026-11-01T09:04:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "12:00",
+   "language": "Spanish",
+   "raw": "Sunday Mass: 12:00 p.m. Spanish",
+   "source_url": "https://www.sacredheartgaffney.org/mass-times",
+   "fetched_at": "2026-11-01T09:04:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:00-15:45",
+   "language": null,
+   "raw": "Confession:: Saturday: 3:00 - 3:45 p.m. in the Parish Life Center",
+   "source_url": "https://www.sacredheartgaffney.org/mass-times",
+   "fetched_at": "2026-11-01T09:04:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "08:30-09:30",
+   "language": null,
+   "raw": "Adoration:: Wednesdays 8:30 am to 9:30 am in the Church",
+   "source_url": "https://www.sacredheartgaffney.org/mass-times",
+   "fetched_at": "2026-11-01T09:04:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  }
+ ],
  "source_url": "https://www.sacredheartgaffney.org/",
- "fetched_at": "2026-11-01T17:27:00+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-01T09:05:02+00:00",
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": true,
+  "trusted_candidate": false,
+  "generic_rows": 12
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "prose": 1
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(864) 489-9453",
+  "address": "205 Sams St, Gaffney, SC, 29340",
+  "source_url": "https://www.sacredheartgaffney.org/contact-us",
+  "sources": {
+   "phone": "https://www.sacredheartgaffney.org/contact-us",
+   "address": "https://www.sacredheartgaffney.org/contact-us"
+  },
+  "fetched_at": "2026-11-01T09:05:02+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
  }

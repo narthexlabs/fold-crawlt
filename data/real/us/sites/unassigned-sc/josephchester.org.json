@@ -18,31 +18,346 @@
  ],
  "home_url": "https://www.josephchester.org/",
  "final_url": "https://www.josephchester.org/",
- "crawl_status": "ssl_error",
+ "crawl_status": "ok",
  "crawl_env": "sandbox",
- "robots_note": "ssl_error",
+ "robots_note": "ok",
  "pages": [
   {
    "category": "home",
    "url": "https://www.josephchester.org/",
-   "status": null,
-   "class": "ssl_error"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.josephchester.org/mass-times",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.josephchester.org/sacraments",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.josephchester.org/parish-life",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.josephchester.org/ministries",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://www.josephchester.org/bulletin",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.josephchester.org/calendar",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "duda",
+  "evidence": [
+   "static.cdn-website.com"
+  ]
  },
- "template": "none",
- "groups": [],
- "calendar_feeds": [],
+ "template": "generic-html:duda",
+ "groups": [
+  {
+   "id": "josephchester.org:children_ff",
+   "name": "Religious Education",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "children_faith_formation",
+   "audience": "families",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.josephchester.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.josephchester.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T09:04:53+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "josephchester.org:womens_group",
+   "name": "Women's Group",
+   "category": "women",
+   "category_label": "Women",
+   "subcategory": "womens_group",
+   "audience": "women",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "All women are welcome! Gatherings are on occasion and announced in the bulletin and in this space when scheduled. More Information Coming Soon!",
+   "contact_url": "https://www.josephchester.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.josephchester.org/ministries",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T09:04:57+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "josephchester.org:choir",
+   "name": "Music Ministry / Choir",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "choir_music",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "Join together in song with the parish during the liturgies. More Information Coming Soon!",
+   "contact_url": "https://www.josephchester.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.josephchester.org/ministries",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T09:04:57+00:00",
+   "confidence": "low"
+  }
+ ],
+ "calendar_feeds": [
+  {
+   "feed_id": "josephchester.org:ics:a250f7ff",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": "https://calendar.google.com/calendar/ical/mycatholic.life_6edgf1f10bgli159mgs4uc0r90%40group.calendar.google.com/public/basic.ics",
+   "page_url": "https://www.josephchester.org/calendar",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (embedded on page)",
+   "display_tz": "America/Chicago",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T17:31:37+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  },
+  {
+   "feed_id": "josephchester.org:ics:f16aee1c",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": "https://calendar.google.com/calendar/ical/mycatholic.life_qini7n27n4fgb80m4lqeblr57o%40group.calendar.google.com/public/basic.ics",
+   "page_url": "https://www.josephchester.org/calendar",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (embedded on page)",
+   "display_tz": "America/Chicago",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T17:31:38+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  },
+  {
+   "feed_id": "josephchester.org:ics:0e09f256",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": "https://calendar.google.com/calendar/ical/mycatholic.life_2choele8a3vtjd5cf5jp16g2c8%40group.calendar.google.com/public/basic.ics",
+   "page_url": "https://www.josephchester.org/calendar",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (embedded on page)",
+   "display_tz": "America/Chicago",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T17:31:40+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  },
+  {
+   "feed_id": "josephchester.org:ics:62d836cf",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": "https://calendar.google.com/calendar/ical/mycatholic.life_8cvc88j7c2odtsrjrgsbetuq98%40group.calendar.google.com/public/basic.ics",
+   "page_url": "https://www.josephchester.org/calendar",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (embedded on page)",
+   "display_tz": "America/Chicago",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T17:31:42+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  },
+  {
+   "feed_id": "josephchester.org:ics:85a2a69a",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": null,
+   "page_url": "https://www.josephchester.org/calendar",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (website-builder widget)",
+   "url_withheld": "calendar id is an e-mail address; not stored",
+   "feed_key": "85a2a69a46b6",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T17:31:43+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
  "events": [],
  "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "bulletin": {
+  "url": "https://irp.cdn-website.com/0bc12382/files/uploaded/2026-10-17+Bulletin.pdf",
+  "date": "2026-10-17",
+  "kind": "pdf",
+  "text": "This Week's Bulletin Download",
+  "source_url": "https://www.josephchester.org/bulletin"
+ },
+ "schedule_rows": [
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "16:30",
+   "language": null,
+   "raw": "Solemnity of Mary — Sun. Dec. 31, 4:30pm (Vigil) and Mon. Jan. 1, 10:45am",
+   "source_url": "https://www.josephchester.org/mass-times",
+   "fetched_at": "2026-11-01T09:04:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "10:45",
+   "language": null,
+   "raw": "Holiday Season Masses:: Solemnity of Mary — Sun. Dec. 31, 4:30pm (Vigil) and Mon. Jan. 1, 10:45am",
+   "source_url": "https://www.josephchester.org/mass-times",
+   "fetched_at": "2026-11-01T09:04:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "12:30",
+   "language": null,
+   "raw": "Regular Mass Schedule:: Sunday—12:30 pm",
+   "source_url": "https://www.josephchester.org/mass-times",
+   "fetched_at": "2026-11-01T09:04:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "16:00",
+   "language": null,
+   "raw": "Saturday—4:00 pm Anticipation Mass (Reconciliation 3:00 – 3:45)",
+   "source_url": "https://www.josephchester.org/mass-times",
+   "fetched_at": "2026-11-01T09:04:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:00-15:45",
+   "language": null,
+   "raw": "Saturday—4:00 pm Anticipation Mass (Reconciliation 3:00 – 3:45)",
+   "source_url": "https://www.josephchester.org/mass-times",
+   "fetched_at": "2026-11-01T09:04:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "21:10",
+   "language": null,
+   "raw": "Regular Mass Schedule:: Weekday—Thursday, 9:30 am (Rosary begins at 9:10)",
+   "source_url": "https://www.josephchester.org/mass-times",
+   "fetched_at": "2026-11-01T09:04:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  }
+ ],
  "source_url": "https://www.josephchester.org/",
- "fetched_at": "2026-11-01T17:27:00+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-01T09:04:59+00:00",
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": true,
+  "trusted_candidate": false,
+  "generic_rows": 10
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "not_a_service": 4,
+  "no_day": 2,
+  "no_kind": 2,
+  "dated_block": 1,
+  "other_location": 3
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(803) 377-4695",
+  "address": "110 W End St, Chester SC 29706",
+  "source_url": "https://www.josephchester.org/",
+  "sources": {
+   "phone": "https://www.josephchester.org/",
+   "address": "https://www.josephchester.org/"
+  },
+  "fetched_at": "2026-11-01T09:04:53+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
  }
