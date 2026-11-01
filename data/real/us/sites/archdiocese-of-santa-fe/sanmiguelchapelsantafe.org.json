@@ -17,7 +17,7 @@
  "home_url": "http://sanmiguelchapelsantafe.org/",
  "final_url": "https://www.sanmiguelchapelsantafe.org/",
  "crawl_status": "ok",
- "crawl_env": "sandbox",
+ "crawl_env": "runner-rendered",
  "robots_note": "ok",
  "pages": [
   {
@@ -63,7 +63,7 @@
    "language": null,
    "raw": "MASSES:: 3pm",
    "source_url": "https://www.sanmiguelchapelsantafe.org/masses",
-   "fetched_at": "2026-11-01T03:05:04+00:00",
+   "fetched_at": "2026-11-01T17:44:22+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -71,7 +71,7 @@
   }
  ],
  "source_url": "http://sanmiguelchapelsantafe.org/",
- "fetched_at": "2026-11-01T03:05:06+00:00",
+ "fetched_at": "2026-11-01T17:44:28+00:00",
  "schedule_template": {
   "template": "wix",
   "version": "ca-sites/2",
@@ -90,10 +90,12 @@
   "trusted_candidate": false,
   "generic_rows": 0
  },
+ "has_sunday": false,
+ "schedule_partial": true,
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-10-31",
-  "window_end_exclusive": "2027-01-29",
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
@@ -101,7 +103,19 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "office_contact": {
+  "email": null,
+  "phone": null,
+  "address": "401 Old Santa Fe Trail, Santa Fe NM, 87501",
+  "source_url": "https://www.sanmiguelchapelsantafe.org/",
+  "sources": {
+   "address": "https://www.sanmiguelchapelsantafe.org/"
+  },
+  "fetched_at": "2026-11-01T17:44:17+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
- }
+ },
+ "fetch_mode": "rendered"
 }
