@@ -1,112 +1,133 @@
 {
  "slug": "diocese-of-arlington",
- "generated_at": "2026-11-01T17:53:40+00:00",
+ "generated_at": "2026-11-01T18:54:59+00:00",
  "run_date": "2026-11-01",
  "input": {
   "directory_records": 13,
-  "discovermass_records": 9,
+  "discovermass_records": 125,
   "directory_without_website": 0,
   "discovermass_without_website": 0
  },
- "sites_in_list": 18,
+ "sites_in_list": 80,
  "social_only": 0,
  "crawl": {
-  "ok_total": 13,
-  "ok_via_sandbox": 13,
+  "ok_total": 54,
+  "ok_via_sandbox": 54,
   "ok_via_laptop": 0,
   "partial_via_side_doors": 0,
-  "challenge": 5,
+  "challenge": 11,
   "blocked_403_429": 0,
-  "robots_disallowed": 0,
-  "laptop_pending": 5,
-  "dead": 0,
+  "robots_disallowed": 1,
+  "laptop_pending": 25,
+  "dead": 14,
   "not_fetched": 0,
   "by_status": {
-   "ok": 13,
-   "challenge": 5
+   "ok": 54,
+   "challenge": 11,
+   "ssl_error": 6,
+   "dns": 5,
+   "conn_error": 1,
+   "http_5xx": 1,
+   "robots_disallowed": 1,
+   "timeout": 1
   }
  },
  "laptop_attempted": 0,
  "groups": {
-  "total": 36,
-  "sites_with_groups": 7,
+  "total": 522,
+  "sites_with_groups": 44,
   "by_category": {
-   "liturgical": 13,
-   "formation": 6,
-   "fraternal_orders": 4,
-   "young_adults": 3,
-   "scripture_study": 3,
-   "other": 2,
-   "youth": 1,
-   "prayer_devotion": 1,
-   "men": 1,
-   "seniors": 1,
-   "grief_support": 1
+   "liturgical": 174,
+   "youth": 57,
+   "formation": 55,
+   "service_mercy": 52,
+   "prayer_devotion": 36,
+   "fraternal_orders": 34,
+   "scripture_study": 25,
+   "other": 18,
+   "young_adults": 15,
+   "grief_support": 15,
+   "men": 10,
+   "women": 7,
+   "seniors": 6,
+   "language_cultural": 6,
+   "movements": 5,
+   "families": 5,
+   "marriage_family": 2
   },
-  "with_meeting_time": 4
+  "with_meeting_time": 17
  },
  "calendar": {
-  "sites_with_active_feed": 2,
-  "active_feeds": 3,
+  "sites_with_active_feed": 17,
+  "active_feeds": 29,
   "feeds_by_platform": {
-   "Google Calendar": 2,
-   "The Events Calendar (WordPress)": 1
+   "Google Calendar": 23,
+   "The Events Calendar (WordPress)": 4,
+   "CatholicWebsite.com": 2
   },
-  "sites_with_events": 1,
-  "events_stored": 1,
-  "events_in_window_before_privacy": 1,
+  "sites_with_events": 2,
+  "events_stored": 25,
+  "events_in_window_before_privacy": 26,
   "window": "2026-11-01 + 90 days"
  },
  "social": {
   "sites_by_platform": {
-   "facebook": 8,
-   "youtube": 7,
-   "instagram": 5,
-   "x": 3,
-   "flocknote": 3,
-   "livestream": 2
+   "facebook": 37,
+   "youtube": 23,
+   "instagram": 23,
+   "livestream": 19,
+   "flocknote": 15,
+   "x": 14
   },
-  "sites_with_any_social": 9,
+  "sites_with_any_social": 42,
   "shared_links_removed_as_diocesan": []
  },
  "bulletin": {
-  "sites_with_bulletin_url": 13,
+  "sites_with_bulletin_url": 48,
   "by_kind": {
-   "page": 6,
-   "pdf": 3,
-   "discovermass": 2,
-   "lpi": 1,
+   "pdf": 17,
+   "page": 14,
+   "lpi": 9,
+   "discovermass": 7,
    "flipbook": 1
   },
-  "with_date": 1
+  "with_date": 11
  },
  "schedule": {
-  "sites_with_own_site_rows": 10,
-  "rows_total": 200,
-  "rows_needs_review": 0,
-  "sites_with_schedule_image_only": 0,
+  "sites_with_own_site_rows": 47,
+  "rows_total": 970,
+  "rows_needs_review": 1,
+  "sites_with_schedule_image_only": 2,
   "by_kind": {
-   "mass": 144,
-   "confession": 36,
-   "adoration": 15,
-   "other": 5
+   "mass": 670,
+   "confession": 161,
+   "adoration": 77,
+   "other": 62
   }
  },
  "cms_guess": {
-  "wordpress": 6,
-  "unknown": 2,
-  "parishsoft": 2,
-  "diocesan": 1,
-  "wix": 1,
+  "wordpress": 23,
+  "unknown": 9,
+  "parishsoft": 7,
+  "duda": 5,
+  "wix": 3,
+  "diocesan": 2,
+  "catholicwebsite": 2,
+  "weebly": 1,
+  "drupal": 1,
   "squarespace": 1
  },
  "template": {
-  "wordpress-html": 3,
-  "wordpress-rest+html": 3,
-  "generic-html:unknown": 2,
-  "generic-html:parishsoft": 2,
-  "generic-html:diocesan": 1,
-  "generic-html:wix": 1,
+  "wordpress-rest+html": 14,
+  "wordpress-html": 9,
+  "generic-html:unknown": 9,
+  "generic-html:parishsoft": 7,
+  "generic-html:duda": 5,
+  "generic-html:wix": 3,
+  "generic-html:diocesan": 2,
+  "generic-html:catholicwebsite": 2,
+  "generic-html:weebly": 1,
+  "generic-html:drupal": 1,
   "generic-html:squarespace": 1
  }
 }
