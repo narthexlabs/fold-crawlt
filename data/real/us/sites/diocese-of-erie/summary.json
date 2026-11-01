@@ -1,41 +1,64 @@
 {
  "slug": "diocese-of-erie",
- "generated_at": "2026-11-01T05:45:53+00:00",
+ "generated_at": "2026-11-01T22:19:35+00:00",
  "run_date": "2026-11-01",
  "input": {
   "directory_records": 0,
-  "discovermass_records": 2,
+  "discovermass_records": 114,
   "directory_without_website": 0,
   "discovermass_without_website": 0
  },
- "sites_in_list": 1,
+ "sites_in_list": 67,
  "social_only": 0,
  "crawl": {
-  "ok_total": 1,
-  "ok_via_sandbox": 1,
+  "ok_total": 38,
+  "ok_via_sandbox": 38,
   "ok_via_laptop": 0,
   "partial_via_side_doors": 0,
-  "challenge": 0,
+  "challenge": 2,
   "blocked_403_429": 0,
-  "robots_disallowed": 0,
-  "laptop_pending": 0,
-  "dead": 0,
+  "robots_disallowed": 2,
+  "laptop_pending": 26,
+  "dead": 25,
   "not_fetched": 0,
   "by_status": {
-   "ok": 1
+   "ok": 38,
+   "dns": 16,
+   "timeout": 3,
+   "robots_disallowed": 2,
+   "ssl_error": 2,
+   "challenge": 2,
+   "conn_error": 2,
+   "parked": 1,
+   "http_5xx": 1
   }
  },
  "laptop_attempted": 0,
  "groups": {
-  "total": 0,
-  "sites_with_groups": 0,
-  "by_category": {},
-  "with_meeting_time": 0
+  "total": 130,
+  "sites_with_groups": 20,
+  "by_category": {
+   "liturgical": 51,
+   "service_mercy": 19,
+   "other": 12,
+   "formation": 11,
+   "fraternal_orders": 10,
+   "prayer_devotion": 9,
+   "youth": 5,
+   "movements": 4,
+   "young_adults": 3,
+   "grief_support": 3,
+   "scripture_study": 1,
+   "men": 1,
+   "families": 1
+  },
+  "with_meeting_time": 7
  },
  "calendar": {
-  "sites_with_active_feed": 1,
-  "active_feeds": 2,
+  "sites_with_active_feed": 13,
+  "active_feeds": 17,
   "feeds_by_platform": {
+   "Google Calendar": 15,
    "The Events Calendar (WordPress)": 2
   },
   "sites_with_events": 0,
@@ -45,36 +68,52 @@
  },
  "social": {
   "sites_by_platform": {
-   "facebook": 1,
-   "instagram": 1,
-   "youtube": 1,
-   "x": 1,
-   "tiktok": 1,
-   "livestream": 1
+   "facebook": 27,
+   "youtube": 12,
+   "livestream": 9,
+   "instagram": 8,
+   "x": 3,
+   "flocknote": 2,
+   "tiktok": 1
   },
-  "sites_with_any_social": 1,
+  "sites_with_any_social": 30,
   "shared_links_removed_as_diocesan": []
  },
  "bulletin": {
-  "sites_with_bulletin_url": 1,
+  "sites_with_bulletin_url": 31,
   "by_kind": {
-   "discovermass": 1
+   "pdf": 12,
+   "page": 9,
+   "discovermass": 6,
+   "lpi": 4
   },
-  "with_date": 0
+  "with_date": 11
  },
  "schedule": {
-  "sites_with_own_site_rows": 1,
-  "rows_total": 25,
+  "sites_with_own_site_rows": 29,
+  "rows_total": 269,
   "rows_needs_review": 0,
-  "sites_with_schedule_image_only": 0,
+  "sites_with_schedule_image_only": 2,
   "by_kind": {
-   "mass": 25
+   "mass": 206,
+   "confession": 30,
+   "adoration": 18,
+   "other": 15
   }
  },
  "cms_guess": {
-  "wordpress": 1
+  "unknown": 23,
+  "wordpress": 7,
+  "duda": 6,
+  "godaddy": 1,
+  "wix": 1
  },
  "template": {
-  "wordpress-rest+html": 1
+  "generic-html:unknown": 23,
+  "generic-html:duda": 6,
+  "wordpress-rest+html": 5,
+  "wordpress-html": 2,
+  "generic-html:godaddy": 1,
+  "generic-html:wix": 1
  }
 }
