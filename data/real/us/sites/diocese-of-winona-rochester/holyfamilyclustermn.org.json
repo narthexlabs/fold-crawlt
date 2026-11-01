@@ -147,7 +147,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T22:19:44+00:00",
+    "fetched_at": "2026-11-01T23:37:09+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -164,7 +164,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": 404,
-    "fetched_at": "2026-11-01T22:19:45+00:00",
+    "fetched_at": "2026-11-01T23:37:10+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -181,7 +181,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T22:19:46+00:00",
+    "fetched_at": "2026-11-01T23:37:11+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -198,7 +198,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T22:19:48+00:00",
+    "fetched_at": "2026-11-01T23:37:12+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -218,7 +218,19 @@
   "text": "This Week's Bulletin",
   "source_url": "https://hfcp.church/"
  },
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "St. Mary at 8 AM Sunday on",
+   "source_url": "https://hfcp.church/",
+   "fetched_at": "2026-11-01T20:25:04+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  }
+ ],
  "source_url": "https://www.holyfamilyclustermn.org/",
  "fetched_at": "2026-11-01T20:25:19+00:00",
  "redirected_off_host": "hfcp.church",
@@ -240,13 +252,14 @@
   "trusted_candidate": false,
   "generic_rows": 12
  },
- "has_sunday": false,
+ "has_sunday": true,
  "schedule_dropped": {
   "no_kind": 1,
   "dated_block": 1,
   "other_location": 4,
   "no_day": 1,
-  "prose": 2
+  "prose": 2,
+  "weekend_rescue_added": 1
  },
  "groups_dropped": {},
  "event_counts": {
