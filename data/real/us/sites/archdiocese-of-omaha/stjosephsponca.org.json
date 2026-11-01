@@ -20,7 +20,7 @@
  "home_url": "https://www.stjosephsponca.org/",
  "final_url": "https://www.stjosephsponca.org/",
  "crawl_status": "ok",
- "crawl_env": "sandbox",
+ "crawl_env": "runner-rendered",
  "robots_note": "ok",
  "pages": [
   {
@@ -56,15 +56,16 @@
    "language": null,
    "raw": "[St. Joseph Parish - Ponca] Mass Times: Sunday at 8:00 am at St. Joseph's in Ponca",
    "source_url": "https://www.stjosephsponca.org/services",
-   "fetched_at": "2026-11-01T05:13:01+00:00",
+   "fetched_at": "2026-11-01T17:45:47+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
-   "template": "wix"
+   "template": "wix",
+   "location": "St. Joseph Parish - Ponca"
   }
  ],
  "source_url": "https://www.stjosephsponca.org/",
- "fetched_at": "2026-11-01T05:13:01+00:00",
+ "fetched_at": "2026-11-01T17:45:47+00:00",
  "schedule_template": {
   "template": "wix",
   "version": "ca-sites/2",
@@ -83,6 +84,7 @@
   "trusted_candidate": false,
   "generic_rows": 1
  },
+ "has_sunday": true,
  "schedule_dropped": {
   "not_a_service": 1
  },
@@ -99,5 +101,6 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
- }
+ },
+ "fetch_mode": "rendered"
 }
