@@ -77,7 +77,7 @@
    "note": "Google Calendar public feed (embedded on page)",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T20:28:10+00:00",
+    "fetched_at": "2026-11-01T23:33:02+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -96,7 +96,74 @@
   "text": "- Sunday, October 18 th , 2026 _",
   "source_url": "https://holy-apostles.netlify.app/english/news"
  },
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Sundays 9:00 a.m.",
+   "source_url": "https://holy-apostles.netlify.app/english/mass-schedule",
+   "fetched_at": "2026-11-01T20:25:04+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "18:00",
+   "language": null,
+   "raw": "6:00 p.m. — Vigil Mass (Spanish) Saturdays",
+   "source_url": "https://holy-apostles.netlify.app/english/mass-schedule",
+   "fetched_at": "2026-11-01T20:25:04+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Saturdays 5:00 p.m. — Vigil Mass (English)",
+   "source_url": "https://holy-apostles.netlify.app/english/mass-schedule",
+   "fetched_at": "2026-11-01T20:25:04+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "19:00",
+   "language": null,
+   "raw": "Saturdays 7:00 p.m. — Vigil Mass (Spanish)",
+   "source_url": "https://holy-apostles.netlify.app/english/mass-schedule",
+   "fetched_at": "2026-11-01T20:25:04+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "12:00",
+   "language": null,
+   "raw": "Sundays 12:00 p.m. — Mass (Spanish)",
+   "source_url": "https://holy-apostles.netlify.app/english/mass-schedule",
+   "fetched_at": "2026-11-01T20:25:04+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Sundays 5:00 p.m. — Mass (Spanish)",
+   "source_url": "https://holy-apostles.netlify.app/english/mass-schedule",
+   "fetched_at": "2026-11-01T20:25:04+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  }
+ ],
  "source_url": "https://holy-apostles.netlify.app/",
  "fetched_at": "2026-11-01T20:25:07+00:00",
  "schedule_template": {
@@ -117,7 +184,10 @@
   "trusted_candidate": false,
   "generic_rows": 7
  },
- "has_sunday": false,
+ "has_sunday": true,
+ "schedule_dropped": {
+  "weekend_rescue_added": 6
+ },
  "groups_dropped": {},
  "event_counts": {
   "window_start": "2026-11-01",

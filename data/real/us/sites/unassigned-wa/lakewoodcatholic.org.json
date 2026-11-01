@@ -72,7 +72,8 @@
  "social": {
   "facebook": [
    "https://www.facebook.com/FrancesCabrini",
-   "https://www.facebook.com/stjbosco.org"
+   "https://www.facebook.com/stjbosco.org",
+   "https://www.facebook.com/2008"
   ],
   "flocknote": [
    "https://lcpf.flocknote.com"
@@ -85,7 +86,52 @@
   "text": "Newsletter",
   "source_url": "https://www.lakewoodcatholic.org/sacramental-records"
  },
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Saturday 5pm (Vigil) Sunday 10am",
+   "source_url": "https://www.lakewoodcatholic.org/contact",
+   "fetched_at": "2026-11-01T20:25:08+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": null,
+   "raw": "Saturday 5pm (Vigil) Sunday 10am",
+   "source_url": "https://www.lakewoodcatholic.org/contact",
+   "fetched_at": "2026-11-01T20:25:08+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Saturday 5pm (Vigil) Sunday 8am, 10am, 12:30pm (Spanish)",
+   "source_url": "https://www.lakewoodcatholic.org/contact",
+   "fetched_at": "2026-11-01T20:25:08+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "12:30",
+   "language": null,
+   "raw": "Saturday 5pm (Vigil) Sunday 8am, 10am, 12:30pm (Spanish)",
+   "source_url": "https://www.lakewoodcatholic.org/contact",
+   "fetched_at": "2026-11-01T20:25:08+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  }
+ ],
  "source_url": "https://www.lakewoodcatholic.org/",
  "fetched_at": "2026-11-01T20:25:08+00:00",
  "schedule_template": {
@@ -106,20 +152,10 @@
   "trusted_candidate": false,
   "generic_rows": 16
  },
- "has_sunday": false,
- "schedule_images": [
-  {
-   "url": "https://images.squarespace-cdn.com/content/v1/67e6d35a6a6f4551c94c4843/2d30396d-5ede-4943-ad34-35b19985da8f/Lakewood-Catholic-Mass-Times.jpg",
-   "alt": "Mass times and directions",
-   "page": "https://www.lakewoodcatholic.org/"
-  },
-  {
-   "url": "https://images.squarespace-cdn.com/content/v1/67e6d35a6a6f4551c94c4843/7b90e33d-f865-4f16-b06f-448a2cd10e00/Frame+14-8.png",
-   "alt": "Mass times & Directions",
-   "page": "https://www.lakewoodcatholic.org/"
-  }
- ],
- "schedule_note": "schedule appears to be an image; times not read (needs_review)",
+ "has_sunday": true,
+ "schedule_dropped": {
+  "weekend_rescue_added": 4
+ },
  "groups_dropped": {
   "fragment": 1,
   "label_not_group": 1
@@ -149,8 +185,5 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
- },
- "social_shared_links_removed": [
-  "https://www.facebook.com/2008"
- ]
+ }
 }
