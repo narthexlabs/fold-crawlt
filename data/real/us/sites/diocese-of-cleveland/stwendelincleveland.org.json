@@ -19,7 +19,7 @@
  "home_url": "http://www.stwendelincleveland.org/",
  "final_url": "https://www.stwendelincleveland.org/",
  "crawl_status": "ok",
- "crawl_env": "sandbox",
+ "crawl_env": "runner-rendered",
  "robots_note": "not_found",
  "pages": [
   {
@@ -67,7 +67,7 @@
    "language": null,
    "raw": "Mass Schedule: Monday and Friday - 10:00am",
    "source_url": "https://www.stwendelincleveland.org/",
-   "fetched_at": "2026-11-01T02:25:52+00:00",
+   "fetched_at": "2026-11-01T17:47:17+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -81,12 +81,14 @@
    "language": null,
    "raw": "Mass Schedule: Monday and Friday - 10:00am",
    "source_url": "https://www.stwendelincleveland.org/",
-   "fetched_at": "2026-11-01T02:25:52+00:00",
+   "fetched_at": "2026-11-01T17:47:17+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict",
-   "day_expanded_from": "Monday and Friday"
+   "day_expanded_from": "Monday and Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
   },
   {
    "kind": "mass",
@@ -95,7 +97,7 @@
    "language": null,
    "raw": "Mass Schedule: Saturday, 4:30pm",
    "source_url": "https://www.stwendelincleveland.org/",
-   "fetched_at": "2026-11-01T02:25:52+00:00",
+   "fetched_at": "2026-11-01T17:47:17+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -108,7 +110,7 @@
    "language": null,
    "raw": "Mass Schedule: Sunday, 11:00am",
    "source_url": "https://www.stwendelincleveland.org/",
-   "fetched_at": "2026-11-01T02:25:52+00:00",
+   "fetched_at": "2026-11-01T17:47:17+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -116,7 +118,7 @@
   }
  ],
  "source_url": "http://www.stwendelincleveland.org/",
- "fetched_at": "2026-11-01T02:25:54+00:00",
+ "fetched_at": "2026-11-01T17:47:22+00:00",
  "schedule_template": {
   "template": "generic_strict",
   "version": "ca-sites/2",
@@ -135,10 +137,11 @@
   "trusted_candidate": false,
   "generic_rows": 3
  },
+ "has_sunday": true,
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-10-31",
-  "window_end_exclusive": "2027-01-29",
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
@@ -146,7 +149,21 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "office_contact": {
+  "email": "office@stwendelincleveland.org",
+  "phone": "(216) 696-1926",
+  "address": "2281 Columbus Rd. Cleveland, OH 44113",
+  "source_url": "https://www.stwendelincleveland.org/contact-us",
+  "sources": {
+   "email": "https://www.stwendelincleveland.org/contact-us",
+   "phone": "https://www.stwendelincleveland.org/contact-us",
+   "address": "https://www.stwendelincleveland.org/contact-us"
+  },
+  "fetched_at": "2026-11-01T17:47:22+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
- }
+ },
+ "fetch_mode": "rendered"
 }
