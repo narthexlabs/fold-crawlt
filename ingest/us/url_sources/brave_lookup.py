@@ -38,7 +38,10 @@ DENY = ("catholicparish.net", "discovermass.com", "masstimes.org", "gcatholic.or
         "parishsoft", "flocknote.com", "onlinegiving", "osvhub.com", "pushpay", "givecentral", "signupgenius",
         # found by the 2026-11-01 precision audit (aggregators / unrelated hosts chosen for a parish)
         "churchadvise.com", "church.org", "opengovny.com", "atly.com", "historypointer.com", "whiting-turner.com",
-        "cityofwestonwv.gov", "ohiocountylibrary.org", "sundevilcentral.eoss.asu.edu", "madisonsd.com", "catholicchurchtimes.com")
+        "cityofwestonwv.gov", "ohiocountylibrary.org", "sundevilcentral.eoss.asu.edu", "madisonsd.com", "catholicchurchtimes.com",
+        # 2026-11-01 second-run spot check (40 hits): aggregators, generated church pages, news/history/town hosts
+        "alluschurches.com", "edan.io", "railway.app", "detroit1701.org", "blogspot.com", "flcatholictribune.com",
+        "okhistory.org", "wkow.com", "salisburypa.com", "sistersofihm.org", "stemma.org")
 CITY_PREFIX = {"salt", "san", "santa", "new", "west", "east", "north", "south", "fort", "ft", "mount", "mt", "las", "los", "el", "lake", "oak", "grand", "great", "port", "little", "big", "sioux", "baton", "boise", "st", "saint", "palm", "long", "oklahoma", "kansas", "sun", "falls", "des", "eau", "la", "del", "rio", "cedar", "green", "white", "blue", "red", "rock", "silver"}
 CITY_SUFFIX = {"city", "falls", "springs", "beach", "valley", "park", "heights", "hill", "hills", "lake", "grove", "ridge", "harbor", "junction", "mtn", "creek", "rapids", "river", "island", "rock", "haven"}
 GOOD_HINT = re.compile(r"parish|catholic|church|st[-.]?|saint|holy|our[-.]?lady|sacred|blessed|immaculate|christ|cathedral|basilica|mission|chapel", re.I)
