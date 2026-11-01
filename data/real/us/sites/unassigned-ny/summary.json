@@ -1,55 +1,61 @@
 {
  "slug": "unassigned-ny",
- "generated_at": "2026-11-01T05:45:13+00:00",
+ "generated_at": "2026-11-01T17:37:07+00:00",
  "run_date": "2026-11-01",
  "input": {
   "directory_records": 0,
-  "discovermass_records": 23,
+  "discovermass_records": 41,
   "directory_without_website": 0,
   "discovermass_without_website": 0
  },
- "sites_in_list": 21,
+ "sites_in_list": 40,
  "social_only": 0,
  "crawl": {
-  "ok_total": 17,
-  "ok_via_sandbox": 17,
+  "ok_total": 31,
+  "ok_via_sandbox": 31,
   "ok_via_laptop": 0,
   "partial_via_side_doors": 0,
-  "challenge": 0,
+  "challenge": 2,
   "blocked_403_429": 0,
   "robots_disallowed": 0,
-  "laptop_pending": 1,
-  "dead": 4,
+  "laptop_pending": 6,
+  "dead": 7,
   "not_fetched": 0,
   "by_status": {
-   "ok": 17,
+   "ok": 31,
    "not_found": 3,
+   "challenge": 2,
+   "dns": 2,
+   "ssl_error": 1,
    "conn_error": 1
   }
  },
  "laptop_attempted": 0,
  "groups": {
-  "total": 31,
-  "sites_with_groups": 6,
+  "total": 39,
+  "sites_with_groups": 8,
   "by_category": {
    "liturgical": 12,
-   "formation": 4,
+   "formation": 7,
+   "youth": 4,
    "service_mercy": 4,
    "other": 3,
-   "youth": 2,
    "scripture_study": 2,
+   "young_adults": 2,
    "women": 1,
-   "young_adults": 1,
    "grief_support": 1,
-   "fraternal_orders": 1
+   "fraternal_orders": 1,
+   "prayer_devotion": 1,
+   "families": 1
   },
   "with_meeting_time": 3
  },
  "calendar": {
-  "sites_with_active_feed": 3,
-  "active_feeds": 6,
+  "sites_with_active_feed": 5,
+  "active_feeds": 11,
   "feeds_by_platform": {
-   "iCal": 6
+   "iCal": 6,
+   "Google Calendar": 5
   },
   "sites_with_events": 0,
   "events_stored": 0,
@@ -58,46 +64,52 @@
  },
  "social": {
   "sites_by_platform": {
-   "facebook": 12,
-   "youtube": 8,
-   "instagram": 7,
-   "livestream": 6,
-   "x": 5
+   "facebook": 22,
+   "youtube": 13,
+   "livestream": 10,
+   "instagram": 9,
+   "x": 7
   },
-  "sites_with_any_social": 13,
+  "sites_with_any_social": 23,
   "shared_links_removed_as_diocesan": []
  },
  "bulletin": {
-  "sites_with_bulletin_url": 7,
+  "sites_with_bulletin_url": 18,
   "by_kind": {
-   "pdf": 4,
-   "page": 2,
+   "page": 9,
+   "pdf": 7,
+   "discovermass": 1,
    "lpi_pdf": 1
   },
-  "with_date": 5
+  "with_date": 7
  },
  "schedule": {
-  "sites_with_own_site_rows": 7,
-  "rows_total": 55,
+  "sites_with_own_site_rows": 12,
+  "rows_total": 116,
   "rows_needs_review": 0,
-  "sites_with_schedule_image_only": 1,
+  "sites_with_schedule_image_only": 2,
   "by_kind": {
-   "mass": 40,
-   "confession": 14,
+   "mass": 96,
+   "confession": 16,
+   "adoration": 3,
    "other": 1
   }
  },
  "cms_guess": {
-  "unknown": 10,
-  "wordpress": 3,
-  "wix": 2,
-  "squarespace": 2
+  "unknown": 13,
+  "wordpress": 8,
+  "wix": 5,
+  "squarespace": 3,
+  "godaddy": 1,
+  "duda": 1
  },
  "template": {
-  "generic-html:unknown": 10,
-  "wordpress-html": 2,
-  "generic-html:wix": 2,
-  "generic-html:squarespace": 2,
-  "wordpress-rest+html": 1
+  "generic-html:unknown": 13,
+  "wordpress-html": 5,
+  "generic-html:wix": 5,
+  "wordpress-rest+html": 3,
+  "generic-html:squarespace": 3,
+  "generic-html:godaddy": 1,
+  "generic-html:duda": 1
  }
 }

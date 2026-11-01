@@ -1,0 +1,140 @@
+{
+ "domain": "holytrinityny.org",
+ "diocese": "unassigned-ny",
+ "matched_church_ids": [
+  "holy-trinity-ukrainian-kerhonkson-ny"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "holy-trinity-ukrainian-kerhonkson-ny"
+  ]
+ },
+ "names": [
+  "Holy Trinity [Ukrainian]"
+ ],
+ "cities": [
+  "Kerhonkson"
+ ],
+ "home_url": "http://holytrinityny.org/",
+ "final_url": "https://holytrinityny.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://holytrinityny.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://holytrinityny.org/news/",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "contact",
+   "url": "https://holytrinityny.org/contact-us/",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-content"
+  ]
+ },
+ "template": "wordpress-rest+html",
+ "groups": [],
+ "calendar_feeds": [],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/HTUCCNY"
+  ],
+  "youtube": [
+   "https://www.youtube.com/@holytrinityukrainiancatholic"
+  ],
+  "livestream": [
+   {
+    "url": "https://www.youtube.com/@holytrinityukrainiancatholic/streams",
+    "label": "GO TO LITURGY LIVE STREAM HERE",
+    "platform": "youtube",
+    "kind": "link"
+   }
+  ]
+ },
+ "bulletin": {
+  "url": "https://holytrinityny.org/news/",
+  "date": null,
+  "kind": "page",
+  "text": "see weekday liturgy schedule here",
+  "source_url": "https://holytrinityny.org/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:30",
+   "language": null,
+   "raw": "see weekday liturgy schedule here: Sundays 9:30 AM",
+   "source_url": "https://holytrinityny.org/",
+   "fetched_at": "2026-11-01T17:21:59+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  }
+ ],
+ "source_url": "http://holytrinityny.org/",
+ "fetched_at": "2026-11-01T17:22:04+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "has_sunday": true,
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": "info@holytrinityny.org",
+  "phone": "(845) 626-2864",
+  "address": "211 Foordmore Road, Kerhonkson, NY 12446",
+  "source_url": "https://holytrinityny.org/contact-us/",
+  "sources": {
+   "email": "https://holytrinityny.org/contact-us/",
+   "phone": "https://holytrinityny.org/contact-us/",
+   "address": "https://holytrinityny.org/contact-us/"
+  },
+  "fetched_at": "2026-11-01T17:22:03+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}
