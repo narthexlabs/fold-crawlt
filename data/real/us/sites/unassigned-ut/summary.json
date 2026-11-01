@@ -1,59 +1,65 @@
 {
  "slug": "unassigned-ut",
- "generated_at": "2026-11-01T17:51:19+00:00",
+ "generated_at": "2026-11-01T20:31:07+00:00",
  "run_date": "2026-11-01",
  "input": {
   "directory_records": 0,
-  "discovermass_records": 33,
+  "discovermass_records": 43,
   "directory_without_website": 0,
   "discovermass_without_website": 0
  },
- "sites_in_list": 34,
+ "sites_in_list": 47,
  "social_only": 0,
  "crawl": {
-  "ok_total": 26,
-  "ok_via_sandbox": 26,
+  "ok_total": 35,
+  "ok_via_sandbox": 35,
   "ok_via_laptop": 0,
   "partial_via_side_doors": 0,
-  "challenge": 1,
+  "challenge": 2,
   "blocked_403_429": 0,
   "robots_disallowed": 0,
-  "laptop_pending": 7,
-  "dead": 7,
+  "laptop_pending": 11,
+  "dead": 10,
   "not_fetched": 0,
   "by_status": {
-   "ok": 26,
+   "ok": 35,
    "dns": 3,
+   "challenge": 2,
    "ssl_error": 2,
-   "challenge": 1,
+   "conn_error": 1,
+   "http_4xx": 1,
+   "unreachable_via_proxy": 1,
    "http_5xx": 1,
    "not_found": 1
   }
  },
  "laptop_attempted": 0,
  "groups": {
-  "total": 74,
-  "sites_with_groups": 13,
+  "total": 84,
+  "sites_with_groups": 16,
   "by_category": {
-   "liturgical": 32,
-   "formation": 9,
+   "liturgical": 33,
+   "formation": 11,
    "youth": 8,
+   "service_mercy": 6,
+   "other": 6,
    "prayer_devotion": 5,
-   "service_mercy": 5,
    "fraternal_orders": 5,
+   "young_adults": 4,
    "scripture_study": 3,
-   "young_adults": 3,
-   "other": 2,
+   "seniors": 1,
    "grief_support": 1,
    "language_cultural": 1
   },
   "with_meeting_time": 9
  },
  "calendar": {
-  "sites_with_active_feed": 9,
-  "active_feeds": 20,
+  "sites_with_active_feed": 13,
+  "active_feeds": 25,
   "feeds_by_platform": {
-   "Google Calendar": 20
+   "Google Calendar": 21,
+   "The Events Calendar (WordPress)": 2,
+   "iCal": 2
   },
   "sites_with_events": 0,
   "events_stored": 0,
@@ -62,54 +68,58 @@
  },
  "social": {
   "sites_by_platform": {
-   "facebook": 16,
-   "instagram": 9,
-   "youtube": 6,
-   "x": 2,
+   "facebook": 21,
+   "instagram": 13,
+   "youtube": 7,
+   "x": 4,
+   "flocknote": 3,
    "tiktok": 2,
-   "flocknote": 2,
-   "livestream": 1
+   "livestream": 2
   },
-  "sites_with_any_social": 18,
-  "shared_links_removed_as_diocesan": []
+  "sites_with_any_social": 25,
+  "shared_links_removed_as_diocesan": [
+   "facebook https://www.facebook.com/2008 (5 sites)"
+  ]
  },
  "bulletin": {
-  "sites_with_bulletin_url": 14,
+  "sites_with_bulletin_url": 15,
   "by_kind": {
-   "page": 8,
+   "page": 9,
    "pdf": 3,
    "lpi": 3
   },
   "with_date": 1
  },
  "schedule": {
-  "sites_with_own_site_rows": 17,
-  "rows_total": 184,
-  "rows_needs_review": 1,
-  "sites_with_schedule_image_only": 0,
+  "sites_with_own_site_rows": 21,
+  "rows_total": 229,
+  "rows_needs_review": 2,
+  "sites_with_schedule_image_only": 1,
   "by_kind": {
-   "mass": 116,
-   "confession": 42,
-   "adoration": 17,
+   "mass": 138,
+   "confession": 55,
+   "adoration": 27,
    "other": 9
   }
  },
  "cms_guess": {
-  "unknown": 12,
-  "squarespace": 3,
-  "wix": 3,
+  "unknown": 13,
+  "wordpress": 6,
+  "squarespace": 5,
+  "wix": 4,
   "duda": 3,
-  "wordpress": 2,
   "parishsoft": 2,
+  "google_sites": 1,
   "godaddy": 1
  },
  "template": {
-  "generic-html:unknown": 12,
-  "generic-html:squarespace": 3,
-  "generic-html:wix": 3,
+  "generic-html:unknown": 13,
+  "wordpress-rest+html": 6,
+  "generic-html:squarespace": 5,
+  "generic-html:wix": 4,
   "generic-html:duda": 3,
-  "wordpress-rest+html": 2,
   "generic-html:parishsoft": 2,
+  "generic-html:google_sites": 1,
   "generic-html:godaddy": 1
  }
 }

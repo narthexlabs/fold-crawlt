@@ -1,0 +1,184 @@
+{
+ "domain": "olg-solomon.com",
+ "diocese": "unassigned-az",
+ "matched_church_ids": [
+  "brave:AZ|guadalupe|solomon"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "brave:AZ|guadalupe|solomon"
+  ]
+ },
+ "names": [
+  "Our Lady of Guadalupe"
+ ],
+ "cities": [
+  "Solomon"
+ ],
+ "home_url": "https://www.olg-solomon.com/",
+ "final_url": "https://www.olg-solomon.com/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://www.olg-solomon.com/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://www.olg-solomon.com/bulletin",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.olg-solomon.com/calendar",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://www.olg-solomon.com/contact",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "duda",
+  "evidence": [
+   "irp.cdn-website"
+  ]
+ },
+ "template": "generic-html:duda",
+ "groups": [],
+ "calendar_feeds": [
+  {
+   "feed_id": "olg-solomon.com:ics:28a1361f",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": null,
+   "page_url": "https://www.olg-solomon.com/calendar",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (website-builder widget)",
+   "url_withheld": "calendar id is an e-mail address; not stored",
+   "feed_key": "28a1361f50ed",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T20:27:35+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  },
+  {
+   "feed_id": "olg-solomon.com:ics:ef70b145",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": null,
+   "page_url": "https://www.olg-solomon.com/calendar",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (website-builder widget)",
+   "url_withheld": "calendar id is an e-mail address; not stored",
+   "feed_key": "ef70b145e42f",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T20:27:36+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
+ "events": [],
+ "social": {
+  "flocknote": [
+   "https://ladyguadalupe.flocknote.com"
+  ]
+ },
+ "bulletin": {
+  "url": "https://irp.cdn-website.com/21fa8795/files/uploaded/11-01-2026+-+BULLETIN+FOR+THE+SOLEMNITY+OF+ALL+SANTS-+YEAR+A..pdf",
+  "date": "2026-11-01",
+  "kind": "pdf",
+  "text": "View This Bulletin",
+  "source_url": "https://www.olg-solomon.com/bulletin"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:30",
+   "language": null,
+   "raw": "Weekend Masses: - 9:30am",
+   "source_url": "https://www.olg-solomon.com/",
+   "fetched_at": "2026-11-01T20:25:00+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Weekday Masses: Wednesdays - 9:00am",
+   "source_url": "https://www.olg-solomon.com/",
+   "fetched_at": "2026-11-01T20:25:00+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  }
+ ],
+ "source_url": "https://www.olg-solomon.com/",
+ "fetched_at": "2026-11-01T20:25:03+00:00",
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": true,
+  "trusted_candidate": false,
+  "generic_rows": 3
+ },
+ "has_sunday": true,
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(928) 428-0149",
+  "address": "2257 S 1st Ave., Solomon, AZ 85551",
+  "source_url": "https://www.olg-solomon.com/contact",
+  "sources": {
+   "phone": "https://www.olg-solomon.com/contact",
+   "address": "https://www.olg-solomon.com/contact"
+  },
+  "fetched_at": "2026-11-01T20:25:03+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

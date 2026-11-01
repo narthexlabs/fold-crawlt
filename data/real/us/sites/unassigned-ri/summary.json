@@ -1,45 +1,49 @@
 {
  "slug": "unassigned-ri",
- "generated_at": "2026-11-01T17:58:44+00:00",
+ "generated_at": "2026-11-01T20:27:52+00:00",
  "run_date": "2026-11-01",
  "input": {
   "directory_records": 0,
-  "discovermass_records": 19,
+  "discovermass_records": 22,
   "directory_without_website": 0,
   "discovermass_without_website": 0
  },
- "sites_in_list": 17,
+ "sites_in_list": 45,
  "social_only": 0,
  "crawl": {
-  "ok_total": 10,
-  "ok_via_sandbox": 10,
+  "ok_total": 14,
+  "ok_via_sandbox": 14,
   "ok_via_laptop": 0,
   "partial_via_side_doors": 0,
-  "challenge": 4,
+  "challenge": 22,
   "blocked_403_429": 0,
   "robots_disallowed": 0,
-  "laptop_pending": 7,
-  "dead": 3,
+  "laptop_pending": 31,
+  "dead": 9,
   "not_fetched": 0,
   "by_status": {
-   "ok": 10,
-   "challenge": 4,
+   "challenge": 22,
+   "ok": 14,
+   "conn_error": 3,
    "dns": 2,
-   "http_5xx": 1
+   "ssl_error": 2,
+   "http_5xx": 1,
+   "unreachable_via_proxy": 1
   }
  },
  "laptop_attempted": 0,
  "groups": {
-  "total": 30,
-  "sites_with_groups": 4,
+  "total": 52,
+  "sites_with_groups": 5,
   "by_category": {
-   "liturgical": 14,
+   "liturgical": 18,
+   "other": 16,
+   "youth": 4,
+   "service_mercy": 4,
    "prayer_devotion": 3,
    "formation": 3,
-   "other": 3,
-   "service_mercy": 3,
-   "youth": 2,
-   "scripture_study": 1,
+   "scripture_study": 2,
+   "language_cultural": 1,
    "women": 1
   },
   "with_meeting_time": 2
@@ -57,12 +61,14 @@
  },
  "social": {
   "sites_by_platform": {
-   "facebook": 7,
-   "instagram": 4,
-   "youtube": 1,
-   "livestream": 1
+   "facebook": 8,
+   "instagram": 5,
+   "youtube": 2,
+   "livestream": 2,
+   "x": 1,
+   "tiktok": 1
   },
-  "sites_with_any_social": 8,
+  "sites_with_any_social": 9,
   "shared_links_removed_as_diocesan": []
  },
  "bulletin": {
@@ -78,7 +84,7 @@
   "sites_with_own_site_rows": 8,
   "rows_total": 82,
   "rows_needs_review": 9,
-  "sites_with_schedule_image_only": 0,
+  "sites_with_schedule_image_only": 1,
   "by_kind": {
    "mass": 66,
    "confession": 10,
@@ -86,21 +92,25 @@
   }
  },
  "cms_guess": {
+  "weebly": 3,
   "squarespace": 3,
-  "weebly": 2,
+  "wordpress": 2,
   "godaddy": 1,
   "wix": 1,
-  "wordpress": 1,
   "google_sites": 1,
-  "duda": 1
+  "duda": 1,
+  "joomla": 1,
+  "unknown": 1
  },
  "template": {
+  "generic-html:weebly": 3,
   "generic-html:squarespace": 3,
-  "generic-html:weebly": 2,
+  "wordpress-rest+html": 2,
   "generic-html:godaddy": 1,
   "generic-html:wix": 1,
-  "wordpress-rest+html": 1,
   "generic-html:google_sites": 1,
-  "generic-html:duda": 1
+  "generic-html:duda": 1,
+  "generic-html:joomla": 1,
+  "generic-html:unknown": 1
  }
 }

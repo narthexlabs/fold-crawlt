@@ -1,0 +1,133 @@
+{
+ "domain": "remseniowa.org",
+ "diocese": "unassigned-ia",
+ "matched_church_ids": [
+  "brave:IA|mary|remsen"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "brave:IA|mary|remsen"
+  ]
+ },
+ "names": [
+  "St. Mary"
+ ],
+ "cities": [
+  "Remsen"
+ ],
+ "home_url": "https://www.remseniowa.org/",
+ "final_url": "https://www.remseniowa.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://www.remseniowa.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.remseniowa.org/city-of-remsen/garbagerecycle-schedule/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.remseniowa.org/calendar/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.remseniowa.org/about/ball-field-calendars/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://www.remseniowa.org/contact/",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-content"
+  ]
+ },
+ "template": "wordpress-rest+html",
+ "groups": [],
+ "calendar_feeds": [
+  {
+   "feed_id": "remseniowa.org:ics:744f1bb5",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": "https://calendar.google.com/calendar/ical/4934859c09b10d8981c1cdd7d4b42fe95bdd635ea4673dcd4600997bfab34bcd%40group.calendar.google.com/public/basic.ics",
+   "page_url": "https://www.remseniowa.org/calendar/",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (embedded on page)",
+   "display_tz": "America/Chicago",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T20:29:18+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
+ "events": [],
+ "social": {},
+ "bulletin": null,
+ "schedule_rows": [],
+ "source_url": "https://www.remseniowa.org/",
+ "fetched_at": "2026-11-01T20:25:13+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "has_sunday": false,
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": null,
+  "address": "PO Box 510 Remsen, IA 51050",
+  "source_url": "https://www.remseniowa.org/contact/",
+  "sources": {
+   "address": "https://www.remseniowa.org/contact/"
+  },
+  "fetched_at": "2026-11-01T20:25:12+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

@@ -15,7 +15,7 @@ on:
   workflow_dispatch:
     inputs:
       job:
-        description: 'which job (sites | reparse | render | discovermass | gcatholic | commoncrawl | osm | wayback | bulletins | all)'
+        description: 'which job (sites | reparse | render | discovermass | gcatholic | commoncrawl | osm | wayback | bulletins | movements | all)'
         default: 'all'
       minutes:
         description: 'minutes per chunk'
@@ -264,6 +264,32 @@ jobs:
         env:
           WB_SHARD: ${{ matrix.shard }}
         run: python3 -u ingest/us/wayback/run.py --minutes "$MINUTES" --git
+
+  movements:
+    # Dispatch only (job=movements). Lane D: Knights of Columbus "Find a Council" JSON endpoint, queried by the ZIP codes of
+    # our parishes (data/real/us/movements/parish_index.json), one request at a time >= 1.05 s apart, robots.txt honoured;
+    # councils matched to parishes by name + city (ingest/us/movements/match.py). Resumable: kofc_progress.json.
+    if: ${{ github.event.inputs.job == 'movements' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    concurrency: { group: crawl-movements, cancel-in-progress: false }
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 1 }
+      - run: git config user.name "Matthew" && git config user.email "mcolt4@gmail.com"
+      - name: Knights of Columbus councils near our parishes -> match -> by_parish.json
+        run: |
+          set -u
+          TRAILER=$'\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01SXKUYETifPNNjUVPkZ7qG5'
+          timeout $(( MINUTES * 60 + 300 )) python3 -I -u ingest/us/movements/kofc.py --minutes "$MINUTES" || true
+          python3 -I ingest/us/movements/match.py
+          git add data/real/us/movements/
+          git commit -q -m "Movements: Knights of Columbus councils (Actions $(date -u +%FT%H:%MZ))$TRAILER" || true
+          for i in 1 2 3 4; do
+            git pull --rebase -X theirs --autostash -q origin main || { git rebase --abort 2>/dev/null || true; }
+            git push -q origin HEAD:main && break
+            sleep $((RANDOM % 20 + 5))
+          done
 
   bulletins:
     if: ${{ github.event_name == 'schedule' || github.event.inputs.job == 'all' || github.event.inputs.job == 'bulletins' }}

@@ -17,23 +17,55 @@
   "Detroit"
  ],
  "home_url": "http://www.holycrosshungarian.com/",
- "final_url": "https://www.holycrosshungarian.com/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "ok",
+ "final_url": "https://holycrosshungarian.com/",
+ "crawl_status": "wayback-2026-03-07",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
-   "url": "https://www.holycrosshungarian.com/",
-   "status": 403,
-   "class": "challenge"
+   "url": "https://holycrosshungarian.com/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://holycrosshungarian.com/mass-schedule/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://holycrosshungarian.com/our-friars/fr-barnabas-g-kiss-celebrates-mass-in-kapuvar/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://holycrosshungarian.com/upcoming-events/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://holycrosshungarian.com/calendar-of-events/",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "contact",
+   "url": "https://holycrosshungarian.com/contact-2/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "wordpress",
+  "evidence": [
+   "wp-json"
+  ]
  },
- "template": "none",
+ "template": "wordpress-html",
  "groups": [],
  "calendar_feeds": [],
  "events": [],
@@ -41,9 +73,77 @@
  "bulletin": null,
  "schedule_rows": [],
  "source_url": "http://www.holycrosshungarian.com/",
- "fetched_at": "2026-11-01T18:51:44+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-01T20:42:25+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "has_sunday": false,
+ "groups_dropped": {},
+ "office_contact": {
+  "email": null,
+  "phone": "(313) 842-1133",
+  "address": null,
+  "source_url": "https://holycrosshungarian.com/contact-2/",
+  "sources": {
+   "phone": "https://holycrosshungarian.com/contact-2/"
+  },
+  "fetched_at": "2026-03-04T01:50:13+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2026-03-07",
+  "capture_age_days": 239,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://holycrosshungarian.com/",
+    "capture": "2026-03-07",
+    "archive_url": "https://web.archive.org/web/20260307213124/https://holycrosshungarian.com/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://holycrosshungarian.com/mass-schedule/",
+    "capture": "2026-03-03",
+    "archive_url": "https://web.archive.org/web/20260303031612/https://holycrosshungarian.com/mass-schedule/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://holycrosshungarian.com/our-friars/fr-barnabas-g-kiss-celebrates-mass-in-kapuvar/",
+    "capture": "2026-03-06",
+    "archive_url": "https://web.archive.org/web/20260306051547/https://holycrosshungarian.com/our-friars/fr-barnabas-g-kiss-celebrates-mass-in-kapuvar/"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://holycrosshungarian.com/upcoming-events/",
+    "capture": "2026-03-05",
+    "archive_url": "https://web.archive.org/web/20260305023955/https://holycrosshungarian.com/upcoming-events/"
+   },
+   {
+    "kind": "contact",
+    "original": "https://holycrosshungarian.com/contact-2/",
+    "capture": "2026-03-04",
+    "archive_url": "https://web.archive.org/web/20260304015013/https://holycrosshungarian.com/contact-2/"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }

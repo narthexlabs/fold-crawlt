@@ -1,0 +1,357 @@
+{
+ "domain": "stisidorecatholicparish.org",
+ "diocese": "unassigned-il",
+ "matched_church_ids": [
+  "brave:IL|aloysius|dieterich"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "brave:IL|aloysius|dieterich"
+  ]
+ },
+ "names": [
+  "St. Aloysius"
+ ],
+ "cities": [
+  "Dieterich"
+ ],
+ "home_url": "https://www.stisidorecatholicparish.org/",
+ "final_url": "https://www.stisidorecatholicparish.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://www.stisidorecatholicparish.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.stisidorecatholicparish.org/ministry-schedules",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.stisidorecatholicparish.org/sacraments",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.stisidorecatholicparish.org/youth-ministry",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://www.stisidorecatholicparish.org/bulletins",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.stisidorecatholicparish.org/parish-calendar",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://www.stisidorecatholicparish.org/contact-us",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "duda",
+  "evidence": [
+   "irp.cdn-website"
+  ]
+ },
+ "template": "generic-html:duda",
+ "groups": [
+  {
+   "id": "stisidorecatholicparish.org:youth_ministry",
+   "name": "Youth Ministry",
+   "category": "youth",
+   "category_label": "Youth",
+   "subcategory": "youth_ministry",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.stisidorecatholicparish.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stisidorecatholicparish.org/youth-ministry",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T20:25:11+00:00",
+   "confidence": "medium"
+  }
+ ],
+ "calendar_feeds": [
+  {
+   "feed_id": "stisidorecatholicparish.org:ics:85a2a69a",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": null,
+   "page_url": "https://www.stisidorecatholicparish.org/parish-calendar",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (website-builder widget)",
+   "url_withheld": "calendar id is an e-mail address; not stored",
+   "feed_key": "85a2a69a46b6",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T20:30:41+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  },
+  {
+   "feed_id": "stisidorecatholicparish.org:ics:db240c5a",
+   "type": "ics",
+   "platform": "CCB / Pushpay ChMS",
+   "url": "https://dio.ccbchurch.com/w_calendar_sub.ics",
+   "page_url": "https://www.stisidorecatholicparish.org/parish-calendar",
+   "label": null,
+   "status": "active",
+   "note": "CCB public calendar iCal",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T20:30:42+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/stisidoreparishdieterich"
+  ]
+ },
+ "bulletin": {
+  "url": "https://4lpi.com/",
+  "date": null,
+  "kind": "lpi",
+  "text": "LPi",
+  "source_url": "https://www.stisidorecatholicparish.org/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "16:45-17:50",
+   "language": null,
+   "raw": "Reconciliation (Confession):: Saturday 4:45 PM to 5:50 PM before Mass at 6:00 PM",
+   "source_url": "https://www.stisidorecatholicparish.org/sacraments",
+   "fetched_at": "2026-11-01T20:25:10+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "18:00",
+   "language": null,
+   "raw": "Saturday 4:45 PM to 5:50 PM before Mass at 6:00 PM",
+   "source_url": "https://www.stisidorecatholicparish.org/sacraments",
+   "fetched_at": "2026-11-01T20:25:10+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "19:00-20:00",
+   "language": null,
+   "raw": "During Adoration 7:00 pm–8:00 pm",
+   "source_url": "https://www.stisidorecatholicparish.org/",
+   "fetched_at": "2026-11-01T20:25:06+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Adoration: Tuesday St. Aloysius 9:00 am to Wednesday 6:00 am",
+   "source_url": "https://www.stisidorecatholicparish.org/",
+   "fetched_at": "2026-11-01T20:25:06+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "06:00",
+   "language": null,
+   "raw": "Adoration: Tuesday St. Aloysius 9:00 am to Wednesday 6:00 am",
+   "source_url": "https://www.stisidorecatholicparish.org/",
+   "fetched_at": "2026-11-01T20:25:06+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "09:00-09:45",
+   "language": null,
+   "raw": "Adoration: Thursday 9:00 am to 9:45 am",
+   "source_url": "https://www.stisidorecatholicparish.org/",
+   "fetched_at": "2026-11-01T20:25:06+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday (lent)",
+   "time": "19:30-20:30",
+   "language": null,
+   "raw": "Adoration: 7:30 pm to 8:30 pm (During Lent)",
+   "source_url": "https://www.stisidorecatholicparish.org/",
+   "fetched_at": "2026-11-01T20:25:06+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Sunday 8:00 am",
+   "source_url": "https://www.stisidorecatholicparish.org/",
+   "fetched_at": "2026-11-01T20:25:06+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Tuesday 8:00 am",
+   "source_url": "https://www.stisidorecatholicparish.org/",
+   "fetched_at": "2026-11-01T20:25:06+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "18:00",
+   "language": null,
+   "raw": "Wednesday 6:00 pm",
+   "source_url": "https://www.stisidorecatholicparish.org/",
+   "fetched_at": "2026-11-01T20:25:06+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Friday 8:00 am",
+   "source_url": "https://www.stisidorecatholicparish.org/",
+   "fetched_at": "2026-11-01T20:25:06+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "10:00",
+   "language": null,
+   "raw": "During Adoration Thursday After Mass until 10am",
+   "source_url": "https://www.stisidorecatholicparish.org/",
+   "fetched_at": "2026-11-01T20:25:06+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box",
+   "kind_parsed": "adoration"
+  },
+  {
+   "kind": "adoration",
+   "day": null,
+   "time": "19:00",
+   "language": null,
+   "raw": "During Adoration 7:00 pm–8:00 pm",
+   "source_url": "https://www.stisidorecatholicparish.org/",
+   "fetched_at": "2026-11-01T20:25:06+00:00",
+   "needs_review": true,
+   "review_reason": "no_day,schedule_box"
+  }
+ ],
+ "source_url": "https://www.stisidorecatholicparish.org/",
+ "fetched_at": "2026-11-01T20:25:14+00:00",
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": true,
+  "trusted_candidate": false,
+  "generic_rows": 15
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "relative_time": 8,
+  "other_location": 15,
+  "box_rows_added": 6
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": "office@stisidore.dio.org",
+  "phone": "(217) 925-5788",
+  "address": "19812 1000th Ave, Dieterich, IL 62424",
+  "source_url": "https://www.stisidorecatholicparish.org/contact-us",
+  "sources": {
+   "email": "https://www.stisidorecatholicparish.org/contact-us",
+   "phone": "https://www.stisidorecatholicparish.org/contact-us",
+   "address": "https://www.stisidorecatholicparish.org/contact-us"
+  },
+  "fetched_at": "2026-11-01T20:25:14+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

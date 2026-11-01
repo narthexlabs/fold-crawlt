@@ -1,0 +1,128 @@
+{
+ "domain": "utbscs.org",
+ "diocese": "unassigned-ut",
+ "matched_church_ids": [
+  "brave:UT|blessed sacrament|sandy"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "brave:UT|blessed sacrament|sandy"
+  ]
+ },
+ "names": [
+  "Blessed Sacrament"
+ ],
+ "cities": [
+  "Sandy"
+ ],
+ "home_url": "https://utbscs.org/",
+ "final_url": "https://utbscs.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://utbscs.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://utbscs.org/youttube-test/",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "contact",
+   "url": "https://utbscs.org/contact-us/",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-content"
+  ]
+ },
+ "template": "wordpress-rest+html",
+ "groups": [],
+ "calendar_feeds": [
+  {
+   "feed_id": "utbscs.org:tribe_rest:e328624a",
+   "type": "tribe_rest",
+   "platform": "The Events Calendar (WordPress)",
+   "url": "https://utbscs.org/wp-json/tribe/events/v1/events",
+   "page_url": "https://utbscs.org/",
+   "label": null,
+   "status": "active",
+   "note": "The Events Calendar (WordPress) REST API",
+   "last_fetch": {
+    "status": 200,
+    "fetched_at": "2026-11-01T20:31:07+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/UTBSCS"
+  ],
+  "instagram": [
+   "https://www.instagram.com/blessedsacramentcs/"
+  ]
+ },
+ "bulletin": null,
+ "schedule_rows": [],
+ "source_url": "https://utbscs.org/",
+ "fetched_at": "2026-11-01T20:25:16+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "has_sunday": false,
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": "office@utbscs.org",
+  "phone": "(801) 572-5311",
+  "address": null,
+  "source_url": "https://utbscs.org/contact-us/",
+  "sources": {
+   "email": "https://utbscs.org/contact-us/",
+   "phone": "https://utbscs.org/contact-us/"
+  },
+  "fetched_at": "2026-11-01T20:25:15+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

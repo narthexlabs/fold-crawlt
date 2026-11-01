@@ -1,0 +1,159 @@
+{
+ "domain": "sacredheartbaudette.org",
+ "diocese": "unassigned-mn",
+ "matched_church_ids": [
+  "brave:MN|sacred heart|baudette"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "brave:MN|sacred heart|baudette"
+  ]
+ },
+ "names": [
+  "Sacred Heart"
+ ],
+ "cities": [
+  "Baudette"
+ ],
+ "home_url": "https://sacredheartbaudette.org/",
+ "final_url": "https://sacredheartbaudette.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://sacredheartbaudette.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://sacredheartbaudette.org/mass-times/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://sacredheartbaudette.org/bulletins/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://sacredheartbaudette.org/map/",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-content"
+  ]
+ },
+ "template": "wordpress-html",
+ "groups": [],
+ "calendar_feeds": [],
+ "events": [],
+ "social": {},
+ "bulletin": {
+  "url": "https://sacredheartbaudette.org/bulletins/",
+  "date": null,
+  "kind": "page",
+  "text": "Bulletins",
+  "source_url": "https://sacredheartbaudette.org/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:30",
+   "language": null,
+   "raw": "Mass: Sacred Heart, Baudette MN – Sunday 10:30 AM",
+   "source_url": "https://sacredheartbaudette.org/mass-times/",
+   "fetched_at": "2026-11-01T20:25:05+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:45",
+   "language": null,
+   "raw": "Mass: Sundays, 10:45 am",
+   "source_url": "https://sacredheartbaudette.org/mass-times/",
+   "fetched_at": "2026-11-01T20:25:05+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "08:30",
+   "language": null,
+   "raw": "Mass: Wednesdays, 8:30 am",
+   "source_url": "https://sacredheartbaudette.org/mass-times/",
+   "fetched_at": "2026-11-01T20:25:05+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  }
+ ],
+ "source_url": "https://sacredheartbaudette.org/",
+ "fetched_at": "2026-11-01T20:25:08+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 5
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "other_location": 4
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(218) 634-2689",
+  "address": "PO Box 738, Baudette MN 56623",
+  "source_url": "https://sacredheartbaudette.org/map/",
+  "sources": {
+   "phone": "https://sacredheartbaudette.org/map/",
+   "address": "https://sacredheartbaudette.org/"
+  },
+  "fetched_at": "2026-11-01T20:25:07+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

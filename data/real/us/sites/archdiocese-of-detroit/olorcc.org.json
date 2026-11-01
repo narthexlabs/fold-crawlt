@@ -17,33 +17,584 @@
   "Orchard Lake"
  ],
  "home_url": "http://www.olorcc.org/",
- "final_url": "https://www.olorcc.org/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "final_url": "https://olorcc.org/",
+ "crawl_status": "wayback-2025-04-24",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
-   "url": "https://www.olorcc.org/",
-   "status": 403,
-   "class": "challenge"
+   "url": "https://olorcc.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://olorcc.org/mass-times",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://olorcc.org/sacraments",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://olorcc.org/ministries",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://olorcc.org/worship-ministries",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://olorcc.org/music-ministry",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://olorcc.org/bulletins",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://olorcc.org/calendar-1",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "live",
+   "url": "https://olorcc.org/livestream/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://olorcc.org/update-contact-information",
+   "status": null,
+   "class": "conn_error"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "olorcc.org:intercessory|ory+prayer",
+   "name": "Intercessory Prayer",
+   "category": "prayer_devotion",
+   "category_label": "Prayer & devotion",
+   "subcategory": "intercessory_prayer",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://olorcc.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://olorcc.org/worship-ministries",
+   "source_kind": "website",
+   "fetched_at": "2024-06-07T19:02:33+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-04-24"
+  },
+  {
+   "id": "olorcc.org:ocia",
+   "name": "OCIA (becoming Catholic)",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "ocia",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://olorcc.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://olorcc.org/ministries",
+   "source_kind": "website",
+   "fetched_at": "2024-06-07T19:02:33+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-04-24"
+  },
+  {
+   "id": "olorcc.org:youth_ministry",
+   "name": "Youth Ministry",
+   "category": "youth",
+   "category_label": "Youth",
+   "subcategory": "youth_ministry",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "We will focus on the educational needs which promote the Catholic Christian formation of the parish family.",
+   "contact_url": "https://olorcc.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://olorcc.org/ministries",
+   "source_kind": "website",
+   "fetched_at": "2024-06-07T19:02:33+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-04-24"
+  },
+  {
+   "id": "olorcc.org:servers",
+   "name": "Altar Servers",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "altar_servers",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://olorcc.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://olorcc.org/worship-ministries",
+   "source_kind": "website",
+   "fetched_at": "2024-06-07T19:02:33+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-04-24"
+  },
+  {
+   "id": "olorcc.org:emhc",
+   "name": "Eucharistic Ministry Team",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "emhc",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://olorcc.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://olorcc.org/worship-ministries",
+   "source_kind": "website",
+   "fetched_at": "2024-06-07T19:02:33+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-04-24"
+  },
+  {
+   "id": "olorcc.org:ushers",
+   "name": "Greeter Ministry",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "ushers_greeters",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://olorcc.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://olorcc.org/worship-ministries",
+   "source_kind": "website",
+   "fetched_at": "2024-06-07T19:02:33+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-04-24"
+  },
+  {
+   "id": "olorcc.org:choir",
+   "name": "Liturgical Music",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "choir_music",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://olorcc.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://olorcc.org/music-ministry",
+   "source_kind": "website",
+   "fetched_at": "2025-04-18T18:50:56+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-04-24"
+  },
+  {
+   "id": "olorcc.org:choir|matter",
+   "name": "Music Matters",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "choir_music",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://olorcc.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://olorcc.org/music-ministry",
+   "source_kind": "website",
+   "fetched_at": "2025-04-18T18:50:56+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-04-24"
+  },
+  {
+   "id": "olorcc.org:lectors",
+   "name": "Readers/Lectors",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "lectors",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://olorcc.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://olorcc.org/worship-ministries",
+   "source_kind": "website",
+   "fetched_at": "2024-06-07T19:02:33+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-04-24"
+  },
+  {
+   "id": "olorcc.org:kofc",
+   "name": "Knights of Columbus",
+   "category": "fraternal_orders",
+   "category_label": "Fraternal & orders",
+   "subcategory": "knights_of_columbus",
+   "audience": "men",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://olorcc.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://olorcc.org/",
+   "source_kind": "website",
+   "fetched_at": "2025-04-24T09:50:09+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-04-24"
+  },
+  {
+   "id": "olorcc.org:other_men_and_women_fellowship",
+   "name": "Men and Women Fellowship",
+   "category": "other",
+   "category_label": "Other",
+   "subcategory": "unclassified",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://olorcc.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://olorcc.org/ministries",
+   "source_kind": "website",
+   "fetched_at": "2024-06-07T19:02:33+00:00",
+   "confidence": "low",
+   "source": "wayback-2025-04-24"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/1521835874710128",
+   "https://www.facebook.com/olorcc.orchardlake.mi"
+  ],
+  "youtube": [
+   "https://www.youtube.com/@ourladyofrefugeparishorcha2420"
+  ],
+  "livestream": [
+   {
+    "url": "https://olorcc.org/livestream",
+    "label": "Livestream",
+    "platform": "olorcc.org",
+    "kind": "link"
+   },
+   {
+    "url": "https://olorcc.org/worship-ministries",
+    "label": "Livestream Team",
+    "platform": "olorcc.org",
+    "kind": "link"
+   }
+  ]
+ },
+ "bulletin": {
+  "url": "https://files.ecatholic.com/35291/bulletins/20240609.pdf?t=1717768414000",
+  "date": "2024-06-09",
+  "kind": "ecatholic_pdf",
+  "text": "June 9 , 2024",
+  "source_url": "https://olorcc.org/bulletins"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": "English",
+   "raw": "Saturday Vigil: 5:00 PM English",
+   "source_url": "https://olorcc.org/",
+   "fetched_at": "2025-04-24T09:50:09+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-04-24",
+   "archive_url": "https://web.archive.org/web/20250424095009/https://olorcc.org/",
+   "capture_date": "2025-04-24"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:30",
+   "language": "English",
+   "raw": "Sunday: 9:30 AM English Livestream",
+   "source_url": "https://olorcc.org/",
+   "fetched_at": "2025-04-24T09:50:09+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-04-24",
+   "archive_url": "https://web.archive.org/web/20250424095009/https://olorcc.org/",
+   "capture_date": "2025-04-24"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:30",
+   "language": "English",
+   "raw": "Sunday: 11:30 AM English",
+   "source_url": "https://olorcc.org/",
+   "fetched_at": "2025-04-24T09:50:09+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-04-24",
+   "archive_url": "https://web.archive.org/web/20250424095009/https://olorcc.org/",
+   "capture_date": "2025-04-24"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "08:15",
+   "language": "English",
+   "raw": "Monday - Friday: 8:15 AM English Monday, Tuesday, Wednesday and Friday",
+   "source_url": "https://olorcc.org/",
+   "fetched_at": "2025-04-24T09:50:09+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Monday - Friday",
+   "source": "wayback-2025-04-24",
+   "archive_url": "https://web.archive.org/web/20250424095009/https://olorcc.org/",
+   "capture_date": "2025-04-24"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "08:15",
+   "language": "English",
+   "raw": "Monday - Friday: 8:15 AM English Monday, Tuesday, Wednesday and Friday",
+   "source_url": "https://olorcc.org/",
+   "fetched_at": "2025-04-24T09:50:09+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Monday - Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "source": "wayback-2025-04-24",
+   "archive_url": "https://web.archive.org/web/20250424095009/https://olorcc.org/",
+   "capture_date": "2025-04-24"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "08:15",
+   "language": "English",
+   "raw": "Monday - Friday: 8:15 AM English Monday, Tuesday, Wednesday and Friday",
+   "source_url": "https://olorcc.org/",
+   "fetched_at": "2025-04-24T09:50:09+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Monday - Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "source": "wayback-2025-04-24",
+   "archive_url": "https://web.archive.org/web/20250424095009/https://olorcc.org/",
+   "capture_date": "2025-04-24"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "08:15",
+   "language": "English",
+   "raw": "Monday - Friday: 8:15 AM English Monday, Tuesday, Wednesday and Friday",
+   "source_url": "https://olorcc.org/",
+   "fetched_at": "2025-04-24T09:50:09+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Monday - Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "source": "wayback-2025-04-24",
+   "archive_url": "https://web.archive.org/web/20250424095009/https://olorcc.org/",
+   "capture_date": "2025-04-24"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "08:15",
+   "language": "English",
+   "raw": "Monday - Friday: 8:15 AM English Monday, Tuesday, Wednesday and Friday",
+   "source_url": "https://olorcc.org/",
+   "fetched_at": "2025-04-24T09:50:09+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Monday - Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "source": "wayback-2025-04-24",
+   "archive_url": "https://web.archive.org/web/20250424095009/https://olorcc.org/",
+   "capture_date": "2025-04-24"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:30-16:30",
+   "language": null,
+   "raw": "Saturday: 3:30 PM - 4:30 PM",
+   "source_url": "https://olorcc.org/",
+   "fetched_at": "2025-04-24T09:50:09+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-04-24",
+   "archive_url": "https://web.archive.org/web/20250424095009/https://olorcc.org/",
+   "capture_date": "2025-04-24"
+  }
+ ],
  "source_url": "http://www.olorcc.org/",
- "fetched_at": "2026-11-01T18:51:43+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-01T20:42:46+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": true
+   },
+   "score": "high"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 11
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "text:skipped_section": 1
+ },
+ "groups_dropped": {
+  "unmatched": 6,
+  "sacrament_prep": 1,
+  "noise": 2
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(248) 682-0920",
+  "address": null,
+  "source_url": "https://olorcc.org/",
+  "sources": {
+   "phone": "https://olorcc.org/"
+  },
+  "fetched_at": "2025-04-24T09:50:09+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2025-04-24",
+  "capture_age_days": 556,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://olorcc.org/",
+    "capture": "2025-04-24",
+    "archive_url": "https://web.archive.org/web/20250424095009/https://olorcc.org/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://olorcc.org/mass-times",
+    "capture": "2025-10-05",
+    "archive_url": "https://web.archive.org/web/20251005220601/https://olorcc.org/mass-times"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://olorcc.org/sacraments",
+    "capture": "2024-06-07",
+    "archive_url": "https://web.archive.org/web/20240607190255/https://olorcc.org/sacraments"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://olorcc.org/ministries",
+    "capture": "2024-06-07",
+    "archive_url": "https://web.archive.org/web/20240607190233/https://olorcc.org/ministries"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://olorcc.org/worship-ministries",
+    "capture": "2024-06-07",
+    "archive_url": "https://web.archive.org/web/20240607190233/https://olorcc.org/worship-ministries"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://olorcc.org/music-ministry",
+    "capture": "2025-04-18",
+    "archive_url": "https://web.archive.org/web/20250418185056/https://olorcc.org/music-ministry"
+   },
+   {
+    "kind": "bulletin",
+    "original": "https://olorcc.org/bulletins",
+    "capture": "2024-06-07",
+    "archive_url": "https://web.archive.org/web/20240607190254/https://olorcc.org/bulletins"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://olorcc.org/calendar-1",
+    "capture": "2025-10-05",
+    "archive_url": "https://web.archive.org/web/20251005213226/https://olorcc.org/calendar-1"
+   },
+   {
+    "kind": "live",
+    "original": "https://olorcc.org/livestream/",
+    "capture": "2024-10-07",
+    "archive_url": "https://web.archive.org/web/20241007102017/https://olorcc.org/livestream/"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }

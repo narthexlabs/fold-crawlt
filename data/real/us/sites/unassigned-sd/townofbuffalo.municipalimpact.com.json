@@ -1,0 +1,137 @@
+{
+ "domain": "townofbuffalo.municipalimpact.com",
+ "diocese": "unassigned-sd",
+ "matched_church_ids": [
+  "brave:SD|anthony|buffalo"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "brave:SD|anthony|buffalo"
+  ]
+ },
+ "names": [
+  "St. Anthony"
+ ],
+ "cities": [
+  "Buffalo"
+ ],
+ "home_url": "https://townofbuffalo.municipalimpact.com/",
+ "final_url": "https://buffalo.sdcity.gov/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://buffalo.sdcity.gov/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://buffalo.sdcity.gov/community/worship/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://buffalo.sdcity.gov/event-calendar/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://buffalo.sdcity.gov/events/board-meeting/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://buffalo.sdcity.gov/contact-us/",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-json"
+  ]
+ },
+ "template": "wordpress-rest+html",
+ "groups": [],
+ "calendar_feeds": [],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/townofbuffalosd"
+  ]
+ },
+ "bulletin": null,
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Sunday Service: 9:00AM",
+   "source_url": "https://buffalo.sdcity.gov/community/worship/",
+   "fetched_at": "2026-11-01T20:25:12+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  }
+ ],
+ "source_url": "https://townofbuffalo.municipalimpact.com/",
+ "fetched_at": "2026-11-01T20:25:32+00:00",
+ "redirected_off_host": "buffalo.sdcity.gov",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "other_location": 6,
+  "box_rows_added": 1
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(605) 375-3130",
+  "address": "82 107 1st St, Buffalo, SD 57720",
+  "source_url": "https://buffalo.sdcity.gov/contact-us/",
+  "sources": {
+   "phone": "https://buffalo.sdcity.gov/contact-us/",
+   "address": "https://buffalo.sdcity.gov/contact-us/"
+  },
+  "fetched_at": "2026-11-01T20:25:27+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

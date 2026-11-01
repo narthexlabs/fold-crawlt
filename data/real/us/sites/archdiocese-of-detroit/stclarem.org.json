@@ -17,33 +17,646 @@
   "Grosse Pointe Park"
  ],
  "home_url": "http://www.stclarem.org/",
- "final_url": "https://www.stclarem.org/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "final_url": "https://stclarem.org/",
+ "crawl_status": "wayback-2026-10-13",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
-   "url": "https://www.stclarem.org/",
-   "status": 403,
-   "class": "challenge"
+   "url": "https://stclarem.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.stclarem.org/worship",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stclarem.org/manage-ministry-schedules",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://stclarem.org/ministries-of-education",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://stclarem.org/faith-formation-commission",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://stclarem.org/encounter-music-ministry",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://stclarem.org/bulletins",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "calendar",
+   "url": "https://stclarem.org/upcoming-events",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.stclarem.org/recalendar",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "live",
+   "url": "https://www.stclarem.org/stclare-live",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://stclarem.org/contact-us-directions",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "stclarem.org:intercessory|ory+prayer",
+   "name": "Intercessory Prayer Group",
+   "category": "prayer_devotion",
+   "category_label": "Prayer & devotion",
+   "subcategory": "intercessory_prayer",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stclarem.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stclarem.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-10-13T20:42:11+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-10-13"
+  },
+  {
+   "id": "stclarem.org:bible_study|reading",
+   "name": "Daily Bible Readings",
+   "category": "scripture_study",
+   "category_label": "Scripture & study",
+   "subcategory": "bible_study",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stclarem.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stclarem.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-10-13T20:42:11+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-10-13"
+  },
+  {
+   "id": "stclarem.org:adult_formation",
+   "name": "Adult Faith Formation",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "adult_formation",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stclarem.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stclarem.org/ministries-of-education",
+   "source_kind": "website",
+   "fetched_at": "2024-08-08T03:39:06+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-10-13"
+  },
+  {
+   "id": "stclarem.org:catechists",
+   "name": "Catechists",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "catechists",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stclarem.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stclarem.org/ministries-of-education",
+   "source_kind": "website",
+   "fetched_at": "2024-08-08T03:39:06+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-10-13"
+  },
+  {
+   "id": "stclarem.org:catechists|aide",
+   "name": "Catechists and Aides",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "catechists",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stclarem.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stclarem.org/faith-formation-commission",
+   "source_kind": "website",
+   "fetched_at": "2024-04-20T16:49:57+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-10-13"
+  },
+  {
+   "id": "stclarem.org:catechists|substitute",
+   "name": "Catechists and substitutes",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "catechists",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stclarem.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stclarem.org/faith-formation-commission",
+   "source_kind": "website",
+   "fetched_at": "2024-04-20T16:49:57+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-10-13"
+  },
+  {
+   "id": "stclarem.org:ocia",
+   "name": "RCIA",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "ocia",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stclarem.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stclarem.org/ministries-of-education",
+   "source_kind": "website",
+   "fetched_at": "2024-08-08T03:39:06+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-10-13"
+  },
+  {
+   "id": "stclarem.org:children_ff|board+parent",
+   "name": "Religious Education Parent Board",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "children_faith_formation",
+   "audience": "families",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stclarem.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stclarem.org/faith-formation-commission",
+   "source_kind": "website",
+   "fetched_at": "2024-04-20T16:49:57+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-10-13"
+  },
+  {
+   "id": "stclarem.org:food",
+   "name": "St. Leo's Soup Kitchen",
+   "category": "service_mercy",
+   "category_label": "Service & mercy",
+   "subcategory": "food_ministry",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stclarem.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stclarem.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-10-13T20:42:11+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-10-13"
+  },
+  {
+   "id": "stclarem.org:svdp",
+   "name": "St. Vincent De Paul",
+   "category": "service_mercy",
+   "category_label": "Service & mercy",
+   "subcategory": "st_vincent_de_paul",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stclarem.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stclarem.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-10-13T20:42:11+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-10-13"
+  },
+  {
+   "id": "stclarem.org:servers",
+   "name": "Altar Servers",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "altar_servers",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stclarem.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stclarem.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-10-13T20:42:11+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-10-13"
+  },
+  {
+   "id": "stclarem.org:choir|encounter",
+   "name": "Encounter Music Ministry",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "choir_music",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stclarem.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stclarem.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-10-13T20:42:11+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-10-13"
+  },
+  {
+   "id": "stclarem.org:emhc",
+   "name": "Eucharistic Ministers",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "emhc",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stclarem.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stclarem.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-10-13T20:42:11+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-10-13"
+  },
+  {
+   "id": "stclarem.org:hospitality",
+   "name": "Hospitality Ministry",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "hospitality",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stclarem.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stclarem.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-10-13T20:42:11+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-10-13"
+  },
+  {
+   "id": "stclarem.org:lectors",
+   "name": "Lectors",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "lectors",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stclarem.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stclarem.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-10-13T20:42:11+00:00",
+   "confidence": "low",
+   "source": "wayback-2026-10-13"
+  },
+  {
+   "id": "stclarem.org:choir",
+   "name": "Music | Choirs",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "choir_music",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stclarem.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stclarem.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-10-13T20:42:11+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-10-13"
+  },
+  {
+   "id": "stclarem.org:sacristans",
+   "name": "Sacristans",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "sacristans",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stclarem.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stclarem.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-10-13T20:42:11+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-10-13"
+  },
+  {
+   "id": "stclarem.org:ushers",
+   "name": "Ushers & Greeters",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "ushers_greeters",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stclarem.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stclarem.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-10-13T20:42:11+00:00",
+   "confidence": "low",
+   "source": "wayback-2026-10-13"
+  },
+  {
+   "id": "stclarem.org:kofc",
+   "name": "Knights of Columbus",
+   "category": "fraternal_orders",
+   "category_label": "Fraternal & orders",
+   "subcategory": "knights_of_columbus",
+   "audience": "men",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stclarem.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stclarem.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-10-13T20:42:11+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-10-13"
+  },
+  {
+   "id": "stclarem.org:bereavement",
+   "name": "Bereavement Ministry",
+   "category": "grief_support",
+   "category_label": "Grief & support",
+   "subcategory": "bereavement",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stclarem.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stclarem.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-10-13T20:42:11+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-10-13"
+  },
+  {
+   "id": "stclarem.org:stephen",
+   "name": "Stephen Ministry",
+   "category": "grief_support",
+   "category_label": "Grief & support",
+   "subcategory": "stephen_ministry",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stclarem.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stclarem.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-10-13T20:42:11+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-10-13"
+  },
+  {
+   "id": "stclarem.org:other_volunteer_for_this_ministry",
+   "name": "Volunteer for this Ministry",
+   "category": "other",
+   "category_label": "Other",
+   "subcategory": "unclassified",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stclarem.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stclarem.org/faith-formation-commission",
+   "source_kind": "website",
+   "fetched_at": "2024-04-20T16:49:57+00:00",
+   "confidence": "low",
+   "source": "wayback-2026-10-13"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/stclarem",
+   "https://www.facebook.com/http:"
+  ],
+  "instagram": [
+   "https://www.instagram.com/stclarem/"
+  ],
+  "youtube": [
+   "https://www.youtube.com/channel/UCOO792X0eDEubs1YMwD5ZIQ"
+  ],
+  "x": [
+   "https://x.com/stclarem"
+  ],
+  "livestream": [
+   {
+    "url": "https://youtube.com/embed/live_stream?channel=UCOO792X0eDEubs1YMwD5ZIQ",
+    "label": "youtube live",
+    "platform": "youtube",
+    "kind": "link"
+   }
+  ]
+ },
+ "bulletin": {
+  "url": "https://stclarem.org/bulletins",
+  "date": null,
+  "kind": "page",
+  "text": "Bulletin (PDF)",
+  "source_url": "https://stclarem.org/"
+ },
  "schedule_rows": [],
  "source_url": "http://www.stclarem.org/",
- "fetched_at": "2026-11-01T18:51:44+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-01T20:43:16+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 4
+ },
+ "has_sunday": false,
+ "schedule_images": [
+  {
+   "url": "https://files.ecatholic.com/2797/pictures/2026/9/Website%20Mass%20Times%208.png?t=1788374696000",
+   "alt": "",
+   "page": "https://stclarem.org/"
+  },
+  {
+   "url": "https://files.ecatholic.com/2797/pictures/2026/2/Confession%20Times%202.png?t=1771260291000",
+   "alt": "",
+   "page": "https://stclarem.org/"
+  },
+  {
+   "url": "https://files.ecatholic.com/2797/pictures/2026/1/IMG_0332.jpeg?t=1768342935000",
+   "alt": "Bulletins",
+   "page": "https://stclarem.org/"
+  }
+ ],
+ "schedule_note": "schedule appears to be an image; times not read (needs_review)",
+ "groups_dropped": {
+  "label_not_group": 4,
+  "fragment": 1,
+  "noise": 1,
+  "unmatched": 1
+ },
+ "office_contact": {
+  "email": "secretary@stclarem.org",
+  "phone": "(313) 647-5000",
+  "address": null,
+  "source_url": "https://stclarem.org/",
+  "sources": {
+   "email": "https://stclarem.org/",
+   "phone": "https://stclarem.org/"
+  },
+  "fetched_at": "2026-10-13T20:42:11+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2026-10-13",
+  "capture_age_days": 19,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://stclarem.org/",
+    "capture": "2026-10-13",
+    "archive_url": "https://web.archive.org/web/20261013204211/https://stclarem.org/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://www.stclarem.org/worship",
+    "capture": "2025-10-18",
+    "archive_url": "https://web.archive.org/web/20251018140949/https://www.stclarem.org/worship"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://stclarem.org/manage-ministry-schedules",
+    "capture": "2026-08-18",
+    "archive_url": "https://web.archive.org/web/20260818220831/https://stclarem.org/manage-ministry-schedules"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://stclarem.org/ministries-of-education",
+    "capture": "2024-08-08",
+    "archive_url": "https://web.archive.org/web/20240808033906/https://stclarem.org/ministries-of-education"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://stclarem.org/faith-formation-commission",
+    "capture": "2024-04-20",
+    "archive_url": "https://web.archive.org/web/20240420164957/https://stclarem.org/faith-formation-commission"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://www.stclarem.org/recalendar",
+    "capture": "2024-04-20",
+    "archive_url": "https://web.archive.org/web/20240420155639/https://www.stclarem.org/recalendar"
+   },
+   {
+    "kind": "live",
+    "original": "https://www.stclarem.org/stclare-live",
+    "capture": "2023-02-15",
+    "archive_url": "https://web.archive.org/web/20230215032647/https://www.stclarem.org/stclare-live"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }
