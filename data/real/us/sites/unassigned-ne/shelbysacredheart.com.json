@@ -16,31 +16,284 @@
  "cities": [],
  "home_url": "https://shelbysacredheart.com/",
  "final_url": "https://shelbysacredheart.com/",
- "crawl_status": "timeout",
+ "crawl_status": "ok",
  "crawl_env": "sandbox",
- "robots_note": "timeout",
+ "robots_note": "ok",
  "pages": [
   {
    "category": "home",
    "url": "https://shelbysacredheart.com/",
-   "status": null,
-   "class": "timeout"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://docs.google.com/viewer?url=https%3A%2F%2Fshelbysacredheart.com%2Fdocuments%2Fministry-schedule%2F93-liturgical-schedule-july-aug-2025%2Ffile%3Fforce_download%3D1",
+   "status": 204,
+   "class": "http_204"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://shelbysacredheart.com/documents/ministry-schedule/79-liturgical-schedule-marchapril2025",
+   "status": 429,
+   "class": "blocked_429"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "joomla",
+  "evidence": [
+   "content=\"joomla"
+  ]
  },
- "template": "none",
+ "template": "generic-html:joomla",
  "groups": [],
- "calendar_feeds": [],
+ "calendar_feeds": [
+  {
+   "feed_id": "shelbysacredheart.com:ics:507b14b2",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": "https://calendar.google.com/calendar/ical/76d3f7796736c290254b0916fcdc670adb8a0fc6575b61aaa57c30523d0a75c4%40group.calendar.google.com/public/basic.ics",
+   "page_url": "https://shelbysacredheart.com/",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (embedded on page)",
+   "display_tz": "America/Chicago",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T17:26:37+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  },
+  {
+   "feed_id": "shelbysacredheart.com:ics:77bc0021",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": "https://calendar.google.com/calendar/ical/solutiosoftware.net_8msm9288ui8epu6ugdn14f27ts%40group.calendar.google.com/public/basic.ics",
+   "page_url": "https://shelbysacredheart.com/",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (embedded on page)",
+   "display_tz": "America/Chicago",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T17:26:39+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/SacredHeartShelby"
+  ],
+  "flocknote": [
+   "https://shelbysacredhear.flocknote.com"
+  ]
+ },
+ "bulletin": {
+  "url": "https://shelbysacredhear.flocknote.com/home",
+  "date": null,
+  "kind": "page",
+  "text": "Sign Up Today!",
+  "source_url": "https://shelbysacredheart.com/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Weekend Mass: Sat - 5:00pm",
+   "source_url": "https://shelbysacredheart.com/",
+   "fetched_at": "2026-11-01T08:04:57+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Weekend Mass: Sun - 9:00am",
+   "source_url": "https://shelbysacredheart.com/",
+   "fetched_at": "2026-11-01T08:04:57+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "07:30",
+   "language": null,
+   "raw": "Daily Mass: M | T | Th | F - 7:30am",
+   "source_url": "https://shelbysacredheart.com/",
+   "fetched_at": "2026-11-01T08:04:57+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Daily"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "07:30",
+   "language": null,
+   "raw": "Daily Mass: M | T | Th | F - 7:30am",
+   "source_url": "https://shelbysacredheart.com/",
+   "fetched_at": "2026-11-01T08:04:57+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Daily"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "07:30",
+   "language": null,
+   "raw": "Daily Mass: M | T | Th | F - 7:30am",
+   "source_url": "https://shelbysacredheart.com/",
+   "fetched_at": "2026-11-01T08:04:57+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Daily"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "07:30",
+   "language": null,
+   "raw": "Daily Mass: M | T | Th | F - 7:30am",
+   "source_url": "https://shelbysacredheart.com/",
+   "fetched_at": "2026-11-01T08:04:57+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Daily"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "07:30",
+   "language": null,
+   "raw": "Daily Mass: M | T | Th | F - 7:30am",
+   "source_url": "https://shelbysacredheart.com/",
+   "fetched_at": "2026-11-01T08:04:57+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Daily"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "07:30",
+   "language": null,
+   "raw": "Daily Mass: M | T | Th | F - 7:30am",
+   "source_url": "https://shelbysacredheart.com/",
+   "fetched_at": "2026-11-01T08:04:57+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Daily"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "17:30",
+   "language": null,
+   "raw": "Daily Mass: Wed - 5:30pm",
+   "source_url": "https://shelbysacredheart.com/",
+   "fetched_at": "2026-11-01T08:04:57+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "16:20-16:50",
+   "language": null,
+   "raw": "Reconciliation: Sat - 4:20-4:50pm",
+   "source_url": "https://shelbysacredheart.com/",
+   "fetched_at": "2026-11-01T08:04:57+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "08:30-08:50",
+   "language": null,
+   "raw": "Reconciliation: Sun - 8:30-8:50am",
+   "source_url": "https://shelbysacredheart.com/",
+   "fetched_at": "2026-11-01T08:04:57+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  }
+ ],
  "source_url": "https://shelbysacredheart.com/",
- "fetched_at": "2026-11-01T17:27:27+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-01T08:05:03+00:00",
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": true,
+  "trusted_candidate": false,
+  "generic_rows": 9
+ },
+ "has_sunday": true,
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(402) 527-5425",
+  "address": "PO Box 340, Shelby, NE 68662",
+  "source_url": "https://shelbysacredheart.com/",
+  "sources": {
+   "phone": "https://shelbysacredheart.com/",
+   "address": "https://shelbysacredheart.com/"
+  },
+  "fetched_at": "2026-11-01T08:04:57+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
  }

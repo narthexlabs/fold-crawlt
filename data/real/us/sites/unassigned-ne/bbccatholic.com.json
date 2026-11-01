@@ -16,31 +16,219 @@
  "cities": [],
  "home_url": "https://bbccatholic.com/",
  "final_url": "https://bbccatholic.com/",
- "crawl_status": "timeout",
+ "crawl_status": "ok",
  "crawl_env": "sandbox",
- "robots_note": "timeout",
+ "robots_note": "ok",
  "pages": [
   {
    "category": "home",
    "url": "https://bbccatholic.com/",
-   "status": null,
-   "class": "timeout"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://bbccatholic.com/parish-news/ministry-schedules",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://bbccatholic.com/mass-schedule",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://bbccatholic.com/stewardship/parish-organizations",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://bbccatholic.com/stewardship/liturgical-ministries",
+   "status": 429,
+   "class": "blocked_429"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "parishsoft",
+  "evidence": [
+   "parishsoft.com"
+  ]
  },
- "template": "none",
- "groups": [],
- "calendar_feeds": [],
+ "template": "generic-html:parishsoft",
+ "groups": [
+  {
+   "id": "bbccatholic.com:rosary|holy",
+   "name": "Holy Rosary",
+   "category": "prayer_devotion",
+   "category_label": "Prayer & devotion",
+   "subcategory": "rosary",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://bbccatholic.com/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://bbccatholic.com/stewardship/parish-organizations",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T08:05:00+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "bbccatholic.com:other_guadalupe_club",
+   "name": "Guadalupe Club",
+   "category": "other",
+   "category_label": "Other",
+   "subcategory": "unclassified",
+   "audience": "all",
+   "language": "es",
+   "language_assumed": false,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://bbccatholic.com/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://bbccatholic.com/stewardship/parish-organizations",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T08:05:00+00:00",
+   "confidence": "low"
+  },
+  {
+   "id": "bbccatholic.com:other_soc_outreach_pray_ministry",
+   "name": "Soc. Outreach/Pray. Ministry",
+   "category": "other",
+   "category_label": "Other",
+   "subcategory": "unclassified",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://bbccatholic.com/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://bbccatholic.com/stewardship/parish-organizations",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T08:05:00+00:00",
+   "confidence": "low"
+  }
+ ],
+ "calendar_feeds": [
+  {
+   "feed_id": "bbccatholic.com:ics:a2db3cdd",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": "https://calendar.google.com/calendar/ical/q0deo4e7kcm5obvstetkbubs34%40group.calendar.google.com/public/basic.ics",
+   "page_url": "https://bbccatholic.com/",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (embedded on page)",
+   "display_tz": "America/Denver",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T17:24:44+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  },
+  {
+   "feed_id": "bbccatholic.com:ics:5aacbd63",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": "https://calendar.google.com/calendar/ical/plnef3dl8p348inpfotmjetc4g%40group.calendar.google.com/public/basic.ics",
+   "page_url": "https://bbccatholic.com/",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (embedded on page)",
+   "display_tz": "America/Denver",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T17:24:46+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
  "events": [],
- "social": {},
- "bulletin": null,
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/profile.php?id=100064687719431",
+   "https://www.facebook.com/acahnebraska",
+   "https://www.facebook.com/ackermanag"
+  ]
+ },
+ "bulletin": {
+  "url": "https://bbccatholic.com/parish-news/bulletin",
+  "date": null,
+  "kind": "page",
+  "text": "Bulletin",
+  "source_url": "https://bbccatholic.com/"
+ },
  "schedule_rows": [],
  "source_url": "https://bbccatholic.com/",
- "fetched_at": "2026-11-01T17:27:25+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-01T08:05:03+00:00",
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": true,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "has_sunday": false,
+ "schedule_dropped": {
+  "not_a_service": 10,
+  "other_location": 3
+ },
+ "schedule_images": [
+  {
+   "url": "https://dctw8aljw7o27.cloudfront.net/images/stories/template/ql/ql-bulletin.png?1741628738",
+   "alt": "",
+   "page": "https://bbccatholic.com/"
+  },
+  {
+   "url": "https://dctw8aljw7o27.cloudfront.net/images/stories/template/ql/ql-ministry-schedule.png?1741628737",
+   "alt": "",
+   "page": "https://bbccatholic.com/"
+  }
+ ],
+ "schedule_note": "schedule appears to be an image; times not read (needs_review)",
+ "groups_dropped": {
+  "noise": 3
+ },
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(308) 762-2009",
+  "address": "904 Cheyenne Ave, Alliance, NE 69301",
+  "source_url": "https://bbccatholic.com/",
+  "sources": {
+   "phone": "https://bbccatholic.com/",
+   "address": "https://bbccatholic.com/"
+  },
+  "fetched_at": "2026-11-01T08:04:55+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
  }

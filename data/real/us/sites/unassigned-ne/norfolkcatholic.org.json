@@ -15,32 +15,145 @@
  ],
  "cities": [],
  "home_url": "https://www.norfolkcatholic.org/",
- "final_url": "https://www.norfolkcatholic.org/",
- "crawl_status": "timeout",
+ "final_url": "https://www.norfolkcatholic.org/school",
+ "crawl_status": "ok",
  "crawl_env": "sandbox",
- "robots_note": "timeout",
+ "robots_note": "ok",
  "pages": [
   {
    "category": "home",
-   "url": "https://www.norfolkcatholic.org/",
-   "status": null,
-   "class": "timeout"
+   "url": "https://www.norfolkcatholic.org/school",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.norfolkcatholic.org/academics/daily-schedule",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.norfolkcatholic.org/school-headline/25006-bound-new-school-calendar",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.norfolkcatholic.org/school-headline/24690-2025-2026-school-calendar",
+   "status": 429,
+   "class": "blocked_429"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "joomla",
+  "evidence": [
+   "content=\"joomla"
+  ]
  },
- "template": "none",
+ "template": "generic-html:joomla",
  "groups": [],
  "calendar_feeds": [],
  "events": [],
- "social": {},
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/NorfolkCatholicSchool"
+  ],
+  "x": [
+   "https://x.com/NorfolkCatholic"
+  ]
+ },
  "bulletin": null,
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "08:15",
+   "language": null,
+   "raw": "Elementary students attend Mass on Wednesdays at 8:15am",
+   "source_url": "https://www.norfolkcatholic.org/academics/daily-schedule",
+   "fetched_at": "2026-11-01T08:04:59+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "08:15",
+   "language": null,
+   "raw": "Junior High and High School students attend Mass on Fridays at 8:15am",
+   "source_url": "https://www.norfolkcatholic.org/academics/daily-schedule",
+   "fetched_at": "2026-11-01T08:04:59+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "First Friday of the month",
+   "time": "08:15",
+   "language": null,
+   "raw": "*First Friday of each month an all school Mass is attended at 8:15am",
+   "source_url": "https://www.norfolkcatholic.org/academics/daily-schedule",
+   "fetched_at": "2026-11-01T08:04:59+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict"
+  }
+ ],
  "source_url": "https://www.norfolkcatholic.org/",
- "fetched_at": "2026-11-01T17:27:26+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-01T08:05:04+00:00",
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": true
+   },
+   "score": "low"
+  },
+  "passed_bar": true,
+  "trusted_candidate": false,
+  "generic_rows": 4
+ },
+ "has_sunday": false,
+ "schedule_partial": true,
+ "schedule_dropped": {
+  "no_kind": 4,
+  "relative_time": 2
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(402) 371-4584",
+  "address": "2301 W. Madison Avenue, Norfolk, NE 68701",
+  "source_url": "https://www.norfolkcatholic.org/school",
+  "sources": {
+   "phone": "https://www.norfolkcatholic.org/school",
+   "address": "https://www.norfolkcatholic.org/school"
+  },
+  "fetched_at": "2026-11-01T08:04:57+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
  }

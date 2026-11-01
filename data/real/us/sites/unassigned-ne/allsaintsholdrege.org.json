@@ -16,31 +16,704 @@
  "cities": [],
  "home_url": "https://allsaintsholdrege.org/",
  "final_url": "https://allsaintsholdrege.org/",
- "crawl_status": "timeout",
+ "crawl_status": "ok",
  "crawl_env": "sandbox",
- "robots_note": "timeout",
+ "robots_note": "ok",
  "pages": [
   {
    "category": "home",
    "url": "https://allsaintsholdrege.org/",
-   "status": null,
-   "class": "timeout"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://allsaintsholdrege.org/news/mass-confessions-times",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://allsaintsholdrege.org/sacraments/confession",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://allsaintsholdrege.org/parish-life",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://allsaintsholdrege.org/parish-life/pccw",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://allsaintsholdrege.org/parish-life/stewardship",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://allsaintsholdrege.org/news/bulletin",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://allsaintsholdrege.org/news/calendar",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://allsaintsholdrege.org/news",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://allsaintsholdrege.org/about-us/contact-us",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "joomla",
+  "evidence": [
+   "content=\"joomla"
+  ]
  },
- "template": "none",
- "groups": [],
- "calendar_feeds": [],
+ "template": "generic-html:joomla",
+ "groups": [
+  {
+   "id": "allsaintsholdrege.org:bible_study",
+   "name": "Read the Bible weekly",
+   "category": "scripture_study",
+   "category_label": "Scripture & study",
+   "subcategory": "bible_study",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": "Weekly",
+   "description": null,
+   "contact_url": "https://allsaintsholdrege.org/about-us/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://allsaintsholdrege.org/parish-life",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T08:05:01+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "allsaintsholdrege.org:evangelization|ation+stewardship",
+   "name": "Evangelization & Stewardship",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "evangelization_team",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://allsaintsholdrege.org/about-us/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://allsaintsholdrege.org/parish-life",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T08:05:01+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "allsaintsholdrege.org:respect_life_families",
+   "name": "Walking with Moms in Need",
+   "category": "service_mercy",
+   "category_label": "Service & mercy",
+   "subcategory": "respect_life",
+   "audience": "families",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://allsaintsholdrege.org/about-us/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://allsaintsholdrege.org/parish-life/pccw",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T08:05:03+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "allsaintsholdrege.org:altar_society",
+   "name": "PCCW (Altar Society)",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "altar_society_environment",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "All women of the parish are automatically members of the Parish Council of Catholic Women (PCCW).",
+   "contact_url": "https://allsaintsholdrege.org/about-us/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://allsaintsholdrege.org/parish-life",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T08:05:01+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "allsaintsholdrege.org:kofc",
+   "name": "Knights of Columbus",
+   "category": "fraternal_orders",
+   "category_label": "Fraternal & orders",
+   "subcategory": "knights_of_columbus",
+   "audience": "men",
+   "language": "en",
+   "language_assumed": true,
+   "meets": "Second Monday, 6:30p.m",
+   "description": "The Knights of Columbus meetings are held on the second Monday of the month at 6:30 P.M.",
+   "contact_url": "https://allsaintsholdrege.org/about-us/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://allsaintsholdrege.org/parish-life",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T08:05:01+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "allsaintsholdrege.org:funeral",
+   "name": "Supply food for funeral lunches",
+   "category": "grief_support",
+   "category_label": "Grief & support",
+   "subcategory": "funeral_ministry",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "Provide gifts for the Mosaic -Christmas Party and help with the party",
+   "contact_url": "https://allsaintsholdrege.org/about-us/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://allsaintsholdrege.org/parish-life",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T08:05:01+00:00",
+   "confidence": "medium"
+  }
+ ],
+ "calendar_feeds": [
+  {
+   "feed_id": "allsaintsholdrege.org:ics:65520fca",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": null,
+   "page_url": "https://allsaintsholdrege.org/",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (embedded on page)",
+   "display_tz": "America/Chicago",
+   "url_withheld": "calendar id is an e-mail address; not stored",
+   "feed_key": "65520fcabf92",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T17:24:41+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  },
+  {
+   "feed_id": "allsaintsholdrege.org:ics:02cf0fdb",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": "https://calendar.google.com/calendar/ical/106f25d6efa540ba6e22b4efa2864696c9c8ae9b12c06715d5bc22f23e57e536%40group.calendar.google.com/public/basic.ics",
+   "page_url": "https://allsaintsholdrege.org/news/calendar",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (embedded on page)",
+   "display_tz": "America/Chicago",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T17:24:42+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/AllSaintsCatholicofHoldrege",
+   "https://www.facebook.com/blacksmithbuilders",
+   "https://www.facebook.com/InspireRehabilitation"
+  ],
+  "youtube": [
+   "https://www.youtube.com/@allsaintscatholicchurch758"
+  ],
+  "flocknote": [
+   "https://ascholdrege.flocknote.com"
+  ],
+  "livestream": [
+   {
+    "url": "https://www.youtube.com/@allsaintscatholicchurch758/streams",
+    "label": "Watch Mass Live",
+    "platform": "youtube",
+    "kind": "link"
+   }
+  ]
+ },
+ "bulletin": {
+  "url": "https://allsaintsholdrege.org/news/bulletin",
+  "date": null,
+  "kind": "page",
+  "text": "Bulletin",
+  "source_url": "https://allsaintsholdrege.org/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "16:30",
+   "language": null,
+   "raw": "Confession Times: 4:30 - 5:25 pm - Saturday",
+   "source_url": "https://allsaintsholdrege.org/news/mass-confessions-times",
+   "fetched_at": "2026-11-01T08:04:57+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "kind_parsed": "confession"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "17:30",
+   "language": null,
+   "raw": "WEEKEND MASS: Saturday - 5:30 pm",
+   "source_url": "https://allsaintsholdrege.org/news/mass-confessions-times",
+   "fetched_at": "2026-11-01T08:04:57+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "10:30",
+   "language": null,
+   "raw": "WEEKEND MASS: Sunday - 10:30 am",
+   "source_url": "https://allsaintsholdrege.org/news/mass-confessions-times",
+   "fetched_at": "2026-11-01T08:04:57+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday (during the school year)",
+   "time": "08:10",
+   "language": null,
+   "raw": "DAILY MASS at All Saints Parish - Holdrege: Monday: 8:10 AM",
+   "source_url": "https://allsaintsholdrege.org/news/mass-confessions-times",
+   "fetched_at": "2026-11-01T08:04:57+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday (during the school year)",
+   "time": "08:10",
+   "language": null,
+   "raw": "DAILY MASS at All Saints Parish - Holdrege: Tuesday: 8:10 AM",
+   "source_url": "https://allsaintsholdrege.org/news/mass-confessions-times",
+   "fetched_at": "2026-11-01T08:04:57+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday (during the school year)",
+   "time": "08:10",
+   "language": null,
+   "raw": "DAILY MASS at All Saints Parish - Holdrege: Wednesday: 8:10 AM & 5:30 PM",
+   "source_url": "https://allsaintsholdrege.org/news/mass-confessions-times",
+   "fetched_at": "2026-11-01T08:04:57+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday (during the school year)",
+   "time": "17:30",
+   "language": null,
+   "raw": "DAILY MASS at All Saints Parish - Holdrege: Wednesday: 8:10 AM & 5:30 PM",
+   "source_url": "https://allsaintsholdrege.org/news/mass-confessions-times",
+   "fetched_at": "2026-11-01T08:04:57+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday (during the school year)",
+   "time": "08:10",
+   "language": null,
+   "raw": "DAILY MASS at All Saints Parish - Holdrege: Thursday: 8:10 AM",
+   "source_url": "https://allsaintsholdrege.org/news/mass-confessions-times",
+   "fetched_at": "2026-11-01T08:04:57+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday (during the school year)",
+   "time": "08:10",
+   "language": null,
+   "raw": "DAILY MASS at All Saints Parish - Holdrege: Friday: 8:10 AM",
+   "source_url": "https://allsaintsholdrege.org/news/mass-confessions-times",
+   "fetched_at": "2026-11-01T08:04:57+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "First Saturday of the month (during the school year)",
+   "time": "08:10",
+   "language": null,
+   "raw": "DAILY MASS at All Saints Parish - Holdrege: First Saturday: 8:10 AM",
+   "source_url": "https://allsaintsholdrege.org/news/mass-confessions-times",
+   "fetched_at": "2026-11-01T08:04:57+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday (summer)",
+   "time": "07:30",
+   "language": null,
+   "raw": "DAILY MASS at All Saints Parish - Holdrege: Monday: 7:30 AM",
+   "source_url": "https://allsaintsholdrege.org/news/mass-confessions-times",
+   "fetched_at": "2026-11-01T08:04:57+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday (summer)",
+   "time": "07:30",
+   "language": null,
+   "raw": "DAILY MASS at All Saints Parish - Holdrege: Tuesday: 7:30 AM",
+   "source_url": "https://allsaintsholdrege.org/news/mass-confessions-times",
+   "fetched_at": "2026-11-01T08:04:57+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday (summer)",
+   "time": "07:30",
+   "language": null,
+   "raw": "DAILY MASS at All Saints Parish - Holdrege: Wednesday: 7:30 AM",
+   "source_url": "https://allsaintsholdrege.org/news/mass-confessions-times",
+   "fetched_at": "2026-11-01T08:04:57+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday (summer)",
+   "time": "07:30",
+   "language": null,
+   "raw": "DAILY MASS at All Saints Parish - Holdrege: Thursday: 7:30 AM",
+   "source_url": "https://allsaintsholdrege.org/news/mass-confessions-times",
+   "fetched_at": "2026-11-01T08:04:57+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday (summer)",
+   "time": "07:30",
+   "language": null,
+   "raw": "DAILY MASS at All Saints Parish - Holdrege: Friday: 7:30 AM",
+   "source_url": "https://allsaintsholdrege.org/news/mass-confessions-times",
+   "fetched_at": "2026-11-01T08:04:57+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "First Saturday of the month (summer)",
+   "time": "08:10",
+   "language": null,
+   "raw": "DAILY MASS at All Saints Parish - Holdrege: First Saturday: 8:10 AM",
+   "source_url": "https://allsaintsholdrege.org/news/mass-confessions-times",
+   "fetched_at": "2026-11-01T08:04:57+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "08:30",
+   "language": null,
+   "raw": "Obligation Masses:: 8:30 AM (St. John Parish - Smithfield)",
+   "source_url": "https://allsaintsholdrege.org/news/mass-confessions-times",
+   "fetched_at": "2026-11-01T08:04:57+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "08:10",
+   "language": null,
+   "raw": "Obligation Masses:: 8:10 AM (All Saints Parish - Holdrege)",
+   "source_url": "https://allsaintsholdrege.org/news/mass-confessions-times",
+   "fetched_at": "2026-11-01T08:04:57+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "12:00",
+   "language": null,
+   "raw": "Obligation Masses:: 12:00 PM Noon (All Saints Parish - Holdrege)",
+   "source_url": "https://allsaintsholdrege.org/news/mass-confessions-times",
+   "fetched_at": "2026-11-01T08:04:57+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:30",
+   "language": null,
+   "raw": "All Saints - Holdrege Saturday - 5:30 pm",
+   "source_url": "https://allsaintsholdrege.org/news/mass-confessions-times",
+   "fetched_at": "2026-11-01T08:04:57+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:30",
+   "language": null,
+   "raw": "Sunday - 10:30 am",
+   "source_url": "https://allsaintsholdrege.org/news/mass-confessions-times",
+   "fetched_at": "2026-11-01T08:04:57+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "08:10",
+   "language": null,
+   "raw": "Monday: 8:10 AM",
+   "source_url": "https://allsaintsholdrege.org/news/mass-confessions-times",
+   "fetched_at": "2026-11-01T08:04:57+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "08:10",
+   "language": null,
+   "raw": "Tuesday: 8:10 AM",
+   "source_url": "https://allsaintsholdrege.org/news/mass-confessions-times",
+   "fetched_at": "2026-11-01T08:04:57+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "08:10",
+   "language": null,
+   "raw": "Wednesday: 8:10 AM & 5:30 PM",
+   "source_url": "https://allsaintsholdrege.org/news/mass-confessions-times",
+   "fetched_at": "2026-11-01T08:04:57+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "17:30",
+   "language": null,
+   "raw": "Wednesday: 8:10 AM & 5:30 PM",
+   "source_url": "https://allsaintsholdrege.org/news/mass-confessions-times",
+   "fetched_at": "2026-11-01T08:04:57+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "08:10",
+   "language": null,
+   "raw": "Thursday: 8:10 AM",
+   "source_url": "https://allsaintsholdrege.org/news/mass-confessions-times",
+   "fetched_at": "2026-11-01T08:04:57+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "08:10",
+   "language": null,
+   "raw": "Friday: 8:10 AM",
+   "source_url": "https://allsaintsholdrege.org/news/mass-confessions-times",
+   "fetched_at": "2026-11-01T08:04:57+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "08:10",
+   "language": null,
+   "raw": "First Saturday: 8:10 AM",
+   "source_url": "https://allsaintsholdrege.org/news/mass-confessions-times",
+   "fetched_at": "2026-11-01T08:04:57+00:00",
+   "needs_review": true,
+   "review_reason": "schedule_box,nth_of_month",
+   "nth": "first"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "07:30",
+   "language": null,
+   "raw": "Tuesday: 7:30 AM",
+   "source_url": "https://allsaintsholdrege.org/news/mass-confessions-times",
+   "fetched_at": "2026-11-01T08:04:57+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "07:30",
+   "language": null,
+   "raw": "Wednesday: 7:30 AM",
+   "source_url": "https://allsaintsholdrege.org/news/mass-confessions-times",
+   "fetched_at": "2026-11-01T08:04:57+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "07:30",
+   "language": null,
+   "raw": "Thursday: 7:30 AM",
+   "source_url": "https://allsaintsholdrege.org/news/mass-confessions-times",
+   "fetched_at": "2026-11-01T08:04:57+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "07:30",
+   "language": null,
+   "raw": "Friday: 7:30 AM",
+   "source_url": "https://allsaintsholdrege.org/news/mass-confessions-times",
+   "fetched_at": "2026-11-01T08:04:57+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  }
+ ],
  "source_url": "https://allsaintsholdrege.org/",
- "fetched_at": "2026-11-01T17:27:25+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-01T08:05:12+00:00",
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": true,
+  "trusted_candidate": false,
+  "generic_rows": 16
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "other_location": 42,
+  "box_rows_added": 13
+ },
+ "groups_dropped": {
+  "unmatched": 4,
+  "noise": 3
+ },
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(308) 995-4590",
+  "address": "1204 Logan Street,, Holdrege, NE 68949",
+  "source_url": "https://allsaintsholdrege.org/about-us/contact-us",
+  "sources": {
+   "phone": "https://allsaintsholdrege.org/about-us/contact-us",
+   "address": "https://allsaintsholdrege.org/about-us/contact-us"
+  },
+  "fetched_at": "2026-11-01T08:05:10+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
  }

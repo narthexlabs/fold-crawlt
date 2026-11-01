@@ -16,31 +16,238 @@
  "cities": [],
  "home_url": "https://stmarydavey.org/",
  "final_url": "https://stmarydavey.org/",
- "crawl_status": "timeout",
+ "crawl_status": "ok",
  "crawl_env": "sandbox",
- "robots_note": "timeout",
+ "robots_note": "ok",
  "pages": [
   {
    "category": "home",
    "url": "https://stmarydavey.org/",
-   "status": null,
-   "class": "timeout"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stmarydavey.org/news/ministry-schedule",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stmarydavey.org/sacraments/reconciliation-confession",
+   "status": 429,
+   "class": "blocked_429"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "joomla",
+  "evidence": [
+   "content=\"joomla"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "generic-html:joomla",
+ "groups": [
+  {
+   "id": "stmarydavey.org:altar_society",
+   "name": "Altar Society",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "altar_society_environment",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stmarydavey.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stmarydavey.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T08:05:01+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "stmarydavey.org:choir",
+   "name": "Music Ministry / Choir",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "choir_music",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stmarydavey.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stmarydavey.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T08:05:01+00:00",
+   "confidence": "low"
+  },
+  {
+   "id": "stmarydavey.org:kofc",
+   "name": "Knights of Columbus",
+   "category": "fraternal_orders",
+   "category_label": "Fraternal & orders",
+   "subcategory": "knights_of_columbus",
+   "audience": "men",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stmarydavey.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stmarydavey.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T08:05:01+00:00",
+   "confidence": "medium"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/StMarysCatholicChurchDavey"
+  ]
+ },
+ "bulletin": {
+  "url": "https://stmarydavey.org/news/bulletins",
+  "date": null,
+  "kind": "page",
+  "text": "Bulletins",
+  "source_url": "https://stmarydavey.org/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "17:30",
+   "language": null,
+   "raw": "Saturday Vigil Sunday: 5:30pm. 8:00am, 10:00am",
+   "source_url": "https://stmarydavey.org/",
+   "fetched_at": "2026-11-01T08:05:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_parsed": "Saturday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Saturday Vigil Sunday: 5:30pm. 8:00am, 10:00am",
+   "source_url": "https://stmarydavey.org/",
+   "fetched_at": "2026-11-01T08:05:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_parsed": "Saturday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": null,
+   "raw": "Saturday Vigil Sunday: 5:30pm. 8:00am, 10:00am",
+   "source_url": "https://stmarydavey.org/",
+   "fetched_at": "2026-11-01T08:05:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_parsed": "Saturday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "17:00-17:25",
+   "language": null,
+   "raw": "Confession: 5:00 -5:25pm 7:30 - 7:55am, 9:30 - 9:55am",
+   "source_url": "https://stmarydavey.org/",
+   "fetched_at": "2026-11-01T08:05:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "07:30-07:55",
+   "language": null,
+   "raw": "Confession: 5:00 -5:25pm 7:30 - 7:55am, 9:30 - 9:55am",
+   "source_url": "https://stmarydavey.org/",
+   "fetched_at": "2026-11-01T08:05:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "09:30-09:55",
+   "language": null,
+   "raw": "Confession: 5:00 -5:25pm 7:30 - 7:55am, 9:30 - 9:55am",
+   "source_url": "https://stmarydavey.org/",
+   "fetched_at": "2026-11-01T08:05:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  }
+ ],
  "source_url": "https://stmarydavey.org/",
- "fetched_at": "2026-11-01T17:27:31+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-01T08:05:06+00:00",
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": true,
+  "trusted_candidate": false,
+  "generic_rows": 5
+ },
+ "has_sunday": true,
+ "groups_dropped": {
+  "noise": 1
+ },
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(402) 785-3445",
+  "address": "17630 N. Third Street, Davey, NE 68336",
+  "source_url": "https://stmarydavey.org/",
+  "sources": {
+   "phone": "https://stmarydavey.org/",
+   "address": "https://stmarydavey.org/"
+  },
+  "fetched_at": "2026-11-01T08:05:01+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
  }

@@ -16,31 +16,492 @@
  "cities": [],
  "home_url": "https://www.stceciliahastings.org/",
  "final_url": "https://www.stceciliahastings.org/",
- "crawl_status": "timeout",
+ "crawl_status": "ok",
  "crawl_env": "sandbox",
- "robots_note": "timeout",
+ "robots_note": "ok",
  "pages": [
   {
    "category": "home",
    "url": "https://www.stceciliahastings.org/",
-   "status": null,
-   "class": "timeout"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.stceciliahastings.org/sacraments/reconciliation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.stceciliahastings.org/news/weekly-parish-adoration-event",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.stceciliahastings.org/get-involved",
+   "status": 429,
+   "class": "blocked_429"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "parishsoft",
+  "evidence": [
+   "parishsoft.com"
+  ]
  },
- "template": "none",
+ "template": "generic-html:parishsoft",
  "groups": [],
- "calendar_feeds": [],
+ "calendar_feeds": [
+  {
+   "feed_id": "stceciliahastings.org:ics:f16c31b3",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": "https://calendar.google.com/calendar/ical/85d1c901efa7ed290f122a5342f45030cea788735680ec647d73d3ad7b62da1a%40group.calendar.google.com/public/basic.ics",
+   "page_url": "https://www.stceciliahastings.org/",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (embedded on page)",
+   "display_tz": "America/Chicago",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T17:26:51+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/StCeciliaHastings",
+   "https://www.facebook.com/clientsolutionssystems"
+  ],
+  "instagram": [
+   "https://www.instagram.com/hastings_stc/"
+  ],
+  "x": [
+   "https://x.com/Hastings_STC"
+  ],
+  "flocknote": [
+   "https://new.flocknote.com"
+  ]
+ },
+ "bulletin": {
+  "url": "https://www.stceciliahastings.org/news/bulletin",
+  "date": null,
+  "kind": "page",
+  "text": "Bulletin",
+  "source_url": "https://www.stceciliahastings.org/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:30-16:30",
+   "language": null,
+   "raw": "See our numerous Confession times offered at our parish.: Saturday: 3:30-4:30pm",
+   "source_url": "https://www.stceciliahastings.org/sacraments/reconciliation",
+   "fetched_at": "2026-11-01T08:05:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "07:30-07:50",
+   "language": null,
+   "raw": "See our numerous Confession times offered at our parish.: Sunday: 7:30-7:50am, 9:30-9:50am, & 7:00-7:20am",
+   "source_url": "https://www.stceciliahastings.org/sacraments/reconciliation",
+   "fetched_at": "2026-11-01T08:05:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "09:30-09:50",
+   "language": null,
+   "raw": "See our numerous Confession times offered at our parish.: Sunday: 7:30-7:50am, 9:30-9:50am, & 7:00-7:20am",
+   "source_url": "https://www.stceciliahastings.org/sacraments/reconciliation",
+   "fetched_at": "2026-11-01T08:05:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "07:00-07:20",
+   "language": null,
+   "raw": "See our numerous Confession times offered at our parish.: Sunday: 7:30-7:50am, 9:30-9:50am, & 7:00-7:20am",
+   "source_url": "https://www.stceciliahastings.org/sacraments/reconciliation",
+   "fetched_at": "2026-11-01T08:05:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "19:00",
+   "language": null,
+   "raw": "Please join us for the Parish Holy Hour on Thursdays at 7:00pm, Confessions 7:15pm, and Benediction at 8:00pm.",
+   "source_url": "https://www.stceciliahastings.org/news/weekly-parish-adoration-event",
+   "fetched_at": "2026-11-01T08:05:02+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Thursday",
+   "time": "19:15",
+   "language": null,
+   "raw": "Please join us for the Parish Holy Hour on Thursdays at 7:00pm, Confessions 7:15pm, and Benediction at 8:00pm.",
+   "source_url": "https://www.stceciliahastings.org/news/weekly-parish-adoration-event",
+   "fetched_at": "2026-11-01T08:05:02+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Mass Times: Saturday: 5:00pm",
+   "source_url": "https://www.stceciliahastings.org/",
+   "fetched_at": "2026-11-01T08:04:59+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Mass Times: Sunday: 8:00am, 10:00am, 7:30pm",
+   "source_url": "https://www.stceciliahastings.org/",
+   "fetched_at": "2026-11-01T08:04:59+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": null,
+   "raw": "Mass Times: Sunday: 8:00am, 10:00am, 7:30pm",
+   "source_url": "https://www.stceciliahastings.org/",
+   "fetched_at": "2026-11-01T08:04:59+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "19:30",
+   "language": null,
+   "raw": "Mass Times: Sunday: 8:00am, 10:00am, 7:30pm",
+   "source_url": "https://www.stceciliahastings.org/",
+   "fetched_at": "2026-11-01T08:04:59+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "13:00",
+   "language": "Spanish",
+   "raw": "Mass in Spanish: 1:00pm",
+   "source_url": "https://www.stceciliahastings.org/",
+   "fetched_at": "2026-11-01T08:04:59+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "First Sunday of the month",
+   "time": "11:30",
+   "language": "Vietnamese",
+   "raw": "Mass in Vietnamese: 11:30am (1st Sunday of the month)",
+   "source_url": "https://www.stceciliahastings.org/",
+   "fetched_at": "2026-11-01T08:04:59+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "07:00",
+   "language": null,
+   "raw": "Mass Times: Monday-Saturday: 7:00am",
+   "source_url": "https://www.stceciliahastings.org/",
+   "fetched_at": "2026-11-01T08:04:59+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday-Saturday"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "07:00",
+   "language": null,
+   "raw": "Mass Times: Monday-Saturday: 7:00am",
+   "source_url": "https://www.stceciliahastings.org/",
+   "fetched_at": "2026-11-01T08:04:59+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday-Saturday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "07:00",
+   "language": null,
+   "raw": "Mass Times: Monday-Saturday: 7:00am",
+   "source_url": "https://www.stceciliahastings.org/",
+   "fetched_at": "2026-11-01T08:04:59+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday-Saturday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "07:00",
+   "language": null,
+   "raw": "Mass Times: Monday-Saturday: 7:00am",
+   "source_url": "https://www.stceciliahastings.org/",
+   "fetched_at": "2026-11-01T08:04:59+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday-Saturday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "07:00",
+   "language": null,
+   "raw": "Mass Times: Monday-Saturday: 7:00am",
+   "source_url": "https://www.stceciliahastings.org/",
+   "fetched_at": "2026-11-01T08:04:59+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday-Saturday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "07:00",
+   "language": null,
+   "raw": "Mass Times: Monday-Saturday: 7:00am",
+   "source_url": "https://www.stceciliahastings.org/",
+   "fetched_at": "2026-11-01T08:04:59+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday-Saturday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "12:10",
+   "language": null,
+   "raw": "Mass Times: Monday-Friday: 12:10pm",
+   "source_url": "https://www.stceciliahastings.org/",
+   "fetched_at": "2026-11-01T08:04:59+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday-Friday"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "12:10",
+   "language": null,
+   "raw": "Mass Times: Monday-Friday: 12:10pm",
+   "source_url": "https://www.stceciliahastings.org/",
+   "fetched_at": "2026-11-01T08:04:59+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday-Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "12:10",
+   "language": null,
+   "raw": "Mass Times: Monday-Friday: 12:10pm",
+   "source_url": "https://www.stceciliahastings.org/",
+   "fetched_at": "2026-11-01T08:04:59+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday-Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "12:10",
+   "language": null,
+   "raw": "Mass Times: Monday-Friday: 12:10pm",
+   "source_url": "https://www.stceciliahastings.org/",
+   "fetched_at": "2026-11-01T08:04:59+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday-Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "12:10",
+   "language": null,
+   "raw": "Mass Times: Monday-Friday: 12:10pm",
+   "source_url": "https://www.stceciliahastings.org/",
+   "fetched_at": "2026-11-01T08:04:59+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday-Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "14:50",
+   "language": null,
+   "raw": "Mass Times: Tuesday & Friday: 2:50pm",
+   "source_url": "https://www.stceciliahastings.org/",
+   "fetched_at": "2026-11-01T08:04:59+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Tuesday & Friday"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "14:50",
+   "language": null,
+   "raw": "Mass Times: Tuesday & Friday: 2:50pm",
+   "source_url": "https://www.stceciliahastings.org/",
+   "fetched_at": "2026-11-01T08:04:59+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Tuesday & Friday",
+   "day_parsed": "Tuesday",
+   "day_bound_from_line": true
+  }
+ ],
  "source_url": "https://www.stceciliahastings.org/",
- "fetched_at": "2026-11-01T17:27:28+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-01T08:05:05+00:00",
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": true,
+  "trusted_candidate": false,
+  "generic_rows": 23
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "benediction_end": 1
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(402) 463-1336",
+  "address": "301 W 7th Street,, Hastings, NE 68901",
+  "source_url": "https://www.stceciliahastings.org/",
+  "sources": {
+   "phone": "https://www.stceciliahastings.org/",
+   "address": "https://www.stceciliahastings.org/"
+  },
+  "fetched_at": "2026-11-01T08:04:59+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
  }

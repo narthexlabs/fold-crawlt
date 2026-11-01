@@ -16,31 +16,469 @@
  "cities": [],
  "home_url": "https://www.standrewtecumseh.org/",
  "final_url": "https://www.standrewtecumseh.org/",
- "crawl_status": "timeout",
+ "crawl_status": "ok",
  "crawl_env": "sandbox",
- "robots_note": "timeout",
+ "robots_note": "ok",
  "pages": [
   {
    "category": "home",
    "url": "https://www.standrewtecumseh.org/",
-   "status": null,
-   "class": "timeout"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.standrewtecumseh.org/about-us/mass-confession-times",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.standrewtecumseh.org/sacraments",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.standrewtecumseh.org/parish-life/organizations",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.standrewtecumseh.org/parish-life/organizations/altar-society",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.standrewtecumseh.org/parish-life/faith-formation",
+   "status": 429,
+   "class": "blocked_429"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "parishsoft",
+  "evidence": [
+   "parishsoft.com"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "generic-html:parishsoft",
+ "groups": [
+  {
+   "id": "standrewtecumseh.org:children_ff",
+   "name": "Family Prayer & Discipleship / CCD",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "children_faith_formation",
+   "audience": "families",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.standrewtecumseh.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.standrewtecumseh.org/parish-life/organizations",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T08:05:02+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "standrewtecumseh.org:ocia",
+   "name": "RCIA",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "ocia",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.standrewtecumseh.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.standrewtecumseh.org/parish-life/organizations",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T08:05:02+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "standrewtecumseh.org:altar_society",
+   "name": "Altar Society",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "altar_society_environment",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.standrewtecumseh.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.standrewtecumseh.org/parish-life/organizations",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T08:05:02+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "standrewtecumseh.org:kofc",
+   "name": "Knights of Columbus",
+   "category": "fraternal_orders",
+   "category_label": "Fraternal & orders",
+   "subcategory": "knights_of_columbus",
+   "audience": "men",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.standrewtecumseh.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.standrewtecumseh.org/parish-life/organizations",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T08:05:02+00:00",
+   "confidence": "medium"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/pages/category/Catholic-Church",
+   "https://www.facebook.com/MahoneyConcreteLLC",
+   "https://www.facebook.com/CommunityInsuranceGroupAgency"
+  ]
+ },
+ "bulletin": {
+  "url": "https://www.standrewtecumseh.org/news-events/bulletin",
+  "date": null,
+  "kind": "page",
+  "text": "Bulletin",
+  "source_url": "https://www.standrewtecumseh.org/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:15",
+   "language": null,
+   "raw": "Sunday Masses: Saturday - 5:15pm",
+   "source_url": "https://www.standrewtecumseh.org/about-us/mass-confession-times",
+   "fetched_at": "2026-11-01T08:04:58+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Sunday Masses: Sunday - 8:00am (St. Mary)",
+   "source_url": "https://www.standrewtecumseh.org/about-us/mass-confession-times",
+   "fetched_at": "2026-11-01T08:04:58+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": null,
+   "raw": "Sunday Masses: Sunday - 10:00am",
+   "source_url": "https://www.standrewtecumseh.org/about-us/mass-confession-times",
+   "fetched_at": "2026-11-01T08:04:58+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "12:30",
+   "language": "Spanish",
+   "raw": "Sunday Masses: Sunday - 12:30pm (espanol)",
+   "source_url": "https://www.standrewtecumseh.org/about-us/mass-confession-times",
+   "fetched_at": "2026-11-01T08:04:58+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "08:15",
+   "language": null,
+   "raw": "Weekday Masses: Monday - Friday - 8:15am",
+   "source_url": "https://www.standrewtecumseh.org/about-us/mass-confession-times",
+   "fetched_at": "2026-11-01T08:04:58+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday - Friday"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "08:15",
+   "language": null,
+   "raw": "Weekday Masses: Monday - Friday - 8:15am",
+   "source_url": "https://www.standrewtecumseh.org/about-us/mass-confession-times",
+   "fetched_at": "2026-11-01T08:04:58+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday - Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "08:15",
+   "language": null,
+   "raw": "Weekday Masses: Monday - Friday - 8:15am",
+   "source_url": "https://www.standrewtecumseh.org/about-us/mass-confession-times",
+   "fetched_at": "2026-11-01T08:04:58+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday - Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "08:15",
+   "language": null,
+   "raw": "Weekday Masses: Monday - Friday - 8:15am",
+   "source_url": "https://www.standrewtecumseh.org/about-us/mass-confession-times",
+   "fetched_at": "2026-11-01T08:04:58+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday - Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "08:15",
+   "language": null,
+   "raw": "Weekday Masses: Monday - Friday - 8:15am",
+   "source_url": "https://www.standrewtecumseh.org/about-us/mass-confession-times",
+   "fetched_at": "2026-11-01T08:04:58+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday - Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "17:30",
+   "language": null,
+   "raw": "Weekday Masses: Monday - 5:30pm",
+   "source_url": "https://www.standrewtecumseh.org/about-us/mass-confession-times",
+   "fetched_at": "2026-11-01T08:04:58+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "17:30",
+   "language": null,
+   "raw": "Weekday Masses: Wednesday - 5:30pm (St. Mary)",
+   "source_url": "https://www.standrewtecumseh.org/about-us/mass-confession-times",
+   "fetched_at": "2026-11-01T08:04:58+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "16:30",
+   "language": null,
+   "raw": "Confession: Saturday - 4:30pm",
+   "source_url": "https://www.standrewtecumseh.org/about-us/mass-confession-times",
+   "fetched_at": "2026-11-01T08:04:58+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "07:30",
+   "language": null,
+   "raw": "Confession: Sunday - 7:30am (St. Mary)",
+   "source_url": "https://www.standrewtecumseh.org/about-us/mass-confession-times",
+   "fetched_at": "2026-11-01T08:04:58+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "12:00",
+   "language": null,
+   "raw": "Confession: Sunday - 12:00pm",
+   "source_url": "https://www.standrewtecumseh.org/about-us/mass-confession-times",
+   "fetched_at": "2026-11-01T08:04:58+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Monday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Confession: Monday - 5:00pm",
+   "source_url": "https://www.standrewtecumseh.org/about-us/mass-confession-times",
+   "fetched_at": "2026-11-01T08:04:58+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Tuesday",
+   "time": "19:15",
+   "language": null,
+   "raw": "Confession: Tuesday - 7:15pm",
+   "source_url": "https://www.standrewtecumseh.org/about-us/mass-confession-times",
+   "fetched_at": "2026-11-01T08:04:58+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Wednesday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Confession: Wednesday - 5:00pm (St. Mary)",
+   "source_url": "https://www.standrewtecumseh.org/about-us/mass-confession-times",
+   "fetched_at": "2026-11-01T08:04:58+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "Monday",
+   "time": "16:30",
+   "language": null,
+   "raw": "Adoration: Monday - 4:30pm",
+   "source_url": "https://www.standrewtecumseh.org/about-us/mass-confession-times",
+   "fetched_at": "2026-11-01T08:04:58+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "19:00",
+   "language": null,
+   "raw": "Adoration: Tuesday - 7:00pm",
+   "source_url": "https://www.standrewtecumseh.org/about-us/mass-confession-times",
+   "fetched_at": "2026-11-01T08:04:58+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "16:30",
+   "language": null,
+   "raw": "Adoration: Wednesday - 4:30pm (St. Mary)",
+   "source_url": "https://www.standrewtecumseh.org/about-us/mass-confession-times",
+   "fetched_at": "2026-11-01T08:04:58+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  }
+ ],
  "source_url": "https://www.standrewtecumseh.org/",
- "fetched_at": "2026-11-01T17:27:27+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-01T08:05:06+00:00",
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": true,
+  "trusted_candidate": false,
+  "generic_rows": 31
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "no_day": 6
+ },
+ "groups_dropped": {
+  "noise": 2
+ },
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": "mail@gemini-theme.com",
+  "phone": "(402) 335-3742",
+  "address": "P.O. Box 656 Tecumseh, NE 68450",
+  "source_url": "https://www.standrewtecumseh.org/",
+  "sources": {
+   "email": "https://www.standrewtecumseh.org/",
+   "phone": "https://www.standrewtecumseh.org/",
+   "address": "https://www.standrewtecumseh.org/"
+  },
+  "fetched_at": "2026-11-01T08:04:56+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
  }
