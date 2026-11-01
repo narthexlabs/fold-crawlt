@@ -1,42 +1,50 @@
 {
  "slug": "unassigned-nj",
- "generated_at": "2026-11-01T05:45:53+00:00",
+ "generated_at": "2026-11-01T17:38:06+00:00",
  "run_date": "2026-11-01",
  "input": {
   "directory_records": 0,
-  "discovermass_records": 8,
+  "discovermass_records": 25,
   "directory_without_website": 0,
   "discovermass_without_website": 0
  },
- "sites_in_list": 8,
+ "sites_in_list": 24,
  "social_only": 0,
  "crawl": {
-  "ok_total": 6,
-  "ok_via_sandbox": 6,
+  "ok_total": 15,
+  "ok_via_sandbox": 15,
   "ok_via_laptop": 0,
   "partial_via_side_doors": 0,
-  "challenge": 1,
-  "blocked_403_429": 0,
+  "challenge": 5,
+  "blocked_403_429": 1,
   "robots_disallowed": 0,
-  "laptop_pending": 2,
-  "dead": 1,
+  "laptop_pending": 9,
+  "dead": 3,
   "not_fetched": 0,
   "by_status": {
-   "ok": 6,
-   "conn_error": 1,
-   "challenge": 1
+   "ok": 15,
+   "challenge": 5,
+   "timeout": 2,
+   "blocked_403": 1,
+   "conn_error": 1
   }
  },
  "laptop_attempted": 0,
  "groups": {
-  "total": 7,
-  "sites_with_groups": 1,
+  "total": 41,
+  "sites_with_groups": 4,
   "by_category": {
-   "liturgical": 4,
-   "other": 2,
-   "youth": 1
+   "liturgical": 17,
+   "other": 6,
+   "prayer_devotion": 5,
+   "youth": 3,
+   "formation": 3,
+   "service_mercy": 2,
+   "fraternal_orders": 2,
+   "scripture_study": 2,
+   "grief_support": 1
   },
-  "with_meeting_time": 2
+  "with_meeting_time": 4
  },
  "calendar": {
   "sites_with_active_feed": 1,
@@ -51,44 +59,49 @@
  },
  "social": {
   "sites_by_platform": {
-   "facebook": 5,
-   "instagram": 4,
-   "youtube": 3,
-   "x": 1,
-   "livestream": 1
+   "facebook": 10,
+   "instagram": 8,
+   "youtube": 8,
+   "x": 4,
+   "livestream": 2
   },
-  "sites_with_any_social": 6,
-  "shared_links_removed_as_diocesan": []
+  "sites_with_any_social": 14,
+  "shared_links_removed_as_diocesan": [
+   "facebook https://www.facebook.com/2008 (5 sites)"
+  ]
  },
  "bulletin": {
-  "sites_with_bulletin_url": 2,
+  "sites_with_bulletin_url": 7,
   "by_kind": {
-   "lpi": 1,
-   "pdf": 1
+   "pdf": 5,
+   "page": 1,
+   "lpi": 1
   },
-  "with_date": 1
+  "with_date": 5
  },
  "schedule": {
-  "sites_with_own_site_rows": 2,
-  "rows_total": 13,
+  "sites_with_own_site_rows": 7,
+  "rows_total": 73,
   "rows_needs_review": 0,
-  "sites_with_schedule_image_only": 0,
+  "sites_with_schedule_image_only": 1,
   "by_kind": {
-   "mass": 11,
+   "mass": 57,
+   "confession": 9,
+   "adoration": 5,
    "other": 2
   }
  },
  "cms_guess": {
-  "wordpress": 3,
-  "joomla": 1,
-  "squarespace": 1,
-  "unknown": 1
+  "squarespace": 5,
+  "unknown": 5,
+  "wordpress": 4,
+  "joomla": 1
  },
  "template": {
-  "wordpress-rest+html": 2,
+  "generic-html:squarespace": 5,
+  "generic-html:unknown": 5,
+  "wordpress-rest+html": 3,
   "generic-html:joomla": 1,
-  "generic-html:squarespace": 1,
-  "generic-html:unknown": 1,
   "wordpress-html": 1
  }
 }
