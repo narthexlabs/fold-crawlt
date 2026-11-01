@@ -182,7 +182,30 @@
   "text": "Bulletins",
   "source_url": "https://stedwardnp.org/"
  },
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:30",
+   "language": null,
+   "raw": "Saturday 5:30 PM",
+   "source_url": "https://stedwardnp.org/",
+   "fetched_at": "2026-11-01T17:27:14+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": null,
+   "raw": "Sunday 10:00 AM",
+   "source_url": "https://stedwardnp.org/",
+   "fetched_at": "2026-11-01T17:27:14+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  }
+ ],
  "source_url": "https://stedwardnp.org/",
  "fetched_at": "2026-11-01T17:27:26+00:00",
  "schedule_template": {
@@ -203,7 +226,10 @@
   "trusted_candidate": false,
   "generic_rows": 7
  },
- "has_sunday": false,
+ "has_sunday": true,
+ "schedule_dropped": {
+  "weekend_rescue_added": 2
+ },
  "groups_dropped": {
   "unmatched": 2,
   "label_not_group": 1,

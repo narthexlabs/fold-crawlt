@@ -2,20 +2,16 @@
  "domain": "holyredeemerpdxchurch.org",
  "diocese": "archdiocese-of-portland-in-oregon",
  "matched_church_ids": [
-  "archdiocese-of-portland-in-oregon:Holy Redeemer Parish",
-  "brave:DE|redeemer delmar|"
+  "archdiocese-of-portland-in-oregon:Holy Redeemer Parish"
  ],
  "matched": {
   "directory": [
    "archdiocese-of-portland-in-oregon:Holy Redeemer Parish"
   ],
-  "discovermass": [
-   "brave:DE|redeemer delmar|"
-  ]
+  "discovermass": []
  },
  "names": [
-  "Holy Redeemer Parish",
-  "Holy Redeemer Delmar"
+  "Holy Redeemer Parish"
  ],
  "cities": [
   "Portland"
@@ -192,7 +188,7 @@
    "note": "Google Calendar public feed (embedded on page)",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T17:43:53+00:00",
+    "fetched_at": "2026-11-01T23:34:28+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -217,7 +213,21 @@
   "text": "BULLETINS",
   "source_url": "https://holyredeemerpdxchurch.org/"
  },
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:30-16:30",
+   "language": null,
+   "raw": "CONFESSIONS ARE HEARD SATURDAYS FROM 3:30PM - 4:30PM IN THE CHURCH’S RECONCILIATION ROOM.",
+   "source_url": "https://holyredeemerpdxchurch.org/",
+   "fetched_at": "2026-11-01T17:27:09+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "squarespace"
+  }
+ ],
  "source_url": "https://holyredeemerpdxchurch.org/",
  "fetched_at": "2026-11-01T17:27:21+00:00",
  "schedule_template": {
@@ -230,7 +240,7 @@
     "counts_ok": true,
     "sunday_not_copied": true,
     "no_daily_on_sunday": true,
-    "mostly_high": false
+    "mostly_high": true
    },
    "score": "low"
   },
@@ -239,32 +249,7 @@
   "generic_rows": 1
  },
  "has_sunday": false,
- "schedule_dropped": {
-  "other_location": 1
- },
- "schedule_images": [
-  {
-   "url": "https://images.squarespace-cdn.com/content/v1/5ea867d215c1f01095cbb422/1625595965352-U9W5JP4S3VGYP85DAGBP/MASS+TIMES.png",
-   "alt": "MASS TIMES.png",
-   "page": "https://holyredeemerpdxchurch.org/mass-times"
-  },
-  {
-   "url": "https://images.squarespace-cdn.com/content/v1/5ea867d215c1f01095cbb422/6cac5c5b-ae3f-4dfa-88ba-ec2faf353451/Mass+Intentions.png",
-   "alt": "",
-   "page": "https://holyredeemerpdxchurch.org/mass-intentions"
-  },
-  {
-   "url": "https://images.squarespace-cdn.com/content/v1/5ea867d215c1f01095cbb422/32f2c489-514d-4da2-b8e3-407c1a48a84b/Mass+Intentions.png",
-   "alt": "Mass Intentions - Suggested Stipend / Intencion para la Misa - Estipendio sugeri",
-   "page": "https://holyredeemerpdxchurch.org/mass-intentions"
-  },
-  {
-   "url": "https://images.squarespace-cdn.com/content/v1/5ea867d215c1f01095cbb422/32f2c489-514d-4da2-b8e3-407c1a48a84b/Mass+Intentions.png",
-   "alt": "Mass Intentions - Suggested Stipend / Intencion para la Misa - Estipendio sugeri",
-   "page": "https://holyredeemerpdxchurch.org/mass-intentions"
-  }
- ],
- "schedule_note": "schedule appears to be an image; times not read (needs_review)",
+ "schedule_partial": true,
  "groups_dropped": {},
  "event_counts": {
   "window_start": "2026-11-01",

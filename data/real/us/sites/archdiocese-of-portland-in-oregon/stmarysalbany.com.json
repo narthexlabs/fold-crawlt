@@ -465,7 +465,7 @@
    "note": "Google Calendar public feed (embedded on page)",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T17:45:09+00:00",
+    "fetched_at": "2026-11-01T23:35:42+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -492,7 +492,19 @@
   "text": "Bulletins & Homilies",
   "source_url": "https://stmarysalbany.com/"
  },
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Saturday 5:00 PM",
+   "source_url": "https://stmarysalbany.com/",
+   "fetched_at": "2026-11-01T17:27:15+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  }
+ ],
  "source_url": "https://stmarysalbany.com/",
  "fetched_at": "2026-11-01T17:27:27+00:00",
  "schedule_template": {
@@ -513,7 +525,10 @@
   "trusted_candidate": false,
   "generic_rows": 18
  },
- "has_sunday": false,
+ "has_sunday": true,
+ "schedule_dropped": {
+  "weekend_rescue_added": 1
+ },
  "groups_dropped": {
   "unmatched": 12,
   "schedule": 3,
