@@ -74,7 +74,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T20:26:58+00:00",
+    "fetched_at": "2026-11-01T23:37:18+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -116,6 +116,28 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "16:00",
+   "language": null,
+   "raw": "Saturday Evening Vigils: 4pm (Church of St. Gabriel)",
+   "source_url": "https://stcecilia-stgabriel.org/",
+   "fetched_at": "2026-11-01T20:25:03+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "07:30",
+   "language": null,
+   "raw": "Sunday Mornings (Church of St. Cecilia): 7:30am – no music",
+   "source_url": "https://stcecilia-stgabriel.org/",
+   "fetched_at": "2026-11-01T20:25:03+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
   }
  ],
  "source_url": "https://stcecilia-stgabriel.org/",
@@ -138,14 +160,14 @@
   "trusted_candidate": false,
   "generic_rows": 8
  },
- "has_sunday": false,
- "schedule_partial": true,
+ "has_sunday": true,
  "schedule_dropped": {
   "other_location": 13,
   "range_not_a_mass": 1,
   "no_kind": 1,
   "prose": 13,
-  "notice_not_schedule": 5
+  "notice_not_schedule": 5,
+  "weekend_rescue_added": 2
  },
  "groups_dropped": {},
  "event_counts": {
