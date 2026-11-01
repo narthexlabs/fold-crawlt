@@ -273,3 +273,4 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-01T05:09:00+00:00: fetched {'robots_disallowed': 6, 'done': 1282, 'unreachable_via_proxy': 183, 'challenge': 251, 'ssl_error': 64, 'not_found': 22, 'ok': 722, 'parked': 6, 'timeout': 2, 'http_5xx': 8, 'conn_error': 29, 'http_4xx': 1, 'cut': 16, 'blocked_429': 2, 'egress_refused': 56, 'http_307': 1, 'dns': 1, 'halted_egress': 0}; parsed 21 dioceses
 - 2026-11-01T05:18:37+00:00: fetched {'dns': 4, 'done': 57, 'ok': 6, 'timeout': 52, 'cut': 5, 'halted_egress': 0}; parsed 0 dioceses
 - 2026-11-01T05:56:12+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-01T05:56:21+00:00: fetched {'ok': 1, 'cut': 1, 'halted_egress': 0}; parsed 0 dioceses
