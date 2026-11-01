@@ -12,7 +12,7 @@ query, the chosen URL and the rejected ones (evidence). Resumable: data/raw/us/u
   BRAVE_KEY=... python3 -I ingest/us/url_sources/brave_lookup.py --budget 8000 --qps 5 [--states PA,MI]
 """
 from __future__ import annotations
-import argparse, json, os, re, sys, time, glob, collections
+import argparse, json, os, re, sys, time, glob, collections, subprocess
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlparse, quote
@@ -49,6 +49,60 @@ def norm(s: str) -> str:
     s = (s or "").lower()
     s = re.sub(r"\b(the|of|parish|church|catholic|roman|saint|st\.?|sts\.?|holy|our|lady|community|congregation)\b", " ", s)
     return re.sub(r"[^a-z0-9]+", " ", s).strip()
+
+
+TOK_DROP = {"and", "ss", "the", "of", "a", "de", "del", "la", "el", "los", "las", "san", "santa", "santo", "mission", "chapel", "shrine"}
+TOK_MAP = {"mt": "mount", "ft": "fort", "hts": "heights", "spgs": "springs", "spg": "springs", "twp": "township"}
+
+
+def toks(s: str) -> frozenset:
+    """Normalised name tokens for fuzzy matching: drop filler words, unify abbreviations, strip plural/possessive s."""
+    out = set()
+    for t in norm(s).split():
+        t = TOK_MAP.get(t, t)
+        if t in TOK_DROP:
+            continue
+        if len(t) > 3 and t.endswith("s"):
+            t = t[:-1]
+        out.add(t)
+    return frozenset(out)
+
+
+class KnownIndex:
+    """(name tokens, city tokens) of every parish we already have a website for, per state. A candidate matches when a
+    known parish's name tokens and city tokens are both contained in the candidate's tokens (or the reverse for the
+    name, when the candidate's name is the shorter one), so 'St Marys Star Of The Sea Oceanside' matches
+    'Saint Mary Star of the Sea / Oceanside' even though the exact keys differ."""
+
+    def __init__(self, named):
+        self.by = collections.defaultdict(lambda: collections.defaultdict(list))   # st -> city toks -> [name toks]
+        for (n, c, st) in named:
+            nt, ct = toks(n), toks(c)
+            if nt and ct:
+                self.by[st][ct].append(nt)
+
+    def match(self, name: str, city: str, st: str, full: str | None = None) -> bool:
+        cities = self.by.get(st)
+        if not cities:
+            return False
+        if full:   # slug whose name/city split is a guess: test against the whole token set
+            T = toks(full)
+            for ct, names in cities.items():
+                if ct <= T:
+                    rest = T - ct
+                    for nt in names:
+                        if nt <= T and (nt <= rest or rest <= nt):
+                            return True
+            return False
+        nt0, ct0 = toks(name), toks(city)
+        if not nt0 or not ct0:
+            return False
+        for ct, names in cities.items():
+            if ct <= ct0 or ct0 <= ct:
+                for nt in names:
+                    if nt <= nt0 or nt0 <= nt:
+                        return True
+        return False
 
 
 def host_of(u: str) -> str:
@@ -134,7 +188,8 @@ def candidates(states: set[str] | None):
         slug = Path(f).parent.name
         for r in json.load(open(f)).get("records", []):
             if not r.get("website"):
-                add(r.get("name"), r.get("city"), r.get("state") or sees.get(slug) or "", "directory", f"{slug}:{r.get('name')}")
+                src = "browser" if "browser" in str(r.get("extracted_by") or "").lower() else "directory"
+                add(r.get("name"), r.get("city"), r.get("state") or sees.get(slug) or "", src, f"{slug}:{r.get('name')}")
     gj = US / "url_sources" / "gcatholic.json"
     if gj.exists():
         g = json.load(open(gj))
@@ -147,6 +202,10 @@ def candidates(states: set[str] | None):
     return out
 
 
+class BalanceGone(Exception):
+    """HTTP 402 from the pay-as-you-go key: the prepaid balance is spent."""
+
+
 def brave(q: str, key: str) -> dict:
     url = API + "?" + "q=" + quote(q) + "&count=5&country=us&safesearch=moderate"
     req = Request(url, headers={"X-Subscription-Token": key, "Accept": "application/json", "User-Agent": "FindTheChurch/0.1"})
@@ -157,7 +216,9 @@ def brave(q: str, key: str) -> dict:
         except HTTPError as e:
             if e.code == 429:
                 time.sleep(2.0 * (attempt + 1)); continue
-            if e.code in (401, 403, 402):
+            if e.code == 402:
+                raise BalanceGone()
+            if e.code in (401, 403):
                 raise SystemExit(f"Brave API refused ({e.code}): check the key / plan")
             time.sleep(1.0)
         except (URLError, ConnectionError, OSError, TimeoutError):
@@ -183,11 +244,70 @@ def pick(res: dict, cand: dict, known_hosts: set[str]) -> tuple[str | None, list
     return None, rejected
 
 
+def tiers(cands, named):
+    """Tier 1: directory / browser-read / GCatholic records with no website and no fuzzy match to a known site (clean
+    name + city + state). Tier 2: catholicparish.net slugs with no fuzzy match. Tier 3: the rest (likely parishes we
+    already have under a slightly different name). Also returns per-state coverage = share of catholicparish.net slugs
+    (the nationwide parish list) that already match a known website."""
+    idx = KnownIndex(named)
+    named = set(named)
+    slug_tot, slug_known = collections.Counter(), collections.Counter()
+    t = {1: [], 2: [], 3: []}
+    for c in cands:
+        if c["src"] == "catholicparish.net":
+            exact = (norm(c["name"]), norm(c["city"]), c["state"]) in named
+            m = exact or idx.match(c["name"], c["city"], c["state"], full=c.get("keyname") or (c["name"] + " " + c["city"]))
+            slug_tot[c["state"]] += 1; slug_known[c["state"]] += m
+            t[3 if m else 2].append(c)
+        else:
+            m = idx.match(c["name"], c["city"], c["state"]) or not c["city"]
+            t[3 if m else 1].append(c)
+    cov = {st: slug_known[st] / slug_tot[st] for st in slug_tot}
+    return t, cov, slug_tot
+
+
+def build(done):
+    by_state = collections.defaultdict(dict)
+    freq = collections.Counter(host_of(d["url"]) for d in done.values() if d.get("url"))
+    aggregators = {h for h, n in freq.items() if n > 4}   # one host chosen for many parishes = a directory, not a parish
+    for d in done.values():
+        if not d.get("url"):
+            continue
+        h = host_of(d["url"])
+        if h in aggregators or any(h == x or h.endswith("." + x) or x in h for x in DENY):
+            continue
+        by_state[d["state"]].setdefault(h, {"url": d["url"], "churches": []})["churches"].append(
+            {"slug": f"brave:{d['key']}", "name": d["name"], "city": d["city"], "state": d["state"], "diocese": None, "source": "brave-search", "query": d["query"]})
+    for st, hosts_ in by_state.items():
+        (OUT / f"{st}.websites.json").write_text(json.dumps({"state": st, "source": "Brave Search API lookup by parish name (facts: the parish's own site URL)",
+                                                               "built_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+                                                               "websites": list(hosts_.values())}, indent=1, ensure_ascii=False) + "\n")
+    hits = sum(len(h) for h in by_state.values()); tot = len(done)
+    by_tier = collections.Counter((d.get("tier"), bool(d.get("url"))) for d in done.values())
+    tier_line = "; ".join(f"tier {t}: {by_tier[(t, True)] + by_tier[(t, False)]} queries, {by_tier[(t, True)]} hits" for t in (1, 2, 3)
+                          if by_tier[(t, True)] + by_tier[(t, False)])
+    (OUT / "README.md").write_text(f"# Brave Search lookup\n\nQueries so far: {tot}; distinct parish sites found: {hits} "
+                                   f"({100*hits/max(tot,1):.0f}% hit rate). One query per parish name + city + state; first result whose host is not a "
+                                   f"directory/social/diocese host and whose title or URL looks like a parish. Evidence per query in data/raw (done.jsonl).\n\n"
+                                   f"Second run (2026-11-01, ranked): {tier_line or 'n/a'}. Tier 1 = diocesan directory / GCatholic / browser-read records "
+                                   f"with no website; tier 2 = catholicparish.net slugs that do not fuzzy-match (name tokens + city) a parish we already "
+                                   f"have a site for; tier 3 = the rest. States with >=70% of catholicparish.net slugs already matched are skipped outside "
+                                   f"tier 1. Queries run in batches of 500; a tier stops when its last-500 new-domain rate falls below 30%.\n\n"
+                                   f"Resume: `BRAVE_KEY=... python3 -I ingest/us/url_sources/brave_lookup.py --budget N [--checkpoint-cmd CMD]`\n")
+    print(f"built: {tot} queries, {hits} sites in {len(by_state)} states", flush=True)
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--budget", type=int, default=8000)
+    ap.add_argument("--budget", type=int, default=7500)
     ap.add_argument("--qps", type=float, default=5.0)
     ap.add_argument("--states", default="")
+    ap.add_argument("--batch", type=int, default=500)
+    ap.add_argument("--gate", type=float, default=0.30, help="stop a tier when its rolling new-domain rate drops below this")
+    ap.add_argument("--coverage-skip", type=float, default=0.70, help="skip tier 2/3 candidates in states with this share already known")
+    ap.add_argument("--checkpoint-every", type=int, default=1000)
+    ap.add_argument("--checkpoint-cmd", default="", help="shell command run after each checkpoint build (commit/push/dispatch)")
+    ap.add_argument("--dry-run", action="store_true", help="print tier counts and stop")
     ap.add_argument("--build", action="store_true", help="only rebuild outputs from done.jsonl")
     a = ap.parse_args()
     key = os.environ.get("BRAVE_KEY", "")
@@ -199,61 +319,91 @@ def main() -> int:
                 j = json.loads(line); done[j["key"]] = j
             except Exception:
                 pass
-    if not a.build:
-        if not key:
-            print("BRAVE_KEY not set"); return 2
-        hosts, named = known_hosts_and_names()
-        states = {x.strip().upper() for x in a.states.split(",") if x.strip()} or None
-        cands = [c for c in candidates(states) if (norm(c["name"]), norm(c["city"]), c["state"]) not in named]
-        # lowest-completion states first: use counts of known sites per state as a proxy (fewest known first)
-        known_by_state = collections.Counter(st for (_, _, st) in named)
-        cands.sort(key=lambda c: (known_by_state.get(c["state"], 0), c["state"], c["name"]))
-        print(f"candidates {len(cands)} (already done {len(done)}); budget {a.budget}", flush=True)
-        n = 0; t0 = time.time(); last = 0.0
-        for c in cands:
-            k = f"{c['state']}|{norm(c.get('keyname') or c['name'])}|{'' if c.get('keyname') else norm(c['city'])}"
-            if k in done:
-                continue
-            if n >= a.budget:
-                print("budget reached"); break
-            q = f"{c['name']} {c['city']} {c['state']} catholic church".replace("  ", " ")
-            wait = (1.0 / a.qps) - (time.time() - last)
-            if wait > 0:
-                time.sleep(wait)
-            res = brave(q, key); last = time.time(); n += 1
-            url, rej = pick(res, c, hosts)
-            rec = {"key": k, "name": c["name"], "city": c["city"], "state": c["state"], "src": c["src"], "id": c["id"],
-                   "query": q, "url": url, "rejected": rej[:5], "fetched_at": datetime.now(timezone.utc).isoformat(timespec="seconds")}
-            with open(DONE, "a") as f:
-                f.write(json.dumps(rec, ensure_ascii=False) + "\n")
-            done[k] = rec
-            if url:
-                hosts.add(host_of(url))
-            if n % 200 == 0:
-                hit = sum(1 for d in done.values() if d.get("url"))
-                print(f"  {n} queries, {hit} hits total, {n/(time.time()-t0):.1f} q/s", flush=True)
-    # build outputs
-    by_state = collections.defaultdict(dict)
-    freq = collections.Counter(host_of(d["url"]) for d in done.values() if d.get("url"))
-    aggregators = {h for h, n in freq.items() if n > 4}   # one host chosen for many parishes = a directory, not a parish
-    for d in done.values():
-        if not d.get("url"):
-            continue
-        h = host_of(d["url"])
-        if h in aggregators:
-            continue
-        by_state[d["state"]].setdefault(h, {"url": d["url"], "churches": []})["churches"].append(
-            {"slug": f"brave:{d['key']}", "name": d["name"], "city": d["city"], "state": d["state"], "diocese": None, "source": "brave-search", "query": d["query"]})
-    for st, hosts_ in by_state.items():
-        (OUT / f"{st}.websites.json").write_text(json.dumps({"state": st, "source": "Brave Search API lookup by parish name (facts: the parish's own site URL)",
-                                                               "built_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-                                                               "websites": list(hosts_.values())}, indent=1, ensure_ascii=False) + "\n")
-    hits = sum(len(h) for h in by_state.values()); tot = len(done)
-    (OUT / "README.md").write_text(f"# Brave Search lookup\n\nQueries so far: {tot}; distinct parish sites found: {hits} "
-                                   f"({100*hits/max(tot,1):.0f}% hit rate). One query per parish name + city + state; first result whose host is not a "
-                                   f"directory/social/diocese host and whose title or URL looks like a parish. Evidence per query in data/raw (done.jsonl).\n\n"
-                                   f"Resume: `BRAVE_KEY=... python3 -I ingest/us/url_sources/brave_lookup.py --budget N`\n")
-    print(f"built: {tot} queries, {hits} sites in {len(by_state)} states")
+    if a.build:
+        build(done); return 0
+    if not key and not a.dry_run:
+        print("BRAVE_KEY not set"); return 2
+    hosts, named = known_hosts_and_names()
+    start_hosts = set(hosts)
+    states = {x.strip().upper() for x in a.states.split(",") if x.strip()} or None
+
+    def dkey(c):
+        return f"{c['state']}|{norm(c.get('keyname') or c['name'])}|{'' if c.get('keyname') else norm(c['city'])}"
+
+    allc = candidates(states)
+    _, cov, slug_tot = tiers([c for c in allc if c["src"] == "catholicparish.net"], named)   # coverage over every slug
+    cands = [c for c in allc if (norm(c["name"]), norm(c["city"]), c["state"]) not in named and dkey(c) not in done]
+    tiered, _, _ = tiers(cands, named)
+    skipped = collections.Counter()
+    for t in (2, 3):
+        keep = []
+        for c in tiered[t]:
+            if cov.get(c["state"], 0) >= a.coverage_skip:
+                skipped[t] += 1
+            else:
+                keep.append(c)
+        tiered[t] = keep
+    # within a tier: least-covered states first, then by name
+    for t in tiered:
+        tiered[t].sort(key=lambda c: (cov.get(c["state"], 0), c["state"], c["name"]))
+    print(f"candidates (not yet queried): tier1 {len(tiered[1])}, tier2 {len(tiered[2])} (+{skipped[2]} skipped, state >= "
+          f"{a.coverage_skip:.0%} covered), tier3 {len(tiered[3])} (+{skipped[3]} skipped); done before {len(done)}; budget {a.budget}", flush=True)
+    hi = sorted((st for st in cov if cov[st] >= a.coverage_skip))
+    print(f"states >= {a.coverage_skip:.0%} covered: {', '.join(f'{st} {cov[st]:.0%}' for st in hi) or 'none'}", flush=True)
+    if a.dry_run:
+        return 0
+    n = 0; t0 = time.time(); last = 0.0
+    stats = {t: {"q": 0, "new": 0, "window": collections.deque(maxlen=a.batch), "curve": []} for t in tiered}
+    stop_all = None
+    try:
+        for t in (1, 2, 3):
+            st_ = stats[t]
+            for c in tiered[t]:
+                if n >= a.budget:
+                    stop_all = "budget"; break
+                k = dkey(c)
+                if k in done:
+                    continue
+                q = f"{c['name']} {c['city']} {c['state']} catholic church".replace("  ", " ")
+                wait = (1.0 / a.qps) - (time.time() - last)
+                if wait > 0:
+                    time.sleep(wait)
+                res = brave(q, key); last = time.time(); n += 1
+                url, rej = pick(res, c, hosts)
+                h = host_of(url) if url else ""
+                is_new = bool(h) and h not in start_hosts
+                rec = {"key": k, "name": c["name"], "city": c["city"], "state": c["state"], "src": c["src"], "id": c["id"], "tier": t,
+                       "query": q, "url": url, "new_domain": is_new, "rejected": rej[:5], "fetched_at": datetime.now(timezone.utc).isoformat(timespec="seconds")}
+                with open(DONE, "a") as f:
+                    f.write(json.dumps(rec, ensure_ascii=False) + "\n")
+                done[k] = rec
+                if url:
+                    hosts.add(h)
+                st_["q"] += 1; st_["new"] += is_new; st_["window"].append(is_new)
+                if st_["q"] % a.batch == 0:
+                    rate = sum(st_["window"]) / len(st_["window"])
+                    st_["curve"].append(round(rate, 3))
+                    print(f"  tier {t}: batch {st_['q'] // a.batch} rate {rate:.0%} (tier total {st_['new']}/{st_['q']}); "
+                          f"run {n} queries, {n/(time.time()-t0):.1f} q/s", flush=True)
+                    if rate < a.gate:
+                        print(f"  tier {t} below gate ({rate:.0%} < {a.gate:.0%}): stopping tier", flush=True)
+                        break
+                if n % a.checkpoint_every == 0:
+                    build(done)
+                    if a.checkpoint_cmd:
+                        subprocess.run(a.checkpoint_cmd, shell=True)
+            else:
+                if st_["q"] % a.batch and st_["window"]:
+                    st_["curve"].append(round(sum(st_["window"]) / len(st_["window"]), 3))
+            if stop_all:
+                break
+    except BalanceGone:
+        stop_all = "402 balance gone"
+        print("Brave returned 402: prepaid balance spent; stopping cleanly", flush=True)
+    build(done)
+    summ = {t: {"queries": s_["q"], "new_domains": s_["new"], "curve": s_["curve"]} for t, s_ in stats.items()}
+    print(f"RUN SUMMARY: {n} queries; stop={stop_all or 'all tiers exhausted or gated'}; " + json.dumps(summ), flush=True)
+    (RAW / "last_run.json").write_text(json.dumps({"queries": n, "stop": stop_all, "tiers": summ}, indent=1) + "\n")
     return 0
 
 
