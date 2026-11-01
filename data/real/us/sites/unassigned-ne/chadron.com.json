@@ -1,0 +1,157 @@
+{
+ "domain": "chadron.com",
+ "diocese": "unassigned-ne",
+ "matched_church_ids": [
+  "brave:NE|patrick|chadron"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "brave:NE|patrick|chadron"
+  ]
+ },
+ "names": [
+  "St. Patrick"
+ ],
+ "cities": [
+  "Chadron"
+ ],
+ "home_url": "http://www.chadron.com/",
+ "final_url": "https://www.chadron.com/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://www.chadron.com/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.chadron.com/where-to-worship",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.chadron.com/groups/GroupRoster/board-of-directors-207",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://www.chadron.com/sign-up-for-our-weekly-newsletter",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.chadron.com/events",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://www.chadron.com/contact/",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "unknown",
+  "evidence": []
+ },
+ "template": "generic-html:unknown",
+ "groups": [],
+ "calendar_feeds": [],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/Chadron-Chamber-of-Commerce-Nebraska-313033375967"
+  ],
+  "x": [
+   "https://x.com/chamber_master"
+  ]
+ },
+ "bulletin": null,
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:30",
+   "language": null,
+   "raw": "Saturday Mass: 5:30 p.m.",
+   "source_url": "https://www.chadron.com/where-to-worship",
+   "fetched_at": "2026-11-01T20:25:03+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Sunday Mass: 9 a.m.",
+   "source_url": "https://www.chadron.com/where-to-worship",
+   "fetched_at": "2026-11-01T20:25:03+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict"
+  }
+ ],
+ "source_url": "http://www.chadron.com/",
+ "fetched_at": "2026-11-01T20:25:06+00:00",
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": true
+   },
+   "score": "high"
+  },
+  "passed_bar": true,
+  "trusted_candidate": true,
+  "generic_rows": 0
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "other_location": 46
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(308) 432-4401",
+  "address": "706 W. 3rd St., Chadron, NE 69337",
+  "source_url": "https://www.chadron.com/contact/",
+  "sources": {
+   "phone": "https://www.chadron.com/contact/",
+   "address": "https://www.chadron.com/contact/"
+  },
+  "fetched_at": "2026-11-01T20:25:06+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}
