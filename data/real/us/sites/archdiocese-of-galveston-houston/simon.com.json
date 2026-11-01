@@ -18,31 +18,95 @@
  ],
  "home_url": "https://www.simon.com/mall/the-galleria",
  "final_url": "https://www.simon.com/mall/the-galleria",
- "crawl_status": "http_307",
+ "crawl_status": "ok",
  "crawl_env": "sandbox",
  "robots_note": "ok",
  "pages": [
   {
    "category": "home",
    "url": "https://www.simon.com/mall/the-galleria",
-   "status": 307,
-   "class": "http_307"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.simon.com/mall/the-galleria/news-and-events",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://www.simon.com/contact?mallId=805",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
   "cms": "unknown",
   "evidence": []
  },
- "template": "none",
+ "template": "generic-html:unknown",
  "groups": [],
  "calendar_feeds": [],
  "events": [],
- "social": {},
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/houstongalleria"
+  ],
+  "instagram": [
+   "https://www.instagram.com/houstongalleria/",
+   "https://www.instagram.com/themall/"
+  ],
+  "tiktok": [
+   "https://www.tiktok.com/@houstongalleria"
+  ]
+ },
  "bulletin": null,
  "schedule_rows": [],
  "source_url": "https://www.simon.com/mall/the-galleria",
- "fetched_at": "2026-11-01T05:16:52+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-01T05:56:17+00:00",
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": true,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "has_sunday": false,
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(713) 622-0663",
+  "address": "5085 WESTHEIMER RD, HOUSTON, TX 77056",
+  "source_url": "https://www.simon.com/contact?mallId=805",
+  "sources": {
+   "phone": "https://www.simon.com/contact?mallId=805",
+   "address": "https://www.simon.com/mall/the-galleria"
+  },
+  "fetched_at": "2026-11-01T05:56:17+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
  }
