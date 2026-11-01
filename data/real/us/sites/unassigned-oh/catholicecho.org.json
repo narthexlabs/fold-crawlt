@@ -1,0 +1,195 @@
+{
+ "domain": "catholicecho.org",
+ "diocese": "unassigned-oh",
+ "matched_church_ids": [
+  "brave:OH|philip neri dungannon|"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "brave:OH|philip neri dungannon|"
+  ]
+ },
+ "names": [
+  "St Philip Neri"
+ ],
+ "cities": [
+  "Dungannon"
+ ],
+ "home_url": "https://catholicecho.org/",
+ "final_url": "https://catholicecho.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://catholicecho.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://catholicecho.org/programming-schedules/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://catholicecho.org/our-sunday-mass/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://catholicecho.org/email-subscribe/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://catholicecho.org/upcoming-events/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://catholicecho.org/upcoming-events/diocesan/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "live",
+   "url": "https://catholicecho.org/live/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://catholicecho.org/contact/",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-content"
+  ]
+ },
+ "template": "wordpress-rest+html",
+ "groups": [],
+ "calendar_feeds": [],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/DOYoungstown"
+  ],
+  "instagram": [
+   "https://www.instagram.com/dioceseofyoungstown/",
+   "https://www.instagram.com/doyoungstown/"
+  ],
+  "youtube": [
+   "https://www.youtube.com/channel/UC7AW8lZg5qIWRqmnt3Vlx_g",
+   "https://www.youtube.com/@thecatholicecho",
+   "https://www.youtube.com/@doyoungstown"
+  ],
+  "x": [
+   "https://x.com/DOYoungstown"
+  ],
+  "livestream": [
+   {
+    "url": "https://catholicecho.org/live/",
+    "label": "Livestream",
+    "platform": "catholicecho.org",
+    "kind": "link"
+   },
+   {
+    "url": "https://www.youtube.com/@ctnyetc943/streams",
+    "label": "Click here for our YouTube livestream",
+    "platform": "youtube",
+    "kind": "link"
+   }
+  ]
+ },
+ "bulletin": null,
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "06:30",
+   "language": null,
+   "raw": "Mass: You can also listen on the following Youngstown radio stations on Sundays at 6:30 a.m.:",
+   "source_url": "https://catholicecho.org/programming-schedules/",
+   "fetched_at": "2026-11-01T22:15:26+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "16:00",
+   "language": null,
+   "raw": "Our Sunday Mass premiers online at catholicecho.org, Facebook and YouTube starting at 4:00 p.m. on Saturdays.",
+   "source_url": "https://catholicecho.org/our-sunday-mass/",
+   "fetched_at": "2026-11-01T22:15:28+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  }
+ ],
+ "source_url": "https://catholicecho.org/",
+ "fetched_at": "2026-11-01T22:15:38+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 2
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "no_kind": 59,
+  "prose": 3
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(330) 744-5251",
+  "address": "144 W Wood St, Youngstown, OH 44503",
+  "source_url": "https://catholicecho.org/contact/",
+  "sources": {
+   "phone": "https://catholicecho.org/contact/",
+   "address": "https://catholicecho.org/contact/"
+  },
+  "fetched_at": "2026-11-01T22:15:36+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

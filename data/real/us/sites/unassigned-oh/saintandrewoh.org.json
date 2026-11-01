@@ -1,0 +1,150 @@
+{
+ "domain": "saintandrewoh.org",
+ "diocese": "unassigned-oh",
+ "matched_church_ids": [
+  "brave:OH|andrew brooksville|"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "brave:OH|andrew brooksville|"
+  ]
+ },
+ "names": [
+  "St Andrew"
+ ],
+ "cities": [
+  "Brooksville"
+ ],
+ "home_url": "https://www.saintandrewoh.org/",
+ "final_url": "https://www.saintandrewoh.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://www.saintandrewoh.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.saintandrewoh.org/schedule",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.saintandrewoh.org/administration",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://www.saintandrewoh.org/contact",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "unknown",
+  "evidence": []
+ },
+ "template": "generic-html:unknown",
+ "groups": [],
+ "calendar_feeds": [
+  {
+   "feed_id": "saintandrewoh.org:ics:3e7e0a18",
+   "type": "ics",
+   "platform": "iCal",
+   "url": "https://www.google.com/calendar/render?cid=https%3A%2F%2Fwww.saintandrewoh.org%2Fcalendar%2Fsync.ics",
+   "page_url": "https://www.saintandrewoh.org/schedule",
+   "label": null,
+   "status": "active",
+   "note": "iCal link on page",
+   "last_fetch": {
+    "status": "not_ical",
+    "fetched_at": "2026-11-01T22:19:17+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  },
+  {
+   "feed_id": "saintandrewoh.org:ics:5095467a",
+   "type": "ics",
+   "platform": "iCal",
+   "url": "https://www.saintandrewoh.org/calendar/sync.ics",
+   "page_url": "https://www.saintandrewoh.org/schedule",
+   "label": null,
+   "status": "active",
+   "note": "iCal link on page",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T22:19:17+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
+ "events": [],
+ "social": {},
+ "bulletin": null,
+ "schedule_rows": [],
+ "source_url": "https://www.saintandrewoh.org/",
+ "fetched_at": "2026-11-01T22:17:20+00:00",
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": true,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "has_sunday": false,
+ "schedule_dropped": {
+  "skipped_section": 4
+ },
+ "schedule_images": [
+  {
+   "url": "https://www.saintandrewoh.org/sections/section7.png?1395630256",
+   "alt": "Schedule of Services",
+   "page": "https://www.saintandrewoh.org/schedule"
+  },
+  {
+   "url": "https://www.saintandrewoh.org/pages/4.jpg",
+   "alt": "Service Schedule",
+   "page": "https://www.saintandrewoh.org/schedule"
+  },
+  {
+   "url": "https://www.saintandrewoh.org/pages/4.jpg",
+   "alt": "Service Schedule",
+   "page": "https://www.saintandrewoh.org/"
+  }
+ ],
+ "schedule_note": "schedule appears to be an image; times not read (needs_review)",
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}
