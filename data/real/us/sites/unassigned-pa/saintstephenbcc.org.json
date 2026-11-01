@@ -1,0 +1,177 @@
+{
+ "domain": "saintstephenbcc.org",
+ "diocese": "unassigned-pa",
+ "matched_church_ids": [
+  "brave:PA|stephen north huntingdon|",
+  "brave:PA|stephen|pittsburgh"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "brave:PA|stephen|pittsburgh",
+   "brave:PA|stephen north huntingdon|"
+  ]
+ },
+ "names": [
+  "St. Stephen",
+  "St Stephen"
+ ],
+ "cities": [
+  "Pittsburgh",
+  "North Huntingdon"
+ ],
+ "home_url": "https://saintstephenbcc.org/",
+ "final_url": "https://saintstephenbcc.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://saintstephenbcc.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://saintstephenbcc.org/schedule",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://saintstephenbcc.org/administration",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://saintstephenbcc.org/news1",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://saintstephenbcc.org/bulletin",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://saintstephenbcc.org/contact",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "unknown",
+  "evidence": []
+ },
+ "template": "generic-html:unknown",
+ "groups": [],
+ "calendar_feeds": [
+  {
+   "feed_id": "saintstephenbcc.org:ics:02f2a1a5",
+   "type": "ics",
+   "platform": "iCal",
+   "url": "https://www.google.com/calendar/render?cid=https%3A%2F%2Fsaintstephenbcc.org%2Fcalendar%2Fsync.ics",
+   "page_url": "https://saintstephenbcc.org/schedule",
+   "label": null,
+   "status": "active",
+   "note": "iCal link on page",
+   "last_fetch": {
+    "status": "not_ical",
+    "fetched_at": "2026-11-01T22:19:05+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  },
+  {
+   "feed_id": "saintstephenbcc.org:ics:8d5dcc61",
+   "type": "ics",
+   "platform": "iCal",
+   "url": "https://saintstephenbcc.org/calendar/sync.ics",
+   "page_url": "https://saintstephenbcc.org/schedule",
+   "label": null,
+   "status": "active",
+   "note": "iCal link on page",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T22:19:05+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/pages/St-Stephen-Byzantine-Catholic-Church/827942847278186",
+   "https://www.facebook.com/StStephenByzantineCatholicChurch"
+  ],
+  "youtube": [
+   "https://www.youtube.com/@saintstephenbccnh"
+  ]
+ },
+ "bulletin": {
+  "url": "https://saintstephenbcc.org/files/Bulletins/Nov-01-2026.pdf",
+  "date": "2026-11-01",
+  "kind": "pdf",
+  "text": "November 1, 2026",
+  "source_url": "https://saintstephenbcc.org/bulletin"
+ },
+ "schedule_rows": [],
+ "source_url": "https://saintstephenbcc.org/",
+ "fetched_at": "2026-11-01T22:15:21+00:00",
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": true,
+  "trusted_candidate": false,
+  "generic_rows": 3
+ },
+ "has_sunday": false,
+ "schedule_dropped": {
+  "skipped_section": 4
+ },
+ "groups_dropped": {
+  "unmatched": 2
+ },
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": "info@saintstephenbcc.org",
+  "phone": "(724) 863-6776",
+  "address": "90 Bethel Road North Huntingdon, PA 15642",
+  "source_url": "https://saintstephenbcc.org/contact",
+  "sources": {
+   "email": "https://saintstephenbcc.org/contact",
+   "phone": "https://saintstephenbcc.org/contact",
+   "address": "https://saintstephenbcc.org/contact"
+  },
+  "fetched_at": "2026-11-01T20:27:41+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

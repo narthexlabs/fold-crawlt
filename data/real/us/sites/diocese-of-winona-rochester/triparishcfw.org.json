@@ -1,0 +1,163 @@
+{
+ "domain": "triparishcfw.org",
+ "diocese": "diocese-of-winona-rochester",
+ "matched_church_ids": [
+  "diocese-of-winona-rochester:Immaculate Heart of Mary",
+  "diocese-of-winona-rochester:St. Anthony",
+  "diocese-of-winona-rochester:St. Gabriel"
+ ],
+ "matched": {
+  "directory": [
+   "diocese-of-winona-rochester:Immaculate Heart of Mary",
+   "diocese-of-winona-rochester:St. Anthony",
+   "diocese-of-winona-rochester:St. Gabriel"
+  ],
+  "discovermass": []
+ },
+ "names": [
+  "Immaculate Heart of Mary",
+  "St. Anthony",
+  "St. Gabriel"
+ ],
+ "cities": [
+  "Fulda"
+ ],
+ "home_url": "https://triparishcfw.org/",
+ "final_url": "https://triparishcfw.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://triparishcfw.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://triparishcfw.org/st-gabriel-faith-formation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://triparishcfw.org/st-anthony-faith-formation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://triparishcfw.org/faith-formation-currie/",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-json"
+  ]
+ },
+ "template": "wordpress-rest+html",
+ "groups": [
+  {
+   "id": "triparishcfw.org:youth_ministry",
+   "name": "Youth Ministry",
+   "category": "youth",
+   "category_label": "Youth",
+   "subcategory": "youth_ministry",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://triparishcfw.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://triparishcfw.org/st-gabriel-faith-formation/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T22:15:26+00:00",
+   "confidence": "medium"
+  }
+ ],
+ "calendar_feeds": [],
+ "events": [],
+ "social": {},
+ "bulletin": null,
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:30",
+   "language": null,
+   "raw": "Weekend Mass Sun. 10:30 AM",
+   "source_url": "https://triparishcfw.org/",
+   "fetched_at": "2026-11-01T22:15:24+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "08:30",
+   "language": null,
+   "raw": "Weekday Mass and Wed. 8:30 AM",
+   "source_url": "https://triparishcfw.org/",
+   "fetched_at": "2026-11-01T22:15:24+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  }
+ ],
+ "source_url": "https://triparishcfw.org/",
+ "fetched_at": "2026-11-01T22:15:29+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 8
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "box_rows_added": 2
+ },
+ "groups_dropped": {
+  "unmatched": 1
+ },
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(507) 763-3545",
+  "address": "501 Mill St, Currie, MN 56123",
+  "source_url": "https://triparishcfw.org/",
+  "sources": {
+   "phone": "https://triparishcfw.org/",
+   "address": "https://triparishcfw.org/"
+  },
+  "fetched_at": "2026-11-01T22:15:24+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

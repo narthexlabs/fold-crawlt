@@ -1,0 +1,203 @@
+{
+ "domain": "saintpetersparish.net",
+ "diocese": "diocese-of-la-crosse",
+ "matched_church_ids": [
+  "gc-31598"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "gc-31598"
+  ]
+ },
+ "names": [
+  "St. Peter"
+ ],
+ "cities": [
+  "Middle Ridge"
+ ],
+ "home_url": "http://www.saintpetersparish.net/",
+ "final_url": "https://www.saintpetersparish.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "not_found",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://www.saintpetersparish.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.saintpetersparish.org/current-serving-schedule/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://www.saintpetersparish.org/bulletins/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://www.saintpetersparish.org/contact-us/",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-content"
+  ]
+ },
+ "template": "wordpress-rest+html",
+ "groups": [
+  {
+   "id": "saintpetersparish.net:youth_ministry",
+   "name": "Youth Event",
+   "category": "youth",
+   "category_label": "Youth",
+   "subcategory": "youth_ministry",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.saintpetersparish.org/contact-us/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.saintpetersparish.org/bulletins/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T22:15:41+00:00",
+   "confidence": "medium"
+  }
+ ],
+ "calendar_feeds": [],
+ "events": [],
+ "social": {},
+ "bulletin": {
+  "url": "https://www.saintpetersparish.org/wp-content/uploads/2026/10/Bulletin-10-25-2026-.pdf",
+  "date": "2026-10-25",
+  "kind": "pdf",
+  "text": "Bulletun 10-25-2026",
+  "source_url": "https://www.saintpetersparish.org/bulletins/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "20:00",
+   "language": null,
+   "raw": "WEEKEND MASS SCHEDULE: Saturday………………………….……………8:00 PM",
+   "source_url": "https://www.saintpetersparish.org/",
+   "fetched_at": "2026-11-01T22:15:38+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "20:30",
+   "language": null,
+   "raw": "ADORATION: Wednesday……………………….7:30 PM to 8:30 PM",
+   "source_url": "https://www.saintpetersparish.org/",
+   "fetched_at": "2026-11-01T22:15:38+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": null,
+   "raw": "Sunday………………………….…….………..10:00 AM",
+   "source_url": "https://www.saintpetersparish.org/",
+   "fetched_at": "2026-11-01T22:15:38+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "19:00",
+   "language": null,
+   "raw": "Wednesday..…………………7:00 PM",
+   "source_url": "https://www.saintpetersparish.org/",
+   "fetched_at": "2026-11-01T22:15:38+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "19:30",
+   "language": null,
+   "raw": "Wednesday……………………….7:30 PM to 8:30 PM",
+   "source_url": "https://www.saintpetersparish.org/",
+   "fetched_at": "2026-11-01T22:15:38+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  }
+ ],
+ "source_url": "http://www.saintpetersparish.net/",
+ "fetched_at": "2026-11-01T22:15:43+00:00",
+ "redirected_off_host": "saintpetersparish.org",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 4
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "not_a_service": 1,
+  "no_kind": 2,
+  "box_rows_added": 3
+ },
+ "groups_dropped": {
+  "unmatched": 1,
+  "noise": 1
+ },
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(608) 452-4680",
+  "address": null,
+  "source_url": "https://www.saintpetersparish.org/contact-us/",
+  "sources": {
+   "phone": "https://www.saintpetersparish.org/contact-us/"
+  },
+  "fetched_at": "2026-11-01T22:15:42+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

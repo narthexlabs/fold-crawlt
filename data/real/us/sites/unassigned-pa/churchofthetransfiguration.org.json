@@ -1,0 +1,173 @@
+{
+ "domain": "churchofthetransfiguration.org",
+ "diocese": "unassigned-pa",
+ "matched_church_ids": [
+  "brave:PA|transfiguration|"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "brave:PA|transfiguration|"
+  ]
+ },
+ "names": [
+  "Church of the Transfiguration Church"
+ ],
+ "cities": [],
+ "home_url": "https://www.churchofthetransfiguration.org/",
+ "final_url": "https://www.churchofthetransfiguration.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://www.churchofthetransfiguration.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.churchofthetransfiguration.org/worship/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.churchofthetransfiguration.org/worship/service-schedule/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.churchofthetransfiguration.org/events/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.churchofthetransfiguration.org/events/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "live",
+   "url": "https://www.churchofthetransfiguration.org/worship/livestream/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://www.churchofthetransfiguration.org/visit/contact/",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-content"
+  ]
+ },
+ "template": "wordpress-rest+html",
+ "groups": [],
+ "calendar_feeds": [],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/churchofthetransfiguration.org"
+  ],
+  "instagram": [
+   "https://www.instagram.com/commofjesus/"
+  ],
+  "youtube": [
+   "https://www.youtube.com/c/CommunityofJesusOrleans"
+  ],
+  "x": [
+   "https://x.com/comofjesus"
+  ],
+  "livestream": [
+   {
+    "url": "https://www.churchofthetransfiguration.org/worship/livestream/",
+    "label": "Livestream",
+    "platform": "www.churchofthetransfiguration.org",
+    "kind": "link"
+   },
+   {
+    "url": "https://www.churchofthetransfiguration.org/livestream/",
+    "label": "Livestream",
+    "platform": "www.churchofthetransfiguration.org",
+    "kind": "link"
+   }
+  ]
+ },
+ "bulletin": null,
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": null,
+   "raw": "Sunday Lauds 9:15 AM; Sunday Eucharist 10:00 AM; Sunday Vespers 5:15 PM",
+   "source_url": "https://www.churchofthetransfiguration.org/worship/service-schedule/",
+   "fetched_at": "2026-11-01T22:15:24+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  }
+ ],
+ "source_url": "https://www.churchofthetransfiguration.org/",
+ "fetched_at": "2026-11-01T22:15:29+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": true
+   },
+   "score": "high"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 1
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "not_a_service": 13
+ },
+ "groups_dropped": {
+  "unmatched": 2,
+  "noise": 2
+ },
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(508) 255-1094",
+  "address": "5 Bay View Drive, Orleans, MA 02653",
+  "source_url": "https://www.churchofthetransfiguration.org/visit/contact/",
+  "sources": {
+   "phone": "https://www.churchofthetransfiguration.org/visit/contact/",
+   "address": "https://www.churchofthetransfiguration.org/visit/contact/"
+  },
+  "fetched_at": "2026-11-01T22:15:28+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

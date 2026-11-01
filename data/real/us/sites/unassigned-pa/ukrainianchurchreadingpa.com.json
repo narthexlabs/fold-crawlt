@@ -1,0 +1,181 @@
+{
+ "domain": "ukrainianchurchreadingpa.com",
+ "diocese": "unassigned-pa",
+ "matched_church_ids": [
+  "brave:PA|nativity blessed virgin mary reading|"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "brave:PA|nativity blessed virgin mary reading|"
+  ]
+ },
+ "names": [
+  "Nativity Of The Blessed Virgin Mary"
+ ],
+ "cities": [
+  "Reading"
+ ],
+ "home_url": "https://www.ukrainianchurchreadingpa.com/",
+ "final_url": "https://www.ukrainianchurchreadingpa.com/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://www.ukrainianchurchreadingpa.com/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.ukrainianchurchreadingpa.com/confession",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.ukrainianchurchreadingpa.com/sacraments",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.ukrainianchurchreadingpa.com/donations",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.ukrainianchurchreadingpa.com/lenten-events-2026",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://www.ukrainianchurchreadingpa.com/contact",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "duda",
+  "evidence": [
+   "irp.cdn-website"
+  ]
+ },
+ "template": "generic-html:duda",
+ "groups": [],
+ "calendar_feeds": [
+  {
+   "feed_id": "ukrainianchurchreadingpa.com:ics:822524e3",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": null,
+   "page_url": "https://www.ukrainianchurchreadingpa.com/donations",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (website-builder widget)",
+   "url_withheld": "calendar id is an e-mail address; not stored",
+   "feed_key": "822524e3f455",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T22:19:08+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/NativityBVMchurchReading"
+  ]
+ },
+ "bulletin": null,
+ "schedule_rows": [
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "16:00",
+   "language": null,
+   "raw": "In our parish, confessions are heard on Saturdays at 4:00PM, Sundays at 8:30AM and anytime by appointment.",
+   "source_url": "https://www.ukrainianchurchreadingpa.com/confession",
+   "fetched_at": "2026-11-01T22:15:22+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "08:30",
+   "language": null,
+   "raw": "In our parish, confessions are heard on Saturdays at 4:00PM, Sundays at 8:30AM and anytime by appointment.",
+   "source_url": "https://www.ukrainianchurchreadingpa.com/confession",
+   "fetched_at": "2026-11-01T22:15:22+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict"
+  }
+ ],
+ "source_url": "https://www.ukrainianchurchreadingpa.com/",
+ "fetched_at": "2026-11-01T22:15:26+00:00",
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": true
+   },
+   "score": "low"
+  },
+  "passed_bar": true,
+  "trusted_candidate": false,
+  "generic_rows": 5
+ },
+ "has_sunday": false,
+ "schedule_partial": true,
+ "schedule_dropped": {
+  "no_day": 1,
+  "no_kind": 2,
+  "other_location": 1
+ },
+ "groups_dropped": {
+  "noise": 1,
+  "unmatched": 1
+ },
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(610) 376-0586",
+  "address": "504 Summit Ave Reading PA 19611",
+  "source_url": "https://www.ukrainianchurchreadingpa.com/contact",
+  "sources": {
+   "phone": "https://www.ukrainianchurchreadingpa.com/contact",
+   "address": "https://www.ukrainianchurchreadingpa.com/contact"
+  },
+  "fetched_at": "2026-11-01T22:15:26+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

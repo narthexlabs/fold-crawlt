@@ -21,33 +21,468 @@
   "Houston"
  ],
  "home_url": "https://stalphonsushouston.org/",
- "final_url": "https://www.stalphonsushouston.org/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "final_url": "https://stalphonsushouston.org/",
+ "crawl_status": "wayback-2025-04-24",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
-   "url": "https://www.stalphonsushouston.org/",
-   "status": 403,
-   "class": "challenge"
+   "url": "https://stalphonsushouston.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stalphonsushouston.org/mass-times",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stalphonsushouston.org/confession-times",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://stalphonsushouston.org/ministry-list-lista-de-ministerios",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://stalphonsushouston.org/liturgical-ministers-ministros-liturgicos",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://stalphonsushouston.org/ministries",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://stalphonsushouston.org/calendar",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://stalphonsushouston.org/events?page=1",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "live",
+   "url": "https://stalphonsushouston.org/events/mass-in-english-facebook-live-also/20250427",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "contact",
+   "url": "https://stalphonsushouston.org/contact-us",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://stalphonsushouston.org/bulletins",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "stalphonsushouston.org:prayer_group_es|oracion",
+   "name": "Prayer Group/Grupo de Oración",
+   "category": "prayer_devotion",
+   "category_label": "Prayer & devotion",
+   "subcategory": "prayer_group",
+   "audience": "all",
+   "language": "es",
+   "language_assumed": false,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stalphonsushouston.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stalphonsushouston.org/ministry-list-lista-de-ministerios",
+   "source_kind": "website",
+   "fetched_at": "2024-06-24T16:22:04+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-04-24"
+  },
+  {
+   "id": "stalphonsushouston.org:youth_ministry_en+es",
+   "name": "Youth Ministry (English & Spanish)",
+   "category": "youth",
+   "category_label": "Youth",
+   "subcategory": "youth_ministry",
+   "audience": "youth",
+   "language": "en+es",
+   "language_assumed": false,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stalphonsushouston.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stalphonsushouston.org/ministry-list-lista-de-ministerios",
+   "source_kind": "website",
+   "fetched_at": "2024-06-24T16:22:04+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-04-24"
+  },
+  {
+   "id": "stalphonsushouston.org:ushers",
+   "name": "Acomodadores (Ujieres)",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "ushers_greeters",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "Reciben y sientan a la comunidad durante las misas.",
+   "contact_url": "https://stalphonsushouston.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stalphonsushouston.org/liturgical-ministers-ministros-liturgicos",
+   "source_kind": "website",
+   "fetched_at": "2024-07-17T19:05:11+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-04-24"
+  },
+  {
+   "id": "stalphonsushouston.org:servers",
+   "name": "Altar Servers",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "altar_servers",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "Assist the priest at Eucharist. Children can serve after their 1st Communion.",
+   "contact_url": "https://stalphonsushouston.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stalphonsushouston.org/liturgical-ministers-ministros-liturgicos",
+   "source_kind": "website",
+   "fetched_at": "2024-07-17T19:05:11+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-04-24"
+  },
+  {
+   "id": "stalphonsushouston.org:emhc",
+   "name": "Extraordinary Ministers of Holy Communion",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "emhc",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "Offer the Body and Blood of Christ to the faithful who are gathered",
+   "contact_url": "https://stalphonsushouston.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stalphonsushouston.org/liturgical-ministers-ministros-liturgicos",
+   "source_kind": "website",
+   "fetched_at": "2024-07-17T19:05:11+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-04-24"
+  },
+  {
+   "id": "stalphonsushouston.org:lectors_es",
+   "name": "Lectores",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "lectors",
+   "audience": "all",
+   "language": "es",
+   "language_assumed": false,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stalphonsushouston.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stalphonsushouston.org/liturgical-ministers-ministros-liturgicos",
+   "source_kind": "website",
+   "fetched_at": "2024-07-17T19:05:11+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-04-24"
+  },
+  {
+   "id": "stalphonsushouston.org:servers_es",
+   "name": "Monaguillos",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "altar_servers",
+   "audience": "youth",
+   "language": "es",
+   "language_assumed": false,
+   "meets": null,
+   "description": "Ayudan al sacerdote en la Eucaristía. Los niños pueden servir después de su primera comunión.",
+   "contact_url": "https://stalphonsushouston.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stalphonsushouston.org/liturgical-ministers-ministros-liturgicos",
+   "source_kind": "website",
+   "fetched_at": "2024-07-17T19:05:11+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-04-24"
+  },
+  {
+   "id": "stalphonsushouston.org:lectors",
+   "name": "Readers",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "lectors",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stalphonsushouston.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stalphonsushouston.org/liturgical-ministers-ministros-liturgicos",
+   "source_kind": "website",
+   "fetched_at": "2024-07-17T19:05:11+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-04-24"
+  },
+  {
+   "id": "stalphonsushouston.org:sacristans",
+   "name": "Sacristans",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "sacristans",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "Work behind the scenes, setting out all of the vessels and books necessary for Eucharist.",
+   "contact_url": "https://stalphonsushouston.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stalphonsushouston.org/liturgical-ministers-ministros-liturgicos",
+   "source_kind": "website",
+   "fetched_at": "2024-07-17T19:05:11+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-04-24"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/St-Alphonsus-Catholic-Church-Parroquia-de-San-Alfonso-100209544987285"
+  ],
+  "x": [
+   "https://x.com/archgh"
+  ]
+ },
+ "bulletin": {
+  "url": "https://stalphonsushouston.org/bulletins",
+  "date": null,
+  "kind": "page",
+  "text": "|||",
+  "source_url": "https://stalphonsushouston.org/bulletins"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": "English",
+   "raw": "Sunday: 9:00 AM English",
+   "source_url": "https://stalphonsushouston.org/",
+   "fetched_at": "2025-04-24T11:33:18+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-04-24",
+   "archive_url": "https://web.archive.org/web/20250424113318/https://stalphonsushouston.org/",
+   "capture_date": "2025-04-24"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:30",
+   "language": "Spanish",
+   "raw": "Sunday: 10:30 AM Spanish",
+   "source_url": "https://stalphonsushouston.org/",
+   "fetched_at": "2025-04-24T11:33:18+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-04-24",
+   "archive_url": "https://web.archive.org/web/20250424113318/https://stalphonsushouston.org/",
+   "capture_date": "2025-04-24"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "12:00",
+   "language": "Spanish",
+   "raw": "Sunday: 12:00 PM Spanish",
+   "source_url": "https://stalphonsushouston.org/",
+   "fetched_at": "2025-04-24T11:33:18+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-04-24",
+   "archive_url": "https://web.archive.org/web/20250424113318/https://stalphonsushouston.org/",
+   "capture_date": "2025-04-24"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "14:00",
+   "language": "Spanish",
+   "raw": "Sunday: 2:00 PM Spanish",
+   "source_url": "https://stalphonsushouston.org/",
+   "fetched_at": "2025-04-24T11:33:18+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-04-24",
+   "archive_url": "https://web.archive.org/web/20250424113318/https://stalphonsushouston.org/",
+   "capture_date": "2025-04-24"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "09:30-12:00",
+   "language": null,
+   "raw": "Wednesday: 9:30 AM - 12:00 PM Begins after 9 AM Mass.",
+   "source_url": "https://stalphonsushouston.org/",
+   "fetched_at": "2025-04-24T11:33:18+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-04-24",
+   "archive_url": "https://web.archive.org/web/20250424113318/https://stalphonsushouston.org/",
+   "capture_date": "2025-04-24"
+  }
+ ],
  "source_url": "https://stalphonsushouston.org/",
- "fetched_at": "2026-11-01T07:34:48+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-01T22:17:33+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": true
+   },
+   "score": "high"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 11
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "text:dated_line": 9,
+  "text:other_location": 13,
+  "text:skipped_section": 1
+ },
+ "groups_dropped": {
+  "noise": 1,
+  "sentence": 1,
+  "unmatched": 1
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(713) 923-5843",
+  "address": null,
+  "source_url": "https://stalphonsushouston.org/contact-us",
+  "sources": {
+   "phone": "https://stalphonsushouston.org/contact-us"
+  },
+  "fetched_at": "2025-04-27T15:50:51+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2025-04-24",
+  "capture_age_days": 556,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://stalphonsushouston.org/",
+    "capture": "2025-04-24",
+    "archive_url": "https://web.archive.org/web/20250424113318/https://stalphonsushouston.org/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://stalphonsushouston.org/mass-times",
+    "capture": "2025-06-21",
+    "archive_url": "https://web.archive.org/web/20250621052353/https://stalphonsushouston.org/mass-times"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://stalphonsushouston.org/confession-times",
+    "capture": "2024-05-22",
+    "archive_url": "https://web.archive.org/web/20240522053224/https://stalphonsushouston.org/confession-times"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://stalphonsushouston.org/ministry-list-lista-de-ministerios",
+    "capture": "2024-06-24",
+    "archive_url": "https://web.archive.org/web/20240624162204/https://stalphonsushouston.org/ministry-list-lista-de-ministerios"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://stalphonsushouston.org/liturgical-ministers-ministros-liturgicos",
+    "capture": "2024-07-17",
+    "archive_url": "https://web.archive.org/web/20240717190511/https://stalphonsushouston.org/liturgical-ministers-ministros-liturgicos"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://stalphonsushouston.org/ministries",
+    "capture": "2024-04-18",
+    "archive_url": "https://web.archive.org/web/20240418234017/https://stalphonsushouston.org/ministries"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://stalphonsushouston.org/calendar",
+    "capture": "2024-06-24",
+    "archive_url": "https://web.archive.org/web/20240624152339/https://stalphonsushouston.org/calendar"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://stalphonsushouston.org/events?page=1",
+    "capture": "2024-05-22",
+    "archive_url": "https://web.archive.org/web/20240522050834/https://stalphonsushouston.org/events?page=1"
+   },
+   {
+    "kind": "contact",
+    "original": "https://stalphonsushouston.org/contact-us",
+    "capture": "2025-04-27",
+    "archive_url": "https://web.archive.org/web/20250427155051/https://stalphonsushouston.org/contact-us"
+   },
+   {
+    "kind": "bulletin",
+    "original": "https://stalphonsushouston.org/bulletins",
+    "capture": "2024-06-24",
+    "archive_url": "https://web.archive.org/web/20240624165027/https://stalphonsushouston.org/bulletins"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }

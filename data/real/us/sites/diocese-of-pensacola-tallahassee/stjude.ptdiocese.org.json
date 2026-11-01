@@ -1,0 +1,213 @@
+{
+ "domain": "stjude.ptdiocese.org",
+ "diocese": "diocese-of-pensacola-tallahassee",
+ "matched_church_ids": [
+  "st-jude-thaddeus-cantonment-fl"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "st-jude-thaddeus-cantonment-fl"
+  ]
+ },
+ "names": [
+  "St. Jude Thaddeus"
+ ],
+ "cities": [
+  "Cantonment"
+ ],
+ "home_url": "https://stjude.ptdiocese.org/",
+ "final_url": "https://stjude.ptdiocese.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://stjude.ptdiocese.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://stjude.ptdiocese.org/news/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://stjude.ptdiocese.org/contact-us/",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-json"
+  ]
+ },
+ "template": "wordpress-rest+html",
+ "groups": [],
+ "calendar_feeds": [
+  {
+   "feed_id": "stjude.ptdiocese.org:ics:148addf1",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": "https://calendar.google.com/calendar/ical/70u81mf0734ids6klmivci7370%40group.calendar.google.com/public/basic.ics",
+   "page_url": "https://stjude.ptdiocese.org/",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (embedded on page)",
+   "display_tz": "America/Chicago",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T22:21:40+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
+ "events": [],
+ "social": {},
+ "bulletin": {
+  "url": "https://stjude.ptdiocese.org/news/",
+  "date": null,
+  "kind": "page",
+  "text": "Bulletins",
+  "source_url": "https://stjude.ptdiocese.org/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:30",
+   "language": null,
+   "raw": "Weekend Masses at St. Jude: 10:30 AM CT",
+   "source_url": "https://stjude.ptdiocese.org/",
+   "fetched_at": "2026-11-01T22:15:40+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "16:00",
+   "language": null,
+   "raw": "Saturday Vigil: 4 PM ET",
+   "source_url": "https://stjude.ptdiocese.org/",
+   "fetched_at": "2026-11-01T22:15:40+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Weekend Mass at St. Elizabeth: 8:00 AM CT",
+   "source_url": "https://stjude.ptdiocese.org/",
+   "fetched_at": "2026-11-01T22:15:40+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "08:30",
+   "language": null,
+   "raw": "Weekday Mass 8:30 AM CT",
+   "source_url": "https://stjude.ptdiocese.org/",
+   "fetched_at": "2026-11-01T22:15:40+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "mass",
+   "day": "First Friday of the month",
+   "time": "17:30",
+   "language": null,
+   "raw": "First Friday Mass is at 5:30 PM followed by Adoration until 6:30 PM.",
+   "source_url": "https://stjude.ptdiocese.org/",
+   "fetched_at": "2026-11-01T22:15:40+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday (lent)",
+   "time": "17:30",
+   "language": null,
+   "raw": "During Lent, Friday Mass will be at 5:30 pm followed by Stations of the Cross.",
+   "source_url": "https://stjude.ptdiocese.org/",
+   "fetched_at": "2026-11-01T22:15:40+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  }
+ ],
+ "source_url": "https://stjude.ptdiocese.org/",
+ "fetched_at": "2026-11-01T22:16:19+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 10
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "dated_line": 2,
+  "relative_time": 1
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": "office@stjude.ptdiocese.org",
+  "phone": "(850) 968-6189",
+  "address": "303 Rocky Ave, Cantonment, FL 32533",
+  "source_url": "https://stjude.ptdiocese.org/contact-us/",
+  "sources": {
+   "email": "https://stjude.ptdiocese.org/contact-us/",
+   "phone": "https://stjude.ptdiocese.org/contact-us/",
+   "address": "https://stjude.ptdiocese.org/contact-us/"
+  },
+  "fetched_at": "2026-11-01T22:16:09+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

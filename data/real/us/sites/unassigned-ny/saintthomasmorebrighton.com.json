@@ -1,0 +1,106 @@
+{
+ "domain": "saintthomasmorebrighton.com",
+ "diocese": "unassigned-ny",
+ "matched_church_ids": [
+  "brave:NY|thomas more brighton|"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "brave:NY|thomas more brighton|"
+  ]
+ },
+ "names": [
+  "St Thomas More"
+ ],
+ "cities": [
+  "Brighton"
+ ],
+ "home_url": "https://saintthomasmorebrighton.com/",
+ "final_url": "https://saintthomasmorebrighton.com/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://saintthomasmorebrighton.com/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://saintthomasmorebrighton.com/mass-times/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://saintthomasmorebrighton.com/contact/",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-content"
+  ]
+ },
+ "template": "wordpress-html",
+ "groups": [],
+ "calendar_feeds": [],
+ "events": [],
+ "social": {},
+ "bulletin": null,
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": null,
+   "raw": "Sunday Mass 10AM",
+   "source_url": "https://saintthomasmorebrighton.com/mass-times/",
+   "fetched_at": "2026-11-01T22:15:26+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  }
+ ],
+ "source_url": "https://saintthomasmorebrighton.com/",
+ "fetched_at": "2026-11-01T22:15:28+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": true
+   },
+   "score": "high"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 1
+ },
+ "has_sunday": true,
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

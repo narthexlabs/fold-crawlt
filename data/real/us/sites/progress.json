@@ -603,21 +603,37 @@
    "touched": [
     "unassigned-pa"
    ]
+  },
+  {
+   "started_at": "2026-11-01T22:15:20+00:00",
+   "ended_at": "2026-11-01T22:22:15+00:00",
+   "result": "fetched {'dns': 12, 'done': 261, 'not_found': 12, 'robots_disallowed': 2, 'ssl_error': 8, 'challenge': 26, 'blocked_403': 2, 'conn_error': 1, 'ok': 189, 'parked': 2, 'timeout': 10, 'cut': 3, 'halted_egress': 0}; parsed 9 dioceses",
+   "touched": [
+    "unassigned-fl",
+    "archdiocese-of-miami",
+    "diocese-of-orlando",
+    "diocese-of-st-petersburg",
+    "diocese-of-venice",
+    "diocese-of-st-augustine",
+    "diocese-of-pensacola-tallahassee",
+    "unassigned-va",
+    "diocese-of-palm-beach"
+   ]
   }
  ],
  "dioceses": {
   "unassigned-pa": {
-   "sites_in_list": 570,
-   "records": 564,
-   "finished": false,
-   "ok": 397,
+   "sites_in_list": 511,
+   "records": 594,
+   "finished": true,
+   "ok": 424,
    "by_status": {
-    "ok": 397,
-    "challenge": 85,
+    "ok": 424,
+    "challenge": 87,
     "dns": 31,
     "ssl_error": 16,
+    "timeout": 9,
     "conn_error": 8,
-    "timeout": 8,
     "http_5xx": 6,
     "not_found": 4,
     "robots_disallowed": 4,
@@ -627,7 +643,7 @@
    }
   },
   "unassigned-ca": {
-   "sites_in_list": 495,
+   "sites_in_list": 496,
    "records": 56,
    "finished": false,
    "ok": 36,
@@ -643,26 +659,44 @@
    }
   },
   "archdiocese-of-chicago": {
-   "sites_in_list": 476,
-   "records": 480,
+   "sites_in_list": 479,
+   "records": 483,
    "finished": true,
-   "ok": 246,
+   "ok": 248,
    "by_status": {
-    "ok": 246,
+    "ok": 248,
     "dns": 75,
-    "challenge": 37,
-    "wayback": 34,
+    "wayback": 55,
     "ssl_error": 30,
+    "challenge": 17,
     "timeout": 11,
     "parked": 10,
     "robots_disallowed": 8,
+    "not_found": 7,
     "unreachable_via_proxy": 7,
     "http_5xx": 6,
     "conn_error": 6,
-    "not_found": 6,
     "social_only": 3,
-    "error:TooManyRedirects": 1,
-    "blocked_429": 1
+    "error:TooManyRedirects": 1
+   }
+  },
+  "unassigned-oh": {
+   "sites_in_list": 392,
+   "records": 393,
+   "finished": true,
+   "ok": 254,
+   "by_status": {
+    "ok": 254,
+    "challenge": 74,
+    "ssl_error": 22,
+    "dns": 18,
+    "timeout": 9,
+    "parked": 7,
+    "robots_disallowed": 2,
+    "blocked_403": 2,
+    "conn_error": 2,
+    "not_found": 2,
+    "http_202": 1
    }
   },
   "archdiocese-of-new-york": {
@@ -685,24 +719,6 @@
     "timeout": 1
    }
   },
-  "unassigned-nm": {
-   "sites_in_list": 259,
-   "records": 263,
-   "finished": true,
-   "ok": 163,
-   "by_status": {
-    "ok": 163,
-    "challenge": 50,
-    "dns": 25,
-    "ssl_error": 10,
-    "not_found": 5,
-    "robots_disallowed": 3,
-    "timeout": 3,
-    "parked": 2,
-    "blocked_403": 1,
-    "http_5xx": 1
-   }
-  },
   "archdiocese-of-boston": {
    "sites_in_list": 257,
    "records": 258,
@@ -721,6 +737,24 @@
     "timeout": 2,
     "parked": 2,
     "dns": 1
+   }
+  },
+  "unassigned-mi": {
+   "sites_in_list": 256,
+   "records": 258,
+   "finished": true,
+   "ok": 160,
+   "by_status": {
+    "ok": 160,
+    "challenge": 66,
+    "ssl_error": 9,
+    "dns": 7,
+    "timeout": 6,
+    "not_found": 4,
+    "http_5xx": 2,
+    "blocked_403": 2,
+    "blocked_429": 1,
+    "http_202": 1
    }
   },
   "diocese-of-brooklyn": {
@@ -743,22 +777,41 @@
     "conn_error": 1
    }
   },
-  "unassigned-oh": {
-   "sites_in_list": 217,
-   "records": 217,
+  "unassigned-nm": {
+   "sites_in_list": 233,
+   "records": 263,
    "finished": true,
-   "ok": 131,
+   "ok": 163,
    "by_status": {
-    "ok": 131,
-    "challenge": 43,
-    "ssl_error": 14,
-    "dns": 12,
-    "timeout": 6,
-    "parked": 4,
-    "blocked_403": 2,
-    "conn_error": 2,
-    "not_found": 2,
-    "robots_disallowed": 1
+    "ok": 163,
+    "challenge": 50,
+    "dns": 25,
+    "ssl_error": 10,
+    "not_found": 5,
+    "robots_disallowed": 3,
+    "timeout": 3,
+    "parked": 2,
+    "blocked_403": 1,
+    "http_5xx": 1
+   }
+  },
+  "unassigned-wi": {
+   "sites_in_list": 230,
+   "records": 265,
+   "finished": true,
+   "ok": 164,
+   "by_status": {
+    "ok": 164,
+    "challenge": 46,
+    "dns": 25,
+    "ssl_error": 10,
+    "not_found": 7,
+    "robots_disallowed": 3,
+    "blocked_403": 3,
+    "timeout": 3,
+    "unreachable_via_proxy": 2,
+    "parked": 1,
+    "conn_error": 1
    }
   },
   "diocese-of-cleveland": {
@@ -780,58 +833,40 @@
     "http_5xx": 1
    }
   },
-  "unassigned-mo": {
-   "sites_in_list": 213,
-   "records": 217,
-   "finished": true,
-   "ok": 146,
-   "by_status": {
-    "ok": 146,
-    "challenge": 25,
-    "dns": 21,
-    "ssl_error": 7,
-    "not_found": 6,
-    "timeout": 4,
-    "parked": 3,
-    "robots_disallowed": 2,
-    "http_5xx": 2,
-    "error:TooManyRedirects": 1,
-    "http_4xx": 1,
-    "http_307": 1
-   }
-  },
   "archdiocese-of-galveston-houston": {
    "sites_in_list": 209,
    "records": 209,
    "finished": true,
    "ok": 71,
    "by_status": {
-    "challenge": 97,
+    "challenge": 92,
     "ok": 71,
     "dns": 25,
     "ssl_error": 7,
+    "wayback": 5,
     "timeout": 3,
     "conn_error": 3,
     "parked": 2,
     "robots_disallowed": 1
    }
   },
-  "unassigned-ne": {
-   "sites_in_list": 203,
-   "records": 222,
+  "unassigned-ny": {
+   "sites_in_list": 207,
+   "records": 214,
    "finished": true,
-   "ok": 157,
+   "ok": 137,
    "by_status": {
-    "ok": 157,
-    "challenge": 20,
-    "timeout": 15,
-    "dns": 10,
+    "ok": 137,
+    "challenge": 19,
+    "timeout": 19,
+    "dns": 18,
     "ssl_error": 7,
-    "blocked_429": 6,
-    "not_found": 2,
-    "http_202": 2,
+    "not_found": 5,
+    "blocked_403": 4,
+    "robots_disallowed": 2,
     "conn_error": 2,
-    "unreachable_via_proxy": 1
+    "error:TooManyRedirects": 1,
+    "parked": 1
    }
   },
   "diocese-of-buffalo": {
@@ -872,6 +907,27 @@
     "unreachable_via_proxy": 1
    }
   },
+  "unassigned-mo": {
+   "sites_in_list": 195,
+   "records": 220,
+   "finished": true,
+   "ok": 148,
+   "by_status": {
+    "ok": 148,
+    "challenge": 25,
+    "dns": 21,
+    "ssl_error": 7,
+    "not_found": 6,
+    "timeout": 4,
+    "parked": 3,
+    "robots_disallowed": 2,
+    "http_5xx": 2,
+    "error:TooManyRedirects": 1,
+    "http_4xx": 1,
+    "blocked_403": 1,
+    "http_307": 1
+   }
+  },
   "archdiocese-of-st-paul-and-minneapolis": {
    "sites_in_list": 183,
    "records": 183,
@@ -886,6 +942,24 @@
     "unreachable_via_proxy": 2
    }
   },
+  "unassigned-ne": {
+   "sites_in_list": 183,
+   "records": 222,
+   "finished": true,
+   "ok": 157,
+   "by_status": {
+    "ok": 157,
+    "challenge": 20,
+    "timeout": 15,
+    "dns": 10,
+    "ssl_error": 7,
+    "blocked_429": 6,
+    "not_found": 2,
+    "http_202": 2,
+    "conn_error": 2,
+    "unreachable_via_proxy": 1
+   }
+  },
   "archdiocese-of-baltimore": {
    "sites_in_list": 182,
    "records": 182,
@@ -893,10 +967,10 @@
    "ok": 83,
    "by_status": {
     "ok": 83,
-    "wayback": 37,
+    "wayback": 40,
     "dns": 31,
     "ssl_error": 11,
-    "challenge": 8,
+    "challenge": 5,
     "timeout": 3,
     "unreachable_via_proxy": 2,
     "http_5xx": 2,
@@ -904,6 +978,23 @@
     "parked": 1,
     "conn_error": 1,
     "blocked_403": 1
+   }
+  },
+  "archdiocese-of-detroit": {
+   "sites_in_list": 181,
+   "records": 181,
+   "finished": true,
+   "ok": 73,
+   "by_status": {
+    "ok": 73,
+    "dns": 36,
+    "challenge": 24,
+    "ssl_error": 18,
+    "wayback": 17,
+    "timeout": 5,
+    "conn_error": 4,
+    "parked": 3,
+    "unreachable_via_proxy": 1
    }
   },
   "archdiocese-of-washington": {
@@ -943,6 +1034,27 @@
     "not_html": 1
    }
   },
+  "archdiocese-of-hartford": {
+   "sites_in_list": 168,
+   "records": 169,
+   "finished": true,
+   "ok": 87,
+   "by_status": {
+    "ok": 87,
+    "dns": 41,
+    "timeout": 11,
+    "ssl_error": 6,
+    "not_found": 5,
+    "conn_error": 5,
+    "http_5xx": 4,
+    "challenge": 3,
+    "parked": 3,
+    "unreachable_via_proxy": 2,
+    "not_html": 1,
+    "error:TooManyRedirects": 1,
+    "blocked_403": 1
+   }
+  },
   "archdiocese-of-san-antonio": {
    "sites_in_list": 168,
    "records": 168,
@@ -980,25 +1092,21 @@
     "http_4xx": 1
    }
   },
-  "unassigned-co": {
-   "sites_in_list": 159,
-   "records": 185,
+  "unassigned-in": {
+   "sites_in_list": 166,
+   "records": 179,
    "finished": true,
-   "ok": 108,
+   "ok": 91,
    "by_status": {
-    "ok": 108,
-    "challenge": 21,
-    "dns": 19,
-    "ssl_error": 12,
-    "timeout": 6,
-    "conn_error": 5,
-    "not_found": 4,
-    "http_202": 2,
-    "http_5xx": 2,
-    "blocked_429": 2,
-    "robots_disallowed": 2,
+    "ok": 91,
+    "challenge": 48,
+    "timeout": 23,
+    "dns": 7,
+    "ssl_error": 5,
+    "conn_error": 2,
     "blocked_403": 1,
-    "unreachable_via_proxy": 1
+    "unreachable_via_proxy": 1,
+    "robots_disallowed": 1
    }
   },
   "archdiocese-of-portland-in-oregon": {
@@ -1018,20 +1126,44 @@
     "parked": 1
    }
   },
-  "unassigned-az": {
-   "sites_in_list": 154,
-   "records": 180,
+  "unassigned-co": {
+   "sites_in_list": 151,
+   "records": 185,
    "finished": true,
-   "ok": 122,
+   "ok": 108,
    "by_status": {
-    "ok": 122,
-    "challenge": 40,
-    "ssl_error": 5,
-    "dns": 5,
-    "conn_error": 4,
-    "blocked_403": 2,
-    "timeout": 1,
+    "ok": 108,
+    "challenge": 21,
+    "dns": 19,
+    "ssl_error": 12,
+    "timeout": 6,
+    "conn_error": 5,
+    "not_found": 4,
+    "http_202": 2,
+    "http_5xx": 2,
+    "blocked_429": 2,
+    "robots_disallowed": 2,
+    "blocked_403": 1,
     "unreachable_via_proxy": 1
+   }
+  },
+  "unassigned-nj": {
+   "sites_in_list": 150,
+   "records": 156,
+   "finished": true,
+   "ok": 93,
+   "by_status": {
+    "ok": 93,
+    "challenge": 25,
+    "ssl_error": 9,
+    "dns": 8,
+    "timeout": 7,
+    "blocked_403": 4,
+    "robots_disallowed": 3,
+    "conn_error": 3,
+    "http_202": 2,
+    "blocked_429": 1,
+    "not_found": 1
    }
   },
   "archdiocese-of-milwaukee": {
@@ -1092,9 +1224,8 @@
    "by_status": {
     "ok": 105,
     "dns": 11,
-    "challenge": 5,
+    "wayback": 9,
     "ssl_error": 5,
-    "wayback": 4,
     "conn_error": 3,
     "timeout": 3,
     "not_found": 3,
@@ -1102,22 +1233,42 @@
     "http_5xx": 1
    }
   },
-  "unassigned-ks": {
-   "sites_in_list": 140,
-   "records": 161,
+  "unassigned-tx": {
+   "sites_in_list": 141,
+   "records": 183,
    "finished": true,
-   "ok": 92,
+   "ok": 84,
    "by_status": {
-    "ok": 92,
-    "challenge": 34,
-    "blocked_429": 10,
-    "timeout": 10,
-    "dns": 5,
-    "ssl_error": 4,
+    "ok": 84,
+    "challenge": 68,
+    "dns": 11,
+    "ssl_error": 5,
+    "not_found": 4,
+    "timeout": 3,
     "robots_disallowed": 2,
-    "conn_error": 2,
+    "social_only": 2,
+    "http_202": 1,
     "unreachable_via_proxy": 1,
-    "not_found": 1
+    "http_4xx": 1,
+    "blocked_403": 1
+   }
+  },
+  "unassigned-ct": {
+   "sites_in_list": 140,
+   "records": 152,
+   "finished": true,
+   "ok": 107,
+   "by_status": {
+    "ok": 107,
+    "dns": 15,
+    "ssl_error": 6,
+    "challenge": 6,
+    "http_5xx": 5,
+    "timeout": 4,
+    "not_found": 3,
+    "conn_error": 3,
+    "social_only": 2,
+    "robots_disallowed": 1
    }
   },
   "diocese-of-providence": {
@@ -1139,6 +1290,40 @@
     "http_5xx": 1
    }
   },
+  "unassigned-az": {
+   "sites_in_list": 139,
+   "records": 180,
+   "finished": true,
+   "ok": 122,
+   "by_status": {
+    "ok": 122,
+    "challenge": 40,
+    "ssl_error": 5,
+    "dns": 5,
+    "conn_error": 4,
+    "blocked_403": 2,
+    "timeout": 1,
+    "unreachable_via_proxy": 1
+   }
+  },
+  "diocese-of-springfield-in-illinois": {
+   "sites_in_list": 138,
+   "records": 138,
+   "finished": true,
+   "ok": 87,
+   "by_status": {
+    "ok": 87,
+    "challenge": 21,
+    "dns": 14,
+    "ssl_error": 7,
+    "timeout": 3,
+    "not_found": 2,
+    "conn_error": 1,
+    "social_only": 1,
+    "parked": 1,
+    "blocked_403": 1
+   }
+  },
   "diocese-of-syracuse": {
    "sites_in_list": 138,
    "records": 138,
@@ -1158,57 +1343,56 @@
     "unreachable_via_proxy": 1
    }
   },
-  "unassigned-in": {
+  "unassigned-wa": {
    "sites_in_list": 136,
-   "records": 136,
+   "records": 142,
    "finished": true,
-   "ok": 59,
+   "ok": 80,
    "by_status": {
-    "ok": 59,
-    "challenge": 42,
-    "timeout": 23,
-    "ssl_error": 5,
-    "dns": 4,
-    "unreachable_via_proxy": 1,
+    "ok": 80,
+    "challenge": 33,
+    "ssl_error": 12,
+    "dns": 10,
+    "not_found": 3,
+    "http_5xx": 1,
     "conn_error": 1,
-    "robots_disallowed": 1
-   }
-  },
-  "unassigned-ky": {
-   "sites_in_list": 134,
-   "records": 146,
-   "finished": true,
-   "ok": 82,
-   "by_status": {
-    "ok": 82,
-    "challenge": 25,
-    "dns": 19,
-    "ssl_error": 7,
-    "timeout": 3,
-    "blocked_403": 2,
-    "conn_error": 2,
-    "parked": 2,
-    "not_found": 2,
-    "unreachable_via_proxy": 1,
-    "blocked_429": 1
+    "blocked_403": 1,
+    "http_4xx": 1
    }
   },
   "archdiocese-of-atlanta": {
    "sites_in_list": 133,
-   "records": 134,
+   "records": 135,
    "finished": true,
-   "ok": 93,
+   "ok": 94,
    "by_status": {
-    "ok": 93,
-    "wayback": 12,
+    "ok": 94,
+    "wayback": 13,
     "dns": 11,
     "ssl_error": 6,
-    "challenge": 6,
+    "challenge": 5,
     "timeout": 2,
     "robots_disallowed": 1,
     "not_found": 1,
     "blocked_403": 1,
     "unreachable_via_proxy": 1
+   }
+  },
+  "unassigned-la": {
+   "sites_in_list": 132,
+   "records": 245,
+   "finished": true,
+   "ok": 82,
+   "by_status": {
+    "challenge": 123,
+    "ok": 82,
+    "dns": 13,
+    "ssl_error": 9,
+    "unreachable_via_proxy": 7,
+    "conn_error": 5,
+    "timeout": 2,
+    "parked": 2,
+    "http_5xx": 2
    }
   },
   "archdiocese-of-new-orleans": {
@@ -1243,91 +1427,75 @@
     "not_found": 1
    }
   },
-  "unassigned-la": {
+  "unassigned-ks": {
    "sites_in_list": 126,
-   "records": 234,
+   "records": 161,
    "finished": true,
-   "ok": 73,
+   "ok": 92,
    "by_status": {
-    "challenge": 123,
-    "ok": 73,
-    "dns": 12,
-    "ssl_error": 9,
-    "unreachable_via_proxy": 7,
-    "conn_error": 5,
-    "timeout": 2,
-    "parked": 2,
-    "http_5xx": 1
-   }
-  },
-  "unassigned-wi": {
-   "sites_in_list": 125,
-   "records": 129,
-   "finished": true,
-   "ok": 71,
-   "by_status": {
-    "ok": 71,
-    "challenge": 28,
-    "dns": 12,
-    "ssl_error": 6,
-    "not_found": 4,
+    "ok": 92,
+    "challenge": 34,
+    "blocked_429": 10,
+    "timeout": 10,
+    "dns": 5,
+    "ssl_error": 4,
     "robots_disallowed": 2,
-    "timeout": 2,
-    "unreachable_via_proxy": 2,
-    "blocked_403": 1,
-    "parked": 1
-   }
-  },
-  "archdiocese-of-detroit": {
-   "sites_in_list": 123,
-   "records": 123,
-   "finished": true,
-   "ok": 52,
-   "by_status": {
-    "ok": 52,
-    "challenge": 23,
-    "dns": 21,
-    "ssl_error": 13,
-    "conn_error": 4,
-    "parked": 3,
-    "timeout": 3,
-    "wayback": 2,
+    "conn_error": 2,
     "unreachable_via_proxy": 1,
-    "blocked_403": 1
+    "not_found": 1
    }
   },
-  "diocese-of-springfield-in-illinois": {
-   "sites_in_list": 122,
-   "records": 122,
+  "unassigned-mn": {
+   "sites_in_list": 126,
+   "records": 152,
    "finished": true,
-   "ok": 76,
+   "ok": 94,
    "by_status": {
-    "ok": 76,
-    "challenge": 19,
-    "dns": 12,
-    "ssl_error": 6,
-    "timeout": 3,
+    "ok": 94,
+    "challenge": 32,
+    "dns": 9,
+    "ssl_error": 7,
+    "conn_error": 3,
+    "robots_disallowed": 2,
     "not_found": 2,
-    "conn_error": 1,
-    "social_only": 1,
-    "parked": 1,
-    "blocked_403": 1
+    "http_5xx": 1,
+    "http_202": 1,
+    "unreachable_via_proxy": 1
    }
   },
-  "unassigned-wa": {
-   "sites_in_list": 120,
-   "records": 120,
+  "unassigned-ky": {
+   "sites_in_list": 125,
+   "records": 146,
    "finished": true,
-   "ok": 63,
+   "ok": 82,
    "by_status": {
-    "ok": 63,
-    "challenge": 31,
-    "dns": 10,
-    "ssl_error": 10,
-    "not_found": 3,
+    "ok": 82,
+    "challenge": 25,
+    "dns": 19,
+    "ssl_error": 7,
+    "timeout": 3,
+    "blocked_403": 2,
+    "conn_error": 2,
+    "parked": 2,
+    "not_found": 2,
+    "unreachable_via_proxy": 1,
+    "blocked_429": 1
+   }
+  },
+  "diocese-of-joliet": {
+   "sites_in_list": 121,
+   "records": 121,
+   "finished": true,
+   "ok": 80,
+   "by_status": {
+    "ok": 80,
+    "challenge": 22,
+    "dns": 6,
+    "timeout": 6,
+    "ssl_error": 4,
     "http_5xx": 1,
-    "conn_error": 1,
-    "http_4xx": 1
+    "parked": 1,
+    "conn_error": 1
    }
   },
   "diocese-of-charlotte": {
@@ -1341,6 +1509,41 @@
     "challenge": 16,
     "ssl_error": 4,
     "conn_error": 2,
+    "parked": 1
+   }
+  },
+  "diocese-of-green-bay": {
+   "sites_in_list": 118,
+   "records": 118,
+   "finished": true,
+   "ok": 48,
+   "by_status": {
+    "ok": 48,
+    "dns": 29,
+    "challenge": 26,
+    "ssl_error": 8,
+    "not_found": 3,
+    "timeout": 2,
+    "http_5xx": 1,
+    "parked": 1
+   }
+  },
+  "unassigned-fl": {
+   "sites_in_list": 118,
+   "records": 135,
+   "finished": true,
+   "ok": 82,
+   "by_status": {
+    "ok": 82,
+    "challenge": 16,
+    "dns": 13,
+    "ssl_error": 7,
+    "timeout": 4,
+    "robots_disallowed": 4,
+    "not_found": 3,
+    "conn_error": 3,
+    "blocked_403": 1,
+    "blocked_429": 1,
     "parked": 1
    }
   },
@@ -1358,21 +1561,38 @@
     "unreachable_via_proxy": 1
    }
   },
-  "unassigned-wv": {
-   "sites_in_list": 115,
+  "diocese-of-la-crosse": {
+   "sites_in_list": 117,
    "records": 119,
    "finished": true,
-   "ok": 97,
+   "ok": 71,
    "by_status": {
-    "ok": 97,
-    "dns": 7,
-    "ssl_error": 4,
-    "timeout": 3,
-    "challenge": 3,
+    "ok": 71,
+    "challenge": 21,
+    "dns": 9,
+    "ssl_error": 6,
+    "timeout": 4,
+    "conn_error": 3,
+    "robots_disallowed": 2,
     "blocked_403": 2,
-    "robots_disallowed": 1,
-    "http_4xx": 1,
-    "conn_error": 1
+    "not_found": 1
+   }
+  },
+  "unassigned-ia": {
+   "sites_in_list": 115,
+   "records": 118,
+   "finished": true,
+   "ok": 65,
+   "by_status": {
+    "ok": 65,
+    "challenge": 32,
+    "dns": 9,
+    "not_found": 4,
+    "unreachable_via_proxy": 2,
+    "timeout": 2,
+    "ssl_error": 2,
+    "http_5xx": 1,
+    "robots_disallowed": 1
    }
   },
   "diocese-of-richmond": {
@@ -1389,30 +1609,30 @@
     "ssl_error": 1
    }
   },
-  "unassigned-ia": {
-   "sites_in_list": 107,
-   "records": 108,
+  "unassigned-wv": {
+   "sites_in_list": 111,
+   "records": 119,
    "finished": true,
-   "ok": 57,
+   "ok": 97,
    "by_status": {
-    "ok": 57,
-    "challenge": 30,
-    "dns": 9,
-    "not_found": 4,
-    "unreachable_via_proxy": 2,
-    "timeout": 2,
-    "ssl_error": 2,
-    "http_5xx": 1,
-    "robots_disallowed": 1
+    "ok": 97,
+    "dns": 7,
+    "ssl_error": 4,
+    "timeout": 3,
+    "challenge": 3,
+    "blocked_403": 2,
+    "robots_disallowed": 1,
+    "http_4xx": 1,
+    "conn_error": 1
    }
   },
   "diocese-of-peoria": {
-   "sites_in_list": 105,
-   "records": 106,
+   "sites_in_list": 106,
+   "records": 109,
    "finished": true,
-   "ok": 88,
+   "ok": 91,
    "by_status": {
-    "ok": 88,
+    "ok": 91,
     "challenge": 8,
     "dns": 7,
     "ssl_error": 2,
@@ -1420,7 +1640,7 @@
    }
   },
   "unassigned-ma": {
-   "sites_in_list": 105,
+   "sites_in_list": 103,
    "records": 119,
    "finished": true,
    "ok": 48,
@@ -1436,19 +1656,34 @@
     "not_found": 1
    }
   },
-  "unassigned-sd": {
-   "sites_in_list": 105,
-   "records": 110,
+  "archdiocese-of-miami": {
+   "sites_in_list": 101,
+   "records": 101,
    "finished": true,
-   "ok": 69,
+   "ok": 83,
    "by_status": {
-    "ok": 69,
-    "challenge": 17,
-    "dns": 11,
-    "ssl_error": 10,
-    "conn_error": 1,
+    "ok": 83,
+    "challenge": 5,
+    "not_found": 5,
+    "timeout": 5,
+    "parked": 1,
+    "social_only": 1,
+    "ssl_error": 1
+   }
+  },
+  "diocese-of-fort-wayne-south-bend": {
+   "sites_in_list": 100,
+   "records": 100,
+   "finished": true,
+   "ok": 52,
+   "by_status": {
+    "ok": 52,
+    "challenge": 22,
+    "dns": 16,
+    "ssl_error": 6,
+    "unreachable_via_proxy": 2,
     "not_found": 1,
-    "blocked_403": 1
+    "parked": 1
    }
   },
   "diocese-of-dallas": {
@@ -1463,6 +1698,23 @@
     "not_found": 5,
     "unreachable_via_proxy": 3,
     "conn_error": 2
+   }
+  },
+  "diocese-of-rockford": {
+   "sites_in_list": 99,
+   "records": 99,
+   "finished": true,
+   "ok": 45,
+   "by_status": {
+    "ok": 45,
+    "challenge": 33,
+    "dns": 12,
+    "ssl_error": 3,
+    "timeout": 2,
+    "http_5xx": 1,
+    "parked": 1,
+    "blocked_429": 1,
+    "not_found": 1
    }
   },
   "diocese-of-burlington": {
@@ -1481,54 +1733,19 @@
     "not_found": 1
    }
   },
-  "diocese-of-rockford": {
-   "sites_in_list": 98,
-   "records": 98,
+  "unassigned-sd": {
+   "sites_in_list": 97,
+   "records": 110,
    "finished": true,
-   "ok": 45,
+   "ok": 69,
    "by_status": {
-    "ok": 45,
-    "challenge": 33,
+    "ok": 69,
+    "challenge": 17,
     "dns": 11,
-    "ssl_error": 3,
-    "timeout": 2,
-    "http_5xx": 1,
-    "parked": 1,
-    "blocked_429": 1,
-    "not_found": 1
-   }
-  },
-  "unassigned-tx": {
-   "sites_in_list": 98,
-   "records": 119,
-   "finished": true,
-   "ok": 43,
-   "by_status": {
-    "challenge": 56,
-    "ok": 43,
-    "dns": 5,
-    "ssl_error": 4,
-    "not_found": 3,
-    "robots_disallowed": 2,
-    "social_only": 2,
-    "timeout": 1,
-    "http_202": 1,
-    "unreachable_via_proxy": 1,
+    "ssl_error": 10,
+    "conn_error": 1,
+    "not_found": 1,
     "blocked_403": 1
-   }
-  },
-  "unassigned-nh": {
-   "sites_in_list": 98,
-   "records": 99,
-   "finished": true,
-   "ok": 56,
-   "by_status": {
-    "ok": 56,
-    "challenge": 33,
-    "dns": 6,
-    "ssl_error": 2,
-    "parked": 1,
-    "not_found": 1
    }
   },
   "diocese-of-belleville": {
@@ -1567,6 +1784,20 @@
     "http_5xx": 1
    }
   },
+  "unassigned-nh": {
+   "sites_in_list": 96,
+   "records": 99,
+   "finished": true,
+   "ok": 56,
+   "by_status": {
+    "ok": 56,
+    "challenge": 33,
+    "dns": 6,
+    "ssl_error": 2,
+    "parked": 1,
+    "not_found": 1
+   }
+  },
   "diocese-of-charleston": {
    "sites_in_list": 95,
    "records": 96,
@@ -1584,16 +1815,18 @@
     "parked": 1
    }
   },
-  "diocese-of-joliet": {
+  "diocese-of-fort-worth": {
    "sites_in_list": 95,
-   "records": 95,
+   "records": 96,
    "finished": true,
-   "ok": 70,
+   "ok": 34,
    "by_status": {
-    "ok": 70,
-    "challenge": 22,
-    "timeout": 2,
-    "http_5xx": 1
+    "challenge": 46,
+    "ok": 34,
+    "dns": 7,
+    "ssl_error": 6,
+    "parked": 2,
+    "not_found": 1
    }
   },
   "diocese-of-metuchen": {
@@ -1608,36 +1841,6 @@
     "unreachable_via_proxy": 6,
     "ssl_error": 5,
     "timeout": 4,
-    "conn_error": 2,
-    "not_found": 1
-   }
-  },
-  "archdiocese-of-hartford": {
-   "sites_in_list": 93,
-   "records": 95,
-   "finished": true,
-   "ok": 73,
-   "by_status": {
-    "ok": 73,
-    "timeout": 9,
-    "not_found": 5,
-    "conn_error": 3,
-    "parked": 2,
-    "unreachable_via_proxy": 2,
-    "challenge": 1
-   }
-  },
-  "unassigned-mt": {
-   "sites_in_list": 93,
-   "records": 105,
-   "finished": true,
-   "ok": 66,
-   "by_status": {
-    "ok": 66,
-    "challenge": 17,
-    "dns": 8,
-    "timeout": 8,
-    "ssl_error": 3,
     "conn_error": 2,
     "not_found": 1
    }
@@ -1661,66 +1864,79 @@
     "http_202": 1
    }
   },
-  "unassigned-ms": {
-   "sites_in_list": 92,
-   "records": 98,
+  "diocese-of-orlando": {
+   "sites_in_list": 90,
+   "records": 91,
    "finished": true,
-   "ok": 45,
+   "ok": 79,
    "by_status": {
-    "ok": 45,
-    "challenge": 31,
-    "dns": 9,
+    "ok": 79,
+    "challenge": 6,
     "ssl_error": 3,
-    "conn_error": 3,
-    "unreachable_via_proxy": 2,
-    "http_5xx": 1,
-    "robots_disallowed": 1,
-    "not_found": 1,
-    "parked": 1,
+    "social_only": 1,
+    "unreachable_via_proxy": 1,
     "timeout": 1
    }
   },
-  "unassigned-ny": {
-   "sites_in_list": 89,
-   "records": 92,
-   "finished": true,
-   "ok": 64,
-   "by_status": {
-    "ok": 64,
-    "challenge": 8,
-    "dns": 5,
-    "not_found": 4,
-    "ssl_error": 3,
-    "blocked_403": 3,
-    "timeout": 2,
-    "parked": 1,
-    "robots_disallowed": 1,
-    "conn_error": 1
-   }
-  },
   "diocese-of-harrisburg": {
-   "sites_in_list": 88,
-   "records": 89,
+   "sites_in_list": 89,
+   "records": 90,
    "finished": true,
    "ok": 57,
    "by_status": {
     "ok": 57,
     "challenge": 30,
-    "ssl_error": 1,
+    "ssl_error": 2,
     "conn_error": 1
    }
   },
-  "diocese-of-la-crosse": {
+  "diocese-of-little-rock": {
+   "sites_in_list": 89,
+   "records": 89,
+   "finished": true,
+   "ok": 54,
+   "by_status": {
+    "ok": 54,
+    "challenge": 11,
+    "dns": 9,
+    "conn_error": 4,
+    "ssl_error": 4,
+    "unreachable_via_proxy": 3,
+    "blocked_403": 1,
+    "not_found": 1,
+    "http_5xx": 1,
+    "timeout": 1
+   }
+  },
+  "archdiocese-of-los-angeles": {
+   "sites_in_list": 88,
+   "records": 41,
+   "finished": false,
+   "ok": 23,
+   "by_status": {
+    "ok": 23,
+    "challenge": 8,
+    "robots_disallowed": 5,
+    "ssl_error": 2,
+    "dns": 1,
+    "parked": 1,
+    "unreachable_via_proxy": 1
+   }
+  },
+  "diocese-of-kansas-city-st-joseph": {
    "sites_in_list": 88,
    "records": 90,
    "finished": true,
-   "ok": 64,
+   "ok": 49,
    "by_status": {
-    "ok": 64,
-    "challenge": 19,
-    "ssl_error": 3,
-    "robots_disallowed": 2,
-    "conn_error": 2
+    "ok": 49,
+    "challenge": 23,
+    "dns": 8,
+    "not_found": 3,
+    "timeout": 2,
+    "parked": 2,
+    "ssl_error": 2,
+    "http_5xx": 1
    }
   },
   "diocese-of-raleigh": {
@@ -1755,6 +1971,18 @@
     "robots_disallowed": 1
    }
   },
+  "diocese-of-st-petersburg": {
+   "sites_in_list": 87,
+   "records": 89,
+   "finished": true,
+   "ok": 62,
+   "by_status": {
+    "ok": 62,
+    "challenge": 25,
+    "dns": 1,
+    "ssl_error": 1
+   }
+  },
   "archdiocese-of-san-francisco": {
    "sites_in_list": 87,
    "records": 53,
@@ -1773,22 +2001,41 @@
   },
   "unassigned-ok": {
    "sites_in_list": 87,
-   "records": 112,
+   "records": 114,
    "finished": true,
-   "ok": 57,
+   "ok": 58,
    "by_status": {
-    "ok": 57,
+    "ok": 58,
     "challenge": 34,
     "ssl_error": 7,
     "dns": 5,
+    "parked": 2,
     "blocked_429": 2,
     "unreachable_via_proxy": 1,
     "blocked_403": 1,
     "robots_disallowed": 1,
-    "parked": 1,
     "timeout": 1,
     "not_found": 1,
     "conn_error": 1
+   }
+  },
+  "unassigned-ms": {
+   "sites_in_list": 86,
+   "records": 98,
+   "finished": true,
+   "ok": 45,
+   "by_status": {
+    "ok": 45,
+    "challenge": 31,
+    "dns": 9,
+    "ssl_error": 3,
+    "conn_error": 3,
+    "unreachable_via_proxy": 2,
+    "http_5xx": 1,
+    "robots_disallowed": 1,
+    "not_found": 1,
+    "parked": 1,
+    "timeout": 1
    }
   },
   "diocese-of-allentown": {
@@ -1843,24 +2090,6 @@
     "not_found": 1
    }
   },
-  "unassigned-il": {
-   "sites_in_list": 84,
-   "records": 137,
-   "finished": true,
-   "ok": 96,
-   "by_status": {
-    "ok": 96,
-    "challenge": 17,
-    "dns": 8,
-    "ssl_error": 6,
-    "conn_error": 3,
-    "not_found": 2,
-    "timeout": 2,
-    "unreachable_via_proxy": 1,
-    "http_4xx": 1,
-    "social_only": 1
-   }
-  },
   "archdiocese-of-dubuque": {
    "sites_in_list": 83,
    "records": 87,
@@ -1868,28 +2097,13 @@
    "ok": 24,
    "by_status": {
     "ok": 24,
+    "wayback": 22,
     "unreachable_via_proxy": 17,
-    "wayback": 16,
-    "challenge": 13,
     "ssl_error": 12,
+    "challenge": 7,
     "not_found": 3,
     "conn_error": 2,
     "error:TooManyRedirects": 1
-   }
-  },
-  "unassigned-nd": {
-   "sites_in_list": 83,
-   "records": 99,
-   "finished": true,
-   "ok": 48,
-   "by_status": {
-    "ok": 48,
-    "challenge": 46,
-    "not_found": 1,
-    "timeout": 1,
-    "robots_disallowed": 1,
-    "dns": 1,
-    "ssl_error": 1
    }
   },
   "unassigned-tn": {
@@ -1908,16 +2122,36 @@
     "dns": 1
    }
   },
-  "diocese-of-orlando": {
+  "diocese-of-fall-river": {
    "sites_in_list": 82,
    "records": 83,
    "finished": true,
-   "ok": 73,
+   "ok": 43,
    "by_status": {
-    "ok": 73,
-    "challenge": 6,
-    "ssl_error": 3,
-    "unreachable_via_proxy": 1
+    "ok": 43,
+    "challenge": 16,
+    "dns": 11,
+    "ssl_error": 9,
+    "not_found": 2,
+    "unreachable_via_proxy": 2
+   }
+  },
+  "unassigned-il": {
+   "sites_in_list": 82,
+   "records": 143,
+   "finished": true,
+   "ok": 100,
+   "by_status": {
+    "ok": 100,
+    "challenge": 17,
+    "dns": 10,
+    "ssl_error": 6,
+    "conn_error": 3,
+    "not_found": 2,
+    "timeout": 2,
+    "unreachable_via_proxy": 1,
+    "http_4xx": 1,
+    "social_only": 1
    }
   },
   "archdiocese-of-omaha": {
@@ -1936,21 +2170,6 @@
     "robots_disallowed": 1
    }
   },
-  "unassigned-dc": {
-   "sites_in_list": 81,
-   "records": 83,
-   "finished": true,
-   "ok": 59,
-   "by_status": {
-    "ok": 59,
-    "challenge": 14,
-    "dns": 4,
-    "blocked_403": 3,
-    "timeout": 1,
-    "parked": 1,
-    "http_202": 1
-   }
-  },
   "diocese-of-scranton": {
    "sites_in_list": 80,
    "records": 83,
@@ -1962,23 +2181,6 @@
     "conn_error": 4,
     "ssl_error": 3,
     "dns": 2
-   }
-  },
-  "unassigned-or": {
-   "sites_in_list": 80,
-   "records": 152,
-   "finished": true,
-   "ok": 45,
-   "by_status": {
-    "challenge": 88,
-    "ok": 45,
-    "dns": 8,
-    "conn_error": 4,
-    "ssl_error": 2,
-    "unreachable_via_proxy": 2,
-    "not_found": 1,
-    "parked": 1,
-    "robots_disallowed": 1
    }
   },
   "diocese-of-arlington": {
@@ -2008,49 +2210,19 @@
     "ssl_error": 2
    }
   },
-  "diocese-of-st-petersburg": {
+  "unassigned-mt": {
    "sites_in_list": 79,
-   "records": 82,
+   "records": 105,
    "finished": true,
-   "ok": 58,
+   "ok": 66,
    "by_status": {
-    "ok": 58,
-    "challenge": 23,
-    "ssl_error": 1
-   }
-  },
-  "unassigned-al": {
-   "sites_in_list": 79,
-   "records": 96,
-   "finished": true,
-   "ok": 37,
-   "by_status": {
-    "challenge": 41,
-    "ok": 37,
-    "dns": 7,
-    "timeout": 3,
-    "unreachable_via_proxy": 3,
-    "ssl_error": 2,
-    "not_found": 1,
-    "conn_error": 1,
-    "blocked_403": 1
-   }
-  },
-  "unassigned-ct": {
-   "sites_in_list": 79,
-   "records": 84,
-   "finished": true,
-   "ok": 55,
-   "by_status": {
-    "ok": 55,
-    "dns": 6,
-    "timeout": 4,
-    "ssl_error": 4,
-    "challenge": 4,
-    "http_5xx": 4,
-    "not_found": 3,
+    "ok": 66,
+    "challenge": 17,
+    "dns": 8,
+    "timeout": 8,
+    "ssl_error": 3,
     "conn_error": 2,
-    "social_only": 2
+    "not_found": 1
    }
   },
   "diocese-of-madison": {
@@ -2069,13 +2241,30 @@
     "conn_error": 1
    }
   },
+  "unassigned-al": {
+   "sites_in_list": 78,
+   "records": 96,
+   "finished": true,
+   "ok": 37,
+   "by_status": {
+    "challenge": 41,
+    "ok": 37,
+    "dns": 7,
+    "timeout": 3,
+    "unreachable_via_proxy": 3,
+    "ssl_error": 2,
+    "not_found": 1,
+    "conn_error": 1,
+    "blocked_403": 1
+   }
+  },
   "archdiocese-of-louisville": {
    "sites_in_list": 77,
-   "records": 81,
+   "records": 82,
    "finished": true,
-   "ok": 45,
+   "ok": 46,
    "by_status": {
-    "ok": 45,
+    "ok": 46,
     "challenge": 11,
     "dns": 9,
     "ssl_error": 5,
@@ -2101,16 +2290,20 @@
     "robots_disallowed": 1
    }
   },
-  "diocese-of-fort-worth": {
+  "diocese-of-grand-rapids": {
    "sites_in_list": 76,
-   "records": 77,
+   "records": 76,
    "finished": true,
-   "ok": 28,
+   "ok": 57,
    "by_status": {
-    "challenge": 44,
-    "ok": 28,
-    "ssl_error": 4,
-    "dns": 1
+    "ok": 57,
+    "ssl_error": 6,
+    "challenge": 5,
+    "timeout": 3,
+    "dns": 2,
+    "not_found": 1,
+    "http_202": 1,
+    "conn_error": 1
    }
   },
   "diocese-of-phoenix": {
@@ -2164,49 +2357,51 @@
     "parked": 1
    }
   },
-  "unassigned-nj": {
-   "sites_in_list": 74,
-   "records": 79,
-   "finished": true,
-   "ok": 48,
-   "by_status": {
-    "ok": 48,
-    "challenge": 13,
-    "timeout": 7,
-    "blocked_403": 3,
-    "robots_disallowed": 2,
-    "ssl_error": 2,
-    "conn_error": 2,
-    "http_202": 1,
-    "dns": 1
-   }
-  },
-  "diocese-of-fort-wayne-south-bend": {
-   "sites_in_list": 73,
-   "records": 73,
+  "unassigned-or": {
+   "sites_in_list": 75,
+   "records": 152,
    "finished": true,
    "ok": 45,
    "by_status": {
+    "challenge": 88,
     "ok": 45,
-    "challenge": 21,
-    "ssl_error": 4,
+    "dns": 8,
+    "conn_error": 4,
+    "ssl_error": 2,
     "unreachable_via_proxy": 2,
+    "not_found": 1,
+    "parked": 1,
+    "robots_disallowed": 1
+   }
+  },
+  "diocese-of-jefferson-city": {
+   "sites_in_list": 73,
+   "records": 73,
+   "finished": true,
+   "ok": 28,
+   "by_status": {
+    "ok": 28,
+    "dns": 24,
+    "not_found": 5,
+    "ssl_error": 5,
+    "challenge": 4,
+    "timeout": 3,
+    "conn_error": 2,
+    "unreachable_via_proxy": 1,
     "parked": 1
    }
   },
-  "unassigned-hi": {
+  "diocese-of-las-cruces": {
    "sites_in_list": 73,
-   "records": 76,
+   "records": 73,
    "finished": true,
-   "ok": 54,
+   "ok": 12,
    "by_status": {
-    "ok": 54,
-    "challenge": 12,
-    "ssl_error": 3,
-    "dns": 3,
-    "robots_disallowed": 2,
-    "blocked_429": 1,
-    "timeout": 1
+    "timeout": 52,
+    "ok": 12,
+    "dns": 6,
+    "unreachable_via_proxy": 2,
+    "challenge": 1
    }
   },
   "archdiocese-of-kansas-city-in-kansas": {
@@ -2259,19 +2454,46 @@
     "parked": 1
    }
   },
-  "unassigned-ga": {
+  "diocese-of-venice": {
    "sites_in_list": 72,
-   "records": 80,
+   "records": 72,
    "finished": true,
-   "ok": 56,
+   "ok": 55,
    "by_status": {
-    "ok": 56,
-    "challenge": 8,
-    "dns": 6,
-    "ssl_error": 4,
-    "not_found": 3,
+    "ok": 55,
+    "not_found": 8,
+    "challenge": 7,
+    "ssl_error": 2
+   }
+  },
+  "unassigned-hi": {
+   "sites_in_list": 71,
+   "records": 76,
+   "finished": true,
+   "ok": 54,
+   "by_status": {
+    "ok": 54,
+    "challenge": 12,
+    "ssl_error": 3,
+    "dns": 3,
     "robots_disallowed": 2,
-    "blocked_403": 1
+    "blocked_429": 1,
+    "timeout": 1
+   }
+  },
+  "unassigned-dc": {
+   "sites_in_list": 71,
+   "records": 83,
+   "finished": true,
+   "ok": 59,
+   "by_status": {
+    "ok": 59,
+    "challenge": 14,
+    "dns": 4,
+    "blocked_403": 3,
+    "timeout": 1,
+    "parked": 1,
+    "http_202": 1
    }
   },
   "diocese-of-wichita": {
@@ -2286,34 +2508,64 @@
     "timeout": 1
    }
   },
-  "unassigned-mn": {
+  "diocese-of-winona-rochester": {
    "sites_in_list": 70,
-   "records": 82,
+   "records": 70,
    "finished": true,
-   "ok": 46,
+   "ok": 32,
    "by_status": {
-    "ok": 46,
-    "challenge": 23,
-    "dns": 4,
-    "ssl_error": 3,
-    "not_found": 2,
-    "conn_error": 2,
-    "http_5xx": 1,
-    "unreachable_via_proxy": 1
+    "ok": 32,
+    "challenge": 15,
+    "dns": 15,
+    "ssl_error": 5,
+    "timeout": 2,
+    "http_5xx": 1
    }
   },
-  "diocese-of-little-rock": {
+  "unassigned-nd": {
    "sites_in_list": 68,
-   "records": 68,
+   "records": 99,
    "finished": true,
-   "ok": 47,
+   "ok": 48,
    "by_status": {
-    "ok": 47,
-    "challenge": 10,
-    "conn_error": 4,
-    "unreachable_via_proxy": 3,
+    "ok": 48,
+    "challenge": 46,
+    "not_found": 1,
+    "timeout": 1,
+    "robots_disallowed": 1,
+    "dns": 1,
+    "ssl_error": 1
+   }
+  },
+  "unassigned-ga": {
+   "sites_in_list": 67,
+   "records": 80,
+   "finished": true,
+   "ok": 56,
+   "by_status": {
+    "ok": 56,
+    "challenge": 8,
+    "dns": 6,
+    "ssl_error": 4,
+    "not_found": 3,
+    "robots_disallowed": 2,
+    "blocked_403": 1
+   }
+  },
+  "diocese-of-erie": {
+   "sites_in_list": 67,
+   "records": 67,
+   "finished": true,
+   "ok": 38,
+   "by_status": {
+    "ok": 38,
+    "dns": 16,
+    "timeout": 3,
+    "robots_disallowed": 2,
+    "challenge": 2,
     "ssl_error": 2,
-    "blocked_403": 1,
+    "conn_error": 2,
+    "parked": 1,
     "http_5xx": 1
    }
   },
@@ -2331,16 +2583,6 @@
     "http_5xx": 1,
     "conn_error": 1,
     "ssl_error": 1
-   }
-  },
-  "diocese-of-kansas-city-st-joseph": {
-   "sites_in_list": 66,
-   "records": 68,
-   "finished": true,
-   "ok": 48,
-   "by_status": {
-    "ok": 48,
-    "challenge": 20
    }
   },
   "diocese-of-worcester": {
@@ -2406,30 +2648,35 @@
     "unreachable_via_proxy": 1
    }
   },
-  "diocese-of-las-cruces": {
+  "diocese-of-st-augustine": {
    "sites_in_list": 63,
-   "records": 63,
+   "records": 68,
    "finished": true,
-   "ok": 5,
+   "ok": 43,
    "by_status": {
-    "timeout": 52,
-    "ok": 5,
-    "dns": 4,
-    "unreachable_via_proxy": 2
+    "ok": 43,
+    "challenge": 15,
+    "conn_error": 3,
+    "ssl_error": 2,
+    "unreachable_via_proxy": 2,
+    "timeout": 1,
+    "not_found": 1,
+    "dns": 1
    }
   },
-  "unassigned-mi": {
-   "sites_in_list": 63,
-   "records": 63,
+  "diocese-of-pensacola-tallahassee": {
+   "sites_in_list": 62,
+   "records": 62,
    "finished": true,
-   "ok": 41,
+   "ok": 33,
    "by_status": {
-    "ok": 41,
-    "challenge": 17,
-    "not_found": 2,
-    "ssl_error": 1,
-    "timeout": 1,
-    "dns": 1
+    "ok": 33,
+    "challenge": 16,
+    "dns": 8,
+    "ssl_error": 2,
+    "social_only": 1,
+    "robots_disallowed": 1,
+    "timeout": 1
    }
   },
   "diocese-of-savannah": {
@@ -2447,32 +2694,6 @@
     "dns": 1
    }
   },
-  "unassigned-me": {
-   "sites_in_list": 61,
-   "records": 84,
-   "finished": true,
-   "ok": 34,
-   "by_status": {
-    "challenge": 44,
-    "ok": 34,
-    "timeout": 3,
-    "ssl_error": 1,
-    "dns": 1,
-    "blocked_403": 1
-   }
-  },
-  "diocese-of-grand-rapids": {
-   "sites_in_list": 60,
-   "records": 60,
-   "finished": true,
-   "ok": 52,
-   "by_status": {
-    "ok": 52,
-    "challenge": 5,
-    "ssl_error": 2,
-    "timeout": 1
-   }
-  },
   "diocese-of-tucson": {
    "sites_in_list": 60,
    "records": 60,
@@ -2488,18 +2709,6 @@
     "ssl_error": 2,
     "not_found": 1,
     "conn_error": 1
-   }
-  },
-  "diocese-of-venice": {
-   "sites_in_list": 59,
-   "records": 59,
-   "finished": true,
-   "ok": 49,
-   "by_status": {
-    "ok": 49,
-    "challenge": 5,
-    "not_found": 4,
-    "ssl_error": 1
    }
   },
   "diocese-of-wilmington": {
@@ -2574,17 +2783,20 @@
     "social_only": 1
    }
   },
-  "diocese-of-fall-river": {
-   "sites_in_list": 56,
-   "records": 56,
+  "unassigned-va": {
+   "sites_in_list": 58,
+   "records": 94,
    "finished": true,
-   "ok": 33,
+   "ok": 67,
    "by_status": {
-    "ok": 33,
-    "challenge": 15,
-    "ssl_error": 4,
-    "not_found": 2,
-    "unreachable_via_proxy": 2
+    "ok": 67,
+    "challenge": 10,
+    "dns": 6,
+    "ssl_error": 5,
+    "timeout": 3,
+    "http_5xx": 1,
+    "not_found": 1,
+    "blocked_403": 1
    }
   },
   "diocese-of-knoxville": {
@@ -2598,6 +2810,20 @@
     "dns": 7,
     "timeout": 1,
     "ssl_error": 1
+   }
+  },
+  "diocese-of-palm-beach": {
+   "sites_in_list": 56,
+   "records": 56,
+   "finished": true,
+   "ok": 42,
+   "by_status": {
+    "ok": 42,
+    "challenge": 8,
+    "ssl_error": 2,
+    "social_only": 2,
+    "dns": 1,
+    "conn_error": 1
    }
   },
   "diocese-of-des-moines": {
@@ -2616,6 +2842,20 @@
     "conn_error": 1
    }
   },
+  "diocese-of-greensburg": {
+   "sites_in_list": 55,
+   "records": 57,
+   "finished": true,
+   "ok": 43,
+   "by_status": {
+    "ok": 43,
+    "dns": 5,
+    "challenge": 5,
+    "timeout": 2,
+    "conn_error": 1,
+    "not_found": 1
+   }
+  },
   "diocese-of-birmingham": {
    "sites_in_list": 54,
    "records": 54,
@@ -2628,6 +2868,21 @@
     "challenge": 5,
     "timeout": 1,
     "conn_error": 1
+   }
+  },
+  "diocese-of-gary": {
+   "sites_in_list": 54,
+   "records": 54,
+   "finished": true,
+   "ok": 33,
+   "by_status": {
+    "ok": 33,
+    "ssl_error": 6,
+    "challenge": 5,
+    "dns": 4,
+    "conn_error": 4,
+    "social_only": 1,
+    "unreachable_via_proxy": 1
    }
   },
   "diocese-of-norwich": {
@@ -2712,49 +2967,6 @@
     "robots_disallowed": 1
    }
   },
-  "unassigned-fl": {
-   "sites_in_list": 52,
-   "records": 52,
-   "finished": true,
-   "ok": 29,
-   "by_status": {
-    "ok": 29,
-    "challenge": 9,
-    "dns": 6,
-    "ssl_error": 2,
-    "conn_error": 2,
-    "robots_disallowed": 2,
-    "blocked_429": 1,
-    "timeout": 1
-   }
-  },
-  "diocese-of-palm-beach": {
-   "sites_in_list": 51,
-   "records": 51,
-   "finished": true,
-   "ok": 41,
-   "by_status": {
-    "ok": 41,
-    "challenge": 6,
-    "ssl_error": 2,
-    "dns": 1,
-    "conn_error": 1
-   }
-  },
-  "diocese-of-st-augustine": {
-   "sites_in_list": 51,
-   "records": 58,
-   "finished": true,
-   "ok": 38,
-   "by_status": {
-    "ok": 38,
-    "challenge": 12,
-    "conn_error": 3,
-    "ssl_error": 2,
-    "unreachable_via_proxy": 2,
-    "not_found": 1
-   }
-  },
   "diocese-of-beaumont": {
    "sites_in_list": 50,
    "records": 52,
@@ -2774,12 +2986,12 @@
   },
   "unassigned-vt": {
    "sites_in_list": 50,
-   "records": 59,
+   "records": 60,
    "finished": true,
-   "ok": 17,
+   "ok": 18,
    "by_status": {
     "challenge": 31,
-    "ok": 17,
+    "ok": 18,
     "dns": 4,
     "timeout": 2,
     "ssl_error": 2,
@@ -2805,18 +3017,16 @@
     "unreachable_via_proxy": 1
    }
   },
-  "diocese-of-winona-rochester": {
-   "sites_in_list": 49,
-   "records": 49,
+  "diocese-of-kalamazoo": {
+   "sites_in_list": 48,
+   "records": 48,
    "finished": true,
-   "ok": 18,
+   "ok": 4,
    "by_status": {
-    "ok": 18,
-    "dns": 13,
-    "challenge": 11,
-    "ssl_error": 4,
-    "timeout": 2,
-    "http_5xx": 1
+    "challenge": 40,
+    "ok": 4,
+    "ssl_error": 3,
+    "dns": 1
    }
   },
   "diocese-of-owensboro": {
@@ -2830,6 +3040,37 @@
     "conn_error": 3,
     "ssl_error": 2,
     "unreachable_via_proxy": 2
+   }
+  },
+  "diocese-of-el-paso": {
+   "sites_in_list": 48,
+   "records": 48,
+   "finished": true,
+   "ok": 33,
+   "by_status": {
+    "ok": 33,
+    "dns": 5,
+    "social_only": 4,
+    "conn_error": 2,
+    "ssl_error": 2,
+    "challenge": 1,
+    "parked": 1
+   }
+  },
+  "diocese-of-evansville": {
+   "sites_in_list": 47,
+   "records": 45,
+   "finished": false,
+   "ok": 18,
+   "by_status": {
+    "ok": 18,
+    "dns": 15,
+    "ssl_error": 3,
+    "challenge": 3,
+    "robots_disallowed": 2,
+    "not_found": 2,
+    "parked": 1,
+    "unreachable_via_proxy": 1
    }
   },
   "diocese-of-baton-rouge": {
@@ -2848,6 +3089,20 @@
     "parked": 1
    }
   },
+  "unassigned-me": {
+   "sites_in_list": 47,
+   "records": 84,
+   "finished": true,
+   "ok": 34,
+   "by_status": {
+    "challenge": 44,
+    "ok": 34,
+    "timeout": 3,
+    "ssl_error": 1,
+    "dns": 1,
+    "blocked_403": 1
+   }
+  },
   "diocese-of-duluth": {
    "sites_in_list": 46,
    "records": 46,
@@ -2863,6 +3118,18 @@
     "ssl_error": 1
    }
   },
+  "diocese-of-gaylord": {
+   "sites_in_list": 46,
+   "records": 46,
+   "finished": true,
+   "ok": 39,
+   "by_status": {
+    "ok": 39,
+    "dns": 4,
+    "ssl_error": 2,
+    "challenge": 1
+   }
+  },
   "byzantine-catholic-eparchy-of-passaic": {
    "sites_in_list": 45,
    "records": 45,
@@ -2874,49 +3141,19 @@
     "timeout": 2
    }
   },
-  "unassigned-ut": {
+  "diocese-of-lansing": {
    "sites_in_list": 43,
-   "records": 47,
+   "records": 43,
    "finished": true,
-   "ok": 35,
+   "ok": 16,
    "by_status": {
-    "ok": 35,
-    "dns": 3,
-    "challenge": 2,
-    "ssl_error": 2,
-    "conn_error": 1,
-    "unreachable_via_proxy": 1,
+    "ok": 16,
+    "challenge": 14,
+    "dns": 6,
+    "ssl_error": 4,
+    "timeout": 1,
     "not_found": 1,
-    "http_5xx": 1,
-    "http_4xx": 1
-   }
-  },
-  "diocese-of-gary": {
-   "sites_in_list": 42,
-   "records": 42,
-   "finished": true,
-   "ok": 30,
-   "by_status": {
-    "ok": 30,
-    "challenge": 5,
-    "ssl_error": 3,
-    "conn_error": 2,
-    "dns": 1,
-    "unreachable_via_proxy": 1
-   }
-  },
-  "unassigned-ar": {
-   "sites_in_list": 42,
-   "records": 45,
-   "finished": true,
-   "ok": 28,
-   "by_status": {
-    "ok": 28,
-    "dns": 7,
-    "challenge": 5,
-    "timeout": 3,
-    "http_5xx": 1,
-    "ssl_error": 1
+    "conn_error": 1
    }
   },
   "diocese-of-springfield-massachusetts": {
@@ -2934,57 +3171,21 @@
     "parked": 1
    }
   },
-  "unassigned-nv": {
-   "sites_in_list": 42,
-   "records": 51,
+  "unassigned-ut": {
+   "sites_in_list": 41,
+   "records": 47,
    "finished": true,
-   "ok": 27,
+   "ok": 35,
    "by_status": {
-    "ok": 27,
-    "challenge": 19,
+    "ok": 35,
     "dns": 3,
-    "conn_error": 1,
-    "timeout": 1
-   }
-  },
-  "archdiocese-of-los-angeles": {
-   "sites_in_list": 41,
-   "records": 41,
-   "finished": true,
-   "ok": 23,
-   "by_status": {
-    "ok": 23,
-    "challenge": 8,
-    "robots_disallowed": 5,
-    "ssl_error": 2,
-    "dns": 1,
-    "parked": 1,
-    "unreachable_via_proxy": 1
-   }
-  },
-  "diocese-of-el-paso": {
-   "sites_in_list": 41,
-   "records": 41,
-   "finished": true,
-   "ok": 32,
-   "by_status": {
-    "ok": 32,
-    "social_only": 4,
+    "challenge": 2,
     "ssl_error": 2,
     "conn_error": 1,
-    "challenge": 1,
-    "dns": 1
-   }
-  },
-  "diocese-of-gaylord": {
-   "sites_in_list": 40,
-   "records": 40,
-   "finished": true,
-   "ok": 38,
-   "by_status": {
-    "ok": 38,
-    "challenge": 1,
-    "ssl_error": 1
+    "unreachable_via_proxy": 1,
+    "not_found": 1,
+    "http_5xx": 1,
+    "http_4xx": 1
    }
   },
   "diocese-of-davenport": {
@@ -3013,22 +3214,44 @@
     "http_5xx": 1
    }
   },
-  "unassigned-md": {
-   "sites_in_list": 39,
-   "records": 63,
+  "diocese-of-victoria": {
+   "sites_in_list": 38,
+   "records": 38,
    "finished": true,
-   "ok": 34,
+   "ok": 1,
    "by_status": {
-    "ok": 34,
-    "dns": 12,
-    "challenge": 8,
-    "parked": 3,
-    "http_4xx": 1,
-    "blocked_403": 1,
+    "challenge": 31,
+    "dns": 4,
     "conn_error": 1,
-    "not_found": 1,
-    "robots_disallowed": 1,
-    "ssl_error": 1
+    "ok": 1,
+    "timeout": 1
+   }
+  },
+  "unassigned-nv": {
+   "sites_in_list": 38,
+   "records": 51,
+   "finished": true,
+   "ok": 27,
+   "by_status": {
+    "ok": 27,
+    "challenge": 19,
+    "dns": 3,
+    "conn_error": 1,
+    "timeout": 1
+   }
+  },
+  "diocese-of-laredo": {
+   "sites_in_list": 37,
+   "records": 37,
+   "finished": true,
+   "ok": 7,
+   "by_status": {
+    "not_found": 17,
+    "ok": 7,
+    "dns": 4,
+    "challenge": 4,
+    "ssl_error": 3,
+    "timeout": 2
    }
   },
   "archdiocese-of-mobile": {
@@ -3044,33 +3267,18 @@
     "timeout": 2
    }
   },
-  "diocese-of-springfield-cape-girardeau": {
+  "unassigned-ar": {
    "sites_in_list": 37,
-   "records": 37,
+   "records": 45,
    "finished": true,
-   "ok": 17,
+   "ok": 28,
    "by_status": {
-    "ok": 17,
-    "dns": 14,
-    "conn_error": 1,
-    "unreachable_via_proxy": 1,
-    "not_found": 1,
-    "timeout": 1,
-    "ssl_error": 1,
-    "challenge": 1
-   }
-  },
-  "unassigned-de": {
-   "sites_in_list": 37,
-   "records": 41,
-   "finished": true,
-   "ok": 30,
-   "by_status": {
-    "ok": 30,
-    "challenge": 7,
-    "timeout": 2,
-    "conn_error": 1,
-    "robots_disallowed": 1
+    "ok": 28,
+    "dns": 7,
+    "challenge": 5,
+    "timeout": 3,
+    "http_5xx": 1,
+    "ssl_error": 1
    }
   },
   "archdiocese-of-santa-fe": {
@@ -3099,48 +3307,37 @@
     "ssl_error": 1
    }
   },
-  "diocese-of-salt-lake-city": {
-   "sites_in_list": 35,
-   "records": 40,
-   "finished": true,
-   "ok": 28,
-   "by_status": {
-    "ok": 28,
-    "dns": 6,
-    "challenge": 2,
-    "ssl_error": 2,
-    "parked": 1,
-    "http_5xx": 1
-   }
-  },
   "eparchy-of-newton": {
-   "sites_in_list": 35,
-   "records": 38,
+   "sites_in_list": 36,
+   "records": 39,
    "finished": true,
    "ok": 26,
    "by_status": {
     "ok": 26,
+    "dns": 2,
     "conn_error": 2,
     "unreachable_via_proxy": 2,
     "ssl_error": 2,
     "challenge": 2,
-    "dns": 1,
     "http_5xx": 1,
     "blocked_429": 1,
     "timeout": 1
    }
   },
-  "unassigned-sc": {
-   "sites_in_list": 35,
-   "records": 40,
+  "diocese-of-springfield-cape-girardeau": {
+   "sites_in_list": 36,
+   "records": 37,
    "finished": true,
-   "ok": 31,
+   "ok": 17,
    "by_status": {
-    "ok": 31,
-    "challenge": 3,
-    "timeout": 3,
-    "dns": 2,
-    "robots_disallowed": 1
+    "ok": 17,
+    "dns": 14,
+    "conn_error": 1,
+    "unreachable_via_proxy": 1,
+    "not_found": 1,
+    "timeout": 1,
+    "ssl_error": 1,
+    "challenge": 1
    }
   },
   "archdiocese-of-anchorage-juneau": {
@@ -3171,18 +3368,18 @@
     "http_5xx": 1
    }
   },
-  "diocese-of-jefferson-city": {
+  "diocese-of-salt-lake-city": {
    "sites_in_list": 34,
-   "records": 34,
+   "records": 40,
    "finished": true,
-   "ok": 22,
+   "ok": 28,
    "by_status": {
-    "ok": 22,
-    "ssl_error": 3,
-    "challenge": 3,
-    "not_found": 3,
-    "conn_error": 2,
-    "unreachable_via_proxy": 1
+    "ok": 28,
+    "dns": 6,
+    "challenge": 2,
+    "ssl_error": 2,
+    "parked": 1,
+    "http_5xx": 1
    }
   },
   "diocese-of-san-angelo": {
@@ -3198,18 +3395,17 @@
     "conn_error": 1
    }
   },
-  "unassigned-va": {
+  "unassigned-sc": {
    "sites_in_list": 33,
-   "records": 69,
+   "records": 40,
    "finished": true,
-   "ok": 48,
+   "ok": 31,
    "by_status": {
-    "ok": 48,
-    "challenge": 10,
-    "ssl_error": 4,
+    "ok": 31,
+    "challenge": 3,
     "timeout": 3,
-    "dns": 3,
-    "http_5xx": 1
+    "dns": 2,
+    "robots_disallowed": 1
    }
   },
   "archdiocese-of-las-vegas": {
@@ -3274,31 +3470,35 @@
     "parked": 1
    }
   },
-  "unassigned-wy": {
+  "unassigned-md": {
    "sites_in_list": 32,
-   "records": 33,
+   "records": 63,
    "finished": true,
-   "ok": 17,
+   "ok": 34,
    "by_status": {
-    "ok": 17,
-    "challenge": 12,
-    "dns": 2,
+    "ok": 34,
+    "dns": 12,
+    "challenge": 8,
+    "parked": 3,
+    "http_4xx": 1,
+    "blocked_403": 1,
     "conn_error": 1,
+    "not_found": 1,
+    "robots_disallowed": 1,
     "ssl_error": 1
    }
   },
-  "unassigned-id": {
+  "unassigned-de": {
    "sites_in_list": 31,
-   "records": 38,
+   "records": 41,
    "finished": true,
-   "ok": 23,
+   "ok": 30,
    "by_status": {
-    "ok": 23,
-    "challenge": 6,
-    "dns": 5,
+    "ok": 30,
+    "challenge": 7,
     "timeout": 2,
-    "ssl_error": 1,
-    "blocked_403": 1
+    "conn_error": 1,
+    "robots_disallowed": 1
    }
   },
   "diocese-of-oakland": {
@@ -3341,6 +3541,33 @@
     "challenge": 2
    }
   },
+  "unassigned-wy": {
+   "sites_in_list": 28,
+   "records": 33,
+   "finished": true,
+   "ok": 17,
+   "by_status": {
+    "ok": 17,
+    "challenge": 12,
+    "dns": 2,
+    "conn_error": 1,
+    "ssl_error": 1
+   }
+  },
+  "unassigned-id": {
+   "sites_in_list": 27,
+   "records": 38,
+   "finished": true,
+   "ok": 23,
+   "by_status": {
+    "ok": 23,
+    "challenge": 6,
+    "dns": 5,
+    "timeout": 2,
+    "ssl_error": 1,
+    "blocked_403": 1
+   }
+  },
   "diocese-of-portland-in-maine": {
    "sites_in_list": 27,
    "records": 27,
@@ -3366,35 +3593,40 @@
     "blocked_403": 1
    }
   },
-  "diocese-of-pensacola-tallahassee": {
+  "holy-protection-of-mary-byzantine-catholic-eparchy-of-phoenix": {
    "sites_in_list": 26,
    "records": 26,
    "finished": true,
-   "ok": 8,
+   "ok": 20,
    "by_status": {
-    "ok": 8,
-    "dns": 8,
-    "challenge": 7,
+    "ok": 20,
+    "http_4xx": 2,
+    "timeout": 2,
     "ssl_error": 1,
-    "robots_disallowed": 1,
-    "timeout": 1
+    "dns": 1
    }
   },
-  "unassigned-ak": {
-   "sites_in_list": 22,
-   "records": 28,
-   "finished": true,
-   "ok": 11,
+  "diocese-of-stockton": {
+   "sites_in_list": 23,
+   "records": 11,
+   "finished": false,
+   "ok": 0,
    "by_status": {
-    "ok": 11,
     "challenge": 7,
-    "social_only": 3,
-    "blocked_403": 2,
-    "unreachable_via_proxy": 1,
-    "conn_error": 1,
-    "dns": 1,
-    "ssl_error": 1,
-    "timeout": 1
+    "unreachable_via_proxy": 4,
+    "https_only": 1
+   }
+  },
+  "diocese-of-steubenville": {
+   "sites_in_list": 22,
+   "records": 22,
+   "finished": true,
+   "ok": 14,
+   "by_status": {
+    "ok": 14,
+    "challenge": 5,
+    "timeout": 2,
+    "dns": 1
    }
   },
   "diocese-of-marquette": {
@@ -3426,41 +3658,21 @@
     "dns": 1
    }
   },
-  "diocese-of-victoria": {
+  "unassigned-ak": {
    "sites_in_list": 21,
-   "records": 21,
+   "records": 28,
    "finished": true,
-   "ok": 1,
+   "ok": 11,
    "by_status": {
-    "challenge": 14,
-    "dns": 4,
-    "conn_error": 1,
-    "ok": 1,
-    "timeout": 1
-   }
-  },
-  "unassigned-nc": {
-   "sites_in_list": 21,
-   "records": 22,
-   "finished": true,
-   "ok": 14,
-   "by_status": {
-    "ok": 14,
-    "dns": 5,
-    "ssl_error": 1,
-    "http_5xx": 1,
-    "conn_error": 1
-   }
-  },
-  "diocese-of-stockton": {
-   "sites_in_list": 21,
-   "records": 11,
-   "finished": false,
-   "ok": 0,
-   "by_status": {
+    "ok": 11,
     "challenge": 7,
-    "unreachable_via_proxy": 4,
-    "https_only": 1
+    "social_only": 3,
+    "blocked_403": 2,
+    "unreachable_via_proxy": 1,
+    "conn_error": 1,
+    "dns": 1,
+    "ssl_error": 1,
+    "timeout": 1
    }
   },
   "archdiocese-of-philadelphia": {
@@ -3487,6 +3699,18 @@
     "timeout": 1,
     "ssl_error": 1,
     "unreachable_via_proxy": 1
+   }
+  },
+  "eparchy-of-parma": {
+   "sites_in_list": 20,
+   "records": 20,
+   "finished": true,
+   "ok": 16,
+   "by_status": {
+    "ok": 16,
+    "challenge": 2,
+    "timeout": 1,
+    "ssl_error": 1
    }
   },
   "diocese-of-sioux-city": {
@@ -3548,6 +3772,19 @@
     "ok": 20
    }
   },
+  "unassigned-nc": {
+   "sites_in_list": 19,
+   "records": 22,
+   "finished": true,
+   "ok": 14,
+   "by_status": {
+    "ok": 14,
+    "dns": 5,
+    "ssl_error": 1,
+    "http_5xx": 1,
+    "conn_error": 1
+   }
+  },
   "archdiocese-of-cincinnati": {
    "sites_in_list": 18,
    "records": 18,
@@ -3602,15 +3839,6 @@
     "conn_error": 1
    }
   },
-  "unassigned-xx": {
-   "sites_in_list": 14,
-   "records": 1,
-   "finished": false,
-   "ok": 0,
-   "by_status": {
-    "ssl_error": 1
-   }
-  },
   "diocese-of-jackson": {
    "sites_in_list": 13,
    "records": 13,
@@ -3623,15 +3851,13 @@
     "not_found": 1
    }
   },
-  "diocese-of-laredo": {
+  "unassigned-xx": {
    "sites_in_list": 13,
-   "records": 13,
-   "finished": true,
-   "ok": 6,
+   "records": 1,
+   "finished": false,
+   "ok": 0,
    "by_status": {
-    "ok": 6,
-    "dns": 4,
-    "challenge": 3
+    "ssl_error": 1
    }
   },
   "diocese-of-dodge-city": {
@@ -3669,6 +3895,38 @@
     "ssl_error": 1
    }
   },
+  "diocese-of-fairbanks": {
+   "sites_in_list": 9,
+   "records": 9,
+   "finished": true,
+   "ok": 3,
+   "by_status": {
+    "challenge": 4,
+    "ok": 3,
+    "not_found": 1,
+    "dns": 1
+   }
+  },
+  "diocese-of-st-thomas-vi": {
+   "sites_in_list": 9,
+   "records": 0,
+   "finished": false,
+   "ok": 0,
+   "by_status": {}
+  },
+  "eparchy-of-st-maron-of-brooklyn": {
+   "sites_in_list": 9,
+   "records": 9,
+   "finished": true,
+   "ok": 5,
+   "by_status": {
+    "ok": 5,
+    "robots_disallowed": 1,
+    "social_only": 1,
+    "conn_error": 1,
+    "ssl_error": 1
+   }
+  },
   "diocese-of-lake-charles": {
    "sites_in_list": 9,
    "records": 9,
@@ -3700,44 +3958,6 @@
    "ok": 8,
    "by_status": {
     "ok": 8
-   }
-  },
-  "diocese-of-fairbanks": {
-   "sites_in_list": 8,
-   "records": 8,
-   "finished": true,
-   "ok": 2,
-   "by_status": {
-    "challenge": 4,
-    "ok": 2,
-    "not_found": 1,
-    "dns": 1
-   }
-  },
-  "diocese-of-evansville": {
-   "sites_in_list": 7,
-   "records": 7,
-   "finished": true,
-   "ok": 2,
-   "by_status": {
-    "ok": 2,
-    "challenge": 1,
-    "robots_disallowed": 1,
-    "not_found": 1,
-    "dns": 1,
-    "unreachable_via_proxy": 1
-   }
-  },
-  "diocese-of-lansing": {
-   "sites_in_list": 7,
-   "records": 7,
-   "finished": true,
-   "ok": 2,
-   "by_status": {
-    "challenge": 3,
-    "ok": 2,
-    "not_found": 1,
-    "conn_error": 1
    }
   },
   "diocese-of-toledo": {
@@ -3790,16 +4010,6 @@
     "ok": 6
    }
   },
-  "archdiocese-of-miami": {
-   "sites_in_list": 6,
-   "records": 6,
-   "finished": true,
-   "ok": 5,
-   "by_status": {
-    "ok": 5,
-    "not_found": 1
-   }
-  },
   "diocese-of-honolulu": {
    "sites_in_list": 6,
    "records": 6,
@@ -3817,15 +4027,6 @@
    "ok": 6,
    "by_status": {
     "ok": 6
-   }
-  },
-  "diocese-of-greensburg": {
-   "sites_in_list": 5,
-   "records": 11,
-   "finished": true,
-   "ok": 11,
-   "by_status": {
-    "ok": 11
    }
   },
   "diocese-of-new-ulm": {
@@ -3850,24 +4051,12 @@
     "unreachable_via_proxy": 1
    }
   },
-  "eparchy-of-st-maron-of-brooklyn": {
-   "sites_in_list": 5,
-   "records": 5,
-   "finished": true,
-   "ok": 4,
-   "by_status": {
-    "ok": 4,
-    "ssl_error": 1
-   }
-  },
-  "diocese-of-green-bay": {
-   "sites_in_list": 3,
-   "records": 3,
-   "finished": true,
-   "ok": 3,
-   "by_status": {
-    "ok": 3
-   }
+  "armenian-catholic-eparchy-of-our-lady-of-nareg-in-the-usa-canada": {
+   "sites_in_list": 4,
+   "records": 0,
+   "finished": false,
+   "ok": 0,
+   "by_status": {}
   },
   "maronite-eparchy-of-our-lady-of-lebanon": {
    "sites_in_list": 3,
@@ -3936,15 +4125,6 @@
     "ok": 1
    }
   },
-  "eparchy-of-parma": {
-   "sites_in_list": 1,
-   "records": 1,
-   "finished": true,
-   "ok": 0,
-   "by_status": {
-    "timeout": 1
-   }
-  },
   "diocese-of-pueblo": {
    "sites_in_list": 1,
    "records": 1,
@@ -3961,33 +4141,6 @@
    "ok": 0,
    "by_status": {
     "challenge": 1
-   }
-  },
-  "diocese-of-kalamazoo": {
-   "sites_in_list": 1,
-   "records": 1,
-   "finished": true,
-   "ok": 0,
-   "by_status": {
-    "challenge": 1
-   }
-  },
-  "diocese-of-steubenville": {
-   "sites_in_list": 1,
-   "records": 1,
-   "finished": true,
-   "ok": 1,
-   "by_status": {
-    "ok": 1
-   }
-  },
-  "diocese-of-erie": {
-   "sites_in_list": 1,
-   "records": 1,
-   "finished": true,
-   "ok": 1,
-   "by_status": {
-    "ok": 1
    }
   },
   "diocese-of-nashville": {
@@ -4028,10 +4181,10 @@
   }
  },
  "totals": {
-  "sites_in_list": 17440,
-  "records": 17707,
-  "ok": 9421
+  "sites_in_list": 19262,
+  "records": 19926,
+  "ok": 10651
  },
  "us_parish_pages_discovermass": 20147,
- "updated_at": "2026-11-01T20:34:10+00:00"
+ "updated_at": "2026-11-01T22:22:25+00:00"
 }

@@ -1,0 +1,170 @@
+{
+ "domain": "saintpeters.org",
+ "diocese": "unassigned-ny",
+ "matched_church_ids": [
+  "brave:NY|peter|"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "brave:NY|peter|"
+  ]
+ },
+ "names": [
+  "St Peter"
+ ],
+ "cities": [],
+ "home_url": "https://www.saintpeters.org/",
+ "final_url": "https://www.saintpeters.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://www.saintpeters.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.saintpeters.org/parish-life",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.saintpeters.org/events",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "live",
+   "url": "https://www.saintpeters.org/stream",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "squarespace",
+  "evidence": [
+   "squarespace-cdn"
+  ]
+ },
+ "template": "generic-html:squarespace",
+ "groups": [],
+ "calendar_feeds": [],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/SaintPetersNYC",
+   "https://www.facebook.com/IglesiaSaintPeters"
+  ],
+  "instagram": [
+   "https://www.instagram.com/saintpetersnyc/"
+  ],
+  "youtube": [
+   "https://www.youtube.com/@SaintPetersNYC",
+   "https://www.youtube.com/channel/UC7BEBQrz2YjTBgKs_ieUIxg"
+  ],
+  "livestream": [
+   {
+    "url": "https://www.saintpeters.org/stream",
+    "label": "Livestream",
+    "platform": "www.saintpeters.org",
+    "kind": "link"
+   },
+   {
+    "url": "https://www.youtube.com/@SaintPetersNYC/streams",
+    "label": "YouTube",
+    "platform": "youtube",
+    "kind": "link"
+   }
+  ]
+ },
+ "bulletin": null,
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "13:00",
+   "language": null,
+   "raw": "1:00 p.m. - Mass",
+   "source_url": "https://www.saintpeters.org/",
+   "fetched_at": "2026-11-01T22:15:23+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "17:00",
+   "language": null,
+   "raw": "5:00 p.m. [Mass intention withheld]",
+   "source_url": "https://www.saintpeters.org/",
+   "fetched_at": "2026-11-01T22:15:23+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace"
+  }
+ ],
+ "source_url": "https://www.saintpeters.org/",
+ "fetched_at": "2026-11-01T22:15:27+00:00",
+ "schedule_template": {
+  "template": "squarespace",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 2
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "no_kind": 1
+ },
+ "groups_dropped": {
+  "noise": 2,
+  "unmatched": 2
+ },
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": null,
+  "address": "619 Lexington Avenue, New York, NY 10022",
+  "source_url": "https://www.saintpeters.org/",
+  "sources": {
+   "address": "https://www.saintpeters.org/"
+  },
+  "fetched_at": "2026-11-01T22:15:23+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()",
+  "intentions_withheld": 1
+ },
+ "social_shared_links_removed": [
+  "https://www.facebook.com/2008"
+ ]
+}
