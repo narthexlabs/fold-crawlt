@@ -41,7 +41,17 @@ DENY = ("catholicparish.net", "discovermass.com", "masstimes.org", "gcatholic.or
         "cityofwestonwv.gov", "ohiocountylibrary.org", "sundevilcentral.eoss.asu.edu", "madisonsd.com", "catholicchurchtimes.com",
         # 2026-11-01 second-run spot check (40 hits): aggregators, generated church pages, news/history/town hosts
         "alluschurches.com", "edan.io", "railway.app", "detroit1701.org", "blogspot.com", "flcatholictribune.com",
-        "okhistory.org", "wkow.com", "salisburypa.com", "sistersofihm.org", "stemma.org")
+        "okhistory.org", "wkow.com", "salisburypa.com", "sistersofihm.org", "stemma.org",
+        # 2026-11-01 third-run spot check (40 hits, ~53% right): towns, travel, news, other denominations, unrelated
+        "phillipsburgnj.org", "sharonct.org", "catholicindiana.org", "scipiochurch.com", "ctinsider.com", "dc-yfs.com",
+        "ebay.com", "catholicssharingjesus.org", "shkcfctampa.com", "trinityny.church", "discoverwhitewater.org",
+        "allsaintsvillage.com", "peterandpaulcathedral.com", "wgpfoundation.org", "catholictravelusa.com",
+        "popecountyareachurches.com", "smythcountychurches.com", "cmac.ws", "episcopalassetmap.org", "orthodox-world.org")
+# host patterns that are never a parish's own site: government, universities, tourism boards, newspapers, town pages,
+# historical societies / museums / libraries, other denominations (UCC, Orthodox, Episcopal, Baptist, Lutheran, Methodist)
+DENY_RE = re.compile(r"\.gov(\.|$)|\.govoffice|\.edu$|^visit(?!ation)|^explore|^destination|travel|tourism|^(city|town|village)of(?!st)|"
+                     r"(news|times|tribune|herald|journal|gazette|observer)(online)?\.(com|org|net)$|news12|historical|history|museum|"
+                     r"library|ucc\.(org|com)$|-ucc\.|orthodox|episcopal|(?<!john)(?<!the)(?<!the-)baptist|lutheran|methodist|presbyterian")
 CITY_PREFIX = {"salt", "san", "santa", "new", "west", "east", "north", "south", "fort", "ft", "mount", "mt", "las", "los", "el", "lake", "oak", "grand", "great", "port", "little", "big", "sioux", "baton", "boise", "st", "saint", "palm", "long", "oklahoma", "kansas", "sun", "falls", "des", "eau", "la", "del", "rio", "cedar", "green", "white", "blue", "red", "rock", "silver"}
 CITY_SUFFIX = {"city", "falls", "springs", "beach", "valley", "park", "heights", "hill", "hills", "lake", "grove", "ridge", "harbor", "junction", "mtn", "creek", "rapids", "river", "island", "rock", "haven"}
 GOOD_HINT = re.compile(r"parish|catholic|church|st[-.]?|saint|holy|our[-.]?lady|sacred|blessed|immaculate|christ|cathedral|basilica|mission|chapel", re.I)
@@ -235,7 +245,7 @@ def pick(res: dict, cand: dict, known_hosts: set[str]) -> tuple[str | None, list
     toks = set(norm(cand["name"]).split())
     for r in (res.get("web") or {}).get("results", [])[:5]:
         u = r.get("url") or ""; h = host_of(u)
-        if not h or h in DENY_DYNAMIC or any(h == d or h.endswith("." + d) or d in h for d in DENY):
+        if not h or h in DENY_DYNAMIC or DENY_RE.search(h) or any(h == d or h.endswith("." + d) or d in h for d in DENY):
             rejected.append((u, "deny")); continue
         if h in known_hosts:
             rejected.append((u, "already-known")); continue
@@ -278,7 +288,7 @@ def build(done):
         if not d.get("url"):
             continue
         h = host_of(d["url"])
-        if h in aggregators or any(h == x or h.endswith("." + x) or x in h for x in DENY):
+        if h in aggregators or DENY_RE.search(h) or any(h == x or h.endswith("." + x) or x in h for x in DENY):
             continue
         by_state[d["state"]].setdefault(h, {"url": d["url"], "churches": []})["churches"].append(
             {"slug": f"brave:{d['key']}", "name": d["name"], "city": d["city"], "state": d["state"], "diocese": None, "source": "brave-search", "query": d["query"]})
@@ -297,6 +307,9 @@ def build(done):
                                    f"with no website; tier 2 = catholicparish.net slugs that do not fuzzy-match (name tokens + city) a parish we already "
                                    f"have a site for; tier 3 = the rest. States with >=70% of catholicparish.net slugs already matched are skipped outside "
                                    f"tier 1. Queries run in batches of 500; a tier stops when its last-500 new-domain rate falls below 30%.\n\n"
+                                   f"Third run (2026-11-01): 4,849 queries (tier 2 to exhaustion, tier 3 gated at 22%; then states 70-85% covered: "
+                                   f"tier 2 gated at 17%, tier 3 at 19%). A 40-hit spot check of that run found ~53% right, so a host-pattern deny "
+                                   f"(DENY_RE: .gov, .edu, tourism, newspapers, town pages, other denominations) now filters picks and the build.\n\n"
                                    f"Resume: `BRAVE_KEY=... python3 -I ingest/us/url_sources/brave_lookup.py --budget N [--checkpoint-cmd CMD]`\n")
     print(f"built: {tot} queries, {hits} sites in {len(by_state)} states", flush=True)
 
