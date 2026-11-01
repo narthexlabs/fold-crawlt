@@ -628,6 +628,14 @@
     "unassigned-pa",
     "diocese-of-greensburg"
    ]
+  },
+  {
+   "started_at": "2026-11-01T23:33:52+00:00",
+   "ended_at": "2026-11-01T23:35:02+00:00",
+   "result": "fetched {'ok': 4, 'done': 4, 'halted_egress': 0}; parsed 1 dioceses",
+   "touched": [
+    "unassigned-oh"
+   ]
   }
  ],
  "dioceses": {
@@ -691,11 +699,11 @@
   },
   "unassigned-oh": {
    "sites_in_list": 392,
-   "records": 393,
+   "records": 397,
    "finished": true,
-   "ok": 254,
+   "ok": 258,
    "by_status": {
-    "ok": 254,
+    "ok": 258,
     "challenge": 74,
     "ssl_error": 22,
     "dns": 18,
@@ -2979,14 +2987,15 @@
   },
   "diocese-of-sioux-city": {
    "sites_in_list": 52,
-   "records": 20,
-   "finished": false,
-   "ok": 2,
+   "records": 52,
+   "finished": true,
+   "ok": 6,
    "by_status": {
-    "dns": 12,
-    "challenge": 5,
-    "ok": 2,
-    "ssl_error": 1
+    "challenge": 30,
+    "dns": 13,
+    "ok": 6,
+    "ssl_error": 2,
+    "parked": 1
    }
   },
   "diocese-of-beaumont": {
@@ -4192,9 +4201,9 @@
  },
  "totals": {
   "sites_in_list": 19289,
-  "records": 19973,
-  "ok": 10666
+  "records": 19988,
+  "ok": 10681
  },
  "us_parish_pages_discovermass": 20147,
- "updated_at": "2026-11-01T23:33:47+00:00"
+ "updated_at": "2026-11-01T23:35:03+00:00"
 }
