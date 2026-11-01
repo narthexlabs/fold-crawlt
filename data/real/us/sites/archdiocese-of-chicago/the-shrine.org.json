@@ -1,0 +1,168 @@
+{
+ "domain": "the-shrine.org",
+ "diocese": "archdiocese-of-chicago",
+ "matched_church_ids": [
+  "archdiocese-of-chicago:The Dominican Shrine of Saint Jude Thaddeus"
+ ],
+ "matched": {
+  "directory": [
+   "archdiocese-of-chicago:The Dominican Shrine of Saint Jude Thaddeus"
+  ],
+  "discovermass": []
+ },
+ "names": [
+  "The Dominican Shrine of Saint Jude Thaddeus"
+ ],
+ "cities": [
+  "Chicago"
+ ],
+ "home_url": "https://the-shrine.org/",
+ "final_url": "https://the-shrine.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://the-shrine.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://the-shrine.org/gregorian-masses/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://the-shrine.org/single-mass/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://the-shrine.org/devotions-and-relics/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://the-shrine.org/devotions-and-relics/how-to-venerate-a-relic/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://the-shrine.org/devotions-and-relics/why-do-we-venerate-relics/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://the-shrine.org/events-list/",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-json"
+  ]
+ },
+ "template": "wordpress-rest+html",
+ "groups": [],
+ "calendar_feeds": [
+  {
+   "feed_id": "the-shrine.org:tribe_rest:8bdaf800",
+   "type": "tribe_rest",
+   "platform": "The Events Calendar (WordPress)",
+   "url": "https://the-shrine.org/wp-json/tribe/events/v1/events",
+   "page_url": "https://the-shrine.org/",
+   "label": null,
+   "status": "active",
+   "note": "The Events Calendar (WordPress) REST API",
+   "last_fetch": {
+    "status": 200,
+    "fetched_at": "2026-11-01T17:29:39+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
+ "events": [],
+ "social": {},
+ "bulletin": null,
+ "schedule_rows": [],
+ "source_url": "https://the-shrine.org/",
+ "fetched_at": "2026-11-01T07:35:47+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "has_sunday": false,
+ "schedule_images": [
+  {
+   "url": "https://the-shrine.org/wp-content/uploads/2021/01/Gregorian-standing.png",
+   "alt": "Gregorian Masses",
+   "page": "https://the-shrine.org/gregorian-masses/"
+  },
+  {
+   "url": "https://the-shrine.org/wp-content/uploads/2021/01/Greg-front-scaled.jpg",
+   "alt": "Gregorian Masses",
+   "page": "https://the-shrine.org/gregorian-masses/"
+  },
+  {
+   "url": "https://the-shrine.org/wp-content/uploads/2021/01/Greg-back-scaled.jpg",
+   "alt": "Gregorian Masses",
+   "page": "https://the-shrine.org/gregorian-masses/"
+  },
+  {
+   "url": "https://the-shrine.org/wp-content/uploads/2021/01/Greg-inside-left-scaled.jpg",
+   "alt": "Gregorian Masses",
+   "page": "https://the-shrine.org/gregorian-masses/"
+  }
+ ],
+ "schedule_note": "schedule appears to be an image; times not read (needs_review)",
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(312) 226-0020",
+  "address": "1901 South Ashland Ave., Chicago, IL 60608",
+  "source_url": "https://the-shrine.org/",
+  "sources": {
+   "phone": "https://the-shrine.org/",
+   "address": "https://the-shrine.org/"
+  },
+  "fetched_at": "2026-11-01T07:28:08+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}
