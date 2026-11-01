@@ -1,0 +1,189 @@
+{
+ "domain": "stjohnthebaptist-campbell.org",
+ "diocese": "unassigned-oh",
+ "matched_church_ids": [
+  "brave:OH|john baptist campbell|"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "brave:OH|john baptist campbell|"
+  ]
+ },
+ "names": [
+  "St John The Baptist"
+ ],
+ "cities": [
+  "Campbell"
+ ],
+ "home_url": "https://www.stjohnthebaptist-campbell.org/",
+ "final_url": "https://www.stjohnthebaptist-campbell.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://www.stjohnthebaptist-campbell.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.stjohnthebaptist-campbell.org/schedule",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.stjohnthebaptist-campbell.org/administration",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://www.stjohnthebaptist-campbell.org/bulletins",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.stjohnthebaptist-campbell.org/monthlycalendar",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://www.stjohnthebaptist-campbell.org/contact1",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "unknown",
+  "evidence": []
+ },
+ "template": "generic-html:unknown",
+ "groups": [
+  {
+   "id": "stjohnthebaptist-campbell.org:children_ff",
+   "name": "Religious Education",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "children_faith_formation",
+   "audience": "families",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.stjohnthebaptist-campbell.org/contact1",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stjohnthebaptist-campbell.org/administration",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T22:16:24+00:00",
+   "confidence": "medium"
+  }
+ ],
+ "calendar_feeds": [
+  {
+   "feed_id": "stjohnthebaptist-campbell.org:ics:d90711a9",
+   "type": "ics",
+   "platform": "iCal",
+   "url": "https://www.google.com/calendar/render?cid=https%3A%2F%2Fwww.stjohnthebaptist-campbell.org%2Fcalendar%2Fsync.ics",
+   "page_url": "https://www.stjohnthebaptist-campbell.org/schedule",
+   "label": null,
+   "status": "active",
+   "note": "iCal link on page",
+   "last_fetch": {
+    "status": "not_ical",
+    "fetched_at": "2026-11-01T23:35:01+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  },
+  {
+   "feed_id": "stjohnthebaptist-campbell.org:ics:a0b91e7d",
+   "type": "ics",
+   "platform": "iCal",
+   "url": "https://www.stjohnthebaptist-campbell.org/calendar/sync.ics",
+   "page_url": "https://www.stjohnthebaptist-campbell.org/schedule",
+   "label": null,
+   "status": "active",
+   "note": "iCal link on page",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T23:35:01+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
+ "events": [],
+ "social": {},
+ "bulletin": {
+  "url": "https://www.stjohnthebaptist-campbell.org/files/Bulletins/2026/10-18-26-20th-Sunday-after-Pentecost.pdf",
+  "date": "2026-10-18",
+  "kind": "pdf",
+  "text": "October 18",
+  "source_url": "https://www.stjohnthebaptist-campbell.org/bulletins"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "18:00",
+   "language": null,
+   "raw": "Saturday 6:00pm",
+   "source_url": "https://www.stjohnthebaptist-campbell.org/schedule",
+   "fetched_at": "2026-11-01T22:15:54+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  }
+ ],
+ "source_url": "https://www.stjohnthebaptist-campbell.org/",
+ "fetched_at": "2026-11-01T23:33:55+00:00",
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": true,
+  "trusted_candidate": false,
+  "generic_rows": 9
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "no_day": 4,
+  "no_kind": 4,
+  "dated_block": 2,
+  "other_location": 6,
+  "skipped_section": 21,
+  "weekend_rescue_added": 1
+ },
+ "groups_dropped": {
+  "unmatched": 1,
+  "noise": 1
+ },
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}
