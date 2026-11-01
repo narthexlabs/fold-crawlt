@@ -30,5 +30,6 @@ screens every saved record. Public clergy roles as listed by the diocese are kep
 **Resume / operate**: each `scripts/us/*_chunk.sh` pulls, runs for N minutes, commits and pushes; they skip what is
 already done. See each `data/real/us/<source>/README.md`. To stop everything: Actions → "National crawl" → Disable.
 
-**Licence**: code MIT (see LICENSE). Data: facts gathered from the sources above; each record names its source, and
-the sources' own terms apply to their material (GCatholic.org, Wikidata CC0, Wikipedia CC BY-SA for text).
+**Licence**: all rights reserved (see LICENSE). The repo is public for transparency and so the crawl can run on
+GitHub Actions, not as a grant to reuse the code or data. Each data record names its source; the sources' own terms
+apply to their material (GCatholic.org, Wikidata CC0, Wikipedia CC BY-SA for text).
