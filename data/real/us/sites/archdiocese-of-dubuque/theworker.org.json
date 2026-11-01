@@ -17,33 +17,551 @@
   "Dubuque"
  ],
  "home_url": "http://www.theworker.org/",
- "final_url": "https://www.theworker.org/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "final_url": "https://theworker.org/",
+ "crawl_status": "wayback-2025-06-21",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
-   "url": "https://www.theworker.org/",
-   "status": 403,
-   "class": "challenge"
+   "url": "https://theworker.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://theworker.org/scheduler",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://theworker.org/worship",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://theworker.org/parish-life",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://theworker.org/liturgical-ministries",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://theworker.org/ministry-schedules",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://theworker.org/bulletins",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://theworker.org/community-events",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://theworker.org/news?page=1",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://theworker.org/contact-us",
+   "status": null,
+   "class": "conn_error"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "theworker.org:altar_society|art",
+   "name": "Art & Environment",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "altar_society_environment",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://theworker.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://theworker.org/liturgical-ministries",
+   "source_kind": "website",
+   "fetched_at": "2025-05-13T02:44:06+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-06-21"
+  },
+  {
+   "id": "theworker.org:childrens_liturgy",
+   "name": "Children's Liturgy",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "childrens_liturgy_of_the_word",
+   "audience": "families",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://theworker.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://theworker.org/ministry-schedules",
+   "source_kind": "website",
+   "fetched_at": "2024-05-30T13:50:17+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-06-21"
+  },
+  {
+   "id": "theworker.org:hospitality",
+   "name": "Hospitality Ministers",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "hospitality",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://theworker.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://theworker.org/liturgical-ministries",
+   "source_kind": "website",
+   "fetched_at": "2025-05-13T02:44:06+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-06-21"
+  },
+  {
+   "id": "theworker.org:lectors",
+   "name": "Lectors/Commentators",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "lectors",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://theworker.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://theworker.org/liturgical-ministries",
+   "source_kind": "website",
+   "fetched_at": "2025-05-13T02:44:06+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-06-21"
+  },
+  {
+   "id": "theworker.org:choir",
+   "name": "Music Ministers",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "choir_music",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://theworker.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://theworker.org/liturgical-ministries",
+   "source_kind": "website",
+   "fetched_at": "2025-05-13T02:44:06+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-06-21"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "flocknote": [
+   "https://theworker.flocknote.com"
+  ],
+  "livestream": [
+   {
+    "url": "https://youtube.com/live/kqLIZBi1XFc?feature=share",
+    "label": "Live-Stream",
+    "platform": "youtube",
+    "kind": "video"
+   },
+   {
+    "url": "https://theworker.org/ministry-schedules",
+    "label": "Screens & Live-Stream Volunteers",
+    "platform": "theworker.org",
+    "kind": "link"
+   },
+   {
+    "url": "https://www.signupgenius.com/go/60B0C45ACAA2DA7FD0-march",
+    "label": "March, April, May Screens & Live-Stream Volunteer Sign-Up",
+    "platform": "www.signupgenius.com",
+    "kind": "link"
+   },
+   {
+    "url": "https://www.signupgenius.com/go/60B0C45ACAA2DA7FD0-49385256-june",
+    "label": "June, July, August Screens & Live-Stream Volunteer Sign-Up",
+    "platform": "www.signupgenius.com",
+    "kind": "link"
+   }
+  ]
+ },
+ "bulletin": {
+  "url": "https://files.ecatholic.com/34738/bulletins/20251012.pdf?t=1759853143000",
+  "date": "2025-10-12",
+  "kind": "ecatholic_pdf",
+  "text": "October 12 , 2025",
+  "source_url": "https://theworker.org/bulletins"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": "English",
+   "raw": "Saturday Vigil: 5:00 PM English",
+   "source_url": "https://theworker.org/",
+   "fetched_at": "2025-06-21T05:15:31+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-06-21: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-06-21",
+   "archive_url": "https://web.archive.org/web/20250621051531/https://theworker.org/",
+   "capture_date": "2025-06-21"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:30",
+   "language": "English",
+   "raw": "Sunday: 8:30 AM English",
+   "source_url": "https://theworker.org/",
+   "fetched_at": "2025-06-21T05:15:31+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-06-21: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-06-21",
+   "archive_url": "https://web.archive.org/web/20250621051531/https://theworker.org/",
+   "capture_date": "2025-06-21"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:00",
+   "language": "English",
+   "raw": "Sunday: 11:00 AM English",
+   "source_url": "https://theworker.org/",
+   "fetched_at": "2025-06-21T05:15:31+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-06-21: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-06-21",
+   "archive_url": "https://web.archive.org/web/20250621051531/https://theworker.org/",
+   "capture_date": "2025-06-21"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "12:00",
+   "language": "English",
+   "raw": "Monday, Wednesday, Friday: 12:00 PM English",
+   "source_url": "https://theworker.org/",
+   "fetched_at": "2025-06-21T05:15:31+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-06-21: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Monday, Wednesday, Friday",
+   "source": "wayback-2025-06-21",
+   "archive_url": "https://web.archive.org/web/20250621051531/https://theworker.org/",
+   "capture_date": "2025-06-21"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "12:00",
+   "language": "English",
+   "raw": "Monday, Wednesday, Friday: 12:00 PM English",
+   "source_url": "https://theworker.org/",
+   "fetched_at": "2025-06-21T05:15:31+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-06-21: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Monday, Wednesday, Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "source": "wayback-2025-06-21",
+   "archive_url": "https://web.archive.org/web/20250621051531/https://theworker.org/",
+   "capture_date": "2025-06-21"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "12:00",
+   "language": "English",
+   "raw": "Monday, Wednesday, Friday: 12:00 PM English",
+   "source_url": "https://theworker.org/",
+   "fetched_at": "2025-06-21T05:15:31+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-06-21: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Monday, Wednesday, Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "source": "wayback-2025-06-21",
+   "archive_url": "https://web.archive.org/web/20250621051531/https://theworker.org/",
+   "capture_date": "2025-06-21"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "17:30",
+   "language": "English",
+   "raw": "Tuesday: 5:30 PM English",
+   "source_url": "https://theworker.org/",
+   "fetched_at": "2025-06-21T05:15:31+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-06-21: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-06-21",
+   "archive_url": "https://web.archive.org/web/20250621051531/https://theworker.org/",
+   "capture_date": "2025-06-21"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "08:00",
+   "language": "English",
+   "raw": "Thursday: 8:00 AM English",
+   "source_url": "https://theworker.org/",
+   "fetched_at": "2025-06-21T05:15:31+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-06-21: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-06-21",
+   "archive_url": "https://web.archive.org/web/20250621051531/https://theworker.org/",
+   "capture_date": "2025-06-21"
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "07:45-08:15",
+   "language": null,
+   "raw": "Sunday: 7:45 AM - 8:15 AM",
+   "source_url": "https://theworker.org/",
+   "fetched_at": "2025-06-21T05:15:31+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-06-21: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-06-21",
+   "archive_url": "https://web.archive.org/web/20250621051531/https://theworker.org/",
+   "capture_date": "2025-06-21"
+  },
+  {
+   "kind": "confession",
+   "day": "Tuesday (lent)",
+   "time": "11:30-11:50",
+   "language": null,
+   "raw": "Tuesday: 11:30 AM - 11:50 AM ((Only During Lent))",
+   "source_url": "https://theworker.org/",
+   "fetched_at": "2025-06-21T05:15:31+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-06-21: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-06-21",
+   "archive_url": "https://web.archive.org/web/20250621051531/https://theworker.org/",
+   "capture_date": "2025-06-21"
+  },
+  {
+   "kind": "confession",
+   "day": "Wednesday",
+   "time": "11:30-11:50",
+   "language": null,
+   "raw": "Wednesday, Friday: 11:30 AM - 11:50 AM",
+   "source_url": "https://theworker.org/",
+   "fetched_at": "2025-06-21T05:15:31+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-06-21: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Wednesday, Friday",
+   "source": "wayback-2025-06-21",
+   "archive_url": "https://web.archive.org/web/20250621051531/https://theworker.org/",
+   "capture_date": "2025-06-21"
+  },
+  {
+   "kind": "confession",
+   "day": "Friday",
+   "time": "11:30-11:50",
+   "language": null,
+   "raw": "Wednesday, Friday: 11:30 AM - 11:50 AM",
+   "source_url": "https://theworker.org/",
+   "fetched_at": "2025-06-21T05:15:31+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-06-21: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Wednesday, Friday",
+   "source": "wayback-2025-06-21",
+   "archive_url": "https://web.archive.org/web/20250621051531/https://theworker.org/",
+   "capture_date": "2025-06-21"
+  },
+  {
+   "kind": "confession",
+   "day": "Thursday",
+   "time": "08:30-08:45",
+   "language": null,
+   "raw": "Thursday: 8:30 AM - 8:45 AM After the 8 AM Mass",
+   "source_url": "https://theworker.org/",
+   "fetched_at": "2025-06-21T05:15:31+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-06-21: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-06-21",
+   "archive_url": "https://web.archive.org/web/20250621051531/https://theworker.org/",
+   "capture_date": "2025-06-21"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "16:00-16:30",
+   "language": null,
+   "raw": "Saturday: 4:00 PM - 4:30 PM",
+   "source_url": "https://theworker.org/",
+   "fetched_at": "2025-06-21T05:15:31+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-06-21: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-06-21",
+   "archive_url": "https://web.archive.org/web/20250621051531/https://theworker.org/",
+   "capture_date": "2025-06-21"
+  }
+ ],
  "source_url": "http://www.theworker.org/",
- "fetched_at": "2026-11-01T05:15:56+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-01T21:02:50+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": true
+   },
+   "score": "high"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 2
+ },
+ "has_sunday": true,
+ "groups_dropped": {
+  "fragment": 1,
+  "noise": 4,
+  "unmatched": 1
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(563) 588-1433",
+  "address": null,
+  "source_url": "https://theworker.org/",
+  "sources": {
+   "phone": "https://theworker.org/"
+  },
+  "fetched_at": "2025-06-21T05:15:31+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2025-06-21",
+  "capture_age_days": 498,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://theworker.org/",
+    "capture": "2025-06-21",
+    "archive_url": "https://web.archive.org/web/20250621051531/https://theworker.org/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://theworker.org/scheduler",
+    "capture": "2024-06-21",
+    "archive_url": "https://web.archive.org/web/20240621172326/https://theworker.org/scheduler"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://theworker.org/worship",
+    "capture": "2025-10-17",
+    "archive_url": "https://web.archive.org/web/20251017052230/https://theworker.org/worship"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://theworker.org/parish-life",
+    "capture": "2025-03-20",
+    "archive_url": "https://web.archive.org/web/20250320090003/https://theworker.org/parish-life"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://theworker.org/liturgical-ministries",
+    "capture": "2025-05-13",
+    "archive_url": "https://web.archive.org/web/20250513024406/https://theworker.org/liturgical-ministries"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://theworker.org/ministry-schedules",
+    "capture": "2024-05-30",
+    "archive_url": "https://web.archive.org/web/20240530135017/https://theworker.org/ministry-schedules"
+   },
+   {
+    "kind": "bulletin",
+    "original": "https://theworker.org/bulletins",
+    "capture": "2025-10-17",
+    "archive_url": "https://web.archive.org/web/20251017042139/https://theworker.org/bulletins"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://theworker.org/community-events",
+    "capture": "2025-04-23",
+    "archive_url": "https://web.archive.org/web/20250423214805/https://theworker.org/community-events"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://theworker.org/news?page=1",
+    "capture": "2025-02-18",
+    "archive_url": "https://web.archive.org/web/20250218024317/https://theworker.org/news?page=1"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }
