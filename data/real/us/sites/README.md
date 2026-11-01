@@ -64,14 +64,14 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | archdiocese-of-seattle | 117 | 117 | 81 | 30 | 0 | 6 | 0 |
 | diocese-of-richmond | 114 | 124 | 89 | 19 | 1 | 15 | 0 |
 | unassigned-oh | 106 | 107 | 57 | 22 | 2 | 26 | 0 |
-| unassigned-sd | 105 | 104 | 63 | 17 | 1 | 23 | 0 |
+| unassigned-sd | 105 | 105 | 64 | 17 | 1 | 23 | 0 |
 | diocese-of-dallas | 100 | 101 | 39 | 45 | 0 | 17 | 0 |
 | unassigned-mt | 100 | 101 | 66 | 14 | 0 | 21 | 0 |
 | diocese-of-burlington | 98 | 101 | 13 | 59 | 1 | 28 | 0 |
 | unassigned-nh | 98 | 99 | 56 | 33 | 0 | 10 | 0 |
 | diocese-of-belleville | 96 | 55 | 29 | 3 | 0 | 23 | 0 |
 | diocese-of-trenton | 96 | 96 | 36 | 13 | 3 | 44 | 0 |
-| diocese-of-charleston | 95 | 81 | 67 | 9 | 1 | 4 | 0 |
+| diocese-of-charleston | 95 | 96 | 69 | 10 | 1 | 16 | 0 |
 | diocese-of-joliet | 95 | 95 | 70 | 22 | 0 | 3 | 0 |
 | diocese-of-metuchen | 94 | 94 | 32 | 36 | 0 | 26 | 0 |
 | archdiocese-of-hartford | 93 | 95 | 73 | 1 | 0 | 21 | 0 |
@@ -283,4 +283,4 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-01T17:52:14+00:00: fetched {'ok': 1, 'done': 1, 'halted_egress': 0}; parsed 1 dioceses
 - 2026-11-01T17:53:22+00:00: fetched {'ok': 11, 'done': 11, 'challenge': 1, 'dns': 1, 'cut': 2, 'halted_egress': 0}; parsed 5 dioceses
 - 2026-11-01T18:03:07+00:00: fetched {'ok': 1, 'done': 1, 'halted_egress': 0}; parsed 1 dioceses
-- 2026-11-01T18:51:39+00:00: fetched {'dns': 33, 'done': 82, 'challenge': 7, 'ssl_error': 12, 'conn_error': 1, 'parked': 3, 'ok': 16, 'http_5xx': 2, 'not_found': 1, 'timeout': 7, 'halted_egress': 0}; parsed 2 dioceses
+- 2026-11-01T18:51:38+00:00: fetched {'dns': 6, 'done': 12, 'parked': 1, 'ssl_error': 2, 'ok': 2, 'timeout': 1, 'halted_egress': 0}; parsed 2 dioceses
