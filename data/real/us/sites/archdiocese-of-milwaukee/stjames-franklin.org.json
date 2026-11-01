@@ -19,7 +19,7 @@
  "home_url": "http://www.stjames-franklin.org/",
  "final_url": "https://www.stjames-franklin.org/",
  "crawl_status": "ok",
- "crawl_env": "sandbox",
+ "crawl_env": "runner-rendered",
  "robots_note": "ok",
  "pages": [
   {
@@ -72,7 +72,80 @@
   ]
  },
  "template": "generic-html:duda",
- "groups": [],
+ "groups": [
+  {
+   "id": "stjames-franklin.org:choir",
+   "name": "Cantors",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "choir_music",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.stjames-franklin.org/contact",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stjames-franklin.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:43:39+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "stjames-franklin.org:choir_youth",
+   "name": "Children and Youth Choir",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "choir_music",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.stjames-franklin.org/contact",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stjames-franklin.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:43:39+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "stjames-franklin.org:choir|hand",
+   "name": "Handbells",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "choir_music",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.stjames-franklin.org/contact",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stjames-franklin.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:43:39+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "stjames-franklin.org:funeral|greeter",
+   "name": "Funeral Greeters",
+   "category": "grief_support",
+   "category_label": "Grief & support",
+   "subcategory": "funeral_ministry",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.stjames-franklin.org/contact",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stjames-franklin.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:43:39+00:00",
+   "confidence": "medium"
+  }
+ ],
  "calendar_feeds": [
   {
    "feed_id": "stjames-franklin.org:ics:1c2061f3",
@@ -87,7 +160,7 @@
    "feed_key": "1c2061f3a064",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T02:36:59+00:00",
+    "fetched_at": "2026-11-01T17:51:14+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -131,7 +204,7 @@
    "language": null,
    "raw": "When is reconciliation offered?: Saturdays, 3:00 PM - 3:45 PM, or by appointment.",
    "source_url": "https://www.stjames-franklin.org/reconciliation",
-   "fetched_at": "2026-11-01T02:00:21+00:00",
+   "fetched_at": "2026-11-01T17:43:40+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -144,7 +217,7 @@
    "language": null,
    "raw": "Children’s Liturgy of the Word is offered year round during the Sunday, 10:00AM Mass.",
    "source_url": "https://www.stjames-franklin.org/children-s-liturgy-of-the-word",
-   "fetched_at": "2026-11-01T02:00:22+00:00",
+   "fetched_at": "2026-11-01T17:43:42+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "high",
@@ -157,15 +230,37 @@
    "language": null,
    "raw": "Eucharistic Adoration: 1st Friday's of the Month: 12:00 PM",
    "source_url": "https://www.stjames-franklin.org/",
-   "fetched_at": "2026-11-01T02:00:20+00:00",
+   "fetched_at": "2026-11-01T17:43:39+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "16:00",
+   "language": null,
+   "raw": "Saturday Vigil: 4:00 PM",
+   "source_url": "https://www.stjames-franklin.org/",
+   "fetched_at": "2026-11-01T17:43:39+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Sunday: 8:00 AM, 10:00 AM﻿",
+   "source_url": "https://www.stjames-franklin.org/",
+   "fetched_at": "2026-11-01T17:43:39+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
   }
  ],
  "source_url": "http://www.stjames-franklin.org/",
- "fetched_at": "2026-11-01T02:00:27+00:00",
+ "fetched_at": "2026-11-01T17:43:49+00:00",
  "schedule_template": {
   "template": "generic_strict",
   "version": "ca-sites/2",
@@ -184,10 +279,14 @@
   "trusted_candidate": false,
   "generic_rows": 19
  },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "box_rows_added": 2
+ },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-10-31",
-  "window_end_exclusive": "2027-01-29",
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
@@ -195,7 +294,20 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "office_contact": {
+  "email": null,
+  "phone": "(414) 761-0480",
+  "address": "7219 S. 27th St., Franklin, WI 53132",
+  "source_url": "https://www.stjames-franklin.org/contact",
+  "sources": {
+   "phone": "https://www.stjames-franklin.org/contact",
+   "address": "https://www.stjames-franklin.org/contact"
+  },
+  "fetched_at": "2026-11-01T17:43:49+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
- }
+ },
+ "fetch_mode": "rendered"
 }

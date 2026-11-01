@@ -22,7 +22,7 @@
  "home_url": "http://www.stbarnabascc.org/",
  "final_url": "https://www.stbarnabascc.org/",
  "crawl_status": "ok",
- "crawl_env": "sandbox",
+ "crawl_env": "runner-rendered",
  "robots_note": "ok",
  "pages": [
   {
@@ -75,7 +75,44 @@
   ]
  },
  "template": "generic-html:duda",
- "groups": [],
+ "groups": [
+  {
+   "id": "stbarnabascc.org:children_ff",
+   "name": "Religious Education",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "children_faith_formation",
+   "audience": "families",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.stbarnabascc.org/contact",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stbarnabascc.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:43:31+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "stbarnabascc.org:food",
+   "name": "Food Pantry",
+   "category": "service_mercy",
+   "category_label": "Service & mercy",
+   "subcategory": "food_ministry",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.stbarnabascc.org/contact",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stbarnabascc.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:43:31+00:00",
+   "confidence": "medium"
+  }
+ ],
  "calendar_feeds": [
   {
    "feed_id": "stbarnabascc.org:ics:9dd15ff8",
@@ -90,7 +127,7 @@
    "feed_key": "9dd15ff893af",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T02:36:51+00:00",
+    "fetched_at": "2026-11-01T17:51:13+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -117,11 +154,12 @@
    "language": null,
    "raw": "[St. Barnabas Parish - St. Augustine Site] Saturday Vigil: 4:00pm at St. Augustine Site",
    "source_url": "https://www.stbarnabascc.org/",
-   "fetched_at": "2026-11-01T02:00:17+00:00",
+   "fetched_at": "2026-11-01T17:43:31+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
-   "template": "generic_strict"
+   "template": "generic_strict",
+   "location": "St. Barnabas Parish - St. Augustine Site"
   },
   {
    "kind": "mass",
@@ -130,11 +168,12 @@
    "language": "Spanish",
    "raw": "[St. Barnabas Parish - Holy Assumption Site] Saturday Vigil: 7:00pm at Holy Assumption Site in Spanish",
    "source_url": "https://www.stbarnabascc.org/",
-   "fetched_at": "2026-11-01T02:00:17+00:00",
+   "fetched_at": "2026-11-01T17:43:31+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
-   "template": "generic_strict"
+   "template": "generic_strict",
+   "location": "St. Barnabas Parish - Holy Assumption Site"
   },
   {
    "kind": "mass",
@@ -143,7 +182,7 @@
    "language": null,
    "raw": "Sunday Mass: 9:00 a.m. and 10:30am at Holy Assumption Site",
    "source_url": "https://www.stbarnabascc.org/",
-   "fetched_at": "2026-11-01T02:00:17+00:00",
+   "fetched_at": "2026-11-01T17:43:31+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -156,11 +195,12 @@
    "language": null,
    "raw": "[St. Barnabas Parish - Holy Assumption Site] Sunday Mass: 9:00 a.m. and 10:30am at Holy Assumption Site",
    "source_url": "https://www.stbarnabascc.org/",
-   "fetched_at": "2026-11-01T02:00:17+00:00",
+   "fetched_at": "2026-11-01T17:43:31+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
-   "template": "generic_strict"
+   "template": "generic_strict",
+   "location": "St. Barnabas Parish - Holy Assumption Site"
   },
   {
    "kind": "confession",
@@ -169,11 +209,12 @@
    "language": null,
    "raw": "[St. Barnabas Parish - St. Augustine Site] Confession: Saturday: 3:00pm at St. Augustine Site",
    "source_url": "https://www.stbarnabascc.org/",
-   "fetched_at": "2026-11-01T02:00:17+00:00",
+   "fetched_at": "2026-11-01T17:43:31+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
-   "template": "generic_strict"
+   "template": "generic_strict",
+   "location": "St. Barnabas Parish - St. Augustine Site"
   },
   {
    "kind": "confession",
@@ -182,11 +223,12 @@
    "language": null,
    "raw": "[St. Barnabas Parish - Holy Assumption Site] Confession: Saturday: 6:00pm at Holy Assumption Site",
    "source_url": "https://www.stbarnabascc.org/",
-   "fetched_at": "2026-11-01T02:00:17+00:00",
+   "fetched_at": "2026-11-01T17:43:31+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
-   "template": "generic_strict"
+   "template": "generic_strict",
+   "location": "St. Barnabas Parish - Holy Assumption Site"
   },
   {
    "kind": "adoration",
@@ -195,15 +237,16 @@
    "language": null,
    "raw": "[St. Barnabas Parish - St. Augustine Site] Eucharistic Adoration: Friday: 5:00pm to 9:00pm at St. Augustine Site",
    "source_url": "https://www.stbarnabascc.org/",
-   "fetched_at": "2026-11-01T02:00:17+00:00",
+   "fetched_at": "2026-11-01T17:43:31+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
-   "template": "generic_strict"
+   "template": "generic_strict",
+   "location": "St. Barnabas Parish - St. Augustine Site"
   }
  ],
  "source_url": "http://www.stbarnabascc.org/",
- "fetched_at": "2026-11-01T02:00:23+00:00",
+ "fetched_at": "2026-11-01T17:43:41+00:00",
  "schedule_template": {
   "template": "generic_strict",
   "version": "ca-sites/2",
@@ -220,12 +263,13 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
-  "generic_rows": 19
+  "generic_rows": 20
  },
+ "has_sunday": true,
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-10-31",
-  "window_end_exclusive": "2027-01-29",
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
@@ -233,7 +277,19 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "office_contact": {
+  "email": null,
+  "phone": "(414) 774-3010",
+  "address": null,
+  "source_url": "https://www.stbarnabascc.org/contact",
+  "sources": {
+   "phone": "https://www.stbarnabascc.org/contact"
+  },
+  "fetched_at": "2026-11-01T17:43:41+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
- }
+ },
+ "fetch_mode": "rendered"
 }
