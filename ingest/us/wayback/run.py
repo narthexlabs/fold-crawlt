@@ -47,7 +47,32 @@ def commit_push(what: str) -> None:
     print("  push failed twice; will retry at the next batch", flush=True)
 
 
+def report() -> None:
+    """Rewrite the counts block of data/real/us/wayback/README.md from the state files and the written records."""
+    import json
+    from collections import Counter
+    W = ROOT / "data" / "real" / "us" / "wayback"
+    ds = json.loads((W / "dioceses_state.json").read_text()) if (W / "dioceses_state.json").exists() else {}
+    ss = json.loads((W / "sites_state.json").read_text()) if (W / "sites_state.json").exists() else {}
+    dw = [v for v in ds.values() if v.get("result") == "written"]
+    sw = [v for v in ss.values() if v.get("result") == "written"]
+    lines = [f"**Counts ({datetime.now(timezone.utc):%Y-%m-%d}).**",
+             f"- A. Diocese directories: {len(ds)} tried; results {dict(Counter(v.get('result') for v in ds.values()))}; "
+             f"written {len(dw)} sees, {sum(v.get('records', 0) for v in dw)} parishes, {sum(v.get('with_website', 0) for v in dw)} with a website.",
+             f"- B. Parish sites: {len(ss)} tried; results {dict(Counter(v.get('result') for v in ss.values()))}; written {len(sw)} sites: "
+             f"{sum(v.get('groups', 0) for v in sw)} groups, {sum(1 for v in sw if v.get('bulletin'))} sites with a bulletin link, "
+             f"{sum(v.get('schedule_rows', 0) for v in sw)} schedule rows (all needs_review)."]
+    p = W / "README.md"
+    t = p.read_text()
+    a = t.index("**Count")
+    b = t.index("## What is written")
+    p.write_text(t[:a] + "\n".join(lines) + "\n\n" + t[b:])
+
+
 def main() -> int:
+    if "--report" in sys.argv:
+        report()
+        return 0
     ap = argparse.ArgumentParser()
     ap.add_argument("--minutes", type=float, default=110)
     ap.add_argument("--git", action="store_true")
@@ -73,6 +98,10 @@ def main() -> int:
         print("STOP:", e, flush=True)
         rc = 0
     finally:
+        try:
+            report()
+        except Exception as e:  # noqa: BLE001
+            print("report failed:", e)
         if cb:
             cb("final")
     print(f"archive requests: {arch.n}; log: {arch.log[-5:]}")
