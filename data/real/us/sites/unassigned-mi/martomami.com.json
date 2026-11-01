@@ -19,7 +19,7 @@
  "home_url": "https://www.martomami.com/",
  "final_url": "https://www.martomami.com/",
  "crawl_status": "ok",
- "crawl_env": "sandbox",
+ "crawl_env": "runner-rendered",
  "robots_note": "ok",
  "pages": [
   {
@@ -66,7 +66,26 @@
   ]
  },
  "template": "generic-html:wix",
- "groups": [],
+ "groups": [
+  {
+   "id": "martomami.com:young_adults",
+   "name": "Young Adult Group",
+   "category": "young_adults",
+   "category_label": "Young adults",
+   "subcategory": "young_adult_group",
+   "audience": "young_adult",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.martomami.com/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.martomami.com/yag",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:50:00+00:00",
+   "confidence": "medium"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
  "social": {
@@ -87,7 +106,7 @@
    "language": "English",
    "raw": "10:00 am Syriac - English Mass",
    "source_url": "https://www.martomami.com/mass-schedule",
-   "fetched_at": "2026-11-01T03:05:57+00:00",
+   "fetched_at": "2026-11-01T17:49:54+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -100,7 +119,7 @@
    "language": "Arabic",
    "raw": "12:00 pm Syriac - Arabic Mass",
    "source_url": "https://www.martomami.com/mass-schedule",
-   "fetched_at": "2026-11-01T03:05:57+00:00",
+   "fetched_at": "2026-11-01T17:49:54+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -113,7 +132,7 @@
    "language": null,
    "raw": "Weekday Mass: Monday 5:00 pm",
    "source_url": "https://www.martomami.com/mass-schedule",
-   "fetched_at": "2026-11-01T03:05:57+00:00",
+   "fetched_at": "2026-11-01T17:49:54+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -126,7 +145,7 @@
    "language": null,
    "raw": "Weekday Mass: Tuesday - Friday 9:00 am",
    "source_url": "https://www.martomami.com/mass-schedule",
-   "fetched_at": "2026-11-01T03:05:57+00:00",
+   "fetched_at": "2026-11-01T17:49:54+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -140,12 +159,14 @@
    "language": null,
    "raw": "Weekday Mass: Tuesday - Friday 9:00 am",
    "source_url": "https://www.martomami.com/mass-schedule",
-   "fetched_at": "2026-11-01T03:05:57+00:00",
+   "fetched_at": "2026-11-01T17:49:54+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "wix",
-   "day_expanded_from": "Tuesday - Friday"
+   "day_expanded_from": "Tuesday - Friday",
+   "day_parsed": "Tuesday",
+   "day_bound_from_line": true
   },
   {
    "kind": "mass",
@@ -154,12 +175,14 @@
    "language": null,
    "raw": "Weekday Mass: Tuesday - Friday 9:00 am",
    "source_url": "https://www.martomami.com/mass-schedule",
-   "fetched_at": "2026-11-01T03:05:57+00:00",
+   "fetched_at": "2026-11-01T17:49:54+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "wix",
-   "day_expanded_from": "Tuesday - Friday"
+   "day_expanded_from": "Tuesday - Friday",
+   "day_parsed": "Tuesday",
+   "day_bound_from_line": true
   },
   {
    "kind": "mass",
@@ -168,12 +191,14 @@
    "language": null,
    "raw": "Weekday Mass: Tuesday - Friday 9:00 am",
    "source_url": "https://www.martomami.com/mass-schedule",
-   "fetched_at": "2026-11-01T03:05:57+00:00",
+   "fetched_at": "2026-11-01T17:49:54+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "wix",
-   "day_expanded_from": "Tuesday - Friday"
+   "day_expanded_from": "Tuesday - Friday",
+   "day_parsed": "Tuesday",
+   "day_bound_from_line": true
   },
   {
    "kind": "adoration",
@@ -182,28 +207,15 @@
    "language": null,
    "raw": "Adoration & Benediction: 6:00 pm Every First Thursday of the month.",
    "source_url": "https://www.martomami.com/mass-schedule",
-   "fetched_at": "2026-11-01T03:05:57+00:00",
+   "fetched_at": "2026-11-01T17:49:54+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "wix"
-  },
-  {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "09:00-12:00",
-   "language": null,
-   "raw": "Confession time: every Saturday from 9:00am-12:00noon Or you can set a time for confession contact Fr. Muntaser Haddad.",
-   "source_url": "https://www.martomami.com/reconciliation",
-   "fetched_at": "2026-11-01T03:05:58+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "wix"
   }
  ],
  "source_url": "https://www.martomami.com/",
- "fetched_at": "2026-11-01T03:06:07+00:00",
+ "fetched_at": "2026-11-01T17:50:07+00:00",
  "schedule_template": {
   "template": "wix",
   "version": "ca-sites/2",
@@ -222,13 +234,15 @@
   "trusted_candidate": false,
   "generic_rows": 11
  },
+ "has_sunday": true,
  "schedule_dropped": {
-  "no_day": 1
+  "no_day": 1,
+  "prose": 1
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-10-31",
-  "window_end_exclusive": "2027-01-29",
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
@@ -236,7 +250,21 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "office_contact": {
+  "email": "info@martomami.com",
+  "phone": "(248) 536-2176",
+  "address": "25600 Drake RD, Farmington Hills, MI 48335",
+  "source_url": "https://www.martomami.com/contact-us",
+  "sources": {
+   "email": "https://www.martomami.com/contact-us",
+   "phone": "https://www.martomami.com/contact-us",
+   "address": "https://www.martomami.com/contact-us"
+  },
+  "fetched_at": "2026-11-01T17:50:07+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
- }
+ },
+ "fetch_mode": "rendered"
 }
