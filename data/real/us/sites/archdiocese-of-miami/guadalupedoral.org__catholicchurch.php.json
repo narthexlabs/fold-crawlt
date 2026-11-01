@@ -423,7 +423,7 @@
    "feed_key": "8e0016b7d9c7",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T22:19:36+00:00",
+    "fetched_at": "2026-11-01T23:36:17+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -442,7 +442,7 @@
    "feed_key": "e962619679ee",
    "last_fetch": {
     "status": 404,
-    "fetched_at": "2026-11-01T22:19:37+00:00",
+    "fetched_at": "2026-11-01T23:36:18+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -502,6 +502,17 @@
    "review_reason": null,
    "confidence": "high",
    "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:30",
+   "language": null,
+   "raw": "Saturday 5:30 pm",
+   "source_url": "https://www.guadalupedoral.org/CatholicChurch.php",
+   "fetched_at": "2026-11-01T22:15:25+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
   }
  ],
  "source_url": "https://www.guadalupedoral.org/CatholicChurch.php",
@@ -524,11 +535,11 @@
   "trusted_candidate": false,
   "generic_rows": 17
  },
- "has_sunday": false,
- "schedule_partial": true,
+ "has_sunday": true,
  "schedule_dropped": {
   "dated_line": 1,
-  "skipped_section": 10
+  "skipped_section": 10,
+  "weekend_rescue_added": 1
  },
  "groups_dropped": {
   "noise": 2,
