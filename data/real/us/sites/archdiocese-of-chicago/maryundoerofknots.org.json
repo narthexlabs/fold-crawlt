@@ -2,16 +2,23 @@
  "domain": "maryundoerofknots.org",
  "diocese": "archdiocese-of-chicago",
  "matched_church_ids": [
-  "archdiocese-of-chicago:Mary, Undoer of Knots Parish"
+  "archdiocese-of-chicago:Mary, Undoer of Knots Parish",
+  "st-constance-chicago-il",
+  "st-robert-bellarmine-chicago-il"
  ],
  "matched": {
   "directory": [
    "archdiocese-of-chicago:Mary, Undoer of Knots Parish"
   ],
-  "discovermass": []
+  "discovermass": [
+   "st-constance-chicago-il",
+   "st-robert-bellarmine-chicago-il"
+  ]
  },
  "names": [
-  "Mary, Undoer of Knots Parish"
+  "Mary, Undoer of Knots Parish",
+  "St. Constance",
+  "St. Robert Bellarmine"
  ],
  "cities": [
   "Chicago"
@@ -446,6 +453,34 @@
  },
  "schedule_rows": [
   {
+   "kind": "confession",
+   "day": "Tuesday",
+   "time": "18:00-19:00",
+   "language": "Polish/English",
+   "raw": "[St. Constance] Confessions/Reconciliation: Tuesdays 6:00pm to 7:00pm Polish & English",
+   "source_url": "https://maryundoerofknots.org/sacramental-life/",
+   "fetched_at": "2026-11-01T07:27:55+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "location": "St. Constance"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "16:00-16:45",
+   "language": "English",
+   "raw": "[St. Robert Bellarmine] Confessions/Reconciliation: Saturdays 4:00pm to 4:45pm English",
+   "source_url": "https://maryundoerofknots.org/sacramental-life/",
+   "fetched_at": "2026-11-01T07:27:55+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "location": "St. Robert Bellarmine"
+  },
+  {
    "kind": "mass",
    "day": "Wednesday",
    "time": "19:30",
@@ -720,12 +755,11 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 16
+  "generic_rows": 18
  },
  "has_sunday": true,
  "schedule_dropped": {
   "not_a_service": 2,
-  "other_location": 2,
   "skipped_section": 2,
   "relative_time": 2,
   "box_rows_added": 19

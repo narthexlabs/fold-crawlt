@@ -2,16 +2,23 @@
  "domain": "olhfchi.org",
  "diocese": "archdiocese-of-chicago",
  "matched_church_ids": [
-  "archdiocese-of-chicago:Our Lady of the Holy Family Parish"
+  "archdiocese-of-chicago:Our Lady of the Holy Family Parish",
+  "holy-family-chicago-il",
+  "notre-dame-de-chicago-chicago-il"
  ],
  "matched": {
   "directory": [
    "archdiocese-of-chicago:Our Lady of the Holy Family Parish"
   ],
-  "discovermass": []
+  "discovermass": [
+   "holy-family-chicago-il",
+   "notre-dame-de-chicago-chicago-il"
+  ]
  },
  "names": [
-  "Our Lady of the Holy Family Parish"
+  "Our Lady of the Holy Family Parish",
+  "Holy Family",
+  "Notre Dame De Chicago"
  ],
  "cities": [
   "Chicago"
@@ -246,76 +253,11 @@
    "template": "wix"
   },
   {
-   "kind": "confession",
-   "day": "Monday",
-   "time": "18:30",
-   "language": null,
-   "raw": "6:00 PM Mass - in Church, 6:30PM Confession and Exposition of the Most Blessed Sacrament, with Benediction at 7:30PM",
-   "source_url": "https://www.olhfchi.org/mass-schedule",
-   "fetched_at": "2026-11-01T07:28:01+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wix"
-  },
-  {
-   "kind": "mass",
-   "day": "Tuesday",
-   "time": "08:30",
-   "language": null,
-   "raw": "8:30 AM Mass - Celebrated in the House Chapel",
-   "source_url": "https://www.olhfchi.org/mass-schedule",
-   "fetched_at": "2026-11-01T07:28:01+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wix"
-  },
-  {
-   "kind": "mass",
-   "day": "Wednesday",
-   "time": "08:30",
-   "language": null,
-   "raw": "8:30 AM Mass - Celebrated in the House Chapel",
-   "source_url": "https://www.olhfchi.org/mass-schedule",
-   "fetched_at": "2026-11-01T07:28:01+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wix"
-  },
-  {
    "kind": "mass",
    "day": "Friday",
    "time": "18:00",
    "language": null,
    "raw": "6:00 PM Mass - in Church, 6:30PM Confession and Exposition of the Most Blessed Sacrament, with Benediction at 7:30PM",
-   "source_url": "https://www.olhfchi.org/mass-schedule",
-   "fetched_at": "2026-11-01T07:28:01+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wix"
-  },
-  {
-   "kind": "confession",
-   "day": "Friday",
-   "time": "18:30",
-   "language": null,
-   "raw": "6:00 PM Mass - in Church, 6:30PM Confession and Exposition of the Most Blessed Sacrament, with Benediction at 7:30PM",
-   "source_url": "https://www.olhfchi.org/mass-schedule",
-   "fetched_at": "2026-11-01T07:28:01+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wix"
-  },
-  {
-   "kind": "mass",
-   "day": "Saturday",
-   "time": "17:00",
-   "language": null,
-   "raw": "5:00 PM [Mass intention withheld]",
    "source_url": "https://www.olhfchi.org/mass-schedule",
    "fetched_at": "2026-11-01T07:28:01+00:00",
    "needs_review": false,
@@ -346,9 +288,9 @@
  },
  "has_sunday": true,
  "schedule_dropped": {
+  "other_location": 7,
   "benediction_end": 2,
   "not_a_service": 1,
-  "other_location": 2,
   "relative_time": 1
  },
  "groups_dropped": {
@@ -378,7 +320,6 @@
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
  },
  "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()",
-  "intentions_withheld": 1
+  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

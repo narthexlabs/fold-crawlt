@@ -2,16 +2,26 @@
  "domain": "stoscarromerochicago.org",
  "diocese": "archdiocese-of-chicago",
  "matched_church_ids": [
-  "archdiocese-of-chicago:St. Oscar Romero Parish"
+  "archdiocese-of-chicago:St. Oscar Romero Parish",
+  "holy-cross-immaculate-heart-of-mary-chicago-il",
+  "st-joseph-chicago-il",
+  "st-michael-the-archangel-chicago-il"
  ],
  "matched": {
   "directory": [
    "archdiocese-of-chicago:St. Oscar Romero Parish"
   ],
-  "discovermass": []
+  "discovermass": [
+   "holy-cross-immaculate-heart-of-mary-chicago-il",
+   "st-joseph-chicago-il",
+   "st-michael-the-archangel-chicago-il"
+  ]
  },
  "names": [
-  "St. Oscar Romero Parish"
+  "St. Oscar Romero Parish",
+  "Holy Cross-Immaculate Heart of Mary",
+  "St. Joseph",
+  "St. Michael the Archangel"
  ],
  "cities": [
   "Chicago"
@@ -201,18 +211,33 @@
    "template": "weebly"
   },
   {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": "English",
+   "raw": "[St. Michael the Archangel] St. Michael SUNDAY Mass Schedule / Misa Dominical Templo San Miguel: Spanish / Español - 8:00 am & 12:00 pm; English Mass - 10:00 am",
+   "source_url": "https://www.stoscarromerochicago.org/mass-schedule.html",
+   "fetched_at": "2026-11-01T07:28:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "weebly",
+   "location": "St. Michael the Archangel"
+  },
+  {
    "kind": "other",
    "day": "Holy days",
    "time": "09:00",
    "language": null,
-   "raw": "Holiday mass schedules - misas en los DIAS DE FIESTA :: 9:00 A.M. - St. Joseph Church / Templo de San José - 9:00 A.M.",
+   "raw": "[St. Joseph] Holiday mass schedules - misas en los DIAS DE FIESTA :: 9:00 A.M. - St. Joseph Church / Templo de San José - 9:00 A.M.",
    "source_url": "https://www.stoscarromerochicago.org/mass-schedule.html",
    "fetched_at": "2026-11-01T07:28:01+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "weebly",
-   "kind_parsed": "mass"
+   "kind_parsed": "mass",
+   "location": "St. Joseph"
   },
   {
    "kind": "adoration",
@@ -263,8 +288,8 @@
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 5,
-  "prose": 1
+  "not_a_service": 1,
+  "prose": 2
  },
  "groups_dropped": {
   "unmatched": 1,

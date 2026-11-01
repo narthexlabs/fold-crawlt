@@ -2,19 +2,31 @@
  "domain": "stmarymagdaleneparish.org",
  "diocese": "archdiocese-of-chicago",
  "matched_church_ids": [
-  "archdiocese-of-chicago:St. Mary Magdalene Parish"
+  "archdiocese-of-chicago:St. Mary Magdalene Parish",
+  "st-benedict-blue-island-il",
+  "st-peter-claver-mission-robbins-il",
+  "st-walter-chicago-il"
  ],
  "matched": {
   "directory": [
    "archdiocese-of-chicago:St. Mary Magdalene Parish"
   ],
-  "discovermass": []
+  "discovermass": [
+   "st-benedict-blue-island-il",
+   "st-walter-chicago-il",
+   "st-peter-claver-mission-robbins-il"
+  ]
  },
  "names": [
-  "St. Mary Magdalene Parish"
+  "St. Mary Magdalene Parish",
+  "St. Benedict",
+  "St. Walter",
+  "St. Peter Claver Mission"
  ],
  "cities": [
-  "Blue Island"
+  "Blue Island",
+  "Chicago",
+  "Robbins"
  ],
  "home_url": "https://www.stmarymagdaleneparish.org/",
  "final_url": "https://www.stmarymagdaleneparish.org/",
@@ -96,30 +108,46 @@
    "template": "wix"
   },
   {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "08:30-09:30",
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "08:30",
    "language": null,
-   "raw": "CONFESSIONS: Saturday Mornings 8:30 am – 9:30 am at St. Benedict Church",
+   "raw": "[St. Benedict] WEEKDAY MASS SCHEDULE: Wednesday 8:30 am",
    "source_url": "https://www.stmarymagdaleneparish.org/mass-schedule",
    "fetched_at": "2026-11-01T07:28:01+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
-   "template": "wix"
+   "template": "wix",
+   "location": "St. Benedict"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "08:30-09:30",
+   "language": null,
+   "raw": "[St. Benedict] CONFESSIONS: Saturday Mornings 8:30 am – 9:30 am at St. Benedict Church",
+   "source_url": "https://www.stmarymagdaleneparish.org/mass-schedule",
+   "fetched_at": "2026-11-01T07:28:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "location": "St. Benedict"
   },
   {
    "kind": "adoration",
    "day": "Tuesday",
    "time": "19:00-20:00",
    "language": null,
-   "raw": "EUCHARISTIC ADORATION: Tuesday Evenings 7:00 pm – 8:00 pm at St. Benedict Church",
+   "raw": "[St. Benedict] EUCHARISTIC ADORATION: Tuesday Evenings 7:00 pm – 8:00 pm at St. Benedict Church",
    "source_url": "https://www.stmarymagdaleneparish.org/mass-schedule",
    "fetched_at": "2026-11-01T07:28:01+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
-   "template": "wix"
+   "template": "wix",
+   "location": "St. Benedict"
   },
   {
    "kind": "mass",
@@ -190,17 +218,6 @@
   {
    "kind": "mass",
    "day": "Wednesday",
-   "time": "08:30",
-   "language": null,
-   "raw": "Wednesday 8:30 am",
-   "source_url": "https://www.stmarymagdaleneparish.org/mass-schedule",
-   "fetched_at": "2026-11-01T07:28:01+00:00",
-   "needs_review": false,
-   "review_reason": "schedule_box"
-  },
-  {
-   "kind": "mass",
-   "day": "Wednesday",
    "time": "19:00",
    "language": null,
    "raw": "Wednesday 7:00 PM – 9:00 pm at St. Benedict Church",
@@ -232,10 +249,10 @@
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 7,
+  "other_location": 6,
   "not_a_service": 2,
   "range_not_a_mass": 1,
-  "box_rows_added": 8
+  "box_rows_added": 7
  },
  "groups_dropped": {},
  "event_counts": {
