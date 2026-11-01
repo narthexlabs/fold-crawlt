@@ -326,6 +326,8 @@ def parse(dio: str, only_all: bool = False, log=print) -> int:
         if fn.exists() and out_exists(dio, s["key"]) and str(json.loads(fn.read_text()).get("crawl_status", "")).startswith("wayback-") \
                 and m.get("status") != "ok":
             continue                      # a Wayback recovery is not overwritten by a re-parse of the live challenge page
+        if fn.exists() and not m.get("rendered") and '"fetch_mode": "rendered"' in fn.read_text():
+            continue                      # a rendered read (render_fetch.py) is not overwritten from a plain, JS-less cache
         if only_all or not fn.exists() or fn.stat().st_mtime < (RAW / s["key"].replace("/", "__") / "manifest.json").stat().st_mtime:
             keys.add(s["key"])
     if not keys:
