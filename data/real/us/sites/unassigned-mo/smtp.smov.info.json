@@ -1,0 +1,141 @@
+{
+ "domain": "smtp.smov.info",
+ "diocese": "unassigned-mo",
+ "matched_church_ids": [
+  "brave:MO|mary victories louis|"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "brave:MO|mary victories louis|"
+  ]
+ },
+ "names": [
+  "St Mary Of Victories"
+ ],
+ "cities": [
+  "St Louis"
+ ],
+ "home_url": "https://smtp.smov.info/",
+ "final_url": "https://smtp.smov.info/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://smtp.smov.info/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://smtp.smov.info/pages/mass-times.html",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://smtp.smov.info/pages/latin-mass.html",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://smtp.smov.info/pages/bulletins.html",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://smtp.smov.info/public-calendar.php",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "unknown",
+  "evidence": []
+ },
+ "template": "generic-html:unknown",
+ "groups": [],
+ "calendar_feeds": [],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/stmaryofvictories"
+  ],
+  "youtube": [
+   "https://www.youtube.com/@smovinfo1"
+  ]
+ },
+ "bulletin": {
+  "url": "https://smtp.smov.info/pages/bulletins.html",
+  "date": null,
+  "kind": "page",
+  "text": "Bulletins",
+  "source_url": "https://smtp.smov.info/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:00",
+   "language": null,
+   "raw": "Sunday Mass: 11:00 AM",
+   "source_url": "https://smtp.smov.info/pages/mass-times.html",
+   "fetched_at": "2026-11-01T17:27:07+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  }
+ ],
+ "source_url": "https://smtp.smov.info/",
+ "fetched_at": "2026-11-01T17:27:13+00:00",
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": true,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "has_sunday": true,
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": "welcome@smov.info",
+  "phone": "(314) 231-8101",
+  "address": null,
+  "source_url": "https://smtp.smov.info/",
+  "sources": {
+   "email": "https://smtp.smov.info/",
+   "phone": "https://smtp.smov.info/"
+  },
+  "fetched_at": "2026-11-01T17:27:04+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

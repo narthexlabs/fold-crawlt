@@ -1,0 +1,161 @@
+{
+ "domain": "qaskofc.com",
+ "diocese": "unassigned-mo",
+ "matched_church_ids": [
+  "brave:MO|queen all saints louis|"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "brave:MO|queen all saints louis|"
+  ]
+ },
+ "names": [
+  "Queen Of All Saints"
+ ],
+ "cities": [
+  "St Louis"
+ ],
+ "home_url": "https://qaskofc.com/",
+ "final_url": "https://qaskofc.com/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://qaskofc.com/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://qaskofc.com/council-activities",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://qaskofc.com/current-newsletter",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-content"
+  ]
+ },
+ "template": "wordpress-rest+html",
+ "groups": [],
+ "calendar_feeds": [
+  {
+   "feed_id": "qaskofc.com:ics:c65f4fd4",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": null,
+   "page_url": "https://qaskofc.com/",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (embedded on page)",
+   "display_tz": "America/Chicago",
+   "url_withheld": "calendar id is an e-mail address; not stored",
+   "feed_key": "c65f4fd4d670",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T17:31:16+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  },
+  {
+   "feed_id": "qaskofc.com:tribe_rest:00b4690d",
+   "type": "tribe_rest",
+   "platform": "The Events Calendar (WordPress)",
+   "url": "https://qaskofc.com/wp-json/tribe/events/v1/events",
+   "page_url": "https://qaskofc.com/",
+   "label": null,
+   "status": "active",
+   "note": "The Events Calendar (WordPress) REST API",
+   "last_fetch": {
+    "status": 200,
+    "fetched_at": "2026-11-01T17:31:16+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
+ "events": [],
+ "social": {},
+ "bulletin": null,
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "06:15",
+   "language": null,
+   "raw": "Mass: Officer meetings are also on the second Monday at 6:15 in the parish hall.",
+   "source_url": "https://qaskofc.com/council-activities",
+   "fetched_at": "2026-11-01T17:26:58+00:00",
+   "needs_review": true,
+   "review_reason": "nth_of_month",
+   "confidence": "low",
+   "template": "wordpress",
+   "nth": "second"
+  }
+ ],
+ "source_url": "https://qaskofc.com/",
+ "fetched_at": "2026-11-01T17:27:02+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "has_sunday": false,
+ "schedule_partial": true,
+ "schedule_dropped": {
+  "not_a_service": 1
+ },
+ "groups_dropped": {
+  "label_not_group": 1,
+  "unmatched": 2
+ },
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": null,
+  "address": "6603 Christopher Rd., St. Louis, Mo. 63129",
+  "source_url": "https://qaskofc.com/",
+  "sources": {
+   "address": "https://qaskofc.com/"
+  },
+  "fetched_at": "2026-11-01T17:26:56+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}
