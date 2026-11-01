@@ -2,16 +2,19 @@
  "domain": "stannchurchsebring.org",
  "diocese": "diocese-of-youngstown",
  "matched_church_ids": [
+  "diocese-of-youngstown:Saint Ann Parish",
   "diocese-of-youngstown:St. Ann Parish (Sebring)"
  ],
  "matched": {
   "directory": [
-   "diocese-of-youngstown:St. Ann Parish (Sebring)"
+   "diocese-of-youngstown:St. Ann Parish (Sebring)",
+   "diocese-of-youngstown:Saint Ann Parish"
   ],
   "discovermass": []
  },
  "names": [
-  "St. Ann Parish (Sebring)"
+  "St. Ann Parish (Sebring)",
+  "Saint Ann Parish"
  ],
  "cities": [
   "Sebring"
@@ -19,7 +22,7 @@
  "home_url": "https://www.stannchurchsebring.org/",
  "final_url": "https://www.stannchurchsebring.org/",
  "crawl_status": "ok",
- "crawl_env": "sandbox",
+ "crawl_env": "runner-rendered",
  "robots_note": "ok",
  "pages": [
   {
@@ -60,7 +63,44 @@
   ]
  },
  "template": "generic-html:wix",
- "groups": [],
+ "groups": [
+  {
+   "id": "stannchurchsebring.org:servers",
+   "name": "Altar Server",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "altar_servers",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "If you have received your First Eucharist, you are able to assist at mass by becoming an Altar Server. Adults are welcome too! For training and more information, please contact the office.",
+   "contact_url": "https://www.stannchurchsebring.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stannchurchsebring.org/get-involved",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:48:21+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "stannchurchsebring.org:lectors",
+   "name": "Eucharistic Minister/ Lector",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "lectors",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "If you have been confirmed, you are able to become a lector or a minister of the Holy Eucharist during masses! We always welcome anyone who wishes to help! If you are interested in become a Lector or Eucharistic Minister,…",
+   "contact_url": "https://www.stannchurchsebring.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stannchurchsebring.org/get-involved",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:48:21+00:00",
+   "confidence": "medium"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
  "social": {
@@ -83,7 +123,7 @@
    "language": null,
    "raw": "Mass 4:00 pm",
    "source_url": "https://www.stannchurchsebring.org/",
-   "fetched_at": "2026-11-01T02:09:52+00:00",
+   "fetched_at": "2026-11-01T17:48:11+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -96,7 +136,7 @@
    "language": null,
    "raw": "Adoration first Friday of the Month from 9:00 am - 12:00pm",
    "source_url": "https://www.stannchurchsebring.org/",
-   "fetched_at": "2026-11-01T02:09:52+00:00",
+   "fetched_at": "2026-11-01T17:48:11+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "high",
@@ -104,7 +144,7 @@
   }
  ],
  "source_url": "https://www.stannchurchsebring.org/",
- "fetched_at": "2026-11-01T02:09:57+00:00",
+ "fetched_at": "2026-11-01T17:48:43+00:00",
  "schedule_template": {
   "template": "wix",
   "version": "ca-sites/2",
@@ -123,12 +163,13 @@
   "trusted_candidate": false,
   "generic_rows": 2
  },
+ "has_sunday": true,
  "groups_dropped": {
   "noise": 1
  },
  "event_counts": {
-  "window_start": "2026-10-31",
-  "window_end_exclusive": "2027-01-29",
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
@@ -136,7 +177,20 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "office_contact": {
+  "email": null,
+  "phone": "(330) 938-2033",
+  "address": "323 S. 15th Street, Sebring, OH 44672",
+  "source_url": "https://www.stannchurchsebring.org/",
+  "sources": {
+   "phone": "https://www.stannchurchsebring.org/",
+   "address": "https://www.stannchurchsebring.org/"
+  },
+  "fetched_at": "2026-11-01T17:48:11+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
- }
+ },
+ "fetch_mode": "rendered"
 }
