@@ -1,0 +1,170 @@
+{
+ "domain": "holynameofjesus.com",
+ "diocese": "unassigned-pa",
+ "matched_church_ids": [
+  "brave:PA|name|"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "brave:PA|name|"
+  ]
+ },
+ "names": [
+  "Holy Name Church"
+ ],
+ "cities": [],
+ "home_url": "https://www.holynameofjesus.com/",
+ "final_url": "https://www.holynameofjesus.com/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://www.holynameofjesus.com/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.holynameofjesus.com/team",
+   "status": null,
+   "class": "ssl_error"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.holynameofjesus.com/school-calendar",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.holynameofjesus.com/abbrivated-calendar",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://www.holynameofjesus.com/contact-the-school",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "duda",
+  "evidence": [
+   "irp.cdn-website"
+  ]
+ },
+ "template": "generic-html:duda",
+ "groups": [],
+ "calendar_feeds": [
+  {
+   "feed_id": "holynameofjesus.com:ics:3f59b06b",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": "https://calendar.google.com/calendar/ical/41729415079e1211ab48c30bbab73cc81fbdaed80b53f8061864d47a87bf0a02%40group.calendar.google.com/public/basic.ics",
+   "page_url": "https://www.holynameofjesus.com/",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (website-builder widget)",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T22:18:53+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/Holy-Name-of-Jesus-School-109112117454521"
+  ]
+ },
+ "bulletin": null,
+ "schedule_rows": [
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "08:30",
+   "language": null,
+   "raw": "Mass (6A): 8:30am",
+   "source_url": "https://www.holynameofjesus.com/",
+   "fetched_at": "2026-11-01T22:15:21+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "14:15",
+   "language": null,
+   "raw": "Mass (5A): 2:15pm",
+   "source_url": "https://www.holynameofjesus.com/",
+   "fetched_at": "2026-11-01T22:15:21+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "kind_parsed": "mass"
+  }
+ ],
+ "source_url": "https://www.holynameofjesus.com/",
+ "fetched_at": "2026-11-01T22:15:25+00:00",
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": true,
+  "trusted_candidate": false,
+  "generic_rows": 4
+ },
+ "has_sunday": false,
+ "schedule_partial": true,
+ "schedule_dropped": {
+  "no_day": 6,
+  "not_a_service": 4,
+  "skipped_section": 1
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(717) 657-1704",
+  "address": "6150 Allentown Blvd, Harrisburg, PA 17112",
+  "source_url": "https://www.holynameofjesus.com/contact-the-school",
+  "sources": {
+   "phone": "https://www.holynameofjesus.com/contact-the-school",
+   "address": "https://www.holynameofjesus.com/contact-the-school"
+  },
+  "fetched_at": "2026-11-01T22:15:25+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}
