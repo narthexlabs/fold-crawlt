@@ -18,31 +18,441 @@
  ],
  "home_url": "https://www.stfrancisofassisi.net/",
  "final_url": "https://www.stfrancisofassisi.net/",
- "crawl_status": "ssl_error",
+ "crawl_status": "ok",
  "crawl_env": "sandbox",
  "robots_note": "ok",
  "pages": [
   {
    "category": "home",
    "url": "https://www.stfrancisofassisi.net/",
-   "status": null,
-   "class": "ssl_error"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.stfrancisofassisi.net/mass-intentions",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.stfrancisofassisi.net/liturgical-ministries",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.stfrancisofassisi.net/service-ministries",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.stfrancisofassisi.net/faith-formation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://www.stfrancisofassisi.net/bulletin",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://www.stfrancisofassisi.net/contact-us",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "duda",
+  "evidence": [
+   "irp.cdn-website"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "generic-html:duda",
+ "groups": [
+  {
+   "id": "stfrancisofassisi.net:intercessory",
+   "name": "Prayer Line",
+   "category": "prayer_devotion",
+   "category_label": "Prayer & devotion",
+   "subcategory": "intercessory_prayer",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.stfrancisofassisi.net/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stfrancisofassisi.net/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T07:19:41+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "stfrancisofassisi.net:ocia",
+   "name": "OCIA",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "ocia",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "The Order of Christian Initiation of Adults is the process through which our Catholic community welcomes new adult members into the Church. Please contact the Parish Office if you wish to learn more about beginning OCIA.",
+   "contact_url": "https://www.stfrancisofassisi.net/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stfrancisofassisi.net/faith-formation",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T07:19:45+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "stfrancisofassisi.net:respect_life",
+   "name": "Respect Life",
+   "category": "service_mercy",
+   "category_label": "Service & mercy",
+   "subcategory": "respect_life",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.stfrancisofassisi.net/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stfrancisofassisi.net/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T07:19:41+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "stfrancisofassisi.net:servers",
+   "name": "Altar Servers",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "altar_servers",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "Boy who have made their First Communion are encouraged to become Altar Servers. Altar Servers, 3rd grader or older, assist the priest at Masses.",
+   "contact_url": "https://www.stfrancisofassisi.net/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stfrancisofassisi.net/liturgical-ministries",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T07:19:43+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "stfrancisofassisi.net:lectors",
+   "name": "Lectors",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "lectors",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "Lectors are adults or Confirmed young adults who proclaim God’s Word in the Sunday Scripture readings to our parish community. Training sessions are available to prepare the lectors for this important ministry. For more information, contact",
+   "contact_url": "https://www.stfrancisofassisi.net/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stfrancisofassisi.net/liturgical-ministries",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T07:19:43+00:00",
+   "confidence": "low"
+  },
+  {
+   "id": "stfrancisofassisi.net:choir",
+   "name": "Music Ministry / Choir",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "choir_music",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "Cantors serve the music needs of the liturgy at the Saturday Vigil and Sunday Masses.",
+   "contact_url": "https://www.stfrancisofassisi.net/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stfrancisofassisi.net/liturgical-ministries",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T07:19:43+00:00",
+   "confidence": "low"
+  },
+  {
+   "id": "stfrancisofassisi.net:sacristans",
+   "name": "Sacristan & Assistants",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "sacristans",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "The sacristan in harmony with the pastor makes sure that the vestments, church furnishings, liturgical vessels and decorative objects are kept in good condition. The volunteers assist with care and placement of the Altar Linens.",
+   "contact_url": "https://www.stfrancisofassisi.net/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stfrancisofassisi.net/liturgical-ministries",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T07:19:43+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "stfrancisofassisi.net:kofc",
+   "name": "Knights Of Columbus",
+   "category": "fraternal_orders",
+   "category_label": "Fraternal & orders",
+   "subcategory": "knights_of_columbus",
+   "audience": "men",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.stfrancisofassisi.net/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stfrancisofassisi.net/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T07:19:41+00:00",
+   "confidence": "medium"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/stfrancisnh"
+  ]
+ },
+ "bulletin": {
+  "url": "https://www.4lpi.com/weconnect-sponsorship-advertising-form",
+  "date": null,
+  "kind": "lpi",
+  "text": "Visit Website",
+  "source_url": "https://www.stfrancisofassisi.net/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "16:00",
+   "language": null,
+   "raw": "Saturday Vigil: 4:00 PM",
+   "source_url": "https://www.stfrancisofassisi.net/",
+   "fetched_at": "2026-11-01T07:19:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Mass Times: Sunday: 8:00 AM, 10:00 AM",
+   "source_url": "https://www.stfrancisofassisi.net/",
+   "fetched_at": "2026-11-01T07:19:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": null,
+   "raw": "Mass Times: Sunday: 8:00 AM, 10:00 AM",
+   "source_url": "https://www.stfrancisofassisi.net/",
+   "fetched_at": "2026-11-01T07:19:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Mass Times: Monday: 9:00 AM",
+   "source_url": "https://www.stfrancisofassisi.net/",
+   "fetched_at": "2026-11-01T07:19:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Mass Times: 9:00 AM",
+   "source_url": "https://www.stfrancisofassisi.net/",
+   "fetched_at": "2026-11-01T07:19:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Mass Times: Wednesday: 9:00 AM",
+   "source_url": "https://www.stfrancisofassisi.net/",
+   "fetched_at": "2026-11-01T07:19:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Mass Times: Friday: 8:00 AM (9:00 AM when school is",
+   "source_url": "https://www.stfrancisofassisi.net/",
+   "fetched_at": "2026-11-01T07:19:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Mass Times: Friday: 8:00 AM (9:00 AM when school is",
+   "source_url": "https://www.stfrancisofassisi.net/",
+   "fetched_at": "2026-11-01T07:19:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Mass Times: Saturday: 9:00 AM",
+   "source_url": "https://www.stfrancisofassisi.net/",
+   "fetched_at": "2026-11-01T07:19:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Monday: After 9:00 AM Mass to 5:00 PM",
+   "source_url": "https://www.stfrancisofassisi.net/",
+   "fetched_at": "2026-11-01T07:19:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "11:00",
+   "language": null,
+   "raw": "Saturday: After 9:00 AM Mass to 11:00 AM",
+   "source_url": "https://www.stfrancisofassisi.net/",
+   "fetched_at": "2026-11-01T07:19:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "15:00",
+   "language": null,
+   "raw": "Saturday: After 9:00 AM Mass & 3:00 - 3:50 PM",
+   "source_url": "https://www.stfrancisofassisi.net/",
+   "fetched_at": "2026-11-01T07:19:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:30",
+   "language": null,
+   "raw": "Sunday: 9:30 AM to 9:50 AM (between Masses)",
+   "source_url": "https://www.stfrancisofassisi.net/",
+   "fetched_at": "2026-11-01T07:19:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  }
+ ],
  "source_url": "https://www.stfrancisofassisi.net/",
- "fetched_at": "2026-11-01T17:26:57+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-01T07:19:47+00:00",
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": true,
+  "trusted_candidate": false,
+  "generic_rows": 8
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "relative_time": 3
+ },
+ "groups_dropped": {
+  "noise": 4,
+  "unmatched": 2
+ },
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(603) 424-3456",
+  "address": "9 Saint Francis Way, Litchfield, NH 03052",
+  "source_url": "https://www.stfrancisofassisi.net/contact-us",
+  "sources": {
+   "phone": "https://www.stfrancisofassisi.net/contact-us",
+   "address": "https://www.stfrancisofassisi.net/contact-us"
+  },
+  "fetched_at": "2026-11-01T07:19:47+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
  }

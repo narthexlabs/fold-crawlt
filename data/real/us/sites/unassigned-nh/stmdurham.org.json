@@ -27,6 +27,42 @@
    "url": "https://www.stmdurham.org/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.stmdurham.org/faith-formation/faith-formation-kindergarten-thru-middle-school",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.stmdurham.org/faith-formation/adult-faith-formation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.stmdurham.org/stewardship/200-club-information",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://www.stmdurham.org/sunday-bulletin",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.stmdurham.org/care-for-creation/laudato-si-resources-articles-events",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://www.stmdurham.org/contact",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -34,14 +70,165 @@
   "evidence": []
  },
  "template": "generic-html:unknown",
- "groups": [],
+ "groups": [
+  {
+   "id": "stmdurham.org:adult_formation",
+   "name": "Adult Faith Formation",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "adult_formation",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.stmdurham.org/contact",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stmdurham.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T09:04:58+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "stmdurham.org:youth_ministry",
+   "name": "Faith Formation - Kindergarten-Middle School",
+   "category": "youth",
+   "category_label": "Youth",
+   "subcategory": "youth_ministry",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.stmdurham.org/contact",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stmdurham.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T09:04:58+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "stmdurham.org:food",
+   "name": "Food Pantry",
+   "category": "service_mercy",
+   "category_label": "Service & mercy",
+   "subcategory": "food_ministry",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.stmdurham.org/contact",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stmdurham.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T09:04:58+00:00",
+   "confidence": "medium"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "flocknote": [
+   "https://stthomasmore47.flocknote.com"
+  ]
+ },
+ "bulletin": {
+  "url": "https://www.stmdurham.org/sunday-bulletin",
+  "date": null,
+  "kind": "page",
+  "text": "Bulletin",
+  "source_url": "https://www.stmdurham.org/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Saturday, 5pm; Sunday, 9am & 11:15am",
+   "source_url": "https://www.stmdurham.org/",
+   "fetched_at": "2026-11-01T09:04:58+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Saturday, 5pm; Sunday, 9am & 11:15am",
+   "source_url": "https://www.stmdurham.org/",
+   "fetched_at": "2026-11-01T09:04:58+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box",
+   "day_parsed": "Saturday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:15",
+   "language": null,
+   "raw": "Saturday, 5pm; Sunday, 9am & 11:15am",
+   "source_url": "https://www.stmdurham.org/",
+   "fetched_at": "2026-11-01T09:04:58+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box",
+   "day_parsed": "Saturday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Sunday, 5pm UNH Mass When University is in Session",
+   "source_url": "https://www.stmdurham.org/",
+   "fetched_at": "2026-11-01T09:04:58+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "12:10",
+   "language": null,
+   "raw": "Monday, Tuesday, and Wednesdays at 12:10pm",
+   "source_url": "https://www.stmdurham.org/",
+   "fetched_at": "2026-11-01T09:04:58+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "12:10",
+   "language": null,
+   "raw": "Monday, Tuesday, and Wednesdays at 12:10pm",
+   "source_url": "https://www.stmdurham.org/",
+   "fetched_at": "2026-11-01T09:04:58+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "12:10",
+   "language": null,
+   "raw": "Monday, Tuesday, and Wednesdays at 12:10pm",
+   "source_url": "https://www.stmdurham.org/",
+   "fetched_at": "2026-11-01T09:04:58+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
+  }
+ ],
  "source_url": "https://www.stmdurham.org/",
- "fetched_at": "2026-11-01T17:26:58+00:00",
+ "fetched_at": "2026-11-01T09:05:04+00:00",
  "schedule_template": {
   "template": "generic_strict",
   "version": "ca-sites/2",
@@ -58,10 +245,16 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
-  "generic_rows": 0
+  "generic_rows": 5
  },
- "has_sunday": false,
- "groups_dropped": {},
+ "has_sunday": true,
+ "schedule_dropped": {
+  "box_rows_added": 7
+ },
+ "groups_dropped": {
+  "noise": 1,
+  "unmatched": 1
+ },
  "event_counts": {
   "window_start": "2026-11-01",
   "window_end_exclusive": "2027-01-30",
@@ -71,6 +264,18 @@
   "stored": 0,
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(603) 868-2666",
+  "address": "PO Box 620, Durham, NH 03824-0620",
+  "source_url": "https://www.stmdurham.org/",
+  "sources": {
+   "phone": "https://www.stmdurham.org/",
+   "address": "https://www.stmdurham.org/"
+  },
+  "fetched_at": "2026-11-01T09:04:58+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
