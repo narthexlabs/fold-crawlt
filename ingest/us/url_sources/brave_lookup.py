@@ -12,7 +12,8 @@ query, the chosen URL and the rejected ones (evidence). Resumable: data/raw/us/u
   BRAVE_KEY=... python3 -I ingest/us/url_sources/brave_lookup.py --budget 8000 --qps 5 [--states PA,MI]
 """
 from __future__ import annotations
-import argparse, json, os, re, sys, time, glob, collections, subprocess
+import argparse, json, os, re, sys, time, glob, collections, subprocess, threading
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlparse, quote
@@ -355,46 +356,57 @@ def main() -> int:
     n = 0; t0 = time.time(); last = 0.0
     stats = {t: {"q": 0, "new": 0, "window": collections.deque(maxlen=a.batch), "curve": []} for t in tiered}
     stop_all = None
+    # Brave answers in ~1.1 s, so a serial loop runs at ~0.9 q/s: fetch in small parallel chunks, paced to --qps overall
+    lock = threading.Lock(); slot = [0.0]
+
+    def paced(q):
+        with lock:
+            now = time.time(); at = max(now, slot[0]); slot[0] = at + 1.0 / a.qps
+        if at > now:
+            time.sleep(at - now)
+        return brave(q, key)
+
+    pool = ThreadPoolExecutor(max_workers=max(1, int(a.qps * 2)))
     try:
         for t in (1, 2, 3):
             st_ = stats[t]
-            for c in tiered[t]:
+            todo = [c for c in tiered[t] if dkey(c) not in done]
+            gated = False
+            for i in range(0, len(todo), 25):
                 if n >= a.budget:
                     stop_all = "budget"; break
-                k = dkey(c)
-                if k in done:
-                    continue
-                q = f"{c['name']} {c['city']} {c['state']} catholic church".replace("  ", " ")
-                wait = (1.0 / a.qps) - (time.time() - last)
-                if wait > 0:
-                    time.sleep(wait)
-                res = brave(q, key); last = time.time(); n += 1
-                url, rej = pick(res, c, hosts)
-                h = host_of(url) if url else ""
-                is_new = bool(h) and h not in start_hosts
-                rec = {"key": k, "name": c["name"], "city": c["city"], "state": c["state"], "src": c["src"], "id": c["id"], "tier": t,
-                       "query": q, "url": url, "new_domain": is_new, "rejected": rej[:5], "fetched_at": datetime.now(timezone.utc).isoformat(timespec="seconds")}
-                with open(DONE, "a") as f:
-                    f.write(json.dumps(rec, ensure_ascii=False) + "\n")
-                done[k] = rec
-                if url:
-                    hosts.add(h)
-                st_["q"] += 1; st_["new"] += is_new; st_["window"].append(is_new)
-                if st_["q"] % a.batch == 0:
-                    rate = sum(st_["window"]) / len(st_["window"])
-                    st_["curve"].append(round(rate, 3))
-                    print(f"  tier {t}: batch {st_['q'] // a.batch} rate {rate:.0%} (tier total {st_['new']}/{st_['q']}); "
-                          f"run {n} queries, {n/(time.time()-t0):.1f} q/s", flush=True)
-                    if rate < a.gate:
-                        print(f"  tier {t} below gate ({rate:.0%} < {a.gate:.0%}): stopping tier", flush=True)
-                        break
-                if n % a.checkpoint_every == 0:
-                    build(done)
-                    if a.checkpoint_cmd:
-                        subprocess.run(a.checkpoint_cmd, shell=True)
-            else:
-                if st_["q"] % a.batch and st_["window"]:
-                    st_["curve"].append(round(sum(st_["window"]) / len(st_["window"]), 3))
+                chunk = todo[i:i + min(25, a.budget - n)]
+                qs = [f"{c['name']} {c['city']} {c['state']} catholic church".replace("  ", " ") for c in chunk]
+                results = list(pool.map(paced, qs))
+                for c, q, res in zip(chunk, qs, results):
+                    k = dkey(c); n += 1
+                    url, rej = pick(res, c, hosts)
+                    h = host_of(url) if url else ""
+                    is_new = bool(h) and h not in start_hosts
+                    rec = {"key": k, "name": c["name"], "city": c["city"], "state": c["state"], "src": c["src"], "id": c["id"], "tier": t,
+                           "query": q, "url": url, "new_domain": is_new, "rejected": rej[:5], "fetched_at": datetime.now(timezone.utc).isoformat(timespec="seconds")}
+                    with open(DONE, "a") as f:
+                        f.write(json.dumps(rec, ensure_ascii=False) + "\n")
+                    done[k] = rec
+                    if url:
+                        hosts.add(h)
+                    st_["q"] += 1; st_["new"] += is_new; st_["window"].append(is_new)
+                    if st_["q"] % a.batch == 0:
+                        rate = sum(st_["window"]) / len(st_["window"])
+                        st_["curve"].append(round(rate, 3))
+                        print(f"  tier {t}: batch {st_['q'] // a.batch} rate {rate:.0%} (tier total {st_['new']}/{st_['q']}); "
+                              f"run {n} queries, {n/(time.time()-t0):.1f} q/s", flush=True)
+                        if rate < a.gate:
+                            print(f"  tier {t} below gate ({rate:.0%} < {a.gate:.0%}): stopping tier", flush=True)
+                            gated = True
+                    if n % a.checkpoint_every == 0:
+                        build(done)
+                        if a.checkpoint_cmd:
+                            subprocess.run(a.checkpoint_cmd, shell=True)
+                if gated:
+                    break
+            if not gated and st_["q"] % a.batch and st_["window"]:
+                st_["curve"].append(round(sum(st_["window"]) / len(st_["window"]), 3))
             if stop_all:
                 break
     except BalanceGone:
