@@ -1,0 +1,155 @@
+{
+ "domain": "avemariaripley.org",
+ "diocese": "unassigned-tn",
+ "matched_church_ids": [
+  "brave:TN|ave maria ripley|"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "brave:TN|ave maria ripley|"
+  ]
+ },
+ "names": [
+  "Ave Maria Ripley"
+ ],
+ "cities": [],
+ "home_url": "https://avemariaripley.org/",
+ "final_url": "https://avemariaripley.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://avemariaripley.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://avemariaripley.org/mass-times/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://avemariaripley.org/contact/",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-content"
+  ]
+ },
+ "template": "wordpress-rest+html",
+ "groups": [],
+ "calendar_feeds": [],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/people/Ave-Maria-Church/61567199480254"
+  ]
+ },
+ "bulletin": {
+  "url": "https://holyangelscc.org/bulletins",
+  "date": null,
+  "kind": "page",
+  "text": "Bulletin",
+  "source_url": "https://avemariaripley.org/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Mass times:: Sunday at 5PM",
+   "source_url": "https://avemariaripley.org/mass-times/",
+   "fetched_at": "2026-11-01T17:33:30+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "12:00",
+   "language": null,
+   "raw": "Daily Mass Wednesday at 12 Noon",
+   "source_url": "https://avemariaripley.org/mass-times/",
+   "fetched_at": "2026-11-01T17:33:30+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "16:15-16:45",
+   "language": null,
+   "raw": "Penance schedule:: Sunday 4:15PM-4:45PM",
+   "source_url": "https://avemariaripley.org/mass-times/",
+   "fetched_at": "2026-11-01T17:33:30+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  }
+ ],
+ "source_url": "https://avemariaripley.org/",
+ "fetched_at": "2026-11-01T17:33:34+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 8
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "not_a_service": 3
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(731) 287-8000",
+  "address": "664 S. Washington St., Ripley, TN 38063",
+  "source_url": "https://avemariaripley.org/contact/",
+  "sources": {
+   "phone": "https://avemariaripley.org/contact/",
+   "address": "https://avemariaripley.org/contact/"
+  },
+  "fetched_at": "2026-11-01T17:33:32+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}
