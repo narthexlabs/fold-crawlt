@@ -584,13 +584,18 @@
    ]
   },
   {
-   "started_at": "2026-11-01T18:51:38+00:00",
-   "ended_at": "2026-11-01T18:53:30+00:00",
-   "result": "fetched {'dns': 56, 'done': 97, 'ssl_error': 11, 'http_5xx': 2, 'challenge': 2, 'conn_error': 1, 'ok': 21, 'parked': 1, 'timeout': 3, 'halted_egress': 0}; parsed 3 dioceses",
+   "started_at": "2026-11-01T18:51:39+00:00",
+   "ended_at": "2026-11-01T18:53:34+00:00",
+   "result": "fetched {'robots_disallowed': 1, 'done': 90, 'dns': 41, 'challenge': 6, 'conn_error': 1, 'not_found': 6, 'ssl_error': 4, 'ok': 25, 'parked': 2, 'http_5xx': 1, 'timeout': 3, 'halted_egress': 0}; parsed 8 dioceses",
    "touched": [
-    "archdiocese-of-baltimore",
-    "diocese-of-charlotte",
-    "eparchy-of-newton"
+    "archdiocese-of-new-york",
+    "diocese-of-brooklyn",
+    "diocese-of-buffalo",
+    "diocese-of-albany",
+    "diocese-of-rockville-centre",
+    "diocese-of-syracuse",
+    "diocese-of-ogdensburg",
+    "unassigned-ny"
    ]
   }
  ],
@@ -618,19 +623,19 @@
   },
   "archdiocese-of-new-york": {
    "sites_in_list": 391,
-   "records": 373,
-   "finished": false,
-   "ok": 86,
+   "records": 393,
+   "finished": true,
+   "ok": 87,
    "by_status": {
-    "challenge": 249,
-    "ok": 86,
+    "challenge": 253,
+    "ok": 87,
+    "dns": 22,
     "ssl_error": 9,
-    "dns": 9,
     "conn_error": 7,
     "unreachable_via_proxy": 5,
-    "not_found": 3,
+    "not_found": 4,
+    "parked": 2,
     "http_202": 1,
-    "parked": 1,
     "blocked_403": 1,
     "http_5xx": 1,
     "timeout": 1
@@ -676,18 +681,22 @@
   },
   "diocese-of-brooklyn": {
    "sites_in_list": 240,
-   "records": 196,
-   "finished": false,
-   "ok": 166,
+   "records": 240,
+   "finished": true,
+   "ok": 179,
    "by_status": {
-    "ok": 166,
-    "challenge": 13,
-    "ssl_error": 4,
+    "ok": 179,
+    "dns": 20,
+    "challenge": 14,
+    "ssl_error": 8,
     "unreachable_via_proxy": 4,
     "social_only": 4,
+    "timeout": 3,
+    "not_found": 3,
     "http_202": 2,
-    "dns": 2,
-    "timeout": 1
+    "http_5xx": 1,
+    "parked": 1,
+    "conn_error": 1
    }
   },
   "diocese-of-cleveland": {
@@ -763,22 +772,22 @@
   },
   "diocese-of-buffalo": {
    "sites_in_list": 201,
-   "records": 181,
-   "finished": false,
-   "ok": 103,
+   "records": 201,
+   "finished": true,
+   "ok": 110,
    "by_status": {
-    "ok": 103,
-    "dns": 21,
-    "challenge": 20,
+    "ok": 110,
+    "dns": 31,
+    "challenge": 21,
     "ssl_error": 12,
-    "not_found": 8,
+    "not_found": 9,
     "parked": 4,
     "http_5xx": 3,
     "conn_error": 3,
     "unreachable_via_proxy": 2,
+    "timeout": 2,
     "blocked_403": 1,
     "http_202": 1,
-    "timeout": 1,
     "not_html": 1,
     "robots_disallowed": 1
    }
@@ -797,6 +806,36 @@
     "dns": 1,
     "blocked_429": 1,
     "unreachable_via_proxy": 1
+   }
+  },
+  "archdiocese-of-st-paul-and-minneapolis": {
+   "sites_in_list": 183,
+   "records": 183,
+   "finished": true,
+   "ok": 112,
+   "by_status": {
+    "ok": 112,
+    "challenge": 55,
+    "conn_error": 6,
+    "ssl_error": 5,
+    "dns": 3,
+    "unreachable_via_proxy": 2
+   }
+  },
+  "archdiocese-of-baltimore": {
+   "sites_in_list": 182,
+   "records": 104,
+   "finished": false,
+   "ok": 57,
+   "by_status": {
+    "ok": 57,
+    "wayback": 32,
+    "challenge": 8,
+    "unreachable_via_proxy": 2,
+    "ssl_error": 2,
+    "not_found": 1,
+    "dns": 1,
+    "blocked_403": 1
    }
   },
   "archdiocese-of-st-paul-and-minneapolis": {
@@ -850,16 +889,16 @@
   },
   "diocese-of-albany": {
    "sites_in_list": 169,
-   "records": 171,
+   "records": 173,
    "finished": true,
-   "ok": 91,
+   "ok": 92,
    "by_status": {
-    "ok": 91,
+    "ok": 92,
     "challenge": 26,
     "dns": 19,
     "unreachable_via_proxy": 9,
     "ssl_error": 7,
-    "not_found": 5,
+    "not_found": 6,
     "conn_error": 3,
     "timeout": 3,
     "robots_disallowed": 3,
@@ -891,11 +930,11 @@
   },
   "diocese-of-rockville-centre": {
    "sites_in_list": 167,
-   "records": 166,
-   "finished": false,
-   "ok": 111,
+   "records": 167,
+   "finished": true,
+   "ok": 112,
    "by_status": {
-    "ok": 111,
+    "ok": 112,
     "challenge": 14,
     "unreachable_via_proxy": 13,
     "http_202": 9,
@@ -1064,11 +1103,11 @@
   },
   "diocese-of-syracuse": {
    "sites_in_list": 135,
-   "records": 134,
-   "finished": false,
-   "ok": 81,
+   "records": 135,
+   "finished": true,
+   "ok": 82,
    "by_status": {
-    "ok": 81,
+    "ok": 82,
     "dns": 23,
     "challenge": 13,
     "ssl_error": 7,
@@ -1177,16 +1216,15 @@
   },
   "diocese-of-charlotte": {
    "sites_in_list": 118,
-   "records": 118,
-   "finished": true,
-   "ok": 62,
+   "records": 76,
+   "finished": false,
+   "ok": 56,
    "by_status": {
-    "ok": 62,
-    "dns": 33,
+    "ok": 56,
     "challenge": 16,
-    "ssl_error": 4,
     "conn_error": 2,
-    "parked": 1
+    "dns": 1,
+    "ssl_error": 1
    }
   },
   "archdiocese-of-seattle": {
@@ -1936,11 +1974,11 @@
   },
   "diocese-of-ogdensburg": {
    "sites_in_list": 72,
-   "records": 70,
+   "records": 71,
    "finished": false,
-   "ok": 25,
+   "ok": 26,
    "by_status": {
-    "ok": 25,
+    "ok": 26,
     "challenge": 22,
     "ssl_error": 8,
     "dns": 5,
@@ -2754,15 +2792,16 @@
   },
   "unassigned-ny": {
    "sites_in_list": 39,
-   "records": 40,
+   "records": 42,
    "finished": true,
    "ok": 31,
    "by_status": {
     "ok": 31,
-    "not_found": 3,
+    "not_found": 4,
     "dns": 2,
     "challenge": 2,
     "ssl_error": 1,
+    "robots_disallowed": 1,
     "conn_error": 1
    }
   },
@@ -2848,11 +2887,11 @@
   },
   "eparchy-of-newton": {
    "sites_in_list": 35,
-   "records": 38,
+   "records": 37,
    "finished": true,
-   "ok": 26,
+   "ok": 25,
    "by_status": {
-    "ok": 26,
+    "ok": 25,
     "conn_error": 2,
     "unreachable_via_proxy": 2,
     "ssl_error": 2,
@@ -3865,9 +3904,9 @@
  },
  "totals": {
   "sites_in_list": 15394,
-  "records": 14658,
-  "ok": 7988
+  "records": 14628,
+  "ok": 7980
  },
  "us_parish_pages_discovermass": 20147,
- "updated_at": "2026-11-01T18:53:31+00:00"
+ "updated_at": "2026-11-01T18:53:35+00:00"
 }
