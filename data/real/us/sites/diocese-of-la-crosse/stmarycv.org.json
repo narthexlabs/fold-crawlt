@@ -19,7 +19,7 @@
  "home_url": "https://www.stmarycv.org/",
  "final_url": "https://www.stmaryscv.org/",
  "crawl_status": "ok",
- "crawl_env": "sandbox",
+ "crawl_env": "runner-rendered",
  "robots_note": "ok",
  "pages": [
   {
@@ -77,7 +77,7 @@
    "language": null,
    "raw": "Weekday Masses:: Tues. at 5:15 PM; Thurs. at 8:00 AM",
    "source_url": "https://www.stmaryscv.org/",
-   "fetched_at": "2026-11-01T05:12:05+00:00",
+   "fetched_at": "2026-11-01T17:46:18+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -90,15 +90,37 @@
    "language": null,
    "raw": "Weekday Masses:: Tues. at 5:15 PM; Thurs. at 8:00 AM",
    "source_url": "https://www.stmaryscv.org/",
-   "fetched_at": "2026-11-01T05:12:05+00:00",
+   "fetched_at": "2026-11-01T17:46:18+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "wix"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "16:00",
+   "language": null,
+   "raw": "Weekend Mass Times: Saturday 4:00 PM and",
+   "source_url": "https://www.stmaryscv.org/",
+   "fetched_at": "2026-11-01T17:46:18+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Sunday 8:00 AM",
+   "source_url": "https://www.stmaryscv.org/",
+   "fetched_at": "2026-11-01T17:46:18+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
   }
  ],
  "source_url": "https://www.stmarycv.org/",
- "fetched_at": "2026-11-01T05:12:07+00:00",
+ "fetched_at": "2026-11-01T17:46:29+00:00",
  "redirected_off_host": "stmaryscv.org",
  "schedule_template": {
   "template": "wix",
@@ -117,6 +139,10 @@
   "passed_bar": false,
   "trusted_candidate": false,
   "generic_rows": 4
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "box_rows_added": 2
  },
  "groups_dropped": {},
  "event_counts": {
@@ -138,10 +164,11 @@
    "phone": "https://www.stmaryscv.org/",
    "address": "https://www.stmaryscv.org/"
   },
-  "fetched_at": "2026-11-01T05:12:05+00:00",
+  "fetched_at": "2026-11-01T17:46:18+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
- }
+ },
+ "fetch_mode": "rendered"
 }
