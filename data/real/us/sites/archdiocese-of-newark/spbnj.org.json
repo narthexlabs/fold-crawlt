@@ -19,7 +19,7 @@
  "home_url": "https://www.spbnj.org/",
  "final_url": "https://www.spbnj.org/",
  "crawl_status": "ok",
- "crawl_env": "sandbox",
+ "crawl_env": "runner-rendered",
  "robots_note": "not_found",
  "pages": [
   {
@@ -78,7 +78,44 @@
   ]
  },
  "template": "generic-html:google_sites",
- "groups": [],
+ "groups": [
+  {
+   "id": "spbnj.org:youth_ministry_es|creyente",
+   "name": "Grupo de Jóvenes Creyentes",
+   "category": "youth",
+   "category_label": "Youth",
+   "subcategory": "youth_ministry",
+   "audience": "youth",
+   "language": "es",
+   "language_assumed": false,
+   "meets": "Every Thursday, 9:00p.m",
+   "description": "Invitamos a los Jóvenes de nuestra parroquia a participar en la reunión de todos los jueves desde las 7:30 hasta las 9:00 p.m.",
+   "contact_url": "https://www.spbnj.org/contact-us-directions",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.spbnj.org/youth-group",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:45:05+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "spbnj.org:youth_ministry",
+   "name": "Youth Group",
+   "category": "youth",
+   "category_label": "Youth",
+   "subcategory": "youth_ministry",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.spbnj.org/contact-us-directions",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.spbnj.org/youth-group",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:45:05+00:00",
+   "confidence": "medium"
+  }
+ ],
  "calendar_feeds": [
   {
    "feed_id": "spbnj.org:ics:edf6975b",
@@ -92,7 +129,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T02:26:50+00:00",
+    "fetched_at": "2026-11-01T17:54:55+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -109,7 +146,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T02:26:51+00:00",
+    "fetched_at": "2026-11-01T17:54:56+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -126,7 +163,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T02:26:52+00:00",
+    "fetched_at": "2026-11-01T17:54:57+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -143,7 +180,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T02:26:54+00:00",
+    "fetched_at": "2026-11-01T17:54:59+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -160,7 +197,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T02:26:55+00:00",
+    "fetched_at": "2026-11-01T17:55:00+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -183,7 +220,7 @@
    "language": null,
    "raw": "SACRAMENT OF RECONCILIATION: In Church on Saturdays at 1:00 PM to 2:00 PM, or by request.",
    "source_url": "https://www.spbnj.org/the-sacraments",
-   "fetched_at": "2026-11-01T01:58:08+00:00",
+   "fetched_at": "2026-11-01T17:44:59+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -191,7 +228,7 @@
   }
  ],
  "source_url": "https://www.spbnj.org/",
- "fetched_at": "2026-11-01T01:58:13+00:00",
+ "fetched_at": "2026-11-01T17:45:28+00:00",
  "schedule_template": {
   "template": "generic_strict",
   "version": "ca-sites/2",
@@ -210,10 +247,12 @@
   "trusted_candidate": false,
   "generic_rows": 1
  },
+ "has_sunday": false,
+ "schedule_partial": true,
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-10-31",
-  "window_end_exclusive": "2027-01-29",
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
@@ -221,7 +260,21 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "office_contact": {
+  "email": "parish@spbnj.org",
+  "phone": "(973) 751-2002",
+  "address": "155 William St., Belleville, NJ 07109",
+  "source_url": "https://www.spbnj.org/contact-us-directions",
+  "sources": {
+   "email": "https://www.spbnj.org/contact-us-directions",
+   "phone": "https://www.spbnj.org/contact-us-directions",
+   "address": "https://www.spbnj.org/contact-us-directions"
+  },
+  "fetched_at": "2026-11-01T17:45:28+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
- }
+ },
+ "fetch_mode": "rendered"
 }

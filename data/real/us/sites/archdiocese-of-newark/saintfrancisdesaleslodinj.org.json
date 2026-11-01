@@ -19,7 +19,7 @@
  "home_url": "https://www.saintfrancisdesaleslodinj.org/",
  "final_url": "https://www.saintfrancisdesaleslodinj.org/",
  "crawl_status": "ok",
- "crawl_env": "sandbox",
+ "crawl_env": "runner-rendered",
  "robots_note": "ok",
  "pages": [
   {
@@ -84,8 +84,127 @@
   ]
  },
  "template": "generic-html:wix",
- "groups": [],
- "calendar_feeds": [],
+ "groups": [
+  {
+   "id": "saintfrancisdesaleslodinj.org:novena|medal+miraculou",
+   "name": "Miraculous Medal Novena",
+   "category": "prayer_devotion",
+   "category_label": "Prayer & devotion",
+   "subcategory": "novena",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.saintfrancisdesaleslodinj.org/contact",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.saintfrancisdesaleslodinj.org/parish-life",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:44:59+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "saintfrancisdesaleslodinj.org:children_ff",
+   "name": "Religious Education",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "children_faith_formation",
+   "audience": "families",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.saintfrancisdesaleslodinj.org/contact",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.saintfrancisdesaleslodinj.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:44:36+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "saintfrancisdesaleslodinj.org:other_holy_name_society",
+   "name": "Holy Name Society",
+   "category": "other",
+   "category_label": "Other",
+   "subcategory": "unclassified",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": "First Sunday, 7:30am",
+   "description": null,
+   "contact_url": "https://www.saintfrancisdesaleslodinj.org/contact",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.saintfrancisdesaleslodinj.org/parish-life",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:44:59+00:00",
+   "confidence": "low"
+  }
+ ],
+ "calendar_feeds": [
+  {
+   "feed_id": "saintfrancisdesaleslodinj.org:none:0d7ae701",
+   "type": "none",
+   "platform": "iCal",
+   "url": null,
+   "page_url": "https://www.saintfrancisdesaleslodinj.org/mass-schedule",
+   "label": null,
+   "status": "not_ingested",
+   "note": "calendar page embeds a third-party Mass-intentions service; intentions name private people"
+  },
+  {
+   "feed_id": "saintfrancisdesaleslodinj.org:ics:aed8af6a",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": null,
+   "page_url": "https://www.saintfrancisdesaleslodinj.org/calendars",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (embedded on page)",
+   "display_tz": "America/New_York",
+   "url_withheld": "calendar id is an e-mail address; not stored",
+   "feed_key": "aed8af6afce7",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T17:54:50+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  },
+  {
+   "feed_id": "saintfrancisdesaleslodinj.org:ics:b1c846ad",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": "https://calendar.google.com/calendar/ical/fe1a7651b86e6dbf10d950067ce14d22b1e8ac188e6e4ad366881bd3d0941c32%40group.calendar.google.com/public/basic.ics",
+   "page_url": "https://www.saintfrancisdesaleslodinj.org/calendars",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (embedded on page)",
+   "display_tz": "America/New_York",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T17:54:52+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  },
+  {
+   "feed_id": "saintfrancisdesaleslodinj.org:ics:b6a75a89",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": "https://calendar.google.com/calendar/ical/3373b90e10a4604f68311382f0513f12b3714ad040948aa0521ebe9dad94a334%40group.calendar.google.com/public/basic.ics",
+   "page_url": "https://www.saintfrancisdesaleslodinj.org/calendars",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (embedded on page)",
+   "display_tz": "America/New_York",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T17:54:53+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
  "events": [],
  "social": {
   "facebook": [
@@ -122,7 +241,7 @@
    "language": null,
    "raw": "WEEKEND MASS TIMES: 8:30 AM",
    "source_url": "https://www.saintfrancisdesaleslodinj.org/mass-schedule",
-   "fetched_at": "2026-11-01T01:58:03+00:00",
+   "fetched_at": "2026-11-01T17:44:44+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -135,7 +254,7 @@
    "language": null,
    "raw": "WEEKEND MASS TIMES: 5:00 PM",
    "source_url": "https://www.saintfrancisdesaleslodinj.org/mass-schedule",
-   "fetched_at": "2026-11-01T01:58:03+00:00",
+   "fetched_at": "2026-11-01T17:44:44+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -148,7 +267,7 @@
    "language": null,
    "raw": "WEEKEND MASS TIMES: 7:00 PM",
    "source_url": "https://www.saintfrancisdesaleslodinj.org/mass-schedule",
-   "fetched_at": "2026-11-01T01:58:03+00:00",
+   "fetched_at": "2026-11-01T17:44:44+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -161,7 +280,7 @@
    "language": null,
    "raw": "WEEKEND MASS TIMES: 8:30 PM",
    "source_url": "https://www.saintfrancisdesaleslodinj.org/mass-schedule",
-   "fetched_at": "2026-11-01T01:58:03+00:00",
+   "fetched_at": "2026-11-01T17:44:44+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -174,7 +293,7 @@
    "language": null,
    "raw": "WEEKEND MASS TIMES: 7:30 AM",
    "source_url": "https://www.saintfrancisdesaleslodinj.org/mass-schedule",
-   "fetched_at": "2026-11-01T01:58:03+00:00",
+   "fetched_at": "2026-11-01T17:44:44+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -187,7 +306,7 @@
    "language": null,
    "raw": "WEEKEND MASS TIMES: 9:00 AM",
    "source_url": "https://www.saintfrancisdesaleslodinj.org/mass-schedule",
-   "fetched_at": "2026-11-01T01:58:03+00:00",
+   "fetched_at": "2026-11-01T17:44:44+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -200,7 +319,7 @@
    "language": null,
    "raw": "WEEKEND MASS TIMES: 10:30 AM",
    "source_url": "https://www.saintfrancisdesaleslodinj.org/mass-schedule",
-   "fetched_at": "2026-11-01T01:58:03+00:00",
+   "fetched_at": "2026-11-01T17:44:44+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -213,7 +332,7 @@
    "language": null,
    "raw": "WEEKEND MASS TIMES: 12:00 PM",
    "source_url": "https://www.saintfrancisdesaleslodinj.org/mass-schedule",
-   "fetched_at": "2026-11-01T01:58:03+00:00",
+   "fetched_at": "2026-11-01T17:44:44+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -226,7 +345,7 @@
    "language": null,
    "raw": "SACRAMENT OF RECONCILIATION: 11:00 AM - 12:00 PM or by appointment",
    "source_url": "https://www.saintfrancisdesaleslodinj.org/mass-schedule",
-   "fetched_at": "2026-11-01T01:58:03+00:00",
+   "fetched_at": "2026-11-01T17:44:44+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -239,7 +358,7 @@
    "language": null,
    "raw": "WEEKDAY MASS TIMES: 12:00 PM",
    "source_url": "https://www.saintfrancisdesaleslodinj.org/mass-schedule",
-   "fetched_at": "2026-11-01T01:58:03+00:00",
+   "fetched_at": "2026-11-01T17:44:44+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -252,7 +371,7 @@
    "language": null,
    "raw": "WEEKDAY MASS TIMES: 7:30 AM",
    "source_url": "https://www.saintfrancisdesaleslodinj.org/mass-schedule",
-   "fetched_at": "2026-11-01T01:58:03+00:00",
+   "fetched_at": "2026-11-01T17:44:44+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -260,7 +379,7 @@
   }
  ],
  "source_url": "https://www.saintfrancisdesaleslodinj.org/",
- "fetched_at": "2026-11-01T01:58:10+00:00",
+ "fetched_at": "2026-11-01T17:45:44+00:00",
  "schedule_template": {
   "template": "wix",
   "version": "ca-sites/2",
@@ -279,12 +398,13 @@
   "trusted_candidate": false,
   "generic_rows": 9
  },
+ "has_sunday": true,
  "groups_dropped": {
   "noise": 1
  },
  "event_counts": {
-  "window_start": "2026-10-31",
-  "window_end_exclusive": "2027-01-29",
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
@@ -292,7 +412,19 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "office_contact": {
+  "email": null,
+  "phone": "(973) 779-4330",
+  "address": null,
+  "source_url": "https://www.saintfrancisdesaleslodinj.org/contact",
+  "sources": {
+   "phone": "https://www.saintfrancisdesaleslodinj.org/contact"
+  },
+  "fetched_at": "2026-11-01T17:45:43+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
- }
+ },
+ "fetch_mode": "rendered"
 }
