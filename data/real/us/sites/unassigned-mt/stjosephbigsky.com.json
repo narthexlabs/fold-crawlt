@@ -1,0 +1,182 @@
+{
+ "domain": "stjosephbigsky.com",
+ "diocese": "unassigned-mt",
+ "matched_church_ids": [
+  "osm-way-234467229"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "osm-way-234467229"
+  ]
+ },
+ "names": [
+  "Saint Joseph of Big Sky Catholic Church"
+ ],
+ "cities": [
+  "Big Sky"
+ ],
+ "home_url": "https://stjosephbigsky.com/",
+ "final_url": "https://stjosephbigsky.com/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://stjosephbigsky.com/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stjosephbigsky.com/monthly-ministry-schedule/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://stjosephbigsky.com/monthly-calendar/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://stjosephbigsky.com/monthly-calendar/",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "parishsoft",
+  "evidence": [
+   "parishsoft.com"
+  ]
+ },
+ "template": "generic-html:parishsoft",
+ "groups": [],
+ "calendar_feeds": [
+  {
+   "feed_id": "stjosephbigsky.com:ics:0c5e23ba",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": null,
+   "page_url": "https://stjosephbigsky.com/monthly-calendar/",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (embedded on page)",
+   "display_tz": "America/Denver",
+   "url_withheld": "calendar id is an e-mail address; not stored",
+   "feed_key": "0c5e23ba6740",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T17:36:45+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
+ "events": [],
+ "social": {
+  "flocknote": [
+   "https://wybs.flocknote.com"
+  ]
+ },
+ "bulletin": {
+  "url": "https://wybs.flocknote.com/register",
+  "date": null,
+  "kind": "page",
+  "text": "Join Flock",
+  "source_url": "https://stjosephbigsky.com/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "17:00",
+   "language": null,
+   "raw": "Seasonal Saturday Vigil: Winter (Thanksgiving – Easter) — 5:00 PM",
+   "source_url": "https://stjosephbigsky.com/",
+   "fetched_at": "2026-11-01T17:33:26+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday (summer)",
+   "time": "19:30",
+   "language": null,
+   "raw": "Seasonal Saturday Vigil: Summer (Mid-June – Labor Day) — 7:30 PM",
+   "source_url": "https://stjosephbigsky.com/",
+   "fetched_at": "2026-11-01T17:33:26+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "12:00",
+   "language": null,
+   "raw": "Weekday Mass Schedule: Most Wednesdays – 12:00 PM",
+   "source_url": "https://stjosephbigsky.com/",
+   "fetched_at": "2026-11-01T17:33:26+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  }
+ ],
+ "source_url": "https://stjosephbigsky.com/",
+ "fetched_at": "2026-11-01T17:33:38+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 3
+ },
+ "has_sunday": false,
+ "schedule_partial": true,
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(406) 250-7922",
+  "address": "P.O. Box 161977, Big Sky, MT. 59716",
+  "source_url": "https://stjosephbigsky.com/",
+  "sources": {
+   "phone": "https://stjosephbigsky.com/",
+   "address": "https://stjosephbigsky.com/"
+  },
+  "fetched_at": "2026-11-01T17:33:26+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}
