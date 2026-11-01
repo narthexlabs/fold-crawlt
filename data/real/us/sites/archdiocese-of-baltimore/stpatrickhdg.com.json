@@ -19,7 +19,7 @@
  "home_url": "https://www.stpatrickhdg.com/",
  "final_url": "https://www.stpatrickhdg.com/",
  "crawl_status": "ok",
- "crawl_env": "sandbox",
+ "crawl_env": "runner-rendered",
  "robots_note": "ok",
  "pages": [
   {
@@ -90,7 +90,44 @@
   ]
  },
  "template": "generic-html:wix",
- "groups": [],
+ "groups": [
+  {
+   "id": "stpatrickhdg.com:novena",
+   "name": "Novena",
+   "category": "prayer_devotion",
+   "category_label": "Prayer & devotion",
+   "subcategory": "novena",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.stpatrickhdg.com/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stpatrickhdg.com/devotions",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:43:38+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "stpatrickhdg.com:rosary",
+   "name": "Rosary",
+   "category": "prayer_devotion",
+   "category_label": "Prayer & devotion",
+   "subcategory": "rosary",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.stpatrickhdg.com/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stpatrickhdg.com/devotions",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:43:38+00:00",
+   "confidence": "medium"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
  "social": {
@@ -137,15 +174,152 @@
    "language": null,
    "raw": "Confessions are available every Saturday at 3:00-3:30pm in the church.",
    "source_url": "https://www.stpatrickhdg.com/confession",
-   "fetched_at": "2026-11-01T02:04:28+00:00",
+   "fetched_at": "2026-11-01T17:43:30+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "high",
    "template": "wix"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "08:15",
+   "language": null,
+   "raw": "Monday - Saturday: 8:15am",
+   "source_url": "https://www.stpatrickhdg.com/",
+   "fetched_at": "2026-11-01T17:43:26+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box",
+   "day_expanded_from": "Monday - Saturday"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "08:15",
+   "language": null,
+   "raw": "Monday - Saturday: 8:15am",
+   "source_url": "https://www.stpatrickhdg.com/",
+   "fetched_at": "2026-11-01T17:43:26+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box",
+   "day_expanded_from": "Monday - Saturday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "08:15",
+   "language": null,
+   "raw": "Monday - Saturday: 8:15am",
+   "source_url": "https://www.stpatrickhdg.com/",
+   "fetched_at": "2026-11-01T17:43:26+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box",
+   "day_expanded_from": "Monday - Saturday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "08:15",
+   "language": null,
+   "raw": "Monday - Saturday: 8:15am",
+   "source_url": "https://www.stpatrickhdg.com/",
+   "fetched_at": "2026-11-01T17:43:26+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box",
+   "day_expanded_from": "Monday - Saturday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "08:15",
+   "language": null,
+   "raw": "Monday - Saturday: 8:15am",
+   "source_url": "https://www.stpatrickhdg.com/",
+   "fetched_at": "2026-11-01T17:43:26+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box",
+   "day_expanded_from": "Monday - Saturday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "08:15",
+   "language": null,
+   "raw": "Monday - Saturday: 8:15am",
+   "source_url": "https://www.stpatrickhdg.com/",
+   "fetched_at": "2026-11-01T17:43:26+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box",
+   "day_expanded_from": "Monday - Saturday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "16:00",
+   "language": null,
+   "raw": "Saturday: 4:00pm (Vigil Mass)",
+   "source_url": "https://www.stpatrickhdg.com/",
+   "fetched_at": "2026-11-01T17:43:26+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Sunday: 8am, 10:30am, 12pm & 5:30pm",
+   "source_url": "https://www.stpatrickhdg.com/",
+   "fetched_at": "2026-11-01T17:43:26+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:30",
+   "language": null,
+   "raw": "Sunday: 8am, 10:30am, 12pm & 5:30pm",
+   "source_url": "https://www.stpatrickhdg.com/",
+   "fetched_at": "2026-11-01T17:43:26+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "12:00",
+   "language": null,
+   "raw": "Sunday: 8am, 10:30am, 12pm & 5:30pm",
+   "source_url": "https://www.stpatrickhdg.com/",
+   "fetched_at": "2026-11-01T17:43:26+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "17:30",
+   "language": null,
+   "raw": "Sunday: 8am, 10:30am, 12pm & 5:30pm",
+   "source_url": "https://www.stpatrickhdg.com/",
+   "fetched_at": "2026-11-01T17:43:26+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
   }
  ],
  "source_url": "https://www.stpatrickhdg.com/",
- "fetched_at": "2026-11-01T02:04:36+00:00",
+ "fetched_at": "2026-11-01T17:44:07+00:00",
  "schedule_template": {
   "template": "wix",
   "version": "ca-sites/2",
@@ -164,15 +338,17 @@
   "trusted_candidate": false,
   "generic_rows": 17
  },
+ "has_sunday": true,
  "schedule_dropped": {
-  "not_a_service": 1
+  "not_a_service": 1,
+  "box_rows_added": 11
  },
  "groups_dropped": {
   "noise": 4
  },
  "event_counts": {
-  "window_start": "2026-10-31",
-  "window_end_exclusive": "2027-01-29",
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
@@ -180,7 +356,20 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "office_contact": {
+  "email": null,
+  "phone": "(410) 939-2525",
+  "address": "615 Congress Ave, Havre de Grace, MD 21078",
+  "source_url": "https://www.stpatrickhdg.com/contact-us",
+  "sources": {
+   "phone": "https://www.stpatrickhdg.com/contact-us",
+   "address": "https://www.stpatrickhdg.com/contact-us"
+  },
+  "fetched_at": "2026-11-01T17:44:07+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
- }
+ },
+ "fetch_mode": "rendered"
 }
