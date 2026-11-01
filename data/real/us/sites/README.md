@@ -42,7 +42,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | unassigned-ny | 207 | 215 | 138 | 19 | 6 | 52 | 0 |
 | diocese-of-buffalo | 201 | 201 | 110 | 21 | 3 | 67 | 0 |
 | archdiocese-of-newark | 199 | 202 | 138 | 46 | 1 | 17 | 0 |
-| unassigned-mo | 195 | 220 | 148 | 25 | 3 | 44 | 0 |
+| unassigned-mo | 195 | 220 | 150 | 25 | 3 | 42 | 0 |
 | archdiocese-of-st-paul-and-minneapolis | 183 | 183 | 112 | 55 | 0 | 16 | 0 |
 | unassigned-ne | 183 | 222 | 157 | 20 | 8 | 37 | 0 |
 | archdiocese-of-baltimore | 182 | 182 | 83 | 5 | 1 | 53 | 0 |
