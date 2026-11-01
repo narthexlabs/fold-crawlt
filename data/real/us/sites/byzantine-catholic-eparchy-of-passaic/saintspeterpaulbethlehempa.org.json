@@ -87,7 +87,7 @@
    "note": "iCal link on page",
    "last_fetch": {
     "status": "not_ical",
-    "fetched_at": "2026-11-01T20:27:09+00:00",
+    "fetched_at": "2026-11-01T23:37:01+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -103,7 +103,7 @@
    "note": "iCal link on page",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T20:27:09+00:00",
+    "fetched_at": "2026-11-01T23:37:01+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -131,7 +131,30 @@
   "text": "1 November 2026",
   "source_url": "https://saintspeterpaulbethlehempa.org/weeklybulletins"
  },
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "16:00",
+   "language": null,
+   "raw": "Saturday 4:00pm",
+   "source_url": "https://saintspeterpaulbethlehempa.org/schedule",
+   "fetched_at": "2026-11-01T17:23:31+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": null,
+   "raw": "St. Mary's Byzantine Catholic Church Hazelton, PA Sunday at 10:00 a.m.",
+   "source_url": "https://saintspeterpaulbethlehempa.org/livestreaming",
+   "fetched_at": "2026-11-01T18:54:10+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  }
+ ],
  "source_url": "http://saintspeterpaulbethlehempa.org/",
  "fetched_at": "2026-11-01T20:26:31+00:00",
  "schedule_template": {
@@ -152,12 +175,13 @@
   "trusted_candidate": false,
   "generic_rows": 4
  },
- "has_sunday": false,
+ "has_sunday": true,
  "schedule_dropped": {
   "other_location": 6,
   "dated_block": 2,
   "no_day": 2,
-  "skipped_section": 3
+  "skipped_section": 3,
+  "weekend_rescue_added": 2
  },
  "groups_dropped": {
   "unmatched": 2,

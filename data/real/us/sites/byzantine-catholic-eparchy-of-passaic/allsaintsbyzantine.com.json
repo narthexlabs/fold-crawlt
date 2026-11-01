@@ -99,7 +99,7 @@
    "feed_key": "bcc725093649",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T17:51:11+00:00",
+    "fetched_at": "2026-11-01T23:36:54+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -136,6 +136,28 @@
    "confidence": "high",
    "template": "squarespace",
    "kind_parsed": "mass"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:30",
+   "language": null,
+   "raw": "Sunday Divine Liturgy (Mass) is held at 8:30 am and 10:00 am",
+   "source_url": "https://www.allsaintsbyzantine.com/contact",
+   "fetched_at": "2026-11-01T17:21:35+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": null,
+   "raw": "Sunday Divine Liturgy (Mass) is held at 8:30 am and 10:00 am",
+   "source_url": "https://www.allsaintsbyzantine.com/contact",
+   "fetched_at": "2026-11-01T17:21:35+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
   }
  ],
  "source_url": "https://www.allsaintsbyzantine.com/",
@@ -158,11 +180,11 @@
   "trusted_candidate": false,
   "generic_rows": 2
  },
- "has_sunday": false,
- "schedule_partial": true,
+ "has_sunday": true,
  "schedule_dropped": {
   "not_a_service": 1,
-  "skipped_section": 1
+  "skipped_section": 1,
+  "weekend_rescue_added": 2
  },
  "groups_dropped": {},
  "event_counts": {
