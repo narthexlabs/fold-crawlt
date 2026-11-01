@@ -19,7 +19,7 @@
  "home_url": "http://www.stagnesuniontown.com/",
  "final_url": "https://www.stagnesuniontown.com/",
  "crawl_status": "ok",
- "crawl_env": "sandbox",
+ "crawl_env": "runner-rendered",
  "robots_note": "not_found",
  "pages": [
   {
@@ -67,7 +67,7 @@
    "language": null,
    "raw": "Masses: Saturdays at 4:30 p.m.",
    "source_url": "https://www.stagnesuniontown.com/",
-   "fetched_at": "2026-11-01T02:12:04+00:00",
+   "fetched_at": "2026-11-01T17:47:14+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -80,7 +80,7 @@
    "language": null,
    "raw": "Masses: Sundays at 8:00 a.m.",
    "source_url": "https://www.stagnesuniontown.com/",
-   "fetched_at": "2026-11-01T02:12:04+00:00",
+   "fetched_at": "2026-11-01T17:47:14+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -93,7 +93,7 @@
    "language": null,
    "raw": "Masses: Sundays at 10:00 a.m.",
    "source_url": "https://www.stagnesuniontown.com/",
-   "fetched_at": "2026-11-01T02:12:04+00:00",
+   "fetched_at": "2026-11-01T17:47:14+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -106,7 +106,7 @@
    "language": null,
    "raw": "Masses: Tuesday thru Friday 8:00 a.m.",
    "source_url": "https://www.stagnesuniontown.com/",
-   "fetched_at": "2026-11-01T02:12:04+00:00",
+   "fetched_at": "2026-11-01T17:47:14+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -120,12 +120,14 @@
    "language": null,
    "raw": "Masses: Tuesday thru Friday 8:00 a.m.",
    "source_url": "https://www.stagnesuniontown.com/",
-   "fetched_at": "2026-11-01T02:12:04+00:00",
+   "fetched_at": "2026-11-01T17:47:14+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict",
-   "day_expanded_from": "Tuesday thru Friday"
+   "day_expanded_from": "Tuesday thru Friday",
+   "day_parsed": "Tuesday",
+   "day_bound_from_line": true
   },
   {
    "kind": "mass",
@@ -134,12 +136,14 @@
    "language": null,
    "raw": "Masses: Tuesday thru Friday 8:00 a.m.",
    "source_url": "https://www.stagnesuniontown.com/",
-   "fetched_at": "2026-11-01T02:12:04+00:00",
+   "fetched_at": "2026-11-01T17:47:14+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict",
-   "day_expanded_from": "Tuesday thru Friday"
+   "day_expanded_from": "Tuesday thru Friday",
+   "day_parsed": "Tuesday",
+   "day_bound_from_line": true
   },
   {
    "kind": "mass",
@@ -148,12 +152,14 @@
    "language": null,
    "raw": "Masses: Tuesday thru Friday 8:00 a.m.",
    "source_url": "https://www.stagnesuniontown.com/",
-   "fetched_at": "2026-11-01T02:12:04+00:00",
+   "fetched_at": "2026-11-01T17:47:14+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict",
-   "day_expanded_from": "Tuesday thru Friday"
+   "day_expanded_from": "Tuesday thru Friday",
+   "day_parsed": "Tuesday",
+   "day_bound_from_line": true
   },
   {
    "kind": "mass",
@@ -162,7 +168,7 @@
    "language": null,
    "raw": "2nd Thursday 8 a.m. Mass at St. Ann (only when school is in session)",
    "source_url": "https://www.stagnesuniontown.com/",
-   "fetched_at": "2026-11-01T02:12:04+00:00",
+   "fetched_at": "2026-11-01T17:47:14+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "high",
@@ -175,7 +181,7 @@
    "language": null,
    "raw": "CONFESSIONS: 4:00 p.m. - 5:00 p.m. on Saturdays; or by appointment.",
    "source_url": "https://www.stagnesuniontown.com/",
-   "fetched_at": "2026-11-01T02:12:04+00:00",
+   "fetched_at": "2026-11-01T17:47:14+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -183,7 +189,7 @@
   }
  ],
  "source_url": "http://www.stagnesuniontown.com/",
- "fetched_at": "2026-11-01T02:12:04+00:00",
+ "fetched_at": "2026-11-01T17:47:14+00:00",
  "schedule_template": {
   "template": "generic_strict",
   "version": "ca-sites/2",
@@ -202,13 +208,14 @@
   "trusted_candidate": false,
   "generic_rows": 9
  },
+ "has_sunday": true,
  "schedule_dropped": {
   "no_day": 1
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-10-31",
-  "window_end_exclusive": "2027-01-29",
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
@@ -216,7 +223,20 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "office_contact": {
+  "email": null,
+  "phone": "(270) 822-4416",
+  "address": "504 Mulberry Street, Uniontown, KY 42461",
+  "source_url": "https://www.stagnesuniontown.com/",
+  "sources": {
+   "phone": "https://www.stagnesuniontown.com/",
+   "address": "https://www.stagnesuniontown.com/"
+  },
+  "fetched_at": "2026-11-01T17:47:14+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
- }
+ },
+ "fetch_mode": "rendered"
 }
