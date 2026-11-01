@@ -49,7 +49,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | archdiocese-of-milwaukee | 145 | 146 | 116 | 18 | 2 | 10 | 0 |
 | diocese-of-austin | 145 | 146 | 31 | 86 | 0 | 28 | 1 |
 | archdiocese-of-st-louis | 144 | 144 | 83 | 50 | 0 | 11 | 0 |
-| unassigned-ks | 143 | 143 | 78 | 20 | 3 | 42 | 0 |
+| unassigned-ks | 143 | 3 | 3 | 0 | 0 | 0 | 0 |
 | diocese-of-providence | 139 | 139 | 75 | 23 | 3 | 38 | 0 |
 | unassigned-ky | 135 | 2 | 1 | 0 | 0 | 1 | 0 |
 | diocese-of-syracuse | 134 | 4 | 3 | 0 | 0 | 1 | 0 |
@@ -104,7 +104,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-fresno | 75 | 33 | 11 | 9 | 0 | 13 | 0 |
 | diocese-of-lafayette-in-louisiana | 75 | 75 | 32 | 15 | 2 | 26 | 0 |
 | diocese-of-fort-wayne-south-bend | 73 | 73 | 45 | 21 | 0 | 7 | 0 |
-| archdiocese-of-kansas-city-in-kansas | 73 | 73 | 22 | 18 | 0 | 30 | 3 |
+| archdiocese-of-kansas-city-in-kansas | 73 | 1 | 0 | 1 | 0 | 0 | 0 |
 | diocese-of-pittsburgh | 72 | 72 | 8 | 61 | 0 | 3 | 0 |
 | diocese-of-ogdensburg | 71 | 55 | 21 | 19 | 1 | 14 | 0 |
 | diocese-of-wichita | 70 | 74 | 21 | 6 | 0 | 47 | 0 |
