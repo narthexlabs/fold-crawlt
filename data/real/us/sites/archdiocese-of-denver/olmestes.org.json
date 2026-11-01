@@ -15,33 +15,439 @@
  ],
  "cities": [],
  "home_url": "https://olmestes.org/",
- "final_url": "https://olmestes.org/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "final_url": "https://www.olmestes.org/",
+ "crawl_status": "wayback-2023-03-30",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
-   "url": "https://olmestes.org/",
-   "status": 403,
-   "class": "challenge"
+   "url": "https://www.olmestes.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://olmestes.org/worship-times",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.olmestes.org/reconciliation",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.olmestes.org/events/k-5-faith-formation-most-wednesdays/20230301",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.olmestes.org/events/middle-school-youth-group/20230301",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.olmestes.org/events/k-5-faith-formation-most-wednesdays/20230308",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://olmestes.org/bulletins",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://olmestes.org/events",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.olmestes.org/events/sunday-mass/20230226",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "contact",
+   "url": "https://www.olmestes.org/contact-us",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "olmestes.org:intercessory",
+   "name": "Prayer Chain",
+   "category": "prayer_devotion",
+   "category_label": "Prayer & devotion",
+   "subcategory": "intercessory_prayer",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.olmestes.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.olmestes.org/",
+   "source_kind": "website",
+   "fetched_at": "2023-03-30T23:02:30+00:00",
+   "confidence": "medium",
+   "source": "wayback-2023-03-30"
+  },
+  {
+   "id": "olmestes.org:ocia",
+   "name": "Encountering the Catholic Faith/RCIA",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "ocia",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.olmestes.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.olmestes.org/",
+   "source_kind": "website",
+   "fetched_at": "2023-03-30T23:02:30+00:00",
+   "confidence": "medium",
+   "source": "wayback-2023-03-30"
+  },
+  {
+   "id": "olmestes.org:choir",
+   "name": "Sacred Music",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "choir_music",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.olmestes.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.olmestes.org/",
+   "source_kind": "website",
+   "fetched_at": "2023-03-30T23:02:30+00:00",
+   "confidence": "medium",
+   "source": "wayback-2023-03-30"
+  },
+  {
+   "id": "olmestes.org:kofc",
+   "name": "Knights of Columbus",
+   "category": "fraternal_orders",
+   "category_label": "Fraternal & orders",
+   "subcategory": "knights_of_columbus",
+   "audience": "men",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.olmestes.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.olmestes.org/",
+   "source_kind": "website",
+   "fetched_at": "2023-03-30T23:02:30+00:00",
+   "confidence": "medium",
+   "source": "wayback-2023-03-30"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "x": [
+   "https://x.com/olmestes"
+  ],
+  "flocknote": [
+   "https://new.flocknote.com"
+  ]
+ },
+ "bulletin": {
+  "url": "https://files.ecatholic.com/12419/bulletins/20230212.pdf?t=1676053885000",
+  "date": "2023-02-12",
+  "kind": "ecatholic_pdf",
+  "text": "February 12 , 2023",
+  "source_url": "https://olmestes.org/bulletins"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "16:00",
+   "language": "English",
+   "raw": "Saturday: 4:00 PM English",
+   "source_url": "https://olmestes.org/worship-times",
+   "fetched_at": "2023-01-31T06:08:43+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2023-03-30: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2023-03-30",
+   "archive_url": "https://web.archive.org/web/20230131060843/https://olmestes.org/worship-times",
+   "capture_date": "2023-01-31"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "18:00",
+   "language": "English",
+   "raw": "Saturday: 6:00 PM English Memorial Day Weekend Through Labor Day",
+   "source_url": "https://olmestes.org/worship-times",
+   "fetched_at": "2023-01-31T06:08:43+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2023-03-30: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2023-03-30",
+   "archive_url": "https://web.archive.org/web/20230131060843/https://olmestes.org/worship-times",
+   "capture_date": "2023-01-31"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": "English",
+   "raw": "Sunday: 8:00 AM English",
+   "source_url": "https://olmestes.org/worship-times",
+   "fetched_at": "2023-01-31T06:08:43+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2023-03-30: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2023-03-30",
+   "archive_url": "https://web.archive.org/web/20230131060843/https://olmestes.org/worship-times",
+   "capture_date": "2023-01-31"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": "English",
+   "raw": "Sunday: 10:00 AM English",
+   "source_url": "https://olmestes.org/worship-times",
+   "fetched_at": "2023-01-31T06:08:43+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2023-03-30: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2023-03-30",
+   "archive_url": "https://web.archive.org/web/20230131060843/https://olmestes.org/worship-times",
+   "capture_date": "2023-01-31"
+  },
+  {
+   "kind": "mass",
+   "day": "First Sunday of the month",
+   "time": "12:00",
+   "language": "Spanish",
+   "raw": "Sunday: 12:00 PM Spanish En espanol primer Domingo del mes (1st Sunday each month)",
+   "source_url": "https://olmestes.org/worship-times",
+   "fetched_at": "2023-01-31T06:08:43+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2023-03-30: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2023-03-30",
+   "archive_url": "https://web.archive.org/web/20230131060843/https://olmestes.org/worship-times",
+   "capture_date": "2023-01-31"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "08:30",
+   "language": "English",
+   "raw": "Monday - Thursday: 8:30 AM English",
+   "source_url": "https://olmestes.org/worship-times",
+   "fetched_at": "2023-01-31T06:08:43+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2023-03-30: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Monday - Thursday",
+   "source": "wayback-2023-03-30",
+   "archive_url": "https://web.archive.org/web/20230131060843/https://olmestes.org/worship-times",
+   "capture_date": "2023-01-31"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "08:30",
+   "language": "English",
+   "raw": "Monday - Thursday: 8:30 AM English",
+   "source_url": "https://olmestes.org/worship-times",
+   "fetched_at": "2023-01-31T06:08:43+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2023-03-30: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Monday - Thursday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "source": "wayback-2023-03-30",
+   "archive_url": "https://web.archive.org/web/20230131060843/https://olmestes.org/worship-times",
+   "capture_date": "2023-01-31"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "08:30",
+   "language": "English",
+   "raw": "Monday - Thursday: 8:30 AM English",
+   "source_url": "https://olmestes.org/worship-times",
+   "fetched_at": "2023-01-31T06:08:43+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2023-03-30: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Monday - Thursday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "source": "wayback-2023-03-30",
+   "archive_url": "https://web.archive.org/web/20230131060843/https://olmestes.org/worship-times",
+   "capture_date": "2023-01-31"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "08:30",
+   "language": "English",
+   "raw": "Monday - Thursday: 8:30 AM English",
+   "source_url": "https://olmestes.org/worship-times",
+   "fetched_at": "2023-01-31T06:08:43+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2023-03-30: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Monday - Thursday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "source": "wayback-2023-03-30",
+   "archive_url": "https://web.archive.org/web/20230131060843/https://olmestes.org/worship-times",
+   "capture_date": "2023-01-31"
+  },
+  {
+   "kind": "confession",
+   "day": "Wednesday",
+   "time": "07:45-08:15",
+   "language": null,
+   "raw": "Wednesday: 7:45 AM - 8:15 AM",
+   "source_url": "https://olmestes.org/worship-times",
+   "fetched_at": "2023-01-31T06:08:43+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2023-03-30: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2023-03-30",
+   "archive_url": "https://web.archive.org/web/20230131060843/https://olmestes.org/worship-times",
+   "capture_date": "2023-01-31"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:00-15:45",
+   "language": null,
+   "raw": "Saturday: 3:00 PM - 3:45 PM",
+   "source_url": "https://olmestes.org/worship-times",
+   "fetched_at": "2023-01-31T06:08:43+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2023-03-30: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2023-03-30",
+   "archive_url": "https://web.archive.org/web/20230131060843/https://olmestes.org/worship-times",
+   "capture_date": "2023-01-31"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "07:45-08:15",
+   "language": null,
+   "raw": "Wednesday: 7:45 AM - 8:15 AM",
+   "source_url": "https://olmestes.org/worship-times",
+   "fetched_at": "2023-01-31T06:08:43+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2023-03-30: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2023-03-30",
+   "archive_url": "https://web.archive.org/web/20230131060843/https://olmestes.org/worship-times",
+   "capture_date": "2023-01-31"
+  }
+ ],
  "source_url": "https://olmestes.org/",
- "fetched_at": "2026-11-01T05:11:09+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-01T17:04:37+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": true
+   },
+   "score": "high"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 3
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "not_a_service": 1,
+  "text:dated_line": 101,
+  "text:not_a_service": 19,
+  "text:dated_block": 1
+ },
+ "groups_dropped": {},
+ "wayback": {
+  "capture_date": "2023-03-30",
+  "capture_age_days": 1312,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://www.olmestes.org/",
+    "capture": "2023-03-30",
+    "archive_url": "https://web.archive.org/web/20230330230230/https://www.olmestes.org/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://olmestes.org/worship-times",
+    "capture": "2023-01-31",
+    "archive_url": "https://web.archive.org/web/20230131060843/https://olmestes.org/worship-times"
+   },
+   {
+    "kind": "bulletin",
+    "original": "https://olmestes.org/bulletins",
+    "capture": "2023-03-26",
+    "archive_url": "https://web.archive.org/web/20230326030237/https://olmestes.org/bulletins"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://olmestes.org/events",
+    "capture": "2023-03-26",
+    "archive_url": "https://web.archive.org/web/20230326025235/https://olmestes.org/events"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }

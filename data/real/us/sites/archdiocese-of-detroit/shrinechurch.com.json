@@ -22,33 +22,149 @@
   "Michigan"
  ],
  "home_url": "https://www.shrinechurch.com/",
- "final_url": "https://www.shrinechurch.com/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "final_url": "https://shrinechurch.com/",
+ "crawl_status": "wayback-2026-04-14",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
-   "url": "https://www.shrinechurch.com/",
-   "status": 403,
-   "class": "challenge"
+   "url": "https://shrinechurch.com/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://shrinechurch.com/mass-and-confession",
+   "status": null,
+   "class": "timeout"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "shrinechurch.com:ocia",
+   "name": "OCIA for Children",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "ocia",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://shrinechurch.com/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://shrinechurch.com/",
+   "source_kind": "website",
+   "fetched_at": "2026-04-14T03:25:20+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-04-14"
+  },
+  {
+   "id": "shrinechurch.com:children_ff",
+   "name": "Religious Education",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "children_faith_formation",
+   "audience": "families",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://shrinechurch.com/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://shrinechurch.com/",
+   "source_kind": "website",
+   "fetched_at": "2026-04-14T03:25:20+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-04-14"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/NationalShrineoftheLittleFlowerBasilica"
+  ],
+  "instagram": [
+   "https://www.instagram.com/shrineofthelittleflower/"
+  ],
+  "youtube": [
+   "https://www.youtube.com/channel/UCYsjRY4fwq9dUhIr6EIAcfw"
+  ]
+ },
+ "bulletin": {
+  "url": "https://parishesonline.com/organization/national-shrine-of-the-little-flower-basilica",
+  "date": null,
+  "kind": "lpi",
+  "text": "The Shrine Herald - Our Bulletin",
+  "source_url": "https://shrinechurch.com/"
+ },
  "schedule_rows": [],
  "source_url": "https://www.shrinechurch.com/",
- "fetched_at": "2026-11-01T02:17:11+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-01T17:17:09+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "has_sunday": false,
+ "schedule_images": [
+  {
+   "url": "https://files.ecatholic.com/28748/pictures/2026/4/Mass%20for%20Life%201.19.24%2015.jpg?t=1775841745000",
+   "alt": "Mass and Confession",
+   "page": "https://shrinechurch.com/"
+  }
+ ],
+ "schedule_note": "schedule appears to be an image; times not read (needs_review)",
+ "groups_dropped": {},
+ "office_contact": {
+  "email": null,
+  "phone": "(248) 541-4122",
+  "address": "2100 W. 12 Mile Road, Royal Oak, MI 48073-3910",
+  "source_url": "https://shrinechurch.com/",
+  "sources": {
+   "phone": "https://shrinechurch.com/",
+   "address": "https://shrinechurch.com/"
+  },
+  "fetched_at": "2026-04-14T03:25:20+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2026-04-14",
+  "capture_age_days": 201,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://shrinechurch.com/",
+    "capture": "2026-04-14",
+    "archive_url": "https://web.archive.org/web/20260414032520/https://shrinechurch.com/"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }
