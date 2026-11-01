@@ -339,7 +339,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T20:27:13+00:00",
+    "fetched_at": "2026-11-01T23:40:28+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -587,6 +587,50 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "16:00",
+   "language": null,
+   "raw": "Saturday 4:00 PM Vigil Mass (English)",
+   "source_url": "https://www.stmarynorwalk.net/liturgy/",
+   "fetched_at": "2026-11-01T18:52:48+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "19:00",
+   "language": null,
+   "raw": "Saturday 7:00 PM Vigil Mass (Spanish)",
+   "source_url": "https://www.stmarynorwalk.net/liturgy/",
+   "fetched_at": "2026-11-01T18:52:48+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Sunday 8:00 AM Sung Mass (English)",
+   "source_url": "https://www.stmarynorwalk.net/liturgy/",
+   "fetched_at": "2026-11-01T18:52:48+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": null,
+   "raw": "Sunday 10:00 AM Solemn Mass (Latin)",
+   "source_url": "https://www.stmarynorwalk.net/liturgy/",
+   "fetched_at": "2026-11-01T18:52:48+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
   }
  ],
  "source_url": "http://www.stmarynorwalk.net/",
@@ -609,12 +653,12 @@
   "trusted_candidate": false,
   "generic_rows": 25
  },
- "has_sunday": false,
- "schedule_partial": true,
+ "has_sunday": true,
  "schedule_dropped": {
   "other_location": 6,
   "dated_line": 36,
-  "no_kind": 2
+  "no_kind": 2,
+  "weekend_rescue_added": 4
  },
  "groups_dropped": {
   "unmatched": 1,
