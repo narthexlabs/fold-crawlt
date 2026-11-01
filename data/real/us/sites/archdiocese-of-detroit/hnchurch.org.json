@@ -17,33 +17,309 @@
   "Birmingham"
  ],
  "home_url": "http://www.hnchurch.org/",
- "final_url": "https://www.hnchurch.org/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "final_url": "https://hnchurch.org/",
+ "crawl_status": "wayback-2025-06-21",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
-   "url": "https://www.hnchurch.org/",
-   "status": 403,
-   "class": "challenge"
+   "url": "https://hnchurch.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.hnchurch.org/mass-times",
+   "status": null,
+   "class": "conn_error"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://hnchurch.org/confession",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "hnchurch.org:rosary",
+   "name": "Rosary - After Mass and Zoom",
+   "category": "prayer_devotion",
+   "category_label": "Prayer & devotion",
+   "subcategory": "rosary",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://hnchurch.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://hnchurch.org/",
+   "source_kind": "website",
+   "fetched_at": "2025-06-21T04:38:12+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-06-21"
+  },
+  {
+   "id": "hnchurch.org:svdp",
+   "name": "St. Vincent de Paul",
+   "category": "service_mercy",
+   "category_label": "Service & mercy",
+   "subcategory": "st_vincent_de_paul",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://hnchurch.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://hnchurch.org/",
+   "source_kind": "website",
+   "fetched_at": "2025-06-21T04:38:12+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-06-21"
+  },
+  {
+   "id": "hnchurch.org:kofc",
+   "name": "Knights of Columbus",
+   "category": "fraternal_orders",
+   "category_label": "Fraternal & orders",
+   "subcategory": "knights_of_columbus",
+   "audience": "men",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://hnchurch.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://hnchurch.org/",
+   "source_kind": "website",
+   "fetched_at": "2025-06-21T04:38:12+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-06-21"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/Holy-Name-Parish-100079332253212"
+  ],
+  "instagram": [
+   "https://www.instagram.com/holyname.parish/"
+  ],
+  "livestream": [
+   {
+    "url": "https://hnchurch.org/livestream",
+    "label": "Livestream",
+    "platform": "hnchurch.org",
+    "kind": "link"
+   },
+   {
+    "url": "https://hnchurch.org/mass",
+    "label": "Click to View Livestream",
+    "platform": "hnchurch.org",
+    "kind": "link"
+   }
+  ]
+ },
+ "bulletin": {
+  "url": "https://discovermass.com/church/holy-name-birmingham-mi/",
+  "date": null,
+  "kind": "discovermass",
+  "text": "",
+  "source_url": "https://hnchurch.org/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:00",
+   "language": null,
+   "raw": "The Sacrament of Reconciliation is available at 3:00pm every Saturday.",
+   "source_url": "https://hnchurch.org/confession",
+   "fetched_at": "2024-05-19T18:43:13+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-06-21: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2025-06-21",
+   "archive_url": "https://web.archive.org/web/20240519184313/https://hnchurch.org/confession",
+   "capture_date": "2024-05-19"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Daily Mass: Monday - Friday 8:00am",
+   "source_url": "https://hnchurch.org/",
+   "fetched_at": "2025-06-21T04:38:12+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-06-21: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "day_expanded_from": "Monday - Friday",
+   "source": "wayback-2025-06-21",
+   "archive_url": "https://web.archive.org/web/20250621043812/https://hnchurch.org/",
+   "capture_date": "2025-06-21"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Daily Mass: Monday - Friday 8:00am",
+   "source_url": "https://hnchurch.org/",
+   "fetched_at": "2025-06-21T04:38:12+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-06-21: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "day_expanded_from": "Monday - Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "source": "wayback-2025-06-21",
+   "archive_url": "https://web.archive.org/web/20250621043812/https://hnchurch.org/",
+   "capture_date": "2025-06-21"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Daily Mass: Monday - Friday 8:00am",
+   "source_url": "https://hnchurch.org/",
+   "fetched_at": "2025-06-21T04:38:12+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-06-21: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "day_expanded_from": "Monday - Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "source": "wayback-2025-06-21",
+   "archive_url": "https://web.archive.org/web/20250621043812/https://hnchurch.org/",
+   "capture_date": "2025-06-21"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Daily Mass: Monday - Friday 8:00am",
+   "source_url": "https://hnchurch.org/",
+   "fetched_at": "2025-06-21T04:38:12+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-06-21: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "day_expanded_from": "Monday - Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "source": "wayback-2025-06-21",
+   "archive_url": "https://web.archive.org/web/20250621043812/https://hnchurch.org/",
+   "capture_date": "2025-06-21"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Daily Mass: Monday - Friday 8:00am",
+   "source_url": "https://hnchurch.org/",
+   "fetched_at": "2025-06-21T04:38:12+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-06-21: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "day_expanded_from": "Monday - Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "source": "wayback-2025-06-21",
+   "archive_url": "https://web.archive.org/web/20250621043812/https://hnchurch.org/",
+   "capture_date": "2025-06-21"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": null,
+   "raw": "Sunday Mass: 10:00am",
+   "source_url": "https://hnchurch.org/",
+   "fetched_at": "2025-06-21T04:38:12+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-06-21: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2025-06-21",
+   "archive_url": "https://web.archive.org/web/20250621043812/https://hnchurch.org/",
+   "capture_date": "2025-06-21"
+  }
+ ],
  "source_url": "http://www.hnchurch.org/",
- "fetched_at": "2026-11-01T18:51:44+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-01T20:41:55+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 6
+ },
+ "has_sunday": true,
+ "groups_dropped": {},
+ "office_contact": {
+  "email": "info@hnchurch.org",
+  "phone": "(248) 646-2244",
+  "address": null,
+  "source_url": "https://hnchurch.org/",
+  "sources": {
+   "email": "https://hnchurch.org/",
+   "phone": "https://hnchurch.org/"
+  },
+  "fetched_at": "2025-06-21T04:38:12+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2025-06-21",
+  "capture_age_days": 498,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://hnchurch.org/",
+    "capture": "2025-06-21",
+    "archive_url": "https://web.archive.org/web/20250621043812/https://hnchurch.org/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://hnchurch.org/confession",
+    "capture": "2024-05-19",
+    "archive_url": "https://web.archive.org/web/20240519184313/https://hnchurch.org/confession"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }

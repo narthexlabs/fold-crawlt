@@ -16,32 +16,108 @@
  "cities": [],
  "home_url": "https://sjandspp.com/",
  "final_url": "https://sjandspp.com/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "crawl_status": "wayback-2025-08-31",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
    "url": "https://sjandspp.com/",
-   "status": 403,
-   "class": "challenge"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://sjandspp.com/ministry-schedules",
+   "status": null,
+   "class": "conn_error"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
+ "template": "ecatholic-fastpath",
  "groups": [],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/stjosephbellevue"
+  ],
+  "youtube": [
+   "https://www.youtube.com/channel/UCstxBm6w98N-91ZEpgO62Mg"
+  ]
+ },
+ "bulletin": {
+  "url": "https://sjandspp.com/bulletins",
+  "date": null,
+  "kind": "page",
+  "text": "Bulletins",
+  "source_url": "https://sjandspp.com/"
+ },
  "schedule_rows": [],
  "source_url": "https://sjandspp.com/",
- "fetched_at": "2026-11-01T07:19:41+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-01T20:49:28+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "has_sunday": false,
+ "schedule_dropped": {
+  "other_location": 12
+ },
+ "schedule_images": [
+  {
+   "url": "https://files.ecatholic.com/23086/pictures/2019/8/IMG_9328.jpg?t=1564769659000",
+   "alt": "Ministry Schedules",
+   "page": "https://sjandspp.com/"
+  }
+ ],
+ "schedule_note": "schedule appears to be an image; times not read (needs_review)",
+ "groups_dropped": {},
+ "office_contact": {
+  "email": null,
+  "phone": "(563) 872-3234",
+  "address": null,
+  "source_url": "https://sjandspp.com/",
+  "sources": {
+   "phone": "https://sjandspp.com/"
+  },
+  "fetched_at": "2025-08-31T12:42:23+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2025-08-31",
+  "capture_age_days": 427,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://sjandspp.com/",
+    "capture": "2025-08-31",
+    "archive_url": "https://web.archive.org/web/20250831124223/https://sjandspp.com/"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }

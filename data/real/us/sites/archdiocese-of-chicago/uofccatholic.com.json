@@ -17,33 +17,349 @@
   "Chicago"
  ],
  "home_url": "http://www.uofccatholic.com/",
- "final_url": "https://www.uofccatholic.com/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "ok",
+ "final_url": "https://uofccatholic.com/",
+ "crawl_status": "wayback-2025-03-28",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
-   "url": "https://www.uofccatholic.com/",
-   "status": 403,
-   "class": "challenge"
+   "url": "https://uofccatholic.com/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://uofccatholic.com/sacraments/mass-schedule/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://uofccatholic.com/sacraments/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://uofccatholic.com/pillars/formation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://uofccatholic.com/pillars/formation/bible-study/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://uofccatholic.com/pillars/formation/other-formation-events/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://uofccatholic.com/newsletter/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://uofccatholic.com/upcoming-events/calendar/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://uofccatholic.com/contact-form/",
+   "status": null,
+   "class": "conn_error"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "wordpress",
+  "evidence": [
+   "wp-includes"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "wordpress-html",
+ "groups": [
+  {
+   "id": "uofccatholic.com:bible_study",
+   "name": "Bible Study",
+   "category": "scripture_study",
+   "category_label": "Scripture & study",
+   "subcategory": "bible_study",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://uofccatholic.com/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://uofccatholic.com/pillars/formation/",
+   "source_kind": "website",
+   "fetched_at": "2023-10-24T09:05:47+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-03-28"
+  },
+  {
+   "id": "uofccatholic.com:youth_ministry",
+   "name": "Youth Programs for teens",
+   "category": "youth",
+   "category_label": "Youth",
+   "subcategory": "youth_ministry",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://uofccatholic.com/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://uofccatholic.com/pillars/formation/",
+   "source_kind": "website",
+   "fetched_at": "2023-10-24T09:05:47+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-03-28"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/Calvert-House-111385255628349"
+  ],
+  "instagram": [
+   "https://www.instagram.com/uofccatholic/"
+  ],
+  "youtube": [
+   "https://www.youtube.com/user/CalvertUChicago"
+  ],
+  "x": [
+   "https://x.com/CalvertHouse"
+  ]
+ },
  "bulletin": null,
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:00",
+   "language": null,
+   "raw": "Our Sunday Mass is at 11:00 am from July to mid-September.",
+   "source_url": "https://uofccatholic.com/sacraments/mass-schedule/",
+   "fetched_at": "2024-09-11T08:39:44+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-03-28: read by a person before it is shown",
+   "confidence": "high",
+   "template": "wordpress",
+   "source": "wayback-2025-03-28",
+   "archive_url": "https://web.archive.org/web/20240911083944/https://uofccatholic.com/sacraments/mass-schedule/",
+   "capture_date": "2024-09-11"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "17:00",
+   "language": null,
+   "raw": "During the academic year (late Sept. to June), we offer Sunday Masses at 11:00 am and 5:00 pm",
+   "source_url": "https://uofccatholic.com/sacraments/mass-schedule/",
+   "fetched_at": "2024-09-11T08:39:44+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-03-28: read by a person before it is shown",
+   "confidence": "high",
+   "template": "wordpress",
+   "season": "Sept. to June",
+   "source": "wayback-2025-03-28",
+   "archive_url": "https://web.archive.org/web/20240911083944/https://uofccatholic.com/sacraments/mass-schedule/",
+   "capture_date": "2024-09-11"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "12:30",
+   "language": null,
+   "raw": "Our daily Mass is at 12:30 pm, Monday through Thursday.",
+   "source_url": "https://uofccatholic.com/sacraments/mass-schedule/",
+   "fetched_at": "2024-09-11T08:39:44+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-03-28: read by a person before it is shown",
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "daily",
+   "source": "wayback-2025-03-28",
+   "archive_url": "https://web.archive.org/web/20240911083944/https://uofccatholic.com/sacraments/mass-schedule/",
+   "capture_date": "2024-09-11"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "12:30",
+   "language": null,
+   "raw": "Our daily Mass is at 12:30 pm, Monday through Thursday.",
+   "source_url": "https://uofccatholic.com/sacraments/mass-schedule/",
+   "fetched_at": "2024-09-11T08:39:44+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-03-28: read by a person before it is shown",
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "daily",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "source": "wayback-2025-03-28",
+   "archive_url": "https://web.archive.org/web/20240911083944/https://uofccatholic.com/sacraments/mass-schedule/",
+   "capture_date": "2024-09-11"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "12:30",
+   "language": null,
+   "raw": "Our daily Mass is at 12:30 pm, Monday through Thursday.",
+   "source_url": "https://uofccatholic.com/sacraments/mass-schedule/",
+   "fetched_at": "2024-09-11T08:39:44+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-03-28: read by a person before it is shown",
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "daily",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "source": "wayback-2025-03-28",
+   "archive_url": "https://web.archive.org/web/20240911083944/https://uofccatholic.com/sacraments/mass-schedule/",
+   "capture_date": "2024-09-11"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "12:30",
+   "language": null,
+   "raw": "Our daily Mass is at 12:30 pm, Monday through Thursday.",
+   "source_url": "https://uofccatholic.com/sacraments/mass-schedule/",
+   "fetched_at": "2024-09-11T08:39:44+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-03-28: read by a person before it is shown",
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "daily",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "source": "wayback-2025-03-28",
+   "archive_url": "https://web.archive.org/web/20240911083944/https://uofccatholic.com/sacraments/mass-schedule/",
+   "capture_date": "2024-09-11"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday (summer)",
+   "time": "11:00",
+   "language": null,
+   "raw": "Summer Schedule: Sunday Mass: 11am",
+   "source_url": "https://uofccatholic.com/sacraments/",
+   "fetched_at": "2024-09-12T19:00:24+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-03-28: read by a person before it is shown",
+   "confidence": "high",
+   "template": "wordpress",
+   "source": "wayback-2025-03-28",
+   "archive_url": "https://web.archive.org/web/20240912190024/https://uofccatholic.com/sacraments/",
+   "capture_date": "2024-09-12"
+  }
+ ],
  "source_url": "http://www.uofccatholic.com/",
- "fetched_at": "2026-11-01T18:51:47+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-01T20:36:54+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": true
+   },
+   "score": "high"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 8
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "not_a_service": 1
+ },
+ "groups_dropped": {},
+ "office_contact": {
+  "email": null,
+  "phone": "(773) 288-2311",
+  "address": "5735 S University Ave, Chicago, IL 60637",
+  "source_url": "https://uofccatholic.com/",
+  "sources": {
+   "phone": "https://uofccatholic.com/",
+   "address": "https://uofccatholic.com/"
+  },
+  "fetched_at": "2025-03-28T10:34:03+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2025-03-28",
+  "capture_age_days": 583,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://uofccatholic.com/",
+    "capture": "2025-03-28",
+    "archive_url": "https://web.archive.org/web/20250328103403/https://uofccatholic.com/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://uofccatholic.com/sacraments/mass-schedule/",
+    "capture": "2024-09-11",
+    "archive_url": "https://web.archive.org/web/20240911083944/https://uofccatholic.com/sacraments/mass-schedule/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://uofccatholic.com/sacraments/",
+    "capture": "2024-09-12",
+    "archive_url": "https://web.archive.org/web/20240912190024/https://uofccatholic.com/sacraments/"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://uofccatholic.com/pillars/formation/",
+    "capture": "2023-10-24",
+    "archive_url": "https://web.archive.org/web/20231024090547/https://uofccatholic.com/pillars/formation/"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://uofccatholic.com/pillars/formation/bible-study/",
+    "capture": "2024-09-11",
+    "archive_url": "https://web.archive.org/web/20240911112034/https://uofccatholic.com/pillars/formation/bible-study/"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://uofccatholic.com/pillars/formation/other-formation-events/",
+    "capture": "2024-09-12",
+    "archive_url": "https://web.archive.org/web/20240912232818/https://uofccatholic.com/pillars/formation/other-formation-events/"
+   },
+   {
+    "kind": "bulletin",
+    "original": "https://uofccatholic.com/newsletter/",
+    "capture": "2024-09-11",
+    "archive_url": "https://web.archive.org/web/20240911045903/https://uofccatholic.com/newsletter/"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://uofccatholic.com/upcoming-events/calendar/",
+    "capture": "2024-09-13",
+    "archive_url": "https://web.archive.org/web/20240913074438/https://uofccatholic.com/upcoming-events/calendar/"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }
