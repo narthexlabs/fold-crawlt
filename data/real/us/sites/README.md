@@ -88,7 +88,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | archdiocese-of-miami | 101 | 101 | 83 | 5 | 0 | 12 | 1 |
 | diocese-of-fort-wayne-south-bend | 100 | 100 | 52 | 22 | 0 | 26 | 0 |
 | diocese-of-rockford | 99 | 99 | 45 | 33 | 1 | 20 | 0 |
-| diocese-of-belleville | 98 | 96 | 59 | 8 | 0 | 29 | 0 |
+| diocese-of-belleville | 98 | 98 | 60 | 8 | 0 | 30 | 0 |
 | diocese-of-burlington | 98 | 101 | 13 | 59 | 1 | 28 | 0 |
 | unassigned-ia | 98 | 118 | 65 | 32 | 1 | 20 | 0 |
 | unassigned-sd | 97 | 110 | 69 | 17 | 1 | 23 | 0 |
@@ -286,5 +286,4 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-01T18:51:40+00:00: fetched {'robots_disallowed': 4, 'done': 262, 'dns': 77, 'conn_error': 3, 'ssl_error': 24, 'challenge': 30, 'not_found': 5, 'ok': 92, 'parked': 8, 'http_5xx': 5, 'blocked_429': 1, 'blocked_403': 1, 'error:TooManyRedirects': 1, 'timeout': 13, 'cut': 2, 'halted_egress': 0}; parsed 6 dioceses
 - 2026-11-01T20:24:57+00:00: fetched {'dns': 31, 'done': 543, 'conn_error': 8, 'ssl_error': 16, 'robots_disallowed': 2, 'ok': 388, 'challenge': 85, 'blocked_403': 3, 'http_5xx': 6, 'not_found': 4, 'timeout': 8, 'parked': 1, 'cut': 9, 'halted_egress': 0}; parsed 1 dioceses
 - 2026-11-01T22:15:20+00:00: fetched {'dns': 12, 'done': 261, 'not_found': 12, 'robots_disallowed': 2, 'ssl_error': 8, 'challenge': 26, 'blocked_403': 2, 'conn_error': 1, 'ok': 189, 'parked': 2, 'timeout': 10, 'cut': 3, 'halted_egress': 0}; parsed 9 dioceses
-- 2026-11-01T23:30:07+00:00: fetched {'dns': 1, 'done': 11, 'challenge': 1, 'not_found': 1, 'ok': 8, 'halted_egress': 0}; parsed 1 dioceses
-- 2026-11-01T23:30:27+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-01T23:30:06+00:00: fetched {'dns': 1, 'done': 1, 'halted_egress': 0}; parsed 1 dioceses
