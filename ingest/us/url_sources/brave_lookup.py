@@ -160,8 +160,8 @@ def brave(q: str, key: str) -> dict:
             if e.code in (401, 403, 402):
                 raise SystemExit(f"Brave API refused ({e.code}): check the key / plan")
             time.sleep(1.0)
-        except URLError:
-            time.sleep(2.0)
+        except (URLError, ConnectionError, OSError, TimeoutError):
+            time.sleep(3.0 * (attempt + 1))
     return {}
 
 
