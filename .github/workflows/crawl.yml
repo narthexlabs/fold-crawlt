@@ -23,6 +23,7 @@ on:
 
 permissions:
   contents: write
+  actions: write   # the chain job dispatches the next round
 
 env:
   MINUTES: ${{ github.event.inputs.minutes || '110' }}
@@ -238,3 +239,17 @@ jobs:
           bash scripts/us/bulletins_chunk.sh "$MINUTES" || true
           git add data/real/us/bulletins && git commit -q -m "US parish bulletins (Actions $(date -u +%FT%H:%MZ))" || true
           git pull --rebase --autostash -q origin main && git push -q origin HEAD:main
+
+  chain:
+    # GitHub's cron has not fired on this repo, so each round dispatches the next one when its jobs are done
+    # (workflow_dispatch via the API with GITHUB_TOKEN does start a run). Disable the workflow to stop the chain.
+    needs: [sites, discovermass, gcatholic, bulletins, wayback]
+    if: ${{ always() && (github.event_name == 'schedule' || github.event.inputs.job == 'all') }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - run: |
+          sleep 60
+          curl -sS -X POST -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/${{ github.repository }}/actions/workflows/crawl.yml/dispatches \
+            -d '{"ref":"main","inputs":{"job":"all","minutes":"110"}}' && echo "next round dispatched"
