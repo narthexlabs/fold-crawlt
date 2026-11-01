@@ -1,0 +1,147 @@
+{
+ "domain": "transfigurationbalt.org",
+ "diocese": "archdiocese-of-baltimore",
+ "matched_church_ids": [
+  "gc-19549"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "gc-19549"
+  ]
+ },
+ "names": [
+  "Transfiguration"
+ ],
+ "cities": [
+  "Baltimore"
+ ],
+ "home_url": "http://www.transfigurationbalt.org/",
+ "final_url": "https://www.transfigurationbalt.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://www.transfigurationbalt.org/",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-content"
+  ]
+ },
+ "template": "wordpress-rest+html",
+ "groups": [],
+ "calendar_feeds": [
+  {
+   "feed_id": "transfigurationbalt.org:tribe_rest:5ede0d02",
+   "type": "tribe_rest",
+   "platform": "The Events Calendar (WordPress)",
+   "url": "https://www.transfigurationbalt.org/wp-json/tribe/events/v1/events",
+   "page_url": "https://www.transfigurationbalt.org/",
+   "label": null,
+   "status": "active",
+   "note": "The Events Calendar (WordPress) REST API",
+   "last_fetch": {
+    "status": 200,
+    "fetched_at": "2026-11-01T18:53:20+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/transfigurationbalt"
+  ],
+  "youtube": [
+   "https://www.youtube.com/channel/UC0hi6HrTgfnn0HdAJs8xuNA",
+   "https://www.youtube.com/user/CatholicReview"
+  ]
+ },
+ "bulletin": null,
+ "schedule_rows": [
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:00",
+   "language": null,
+   "raw": "CONFESSIONS: 3:00pm (OLV & SJM) on Saturday",
+   "source_url": "https://www.transfigurationbalt.org/",
+   "fetched_at": "2026-11-01T18:51:44+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "18:00",
+   "language": null,
+   "raw": "CONFESSIONS: 6:00pm (OLV)",
+   "source_url": "https://www.transfigurationbalt.org/",
+   "fetched_at": "2026-11-01T18:51:44+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "wordpress"
+  }
+ ],
+ "source_url": "http://www.transfigurationbalt.org/",
+ "fetched_at": "2026-11-01T18:51:46+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 16
+ },
+ "has_sunday": false,
+ "schedule_partial": true,
+ "schedule_dropped": {
+  "no_day": 8
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": null,
+  "address": "4414 Wilkens Ave. Baltimore, MD 21229",
+  "source_url": "https://www.transfigurationbalt.org/",
+  "sources": {
+   "address": "https://www.transfigurationbalt.org/"
+  },
+  "fetched_at": "2026-11-01T18:51:44+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}
