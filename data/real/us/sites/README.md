@@ -77,7 +77,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-joliet | 121 | 121 | 80 | 22 | 0 | 19 | 0 |
 | diocese-of-charlotte | 118 | 118 | 62 | 16 | 0 | 40 | 0 |
 | diocese-of-green-bay | 118 | 118 | 48 | 26 | 0 | 44 | 0 |
-| unassigned-fl | 118 | 135 | 82 | 16 | 6 | 31 | 0 |
+| unassigned-fl | 118 | 136 | 83 | 16 | 6 | 31 | 0 |
 | archdiocese-of-seattle | 117 | 117 | 81 | 30 | 0 | 6 | 0 |
 | diocese-of-la-crosse | 117 | 119 | 71 | 21 | 4 | 23 | 0 |
 | diocese-of-richmond | 114 | 124 | 89 | 19 | 1 | 15 | 0 |
@@ -85,7 +85,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | unassigned-wv | 111 | 119 | 97 | 3 | 3 | 16 | 0 |
 | diocese-of-peoria | 106 | 109 | 91 | 8 | 1 | 9 | 0 |
 | unassigned-ma | 103 | 119 | 48 | 51 | 2 | 18 | 0 |
-| archdiocese-of-miami | 101 | 101 | 83 | 5 | 0 | 12 | 1 |
+| archdiocese-of-miami | 101 | 102 | 84 | 5 | 0 | 12 | 1 |
 | diocese-of-fort-wayne-south-bend | 100 | 100 | 52 | 22 | 0 | 26 | 0 |
 | diocese-of-rockford | 99 | 99 | 45 | 33 | 1 | 20 | 0 |
 | diocese-of-belleville | 98 | 96 | 59 | 8 | 0 | 29 | 0 |
@@ -148,7 +148,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-tyler | 64 | 65 | 23 | 26 | 0 | 12 | 4 |
 | diocese-of-altoona-johnstown | 63 | 63 | 35 | 8 | 1 | 19 | 0 |
 | diocese-of-boise | 63 | 65 | 33 | 17 | 0 | 15 | 0 |
-| diocese-of-st-augustine | 63 | 68 | 43 | 15 | 0 | 10 | 0 |
+| diocese-of-st-augustine | 63 | 69 | 44 | 15 | 0 | 10 | 0 |
 | diocese-of-pensacola-tallahassee | 62 | 62 | 33 | 16 | 1 | 11 | 1 |
 | diocese-of-savannah | 61 | 62 | 31 | 24 | 3 | 4 | 0 |
 | diocese-of-tucson | 60 | 60 | 24 | 12 | 0 | 21 | 3 |
@@ -170,7 +170,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-santa-rosa | 53 | 13 | 0 | 1 | 1 | 11 | 0 |
 | diocese-of-memphis | 52 | 52 | 39 | 3 | 0 | 10 | 0 |
 | diocese-of-saginaw | 52 | 54 | 37 | 16 | 1 | 0 | 0 |
-| diocese-of-sioux-city | 52 | 52 | 6 | 30 | 0 | 16 | 0 |
+| diocese-of-sioux-city | 52 | 20 | 2 | 5 | 0 | 13 | 0 |
 | diocese-of-beaumont | 50 | 52 | 15 | 20 | 1 | 14 | 2 |
 | unassigned-vt | 50 | 60 | 18 | 31 | 1 | 10 | 0 |
 | diocese-of-covington | 49 | 49 | 30 | 5 | 0 | 14 | 0 |
@@ -287,4 +287,4 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-01T18:51:40+00:00: fetched {'robots_disallowed': 4, 'done': 262, 'dns': 77, 'conn_error': 3, 'ssl_error': 24, 'challenge': 30, 'not_found': 5, 'ok': 92, 'parked': 8, 'http_5xx': 5, 'blocked_429': 1, 'blocked_403': 1, 'error:TooManyRedirects': 1, 'timeout': 13, 'cut': 2, 'halted_egress': 0}; parsed 6 dioceses
 - 2026-11-01T20:24:57+00:00: fetched {'dns': 31, 'done': 543, 'conn_error': 8, 'ssl_error': 16, 'robots_disallowed': 2, 'ok': 388, 'challenge': 85, 'blocked_403': 3, 'http_5xx': 6, 'not_found': 4, 'timeout': 8, 'parked': 1, 'cut': 9, 'halted_egress': 0}; parsed 1 dioceses
 - 2026-11-01T22:15:20+00:00: fetched {'dns': 12, 'done': 261, 'not_found': 12, 'robots_disallowed': 2, 'ssl_error': 8, 'challenge': 26, 'blocked_403': 2, 'conn_error': 1, 'ok': 189, 'parked': 2, 'timeout': 10, 'cut': 3, 'halted_egress': 0}; parsed 9 dioceses
-- 2026-11-01T23:30:04+00:00: fetched {'dns': 1, 'done': 18, 'challenge': 12, 'parked': 1, 'ssl_error': 1, 'ok': 3, 'halted_egress': 0}; parsed 2 dioceses
+- 2026-11-01T23:30:06+00:00: fetched {'ok': 3, 'done': 3, 'halted_egress': 0}; parsed 3 dioceses
