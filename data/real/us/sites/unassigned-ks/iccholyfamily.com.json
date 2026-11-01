@@ -18,31 +18,357 @@
  ],
  "home_url": "https://iccholyfamily.com/",
  "final_url": "https://iccholyfamily.com/",
- "crawl_status": "timeout",
+ "crawl_status": "ok",
  "crawl_env": "sandbox",
- "robots_note": "timeout",
+ "robots_note": "ok",
  "pages": [
   {
    "category": "home",
    "url": "https://iccholyfamily.com/",
-   "status": null,
-   "class": "timeout"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://iccholyfamily.com/home/mass-confession-times",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://iccholyfamily.com/ministry-schedule",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://iccholyfamily.com/parish-life",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://iccholyfamily.com/bulletin",
+   "status": 429,
+   "class": "blocked_429"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "joomla",
+  "evidence": [
+   "content=\"joomla"
+  ]
  },
- "template": "none",
- "groups": [],
- "calendar_feeds": [],
+ "template": "generic-html:joomla",
+ "groups": [
+  {
+   "id": "iccholyfamily.com:altar_society",
+   "name": "Altar Society - Claflin & Odin",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "altar_society_environment",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "Altar Society cares for the altar, sacristy and sanctuary. Their purpose is to help maintain the liturgical needs of our daily worship, to beautify our worship area, and to grow in the community and common service. Some of their duties…",
+   "contact_url": "https://iccholyfamily.com/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://iccholyfamily.com/parish-life",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:27:26+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "iccholyfamily.com:kofc",
+   "name": "Knights of Columbus",
+   "category": "fraternal_orders",
+   "category_label": "Fraternal & orders",
+   "subcategory": "knights_of_columbus",
+   "audience": "men",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "Immaculate Conception Council #1500 & Holy Family Council #2630. The councils are currently involved in many activities in our churches and community. Some of these activities include helping our PSR classes thru our Religious Education fund, sponsoring seminarians thru Adopt-a-Seminarian…",
+   "contact_url": "https://iccholyfamily.com/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://iccholyfamily.com/parish-life",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:27:26+00:00",
+   "confidence": "medium"
+  }
+ ],
+ "calendar_feeds": [
+  {
+   "feed_id": "iccholyfamily.com:ics:bfb4a767",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": "https://calendar.google.com/calendar/ical/c_bf3aac6a9f719aabff30f560f8c8dd897ce4bd304ad81d7ffe1d81466387db77%40group.calendar.google.com/public/basic.ics",
+   "page_url": "https://iccholyfamily.com/",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (embedded on page)",
+   "display_tz": "America/Chicago",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T17:32:52+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  },
+  {
+   "feed_id": "iccholyfamily.com:ics:36adbd80",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": "https://calendar.google.com/calendar/ical/stjosephellinwood.com_c91ehktf24kvbsrvp3uageoj94%40group.calendar.google.com/public/basic.ics",
+   "page_url": "https://iccholyfamily.com/",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (embedded on page)",
+   "display_tz": "America/Chicago",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T17:32:53+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  },
+  {
+   "feed_id": "iccholyfamily.com:ics:e09df90b",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": "https://calendar.google.com/calendar/ical/stjosephellinwood.com_7473d3eplril0a6akct1qkghhs%40group.calendar.google.com/public/basic.ics",
+   "page_url": "https://iccholyfamily.com/",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (embedded on page)",
+   "display_tz": "America/Chicago",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T17:32:54+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  },
+  {
+   "feed_id": "iccholyfamily.com:ics:85f7503d",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": "https://calendar.google.com/calendar/ical/c_9aa9232718bbb2065a31d1444cf81f42882d7773750435bc9241490a55029df1%40group.calendar.google.com/public/basic.ics",
+   "page_url": "https://iccholyfamily.com/",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (embedded on page)",
+   "display_tz": "America/Chicago",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T17:32:56+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/ImmaculateConceptionClaflin",
+   "https://www.facebook.com/profile.php?id=100064877310376"
+  ]
+ },
+ "bulletin": {
+  "url": "https://iccholyfamily.com/bulletin",
+  "date": null,
+  "kind": "page",
+  "text": "Bulletin",
+  "source_url": "https://iccholyfamily.com/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Weekend Mass: Saturday - 8:00am (Claflin)",
+   "source_url": "https://iccholyfamily.com/home/mass-confession-times",
+   "fetched_at": "2026-11-01T17:27:24+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": null,
+   "raw": "Weekend Mass: Sunday - 10:00am (Claflin)",
+   "source_url": "https://iccholyfamily.com/home/mass-confession-times",
+   "fetched_at": "2026-11-01T17:27:24+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Weekend Mass: 8:00am (Odin)",
+   "source_url": "https://iccholyfamily.com/home/mass-confession-times",
+   "fetched_at": "2026-11-01T17:27:24+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Weekend"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Weekend Mass: 8:00am (Odin)",
+   "source_url": "https://iccholyfamily.com/home/mass-confession-times",
+   "fetched_at": "2026-11-01T17:27:24+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Weekend"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Weekend Mass: 8:00am (Odin)",
+   "source_url": "https://iccholyfamily.com/home/mass-confession-times",
+   "fetched_at": "2026-11-01T17:27:24+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Weekend"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Weekend Mass: 8:00am (Odin)",
+   "source_url": "https://iccholyfamily.com/home/mass-confession-times",
+   "fetched_at": "2026-11-01T17:27:24+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Weekend"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Weekend Mass: 8:00am (Odin)",
+   "source_url": "https://iccholyfamily.com/home/mass-confession-times",
+   "fetched_at": "2026-11-01T17:27:24+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Weekend"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "18:00",
+   "language": null,
+   "raw": "Daily Mass: Tues & Thurs - 6:00pm (Odin)",
+   "source_url": "https://iccholyfamily.com/home/mass-confession-times",
+   "fetched_at": "2026-11-01T17:27:24+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Tues & Thurs"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "18:00",
+   "language": null,
+   "raw": "Daily Mass: Tues & Thurs - 6:00pm (Odin)",
+   "source_url": "https://iccholyfamily.com/home/mass-confession-times",
+   "fetched_at": "2026-11-01T17:27:24+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Tues & Thurs",
+   "day_parsed": "Tuesday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "8:00am (Odin)",
+   "source_url": "https://iccholyfamily.com/home/mass-confession-times",
+   "fetched_at": "2026-11-01T17:27:24+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  }
+ ],
  "source_url": "https://iccholyfamily.com/",
- "fetched_at": "2026-11-01T08:05:22+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-01T17:27:28+00:00",
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": true,
+  "trusted_candidate": false,
+  "generic_rows": 5
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "box_rows_added": 1
+ },
+ "groups_dropped": {
+  "noise": 1
+ },
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": null,
+  "address": "1387 NE 90 Ave, Odin, KS 67525",
+  "source_url": "https://iccholyfamily.com/",
+  "sources": {
+   "address": "https://iccholyfamily.com/"
+  },
+  "fetched_at": "2026-11-01T17:27:23+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
  }

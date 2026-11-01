@@ -16,31 +16,238 @@
  "cities": [],
  "home_url": "https://westernkansascatholic.com/",
  "final_url": "https://westernkansascatholic.com/",
- "crawl_status": "timeout",
+ "crawl_status": "ok",
  "crawl_env": "sandbox",
- "robots_note": "timeout",
+ "robots_note": "ok",
  "pages": [
   {
    "category": "home",
    "url": "https://westernkansascatholic.com/",
-   "status": null,
-   "class": "timeout"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://westernkansascatholic.com/mass-confession-adoration",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://westernkansascatholic.com/sacraments",
+   "status": 429,
+   "class": "blocked_429"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "joomla",
+  "evidence": [
+   "content=\"joomla"
+  ]
  },
- "template": "none",
- "groups": [],
- "calendar_feeds": [],
+ "template": "generic-html:joomla",
+ "groups": [
+  {
+   "id": "westernkansascatholic.com:altar_society",
+   "name": "Altar Society",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "altar_society_environment",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://westernkansascatholic.com/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://westernkansascatholic.com/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:27:29+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "westernkansascatholic.com:kofc",
+   "name": "Knights of Columbus",
+   "category": "fraternal_orders",
+   "category_label": "Fraternal & orders",
+   "subcategory": "knights_of_columbus",
+   "audience": "men",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://westernkansascatholic.com/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://westernkansascatholic.com/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:27:29+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "westernkansascatholic.com:hispanic",
+   "name": "Hispanic Community",
+   "category": "language_cultural",
+   "category_label": "Language & cultural communities",
+   "subcategory": "hispanic_latino",
+   "audience": "all",
+   "language": "es",
+   "language_assumed": false,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://westernkansascatholic.com/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://westernkansascatholic.com/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:27:29+00:00",
+   "confidence": "medium"
+  }
+ ],
+ "calendar_feeds": [
+  {
+   "feed_id": "westernkansascatholic.com:ics:b747809f",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": "https://calendar.google.com/calendar/ical/a5cad452e62cab56f482b8f37066a19adabc1f5b3a7a29585abb2b648be5e0cd%40group.calendar.google.com/public/basic.ics",
+   "page_url": "https://westernkansascatholic.com/",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (embedded on page)",
+   "display_tz": "America/Chicago",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T17:33:53+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
  "events": [],
  "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "bulletin": {
+  "url": "https://westernkansascatholic.com/news/bulletin",
+  "date": null,
+  "kind": "page",
+  "text": "Bulletin",
+  "source_url": "https://westernkansascatholic.com/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Mass Times: Wed, Thurs - 8:00am",
+   "source_url": "https://westernkansascatholic.com/mass-confession-adoration",
+   "fetched_at": "2026-11-01T17:27:31+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Wed, Thurs"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Mass Times: Wed, Thurs - 8:00am",
+   "source_url": "https://westernkansascatholic.com/mass-confession-adoration",
+   "fetched_at": "2026-11-01T17:27:31+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Wed, Thurs",
+   "day_parsed": "Wednesday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "18:30",
+   "language": null,
+   "raw": "Anthony's rotate monthly, Saturday Vigil 6:30 pm or Sunday 9:00 am, Central time.",
+   "source_url": "https://westernkansascatholic.com/mass-confession-adoration",
+   "fetched_at": "2026-11-01T17:27:31+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Anthony's rotate monthly, Saturday Vigil 6:30 pm or Sunday 9:00 am, Central time.",
+   "source_url": "https://westernkansascatholic.com/mass-confession-adoration",
+   "fetched_at": "2026-11-01T17:27:31+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "08:30-09:30",
+   "language": null,
+   "raw": "Adoration: Leoti: Every Thursday 8:30am until 9:30am",
+   "source_url": "https://westernkansascatholic.com/mass-confession-adoration",
+   "fetched_at": "2026-11-01T17:27:31+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  }
+ ],
  "source_url": "https://westernkansascatholic.com/",
- "fetched_at": "2026-11-01T08:05:26+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-01T17:27:32+00:00",
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": true,
+  "trusted_candidate": false,
+  "generic_rows": 5
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "other_location": 6
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(620) 379-4427",
+  "address": "208 N. 2nd Street,, Marienthal, KS 67863",
+  "source_url": "https://westernkansascatholic.com/",
+  "sources": {
+   "phone": "https://westernkansascatholic.com/",
+   "address": "https://westernkansascatholic.com/"
+  },
+  "fetched_at": "2026-11-01T17:27:29+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
  }

@@ -16,31 +16,213 @@
  "cities": [],
  "home_url": "https://www.sspeterandpaulcc.org/",
  "final_url": "https://www.sspeterandpaulcc.org/",
- "crawl_status": "timeout",
+ "crawl_status": "ok",
  "crawl_env": "sandbox",
- "robots_note": "timeout",
+ "robots_note": "ok",
  "pages": [
   {
    "category": "home",
    "url": "https://www.sspeterandpaulcc.org/",
-   "status": null,
-   "class": "timeout"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.sspeterandpaulcc.org/news/liturgical-schedule",
+   "status": 429,
+   "class": "blocked_429"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "joomla",
+  "evidence": [
+   "content=\"joomla"
+  ]
  },
- "template": "none",
+ "template": "generic-html:joomla",
  "groups": [],
- "calendar_feeds": [],
+ "calendar_feeds": [
+  {
+   "feed_id": "sspeterandpaulcc.org:ics:94f18242",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": "https://calendar.google.com/calendar/ical/1a4516e925a38575f2cd24702b375fb036bb0285634072e0acdc53c37ff6fc8a%40group.calendar.google.com/public/basic.ics",
+   "page_url": "https://www.sspeterandpaulcc.org/",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (embedded on page)",
+   "display_tz": "America/Chicago",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T17:33:27+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/ClayCenterCatholicChurch"
+  ]
+ },
+ "bulletin": {
+  "url": "https://www.sspeterandpaulcc.org/news/bulletin",
+  "date": null,
+  "kind": "page",
+  "text": "Bulletin",
+  "source_url": "https://www.sspeterandpaulcc.org/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:30",
+   "language": null,
+   "raw": "Weekend Masses: Saturday: 5:30pm",
+   "source_url": "https://www.sspeterandpaulcc.org/",
+   "fetched_at": "2026-11-01T17:27:27+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:30",
+   "language": null,
+   "raw": "Weekend Masses: Sunday: 10:30am",
+   "source_url": "https://www.sspeterandpaulcc.org/",
+   "fetched_at": "2026-11-01T17:27:27+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:30",
+   "language": null,
+   "raw": "Weekend Masses: Sunday: 8:30am",
+   "source_url": "https://www.sspeterandpaulcc.org/",
+   "fetched_at": "2026-11-01T17:27:27+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "07:30",
+   "language": null,
+   "raw": "Friday: 7:30am - Communal Mass",
+   "source_url": "https://www.sspeterandpaulcc.org/",
+   "fetched_at": "2026-11-01T17:27:27+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday (during the school year)",
+   "time": "17:45",
+   "language": null,
+   "raw": "Mon, Tues, Thurs - No Mass: Wednesday: 5:45pm (during school year)",
+   "source_url": "https://www.sspeterandpaulcc.org/",
+   "fetched_at": "2026-11-01T17:27:27+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Thursday Adoration: 5:00pm",
+   "source_url": "https://www.sspeterandpaulcc.org/",
+   "fetched_at": "2026-11-01T17:27:27+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "16:45-17:15",
+   "language": null,
+   "raw": "Confessions: Saturdays: 4:45 - 5:15pm",
+   "source_url": "https://www.sspeterandpaulcc.org/",
+   "fetched_at": "2026-11-01T17:27:27+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "08:00-20:00",
+   "language": null,
+   "raw": "Eucharistic Adoration: Thursday's 8:00am - 8:00pm",
+   "source_url": "https://www.sspeterandpaulcc.org/",
+   "fetched_at": "2026-11-01T17:27:27+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  }
+ ],
  "source_url": "https://www.sspeterandpaulcc.org/",
- "fetched_at": "2026-11-01T08:05:23+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-01T17:27:28+00:00",
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": true,
+  "trusted_candidate": false,
+  "generic_rows": 7
+ },
+ "has_sunday": true,
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(785) 632-5011",
+  "address": "730 Court Street, Clay Center, KS 67432",
+  "source_url": "https://www.sspeterandpaulcc.org/",
+  "sources": {
+   "phone": "https://www.sspeterandpaulcc.org/",
+   "address": "https://www.sspeterandpaulcc.org/"
+  },
+  "fetched_at": "2026-11-01T17:27:27+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
  }
