@@ -16,31 +16,153 @@
  "cities": [],
  "home_url": "https://stlawrencekcc.org/",
  "final_url": "https://stlawrencekcc.org/",
- "crawl_status": "http_202",
+ "crawl_status": "ok",
  "crawl_env": "sandbox",
- "robots_note": "http_202",
+ "robots_note": "ok",
  "pages": [
   {
    "category": "home",
    "url": "https://stlawrencekcc.org/",
-   "status": 202,
-   "class": "http_202"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stlawrencekcc.org/faith-living/sacramentum/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://stlawrencekcc.org/catholic-groups/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://stlawrencekcc.org/catholic-groups/%EB%B3%B8%EB%8B%B9-%EB%8B%A8%EC%B2%B4-%EC%A1%B0%EC%A7%81%EB%8F%84/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://stlawrencekcc.org/catholic-groups/%EB%B3%B8%EB%8B%B9-%EB%8B%A8%EC%B2%B4-%EC%A1%B0%EC%A7%81%EB%8F%84/%EC%82%AC%EB%AA%A9%ED%9A%8C%EC%9E%A5/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://stlawrencekcc.org/faith-living/bulletins/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://stlawrencekcc.org/%EB%B3%B8%EB%8B%B9/calendar/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://stlawrencekcc.org/bulletin-board/contact/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "wordpress",
+  "evidence": [
+   "wp-content"
+  ]
  },
- "template": "none",
+ "template": "wordpress-html",
  "groups": [],
- "calendar_feeds": [],
+ "calendar_feeds": [
+  {
+   "feed_id": "stlawrencekcc.org:ics:9f4c5d78",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": null,
+   "page_url": "https://stlawrencekcc.org/%EB%B3%B8%EB%8B%B9/calendar/",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (embedded on page)",
+   "display_tz": "America/Denver",
+   "url_withheld": "calendar id is an e-mail address; not stored",
+   "feed_key": "9f4c5d78341c",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T17:39:18+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
  "events": [],
- "social": {},
- "bulletin": null,
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/profile.php?id=100064486698365"
+  ],
+  "instagram": [
+   "https://www.instagram.com/stlawrencekcc/"
+  ],
+  "youtube": [
+   "https://www.youtube.com/@st.lawrencecatholicchurch",
+   "https://www.youtube.com/channel/UCbvjLR5iY2Ir7hJG_uJkJsA"
+  ]
+ },
+ "bulletin": {
+  "url": "https://stlawrencekcc.org/faith-living/bulletins/",
+  "date": null,
+  "kind": "page",
+  "text": "주보",
+  "source_url": "https://stlawrencekcc.org/"
+ },
  "schedule_rows": [],
  "source_url": "https://stlawrencekcc.org/",
- "fetched_at": "2026-11-01T08:05:18+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-01T17:35:50+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "has_sunday": false,
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(303) 617-7400",
+  "address": "4310 S. Pitkin St. Aurora, CO 80015",
+  "source_url": "https://stlawrencekcc.org/bulletin-board/contact/",
+  "sources": {
+   "phone": "https://stlawrencekcc.org/bulletin-board/contact/",
+   "address": "https://stlawrencekcc.org/bulletin-board/contact/"
+  },
+  "fetched_at": "2026-11-01T17:35:49+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
  }

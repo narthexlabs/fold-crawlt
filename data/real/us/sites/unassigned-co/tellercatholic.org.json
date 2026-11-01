@@ -16,31 +16,483 @@
  "cities": [],
  "home_url": "https://tellercatholic.org/",
  "final_url": "https://tellercatholic.org/",
- "crawl_status": "http_202",
+ "crawl_status": "ok",
  "crawl_env": "sandbox",
- "robots_note": "http_202",
+ "robots_note": "ok",
  "pages": [
   {
    "category": "home",
    "url": "https://tellercatholic.org/",
-   "status": 202,
-   "class": "http_202"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://tellercatholic.org/sacraments/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://tellercatholic.org/liturgy/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://tellercatholic.org/faith_formation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://tellercatholic.org/groups/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://tellercatholic.org/bulletin/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://tellercatholic.org/events/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://tellercatholic.org/parish-calendar/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://tellercatholic.org/contact/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "parishsoft",
+  "evidence": [
+   "parishsoft.com"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "generic-html:parishsoft",
+ "groups": [
+  {
+   "id": "tellercatholic.org:womens_group|endow",
+   "name": "Endow Women's Group",
+   "category": "women",
+   "category_label": "Women",
+   "subcategory": "womens_group",
+   "audience": "women",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://tellercatholic.org/contact/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://tellercatholic.org/groups/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:35:48+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "tellercatholic.org:youth_ministry",
+   "name": "Youth Group",
+   "category": "youth",
+   "category_label": "Youth",
+   "subcategory": "youth_ministry",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://tellercatholic.org/contact/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://tellercatholic.org/faith_formation/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:35:46+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "tellercatholic.org:family|christian+confraternity",
+   "name": "Confraternity of Christian Mothers",
+   "category": "families",
+   "category_label": "Families",
+   "subcategory": "family_ministry",
+   "audience": "families",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://tellercatholic.org/contact/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://tellercatholic.org/groups/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:35:48+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "tellercatholic.org:family",
+   "name": "Mothers Rule the World",
+   "category": "families",
+   "category_label": "Families",
+   "subcategory": "family_ministry",
+   "audience": "families",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "They guide the destinies of homes; that is why God is relying on mothers to keep Christ in the world by keeping Him in their hearts and homes. Under the special patronage of Mary, the Mother of Sorrows, Christian Mothers…",
+   "contact_url": "https://tellercatholic.org/contact/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://tellercatholic.org/groups/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:35:48+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "tellercatholic.org:respect_life",
+   "name": "Respect Life",
+   "category": "service_mercy",
+   "category_label": "Service & mercy",
+   "subcategory": "respect_life",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://tellercatholic.org/contact/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://tellercatholic.org/faith_formation/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:35:46+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "tellercatholic.org:food",
+   "name": "St. Martin’s Food Pantry",
+   "category": "service_mercy",
+   "category_label": "Service & mercy",
+   "subcategory": "food_ministry",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://tellercatholic.org/contact/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://tellercatholic.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:35:40+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "tellercatholic.org:altar_society|art",
+   "name": "Art & Environment",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "altar_society_environment",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://tellercatholic.org/contact/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://tellercatholic.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:35:40+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "tellercatholic.org:altar_society|awesome",
+   "name": "Awesome Altar Society",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "altar_society_environment",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://tellercatholic.org/contact/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://tellercatholic.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:35:40+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "tellercatholic.org:choir",
+   "name": "Music Ministry / Choir",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "choir_music",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://tellercatholic.org/contact/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://tellercatholic.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:35:40+00:00",
+   "confidence": "low"
+  },
+  {
+   "id": "tellercatholic.org:cda",
+   "name": "Catholic Daughters of the Americas",
+   "category": "fraternal_orders",
+   "category_label": "Fraternal & orders",
+   "subcategory": "catholic_daughters",
+   "audience": "women",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://tellercatholic.org/contact/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://tellercatholic.org/groups/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:35:48+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "tellercatholic.org:kofc",
+   "name": "Knights of Columbus",
+   "category": "fraternal_orders",
+   "category_label": "Fraternal & orders",
+   "subcategory": "knights_of_columbus",
+   "audience": "men",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://tellercatholic.org/contact/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://tellercatholic.org/groups/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:35:48+00:00",
+   "confidence": "medium"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/OurLadyOfTheWoods"
+  ]
+ },
+ "bulletin": {
+  "url": "https://www.parishesonline.com/find/our-lady-of-the-woods-parish/",
+  "date": null,
+  "kind": "lpi",
+  "text": "Weekly Bulletin",
+  "source_url": "https://tellercatholic.org/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "16:30-17:45",
+   "language": null,
+   "raw": "Our Lady of the Woods: Wednesdays during Holy Hour at 4:30 – 5:45 pm and Saturdays at 3:30 pm – 4:15 pm",
+   "source_url": "https://tellercatholic.org/sacraments/",
+   "fetched_at": "2026-11-01T17:35:44+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "Saturday",
+   "time": "15:30-16:15",
+   "language": null,
+   "raw": "Our Lady of the Woods: Wednesdays during Holy Hour at 4:30 – 5:45 pm and Saturdays at 3:30 pm – 4:15 pm",
+   "source_url": "https://tellercatholic.org/sacraments/",
+   "fetched_at": "2026-11-01T17:35:44+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Sunday Masses: 9:00am Our Lady of the Woods",
+   "source_url": "https://tellercatholic.org/",
+   "fetched_at": "2026-11-01T17:35:40+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:30",
+   "language": null,
+   "raw": "Sunday Masses: 11:30am St. Peter Chapel in Cripple Creek",
+   "source_url": "https://tellercatholic.org/",
+   "fetched_at": "2026-11-01T17:35:40+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "16:30",
+   "language": null,
+   "raw": "Saturday Vigil Mass: 4:30pm Our Lady of the Woods",
+   "source_url": "https://tellercatholic.org/",
+   "fetched_at": "2026-11-01T17:35:40+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Weekday Masses: Tuesday 9:00am OLW",
+   "source_url": "https://tellercatholic.org/",
+   "fetched_at": "2026-11-01T17:35:40+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "18:00",
+   "language": null,
+   "raw": "Weekday Masses: Wednesday 6:00pm OLW",
+   "source_url": "https://tellercatholic.org/",
+   "fetched_at": "2026-11-01T17:35:40+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Weekday Masses: Thursday 9:00am OLW",
+   "source_url": "https://tellercatholic.org/",
+   "fetched_at": "2026-11-01T17:35:40+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Weekday Masses: Friday 9:00am OLW",
+   "source_url": "https://tellercatholic.org/",
+   "fetched_at": "2026-11-01T17:35:40+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Wednesday",
+   "time": "16:30-17:45",
+   "language": null,
+   "raw": "Confessions are currently being offered:: Wednesday 4:30pm-5:45pm",
+   "source_url": "https://tellercatholic.org/",
+   "fetched_at": "2026-11-01T17:35:40+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:30-16:15",
+   "language": null,
+   "raw": "Confessions are currently being offered:: Saturday 3:30pm-4:15pm",
+   "source_url": "https://tellercatholic.org/",
+   "fetched_at": "2026-11-01T17:35:40+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  }
+ ],
  "source_url": "https://tellercatholic.org/",
- "fetched_at": "2026-11-01T08:05:21+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-01T17:35:53+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 19
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "other_location": 10,
+  "not_a_service": 1,
+  "no_day": 1
+ },
+ "groups_dropped": {
+  "unmatched": 1
+ },
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": "office@olwp.org",
+  "phone": "(719) 687-9345",
+  "address": "PO Box 5590, Woodland Park, CO 80866",
+  "source_url": "https://tellercatholic.org/contact/",
+  "sources": {
+   "email": "https://tellercatholic.org/contact/",
+   "phone": "https://tellercatholic.org/contact/",
+   "address": "https://tellercatholic.org/contact/"
+  },
+  "fetched_at": "2026-11-01T17:35:52+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
  }
