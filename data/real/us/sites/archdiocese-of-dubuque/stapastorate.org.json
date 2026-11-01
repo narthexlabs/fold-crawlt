@@ -15,33 +15,321 @@
  ],
  "cities": [],
  "home_url": "https://stapastorate.org/",
- "final_url": "https://stapastorate.org/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "final_url": "https://www.stapastorate.org/",
+ "crawl_status": "wayback-2026-08-31",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
-   "url": "https://stapastorate.org/",
-   "status": 403,
-   "class": "challenge"
+   "url": "https://www.stapastorate.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.stapastorate.org/mass-times",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.stapastorate.org/schedule-of-classes",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://stapastorate.org/music-ministry",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://stapastorate.org/behold-your-child-ministry",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.stapastorate.org/cemetery-board-contacts",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://www.stapastorate.org/bulletins",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.stapastorate.org/calendar",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://stapastorate.org/calendars",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://stapastorate.org/contact-us",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "stapastorate.org:choir",
+   "name": "Music Ministry / Choir",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "choir_music",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stapastorate.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stapastorate.org/music-ministry",
+   "source_kind": "website",
+   "fetched_at": "2025-04-28T05:46:41+00:00",
+   "confidence": "low",
+   "source": "wayback-2026-08-31"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/StThomasAquinasPastorate",
+   "https://www.facebook.com/AnamosaAreaPastorate"
+  ]
+ },
+ "bulletin": {
+  "url": "https://files.ecatholic.com/18302/bulletins/20240225.pdf?t=1708713224000",
+  "date": "2024-02-25",
+  "kind": "ecatholic_pdf",
+  "text": "February 25 , 2024",
+  "source_url": "https://www.stapastorate.org/bulletins"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Fifth Saturday of the month",
+   "time": "16:00",
+   "language": null,
+   "raw": "Mass Times: 4:00 PM St. Matthias, Cascade, 1st, 3rd, and 5th Saturdays",
+   "source_url": "https://www.stapastorate.org/mass-times",
+   "fetched_at": "2024-06-14T11:10:28+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-08-31: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-08-31",
+   "archive_url": "https://web.archive.org/web/20240614111028/https://www.stapastorate.org/mass-times",
+   "capture_date": "2024-06-14"
+  },
+  {
+   "kind": "mass",
+   "day": "Second and Fourth Saturday of the month",
+   "time": "16:00",
+   "language": null,
+   "raw": "Mass Times: 4:00 PM St. Patrick, Garryowen, 2nd and 4th Saturdays",
+   "source_url": "https://www.stapastorate.org/mass-times",
+   "fetched_at": "2024-06-14T11:10:28+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-08-31: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-08-31",
+   "archive_url": "https://web.archive.org/web/20240614111028/https://www.stapastorate.org/mass-times",
+   "capture_date": "2024-06-14"
+  },
+  {
+   "kind": "mass",
+   "day": "First and Third Saturday of the month",
+   "time": "18:00",
+   "language": null,
+   "raw": "Mass Times: 6:00 PM Sacred Heart, Fillmore, 1st and 3rd Saturdays",
+   "source_url": "https://www.stapastorate.org/mass-times",
+   "fetched_at": "2024-06-14T11:10:28+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-08-31: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-08-31",
+   "archive_url": "https://web.archive.org/web/20240614111028/https://www.stapastorate.org/mass-times",
+   "capture_date": "2024-06-14"
+  },
+  {
+   "kind": "mass",
+   "day": "Second and Fourth Saturday of the month",
+   "time": "18:00",
+   "language": null,
+   "raw": "6:00 PM [Mass intention withheld]",
+   "source_url": "https://www.stapastorate.org/mass-times",
+   "fetched_at": "2024-06-14T11:10:28+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-08-31: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-08-31",
+   "archive_url": "https://web.archive.org/web/20240614111028/https://www.stapastorate.org/mass-times",
+   "capture_date": "2024-06-14"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Mass Times: 8:00 AM St Matthias Parish, Cascade",
+   "source_url": "https://www.stapastorate.org/mass-times",
+   "fetched_at": "2024-06-14T11:10:28+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-08-31: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-08-31",
+   "archive_url": "https://web.archive.org/web/20240614111028/https://www.stapastorate.org/mass-times",
+   "capture_date": "2024-06-14"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": null,
+   "raw": "Mass Times: 10:00 AM St Matthias Parish, Cascade",
+   "source_url": "https://www.stapastorate.org/mass-times",
+   "fetched_at": "2024-06-14T11:10:28+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-08-31: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-08-31",
+   "archive_url": "https://web.archive.org/web/20240614111028/https://www.stapastorate.org/mass-times",
+   "capture_date": "2024-06-14"
+  }
+ ],
  "source_url": "https://stapastorate.org/",
- "fetched_at": "2026-11-01T07:19:41+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-01T19:13:10+00:00",
  "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
+  "screened_by": "ingest/public/privacy.py screen()",
+  "intentions_withheld": 1
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 9
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "text:dated_line": 11,
+  "prose": 1
+ },
+ "groups_dropped": {},
+ "office_contact": {
+  "email": null,
+  "phone": "(563) 542-1416",
+  "address": "PO Box 699, Cascade IA 52033-0699",
+  "source_url": "https://www.stapastorate.org/",
+  "sources": {
+   "phone": "https://www.stapastorate.org/",
+   "address": "https://stapastorate.org/contact-us"
+  },
+  "fetched_at": "2026-08-31T12:53:11+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2026-08-31",
+  "capture_age_days": 62,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://www.stapastorate.org/",
+    "capture": "2026-08-31",
+    "archive_url": "https://web.archive.org/web/20260831125311/https://www.stapastorate.org/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://www.stapastorate.org/mass-times",
+    "capture": "2024-06-14",
+    "archive_url": "https://web.archive.org/web/20240614111028/https://www.stapastorate.org/mass-times"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://www.stapastorate.org/schedule-of-classes",
+    "capture": "2024-04-17",
+    "archive_url": "https://web.archive.org/web/20240417195625/https://www.stapastorate.org/schedule-of-classes"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://stapastorate.org/music-ministry",
+    "capture": "2025-04-28",
+    "archive_url": "https://web.archive.org/web/20250428054641/https://stapastorate.org/music-ministry"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://stapastorate.org/behold-your-child-ministry",
+    "capture": "2025-04-28",
+    "archive_url": "https://web.archive.org/web/20250428055632/https://stapastorate.org/behold-your-child-ministry"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://www.stapastorate.org/cemetery-board-contacts",
+    "capture": "2025-03-21",
+    "archive_url": "https://web.archive.org/web/20250321100719/https://www.stapastorate.org/cemetery-board-contacts"
+   },
+   {
+    "kind": "bulletin",
+    "original": "https://www.stapastorate.org/bulletins",
+    "capture": "2024-02-28",
+    "archive_url": "https://web.archive.org/web/20240228222023/https://www.stapastorate.org/bulletins"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://www.stapastorate.org/calendar",
+    "capture": "2024-02-28",
+    "archive_url": "https://web.archive.org/web/20240228225305/https://www.stapastorate.org/calendar"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://stapastorate.org/calendars",
+    "capture": "2023-01-27",
+    "archive_url": "https://web.archive.org/web/20230127212651/https://stapastorate.org/calendars"
+   },
+   {
+    "kind": "contact",
+    "original": "https://stapastorate.org/contact-us",
+    "capture": "2026-04-14",
+    "archive_url": "https://web.archive.org/web/20260414225132/https://stapastorate.org/contact-us"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }
