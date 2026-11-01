@@ -1,50 +1,54 @@
 {
  "slug": "unassigned-nc",
- "generated_at": "2026-11-01T17:51:49+00:00",
+ "generated_at": "2026-11-01T20:27:12+00:00",
  "run_date": "2026-11-01",
  "input": {
   "directory_records": 0,
-  "discovermass_records": 8,
+  "discovermass_records": 21,
   "directory_without_website": 0,
   "discovermass_without_website": 0
  },
- "sites_in_list": 8,
+ "sites_in_list": 22,
  "social_only": 0,
  "crawl": {
-  "ok_total": 5,
-  "ok_via_sandbox": 5,
+  "ok_total": 14,
+  "ok_via_sandbox": 14,
   "ok_via_laptop": 0,
   "partial_via_side_doors": 0,
   "challenge": 0,
   "blocked_403_429": 0,
   "robots_disallowed": 0,
-  "laptop_pending": 3,
-  "dead": 3,
+  "laptop_pending": 8,
+  "dead": 8,
   "not_fetched": 0,
   "by_status": {
-   "ok": 5,
-   "dns": 1,
+   "ok": 14,
+   "dns": 5,
+   "ssl_error": 1,
    "http_5xx": 1,
    "conn_error": 1
   }
  },
  "laptop_attempted": 0,
  "groups": {
-  "total": 7,
-  "sites_with_groups": 2,
+  "total": 11,
+  "sites_with_groups": 4,
   "by_category": {
-   "youth": 2,
+   "youth": 3,
+   "liturgical": 3,
    "service_mercy": 2,
-   "liturgical": 2,
-   "prayer_devotion": 1
+   "prayer_devotion": 1,
+   "scripture_study": 1,
+   "formation": 1
   },
   "with_meeting_time": 1
  },
  "calendar": {
-  "sites_with_active_feed": 2,
-  "active_feeds": 3,
+  "sites_with_active_feed": 3,
+  "active_feeds": 5,
   "feeds_by_platform": {
-   "Google Calendar": 3
+   "Google Calendar": 4,
+   "The Events Calendar (WordPress)": 1
   },
   "sites_with_events": 0,
   "events_stored": 0,
@@ -53,36 +57,43 @@
  },
  "social": {
   "sites_by_platform": {
-   "facebook": 3,
-   "youtube": 2,
-   "livestream": 2,
+   "facebook": 8,
+   "youtube": 4,
+   "livestream": 3,
+   "x": 2,
    "instagram": 1
   },
-  "sites_with_any_social": 3,
+  "sites_with_any_social": 8,
   "shared_links_removed_as_diocesan": []
  },
  "bulletin": {
-  "sites_with_bulletin_url": 1,
+  "sites_with_bulletin_url": 4,
   "by_kind": {
-   "pdf": 1
+   "pdf": 2,
+   "page": 1,
+   "flipbook": 1
   },
   "with_date": 0
  },
  "schedule": {
-  "sites_with_own_site_rows": 1,
-  "rows_total": 1,
+  "sites_with_own_site_rows": 3,
+  "rows_total": 142,
   "rows_needs_review": 0,
   "sites_with_schedule_image_only": 1,
   "by_kind": {
-   "mass": 1
+   "mass": 142
   }
  },
  "cms_guess": {
-  "wordpress": 3,
-  "squarespace": 2
+  "wordpress": 6,
+  "unknown": 5,
+  "squarespace": 2,
+  "wix": 1
  },
  "template": {
-  "wordpress-rest+html": 3,
-  "generic-html:squarespace": 2
+  "wordpress-rest+html": 6,
+  "generic-html:unknown": 5,
+  "generic-html:squarespace": 2,
+  "generic-html:wix": 1
  }
 }
