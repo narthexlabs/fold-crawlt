@@ -2,19 +2,23 @@
  "domain": "stphilomenaonline.org",
  "diocese": "diocese-of-peoria",
  "matched_church_ids": [
+  "st-michael-bement-il",
   "st-philomena-monticello-il"
  ],
  "matched": {
   "directory": [],
   "discovermass": [
-   "st-philomena-monticello-il"
+   "st-philomena-monticello-il",
+   "st-michael-bement-il"
   ]
  },
  "names": [
-  "St. Philomena"
+  "St. Philomena",
+  "St. Michael"
  ],
  "cities": [
-  "Monticello"
+  "Monticello",
+  "Bement"
  ],
  "home_url": "http://www.stphilomenaonline.org/",
  "final_url": "https://olph-church.org/",
@@ -110,7 +114,7 @@
    "note": "The Events Calendar (WordPress) REST API",
    "last_fetch": {
     "status": 200,
-    "fetched_at": "2026-11-01T18:56:10+00:00",
+    "fetched_at": "2026-11-01T23:40:57+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -188,6 +192,28 @@
    "review_reason": null,
    "confidence": "high",
    "template": "godaddy"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "16:30",
+   "language": null,
+   "raw": "Saturday - 4:30 pm",
+   "source_url": "https://olph-church.org/adoration/",
+   "fetched_at": "2026-11-01T18:51:50+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": null,
+   "raw": "Sunday - 10:00 am",
+   "source_url": "https://olph-church.org/adoration/",
+   "fetched_at": "2026-11-01T18:51:50+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
   }
  ],
  "source_url": "http://www.stphilomenaonline.org/",
@@ -211,10 +237,10 @@
   "trusted_candidate": false,
   "generic_rows": 15
  },
- "has_sunday": false,
- "schedule_partial": true,
+ "has_sunday": true,
  "schedule_dropped": {
-  "dated_line": 1
+  "dated_line": 1,
+  "weekend_rescue_added": 2
  },
  "groups_dropped": {},
  "event_counts": {
