@@ -1,28 +1,31 @@
 {
  "slug": "diocese-of-fairbanks",
- "generated_at": "2026-11-01T05:45:53+00:00",
+ "generated_at": "2026-11-01T17:43:52+00:00",
  "run_date": "2026-11-01",
  "input": {
-  "directory_records": 0,
-  "discovermass_records": 2,
+  "directory_records": 13,
+  "discovermass_records": 5,
   "directory_without_website": 0,
   "discovermass_without_website": 0
  },
- "sites_in_list": 1,
+ "sites_in_list": 8,
  "social_only": 0,
  "crawl": {
-  "ok_total": 0,
-  "ok_via_sandbox": 0,
+  "ok_total": 2,
+  "ok_via_sandbox": 2,
   "ok_via_laptop": 0,
   "partial_via_side_doors": 0,
-  "challenge": 1,
+  "challenge": 4,
   "blocked_403_429": 0,
   "robots_disallowed": 0,
-  "laptop_pending": 1,
-  "dead": 0,
+  "laptop_pending": 5,
+  "dead": 2,
   "not_fetched": 0,
   "by_status": {
-   "challenge": 1
+   "challenge": 4,
+   "ok": 2,
+   "not_found": 1,
+   "dns": 1
   }
  },
  "laptop_attempted": 0,
@@ -42,22 +45,36 @@
   "window": "2026-11-01 + 90 days"
  },
  "social": {
-  "sites_by_platform": {},
-  "sites_with_any_social": 0,
+  "sites_by_platform": {
+   "facebook": 1
+  },
+  "sites_with_any_social": 1,
   "shared_links_removed_as_diocesan": []
  },
  "bulletin": {
-  "sites_with_bulletin_url": 0,
-  "by_kind": {},
-  "with_date": 0
+  "sites_with_bulletin_url": 1,
+  "by_kind": {
+   "pdf": 1
+  },
+  "with_date": 1
  },
  "schedule": {
-  "sites_with_own_site_rows": 0,
-  "rows_total": 0,
+  "sites_with_own_site_rows": 1,
+  "rows_total": 4,
   "rows_needs_review": 0,
   "sites_with_schedule_image_only": 0,
-  "by_kind": {}
+  "by_kind": {
+   "other": 2,
+   "adoration": 1,
+   "mass": 1
+  }
  },
- "cms_guess": {},
- "template": {}
+ "cms_guess": {
+  "unknown": 1,
+  "wordpress": 1
+ },
+ "template": {
+  "generic-html:unknown": 1,
+  "wordpress-rest+html": 1
+ }
 }
