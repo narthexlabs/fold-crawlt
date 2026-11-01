@@ -539,6 +539,12 @@
     "diocese-of-rapid-city",
     "diocese-of-lake-charles"
    ]
+  },
+  {
+   "started_at": "2026-11-01T17:33:53+00:00",
+   "ended_at": "2026-11-01T17:33:55+00:00",
+   "result": "fetched {}; parsed 0 dioceses",
+   "touched": []
   }
  ],
  "dioceses": {
@@ -579,11 +585,11 @@
   },
   "archdiocese-of-boston": {
    "sites_in_list": 257,
-   "records": 255,
-   "finished": false,
-   "ok": 79,
+   "records": 257,
+   "finished": true,
+   "ok": 81,
    "by_status": {
-    "ok": 79,
+    "ok": 81,
     "unreachable_via_proxy": 69,
     "wayback": 37,
     "ssl_error": 24,
@@ -753,16 +759,21 @@
   },
   "archdiocese-of-san-antonio": {
    "sites_in_list": 168,
-   "records": 39,
-   "finished": false,
-   "ok": 17,
+   "records": 168,
+   "finished": true,
+   "ok": 75,
    "by_status": {
-    "challenge": 17,
-    "ok": 17,
-    "ssl_error": 2,
-    "http_5xx": 1,
-    "robots_disallowed": 1,
-    "conn_error": 1
+    "ok": 75,
+    "challenge": 48,
+    "ssl_error": 13,
+    "dns": 10,
+    "social_only": 9,
+    "conn_error": 4,
+    "not_found": 2,
+    "timeout": 2,
+    "robots_disallowed": 2,
+    "parked": 2,
+    "http_5xx": 1
    }
   },
   "diocese-of-rockville-centre": {
@@ -899,18 +910,6 @@
     "conn_error": 2,
     "blocked_429": 1,
     "not_found": 1
-   }
-  },
-  "diocese-of-providence": {
-   "sites_in_list": 139,
-   "records": 8,
-   "finished": false,
-   "ok": 3,
-   "by_status": {
-    "ok": 3,
-    "challenge": 2,
-    "unreachable_via_proxy": 2,
-    "conn_error": 1
    }
   },
   "diocese-of-providence": {
@@ -1662,34 +1661,6 @@
   },
   "diocese-of-pittsburgh": {
    "sites_in_list": 72,
-   "records": 4,
-   "finished": false,
-   "ok": 1,
-   "by_status": {
-    "challenge": 2,
-    "not_found": 1,
-    "ok": 1
-   }
-  },
-  "diocese-of-ogdensburg": {
-   "sites_in_list": 71,
-   "records": 55,
-   "finished": false,
-   "ok": 21,
-   "by_status": {
-    "ok": 21,
-    "challenge": 19,
-    "ssl_error": 6,
-    "unreachable_via_proxy": 3,
-    "not_found": 2,
-    "http_5xx": 1,
-    "blocked_403": 1,
-    "parked": 1,
-    "dns": 1
-   }
-  },
-  "diocese-of-pittsburgh": {
-   "sites_in_list": 72,
    "records": 72,
    "finished": true,
    "ok": 8,
@@ -2362,7 +2333,7 @@
     "ssl_error": 2,
     "conn_error": 2,
     "not_found": 1,
-    "ssl_error": 1
+    "dns": 1
    }
   },
   "byzantine-catholic-eparchy-of-passaic": {
@@ -2583,28 +2554,6 @@
     "conn_error": 1
    }
   },
-  "unassigned-ny": {
-   "sites_in_list": 37,
-   "records": 21,
-   "finished": false,
-   "ok": 17,
-   "by_status": {
-    "ok": 17,
-    "not_found": 3,
-    "conn_error": 1
-   }
-  },
-  "unassigned-ny": {
-   "sites_in_list": 37,
-   "records": 21,
-   "finished": false,
-   "ok": 17,
-   "by_status": {
-    "ok": 17,
-    "not_found": 3,
-    "conn_error": 1
-   }
-  },
   "unassigned-id": {
    "sites_in_list": 37,
    "records": 37,
@@ -2660,11 +2609,13 @@
   },
   "diocese-of-spokane": {
    "sites_in_list": 36,
-   "records": 2,
-   "finished": false,
-   "ok": 0,
+   "records": 37,
+   "finished": true,
+   "ok": 11,
    "by_status": {
-    "challenge": 2
+    "challenge": 24,
+    "ok": 11,
+    "ssl_error": 2
    }
   },
   "archdiocese-of-anchorage-juneau": {
@@ -2733,24 +2684,6 @@
     "social_only": 4,
     "dns": 3,
     "conn_error": 1
-   }
-  },
-  "unassigned-ut": {
-   "sites_in_list": 33,
-   "records": 2,
-   "finished": false,
-   "ok": 2,
-   "by_status": {
-    "ok": 2
-   }
-  },
-  "unassigned-ut": {
-   "sites_in_list": 33,
-   "records": 2,
-   "finished": false,
-   "ok": 2,
-   "by_status": {
-    "ok": 2
    }
   },
   "unassigned-ut": {
@@ -3640,9 +3573,9 @@
  },
  "totals": {
   "sites_in_list": 14585,
-  "records": 9491,
-  "ok": 5304
+  "records": 11311,
+  "ok": 6060
  },
  "us_parish_pages_discovermass": 20147,
- "updated_at": "2026-11-01T17:33:35+00:00"
+ "updated_at": "2026-11-01T17:33:56+00:00"
 }
