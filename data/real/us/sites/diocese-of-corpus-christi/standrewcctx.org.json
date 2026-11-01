@@ -221,7 +221,7 @@
    "feed_key": "89b17a87332c",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T17:39:51+00:00",
+    "fetched_at": "2026-11-01T23:35:35+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -240,7 +240,30 @@
   "text": "Bulletin Archive",
   "source_url": "https://standrewcctx.org/"
  },
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": null,
+   "raw": "SATURDAY: 5:00 PM",
+   "source_url": "https://standrewcctx.org/",
+   "fetched_at": "2026-11-01T08:04:57+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:00",
+   "language": null,
+   "raw": "SUNDAY: 11:00 AM",
+   "source_url": "https://standrewcctx.org/",
+   "fetched_at": "2026-11-01T08:04:57+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  }
+ ],
  "source_url": "https://standrewcctx.org/",
  "fetched_at": "2026-11-01T08:06:06+00:00",
  "schedule_template": {
@@ -261,7 +284,10 @@
   "trusted_candidate": false,
   "generic_rows": 2
  },
- "has_sunday": false,
+ "has_sunday": true,
+ "schedule_dropped": {
+  "weekend_rescue_added": 2
+ },
  "groups_dropped": {
   "label_not_group": 1
  },
