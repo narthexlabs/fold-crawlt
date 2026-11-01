@@ -137,7 +137,7 @@
    "feed_key": "3b7ebff2adfd",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T20:27:59+00:00",
+    "fetched_at": "2026-11-01T23:36:14+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -154,7 +154,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T20:28:01+00:00",
+    "fetched_at": "2026-11-01T23:36:17+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -171,7 +171,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T20:28:03+00:00",
+    "fetched_at": "2026-11-01T23:36:18+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -188,7 +188,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T20:28:04+00:00",
+    "fetched_at": "2026-11-01T23:36:20+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -205,7 +205,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T20:28:06+00:00",
+    "fetched_at": "2026-11-01T23:36:21+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -222,7 +222,7 @@
    "display_tz": "America/Detroit",
    "last_fetch": {
     "status": 404,
-    "fetched_at": "2026-11-01T20:28:07+00:00",
+    "fetched_at": "2026-11-01T23:36:22+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -239,7 +239,7 @@
    "display_tz": "America/Detroit",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T20:28:08+00:00",
+    "fetched_at": "2026-11-01T23:36:24+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -277,7 +277,30 @@
   "text": "(For details, click here)",
   "source_url": "https://hrcatholic.org/"
  },
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "16:30",
+   "language": null,
+   "raw": "WEEKEND MASS: Sat. 4:30 p.m. | Sun. 8:00 & 10:00 a.m.",
+   "source_url": "https://hrcatholic.org/",
+   "fetched_at": "2026-11-01T20:25:03+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": null,
+   "raw": "WEEKEND MASS: Sat. 4:30 p.m. | Sun. 8:00 & 10:00 a.m.",
+   "source_url": "https://hrcatholic.org/",
+   "fetched_at": "2026-11-01T20:25:03+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  }
+ ],
  "source_url": "https://hrcatholic.org/",
  "fetched_at": "2026-11-01T20:25:13+00:00",
  "schedule_template": {
@@ -298,20 +321,10 @@
   "trusted_candidate": false,
   "generic_rows": 0
  },
- "has_sunday": false,
- "schedule_images": [
-  {
-   "url": "https://hrcatholic.org/wp-content/uploads/2026/04/Mass-Schedule-May-2026-1-300x300.png",
-   "alt": "Mass schedule as of May",
-   "page": "https://hrcatholic.org/"
-  },
-  {
-   "url": "https://hrcatholic.org/wp-content/uploads/2025/01/Mass-Cancellation-Policy-2-1024x576.jpg",
-   "alt": "",
-   "page": "https://hrcatholic.org/"
-  }
- ],
- "schedule_note": "schedule appears to be an image; times not read (needs_review)",
+ "has_sunday": true,
+ "schedule_dropped": {
+  "weekend_rescue_added": 2
+ },
  "groups_dropped": {
   "fragment": 1
  },

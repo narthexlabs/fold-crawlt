@@ -373,6 +373,17 @@
    "confidence": "medium",
    "template": "wordpress",
    "kind_parsed": "mass"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:30",
+   "language": null,
+   "raw": "St. John First Communion will be at the 9:30 a.m. Sunday Mass.",
+   "source_url": "https://www.stjohnlima.org/sacraments.html",
+   "fetched_at": "2026-11-01T22:15:28+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
   }
  ],
  "source_url": "https://www.stjohnlima.org/",
@@ -395,13 +406,13 @@
   "trusted_candidate": false,
   "generic_rows": 10
  },
- "has_sunday": false,
- "schedule_partial": true,
+ "has_sunday": true,
  "schedule_dropped": {
   "other_location": 1,
   "no_kind": 1,
   "skipped_section": 2,
-  "not_a_mass": 1
+  "not_a_mass": 1,
+  "weekend_rescue_added": 1
  },
  "groups_dropped": {
   "unmatched": 1,

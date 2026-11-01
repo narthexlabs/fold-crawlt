@@ -413,6 +413,28 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "16:00",
+   "language": null,
+   "raw": "Saturday Vigil: 4:00 p.m.",
+   "source_url": "https://www.icchurchottoville.org/",
+   "fetched_at": "2026-11-01T17:21:22+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:30",
+   "language": null,
+   "raw": "Sunday: 10:30 a.m.",
+   "source_url": "https://www.icchurchottoville.org/",
+   "fetched_at": "2026-11-01T17:21:22+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
   }
  ],
  "source_url": "https://www.icchurchottoville.org/",
@@ -435,8 +457,10 @@
   "trusted_candidate": false,
   "generic_rows": 5
  },
- "has_sunday": false,
- "schedule_partial": true,
+ "has_sunday": true,
+ "schedule_dropped": {
+  "weekend_rescue_added": 2
+ },
  "groups_dropped": {
   "noise": 2,
   "sentence": 1

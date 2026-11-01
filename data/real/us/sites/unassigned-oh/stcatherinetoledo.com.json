@@ -361,6 +361,17 @@
    "review_reason": null,
    "confidence": "high",
    "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Sunday St. Catherine 9:00 AM.",
+   "source_url": "https://www.stcatherinetoledo.com/",
+   "fetched_at": "2026-11-01T22:15:26+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
   }
  ],
  "source_url": "https://www.stcatherinetoledo.com/",
@@ -383,12 +394,12 @@
   "trusted_candidate": false,
   "generic_rows": 7
  },
- "has_sunday": false,
- "schedule_partial": true,
+ "has_sunday": true,
  "schedule_dropped": {
   "not_a_service": 2,
   "relative_time": 1,
-  "prose": 1
+  "prose": 1,
+  "weekend_rescue_added": 1
  },
  "groups_dropped": {
   "noise": 1
