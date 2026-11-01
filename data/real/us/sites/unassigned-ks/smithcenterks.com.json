@@ -1,0 +1,186 @@
+{
+ "domain": "smithcenterks.com",
+ "diocese": "unassigned-ks",
+ "matched_church_ids": [
+  "brave:KS|mary smith center|"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "brave:KS|mary smith center|"
+  ]
+ },
+ "names": [
+  "St Mary Smith Center"
+ ],
+ "cities": [],
+ "home_url": "https://smithcenterks.com/",
+ "final_url": "https://smithcenterks.com/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://smithcenterks.com/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://smithcenterks.com/worship",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://smithcenterks.com/news-detail?item_id=1145",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://smithcenterks.com/organizations-clubs",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://smithcenterks.com/calendar-of-events",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://smithcenterks.com/chamber-sponsored-events",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://smithcenterks.com/contact-us",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "unknown",
+  "evidence": []
+ },
+ "template": "generic-html:unknown",
+ "groups": [
+  {
+   "id": "smithcenterks.com:scouts",
+   "name": "Girl Scouts of Kansas",
+   "category": "youth",
+   "category_label": "Youth",
+   "subcategory": "scouting",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://smithcenterks.com/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://smithcenterks.com/organizations-clubs",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T08:05:07+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "smithcenterks.com:other_lions_club",
+   "name": "Lions Club",
+   "category": "other",
+   "category_label": "Other",
+   "subcategory": "unclassified",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://smithcenterks.com/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://smithcenterks.com/organizations-clubs",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T08:05:07+00:00",
+   "confidence": "low"
+  }
+ ],
+ "calendar_feeds": [],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/DiscoverSmithCenter",
+   "https://www.facebook.com/smithcountyhistoricalsociety",
+   "https://www.facebook.com/SmithCenterChamberofCommerce"
+  ]
+ },
+ "bulletin": null,
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:30",
+   "language": null,
+   "raw": "Mass: Sunday Service 10:30am",
+   "source_url": "https://smithcenterks.com/worship",
+   "fetched_at": "2026-11-01T08:04:57+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "generic_strict"
+  }
+ ],
+ "source_url": "https://smithcenterks.com/",
+ "fetched_at": "2026-11-01T08:05:22+00:00",
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": true,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "other_location": 8
+ },
+ "groups_dropped": {
+  "unmatched": 1
+ },
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(785) 282-3812",
+  "address": "119 W. Court, Smith Center, KS 66967",
+  "source_url": "https://smithcenterks.com/contact-us",
+  "sources": {
+   "phone": "https://smithcenterks.com/contact-us",
+   "address": "https://smithcenterks.com/contact-us"
+  },
+  "fetched_at": "2026-11-01T08:05:22+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}
