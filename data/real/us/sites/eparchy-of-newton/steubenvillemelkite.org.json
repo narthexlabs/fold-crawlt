@@ -2,22 +2,22 @@
  "domain": "steubenvillemelkite.org",
  "diocese": "eparchy-of-newton",
  "matched_church_ids": [
-  "eparchy-of-newton:Parish Locator | Melkite"
+  "eparchy-of-newton:St. Lazarus Melkite Catholic Community"
  ],
  "matched": {
   "directory": [
-   "eparchy-of-newton:Parish Locator | Melkite"
+   "eparchy-of-newton:St. Lazarus Melkite Catholic Community"
   ],
   "discovermass": []
  },
  "names": [
-  "Parish Locator | Melkite"
+  "St. Lazarus Melkite Catholic Community"
  ],
  "cities": [],
  "home_url": "https://steubenvillemelkite.org/",
  "final_url": "https://steubenvillemelkite.org/",
  "crawl_status": "ok",
- "crawl_env": "sandbox",
+ "crawl_env": "runner-rendered",
  "robots_note": "ok",
  "pages": [
   {
@@ -33,6 +33,12 @@
    "class": "ok"
   },
   {
+   "category": "mass_times",
+   "url": "https://steubenvillemelkite.org/calendar/bf8677t3t6b23hg-y9b5f-cwknp-ljs5p",
+   "status": 200,
+   "class": "ok"
+  },
+  {
    "category": "bulletin",
    "url": "https://steubenvillemelkite.org/bulletins",
    "status": 200,
@@ -43,12 +49,18 @@
    "url": "https://steubenvillemelkite.org/calendar",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://steubenvillemelkite.org/calendar/8j58x5k29rrrda9",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
   "cms": "squarespace",
   "evidence": [
-   "squarespace-cdn"
+   "squarespace.com"
   ]
  },
  "template": "generic-html:squarespace",
@@ -67,7 +79,7 @@
    "feed_key": "219f48ae3a60",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T03:34:10+00:00",
+    "fetched_at": "2026-11-01T17:50:56+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -97,7 +109,7 @@
    "language": null,
    "raw": "Divine Liturgy: Sunday, 10 AM",
    "source_url": "https://steubenvillemelkite.org/",
-   "fetched_at": "2026-11-01T02:14:24+00:00",
+   "fetched_at": "2026-11-01T17:47:13+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -105,7 +117,7 @@
   }
  ],
  "source_url": "https://steubenvillemelkite.org/",
- "fetched_at": "2026-11-01T02:14:28+00:00",
+ "fetched_at": "2026-11-01T17:47:28+00:00",
  "schedule_template": {
   "template": "squarespace",
   "version": "ca-sites/2",
@@ -122,17 +134,18 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 1
+  "generic_rows": 2
  },
+ "has_sunday": true,
  "schedule_dropped": {
   "no_kind": 1,
-  "other_location": 2,
-  "no_day": 1
+  "other_location": 26,
+  "no_day": 26
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-10-31",
-  "window_end_exclusive": "2027-01-29",
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
@@ -140,7 +153,20 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "office_contact": {
+  "email": null,
+  "phone": "(740) 803-6126",
+  "address": "814 N 5th St, Toronto, OH 43964",
+  "source_url": "https://steubenvillemelkite.org/",
+  "sources": {
+   "phone": "https://steubenvillemelkite.org/",
+   "address": "https://steubenvillemelkite.org/"
+  },
+  "fetched_at": "2026-11-01T17:47:13+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
- }
+ },
+ "fetch_mode": "rendered"
 }

@@ -2,16 +2,16 @@
  "domain": "olocnh.org",
  "diocese": "eparchy-of-newton",
  "matched_church_ids": [
-  "eparchy-of-newton:Parish Locator | Melkite"
+  "eparchy-of-newton:Our Lady of the Cedars Melkite Catholic Church, Manchester, NH"
  ],
  "matched": {
   "directory": [
-   "eparchy-of-newton:Parish Locator | Melkite"
+   "eparchy-of-newton:Our Lady of the Cedars Melkite Catholic Church, Manchester, NH"
   ],
   "discovermass": []
  },
  "names": [
-  "Parish Locator | Melkite"
+  "Our Lady of the Cedars Melkite Catholic Church, Manchester, NH"
  ],
  "cities": [
   "Manchester"
@@ -19,7 +19,7 @@
  "home_url": "https://olocnh.org/",
  "final_url": "https://www.olocnh.org/",
  "crawl_status": "ok",
- "crawl_env": "sandbox",
+ "crawl_env": "runner-rendered",
  "robots_note": "ok",
  "pages": [
   {
@@ -59,7 +59,8 @@
  "events": [],
  "social": {
   "facebook": [
-   "https://www.facebook.com/OurLadyoftheCedars"
+   "https://www.facebook.com/OurLadyoftheCedars",
+   "https://www.facebook.com/v3.2"
   ],
   "livestream": [
    {
@@ -85,7 +86,7 @@
    "language": null,
    "raw": "Sunday Divine Liturgy: Saturday -- 4:30 PM",
    "source_url": "https://www.olocnh.org/service-schedule",
-   "fetched_at": "2026-11-01T02:14:21+00:00",
+   "fetched_at": "2026-11-01T17:47:09+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -98,7 +99,7 @@
    "language": null,
    "raw": "Sunday Divine Liturgy: Sunday -- 10:30 AM",
    "source_url": "https://www.olocnh.org/service-schedule",
-   "fetched_at": "2026-11-01T02:14:21+00:00",
+   "fetched_at": "2026-11-01T17:47:09+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -106,7 +107,7 @@
   }
  ],
  "source_url": "https://olocnh.org/",
- "fetched_at": "2026-11-01T02:14:24+00:00",
+ "fetched_at": "2026-11-01T17:47:29+00:00",
  "schedule_template": {
   "template": "wix",
   "version": "ca-sites/2",
@@ -125,13 +126,14 @@
   "trusted_candidate": false,
   "generic_rows": 2
  },
+ "has_sunday": true,
  "schedule_dropped": {
   "not_a_service": 1
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-10-31",
-  "window_end_exclusive": "2027-01-29",
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
@@ -139,7 +141,20 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "office_contact": {
+  "email": "oloc.church@comcast.net",
+  "phone": "(603) 623-8944",
+  "address": null,
+  "source_url": "https://www.olocnh.org/",
+  "sources": {
+   "email": "https://www.olocnh.org/",
+   "phone": "https://www.olocnh.org/"
+  },
+  "fetched_at": "2026-11-01T17:47:04+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
- }
+ },
+ "fetch_mode": "rendered"
 }
