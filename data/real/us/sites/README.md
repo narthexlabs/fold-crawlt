@@ -67,7 +67,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-dallas | 100 | 101 | 39 | 45 | 0 | 17 | 0 |
 | unassigned-nh | 99 | 99 | 56 | 33 | 0 | 10 | 0 |
 | diocese-of-trenton | 96 | 96 | 36 | 13 | 3 | 44 | 0 |
-| diocese-of-joliet | 95 | 0 | 0 | 0 | 0 | 0 | 0 |
+| diocese-of-joliet | 95 | 95 | 70 | 22 | 0 | 3 | 0 |
 | archdiocese-of-hartford | 94 | 95 | 73 | 1 | 0 | 21 | 0 |
 | diocese-of-metuchen | 94 | 93 | 31 | 36 | 0 | 26 | 0 |
 | diocese-of-rochester | 92 | 92 | 60 | 19 | 1 | 12 | 0 |
