@@ -2,11 +2,14 @@
  "domain": "stmarycarlyle.org",
  "diocese": "diocese-of-belleville",
  "matched_church_ids": [
+  "diocese-of-belleville:St. Mary",
   "osm-way-1446414327",
   "st-mary-carlyle-il"
  ],
  "matched": {
-  "directory": [],
+  "directory": [
+   "diocese-of-belleville:St. Mary"
+  ],
   "discovermass": [
    "st-mary-carlyle-il",
    "osm-way-1446414327"
@@ -73,7 +76,7 @@
    "feed_key": "be3aac5026a1",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T18:55:56+00:00",
+    "fetched_at": "2026-11-01T23:42:32+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -102,7 +105,30 @@
   "text": "November 1, 2026",
   "source_url": "https://stmarycarlyle.org/news/"
  },
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "16:30",
+   "language": null,
+   "raw": "Saturday | 4:30 PM",
+   "source_url": "https://stmarycarlyle.org/gallery/",
+   "fetched_at": "2026-11-01T17:21:26+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": null,
+   "raw": "Sunday | 10:00 AM",
+   "source_url": "https://stmarycarlyle.org/gallery/",
+   "fetched_at": "2026-11-01T17:21:26+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  }
+ ],
  "source_url": "https://stmarycarlyle.org/",
  "fetched_at": "2026-11-01T17:21:32+00:00",
  "schedule_template": {
@@ -123,15 +149,10 @@
   "trusted_candidate": false,
   "generic_rows": 0
  },
- "has_sunday": false,
- "schedule_images": [
-  {
-   "url": "https://stmarycarlyle.org/wp-content/uploads/2019/04/mspBannerForWebTerminalLinking.jpg",
-   "alt": "Ministry Scheduler Pro - Click to access your schedule online",
-   "page": "https://stmarycarlyle.org/"
-  }
- ],
- "schedule_note": "schedule appears to be an image; times not read (needs_review)",
+ "has_sunday": true,
+ "schedule_dropped": {
+  "weekend_rescue_added": 2
+ },
  "groups_dropped": {},
  "event_counts": {
   "window_start": "2026-11-01",
