@@ -2,16 +2,23 @@
  "domain": "stsebastianandstcharles.com/st-charles",
  "diocese": "diocese-of-owensboro",
  "matched_church_ids": [
-  "diocese-of-owensboro:St. Charles Borromeo Parish"
+  "diocese-of-owensboro:St. Charles Borromeo Parish",
+  "osm-way-1107873033",
+  "osm-way-1107873714"
  ],
  "matched": {
   "directory": [
    "diocese-of-owensboro:St. Charles Borromeo Parish"
   ],
-  "discovermass": []
+  "discovermass": [
+   "osm-way-1107873033",
+   "osm-way-1107873714"
+  ]
  },
  "names": [
-  "St. Charles Borromeo Parish"
+  "St. Charles Borromeo Parish",
+  "Saint Sebastian Catholic Church",
+  "Saint Charles Borromeo Catholic Church"
  ],
  "cities": [
   "Livermore"
@@ -19,7 +26,7 @@
  "home_url": "https://www.stsebastianandstcharles.com/st-charles",
  "final_url": "https://www.stsebastianandstcharles.com/st-charles",
  "crawl_status": "ok",
- "crawl_env": "sandbox",
+ "crawl_env": "runner-rendered",
  "robots_note": "ok",
  "pages": [
   {
@@ -73,7 +80,7 @@
    "language": null,
    "raw": "Reconciliation: Sebastian on Saturdays from 4:30-5:15pm and Sundays from 7:30 - 8:10am, and at St.",
    "source_url": "https://www.stsebastianandstcharles.com/sacraments",
-   "fetched_at": "2026-11-01T02:12:15+00:00",
+   "fetched_at": "2026-11-01T17:46:14+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -86,7 +93,7 @@
    "language": null,
    "raw": "Reconciliation: Sebastian on Saturdays from 4:30-5:15pm and Sundays from 7:30 - 8:10am, and at St.",
    "source_url": "https://www.stsebastianandstcharles.com/sacraments",
-   "fetched_at": "2026-11-01T02:12:15+00:00",
+   "fetched_at": "2026-11-01T17:46:14+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -99,7 +106,7 @@
    "language": null,
    "raw": "Charles on Thursdays after 5:30pm Mass, and on Sundays after Mass at 10:30am.",
    "source_url": "https://www.stsebastianandstcharles.com/sacraments",
-   "fetched_at": "2026-11-01T02:12:15+00:00",
+   "fetched_at": "2026-11-01T17:46:14+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "high",
@@ -112,7 +119,7 @@
    "language": null,
    "raw": "Holy Days at 5:30 pm Vigil",
    "source_url": "https://www.stsebastianandstcharles.com/st-charles",
-   "fetched_at": "2026-11-01T02:12:13+00:00",
+   "fetched_at": "2026-11-01T17:46:11+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "high",
@@ -121,7 +128,7 @@
   }
  ],
  "source_url": "https://www.stsebastianandstcharles.com/st-charles",
- "fetched_at": "2026-11-01T02:12:19+00:00",
+ "fetched_at": "2026-11-01T17:46:20+00:00",
  "schedule_template": {
   "template": "wix",
   "version": "ca-sites/2",
@@ -140,13 +147,14 @@
   "trusted_candidate": false,
   "generic_rows": 2
  },
+ "has_sunday": true,
  "schedule_dropped": {
   "relative_time": 1
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-10-31",
-  "window_end_exclusive": "2027-01-29",
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
@@ -154,7 +162,20 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "office_contact": {
+  "email": null,
+  "phone": "(270) 273-3185",
+  "address": "506 Hill Street, Livermore, KY 42352",
+  "source_url": "https://www.stsebastianandstcharles.com/copy-of-contact",
+  "sources": {
+   "phone": "https://www.stsebastianandstcharles.com/copy-of-contact",
+   "address": "https://www.stsebastianandstcharles.com/st-charles"
+  },
+  "fetched_at": "2026-11-01T17:46:20+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
- }
+ },
+ "fetch_mode": "rendered"
 }
