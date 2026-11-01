@@ -294,7 +294,7 @@
    "feed_key": "c2ca68b71b3f",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T17:39:59+00:00",
+    "fetched_at": "2026-11-01T23:33:53+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -311,7 +311,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T17:40:01+00:00",
+    "fetched_at": "2026-11-01T23:33:54+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -328,7 +328,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T17:40:02+00:00",
+    "fetched_at": "2026-11-01T23:33:55+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -360,6 +360,50 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Saturday 5:00 PM",
+   "source_url": "https://saintjosephschurch.net/sacraments/",
+   "fetched_at": "2026-11-01T17:27:20+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:30",
+   "language": null,
+   "raw": "Sunday 8:30 AM & 10:30 AM",
+   "source_url": "https://saintjosephschurch.net/sacraments/",
+   "fetched_at": "2026-11-01T17:27:20+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:30",
+   "language": null,
+   "raw": "Sunday 8:30 AM & 10:30 AM",
+   "source_url": "https://saintjosephschurch.net/sacraments/",
+   "fetched_at": "2026-11-01T17:27:20+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Sunday 5:00 PM",
+   "source_url": "https://saintjosephschurch.net/sacraments/",
+   "fetched_at": "2026-11-01T17:27:20+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
   }
  ],
  "source_url": "https://saintjosephschurch.net/",
@@ -382,10 +426,10 @@
   "trusted_candidate": false,
   "generic_rows": 5
  },
- "has_sunday": false,
- "schedule_partial": true,
+ "has_sunday": true,
  "schedule_dropped": {
-  "not_a_service": 3
+  "not_a_service": 3,
+  "weekend_rescue_added": 4
  },
  "groups_dropped": {
   "unmatched": 3,
