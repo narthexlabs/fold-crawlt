@@ -1,0 +1,178 @@
+{
+ "domain": "stsebastianseymour.com",
+ "diocese": "unassigned-wi",
+ "matched_church_ids": [
+  "brave:WI|sebastian isaar|"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "brave:WI|sebastian isaar|"
+  ]
+ },
+ "names": [
+  "St Sebastian"
+ ],
+ "cities": [
+  "Isaar"
+ ],
+ "home_url": "https://www.stsebastianseymour.com/",
+ "final_url": "https://www.stsebastianseymour.com/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://www.stsebastianseymour.com/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.stsebastianseymour.com/schedules",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.stsebastianseymour.com/mass-times",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://www.stsebastianseymour.com/bulletins",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.stsebastianseymour.com/calendar",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://www.stsebastianseymour.com/contact",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "duda",
+  "evidence": [
+   "irp.cdn-website"
+  ]
+ },
+ "template": "generic-html:duda",
+ "groups": [],
+ "calendar_feeds": [
+  {
+   "feed_id": "stsebastianseymour.com:ics:c194926b",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": null,
+   "page_url": "https://www.stsebastianseymour.com/calendar",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (embedded on page)",
+   "display_tz": "America/Chicago",
+   "url_withheld": "calendar id is an e-mail address; not stored",
+   "feed_key": "c194926b0fae",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T22:19:26+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
+ "events": [],
+ "social": {},
+ "bulletin": {
+  "url": "https://irp.cdn-website.com/b67aa4e6/files/uploaded/11-01-26+SS+Bulletin.pdf",
+  "date": "2026-11-01",
+  "kind": "pdf",
+  "text": "November 1, 2026",
+  "source_url": "https://www.stsebastianseymour.com/bulletins"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Sunday: 8:00am Mass",
+   "source_url": "https://www.stsebastianseymour.com/mass-times",
+   "fetched_at": "2026-11-01T22:15:29+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "08:15",
+   "language": null,
+   "raw": "Friday: 8:15am Mass",
+   "source_url": "https://www.stsebastianseymour.com/mass-times",
+   "fetched_at": "2026-11-01T22:15:29+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict"
+  }
+ ],
+ "source_url": "https://www.stsebastianseymour.com/",
+ "fetched_at": "2026-11-01T22:15:34+00:00",
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": true
+   },
+   "score": "high"
+  },
+  "passed_bar": true,
+  "trusted_candidate": true,
+  "generic_rows": 3
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "not_a_service": 2,
+  "skipped_section": 5
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(920) 833-2558",
+  "address": null,
+  "source_url": "https://www.stsebastianseymour.com/contact",
+  "sources": {
+   "phone": "https://www.stsebastianseymour.com/contact"
+  },
+  "fetched_at": "2026-11-01T22:15:33+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}
