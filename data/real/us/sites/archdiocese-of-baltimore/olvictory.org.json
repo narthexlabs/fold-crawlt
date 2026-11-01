@@ -18,32 +18,290 @@
  ],
  "home_url": "https://olvictory.org/",
  "final_url": "https://olvictory.org/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "crawl_status": "wayback-2025-12-30",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
    "url": "https://olvictory.org/",
-   "status": 403,
-   "class": "challenge"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.olvictory.org/liturgy",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://olvictory.org/mass-times",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://olvictory.org/prayer-groups",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://olvictory.org/grief-ministry",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://olvictory.org/advent-arts-faith-2025",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.olvictory.org/events-1",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://olvictory.org/contact-us",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://olvictory.org/bulletins",
+   "status": null,
+   "class": "conn_error"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://olvictory.org/bulletin",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "olvictory.org:prayer_group",
+   "name": "Charistmatic Prayer Group",
+   "category": "prayer_devotion",
+   "category_label": "Prayer & devotion",
+   "subcategory": "prayer_group",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://olvictory.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://olvictory.org/prayer-groups",
+   "source_kind": "website",
+   "fetched_at": "2025-10-14T10:52:25+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-12-30"
+  },
+  {
+   "id": "olvictory.org:bereavement",
+   "name": "Grief Share Support Group",
+   "category": "grief_support",
+   "category_label": "Grief & support",
+   "subcategory": "bereavement",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "Grief Share is currently suspended at OLV, while new facilitators are in training. We plan to resume hosting Grief Share in the Fall of 2025",
+   "contact_url": "https://olvictory.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://olvictory.org/grief-ministry",
+   "source_kind": "website",
+   "fetched_at": "2025-10-14T10:05:01+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-12-30"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
  "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "bulletin": {
+  "url": "https://www.parishesonline.com/organization/our-lady-of-victory-church-21229",
+  "date": null,
+  "kind": "lpi",
+  "text": "Bulletins",
+  "source_url": "https://olvictory.org/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "08:00",
+   "language": "English",
+   "raw": "Monday - Thursday: 8:00 AM English on Federal Holidays, Daily Mass is celebrated at 9:00 AM",
+   "source_url": "https://olvictory.org/mass-times",
+   "fetched_at": "2025-10-14T11:33:53+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-12-30: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Monday - Thursday",
+   "source": "wayback-2025-12-30",
+   "archive_url": "https://web.archive.org/web/20251014113353/https://olvictory.org/mass-times",
+   "capture_date": "2025-10-14"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "08:00",
+   "language": "English",
+   "raw": "Monday - Thursday: 8:00 AM English on Federal Holidays, Daily Mass is celebrated at 9:00 AM",
+   "source_url": "https://olvictory.org/mass-times",
+   "fetched_at": "2025-10-14T11:33:53+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-12-30: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Monday - Thursday",
+   "source": "wayback-2025-12-30",
+   "archive_url": "https://web.archive.org/web/20251014113353/https://olvictory.org/mass-times",
+   "capture_date": "2025-10-14"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "08:00",
+   "language": "English",
+   "raw": "Monday - Thursday: 8:00 AM English on Federal Holidays, Daily Mass is celebrated at 9:00 AM",
+   "source_url": "https://olvictory.org/mass-times",
+   "fetched_at": "2025-10-14T11:33:53+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-12-30: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Monday - Thursday",
+   "source": "wayback-2025-12-30",
+   "archive_url": "https://web.archive.org/web/20251014113353/https://olvictory.org/mass-times",
+   "capture_date": "2025-10-14"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "08:00",
+   "language": "English",
+   "raw": "Monday - Thursday: 8:00 AM English on Federal Holidays, Daily Mass is celebrated at 9:00 AM",
+   "source_url": "https://olvictory.org/mass-times",
+   "fetched_at": "2025-10-14T11:33:53+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-12-30: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Monday - Thursday",
+   "source": "wayback-2025-12-30",
+   "archive_url": "https://web.archive.org/web/20251014113353/https://olvictory.org/mass-times",
+   "capture_date": "2025-10-14"
+  }
+ ],
  "source_url": "https://olvictory.org/",
- "fetched_at": "2026-11-01T02:04:09+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-01T08:40:58+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": true
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 20
+ },
+ "schedule_dropped": {
+  "other_location": 10,
+  "not_a_service": 1,
+  "text:other_location": 16
+ },
+ "groups_dropped": {
+  "fragment": 1
+ },
+ "office_contact": {
+  "email": "parish@olvictory.org",
+  "phone": "(410) 242-0131",
+  "address": "4414 Wilkens Avenue, Baltimore, MD 21229",
+  "source_url": "https://olvictory.org/contact-us",
+  "sources": {
+   "email": "https://olvictory.org/contact-us",
+   "phone": "https://olvictory.org/contact-us",
+   "address": "https://olvictory.org/contact-us"
+  },
+  "fetched_at": "2025-09-04T22:52:59+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2025-12-30",
+  "capture_age_days": 306,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://olvictory.org/",
+    "capture": "2025-12-30",
+    "archive_url": "https://web.archive.org/web/20251230030722/https://olvictory.org/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://www.olvictory.org/liturgy",
+    "capture": "2025-06-23",
+    "archive_url": "https://web.archive.org/web/20250623004333/https://www.olvictory.org/liturgy"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://olvictory.org/mass-times",
+    "capture": "2025-10-14",
+    "archive_url": "https://web.archive.org/web/20251014113353/https://olvictory.org/mass-times"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://olvictory.org/prayer-groups",
+    "capture": "2025-10-14",
+    "archive_url": "https://web.archive.org/web/20251014105225/https://olvictory.org/prayer-groups"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://olvictory.org/grief-ministry",
+    "capture": "2025-10-14",
+    "archive_url": "https://web.archive.org/web/20251014100501/https://olvictory.org/grief-ministry"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://www.olvictory.org/events-1",
+    "capture": "2025-10-07",
+    "archive_url": "https://web.archive.org/web/20251007045054/https://www.olvictory.org/events-1"
+   },
+   {
+    "kind": "contact",
+    "original": "https://olvictory.org/contact-us",
+    "capture": "2025-09-04",
+    "archive_url": "https://web.archive.org/web/20250904225259/https://olvictory.org/contact-us"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }

@@ -17,33 +17,446 @@
   "Hanover"
  ],
  "home_url": "https://www.saintlawrencemartyr.org/",
- "final_url": "https://www.saintlawrencemartyr.org/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "final_url": "https://saintlawrencemartyr.org/",
+ "crawl_status": "wayback-2025-05-13",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
-   "url": "https://www.saintlawrencemartyr.org/",
-   "status": 403,
-   "class": "challenge"
+   "url": "https://saintlawrencemartyr.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://saintlawrencemartyr.org/liturgy-sacraments",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://saintlawrencemartyr.org/mass-times",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://saintlawrencemartyr.org/liturgical-environment-ministry",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://saintlawrencemartyr.org/coffee-ministry",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://saintlawrencemartyr.org/homebound-ministry",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://saintlawrencemartyr.org/bulletin-news-events",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://saintlawrencemartyr.org/events-1",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://saintlawrencemartyr.org/news-and-events",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "live",
+   "url": "https://saintlawrencemartyr.org/livestream-mass",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://saintlawrencemartyr.org/contact-us",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "saintlawrencemartyr.org:sick",
+   "name": "Homebound Ministry",
+   "category": "service_mercy",
+   "category_label": "Service & mercy",
+   "subcategory": "sick_homebound",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://saintlawrencemartyr.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://saintlawrencemartyr.org/homebound-ministry",
+   "source_kind": "website",
+   "fetched_at": "2025-04-22T03:24:10+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-05-13"
+  },
+  {
+   "id": "saintlawrencemartyr.org:altar_society",
+   "name": "Liturgical Environment Ministry",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "altar_society_environment",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://saintlawrencemartyr.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://saintlawrencemartyr.org/liturgical-environment-ministry",
+   "source_kind": "website",
+   "fetched_at": "2025-04-22T03:19:49+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-05-13"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/SaintLawrenceMartyr"
+  ],
+  "instagram": [
+   "https://www.instagram.com/saintlawrencemartyr/"
+  ],
+  "youtube": [
+   "https://www.youtube.com/channel/UCfsJ3zF5_RYLGYBKlInocyw"
+  ],
+  "flocknote": [
+   "https://flocknote.com/saintlawrencemartyr"
+  ],
+  "livestream": [
+   {
+    "url": "https://saintlawrencemartyr.org/livestream-mass",
+    "label": "LIVESTREAM: The Mass",
+    "platform": "saintlawrencemartyr.org",
+    "kind": "link"
+   }
+  ]
+ },
+ "bulletin": {
+  "url": "https://saintlawrencemartyr.org/bulletin-news-events",
+  "date": null,
+  "kind": "page",
+  "text": "The Bulletin and More",
+  "source_url": "https://saintlawrencemartyr.org/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": "English",
+   "raw": "Saturday: 5:00 PM English Public Mass",
+   "source_url": "https://saintlawrencemartyr.org/mass-times",
+   "fetched_at": "2025-03-27T10:41:19+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-05-13: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-05-13",
+   "archive_url": "https://web.archive.org/web/20250327104119/https://saintlawrencemartyr.org/mass-times",
+   "capture_date": "2025-03-27"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": "English",
+   "raw": "Sunday: 8:00 AM English Public Mass",
+   "source_url": "https://saintlawrencemartyr.org/mass-times",
+   "fetched_at": "2025-03-27T10:41:19+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-05-13: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-05-13",
+   "archive_url": "https://web.archive.org/web/20250327104119/https://saintlawrencemartyr.org/mass-times",
+   "capture_date": "2025-03-27"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": "English",
+   "raw": "Sunday: 10:00 AM English Public Mass",
+   "source_url": "https://saintlawrencemartyr.org/mass-times",
+   "fetched_at": "2025-03-27T10:41:19+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-05-13: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-05-13",
+   "archive_url": "https://web.archive.org/web/20250327104119/https://saintlawrencemartyr.org/mass-times",
+   "capture_date": "2025-03-27"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "12:00",
+   "language": "English",
+   "raw": "Sunday: 12:00 PM English Public Mass",
+   "source_url": "https://saintlawrencemartyr.org/mass-times",
+   "fetched_at": "2025-03-27T10:41:19+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-05-13: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-05-13",
+   "archive_url": "https://web.archive.org/web/20250327104119/https://saintlawrencemartyr.org/mass-times",
+   "capture_date": "2025-03-27"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "09:00",
+   "language": "English",
+   "raw": "Monday: 9:00 AM English Public Mass",
+   "source_url": "https://saintlawrencemartyr.org/mass-times",
+   "fetched_at": "2025-03-27T10:41:19+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-05-13: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-05-13",
+   "archive_url": "https://web.archive.org/web/20250327104119/https://saintlawrencemartyr.org/mass-times",
+   "capture_date": "2025-03-27"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "09:00",
+   "language": "English",
+   "raw": "Tuesday: 9:00 AM English Public Mass",
+   "source_url": "https://saintlawrencemartyr.org/mass-times",
+   "fetched_at": "2025-03-27T10:41:19+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-05-13: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-05-13",
+   "archive_url": "https://web.archive.org/web/20250327104119/https://saintlawrencemartyr.org/mass-times",
+   "capture_date": "2025-03-27"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "09:00",
+   "language": "English",
+   "raw": "Wednesday: 9:00 AM English Public Mass",
+   "source_url": "https://saintlawrencemartyr.org/mass-times",
+   "fetched_at": "2025-03-27T10:41:19+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-05-13: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-05-13",
+   "archive_url": "https://web.archive.org/web/20250327104119/https://saintlawrencemartyr.org/mass-times",
+   "capture_date": "2025-03-27"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "09:00",
+   "language": "English",
+   "raw": "Thursday: 9:00 AM English Public Mass",
+   "source_url": "https://saintlawrencemartyr.org/mass-times",
+   "fetched_at": "2025-03-27T10:41:19+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-05-13: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-05-13",
+   "archive_url": "https://web.archive.org/web/20250327104119/https://saintlawrencemartyr.org/mass-times",
+   "capture_date": "2025-03-27"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "09:00",
+   "language": "English",
+   "raw": "Friday: 9:00 AM English Public Mass",
+   "source_url": "https://saintlawrencemartyr.org/mass-times",
+   "fetched_at": "2025-03-27T10:41:19+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-05-13: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-05-13",
+   "archive_url": "https://web.archive.org/web/20250327104119/https://saintlawrencemartyr.org/mass-times",
+   "capture_date": "2025-03-27"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "09:00",
+   "language": "English",
+   "raw": "April 20: 9:00 AM English",
+   "source_url": "https://saintlawrencemartyr.org/mass-times",
+   "fetched_at": "2025-03-27T10:41:19+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-05-13: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "kind_parsed": "mass",
+   "source": "wayback-2025-05-13",
+   "archive_url": "https://web.archive.org/web/20250327104119/https://saintlawrencemartyr.org/mass-times",
+   "capture_date": "2025-03-27"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "11:00",
+   "language": "English",
+   "raw": "April 20: 11:00 AM English",
+   "source_url": "https://saintlawrencemartyr.org/mass-times",
+   "fetched_at": "2025-03-27T10:41:19+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-05-13: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "kind_parsed": "mass",
+   "source": "wayback-2025-05-13",
+   "archive_url": "https://web.archive.org/web/20250327104119/https://saintlawrencemartyr.org/mass-times",
+   "capture_date": "2025-03-27"
+  }
+ ],
  "source_url": "https://www.saintlawrencemartyr.org/",
- "fetched_at": "2026-11-01T02:04:12+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-01T08:54:20+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": true
+   },
+   "score": "high"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 39
+ },
+ "schedule_dropped": {
+  "text:skipped_section": 26,
+  "text:not_a_service": 1,
+  "text:no_day": 3
+ },
+ "groups_dropped": {
+  "unmatched": 1
+ },
+ "office_contact": {
+  "email": "office@saintlawrencemartyr.org",
+  "phone": "(410) 799-1970",
+  "address": "7850 Parkside Boulevard, Hanover, MD 21076",
+  "source_url": "https://saintlawrencemartyr.org/contact-us",
+  "sources": {
+   "email": "https://saintlawrencemartyr.org/contact-us",
+   "phone": "https://saintlawrencemartyr.org/contact-us",
+   "address": "https://saintlawrencemartyr.org/contact-us"
+  },
+  "fetched_at": "2024-08-24T23:03:26+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2025-05-13",
+  "capture_age_days": 537,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://saintlawrencemartyr.org/",
+    "capture": "2025-05-13",
+    "archive_url": "https://web.archive.org/web/20250513012102/https://saintlawrencemartyr.org/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://saintlawrencemartyr.org/liturgy-sacraments",
+    "capture": "2025-10-18",
+    "archive_url": "https://web.archive.org/web/20251018104414/https://saintlawrencemartyr.org/liturgy-sacraments"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://saintlawrencemartyr.org/mass-times",
+    "capture": "2025-03-27",
+    "archive_url": "https://web.archive.org/web/20250327104119/https://saintlawrencemartyr.org/mass-times"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://saintlawrencemartyr.org/liturgical-environment-ministry",
+    "capture": "2025-04-22",
+    "archive_url": "https://web.archive.org/web/20250422031949/https://saintlawrencemartyr.org/liturgical-environment-ministry"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://saintlawrencemartyr.org/coffee-ministry",
+    "capture": "2025-04-22",
+    "archive_url": "https://web.archive.org/web/20250422032936/https://saintlawrencemartyr.org/coffee-ministry"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://saintlawrencemartyr.org/homebound-ministry",
+    "capture": "2025-04-22",
+    "archive_url": "https://web.archive.org/web/20250422032410/https://saintlawrencemartyr.org/homebound-ministry"
+   },
+   {
+    "kind": "bulletin",
+    "original": "https://saintlawrencemartyr.org/bulletin-news-events",
+    "capture": "2025-05-23",
+    "archive_url": "https://web.archive.org/web/20250523174207/https://saintlawrencemartyr.org/bulletin-news-events"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://saintlawrencemartyr.org/events-1",
+    "capture": "2024-08-24",
+    "archive_url": "https://web.archive.org/web/20240824230326/https://saintlawrencemartyr.org/events-1"
+   },
+   {
+    "kind": "live",
+    "original": "https://saintlawrencemartyr.org/livestream-mass",
+    "capture": "2025-03-27",
+    "archive_url": "https://web.archive.org/web/20250327103100/https://saintlawrencemartyr.org/livestream-mass"
+   },
+   {
+    "kind": "contact",
+    "original": "https://saintlawrencemartyr.org/contact-us",
+    "capture": "2024-08-24",
+    "archive_url": "https://web.archive.org/web/20240824230326/https://saintlawrencemartyr.org/contact-us"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }

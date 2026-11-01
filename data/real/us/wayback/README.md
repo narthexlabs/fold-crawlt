@@ -4,7 +4,9 @@ What the live crawl could not read (bot challenge, 403, dead site), read from th
 web.archive.org is unreachable from the project sandbox but reachable from GitHub runners: the `wayback` job in
 `.github/workflows/crawl.yml` runs `ingest/us/wayback/run.py`.
 
-**Counts: none yet** (first run pending; this file is rewritten with counts after each run by `python3 -I ingest/us/wayback/run.py --report`).
+**Counts (2026-11-01).**
+- A. Diocese directories: 10 tried; results {'written': 6, 'no-list': 2, 'cdx-failed': 2}; written 6 sees, 277 parishes, 245 with a website.
+- B. Parish sites: 37 tried; results {'written': 28, 'cdx-failed': 7, 'no-capture': 1, 'no-usable-capture': 1}; written 28 sites: 201 groups, 27 sites with a bulletin link, 333 schedule rows (all needs_review).
 
 ## What is written
 
