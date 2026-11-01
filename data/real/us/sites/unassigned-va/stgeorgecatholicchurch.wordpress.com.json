@@ -148,7 +148,19 @@
   ]
  },
  "bulletin": null,
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:00",
+   "language": null,
+   "raw": "Sundays at 11:00 a.m.",
+   "source_url": "https://stgeorgecatholicchurch.wordpress.com/parish-calendar/",
+   "fetched_at": "2026-11-01T22:15:44+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  }
+ ],
  "source_url": "https://stgeorgecatholicchurch.wordpress.com/",
  "fetched_at": "2026-11-01T22:15:49+00:00",
  "schedule_template": {
@@ -169,7 +181,10 @@
   "trusted_candidate": false,
   "generic_rows": 2
  },
- "has_sunday": false,
+ "has_sunday": true,
+ "schedule_dropped": {
+  "weekend_rescue_added": 1
+ },
  "groups_dropped": {
   "noise": 2
  },

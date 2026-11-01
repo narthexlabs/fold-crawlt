@@ -103,7 +103,7 @@
    "note": "All-in-One Event Calendar export (WordPress)",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T20:27:48+00:00",
+    "fetched_at": "2026-11-01T23:41:29+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -153,7 +153,52 @@
   "text": "Flocknote",
   "source_url": "https://richmonddiocese.org/parishes/saint-patrick-2/"
  },
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Saturday Mass: 5:00 PM",
+   "source_url": "https://richmonddiocese.org/parishes/",
+   "fetched_at": "2026-11-01T20:25:04+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:30",
+   "language": null,
+   "raw": "Sunday Mass: 10:30 AM Holy Day: 7:00 PM",
+   "source_url": "https://richmonddiocese.org/parishes/",
+   "fetched_at": "2026-11-01T20:25:04+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:30",
+   "language": null,
+   "raw": "Vigil: 5:00 p.m. Sunday Mass: 8:30 a.m., 11:00 a.m. Daily: Tuesdays at 6:00 p.m.",
+   "source_url": "https://richmonddiocese.org/parishes/",
+   "fetched_at": "2026-11-01T20:25:04+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:00",
+   "language": null,
+   "raw": "Vigil: 5:00 p.m. Sunday Mass: 8:30 a.m., 11:00 a.m. Daily: Tuesdays at 6:00 p.m.",
+   "source_url": "https://richmonddiocese.org/parishes/",
+   "fetched_at": "2026-11-01T20:25:04+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  }
+ ],
  "source_url": "http://www.saintpatrickcc.org/",
  "fetched_at": "2026-11-01T20:25:13+00:00",
  "redirected_off_host": "richmonddiocese.org",
@@ -175,7 +220,10 @@
   "trusted_candidate": false,
   "generic_rows": 32
  },
- "has_sunday": false,
+ "has_sunday": true,
+ "schedule_dropped": {
+  "weekend_rescue_added": 4
+ },
  "groups_dropped": {},
  "event_counts": {
   "window_start": "2026-11-01",

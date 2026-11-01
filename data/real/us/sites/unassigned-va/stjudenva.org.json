@@ -154,6 +154,28 @@
    "review_reason": null,
    "confidence": "high",
    "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Mon Fri 7:30 PM Sat 9:00 AM Sun 9:00 AM 10:30 AM [Mass intention withheld]",
+   "source_url": "https://stjudenva.org/mass",
+   "fetched_at": "2026-11-01T20:25:03+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:30",
+   "language": null,
+   "raw": "Mon Fri 7:30 PM Sat 9:00 AM Sun 9:00 AM 10:30 AM [Mass intention withheld]",
+   "source_url": "https://stjudenva.org/mass",
+   "fetched_at": "2026-11-01T20:25:03+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
   }
  ],
  "source_url": "https://stjudenva.org/",
@@ -176,10 +198,10 @@
   "trusted_candidate": false,
   "generic_rows": 24
  },
- "has_sunday": false,
- "schedule_partial": true,
+ "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 12
+  "other_location": 12,
+  "weekend_rescue_added": 2
  },
  "groups_dropped": {
   "sentence": 2,
@@ -210,6 +232,6 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()",
-  "intentions_withheld": 2
+  "intentions_withheld": 4
  }
 }
