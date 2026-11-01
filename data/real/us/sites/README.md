@@ -81,14 +81,14 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | archdiocese-of-seattle | 117 | 117 | 81 | 30 | 0 | 6 | 0 |
 | diocese-of-la-crosse | 117 | 119 | 71 | 21 | 4 | 23 | 0 |
 | diocese-of-richmond | 114 | 124 | 89 | 19 | 1 | 15 | 0 |
-| diocese-of-dallas | 111 | 101 | 39 | 45 | 0 | 17 | 0 |
+| diocese-of-dallas | 111 | 112 | 47 | 46 | 0 | 19 | 0 |
 | unassigned-wv | 111 | 119 | 97 | 3 | 3 | 16 | 0 |
 | diocese-of-peoria | 106 | 109 | 91 | 8 | 1 | 9 | 0 |
 | unassigned-ma | 103 | 119 | 48 | 51 | 2 | 18 | 0 |
 | archdiocese-of-miami | 101 | 102 | 84 | 5 | 0 | 12 | 1 |
 | diocese-of-fort-wayne-south-bend | 100 | 100 | 52 | 22 | 0 | 26 | 0 |
 | diocese-of-rockford | 99 | 99 | 45 | 33 | 1 | 20 | 0 |
-| diocese-of-belleville | 98 | 96 | 59 | 8 | 0 | 29 | 0 |
+| diocese-of-belleville | 98 | 98 | 60 | 8 | 0 | 30 | 0 |
 | diocese-of-burlington | 98 | 101 | 13 | 59 | 1 | 28 | 0 |
 | unassigned-ia | 98 | 118 | 65 | 32 | 1 | 20 | 0 |
 | unassigned-sd | 97 | 110 | 69 | 17 | 1 | 23 | 0 |
