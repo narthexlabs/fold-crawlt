@@ -26,31 +26,104 @@
  ],
  "home_url": "https://ourladyofvictoryseaside.org/",
  "final_url": "https://ourladyofvictoryseaside.org/",
- "crawl_status": "http_5xx",
+ "crawl_status": "ok",
  "crawl_env": "sandbox",
  "robots_note": "ok",
  "pages": [
   {
    "category": "home",
    "url": "https://ourladyofvictoryseaside.org/",
-   "status": 500,
-   "class": "http_5xx"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://ourladyofvictoryseaside.org/mass/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://ourladyofvictoryseaside.org/education/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://ourladyofvictoryseaside.org/ministries/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://ourladyofvictoryseaside.org/upcoming-events/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "godaddy",
+  "evidence": [
+   "img1.wsimg.com"
+  ]
  },
- "template": "none",
+ "template": "generic-html:godaddy",
  "groups": [],
  "calendar_feeds": [],
  "events": [],
  "social": {},
- "bulletin": null,
+ "bulletin": {
+  "url": "https://parishesonline.com/find/our-lady-of-victory-st-peter-the-fisherman-church",
+  "date": null,
+  "kind": "lpi",
+  "text": "Bulletin",
+  "source_url": "https://ourladyofvictoryseaside.org/"
+ },
  "schedule_rows": [],
  "source_url": "https://ourladyofvictoryseaside.org/",
- "fetched_at": "2026-11-01T08:35:01+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-01T17:27:28+00:00",
+ "schedule_template": {
+  "template": "godaddy",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "has_sunday": false,
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": "olvoffice@archdpdx.org",
+  "phone": "(503) 738-6161",
+  "address": null,
+  "source_url": "https://ourladyofvictoryseaside.org/",
+  "sources": {
+   "email": "https://ourladyofvictoryseaside.org/",
+   "phone": "https://ourladyofvictoryseaside.org/"
+  },
+  "fetched_at": "2026-11-01T17:27:10+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
  }
