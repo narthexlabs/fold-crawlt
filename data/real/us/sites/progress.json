@@ -605,17 +605,12 @@
    ]
   },
   {
-   "started_at": "2026-11-01T22:15:17+00:00",
-   "ended_at": "2026-11-01T22:16:11+00:00",
-   "result": "fetched {'ok': 26, 'done': 48, 'conn_error': 1, 'dns': 9, 'challenge': 2, 'ssl_error': 4, 'parked': 1, 'not_found': 1, 'timeout': 4, 'halted_egress': 0}; parsed 7 dioceses",
+   "started_at": "2026-11-01T22:15:19+00:00",
+   "ended_at": "2026-11-01T22:16:41+00:00",
+   "result": "fetched {'ok': 21, 'done': 28, 'dns': 2, 'http_5xx': 1, 'ssl_error': 1, 'http_4xx': 1, 'timeout': 2, 'halted_egress': 0}; parsed 2 dioceses",
    "touched": [
-    "archdiocese-of-chicago",
-    "diocese-of-springfield-in-illinois",
-    "archdiocese-of-atlanta",
-    "diocese-of-joliet",
-    "diocese-of-peoria",
-    "diocese-of-rockford",
-    "unassigned-il"
+    "unassigned-la",
+    "holy-protection-of-mary-byzantine-catholic-eparchy-of-phoenix"
    ]
   }
  ],
@@ -658,7 +653,7 @@
   },
   "archdiocese-of-chicago": {
    "sites_in_list": 479,
-   "records": 483,
+   "records": 480,
    "finished": true,
    "ok": 248,
    "by_status": {
@@ -1287,14 +1282,14 @@
   },
   "diocese-of-springfield-in-illinois": {
    "sites_in_list": 138,
-   "records": 138,
-   "finished": true,
-   "ok": 87,
+   "records": 122,
+   "finished": false,
+   "ok": 76,
    "by_status": {
-    "ok": 87,
-    "challenge": 21,
-    "dns": 14,
-    "ssl_error": 7,
+    "ok": 76,
+    "challenge": 19,
+    "dns": 12,
+    "ssl_error": 6,
     "timeout": 3,
     "not_found": 2,
     "conn_error": 1,
@@ -1344,7 +1339,7 @@
    "finished": true,
    "ok": 94,
    "by_status": {
-    "ok": 94,
+    "ok": 93,
     "wayback": 13,
     "dns": 11,
     "ssl_error": 6,
@@ -1358,19 +1353,19 @@
   },
   "unassigned-la": {
    "sites_in_list": 132,
-   "records": 234,
+   "records": 245,
    "finished": true,
-   "ok": 73,
+   "ok": 82,
    "by_status": {
     "challenge": 123,
-    "ok": 73,
-    "dns": 12,
+    "ok": 82,
+    "dns": 13,
     "ssl_error": 9,
     "unreachable_via_proxy": 7,
     "conn_error": 5,
     "timeout": 2,
     "parked": 2,
-    "http_5xx": 1
+    "http_5xx": 2
    }
   },
   "archdiocese-of-new-orleans": {
@@ -1460,18 +1455,14 @@
   },
   "diocese-of-joliet": {
    "sites_in_list": 121,
-   "records": 121,
-   "finished": true,
-   "ok": 80,
+   "records": 95,
+   "finished": false,
+   "ok": 70,
    "by_status": {
-    "ok": 80,
+    "ok": 70,
     "challenge": 22,
-    "dns": 6,
-    "timeout": 6,
-    "ssl_error": 4,
-    "http_5xx": 1,
-    "parked": 1,
-    "conn_error": 1
+    "timeout": 2,
+    "http_5xx": 1
    }
   },
   "diocese-of-charlotte": {
@@ -1590,7 +1581,7 @@
   },
   "diocese-of-peoria": {
    "sites_in_list": 106,
-   "records": 109,
+   "records": 106,
    "finished": true,
    "ok": 91,
    "by_status": {
@@ -1657,13 +1648,13 @@
   },
   "diocese-of-rockford": {
    "sites_in_list": 99,
-   "records": 99,
-   "finished": true,
+   "records": 98,
+   "finished": false,
    "ok": 45,
    "by_status": {
     "ok": 45,
     "challenge": 33,
-    "dns": 12,
+    "dns": 11,
     "ssl_error": 3,
     "timeout": 2,
     "http_5xx": 1,
@@ -2065,27 +2056,26 @@
   },
   "diocese-of-fall-river": {
    "sites_in_list": 82,
-   "records": 83,
-   "finished": true,
-   "ok": 43,
+   "records": 56,
+   "finished": false,
+   "ok": 33,
    "by_status": {
-    "ok": 43,
-    "challenge": 16,
-    "dns": 11,
-    "ssl_error": 9,
+    "ok": 33,
+    "challenge": 15,
+    "ssl_error": 4,
     "not_found": 2,
     "unreachable_via_proxy": 2
    }
   },
   "unassigned-il": {
    "sites_in_list": 82,
-   "records": 143,
+   "records": 137,
    "finished": true,
-   "ok": 100,
+   "ok": 96,
    "by_status": {
-    "ok": 100,
+    "ok": 96,
     "challenge": 17,
-    "dns": 10,
+    "dns": 8,
     "ssl_error": 6,
     "conn_error": 3,
     "not_found": 2,
@@ -3209,7 +3199,7 @@
   },
   "eparchy-of-newton": {
    "sites_in_list": 36,
-   "records": 39,
+   "records": 38,
    "finished": true,
    "ok": 26,
    "by_status": {
@@ -3495,10 +3485,16 @@
   },
   "holy-protection-of-mary-byzantine-catholic-eparchy-of-phoenix": {
    "sites_in_list": 26,
-   "records": 0,
-   "finished": false,
-   "ok": 0,
-   "by_status": {}
+   "records": 26,
+   "finished": true,
+   "ok": 20,
+   "by_status": {
+    "ok": 20,
+    "http_4xx": 2,
+    "timeout": 2,
+    "ssl_error": 1,
+    "dns": 1
+   }
   },
   "diocese-of-stockton": {
    "sites_in_list": 23,
@@ -4067,9 +4063,9 @@
  },
  "totals": {
   "sites_in_list": 19262,
-  "records": 17791,
-  "ok": 9462
+  "records": 17744,
+  "ok": 9450
  },
  "us_parish_pages_discovermass": 20147,
- "updated_at": "2026-11-01T22:16:17+00:00"
+ "updated_at": "2026-11-01T22:16:42+00:00"
 }
