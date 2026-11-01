@@ -18,32 +18,418 @@
  ],
  "home_url": "http://saintblaise.org/",
  "final_url": "https://saintblaise.org/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "crawl_status": "wayback-2026-01-04",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
    "url": "https://saintblaise.org/",
-   "status": 403,
-   "class": "challenge"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.saintblaise.org/sacraments",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.saintblaise.org/online-mass-recordings",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.saintblaise.org/ministries",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.saintblaise.org/faith",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://saintblaise.org/events",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://saintblaise.org/events?page=1",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://saintblaise.org/contact",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://saintblaise.org/bulletins",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "saintblaise.org:bible_study",
+   "name": "Bible-Based Faith Sharing",
+   "category": "scripture_study",
+   "category_label": "Scripture & study",
+   "subcategory": "bible_study",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": "Every Tuesday, 7:30p.m",
+   "description": "Join us every Tuesday evening at 7:30 p.m. as we discuss the weekend readings.",
+   "contact_url": "https://saintblaise.org/contact",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.saintblaise.org/ministries",
+   "source_kind": "website",
+   "fetched_at": "2025-05-16T05:20:32+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-01-04"
+  },
+  {
+   "id": "saintblaise.org:ocia",
+   "name": "OCIA (becoming Catholic)",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "ocia",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://saintblaise.org/contact",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.saintblaise.org/faith",
+   "source_kind": "website",
+   "fetched_at": "2025-05-16T04:45:45+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-01-04"
+  },
+  {
+   "id": "saintblaise.org:svdp",
+   "name": "St. Vincent de Paul Society",
+   "category": "service_mercy",
+   "category_label": "Service & mercy",
+   "subcategory": "st_vincent_de_paul",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "The St. Vincent de Paul Society helps people in the Bellingham Community that need assistance with applying for assistance, heating bills, electric bills, to name just a few. All calls are confidential! If you need assistance please call the office…",
+   "contact_url": "https://saintblaise.org/contact",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.saintblaise.org/ministries",
+   "source_kind": "website",
+   "fetched_at": "2025-05-16T05:20:32+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-01-04"
+  },
+  {
+   "id": "saintblaise.org:emhc",
+   "name": "Eucharistic Ministers",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "emhc",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "Baptised and Confirmed Catholics are eligible to become Eucaristic Ministers. Eucharistic Ministers assist in administering the holy commununion.",
+   "contact_url": "https://saintblaise.org/contact",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.saintblaise.org/ministries",
+   "source_kind": "website",
+   "fetched_at": "2025-05-16T05:20:32+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-01-04"
+  },
+  {
+   "id": "saintblaise.org:lectors",
+   "name": "Lectors",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "lectors",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "Baptised and Confirmed Catholics are invited to share the Word of God with parishioners at Mass.",
+   "contact_url": "https://saintblaise.org/contact",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.saintblaise.org/ministries",
+   "source_kind": "website",
+   "fetched_at": "2025-05-16T05:20:32+00:00",
+   "confidence": "low",
+   "source": "wayback-2026-01-04"
+  },
+  {
+   "id": "saintblaise.org:other_500_club",
+   "name": "500 Club",
+   "category": "other",
+   "category_label": "Other",
+   "subcategory": "unclassified",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": "Last Sunday",
+   "description": "The 500 Club is a fundraising event throughout the year. Membership application is attached and drawings are held the last Sunday of every month, after the 10:00 Mass.",
+   "contact_url": "https://saintblaise.org/contact",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.saintblaise.org/ministries",
+   "source_kind": "website",
+   "fetched_at": "2025-05-16T05:20:32+00:00",
+   "confidence": "low",
+   "source": "wayback-2026-01-04"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/St-Blaise-Catholic-Church-104898574487350"
+  ],
+  "x": [
+   "https://x.com/stblaise_ma"
+  ],
+  "livestream": [
+   {
+    "url": "https://saintblaise.org/online-mass-recordings",
+    "label": "Online Mass Recordings",
+    "platform": "saintblaise.org",
+    "kind": "link"
+   },
+   {
+    "url": "https://www.saintblaise.org/online-mass-recordings",
+    "label": "Online Mass Recordings",
+    "platform": "www.saintblaise.org",
+    "kind": "link"
+   }
+  ]
+ },
+ "bulletin": {
+  "url": "https://saintblaise.org/bulletins",
+  "date": null,
+  "kind": "page",
+  "text": "|||",
+  "source_url": "https://saintblaise.org/bulletins"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "16:00",
+   "language": "English",
+   "raw": "Saturday: 4:00 PM English",
+   "source_url": "https://saintblaise.org/",
+   "fetched_at": "2026-01-04T15:32:43+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-01-04: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-01-04",
+   "archive_url": "https://web.archive.org/web/20260104153243/https://saintblaise.org/",
+   "capture_date": "2026-01-04"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "07:30",
+   "language": "English",
+   "raw": "Sunday: 7:30 AM English",
+   "source_url": "https://saintblaise.org/",
+   "fetched_at": "2026-01-04T15:32:43+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-01-04: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-01-04",
+   "archive_url": "https://web.archive.org/web/20260104153243/https://saintblaise.org/",
+   "capture_date": "2026-01-04"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": "English",
+   "raw": "Sunday: 10:00 AM English (Live Streamed)",
+   "source_url": "https://saintblaise.org/",
+   "fetched_at": "2026-01-04T15:32:43+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-01-04: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-01-04",
+   "archive_url": "https://web.archive.org/web/20260104153243/https://saintblaise.org/",
+   "capture_date": "2026-01-04"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "09:00",
+   "language": "English",
+   "raw": "Monday: 9:00 AM English Mass in Chapel",
+   "source_url": "https://saintblaise.org/",
+   "fetched_at": "2026-01-04T15:32:43+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-01-04: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-01-04",
+   "archive_url": "https://web.archive.org/web/20260104153243/https://saintblaise.org/",
+   "capture_date": "2026-01-04"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "09:00",
+   "language": "English",
+   "raw": "Tuesday: 9:00 AM English Mass in Chapel",
+   "source_url": "https://saintblaise.org/",
+   "fetched_at": "2026-01-04T15:32:43+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-01-04: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-01-04",
+   "archive_url": "https://web.archive.org/web/20260104153243/https://saintblaise.org/",
+   "capture_date": "2026-01-04"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "09:00",
+   "language": "English",
+   "raw": "Wednesday: 9:00 AM English Mass in Chapel",
+   "source_url": "https://saintblaise.org/",
+   "fetched_at": "2026-01-04T15:32:43+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-01-04: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-01-04",
+   "archive_url": "https://web.archive.org/web/20260104153243/https://saintblaise.org/",
+   "capture_date": "2026-01-04"
+  }
+ ],
  "source_url": "http://saintblaise.org/",
- "fetched_at": "2026-11-01T05:09:14+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-01T13:05:41+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": true
+   },
+   "score": "high"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 1
+ },
+ "schedule_dropped": {
+  "not_a_service": 4
+ },
+ "groups_dropped": {
+  "unmatched": 1
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(508) 966-1258",
+  "address": "1158 South Main Street, Bellingham, MA 02019",
+  "source_url": "https://saintblaise.org/contact",
+  "sources": {
+   "phone": "https://saintblaise.org/contact",
+   "address": "https://saintblaise.org/contact"
+  },
+  "fetched_at": "2026-01-04T15:32:43+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2026-01-04",
+  "capture_age_days": 301,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://saintblaise.org/",
+    "capture": "2026-01-04",
+    "archive_url": "https://web.archive.org/web/20260104153243/https://saintblaise.org/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://www.saintblaise.org/sacraments",
+    "capture": "2025-05-16",
+    "archive_url": "https://web.archive.org/web/20250516042526/https://www.saintblaise.org/sacraments"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://www.saintblaise.org/online-mass-recordings",
+    "capture": "2025-05-16",
+    "archive_url": "https://web.archive.org/web/20250516041229/https://www.saintblaise.org/online-mass-recordings"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://www.saintblaise.org/ministries",
+    "capture": "2025-05-16",
+    "archive_url": "https://web.archive.org/web/20250516052032/https://www.saintblaise.org/ministries"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://www.saintblaise.org/faith",
+    "capture": "2025-05-16",
+    "archive_url": "https://web.archive.org/web/20250516044545/https://www.saintblaise.org/faith"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://saintblaise.org/events",
+    "capture": "2024-04-17",
+    "archive_url": "https://web.archive.org/web/20240417164456/https://saintblaise.org/events"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://saintblaise.org/events?page=1",
+    "capture": "2025-10-16",
+    "archive_url": "https://web.archive.org/web/20251016154645/https://saintblaise.org/events?page=1"
+   },
+   {
+    "kind": "contact",
+    "original": "https://saintblaise.org/contact",
+    "capture": "2026-01-04",
+    "archive_url": "https://web.archive.org/web/20260104153243/https://saintblaise.org/contact"
+   },
+   {
+    "kind": "bulletin",
+    "original": "https://saintblaise.org/bulletins",
+    "capture": "2025-10-16",
+    "archive_url": "https://web.archive.org/web/20251016160810/https://saintblaise.org/bulletins"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }
