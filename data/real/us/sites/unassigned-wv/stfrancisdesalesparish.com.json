@@ -273,7 +273,7 @@
    "feed_key": "a3831b5d615a",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T17:46:28+00:00",
+    "fetched_at": "2026-11-01T23:35:29+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -478,6 +478,28 @@
    "review_reason": null,
    "confidence": "high",
    "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Sunday 8am, 10am",
+   "source_url": "https://stfrancisdesalesparish.com/",
+   "fetched_at": "2026-11-01T17:27:39+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": null,
+   "raw": "Sunday 8am, 10am",
+   "source_url": "https://stfrancisdesalesparish.com/",
+   "fetched_at": "2026-11-01T17:27:39+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
   }
  ],
  "source_url": "https://stfrancisdesalesparish.com/",
@@ -500,10 +522,10 @@
   "trusted_candidate": false,
   "generic_rows": 6
  },
- "has_sunday": false,
- "schedule_partial": true,
+ "has_sunday": true,
  "schedule_dropped": {
-  "no_kind": 2
+  "no_kind": 2,
+  "weekend_rescue_added": 2
  },
  "groups_dropped": {
   "sacrament_prep": 1,

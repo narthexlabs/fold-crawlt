@@ -170,7 +170,7 @@
    "feed_key": "6c09484f2319",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T17:46:39+00:00",
+    "fetched_at": "2026-11-01T23:35:40+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -192,7 +192,74 @@
   "text": "LPi",
   "source_url": "https://www.stjameswv.org/"
  },
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Saturday Vigil Mass: 5:00 PM",
+   "source_url": "https://www.stjameswv.org/",
+   "fetched_at": "2026-11-01T17:27:39+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Sundays at St. James: 8:00 AM, 11:00 AM, 1:30 PM (ES), & 6:00 PM",
+   "source_url": "https://www.stjameswv.org/",
+   "fetched_at": "2026-11-01T17:27:39+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:00",
+   "language": null,
+   "raw": "Sundays at St. James: 8:00 AM, 11:00 AM, 1:30 PM (ES), & 6:00 PM",
+   "source_url": "https://www.stjameswv.org/",
+   "fetched_at": "2026-11-01T17:27:39+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "13:30",
+   "language": null,
+   "raw": "Sundays at St. James: 8:00 AM, 11:00 AM, 1:30 PM (ES), & 6:00 PM",
+   "source_url": "https://www.stjameswv.org/",
+   "fetched_at": "2026-11-01T17:27:39+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "18:00",
+   "language": null,
+   "raw": "Sundays at St. James: 8:00 AM, 11:00 AM, 1:30 PM (ES), & 6:00 PM",
+   "source_url": "https://www.stjameswv.org/",
+   "fetched_at": "2026-11-01T17:27:39+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:30",
+   "language": null,
+   "raw": "9:30 AM [Mass intention withheld]",
+   "source_url": "https://www.stjameswv.org/",
+   "fetched_at": "2026-11-01T17:27:39+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  }
+ ],
  "source_url": "https://www.stjameswv.org/",
  "fetched_at": "2026-11-01T17:27:47+00:00",
  "schedule_template": {
@@ -213,10 +280,11 @@
   "trusted_candidate": false,
   "generic_rows": 22
  },
- "has_sunday": false,
+ "has_sunday": true,
  "schedule_dropped": {
   "not_a_service": 2,
-  "prose": 2
+  "prose": 2,
+  "weekend_rescue_added": 6
  },
  "groups_dropped": {
   "unmatched": 2,
@@ -247,6 +315,7 @@
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
  },
  "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
+  "screened_by": "ingest/public/privacy.py screen()",
+  "intentions_withheld": 1
  }
 }

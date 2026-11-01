@@ -271,7 +271,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T17:46:41+00:00",
+    "fetched_at": "2026-11-01T23:35:41+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -293,7 +293,63 @@
   "text": "Click Here to Donate",
   "source_url": "https://stjoeshuntington.org/"
  },
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Sunday 8:00am and 12:00 noon Masses are simpler liturgies with some music, but with most elements spoken.",
+   "source_url": "https://stjoeshuntington.org/liturgical-ministries/",
+   "fetched_at": "2026-11-01T17:27:50+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "12:00",
+   "language": null,
+   "raw": "Sunday 8:00am and 12:00 noon Masses are simpler liturgies with some music, but with most elements spoken.",
+   "source_url": "https://stjoeshuntington.org/liturgical-ministries/",
+   "fetched_at": "2026-11-01T17:27:50+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "17:30",
+   "language": null,
+   "raw": "Sunday 5:30 P.M. Mass is an entirely spoken liturgy, offering a more contemplative atmosphere for prayer.",
+   "source_url": "https://stjoeshuntington.org/liturgical-ministries/",
+   "fetched_at": "2026-11-01T17:27:50+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "16:30",
+   "language": null,
+   "raw": "Saturday 4:30pm",
+   "source_url": "https://stjoeshuntington.org/",
+   "fetched_at": "2026-11-01T17:27:41+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": null,
+   "raw": "Sunday 10:00 am",
+   "source_url": "https://stjoeshuntington.org/",
+   "fetched_at": "2026-11-01T17:27:41+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  }
+ ],
  "source_url": "https://stjoeshuntington.org/",
  "fetched_at": "2026-11-01T17:28:12+00:00",
  "schedule_template": {
@@ -314,12 +370,13 @@
   "trusted_candidate": false,
   "generic_rows": 14
  },
- "has_sunday": false,
+ "has_sunday": true,
  "schedule_dropped": {
   "not_a_service": 1,
   "no_kind": 1,
   "range_not_a_mass": 5,
-  "prose": 5
+  "prose": 5,
+  "weekend_rescue_added": 5
  },
  "groups_dropped": {
   "noise": 1,
