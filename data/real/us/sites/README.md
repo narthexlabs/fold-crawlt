@@ -55,8 +55,8 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-richmond | 114 | 124 | 89 | 19 | 1 | 15 | 0 |
 | unassigned-sd | 108 | 3 | 2 | 0 | 0 | 1 | 0 |
 | diocese-of-albany | 107 | 109 | 62 | 24 | 4 | 19 | 0 |
-| archdiocese-of-atlanta | 105 | 106 | 83 | 11 | 0 | 8 | 0 |
-| archdiocese-of-baltimore | 104 | 104 | 57 | 39 | 2 | 6 | 0 |
+| archdiocese-of-atlanta | 105 | 106 | 83 | 4 | 0 | 8 | 0 |
+| archdiocese-of-baltimore | 104 | 104 | 57 | 29 | 2 | 6 | 0 |
 | unassigned-ms | 102 | 1 | 0 | 0 | 0 | 1 | 0 |
 | archdiocese-of-denver | 101 | 102 | 91 | 5 | 0 | 6 | 0 |
 | diocese-of-dallas | 97 | 84 | 29 | 40 | 0 | 15 | 0 |
@@ -264,7 +264,6 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 
 ## Chunk log
 
-- 2026-11-01T03:57:57+00:00: fetched {'unreachable_via_proxy': 65, 'done': 1245, 'challenge': 311, 'ssl_error': 40, 'ok': 762, 'not_found': 13, 'dns': 16, 'conn_error': 30, 'http_5xx': 7, 'parked': 7, 'egress_refused': 56, 'robots_disallowed': 2, 'blocked_403': 1, 'cut': 10, 'timeout': 1, 'halted_egress': 0}; parsed 38 dioceses
 - 2026-11-01T05:04:08+00:00: fetched {'robots_disallowed': 2, 'done': 590, 'unreachable_via_proxy': 164, 'challenge': 121, 'not_found': 14, 'ssl_error': 46, 'ok': 194, 'dns': 17, 'http_5xx': 7, 'parked': 3, 'conn_error': 26, 'egress_refused': 56, 'timeout': 1, 'cut': 5, 'halted_egress': 0}; parsed 18 dioceses
 - 2026-11-01T05:09:00+00:00: fetched {'robots_disallowed': 6, 'done': 1282, 'unreachable_via_proxy': 183, 'challenge': 251, 'ssl_error': 64, 'not_found': 22, 'ok': 722, 'parked': 6, 'timeout': 2, 'http_5xx': 8, 'conn_error': 29, 'http_4xx': 1, 'cut': 16, 'blocked_429': 2, 'egress_refused': 56, 'http_307': 1, 'dns': 1, 'halted_egress': 0}; parsed 21 dioceses
 - 2026-11-01T05:18:37+00:00: fetched {'dns': 4, 'done': 57, 'ok': 6, 'timeout': 52, 'cut': 5, 'halted_egress': 0}; parsed 0 dioceses
@@ -279,3 +278,4 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-01T08:04:48+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-01T08:19:52+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-01T08:34:55+00:00: fetched {'dns': 1, 'done': 1, 'halted_egress': 0}; parsed 0 dioceses
+- 2026-11-01T08:49:57+00:00: fetched {}; parsed 0 dioceses
