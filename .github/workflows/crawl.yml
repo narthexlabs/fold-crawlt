@@ -15,7 +15,7 @@ on:
   workflow_dispatch:
     inputs:
       job:
-        description: 'which job (sites | reparse | discovermass | gcatholic | commoncrawl | osm | wayback | bulletins | all)'
+        description: 'which job (sites | reparse | render | discovermass | gcatholic | commoncrawl | osm | wayback | bulletins | all)'
         default: 'all'
       minutes:
         description: 'minutes per chunk'
@@ -95,6 +95,53 @@ jobs:
           git add data/real/us/sites/progress.json data/real/us/sites/README.md
           git commit -q -m "US parish sites: re-parse progress $(date -u +%FT%H:%MZ)$TRAILER" 2>/dev/null || true
           for i in 1 2 3 4; do
+            git pull --rebase -X theirs --autostash -q origin main || { git rebase --abort 2>/dev/null || true; }
+            git push -q origin HEAD:main && break
+            sleep $((RANDOM % 20 + 5))
+          done
+
+  render:
+    # Dispatch only (job=render). Re-reads, ONCE, sites that answered the plain crawl (crawl_status ok: never a challenge/403
+    # host) with Mass times but no groups and a JS site builder (Wix, Duda, Squarespace, Weebly, Google Sites), in headless
+    # Chromium with the honest FindTheChurch user agent; see ingest/us/sites/render_fetch.py. 4 disjoint shards by
+    # sha1(domain) % 4, so no host sees two runners; one page at a time per host, robots.txt and Crawl-delay honoured.
+    if: ${{ github.event.inputs.job == 'render' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 110
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: ['0/4', '1/4', '2/4', '3/4']
+    concurrency:
+      group: crawl-render-${{ strategy.job-index }}
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 1 }
+      - run: git config user.name "Matthew" && git config user.email "mcolt4@gmail.com"
+      - run: sudo pip3 install -q --break-system-packages requests beautifulsoup4 lxml playwright   # system site: visible to python3 -I
+      - run: python3 -m playwright install --with-deps chromium
+      - uses: actions/cache@v4
+        with:
+          path: data/raw/us/sites
+          key: raw-render-${{ strategy.job-index }}-${{ github.run_id }}
+          restore-keys: raw-render-${{ strategy.job-index }}-
+      - name: Rendered re-read of JS-built parish sites (this shard), parse, commit, push
+        env:
+          SHARD: ${{ matrix.shard }}
+          RMIN: ${{ github.event.inputs.minutes || '60' }}
+        run: |
+          set -u
+          TRAILER=$'\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01SXKUYETifPNNjUVPkZ7qG5'
+          RMIN=$(( RMIN > 95 ? 95 : RMIN ))
+          rm -f data/raw/us/sites/_last_touched.json
+          timeout $(( RMIN * 60 + 300 )) python3 -I ingest/us/sites/render_fetch.py run --minutes "$RMIN" --workers 6 --shard "$SHARD" || true
+          if [ -f data/raw/us/sites/_last_touched.json ]; then
+            for d in $(python3 -c "import json;print(' '.join(json.load(open('data/raw/us/sites/_last_touched.json'))))"); do
+              git add "data/real/us/sites/$d/" && git commit -q -m "US parish sites: rendered re-read, $d (shard $SHARD)$TRAILER" 2>/dev/null
+            done
+          fi
+          for i in 1 2 3 4 5; do
             git pull --rebase -X theirs --autostash -q origin main || { git rebase --abort 2>/dev/null || true; }
             git push -q origin HEAD:main && break
             sleep $((RANDOM % 20 + 5))
