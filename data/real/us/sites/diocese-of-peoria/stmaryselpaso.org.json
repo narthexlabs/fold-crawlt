@@ -23,7 +23,7 @@
  "home_url": "https://www.stmaryselpaso.org/",
  "final_url": "https://www.stmaryselpaso.org/",
  "crawl_status": "ok",
- "crawl_env": "sandbox",
+ "crawl_env": "runner-rendered",
  "robots_note": "ok",
  "pages": [
   {
@@ -76,7 +76,98 @@
   ]
  },
  "template": "generic-html:duda",
- "groups": [],
+ "groups": [
+  {
+   "id": "stmaryselpaso.org:rosary|altar",
+   "name": "Altar and Rosary Society",
+   "category": "prayer_devotion",
+   "category_label": "Prayer & devotion",
+   "subcategory": "rosary",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": "First Tuesday",
+   "description": null,
+   "contact_url": "https://www.stmaryselpaso.org/contact",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stmaryselpaso.org/ministries",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:47:36+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "stmaryselpaso.org:rosary",
+   "name": "Altar and Rosary Society -St. John's",
+   "category": "prayer_devotion",
+   "category_label": "Prayer & devotion",
+   "subcategory": "rosary",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": "First Tuesday",
+   "description": null,
+   "contact_url": "https://www.stmaryselpaso.org/contact",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stmaryselpaso.org/ministries",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:47:36+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "stmaryselpaso.org:ocia",
+   "name": "RCIA",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "ocia",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.stmaryselpaso.org/contact",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stmaryselpaso.org/ministries",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:47:36+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "stmaryselpaso.org:kofc",
+   "name": "Knights of Columbus",
+   "category": "fraternal_orders",
+   "category_label": "Fraternal & orders",
+   "subcategory": "knights_of_columbus",
+   "audience": "men",
+   "language": "en",
+   "language_assumed": true,
+   "meets": "Third Wednesday",
+   "description": null,
+   "contact_url": "https://www.stmaryselpaso.org/contact",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stmaryselpaso.org/ministries",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:47:36+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "stmaryselpaso.org:other_christ_child_society",
+   "name": "Christ Child Society",
+   "category": "other",
+   "category_label": "Other",
+   "subcategory": "unclassified",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": "First Friday, 12am",
+   "description": null,
+   "contact_url": "https://www.stmaryselpaso.org/contact",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stmaryselpaso.org/ministries",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:47:36+00:00",
+   "confidence": "low"
+  }
+ ],
  "calendar_feeds": [
   {
    "feed_id": "stmaryselpaso.org:ics:ed21300a",
@@ -89,7 +180,7 @@
    "note": "Google Calendar public feed (website-builder widget)",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T01:42:48+00:00",
+    "fetched_at": "2026-11-01T17:52:24+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -117,11 +208,12 @@
    "language": null,
    "raw": "[St. Mary - El Paso] Saturday Vigil:: 5:00 pm St. Mary's",
    "source_url": "https://www.stmaryselpaso.org/",
-   "fetched_at": "2026-11-01T01:39:06+00:00",
+   "fetched_at": "2026-11-01T17:47:32+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
-   "template": "generic_strict"
+   "template": "generic_strict",
+   "location": "St. Mary - El Paso"
   },
   {
    "kind": "mass",
@@ -130,11 +222,12 @@
    "language": null,
    "raw": "[St. John - Benson] Saturday Vigil:: 8:00 am St. John's",
    "source_url": "https://www.stmaryselpaso.org/",
-   "fetched_at": "2026-11-01T01:39:06+00:00",
+   "fetched_at": "2026-11-01T17:47:32+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
-   "template": "generic_strict"
+   "template": "generic_strict",
+   "location": "St. John - Benson"
   },
   {
    "kind": "mass",
@@ -143,11 +236,12 @@
    "language": null,
    "raw": "[St. Mary - El Paso] Saturday Vigil:: 10:00 am St. Mary's",
    "source_url": "https://www.stmaryselpaso.org/",
-   "fetched_at": "2026-11-01T01:39:06+00:00",
+   "fetched_at": "2026-11-01T17:47:32+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
-   "template": "generic_strict"
+   "template": "generic_strict",
+   "location": "St. Mary - El Paso"
   },
   {
    "kind": "mass",
@@ -156,7 +250,7 @@
    "language": null,
    "raw": "Daily Mass:: Tuesday: 5:15 p.m.",
    "source_url": "https://www.stmaryselpaso.org/",
-   "fetched_at": "2026-11-01T01:39:06+00:00",
+   "fetched_at": "2026-11-01T17:47:32+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -169,7 +263,7 @@
    "language": null,
    "raw": "Daily Mass:: Wednesday, Thursday & Friday: 7:30 a.m.",
    "source_url": "https://www.stmaryselpaso.org/",
-   "fetched_at": "2026-11-01T01:39:06+00:00",
+   "fetched_at": "2026-11-01T17:47:32+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -183,12 +277,14 @@
    "language": null,
    "raw": "Daily Mass:: Wednesday, Thursday & Friday: 7:30 a.m.",
    "source_url": "https://www.stmaryselpaso.org/",
-   "fetched_at": "2026-11-01T01:39:06+00:00",
+   "fetched_at": "2026-11-01T17:47:32+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict",
-   "day_expanded_from": "Wednesday, Thursday & Friday"
+   "day_expanded_from": "Wednesday, Thursday & Friday",
+   "day_parsed": "Wednesday",
+   "day_bound_from_line": true
   },
   {
    "kind": "mass",
@@ -197,12 +293,14 @@
    "language": null,
    "raw": "Daily Mass:: Wednesday, Thursday & Friday: 7:30 a.m.",
    "source_url": "https://www.stmaryselpaso.org/",
-   "fetched_at": "2026-11-01T01:39:06+00:00",
+   "fetched_at": "2026-11-01T17:47:32+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict",
-   "day_expanded_from": "Wednesday, Thursday & Friday"
+   "day_expanded_from": "Wednesday, Thursday & Friday",
+   "day_parsed": "Wednesday",
+   "day_bound_from_line": true
   },
   {
    "kind": "mass",
@@ -211,7 +309,7 @@
    "language": null,
    "raw": "Daily Mass:: Wednesday: 5:15 p.m.",
    "source_url": "https://www.stmaryselpaso.org/",
-   "fetched_at": "2026-11-01T01:39:06+00:00",
+   "fetched_at": "2026-11-01T17:47:32+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -224,11 +322,12 @@
    "language": null,
    "raw": "[St. Mary - El Paso] Confession:: St. Mary's --Saturday: 4:15-4:45 pm",
    "source_url": "https://www.stmaryselpaso.org/",
-   "fetched_at": "2026-11-01T01:39:06+00:00",
+   "fetched_at": "2026-11-01T17:47:32+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
-   "template": "generic_strict"
+   "template": "generic_strict",
+   "location": "St. Mary - El Paso"
   },
   {
    "kind": "confession",
@@ -237,7 +336,7 @@
    "language": null,
    "raw": "Confession:: St. John's--Wednesday 4:35-5:00 p.m.",
    "source_url": "https://www.stmaryselpaso.org/",
-   "fetched_at": "2026-11-01T01:39:06+00:00",
+   "fetched_at": "2026-11-01T17:47:32+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -250,15 +349,16 @@
    "language": null,
    "raw": "[St. Mary - El Paso] Eucharist Adoration:: First Tuesday of the Month: 4:30 pm St Mary's",
    "source_url": "https://www.stmaryselpaso.org/",
-   "fetched_at": "2026-11-01T01:39:06+00:00",
+   "fetched_at": "2026-11-01T17:47:32+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
-   "template": "generic_strict"
+   "template": "generic_strict",
+   "location": "St. Mary - El Paso"
   }
  ],
  "source_url": "https://www.stmaryselpaso.org/",
- "fetched_at": "2026-11-01T01:39:11+00:00",
+ "fetched_at": "2026-11-01T17:47:40+00:00",
  "schedule_template": {
   "template": "generic_strict",
   "version": "ca-sites/2",
@@ -277,13 +377,14 @@
   "trusted_candidate": false,
   "generic_rows": 9
  },
+ "has_sunday": true,
  "schedule_dropped": {
   "relative_time": 1
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-10-31",
-  "window_end_exclusive": "2027-01-29",
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
@@ -291,7 +392,20 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "office_contact": {
+  "email": null,
+  "phone": "(309) 527-4555",
+  "address": "PO Box 197 El Paso, IL 61738",
+  "source_url": "https://www.stmaryselpaso.org/contact",
+  "sources": {
+   "phone": "https://www.stmaryselpaso.org/contact",
+   "address": "https://www.stmaryselpaso.org/contact"
+  },
+  "fetched_at": "2026-11-01T17:47:40+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
- }
+ },
+ "fetch_mode": "rendered"
 }
