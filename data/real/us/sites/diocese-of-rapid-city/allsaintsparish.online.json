@@ -20,31 +20,259 @@
  "cities": [],
  "home_url": "https://www.allsaintsparish.online/",
  "final_url": "https://www.allsaintsparish.online/",
- "crawl_status": "ssl_error",
+ "crawl_status": "ok",
  "crawl_env": "sandbox",
- "robots_note": "ssl_error",
+ "robots_note": "ok",
  "pages": [
   {
    "category": "home",
    "url": "https://www.allsaintsparish.online/",
-   "status": null,
-   "class": "ssl_error"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.allsaintsparish.online/parish-life",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.allsaintsparish.online/ministries",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://www.allsaintsparish.online/bulletin8bfefec9",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://www.allsaintsparish.online/contact",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "duda",
+  "evidence": [
+   "static.cdn-website.com"
+  ]
  },
- "template": "none",
+ "template": "generic-html:duda",
  "groups": [],
- "calendar_feeds": [],
+ "calendar_feeds": [
+  {
+   "feed_id": "allsaintsparish.online:ics:7b932ff0",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": null,
+   "page_url": "https://www.allsaintsparish.online/",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (embedded on page)",
+   "display_tz": "America/Denver",
+   "url_withheld": "calendar id is an e-mail address; not stored",
+   "feed_key": "7b932ff02c02",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T17:32:21+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
  "events": [],
  "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "bulletin": {
+  "url": "https://www.allsaintsparish.online/bulletin8bfefec9",
+  "date": null,
+  "kind": "page",
+  "text": "BULLETINS",
+  "source_url": "https://www.allsaintsparish.online/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "10:00",
+   "language": null,
+   "raw": "MASS TIMES: 10:00 am @ All Saints - Eagle Butte",
+   "source_url": "https://www.allsaintsparish.online/",
+   "fetched_at": "2026-11-01T07:19:42+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "07:00",
+   "language": null,
+   "raw": "Monday: No Mass: Tuesday: 7am @ All Saints, Eagle Butte",
+   "source_url": "https://www.allsaintsparish.online/",
+   "fetched_at": "2026-11-01T07:19:42+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "12:00",
+   "language": null,
+   "raw": "Monday: No Mass: Wednesday: 12pm @ All Saints, Eagle Butte",
+   "source_url": "https://www.allsaintsparish.online/",
+   "fetched_at": "2026-11-01T07:19:42+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "15:30",
+   "language": null,
+   "raw": "Saturday: 3:30 pm @ St. Joseph's - Cherry Creek",
+   "source_url": "https://www.allsaintsparish.online/",
+   "fetched_at": "2026-11-01T07:19:42+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "18:30",
+   "language": null,
+   "raw": "6:30 pm @ Sacred Heart - Dupree",
+   "source_url": "https://www.allsaintsparish.online/",
+   "fetched_at": "2026-11-01T07:19:42+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "07:30",
+   "language": null,
+   "raw": "Sunday: 7:30 am @ St. Theresa's - White Horse",
+   "source_url": "https://www.allsaintsparish.online/",
+   "fetched_at": "2026-11-01T07:19:42+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": null,
+   "raw": "10:00 am @ All Saints - Eagle Butte",
+   "source_url": "https://www.allsaintsparish.online/",
+   "fetched_at": "2026-11-01T07:19:42+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "07:00",
+   "language": null,
+   "raw": "Tuesday: 7am @ All Saints, Eagle Butte",
+   "source_url": "https://www.allsaintsparish.online/",
+   "fetched_at": "2026-11-01T07:19:42+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "12:00",
+   "language": null,
+   "raw": "Wednesday: 12pm @ All Saints, Eagle Butte",
+   "source_url": "https://www.allsaintsparish.online/",
+   "fetched_at": "2026-11-01T07:19:42+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "07:00",
+   "language": null,
+   "raw": "Thursday: 7am @ All Saints, Eagle Butte",
+   "source_url": "https://www.allsaintsparish.online/",
+   "fetched_at": "2026-11-01T07:19:42+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "07:00",
+   "language": null,
+   "raw": "Friday: 7am @ All Saints, Eagle Butte",
+   "source_url": "https://www.allsaintsparish.online/",
+   "fetched_at": "2026-11-01T07:19:42+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  }
+ ],
  "source_url": "https://www.allsaintsparish.online/",
- "fetched_at": "2026-11-01T17:27:05+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-01T07:19:46+00:00",
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": true,
+  "trusted_candidate": false,
+  "generic_rows": 8
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "other_location": 3,
+  "box_rows_added": 8
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(605) 964-3391",
+  "address": "109 E. Heritage Ave., Eagle Butte, SD 57625",
+  "source_url": "https://www.allsaintsparish.online/contact",
+  "sources": {
+   "phone": "https://www.allsaintsparish.online/contact",
+   "address": "https://www.allsaintsparish.online/contact"
+  },
+  "fetched_at": "2026-11-01T07:19:46+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
  }
