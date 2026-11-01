@@ -2,15 +2,18 @@
  "domain": "holydormitionormond.wordpress.com",
  "diocese": "unassigned-fl",
  "matched_church_ids": [
-  "brave:FL|dormition eastern rite|ormond beach"
+  "brave:FL|dormition eastern rite|ormond beach",
+  "holy-dormition-byzantine-catholic-church-ormond-beach-fl"
  ],
  "matched": {
   "directory": [],
   "discovermass": [
+   "holy-dormition-byzantine-catholic-church-ormond-beach-fl",
    "brave:FL|dormition eastern rite|ormond beach"
   ]
  },
  "names": [
+  "Holy Dormition Byzantine Catholic Church",
   "Holy Dormition Catholic Church - Eastern Rite"
  ],
  "cities": [
@@ -93,7 +96,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T20:27:27+00:00",
+    "fetched_at": "2026-11-01T23:35:13+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -106,7 +109,19 @@
   ]
  },
  "bulletin": null,
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": null,
+   "raw": "Sunday Divine Liturgy: 10:00 am",
+   "source_url": "https://holydormitionormond.wordpress.com/divine-liturgy-resources/",
+   "fetched_at": "2026-11-01T20:25:04+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  }
+ ],
  "source_url": "https://holydormitionormond.wordpress.com/",
  "fetched_at": "2026-11-01T20:25:08+00:00",
  "schedule_template": {
@@ -127,9 +142,10 @@
   "trusted_candidate": false,
   "generic_rows": 0
  },
- "has_sunday": false,
+ "has_sunday": true,
  "schedule_dropped": {
-  "no_kind": 1
+  "no_kind": 1,
+  "weekend_rescue_added": 1
  },
  "groups_dropped": {},
  "event_counts": {

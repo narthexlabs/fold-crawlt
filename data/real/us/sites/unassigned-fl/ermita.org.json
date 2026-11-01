@@ -75,7 +75,30 @@
   ]
  },
  "bulletin": null,
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:00",
+   "language": null,
+   "raw": "Sunday 11:00AM & 3:00PM",
+   "source_url": "https://ermita.org/mass-and-confession-schedule/",
+   "fetched_at": "2026-11-01T22:15:30+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "15:00",
+   "language": null,
+   "raw": "Sunday 11:00AM & 3:00PM",
+   "source_url": "https://ermita.org/mass-and-confession-schedule/",
+   "fetched_at": "2026-11-01T22:15:30+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  }
+ ],
  "source_url": "https://ermita.org/",
  "fetched_at": "2026-11-01T22:15:35+00:00",
  "schedule_template": {
@@ -96,15 +119,10 @@
   "trusted_candidate": false,
   "generic_rows": 0
  },
- "has_sunday": false,
- "schedule_images": [
-  {
-   "url": "https://ermita.org/wp-content/uploads/2026/10/Misa-especial-de-Accion-de-Gracias.png",
-   "alt": "Misa especial de Acción de Gracias",
-   "page": "https://ermita.org/"
-  }
- ],
- "schedule_note": "schedule appears to be an image; times not read (needs_review)",
+ "has_sunday": true,
+ "schedule_dropped": {
+  "weekend_rescue_added": 2
+ },
  "groups_dropped": {},
  "event_counts": {
   "window_start": "2026-11-01",
