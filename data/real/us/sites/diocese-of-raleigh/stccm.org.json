@@ -19,7 +19,7 @@
  "home_url": "https://www.stccm.org/",
  "final_url": "https://www.stccm.org/",
  "crawl_status": "ok",
- "crawl_env": "sandbox",
+ "crawl_env": "runner-rendered",
  "robots_note": "ok",
  "pages": [
   {
@@ -49,7 +49,7 @@
    "language": "Spanish",
    "raw": "1:00PM Spanish Mass",
    "source_url": "https://www.stccm.org/",
-   "fetched_at": "2026-11-01T01:39:58+00:00",
+   "fetched_at": "2026-11-01T17:49:19+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -62,7 +62,7 @@
    "language": null,
    "raw": "6:00PM Adoration & Confessions",
    "source_url": "https://www.stccm.org/",
-   "fetched_at": "2026-11-01T01:39:58+00:00",
+   "fetched_at": "2026-11-01T17:49:19+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -75,7 +75,7 @@
    "language": "Spanish",
    "raw": "7:00PM Spanish Mass",
    "source_url": "https://www.stccm.org/",
-   "fetched_at": "2026-11-01T01:39:58+00:00",
+   "fetched_at": "2026-11-01T17:49:19+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -83,7 +83,7 @@
   }
  ],
  "source_url": "https://www.stccm.org/",
- "fetched_at": "2026-11-01T01:39:58+00:00",
+ "fetched_at": "2026-11-01T17:49:19+00:00",
  "schedule_template": {
   "template": "wix",
   "version": "ca-sites/2",
@@ -102,13 +102,14 @@
   "trusted_candidate": false,
   "generic_rows": 14
  },
+ "has_sunday": true,
  "schedule_dropped": {
   "other_location": 9
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-10-31",
-  "window_end_exclusive": "2027-01-29",
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
@@ -116,7 +117,21 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "office_contact": {
+  "email": "office@tjccw.org",
+  "phone": "(910) 665-1530",
+  "address": "P.O. Box 1601, Wallace, NC 28466",
+  "source_url": "https://www.stccm.org/",
+  "sources": {
+   "email": "https://www.stccm.org/",
+   "phone": "https://www.stccm.org/",
+   "address": "https://www.stccm.org/"
+  },
+  "fetched_at": "2026-11-01T17:49:19+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
- }
+ },
+ "fetch_mode": "rendered"
 }
