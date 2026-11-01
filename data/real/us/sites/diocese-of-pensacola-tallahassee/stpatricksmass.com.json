@@ -1,0 +1,118 @@
+{
+ "domain": "stpatricksmass.com",
+ "diocese": "diocese-of-pensacola-tallahassee",
+ "matched_church_ids": [
+  "gc-23588"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "gc-23588"
+  ]
+ },
+ "names": [
+  "St. Patrick"
+ ],
+ "cities": [
+  "Apalachicola"
+ ],
+ "home_url": "http://www.stpatricksmass.com/",
+ "final_url": "https://stpatricksmass.com/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://stpatricksmass.com/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://stpatricksmass.com/contact-us/",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-json"
+  ]
+ },
+ "template": "wordpress-rest+html",
+ "groups": [],
+ "calendar_feeds": [],
+ "events": [],
+ "social": {},
+ "bulletin": null,
+ "schedule_rows": [
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "16:30",
+   "language": null,
+   "raw": "Reconciliation: Saturday 4:30 PM or by appointment",
+   "source_url": "https://stpatricksmass.com/",
+   "fetched_at": "2026-11-01T17:21:23+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  }
+ ],
+ "source_url": "http://www.stpatricksmass.com/",
+ "fetched_at": "2026-11-01T17:21:52+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 5
+ },
+ "has_sunday": false,
+ "schedule_partial": true,
+ "schedule_dropped": {
+  "no_kind": 2,
+  "not_a_service": 2
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": "office@stpatrick.ptdiocese.org",
+  "phone": "(850) 653-9453",
+  "address": "27 Sixth Street, Apalachicola, FL, 32329",
+  "source_url": "https://stpatricksmass.com/contact-us/",
+  "sources": {
+   "email": "https://stpatricksmass.com/contact-us/",
+   "phone": "https://stpatricksmass.com/contact-us/",
+   "address": "https://stpatricksmass.com/contact-us/"
+  },
+  "fetched_at": "2026-11-01T17:21:42+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}
