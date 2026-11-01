@@ -152,7 +152,7 @@
    "note": "The Events Calendar (WordPress) REST API",
    "last_fetch": {
     "status": 200,
-    "fetched_at": "2026-11-01T20:27:09+00:00",
+    "fetched_at": "2026-11-01T23:33:43+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -171,7 +171,7 @@
    "feed_key": "27c5395ed479",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T20:27:10+00:00",
+    "fetched_at": "2026-11-01T23:33:43+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -226,6 +226,39 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Divine Mercy Sunday: 9 am Mass, Divine Mercy Celebration 3 pm St. Stanislaus",
+   "source_url": "https://ststanspolishfestival.org/2021-lent-schedule/",
+   "fetched_at": "2026-11-01T20:25:05+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "15:00",
+   "language": null,
+   "raw": "Divine Mercy Sunday: 9 am Mass, Divine Mercy Celebration 3 pm St. Stanislaus",
+   "source_url": "https://ststanspolishfestival.org/2021-lent-schedule/",
+   "fetched_at": "2026-11-01T20:25:05+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": null,
+   "raw": "– Saturday, May 22: Mass, 5 pm, Sunday, May 23: 9 am Mass St. Stanislaus",
+   "source_url": "https://ststanspolishfestival.org/2021-lent-schedule/",
+   "fetched_at": "2026-11-01T20:25:05+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
   }
  ],
  "source_url": "https://ststanspolishfestival.org/",
@@ -248,8 +281,10 @@
   "trusted_candidate": false,
   "generic_rows": 30
  },
- "has_sunday": false,
- "schedule_partial": true,
+ "has_sunday": true,
+ "schedule_dropped": {
+  "weekend_rescue_added": 3
+ },
  "groups_dropped": {
   "noise": 5
  },
