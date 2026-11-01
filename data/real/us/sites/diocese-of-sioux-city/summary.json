@@ -1,28 +1,31 @@
 {
  "slug": "diocese-of-sioux-city",
- "generated_at": "2026-11-01T05:45:53+00:00",
+ "generated_at": "2026-11-01T17:32:08+00:00",
  "run_date": "2026-11-01",
  "input": {
   "directory_records": 0,
-  "discovermass_records": 2,
+  "discovermass_records": 28,
   "directory_without_website": 0,
   "discovermass_without_website": 0
  },
- "sites_in_list": 1,
+ "sites_in_list": 20,
  "social_only": 0,
  "crawl": {
-  "ok_total": 0,
-  "ok_via_sandbox": 0,
+  "ok_total": 2,
+  "ok_via_sandbox": 2,
   "ok_via_laptop": 0,
   "partial_via_side_doors": 0,
-  "challenge": 1,
+  "challenge": 5,
   "blocked_403_429": 0,
   "robots_disallowed": 0,
-  "laptop_pending": 1,
-  "dead": 0,
+  "laptop_pending": 18,
+  "dead": 13,
   "not_fetched": 0,
   "by_status": {
-   "challenge": 1
+   "dns": 12,
+   "challenge": 5,
+   "ok": 2,
+   "ssl_error": 1
   }
  },
  "laptop_attempted": 0,
@@ -42,8 +45,10 @@
   "window": "2026-11-01 + 90 days"
  },
  "social": {
-  "sites_by_platform": {},
-  "sites_with_any_social": 0,
+  "sites_by_platform": {
+   "facebook": 2
+  },
+  "sites_with_any_social": 2,
   "shared_links_removed_as_diocesan": []
  },
  "bulletin": {
@@ -58,6 +63,12 @@
   "sites_with_schedule_image_only": 0,
   "by_kind": {}
  },
- "cms_guess": {},
- "template": {}
+ "cms_guess": {
+  "wordpress": 1,
+  "unknown": 1
+ },
+ "template": {
+  "wordpress-rest+html": 1,
+  "generic-html:unknown": 1
+ }
 }
