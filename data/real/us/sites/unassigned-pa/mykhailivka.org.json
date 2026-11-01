@@ -146,7 +146,7 @@
    "note": "The Events Calendar (WordPress) REST API",
    "last_fetch": {
     "status": 200,
-    "fetched_at": "2026-11-01T20:29:31+00:00",
+    "fetched_at": "2026-11-01T23:34:11+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -162,7 +162,7 @@
    "note": "All-in-One Event Calendar export (WordPress)",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T20:29:33+00:00",
+    "fetched_at": "2026-11-01T23:34:11+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -185,7 +185,41 @@
   "text": "Bulletin for October 8, 2023",
   "source_url": "https://mykhailivka.org/bulletins/"
  },
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:15",
+   "language": null,
+   "raw": "Sunday Divine Liturgy 8:15A.M. and 10:00A.M.",
+   "source_url": "https://mykhailivka.org/schedule/",
+   "fetched_at": "2026-11-01T20:25:08+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": null,
+   "raw": "Sunday Divine Liturgy 8:15A.M. and 10:00A.M.",
+   "source_url": "https://mykhailivka.org/schedule/",
+   "fetched_at": "2026-11-01T20:25:08+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "18:00",
+   "language": null,
+   "raw": "Saturday at 6:00P.M.",
+   "source_url": "https://mykhailivka.org/schedule/",
+   "fetched_at": "2026-11-01T20:25:08+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  }
+ ],
  "source_url": "https://mykhailivka.org/",
  "fetched_at": "2026-11-01T20:25:25+00:00",
  "schedule_template": {
@@ -206,18 +240,11 @@
   "trusted_candidate": false,
   "generic_rows": 0
  },
- "has_sunday": false,
+ "has_sunday": true,
  "schedule_dropped": {
-  "no_day": 11
+  "no_day": 11,
+  "weekend_rescue_added": 3
  },
- "schedule_images": [
-  {
-   "url": "https://i0.wp.com/mykhailivka.org/wp-content/uploads/2022/12/Bulletin-Photo-e1669937281959.png?fit=539%2C471&ssl=1",
-   "alt": "",
-   "page": "https://mykhailivka.org/"
-  }
- ],
- "schedule_note": "schedule appears to be an image; times not read (needs_review)",
  "groups_dropped": {},
  "event_counts": {
   "window_start": "2026-11-01",

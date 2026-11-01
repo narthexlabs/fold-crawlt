@@ -81,7 +81,7 @@
    "note": "iCal link on page",
    "last_fetch": {
     "status": "not_ical",
-    "fetched_at": "2026-11-01T22:19:05+00:00",
+    "fetched_at": "2026-11-01T23:35:29+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -97,7 +97,7 @@
    "note": "iCal link on page",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T22:19:05+00:00",
+    "fetched_at": "2026-11-01T23:35:29+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -120,7 +120,19 @@
   "text": "November 1, 2026",
   "source_url": "https://saintstephenbcc.org/bulletin"
  },
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:30",
+   "language": null,
+   "raw": "Sundays 10:30 am",
+   "source_url": "https://saintstephenbcc.org/schedule",
+   "fetched_at": "2026-11-01T20:25:41+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  }
+ ],
  "source_url": "https://saintstephenbcc.org/",
  "fetched_at": "2026-11-01T22:15:21+00:00",
  "schedule_template": {
@@ -141,9 +153,10 @@
   "trusted_candidate": false,
   "generic_rows": 3
  },
- "has_sunday": false,
+ "has_sunday": true,
  "schedule_dropped": {
-  "skipped_section": 4
+  "skipped_section": 4,
+  "weekend_rescue_added": 1
  },
  "groups_dropped": {
   "unmatched": 2

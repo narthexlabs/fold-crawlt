@@ -99,6 +99,17 @@
    "confidence": "medium",
    "template": "godaddy",
    "kind_parsed": "mass"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:30",
+   "language": null,
+   "raw": "Sundays at 9:30 AM | Weekdays & Holy Days – Please refer to the",
+   "source_url": "https://www.stmichaelsfirst.com/divine-services/",
+   "fetched_at": "2026-11-01T20:25:33+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
   }
  ],
  "source_url": "https://www.stmichaelsfirst.com/",
@@ -121,8 +132,10 @@
   "trusted_candidate": false,
   "generic_rows": 0
  },
- "has_sunday": false,
- "schedule_partial": true,
+ "has_sunday": true,
+ "schedule_dropped": {
+  "weekend_rescue_added": 1
+ },
  "groups_dropped": {},
  "event_counts": {
   "window_start": "2026-11-01",

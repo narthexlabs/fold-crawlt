@@ -237,6 +237,28 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "15:00",
+   "language": null,
+   "raw": "From Monday to Saturday, we will not schedule Mass after 3:00 PM. On Sunday, we will not schedule Mass after 2:00 PM",
+   "source_url": "https://www.padrepio.org/visit/schedule-a-group-pilgrimage/",
+   "fetched_at": "2026-11-01T20:25:25+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "14:00",
+   "language": null,
+   "raw": "From Monday to Saturday, we will not schedule Mass after 3:00 PM. On Sunday, we will not schedule Mass after 2:00 PM",
+   "source_url": "https://www.padrepio.org/visit/schedule-a-group-pilgrimage/",
+   "fetched_at": "2026-11-01T20:25:25+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
   }
  ],
  "source_url": "https://www.padrepio.org/",
@@ -259,12 +281,12 @@
   "trusted_candidate": false,
   "generic_rows": 9
  },
- "has_sunday": false,
- "schedule_partial": true,
+ "has_sunday": true,
  "schedule_dropped": {
   "relative_time": 2,
   "dated_block": 3,
-  "prose": 5
+  "prose": 5,
+  "weekend_rescue_added": 2
  },
  "groups_dropped": {
   "label_not_group": 1

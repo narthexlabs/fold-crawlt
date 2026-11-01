@@ -354,7 +354,7 @@
    "note": "CalendarWiz RSS (next ~100 items)",
    "last_fetch": {
     "status": 200,
-    "fetched_at": "2026-11-01T20:32:30+00:00",
+    "fetched_at": "2026-11-01T23:36:40+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -373,7 +373,7 @@
    "feed_key": "e3914e2512ba",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T20:32:30+00:00",
+    "fetched_at": "2026-11-01T23:36:40+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -411,7 +411,19 @@
   "text": "Current Bulletin",
   "source_url": "https://stjohnpa.org/"
  },
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:30",
+   "language": null,
+   "raw": "Sunday: 7:30, 9:30 and 11:30 AM",
+   "source_url": "https://stjohnpa.org/live-stream-mass/",
+   "fetched_at": "2026-11-01T20:25:38+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  }
+ ],
  "source_url": "https://stjohnpa.org/",
  "fetched_at": "2026-11-01T20:25:58+00:00",
  "schedule_template": {
@@ -432,7 +444,10 @@
   "trusted_candidate": false,
   "generic_rows": 11
  },
- "has_sunday": false,
+ "has_sunday": true,
+ "schedule_dropped": {
+  "weekend_rescue_added": 1
+ },
  "groups_dropped": {},
  "event_counts": {
   "window_start": "2026-11-01",

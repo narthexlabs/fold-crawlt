@@ -258,7 +258,7 @@
    "note": "The Events Calendar (WordPress) REST API",
    "last_fetch": {
     "status": 200,
-    "fetched_at": "2026-11-01T20:32:01+00:00",
+    "fetched_at": "2026-11-01T23:36:17+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -599,6 +599,17 @@
    "confidence": "medium",
    "template": "wordpress",
    "kind_parsed": "mass"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "20:00",
+   "language": null,
+   "raw": "We are now recording the 5:00 pm Saturday evening Mass, which will be available for viewing after 8:00 pm Saturday evening.",
+   "source_url": "https://www.stephrem.com/",
+   "fetched_at": "2026-11-01T20:25:23+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
   }
  ],
  "source_url": "http://www.stephrem.com/",
@@ -621,11 +632,11 @@
   "trusted_candidate": false,
   "generic_rows": 22
  },
- "has_sunday": false,
- "schedule_partial": true,
+ "has_sunday": true,
  "schedule_dropped": {
   "skipped_section": 2,
-  "relative_time": 2
+  "relative_time": 2,
+  "weekend_rescue_added": 1
  },
  "groups_dropped": {
   "noise": 3,
