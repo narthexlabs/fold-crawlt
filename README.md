@@ -22,6 +22,12 @@ request at a time per host (discovermass.com: one crawler, 10.5 s apart), and re
 "blocked" and move on — never retried harder, never worked around. If you run a parish or diocese site and want us to
 stop or to fix something, open an issue.
 
+**Wayback recovery** (`ingest/us/wayback/`, job `wayback`): the diocese directories and parish sites we cannot read live
+(bot challenge, 403, dead) are read from the Internet Archive's copies, at most one request per second to web.archive.org.
+Diocese lists land in `data/real/us/dioceses/<slug>/parishes.json` labelled `wayback-<date>`; parish sites are merged into
+their existing file with `crawl_status: wayback-<date>`, and their schedule rows stay `needs_review`. See
+`data/real/us/wayback/README.md`; resume with `python3 -u ingest/us/wayback/run.py --minutes 110 --git`.
+
 **Privacy**: the crawl keeps institutional information only — parish names, addresses, office phone and office e-mail,
 websites, Mass and confession times, public groups and events. It does not keep anything about private individuals
 (parishioners, the sick, the deceased, donors, lay volunteers' names or contact details); `ingest/public/privacy.py`
