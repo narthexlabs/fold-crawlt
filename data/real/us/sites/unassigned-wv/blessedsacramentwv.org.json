@@ -1,0 +1,183 @@
+{
+ "domain": "blessedsacramentwv.org",
+ "diocese": "unassigned-wv",
+ "matched_church_ids": [
+  "brave:WV|blessed sacrament south charleston|"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "brave:WV|blessed sacrament south charleston|"
+  ]
+ },
+ "names": [
+  "Blessed Sacrament South Charleston"
+ ],
+ "cities": [],
+ "home_url": "http://blessedsacramentwv.org/",
+ "final_url": "https://blessedsacramentwv.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://blessedsacramentwv.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://blessedsacramentwv.org/liturgy/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://blessedsacramentwv.org/parish-life/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://blessedsacramentwv.org/bulletin-archive/",
+   "status": null,
+   "class": "timeout"
+  },
+  {
+   "category": "calendar",
+   "url": "https://blessedsacramentwv.org/events/",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-json"
+  ]
+ },
+ "template": "wordpress-html",
+ "groups": [],
+ "calendar_feeds": [],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/BSCWV"
+  ],
+  "flocknote": [
+   "https://blessedsacrament37.flocknote.com"
+  ]
+ },
+ "bulletin": {
+  "url": "https://blessedsacramentwv.org/bulletin-archive/",
+  "date": null,
+  "kind": "page",
+  "text": "Bulletins",
+  "source_url": "https://blessedsacramentwv.org/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Mass Times: Saturday 5:00pm",
+   "source_url": "https://blessedsacramentwv.org/",
+   "fetched_at": "2026-11-01T07:19:53+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Mass Times: Sunday 9:00am and 11:30am",
+   "source_url": "https://blessedsacramentwv.org/",
+   "fetched_at": "2026-11-01T07:19:53+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:30",
+   "language": null,
+   "raw": "Mass Times: Sunday 9:00am and 11:30am",
+   "source_url": "https://blessedsacramentwv.org/",
+   "fetched_at": "2026-11-01T07:19:53+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "16:00",
+   "language": null,
+   "raw": "Reconciliation: Saturday – 4:00p.m. or by appointment",
+   "source_url": "https://blessedsacramentwv.org/",
+   "fetched_at": "2026-11-01T07:19:53+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  }
+ ],
+ "source_url": "http://blessedsacramentwv.org/",
+ "fetched_at": "2026-11-01T07:20:24+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 4
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "no_kind": 2
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(304) 744-5523",
+  "address": "305 E St, South Charleston, WV 25303",
+  "source_url": "https://blessedsacramentwv.org/",
+  "sources": {
+   "phone": "https://blessedsacramentwv.org/",
+   "address": "https://blessedsacramentwv.org/"
+  },
+  "fetched_at": "2026-11-01T07:19:53+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

@@ -1,0 +1,182 @@
+{
+ "domain": "wvdn.com",
+ "diocese": "unassigned-wv",
+ "matched_church_ids": [
+  "brave:WV|john sweet springs|"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "brave:WV|john sweet springs|"
+  ]
+ },
+ "names": [
+  "St John Sweet Springs"
+ ],
+ "cities": [],
+ "home_url": "https://wvdn.com/",
+ "final_url": "https://wvdn.com/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://wvdn.com/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://wvdn.com/207576/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://wvdn.com/149451/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://wvdn.com/146226/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://wvdn.com/207353/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://wvdn.com/submit-an-article/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://wvdn.com/calendar/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://wvdn.com/contact-us/",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-json"
+  ]
+ },
+ "template": "wordpress-rest+html",
+ "groups": [
+  {
+   "id": "wvdn.com:other_humane_society",
+   "name": "Humane Society",
+   "category": "other",
+   "category_label": "Other",
+   "subcategory": "unclassified",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://wvdn.com/contact-us/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://wvdn.com/207353/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T07:19:48+00:00",
+   "confidence": "low"
+  }
+ ],
+ "calendar_feeds": [
+  {
+   "feed_id": "wvdn.com:tribe_rest:80fd2866",
+   "type": "tribe_rest",
+   "platform": "The Events Calendar (WordPress)",
+   "url": "https://wvdn.com/wp-json/tribe/events/v1/events",
+   "page_url": "https://wvdn.com/calendar/",
+   "label": null,
+   "status": "no_public_feed",
+   "note": "The Events Calendar markers on the site, but its REST route is not available"
+  }
+ ],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/wvdailynews"
+  ],
+  "instagram": [
+   "https://www.instagram.com/wvdailynews/"
+  ],
+  "x": [
+   "https://x.com/wvdailynews"
+  ]
+ },
+ "bulletin": null,
+ "schedule_rows": [],
+ "source_url": "https://wvdn.com/",
+ "fetched_at": "2026-11-01T07:19:52+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "has_sunday": false,
+ "schedule_dropped": {
+  "range_not_a_mass": 1,
+  "not_a_service": 8,
+  "relative_time": 1
+ },
+ "groups_dropped": {
+  "private_name_risk": 1,
+  "unmatched": 1,
+  "label_not_group": 1
+ },
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": "hello@wvdn.com",
+  "phone": "(304) 645-1206",
+  "address": "PO Box 471, Lewisburg, WV 24901",
+  "source_url": "https://wvdn.com/contact-us/",
+  "sources": {
+   "email": "https://wvdn.com/contact-us/",
+   "phone": "https://wvdn.com/contact-us/",
+   "address": "https://wvdn.com/contact-us/"
+  },
+  "fetched_at": "2026-11-01T07:19:50+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}
