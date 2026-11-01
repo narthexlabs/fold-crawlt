@@ -17,7 +17,7 @@
  "home_url": "http://www.strosegarretson.org/",
  "final_url": "https://www.strosegarretson.org/",
  "crawl_status": "ok",
- "crawl_env": "sandbox",
+ "crawl_env": "runner-rendered",
  "robots_note": "not_found",
  "pages": [
   {
@@ -83,7 +83,7 @@
    "language": null,
    "raw": "Mass Times: Daily: Monday - Saturday at 8:00am",
    "source_url": "https://www.strosegarretson.org/mass-timessacraments",
-   "fetched_at": "2026-11-01T02:15:19+00:00",
+   "fetched_at": "2026-11-01T17:48:35+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -97,12 +97,14 @@
    "language": null,
    "raw": "Mass Times: Daily: Monday - Saturday at 8:00am",
    "source_url": "https://www.strosegarretson.org/mass-timessacraments",
-   "fetched_at": "2026-11-01T02:15:19+00:00",
+   "fetched_at": "2026-11-01T17:48:35+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict",
-   "day_expanded_from": "Monday - Saturday"
+   "day_expanded_from": "Monday - Saturday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
   },
   {
    "kind": "mass",
@@ -111,12 +113,14 @@
    "language": null,
    "raw": "Mass Times: Daily: Monday - Saturday at 8:00am",
    "source_url": "https://www.strosegarretson.org/mass-timessacraments",
-   "fetched_at": "2026-11-01T02:15:19+00:00",
+   "fetched_at": "2026-11-01T17:48:35+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict",
-   "day_expanded_from": "Monday - Saturday"
+   "day_expanded_from": "Monday - Saturday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
   },
   {
    "kind": "mass",
@@ -125,12 +129,14 @@
    "language": null,
    "raw": "Mass Times: Daily: Monday - Saturday at 8:00am",
    "source_url": "https://www.strosegarretson.org/mass-timessacraments",
-   "fetched_at": "2026-11-01T02:15:19+00:00",
+   "fetched_at": "2026-11-01T17:48:35+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict",
-   "day_expanded_from": "Monday - Saturday"
+   "day_expanded_from": "Monday - Saturday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
   },
   {
    "kind": "mass",
@@ -139,12 +145,14 @@
    "language": null,
    "raw": "Mass Times: Daily: Monday - Saturday at 8:00am",
    "source_url": "https://www.strosegarretson.org/mass-timessacraments",
-   "fetched_at": "2026-11-01T02:15:19+00:00",
+   "fetched_at": "2026-11-01T17:48:35+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict",
-   "day_expanded_from": "Monday - Saturday"
+   "day_expanded_from": "Monday - Saturday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
   },
   {
    "kind": "mass",
@@ -153,12 +161,14 @@
    "language": null,
    "raw": "Mass Times: Daily: Monday - Saturday at 8:00am",
    "source_url": "https://www.strosegarretson.org/mass-timessacraments",
-   "fetched_at": "2026-11-01T02:15:19+00:00",
+   "fetched_at": "2026-11-01T17:48:35+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict",
-   "day_expanded_from": "Monday - Saturday"
+   "day_expanded_from": "Monday - Saturday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
   },
   {
    "kind": "mass",
@@ -167,7 +177,7 @@
    "language": null,
    "raw": "Mass Times: Sunday Obligation: Saturday at 4:00 pm",
    "source_url": "https://www.strosegarretson.org/mass-timessacraments",
-   "fetched_at": "2026-11-01T02:15:19+00:00",
+   "fetched_at": "2026-11-01T17:48:35+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -180,7 +190,7 @@
    "language": null,
    "raw": "Mass Times: Sunday at 9:15 am",
    "source_url": "https://www.strosegarretson.org/mass-timessacraments",
-   "fetched_at": "2026-11-01T02:15:19+00:00",
+   "fetched_at": "2026-11-01T17:48:35+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -188,7 +198,7 @@
   }
  ],
  "source_url": "http://www.strosegarretson.org/",
- "fetched_at": "2026-11-01T02:15:23+00:00",
+ "fetched_at": "2026-11-01T17:49:00+00:00",
  "schedule_template": {
   "template": "generic_strict",
   "version": "ca-sites/2",
@@ -207,10 +217,11 @@
   "trusted_candidate": false,
   "generic_rows": 8
  },
+ "has_sunday": true,
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-10-31",
-  "window_end_exclusive": "2027-01-29",
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
@@ -218,7 +229,20 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "office_contact": {
+  "email": "office@strosegarretson.org",
+  "phone": "(605) 421-8553",
+  "address": null,
+  "source_url": "https://www.strosegarretson.org/",
+  "sources": {
+   "email": "https://www.strosegarretson.org/",
+   "phone": "https://www.strosegarretson.org/"
+  },
+  "fetched_at": "2026-11-01T17:48:34+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
- }
+ },
+ "fetch_mode": "rendered"
 }
