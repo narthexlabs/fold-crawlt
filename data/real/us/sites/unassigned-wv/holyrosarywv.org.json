@@ -16,31 +16,236 @@
  "cities": [],
  "home_url": "https://holyrosarywv.org/",
  "final_url": "https://holyrosarywv.org/",
- "crawl_status": "timeout",
+ "crawl_status": "ok",
  "crawl_env": "sandbox",
  "robots_note": "ok",
  "pages": [
   {
    "category": "home",
    "url": "https://holyrosarywv.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://holyrosarywv.org/mass-schedule-3/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://holyrosarywv.org/mass-schedule-2/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://holyrosarywv.org/ministries/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://holyrosarywv.org/bulletins/",
    "status": null,
    "class": "timeout"
+  },
+  {
+   "category": "contact",
+   "url": "https://holyrosarywv.org/contact/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "wordpress",
+  "evidence": [
+   "wp-json"
+  ]
  },
- "template": "none",
+ "template": "wordpress-rest+html",
  "groups": [],
  "calendar_feeds": [],
  "events": [],
  "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "bulletin": {
+  "url": "https://holyrosarywv.org/bulletins/",
+  "date": null,
+  "kind": "page",
+  "text": "Bulletins",
+  "source_url": "https://holyrosarywv.org/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "First Friday of the month",
+   "time": "19:00",
+   "language": null,
+   "raw": "Mass: 7pm @ Holy Rosary",
+   "source_url": "https://holyrosarywv.org/mass-schedule-3/",
+   "fetched_at": "2026-11-01T17:27:57+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "18:30",
+   "language": null,
+   "raw": "Reconciliation: Saturdays – 6:30pm",
+   "source_url": "https://holyrosarywv.org/mass-schedule-3/",
+   "fetched_at": "2026-11-01T17:27:57+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "08:30",
+   "language": null,
+   "raw": "Reconciliation: Sundays – 8:30am",
+   "source_url": "https://holyrosarywv.org/mass-schedule-3/",
+   "fetched_at": "2026-11-01T17:27:57+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "07:30",
+   "language": null,
+   "raw": "Mass: 7:30am @ St. Joseph’s Hospital Chapel",
+   "source_url": "https://holyrosarywv.org/mass-schedule-2/",
+   "fetched_at": "2026-11-01T17:28:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "wordpress",
+   "day_expanded_from": "Mondays, Tuesdays, Thursdays"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "07:30",
+   "language": null,
+   "raw": "Mass: 7:30am @ St. Joseph’s Hospital Chapel",
+   "source_url": "https://holyrosarywv.org/mass-schedule-2/",
+   "fetched_at": "2026-11-01T17:28:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "wordpress",
+   "day_expanded_from": "Mondays, Tuesdays, Thursdays"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "07:30",
+   "language": null,
+   "raw": "Mass: 7:30am @ St. Joseph’s Hospital Chapel",
+   "source_url": "https://holyrosarywv.org/mass-schedule-2/",
+   "fetched_at": "2026-11-01T17:28:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "wordpress",
+   "day_expanded_from": "Mondays, Tuesdays, Thursdays"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "19:00",
+   "language": null,
+   "raw": "Mass: 7pm @ Holy Rosary",
+   "source_url": "https://holyrosarywv.org/mass-schedule-2/",
+   "fetched_at": "2026-11-01T17:28:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "First Friday of the month",
+   "time": "18:00",
+   "language": null,
+   "raw": "Eucharistic Adoration at 6 pm and mass at 7 pm at Holy Rosary Church",
+   "source_url": "https://holyrosarywv.org/",
+   "fetched_at": "2026-11-01T17:27:49+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "19:00",
+   "language": null,
+   "raw": "Wednesday (At Holy Rosary) 7 pm Holy Hour Begins at 6 pm",
+   "source_url": "https://holyrosarywv.org/",
+   "fetched_at": "2026-11-01T17:27:49+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  }
+ ],
  "source_url": "https://holyrosarywv.org/",
- "fetched_at": "2026-11-01T07:20:02+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-01T17:28:27+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 3
+ },
+ "has_sunday": false,
+ "schedule_partial": true,
+ "schedule_dropped": {
+  "other_location": 1,
+  "not_a_service": 1
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(304) 472-3414",
+  "address": "34 Franklin St., Buckhannon, WV 26201",
+  "source_url": "https://holyrosarywv.org/contact/",
+  "sources": {
+   "phone": "https://holyrosarywv.org/contact/",
+   "address": "https://holyrosarywv.org/contact/"
+  },
+  "fetched_at": "2026-11-01T17:28:26+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
  }

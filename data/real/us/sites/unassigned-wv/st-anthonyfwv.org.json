@@ -16,31 +16,254 @@
  "cities": [],
  "home_url": "https://st-anthonyfwv.org/",
  "final_url": "https://st-anthonyfwv.org/",
- "crawl_status": "timeout",
+ "crawl_status": "ok",
  "crawl_env": "sandbox",
  "robots_note": "ok",
  "pages": [
   {
    "category": "home",
    "url": "https://st-anthonyfwv.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://st-anthonyfwv.org/sacramental-preparation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://st-anthonyfwv.org/bulletins/",
    "status": null,
    "class": "timeout"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "wordpress",
+  "evidence": [
+   "wp-json"
+  ]
  },
- "template": "none",
+ "template": "wordpress-rest+html",
  "groups": [],
  "calendar_feeds": [],
  "events": [],
  "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "bulletin": {
+  "url": "https://st-anthonyfwv.org/bulletins/",
+  "date": null,
+  "kind": "page",
+  "text": "Bulletins",
+  "source_url": "https://st-anthonyfwv.org/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:15",
+   "language": null,
+   "raw": "Mass: Weekly catechesis takes place every Sunday morning at 9:15 a.m.",
+   "source_url": "https://st-anthonyfwv.org/sacramental-preparation/",
+   "fetched_at": "2026-11-01T17:28:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "17:30-18:00",
+   "language": null,
+   "raw": "Tuesdays Adoration 5:30 p.m. – 6:00 p.m.",
+   "source_url": "https://st-anthonyfwv.org/",
+   "fetched_at": "2026-11-01T17:27:55+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Wednesdays Perpetual Adoration 8:00 a.m. – Noon",
+   "source_url": "https://st-anthonyfwv.org/",
+   "fetched_at": "2026-11-01T17:27:55+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "12:00",
+   "language": null,
+   "raw": "Wednesdays Perpetual Adoration 8:00 a.m. – Noon",
+   "source_url": "https://st-anthonyfwv.org/",
+   "fetched_at": "2026-11-01T17:27:55+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:00-15:30",
+   "language": null,
+   "raw": "Confessions: Saturday 3:00 p.m. to 3:30 p.m.",
+   "source_url": "https://st-anthonyfwv.org/",
+   "fetched_at": "2026-11-01T17:27:55+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Wednesday",
+   "time": "08:00-08:30",
+   "language": null,
+   "raw": "Confessions: Wednesday 8:00 a.m. to 8:30 a.m.",
+   "source_url": "https://st-anthonyfwv.org/",
+   "fetched_at": "2026-11-01T17:27:55+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "16:00",
+   "language": null,
+   "raw": "Saturday – 4:00 p.m.",
+   "source_url": "https://st-anthonyfwv.org/",
+   "fetched_at": "2026-11-01T17:27:55+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Sunday – 8:00 a.m. and 10:30 a.m.",
+   "source_url": "https://st-anthonyfwv.org/",
+   "fetched_at": "2026-11-01T17:27:55+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:30",
+   "language": null,
+   "raw": "Sunday – 8:00 a.m. and 10:30 a.m.",
+   "source_url": "https://st-anthonyfwv.org/",
+   "fetched_at": "2026-11-01T17:27:55+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "18:00",
+   "language": null,
+   "raw": "Tuesday – 6:00 p.m.",
+   "source_url": "https://st-anthonyfwv.org/",
+   "fetched_at": "2026-11-01T17:27:55+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "07:30",
+   "language": null,
+   "raw": "Wednesday – 7:30 a.m.",
+   "source_url": "https://st-anthonyfwv.org/",
+   "fetched_at": "2026-11-01T17:27:55+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "18:00",
+   "language": null,
+   "raw": "Thursday – 6:00 p.m.",
+   "source_url": "https://st-anthonyfwv.org/",
+   "fetched_at": "2026-11-01T17:27:55+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "07:30",
+   "language": null,
+   "raw": "Friday – 7:30 a.m.",
+   "source_url": "https://st-anthonyfwv.org/",
+   "fetched_at": "2026-11-01T17:27:55+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  }
+ ],
  "source_url": "https://st-anthonyfwv.org/",
- "fetched_at": "2026-11-01T07:20:02+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-01T17:28:24+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 15
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "other_location": 2,
+  "no_kind": 2,
+  "box_rows_added": 7
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": "stanthonychurch@comcast.net",
+  "phone": "(304) 527-2286",
+  "address": "1017 Jefferson Street,, Follansbee, WV 26037",
+  "source_url": "https://st-anthonyfwv.org/",
+  "sources": {
+   "email": "https://st-anthonyfwv.org/",
+   "phone": "https://st-anthonyfwv.org/",
+   "address": "https://st-anthonyfwv.org/"
+  },
+  "fetched_at": "2026-11-01T17:27:55+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
  }
