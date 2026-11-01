@@ -16,32 +16,153 @@
  "cities": [],
  "home_url": "https://www.seasp.org/live-stream-mass",
  "final_url": "https://www.seasp.org/live-stream-mass",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "crawl_status": "wayback-2025-10-09",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
    "url": "https://www.seasp.org/live-stream-mass",
-   "status": 403,
-   "class": "challenge"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.seasp.org/reconciliation",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.seasp.org/liturgy-sacraments",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.seasp.org/get-involved",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.seasp.org/young-adult-ministry",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.seasp.org/ministry-commitment-form",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.seasp.org/parish-calendar",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.seasp.org/community-events-and-information",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "contact",
+   "url": "https://www.seasp.org/contact-us",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://www.seasp.org/bulletins",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://www.seasp.org/bulletin",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
+ "template": "ecatholic-fastpath",
  "groups": [],
  "calendar_feeds": [],
  "events": [],
- "social": {},
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/st.elizabethannsetonparish"
+  ],
+  "youtube": [
+   "https://www.youtube.com/channel/UCmMBRP8cOCOq1R7Wyp6koSQ"
+  ],
+  "livestream": [
+   {
+    "url": "https://www.seasp.org/live-stream-mass",
+    "label": "Mass Livestream",
+    "platform": "www.seasp.org",
+    "kind": "link"
+   }
+  ]
+ },
  "bulletin": null,
  "schedule_rows": [],
  "source_url": "https://www.seasp.org/live-stream-mass",
- "fetched_at": "2026-11-01T07:19:41+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-01T19:05:55+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "has_sunday": false,
+ "groups_dropped": {},
+ "office_contact": {
+  "email": null,
+  "phone": "(319) 393-3778",
+  "address": null,
+  "source_url": "https://www.seasp.org/live-stream-mass",
+  "sources": {
+   "phone": "https://www.seasp.org/live-stream-mass"
+  },
+  "fetched_at": "2025-10-09T00:43:35+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2025-10-09",
+  "capture_age_days": 388,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://www.seasp.org/live-stream-mass",
+    "capture": "2025-10-09",
+    "archive_url": "https://web.archive.org/web/20251009004335/https://www.seasp.org/live-stream-mass"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }
