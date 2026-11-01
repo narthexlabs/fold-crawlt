@@ -66,6 +66,7 @@ jobs:
         env:
           WORKERS: '128'
           STATES: ${{ matrix.states }}
+          SKIP_PROBE: ${{ strategy.job-index == 0 && '0' || '1' }}
         run: bash scripts/us/sites_chunk.sh "$MINUTES"
       - name: Re-parse this group's cached sites with the current parser (same runner, same cache; once per parser version, resumable)
         if: ${{ always() }}

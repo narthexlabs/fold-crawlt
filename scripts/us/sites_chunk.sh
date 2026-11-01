@@ -18,10 +18,13 @@ push() {
 }
 
 git pull --rebase --autostash -q origin main
-python3 -I ingest/us/dioceses/directory_probe.py --minutes 20
-probe_rc=$?
-git add data/real/us/dioceses/
-git commit -q -m "US diocese directory probe: $(date -u +%FT%H:%MZ)${TRAILER}" 2>/dev/null
+probe_rc=0
+if [ "${SKIP_PROBE:-0}" != 1 ]; then   # in a matrix only one job probes; otherwise every job commits directory_status.json and they conflict
+  python3 -I ingest/us/dioceses/directory_probe.py --minutes 20
+  probe_rc=$?
+  git add data/real/us/dioceses/
+  git commit -q -m "US diocese directory probe: $(date -u +%FT%H:%MZ)${TRAILER}" 2>/dev/null
+fi
 
 python3 -I ingest/us/sites/run_state.py chunk --minutes "$MIN" --workers "${WORKERS:-128}" ${STATES:+--state "$STATES"}
 rc=$?
