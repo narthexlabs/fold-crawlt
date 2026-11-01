@@ -67,7 +67,19 @@
   ]
  },
  "bulletin": null,
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:00",
+   "language": null,
+   "raw": "Sunday Mass is held at 11:00am",
+   "source_url": "https://pellstonmi.com/worship",
+   "fetched_at": "2026-11-01T22:15:29+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  }
+ ],
  "source_url": "https://pellstonmi.com/",
  "fetched_at": "2026-11-01T22:15:44+00:00",
  "schedule_template": {
@@ -88,9 +100,10 @@
   "trusted_candidate": false,
   "generic_rows": 0
  },
- "has_sunday": false,
+ "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 1
+  "other_location": 1,
+  "weekend_rescue_added": 1
  },
  "groups_dropped": {},
  "event_counts": {
