@@ -1,0 +1,169 @@
+{
+ "domain": "stanthonybeckemeyer.org",
+ "diocese": "diocese-of-belleville",
+ "matched_church_ids": [
+  "osm-way-580934342",
+  "st-anthony-of-padua-beckemeyer-il"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "st-anthony-of-padua-beckemeyer-il",
+   "osm-way-580934342"
+  ]
+ },
+ "names": [
+  "St. Anthony of Padua",
+  "Saint Anthony Catholic Church"
+ ],
+ "cities": [
+  "Beckemeyer"
+ ],
+ "home_url": "https://stanthonybeckemeyer.org/",
+ "final_url": "https://stanthonybeckemeyer.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://stanthonybeckemeyer.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stanthonybeckemeyer.org/liturgy-ministry-schedules-bulletins/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stanthonybeckemeyer.org/sacraments/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://stanthonybeckemeyer.org/calendar-of-events/",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-content"
+  ]
+ },
+ "template": "wordpress-html",
+ "groups": [],
+ "calendar_feeds": [],
+ "events": [],
+ "social": {},
+ "bulletin": {
+  "url": "http://stanthonybeckemeyer.org/wp-content/uploads/2026/10/25-Oct-26-Bulletin-.pdf",
+  "date": "2026-10-25",
+  "kind": "pdf",
+  "text": "10/25 Bulletin",
+  "source_url": "https://stanthonybeckemeyer.org/liturgy-ministry-schedules-bulletins/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:30",
+   "language": null,
+   "raw": "Reconciliation is held on Saturdays at 3:30 at St.",
+   "source_url": "https://stanthonybeckemeyer.org/sacraments/",
+   "fetched_at": "2026-11-01T17:21:27+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "07:30",
+   "language": null,
+   "raw": "Tuesday Mass.....................7:30 am",
+   "source_url": "https://stanthonybeckemeyer.org/",
+   "fetched_at": "2026-11-01T17:21:23+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "07:30",
+   "language": null,
+   "raw": "Friday Mass...................7:30 am",
+   "source_url": "https://stanthonybeckemeyer.org/",
+   "fetched_at": "2026-11-01T17:21:23+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:30",
+   "language": null,
+   "raw": "Sunday Mass.......................9:30am",
+   "source_url": "https://stanthonybeckemeyer.org/",
+   "fetched_at": "2026-11-01T17:21:23+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  }
+ ],
+ "source_url": "https://stanthonybeckemeyer.org/",
+ "fetched_at": "2026-11-01T17:21:31+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "box_rows_added": 3
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(618) 227-8236",
+  "address": "451 West 3rd Street, Beckemeyer, IL 62219",
+  "source_url": "https://stanthonybeckemeyer.org/",
+  "sources": {
+   "phone": "https://stanthonybeckemeyer.org/",
+   "address": "https://stanthonybeckemeyer.org/"
+  },
+  "fetched_at": "2026-11-01T17:21:23+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}
