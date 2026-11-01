@@ -1,56 +1,62 @@
 {
  "slug": "diocese-of-el-paso",
- "generated_at": "2026-11-01T05:45:18+00:00",
+ "generated_at": "2026-11-01T17:31:42+00:00",
  "run_date": "2026-11-01",
  "input": {
   "directory_records": 0,
-  "discovermass_records": 14,
+  "discovermass_records": 52,
   "directory_without_website": 0,
   "discovermass_without_website": 0
  },
- "sites_in_list": 12,
- "social_only": 2,
+ "sites_in_list": 41,
+ "social_only": 4,
  "crawl": {
-  "ok_total": 10,
-  "ok_via_sandbox": 10,
+  "ok_total": 32,
+  "ok_via_sandbox": 32,
   "ok_via_laptop": 0,
   "partial_via_side_doors": 0,
-  "challenge": 0,
+  "challenge": 1,
   "blocked_403_429": 0,
   "robots_disallowed": 0,
-  "laptop_pending": 0,
-  "dead": 0,
+  "laptop_pending": 5,
+  "dead": 4,
   "not_fetched": 0,
   "by_status": {
-   "ok": 10,
-   "social_only": 2
+   "ok": 32,
+   "social_only": 4,
+   "ssl_error": 2,
+   "dns": 1,
+   "challenge": 1,
+   "conn_error": 1
   }
  },
  "laptop_attempted": 0,
  "groups": {
-  "total": 34,
-  "sites_with_groups": 6,
+  "total": 142,
+  "sites_with_groups": 17,
   "by_category": {
-   "liturgical": 7,
-   "prayer_devotion": 6,
-   "formation": 4,
-   "youth": 3,
-   "scripture_study": 3,
-   "other": 2,
-   "service_mercy": 2,
-   "fraternal_orders": 2,
-   "grief_support": 2,
-   "women": 1,
-   "young_adults": 1,
-   "marriage_family": 1
+   "liturgical": 43,
+   "formation": 17,
+   "youth": 17,
+   "prayer_devotion": 15,
+   "other": 9,
+   "scripture_study": 7,
+   "fraternal_orders": 7,
+   "service_mercy": 6,
+   "grief_support": 5,
+   "movements": 4,
+   "women": 3,
+   "marriage_family": 3,
+   "young_adults": 3,
+   "men": 3
   },
-  "with_meeting_time": 1
+  "with_meeting_time": 2
  },
  "calendar": {
-  "sites_with_active_feed": 4,
-  "active_feeds": 4,
+  "sites_with_active_feed": 6,
+  "active_feeds": 6,
   "feeds_by_platform": {
-   "Google Calendar": 4
+   "Google Calendar": 6
   },
   "sites_with_events": 0,
   "events_stored": 0,
@@ -59,45 +65,55 @@
  },
  "social": {
   "sites_by_platform": {
-   "facebook": 11,
-   "instagram": 3,
-   "youtube": 2,
-   "livestream": 1,
-   "x": 1
+   "facebook": 29,
+   "instagram": 10,
+   "youtube": 7,
+   "x": 4,
+   "livestream": 2
   },
-  "sites_with_any_social": 11,
-  "shared_links_removed_as_diocesan": []
+  "sites_with_any_social": 29,
+  "shared_links_removed_as_diocesan": [
+   "facebook https://www.facebook.com/2008 (5 sites)"
+  ]
  },
  "bulletin": {
-  "sites_with_bulletin_url": 9,
+  "sites_with_bulletin_url": 24,
   "by_kind": {
-   "page": 5,
-   "discovermass": 3,
-   "pdf": 1
+   "page": 11,
+   "pdf": 5,
+   "discovermass": 5,
+   "lpi": 3
   },
-  "with_date": 1
+  "with_date": 2
  },
  "schedule": {
-  "sites_with_own_site_rows": 8,
-  "rows_total": 89,
+  "sites_with_own_site_rows": 26,
+  "rows_total": 278,
   "rows_needs_review": 0,
   "sites_with_schedule_image_only": 0,
   "by_kind": {
-   "mass": 69,
-   "adoration": 14,
-   "confession": 6
+   "mass": 231,
+   "confession": 30,
+   "adoration": 17
   }
  },
  "cms_guess": {
-  "parishsoft": 4,
-  "weebly": 3,
-  "squarespace": 2,
-  "wordpress": 1
+  "parishsoft": 11,
+  "wordpress": 5,
+  "weebly": 4,
+  "squarespace": 4,
+  "unknown": 4,
+  "wix": 2,
+  "duda": 2
  },
  "template": {
-  "generic-html:parishsoft": 4,
-  "generic-html:weebly": 3,
-  "generic-html:squarespace": 2,
-  "wordpress-rest+html": 1
+  "generic-html:parishsoft": 11,
+  "wordpress-rest+html": 4,
+  "generic-html:weebly": 4,
+  "generic-html:squarespace": 4,
+  "generic-html:unknown": 4,
+  "generic-html:wix": 2,
+  "generic-html:duda": 2,
+  "wordpress-html": 1
  }
 }
