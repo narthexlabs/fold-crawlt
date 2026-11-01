@@ -97,7 +97,7 @@
    "feed_key": "e6f9966778e1",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T22:19:26+00:00",
+    "fetched_at": "2026-11-01T23:38:25+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -137,7 +137,30 @@
   "text": "Bulletins",
   "source_url": "https://stfrancisxaviermckean.org/"
  },
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "18:00",
+   "language": null,
+   "raw": "Saturday: 6:00 p.m.",
+   "source_url": "https://stfrancisxaviermckean.org/livestream.html",
+   "fetched_at": "2026-11-01T20:25:21+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:30",
+   "language": null,
+   "raw": "Mass Times Daily: Monday through Friday 7:30 a.m.Saturday: 6:00 p.m.Sunday: 8:00 & 10:30 a.m.Holy Days: 7:30 a.m. & 6:00 p.m.",
+   "source_url": "https://stfrancisxaviermckean.org/livestream.html",
+   "fetched_at": "2026-11-01T20:25:21+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  }
+ ],
  "source_url": "https://stfrancisxaviermckean.org/",
  "fetched_at": "2026-11-01T20:25:21+00:00",
  "schedule_template": {
@@ -158,15 +181,10 @@
   "trusted_candidate": false,
   "generic_rows": 8
  },
- "has_sunday": false,
- "schedule_images": [
-  {
-   "url": "https://stfrancisxaviermckean.org/images/homepagebanners/Banner_Livestream Mass.png",
-   "alt": "Livestream Mass",
-   "page": "https://stfrancisxaviermckean.org/"
-  }
- ],
- "schedule_note": "schedule appears to be an image; times not read (needs_review)",
+ "has_sunday": true,
+ "schedule_dropped": {
+  "weekend_rescue_added": 2
+ },
  "groups_dropped": {},
  "event_counts": {
   "window_start": "2026-11-01",
