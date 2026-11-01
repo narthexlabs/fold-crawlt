@@ -2,16 +2,16 @@
  "domain": "iccmontclair.org",
  "diocese": "archdiocese-of-newark",
  "matched_church_ids": [
-  "archdiocese-of-newark:St. Teresa of Calcutta Parish 30 N. Fullerton Avenue, Montclair, NJ 07042"
+  "archdiocese-of-newark:St. Teresa of Calcutta Parish"
  ],
  "matched": {
   "directory": [
-   "archdiocese-of-newark:St. Teresa of Calcutta Parish 30 N. Fullerton Avenue, Montclair, NJ 07042"
+   "archdiocese-of-newark:St. Teresa of Calcutta Parish"
   ],
   "discovermass": []
  },
  "names": [
-  "St. Teresa of Calcutta Parish 30 N. Fullerton Avenue, Montclair, NJ 07042"
+  "St. Teresa of Calcutta Parish"
  ],
  "cities": [
   "Montclair"
@@ -19,7 +19,7 @@
  "home_url": "https://www.iccmontclair.org/",
  "final_url": "https://www.iccmontclair.org/",
  "crawl_status": "ok",
- "crawl_env": "sandbox",
+ "crawl_env": "runner-rendered",
  "robots_note": "ok",
  "pages": [
   {
@@ -72,7 +72,62 @@
   ]
  },
  "template": "generic-html:wix",
- "groups": [],
+ "groups": [
+  {
+   "id": "iccmontclair.org:food|mary",
+   "name": "Mary's Pantry",
+   "category": "service_mercy",
+   "category_label": "Service & mercy",
+   "subcategory": "food_ministry",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.iccmontclair.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.iccmontclair.org/ministry",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:44:14+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "iccmontclair.org:servers",
+   "name": "Altar Server",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "altar_servers",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "Altar Servers are an important part of the Mass. They assist the priest in the celebration of Mass and other liturgies. You must be in grade 3 or higher and have received your First Holy Communion to become an altar…",
+   "contact_url": "https://www.iccmontclair.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.iccmontclair.org/ministry",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:44:14+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "iccmontclair.org:lectors",
+   "name": "Lectors",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "lectors",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "Lectors proclaim the scriptures with clarity, understanding and conviction. They carrying the Book of the Gospels in procession and lead the prayer of the faithful during Mass.",
+   "contact_url": "https://www.iccmontclair.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.iccmontclair.org/ministry",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:44:14+00:00",
+   "confidence": "low"
+  }
+ ],
  "calendar_feeds": [
   {
    "feed_id": "iccmontclair.org:none:0d7ae701",
@@ -120,7 +175,7 @@
    "language": null,
    "raw": "Confessions at St. Teresa of Calcutta Parish are: offered every Saturday at 4:30pm before the 5:00pm Mass.",
    "source_url": "https://www.iccmontclair.org/reconciliation",
-   "fetched_at": "2026-11-01T01:57:41+00:00",
+   "fetched_at": "2026-11-01T17:44:02+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -128,7 +183,7 @@
   }
  ],
  "source_url": "https://www.iccmontclair.org/",
- "fetched_at": "2026-11-01T01:57:46+00:00",
+ "fetched_at": "2026-11-01T17:44:30+00:00",
  "schedule_template": {
   "template": "wix",
   "version": "ca-sites/2",
@@ -147,6 +202,8 @@
   "trusted_candidate": false,
   "generic_rows": 0
  },
+ "has_sunday": false,
+ "schedule_partial": true,
  "schedule_dropped": {
   "no_day": 1,
   "relative_time": 1
@@ -155,8 +212,8 @@
   "noise": 1
  },
  "event_counts": {
-  "window_start": "2026-10-31",
-  "window_end_exclusive": "2027-01-29",
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
@@ -164,7 +221,20 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "office_contact": {
+  "email": "info@montclaircatholics.org",
+  "phone": null,
+  "address": "540 Mill Street, Belleville, NJ 07109",
+  "source_url": "https://www.iccmontclair.org/",
+  "sources": {
+   "email": "https://www.iccmontclair.org/",
+   "address": "https://www.iccmontclair.org/"
+  },
+  "fetched_at": "2026-11-01T17:43:52+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
- }
+ },
+ "fetch_mode": "rendered"
 }

@@ -2,16 +2,16 @@
  "domain": "ihmparish.net",
  "diocese": "archdiocese-of-newark",
  "matched_church_ids": [
-  "archdiocese-of-newark:Immaculate Heart of Mary Parish 1571 S Martine Avenue, Scotch Plains, NJ 07076"
+  "archdiocese-of-newark:Immaculate Heart of Mary Parish"
  ],
  "matched": {
   "directory": [
-   "archdiocese-of-newark:Immaculate Heart of Mary Parish 1571 S Martine Avenue, Scotch Plains, NJ 07076"
+   "archdiocese-of-newark:Immaculate Heart of Mary Parish"
   ],
   "discovermass": []
  },
  "names": [
-  "Immaculate Heart of Mary Parish 1571 S Martine Avenue, Scotch Plains, NJ 07076"
+  "Immaculate Heart of Mary Parish"
  ],
  "cities": [
   "Scotch Plains"
@@ -19,7 +19,7 @@
  "home_url": "https://ihmparish.net/",
  "final_url": "https://ihmparish.net/",
  "crawl_status": "ok",
- "crawl_env": "sandbox",
+ "crawl_env": "runner-rendered",
  "robots_note": "ok",
  "pages": [
   {
@@ -72,7 +72,13 @@
   },
   {
    "category": "calendar",
-   "url": "https://ihmparish.net/parish-calendar",
+   "url": "https://ihmparish.net/upcoming-events/l8k5nc76w3zzfm2-ncgkg-56h82-j9mfr-wxd3c-ak5lw-7p4rx-xfnbf",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "live",
+   "url": "https://ihmparish.net/upcoming-events/2024/9/14/mens-scripture-amp-discussion-group-live-gy7n4-c72n4-b7rrr-fpx5l-f5s3t-xm24r-enee2-shb92-lyhme-46rfb-538zm-mtp2w-c3wca-rklzk-n5tff-6knfg",
    "status": 200,
    "class": "ok"
   }
@@ -80,225 +86,144 @@
  "cms_guess": {
   "cms": "squarespace",
   "evidence": [
-   "squarespace-cdn"
+   "squarespace.com"
   ]
  },
  "template": "generic-html:squarespace",
- "groups": [],
- "calendar_feeds": [
+ "groups": [
   {
-   "feed_id": "ihmparish.net:ics:9247aafc",
-   "type": "ics",
-   "platform": "Google Calendar",
-   "url": null,
-   "page_url": "https://ihmparish.net/parish-calendar",
-   "label": null,
-   "status": "active",
-   "note": "Google Calendar public feed (embedded on page)",
-   "display_tz": "America/New_York",
-   "url_withheld": "calendar id is an e-mail address; not stored",
-   "feed_key": "9247aafca713",
-   "last_fetch": {
-    "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T02:25:20+00:00",
-    "events_in_window": 0,
-    "kept": 0
-   }
+   "id": "ihmparish.net:bible_study_men",
+   "name": "Men's Bible Study",
+   "category": "scripture_study",
+   "category_label": "Scripture & study",
+   "subcategory": "bible_study",
+   "audience": "men",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://ihmparish.net/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://ihmparish.net/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:43:52+00:00",
+   "confidence": "medium"
   },
   {
-   "feed_id": "ihmparish.net:ics:fea84698",
-   "type": "ics",
-   "platform": "Google Calendar",
-   "url": "https://calendar.google.com/calendar/ical/732h1hltsp9bavlhqpg9qli3bk%40group.calendar.google.com/public/basic.ics",
-   "page_url": "https://ihmparish.net/parish-calendar",
-   "label": null,
-   "status": "active",
-   "note": "Google Calendar public feed (embedded on page)",
-   "display_tz": "America/New_York",
-   "last_fetch": {
-    "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T02:25:21+00:00",
-    "events_in_window": 0,
-    "kept": 0
-   }
+   "id": "ihmparish.net:ocia",
+   "name": "OCIA (becoming Catholic)",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "ocia",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://ihmparish.net/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://ihmparish.net/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:43:52+00:00",
+   "confidence": "medium"
   },
   {
-   "feed_id": "ihmparish.net:ics:caac1967",
-   "type": "ics",
-   "platform": "Google Calendar",
-   "url": "https://calendar.google.com/calendar/ical/7lqhbi6vg3j8724jtfjha8j01k%40group.calendar.google.com/public/basic.ics",
-   "page_url": "https://ihmparish.net/parish-calendar",
-   "label": null,
-   "status": "active",
-   "note": "Google Calendar public feed (embedded on page)",
-   "display_tz": "America/New_York",
-   "last_fetch": {
-    "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T02:25:23+00:00",
-    "events_in_window": 0,
-    "kept": 0
-   }
+   "id": "ihmparish.net:youth_ministry",
+   "name": "Youth Ministry",
+   "category": "youth",
+   "category_label": "Youth",
+   "subcategory": "youth_ministry",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://ihmparish.net/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://ihmparish.net/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:43:52+00:00",
+   "confidence": "medium"
   },
   {
-   "feed_id": "ihmparish.net:ics:4f7fe41c",
-   "type": "ics",
-   "platform": "Google Calendar",
-   "url": "https://calendar.google.com/calendar/ical/8pred78iq9aggoam79qjpantm8%40group.calendar.google.com/public/basic.ics",
-   "page_url": "https://ihmparish.net/parish-calendar",
-   "label": null,
-   "status": "active",
-   "note": "Google Calendar public feed (embedded on page)",
-   "display_tz": "America/New_York",
-   "last_fetch": {
-    "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T02:25:25+00:00",
-    "events_in_window": 0,
-    "kept": 0
-   }
+   "id": "ihmparish.net:food",
+   "name": "Food Ministry",
+   "category": "service_mercy",
+   "category_label": "Service & mercy",
+   "subcategory": "food_ministry",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://ihmparish.net/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://ihmparish.net/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:43:52+00:00",
+   "confidence": "medium"
   },
   {
-   "feed_id": "ihmparish.net:ics:b64c01a9",
-   "type": "ics",
-   "platform": "Google Calendar",
-   "url": "https://calendar.google.com/calendar/ical/c9me5jhq4psddrjjflmc4cgc5k%40group.calendar.google.com/public/basic.ics",
-   "page_url": "https://ihmparish.net/parish-calendar",
-   "label": null,
-   "status": "active",
-   "note": "Google Calendar public feed (embedded on page)",
-   "display_tz": "America/New_York",
-   "last_fetch": {
-    "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T02:25:26+00:00",
-    "events_in_window": 0,
-    "kept": 0
-   }
+   "id": "ihmparish.net:prayer_shawl",
+   "name": "Prayer Shawl / Knitting Ministry",
+   "category": "service_mercy",
+   "category_label": "Service & mercy",
+   "subcategory": "prayer_shawl_knitting",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://ihmparish.net/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://ihmparish.net/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:43:52+00:00",
+   "confidence": "medium"
   },
   {
-   "feed_id": "ihmparish.net:ics:5621b693",
-   "type": "ics",
-   "platform": "Google Calendar",
-   "url": "https://calendar.google.com/calendar/ical/c_3e6eecf03b6e60a9eb39df2f530ab6b904ec85e7ac6486c83c2d028687b128af%40group.calendar.google.com/public/basic.ics",
-   "page_url": "https://ihmparish.net/parish-calendar",
-   "label": null,
-   "status": "active",
-   "note": "Google Calendar public feed (embedded on page)",
-   "display_tz": "America/New_York",
-   "last_fetch": {
-    "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T02:25:27+00:00",
-    "events_in_window": 0,
-    "kept": 0
-   }
+   "id": "ihmparish.net:choir|practice",
+   "name": "Music Ministry / Choir",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "choir_music",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://ihmparish.net/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://ihmparish.net/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:43:52+00:00",
+   "confidence": "medium"
   },
   {
-   "feed_id": "ihmparish.net:ics:76b1f7fc",
-   "type": "ics",
-   "platform": "Google Calendar",
-   "url": "https://calendar.google.com/calendar/ical/c_5a6e92f8dd39f5471de8eb5706f9648195c70d8a098d8e8b7be8ddbd8927fd23%40group.calendar.google.com/public/basic.ics",
-   "page_url": "https://ihmparish.net/parish-calendar",
-   "label": null,
-   "status": "active",
-   "note": "Google Calendar public feed (embedded on page)",
-   "display_tz": "America/New_York",
-   "last_fetch": {
-    "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T02:25:29+00:00",
-    "events_in_window": 0,
-    "kept": 0
-   }
-  },
-  {
-   "feed_id": "ihmparish.net:ics:03586b94",
-   "type": "ics",
-   "platform": "Google Calendar",
-   "url": "https://calendar.google.com/calendar/ical/c_o8v39sfs8uru536n5572h43u6c%40group.calendar.google.com/public/basic.ics",
-   "page_url": "https://ihmparish.net/parish-calendar",
-   "label": null,
-   "status": "active",
-   "note": "Google Calendar public feed (embedded on page)",
-   "display_tz": "America/New_York",
-   "last_fetch": {
-    "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T02:25:30+00:00",
-    "events_in_window": 0,
-    "kept": 0
-   }
-  },
-  {
-   "feed_id": "ihmparish.net:ics:3c8197ce",
-   "type": "ics",
-   "platform": "Google Calendar",
-   "url": "https://calendar.google.com/calendar/ical/c_qf8mfo84ktcipatus6c5abfdg0%40group.calendar.google.com/public/basic.ics",
-   "page_url": "https://ihmparish.net/parish-calendar",
-   "label": null,
-   "status": "active",
-   "note": "Google Calendar public feed (embedded on page)",
-   "display_tz": "America/New_York",
-   "last_fetch": {
-    "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T02:25:31+00:00",
-    "events_in_window": 0,
-    "kept": 0
-   }
-  },
-  {
-   "feed_id": "ihmparish.net:ics:89e75912",
-   "type": "ics",
-   "platform": "Google Calendar",
-   "url": "https://calendar.google.com/calendar/ical/cmr3lu1l1i8n0q9oku576scka4%40group.calendar.google.com/public/basic.ics",
-   "page_url": "https://ihmparish.net/parish-calendar",
-   "label": null,
-   "status": "active",
-   "note": "Google Calendar public feed (embedded on page)",
-   "display_tz": "America/New_York",
-   "last_fetch": {
-    "status": 404,
-    "fetched_at": "2026-11-01T02:25:32+00:00",
-    "events_in_window": 0,
-    "kept": 0
-   }
-  },
-  {
-   "feed_id": "ihmparish.net:ics:8bdb20a8",
-   "type": "ics",
-   "platform": "Google Calendar",
-   "url": null,
-   "page_url": "https://ihmparish.net/parish-calendar",
-   "label": null,
-   "status": "active",
-   "note": "Google Calendar public feed (embedded on page)",
-   "display_tz": "America/New_York",
-   "url_withheld": "calendar id is an e-mail address; not stored",
-   "feed_key": "8bdb20a8d4e8",
-   "last_fetch": {
-    "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T02:25:33+00:00",
-    "events_in_window": 0,
-    "kept": 0
-   }
-  },
-  {
-   "feed_id": "ihmparish.net:ics:54be7c97",
-   "type": "ics",
-   "platform": "Google Calendar",
-   "url": "https://calendar.google.com/calendar/ical/j5jtvvhd23dcrr03maudhufubo%40group.calendar.google.com/public/basic.ics",
-   "page_url": "https://ihmparish.net/parish-calendar",
-   "label": null,
-   "status": "active",
-   "note": "Google Calendar public feed (embedded on page)",
-   "display_tz": "America/New_York",
-   "last_fetch": {
-    "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T02:25:35+00:00",
-    "events_in_window": 0,
-    "kept": 0
-   }
+   "id": "ihmparish.net:kofc",
+   "name": "Knights of Columbus",
+   "category": "fraternal_orders",
+   "category_label": "Fraternal & orders",
+   "subcategory": "knights_of_columbus",
+   "audience": "men",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://ihmparish.net/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://ihmparish.net/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:43:52+00:00",
+   "confidence": "medium"
   }
  ],
+ "calendar_feeds": [],
  "events": [],
  "social": {
   "facebook": [
-   "https://www.facebook.com/ihmnj"
+   "https://www.facebook.com/ihmnj",
+   "https://www.facebook.com/2008"
   ],
   "instagram": [
    "https://www.instagram.com/ihmparish_sp/"
@@ -314,8 +239,8 @@
   "url": "https://ihmparish.net/s/Bulletin11012026.pdf",
   "date": "2026-11-01",
   "kind": "pdf",
-  "text": "November 1, 2026",
-  "source_url": "https://ihmparish.net/bulletins"
+  "text": "New Bulletin: All Saints Day. November 1, 2026",
+  "source_url": "https://ihmparish.net/"
  },
  "schedule_rows": [
   {
@@ -325,7 +250,7 @@
    "language": null,
    "raw": "Saturdays (Anticipatory Mass) - 5 PM",
    "source_url": "https://ihmparish.net/mass-schedule-ihm",
-   "fetched_at": "2026-11-01T01:57:42+00:00",
+   "fetched_at": "2026-11-01T17:43:55+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "high",
@@ -338,7 +263,7 @@
    "language": null,
    "raw": "Weekend Masses :: Sundays - 8 AM, 10 AM, 12 PM",
    "source_url": "https://ihmparish.net/mass-schedule-ihm",
-   "fetched_at": "2026-11-01T01:57:42+00:00",
+   "fetched_at": "2026-11-01T17:43:55+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -351,7 +276,7 @@
    "language": null,
    "raw": "Weekend Masses :: Sundays - 8 AM, 10 AM, 12 PM",
    "source_url": "https://ihmparish.net/mass-schedule-ihm",
-   "fetched_at": "2026-11-01T01:57:42+00:00",
+   "fetched_at": "2026-11-01T17:43:55+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -364,7 +289,7 @@
    "language": null,
    "raw": "Weekend Masses :: Sundays - 8 AM, 10 AM, 12 PM",
    "source_url": "https://ihmparish.net/mass-schedule-ihm",
-   "fetched_at": "2026-11-01T01:57:42+00:00",
+   "fetched_at": "2026-11-01T17:43:55+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -377,7 +302,7 @@
    "language": null,
    "raw": "Daily (weekday) Masses:: Monday through Saturday - 7 AM, 8:30 AM",
    "source_url": "https://ihmparish.net/mass-schedule-ihm",
-   "fetched_at": "2026-11-01T01:57:42+00:00",
+   "fetched_at": "2026-11-01T17:43:55+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -391,12 +316,14 @@
    "language": null,
    "raw": "Daily (weekday) Masses:: Monday through Saturday - 7 AM, 8:30 AM",
    "source_url": "https://ihmparish.net/mass-schedule-ihm",
-   "fetched_at": "2026-11-01T01:57:42+00:00",
+   "fetched_at": "2026-11-01T17:43:55+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "squarespace",
-   "day_expanded_from": "Monday through Saturday"
+   "day_expanded_from": "Monday through Saturday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
   },
   {
    "kind": "mass",
@@ -405,12 +332,14 @@
    "language": null,
    "raw": "Daily (weekday) Masses:: Monday through Saturday - 7 AM, 8:30 AM",
    "source_url": "https://ihmparish.net/mass-schedule-ihm",
-   "fetched_at": "2026-11-01T01:57:42+00:00",
+   "fetched_at": "2026-11-01T17:43:55+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "squarespace",
-   "day_expanded_from": "Monday through Saturday"
+   "day_expanded_from": "Monday through Saturday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
   },
   {
    "kind": "mass",
@@ -419,12 +348,14 @@
    "language": null,
    "raw": "Daily (weekday) Masses:: Monday through Saturday - 7 AM, 8:30 AM",
    "source_url": "https://ihmparish.net/mass-schedule-ihm",
-   "fetched_at": "2026-11-01T01:57:42+00:00",
+   "fetched_at": "2026-11-01T17:43:55+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "squarespace",
-   "day_expanded_from": "Monday through Saturday"
+   "day_expanded_from": "Monday through Saturday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
   },
   {
    "kind": "mass",
@@ -433,12 +364,14 @@
    "language": null,
    "raw": "Daily (weekday) Masses:: Monday through Saturday - 7 AM, 8:30 AM",
    "source_url": "https://ihmparish.net/mass-schedule-ihm",
-   "fetched_at": "2026-11-01T01:57:42+00:00",
+   "fetched_at": "2026-11-01T17:43:55+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "squarespace",
-   "day_expanded_from": "Monday through Saturday"
+   "day_expanded_from": "Monday through Saturday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
   },
   {
    "kind": "mass",
@@ -447,12 +380,14 @@
    "language": null,
    "raw": "Daily (weekday) Masses:: Monday through Saturday - 7 AM, 8:30 AM",
    "source_url": "https://ihmparish.net/mass-schedule-ihm",
-   "fetched_at": "2026-11-01T01:57:42+00:00",
+   "fetched_at": "2026-11-01T17:43:55+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "squarespace",
-   "day_expanded_from": "Monday through Saturday"
+   "day_expanded_from": "Monday through Saturday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
   },
   {
    "kind": "mass",
@@ -461,7 +396,7 @@
    "language": null,
    "raw": "Daily (weekday) Masses:: Monday through Saturday - 7 AM, 8:30 AM",
    "source_url": "https://ihmparish.net/mass-schedule-ihm",
-   "fetched_at": "2026-11-01T01:57:42+00:00",
+   "fetched_at": "2026-11-01T17:43:55+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -475,12 +410,14 @@
    "language": null,
    "raw": "Daily (weekday) Masses:: Monday through Saturday - 7 AM, 8:30 AM",
    "source_url": "https://ihmparish.net/mass-schedule-ihm",
-   "fetched_at": "2026-11-01T01:57:42+00:00",
+   "fetched_at": "2026-11-01T17:43:55+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "squarespace",
-   "day_expanded_from": "Monday through Saturday"
+   "day_expanded_from": "Monday through Saturday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
   },
   {
    "kind": "mass",
@@ -489,12 +426,14 @@
    "language": null,
    "raw": "Daily (weekday) Masses:: Monday through Saturday - 7 AM, 8:30 AM",
    "source_url": "https://ihmparish.net/mass-schedule-ihm",
-   "fetched_at": "2026-11-01T01:57:42+00:00",
+   "fetched_at": "2026-11-01T17:43:55+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "squarespace",
-   "day_expanded_from": "Monday through Saturday"
+   "day_expanded_from": "Monday through Saturday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
   },
   {
    "kind": "mass",
@@ -503,12 +442,14 @@
    "language": null,
    "raw": "Daily (weekday) Masses:: Monday through Saturday - 7 AM, 8:30 AM",
    "source_url": "https://ihmparish.net/mass-schedule-ihm",
-   "fetched_at": "2026-11-01T01:57:42+00:00",
+   "fetched_at": "2026-11-01T17:43:55+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "squarespace",
-   "day_expanded_from": "Monday through Saturday"
+   "day_expanded_from": "Monday through Saturday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
   },
   {
    "kind": "mass",
@@ -517,12 +458,14 @@
    "language": null,
    "raw": "Daily (weekday) Masses:: Monday through Saturday - 7 AM, 8:30 AM",
    "source_url": "https://ihmparish.net/mass-schedule-ihm",
-   "fetched_at": "2026-11-01T01:57:42+00:00",
+   "fetched_at": "2026-11-01T17:43:55+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "squarespace",
-   "day_expanded_from": "Monday through Saturday"
+   "day_expanded_from": "Monday through Saturday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
   },
   {
    "kind": "mass",
@@ -531,12 +474,14 @@
    "language": null,
    "raw": "Daily (weekday) Masses:: Monday through Saturday - 7 AM, 8:30 AM",
    "source_url": "https://ihmparish.net/mass-schedule-ihm",
-   "fetched_at": "2026-11-01T01:57:42+00:00",
+   "fetched_at": "2026-11-01T17:43:55+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "squarespace",
-   "day_expanded_from": "Monday through Saturday"
+   "day_expanded_from": "Monday through Saturday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
   },
   {
    "kind": "other",
@@ -545,7 +490,7 @@
    "language": null,
    "raw": "Holidays will only have one mass at 9 AM",
    "source_url": "https://ihmparish.net/mass-schedule-ihm",
-   "fetched_at": "2026-11-01T01:57:42+00:00",
+   "fetched_at": "2026-11-01T17:43:55+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "high",
@@ -559,7 +504,7 @@
    "language": null,
    "raw": "Adoration Chapel Hours:: Mon & WEd: 9 am - 8 pm",
    "source_url": "https://ihmparish.net/adoration-chapel",
-   "fetched_at": "2026-11-01T01:57:43+00:00",
+   "fetched_at": "2026-11-01T17:43:57+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -573,7 +518,7 @@
    "language": null,
    "raw": "Adoration Chapel Hours:: Mon & WEd: 9 am - 8 pm",
    "source_url": "https://ihmparish.net/adoration-chapel",
-   "fetched_at": "2026-11-01T01:57:43+00:00",
+   "fetched_at": "2026-11-01T17:43:57+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -587,7 +532,7 @@
    "language": null,
    "raw": "Adoration Chapel Hours:: Tues, Thurs & Fri: 9 am - 1 pm",
    "source_url": "https://ihmparish.net/adoration-chapel",
-   "fetched_at": "2026-11-01T01:57:43+00:00",
+   "fetched_at": "2026-11-01T17:43:57+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -601,7 +546,7 @@
    "language": null,
    "raw": "Adoration Chapel Hours:: Tues, Thurs & Fri: 9 am - 1 pm",
    "source_url": "https://ihmparish.net/adoration-chapel",
-   "fetched_at": "2026-11-01T01:57:43+00:00",
+   "fetched_at": "2026-11-01T17:43:57+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -615,7 +560,7 @@
    "language": null,
    "raw": "Adoration Chapel Hours:: Tues, Thurs & Fri: 9 am - 1 pm",
    "source_url": "https://ihmparish.net/adoration-chapel",
-   "fetched_at": "2026-11-01T01:57:43+00:00",
+   "fetched_at": "2026-11-01T17:43:57+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -624,7 +569,7 @@
   }
  ],
  "source_url": "https://ihmparish.net/",
- "fetched_at": "2026-11-01T01:57:49+00:00",
+ "fetched_at": "2026-11-01T17:44:22+00:00",
  "schedule_template": {
   "template": "squarespace",
   "version": "ca-sites/2",
@@ -641,17 +586,23 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 24
+  "generic_rows": 28
  },
+ "has_sunday": true,
  "schedule_dropped": {
+  "no_day": 16,
+  "not_a_service": 6,
   "relative_time": 1,
-  "no_day": 1,
   "skipped_section": 2
  },
- "groups_dropped": {},
+ "groups_dropped": {
+  "sentence": 4,
+  "noise": 3,
+  "sacrament_prep": 3
+ },
  "event_counts": {
-  "window_start": "2026-10-31",
-  "window_end_exclusive": "2027-01-29",
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
@@ -659,10 +610,21 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "office_contact": {
+  "email": "office@ihmparish.net",
+  "phone": "(908) 889-2100",
+  "address": "1571 South Martine Avenue, Scotch Plains, NJ 07076",
+  "source_url": "https://ihmparish.net/",
+  "sources": {
+   "email": "https://ihmparish.net/",
+   "phone": "https://ihmparish.net/",
+   "address": "https://ihmparish.net/"
+  },
+  "fetched_at": "2026-11-01T17:43:52+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
  },
- "social_shared_links_removed": [
-  "https://www.facebook.com/2008"
- ]
+ "fetch_mode": "rendered"
 }
