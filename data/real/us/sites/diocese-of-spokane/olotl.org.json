@@ -1,0 +1,151 @@
+{
+ "domain": "olotl.org",
+ "diocese": "diocese-of-spokane",
+ "matched_church_ids": [
+  "diocese-of-spokane:Our Lady of the Lake, SUNCREST"
+ ],
+ "matched": {
+  "directory": [
+   "diocese-of-spokane:Our Lady of the Lake, SUNCREST"
+  ],
+  "discovermass": []
+ },
+ "names": [
+  "Our Lady of the Lake, SUNCREST"
+ ],
+ "cities": [
+  "Nine Mile Falls"
+ ],
+ "home_url": "https://olotl.org/",
+ "final_url": "https://olotl.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://olotl.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://olotl.org/schedule",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://olotl.org/sacraments",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://olotl.org/bulletin",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://olotl.org/contact",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "unknown",
+  "evidence": []
+ },
+ "template": "generic-html:unknown",
+ "groups": [],
+ "calendar_feeds": [
+  {
+   "feed_id": "olotl.org:ics:35b0822e",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": "https://calendar.google.com/calendar/ical/dr0isdocmhhjh8h6uf4munncvg%40group.calendar.google.com/public/basic.ics",
+   "page_url": "https://olotl.org/",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (embedded on page)",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T17:30:55+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
+ "events": [],
+ "social": {},
+ "bulletin": {
+  "url": "https://storage1.snappages.site/bzg7lvf1he/assets/files/2026.10-Bulletin.pdf",
+  "date": null,
+  "kind": "pdf",
+  "text": "Bulletin",
+  "source_url": "https://olotl.org/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Sunday Mass: 9:00am in person",
+   "source_url": "https://olotl.org/schedule",
+   "fetched_at": "2026-11-01T17:27:04+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  }
+ ],
+ "source_url": "https://olotl.org/",
+ "fetched_at": "2026-11-01T17:27:09+00:00",
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": true,
+  "trusted_candidate": false,
+  "generic_rows": 1
+ },
+ "has_sunday": true,
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(509) 651-5352",
+  "address": "P.O. BOX 447, Nine Mile Falls, WA 99026",
+  "source_url": "https://olotl.org/contact",
+  "sources": {
+   "phone": "https://olotl.org/contact",
+   "address": "https://olotl.org/contact"
+  },
+  "fetched_at": "2026-11-01T17:27:09+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}
