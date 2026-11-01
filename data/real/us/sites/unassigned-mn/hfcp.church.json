@@ -135,7 +135,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T20:28:55+00:00",
+    "fetched_at": "2026-11-01T23:34:42+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -152,7 +152,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": 404,
-    "fetched_at": "2026-11-01T20:28:56+00:00",
+    "fetched_at": "2026-11-01T23:34:44+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -169,7 +169,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T20:28:58+00:00",
+    "fetched_at": "2026-11-01T23:34:45+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -186,7 +186,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T20:28:59+00:00",
+    "fetched_at": "2026-11-01T23:34:46+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -218,6 +218,17 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "squarespace"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "St. Mary at 8 AM Sunday on",
+   "source_url": "https://hfcp.church/",
+   "fetched_at": "2026-11-01T20:25:03+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
   }
  ],
  "source_url": "https://hfcp.church/",
@@ -240,13 +251,13 @@
   "trusted_candidate": false,
   "generic_rows": 12
  },
- "has_sunday": false,
- "schedule_partial": true,
+ "has_sunday": true,
  "schedule_dropped": {
   "no_kind": 1,
   "dated_block": 1,
   "no_day": 3,
-  "prose": 3
+  "prose": 3,
+  "weekend_rescue_added": 1
  },
  "groups_dropped": {},
  "event_counts": {

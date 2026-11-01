@@ -225,7 +225,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T20:28:51+00:00",
+    "fetched_at": "2026-11-01T23:34:36+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -283,6 +283,28 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "15:45",
+   "language": null,
+   "raw": "Saturday 3:45pm",
+   "source_url": "https://www.fmcatholic.org/",
+   "fetched_at": "2026-11-01T20:25:03+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "07:45",
+   "language": null,
+   "raw": "Sunday 7:45am",
+   "source_url": "https://www.fmcatholic.org/",
+   "fetched_at": "2026-11-01T20:25:03+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
   }
  ],
  "source_url": "https://www.fmcatholic.org/",
@@ -305,12 +327,12 @@
   "trusted_candidate": false,
   "generic_rows": 9
  },
- "has_sunday": false,
- "schedule_partial": true,
+ "has_sunday": true,
  "schedule_dropped": {
   "skipped_section": 1,
   "no_day": 2,
-  "not_a_service": 1
+  "not_a_service": 1,
+  "weekend_rescue_added": 2
  },
  "groups_dropped": {
   "unmatched": 3,
