@@ -440,7 +440,7 @@
    "feed_key": "93d48a9353ca",
    "last_fetch": {
     "status": 404,
-    "fetched_at": "2026-11-01T18:54:27+00:00",
+    "fetched_at": "2026-11-01T23:38:39+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -459,7 +459,7 @@
    "feed_key": "f7e5f1fa59df",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T18:54:28+00:00",
+    "fetched_at": "2026-11-01T23:38:41+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -553,6 +553,83 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:30",
+   "language": null,
+   "raw": "Saturday evening: 5:30p.m. (Mass of Anticipation)",
+   "source_url": "https://sacredheartwinchester.org/mass-and-confession-schedule/",
+   "fetched_at": "2026-11-01T17:27:45+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "07:30",
+   "language": null,
+   "raw": "Sunday 7:30a.m.",
+   "source_url": "https://sacredheartwinchester.org/mass-and-confession-schedule/",
+   "fetched_at": "2026-11-01T17:27:45+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:30",
+   "language": null,
+   "raw": "Sunday 9:30a.m.",
+   "source_url": "https://sacredheartwinchester.org/mass-and-confession-schedule/",
+   "fetched_at": "2026-11-01T17:27:45+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:15",
+   "language": null,
+   "raw": "Sunday 11:15a.m.",
+   "source_url": "https://sacredheartwinchester.org/mass-and-confession-schedule/",
+   "fetched_at": "2026-11-01T17:27:45+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "13:15",
+   "language": null,
+   "raw": "Sunday 1:15p.m. (Spanish Mass)",
+   "source_url": "https://sacredheartwinchester.org/mass-and-confession-schedule/",
+   "fetched_at": "2026-11-01T17:27:45+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "16:30",
+   "language": null,
+   "raw": "Saturday evening: 4:30p.m. (Mass of Anticipation)",
+   "source_url": "https://sacredheartwinchester.org/mass-and-confession-schedule/",
+   "fetched_at": "2026-11-01T17:27:45+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "13:00",
+   "language": null,
+   "raw": "Sunday 1:00p.m. (Spanish Mass)",
+   "source_url": "https://sacredheartwinchester.org/sacred-heart-of-jesus-catholic-church-live-stream/",
+   "fetched_at": "2026-11-01T17:29:05+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
   }
  ],
  "source_url": "https://sacredheartwinchester.org/",
@@ -575,13 +652,13 @@
   "trusted_candidate": false,
   "generic_rows": 37
  },
- "has_sunday": false,
- "schedule_partial": true,
+ "has_sunday": true,
  "schedule_dropped": {
   "skipped_section": 4,
   "no_day": 1,
   "other_location": 14,
-  "prose": 2
+  "prose": 2,
+  "weekend_rescue_added": 7
  },
  "groups_dropped": {},
  "event_counts": {
