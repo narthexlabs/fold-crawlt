@@ -18,13 +18,12 @@
   "Our Lady of Perpetual Help Church"
  ],
  "cities": [
-  "Little Rock",
   "Altus"
  ],
  "home_url": "https://www.stmarysaltus.org/",
  "final_url": "https://www.stmarysaltus.org/",
  "crawl_status": "ok",
- "crawl_env": "sandbox",
+ "crawl_env": "runner-rendered",
  "robots_note": "not_found",
  "pages": [
   {
@@ -71,7 +70,44 @@
   ]
  },
  "template": "generic-html:google_sites",
- "groups": [],
+ "groups": [
+  {
+   "id": "stmarysaltus.org:bible_study",
+   "name": "Bible Study",
+   "category": "scripture_study",
+   "category_label": "Scripture & study",
+   "subcategory": "bible_study",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.stmarysaltus.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stmarysaltus.org/formation",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:46:00+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "stmarysaltus.org:children_ff",
+   "name": "Religious Education",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "children_faith_formation",
+   "audience": "families",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.stmarysaltus.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stmarysaltus.org/formation",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:46:00+00:00",
+   "confidence": "medium"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
  "social": {
@@ -94,7 +130,7 @@
    "language": null,
    "raw": "Mass Times: SUNDAY : 11:00 AM",
    "source_url": "https://www.stmarysaltus.org/",
-   "fetched_at": "2026-11-01T02:16:55+00:00",
+   "fetched_at": "2026-11-01T17:45:53+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -107,7 +143,7 @@
    "language": null,
    "raw": "MONDAY: NO MASS: TUESDAY : 7:30 AM",
    "source_url": "https://www.stmarysaltus.org/",
-   "fetched_at": "2026-11-01T02:16:55+00:00",
+   "fetched_at": "2026-11-01T17:45:53+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -120,7 +156,7 @@
    "language": null,
    "raw": "MONDAY: NO MASS: WEDNESDAY : 6:00 PM",
    "source_url": "https://www.stmarysaltus.org/",
-   "fetched_at": "2026-11-01T02:16:55+00:00",
+   "fetched_at": "2026-11-01T17:45:53+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -133,7 +169,7 @@
    "language": null,
    "raw": "MONDAY: NO MASS: THURSDAY : 7:30 AM",
    "source_url": "https://www.stmarysaltus.org/",
-   "fetched_at": "2026-11-01T02:16:55+00:00",
+   "fetched_at": "2026-11-01T17:45:53+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -146,7 +182,7 @@
    "language": null,
    "raw": "FRIDAY : NO MASS: SATURDAY : 4:00 PM",
    "source_url": "https://www.stmarysaltus.org/",
-   "fetched_at": "2026-11-01T02:16:55+00:00",
+   "fetched_at": "2026-11-01T17:45:53+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -159,7 +195,7 @@
    "language": null,
    "raw": "Confession: SATURDAY : 3:15-3:45 PM",
    "source_url": "https://www.stmarysaltus.org/",
-   "fetched_at": "2026-11-01T02:16:55+00:00",
+   "fetched_at": "2026-11-01T17:45:53+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -172,7 +208,7 @@
    "language": null,
    "raw": "Confession: WEDNESDAY : 6:30 PM",
    "source_url": "https://www.stmarysaltus.org/",
-   "fetched_at": "2026-11-01T02:16:55+00:00",
+   "fetched_at": "2026-11-01T17:45:53+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -180,7 +216,7 @@
   }
  ],
  "source_url": "https://www.stmarysaltus.org/",
- "fetched_at": "2026-11-01T02:17:00+00:00",
+ "fetched_at": "2026-11-01T17:46:07+00:00",
  "schedule_template": {
   "template": "generic_strict",
   "version": "ca-sites/2",
@@ -199,10 +235,11 @@
   "trusted_candidate": false,
   "generic_rows": 6
  },
+ "has_sunday": true,
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-10-31",
-  "window_end_exclusive": "2027-01-29",
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
@@ -210,7 +247,20 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "office_contact": {
+  "email": null,
+  "phone": "(479) 468-2585",
+  "address": "5118 St Marys Ln, Altus, AR 72821",
+  "source_url": "https://www.stmarysaltus.org/",
+  "sources": {
+   "phone": "https://www.stmarysaltus.org/",
+   "address": "https://www.stmarysaltus.org/"
+  },
+  "fetched_at": "2026-11-01T17:45:53+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
- }
+ },
+ "fetch_mode": "rendered"
 }
