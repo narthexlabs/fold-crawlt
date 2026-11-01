@@ -2,16 +2,22 @@
  "domain": "smip.org",
  "diocese": "diocese-of-joliet",
  "matched_church_ids": [
-  "diocese-of-joliet:St. Mary Immaculate"
+  "diocese-of-joliet:St. Mary Immaculate",
+  "gc-30756",
+  "st-mary-immaculate-parish-plainfield-il"
  ],
  "matched": {
   "directory": [
    "diocese-of-joliet:St. Mary Immaculate"
   ],
-  "discovermass": []
+  "discovermass": [
+   "st-mary-immaculate-parish-plainfield-il",
+   "gc-30756"
+  ]
  },
  "names": [
-  "St. Mary Immaculate"
+  "St. Mary Immaculate",
+  "St. Mary Immaculate Parish"
  ],
  "cities": [
   "Plainfield"
@@ -419,19 +425,6 @@
   {
    "kind": "mass",
    "day": "Sunday",
-   "time": "09:00",
-   "language": "Polish",
-   "raw": "9:00 AM [Mass intention withheld]",
-   "source_url": "https://smip.org/masstimes/",
-   "fetched_at": "2026-11-01T07:28:18+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress"
-  },
-  {
-   "kind": "mass",
-   "day": "Sunday",
    "time": "10:45",
    "language": "English",
    "raw": "Weekend Masses: 10:45 AM English",
@@ -670,7 +663,7 @@
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 6,
+  "other_location": 7,
   "no_day": 2,
   "relative_time": 2,
   "not_a_service": 6
@@ -702,7 +695,6 @@
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
  },
  "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()",
-  "intentions_withheld": 1
+  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

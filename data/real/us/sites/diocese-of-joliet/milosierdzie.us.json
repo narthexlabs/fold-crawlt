@@ -2,13 +2,18 @@
  "domain": "milosierdzie.us",
  "diocese": "diocese-of-joliet",
  "matched_church_ids": [
-  "diocese-of-joliet:Divine Mercy"
+  "diocese-of-joliet:Divine Mercy",
+  "divine-mercy-lombard-il",
+  "gc-30732"
  ],
  "matched": {
   "directory": [
    "diocese-of-joliet:Divine Mercy"
   ],
-  "discovermass": []
+  "discovermass": [
+   "divine-mercy-lombard-il",
+   "gc-30732"
+  ]
  },
  "names": [
   "Divine Mercy"
@@ -41,7 +46,41 @@
  "events": [],
  "social": {},
  "bulletin": null,
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "18:00",
+   "language": null,
+   "raw": "Msza niedzielna 6pm",
+   "source_url": "https://milosierdzie.us/",
+   "fetched_at": "2026-11-01T07:28:12+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "20:00",
+   "language": null,
+   "raw": "Od drugiej niedzieli czerwca do ostatniej niedzieli sierpnia Msza św. o 8pm. Nie ma Mszy św. o 7pm.",
+   "source_url": "https://milosierdzie.us/",
+   "fetched_at": "2026-11-01T07:28:12+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "19:00",
+   "language": null,
+   "raw": "Od drugiej niedzieli czerwca do ostatniej niedzieli sierpnia Msza św. o 8pm. Nie ma Mszy św. o 7pm.",
+   "source_url": "https://milosierdzie.us/",
+   "fetched_at": "2026-11-01T07:28:12+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  }
+ ],
  "source_url": "https://milosierdzie.us/",
  "fetched_at": "2026-11-01T07:28:18+00:00",
  "schedule_template": {
@@ -62,7 +101,10 @@
   "trusted_candidate": false,
   "generic_rows": 0
  },
- "has_sunday": false,
+ "has_sunday": true,
+ "schedule_dropped": {
+  "weekend_rescue_added": 3
+ },
  "groups_dropped": {},
  "event_counts": {
   "window_start": "2026-11-01",
