@@ -19,7 +19,7 @@
  "home_url": "https://www.isantiacc.org/",
  "final_url": "https://www.isantiacc.org/",
  "crawl_status": "ok",
- "crawl_env": "sandbox",
+ "crawl_env": "runner-rendered",
  "robots_note": "ok",
  "pages": [
   {
@@ -72,7 +72,44 @@
   ]
  },
  "template": "generic-html:wix",
- "groups": [],
+ "groups": [
+  {
+   "id": "isantiacc.org:justice",
+   "name": "Social Concerns",
+   "category": "service_mercy",
+   "category_label": "Service & mercy",
+   "subcategory": "social_justice",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "Promotes charitable outreach and service to those in need.",
+   "contact_url": "https://www.isantiacc.org/contact-10",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.isantiacc.org/ministries",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:50:26+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "isantiacc.org:choir",
+   "name": "Music Ministry / Choir",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "choir_music",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "Leads the parish in song and sacred music during liturgies and special celebrations.",
+   "contact_url": "https://www.isantiacc.org/contact-10",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.isantiacc.org/ministries",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:50:26+00:00",
+   "confidence": "low"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
  "social": {},
@@ -91,7 +128,7 @@
    "language": null,
    "raw": "Mass Times:: Saturday 4:00pm (CTK)",
    "source_url": "https://www.isantiacc.org/",
-   "fetched_at": "2026-11-01T02:10:47+00:00",
+   "fetched_at": "2026-11-01T17:50:12+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -104,7 +141,7 @@
    "language": null,
    "raw": "Reconciliation Times:: Saturday 3:00 - 3:45pm CTK",
    "source_url": "https://www.isantiacc.org/",
-   "fetched_at": "2026-11-01T02:10:47+00:00",
+   "fetched_at": "2026-11-01T17:50:12+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -117,7 +154,7 @@
    "language": null,
    "raw": "Reconciliation Times:: Sunday 7:30 - 8:15am SEAS",
    "source_url": "https://www.isantiacc.org/",
-   "fetched_at": "2026-11-01T02:10:47+00:00",
+   "fetched_at": "2026-11-01T17:50:12+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -130,7 +167,7 @@
    "language": null,
    "raw": "Reconciliation Times:: Tuesday 5:15pm CTK",
    "source_url": "https://www.isantiacc.org/",
-   "fetched_at": "2026-11-01T02:10:47+00:00",
+   "fetched_at": "2026-11-01T17:50:12+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -143,7 +180,7 @@
    "language": null,
    "raw": "Reconciliation Times:: Wednesday 8:00 - 8:20am SEAS",
    "source_url": "https://www.isantiacc.org/",
-   "fetched_at": "2026-11-01T02:10:47+00:00",
+   "fetched_at": "2026-11-01T17:50:12+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -156,15 +193,48 @@
    "language": null,
    "raw": "Reconciliation Times:: Friday 9:00am CTK",
    "source_url": "https://www.isantiacc.org/",
-   "fetched_at": "2026-11-01T02:10:47+00:00",
+   "fetched_at": "2026-11-01T17:50:12+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "wix"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:30",
+   "language": null,
+   "raw": "Sunday 8:30am (SEAS)",
+   "source_url": "https://www.isantiacc.org/",
+   "fetched_at": "2026-11-01T17:50:12+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:30",
+   "language": null,
+   "raw": "Sunday 10:30am (CTK)",
+   "source_url": "https://www.isantiacc.org/",
+   "fetched_at": "2026-11-01T17:50:12+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "18:00",
+   "language": null,
+   "raw": "Tuesday 6:00pm CTK",
+   "source_url": "https://www.isantiacc.org/",
+   "fetched_at": "2026-11-01T17:50:12+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
   }
  ],
  "source_url": "https://www.isantiacc.org/",
- "fetched_at": "2026-11-01T02:10:53+00:00",
+ "fetched_at": "2026-11-01T17:50:43+00:00",
  "schedule_template": {
   "template": "wix",
   "version": "ca-sites/2",
@@ -183,12 +253,16 @@
   "trusted_candidate": false,
   "generic_rows": 4
  },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "box_rows_added": 3
+ },
  "groups_dropped": {
   "unmatched": 1
  },
  "event_counts": {
-  "window_start": "2026-10-31",
-  "window_end_exclusive": "2027-01-29",
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
@@ -196,7 +270,20 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "office_contact": {
+  "email": null,
+  "phone": "(763) 689-1221",
+  "address": "305 Fern St N. Cambridge, MN 55008",
+  "source_url": "https://www.isantiacc.org/contact-10",
+  "sources": {
+   "phone": "https://www.isantiacc.org/contact-10",
+   "address": "https://www.isantiacc.org/"
+  },
+  "fetched_at": "2026-11-01T17:50:43+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
- }
+ },
+ "fetch_mode": "rendered"
 }
