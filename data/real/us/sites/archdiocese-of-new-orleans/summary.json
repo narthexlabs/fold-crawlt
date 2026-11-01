@@ -1,44 +1,65 @@
 {
  "slug": "archdiocese-of-new-orleans",
- "generated_at": "2026-11-01T05:45:53+00:00",
+ "generated_at": "2026-11-01T17:25:42+00:00",
  "run_date": "2026-11-01",
  "input": {
-  "directory_records": 0,
-  "discovermass_records": 9,
+  "directory_records": 93,
+  "discovermass_records": 163,
   "directory_without_website": 0,
   "discovermass_without_website": 0
  },
- "sites_in_list": 8,
+ "sites_in_list": 131,
  "social_only": 0,
  "crawl": {
-  "ok_total": 2,
-  "ok_via_sandbox": 2,
+  "ok_total": 21,
+  "ok_via_sandbox": 21,
   "ok_via_laptop": 0,
   "partial_via_side_doors": 0,
-  "challenge": 6,
+  "challenge": 91,
   "blocked_403_429": 0,
   "robots_disallowed": 0,
-  "laptop_pending": 6,
-  "dead": 0,
+  "laptop_pending": 108,
+  "dead": 19,
   "not_fetched": 0,
   "by_status": {
-   "challenge": 6,
-   "ok": 2
+   "challenge": 91,
+   "ok": 21,
+   "dns": 10,
+   "conn_error": 2,
+   "timeout": 2,
+   "ssl_error": 2,
+   "not_found": 2,
+   "http_5xx": 1
   }
  },
  "laptop_attempted": 0,
  "groups": {
-  "total": 1,
-  "sites_with_groups": 1,
+  "total": 106,
+  "sites_with_groups": 12,
   "by_category": {
-   "formation": 1
+   "liturgical": 39,
+   "formation": 11,
+   "prayer_devotion": 10,
+   "other": 10,
+   "service_mercy": 9,
+   "fraternal_orders": 7,
+   "youth": 5,
+   "grief_support": 4,
+   "young_adults": 3,
+   "scripture_study": 3,
+   "men": 3,
+   "seniors": 1,
+   "women": 1
   },
-  "with_meeting_time": 0
+  "with_meeting_time": 10
  },
  "calendar": {
-  "sites_with_active_feed": 0,
-  "active_feeds": 0,
-  "feeds_by_platform": {},
+  "sites_with_active_feed": 7,
+  "active_feeds": 14,
+  "feeds_by_platform": {
+   "Google Calendar": 13,
+   "All-in-One Event Calendar (WordPress)": 1
+  },
   "sites_with_events": 0,
   "events_stored": 0,
   "events_in_window_before_privacy": 0,
@@ -46,38 +67,59 @@
  },
  "social": {
   "sites_by_platform": {
-   "facebook": 2,
-   "livestream": 1,
-   "instagram": 1,
-   "x": 1
+   "facebook": 17,
+   "instagram": 12,
+   "youtube": 6,
+   "x": 3,
+   "livestream": 2,
+   "flocknote": 1
   },
-  "sites_with_any_social": 2,
+  "sites_with_any_social": 18,
   "shared_links_removed_as_diocesan": []
  },
  "bulletin": {
-  "sites_with_bulletin_url": 1,
+  "sites_with_bulletin_url": 15,
   "by_kind": {
-   "pdf": 1
+   "pdf": 4,
+   "page": 3,
+   "discovermass": 3,
+   "lpi": 3,
+   "ecatholic_pdf": 1,
+   "flipbook": 1
   },
-  "with_date": 1
+  "with_date": 4
  },
  "schedule": {
-  "sites_with_own_site_rows": 1,
-  "rows_total": 17,
+  "sites_with_own_site_rows": 13,
+  "rows_total": 263,
   "rows_needs_review": 0,
   "sites_with_schedule_image_only": 0,
   "by_kind": {
-   "mass": 10,
-   "confession": 4,
-   "adoration": 3
+   "mass": 190,
+   "confession": 51,
+   "other": 12,
+   "adoration": 10
   }
  },
  "cms_guess": {
+  "wordpress": 6,
+  "unknown": 4,
+  "squarespace": 4,
+  "parishsoft": 2,
+  "ecatholic": 2,
   "google_sites": 1,
-  "wordpress": 1
+  "weebly": 1,
+  "duda": 1
  },
  "template": {
+  "wordpress-html": 4,
+  "generic-html:unknown": 4,
+  "generic-html:squarespace": 4,
+  "generic-html:parishsoft": 2,
+  "wordpress-rest+html": 2,
+  "ecatholic-fastpath": 2,
   "generic-html:google_sites": 1,
-  "wordpress-rest+html": 1
+  "generic-html:weebly": 1,
+  "generic-html:duda": 1
  }
 }
