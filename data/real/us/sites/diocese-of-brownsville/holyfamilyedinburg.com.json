@@ -19,7 +19,7 @@
  "home_url": "http://www.holyfamilyedinburg.com/",
  "final_url": "https://www.holyfamilyedinburg.com/",
  "crawl_status": "ok",
- "crawl_env": "sandbox",
+ "crawl_env": "runner-rendered",
  "robots_note": "ok",
  "pages": [
   {
@@ -66,7 +66,44 @@
   ]
  },
  "template": "generic-html:wix",
- "groups": [],
+ "groups": [
+  {
+   "id": "holyfamilyedinburg.com:rosary",
+   "name": "Confraternity of the Most Holy Rosary",
+   "category": "prayer_devotion",
+   "category_label": "Prayer & devotion",
+   "subcategory": "rosary",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.holyfamilyedinburg.com/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.holyfamilyedinburg.com/ministries",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:46:48+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "holyfamilyedinburg.com:prayer_group_es",
+   "name": "Grupo de Oración",
+   "category": "prayer_devotion",
+   "category_label": "Prayer & devotion",
+   "subcategory": "prayer_group",
+   "audience": "all",
+   "language": "es",
+   "language_assumed": false,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.holyfamilyedinburg.com/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.holyfamilyedinburg.com/ministries",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:46:48+00:00",
+   "confidence": "medium"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
  "social": {},
@@ -85,7 +122,7 @@
    "language": null,
    "raw": "Reconciliation - Reconcilación: Saturday 10:00am-11:00am or by appointment at .",
    "source_url": "https://www.holyfamilyedinburg.com/reconciliation",
-   "fetched_at": "2026-11-01T02:28:50+00:00",
+   "fetched_at": "2026-11-01T17:46:45+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -98,7 +135,7 @@
    "language": "Spanish",
    "raw": "Daily Mass - Misa Diaria: 5:30pm Español",
    "source_url": "https://www.holyfamilyedinburg.com/",
-   "fetched_at": "2026-11-01T02:28:48+00:00",
+   "fetched_at": "2026-11-01T17:46:37+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -111,7 +148,7 @@
    "language": "English",
    "raw": "Daily Mass - Misa Diaria: 5:30pm English",
    "source_url": "https://www.holyfamilyedinburg.com/",
-   "fetched_at": "2026-11-01T02:28:48+00:00",
+   "fetched_at": "2026-11-01T17:46:37+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -125,7 +162,7 @@
    "language": "English",
    "raw": "Daily Mass - Misa Diaria: 5:30pm English",
    "source_url": "https://www.holyfamilyedinburg.com/",
-   "fetched_at": "2026-11-01T02:28:48+00:00",
+   "fetched_at": "2026-11-01T17:46:37+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -139,7 +176,7 @@
    "language": "Spanish",
    "raw": "Weekend Mass - Misa de Fin de Semana: 5:30pm Español",
    "source_url": "https://www.holyfamilyedinburg.com/",
-   "fetched_at": "2026-11-01T02:28:48+00:00",
+   "fetched_at": "2026-11-01T17:46:37+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -147,42 +184,45 @@
   },
   {
    "kind": "mass",
-   "day": "Sunday",
+   "day": "Saturday",
    "time": "09:00",
    "language": "Spanish",
    "raw": "(Anticipated Mass): 9:00am - Español",
    "source_url": "https://www.holyfamilyedinburg.com/",
-   "fetched_at": "2026-11-01T02:28:48+00:00",
+   "fetched_at": "2026-11-01T17:46:37+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
-   "template": "wix"
+   "template": "wix",
+   "day_parsed": "Sunday"
   },
   {
    "kind": "mass",
-   "day": "Sunday",
+   "day": "Saturday",
    "time": "11:00",
    "language": "English",
    "raw": "(Anticipated Mass): 11:00am - English",
    "source_url": "https://www.holyfamilyedinburg.com/",
-   "fetched_at": "2026-11-01T02:28:48+00:00",
+   "fetched_at": "2026-11-01T17:46:37+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
-   "template": "wix"
+   "template": "wix",
+   "day_parsed": "Sunday"
   },
   {
    "kind": "mass",
-   "day": "Sunday",
+   "day": "Saturday",
    "time": "13:00",
    "language": "English",
    "raw": "(Anticipated Mass): 1:00pm - English",
    "source_url": "https://www.holyfamilyedinburg.com/",
-   "fetched_at": "2026-11-01T02:28:48+00:00",
+   "fetched_at": "2026-11-01T17:46:37+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
-   "template": "wix"
+   "template": "wix",
+   "day_parsed": "Sunday"
   },
   {
    "kind": "mass",
@@ -191,7 +231,7 @@
    "language": null,
    "raw": "Primer Viernes del mes después de Misa de 5:30pm",
    "source_url": "https://www.holyfamilyedinburg.com/",
-   "fetched_at": "2026-11-01T02:28:48+00:00",
+   "fetched_at": "2026-11-01T17:46:37+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "high",
@@ -199,7 +239,7 @@
   }
  ],
  "source_url": "http://www.holyfamilyedinburg.com/",
- "fetched_at": "2026-11-01T02:28:52+00:00",
+ "fetched_at": "2026-11-01T17:46:54+00:00",
  "schedule_template": {
   "template": "wix",
   "version": "ca-sites/2",
@@ -218,16 +258,17 @@
   "trusted_candidate": false,
   "generic_rows": 7
  },
+ "has_sunday": true,
  "schedule_dropped": {
   "relative_time": 1,
   "no_kind": 2
  },
  "groups_dropped": {
-  "unmatched": 1
+  "label_not_group": 1
  },
  "event_counts": {
-  "window_start": "2026-10-31",
-  "window_end_exclusive": "2027-01-29",
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
@@ -235,9 +276,22 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "office_contact": {
+  "email": null,
+  "phone": "(956) 383-5472",
+  "address": "1302 E Champion Street,, Edinburg, TX 78539",
+  "source_url": "https://www.holyfamilyedinburg.com/contact-us",
+  "sources": {
+   "phone": "https://www.holyfamilyedinburg.com/contact-us",
+   "address": "https://www.holyfamilyedinburg.com/contact-us"
+  },
+  "fetched_at": "2026-11-01T17:46:54+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()",
   "names_withheld": 0,
   "contacts_removed": 1
- }
+ },
+ "fetch_mode": "rendered"
 }
