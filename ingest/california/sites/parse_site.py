@@ -1279,6 +1279,62 @@ def contact_line_items(p: Page) -> list[str]:
     return out if len(out) >= 2 else []
 
 
+# Distinct named groups of one kind (us-check 2026-11-01, recall): the taxonomy key merges every choir into one "Choir".
+# A group keeps its own entry when its name says more than the category word: the words left after removing the words the
+# taxonomy rule matched, audience/language words (already in the key), generic words ("ministry", "parish", "schedule",
+# "sign up") and numbers. "Choir" / "Parish Choir" / "Music Ministry" merge; "Children's Choir", "Spanish Choir",
+# "Adult Choir", "Contemporary Choir" stay separate. One-per-parish organisations (Knights, SVdP, Legion ...) never split.
+NO_SPLIT_KEYS = {"kofc", "columbiettes", "cda", "yli", "icf", "third_order", "serra", "malta", "svdp", "stephen", "cursillo", "cl",
+                 "focolare", "opus_dei", "neocat", "jpc", "mfc", "cfc", "wwme", "legion", "tmiy", "wwp", "ocic", "ocia",
+                 "adult_confirmation", "confirmation", "alpha", "spred", "baptism_prep", "first_communion", "marriage_prep",
+                 "childrens_liturgy", "emhc", "lectors", "ushers", "servers", "sacristans", "guadalupanas", "apostleship_prayer",
+                 "nocturnal_adoration", "mmp_cenacle", "escuela_cruz", "charismatic", "divine_mercy", "respect_life", "scouts", "cyo"}
+QUAL_GENERIC = set("""ministry ministries ministerio ministerios group groups grupo grupos the of and y de del la las el los our
+    parish parroquia parroquial church iglesia team teams program programs programa society sociedad club st saint san santa
+    sts at for a an in on to with music musica choir choirs coro coros page fb facebook instagram info information
+    informacion sign signup up schedule schedules form forms training registration register application news newsletter
+    meeting meetings event events calendar contact contacts photo photos gallery council assembly court circle chapter
+    community comunidad member members volunteer volunteers voluntarios catholic all more learn about home update updates
+    welcome join us mass masses misa misas liturgical liturgy liturgia ministers minister new link click here weekly monthly
+    men mens women womens ladies hombres mujeres youth teen teens children childrens kids juvenil jovenes young
+    family families seniors senior spanish espanol english ingles hispanic latino bilingual vietnamese filipino study studies
+    sunday monday tuesday wednesday thursday friday saturday morning evening night weekday weekend daily sacred musical
+    notes personnel offering offerings ensemble ensembles instrumentalist instrumentalists worship cathedral basilica
+    faith formation core leader leaders coordinator staff program ministers sodality""".split())
+QUAL_ADMIN = re.compile(r"\b(?:bylaws?|links?|quick|dates?|lists?|instructions?|minutes|agenda|roster|directory|documents?|"
+                        r"resources?|faq|forms?|babysit\w*|handbook|guidelines?|polic(?:y|ies)|archives?|photos?|sign[\s-]?up|"
+                        r"applications?|newsletters?|reports?|budget|history|prayers?\s+list)\b", re.I)
+
+
+def group_qualifier(name: str, gkey: str, site_key: str = "") -> str | None:
+    words = name.split()
+    if len(words) > 5 or re.search(r"[,.;!?]", name.strip(" .")) or (
+            len(words) >= 4 and sum(1 for w in words if w[:1].islower()) / len(words) >= 0.4):
+        return None                       # a description or sentence, not a group's name: merge as before
+    if QUAL_ADMIN.search(name):
+        return None                       # "Women's Club Bylaws", "... Meeting Dates": a page about the group, not another group
+    site = re.sub(r"[^a-z]", "", site_key.lower().split("/")[0])
+    abbrev = {w.lower() for w in re.findall(r"\b[A-Z]{2,5}\b", name)}
+    for k in sorted(NO_SPLIT_KEYS, key=len, reverse=True):
+        if gkey == k or gkey.startswith(k + "_"):
+            return None
+    if gkey.startswith("other_"):
+        return None                       # the fallback key is already the name
+    n = bg.norm(bg.fix_mojibake(re.sub(r"\([^)]*\)|\s[-–—]\s.*$", " ", name)))  # "(K-5th Grade)", "- 8:30 Mass": not a name
+    for rx, k, *_ in bg.R:
+        if (gkey == k or gkey.startswith(k + "_")) and rx.search(n):
+            m = rx.search(n)
+            n = n[:m.start()] + " " + n[m.end():]
+            break
+    toks = []
+    for t in re.findall(r"[a-zà-ÿ]+", n):
+        t = re.sub(r"s$", "", t) if len(t) > 3 and t not in QUAL_GENERIC else t
+        if len(t) < 3 or t in QUAL_GENERIC or t + "s" in QUAL_GENERIC or t in abbrev or (len(t) >= 4 and t in site):
+            continue                      # generic words, parish abbreviations ("OLL Choir") and the parish's own name
+        toks.append(t)
+    return "+".join(sorted(set(toks))) or None
+
+
 def groups_for(pages: list[Page], key: str, contact_url: str | None, today: str) -> tuple[list[dict], dict]:
     mp = [p for p in pages if p.kind == "ministries" or (p.kind in ("mass_times", "calendar") and MIN_PAGE_PATH.search(urlparse(p.url).path))]
     items: list[tuple[str, Page]] = []
@@ -1355,6 +1411,9 @@ def groups_for(pages: list[Page], key: str, contact_url: str | None, today: str)
             if lang and lang != "en" and cat != "language_cultural":
                 nm += " (" + {"es": "Spanish", "en+es": "English & Spanish", "vi": "Vietnamese", "zh": "Chinese", "tl": "Filipino",
                               "ko": "Korean", "pt": "Portuguese", "to": "Tongan", "ig": "Igbo"}.get(lang, lang) + ")"
+        rq = group_qualifier(name, gkey, key)
+        if rq:                                # a distinct named group of the same kind ("Children's Choir" vs "Adult Choir")
+            gkey = f"{gkey}|{rq}"
         o = {"name": nm, "category": cat, "subcategory": sub, "audience": aud, "lang": lang, "meets": meets, "description": desc,
              "strength": strength, "source_url": p.url, "fetched_at": p.fetched_at, "key": gkey}
         prev = obs.get(gkey)
@@ -1363,10 +1422,14 @@ def groups_for(pages: list[Page], key: str, contact_url: str | None, today: str)
             o["_score"] = score
             obs[gkey] = o
     groups, seen_names = [], set()
+    split_base = {g.split("|")[0] for g in obs if "|" in g}
     for gkey, o in obs.items():
         nk = re.sub(r"[^a-z0-9]+", "", o["name"].lower())
         if nk in seen_names:
             continue
+        if "|" not in gkey and gkey in split_base and QUAL_ADMIN.search(o["name"]):
+            continue                      # the umbrella entry is only a page about a group listed on its own
+                                          # ("Senior Ministries Dates & Instructions" next to "Service to Local Seniors")
         seen_names.add(nk)
         lang = o["lang"]
         assumed = lang is None
