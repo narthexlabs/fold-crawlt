@@ -20,23 +20,29 @@
   "Deanery D: Chicago"
  ],
  "home_url": "http://www.ols-chicago.org/",
- "final_url": "https://www.ols-chicago.org/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "final_url": "https://ols-chicago.org/",
+ "crawl_status": "wayback-2026-08-27",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
-   "url": "https://www.ols-chicago.org/",
-   "status": 403,
-   "class": "challenge"
+   "url": "https://ols-chicago.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://ols-chicago.org/contact/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
   "cms": "unknown",
   "evidence": []
  },
- "template": "none",
+ "template": "generic-html:unknown",
  "groups": [],
  "calendar_feeds": [],
  "events": [],
@@ -44,9 +50,42 @@
  "bulletin": null,
  "schedule_rows": [],
  "source_url": "http://www.ols-chicago.org/",
- "fetched_at": "2026-11-01T02:13:38+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-01T15:43:08+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": true,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "has_sunday": false,
+ "groups_dropped": {},
+ "wayback": {
+  "capture_date": "2026-08-27",
+  "capture_age_days": 66,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://ols-chicago.org/",
+    "capture": "2026-08-27",
+    "archive_url": "https://web.archive.org/web/20260827042924/https://ols-chicago.org/"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }

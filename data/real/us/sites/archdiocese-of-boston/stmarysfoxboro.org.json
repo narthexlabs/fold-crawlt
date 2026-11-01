@@ -18,32 +18,430 @@
  ],
  "home_url": "http://stmarysfoxboro.org/",
  "final_url": "https://stmarysfoxboro.org/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "crawl_status": "wayback-2025-11-05",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
    "url": "https://stmarysfoxboro.org/",
-   "status": 403,
-   "class": "challenge"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stmarysfoxboro.org/confession-times",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stmarysfoxboro.org/mass-times",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://stmarysfoxboro.org/ministries-of-st-marys",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://stmarysfoxboro.org/holy-souls-in-purgatory-apostolate",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://stmarysfoxboro.org/events/fatima-prayer-group/20251106",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://stmarysfoxboro.org/bulletins",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://stmarysfoxboro.org/events",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://stmarysfoxboro.org/calendar",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "live",
+   "url": "https://www.stmarysfoxboro.org/live-stream",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://stmarysfoxboro.org/contact-us",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "stmarysfoxboro.org:other_holy_souls_in_purgatory_prayer_apostolat",
+   "name": "Holy Souls in Purgatory Prayer Apostolate",
+   "category": "other",
+   "category_label": "Other",
+   "subcategory": "unclassified",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stmarysfoxboro.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stmarysfoxboro.org/holy-souls-in-purgatory-apostolate",
+   "source_kind": "website",
+   "fetched_at": "2025-11-05T13:12:40+00:00",
+   "confidence": "low",
+   "source": "wayback-2025-11-05"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/stmarysfoxboro"
+  ],
+  "x": [
+   "https://x.com/stmarysfoxboro"
+  ],
+  "flocknote": [
+   "https://stmarysfoxboro.flocknote.com",
+   "https://new.flocknote.com"
+  ],
+  "livestream": [
+   {
+    "url": "https://stmarysfoxboro.org/live-stream",
+    "label": "Live Stream",
+    "platform": "stmarysfoxboro.org",
+    "kind": "link"
+   },
+   {
+    "url": "https://www.stmarysfoxboro.org/live-stream",
+    "label": "Live Stream",
+    "platform": "www.stmarysfoxboro.org",
+    "kind": "link"
+   },
+   {
+    "url": "https://iframe.dacast.com/b/41250/c/547085",
+    "label": "livestream",
+    "platform": "iframe.dacast.com",
+    "kind": "link"
+   }
+  ]
+ },
+ "bulletin": {
+  "url": "https://files.ecatholic.com/28756/bulletins/20251005.pdf?t=1759340008000",
+  "date": "2025-10-05",
+  "kind": "ecatholic_pdf",
+  "text": "October 5 , 2025",
+  "source_url": "https://stmarysfoxboro.org/bulletins"
+ },
+ "schedule_rows": [
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "14:45-15:45",
+   "language": null,
+   "raw": "Saturday: 2:45 PM - 3:45 PM",
+   "source_url": "https://stmarysfoxboro.org/confession-times",
+   "fetched_at": "2025-10-14T22:42:22+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-11-05: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-11-05",
+   "archive_url": "https://web.archive.org/web/20251014224222/https://stmarysfoxboro.org/confession-times",
+   "capture_date": "2025-10-14"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "16:00",
+   "language": "English",
+   "raw": "Saturday: 4:00 PM English",
+   "source_url": "https://stmarysfoxboro.org/mass-times",
+   "fetched_at": "2025-10-14T22:32:34+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-11-05: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-11-05",
+   "archive_url": "https://web.archive.org/web/20251014223234/https://stmarysfoxboro.org/mass-times",
+   "capture_date": "2025-10-14"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "07:00",
+   "language": "English",
+   "raw": "Sunday: 7:00 AM English",
+   "source_url": "https://stmarysfoxboro.org/mass-times",
+   "fetched_at": "2025-10-14T22:32:34+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-11-05: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-11-05",
+   "archive_url": "https://web.archive.org/web/20251014223234/https://stmarysfoxboro.org/mass-times",
+   "capture_date": "2025-10-14"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": "English",
+   "raw": "Sunday: 9:00 AM English",
+   "source_url": "https://stmarysfoxboro.org/mass-times",
+   "fetched_at": "2025-10-14T22:32:34+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-11-05: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-11-05",
+   "archive_url": "https://web.archive.org/web/20251014223234/https://stmarysfoxboro.org/mass-times",
+   "capture_date": "2025-10-14"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:00",
+   "language": "English",
+   "raw": "Sunday: 11:00 AM English",
+   "source_url": "https://stmarysfoxboro.org/mass-times",
+   "fetched_at": "2025-10-14T22:32:34+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-11-05: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-11-05",
+   "archive_url": "https://web.archive.org/web/20251014223234/https://stmarysfoxboro.org/mass-times",
+   "capture_date": "2025-10-14"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "09:00",
+   "language": "English",
+   "raw": "Monday: 9:00 AM English",
+   "source_url": "https://stmarysfoxboro.org/mass-times",
+   "fetched_at": "2025-10-14T22:32:34+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-11-05: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-11-05",
+   "archive_url": "https://web.archive.org/web/20251014223234/https://stmarysfoxboro.org/mass-times",
+   "capture_date": "2025-10-14"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "09:00",
+   "language": "English",
+   "raw": "Tuesday: 9:00 AM English",
+   "source_url": "https://stmarysfoxboro.org/mass-times",
+   "fetched_at": "2025-10-14T22:32:34+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-11-05: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-11-05",
+   "archive_url": "https://web.archive.org/web/20251014223234/https://stmarysfoxboro.org/mass-times",
+   "capture_date": "2025-10-14"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "09:00",
+   "language": "English",
+   "raw": "Wednesday: 9:00 AM English",
+   "source_url": "https://stmarysfoxboro.org/mass-times",
+   "fetched_at": "2025-10-14T22:32:34+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-11-05: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-11-05",
+   "archive_url": "https://web.archive.org/web/20251014223234/https://stmarysfoxboro.org/mass-times",
+   "capture_date": "2025-10-14"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "09:00",
+   "language": "English",
+   "raw": "Thursday: 9:00 AM English",
+   "source_url": "https://stmarysfoxboro.org/mass-times",
+   "fetched_at": "2025-10-14T22:32:34+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-11-05: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-11-05",
+   "archive_url": "https://web.archive.org/web/20251014223234/https://stmarysfoxboro.org/mass-times",
+   "capture_date": "2025-10-14"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "09:00",
+   "language": "English",
+   "raw": "Friday: 9:00 AM English",
+   "source_url": "https://stmarysfoxboro.org/mass-times",
+   "fetched_at": "2025-10-14T22:32:34+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-11-05: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-11-05",
+   "archive_url": "https://web.archive.org/web/20251014223234/https://stmarysfoxboro.org/mass-times",
+   "capture_date": "2025-10-14"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "09:00",
+   "language": "English",
+   "raw": "Saturday: 9:00 AM English",
+   "source_url": "https://stmarysfoxboro.org/mass-times",
+   "fetched_at": "2025-10-14T22:32:34+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-11-05: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-11-05",
+   "archive_url": "https://web.archive.org/web/20251014223234/https://stmarysfoxboro.org/mass-times",
+   "capture_date": "2025-10-14"
+  }
+ ],
  "source_url": "http://stmarysfoxboro.org/",
- "fetched_at": "2026-11-01T05:09:42+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-01T15:09:38+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": true
+   },
+   "score": "high"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 3
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "text:dated_line": 1
+ },
+ "groups_dropped": {},
+ "office_contact": {
+  "email": null,
+  "phone": "(508) 543-7726",
+  "address": "58 Carpenter St., Foxborough, MA 02035",
+  "source_url": "https://stmarysfoxboro.org/contact-us",
+  "sources": {
+   "phone": "https://stmarysfoxboro.org/contact-us",
+   "address": "https://stmarysfoxboro.org/contact-us"
+  },
+  "fetched_at": "2025-11-19T05:49:59+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2025-11-05",
+  "capture_age_days": 361,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://stmarysfoxboro.org/",
+    "capture": "2025-11-05",
+    "archive_url": "https://web.archive.org/web/20251105135233/https://stmarysfoxboro.org/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://stmarysfoxboro.org/confession-times",
+    "capture": "2025-10-14",
+    "archive_url": "https://web.archive.org/web/20251014224222/https://stmarysfoxboro.org/confession-times"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://stmarysfoxboro.org/mass-times",
+    "capture": "2025-10-14",
+    "archive_url": "https://web.archive.org/web/20251014223234/https://stmarysfoxboro.org/mass-times"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://stmarysfoxboro.org/ministries-of-st-marys",
+    "capture": "2025-10-14",
+    "archive_url": "https://web.archive.org/web/20251014232831/https://stmarysfoxboro.org/ministries-of-st-marys"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://stmarysfoxboro.org/holy-souls-in-purgatory-apostolate",
+    "capture": "2025-11-05",
+    "archive_url": "https://web.archive.org/web/20251105131240/https://stmarysfoxboro.org/holy-souls-in-purgatory-apostolate"
+   },
+   {
+    "kind": "bulletin",
+    "original": "https://stmarysfoxboro.org/bulletins",
+    "capture": "2025-10-14",
+    "archive_url": "https://web.archive.org/web/20251014235219/https://stmarysfoxboro.org/bulletins"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://stmarysfoxboro.org/events",
+    "capture": "2025-10-14",
+    "archive_url": "https://web.archive.org/web/20251014223351/https://stmarysfoxboro.org/events"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://stmarysfoxboro.org/calendar",
+    "capture": "2025-10-14",
+    "archive_url": "https://web.archive.org/web/20251014234311/https://stmarysfoxboro.org/calendar"
+   },
+   {
+    "kind": "live",
+    "original": "https://www.stmarysfoxboro.org/live-stream",
+    "capture": "2025-03-19",
+    "archive_url": "https://web.archive.org/web/20250319071049/https://www.stmarysfoxboro.org/live-stream"
+   },
+   {
+    "kind": "contact",
+    "original": "https://stmarysfoxboro.org/contact-us",
+    "capture": "2025-11-19",
+    "archive_url": "https://web.archive.org/web/20251119054959/https://stmarysfoxboro.org/contact-us"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }

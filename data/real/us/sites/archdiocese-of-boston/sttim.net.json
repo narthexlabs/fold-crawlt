@@ -18,32 +18,459 @@
  ],
  "home_url": "http://sttim.net/",
  "final_url": "https://sttim.net/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "crawl_status": "wayback-2025-04-24",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
    "url": "https://sttim.net/",
-   "status": 403,
-   "class": "challenge"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.sttim.net/massinfo",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.sttim.net/sacraments",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.sttim.net/faith-formation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.sttim.net/faith-formation-calendar-embedded",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.sttim.net/book-group",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://www.sttim.net/bulletins",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://www.sttim.net/contactinfo",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "sttim.net:book_club",
+   "name": "Book Club Selections",
+   "category": "scripture_study",
+   "category_label": "Scripture & study",
+   "subcategory": "book_club",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": "Fourth Monday, 7:00pm",
+   "description": "The St. Timothy Book Group meets on the fourth Monday of each month from 7:00 pm-8:30 pm in the Ruocco Center. When holidays fall on that Monday, or when there is a fifth Monday in a month, our meeting is…",
+   "contact_url": "https://www.sttim.net/contactinfo",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.sttim.net/book-group",
+   "source_kind": "website",
+   "fetched_at": "2025-04-21T17:40:05+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-04-24"
+  },
+  {
+   "id": "sttim.net:servers",
+   "name": "Altar Servers",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "altar_servers",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.sttim.net/contactinfo",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://sttim.net/",
+   "source_kind": "website",
+   "fetched_at": "2025-04-24T11:57:36+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-04-24"
+  },
+  {
+   "id": "sttim.net:emhc",
+   "name": "Eucharistic Ministers",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "emhc",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.sttim.net/contactinfo",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://sttim.net/",
+   "source_kind": "website",
+   "fetched_at": "2025-04-24T11:57:36+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-04-24"
+  },
+  {
+   "id": "sttim.net:lectors",
+   "name": "Lectors",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "lectors",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.sttim.net/contactinfo",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://sttim.net/",
+   "source_kind": "website",
+   "fetched_at": "2025-04-24T11:57:36+00:00",
+   "confidence": "low",
+   "source": "wayback-2025-04-24"
+  },
+  {
+   "id": "sttim.net:sacristans",
+   "name": "Server Sacristans",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "sacristans",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.sttim.net/contactinfo",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://sttim.net/",
+   "source_kind": "website",
+   "fetched_at": "2025-04-24T11:57:36+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-04-24"
+  },
+  {
+   "id": "sttim.net:ushers",
+   "name": "Ushers & Greeters",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "ushers_greeters",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.sttim.net/contactinfo",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://sttim.net/",
+   "source_kind": "website",
+   "fetched_at": "2025-04-24T11:57:36+00:00",
+   "confidence": "low",
+   "source": "wayback-2025-04-24"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/sttimnorwood"
+  ]
+ },
+ "bulletin": {
+  "url": "https://files.ecatholic.com/1239/bulletins/20250420.pdf?t=1744991893000",
+  "date": "2025-04-20",
+  "kind": "ecatholic_pdf",
+  "text": "April 20 , 2025",
+  "source_url": "https://www.sttim.net/bulletins"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "16:30",
+   "language": "English",
+   "raw": "Saturday: 4:30 PM English",
+   "source_url": "https://sttim.net/",
+   "fetched_at": "2025-04-24T11:57:36+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-04-24",
+   "archive_url": "https://web.archive.org/web/20250424115736/https://sttim.net/",
+   "capture_date": "2025-04-24"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": "English",
+   "raw": "Sunday: 8:00 AM English",
+   "source_url": "https://sttim.net/",
+   "fetched_at": "2025-04-24T11:57:36+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-04-24",
+   "archive_url": "https://web.archive.org/web/20250424115736/https://sttim.net/",
+   "capture_date": "2025-04-24"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:30",
+   "language": "English",
+   "raw": "Sunday: 9:30 AM English Family Mass",
+   "source_url": "https://sttim.net/",
+   "fetched_at": "2025-04-24T11:57:36+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-04-24",
+   "archive_url": "https://web.archive.org/web/20250424115736/https://sttim.net/",
+   "capture_date": "2025-04-24"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:00",
+   "language": "English",
+   "raw": "Sunday: 11:00 AM English",
+   "source_url": "https://sttim.net/",
+   "fetched_at": "2025-04-24T11:57:36+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-04-24",
+   "archive_url": "https://web.archive.org/web/20250424115736/https://sttim.net/",
+   "capture_date": "2025-04-24"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "09:00",
+   "language": "English",
+   "raw": "Wednesday: 9:00 AM English",
+   "source_url": "https://sttim.net/",
+   "fetched_at": "2025-04-24T11:57:36+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-04-24",
+   "archive_url": "https://web.archive.org/web/20250424115736/https://sttim.net/",
+   "capture_date": "2025-04-24"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "09:00",
+   "language": "English",
+   "raw": "Thursday: 9:00 AM English",
+   "source_url": "https://sttim.net/",
+   "fetched_at": "2025-04-24T11:57:36+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-04-24",
+   "archive_url": "https://web.archive.org/web/20250424115736/https://sttim.net/",
+   "capture_date": "2025-04-24"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "09:00",
+   "language": "English",
+   "raw": "Friday: 9:00 AM English",
+   "source_url": "https://sttim.net/",
+   "fetched_at": "2025-04-24T11:57:36+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-04-24",
+   "archive_url": "https://web.archive.org/web/20250424115736/https://sttim.net/",
+   "capture_date": "2025-04-24"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "09:00",
+   "language": "English",
+   "raw": "Saturday: 9:00 AM English",
+   "source_url": "https://sttim.net/",
+   "fetched_at": "2025-04-24T11:57:36+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-04-24",
+   "archive_url": "https://web.archive.org/web/20250424115736/https://sttim.net/",
+   "capture_date": "2025-04-24"
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "09:30-11:45",
+   "language": null,
+   "raw": "Adoration: FRIDAY: 9:30-11:45 AM, followed by the DIVINE MERCY CHAPLET at 11:45 AM",
+   "source_url": "https://sttim.net/",
+   "fetched_at": "2025-04-24T11:57:36+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-24: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2025-04-24",
+   "archive_url": "https://web.archive.org/web/20250424115736/https://sttim.net/",
+   "capture_date": "2025-04-24"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:30-16:00",
+   "language": null,
+   "raw": "Confession: EVERY SATURDAY: 3:30-4:00 PM",
+   "source_url": "https://sttim.net/",
+   "fetched_at": "2025-04-24T11:57:36+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-24: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2025-04-24",
+   "archive_url": "https://web.archive.org/web/20250424115736/https://sttim.net/",
+   "capture_date": "2025-04-24"
+  }
+ ],
  "source_url": "http://sttim.net/",
- "fetched_at": "2026-11-01T05:09:52+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-01T15:37:31+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": true
+   },
+   "score": "high"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 15
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "text:not_a_service": 1,
+  "text:dated_line": 1
+ },
+ "groups_dropped": {
+  "noise": 4,
+  "unmatched": 8,
+  "label_not_group": 1,
+  "sentence": 2,
+  "sacrament_prep": 3
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(781) 769-2522",
+  "address": "650 Nichols Street, Norwood, MA 02062",
+  "source_url": "https://www.sttim.net/contactinfo",
+  "sources": {
+   "phone": "https://www.sttim.net/contactinfo",
+   "address": "https://sttim.net/"
+  },
+  "fetched_at": "2025-04-21T18:33:50+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2025-04-24",
+  "capture_age_days": 556,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://sttim.net/",
+    "capture": "2025-04-24",
+    "archive_url": "https://web.archive.org/web/20250424115736/https://sttim.net/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://www.sttim.net/massinfo",
+    "capture": "2025-04-21",
+    "archive_url": "https://web.archive.org/web/20250421174443/https://www.sttim.net/massinfo"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://www.sttim.net/sacraments",
+    "capture": "2025-04-21",
+    "archive_url": "https://web.archive.org/web/20250421165253/https://www.sttim.net/sacraments"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://www.sttim.net/faith-formation",
+    "capture": "2025-04-21",
+    "archive_url": "https://web.archive.org/web/20250421184230/https://www.sttim.net/faith-formation"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://www.sttim.net/faith-formation-calendar-embedded",
+    "capture": "2025-04-21",
+    "archive_url": "https://web.archive.org/web/20250421173848/https://www.sttim.net/faith-formation-calendar-embedded"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://www.sttim.net/book-group",
+    "capture": "2025-04-21",
+    "archive_url": "https://web.archive.org/web/20250421174005/https://www.sttim.net/book-group"
+   },
+   {
+    "kind": "bulletin",
+    "original": "https://www.sttim.net/bulletins",
+    "capture": "2025-04-21",
+    "archive_url": "https://web.archive.org/web/20250421173132/https://www.sttim.net/bulletins"
+   },
+   {
+    "kind": "contact",
+    "original": "https://www.sttim.net/contactinfo",
+    "capture": "2025-04-21",
+    "archive_url": "https://web.archive.org/web/20250421183350/https://www.sttim.net/contactinfo"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }
