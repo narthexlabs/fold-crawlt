@@ -21,32 +21,379 @@
   "Storrs"
  ],
  "home_url": "http://stmary-stthomas.community/",
- "final_url": "https://stmary-stthomas.community/",
- "crawl_status": "conn_error",
+ "final_url": "https://www.stmary-stthomas.community/",
+ "crawl_status": "ok",
  "crawl_env": "sandbox",
- "robots_note": "conn_error",
+ "robots_note": "ok",
  "pages": [
   {
    "category": "home",
-   "url": "https://stmary-stthomas.community/",
-   "status": null,
-   "class": "conn_error"
+   "url": "https://www.stmary-stthomas.community/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.stmary-stthomas.community/mass-schedule",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.stmary-stthomas.community/sacraments",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.stmary-stthomas.community/campus-ministry",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://www.stmary-stthomas.community/bulletins",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.stmary-stthomas.community/parish-news",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.stmary-stthomas.community/copy-of-religious-education-calendar",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://www.stmary-stthomas.community/contact-info",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "duda",
+  "evidence": [
+   "irp.cdn-website"
+  ]
  },
- "template": "none",
+ "template": "generic-html:duda",
  "groups": [],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "instagram": [
+   "https://www.instagram.com/catholichuskies/"
+  ],
+  "tiktok": [
+   "https://www.tiktok.com/@catholichuskies"
+  ],
+  "livestream": [
+   {
+    "url": "https://vimeo.com/user109943971?embedded=true&source=owner_name&owner=109943971",
+    "label": "WATCH LIVE",
+    "platform": "vimeo.com",
+    "kind": "link"
+   }
+  ]
+ },
+ "bulletin": {
+  "url": "https://www.stmary-stthomas.community/bulletins",
+  "date": null,
+  "kind": "page",
+  "text": "Bulletins",
+  "source_url": "https://www.stmary-stthomas.community/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "16:00",
+   "language": null,
+   "raw": "[Saint Mary Church] Vigil: 4:00 pm",
+   "source_url": "https://www.stmary-stthomas.community/mass-schedule",
+   "fetched_at": "2026-11-01T17:27:37+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "location": "Saint Mary Church"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:30",
+   "language": null,
+   "raw": "[Saint Mary Church] Weekend Masses:: Sunday: 10:30 am",
+   "source_url": "https://www.stmary-stthomas.community/mass-schedule",
+   "fetched_at": "2026-11-01T17:27:37+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "location": "Saint Mary Church"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "18:00",
+   "language": null,
+   "raw": "[Saint Mary Church] Week Day Mass:: Tuesday: 6:00 pm",
+   "source_url": "https://www.stmary-stthomas.community/mass-schedule",
+   "fetched_at": "2026-11-01T17:27:37+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "location": "Saint Mary Church"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:00",
+   "language": null,
+   "raw": "[Saint Mary Church] Reconciliation:: 3:00 pm",
+   "source_url": "https://www.stmary-stthomas.community/mass-schedule",
+   "fetched_at": "2026-11-01T17:27:37+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "location": "Saint Mary Church"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:30",
+   "language": null,
+   "raw": "[Saint Thomas Aquinas Church] Weekend Masses:: Sunday: 8:30 am, 12:30 pm*, 7:00 pm*",
+   "source_url": "https://www.stmary-stthomas.community/mass-schedule",
+   "fetched_at": "2026-11-01T17:27:37+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "location": "Saint Thomas Aquinas Church"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "12:30",
+   "language": null,
+   "raw": "[Saint Thomas Aquinas Church] Weekend Masses:: Sunday: 8:30 am, 12:30 pm*, 7:00 pm*",
+   "source_url": "https://www.stmary-stthomas.community/mass-schedule",
+   "fetched_at": "2026-11-01T17:27:37+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "location": "Saint Thomas Aquinas Church"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "19:00",
+   "language": null,
+   "raw": "[Saint Thomas Aquinas Church] Weekend Masses:: Sunday: 8:30 am, 12:30 pm*, 7:00 pm*",
+   "source_url": "https://www.stmary-stthomas.community/mass-schedule",
+   "fetched_at": "2026-11-01T17:27:37+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "location": "Saint Thomas Aquinas Church"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "12:30",
+   "language": null,
+   "raw": "[Saint Thomas Aquinas Church] Week Day Masses:: Monday - Friday: 12:30 pm*",
+   "source_url": "https://www.stmary-stthomas.community/mass-schedule",
+   "fetched_at": "2026-11-01T17:27:37+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday - Friday",
+   "location": "Saint Thomas Aquinas Church"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "12:30",
+   "language": null,
+   "raw": "[Saint Thomas Aquinas Church] Week Day Masses:: Monday - Friday: 12:30 pm*",
+   "source_url": "https://www.stmary-stthomas.community/mass-schedule",
+   "fetched_at": "2026-11-01T17:27:37+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday - Friday",
+   "location": "Saint Thomas Aquinas Church",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "12:30",
+   "language": null,
+   "raw": "[Saint Thomas Aquinas Church] Week Day Masses:: Monday - Friday: 12:30 pm*",
+   "source_url": "https://www.stmary-stthomas.community/mass-schedule",
+   "fetched_at": "2026-11-01T17:27:37+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday - Friday",
+   "location": "Saint Thomas Aquinas Church",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "12:30",
+   "language": null,
+   "raw": "[Saint Thomas Aquinas Church] Week Day Masses:: Monday - Friday: 12:30 pm*",
+   "source_url": "https://www.stmary-stthomas.community/mass-schedule",
+   "fetched_at": "2026-11-01T17:27:37+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday - Friday",
+   "location": "Saint Thomas Aquinas Church",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "12:30",
+   "language": null,
+   "raw": "[Saint Thomas Aquinas Church] Week Day Masses:: Monday - Friday: 12:30 pm*",
+   "source_url": "https://www.stmary-stthomas.community/mass-schedule",
+   "fetched_at": "2026-11-01T17:27:37+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday - Friday",
+   "location": "Saint Thomas Aquinas Church",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "17:00",
+   "language": null,
+   "raw": "[Saint Thomas Aquinas Church] Week Day Masses:: Wednesday: 5:00 pm*",
+   "source_url": "https://www.stmary-stthomas.community/mass-schedule",
+   "fetched_at": "2026-11-01T17:27:37+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "location": "Saint Thomas Aquinas Church"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "20:00",
+   "language": null,
+   "raw": "[Saint Thomas Aquinas Church] Week Day Masses:: Thursday: 8:00 pm* (after holy hour)",
+   "source_url": "https://www.stmary-stthomas.community/mass-schedule",
+   "fetched_at": "2026-11-01T17:27:37+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "location": "Saint Thomas Aquinas Church"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "08:30",
+   "language": null,
+   "raw": "[Saint Thomas Aquinas Church] Week Day Masses:: Saturday: 8:30 am",
+   "source_url": "https://www.stmary-stthomas.community/mass-schedule",
+   "fetched_at": "2026-11-01T17:27:37+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "location": "Saint Thomas Aquinas Church"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "[Saint Thomas Aquinas Church] Following each daily Mass*: Sunday: 8:00 am",
+   "source_url": "https://www.stmary-stthomas.community/mass-schedule",
+   "fetched_at": "2026-11-01T17:27:37+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "location": "Saint Thomas Aquinas Church"
+  }
+ ],
  "source_url": "http://stmary-stthomas.community/",
- "fetched_at": "2026-11-01T07:27:51+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-01T17:27:45+00:00",
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": true,
+  "trusted_candidate": false,
+  "generic_rows": 36
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "skipped_section": 1
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(860) 429-6436",
+  "address": "1600 Main Street, Coventry, Ct 06238",
+  "source_url": "https://www.stmary-stthomas.community/contact-info",
+  "sources": {
+   "phone": "https://www.stmary-stthomas.community/contact-info",
+   "address": "https://www.stmary-stthomas.community/contact-info"
+  },
+  "fetched_at": "2026-11-01T17:27:45+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
  }
