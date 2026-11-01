@@ -2,25 +2,27 @@
  "domain": "stlukeoc.com",
  "diocese": "diocese-of-wilmington",
  "matched_church_ids": [
-  "diocese-of-wilmington:St. Andrew (seasonal mission of St. Luke – open May 23 – Sept. 6)",
+  "diocese-of-wilmington:St. Andrew",
   "diocese-of-wilmington:St. Luke"
  ],
  "matched": {
   "directory": [
-   "diocese-of-wilmington:St. Andrew (seasonal mission of St. Luke – open May 23 – Sept. 6)",
+   "diocese-of-wilmington:St. Andrew",
    "diocese-of-wilmington:St. Luke"
   ],
   "discovermass": []
  },
  "names": [
-  "St. Andrew (seasonal mission of St. Luke – open May 23 – Sept. 6)",
+  "St. Andrew",
   "St. Luke"
  ],
- "cities": [],
+ "cities": [
+  "Ocean City"
+ ],
  "home_url": "https://www.stlukeoc.com/",
  "final_url": "https://www.stlukeoc.com/",
  "crawl_status": "ok",
- "crawl_env": "sandbox",
+ "crawl_env": "runner-rendered",
  "robots_note": "ok",
  "pages": [
   {
@@ -38,8 +40,8 @@
   {
    "category": "mass_times",
    "url": "https://www.stlukeoc.com/reconciliation",
-   "status": null,
-   "class": "timeout"
+   "status": 200,
+   "class": "ok"
   },
   {
    "category": "ministries",
@@ -79,7 +81,188 @@
   ]
  },
  "template": "generic-html:duda",
- "groups": [],
+ "groups": [
+  {
+   "id": "stlukeoc.com:rosary",
+   "name": "Rosary",
+   "category": "prayer_devotion",
+   "category_label": "Prayer & devotion",
+   "subcategory": "rosary",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": "Mondays, 8:30am",
+   "description": null,
+   "contact_url": "https://www.stlukeoc.com/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stlukeoc.com/other-devotions",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:48:14+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "stlukeoc.com:rosary|call+conference",
+   "name": "Rosary Conference Call",
+   "category": "prayer_devotion",
+   "category_label": "Prayer & devotion",
+   "subcategory": "rosary",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.stlukeoc.com/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stlukeoc.com/other-devotions",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:48:14+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "stlukeoc.com:bible_study",
+   "name": "Bible Study",
+   "category": "scripture_study",
+   "category_label": "Scripture & study",
+   "subcategory": "bible_study",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.stlukeoc.com/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stlukeoc.com/other-devotions",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:48:14+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "stlukeoc.com:altar_society",
+   "name": "Altar Guild",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "altar_society_environment",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.stlukeoc.com/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stlukeoc.com/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:48:08+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "stlukeoc.com:servers",
+   "name": "Altar Servers",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "altar_servers",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.stlukeoc.com/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stlukeoc.com/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:48:08+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "stlukeoc.com:emhc",
+   "name": "Eucharistic Ministers",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "emhc",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.stlukeoc.com/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stlukeoc.com/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:48:08+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "stlukeoc.com:lectors",
+   "name": "Lectors",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "lectors",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.stlukeoc.com/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stlukeoc.com/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:48:08+00:00",
+   "confidence": "low"
+  },
+  {
+   "id": "stlukeoc.com:choir",
+   "name": "Music Ministry / Choir",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "choir_music",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.stlukeoc.com/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stlukeoc.com/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:48:08+00:00",
+   "confidence": "low"
+  },
+  {
+   "id": "stlukeoc.com:ushers",
+   "name": "Ushers & Greeters",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "ushers_greeters",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.stlukeoc.com/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stlukeoc.com/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:48:08+00:00",
+   "confidence": "low"
+  },
+  {
+   "id": "stlukeoc.com:kofc",
+   "name": "Knights of Columbus",
+   "category": "fraternal_orders",
+   "category_label": "Fraternal & orders",
+   "subcategory": "knights_of_columbus",
+   "audience": "men",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.stlukeoc.com/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stlukeoc.com/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:48:08+00:00",
+   "confidence": "medium"
+  }
+ ],
  "calendar_feeds": [
   {
    "feed_id": "stlukeoc.com:ics:f7416a43",
@@ -92,7 +275,7 @@
    "note": "Google Calendar public feed (website-builder widget)",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T03:37:08+00:00",
+    "fetched_at": "2026-11-01T17:53:43+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -116,18 +299,45 @@
  },
  "schedule_rows": [
   {
+   "kind": "confession",
+   "day": "Wednesday",
+   "time": "18:00-19:00",
+   "language": null,
+   "raw": "We offer the Sacrament of Confession at St. Luke’s on Wednesday evenings, 6pm-7pm, and Saturday mornings, 9:30am-10:30am.",
+   "source_url": "https://www.stlukeoc.com/reconciliation",
+   "fetched_at": "2026-11-01T17:48:11+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "09:30-10:30",
+   "language": null,
+   "raw": "We offer the Sacrament of Confession at St. Luke’s on Wednesday evenings, 6pm-7pm, and Saturday mornings, 9:30am-10:30am.",
+   "source_url": "https://www.stlukeoc.com/reconciliation",
+   "fetched_at": "2026-11-01T17:48:11+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict"
+  },
+  {
    "kind": "mass",
    "day": "Monday",
    "time": "09:00",
    "language": null,
    "raw": "[St. Luke] Mass Times:: 9:00am",
    "source_url": "https://www.stlukeoc.com/",
-   "fetched_at": "2026-11-01T02:15:33+00:00",
+   "fetched_at": "2026-11-01T17:48:08+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict",
-   "day_expanded_from": "Monday-Saturday"
+   "day_expanded_from": "Monday-Saturday",
+   "location": "St. Luke"
   },
   {
    "kind": "mass",
@@ -136,12 +346,13 @@
    "language": null,
    "raw": "[St. Luke] Mass Times:: 9:00am",
    "source_url": "https://www.stlukeoc.com/",
-   "fetched_at": "2026-11-01T02:15:33+00:00",
+   "fetched_at": "2026-11-01T17:48:08+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict",
-   "day_expanded_from": "Monday-Saturday"
+   "day_expanded_from": "Monday-Saturday",
+   "location": "St. Luke"
   },
   {
    "kind": "mass",
@@ -150,12 +361,13 @@
    "language": null,
    "raw": "[St. Luke] Mass Times:: 9:00am",
    "source_url": "https://www.stlukeoc.com/",
-   "fetched_at": "2026-11-01T02:15:33+00:00",
+   "fetched_at": "2026-11-01T17:48:08+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict",
-   "day_expanded_from": "Monday-Saturday"
+   "day_expanded_from": "Monday-Saturday",
+   "location": "St. Luke"
   },
   {
    "kind": "mass",
@@ -164,12 +376,13 @@
    "language": null,
    "raw": "[St. Luke] Mass Times:: 9:00am",
    "source_url": "https://www.stlukeoc.com/",
-   "fetched_at": "2026-11-01T02:15:33+00:00",
+   "fetched_at": "2026-11-01T17:48:08+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict",
-   "day_expanded_from": "Monday-Saturday"
+   "day_expanded_from": "Monday-Saturday",
+   "location": "St. Luke"
   },
   {
    "kind": "mass",
@@ -178,12 +391,13 @@
    "language": null,
    "raw": "[St. Luke] Mass Times:: 9:00am",
    "source_url": "https://www.stlukeoc.com/",
-   "fetched_at": "2026-11-01T02:15:33+00:00",
+   "fetched_at": "2026-11-01T17:48:08+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict",
-   "day_expanded_from": "Monday-Saturday"
+   "day_expanded_from": "Monday-Saturday",
+   "location": "St. Luke"
   },
   {
    "kind": "mass",
@@ -192,12 +406,13 @@
    "language": null,
    "raw": "[St. Luke] Mass Times:: 9:00am",
    "source_url": "https://www.stlukeoc.com/",
-   "fetched_at": "2026-11-01T02:15:33+00:00",
+   "fetched_at": "2026-11-01T17:48:08+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict",
-   "day_expanded_from": "Monday-Saturday"
+   "day_expanded_from": "Monday-Saturday",
+   "location": "St. Luke"
   },
   {
    "kind": "mass",
@@ -206,11 +421,12 @@
    "language": null,
    "raw": "[St. Luke] Mass Times:: 4:00pm & 5:30pm",
    "source_url": "https://www.stlukeoc.com/",
-   "fetched_at": "2026-11-01T02:15:33+00:00",
+   "fetched_at": "2026-11-01T17:48:08+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
-   "template": "generic_strict"
+   "template": "generic_strict",
+   "location": "St. Luke"
   },
   {
    "kind": "mass",
@@ -219,11 +435,12 @@
    "language": null,
    "raw": "[St. Luke] Mass Times:: 4:00pm & 5:30pm",
    "source_url": "https://www.stlukeoc.com/",
-   "fetched_at": "2026-11-01T02:15:33+00:00",
+   "fetched_at": "2026-11-01T17:48:08+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
-   "template": "generic_strict"
+   "template": "generic_strict",
+   "location": "St. Luke"
   },
   {
    "kind": "mass",
@@ -232,11 +449,12 @@
    "language": null,
    "raw": "[St. Luke] Mass Times:: 8:30am, 10:00am, 11:30am, & 5:00pm",
    "source_url": "https://www.stlukeoc.com/",
-   "fetched_at": "2026-11-01T02:15:33+00:00",
+   "fetched_at": "2026-11-01T17:48:08+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
-   "template": "generic_strict"
+   "template": "generic_strict",
+   "location": "St. Luke"
   },
   {
    "kind": "mass",
@@ -245,11 +463,12 @@
    "language": null,
    "raw": "[St. Luke] Mass Times:: 8:30am, 10:00am, 11:30am, & 5:00pm",
    "source_url": "https://www.stlukeoc.com/",
-   "fetched_at": "2026-11-01T02:15:33+00:00",
+   "fetched_at": "2026-11-01T17:48:08+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
-   "template": "generic_strict"
+   "template": "generic_strict",
+   "location": "St. Luke"
   },
   {
    "kind": "mass",
@@ -258,11 +477,12 @@
    "language": null,
    "raw": "[St. Luke] Mass Times:: 8:30am, 10:00am, 11:30am, & 5:00pm",
    "source_url": "https://www.stlukeoc.com/",
-   "fetched_at": "2026-11-01T02:15:33+00:00",
+   "fetched_at": "2026-11-01T17:48:08+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
-   "template": "generic_strict"
+   "template": "generic_strict",
+   "location": "St. Luke"
   },
   {
    "kind": "mass",
@@ -271,28 +491,44 @@
    "language": null,
    "raw": "[St. Luke] Mass Times:: 8:30am, 10:00am, 11:30am, & 5:00pm",
    "source_url": "https://www.stlukeoc.com/",
-   "fetched_at": "2026-11-01T02:15:33+00:00",
+   "fetched_at": "2026-11-01T17:48:08+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
-   "template": "generic_strict"
+   "template": "generic_strict",
+   "location": "St. Luke"
   },
   {
-   "kind": "confession",
-   "day": "Wednesday",
-   "time": "18:00-19:00",
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "13:00",
    "language": null,
-   "raw": "[St. Luke] Confessions:: Wednesday, 6:00pm-7:00pm",
+   "raw": "[St. Luke] WAIVED for St. Luke Parishioners attending Mass:: Sunday beginning at 1:00pm until Saturday at 3:00pm",
    "source_url": "https://www.stlukeoc.com/",
-   "fetched_at": "2026-11-01T02:15:33+00:00",
+   "fetched_at": "2026-11-01T17:48:08+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
-   "template": "generic_strict"
+   "template": "generic_strict",
+   "location": "St. Luke"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "15:00",
+   "language": null,
+   "raw": "[St. Luke] WAIVED for St. Luke Parishioners attending Mass:: Sunday beginning at 1:00pm until Saturday at 3:00pm",
+   "source_url": "https://www.stlukeoc.com/",
+   "fetched_at": "2026-11-01T17:48:08+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "location": "St. Luke"
   }
  ],
  "source_url": "https://www.stlukeoc.com/",
- "fetched_at": "2026-11-01T02:15:59+00:00",
+ "fetched_at": "2026-11-01T17:48:24+00:00",
  "schedule_template": {
   "template": "generic_strict",
   "version": "ca-sites/2",
@@ -309,18 +545,20 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
-  "generic_rows": 17
+  "generic_rows": 22
  },
+ "has_sunday": true,
  "schedule_dropped": {
-  "relative_time": 1
+  "relative_time": 2,
+  "range_not_a_mass": 2
  },
  "groups_dropped": {
   "unmatched": 1,
   "noise": 1
  },
  "event_counts": {
-  "window_start": "2026-10-31",
-  "window_end_exclusive": "2027-01-29",
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
@@ -328,7 +566,20 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "office_contact": {
+  "email": null,
+  "phone": "(410) 250-0300",
+  "address": "14401 Sinepuxent Avenue, Ocean City, MD 21842",
+  "source_url": "https://www.stlukeoc.com/contact-us",
+  "sources": {
+   "phone": "https://www.stlukeoc.com/contact-us",
+   "address": "https://www.stlukeoc.com/contact-us"
+  },
+  "fetched_at": "2026-11-01T17:48:24+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
- }
+ },
+ "fetch_mode": "rendered"
 }
