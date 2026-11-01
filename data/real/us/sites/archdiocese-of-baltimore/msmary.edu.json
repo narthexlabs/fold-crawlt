@@ -423,6 +423,28 @@
    "confidence": "medium",
    "template": "generic_strict",
    "kind_parsed": "confession"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:00",
+   "language": null,
+   "raw": "Sunday - 11 a.m., 7 p.m.",
+   "source_url": "https://msmary.edu/catholic-identity/masses-and-confession-schedule.html",
+   "fetched_at": "2026-11-01T18:51:51+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "19:00",
+   "language": null,
+   "raw": "Sunday - 11 a.m., 7 p.m.",
+   "source_url": "https://msmary.edu/catholic-identity/masses-and-confession-schedule.html",
+   "fetched_at": "2026-11-01T18:51:51+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
   }
  ],
  "source_url": "http://www.msmary.edu/",
@@ -445,8 +467,10 @@
   "trusted_candidate": false,
   "generic_rows": 11
  },
- "has_sunday": false,
- "schedule_partial": true,
+ "has_sunday": true,
+ "schedule_dropped": {
+  "weekend_rescue_added": 2
+ },
  "groups_dropped": {
   "unmatched": 3,
   "noise": 2,
