@@ -233,6 +233,28 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "godaddy"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:30",
+   "language": null,
+   "raw": "SUNDAY MASS 9:30AM (English Mass)",
+   "source_url": "https://stalfredtaylor.org/",
+   "fetched_at": "2026-11-01T22:15:35+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "12:30",
+   "language": null,
+   "raw": "SUNDAY MASS 12:30PM (Spanish Mass)",
+   "source_url": "https://stalfredtaylor.org/",
+   "fetched_at": "2026-11-01T22:15:35+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
   }
  ],
  "source_url": "https://stalfredtaylor.org/",
@@ -255,14 +277,14 @@
   "trusted_candidate": false,
   "generic_rows": 7
  },
- "has_sunday": false,
- "schedule_partial": true,
+ "has_sunday": true,
  "schedule_dropped": {
   "other_location": 1,
   "skipped_section": 1,
   "dated_line": 1,
   "dated_block": 1,
-  "not_a_service": 8
+  "not_a_service": 8,
+  "weekend_rescue_added": 2
  },
  "groups_dropped": {
   "unmatched": 1,
