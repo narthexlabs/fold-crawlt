@@ -1,0 +1,143 @@
+{
+ "domain": "duchesnecity.com",
+ "diocese": "unassigned-ut",
+ "matched_church_ids": [
+  "brave:UT|andrew|duchesne"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "brave:UT|andrew|duchesne"
+  ]
+ },
+ "names": [
+  "Saint Andrew Catholic Church"
+ ],
+ "cities": [
+  "Duchesne"
+ ],
+ "home_url": "https://www.duchesnecity.com/",
+ "final_url": "https://duchesnecityut.gov/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://duchesnecityut.gov/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://duchesnecityut.gov/administration/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://duchesnecityut.gov/recreation-2/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://duchesnecityut.gov/my-calendar/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://duchesnecityut.gov/events-calendar/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://duchesnecityut.gov/contact/",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-content"
+  ]
+ },
+ "template": "wordpress-rest+html",
+ "groups": [],
+ "calendar_feeds": [
+  {
+   "feed_id": "duchesnecity.com:tribe_rest:a0690b6f",
+   "type": "tribe_rest",
+   "platform": "The Events Calendar (WordPress)",
+   "url": "https://duchesnecityut.gov/wp-json/tribe/events/v1/events",
+   "page_url": "https://duchesnecityut.gov/",
+   "label": null,
+   "status": "active",
+   "note": "The Events Calendar (WordPress) REST API",
+   "last_fetch": {
+    "status": 200,
+    "fetched_at": "2026-11-01T20:30:54+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
+ "events": [],
+ "social": {},
+ "bulletin": null,
+ "schedule_rows": [],
+ "source_url": "https://www.duchesnecity.com/",
+ "fetched_at": "2026-11-01T20:25:17+00:00",
+ "redirected_off_host": "duchesnecityut.gov",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "has_sunday": false,
+ "groups_dropped": {
+  "unmatched": 1
+ },
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": "office@duchesnecity.com",
+  "phone": "(435) 738-2464",
+  "address": "500 E. Main Street, Duchesne, UT 84021",
+  "source_url": "https://duchesnecityut.gov/contact/",
+  "sources": {
+   "email": "https://duchesnecityut.gov/contact/",
+   "phone": "https://duchesnecityut.gov/contact/",
+   "address": "https://duchesnecityut.gov/contact/"
+  },
+  "fetched_at": "2026-11-01T20:25:16+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}
