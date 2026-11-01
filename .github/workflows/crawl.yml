@@ -47,7 +47,7 @@ jobs:
           - 'WI,MA,MD,ND,RI,WV'
           - 'NJ,MN,NE,CO,OK,AR,HI'
     concurrency:
-      group: crawl-sites-${{ matrix.states }}
+      group: crawl-sites-${{ strategy.job-index }}
       cancel-in-progress: false
     steps:
       - uses: actions/checkout@v4
@@ -56,8 +56,8 @@ jobs:
       - uses: actions/cache@v4
         with:
           path: data/raw/us/sites
-          key: raw-sites-${{ matrix.states }}-${{ github.run_id }}
-          restore-keys: raw-sites-${{ matrix.states }}-
+          key: raw-sites-${{ strategy.job-index }}-${{ github.run_id }}
+          restore-keys: raw-sites-${{ strategy.job-index }}-
       - name: Parish-website crawl chunk (128 hosts in parallel, one request at a time per host)
         env:
           WORKERS: '128'
