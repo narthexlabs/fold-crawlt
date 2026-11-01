@@ -29,7 +29,7 @@
  "home_url": "https://www.holycrossipswich.org/",
  "final_url": "https://www.holycrossipswich.org/",
  "crawl_status": "ok",
- "crawl_env": "sandbox",
+ "crawl_env": "runner-rendered",
  "robots_note": "not_found",
  "pages": [
   {
@@ -88,7 +88,44 @@
   ]
  },
  "template": "generic-html:google_sites",
- "groups": [],
+ "groups": [
+  {
+   "id": "holycrossipswich.org:altar_society",
+   "name": "Altar Society",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "altar_society_environment",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.holycrossipswich.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.holycrossipswich.org/parish-groups",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:46:47+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "holycrossipswich.org:kofc",
+   "name": "Knights of Columbus",
+   "category": "fraternal_orders",
+   "category_label": "Fraternal & orders",
+   "subcategory": "knights_of_columbus",
+   "audience": "men",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.holycrossipswich.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.holycrossipswich.org/parish-groups",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:46:47+00:00",
+   "confidence": "medium"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
  "social": {},
@@ -102,29 +139,17 @@
  "schedule_rows": [
   {
    "kind": "mass",
-   "day": "Saturday",
-   "time": "18:00",
-   "language": null,
-   "raw": "[St. Thomas the Apostle] Saint Thomas - Roscoe - NO Weekend Mass: Saturday - 6 PM - Our Lady of Perpetual Help - Leola",
-   "source_url": "https://www.holycrossipswich.org/mass-times-confession",
-   "fetched_at": "2026-11-01T02:15:13+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
-  {
-   "kind": "mass",
    "day": "Sunday",
    "time": "10:00",
    "language": null,
    "raw": "[Holy Cross] Saint Thomas - Roscoe - NO Weekend Mass: Sunday - 10 AM - Holy Cross - Ipswich",
    "source_url": "https://www.holycrossipswich.org/mass-times-confession",
-   "fetched_at": "2026-11-01T02:15:13+00:00",
+   "fetched_at": "2026-11-01T17:46:46+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
-   "template": "generic_strict"
+   "template": "generic_strict",
+   "location": "Holy Cross"
   },
   {
    "kind": "mass",
@@ -133,11 +158,12 @@
    "language": null,
    "raw": "[Holy Cross] Monday - Day of Rest - No Public Mass: Tuesday - 5:30 PM - Holy Cross - Ipswich",
    "source_url": "https://www.holycrossipswich.org/mass-times-confession",
-   "fetched_at": "2026-11-01T02:15:13+00:00",
+   "fetched_at": "2026-11-01T17:46:46+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
-   "template": "generic_strict"
+   "template": "generic_strict",
+   "location": "Holy Cross"
   },
   {
    "kind": "mass",
@@ -146,11 +172,12 @@
    "language": null,
    "raw": "[St. Thomas the Apostle] Monday - Day of Rest - No Public Mass: Thursday - 5:30 PM - St Thomas - Roscoe",
    "source_url": "https://www.holycrossipswich.org/mass-times-confession",
-   "fetched_at": "2026-11-01T02:15:13+00:00",
+   "fetched_at": "2026-11-01T17:46:46+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
-   "template": "generic_strict"
+   "template": "generic_strict",
+   "location": "St. Thomas the Apostle"
   },
   {
    "kind": "mass",
@@ -159,11 +186,12 @@
    "language": null,
    "raw": "[Holy Cross] Monday - Day of Rest - No Public Mass: Friday - 9 AM - Holy Cross - Ipswich",
    "source_url": "https://www.holycrossipswich.org/mass-times-confession",
-   "fetched_at": "2026-11-01T02:15:13+00:00",
+   "fetched_at": "2026-11-01T17:46:46+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
-   "template": "generic_strict"
+   "template": "generic_strict",
+   "location": "Holy Cross"
   },
   {
    "kind": "confession",
@@ -172,7 +200,7 @@
    "language": null,
    "raw": "Confessions: Ipswich: Tue. 5pm, Sunday 9:30am",
    "source_url": "https://www.holycrossipswich.org/mass-times-confession",
-   "fetched_at": "2026-11-01T02:15:13+00:00",
+   "fetched_at": "2026-11-01T17:46:46+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -185,7 +213,7 @@
    "language": null,
    "raw": "Confessions: Ipswich: Tue. 5pm, Sunday 9:30am",
    "source_url": "https://www.holycrossipswich.org/mass-times-confession",
-   "fetched_at": "2026-11-01T02:15:13+00:00",
+   "fetched_at": "2026-11-01T17:46:46+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -198,7 +226,7 @@
    "language": null,
    "raw": "Confessions: Roscoe: Thursday 5:00pm",
    "source_url": "https://www.holycrossipswich.org/mass-times-confession",
-   "fetched_at": "2026-11-01T02:15:13+00:00",
+   "fetched_at": "2026-11-01T17:46:46+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -211,7 +239,7 @@
    "language": null,
    "raw": "Confessions: Bowdle: Wednesday 8:30am",
    "source_url": "https://www.holycrossipswich.org/mass-times-confession",
-   "fetched_at": "2026-11-01T02:15:13+00:00",
+   "fetched_at": "2026-11-01T17:46:46+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -224,15 +252,59 @@
    "language": null,
    "raw": "Confessions: Leola: Saturday 5:30pm",
    "source_url": "https://www.holycrossipswich.org/mass-times-confession",
-   "fetched_at": "2026-11-01T02:15:13+00:00",
+   "fetched_at": "2026-11-01T17:46:46+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Our Lady of Perpetual Help, Leola - Sun. 8:00am",
+   "source_url": "https://www.holycrossipswich.org/",
+   "fetched_at": "2026-11-01T17:46:45+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": null,
+   "raw": "St. Joseph, Eureka - Sat. 5:00pm",
+   "source_url": "https://www.holycrossipswich.org/",
+   "fetched_at": "2026-11-01T17:46:45+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "16:00",
+   "language": null,
+   "raw": "St. Anthony, Selby - Sat. 4:00pm",
+   "source_url": "https://www.holycrossipswich.org/",
+   "fetched_at": "2026-11-01T17:46:45+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "18:00",
+   "language": null,
+   "raw": "St. Joseph, Mobridge - Sat. 6:00pm, Sun. 10:00am",
+   "source_url": "https://www.holycrossipswich.org/",
+   "fetched_at": "2026-11-01T17:46:45+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
   }
  ],
  "source_url": "https://www.holycrossipswich.org/",
- "fetched_at": "2026-11-01T02:15:19+00:00",
+ "fetched_at": "2026-11-01T17:46:59+00:00",
  "schedule_template": {
   "template": "generic_strict",
   "version": "ca-sites/2",
@@ -251,13 +323,16 @@
   "trusted_candidate": false,
   "generic_rows": 9
  },
+ "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 2
+  "other_location": 2,
+  "prose": 1,
+  "box_rows_added": 4
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-10-31",
-  "window_end_exclusive": "2027-01-29",
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
@@ -265,7 +340,20 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "office_contact": {
+  "email": null,
+  "phone": "(605) 971-4556",
+  "address": "20 6th Street, Ipswich, SD 57451",
+  "source_url": "https://www.holycrossipswich.org/contact-us",
+  "sources": {
+   "phone": "https://www.holycrossipswich.org/contact-us",
+   "address": "https://www.holycrossipswich.org/contact-us"
+  },
+  "fetched_at": "2026-11-01T17:46:59+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
- }
+ },
+ "fetch_mode": "rendered"
 }
