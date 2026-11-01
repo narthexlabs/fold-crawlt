@@ -13,11 +13,13 @@
  "names": [
   "St. Francis of Assisi Church"
  ],
- "cities": [],
+ "cities": [
+  "Cordova"
+ ],
  "home_url": "http://stfrancismemphis.org/",
  "final_url": "https://www.stfrancismemphis.org/",
  "crawl_status": "ok",
- "crawl_env": "sandbox",
+ "crawl_env": "runner-rendered",
  "robots_note": "ok",
  "pages": [
   {
@@ -58,7 +60,44 @@
   ]
  },
  "template": "generic-html:duda",
- "groups": [],
+ "groups": [
+  {
+   "id": "stfrancismemphis.org:youth_ministry",
+   "name": "Youth Group",
+   "category": "youth",
+   "category_label": "Youth",
+   "subcategory": "youth_ministry",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.stfrancismemphis.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stfrancismemphis.org/youth-groups",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:46:49+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "stfrancismemphis.org:filipino",
+   "name": "Filipino Community",
+   "category": "language_cultural",
+   "category_label": "Language & cultural communities",
+   "subcategory": "filipino",
+   "audience": "all",
+   "language": "vi",
+   "language_assumed": false,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.stfrancismemphis.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stfrancismemphis.org/youth-groups",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:46:49+00:00",
+   "confidence": "medium"
+  }
+ ],
  "calendar_feeds": [
   {
    "feed_id": "stfrancismemphis.org:ics:7129f355",
@@ -71,7 +110,7 @@
    "note": "Google Calendar public feed (website-builder widget)",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T01:25:02+00:00",
+    "fetched_at": "2026-11-01T17:52:50+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -117,7 +156,7 @@
    "language": null,
    "raw": "Mass Times: Mon - Fri: 8:15am & Noon",
    "source_url": "https://www.stfrancismemphis.org/mass-timesf511dda9",
-   "fetched_at": "2026-11-01T01:20:38+00:00",
+   "fetched_at": "2026-11-01T17:46:46+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -131,12 +170,14 @@
    "language": null,
    "raw": "Mass Times: Mon - Fri: 8:15am & Noon",
    "source_url": "https://www.stfrancismemphis.org/mass-timesf511dda9",
-   "fetched_at": "2026-11-01T01:20:38+00:00",
+   "fetched_at": "2026-11-01T17:46:46+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict",
-   "day_expanded_from": "Mon - Fri"
+   "day_expanded_from": "Mon - Fri",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
   },
   {
    "kind": "mass",
@@ -145,12 +186,14 @@
    "language": null,
    "raw": "Mass Times: Mon - Fri: 8:15am & Noon",
    "source_url": "https://www.stfrancismemphis.org/mass-timesf511dda9",
-   "fetched_at": "2026-11-01T01:20:38+00:00",
+   "fetched_at": "2026-11-01T17:46:46+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict",
-   "day_expanded_from": "Mon - Fri"
+   "day_expanded_from": "Mon - Fri",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
   },
   {
    "kind": "mass",
@@ -159,12 +202,14 @@
    "language": null,
    "raw": "Mass Times: Mon - Fri: 8:15am & Noon",
    "source_url": "https://www.stfrancismemphis.org/mass-timesf511dda9",
-   "fetched_at": "2026-11-01T01:20:38+00:00",
+   "fetched_at": "2026-11-01T17:46:46+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict",
-   "day_expanded_from": "Mon - Fri"
+   "day_expanded_from": "Mon - Fri",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
   },
   {
    "kind": "mass",
@@ -173,12 +218,14 @@
    "language": null,
    "raw": "Mass Times: Mon - Fri: 8:15am & Noon",
    "source_url": "https://www.stfrancismemphis.org/mass-timesf511dda9",
-   "fetched_at": "2026-11-01T01:20:38+00:00",
+   "fetched_at": "2026-11-01T17:46:46+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict",
-   "day_expanded_from": "Mon - Fri"
+   "day_expanded_from": "Mon - Fri",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
   },
   {
    "kind": "mass",
@@ -187,7 +234,7 @@
    "language": null,
    "raw": "Mass Times: Mon - Fri: 8:15am & Noon",
    "source_url": "https://www.stfrancismemphis.org/mass-timesf511dda9",
-   "fetched_at": "2026-11-01T01:20:38+00:00",
+   "fetched_at": "2026-11-01T17:46:46+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -201,12 +248,14 @@
    "language": null,
    "raw": "Mass Times: Mon - Fri: 8:15am & Noon",
    "source_url": "https://www.stfrancismemphis.org/mass-timesf511dda9",
-   "fetched_at": "2026-11-01T01:20:38+00:00",
+   "fetched_at": "2026-11-01T17:46:46+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict",
-   "day_expanded_from": "Mon - Fri"
+   "day_expanded_from": "Mon - Fri",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
   },
   {
    "kind": "mass",
@@ -215,12 +264,14 @@
    "language": null,
    "raw": "Mass Times: Mon - Fri: 8:15am & Noon",
    "source_url": "https://www.stfrancismemphis.org/mass-timesf511dda9",
-   "fetched_at": "2026-11-01T01:20:38+00:00",
+   "fetched_at": "2026-11-01T17:46:46+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict",
-   "day_expanded_from": "Mon - Fri"
+   "day_expanded_from": "Mon - Fri",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
   },
   {
    "kind": "mass",
@@ -229,12 +280,14 @@
    "language": null,
    "raw": "Mass Times: Mon - Fri: 8:15am & Noon",
    "source_url": "https://www.stfrancismemphis.org/mass-timesf511dda9",
-   "fetched_at": "2026-11-01T01:20:38+00:00",
+   "fetched_at": "2026-11-01T17:46:46+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict",
-   "day_expanded_from": "Mon - Fri"
+   "day_expanded_from": "Mon - Fri",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
   },
   {
    "kind": "mass",
@@ -243,12 +296,14 @@
    "language": null,
    "raw": "Mass Times: Mon - Fri: 8:15am & Noon",
    "source_url": "https://www.stfrancismemphis.org/mass-timesf511dda9",
-   "fetched_at": "2026-11-01T01:20:38+00:00",
+   "fetched_at": "2026-11-01T17:46:46+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict",
-   "day_expanded_from": "Mon - Fri"
+   "day_expanded_from": "Mon - Fri",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
   },
   {
    "kind": "mass",
@@ -257,7 +312,7 @@
    "language": null,
    "raw": "Mass Times: Sat: 8:15am & 4:00pm (Vigil)",
    "source_url": "https://www.stfrancismemphis.org/mass-timesf511dda9",
-   "fetched_at": "2026-11-01T01:20:38+00:00",
+   "fetched_at": "2026-11-01T17:46:46+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -270,7 +325,7 @@
    "language": null,
    "raw": "Sat: 8:15am & 4:00pm (Vigil)",
    "source_url": "https://www.stfrancismemphis.org/mass-timesf511dda9",
-   "fetched_at": "2026-11-01T01:20:38+00:00",
+   "fetched_at": "2026-11-01T17:46:46+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "high",
@@ -283,7 +338,7 @@
    "language": null,
    "raw": "Mass Times: Sun: 7:15am, 8:45am, 10:30am, 12:30pm (Spanish) & 5:00pm",
    "source_url": "https://www.stfrancismemphis.org/mass-timesf511dda9",
-   "fetched_at": "2026-11-01T01:20:38+00:00",
+   "fetched_at": "2026-11-01T17:46:46+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -296,7 +351,7 @@
    "language": null,
    "raw": "Mass Times: Sun: 7:15am, 8:45am, 10:30am, 12:30pm (Spanish) & 5:00pm",
    "source_url": "https://www.stfrancismemphis.org/mass-timesf511dda9",
-   "fetched_at": "2026-11-01T01:20:38+00:00",
+   "fetched_at": "2026-11-01T17:46:46+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -309,7 +364,7 @@
    "language": null,
    "raw": "Mass Times: Sun: 7:15am, 8:45am, 10:30am, 12:30pm (Spanish) & 5:00pm",
    "source_url": "https://www.stfrancismemphis.org/mass-timesf511dda9",
-   "fetched_at": "2026-11-01T01:20:38+00:00",
+   "fetched_at": "2026-11-01T17:46:46+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -322,7 +377,7 @@
    "language": "Spanish",
    "raw": "Mass Times: Sun: 7:15am, 8:45am, 10:30am, 12:30pm (Spanish) & 5:00pm",
    "source_url": "https://www.stfrancismemphis.org/mass-timesf511dda9",
-   "fetched_at": "2026-11-01T01:20:38+00:00",
+   "fetched_at": "2026-11-01T17:46:46+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -335,7 +390,7 @@
    "language": null,
    "raw": "Mass Times: Sun: 7:15am, 8:45am, 10:30am, 12:30pm (Spanish) & 5:00pm",
    "source_url": "https://www.stfrancismemphis.org/mass-timesf511dda9",
-   "fetched_at": "2026-11-01T01:20:38+00:00",
+   "fetched_at": "2026-11-01T17:46:46+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -348,7 +403,7 @@
    "language": null,
    "raw": "Confessions: 2:45PM-3:45 PM Saturdays",
    "source_url": "https://www.stfrancismemphis.org/mass-timesf511dda9",
-   "fetched_at": "2026-11-01T01:20:38+00:00",
+   "fetched_at": "2026-11-01T17:46:46+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -361,7 +416,7 @@
    "language": null,
    "raw": "Confessions: 11:30 - 12:15 PM Sundays",
    "source_url": "https://www.stfrancismemphis.org/mass-timesf511dda9",
-   "fetched_at": "2026-11-01T01:20:38+00:00",
+   "fetched_at": "2026-11-01T17:46:46+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -369,7 +424,7 @@
   }
  ],
  "source_url": "http://stfrancismemphis.org/",
- "fetched_at": "2026-11-01T01:20:42+00:00",
+ "fetched_at": "2026-11-01T17:46:51+00:00",
  "schedule_template": {
   "template": "generic_strict",
   "version": "ca-sites/2",
@@ -386,15 +441,16 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
-  "generic_rows": 39
+  "generic_rows": 38
  },
+ "has_sunday": true,
  "schedule_dropped": {
   "skipped_section": 4
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-10-31",
-  "window_end_exclusive": "2027-01-29",
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
@@ -402,7 +458,19 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "office_contact": {
+  "email": null,
+  "phone": null,
+  "address": "8151 Chimneyrock Blvd., Cordova, TN 38016",
+  "source_url": "https://www.stfrancismemphis.org/",
+  "sources": {
+   "address": "https://www.stfrancismemphis.org/"
+  },
+  "fetched_at": "2026-11-01T17:46:45+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
- }
+ },
+ "fetch_mode": "rendered"
 }
