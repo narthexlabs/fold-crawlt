@@ -85,7 +85,7 @@
    "feed_key": "6ce5bd89d3f6",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T22:17:12+00:00",
+    "fetched_at": "2026-11-01T23:41:07+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -107,7 +107,19 @@
   "text": "",
   "source_url": "https://www.stnicholasfontana.org/"
  },
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "17:00",
+   "language": null,
+   "raw": "SUNDAY 5:00 PM",
+   "source_url": "https://www.stnicholasfontana.org/",
+   "fetched_at": "2026-11-01T17:27:18+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  }
+ ],
  "source_url": "https://stnicholasfontana.org/",
  "fetched_at": "2026-11-01T17:27:24+00:00",
  "schedule_template": {
@@ -128,10 +140,11 @@
   "trusted_candidate": false,
   "generic_rows": 7
  },
- "has_sunday": false,
+ "has_sunday": true,
  "schedule_dropped": {
   "no_day": 4,
-  "not_a_service": 2
+  "not_a_service": 2,
+  "weekend_rescue_added": 1
  },
  "groups_dropped": {
   "noise": 1

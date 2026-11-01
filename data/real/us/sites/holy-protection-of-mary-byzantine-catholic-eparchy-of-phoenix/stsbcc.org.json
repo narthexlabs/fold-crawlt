@@ -97,7 +97,19 @@
   "text": "Calendar & Bulletins",
   "source_url": "https://www.stsbcc.org/"
  },
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "16:00",
+   "language": null,
+   "raw": "4:00 pm - Vesperal Divine Liturgy SUNDAY",
+   "source_url": "https://www.stsbcc.org/",
+   "fetched_at": "2026-11-01T22:15:22+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  }
+ ],
  "source_url": "http://www.stsbcc.org/",
  "fetched_at": "2026-11-01T22:15:28+00:00",
  "schedule_template": {
@@ -118,7 +130,10 @@
   "trusted_candidate": false,
   "generic_rows": 6
  },
- "has_sunday": false,
+ "has_sunday": true,
+ "schedule_dropped": {
+  "weekend_rescue_added": 1
+ },
  "groups_dropped": {},
  "event_counts": {
   "window_start": "2026-11-01",
