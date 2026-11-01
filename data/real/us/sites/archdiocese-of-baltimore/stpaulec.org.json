@@ -17,33 +17,624 @@
   "Ellicott City"
  ],
  "home_url": "https://www.stpaulec.org/",
- "final_url": "https://www.stpaulec.org/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "final_url": "https://stpaulec.org/",
+ "crawl_status": "wayback-2026-01-19",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
-   "url": "https://www.stpaulec.org/",
-   "status": 403,
-   "class": "challenge"
+   "url": "https://stpaulec.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.stpaulec.org/mass-times",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stpaulec.org/confession-times",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.stpaulec.org/parish-life-pillar",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.stpaulec.org/music-ministry",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.stpaulec.org/ministry-schedules",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://www.stpaulec.org/bulletin-request-form",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://stpaulec.org/parish-calendar",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://www.stpaulec.org/contact-us",
+   "status": null,
+   "class": "timeout"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "stpaulec.org:legion",
+   "name": "Legion of Mary",
+   "category": "prayer_devotion",
+   "category_label": "Prayer & devotion",
+   "subcategory": "legion_of_mary",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stpaulec.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stpaulec.org/parish-life-pillar",
+   "source_kind": "website",
+   "fetched_at": "2025-04-24T03:32:59+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-01-19"
+  },
+  {
+   "id": "stpaulec.org:young_adults",
+   "name": "Christ Life Young Adult Ministry",
+   "category": "young_adults",
+   "category_label": "Young adults",
+   "subcategory": "young_adult_group",
+   "audience": "young_adult",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stpaulec.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stpaulec.org/parish-life-pillar",
+   "source_kind": "website",
+   "fetched_at": "2025-04-24T03:32:59+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-01-19"
+  },
+  {
+   "id": "stpaulec.org:choir",
+   "name": "Music Ministry / Choir",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "choir_music",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stpaulec.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stpaulec.org/music-ministry",
+   "source_kind": "website",
+   "fetched_at": "2025-06-14T23:45:22+00:00",
+   "confidence": "low",
+   "source": "wayback-2026-01-19"
+  },
+  {
+   "id": "stpaulec.org:cda",
+   "name": "Catholic Daughters of the Americas",
+   "category": "fraternal_orders",
+   "category_label": "Fraternal & orders",
+   "subcategory": "catholic_daughters",
+   "audience": "women",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stpaulec.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stpaulec.org/parish-life-pillar",
+   "source_kind": "website",
+   "fetched_at": "2025-04-24T03:32:59+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-01-19"
+  },
+  {
+   "id": "stpaulec.org:other_pastoral_visitor_ministry",
+   "name": "Pastoral Visitor Ministry",
+   "category": "other",
+   "category_label": "Other",
+   "subcategory": "unclassified",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stpaulec.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stpaulec.org/parish-life-pillar",
+   "source_kind": "website",
+   "fetched_at": "2025-04-24T03:32:59+00:00",
+   "confidence": "low",
+   "source": "wayback-2026-01-19"
+  },
+  {
+   "id": "stpaulec.org:other_st_zelie_s_ministry",
+   "name": "St. Zelie's Ministry",
+   "category": "other",
+   "category_label": "Other",
+   "subcategory": "unclassified",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stpaulec.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stpaulec.org/parish-life-pillar",
+   "source_kind": "website",
+   "fetched_at": "2025-04-24T03:32:59+00:00",
+   "confidence": "low",
+   "source": "wayback-2026-01-19"
+  },
+  {
+   "id": "stpaulec.org:other_woman_s_club",
+   "name": "Woman's Club",
+   "category": "other",
+   "category_label": "Other",
+   "subcategory": "unclassified",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stpaulec.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stpaulec.org/parish-life-pillar",
+   "source_kind": "website",
+   "fetched_at": "2025-04-24T03:32:59+00:00",
+   "confidence": "low",
+   "source": "wayback-2026-01-19"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/stpaulec.org"
+  ],
+  "youtube": [
+   "https://www.youtube.com/channel/UCCv6Gee0iGjmn2xPE3xcjRQ"
+  ]
+ },
+ "bulletin": {
+  "url": "https://stpaulec.org/documents/2026/1/CB%20Janaury%2018th%20Ages%203.pdf",
+  "date": null,
+  "kind": "pdf",
+  "text": "January 18th Children's Bulletin Ages 3+",
+  "source_url": "https://stpaulec.org/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": "English",
+   "raw": "Saturday: 5:00 PM English",
+   "source_url": "https://stpaulec.org/",
+   "fetched_at": "2026-01-19T22:14:11+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-01-19: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-01-19",
+   "archive_url": "https://web.archive.org/web/20260119221411/https://stpaulec.org/",
+   "capture_date": "2026-01-19"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "07:30",
+   "language": "English",
+   "raw": "Sunday: 7:30 AM English",
+   "source_url": "https://stpaulec.org/",
+   "fetched_at": "2026-01-19T22:14:11+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-01-19: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-01-19",
+   "archive_url": "https://web.archive.org/web/20260119221411/https://stpaulec.org/",
+   "capture_date": "2026-01-19"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": "English",
+   "raw": "Sunday: 9:00 AM English",
+   "source_url": "https://stpaulec.org/",
+   "fetched_at": "2026-01-19T22:14:11+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-01-19: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-01-19",
+   "archive_url": "https://web.archive.org/web/20260119221411/https://stpaulec.org/",
+   "capture_date": "2026-01-19"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:00",
+   "language": "English",
+   "raw": "Sunday: 11:00 AM English Live Streamed",
+   "source_url": "https://stpaulec.org/",
+   "fetched_at": "2026-01-19T22:14:11+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-01-19: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-01-19",
+   "archive_url": "https://web.archive.org/web/20260119221411/https://stpaulec.org/",
+   "capture_date": "2026-01-19"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "08:00",
+   "language": "English",
+   "raw": "Monday - Saturday: 8:00 AM English St. Paul",
+   "source_url": "https://stpaulec.org/",
+   "fetched_at": "2026-01-19T22:14:11+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-01-19: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Monday - Saturday",
+   "source": "wayback-2026-01-19",
+   "archive_url": "https://web.archive.org/web/20260119221411/https://stpaulec.org/",
+   "capture_date": "2026-01-19"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "08:00",
+   "language": "English",
+   "raw": "Monday - Saturday: 8:00 AM English St. Paul",
+   "source_url": "https://stpaulec.org/",
+   "fetched_at": "2026-01-19T22:14:11+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-01-19: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Monday - Saturday",
+   "source": "wayback-2026-01-19",
+   "archive_url": "https://web.archive.org/web/20260119221411/https://stpaulec.org/",
+   "capture_date": "2026-01-19"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "08:00",
+   "language": "English",
+   "raw": "Monday - Saturday: 8:00 AM English St. Paul",
+   "source_url": "https://stpaulec.org/",
+   "fetched_at": "2026-01-19T22:14:11+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-01-19: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Monday - Saturday",
+   "source": "wayback-2026-01-19",
+   "archive_url": "https://web.archive.org/web/20260119221411/https://stpaulec.org/",
+   "capture_date": "2026-01-19"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "08:00",
+   "language": "English",
+   "raw": "Monday - Saturday: 8:00 AM English St. Paul",
+   "source_url": "https://stpaulec.org/",
+   "fetched_at": "2026-01-19T22:14:11+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-01-19: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Monday - Saturday",
+   "source": "wayback-2026-01-19",
+   "archive_url": "https://web.archive.org/web/20260119221411/https://stpaulec.org/",
+   "capture_date": "2026-01-19"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "08:00",
+   "language": "English",
+   "raw": "Monday - Saturday: 8:00 AM English St. Paul",
+   "source_url": "https://stpaulec.org/",
+   "fetched_at": "2026-01-19T22:14:11+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-01-19: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Monday - Saturday",
+   "source": "wayback-2026-01-19",
+   "archive_url": "https://web.archive.org/web/20260119221411/https://stpaulec.org/",
+   "capture_date": "2026-01-19"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "08:00",
+   "language": "English",
+   "raw": "Monday - Saturday: 8:00 AM English St. Paul",
+   "source_url": "https://stpaulec.org/",
+   "fetched_at": "2026-01-19T22:14:11+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-01-19: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Monday - Saturday",
+   "source": "wayback-2026-01-19",
+   "archive_url": "https://web.archive.org/web/20260119221411/https://stpaulec.org/",
+   "capture_date": "2026-01-19"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "06:30",
+   "language": "English",
+   "raw": "February 18: 6:30 AM English Mass with Distribution of Ashes",
+   "source_url": "https://stpaulec.org/",
+   "fetched_at": "2026-01-19T22:14:11+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-01-19: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "kind_parsed": "mass",
+   "source": "wayback-2026-01-19",
+   "archive_url": "https://web.archive.org/web/20260119221411/https://stpaulec.org/",
+   "capture_date": "2026-01-19"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "10:00",
+   "language": "English",
+   "raw": "February 18: 10:00 AM English Prayer Service with distribution of Ashes",
+   "source_url": "https://stpaulec.org/",
+   "fetched_at": "2026-01-19T22:14:11+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-01-19: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "kind_parsed": "mass",
+   "source": "wayback-2026-01-19",
+   "archive_url": "https://web.archive.org/web/20260119221411/https://stpaulec.org/",
+   "capture_date": "2026-01-19"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "12:00",
+   "language": "English",
+   "raw": "February 18: 12:00 PM English Mass with Distribution of Ashes",
+   "source_url": "https://stpaulec.org/",
+   "fetched_at": "2026-01-19T22:14:11+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-01-19: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "kind_parsed": "mass",
+   "source": "wayback-2026-01-19",
+   "archive_url": "https://web.archive.org/web/20260119221411/https://stpaulec.org/",
+   "capture_date": "2026-01-19"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "16:00",
+   "language": "English",
+   "raw": "February 18: 4:00 PM English Prayer Service Distribution of Ashes",
+   "source_url": "https://stpaulec.org/",
+   "fetched_at": "2026-01-19T22:14:11+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-01-19: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "kind_parsed": "mass",
+   "source": "wayback-2026-01-19",
+   "archive_url": "https://web.archive.org/web/20260119221411/https://stpaulec.org/",
+   "capture_date": "2026-01-19"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "19:00",
+   "language": "English",
+   "raw": "February 18: 7:00 PM English Mass with Distribution of Ashes",
+   "source_url": "https://stpaulec.org/",
+   "fetched_at": "2026-01-19T22:14:11+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-01-19: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "kind_parsed": "mass",
+   "source": "wayback-2026-01-19",
+   "archive_url": "https://web.archive.org/web/20260119221411/https://stpaulec.org/",
+   "capture_date": "2026-01-19"
+  },
+  {
+   "kind": "confession",
+   "day": "First Wednesday of the month",
+   "time": "19:00-20:30",
+   "language": null,
+   "raw": "Wednesday: 7:00 PM - 8:30 PM First Wednesday of the Month",
+   "source_url": "https://stpaulec.org/confession-times",
+   "fetched_at": "2025-10-14T23:23:43+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-01-19: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-01-19",
+   "archive_url": "https://web.archive.org/web/20251014232343/https://stpaulec.org/confession-times",
+   "capture_date": "2025-10-14"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:30-16:50",
+   "language": null,
+   "raw": "Saturday: 3:30 PM - 4:50 PM",
+   "source_url": "https://stpaulec.org/confession-times",
+   "fetched_at": "2025-10-14T23:23:43+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-01-19: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-01-19",
+   "archive_url": "https://web.archive.org/web/20251014232343/https://stpaulec.org/confession-times",
+   "capture_date": "2025-10-14"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "19:00-20:00",
+   "language": null,
+   "raw": "Wednesday: 7:00 PM - 8:00 PM at St. Paul (Benediction at 8:25) Due to the weather forecast for 2/5",
+   "source_url": "https://stpaulec.org/confession-times",
+   "fetched_at": "2025-10-14T23:23:43+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-01-19: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-01-19",
+   "archive_url": "https://web.archive.org/web/20251014232343/https://stpaulec.org/confession-times",
+   "capture_date": "2025-10-14"
+  }
+ ],
  "source_url": "https://www.stpaulec.org/",
- "fetched_at": "2026-11-01T02:04:26+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-01T11:41:34+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": true
+   },
+   "score": "high"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 7
+ },
+ "schedule_dropped": {
+  "other_location": 4,
+  "no_time": 1,
+  "text:skipped_section": 6,
+  "text:other_location": 5
+ },
+ "groups_dropped": {
+  "noise": 4
+ },
+ "office_contact": {
+  "email": "office@stpaulec.org",
+  "phone": "(410) 465-1670",
+  "address": null,
+  "source_url": "https://stpaulec.org/",
+  "sources": {
+   "email": "https://stpaulec.org/",
+   "phone": "https://stpaulec.org/"
+  },
+  "fetched_at": "2026-01-19T22:14:11+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2026-01-19",
+  "capture_age_days": 286,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://stpaulec.org/",
+    "capture": "2026-01-19",
+    "archive_url": "https://web.archive.org/web/20260119221411/https://stpaulec.org/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://www.stpaulec.org/mass-times",
+    "capture": "2025-06-14",
+    "archive_url": "https://web.archive.org/web/20250614235828/https://www.stpaulec.org/mass-times"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://stpaulec.org/confession-times",
+    "capture": "2025-10-14",
+    "archive_url": "https://web.archive.org/web/20251014232343/https://stpaulec.org/confession-times"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://www.stpaulec.org/parish-life-pillar",
+    "capture": "2025-04-24",
+    "archive_url": "https://web.archive.org/web/20250424033259/https://www.stpaulec.org/parish-life-pillar"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://www.stpaulec.org/music-ministry",
+    "capture": "2025-06-14",
+    "archive_url": "https://web.archive.org/web/20250614234522/https://www.stpaulec.org/music-ministry"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://www.stpaulec.org/ministry-schedules",
+    "capture": "2025-10-16",
+    "archive_url": "https://web.archive.org/web/20251016180438/https://www.stpaulec.org/ministry-schedules"
+   },
+   {
+    "kind": "bulletin",
+    "original": "https://www.stpaulec.org/bulletin-request-form",
+    "capture": "2025-02-10",
+    "archive_url": "https://web.archive.org/web/20250210133853/https://www.stpaulec.org/bulletin-request-form"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://stpaulec.org/parish-calendar",
+    "capture": "2025-10-14",
+    "archive_url": "https://web.archive.org/web/20251014222201/https://stpaulec.org/parish-calendar"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }
