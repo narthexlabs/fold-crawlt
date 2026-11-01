@@ -20,33 +20,323 @@
   "Baltimore"
  ],
  "home_url": "https://www.sfabalt.org/",
- "final_url": "https://www.sfabalt.org/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "final_url": "https://sfabalt.org/",
+ "crawl_status": "wayback-2025-05-13",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
-   "url": "https://www.sfabalt.org/",
-   "status": 403,
-   "class": "challenge"
+   "url": "https://sfabalt.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://sfabalt.org/daily-mass-schedule",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://sfabalt.org/mass-times",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://sfabalt.org/ministries",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.sfabalt.org/youth-group",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.sfabalt.org/liturgical-ministries",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://www.sfabalt.org/contact-us-1",
+   "status": null,
+   "class": "conn_error"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "sfabalt.org:children_ff",
+   "name": "Religious Education",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "children_faith_formation",
+   "audience": "families",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://sfabalt.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://sfabalt.org/",
+   "source_kind": "website",
+   "fetched_at": "2025-05-13T01:19:25+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-05-13"
+  },
+  {
+   "id": "sfabalt.org:youth_ministry",
+   "name": "Youth Group",
+   "category": "youth",
+   "category_label": "Youth",
+   "subcategory": "youth_ministry",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://sfabalt.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.sfabalt.org/youth-group",
+   "source_kind": "website",
+   "fetched_at": "2025-02-18T19:49:53+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-05-13"
+  },
+  {
+   "id": "sfabalt.org:justice",
+   "name": "Social Justice",
+   "category": "service_mercy",
+   "category_label": "Service & mercy",
+   "subcategory": "social_justice",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://sfabalt.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://sfabalt.org/",
+   "source_kind": "website",
+   "fetched_at": "2025-05-13T01:19:25+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-05-13"
+  },
+  {
+   "id": "sfabalt.org:other_sodality",
+   "name": "Sodality",
+   "category": "other",
+   "category_label": "Other",
+   "subcategory": "unclassified",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://sfabalt.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://sfabalt.org/",
+   "source_kind": "website",
+   "fetched_at": "2025-05-13T01:19:25+00:00",
+   "confidence": "low",
+   "source": "wayback-2025-05-13"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/sfachurchbaltimore"
+  ],
+  "flocknote": [
+   "https://sfabalt.flocknote.com"
+  ]
+ },
+ "bulletin": {
+  "url": "https://fataonline.com/bulletins/StFrancisAssisiBalto",
+  "date": null,
+  "kind": "page",
+  "text": "Bulletins",
+  "source_url": "https://sfabalt.org/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "08:00",
+   "language": "English",
+   "raw": "Monday: 8:00 AM English at St. Francis of Assisi",
+   "source_url": "https://sfabalt.org/mass-times",
+   "fetched_at": "2025-10-18T22:56:24+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-05-13: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-05-13",
+   "archive_url": "https://web.archive.org/web/20251018225624/https://sfabalt.org/mass-times",
+   "capture_date": "2025-10-18"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "08:00",
+   "language": "English",
+   "raw": "Tuesday: 8:00 AM English at St Francis of Assisi",
+   "source_url": "https://sfabalt.org/mass-times",
+   "fetched_at": "2025-10-18T22:56:24+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-05-13: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-05-13",
+   "archive_url": "https://web.archive.org/web/20251018225624/https://sfabalt.org/mass-times",
+   "capture_date": "2025-10-18"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "10:00",
+   "language": "English",
+   "raw": "Wednesday: 10:00 AM English at St. Francis of Assisi** (When School is in Session)",
+   "source_url": "https://sfabalt.org/mass-times",
+   "fetched_at": "2025-10-18T22:56:24+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-05-13: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-05-13",
+   "archive_url": "https://web.archive.org/web/20251018225624/https://sfabalt.org/mass-times",
+   "capture_date": "2025-10-18"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "08:00",
+   "language": "English",
+   "raw": "Thursday: 8:00 AM English at St. Francis of Assisi",
+   "source_url": "https://sfabalt.org/mass-times",
+   "fetched_at": "2025-10-18T22:56:24+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-05-13: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-05-13",
+   "archive_url": "https://web.archive.org/web/20251018225624/https://sfabalt.org/mass-times",
+   "capture_date": "2025-10-18"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "08:00",
+   "language": "English",
+   "raw": "Saturday: 8:00 AM English at St. Francis of Assisi",
+   "source_url": "https://sfabalt.org/mass-times",
+   "fetched_at": "2025-10-18T22:56:24+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-05-13: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-05-13",
+   "archive_url": "https://web.archive.org/web/20251018225624/https://sfabalt.org/mass-times",
+   "capture_date": "2025-10-18"
+  }
+ ],
  "source_url": "https://www.sfabalt.org/",
- "fetched_at": "2026-11-01T17:27:01+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-01T20:08:46+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": true
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "has_sunday": false,
+ "schedule_partial": true,
+ "schedule_dropped": {
+  "other_location": 5
+ },
+ "groups_dropped": {
+  "noise": 4
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(410) 235-5136",
+  "address": "3615 Harford Rd., Baltimore, MD 21218",
+  "source_url": "https://sfabalt.org/",
+  "sources": {
+   "phone": "https://sfabalt.org/",
+   "address": "https://sfabalt.org/"
+  },
+  "fetched_at": "2025-05-13T01:19:25+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2025-05-13",
+  "capture_age_days": 537,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://sfabalt.org/",
+    "capture": "2025-05-13",
+    "archive_url": "https://web.archive.org/web/20250513011925/https://sfabalt.org/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://sfabalt.org/daily-mass-schedule",
+    "capture": "2025-10-18",
+    "archive_url": "https://web.archive.org/web/20251018232826/https://sfabalt.org/daily-mass-schedule"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://sfabalt.org/mass-times",
+    "capture": "2025-10-18",
+    "archive_url": "https://web.archive.org/web/20251018225624/https://sfabalt.org/mass-times"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://sfabalt.org/ministries",
+    "capture": "2025-10-18",
+    "archive_url": "https://web.archive.org/web/20251018232857/https://sfabalt.org/ministries"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://www.sfabalt.org/youth-group",
+    "capture": "2025-02-18",
+    "archive_url": "https://web.archive.org/web/20250218194953/https://www.sfabalt.org/youth-group"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://www.sfabalt.org/liturgical-ministries",
+    "capture": "2025-04-18",
+    "archive_url": "https://web.archive.org/web/20250418185915/https://www.sfabalt.org/liturgical-ministries"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }
