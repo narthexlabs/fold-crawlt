@@ -1,0 +1,149 @@
+{
+ "domain": "st-mikes.com",
+ "diocese": "unassigned-pa",
+ "matched_church_ids": [
+  "brave:PA|michael archangel allentown|"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "brave:PA|michael archangel allentown|"
+  ]
+ },
+ "names": [
+  "St Michael The Archangel"
+ ],
+ "cities": [
+  "Allentown"
+ ],
+ "home_url": "https://st-mikes.com/",
+ "final_url": "https://st-mikes.com/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://st-mikes.com/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://st-mikes.com/admissions/schedule-your-tour/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://st-mikes.com/newsletter/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://st-mikes.com/calendar/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://st-mikes.com/events/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://st-mikes.com/contact-us/",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-content"
+  ]
+ },
+ "template": "wordpress-rest+html",
+ "groups": [],
+ "calendar_feeds": [
+  {
+   "feed_id": "st-mikes.com:ics:efb28622",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": null,
+   "page_url": "https://st-mikes.com/calendar/",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (embedded on page)",
+   "display_tz": "America/New_York",
+   "url_withheld": "calendar id is an e-mail address; not stored",
+   "feed_key": "efb286229ed1",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T20:31:34+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/stmikesbethlehemcoopersburg"
+  ],
+  "instagram": [
+   "https://www.instagram.com/stmikes_bethlehem/"
+  ]
+ },
+ "bulletin": null,
+ "schedule_rows": [],
+ "source_url": "https://st-mikes.com/",
+ "fetched_at": "2026-11-01T20:26:25+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "has_sunday": false,
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(610) 965-4441",
+  "address": "5040 St. Joseph Road, Coopersburg, PA 18036",
+  "source_url": "https://st-mikes.com/contact-us/",
+  "sources": {
+   "phone": "https://st-mikes.com/contact-us/",
+   "address": "https://st-mikes.com/contact-us/"
+  },
+  "fetched_at": "2026-11-01T20:26:15+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

@@ -1,0 +1,165 @@
+{
+ "domain": "olcbrookhaven.org",
+ "diocese": "unassigned-pa",
+ "matched_church_ids": [
+  "brave:PA|charity brookhaven|"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "brave:PA|charity brookhaven|"
+  ]
+ },
+ "names": [
+  "Our Lady Of Charity"
+ ],
+ "cities": [
+  "Brookhaven"
+ ],
+ "home_url": "https://olcbrookhaven.org/",
+ "final_url": "https://olcbrookhaven.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://olcbrookhaven.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://olcbrookhaven.org/liturgical-calendar/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://olcbrookhaven.org/sacraments/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://olcbrookhaven.org/devotions/",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-json"
+  ]
+ },
+ "template": "wordpress-rest+html",
+ "groups": [],
+ "calendar_feeds": [],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/profile.php?id=100064495849988"
+  ],
+  "flocknote": [
+   "https://ourladyofcharity.flocknote.com"
+  ]
+ },
+ "bulletin": {
+  "url": "http://www.jppc.net/onlinebulletins/104template.pdf",
+  "date": null,
+  "kind": "pdf",
+  "text": "Bulletin",
+  "source_url": "https://olcbrookhaven.org/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:15-15:45",
+   "language": null,
+   "raw": "Celebrate the Sacrament of Reconciliation at OLC Saturdays from 3:15pm-3:45pm",
+   "source_url": "https://olcbrookhaven.org/sacraments/",
+   "fetched_at": "2026-11-01T20:25:13+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "16:00",
+   "language": null,
+   "raw": "Saturday Vigil: 4:00 pm",
+   "source_url": "https://olcbrookhaven.org/",
+   "fetched_at": "2026-11-01T20:25:04+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Sunday: 9:00 am",
+   "source_url": "https://olcbrookhaven.org/",
+   "fetched_at": "2026-11-01T20:25:04+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  }
+ ],
+ "source_url": "https://olcbrookhaven.org/",
+ "fetched_at": "2026-11-01T20:25:17+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": true
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 6
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "skipped_section": 1,
+  "box_rows_added": 2
+ },
+ "groups_dropped": {
+  "noise": 2
+ },
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(610) 872-6192",
+  "address": "231 Upland Road Brookhaven, PA 19015",
+  "source_url": "https://olcbrookhaven.org/",
+  "sources": {
+   "phone": "https://olcbrookhaven.org/",
+   "address": "https://olcbrookhaven.org/"
+  },
+  "fetched_at": "2026-11-01T20:25:04+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}
