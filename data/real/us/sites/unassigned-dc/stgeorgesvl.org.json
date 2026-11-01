@@ -1,0 +1,180 @@
+{
+ "domain": "stgeorgesvl.org",
+ "diocese": "unassigned-dc",
+ "matched_church_ids": [
+  "brave:DC|george valley lee|"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "brave:DC|george valley lee|"
+  ]
+ },
+ "names": [
+  "St George Valley Lee"
+ ],
+ "cities": [],
+ "home_url": "https://www.stgeorgesvl.org/",
+ "final_url": "https://www.stgeorgesvl.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://www.stgeorgesvl.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.stgeorgesvl.org/worship-information",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.stgeorgesvl.org/sacraments",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.stgeorgesvl.org/formation",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "duda",
+  "evidence": [
+   "irp.cdn-website"
+  ]
+ },
+ "template": "generic-html:duda",
+ "groups": [],
+ "calendar_feeds": [],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/profile.php?id=61563022147693",
+   "https://www.facebook.com/AscensionFoodPantry"
+  ]
+ },
+ "bulletin": {
+  "url": "https://irp.cdn-website.com/2c146236/files/uploaded/Bulletin+Nov+1.pdf",
+  "date": null,
+  "kind": "pdf",
+  "text": "Open the Bulletin",
+  "source_url": "https://www.stgeorgesvl.org/worship-information"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "11:00",
+   "language": null,
+   "raw": "Mass: 11am healing prayers in the church are followed by a simple service of Holy Communion at",
+   "source_url": "https://www.stgeorgesvl.org/sacraments",
+   "fetched_at": "2026-11-01T09:05:14+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "11:30",
+   "language": null,
+   "raw": "Mass: 11:30am. A fellowship lunch follows in the parish hall.",
+   "source_url": "https://www.stgeorgesvl.org/sacraments",
+   "fetched_at": "2026-11-01T09:05:14+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Worship Sundays at 9am",
+   "source_url": "https://www.stgeorgesvl.org/",
+   "fetched_at": "2026-11-01T09:05:10+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "15:00",
+   "language": null,
+   "raw": "3:00pm Rev'd Laura's ordination at Ascension",
+   "source_url": "https://www.stgeorgesvl.org/",
+   "fetched_at": "2026-11-01T09:05:10+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  }
+ ],
+ "source_url": "https://www.stgeorgesvl.org/",
+ "fetched_at": "2026-11-01T09:05:16+00:00",
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": true,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "no_kind": 4,
+  "dated_line": 2,
+  "skipped_section": 3,
+  "dated_block": 1,
+  "not_a_service": 1,
+  "box_rows_added": 2
+ },
+ "groups_dropped": {
+  "unmatched": 2,
+  "noise": 2
+ },
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": "parishadmin@resurrectionparish.org",
+  "phone": "(301) 994-0585",
+  "address": "P.O. Box 30, Valley Lee, MD 20692",
+  "source_url": "https://www.stgeorgesvl.org/",
+  "sources": {
+   "email": "https://www.stgeorgesvl.org/",
+   "phone": "https://www.stgeorgesvl.org/",
+   "address": "https://www.stgeorgesvl.org/"
+  },
+  "fetched_at": "2026-11-01T09:05:10+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}
