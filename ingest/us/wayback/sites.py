@@ -18,7 +18,7 @@ from __future__ import annotations
 import argparse
 import gzip
 import hashlib
-import json
+import json, os, zlib
 import sys
 import time
 from datetime import datetime, timezone
@@ -35,13 +35,23 @@ import parse_site as ps  # noqa: E402
 
 SITES = ROOT / "data" / "real" / "us" / "sites"
 OUTW = ROOT / "data" / "real" / "us" / "wayback"
-STATE = OUTW / "sites_state.json"
+_SH = os.environ.get("WB_SHARD", "").replace("/", "of")
+STATE = OUTW / (f"sites_state.{_SH}.json" if _SH else "sites_state.json")   # per-shard state: concurrent runners never edit one file
 RAWW = ROOT / "data" / "raw" / "us" / "wayback" / "sites"
 FIRST = ("challenge", "blocked_403", "blocked_429")
 DEAD = ("dns", "not_found", "ssl_error", "conn_error", "http_4xx", "http_5xx", "timeout", "unreachable_via_proxy",
         "https_only")
 KEEP = {"domain", "diocese", "matched_church_ids", "matched", "names", "cities", "home_url", "source_url"}
 STATE_LOCK_KEYS = ("result", "capture_date", "groups", "bulletin", "schedule_rows", "pages_used", "checked_at")
+
+
+def _in_shard(key: str) -> bool:
+    """WB_SHARD="i/n" (env) splits the target list across n concurrent runners by a stable hash; unset = all."""
+    sh = os.environ.get("WB_SHARD", "")
+    if "/" not in sh:
+        return True
+    i, n = (int(x) for x in sh.split("/"))
+    return zlib.crc32(key.encode()) % n == i
 
 
 def now_iso() -> str:
@@ -123,6 +133,8 @@ def list_targets(only: set[str], retry: bool, state: dict) -> list[Path]:
             continue
         sid = f"{f.parent.name}/{f.stem}"
         if not only and not retry and sid in state:
+            continue
+        if not _in_shard(sid):
             continue
         if only:
             first.append(f)

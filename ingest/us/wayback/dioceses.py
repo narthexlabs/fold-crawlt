@@ -14,7 +14,7 @@ data/raw/us/wayback/dioceses/<slug>/ (gitignored caches).
 from __future__ import annotations
 
 import argparse
-import json
+import json, os, zlib
 import sys
 import time
 from pathlib import Path
@@ -31,11 +31,21 @@ import runner as RN  # noqa: E402
 
 WANT = ("challenge", "dead", "blocked", "html_unknown")
 OUTW = ROOT / "data" / "real" / "us" / "wayback"
-STATE = OUTW / "dioceses_state.json"
+_SH = os.environ.get("WB_SHARD", "").replace("/", "of")
+STATE = OUTW / (f"dioceses_state.{_SH}.json" if _SH else "dioceses_state.json")   # per-shard state: concurrent runners never edit one file
 RAWW = ROOT / "data" / "raw" / "us" / "wayback" / "dioceses"
 DL.RAW = RAWW                                 # dirlib.Fetcher caches here, not beside the live-read caches
 SCRIPT = "ingest/us/wayback/dioceses.py"
 RX = r"(?i).*(parish|church|director|locat|find|mass|deanery|chancery|ministr|iglesia).*"
+
+
+def _in_shard(key: str) -> bool:
+    """WB_SHARD="i/n" (env) splits the target list across n concurrent runners by a stable hash; unset = all."""
+    sh = os.environ.get("WB_SHARD", "")
+    if "/" not in sh:
+        return True
+    i, n = (int(x) for x in sh.split("/"))
+    return zlib.crc32(key.encode()) % n == i
 
 
 class WbPolite:
@@ -134,6 +144,8 @@ def targets(only: set[str], retry: bool):
     order = {"challenge": 0, "html_unknown": 1, "blocked": 2, "dead": 3}
     for slug, p in sorted(st.items(), key=lambda kv: (order.get(kv[1].get("status"), 9), kv[0])):
         if (only and slug not in only) or (not only and p.get("status") not in WANT):
+            continue
+        if not _in_shard(slug):
             continue
         ex = DL.existing(slug)
         if ex and not str(ex.get("source_label", "")).startswith("wayback-"):

@@ -52,8 +52,11 @@ def report() -> None:
     import json
     from collections import Counter
     W = ROOT / "data" / "real" / "us" / "wayback"
-    ds = json.loads((W / "dioceses_state.json").read_text()) if (W / "dioceses_state.json").exists() else {}
-    ss = json.loads((W / "sites_state.json").read_text()) if (W / "sites_state.json").exists() else {}
+    ds, ss = {}, {}
+    for f in sorted(W.glob("dioceses_state*.json")):
+        ds.update(json.loads(f.read_text()))
+    for f in sorted(W.glob("sites_state*.json")):
+        ss.update(json.loads(f.read_text()))
     dw = [v for v in ds.values() if v.get("result") == "written"]
     sw = [v for v in ss.values() if v.get("result") == "written"]
     lines = [f"**Counts ({datetime.now(timezone.utc):%Y-%m-%d}).**",
