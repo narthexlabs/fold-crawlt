@@ -605,12 +605,17 @@
    ]
   },
   {
-   "started_at": "2026-11-01T22:15:19+00:00",
-   "ended_at": "2026-11-01T22:15:44+00:00",
-   "result": "fetched {'dns': 12, 'done': 27, 'ssl_error': 5, 'ok': 10, 'halted_egress': 0}; parsed 2 dioceses",
+   "started_at": "2026-11-01T22:15:17+00:00",
+   "ended_at": "2026-11-01T22:16:11+00:00",
+   "result": "fetched {'ok': 26, 'done': 48, 'conn_error': 1, 'dns': 9, 'challenge': 2, 'ssl_error': 4, 'parked': 1, 'not_found': 1, 'timeout': 4, 'halted_egress': 0}; parsed 7 dioceses",
    "touched": [
-    "diocese-of-fall-river",
-    "eparchy-of-newton"
+    "archdiocese-of-chicago",
+    "diocese-of-springfield-in-illinois",
+    "archdiocese-of-atlanta",
+    "diocese-of-joliet",
+    "diocese-of-peoria",
+    "diocese-of-rockford",
+    "unassigned-il"
    ]
   }
  ],
@@ -653,11 +658,11 @@
   },
   "archdiocese-of-chicago": {
    "sites_in_list": 479,
-   "records": 480,
+   "records": 483,
    "finished": true,
-   "ok": 246,
+   "ok": 248,
    "by_status": {
-    "ok": 246,
+    "ok": 248,
     "dns": 75,
     "wayback": 55,
     "ssl_error": 30,
@@ -665,10 +670,10 @@
     "timeout": 11,
     "parked": 10,
     "robots_disallowed": 8,
+    "not_found": 7,
     "unreachable_via_proxy": 7,
     "http_5xx": 6,
     "conn_error": 6,
-    "not_found": 6,
     "social_only": 3,
     "error:TooManyRedirects": 1
    }
@@ -1282,14 +1287,14 @@
   },
   "diocese-of-springfield-in-illinois": {
    "sites_in_list": 138,
-   "records": 122,
-   "finished": false,
-   "ok": 76,
+   "records": 138,
+   "finished": true,
+   "ok": 87,
    "by_status": {
-    "ok": 76,
-    "challenge": 19,
-    "dns": 12,
-    "ssl_error": 6,
+    "ok": 87,
+    "challenge": 21,
+    "dns": 14,
+    "ssl_error": 7,
     "timeout": 3,
     "not_found": 2,
     "conn_error": 1,
@@ -1335,11 +1340,11 @@
   },
   "archdiocese-of-atlanta": {
    "sites_in_list": 133,
-   "records": 134,
+   "records": 135,
    "finished": true,
-   "ok": 93,
+   "ok": 94,
    "by_status": {
-    "ok": 93,
+    "ok": 94,
     "wayback": 13,
     "dns": 11,
     "ssl_error": 6,
@@ -1455,14 +1460,18 @@
   },
   "diocese-of-joliet": {
    "sites_in_list": 121,
-   "records": 95,
-   "finished": false,
-   "ok": 70,
+   "records": 121,
+   "finished": true,
+   "ok": 80,
    "by_status": {
-    "ok": 70,
+    "ok": 80,
     "challenge": 22,
-    "timeout": 2,
-    "http_5xx": 1
+    "dns": 6,
+    "timeout": 6,
+    "ssl_error": 4,
+    "http_5xx": 1,
+    "parked": 1,
+    "conn_error": 1
    }
   },
   "diocese-of-charlotte": {
@@ -1581,11 +1590,11 @@
   },
   "diocese-of-peoria": {
    "sites_in_list": 106,
-   "records": 106,
+   "records": 109,
    "finished": true,
-   "ok": 88,
+   "ok": 91,
    "by_status": {
-    "ok": 88,
+    "ok": 91,
     "challenge": 8,
     "dns": 7,
     "ssl_error": 2,
@@ -1648,13 +1657,13 @@
   },
   "diocese-of-rockford": {
    "sites_in_list": 99,
-   "records": 98,
-   "finished": false,
+   "records": 99,
+   "finished": true,
    "ok": 45,
    "by_status": {
     "ok": 45,
     "challenge": 33,
-    "dns": 11,
+    "dns": 12,
     "ssl_error": 3,
     "timeout": 2,
     "http_5xx": 1,
@@ -2056,27 +2065,26 @@
   },
   "diocese-of-fall-river": {
    "sites_in_list": 82,
-   "records": 83,
-   "finished": true,
-   "ok": 43,
+   "records": 56,
+   "finished": false,
+   "ok": 33,
    "by_status": {
-    "ok": 43,
-    "challenge": 16,
-    "dns": 11,
-    "ssl_error": 9,
+    "ok": 33,
+    "challenge": 15,
+    "ssl_error": 4,
     "not_found": 2,
     "unreachable_via_proxy": 2
    }
   },
   "unassigned-il": {
    "sites_in_list": 82,
-   "records": 137,
+   "records": 143,
    "finished": true,
-   "ok": 96,
+   "ok": 100,
    "by_status": {
-    "ok": 96,
+    "ok": 100,
     "challenge": 17,
-    "dns": 8,
+    "dns": 10,
     "ssl_error": 6,
     "conn_error": 3,
     "not_found": 2,
@@ -3200,7 +3208,7 @@
   },
   "eparchy-of-newton": {
    "sites_in_list": 36,
-   "records": 39,
+   "records": 38,
    "finished": true,
    "ok": 26,
    "by_status": {
@@ -4058,9 +4066,9 @@
  },
  "totals": {
   "sites_in_list": 19262,
-  "records": 17735,
-  "ok": 9431
+  "records": 17763,
+  "ok": 9452
  },
  "us_parish_pages_discovermass": 20147,
- "updated_at": "2026-11-01T22:15:51+00:00"
+ "updated_at": "2026-11-01T22:16:12+00:00"
 }
