@@ -44,7 +44,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | archdiocese-of-newark | 199 | 202 | 138 | 46 | 1 | 17 | 0 |
 | unassigned-mo | 195 | 220 | 150 | 25 | 3 | 42 | 0 |
 | archdiocese-of-st-paul-and-minneapolis | 183 | 183 | 112 | 55 | 0 | 16 | 0 |
-| unassigned-ne | 183 | 222 | 157 | 20 | 8 | 37 | 0 |
+| unassigned-ne | 183 | 222 | 161 | 20 | 0 | 41 | 0 |
 | archdiocese-of-baltimore | 182 | 182 | 83 | 5 | 1 | 53 | 0 |
 | archdiocese-of-detroit | 181 | 181 | 73 | 23 | 0 | 67 | 0 |
 | archdiocese-of-washington | 175 | 176 | 35 | 132 | 0 | 9 | 0 |
