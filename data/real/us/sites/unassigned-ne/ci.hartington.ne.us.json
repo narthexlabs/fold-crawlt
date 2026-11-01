@@ -1,0 +1,130 @@
+{
+ "domain": "ci.hartington.ne.us",
+ "diocese": "unassigned-ne",
+ "matched_church_ids": [
+  "brave:NE|trinity hartington|"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "brave:NE|trinity hartington|"
+  ]
+ },
+ "names": [
+  "Holy Trinity Hartington"
+ ],
+ "cities": [],
+ "home_url": "https://ci.hartington.ne.us/",
+ "final_url": "https://ci.hartington.ne.us/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://ci.hartington.ne.us/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://ci.hartington.ne.us/worship/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://ci.hartington.ne.us/business-chamber/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://ci.hartington.ne.us/contact-us/",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-json"
+  ]
+ },
+ "template": "wordpress-rest+html",
+ "groups": [],
+ "calendar_feeds": [],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/HartingtonNebraska",
+   "https://www.facebook.com/TLCHartingonNE"
+  ],
+  "instagram": [
+   "https://www.instagram.com/hartingtonnebraska/"
+  ]
+ },
+ "bulletin": null,
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Mass: Worship services every Sunday at 9:00 AM",
+   "source_url": "https://ci.hartington.ne.us/worship/",
+   "fetched_at": "2026-11-01T17:27:18+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "wordpress"
+  }
+ ],
+ "source_url": "https://ci.hartington.ne.us/",
+ "fetched_at": "2026-11-01T17:27:48+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "has_sunday": true,
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(402) 254-6353",
+  "address": "107 West State Street, Hartington, NE 68739",
+  "source_url": "https://ci.hartington.ne.us/contact-us/",
+  "sources": {
+   "phone": "https://ci.hartington.ne.us/contact-us/",
+   "address": "https://ci.hartington.ne.us/contact-us/"
+  },
+  "fetched_at": "2026-11-01T17:27:37+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

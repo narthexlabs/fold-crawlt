@@ -1,0 +1,129 @@
+{
+ "domain": "sbcotriparishes.org",
+ "diocese": "unassigned-ne",
+ "matched_church_ids": [
+  "brave:NE|theresa mitchell|"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "brave:NE|theresa mitchell|"
+  ]
+ },
+ "names": [
+  "St Theresa Mitchell"
+ ],
+ "cities": [],
+ "home_url": "https://sbcotriparishes.org/",
+ "final_url": "https://sbcotriparishes.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://sbcotriparishes.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://sbcotriparishes.org/home/holy-mass-times/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://sbcotriparishes.org/home/holy-mass-times/tri-parish-information/the-sacraments-of-christ/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://sbcotriparishes.org/bulletin/",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-content"
+  ]
+ },
+ "template": "wordpress-html",
+ "groups": [],
+ "calendar_feeds": [],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/sbcotriparish"
+  ]
+ },
+ "bulletin": {
+  "url": "https://sbcotriparishes.org/bulletin/",
+  "date": null,
+  "kind": "page",
+  "text": "Bulletin",
+  "source_url": "https://sbcotriparishes.org/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Sunday Mass 8:00 am",
+   "source_url": "https://sbcotriparishes.org/home/holy-mass-times/",
+   "fetched_at": "2026-11-01T17:26:59+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  }
+ ],
+ "source_url": "https://sbcotriparishes.org/",
+ "fetched_at": "2026-11-01T17:27:02+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": true
+   },
+   "score": "high"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "skipped_section": 1,
+  "other_location": 10,
+  "not_a_service": 6,
+  "no_kind": 2,
+  "no_day": 3
+ },
+ "groups_dropped": {
+  "sacrament_prep": 1
+ },
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}
