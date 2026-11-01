@@ -114,7 +114,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-corpus-christi | 84 | 84 | 37 | 27 | 1 | 16 | 3 |
 | archdiocese-of-dubuque | 83 | 87 | 24 | 7 | 0 | 34 | 0 |
 | unassigned-tn | 83 | 113 | 54 | 49 | 1 | 9 | 0 |
-| diocese-of-fall-river | 82 | 56 | 33 | 15 | 0 | 8 | 0 |
+| diocese-of-fall-river | 82 | 83 | 43 | 16 | 0 | 24 | 0 |
 | unassigned-il | 82 | 143 | 100 | 17 | 0 | 25 | 1 |
 | archdiocese-of-omaha | 81 | 81 | 63 | 6 | 3 | 9 | 0 |
 | diocese-of-scranton | 80 | 83 | 63 | 11 | 0 | 9 | 0 |
@@ -194,7 +194,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | unassigned-ar | 37 | 45 | 28 | 5 | 0 | 12 | 0 |
 | archdiocese-of-santa-fe | 36 | 42 | 18 | 8 | 1 | 15 | 0 |
 | diocese-of-spokane | 36 | 37 | 12 | 24 | 0 | 1 | 0 |
-| eparchy-of-newton | 36 | 38 | 26 | 2 | 1 | 9 | 0 |
+| eparchy-of-newton | 36 | 39 | 26 | 2 | 1 | 10 | 0 |
 | diocese-of-springfield-cape-girardeau | 36 | 37 | 17 | 1 | 0 | 19 | 0 |
 | archdiocese-of-anchorage-juneau | 34 | 34 | 17 | 3 | 1 | 6 | 0 |
 | diocese-of-houma-thibodaux | 34 | 34 | 18 | 13 | 0 | 3 | 0 |
