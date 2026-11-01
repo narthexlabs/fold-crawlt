@@ -4,6 +4,7 @@
     python3 -I ingest/us/sites/run_state.py inputs                         # build site lists for every diocese with a source
     python3 -I ingest/us/sites/run_state.py chunk --minutes 100 [--workers 24] [--state TX] [--diocese <slug>,...]
     python3 -I ingest/us/sites/run_state.py parse <diocese-slug> [--all]   # (re)parse cached sites of one diocese
+    python3 -I ingest/us/sites/run_state.py reparse --state TX,IA --minutes 30  # all cached sites, once per parser version
     python3 -I ingest/us/sites/run_state.py readme                         # data/real/us/sites/README.md tables
     python3 -I ingest/us/sites/run_state.py status
 
@@ -472,9 +473,52 @@ def cmd_chunk(a) -> int:
     return 4 if stats.get("halted_egress") else 0
 
 
+def cmd_reparse(a) -> int:
+    """Re-parse every cached site of the --state group with the current parser (on a runner: its own fresh raw cache, so the
+    fixes reach records whose crawl is newer than any other machine's cache). Runs once per parser version: the hash of
+    ingest/california/sites/parse_site.py + templates is stamped in data/raw/us/sites/_reparsed.json with the dioceses done,
+    so a cut run resumes and a finished one is a no-op until the parser changes. --minutes is the budget."""
+    import hashlib
+    t0 = time.time()
+    h = hashlib.sha256()
+    for f in sorted([CA_SITES / "parse_site.py", *sorted((CA_SITES / "templates").glob("*.py"))]):
+        h.update(f.read_bytes())
+    ver = h.hexdigest()[:16]
+    stamp_f = RAW / "_reparsed.json"
+    stamp = json.loads(stamp_f.read_text()) if stamp_f.exists() else {}
+    if stamp.get("parser") != ver:
+        stamp = {"parser": ver, "done": []}
+    inputs = build_inputs()
+    order = diocese_order(inputs)
+    if a.state:
+        sees = {s["slug"]: s["see_state"] for s in load_sees()}
+        sts = {x.upper() for x in a.state.split(",")}
+        order = [d for d in order if sees.get(d) in sts or (d.startswith("unassigned-") and d[-2:].upper() in sts)]
+    touched = []
+    for d in order:
+        if d in stamp["done"]:
+            continue
+        if time.time() > t0 + a.minutes * 60:
+            break
+        try:
+            if parse(d, True, log=print):
+                touched.append(d)
+            stamp["done"].append(d)
+        except Exception as e:  # noqa: BLE001 - one diocese must not stop the pass
+            print(f"  REPARSE FAILED {d}: {e!r}", flush=True)
+        RAW.mkdir(parents=True, exist_ok=True)
+        stamp_f.write_text(json.dumps(stamp))
+    left = [d for d in order if d not in stamp["done"]]
+    print(f"reparse parser={ver}: {len(touched)} dioceses re-parsed, {len(left)} left", flush=True)
+    write_progress(inputs)
+    cmd_readme()
+    (RAW / "_last_touched.json").write_text(json.dumps(touched))
+    return 0
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("cmd", choices=["inputs", "chunk", "parse", "readme", "status"])
+    ap.add_argument("cmd", choices=["inputs", "chunk", "parse", "reparse", "readme", "status"])
     ap.add_argument("slug", nargs="?")
     ap.add_argument("--minutes", type=float, default=100)
     ap.add_argument("--workers", type=int, default=24)
@@ -492,6 +536,8 @@ def main() -> int:
     elif a.cmd == "parse":
         parse(a.slug, a.all)
         write_progress(build_inputs())
+    elif a.cmd == "reparse":
+        return cmd_reparse(a)
     elif a.cmd == "readme":
         cmd_readme()
     elif a.cmd == "status":
