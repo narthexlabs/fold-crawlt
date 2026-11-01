@@ -27,7 +27,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 
 | diocese | sites in list | records | ok | challenge | blocked | dead | social-only |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| unassigned-pa | 511 | 594 | 424 | 87 | 7 | 76 | 0 |
+| unassigned-pa | 511 | 596 | 426 | 87 | 7 | 76 | 0 |
 | unassigned-ca | 496 | 56 | 36 | 8 | 1 | 11 | 0 |
 | archdiocese-of-chicago | 479 | 483 | 248 | 17 | 8 | 152 | 3 |
 | unassigned-oh | 392 | 393 | 254 | 74 | 5 | 60 | 0 |
@@ -161,7 +161,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-knoxville | 56 | 56 | 20 | 27 | 0 | 9 | 0 |
 | diocese-of-palm-beach | 56 | 56 | 42 | 8 | 0 | 4 | 2 |
 | diocese-of-des-moines | 55 | 57 | 35 | 13 | 2 | 7 | 0 |
-| diocese-of-greensburg | 55 | 57 | 43 | 5 | 0 | 9 | 0 |
+| diocese-of-greensburg | 55 | 59 | 45 | 5 | 0 | 9 | 0 |
 | diocese-of-birmingham | 54 | 54 | 34 | 5 | 0 | 15 | 0 |
 | diocese-of-gary | 54 | 54 | 33 | 5 | 0 | 15 | 1 |
 | diocese-of-norwich | 54 | 58 | 25 | 7 | 2 | 24 | 0 |
@@ -287,4 +287,4 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-01T18:51:40+00:00: fetched {'robots_disallowed': 4, 'done': 262, 'dns': 77, 'conn_error': 3, 'ssl_error': 24, 'challenge': 30, 'not_found': 5, 'ok': 92, 'parked': 8, 'http_5xx': 5, 'blocked_429': 1, 'blocked_403': 1, 'error:TooManyRedirects': 1, 'timeout': 13, 'cut': 2, 'halted_egress': 0}; parsed 6 dioceses
 - 2026-11-01T20:24:57+00:00: fetched {'dns': 31, 'done': 543, 'conn_error': 8, 'ssl_error': 16, 'robots_disallowed': 2, 'ok': 388, 'challenge': 85, 'blocked_403': 3, 'http_5xx': 6, 'not_found': 4, 'timeout': 8, 'parked': 1, 'cut': 9, 'halted_egress': 0}; parsed 1 dioceses
 - 2026-11-01T22:15:20+00:00: fetched {'dns': 12, 'done': 261, 'not_found': 12, 'robots_disallowed': 2, 'ssl_error': 8, 'challenge': 26, 'blocked_403': 2, 'conn_error': 1, 'ok': 189, 'parked': 2, 'timeout': 10, 'cut': 3, 'halted_egress': 0}; parsed 9 dioceses
-- 2026-11-01T23:30:07+00:00: fetched {'ok': 2, 'done': 2, 'halted_egress': 0}; parsed 1 dioceses
+- 2026-11-01T23:30:07+00:00: fetched {'ok': 6, 'done': 4, 'cut': 2, 'halted_egress': 0}; parsed 2 dioceses
