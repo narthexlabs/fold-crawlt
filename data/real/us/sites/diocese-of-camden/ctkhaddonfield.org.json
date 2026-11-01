@@ -2,16 +2,20 @@
  "domain": "ctkhaddonfield.org",
  "diocese": "diocese-of-camden",
  "matched_church_ids": [
-  "diocese-of-camden:Christ the King Parish"
+  "diocese-of-camden:Christ the King Parish",
+  "gc-18826"
  ],
  "matched": {
   "directory": [
    "diocese-of-camden:Christ the King Parish"
   ],
-  "discovermass": []
+  "discovermass": [
+   "gc-18826"
+  ]
  },
  "names": [
-  "Christ the King Parish"
+  "Christ the King Parish",
+  "Christ the King"
  ],
  "cities": [
   "Haddonfield"
@@ -309,6 +313,50 @@
    "confidence": "medium",
    "template": "wordpress",
    "kind_parsed": "mass"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "07:30",
+   "language": null,
+   "raw": "Sunday 7:30 AM –",
+   "source_url": "https://ctkhaddonfield.org/mass-schedule-live-stream/",
+   "fetched_at": "2026-11-01T07:27:57+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Sunday 8 AM",
+   "source_url": "https://ctkhaddonfield.org/mass-schedule-live-stream/",
+   "fetched_at": "2026-11-01T07:27:57+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": null,
+   "raw": "Sunday 10 AM",
+   "source_url": "https://ctkhaddonfield.org/mass-schedule-live-stream/",
+   "fetched_at": "2026-11-01T07:27:57+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Saturday Anticipatory Mass 5 PM",
+   "source_url": "https://ctkhaddonfield.org/mass-schedule-live-stream/",
+   "fetched_at": "2026-11-01T07:27:57+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
   }
  ],
  "source_url": "https://ctkhaddonfield.org/",
@@ -331,12 +379,12 @@
   "trusted_candidate": false,
   "generic_rows": 11
  },
- "has_sunday": false,
- "schedule_partial": true,
+ "has_sunday": true,
  "schedule_dropped": {
   "dated_line": 3,
   "other_location": 2,
-  "skipped_section": 2
+  "skipped_section": 2,
+  "weekend_rescue_added": 4
  },
  "groups_dropped": {},
  "event_counts": {

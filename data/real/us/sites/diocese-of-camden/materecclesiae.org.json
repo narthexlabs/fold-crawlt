@@ -2,16 +2,20 @@
  "domain": "materecclesiae.org",
  "diocese": "diocese-of-camden",
  "matched_church_ids": [
-  "diocese-of-camden:Mater Ecclesiae Mission"
+  "diocese-of-camden:Mater Ecclesiae Mission",
+  "gc-18925"
  ],
  "matched": {
   "directory": [
    "diocese-of-camden:Mater Ecclesiae Mission"
   ],
-  "discovermass": []
+  "discovermass": [
+   "gc-18925"
+  ]
  },
  "names": [
-  "Mater Ecclesiae Mission"
+  "Mater Ecclesiae Mission",
+  "Mater Ecclesiae"
  ],
  "cities": [
   "Berlin"
@@ -242,7 +246,41 @@
   "text": "Click here to download this bulletin (PDF format).",
   "source_url": "https://www.materecclesiae.org/bulletin/"
  },
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Saturday 5:00 pm: Anticipated Low Mass (No Music)",
+   "source_url": "https://www.materecclesiae.org/",
+   "fetched_at": "2026-11-01T07:27:55+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Sunday 8:00 am: Low Mass with Hymns and Organ",
+   "source_url": "https://www.materecclesiae.org/",
+   "fetched_at": "2026-11-01T07:27:55+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:30",
+   "language": null,
+   "raw": "following Sunday 10:30 AM Mass",
+   "source_url": "https://www.materecclesiae.org/",
+   "fetched_at": "2026-11-01T07:27:55+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  }
+ ],
  "source_url": "http://www.materecclesiae.org/",
  "fetched_at": "2026-11-01T07:28:05+00:00",
  "schedule_template": {
@@ -263,10 +301,11 @@
   "trusted_candidate": false,
   "generic_rows": 16
  },
- "has_sunday": false,
+ "has_sunday": true,
  "schedule_dropped": {
   "skipped_section": 8,
-  "dated_line": 1
+  "dated_line": 1,
+  "weekend_rescue_added": 3
  },
  "groups_dropped": {
   "noise": 2,

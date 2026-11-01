@@ -2,16 +2,20 @@
  "domain": "saintmaxkolbe.com",
  "diocese": "diocese-of-camden",
  "matched_church_ids": [
-  "diocese-of-camden:St. Maximilian Kolbe The Parish of"
+  "diocese-of-camden:St. Maximilian Kolbe The Parish of",
+  "gc-18901"
  ],
  "matched": {
   "directory": [
    "diocese-of-camden:St. Maximilian Kolbe The Parish of"
   ],
-  "discovermass": []
+  "discovermass": [
+   "gc-18901"
+  ]
  },
  "names": [
-  "St. Maximilian Kolbe The Parish of"
+  "St. Maximilian Kolbe The Parish of",
+  "Resurrection"
  ],
  "cities": [
   "Marmora"
@@ -574,7 +578,7 @@
    "feed_key": "85a2a69a46b6",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T17:50:37+00:00",
+    "fetched_at": "2026-11-01T23:35:24+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -606,6 +610,34 @@
    "review_reason": null,
    "confidence": "high",
    "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:00",
+   "language": null,
+   "raw": "[Resurrection] Confession: Saturday | 3:00pm",
+   "source_url": "https://www.saintmaxkolbe.com/mass-schedule",
+   "fetched_at": "2026-11-01T07:27:53+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "location": "Resurrection"
+  },
+  {
+   "kind": "adoration",
+   "day": "First Friday of the month",
+   "time": "08:30-13:00",
+   "language": null,
+   "raw": "[Resurrection] Holy Hour/Adoration: First Friday | 8:30am to 1:00pm",
+   "source_url": "https://www.saintmaxkolbe.com/mass-schedule",
+   "fetched_at": "2026-11-01T07:27:53+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "location": "Resurrection"
   },
   {
    "kind": "mass",
@@ -682,17 +714,6 @@
    "fetched_at": "2026-11-01T07:27:52+00:00",
    "needs_review": false,
    "review_reason": "schedule_box"
-  },
-  {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "15:00",
-   "language": null,
-   "raw": "Saturday | 3:00pm",
-   "source_url": "https://www.saintmaxkolbe.com/",
-   "fetched_at": "2026-11-01T07:27:52+00:00",
-   "needs_review": false,
-   "review_reason": "schedule_box"
   }
  ],
  "source_url": "http://saintmaxkolbe.com/",
@@ -707,18 +728,18 @@
     "counts_ok": true,
     "sunday_not_copied": true,
     "no_daily_on_sunday": true,
-    "mostly_high": true
+    "mostly_high": false
    },
-   "score": "high"
+   "score": "medium"
   },
   "passed_bar": true,
-  "trusted_candidate": true,
+  "trusted_candidate": false,
   "generic_rows": 17
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 37,
-  "box_rows_added": 7
+  "other_location": 31,
+  "box_rows_added": 6
  },
  "groups_dropped": {
   "unmatched": 2,
