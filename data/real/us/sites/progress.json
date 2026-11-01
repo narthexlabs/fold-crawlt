@@ -590,6 +590,15 @@
    "touched": [
     "diocese-of-alexandria"
    ]
+  },
+  {
+   "started_at": "2026-11-01T18:52:01+00:00",
+   "ended_at": "2026-11-01T18:52:31+00:00",
+   "result": "fetched {'conn_error': 2, 'done': 37, 'dns': 15, 'challenge': 3, 'ssl_error': 1, 'parked': 1, 'not_found': 1, 'ok': 14, 'halted_egress': 0}; parsed 2 dioceses",
+   "touched": [
+    "diocese-of-allentown",
+    "diocese-of-altoona-johnstown"
+   ]
   }
  ],
  "dioceses": {
@@ -1544,14 +1553,15 @@
   },
   "diocese-of-allentown": {
    "sites_in_list": 84,
-   "records": 67,
-   "finished": false,
-   "ok": 49,
+   "records": 86,
+   "finished": true,
+   "ok": 57,
    "by_status": {
-    "ok": 49,
-    "challenge": 6,
+    "ok": 57,
+    "dns": 8,
+    "challenge": 7,
+    "conn_error": 5,
     "ssl_error": 4,
-    "conn_error": 3,
     "unreachable_via_proxy": 2,
     "http_5xx": 1,
     "robots_disallowed": 1,
@@ -2075,16 +2085,19 @@
   },
   "diocese-of-altoona-johnstown": {
    "sites_in_list": 63,
-   "records": 45,
-   "finished": false,
-   "ok": 29,
+   "records": 63,
+   "finished": true,
+   "ok": 35,
    "by_status": {
-    "ok": 29,
-    "challenge": 6,
+    "ok": 35,
+    "challenge": 8,
+    "dns": 7,
+    "ssl_error": 4,
     "conn_error": 4,
-    "ssl_error": 3,
     "http_5xx": 1,
+    "not_found": 1,
     "unreachable_via_proxy": 1,
+    "parked": 1,
     "robots_disallowed": 1
    }
   },
@@ -3860,9 +3873,9 @@
  },
  "totals": {
   "sites_in_list": 15394,
-  "records": 14542,
-  "ok": 7956
+  "records": 14579,
+  "ok": 7970
  },
  "us_parish_pages_discovermass": 20147,
- "updated_at": "2026-11-01T18:51:58+00:00"
+ "updated_at": "2026-11-01T18:52:33+00:00"
 }

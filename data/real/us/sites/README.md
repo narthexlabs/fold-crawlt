@@ -85,7 +85,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | archdiocese-of-san-francisco | 87 | 36 | 21 | 6 | 0 | 9 | 0 |
 | unassigned-tn | 87 | 87 | 54 | 25 | 1 | 7 | 0 |
 | unassigned-nd | 85 | 85 | 48 | 32 | 1 | 4 | 0 |
-| diocese-of-allentown | 84 | 67 | 49 | 6 | 1 | 11 | 0 |
+| diocese-of-allentown | 84 | 86 | 57 | 7 | 1 | 21 | 0 |
 | diocese-of-camden | 84 | 63 | 36 | 4 | 2 | 21 | 0 |
 | archdiocese-of-dubuque | 83 | 87 | 24 | 19 | 0 | 34 | 0 |
 | unassigned-or | 83 | 84 | 45 | 26 | 0 | 13 | 0 |
@@ -121,7 +121,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-worcester | 66 | 66 | 11 | 30 | 0 | 25 | 0 |
 | diocese-of-tyler | 64 | 65 | 23 | 26 | 0 | 12 | 4 |
 | diocese-of-springfield-in-illinois | 64 | 57 | 23 | 14 | 1 | 19 | 0 |
-| diocese-of-altoona-johnstown | 63 | 45 | 29 | 6 | 1 | 9 | 0 |
+| diocese-of-altoona-johnstown | 63 | 63 | 35 | 8 | 1 | 19 | 0 |
 | diocese-of-boise | 63 | 46 | 28 | 16 | 0 | 2 | 0 |
 | diocese-of-las-cruces | 63 | 63 | 5 | 0 | 0 | 58 | 0 |
 | diocese-of-savannah | 61 | 62 | 31 | 24 | 3 | 4 | 0 |
@@ -269,7 +269,6 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 
 ## Chunk log
 
-- 2026-11-01T08:04:48+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-01T08:19:52+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-01T08:34:55+00:00: fetched {'dns': 1, 'done': 1, 'halted_egress': 0}; parsed 0 dioceses
 - 2026-11-01T08:49:57+00:00: fetched {}; parsed 0 dioceses
@@ -284,3 +283,4 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-01T17:53:22+00:00: fetched {'ok': 11, 'done': 11, 'challenge': 1, 'dns': 1, 'cut': 2, 'halted_egress': 0}; parsed 5 dioceses
 - 2026-11-01T18:03:07+00:00: fetched {'ok': 1, 'done': 1, 'halted_egress': 0}; parsed 1 dioceses
 - 2026-11-01T18:51:37+00:00: fetched {'dns': 3, 'done': 5, 'not_found': 1, 'ok': 1, 'halted_egress': 0}; parsed 1 dioceses
+- 2026-11-01T18:52:01+00:00: fetched {'conn_error': 2, 'done': 37, 'dns': 15, 'challenge': 3, 'ssl_error': 1, 'parked': 1, 'not_found': 1, 'ok': 14, 'halted_egress': 0}; parsed 2 dioceses
