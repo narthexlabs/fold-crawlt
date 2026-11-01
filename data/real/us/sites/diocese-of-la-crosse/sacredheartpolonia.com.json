@@ -19,7 +19,7 @@
  "home_url": "https://www.sacredheartpolonia.com/",
  "final_url": "https://www.sacredheartpolonia.com/",
  "crawl_status": "ok",
- "crawl_env": "sandbox",
+ "crawl_env": "runner-rendered",
  "robots_note": "ok",
  "pages": [
   {
@@ -73,7 +73,7 @@
    "language": null,
    "raw": "Saturday 8:15am [Mass intention withheld]",
    "source_url": "https://www.sacredheartpolonia.com/mass-offerings",
-   "fetched_at": "2026-11-01T05:11:54+00:00",
+   "fetched_at": "2026-11-01T17:47:04+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "high",
@@ -86,7 +86,7 @@
    "language": null,
    "raw": "EUCHARISTIC ADORATION: Thursday 7:00-8:00AM",
    "source_url": "https://www.sacredheartpolonia.com/",
-   "fetched_at": "2026-11-01T05:11:53+00:00",
+   "fetched_at": "2026-11-01T17:46:57+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -99,7 +99,7 @@
    "language": null,
    "raw": "SACRAMENT OF RECONCILIATION: Thursday 7:30-8:00AM",
    "source_url": "https://www.sacredheartpolonia.com/",
-   "fetched_at": "2026-11-01T05:11:53+00:00",
+   "fetched_at": "2026-11-01T17:46:57+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -112,15 +112,62 @@
    "language": null,
    "raw": "SACRAMENT OF RECONCILIATION: Saturday 2:45-3:45PM",
    "source_url": "https://www.sacredheartpolonia.com/",
-   "fetched_at": "2026-11-01T05:11:53+00:00",
+   "fetched_at": "2026-11-01T17:46:57+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "wix"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "08:15",
+   "language": null,
+   "raw": "Tuesday, Thursday 8:15AM",
+   "source_url": "https://www.sacredheartpolonia.com/",
+   "fetched_at": "2026-11-01T17:46:57+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "08:15",
+   "language": null,
+   "raw": "Tuesday, Thursday 8:15AM",
+   "source_url": "https://www.sacredheartpolonia.com/",
+   "fetched_at": "2026-11-01T17:46:57+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box",
+   "day_parsed": "Tuesday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "16:00",
+   "language": null,
+   "raw": "4:00PM (Sunday Anticipatory Mass)",
+   "source_url": "https://www.sacredheartpolonia.com/",
+   "fetched_at": "2026-11-01T17:46:57+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box",
+   "day_parsed": "Sunday"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Sunday 8:00AM",
+   "source_url": "https://www.sacredheartpolonia.com/",
+   "fetched_at": "2026-11-01T17:46:57+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
   }
  ],
  "source_url": "https://www.sacredheartpolonia.com/",
- "fetched_at": "2026-11-01T05:11:56+00:00",
+ "fetched_at": "2026-11-01T17:47:13+00:00",
  "schedule_template": {
   "template": "wix",
   "version": "ca-sites/2",
@@ -139,10 +186,12 @@
   "trusted_candidate": false,
   "generic_rows": 2
  },
+ "has_sunday": true,
  "schedule_dropped": {
   "relative_time": 1,
   "not_a_service": 1,
-  "no_kind": 1
+  "no_kind": 1,
+  "box_rows_added": 4
  },
  "groups_dropped": {},
  "event_counts": {
@@ -165,11 +214,12 @@
    "phone": "https://www.sacredheartpolonia.com/contact",
    "address": "https://www.sacredheartpolonia.com/contact"
   },
-  "fetched_at": "2026-11-01T05:11:56+00:00",
+  "fetched_at": "2026-11-01T17:47:13+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()",
   "intentions_withheld": 1
- }
+ },
+ "fetch_mode": "rendered"
 }
