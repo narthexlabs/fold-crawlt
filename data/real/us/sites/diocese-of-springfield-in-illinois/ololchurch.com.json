@@ -2,21 +2,27 @@
  "domain": "ololchurch.com",
  "diocese": "diocese-of-springfield-in-illinois",
  "matched_church_ids": [
-  "gc-30265"
+  "diocese-of-springfield-in-illinois:Decatur, Our Lady of Lourdes",
+  "gc-30265",
+  "our-lady-of-lourdes-decatur-il"
  ],
  "matched": {
-  "directory": [],
+  "directory": [
+   "diocese-of-springfield-in-illinois:Decatur, Our Lady of Lourdes"
+  ],
   "discovermass": [
+   "our-lady-of-lourdes-decatur-il",
    "gc-30265"
   ]
  },
  "names": [
+  "Decatur, Our Lady of Lourdes",
   "Our Lady of Lourdes"
  ],
  "cities": [
   "Decatur"
  ],
- "home_url": "http://www.ololchurch.com/",
+ "home_url": "https://www.ololchurch.com/",
  "final_url": "https://www.ololchurch.com/",
  "crawl_status": "ok",
  "crawl_env": "sandbox",
@@ -75,8 +81,53 @@
   "text": "Click Here for bulletins",
   "source_url": "https://www.ololchurch.com/bulletins/"
  },
- "schedule_rows": [],
- "source_url": "http://www.ololchurch.com/",
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "16:30",
+   "language": null,
+   "raw": "Sunday: 4:30pm Vigil, 7:30am, 9:30am, 11:30am (Spanish)",
+   "source_url": "https://www.ololchurch.com/sacraments/",
+   "fetched_at": "2026-11-01T17:21:31+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "07:30",
+   "language": null,
+   "raw": "Sunday: 4:30pm Vigil, 7:30am, 9:30am, 11:30am (Spanish)",
+   "source_url": "https://www.ololchurch.com/sacraments/",
+   "fetched_at": "2026-11-01T17:21:31+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:30",
+   "language": null,
+   "raw": "Sunday: 4:30pm Vigil, 7:30am, 9:30am, 11:30am (Spanish)",
+   "source_url": "https://www.ololchurch.com/sacraments/",
+   "fetched_at": "2026-11-01T17:21:31+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:30",
+   "language": null,
+   "raw": "Sunday: 4:30pm Vigil, 7:30am, 9:30am, 11:30am (Spanish)",
+   "source_url": "https://www.ololchurch.com/sacraments/",
+   "fetched_at": "2026-11-01T17:21:31+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  }
+ ],
+ "source_url": "https://www.ololchurch.com/",
  "fetched_at": "2026-11-01T17:21:37+00:00",
  "schedule_template": {
   "template": "wordpress",
@@ -96,20 +147,10 @@
   "trusted_candidate": false,
   "generic_rows": 0
  },
- "has_sunday": false,
- "schedule_images": [
-  {
-   "url": "https://www.ololchurch.com/wp-content/uploads/2026/10/1st-Saturday-Mass-and-Devotion.png",
-   "alt": "1st Saturday Mass and Devotion",
-   "page": "https://www.ololchurch.com/"
-  },
-  {
-   "url": "https://www.ololchurch.com/wp-content/uploads/2026/08/Aug-Dec-2026-Mass-Schedule-8.5-x-11-in-2.png",
-   "alt": "Aug-Dec 2026 Mass Schedule (8.5 x 11 in)",
-   "page": "https://www.ololchurch.com/"
-  }
- ],
- "schedule_note": "schedule appears to be an image; times not read (needs_review)",
+ "has_sunday": true,
+ "schedule_dropped": {
+  "weekend_rescue_added": 4
+ },
  "groups_dropped": {},
  "event_counts": {
   "window_start": "2026-11-01",

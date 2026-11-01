@@ -2,15 +2,19 @@
  "domain": "sfacalhoun.com",
  "diocese": "diocese-of-springfield-in-illinois",
  "matched_church_ids": [
+  "diocese-of-springfield-in-illinois:Hardin, St. Francis of Assisi",
   "st-francis-of-assisi-hardin-il"
  ],
  "matched": {
-  "directory": [],
+  "directory": [
+   "diocese-of-springfield-in-illinois:Hardin, St. Francis of Assisi"
+  ],
   "discovermass": [
    "st-francis-of-assisi-hardin-il"
   ]
  },
  "names": [
+  "Hardin, St. Francis of Assisi",
   "St. Francis of Assisi"
  ],
  "cities": [
@@ -152,7 +156,7 @@
    "note": "CCB public calendar iCal",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T18:56:21+00:00",
+    "fetched_at": "2026-11-01T23:36:44+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -170,69 +174,73 @@
  "schedule_rows": [
   {
    "kind": "mass",
-   "day": "Saturday",
-   "time": "16:00",
-   "language": null,
-   "raw": "Saturdays at St. Anselm – 4:00 pm",
-   "source_url": "https://sfacalhoun.com/",
-   "fetched_at": "2026-11-01T18:51:49+00:00",
-   "needs_review": false,
-   "review_reason": "schedule_box"
-  },
-  {
-   "kind": "mass",
    "day": "Sunday",
    "time": "09:30",
    "language": null,
-   "raw": "Sundays at St. Norbert – 9:30 am",
-   "source_url": "https://sfacalhoun.com/",
-   "fetched_at": "2026-11-01T18:51:49+00:00",
+   "raw": "[Hardin, St. Francis of Assisi] Mass Times: Sunday – 9:30 a.m.",
+   "source_url": "https://sfacalhoun.com/mass-times/",
+   "fetched_at": "2026-11-01T18:51:50+00:00",
    "needs_review": false,
-   "review_reason": "schedule_box"
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "location": "Hardin, St. Francis of Assisi"
   },
   {
    "kind": "mass",
    "day": "Sunday",
    "time": "17:00",
    "language": null,
-   "raw": "Sundays at St. Norbert – 5:00 pm",
-   "source_url": "https://sfacalhoun.com/",
-   "fetched_at": "2026-11-01T18:51:49+00:00",
+   "raw": "[Hardin, St. Francis of Assisi] Mass Times: Sunday – 5:00 p.m.",
+   "source_url": "https://sfacalhoun.com/mass-times/",
+   "fetched_at": "2026-11-01T18:51:50+00:00",
    "needs_review": false,
-   "review_reason": "schedule_box"
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "location": "Hardin, St. Francis of Assisi"
   },
   {
    "kind": "mass",
    "day": "Monday",
    "time": "07:00",
    "language": null,
-   "raw": "Monday – 7:00 a.m.",
+   "raw": "[Hardin, St. Francis of Assisi] Mass Times: Monday – 7:00 a.m.",
    "source_url": "https://sfacalhoun.com/mass-times/",
    "fetched_at": "2026-11-01T18:51:50+00:00",
    "needs_review": false,
-   "review_reason": "schedule_box"
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "location": "Hardin, St. Francis of Assisi"
   },
   {
    "kind": "mass",
    "day": "Wednesday",
    "time": "08:30",
    "language": null,
-   "raw": "Wednesday – 8:30 a.m.",
+   "raw": "[Hardin, St. Francis of Assisi] Mass Times: Wednesday – 8:30 a.m.",
    "source_url": "https://sfacalhoun.com/mass-times/",
    "fetched_at": "2026-11-01T18:51:50+00:00",
    "needs_review": false,
-   "review_reason": "schedule_box"
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "location": "Hardin, St. Francis of Assisi"
   },
   {
    "kind": "mass",
    "day": "Thursday",
    "time": "07:00",
    "language": null,
-   "raw": "Thursday – 7:00 a.m.",
+   "raw": "[Hardin, St. Francis of Assisi] Mass Times: Thursday – 7:00 a.m.",
    "source_url": "https://sfacalhoun.com/mass-times/",
    "fetched_at": "2026-11-01T18:51:50+00:00",
    "needs_review": false,
-   "review_reason": "schedule_box"
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "location": "Hardin, St. Francis of Assisi"
   }
  ],
  "source_url": "https://sfacalhoun.com/",
@@ -242,14 +250,14 @@
   "version": "ca-sites/2",
   "parse_quality": {
    "checks": {
-    "has_sunday": false,
+    "has_sunday": true,
     "hours_ok": true,
     "counts_ok": true,
     "sunday_not_copied": true,
     "no_daily_on_sunday": true,
     "mostly_high": false
    },
-   "score": "low"
+   "score": "medium"
   },
   "passed_bar": false,
   "trusted_candidate": false,
@@ -257,9 +265,8 @@
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 27,
-  "skipped_section": 9,
-  "box_rows_added": 6
+  "other_location": 22,
+  "skipped_section": 9
  },
  "groups_dropped": {
   "noise": 2

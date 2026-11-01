@@ -2,21 +2,25 @@
  "domain": "sap-brighton.org",
  "diocese": "diocese-of-springfield-in-illinois",
  "matched_church_ids": [
+  "diocese-of-springfield-in-illinois:Brighton, St. Alphonsus",
   "st-alphonsus-brighton-il"
  ],
  "matched": {
-  "directory": [],
+  "directory": [
+   "diocese-of-springfield-in-illinois:Brighton, St. Alphonsus"
+  ],
   "discovermass": [
    "st-alphonsus-brighton-il"
   ]
  },
  "names": [
+  "Brighton, St. Alphonsus",
   "St. Alphonsus"
  ],
  "cities": [
   "Brighton"
  ],
- "home_url": "http://www.sap-brighton.org/",
+ "home_url": "https://www.sap-brighton.org/",
  "final_url": "https://www.sap-brighton.org/",
  "crawl_status": "ok",
  "crawl_env": "sandbox",
@@ -68,8 +72,20 @@
   "text": "Current Bulletin",
   "source_url": "https://www.sap-brighton.org/"
  },
- "schedule_rows": [],
- "source_url": "http://www.sap-brighton.org/",
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:30",
+   "language": null,
+   "raw": ") A 10:30 AM Sunday Mass will be held at Saint John the Evangelist in Medora (Location:",
+   "source_url": "https://www.sap-brighton.org/",
+   "fetched_at": "2026-11-01T20:25:02+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  }
+ ],
+ "source_url": "https://www.sap-brighton.org/",
  "fetched_at": "2026-11-01T20:25:09+00:00",
  "schedule_template": {
   "template": "godaddy",
@@ -89,9 +105,10 @@
   "trusted_candidate": false,
   "generic_rows": 1
  },
- "has_sunday": false,
+ "has_sunday": true,
  "schedule_dropped": {
-  "no_kind": 3
+  "no_kind": 3,
+  "weekend_rescue_added": 1
  },
  "groups_dropped": {},
  "event_counts": {

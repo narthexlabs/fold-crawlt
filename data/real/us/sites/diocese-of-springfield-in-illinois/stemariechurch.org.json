@@ -2,21 +2,27 @@
  "domain": "stemariechurch.org",
  "diocese": "diocese-of-springfield-in-illinois",
  "matched_church_ids": [
-  "gc-30346"
+  "diocese-of-springfield-in-illinois:Sainte Marie, St. Mary of the Assumption",
+  "gc-30346",
+  "st-mary-of-the-assumption-sainte-marie-il"
  ],
  "matched": {
-  "directory": [],
+  "directory": [
+   "diocese-of-springfield-in-illinois:Sainte Marie, St. Mary of the Assumption"
+  ],
   "discovermass": [
+   "st-mary-of-the-assumption-sainte-marie-il",
    "gc-30346"
   ]
  },
  "names": [
+  "Sainte Marie, St. Mary of the Assumption",
   "St. Mary of the Assumption"
  ],
  "cities": [
   "Sainte Marie"
  ],
- "home_url": "http://www.stemariechurch.org/",
+ "home_url": "https://www.stemariechurch.org/",
  "final_url": "https://www.stemariechurch.org/",
  "crawl_status": "ok",
  "crawl_env": "sandbox",
@@ -81,8 +87,20 @@
   "text": "Kids Bulletin",
   "source_url": "https://www.stemariechurch.org/bulletins"
  },
- "schedule_rows": [],
- "source_url": "http://www.stemariechurch.org/",
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:30",
+   "language": null,
+   "raw": "Sunday: 8:30 a.m.",
+   "source_url": "https://www.stemariechurch.org/mass-times",
+   "fetched_at": "2026-11-01T17:21:31+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  }
+ ],
+ "source_url": "https://www.stemariechurch.org/",
  "fetched_at": "2026-11-01T17:21:37+00:00",
  "schedule_template": {
   "template": "wix",
@@ -102,23 +120,11 @@
   "trusted_candidate": false,
   "generic_rows": 3
  },
- "has_sunday": false,
+ "has_sunday": true,
  "schedule_dropped": {
-  "skipped_section": 4
+  "skipped_section": 4,
+  "weekend_rescue_added": 1
  },
- "schedule_images": [
-  {
-   "url": "https://static.wixstatic.com/media/894511_9449f2b7b3d5ea5278d526ec2013096d.png/v1/fill/w_200,h_50,al_c,q_85,enc_avif,quality_auto/894511_9449f2b7b3d5ea5278d526ec2013096d.png",
-   "alt": "Holy Cross Church Mass Times",
-   "page": "https://www.stemariechurch.org/liturgy"
-  },
-  {
-   "url": "https://static.wixstatic.com/media/894511_81b2d00f17370264cbb462fa5b6bb30c.png/v1/fill/w_201,h_51,al_c,q_85,enc_avif,quality_auto/894511_81b2d00f17370264cbb462fa5b6bb30c.png",
-   "alt": "Holy Cross Church Mass",
-   "page": "https://www.stemariechurch.org/liturgy"
-  }
- ],
- "schedule_note": "schedule appears to be an image; times not read (needs_review)",
  "groups_dropped": {},
  "event_counts": {
   "window_start": "2026-11-01",
