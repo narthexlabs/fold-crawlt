@@ -15,14 +15,14 @@
  ],
  "cities": [],
  "home_url": "http://www.mygoodshepherd.com/",
- "final_url": "https://mygoodshepherd.com/",
+ "final_url": "http://mygoodshepherd.com/",
  "crawl_status": "ok",
- "crawl_env": "sandbox",
- "robots_note": "ok",
+ "crawl_env": "runner-rendered",
+ "robots_note": "timeout",
  "pages": [
   {
    "category": "home",
-   "url": "https://mygoodshepherd.com/",
+   "url": "http://mygoodshepherd.com/",
    "status": 200,
    "class": "ok"
   }
@@ -62,7 +62,7 @@
   "date": null,
   "kind": "lpi",
   "text": "Parish Bulletins",
-  "source_url": "https://mygoodshepherd.com/"
+  "source_url": "http://mygoodshepherd.com/"
  },
  "schedule_rows": [
   {
@@ -71,8 +71,8 @@
    "time": "16:00",
    "language": null,
    "raw": "Good Shepherd Mass Times: Saturday 4:00 p.m.",
-   "source_url": "https://mygoodshepherd.com/",
-   "fetched_at": "2026-11-01T01:19:39+00:00",
+   "source_url": "http://mygoodshepherd.com/",
+   "fetched_at": "2026-11-01T17:46:01+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -84,8 +84,8 @@
    "time": "08:30",
    "language": null,
    "raw": "Good Shepherd Mass Times: Sunday 8:30 & 10:00 a.m.",
-   "source_url": "https://mygoodshepherd.com/",
-   "fetched_at": "2026-11-01T01:19:39+00:00",
+   "source_url": "http://mygoodshepherd.com/",
+   "fetched_at": "2026-11-01T17:46:01+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -97,8 +97,8 @@
    "time": "10:00",
    "language": null,
    "raw": "Good Shepherd Mass Times: Sunday 8:30 & 10:00 a.m.",
-   "source_url": "https://mygoodshepherd.com/",
-   "fetched_at": "2026-11-01T01:19:39+00:00",
+   "source_url": "http://mygoodshepherd.com/",
+   "fetched_at": "2026-11-01T17:46:01+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -110,8 +110,8 @@
    "time": "08:00",
    "language": null,
    "raw": "Weekday Masses: Monday & Friday 8:00 a.m.",
-   "source_url": "https://mygoodshepherd.com/",
-   "fetched_at": "2026-11-01T01:19:39+00:00",
+   "source_url": "http://mygoodshepherd.com/",
+   "fetched_at": "2026-11-01T17:46:01+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "high",
@@ -124,13 +124,15 @@
    "time": "08:00",
    "language": null,
    "raw": "Weekday Masses: Monday & Friday 8:00 a.m.",
-   "source_url": "https://mygoodshepherd.com/",
-   "fetched_at": "2026-11-01T01:19:39+00:00",
+   "source_url": "http://mygoodshepherd.com/",
+   "fetched_at": "2026-11-01T17:46:01+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "high",
    "template": "wordpress",
-   "day_expanded_from": "Monday & Friday"
+   "day_expanded_from": "Monday & Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
   },
   {
    "kind": "confession",
@@ -138,8 +140,8 @@
    "time": "15:00",
    "language": null,
    "raw": "Confessions:: Saturday 3:00 p.m. Before Mass",
-   "source_url": "https://mygoodshepherd.com/",
-   "fetched_at": "2026-11-01T01:19:39+00:00",
+   "source_url": "http://mygoodshepherd.com/",
+   "fetched_at": "2026-11-01T17:46:01+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -147,7 +149,7 @@
   }
  ],
  "source_url": "http://www.mygoodshepherd.com/",
- "fetched_at": "2026-11-01T01:20:17+00:00",
+ "fetched_at": "2026-11-01T17:46:03+00:00",
  "schedule_template": {
   "template": "wordpress",
   "version": "ca-sites/2",
@@ -164,15 +166,16 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 10
+  "generic_rows": 9
  },
+ "has_sunday": true,
  "schedule_dropped": {
   "relative_time": 1
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-10-31",
-  "window_end_exclusive": "2027-01-29",
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
@@ -180,7 +183,21 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "office_contact": {
+  "email": "parishoffice@mygoodshepherd.com",
+  "phone": "(636) 789-3356",
+  "address": "703 Third Street, Hillsboro, MO 63050",
+  "source_url": "http://mygoodshepherd.com/",
+  "sources": {
+   "email": "http://mygoodshepherd.com/",
+   "phone": "http://mygoodshepherd.com/",
+   "address": "http://mygoodshepherd.com/"
+  },
+  "fetched_at": "2026-11-01T17:46:01+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
- }
+ },
+ "fetch_mode": "rendered"
 }
