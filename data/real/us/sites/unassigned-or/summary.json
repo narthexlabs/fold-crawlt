@@ -1,86 +1,136 @@
 {
  "slug": "unassigned-or",
- "generated_at": "2026-11-01T05:45:53+00:00",
+ "generated_at": "2026-11-01T17:29:37+00:00",
  "run_date": "2026-11-01",
  "input": {
   "directory_records": 0,
-  "discovermass_records": 3,
+  "discovermass_records": 84,
   "directory_without_website": 0,
   "discovermass_without_website": 0
  },
- "sites_in_list": 3,
+ "sites_in_list": 84,
  "social_only": 0,
  "crawl": {
-  "ok_total": 2,
-  "ok_via_sandbox": 2,
+  "ok_total": 45,
+  "ok_via_sandbox": 45,
   "ok_via_laptop": 0,
   "partial_via_side_doors": 0,
-  "challenge": 0,
+  "challenge": 26,
   "blocked_403_429": 0,
   "robots_disallowed": 0,
-  "laptop_pending": 1,
-  "dead": 1,
+  "laptop_pending": 37,
+  "dead": 13,
   "not_fetched": 0,
   "by_status": {
-   "ok": 2,
-   "conn_error": 1
+   "ok": 45,
+   "challenge": 26,
+   "dns": 8,
+   "conn_error": 2,
+   "not_found": 1,
+   "ssl_error": 1,
+   "parked": 1
   }
  },
  "laptop_attempted": 0,
  "groups": {
-  "total": 2,
-  "sites_with_groups": 1,
+  "total": 227,
+  "sites_with_groups": 26,
   "by_category": {
-   "service_mercy": 1,
-   "liturgical": 1
+   "liturgical": 85,
+   "formation": 29,
+   "service_mercy": 21,
+   "youth": 18,
+   "prayer_devotion": 15,
+   "fraternal_orders": 15,
+   "scripture_study": 9,
+   "young_adults": 6,
+   "other": 6,
+   "grief_support": 6,
+   "women": 4,
+   "language_cultural": 3,
+   "families": 3,
+   "seniors": 2,
+   "marriage_family": 2,
+   "men": 2,
+   "movements": 1
   },
-  "with_meeting_time": 0
+  "with_meeting_time": 13
  },
  "calendar": {
-  "sites_with_active_feed": 1,
-  "active_feeds": 1,
+  "sites_with_active_feed": 10,
+  "active_feeds": 18,
   "feeds_by_platform": {
-   "The Events Calendar (WordPress)": 1
+   "Google Calendar": 15,
+   "The Events Calendar (WordPress)": 2,
+   "CatholicWebsite.com": 1
   },
-  "sites_with_events": 1,
-  "events_stored": 30,
-  "events_in_window_before_privacy": 123,
+  "sites_with_events": 2,
+  "events_stored": 59,
+  "events_in_window_before_privacy": 157,
   "window": "2026-11-01 + 90 days"
  },
  "social": {
   "sites_by_platform": {
-   "facebook": 2,
-   "instagram": 2,
-   "youtube": 2,
-   "x": 1,
-   "tiktok": 1,
-   "livestream": 1
+   "facebook": 31,
+   "instagram": 18,
+   "youtube": 14,
+   "x": 12,
+   "flocknote": 6,
+   "livestream": 4,
+   "tiktok": 1
   },
-  "sites_with_any_social": 2,
-  "shared_links_removed_as_diocesan": []
+  "sites_with_any_social": 35,
+  "shared_links_removed_as_diocesan": [
+   "facebook https://www.facebook.com/2008 (5 sites)"
+  ]
  },
  "bulletin": {
-  "sites_with_bulletin_url": 0,
-  "by_kind": {},
-  "with_date": 0
+  "sites_with_bulletin_url": 26,
+  "by_kind": {
+   "page": 12,
+   "pdf": 8,
+   "lpi": 3,
+   "paluch": 1,
+   "lpi_pdf": 1,
+   "flipbook": 1
+  },
+  "with_date": 7
  },
  "schedule": {
-  "sites_with_own_site_rows": 1,
-  "rows_total": 28,
+  "sites_with_own_site_rows": 28,
+  "rows_total": 438,
   "rows_needs_review": 0,
-  "sites_with_schedule_image_only": 0,
+  "sites_with_schedule_image_only": 4,
   "by_kind": {
-   "mass": 13,
-   "confession": 11,
-   "other": 4
+   "mass": 324,
+   "confession": 61,
+   "adoration": 40,
+   "other": 13
   }
  },
  "cms_guess": {
-  "wordpress": 1,
-  "wix": 1
+  "unknown": 11,
+  "wordpress": 9,
+  "wix": 6,
+  "squarespace": 5,
+  "parishsoft": 5,
+  "duda": 3,
+  "ecatholic": 2,
+  "weebly": 2,
+  "catholicwebsite": 1,
+  "godaddy": 1
  },
  "template": {
-  "wordpress-rest+html": 1,
-  "generic-html:wix": 1
+  "generic-html:unknown": 11,
+  "wordpress-rest+html": 7,
+  "generic-html:wix": 6,
+  "generic-html:squarespace": 5,
+  "generic-html:parishsoft": 5,
+  "generic-html:duda": 3,
+  "ecatholic-fastpath": 2,
+  "wordpress-html": 2,
+  "generic-html:weebly": 2,
+  "generic-html:catholicwebsite": 1,
+  "generic-html:godaddy": 1
  }
 }
