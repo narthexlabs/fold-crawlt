@@ -1,0 +1,181 @@
+{
+ "domain": "stmarysmalankaradallas.org",
+ "diocese": "diocese-of-dallas",
+ "matched_church_ids": [
+  "st-marys-syro-malankara-catholic-church-mesquite-tx"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "st-marys-syro-malankara-catholic-church-mesquite-tx"
+  ]
+ },
+ "names": [
+  "St. Mary’s Syro-Malankara Catholic Church"
+ ],
+ "cities": [
+  "Mesquite"
+ ],
+ "home_url": "http://stmarysmalankaradallas.org/",
+ "final_url": "https://stmarysmalankaradallas.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://stmarysmalankaradallas.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stmarysmalankaradallas.org/stmarys-schedule/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stmarysmalankaradallas.org/events/sunday-mass/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://stmarysmalankaradallas.org/stmarys-administration-2/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://stmarysmalankaradallas.org/news-and-events/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://stmarysmalankaradallas.org/stmarys-contactus/",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-json"
+  ]
+ },
+ "template": "wordpress-rest+html",
+ "groups": [],
+ "calendar_feeds": [],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/StMarys-Malankara-Catholic-Church-Dallas-116734838442349"
+  ],
+  "youtube": [
+   "https://www.youtube.com/user/stmarysmalankara"
+  ],
+  "x": [
+   "https://x.com/stmarysmalanka"
+  ]
+ },
+ "bulletin": null,
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": null,
+   "raw": "Mass: Holy Eucharistic Celebration 10:00 am",
+   "source_url": "https://stmarysmalankaradallas.org/stmarys-schedule/",
+   "fetched_at": "2026-11-01T08:05:07+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:30",
+   "language": null,
+   "raw": "Mass: Meetings of all Pious Associations 11:30 am",
+   "source_url": "https://stmarysmalankaradallas.org/stmarys-schedule/",
+   "fetched_at": "2026-11-01T08:05:07+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:30",
+   "language": null,
+   "raw": "Sunday Mass: 9:30 am - 11:30 pm",
+   "source_url": "https://stmarysmalankaradallas.org/events/sunday-mass/",
+   "fetched_at": "2026-11-01T08:05:08+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  }
+ ],
+ "source_url": "http://stmarysmalankaradallas.org/",
+ "fetched_at": "2026-11-01T08:05:14+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 2
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "dated_block": 22,
+  "not_a_service": 2,
+  "implausible_hour": 1
+ },
+ "groups_dropped": {
+  "unmatched": 2,
+  "noise": 3
+ },
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": "parish@dallasstmarys.org",
+  "phone": "(214) 563-0376",
+  "address": "2600 East Glen Blvd, Mesquite, TX 75181",
+  "source_url": "https://stmarysmalankaradallas.org/stmarys-contactus/",
+  "sources": {
+   "email": "https://stmarysmalankaradallas.org/stmarys-contactus/",
+   "phone": "https://stmarysmalankaradallas.org/stmarys-contactus/",
+   "address": "https://stmarysmalankaradallas.org/stmarys-contactus/"
+  },
+  "fetched_at": "2026-11-01T08:05:13+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}
