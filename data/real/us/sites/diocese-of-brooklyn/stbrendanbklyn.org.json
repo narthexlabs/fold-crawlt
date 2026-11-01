@@ -2,13 +2,16 @@
  "domain": "stbrendanbklyn.org",
  "diocese": "diocese-of-brooklyn",
  "matched_church_ids": [
-  "diocese-of-brooklyn:St. Brendan"
+  "diocese-of-brooklyn:St. Brendan",
+  "st-brendan-brooklyn-ny"
  ],
  "matched": {
   "directory": [
    "diocese-of-brooklyn:St. Brendan"
   ],
-  "discovermass": []
+  "discovermass": [
+   "st-brendan-brooklyn-ny"
+  ]
  },
  "names": [
   "St. Brendan"
@@ -19,7 +22,7 @@
  "home_url": "https://www.stbrendanbklyn.org/",
  "final_url": "https://www.stbrendanbklyn.org/",
  "crawl_status": "ok",
- "crawl_env": "sandbox",
+ "crawl_env": "runner-rendered",
  "robots_note": "not_found",
  "pages": [
   {
@@ -96,7 +99,62 @@
   ]
  },
  "template": "generic-html:google_sites",
- "groups": [],
+ "groups": [
+  {
+   "id": "stbrendanbklyn.org:evangelization|ation",
+   "name": "Evangelization",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "evangelization_team",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "The Office of Evangelization is our response to the Great Commission of Jesus in Matthew 28:19-20:",
+   "contact_url": "https://www.stbrendanbklyn.org/about-us/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stbrendanbklyn.org/faith-formation",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:44:51+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "stbrendanbklyn.org:ocia",
+   "name": "OCIA",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "ocia",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.stbrendanbklyn.org/about-us/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stbrendanbklyn.org/faith-formation",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:44:51+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "stbrendanbklyn.org:youth_ministry",
+   "name": "Youth Ministry",
+   "category": "youth",
+   "category_label": "Youth",
+   "subcategory": "youth_ministry",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.stbrendanbklyn.org/about-us/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stbrendanbklyn.org/faith-formation",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:44:51+00:00",
+   "confidence": "medium"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
  "social": {
@@ -142,7 +200,7 @@
    "language": "English",
    "raw": "The Holy Sacrifice of the Mass: Saturday (Anticipatory) - 5:00 p.m. (English) & 7:00 p.m. (Spanish - LIVESTREAM)",
    "source_url": "https://www.stbrendanbklyn.org/liturgy/mass-times",
-   "fetched_at": "2026-11-01T01:59:19+00:00",
+   "fetched_at": "2026-11-01T17:44:47+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -155,7 +213,7 @@
    "language": "Spanish",
    "raw": "The Holy Sacrifice of the Mass: Saturday (Anticipatory) - 5:00 p.m. (English) & 7:00 p.m. (Spanish - LIVESTREAM)",
    "source_url": "https://www.stbrendanbklyn.org/liturgy/mass-times",
-   "fetched_at": "2026-11-01T01:59:19+00:00",
+   "fetched_at": "2026-11-01T17:44:47+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -168,7 +226,7 @@
    "language": "English",
    "raw": "The Holy Sacrifice of the Mass: Sunday - 10:00 a.m. (English - LIVESTREAM)",
    "source_url": "https://www.stbrendanbklyn.org/liturgy/mass-times",
-   "fetched_at": "2026-11-01T01:59:19+00:00",
+   "fetched_at": "2026-11-01T17:44:47+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -181,7 +239,7 @@
    "language": "English",
    "raw": "The Holy Sacrifice of the Mass: Monday to Saturday - 9:00 a.m. (English) - In the Chapel",
    "source_url": "https://www.stbrendanbklyn.org/liturgy/mass-times",
-   "fetched_at": "2026-11-01T01:59:19+00:00",
+   "fetched_at": "2026-11-01T17:44:47+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -195,12 +253,14 @@
    "language": "English",
    "raw": "The Holy Sacrifice of the Mass: Monday to Saturday - 9:00 a.m. (English) - In the Chapel",
    "source_url": "https://www.stbrendanbklyn.org/liturgy/mass-times",
-   "fetched_at": "2026-11-01T01:59:19+00:00",
+   "fetched_at": "2026-11-01T17:44:47+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict",
-   "day_expanded_from": "Monday to Saturday"
+   "day_expanded_from": "Monday to Saturday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
   },
   {
    "kind": "mass",
@@ -209,12 +269,14 @@
    "language": "English",
    "raw": "The Holy Sacrifice of the Mass: Monday to Saturday - 9:00 a.m. (English) - In the Chapel",
    "source_url": "https://www.stbrendanbklyn.org/liturgy/mass-times",
-   "fetched_at": "2026-11-01T01:59:19+00:00",
+   "fetched_at": "2026-11-01T17:44:47+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict",
-   "day_expanded_from": "Monday to Saturday"
+   "day_expanded_from": "Monday to Saturday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
   },
   {
    "kind": "mass",
@@ -223,12 +285,14 @@
    "language": "English",
    "raw": "The Holy Sacrifice of the Mass: Monday to Saturday - 9:00 a.m. (English) - In the Chapel",
    "source_url": "https://www.stbrendanbklyn.org/liturgy/mass-times",
-   "fetched_at": "2026-11-01T01:59:19+00:00",
+   "fetched_at": "2026-11-01T17:44:47+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict",
-   "day_expanded_from": "Monday to Saturday"
+   "day_expanded_from": "Monday to Saturday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
   },
   {
    "kind": "mass",
@@ -237,12 +301,14 @@
    "language": "English",
    "raw": "The Holy Sacrifice of the Mass: Monday to Saturday - 9:00 a.m. (English) - In the Chapel",
    "source_url": "https://www.stbrendanbklyn.org/liturgy/mass-times",
-   "fetched_at": "2026-11-01T01:59:19+00:00",
+   "fetched_at": "2026-11-01T17:44:47+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict",
-   "day_expanded_from": "Monday to Saturday"
+   "day_expanded_from": "Monday to Saturday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
   },
   {
    "kind": "mass",
@@ -251,12 +317,14 @@
    "language": "English",
    "raw": "The Holy Sacrifice of the Mass: Monday to Saturday - 9:00 a.m. (English) - In the Chapel",
    "source_url": "https://www.stbrendanbklyn.org/liturgy/mass-times",
-   "fetched_at": "2026-11-01T01:59:19+00:00",
+   "fetched_at": "2026-11-01T17:44:47+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict",
-   "day_expanded_from": "Monday to Saturday"
+   "day_expanded_from": "Monday to Saturday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
   },
   {
    "kind": "mass",
@@ -265,7 +333,7 @@
    "language": null,
    "raw": "First Friday of the Month - 7:00 p.m. - Votive Mass of the Sacred Heart of Jesus",
    "source_url": "https://www.stbrendanbklyn.org/liturgy/mass-times",
-   "fetched_at": "2026-11-01T01:59:19+00:00",
+   "fetched_at": "2026-11-01T17:44:47+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -278,7 +346,7 @@
    "language": null,
    "raw": "Byzantine Rite Divine Liturgy - Українська/Ukrainian: Saturday - 1:00 p.m.",
    "source_url": "https://www.stbrendanbklyn.org/liturgy/mass-times",
-   "fetched_at": "2026-11-01T01:59:19+00:00",
+   "fetched_at": "2026-11-01T17:44:47+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -291,7 +359,7 @@
    "language": null,
    "raw": "Byzantine Rite Divine Liturgy - Українська/Ukrainian: Sunday - 1:00 p.m. (LIVESTREAM)",
    "source_url": "https://www.stbrendanbklyn.org/liturgy/mass-times",
-   "fetched_at": "2026-11-01T01:59:19+00:00",
+   "fetched_at": "2026-11-01T17:44:47+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -304,7 +372,7 @@
    "language": null,
    "raw": "Exposition and Adoration of the Blessed Sacrament: Monday & Tuesday - 9:30 a.m. to 10:30 a.m.",
    "source_url": "https://www.stbrendanbklyn.org/liturgy/mass-times",
-   "fetched_at": "2026-11-01T01:59:19+00:00",
+   "fetched_at": "2026-11-01T17:44:47+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -318,7 +386,7 @@
    "language": null,
    "raw": "Exposition and Adoration of the Blessed Sacrament: Monday & Tuesday - 9:30 a.m. to 10:30 a.m.",
    "source_url": "https://www.stbrendanbklyn.org/liturgy/mass-times",
-   "fetched_at": "2026-11-01T01:59:19+00:00",
+   "fetched_at": "2026-11-01T17:44:47+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -332,7 +400,7 @@
    "language": null,
    "raw": "Exposition and Adoration of the Blessed Sacrament: Wednesday to Friday - 9:30 a.m. to 10:30 a.m. & 6:00 p.m. to 7:00 p.m.",
    "source_url": "https://www.stbrendanbklyn.org/liturgy/mass-times",
-   "fetched_at": "2026-11-01T01:59:19+00:00",
+   "fetched_at": "2026-11-01T17:44:47+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -346,7 +414,7 @@
    "language": null,
    "raw": "Exposition and Adoration of the Blessed Sacrament: Wednesday to Friday - 9:30 a.m. to 10:30 a.m. & 6:00 p.m. to 7:00 p.m.",
    "source_url": "https://www.stbrendanbklyn.org/liturgy/mass-times",
-   "fetched_at": "2026-11-01T01:59:19+00:00",
+   "fetched_at": "2026-11-01T17:44:47+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -360,7 +428,7 @@
    "language": null,
    "raw": "Exposition and Adoration of the Blessed Sacrament: Wednesday to Friday - 9:30 a.m. to 10:30 a.m. & 6:00 p.m. to 7:00 p.m.",
    "source_url": "https://www.stbrendanbklyn.org/liturgy/mass-times",
-   "fetched_at": "2026-11-01T01:59:19+00:00",
+   "fetched_at": "2026-11-01T17:44:47+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -374,7 +442,7 @@
    "language": null,
    "raw": "Exposition and Adoration of the Blessed Sacrament: Wednesday to Friday - 9:30 a.m. to 10:30 a.m. & 6:00 p.m. to 7:00 p.m.",
    "source_url": "https://www.stbrendanbklyn.org/liturgy/mass-times",
-   "fetched_at": "2026-11-01T01:59:19+00:00",
+   "fetched_at": "2026-11-01T17:44:47+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -388,7 +456,7 @@
    "language": null,
    "raw": "Exposition and Adoration of the Blessed Sacrament: Wednesday to Friday - 9:30 a.m. to 10:30 a.m. & 6:00 p.m. to 7:00 p.m.",
    "source_url": "https://www.stbrendanbklyn.org/liturgy/mass-times",
-   "fetched_at": "2026-11-01T01:59:19+00:00",
+   "fetched_at": "2026-11-01T17:44:47+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -402,7 +470,7 @@
    "language": null,
    "raw": "Exposition and Adoration of the Blessed Sacrament: Wednesday to Friday - 9:30 a.m. to 10:30 a.m. & 6:00 p.m. to 7:00 p.m.",
    "source_url": "https://www.stbrendanbklyn.org/liturgy/mass-times",
-   "fetched_at": "2026-11-01T01:59:19+00:00",
+   "fetched_at": "2026-11-01T17:44:47+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -416,7 +484,7 @@
    "language": null,
    "raw": "Exposition and Adoration of the Blessed Sacrament: Saturday - 9:30 a.m. to 4:00 p.m.",
    "source_url": "https://www.stbrendanbklyn.org/liturgy/mass-times",
-   "fetched_at": "2026-11-01T01:59:19+00:00",
+   "fetched_at": "2026-11-01T17:44:47+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -424,7 +492,7 @@
   }
  ],
  "source_url": "https://www.stbrendanbklyn.org/",
- "fetched_at": "2026-11-01T01:59:28+00:00",
+ "fetched_at": "2026-11-01T17:45:12+00:00",
  "schedule_template": {
   "template": "generic_strict",
   "version": "ca-sites/2",
@@ -443,6 +511,7 @@
   "trusted_candidate": false,
   "generic_rows": 9
  },
+ "has_sunday": true,
  "schedule_dropped": {
   "relative_time": 4,
   "not_a_service": 2,
@@ -450,8 +519,8 @@
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-10-31",
-  "window_end_exclusive": "2027-01-29",
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
@@ -459,7 +528,20 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "office_contact": {
+  "email": null,
+  "phone": "(631) 506-6260",
+  "address": "1525 East 12th Street, Brooklyn, NY 11230",
+  "source_url": "https://www.stbrendanbklyn.org/about-us/contact-us",
+  "sources": {
+   "phone": "https://www.stbrendanbklyn.org/about-us/contact-us",
+   "address": "https://www.stbrendanbklyn.org/about-us/contact-us"
+  },
+  "fetched_at": "2026-11-01T17:45:12+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
- }
+ },
+ "fetch_mode": "rendered"
 }
