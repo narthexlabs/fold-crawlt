@@ -15,7 +15,7 @@ on:
   workflow_dispatch:
     inputs:
       job:
-        description: 'which job (sites | discovermass | gcatholic | commoncrawl | osm | wayback | bulletins | all)'
+        description: 'which job (sites | reparse | discovermass | gcatholic | commoncrawl | osm | wayback | bulletins | all)'
         default: 'all'
       minutes:
         description: 'minutes per chunk'
@@ -30,9 +30,11 @@ env:
 
 jobs:
   sites:
-    if: ${{ github.event_name == 'schedule' || github.event.inputs.job == 'all' || github.event.inputs.job == 'sites' }}
+    # job=reparse runs this same matrix without crawling: each runner restores ITS OWN state group's raw cache (the cache keys
+    # are per matrix index, so a separate job would see none) and re-parses it with the current parser.
+    if: ${{ github.event_name == 'schedule' || github.event.inputs.job == 'all' || github.event.inputs.job == 'sites' || github.event.inputs.job == 'reparse' }}
     runs-on: ubuntu-latest
-    timeout-minutes: 140
+    timeout-minutes: 170
     strategy:
       fail-fast: false
       matrix:
@@ -59,30 +61,29 @@ jobs:
           key: raw-sites-${{ strategy.job-index }}-${{ github.run_id }}
           restore-keys: raw-sites-${{ strategy.job-index }}-
       - name: Parish-website crawl chunk (128 hosts in parallel, one request at a time per host)
+        if: ${{ github.event.inputs.job != 'reparse' }}
         env:
           WORKERS: '128'
           STATES: ${{ matrix.states }}
         run: bash scripts/us/sites_chunk.sh "$MINUTES"
-
-  reparse:
-    needs: sites
-    if: ${{ always() && (github.event_name == 'schedule' || github.event.inputs.job == 'all' || github.event.inputs.job == 'sites') }}
-    runs-on: ubuntu-latest
-    timeout-minutes: 60
-    concurrency: { group: crawl-reparse, cancel-in-progress: false }
-    steps:
-      - uses: actions/checkout@v4
-        with: { fetch-depth: 1 }
-      - run: git config user.name "fold-crawl[bot]" && git config user.email "crawl@narthexlabs.invalid"
-      - name: Re-parse every crawled diocese with the current parser, commit, push
+      - name: Re-parse this group's cached sites with the current parser (same runner, same cache; once per parser version, resumable)
+        if: ${{ always() }}
+        env:
+          STATES: ${{ matrix.states }}
+          RMIN: ${{ github.event.inputs.job == 'reparse' && (github.event.inputs.minutes || '60') || '20' }}
         run: |
-          set -e
-          for d in data/real/us/sites/*/; do
-            s=$(basename "$d"); [ "$s" = "_inputs" ] && continue
-            timeout 600 python3 -I ingest/us/sites/run_state.py parse "$s" >/dev/null 2>&1 || true
-          done
-          git add data/real/us/sites && git commit -q -m "US parish sites: re-parse (Actions $(date -u +%FT%H:%MZ))" || true
-          git pull --rebase --autostash -q origin main && git push -q origin HEAD:main
+          set -u
+          TRAILER=$'\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01SXKUYETifPNNjUVPkZ7qG5'
+          git pull --rebase --autostash -q origin main || true
+          timeout $(( RMIN * 60 + 600 )) python3 -I ingest/us/sites/run_state.py reparse --state "$STATES" --minutes "$RMIN" || true
+          if [ -f data/raw/us/sites/_last_touched.json ]; then
+            for d in $(python3 -c "import json;print(' '.join(json.load(open('data/raw/us/sites/_last_touched.json'))))"); do
+              git add "data/real/us/sites/$d/" && git commit -q -m "US parish sites: re-parse $d (current parser, runner cache)$TRAILER" 2>/dev/null
+            done
+          fi
+          git add data/real/us/sites/progress.json data/real/us/sites/README.md
+          git commit -q -m "US parish sites: re-parse progress $(date -u +%FT%H:%MZ)$TRAILER" 2>/dev/null || true
+          git pull --rebase --autostash -q origin main && git push -q origin HEAD:main || { git pull --rebase --autostash -q origin main && git push -q origin HEAD:main; }
 
   discovermass:
     if: ${{ github.event_name == 'schedule' || github.event.inputs.job == 'all' || github.event.inputs.job == 'discovermass' }}

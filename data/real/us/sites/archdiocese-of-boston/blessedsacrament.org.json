@@ -18,32 +18,203 @@
  ],
  "home_url": "http://blessedsacrament.org/",
  "final_url": "https://blessedsacrament.org/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "crawl_status": "wayback-2025-04-06",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
    "url": "https://blessedsacrament.org/",
-   "status": 403,
-   "class": "challenge"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://blessedsacrament.org/why-blessed-sacrament-school",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.blessedsacrament.org/clubs",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.blessedsacrament.org/events",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://blessedsacrament.org/cashcalendar",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://www.blessedsacrament.org/contact-us",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://blessedsacrament.org/bulletins",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://blessedsacrament.org/bulletin",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "blessedsacrament.org:youth_ministry",
+   "name": "Youth Ministry",
+   "category": "youth",
+   "category_label": "Youth",
+   "subcategory": "youth_ministry",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.blessedsacrament.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.blessedsacrament.org/clubs",
+   "source_kind": "website",
+   "fetched_at": "2025-03-22T16:00:26+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-04-06"
+  },
+  {
+   "id": "blessedsacrament.org:other_robotics_club",
+   "name": "Robotics Club",
+   "category": "other",
+   "category_label": "Other",
+   "subcategory": "unclassified",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.blessedsacrament.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.blessedsacrament.org/clubs",
+   "source_kind": "website",
+   "fetched_at": "2025-03-22T16:00:26+00:00",
+   "confidence": "low",
+   "source": "wayback-2025-04-06"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/bsschoolwalpole"
+  ],
+  "instagram": [
+   "https://www.instagram.com/bsswalpole/"
+  ],
+  "x": [
+   "https://x.com/BSSchoolWalpole"
+  ]
+ },
  "bulletin": null,
  "schedule_rows": [],
  "source_url": "http://blessedsacrament.org/",
- "fetched_at": "2026-11-01T05:09:03+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-01T11:47:43+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "groups_dropped": {
+  "unmatched": 3,
+  "private_name_risk": 2
+ },
+ "office_contact": {
+  "email": "office@blessedsacrament.org",
+  "phone": "(508) 668-8175",
+  "address": "808 East Street, Walpole, Ma 02081",
+  "source_url": "https://www.blessedsacrament.org/contact-us",
+  "sources": {
+   "email": "https://www.blessedsacrament.org/contact-us",
+   "phone": "https://www.blessedsacrament.org/contact-us",
+   "address": "https://www.blessedsacrament.org/contact-us"
+  },
+  "fetched_at": "2025-04-27T19:31:20+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2025-04-06",
+  "capture_age_days": 574,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://blessedsacrament.org/",
+    "capture": "2025-04-06",
+    "archive_url": "https://web.archive.org/web/20250406193743/https://blessedsacrament.org/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://blessedsacrament.org/why-blessed-sacrament-school",
+    "capture": "2025-10-14",
+    "archive_url": "https://web.archive.org/web/20251014101046/https://blessedsacrament.org/why-blessed-sacrament-school"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://www.blessedsacrament.org/clubs",
+    "capture": "2025-03-22",
+    "archive_url": "https://web.archive.org/web/20250322160026/https://www.blessedsacrament.org/clubs"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://www.blessedsacrament.org/events",
+    "capture": "2025-10-07",
+    "archive_url": "https://web.archive.org/web/20251007062915/https://www.blessedsacrament.org/events"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://blessedsacrament.org/cashcalendar",
+    "capture": "2025-06-24",
+    "archive_url": "https://web.archive.org/web/20250624064811/https://blessedsacrament.org/cashcalendar"
+   },
+   {
+    "kind": "contact",
+    "original": "https://www.blessedsacrament.org/contact-us",
+    "capture": "2025-04-27",
+    "archive_url": "https://web.archive.org/web/20250427193120/https://www.blessedsacrament.org/contact-us"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }

@@ -393,6 +393,11 @@ def expand_days(day: str | None, raw: str, context: str | None = None, kind: str
             r = day_range(t)
             if r:
                 return r
+        if day == "Weekday" or (day is None and re.search(r"\bweekdays?\b", raw, re.I)):
+            own = [m for m in DAY_TOK.finditer(raw) if not re.search(r"except|\bno\b|\bnot\b|\bbut\b", raw[max(0, m.start() - 14):m.start()], re.I)]
+            idx = sorted({i for i in (_day_index(m.group(0)) for m in own) if i is not None})
+            if idx and max(idx) <= 4:      # "Weekdays - Monday 12:00 noon", "Weekday-Wednesday 9 am": the named day only
+                return [DAYN[i] for i in idx], None
         if day == "Daily" and kind == "adoration":
             return DAYN[:], "Daily"                 # a chapel open daily for adoration: every day
         if day == "Daily":
@@ -643,6 +648,420 @@ def schedule_rows(pages: list[Page], key: str, home: str, today: str, names: lis
     return rows[:120], img_hints[:4]
 
 
+# ------------------------------------------------------------------------------------------------ row hygiene
+# docs/review/us-check-2026-11-01.md (28% slot error on "complete" US records). Applied to every row set, template or
+# generic: (1) rows only from schedule text: not blog posts, not sentences, not cancelled/former/one-off notices, not
+# baptism/anointing/funeral/wedding clauses; (2) each time bound to its nearest day words in the line itself instead of
+# one day carried over or a cross product ("8:30 am Mon, Tues, Wed & Fri and 5:30 pm, Thurs"); (3) qualifiers kept:
+# "(Sunday Anticipatory)" stays Saturday, "2nd Thursday" keeps `nth`, month ranges keep `season` (both needs_review).
+# has_sunday() is the completeness bar: at least one Sunday or Saturday-vigil Mass.
+MONTH_ALT_N = r"jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|june?|july?|aug(?:ust)?|sep(?:t(?:ember)?)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?"
+BLOG_URL = re.compile(r"/(?:post|posts|blog|blogs|single-post|news-?\d|article|articles)/|/20\d\d/\d\d/|[?&]p=\d", re.I)
+# A notice, not a schedule: cancelled / former / changed-from-a-date lines. "beginning / starting / effective" count only with a
+# date or "this/next" after them ("Confession is offered Tuesdays beginning at 5:30 pm" is a schedule line, us-check #12).
+NOTICE = re.compile(r"\bcancel+ed\b|\bcancel+ation|\bformer(?:ly)?\b|no longer|discontinu|suspend|\binstead\b|\bwill (?:not )?be "
+                    r"(?:held|moved|celebrated|changed)|\b(?:beginning|starting|effective)\s+(?:on\s+|this\s+|next\s+|today|tomorrow|"
+                    r"(?:" + MONTH_ALT_N + r")\.?\s+\d|\d{1,2}/\d{1,2}|(?:mon|tue|wed|thu|fri|sat|sun)[a-z]*,?\s+(?:" + MONTH_ALT_N +
+                    r")\.?\s+\d)|\buntil further|\btemporar|\bthis (?:week|weekend)\b|\bnext (?:week|weekend)\b", re.I)
+NOT_MASS_CLAUSE = re.compile(r"baptis|bautiz|bautism|anoint|unci[oó]n|funeral|wedding|matrimon|quincea|rehears", re.I)
+SCHED_VOCAB = set("""mass masses misa misas sunday sundays saturday saturdays monday mondays tuesday tuesdays wednesday wednesdays
+thursday thursdays friday fridays sun sat mon tue tues wed thu thur thurs fri weekday weekdays weekend daily vigil am pm a m p
+noon and or the at in on of to through thru confession confessions reconciliation adoration english spanish espanol español
+latin vietnamese polish portuguese korean tagalog chinese french italian schedule times time evening morning liturgy chapel
+church holy days day eucharistic every first second third fourth last st sacrament exposition benediction mon-fri also by
+appointment anticipated anticipatory sabado sábado domingo lunes martes miercoles miércoles jueves viernes y en la el de
+weekly hours horario confesiones adoración adoracion parish main hall upstairs downstairs before after following""".split())
+DAY_TOK = re.compile(r"\b(mon|tue|wed|thu|fri|sat|sun)(?:day|days|s|\.|sday|nesday|rsday|urday|urdays|sdays|nesdays|rsdays|r|rs)?\b\.?"
+                     r"|\b(?:lunes|martes|mi[eé]rcoles|jueves|viernes|s[aá]bados?|domingos?)\b", re.I)
+SP_DAY = {"lunes": 0, "martes": 1, "miercoles": 2, "miércoles": 2, "jueves": 3, "viernes": 4, "sabado": 5, "sábado": 5,
+          "sabados": 5, "sábados": 5, "domingo": 6, "domingos": 6}
+EN_DAY = {"mon": 0, "tue": 1, "wed": 2, "thu": 3, "fri": 4, "sat": 5, "sun": 6}
+LETTER_DAYS = re.compile(r"(?<![A-Za-z])(?<![AaPp]\.)(?<![AaPp] )(M|Tu|W|Th|F|Sa|Su)(?![A-Za-z])")  # not the M of "A.M."/"P.M."
+NTH = re.compile(r"\b(1st|2nd|3rd|4th|5th|first|second|third|fourth|fifth|last)\s+(mon|tue|wed|thu|fri|sat|sun)[a-z]*", re.I)
+MONTH_ALT = r"jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|june?|july?|aug(?:ust)?|sep(?:t(?:ember)?)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?"
+SEASON = re.compile(r"\b(?:between|from)?\s*(" + MONTH_ALT + r")\.?\s*(?:-|–|—|to|through|thru|and|until)\s*(" + MONTH_ALT + r")\b", re.I)
+SEP_ONLY = re.compile(r"^[\s,&/+.:;]*(?:and|y|&|,|/|-|–|—|to|thru|through)?[\s,&/+.:;]*(?:and|y)?[\s,&/+.:;]*$", re.I)
+RANGE_SEP = re.compile(r"^\s*\.?\s*(?:-|–|—|to|thru|through)\s*$", re.I)
+
+
+def _day_index(tok: str) -> int | None:
+    t = tok.lower().rstrip(".")
+    if t in SP_DAY:
+        return SP_DAY[t]
+    return EN_DAY.get(t[:3])
+
+
+def _clause(raw: str, time: str) -> str:
+    toks = [m for m in TIME_TOK.finditer(raw or "") if _hhmm(m) == (time or "")[:5]]
+    if not toks:
+        return raw or ""
+    pos = toks[0].start()
+    cuts = [0] + [m.end() for m in CLAUSE_CUT.finditer(raw)] + [len(raw)]
+    return raw[max(c for c in cuts if c <= pos):min(c for c in cuts if c > pos)]
+
+
+def _is_prose(raw: str) -> bool:
+    body = raw.split("::", 1)[-1] if "::" in raw else raw
+    words = re.findall(r"[A-Za-zÀ-ÿ']+", body)
+    other = [w for w in words if w.lower() not in SCHED_VOCAB and not w.lower().startswith(("mass", "confess", "reconcil"))]
+    return len(other) >= 9 and len(words) >= 14
+
+
+def bind_days(line: str) -> dict[str, list[int]] | None:
+    """time 'HH:MM' -> day indexes, read from the line's own order of day groups and time groups; None when the line
+    names fewer than two days (nothing to rebind) or the pairing is ambiguous."""
+    toks = []
+    for m in DAY_TOK.finditer(line):
+        i = _day_index(m.group(0))
+        if i is None:
+            continue
+        pre = line[max(0, m.start() - 2):m.start()]
+        post = line[m.end():m.end() + 14].lower()
+        if "(" in pre and re.match(r"\s*(?:anticipat|vigil)", post):
+            continue                      # "(Sunday Anticipatory)": a qualifier, not a day
+        toks.append((m.start(), m.end(), "D", i))
+    for m in LETTER_DAYS.finditer(line):
+        if not any(a <= m.start() < b for a, b, _, _ in toks) and re.search(r"[-–,&]|\bthru\b", line[max(0, m.start() - 3):m.end() + 3]):
+            toks.append((m.start(), m.end(), "D", {"M": 0, "Tu": 1, "W": 2, "Th": 3, "F": 4, "Sa": 5, "Su": 6}[m.group(1)]))
+    for m in TIME_TOK.finditer(line):
+        toks.append((m.start(), m.end(), "T", _hhmm(m)))
+    toks.sort()
+    if sum(1 for t in toks if t[2] == "D") < 2 or not any(t[2] == "T" for t in toks):
+        return None
+    # groups: consecutive same-type tokens separated only by list words; a day range "Mon - Fri" expands
+    groups = []
+    for a, b, typ, v in toks:
+        if groups and groups[-1][0] == typ and SEP_ONLY.match(line[groups[-1][2]:a]):
+            g = groups[-1]
+            if typ == "D" and RANGE_SEP.match(line[g[2]:a]):
+                g[1].extend(DAYN.index(d) for d in _span(g[1][-1], v)[1:])
+            else:
+                g[1].append(v)
+            g[2] = b
+        else:
+            groups.append([typ, [v], b])
+    out: dict[str, list[int]] = {}
+    lead = groups[0][0]
+    for i, (typ, vals, _) in enumerate(groups):
+        if typ != "T":
+            continue
+        if lead == "D":
+            prev = next((g for g in reversed(groups[:i]) if g[0] == "D"), None)
+            ds = prev[1] if prev else None
+        else:
+            nxt = groups[i + 1] if i + 1 < len(groups) and groups[i + 1][0] == "D" else None
+            ds = nxt[1] if nxt else None
+        if ds is None:
+            return None
+        for t in vals:
+            out.setdefault(t, [])
+            out[t] += [d for d in ds if d not in out[t]]
+    return out
+
+
+def row_hygiene(rows: list[dict], dropped: dict) -> list[dict]:
+    def drop(why):
+        dropped[why] = dropped.get(why, 0) + 1
+    nonblog = any(not BLOG_URL.search(r.get("source_url") or "") for r in rows)
+    out, seen, rebound = [], set(), set()
+    for r in rows:
+        raw = r.get("raw") or ""
+        kind = r.get("kind")
+        if kind in ("mass", "confession", "adoration"):
+            if BLOG_URL.search(r.get("source_url") or ""):
+                drop("blog_post"); continue
+            if NOTICE.search(raw):
+                drop("notice_not_schedule"); continue
+            if _is_prose(raw):
+                drop("prose"); continue
+            if kind == "mass" and NOT_MASS_CLAUSE.search(_clause(raw, r.get("time") or "")):
+                drop("not_a_mass"); continue
+        r = dict(r)
+        t5 = (r.get("time") or "")[:5]
+        seg = _clause(raw, t5)
+        if r.get("day") == "Sunday" and re.search(r"\(\s*sunday\s+(?:anticipat|vigil)|anticipat", seg, re.I) and \
+                not re.search(r"\bsunday\b(?!\s+(?:anticipat|vigil))", re.sub(r"\(\s*sunday\s+(?:anticipat|vigil)\w*\s*\)", "", seg, flags=re.I), re.I):
+            r.update(day="Saturday", day_parsed="Sunday")
+        b = bind_days(raw) if r.get("day") in DAYN and kind in ("mass", "confession", "adoration") and "-" not in (r.get("time") or "") \
+            else None
+        if b is not None and t5 in b:
+            key = (raw, r.get("source_url"), kind, r.get("language"), t5)
+            if key in rebound:
+                continue
+            rebound.add(key)
+            for di in sorted(b[t5]):
+                nr = dict(r, day=DAYN[di])
+                if nr["day"] != r["day"]:
+                    nr["day_parsed"] = r["day"]
+                    nr["day_bound_from_line"] = True
+                k = (nr["kind"], nr["day"], nr["time"], nr.get("language"), nr.get("location"))
+                if k not in seen:
+                    seen.add(k); out.append(nr)
+            continue
+        elif b is not None and t5 not in b:
+            pass
+        m = NTH.search(raw)
+        if m and r.get("day") in DAYN and r["day"].lower().startswith(m.group(2).lower()[:3]):
+            r["nth"] = m.group(1).lower()
+            r["needs_review"] = True
+            r["review_reason"] = ",".join(x for x in [r.get("review_reason"), "nth_of_month"] if x)
+        s = SEASON.search(raw)
+        if s:
+            r["season"] = s.group(0).strip()
+            r["needs_review"] = True
+            r["review_reason"] = ",".join(x for x in [r.get("review_reason"), "seasonal"] if x)
+        k = (r.get("kind"), r.get("day"), r.get("time"), r.get("language"), r.get("location"))
+        if k in seen:
+            continue
+        seen.add(k)
+        out.append(r)
+    return out
+
+
+def has_sunday(rows: list[dict]) -> bool:
+    """The completeness bar: at least one Sunday Mass or Saturday vigil (14:00 or later, or a line saying vigil)."""
+    for r in rows:
+        if r.get("kind") != "mass":
+            continue
+        if r.get("day") == "Sunday":
+            return True
+        if r.get("day") == "Saturday" and ((r.get("time") or "") >= "14:00" or re.search(r"vigil|anticipat", r.get("raw") or "", re.I)):
+            return True
+    return False
+
+
+# --- schedule boxes and grids on the home / Mass-times page (us-check re-check 2026-11-01: #11, #18, #20 — 33 of 49 missing
+# slots). Two shapes the line-order reader misses: (1) a GRID, day labels in one cell/column and times in the next
+# ("SATURDAY:<br>SUNDAY:" | "5:00 PM<br>8:00 AM<br>10:15 AM"), paired by line index inside the same container (a blank
+# label line keeps the label above it; equal counts pair n-th with n-th); (2) a BOX, one leaf text container (Wix/Duda text
+# block, Elementor column) read on its own, so a "Confessions" heading in a neighbouring box does not carry into it. Used
+# only when the template rows hold fewer than two weekend Masses; a box row never replaces a row already found.
+GRID_DAY = r"(?:sun|mon|tue|tues|wed|thu|thur|thurs|fri|sat)[a-z]*\.?"
+GRID_LABEL = re.compile(rf"^\s*(?:(?:saturday\s+)?vigil|weekdays?|weekends?|daily|{GRID_DAY}(?:\s*(?:-|–|—|&|,|/|and|to|thru|through)\s*{GRID_DAY})*"
+                        rf"(?:\s+vigil)?)\s*:?\s*$", re.I)
+GRID_TIME = r"(?:\d{1,2}(?::\d\d)?\s*(?:[ap]\.?\s*m\.?|noon)|noon)"
+TIME_ONLY = re.compile(rf"^\s*{GRID_TIME}(?:\s*(?:-|–|—|&|,|\+|and|to)\s*{GRID_TIME})*\s*(?:\((?:english|spanish|espa[nñ]ol|latin)\))?\s*$", re.I)
+BOX_NOT_LEAF = ["div", "section", "article", "table", "ul", "ol", "main", "header", "footer", "nav", "aside", "form"]
+BOX_TAGS = ["div", "section", "article", "td", "li", "p", "h2", "h3", "h4", "h5", "h6"]
+HEAD_TAGS = ["h1", "h2", "h3", "h4", "h5", "h6"]
+BOX_CONF = re.compile(r"confess|reconcil|penance|confesi|by appointment", re.I)
+BOX_MASS = re.compile(r"\bmass(?:es)?\b|\bmisas?\b|\bvigil\b|liturg|worship|schedule|horario", re.I)
+# lines a box keeps out: meetings and classes, seasonal / one-off liturgies, non-Catholic service names
+BOX_NOT = re.compile(r"stud(?:y|ies)|council|meeting|class(?:es)?\b|zoom|office|\blent|station|christmas|easter|good friday|holy "
+                     r"(?:thursday|saturday)|ash wednesday|passion|lord'?s supper|basket|\btbd\b|summer|school|rehears|choir|practice|"
+                     r"bingo|dinner|breakfast|\brite i|holy communion|morning prayer|evensong|healing|\bdecember|\bjanuary|"
+                     r"thanksgiving|new year|cemeter|funeral|wedding|baptis|anoint", re.I)
+TIME_RANGE = re.compile(rf"{GRID_TIME}\s*(?:-|–|—|to|until)\s*{GRID_TIME}|\b\d{{1,2}}(?::\d\d)?\s*(?:-|–|—)\s*{GRID_TIME}", re.I)
+
+
+def _box_lines_ok(lines: list[str], conf: bool) -> list[str]:
+    out = []
+    for ln in lines:
+        if BOX_NOT.search(ln):
+            continue
+        if not TIME_TOK.search(ln) and (BOX_CONF.search(ln) or RX_ADOR.search(ln)):
+            conf = True                  # a "Confession" sub-heading inside the box: spans below it are confession hours
+        elif not TIME_TOK.search(ln) and BOX_MASS.search(ln):
+            conf = False
+        if TIME_TOK.search(ln) and TIME_RANGE.search(ln) and not conf and not BOX_CONF.search(ln) and not RX_ADOR.search(ln):
+            continue                     # "Saturday: 8:30 AM - 10:30 AM": a span (office, adoration, confession), not a Mass
+        out.append(ln)
+    return out
+
+
+def _day_time_line(ln: str) -> bool:
+    return bool(DAY_TOK.search(ln) and TIME_TOK.search(ln) and len(ln.split()) <= 10)
+
+
+def _el_lines(el) -> list[str]:
+    """Lines of an element as rendered: <br> and block ends break lines; consecutive <br> keep a blank line (grid spacer)."""
+    src = re.sub(r"\s+", " ", str(el))
+    src = re.sub(r"(?is)<(script|style|noscript|svg|template)\b.*?</\1>", " ", src)
+    src = re.sub(r"(?i)<br\b[^>]*>", "\n", src)
+    src = re.sub(r"(?i)</(?:p|div|li|tr|h\d|td|th|section|article)>", "\n", src)
+    import html as _html
+    txt = _html.unescape(re.sub(r"<[^>]+>", "", src)).replace("​", "").replace("\xa0", " ")
+    lines = [re.sub(r"\s+", " ", x).strip() for x in txt.split("\n")]
+    while lines and not lines[0]:
+        lines.pop(0)
+    while lines and not lines[-1]:
+        lines.pop()
+    return lines
+
+
+def _label_line(lines: list[str]) -> bool:
+    nb = [x for x in lines if x]
+    return bool(nb) and len(nb) <= 10 and all(GRID_LABEL.match(x) for x in nb)
+
+
+def _time_line(lines: list[str]) -> bool:
+    nb = [x for x in lines if x]
+    return bool(nb) and len(nb) <= 20 and all(TIME_ONLY.match(x) for x in nb)
+
+
+def _pair(labels: list[str], times: list[str]) -> list[str] | None:
+    lab = [x for x in labels if x]
+    tim = [x for x in times if x]
+    if len(tim) < len(lab):
+        return None
+    if len(tim) == len(lab):
+        return [f"{a.rstrip(': ')}: {b}" for a, b in zip(lab, tim)]
+    out, cur = [], None
+    for i, t in enumerate(times):           # line index alignment; a blank label line keeps the label above it
+        if i < len(labels) and labels[i]:
+            cur = labels[i]
+        if t and cur:
+            out.append(f"{cur.rstrip(': ')}: {t}")
+    return out or None
+
+
+def _heading_before(el) -> str | None:
+    h = el.find_previous(HEAD_TAGS)
+    if h is not None:
+        t = re.sub(r"\s+", " ", h.get_text(" ", strip=True))
+        if t and len(t) <= 80 and not TIME_TOK.search(t):
+            return t
+    return None
+
+
+def grid_blocks(soup) -> tuple[list[tuple[str | None, list[str]]], set[int]]:
+    """[(heading, ['Day: time', ...])] for label/time grids, and the ids of the grid containers (not read again as boxes)."""
+    out, used = [], set()
+    for el in soup.find_all(True):
+        kids = [c for c in el.children if getattr(c, "name", None)]
+        if len(kids) < 2 or len(kids) > 24:
+            continue
+        kl = [_el_lines(k) for k in kids]
+        i = 0
+        while i < len(kids) - 1:
+            # (a) one label cell then one time cell, lines aligned by index
+            if _label_line(kl[i]) and _time_line(kl[i + 1]):
+                pr = _pair(kl[i], kl[i + 1])
+                if pr:
+                    out.append((_heading_before(el), pr)); used.add(id(el)); i += 2; continue
+            # (b) a run of n single-label cells then a run of n single-time cells (repeater / flex grid columns)
+            j = i
+            while j < len(kids) and len([x for x in kl[j] if x]) == 1 and _label_line(kl[j]):
+                j += 1
+            n = j - i
+            if n >= 2 and j + n <= len(kids) and all(len([x for x in kl[j + q] if x]) == 1 and _time_line(kl[j + q]) for q in range(n)):
+                labs = [[x for x in kl[i + q] if x][0] for q in range(n)]
+                tims = [[x for x in kl[j + q] if x][0] for q in range(n)]
+                out.append((_heading_before(el), [f"{a.rstrip(': ')}: {b}" for a, b in zip(labs, tims)])); used.add(id(el))
+                i = j + n
+                continue
+            i += 1
+    return out, used
+
+
+def box_blocks(soup, skip: set[int]) -> list[tuple[str | None, list[str]]]:
+    """Leaf text containers that hold a schedule (>= 2 times, or a day and a time), each with its own kind heading."""
+    cands = []
+    for el in soup.find_all(BOX_TAGS):
+        if id(el) in skip or el.find(BOX_NOT_LEAF) is not None or any(id(a) in skip for a in el.parents):
+            continue
+        cands.append(el)
+    ids = {id(e) for e in cands}
+    out = []
+    for el in cands:
+        if el.parent is not None and id(el.parent) in ids:
+            continue                       # read the outermost leaf container once
+        lines = [x for x in _el_lines(el) if x]
+        if not lines or len(lines) > 30 or sum(len(x) for x in lines) > 1500:
+            continue
+        nt = sum(1 for x in lines if TIME_TOK.search(x))
+        nd = sum(1 for x in lines if DAY_TOK.search(x))
+        if nt < 2 and not (nt and nd):
+            continue
+        if not nd:
+            continue
+        prev = el.find_previous_sibling()
+        while prev is not None and not prev.get_text(strip=True).replace("​", ""):
+            prev = prev.find_previous_sibling()
+        head = None
+        if prev is not None and prev.name in HEAD_TAGS + ["p"]:
+            t = re.sub(r"\s+", " ", prev.get_text(" ", strip=True))
+            if len(t) <= 80 and not TIME_TOK.search(t):
+                head = t
+        out.append((head, lines))
+    return out
+
+
+class BoxPage:
+    """A schedule box or grid read as a page of its own (duck-types Page for schedule_rows)."""
+    def __init__(self, p: Page, lines: list[str]):
+        self.url, self.req_url, self.fetched_at, self.kind, self.rec = p.url, p.req_url, p.fetched_at, "box", p.rec
+        self.lines, self.cells = lines, set()
+        self.soup = BeautifulSoup("", "lxml")
+
+
+def box_rows(pages: list[Page], key: str, home: str, today: str, names: list[str] | None, dropped: dict) -> list[dict]:
+    vps = []
+    for p in pages:
+        if p.kind not in ("home", "mass_times") or BLOG_URL.search(p.url or ""):
+            continue
+        grids, used = grid_blocks(p.soup)
+        for head, lines in grids:
+            hd = head if head and re.search(r"mass|misa|confess|reconcil|liturg|schedule", head, re.I) else "Mass Times"
+            vps.append(BoxPage(p, [hd] + lines))
+        for head, lines in box_blocks(p.soup, used):
+            body = " ".join(lines)
+            has_mass = bool(re.search(r"\bmass|\bmisa", body, re.I))
+            if BOX_CONF.search(body) and not has_mass:
+                hd = "Confessions"              # the box says so itself ("... Or by appointment")
+            elif head and BOX_CONF.search(head) and not has_mass:
+                continue                        # a neighbouring "Confessions" heading: which box it heads is not known
+            else:
+                hd = "Mass Times"
+            lines = _box_lines_ok(lines, hd == "Confessions")
+            dt = [ln for ln in lines if _day_time_line(ln)]
+            if not dt:
+                continue
+            if hd == "Mass Times" and not (BOX_MASS.search(" ".join(lines)) or (head and BOX_MASS.search(head)) or len(dt) >= 2):
+                continue                        # no Mass word anywhere and not a list of "Day time" lines
+            pre = [head] if head and not BOX_CONF.search(head) and not re.search(r"\bmass|misa|schedule", head, re.I) else []
+            vps.append(BoxPage(p, [hd] + pre + lines))
+    if not vps:
+        return []
+    out = []
+    for vp in vps:
+        rows, _ = schedule_rows([vp], key, home, today, names, dropped)
+        for r in rows:
+            r["review_reason"] = ",".join(x for x in [r.get("review_reason"), "schedule_box"] if x)
+        out += rows
+    return out
+
+
+def weekend_masses(rows: list[dict]) -> int:
+    return sum(1 for r in rows if r.get("kind") == "mass" and (r.get("day") == "Sunday" or (
+        r.get("day") == "Saturday" and ((r.get("time") or "") >= "14:00" or re.search(r"vigil|anticipat", r.get("raw") or "", re.I)))))
+
+
+def merge_box_rows(rows: list[dict], pages: list[Page], key: str, home: str, today: str, names: list[str] | None,
+                   dropped: dict) -> list[dict]:
+    """Template rows plus the box/grid reader's rows when the template found fewer than two weekend Masses. A box row is
+    added only for a (kind, day, start time) not already present."""
+    if weekend_masses(rows) >= 2:
+        return rows
+    bdrop: dict = {}
+    extra = row_hygiene(tag_locations(box_rows(pages, key, home, today, names, bdrop), pages), bdrop)
+    if weekend_masses(extra) <= weekend_masses(rows):
+        return rows
+    have = {(r.get("kind"), r.get("day"), (r.get("time") or "")[:5]) for r in rows}
+    spans = [(r.get("kind"), r.get("day"), r["time"][:5], r["time"][6:11]) for r in rows if "-" in (r.get("time") or "")]
+    added = 0
+    for r in extra:
+        k = (r.get("kind"), r.get("day"), (r.get("time") or "")[:5])
+        if k in have or any(a == k[0] and b == k[1] and lo <= k[2] <= hi for a, b, lo, hi in spans):
+            continue
+        have.add(k)
+        rows.append(r)
+        added += 1
+    if added:
+        dropped["box_rows_added"] = dropped.get("box_rows_added", 0) + added
+    return rows
+
+
 # ------------------------------------------------------------------------------------------------ groups
 MIN_PAGE_PATH = re.compile(r"ministr|group|societ|organi[sz]ation|involve|serve|apostolate|grupo|liturgical|formation|devotion", re.I)
 
@@ -735,8 +1154,8 @@ def menu_items(home: Page) -> list[str]:
             continue
         head = ""
         for ch in li.children:
-            if getattr(ch, "name", None) in ("ul", "ol"):
-                break
+            if getattr(ch, "name", None) in ("ul", "ol") or (getattr(ch, "name", None) is not None and ch.find(["ul", "ol"]) is not None):
+                break                     # the submenu, directly or inside a wrapper div (Weebly, Elementor)
             head += " " + (ch.get_text(" ", strip=True) if hasattr(ch, "get_text") else str(ch))
         if not MENU_HUB.search(head) or len(head) > 60:
             continue
@@ -750,6 +1169,116 @@ def menu_items(home: Page) -> list[str]:
     return out[:60]
 
 
+# --- multi-church schedules (us-check 2026-11-01 #11): keep the church / location the page labels on each row. The templates
+# tag a row "[<church>] ..." when the input list names two or more churches; otherwise the page's own location headings
+# ("St. Mary Church (12 Main St):", "Holy Cross Chapel:") are used, but only on a page that labels two or more locations.
+CHURCH_TAG = re.compile(r"^\[([^\]]{3,80})\]\s*")
+
+
+def _loc_label(ln: str) -> str:
+    t = ADDR_IN.sub("", ln)
+    t = re.sub(r"\s+", " ", t).strip(" :–—-•|")
+    return t[:80]
+
+
+def tag_locations(rows: list[dict], pages: list[Page]) -> list[dict]:
+    by_url = {p.url: p for p in pages}
+    heads: dict[str, list[str]] = {}
+    for r in rows:
+        if r.get("location"):
+            continue
+        m = CHURCH_TAG.match(r.get("raw") or "")
+        if m:
+            r["location"] = m.group(1).strip()
+            continue
+        p = by_url.get(r.get("source_url"))
+        if p is None:
+            continue
+        if p.url not in heads:
+            heads[p.url] = list(dict.fromkeys(_loc_label(ln) for ln in p.lines if is_location_heading(ln)))
+        if len(heads[p.url]) < 2:
+            continue
+        loc = location_of(p.lines, r.get("raw") or "")
+        if loc:
+            r["location"] = _loc_label(loc)
+    return rows
+
+
+# --- groups recall (us-check 2026-11-01: precision 91%, recall 37%). Ministry hubs also list groups as tables
+# ("ministry / contact / phone": column 1 only), as "Organization - Contact person (phone)" lines, and only in a nav submenu
+# under Ministries / Get Involved / Parish Life. Person names and phone numbers are stripped from the candidate, never kept.
+# Every candidate still passes _new_shape_ok (taxonomy) and the privacy screens in groups_for.
+PHONE_FRAG = re.compile(r"\(?\b\d{3}\)?[\s.-]?\d{3}[\s.-]\d{4}\b|\b\d{3}[\s.-]\d{4}\b|\bext\.?\s*\d+", re.I)
+HONORIFIC = r"(?:Mr|Mrs|Ms|Miss|Mx|Dr|Fr|Father|Sr|Sister|Br|Brother|Dcn|Deacon|Rev|Msgr)"
+PERSON_FRAG = re.compile(rf"\b{HONORIFIC}\.?\s+(?:&\s*{HONORIFIC}\.?\s+)?[A-Z][\w'’.-]*(?:\s+[A-Z][\w'’.-]*){{0,3}}")
+DANGLING_HON = re.compile(rf"\s+{HONORIFIC}\.?\s*$")
+PERSONISH = re.compile(rf"^(?:{HONORIFIC}\.?\s+)?[A-Z][a-z'’.-]+(?:\s+[A-Z]\.?)?(?:\s+[A-Z][\w'’-]+){{1,2}}$")
+TABLE_HEAD = re.compile(r"^(?:ministry|ministries|organi[sz]ations?|group|groups|name|committee|contact)\b", re.I)
+# link labels / hub headings / form links that read like groups (us-check precision misses)
+GROUP_LABEL_JUNK = re.compile(r"brochure|\bforms?\b|switch\s+language|select\s+language|translat|\bcomponents\b|^ministries\b|"
+                              r"\bministries\s+(?:with|for|of|at|in)\b|sign[\s-]*up|\bregist(?:er|ration)\b|\bpdf\b|\bflyer\b|"
+                              r"\bnewsletter\b|\bapplication\b|requirements?\b|\?$|^preparing\b|^sacrament(?:s)?\s+of\b|"
+                              r"^(?:pre-?k|k|\d{1,2}(?:st|nd|rd|th)?)\s*(?:-|–|to)\s*\d{1,2}(?:st|nd|rd|th)?\s+grades?$|\bgallery\b|\bphotos?\b|\balbums?\b|\bfb\s+page\b|\bfacebook\b|\bwebsite\b|\bschool\s+(?:clubs?|board|band|athletics|sports|supply|supplies|uniforms?|tuition|calendar)\b|^(?:the\s+)?school\b|\bstaff\b|\bwebmaster\b|\bdirectory\b", re.I)
+SACRAMENT_PREP_SUB = {"baptism_prep", "first_communion_prep", "confirmation_prep", "marriage_prep"}
+
+
+def strip_person_phone(t: str) -> str:
+    t = PHONE_FRAG.sub(" ", t or "")
+    t = PERSON_FRAG.sub(" ", t)
+    t = re.sub(r"\S+@\S+", " ", t)
+    t = re.sub(r"\(\s*\)", " ", t)
+    t = DANGLING_HON.sub("", re.sub(r"\s+", " ", t)).strip(" ,;:–—-|/")
+    return t
+
+
+def _contactish(t: str) -> bool:
+    """The right-hand part of 'Group - <this>' is a contact (a person, a phone, 'Vacant'), not a description."""
+    t = (t or "").strip(" -–—:")
+    if not t or re.fullmatch(r"vacant|tbd|tba|open", t, re.I):
+        return True
+    rest = strip_person_phone(t)
+    if not rest or rest != t and len(rest.split()) <= 1:
+        return True
+    return bool(PERSONISH.match(re.sub(r"\s*\([^)]*\)\s*$", "", t)))
+
+
+def table_items(p: Page) -> list[str]:
+    """Column 1 of tables on a ministry page ('Ministry | Contact | Phone'), people and phones stripped."""
+    out = []
+    for tb in p.soup.find_all("table"):
+        for tr in tb.find_all("tr"):
+            cells = tr.find_all(["td", "th"])
+            if not cells or (tr.find("th") and not tr.find("td")):
+                continue
+            c0 = cells[0].get_text(" ", strip=True)
+            if TABLE_HEAD.match(c0) and len(c0.split()) <= 3:
+                continue
+            t = _cand_text(strip_person_phone(c0))
+            if t and _new_shape_ok(t):
+                out.append(t)
+    return out if len(out) >= 2 else []
+
+
+def contact_line_items(p: Page) -> list[str]:
+    """'Organization - Contact person (phone)' lines, or an organization line followed by a '- Person' line."""
+    out, lines = [], p.lines
+    for i, ln in enumerate(lines):
+        ln = ln.strip()
+        if len(ln) > 120 or ps.TIME_RE.search(ln):
+            continue
+        cand = None
+        m = re.match(r"^(.{3,60}?)\s+[-–—]\s*(.*)$", ln) or re.match(r"^(.{3,60}?)\s*[-–—]$", ln)
+        if m and _contactish(m.group(2) if m.lastindex and m.lastindex >= 2 else ""):
+            cand = m.group(1)
+        elif i + 1 < len(lines) and re.match(r"^\s*[-–—]\s*\S", lines[i + 1]) and _contactish(lines[i + 1]):
+            cand = ln
+        if cand:
+            t = _cand_text(strip_person_phone(cand))
+            if t and _new_shape_ok(t):
+                out.append(t)
+    return out if len(out) >= 2 else []
+
+
 def groups_for(pages: list[Page], key: str, contact_url: str | None, today: str) -> tuple[list[dict], dict]:
     mp = [p for p in pages if p.kind == "ministries" or (p.kind in ("mass_times", "calendar") and MIN_PAGE_PATH.search(urlparse(p.url).path))]
     items: list[tuple[str, Page]] = []
@@ -759,10 +1288,10 @@ def groups_for(pages: list[Page], key: str, contact_url: str | None, today: str)
             if it.lower() not in seen:
                 seen.add(it.lower())
                 items.append((it, p))
-    for p in mp:                          # cards / link lists / one-group pages (ministries pages only)
+    for p in mp:                          # cards / link lists / tables / contact lines / one-group pages (ministries pages only)
         if p.kind != "ministries":
             continue
-        got = card_items(p)
+        got = card_items(p) + table_items(p) + contact_line_items(p)
         one = page_title_item(p)
         if one:
             got = [one] + got
@@ -778,7 +1307,7 @@ def groups_for(pages: list[Page], key: str, contact_url: str | None, today: str)
             if len(got) >= 3:
                 items = [(it, p) for it in got]
                 break
-    if len(items) < 3:                    # groups named only in the site menu (under a Ministries-like top item)
+    if True:                              # groups listed in the site menu under a Ministries-like top item (us-check: #6, #7)
         home = next((p for p in pages if p.kind == "home"), None)
         if home is not None:
             for it in menu_items(home):
@@ -796,6 +1325,12 @@ def groups_for(pages: list[Page], key: str, contact_url: str | None, today: str)
             rw = right.split()
             if len(rw) >= 4 and sum(1 for w in rw if w[:1].islower()) / max(1, len(rw)) >= 0.4:
                 name, desc_inline = m.group(1).strip(), right
+            elif _contactish(right):          # "Secular Franciscan Order - Stanley Robb (909...)": keep the group only
+                name = m.group(1).strip()
+        name = strip_person_phone(name) or name
+        if GROUP_LABEL_JUNK.search(name):
+            dropped["label_not_group"] = dropped.get("label_not_group", 0) + 1
+            continue
         res, why = bg.classify(name)
         if res is None:
             dropped[why] = dropped.get(why, 0) + 1
@@ -804,6 +1339,9 @@ def groups_for(pages: list[Page], key: str, contact_url: str | None, today: str)
             dropped["private_name_risk"] = dropped.get("private_name_risk", 0) + 1
             continue
         gkey, cat, sub, aud, lang, disp, strength = res
+        if sub in SACRAMENT_PREP_SUB:         # sacrament preparation is a sacrament page, not a group (us-check)
+            dropped["sacrament_prep"] = dropped.get("sacrament_prep", 0) + 1
+            continue
         meets, desc = bg.context(item, p.lines)
         if not desc and desc_inline and not bg.desc_risk(desc_inline) and not re.search(r"@|\d{3}[-.) ]\d{3}", desc_inline):
             desc = bg.clip_words(desc_inline, 40)
@@ -824,8 +1362,12 @@ def groups_for(pages: list[Page], key: str, contact_url: str | None, today: str)
         if prev is None or score > prev["_score"]:
             o["_score"] = score
             obs[gkey] = o
-    groups = []
+    groups, seen_names = [], set()
     for gkey, o in obs.items():
+        nk = re.sub(r"[^a-z0-9]+", "", o["name"].lower())
+        if nk in seen_names:
+            continue
+        seen_names.add(nk)
         lang = o["lang"]
         assumed = lang is None
         groups.append({
@@ -1028,7 +1570,13 @@ def parse_site(site_dir: Path, m: dict, info: dict, today: str) -> dict:
     rec["bulletin"] = find_bulletin(pages)
     sched_dropped: dict = {}
     rows, imgs = schedule_rows_templated(rec, pages, key, home_url, today, info.get("names"), sched_dropped)
+    rows = tag_locations(rows, pages)
+    rows = row_hygiene(rows, sched_dropped)
+    rows = merge_box_rows(rows, pages, key, home_url, today, info.get("names"), sched_dropped)
     rec["schedule_rows"] = rows
+    rec["has_sunday"] = has_sunday(rows)
+    if rows and not rec["has_sunday"]:
+        rec["schedule_partial"] = True
     if sched_dropped:
         rec["schedule_dropped"] = sched_dropped
     if imgs and not rows:

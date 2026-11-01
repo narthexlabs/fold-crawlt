@@ -5,8 +5,8 @@ web.archive.org is unreachable from the project sandbox but reachable from GitHu
 `.github/workflows/crawl.yml` runs `ingest/us/wayback/run.py`.
 
 **Counts (2026-11-01).**
-- A. Diocese directories: 10 tried; results {'written': 6, 'no-list': 2, 'cdx-failed': 2}; written 6 sees, 277 parishes, 245 with a website.
-- B. Parish sites: 37 tried; results {'written': 28, 'cdx-failed': 7, 'no-capture': 1, 'no-usable-capture': 1}; written 28 sites: 201 groups, 27 sites with a bulletin link, 333 schedule rows (all needs_review).
+- A. Diocese directories: 23 tried; results {'written': 15, 'no-list': 8}; written 15 sees, 829 parishes, 793 with a website.
+- B. Parish sites: 63 tried; results {'written': 50, 'cdx-failed': 10, 'no-capture': 2, 'no-usable-capture': 1}; written 50 sites: 308 groups, 46 sites with a bulletin link, 538 schedule rows (all needs_review).
 
 ## What is written
 

@@ -18,32 +18,161 @@
  ],
  "home_url": "https://saintleorcc.com/",
  "final_url": "https://saintleorcc.com/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "crawl_status": "wayback-2026-09-20",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
    "url": "https://saintleorcc.com/",
-   "status": 403,
-   "class": "challenge"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://saintleorcc.com/mass-intentions",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.saintleorcc.com/sacraments",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.saintleorcc.com/events",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "saintleorcc.com:kofc",
+   "name": "Knights of Columbus",
+   "category": "fraternal_orders",
+   "category_label": "Fraternal & orders",
+   "subcategory": "knights_of_columbus",
+   "audience": "men",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://saintleorcc.com/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://saintleorcc.com/",
+   "source_kind": "website",
+   "fetched_at": "2026-09-20T09:14:57+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-09-20"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/saintleorcc"
+  ],
+  "instagram": [
+   "https://www.instagram.com/saintleorcc/"
+  ],
+  "youtube": [
+   "https://www.youtube.com/channel/UC2mZ-Y2QgmiWuxm9AwgQfCA"
+  ],
+  "livestream": [
+   {
+    "url": "https://www.saintleorcc.com/httpswwwyoutubecomchanneluc2mz-y2qgmiwuxm9awgqfcafeatured",
+    "label": "Livestream Mass",
+    "platform": "www.saintleorcc.com",
+    "kind": "link"
+   }
+  ]
+ },
+ "bulletin": {
+  "url": "https://www.saintleorcc.com/bulletin",
+  "date": null,
+  "kind": "page",
+  "text": "Parish Bulletin",
+  "source_url": "https://www.saintleorcc.com/sacraments"
+ },
  "schedule_rows": [],
  "source_url": "https://saintleorcc.com/",
- "fetched_at": "2026-11-01T02:04:12+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-01T10:55:43+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "schedule_images": [
+  {
+   "url": "https://files.ecatholic.com/3223/pictures/2025/1/Confession.jpeg?t=1738193559000",
+   "alt": "Reconciliation ",
+   "page": "https://www.saintleorcc.com/sacraments"
+  }
+ ],
+ "schedule_note": "schedule appears to be an image; times not read (needs_review)",
+ "groups_dropped": {},
+ "office_contact": {
+  "email": "office@saintleorcc.org",
+  "phone": "(410) 675-7275",
+  "address": "120 N. Front Street, Baltimore, MD 21202",
+  "source_url": "https://saintleorcc.com/",
+  "sources": {
+   "email": "https://saintleorcc.com/",
+   "phone": "https://saintleorcc.com/",
+   "address": "https://saintleorcc.com/"
+  },
+  "fetched_at": "2026-09-20T09:14:57+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2026-09-20",
+  "capture_age_days": 42,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://saintleorcc.com/",
+    "capture": "2026-09-20",
+    "archive_url": "https://web.archive.org/web/20260920091457/https://saintleorcc.com/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://www.saintleorcc.com/sacraments",
+    "capture": "2025-10-08",
+    "archive_url": "https://web.archive.org/web/20251008164208/https://www.saintleorcc.com/sacraments"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://www.saintleorcc.com/events",
+    "capture": "2025-01-19",
+    "archive_url": "https://web.archive.org/web/20250119134315/https://www.saintleorcc.com/events"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }
