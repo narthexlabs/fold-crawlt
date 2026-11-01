@@ -259,7 +259,6 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 
 ## Chunk log
 
-- 2026-11-01T00:55:47+00:00: egress closed (sandbox proxy refused every probe host); nothing crawled
 - 2026-11-01T01:13:43+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-01T01:14:25+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-01T01:15:34+00:00: fetched {}; parsed 0 dioceses
@@ -274,3 +273,4 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-01T05:18:37+00:00: fetched {'dns': 4, 'done': 57, 'ok': 6, 'timeout': 52, 'cut': 5, 'halted_egress': 0}; parsed 0 dioceses
 - 2026-11-01T05:56:12+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-01T05:56:21+00:00: fetched {'ok': 1, 'cut': 1, 'halted_egress': 0}; parsed 0 dioceses
+- 2026-11-01T06:14:07+00:00: fetched {}; parsed 0 dioceses
