@@ -1062,6 +1062,156 @@ def merge_box_rows(rows: list[dict], pages: list[Page], key: str, home: str, tod
     return rows
 
 
+# --- weekend rescue (lane G4 audit, 2026-11-01, docs: ingest/us/sites/sunday_audit.py). 3,329 US parishes had a site that
+# opened but no Sunday / Saturday-vigil Mass read; in a 40-site sample a third of the readable ones state the weekend
+# Masses in a shape the template and box readers skip: a footer "Sunday | 7:00 AM Low Mass | 10:00 AM Sung Mass", one
+# line holding two days ("Sunday 7:30 AM and 11:30 AM - Saturday Vigil 5:00 PM"), the time before its day ("4:30 pm Mass |
+# Saturdays at St. Vincent"), Polish "Niedziela | 7:00 AM, 9:30 AM". Used ONLY when every other reader found no weekend
+# Mass; it emits weekend Mass rows only (Sunday any time, Saturday 14:00 or later / vigil), each needs_review.
+WK_DAY = re.compile(r"\b(?:(sundays?|sun\.?|domingos?|niedziel[a-z]*|ch[uủ]a?\s+nh[aậ]t)|(saturdays?|sat\.?|s[aá]bados?|sobot[a-z]*))(?![a-z])", re.I)
+OTHER_DAY = re.compile(r"\b(?:mon|tues?|wed|thu|thur|thurs|fri)[a-z]*\.?(?![a-z])|\bweekdays?\b|\bdaily\b|\blunes|\bmartes|mi[eé]rcoles|"
+                       r"\bjueves|\bviernes|poniedzia|wtor|[sś]rod[ay]|czwart|pi[aą]t|holy\s*days?|\bfirst\s+(?:fri|sat)", re.I)
+WK_MASS = re.compile(r"\bmass(?:es)?\b|\bmisas?\b|\bmsz[aey]\b|\bmsze\b|divine\s+liturgy|\bvigil\b|anticipat|th[aá]nh\s+l[eễ]", re.I)
+WK_NEG = re.compile(r"confess|reconcil|penance|spowied|sakrament\s+pokuty|adora|exposition|holy\s+hour|benediction|office|\bhours\b|"
+                    r"closed|\bopen\b|class|ccd|religious\s+ed|formation|school|bingo|rehears|practice|meeting|stud(?:y|ies)|"
+                    r"breakfast|dinner|lunch|coffee|donut|social|stream|zoom|radio|\btv\b|pantry|thrift|baptis|bautiz|wedding|"
+                    r"funeral|grades?\b|youth|bible|rosary|novena|stations|devotion|cancel|\bno\s+mass|suspend|former|until|"
+                    r"beginning|starting|effective|christmas|easter|ash\s+wed|thanksgiving|new\s+year|good\s+friday|holy\s+thurs|"
+                    r"all\s+saints|all\s+souls|cemeter|register|registration|sign[\s-]*up|tickets?|party|festival|picnic|"
+                    r"episcopal|eucharist|evensong|orthros|matins|vespers|hora\s+santa|rosario|morning\s+prayer|\brite\s+i|worship\s+service|anoint|healing|gospel|readings?", re.I)
+WK_HEAD_NEG = re.compile(r"confess|reconcil|penance|spowied|adora|office|hours|religious\s+ed|formation|school|events?\b|calendar", re.I)
+WK_MONTH = re.compile(r"\b(?:jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|june?|july?|aug(?:ust)?|sep(?:t(?:ember)?)?|oct(?:ober)?|"
+                      r"nov(?:ember)?|dec(?:ember)?)\.?\s+\d|\b\d{1,2}/\d{1,2}\b|\b20\d\d\b|\b\d{1,2}(?:st|nd|rd|th)?\s+(?:jan|feb|mar|apr|may|jun|jul|"
+                      r"aug|sep|oct|nov|dec)[a-z]*\b", re.I)
+WK_TIME = re.compile(r"(?<![\d:])(\d{1,2})(?::(\d\d))?\s*([ap])\.?\s*m\b\.?|\bnoon\b", re.I)
+WK_LABEL_REST = re.compile(r"^[\s:,.\-–—()/|]*(?:(?:the\s+)?(?:vigil|anticipated|masses|mass|misas?|msz[ae]|msze|z|niedzieli|"
+                           r"s[wś]\.?|[sś]wi[eę]te|divine|liturgy|schedule|times?|services?|english|spanish|espa[nñ]ol|latin|polish|"
+                           r"polsku|po|and|y|&|evening|morning|of|obligation|saturday|sunday|weekend)[\s:,.\-–—()/|]*)*$", re.I)
+
+
+def _wk_times(s: str) -> list[tuple[int, str]]:
+    out = []
+    for m in WK_TIME.finditer(s):
+        if m.group(0).lower() == "noon":
+            out.append((m.start(), "12:00")); continue
+        h, mi, ap = int(m.group(1)), int(m.group(2) or 0), m.group(3).lower()
+        if not 1 <= h <= 12 or mi > 59:
+            continue
+        h = (h % 12) + (12 if ap == "p" else 0)
+        out.append((m.start(), f"{h:02d}:{mi:02d}"))
+    return out
+
+
+def _wk_ok_time(day: str, t: str, raw: str) -> bool:
+    if not ("05:00" <= t <= "21:30"):
+        return False
+    return day == "Sunday" or t >= "14:00" or (t >= "12:00" and bool(re.search(r"vigil|anticipat|niedziel", raw, re.I)))
+
+
+def _wk_ctx(lines: list[str], i: int) -> bool:
+    """A Mass heading (or a Mass word) within the 4 lines above, and no confession/office heading nearer."""
+    for j in range(i - 1, max(-1, i - 5), -1):
+        ln = lines[j]
+        if WK_TIME.search(ln) and not WK_DAY.search(ln):
+            continue
+        if WK_HEAD_NEG.search(ln) and not WK_MASS.search(ln):
+            return False
+        if WK_MASS.search(ln):
+            return True
+    return False
+
+
+def _wk_line_ok(ln: str) -> bool:
+    return len(ln) <= 140 and len(ln.split()) <= 24 and not WK_NEG.search(ln) and not WK_MONTH.search(ln) and not TIME_RANGE.search(ln)
+
+
+def weekend_rescue(pages: list[Page]) -> list[dict]:
+    out, seen = [], set()
+
+    def add(day, t, raw, p):
+        if not _wk_ok_time(day, t, raw) or (day, t) in seen:
+            return
+        seen.add((day, t))
+        out.append({"kind": "mass", "day": day, "time": t, "language": None, "raw": raw[:200], "source_url": p.url,
+                    "fetched_at": p.fetched_at, "needs_review": True, "review_reason": "weekend_rescue"})
+
+    for p in sorted(pages, key=lambda p: {"mass_times": 0, "home": 1}.get(p.kind, 2)):
+        if p.kind not in ("home", "mass_times", "contact", "live") or BLOG_URL.search(p.url or ""):
+            continue
+        srcs = [[ln.strip() for ln in p.lines if ln and ln.strip()]]
+        try:   # and the whole body as rendered, footer and sidebars included (visible_lines leaves out footers)
+            srcs.append([ln for ln in _el_lines(p.soup.body or p.soup) if ln])
+        except Exception:  # noqa: BLE001
+            pass
+        for lines in srcs:
+            _wk_scan(lines, p, add)
+    return out if has_sunday(out) else []
+
+
+def _wk_scan(lines: list[str], p, add) -> None:
+        for i, ln in enumerate(lines):
+            dm = list(WK_DAY.finditer(ln))
+            tm = _wk_times(ln)
+            nxt = lines[i + 1] if i + 1 < len(lines) else ""
+            # (A) one line with weekend day(s) and times: each time binds to the nearest day token before it
+            if dm and tm and _wk_line_ok(ln) and (WK_MASS.search(ln) or _wk_ctx(lines, i)):
+                toks = sorted([(m.start(), "d", "Sunday" if m.group(1) else "Saturday") for m in dm]
+                              + [(m.start(), "o", None) for m in OTHER_DAY.finditer(ln)] + [(a, "t", t) for a, t in tm])
+                cur, lead = None, []
+                for _, typ, v in toks:
+                    if typ == "d":
+                        cur = v
+                    elif typ == "o":
+                        cur = "x"
+                    elif cur is None:
+                        lead.append(v)
+                    elif cur != "x":
+                        add(cur, v, ln, p)
+                if lead and len(dm) == 1 and not OTHER_DAY.search(ln) and not (dm[0].group(1) and re.search(r"vigil|anticipat", ln, re.I)):
+                    for v in lead:
+                        add("Sunday" if dm[0].group(1) else "Saturday", v, ln, p)
+                continue
+            # (B) a day label line, then time lines ("Sunday" | "7:00 AM Low Mass" | "10:00 AM Sung Mass")
+            if len(dm) >= 1 and not tm and len(ln) <= 60 and WK_LABEL_REST.match(ln[dm[0].end():]) and \
+                    WK_LABEL_REST.match(ln[:dm[0].start()]) and not OTHER_DAY.search(ln) and not WK_NEG.search(ln):
+                day = "Sunday" if dm[0].group(1) else "Saturday"
+                got = []
+                for nl in lines[i + 1:i + 5]:
+                    tt = _wk_times(nl)
+                    if not tt or WK_DAY.search(nl) or OTHER_DAY.search(nl) or not _wk_line_ok(nl):
+                        break
+                    rest = WK_TIME.sub(" ", nl)
+                    if len(rest.split()) > 6 or tt[0][0] > 3:
+                        break
+                    got += [(t, nl) for _, t in tt]
+                if got and (WK_MASS.search(ln) or _wk_ctx(lines, i) or any(WK_MASS.search(r) for _, r in got)):
+                    for t, nl in got:
+                        add(day, t, f"{ln} {nl}", p)
+                continue
+            # (C) time + Mass on one line, the day on the next ("4:30 pm Mass" | "Saturdays at St. Vincent de Paul Church")
+            if tm and not dm and WK_MASS.search(ln) and _wk_line_ok(ln) and len(ln.split()) <= 6 and not OTHER_DAY.search(ln):
+                nd = list(WK_DAY.finditer(nxt))
+                if len(nd) == 1 and nd[0].start() == 0 and not _wk_times(nxt) and \
+                        not (nd[0].group(1) and re.search(r"vigil|anticipat", ln, re.I)) and not OTHER_DAY.search(nxt) and \
+                        _wk_line_ok(nxt) and len(nxt.split()) <= 10:
+                    for _, t in tm:
+                        add("Sunday" if nd[0].group(1) else "Saturday", t, f"{ln} {nxt}", p)
+
+
+def add_weekend_rescue(rows: list[dict], pages: list[Page], dropped: dict) -> list[dict]:
+    if has_sunday(rows):
+        return rows
+    extra = weekend_rescue(pages)
+    have = {(r.get("kind"), r.get("day"), (r.get("time") or "")[:5]) for r in rows}
+    n = 0
+    for r in extra:
+        if ("mass", r["day"], r["time"]) not in have:
+            rows.append(r); n += 1
+    if n:
+        dropped["weekend_rescue_added"] = n
+    return rows
+
+
 # ------------------------------------------------------------------------------------------------ groups
 MIN_PAGE_PATH = re.compile(r"ministr|group|societ|organi[sz]ation|involve|serve|apostolate|grupo|liturgical|formation|devotion", re.I)
 
@@ -1636,6 +1786,7 @@ def parse_site(site_dir: Path, m: dict, info: dict, today: str) -> dict:
     rows = tag_locations(rows, pages)
     rows = row_hygiene(rows, sched_dropped)
     rows = merge_box_rows(rows, pages, key, home_url, today, info.get("names"), sched_dropped)
+    rows = add_weekend_rescue(rows, pages, sched_dropped)
     rec["schedule_rows"] = rows
     rec["has_sunday"] = has_sunday(rows)
     if rows and not rec["has_sunday"]:
