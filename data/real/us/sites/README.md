@@ -85,7 +85,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | archdiocese-of-san-francisco | 87 | 36 | 21 | 6 | 0 | 9 | 0 |
 | unassigned-tn | 87 | 87 | 54 | 25 | 1 | 7 | 0 |
 | unassigned-nd | 85 | 85 | 48 | 32 | 1 | 4 | 0 |
-| diocese-of-allentown | 84 | 67 | 49 | 6 | 1 | 11 | 0 |
+| diocese-of-allentown | 84 | 86 | 57 | 7 | 1 | 21 | 0 |
 | diocese-of-camden | 84 | 63 | 36 | 4 | 2 | 21 | 0 |
 | archdiocese-of-dubuque | 83 | 87 | 24 | 19 | 0 | 34 | 0 |
 | unassigned-or | 83 | 84 | 45 | 26 | 0 | 13 | 0 |
@@ -121,7 +121,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-worcester | 66 | 66 | 11 | 30 | 0 | 25 | 0 |
 | diocese-of-tyler | 64 | 65 | 23 | 26 | 0 | 12 | 4 |
 | diocese-of-springfield-in-illinois | 64 | 57 | 23 | 14 | 1 | 19 | 0 |
-| diocese-of-altoona-johnstown | 63 | 45 | 29 | 6 | 1 | 9 | 0 |
+| diocese-of-altoona-johnstown | 63 | 63 | 35 | 8 | 1 | 19 | 0 |
 | diocese-of-boise | 63 | 46 | 28 | 16 | 0 | 2 | 0 |
 | diocese-of-las-cruces | 63 | 63 | 5 | 0 | 0 | 58 | 0 |
 | diocese-of-savannah | 61 | 62 | 31 | 24 | 3 | 4 | 0 |
@@ -211,7 +211,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-shreveport | 20 | 20 | 8 | 9 | 0 | 3 | 0 |
 | diocese-of-sioux-city | 20 | 20 | 2 | 5 | 0 | 13 | 0 |
 | unassigned-ia | 20 | 20 | 11 | 6 | 0 | 3 | 0 |
-| diocese-of-alexandria | 19 | 14 | 8 | 6 | 0 | 0 | 0 |
+| diocese-of-alexandria | 19 | 19 | 9 | 6 | 0 | 4 | 0 |
 | diocese-of-helena | 19 | 19 | 14 | 4 | 0 | 1 | 0 |
 | diocese-of-orange | 19 | 20 | 20 | 0 | 0 | 0 | 0 |
 | archdiocese-of-cincinnati | 18 | 18 | 12 | 1 | 1 | 1 | 0 |
