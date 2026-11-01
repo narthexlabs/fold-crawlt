@@ -1,0 +1,224 @@
+{
+ "domain": "stjohndelasalle.org",
+ "diocese": "diocese-of-buffalo",
+ "matched_church_ids": [
+  "diocese-of-buffalo:St. John de LaSalle"
+ ],
+ "matched": {
+  "directory": [
+   "diocese-of-buffalo:St. John de LaSalle"
+  ],
+  "discovermass": []
+ },
+ "names": [
+  "St. John de LaSalle"
+ ],
+ "cities": [
+  "Niagara Falls"
+ ],
+ "home_url": "https://www.stjohndelasalle.org/",
+ "final_url": "https://stjohndelasalle.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://stjohndelasalle.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stjohndelasalle.org/mass-schedule/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stjohndelasalle.org/confessions/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://stjohndelasalle.org/childrens-faith-formation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://stjohndelasalle.org/contact-us/",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-content"
+  ]
+ },
+ "template": "wordpress-html",
+ "groups": [
+  {
+   "id": "stjohndelasalle.org:children_ff",
+   "name": "Children’s Faith Formation",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "children_faith_formation",
+   "audience": "families",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stjohndelasalle.org/contact-us/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stjohndelasalle.org/childrens-faith-formation/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T07:27:55+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "stjohndelasalle.org:lectors",
+   "name": "Copy shortlink View post in Reader",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "lectors",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stjohndelasalle.org/contact-us/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stjohndelasalle.org/childrens-faith-formation/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T07:27:55+00:00",
+   "confidence": "medium"
+  }
+ ],
+ "calendar_feeds": [],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/StJohndeLaSalleNF"
+  ]
+ },
+ "bulletin": {
+  "url": "https://www.parishesonline.com/organization/st-john-de-lasalle-church",
+  "date": null,
+  "kind": "lpi",
+  "text": "Weekly Bulletin",
+  "source_url": "https://stjohndelasalle.org/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:30",
+   "language": null,
+   "raw": "Saturday Vigil Mass: 5:30 p.m.",
+   "source_url": "https://stjohndelasalle.org/mass-schedule/",
+   "fetched_at": "2026-11-01T07:27:53+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:30",
+   "language": null,
+   "raw": "Sunday Mass: 10:30 a.m.",
+   "source_url": "https://stjohndelasalle.org/mass-schedule/",
+   "fetched_at": "2026-11-01T07:27:53+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "07:45",
+   "language": null,
+   "raw": "Weekday Mass (Thursday & Friday only): 7:45 a.m. in the chapel",
+   "source_url": "https://stjohndelasalle.org/mass-schedule/",
+   "fetched_at": "2026-11-01T07:27:53+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "Thursday & Friday"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "07:45",
+   "language": null,
+   "raw": "Weekday Mass (Thursday & Friday only): 7:45 a.m. in the chapel",
+   "source_url": "https://stjohndelasalle.org/mass-schedule/",
+   "fetched_at": "2026-11-01T07:27:53+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "Thursday & Friday",
+   "day_parsed": "Thursday",
+   "day_bound_from_line": true
+  }
+ ],
+ "source_url": "https://www.stjohndelasalle.org/",
+ "fetched_at": "2026-11-01T07:27:57+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": true
+   },
+   "score": "high"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 5
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "other_location": 2,
+  "relative_time": 1
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(716) 297-5010",
+  "address": "8477 Buffalo Avenue, Niagara Falls, NY 14304",
+  "source_url": "https://stjohndelasalle.org/contact-us/",
+  "sources": {
+   "phone": "https://stjohndelasalle.org/contact-us/",
+   "address": "https://stjohndelasalle.org/contact-us/"
+  },
+  "fetched_at": "2026-11-01T07:27:56+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}
