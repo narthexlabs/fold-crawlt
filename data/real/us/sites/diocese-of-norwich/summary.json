@@ -1,77 +1,116 @@
 {
  "slug": "diocese-of-norwich",
- "generated_at": "2026-11-01T05:45:53+00:00",
+ "generated_at": "2026-11-01T17:26:38+00:00",
  "run_date": "2026-11-01",
  "input": {
-  "directory_records": 5,
-  "discovermass_records": 4,
+  "directory_records": 61,
+  "discovermass_records": 19,
   "directory_without_website": 0,
   "discovermass_without_website": 0
  },
- "sites_in_list": 8,
+ "sites_in_list": 58,
  "social_only": 0,
  "crawl": {
-  "ok_total": 2,
-  "ok_via_sandbox": 2,
+  "ok_total": 21,
+  "ok_via_sandbox": 21,
   "ok_via_laptop": 0,
   "partial_via_side_doors": 0,
-  "challenge": 3,
+  "challenge": 7,
   "blocked_403_429": 0,
-  "robots_disallowed": 1,
-  "laptop_pending": 5,
-  "dead": 2,
+  "robots_disallowed": 2,
+  "laptop_pending": 34,
+  "dead": 28,
   "not_fetched": 0,
   "by_status": {
-   "challenge": 3,
-   "ok": 2,
-   "robots_disallowed": 1,
-   "conn_error": 1,
+   "ok": 21,
+   "ssl_error": 10,
+   "dns": 8,
+   "challenge": 7,
+   "timeout": 3,
+   "conn_error": 3,
+   "robots_disallowed": 2,
+   "http_5xx": 2,
+   "parked": 1,
    "unreachable_via_proxy": 1
   }
  },
  "laptop_attempted": 0,
  "groups": {
-  "total": 1,
-  "sites_with_groups": 1,
+  "total": 80,
+  "sites_with_groups": 10,
   "by_category": {
-   "other": 1
+   "liturgical": 29,
+   "formation": 10,
+   "service_mercy": 9,
+   "fraternal_orders": 6,
+   "youth": 6,
+   "prayer_devotion": 5,
+   "other": 5,
+   "men": 4,
+   "women": 3,
+   "grief_support": 2,
+   "scripture_study": 1
   },
-  "with_meeting_time": 0
+  "with_meeting_time": 2
  },
  "calendar": {
-  "sites_with_active_feed": 0,
-  "active_feeds": 0,
-  "feeds_by_platform": {},
-  "sites_with_events": 0,
-  "events_stored": 0,
-  "events_in_window_before_privacy": 0,
+  "sites_with_active_feed": 3,
+  "active_feeds": 3,
+  "feeds_by_platform": {
+   "Google Calendar": 2,
+   "The Events Calendar (WordPress)": 1
+  },
+  "sites_with_events": 1,
+  "events_stored": 4,
+  "events_in_window_before_privacy": 4,
   "window": "2026-11-01 + 90 days"
  },
  "social": {
   "sites_by_platform": {
-   "facebook": 1,
-   "instagram": 1,
+   "facebook": 9,
+   "livestream": 3,
+   "youtube": 2,
+   "instagram": 2,
    "x": 1
   },
-  "sites_with_any_social": 1,
+  "sites_with_any_social": 9,
   "shared_links_removed_as_diocesan": []
  },
  "bulletin": {
-  "sites_with_bulletin_url": 0,
-  "by_kind": {},
-  "with_date": 0
+  "sites_with_bulletin_url": 10,
+  "by_kind": {
+   "lpi": 6,
+   "page": 2,
+   "pdf": 1,
+   "lpi_pdf": 1
+  },
+  "with_date": 2
  },
  "schedule": {
-  "sites_with_own_site_rows": 0,
-  "rows_total": 0,
+  "sites_with_own_site_rows": 8,
+  "rows_total": 95,
   "rows_needs_review": 0,
   "sites_with_schedule_image_only": 0,
-  "by_kind": {}
+  "by_kind": {
+   "mass": 75,
+   "adoration": 11,
+   "confession": 8,
+   "other": 1
+  }
  },
  "cms_guess": {
-  "unknown": 2
+  "unknown": 14,
+  "wordpress": 3,
+  "wix": 2,
+  "weebly": 1,
+  "parishsoft": 1
  },
  "template": {
-  "generic-html:unknown": 2
+  "generic-html:unknown": 14,
+  "generic-html:wix": 2,
+  "wordpress-rest+html": 2,
+  "generic-html:weebly": 1,
+  "wordpress-html": 1,
+  "generic-html:parishsoft": 1
  }
 }
