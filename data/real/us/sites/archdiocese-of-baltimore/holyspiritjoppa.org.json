@@ -17,33 +17,130 @@
   "Joppa"
  ],
  "home_url": "https://www.holyspiritjoppa.org/",
- "final_url": "https://www.holyspiritjoppa.org/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "final_url": "https://holyspiritjoppa.org/",
+ "crawl_status": "wayback-2026-09-30",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
-   "url": "https://www.holyspiritjoppa.org/",
-   "status": 403,
-   "class": "challenge"
+   "url": "https://holyspiritjoppa.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://holyspiritjoppa.org/liturgy",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.holyspiritjoppa.org/mass-times",
+   "status": null,
+   "class": "conn_error"
+  },
+  {
+   "category": "ministries",
+   "url": "https://holyspiritjoppa.org/faith-formation",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "holyspiritjoppa.org:ocia",
+   "name": "Rcia-rite of Christian Initiation for Adults",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "ocia",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "Are you interested in learning about the Catholic Church?",
+   "contact_url": "https://holyspiritjoppa.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://holyspiritjoppa.org/faith-formation",
+   "source_kind": "website",
+   "fetched_at": "2025-06-21T21:00:03+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-09-30"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/holyspiritchurchjoppa"
+  ]
+ },
+ "bulletin": {
+  "url": "https://flocknote.com",
+  "date": null,
+  "kind": "page",
+  "text": "Flocknote",
+  "source_url": "https://holyspiritjoppa.org/liturgy"
+ },
  "schedule_rows": [],
  "source_url": "https://www.holyspiritjoppa.org/",
- "fetched_at": "2026-11-01T02:04:06+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-01T08:24:56+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "groups_dropped": {
+  "noise": 1,
+  "unmatched": 1
+ },
+ "wayback": {
+  "capture_date": "2026-09-30",
+  "capture_age_days": 32,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://holyspiritjoppa.org/",
+    "capture": "2026-09-30",
+    "archive_url": "https://web.archive.org/web/20260930022409/https://holyspiritjoppa.org/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://holyspiritjoppa.org/liturgy",
+    "capture": "2025-06-21",
+    "archive_url": "https://web.archive.org/web/20250621204732/https://holyspiritjoppa.org/liturgy"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://holyspiritjoppa.org/faith-formation",
+    "capture": "2025-06-21",
+    "archive_url": "https://web.archive.org/web/20250621210003/https://holyspiritjoppa.org/faith-formation"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }

@@ -21,32 +21,435 @@
  ],
  "home_url": "https://www.sjmcc.org/",
  "final_url": "https://www.sjmcc.org/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "crawl_status": "wayback-2026-08-10",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
    "url": "https://www.sjmcc.org/",
-   "status": 403,
-   "class": "challenge"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://sjmcc.org/mass-times",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://sjmcc.org/sacraments",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.sjmcc.org/parish-life",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "ministries",
+   "url": "https://sjmcc.org/ministries-directory",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://sjmcc.org/bulletins",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://sjmcc.org/events-news",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://sjmcc.org/calendar",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://sjmcc.org/contact-us",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "sjmcc.org:rosary_women",
+   "name": "Ladies’ Altar and Rosary Society",
+   "category": "prayer_devotion",
+   "category_label": "Prayer & devotion",
+   "subcategory": "rosary",
+   "audience": "women",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://sjmcc.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://sjmcc.org/ministries-directory",
+   "source_kind": "website",
+   "fetched_at": "2025-10-06T13:34:01+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-08-10"
+  },
+  {
+   "id": "sjmcc.org:bible_study",
+   "name": "Holds bible studies",
+   "category": "scripture_study",
+   "category_label": "Scripture & study",
+   "subcategory": "bible_study",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://sjmcc.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://sjmcc.org/ministries-directory",
+   "source_kind": "website",
+   "fetched_at": "2025-10-06T13:34:01+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-08-10"
+  },
+  {
+   "id": "sjmcc.org:children_ff",
+   "name": "Maronite Catholic Formation/ Religious Education",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "children_faith_formation",
+   "audience": "families",
+   "language": "en",
+   "language_assumed": true,
+   "meets": "Every Sunday, 12:30pm",
+   "description": "Religious education classes are held every Sunday at 12:30pm (September – May) for elementary and middle-school children.",
+   "contact_url": "https://sjmcc.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://sjmcc.org/ministries-directory",
+   "source_kind": "website",
+   "fetched_at": "2025-10-06T13:34:01+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-08-10"
+  },
+  {
+   "id": "sjmcc.org:mens_group",
+   "name": "Men’s Club of St. Joseph",
+   "category": "men",
+   "category_label": "Men",
+   "subcategory": "mens_group",
+   "audience": "men",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "Men’s Club exists to provide an atmosphere for fostering Christian fellowship and a sense of community among the men of the parish aimed at strengthening family life in our parish;to assist with various parish religious celebrations; to set a positive…",
+   "contact_url": "https://sjmcc.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://sjmcc.org/ministries-directory",
+   "source_kind": "website",
+   "fetched_at": "2025-10-06T13:34:01+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-08-10"
+  },
+  {
+   "id": "sjmcc.org:young_adults",
+   "name": "Maronite Young Adults (MYA)",
+   "category": "young_adults",
+   "category_label": "Young adults",
+   "subcategory": "young_adult_group",
+   "audience": "young_adult",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "The Maronite Young Adults (MYA) organization is a Christian life movement for a group in which its members choose to delve deeper in their catholic faith to live it with all acceptance and to spread it passionately in their daily…",
+   "contact_url": "https://sjmcc.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://sjmcc.org/ministries-directory",
+   "source_kind": "website",
+   "fetched_at": "2025-10-06T13:34:01+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-08-10"
+  },
+  {
+   "id": "sjmcc.org:youth_ministry",
+   "name": "Maronite Youth Organization (MYO)",
+   "category": "youth",
+   "category_label": "Youth",
+   "subcategory": "youth_ministry",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "The primary purpose of this organization shall be to promote the spiritual welfare of its members, to strengthen youth groups in the Maronite faith, to have prayer days, to learn more about each other and to grow socially and intellectually.",
+   "contact_url": "https://sjmcc.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://sjmcc.org/ministries-directory",
+   "source_kind": "website",
+   "fetched_at": "2025-10-06T13:34:01+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-08-10"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/sjmccatl"
+  ]
+ },
+ "bulletin": {
+  "url": "https://files.ecatholic.com/24249/bulletins/20250803.pdf?t=1754075813000",
+  "date": "2025-08-03",
+  "kind": "ecatholic_pdf",
+  "text": "August 3 , 2025",
+  "source_url": "https://sjmcc.org/bulletins"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": "English",
+   "raw": "Sunday: 9:00 AM English English Mass At Saint Sharbel Chapel",
+   "source_url": "https://www.sjmcc.org/",
+   "fetched_at": "2026-08-10T02:01:43+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-08-10: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-08-10",
+   "archive_url": "https://web.archive.org/web/20260810020143/https://www.sjmcc.org/",
+   "capture_date": "2026-08-10"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": "English",
+   "raw": "Saturday Vigil: 5:00 PM English",
+   "source_url": "https://sjmcc.org/mass-times",
+   "fetched_at": "2025-10-06T13:23:57+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-08-10: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-08-10",
+   "archive_url": "https://web.archive.org/web/20251006132357/https://sjmcc.org/mass-times",
+   "capture_date": "2025-10-06"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "10:00",
+   "language": "English",
+   "raw": "Tuesday - Friday: 10:00 AM English in the Chapel",
+   "source_url": "https://sjmcc.org/mass-times",
+   "fetched_at": "2025-10-06T13:23:57+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-08-10: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Tuesday - Friday",
+   "source": "wayback-2026-08-10",
+   "archive_url": "https://web.archive.org/web/20251006132357/https://sjmcc.org/mass-times",
+   "capture_date": "2025-10-06"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "10:00",
+   "language": "English",
+   "raw": "Tuesday - Friday: 10:00 AM English in the Chapel",
+   "source_url": "https://sjmcc.org/mass-times",
+   "fetched_at": "2025-10-06T13:23:57+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-08-10: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Tuesday - Friday",
+   "source": "wayback-2026-08-10",
+   "archive_url": "https://web.archive.org/web/20251006132357/https://sjmcc.org/mass-times",
+   "capture_date": "2025-10-06"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "10:00",
+   "language": "English",
+   "raw": "Tuesday - Friday: 10:00 AM English in the Chapel",
+   "source_url": "https://sjmcc.org/mass-times",
+   "fetched_at": "2025-10-06T13:23:57+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-08-10: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Tuesday - Friday",
+   "source": "wayback-2026-08-10",
+   "archive_url": "https://web.archive.org/web/20251006132357/https://sjmcc.org/mass-times",
+   "capture_date": "2025-10-06"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "10:00",
+   "language": "English",
+   "raw": "Tuesday - Friday: 10:00 AM English in the Chapel",
+   "source_url": "https://sjmcc.org/mass-times",
+   "fetched_at": "2025-10-06T13:23:57+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-08-10: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Tuesday - Friday",
+   "source": "wayback-2026-08-10",
+   "archive_url": "https://web.archive.org/web/20251006132357/https://sjmcc.org/mass-times",
+   "capture_date": "2025-10-06"
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "09:30-10:30",
+   "language": null,
+   "raw": "Thursday: 9:30 AM - 10:30 AM Every Thursday",
+   "source_url": "https://sjmcc.org/mass-times",
+   "fetched_at": "2025-10-06T13:23:57+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-08-10: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-08-10",
+   "archive_url": "https://web.archive.org/web/20251006132357/https://sjmcc.org/mass-times",
+   "capture_date": "2025-10-06"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "19:00",
+   "language": null,
+   "raw": "Holy Days of Obligation, the Divine Liturgy (Mass) is celebrated in the Vigil of the Feast Day (the evening before) 7:00 PM",
+   "source_url": "https://sjmcc.org/mass-times",
+   "fetched_at": "2025-10-06T13:23:57+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-08-10: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic+generic_strict",
+   "kind_parsed": "mass",
+   "source": "wayback-2026-08-10",
+   "archive_url": "https://web.archive.org/web/20251006132357/https://sjmcc.org/mass-times",
+   "capture_date": "2025-10-06"
+  }
+ ],
  "source_url": "https://www.sjmcc.org/",
- "fetched_at": "2026-11-01T02:02:56+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-01T07:56:01+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": true
+   },
+   "score": "high"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 8
+ },
+ "schedule_dropped": {
+  "other_location": 6,
+  "text:range_not_a_mass": 1
+ },
+ "groups_dropped": {
+  "unmatched": 3,
+  "noise": 1
+ },
+ "office_contact": {
+  "email": "info@sjmcc.org",
+  "phone": "(404) 525-2504",
+  "address": "6025 Glenridge Drive, Sandy Springs, GA 30328",
+  "source_url": "https://sjmcc.org/contact-us",
+  "sources": {
+   "email": "https://sjmcc.org/contact-us",
+   "phone": "https://sjmcc.org/contact-us",
+   "address": "https://sjmcc.org/contact-us"
+  },
+  "fetched_at": "2025-03-21T03:28:17+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2026-08-10",
+  "capture_age_days": 83,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://www.sjmcc.org/",
+    "capture": "2026-08-10",
+    "archive_url": "https://web.archive.org/web/20260810020143/https://www.sjmcc.org/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://sjmcc.org/mass-times",
+    "capture": "2025-10-06",
+    "archive_url": "https://web.archive.org/web/20251006132357/https://sjmcc.org/mass-times"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://sjmcc.org/sacraments",
+    "capture": "2025-04-20",
+    "archive_url": "https://web.archive.org/web/20250420091532/https://sjmcc.org/sacraments"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://sjmcc.org/ministries-directory",
+    "capture": "2025-10-06",
+    "archive_url": "https://web.archive.org/web/20251006133401/https://sjmcc.org/ministries-directory"
+   },
+   {
+    "kind": "bulletin",
+    "original": "https://sjmcc.org/bulletins",
+    "capture": "2025-10-06",
+    "archive_url": "https://web.archive.org/web/20251006135158/https://sjmcc.org/bulletins"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://sjmcc.org/events-news",
+    "capture": "2025-10-06",
+    "archive_url": "https://web.archive.org/web/20251006133110/https://sjmcc.org/events-news"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://sjmcc.org/calendar",
+    "capture": "2025-10-06",
+    "archive_url": "https://web.archive.org/web/20251006143116/https://sjmcc.org/calendar"
+   },
+   {
+    "kind": "contact",
+    "original": "https://sjmcc.org/contact-us",
+    "capture": "2025-03-21",
+    "archive_url": "https://web.archive.org/web/20250321032817/https://sjmcc.org/contact-us"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }
