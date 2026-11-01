@@ -692,6 +692,39 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "godaddy"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": null,
+   "raw": "5:00 p.m. on Saturday (English)",
+   "source_url": "https://samcsa.com/home/welcome/mass-schedule/",
+   "fetched_at": "2026-11-01T08:04:56+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "8:00 a.m. on Sunday (English)",
+   "source_url": "https://samcsa.com/home/welcome/mass-schedule/",
+   "fetched_at": "2026-11-01T08:04:56+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": null,
+   "raw": "10:00 a.m. on Sunday (English)",
+   "source_url": "https://samcsa.com/home/welcome/mass-schedule/",
+   "fetched_at": "2026-11-01T08:04:56+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
   }
  ],
  "source_url": "http://www.samcsa.com/",
@@ -714,10 +747,10 @@
   "trusted_candidate": false,
   "generic_rows": 17
  },
- "has_sunday": false,
- "schedule_partial": true,
+ "has_sunday": true,
  "schedule_dropped": {
-  "not_a_service": 11
+  "not_a_service": 11,
+  "weekend_rescue_added": 3
  },
  "groups_dropped": {
   "noise": 1
