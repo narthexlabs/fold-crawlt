@@ -105,3 +105,25 @@ API pacing: >= 2 s per request, Retry-After honoured; the shared egress returns 
 in `data/raw/us/url_sources/wikipedia/` (gitignored). `wikipedia_state.json` is the resume point (discovered pages, parsed entries, articles).
 Resume / rebuild: `python3 -I ingest/us/url_sources/wikipedia.py all` (cache hits make no request); `build` alone rebuilds outputs offline;
 `discover2` adds each diocese's own category (about 400 more calls).
+
+## Common Crawl index (`commoncrawl.py`, `commoncrawl/XX.websites.json`, `commoncrawl.json`)
+Candidate parish-website **domains** found from URL patterns in the Common Crawl index (CDX API, newest 3 crawls from
+`collinfo.json`), without crawling anything. Licence/terms: Common Crawl index, https://commoncrawl.org/terms-of-use
+(we keep URLs only, no page content).
+- **Method.** The CDX API has no path-only lookup (`*/mass-times*` answers "No Captures found"; only `*.domain` and `prefix*`
+  work), so the script scans one TLD at a time (`url=*.church|catholic|org|us|net|com`, `page`/`pageSize`) with server-side
+  regex filters: status 200, path contains one of STRONG (`mass-times`, `masstimes`, `mass-schedule`, `mass-and-confession`,
+  `masses`, `confession(s)`, `reconciliation`, `adoration`, `rcia`, `parish-staff`, `parish-office`, `parish-bulletin`,
+  `holy-days` ...) or WEAK (`bulletin(s)`, `sacraments`, `baptism`, `worship`, `liturgy`) segments, and on org/us/net/com
+  the host must carry a church word (parish, catholic, st-joseph, saint-..., holy..., our-lady ...). Full lists in the file.
+- **Reduce.** Distinct registrable domains (`.org .com .net .church .us .catholic .info` only). Keep a domain with >= 1 STRONG
+  pattern or >= 2 distinct WEAK ones. Dropped: diocese sites (`dioceses.json`), LPi/DiscoverMass/USCCB/aggregators/social/
+  site-builder hosts, other-denomination words (baptist, lutheran, ...), school/hospital/K of C hosts, and every domain already
+  in another `*.websites.json`, `discovermass/`, a diocese `parishes.json`, or `data/real/us/sites/**`.
+- **Output.** `XX.websites.json` (DiscoverMass shape; state `XX` = unknown, so `run_state.build_inputs` files them under
+  `unassigned-xx`; crawl with `run_state.py chunk --state XX`). The site parser then fills in name, address and diocese.
+  `commoncrawl.json` holds every candidate domain with up to 6 evidence URLs, patterns, crawl ids and exclusion counts.
+- **Politeness.** One client, >= 1.1 s between requests, 503/429/reset retried with backoff (Retry-After honoured), honest UA.
+- **Resume.** `progress.json` is a page cursor per `crawl/tld` (committed), raw page hits are cached in
+  `data/raw/us/url_sources/commoncrawl/` (gitignored). Resume: `python3 -u ingest/us/url_sources/commoncrawl.py --minutes 100`
+  (or Actions -> National crawl -> job `commoncrawl`). Rebuild only: `python3 -I ingest/us/url_sources/commoncrawl.py --build`.

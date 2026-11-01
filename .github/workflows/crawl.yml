@@ -15,7 +15,7 @@ on:
   workflow_dispatch:
     inputs:
       job:
-        description: 'which job (sites | discovermass | gcatholic | bulletins | all)'
+        description: 'which job (sites | discovermass | gcatholic | commoncrawl | bulletins | all)'
         default: 'all'
       minutes:
         description: 'minutes per chunk'
@@ -122,6 +122,33 @@ jobs:
           python3 -I ingest/us/url_sources/gcatholic.py --build
           git add data/real/us/url_sources/gcatholic data/real/us/url_sources/gcatholic.json
           git commit -q -m "G8: GCatholic progress (Actions $(date -u +%FT%H:%MZ))" || true
+          git pull --rebase --autostash -q origin main && git push -q origin HEAD:main
+
+  commoncrawl:
+    if: ${{ github.event_name == 'schedule' || github.event.inputs.job == 'all' || github.event.inputs.job == 'commoncrawl' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 140
+    concurrency: { group: crawl-commoncrawl, cancel-in-progress: false }    # one client on index.commoncrawl.org
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 1 }
+      - run: git config user.name "Matthew" && git config user.email "mcolt4@gmail.com"
+      - uses: actions/cache@v4
+        with:
+          path: data/raw/us/url_sources/commoncrawl
+          key: raw-commoncrawl-${{ github.run_id }}
+          restore-keys: raw-commoncrawl-
+      - name: Common Crawl index (CDX API) -> parish domains (<=1 request/s, backoff on 503/429)
+        run: |
+          set -e
+          python3 -u ingest/us/url_sources/commoncrawl.py --probe || true
+          python3 -u ingest/us/url_sources/commoncrawl.py --minutes "$MINUTES" || true
+          python3 -I ingest/us/url_sources/commoncrawl.py --build
+          git add data/real/us/url_sources/commoncrawl data/real/us/url_sources/commoncrawl.json
+          git commit -q -m "Common Crawl index: parish domains (Actions $(date -u +%FT%H:%MZ))
+
+Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01SXKUYETifPNNjUVPkZ7qG5" || true
           git pull --rebase --autostash -q origin main && git push -q origin HEAD:main
 
   bulletins:
