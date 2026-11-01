@@ -615,6 +615,16 @@
     "diocese-of-victoria",
     "diocese-of-laredo"
    ]
+  },
+  {
+   "started_at": "2026-11-01T22:16:27+00:00",
+   "ended_at": "2026-11-01T22:17:44+00:00",
+   "result": "fetched {'robots_disallowed': 1, 'done': 80, 'dns': 7, 'challenge': 12, 'ssl_error': 7, 'http_202': 1, 'blocked_403': 1, 'ok': 47, 'parked': 1, 'conn_error': 1, 'not_found': 1, 'blocked_429': 1, 'halted_egress': 0}; parsed 3 dioceses",
+   "touched": [
+    "unassigned-nj",
+    "unassigned-ok",
+    "archdiocese-of-louisville"
+   ]
   }
  ],
  "dioceses": {
@@ -1130,19 +1140,21 @@
   },
   "unassigned-nj": {
    "sites_in_list": 150,
-   "records": 79,
-   "finished": false,
-   "ok": 48,
+   "records": 156,
+   "finished": true,
+   "ok": 93,
    "by_status": {
-    "ok": 48,
-    "challenge": 13,
+    "ok": 93,
+    "challenge": 25,
+    "ssl_error": 9,
+    "dns": 8,
     "timeout": 7,
-    "blocked_403": 3,
-    "robots_disallowed": 2,
-    "ssl_error": 2,
-    "conn_error": 2,
-    "http_202": 1,
-    "dns": 1
+    "blocked_403": 4,
+    "robots_disallowed": 3,
+    "conn_error": 3,
+    "http_202": 2,
+    "blocked_429": 1,
+    "not_found": 1
    }
   },
   "archdiocese-of-milwaukee": {
@@ -1943,19 +1955,19 @@
   },
   "unassigned-ok": {
    "sites_in_list": 87,
-   "records": 112,
+   "records": 114,
    "finished": true,
-   "ok": 57,
+   "ok": 58,
    "by_status": {
-    "ok": 57,
+    "ok": 58,
     "challenge": 34,
     "ssl_error": 7,
     "dns": 5,
+    "parked": 2,
     "blocked_429": 2,
     "unreachable_via_proxy": 1,
     "blocked_403": 1,
     "robots_disallowed": 1,
-    "parked": 1,
     "timeout": 1,
     "not_found": 1,
     "conn_error": 1
@@ -2202,11 +2214,11 @@
   },
   "archdiocese-of-louisville": {
    "sites_in_list": 77,
-   "records": 81,
+   "records": 82,
    "finished": true,
-   "ok": 45,
+   "ok": 46,
    "by_status": {
-    "ok": 45,
+    "ok": 46,
     "challenge": 11,
     "dns": 9,
     "ssl_error": 5,
@@ -4078,9 +4090,9 @@
  },
  "totals": {
   "sites_in_list": 19262,
-  "records": 17959,
-  "ok": 9540
+  "records": 17871,
+  "ok": 9509
  },
  "us_parish_pages_discovermass": 20147,
- "updated_at": "2026-11-01T22:17:35+00:00"
+ "updated_at": "2026-11-01T22:17:46+00:00"
 }
