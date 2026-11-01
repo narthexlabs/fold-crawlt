@@ -19,7 +19,7 @@
  "home_url": "https://www.stmel.net/",
  "final_url": "https://www.stmel.net/",
  "crawl_status": "ok",
- "crawl_env": "sandbox",
+ "crawl_env": "runner-rendered",
  "robots_note": "ok",
  "pages": [
   {
@@ -54,7 +54,26 @@
   ]
  },
  "template": "generic-html:wix",
- "groups": [],
+ "groups": [
+  {
+   "id": "stmel.net:choir",
+   "name": "Music Ministry / Choir",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "choir_music",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.stmel.net/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stmel.net/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T17:45:20+00:00",
+   "confidence": "low"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
  "social": {},
@@ -73,7 +92,7 @@
    "language": null,
    "raw": "3:00pm Confessions @ St. Mark",
    "source_url": "https://www.stmel.net/",
-   "fetched_at": "2026-11-01T02:25:43+00:00",
+   "fetched_at": "2026-11-01T17:45:20+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -86,7 +105,7 @@
    "language": null,
    "raw": "4:30pm Mass @ St. Mark",
    "source_url": "https://www.stmel.net/",
-   "fetched_at": "2026-11-01T02:25:43+00:00",
+   "fetched_at": "2026-11-01T17:45:20+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -99,7 +118,7 @@
    "language": null,
    "raw": "6:45am Mass",
    "source_url": "https://www.stmel.net/",
-   "fetched_at": "2026-11-01T02:25:43+00:00",
+   "fetched_at": "2026-11-01T17:45:20+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -112,7 +131,7 @@
    "language": null,
    "raw": "8:30am Mass @ St. Mark",
    "source_url": "https://www.stmel.net/",
-   "fetched_at": "2026-11-01T02:25:43+00:00",
+   "fetched_at": "2026-11-01T17:45:20+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -125,7 +144,7 @@
    "language": null,
    "raw": "11:00am Mass",
    "source_url": "https://www.stmel.net/",
-   "fetched_at": "2026-11-01T02:25:43+00:00",
+   "fetched_at": "2026-11-01T17:45:20+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -138,7 +157,7 @@
    "language": null,
    "raw": "8:30am Mass @ St. Mark",
    "source_url": "https://www.stmel.net/",
-   "fetched_at": "2026-11-01T02:25:43+00:00",
+   "fetched_at": "2026-11-01T17:45:20+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -151,7 +170,7 @@
    "language": null,
    "raw": "6:45am Mass",
    "source_url": "https://www.stmel.net/",
-   "fetched_at": "2026-11-01T02:25:43+00:00",
+   "fetched_at": "2026-11-01T17:45:20+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -164,7 +183,7 @@
    "language": null,
    "raw": "8:30am Mass @ St. Mark",
    "source_url": "https://www.stmel.net/",
-   "fetched_at": "2026-11-01T02:25:43+00:00",
+   "fetched_at": "2026-11-01T17:45:20+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -177,7 +196,7 @@
    "language": null,
    "raw": "6:45am Mass",
    "source_url": "https://www.stmel.net/",
-   "fetched_at": "2026-11-01T02:25:43+00:00",
+   "fetched_at": "2026-11-01T17:45:20+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -185,7 +204,7 @@
   }
  ],
  "source_url": "https://www.stmel.net/",
- "fetched_at": "2026-11-01T02:25:47+00:00",
+ "fetched_at": "2026-11-01T17:45:32+00:00",
  "schedule_template": {
   "template": "wix",
   "version": "ca-sites/2",
@@ -204,10 +223,11 @@
   "trusted_candidate": false,
   "generic_rows": 11
  },
+ "has_sunday": true,
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-10-31",
-  "window_end_exclusive": "2027-01-29",
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
@@ -215,7 +235,21 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "office_contact": {
+  "email": "church@stmel.net",
+  "phone": "(216) 941-4313",
+  "address": "14436 Triskett Rd., Cleveland, OH 44111",
+  "source_url": "https://www.stmel.net/",
+  "sources": {
+   "email": "https://www.stmel.net/",
+   "phone": "https://www.stmel.net/",
+   "address": "https://www.stmel.net/"
+  },
+  "fetched_at": "2026-11-01T17:45:20+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
- }
+ },
+ "fetch_mode": "rendered"
 }

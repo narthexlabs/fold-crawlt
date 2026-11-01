@@ -3,12 +3,10 @@
  "diocese": "diocese-of-cleveland",
  "matched_church_ids": [
   "diocese-of-cleveland:St. Casimir (Polish)",
-  "diocese-of-cleveland:St. Casimir (Polish) 8223 Sowinski Ave Cleveland, OH 44103",
   "wd-Q11809365"
  ],
  "matched": {
   "directory": [
-   "diocese-of-cleveland:St. Casimir (Polish) 8223 Sowinski Ave Cleveland, OH 44103",
    "diocese-of-cleveland:St. Casimir (Polish)"
   ],
   "discovermass": [
@@ -16,7 +14,6 @@
   ]
  },
  "names": [
-  "St. Casimir (Polish) 8223 Sowinski Ave Cleveland, OH 44103",
   "St. Casimir (Polish)"
  ],
  "cities": [
@@ -25,7 +22,7 @@
  "home_url": "https://www.stcasimir.com/",
  "final_url": "https://www.stcasimir.com/",
  "crawl_status": "ok",
- "crawl_env": "sandbox",
+ "crawl_env": "runner-rendered",
  "robots_note": "ok",
  "pages": [
   {
@@ -113,7 +110,7 @@
    "language": null,
    "raw": "Typical Mass is celebrated every Sunday at 11:30 AM.",
    "source_url": "https://www.stcasimir.com/mass-schedule",
-   "fetched_at": "2026-11-01T02:18:58+00:00",
+   "fetched_at": "2026-11-01T17:45:22+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "high",
@@ -121,7 +118,7 @@
   }
  ],
  "source_url": "https://www.stcasimir.com/",
- "fetched_at": "2026-11-01T02:19:03+00:00",
+ "fetched_at": "2026-11-01T17:45:45+00:00",
  "schedule_template": {
   "template": "squarespace",
   "version": "ca-sites/2",
@@ -140,14 +137,14 @@
   "trusted_candidate": false,
   "generic_rows": 2
  },
+ "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 1,
-  "no_day": 1
+  "no_day": 2
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-10-31",
-  "window_end_exclusive": "2027-01-29",
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
@@ -155,7 +152,19 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "office_contact": {
+  "email": null,
+  "phone": "(440) 749-7415",
+  "address": null,
+  "source_url": "https://www.stcasimir.com/contact",
+  "sources": {
+   "phone": "https://www.stcasimir.com/contact"
+  },
+  "fetched_at": "2026-11-01T17:45:45+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
- }
+ },
+ "fetch_mode": "rendered"
 }
