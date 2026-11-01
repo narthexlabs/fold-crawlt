@@ -76,7 +76,52 @@
  "events": [],
  "social": {},
  "bulletin": null,
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "07:00",
+   "language": null,
+   "raw": "Sunday 7:00 AM",
+   "source_url": "https://ap.churchcenter.com/home",
+   "fetched_at": "2026-11-01T20:25:03+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Sunday 9:00 AM Mass",
+   "source_url": "https://ap.churchcenter.com/home",
+   "fetched_at": "2026-11-01T20:25:03+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:00",
+   "language": null,
+   "raw": "Sunday 11:00 AM Mass",
+   "source_url": "https://ap.churchcenter.com/home",
+   "fetched_at": "2026-11-01T20:25:03+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "13:00",
+   "language": null,
+   "raw": "Sunday 1:00 PM La Misa en Español",
+   "source_url": "https://ap.churchcenter.com/home",
+   "fetched_at": "2026-11-01T20:25:03+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  }
+ ],
  "source_url": "https://ap.churchcenter.com/",
  "fetched_at": "2026-11-01T20:25:05+00:00",
  "schedule_template": {
@@ -97,7 +142,10 @@
   "trusted_candidate": false,
   "generic_rows": 36
  },
- "has_sunday": false,
+ "has_sunday": true,
+ "schedule_dropped": {
+  "weekend_rescue_added": 4
+ },
  "groups_dropped": {
   "unmatched": 1,
   "noise": 3
