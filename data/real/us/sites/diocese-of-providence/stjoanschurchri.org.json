@@ -1,0 +1,146 @@
+{
+ "domain": "stjoanschurchri.org",
+ "diocese": "diocese-of-providence",
+ "matched_church_ids": [
+  "diocese-of-providence:St. Joan of Arc",
+  "gc-22354"
+ ],
+ "matched": {
+  "directory": [
+   "diocese-of-providence:St. Joan of Arc"
+  ],
+  "discovermass": [
+   "gc-22354"
+  ]
+ },
+ "names": [
+  "St. Joan of Arc"
+ ],
+ "cities": [
+  "Cumberland"
+ ],
+ "home_url": "http://www.stjoanschurchri.org/",
+ "final_url": "https://stjoanschurchri.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://stjoanschurchri.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stjoanschurchri.org/sacraments/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stjoanschurchri.org/sacraments/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://stjoanschurchri.org/bulletin-and-links/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://stjoanschurchri.org/contact-us/",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-json"
+  ]
+ },
+ "template": "wordpress-rest+html",
+ "groups": [],
+ "calendar_feeds": [],
+ "events": [],
+ "social": {},
+ "bulletin": {
+  "url": "https://www.jppc.net/onlinebulletins/923template.pdf",
+  "date": null,
+  "kind": "pdf",
+  "text": "Click here",
+  "source_url": "https://stjoanschurchri.org/bulletin-and-links/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "16:00-16:45",
+   "language": null,
+   "raw": "Confessions: 4:00pm-4:45pm",
+   "source_url": "https://stjoanschurchri.org/",
+   "fetched_at": "2026-11-01T17:21:21+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  }
+ ],
+ "source_url": "http://www.stjoanschurchri.org/",
+ "fetched_at": "2026-11-01T17:21:27+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 6
+ },
+ "has_sunday": false,
+ "schedule_partial": true,
+ "schedule_dropped": {
+  "implausible_hour": 1,
+  "relative_time": 2,
+  "not_a_mass": 1
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": "stjoanschurch@gmail.com",
+  "phone": "(401) 658-2084",
+  "address": "3357 Mendon Road, Cumberland RI, 02864",
+  "source_url": "https://stjoanschurchri.org/contact-us/",
+  "sources": {
+   "email": "https://stjoanschurchri.org/contact-us/",
+   "phone": "https://stjoanschurchri.org/contact-us/",
+   "address": "https://stjoanschurchri.org/contact-us/"
+  },
+  "fetched_at": "2026-11-01T17:21:25+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}
