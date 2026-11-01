@@ -13,8 +13,13 @@ if ! flock -n 9; then echo "$(date -u +%FT%TZ) another sites_chunk is running in
 TRAILER=$'\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01SXKUYETifPNNjUVPkZ7qG5'
 
 push() {
-  git pull --rebase --autostash -q origin main || { git rebase --abort 2>/dev/null; return 1; }
-  git push -q origin HEAD:main || { git pull --rebase --autostash -q origin main && git push -q origin HEAD:main; }
+  # 8 matrix runners push at once: rebase with -X theirs (our fresh records win for our own dioceses), retry with jitter
+  for i in 1 2 3 4; do
+    git pull --rebase -X theirs --autostash -q origin main || { git rebase --abort 2>/dev/null || true; }
+    git push -q origin HEAD:main && return 0
+    sleep $((RANDOM % 20 + 5))
+  done
+  return 1
 }
 
 git pull --rebase --autostash -q origin main

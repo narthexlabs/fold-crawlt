@@ -60,7 +60,7 @@ jobs:
           path: data/raw/us/sites
           key: raw-sites-${{ strategy.job-index }}-${{ github.run_id }}
           restore-keys: raw-sites-${{ strategy.job-index }}-
-      - run: pip install -q requests beautifulsoup4 lxml
+      - run: sudo pip3 install -q --break-system-packages requests beautifulsoup4 lxml   # system site: visible to python3 -I
       - name: Parish-website crawl chunk (128 hosts in parallel, one request at a time per host)
         if: ${{ github.event.inputs.job != 'reparse' }}
         env:
@@ -76,7 +76,8 @@ jobs:
         run: |
           set -u
           TRAILER=$'\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01SXKUYETifPNNjUVPkZ7qG5'
-          git pull --rebase --autostash -q origin main || true
+          git rebase --abort 2>/dev/null || true
+          git pull --rebase -X theirs --autostash -q origin main || { git rebase --abort 2>/dev/null || true; }
           timeout $(( RMIN * 60 + 600 )) python3 -I ingest/us/sites/run_state.py reparse --state "$STATES" --minutes "$RMIN" || true
           if [ -f data/raw/us/sites/_last_touched.json ]; then
             for d in $(python3 -c "import json;print(' '.join(json.load(open('data/raw/us/sites/_last_touched.json'))))"); do
@@ -85,7 +86,11 @@ jobs:
           fi
           git add data/real/us/sites/progress.json data/real/us/sites/README.md
           git commit -q -m "US parish sites: re-parse progress $(date -u +%FT%H:%MZ)$TRAILER" 2>/dev/null || true
-          git pull --rebase --autostash -q origin main && git push -q origin HEAD:main || { git pull --rebase --autostash -q origin main && git push -q origin HEAD:main; }
+          for i in 1 2 3 4; do
+            git pull --rebase -X theirs --autostash -q origin main || { git rebase --abort 2>/dev/null || true; }
+            git push -q origin HEAD:main && break
+            sleep $((RANDOM % 20 + 5))
+          done
 
   discovermass:
     if: ${{ github.event_name == 'schedule' || github.event.inputs.job == 'all' || github.event.inputs.job == 'discovermass' }}
@@ -188,7 +193,7 @@ jobs:
       - uses: actions/checkout@v4
         with: { fetch-depth: 1 }
       - run: git config user.name "Matthew" && git config user.email "mcolt4@gmail.com"
-      - run: pip install -q requests beautifulsoup4 lxml
+      - run: sudo pip3 install -q --break-system-packages requests beautifulsoup4 lxml   # system site: visible to python3 -I
       - uses: actions/cache@v4
         with:
           path: data/raw/us/wayback
