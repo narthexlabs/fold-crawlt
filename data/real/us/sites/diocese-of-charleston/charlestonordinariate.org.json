@@ -41,7 +41,19 @@
  "events": [],
  "social": {},
  "bulletin": null,
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:00",
+   "language": null,
+   "raw": "Sunday Mass: 11AM at St Mary of the Annunciation Catholic Church",
+   "source_url": "https://charlestonordinariate.org/",
+   "fetched_at": "2026-11-01T18:51:41+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  }
+ ],
  "source_url": "http://charlestonordinariate.org/",
  "fetched_at": "2026-11-01T18:51:43+00:00",
  "schedule_template": {
@@ -62,7 +74,10 @@
   "trusted_candidate": false,
   "generic_rows": 0
  },
- "has_sunday": false,
+ "has_sunday": true,
+ "schedule_dropped": {
+  "weekend_rescue_added": 1
+ },
  "groups_dropped": {},
  "event_counts": {
   "window_start": "2026-11-01",
