@@ -1,0 +1,138 @@
+{
+ "domain": "sspp.ptdiocese.org",
+ "diocese": "diocese-of-pensacola-tallahassee",
+ "matched_church_ids": [
+  "st-peter-and-st-paul-panama-city-fl"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "st-peter-and-st-paul-panama-city-fl"
+  ]
+ },
+ "names": [
+  "St. Peter and St. Paul"
+ ],
+ "cities": [
+  "Panama City"
+ ],
+ "home_url": "https://sspp.ptdiocese.org/",
+ "final_url": "https://sspp.ptdiocese.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://sspp.ptdiocese.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://sspp.ptdiocese.org/contact-us/",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-json"
+  ]
+ },
+ "template": "wordpress-rest+html",
+ "groups": [],
+ "calendar_feeds": [],
+ "events": [],
+ "social": {},
+ "bulletin": null,
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": "Vietnamese",
+   "raw": "Weekend Masses: 9 AM CT",
+   "source_url": "https://sspp.ptdiocese.org/",
+   "fetched_at": "2026-11-01T22:15:40+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "17:30",
+   "language": "English",
+   "raw": "Weekend Masses: 5:30 PM CT",
+   "source_url": "https://sspp.ptdiocese.org/",
+   "fetched_at": "2026-11-01T22:15:40+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "08:00-08:45",
+   "language": null,
+   "raw": "Reconciliation: Sundays 8:00 a.m. – 8:45 a.m. or by appointment",
+   "source_url": "https://sspp.ptdiocese.org/",
+   "fetched_at": "2026-11-01T22:15:40+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  }
+ ],
+ "source_url": "https://sspp.ptdiocese.org/",
+ "fetched_at": "2026-11-01T22:16:09+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 3
+ },
+ "has_sunday": true,
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(985) 518-2641",
+  "address": "1003 East Ave, Panama City, FL 32401",
+  "source_url": "https://sspp.ptdiocese.org/contact-us/",
+  "sources": {
+   "phone": "https://sspp.ptdiocese.org/contact-us/",
+   "address": "https://sspp.ptdiocese.org/contact-us/"
+  },
+  "fetched_at": "2026-11-01T22:15:59+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}
