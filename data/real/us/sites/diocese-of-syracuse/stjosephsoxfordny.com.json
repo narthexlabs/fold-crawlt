@@ -232,7 +232,30 @@
   "text": "BULLETIN",
   "source_url": "https://www.stjosephsoxfordny.com/"
  },
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:45",
+   "language": null,
+   "raw": "Saturday Vigil Mass 5:45 PM,",
+   "source_url": "https://www.stjosephsoxfordny.com/",
+   "fetched_at": "2026-11-01T17:21:39+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:30",
+   "language": null,
+   "raw": "Sunday Mass is at 8:30 AM.",
+   "source_url": "https://www.stjosephsoxfordny.com/",
+   "fetched_at": "2026-11-01T17:21:39+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  }
+ ],
  "source_url": "http://www.stjosephsoxfordny.com/",
  "fetched_at": "2026-11-01T17:21:47+00:00",
  "schedule_template": {
@@ -253,7 +276,10 @@
   "trusted_candidate": false,
   "generic_rows": 4
  },
- "has_sunday": false,
+ "has_sunday": true,
+ "schedule_dropped": {
+  "weekend_rescue_added": 2
+ },
  "groups_dropped": {
   "noise": 6,
   "unmatched": 5,

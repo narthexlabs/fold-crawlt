@@ -132,7 +132,19 @@
   ]
  },
  "bulletin": null,
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "18:30",
+   "language": null,
+   "raw": "We invite you to join us for Mass every Sunday at 6:30 pm. All are welcome to celebrate our faith and gather in community.",
+   "source_url": "https://www.hallnewmancenter.com/",
+   "fetched_at": "2026-11-01T17:21:33+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  }
+ ],
  "source_url": "https://www.hallnewmancenter.org/",
  "fetched_at": "2026-11-01T17:21:42+00:00",
  "redirected_off_host": "hallnewmancenter.com",
@@ -154,9 +166,10 @@
   "trusted_candidate": false,
   "generic_rows": 0
  },
- "has_sunday": false,
+ "has_sunday": true,
  "schedule_dropped": {
-  "prose": 1
+  "prose": 1,
+  "weekend_rescue_added": 1
  },
  "groups_dropped": {
   "noise": 1,

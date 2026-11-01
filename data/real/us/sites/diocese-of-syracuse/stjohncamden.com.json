@@ -51,7 +51,30 @@
   "text": "Current Bulletin",
   "source_url": "https://stjohncamden.com/"
  },
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Please join us every Sunday for our 9:00 am Mass which can be found on our Facebook page,",
+   "source_url": "https://stjohncamden.com/",
+   "fetched_at": "2026-11-01T17:21:40+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "16:00",
+   "language": null,
+   "raw": "Saturday Vigil Mass: 4:00 p.m.",
+   "source_url": "https://stjohncamden.com/",
+   "fetched_at": "2026-11-01T17:21:40+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  }
+ ],
  "source_url": "https://www.stjohncamden.com/",
  "fetched_at": "2026-11-01T17:21:43+00:00",
  "schedule_template": {
@@ -72,9 +95,10 @@
   "trusted_candidate": false,
   "generic_rows": 5
  },
- "has_sunday": false,
+ "has_sunday": true,
  "schedule_dropped": {
-  "prose": 1
+  "prose": 1,
+  "weekend_rescue_added": 2
  },
  "groups_dropped": {},
  "event_counts": {
