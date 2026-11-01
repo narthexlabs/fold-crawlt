@@ -60,6 +60,7 @@ jobs:
           path: data/raw/us/sites
           key: raw-sites-${{ strategy.job-index }}-${{ github.run_id }}
           restore-keys: raw-sites-${{ strategy.job-index }}-
+      - run: pip install -q requests beautifulsoup4 lxml
       - name: Parish-website crawl chunk (128 hosts in parallel, one request at a time per host)
         if: ${{ github.event.inputs.job != 'reparse' }}
         env:
