@@ -1,0 +1,173 @@
+{
+ "domain": "stgregoryofnyssa.net",
+ "diocese": "byzantine-catholic-eparchy-of-passaic",
+ "matched_church_ids": [
+  "brave:DC|gregory nyssa beltsville|",
+  "byzantine-catholic-eparchy-of-passaic:St. Gregory of Nyssa ( www )"
+ ],
+ "matched": {
+  "directory": [
+   "byzantine-catholic-eparchy-of-passaic:St. Gregory of Nyssa ( www )"
+  ],
+  "discovermass": [
+   "brave:DC|gregory nyssa beltsville|"
+  ]
+ },
+ "names": [
+  "St. Gregory of Nyssa ( www )",
+  "St Gregory Of Nyssa Beltsville"
+ ],
+ "cities": [],
+ "home_url": "https://stgregoryofnyssa.net/",
+ "final_url": "https://stgregoryofnyssa.net/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://stgregoryofnyssa.net/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stgregoryofnyssa.net/schedule/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://stgregoryofnyssa.net/calendar/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://stgregoryofnyssa.net/news-and-events/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://stgregoryofnyssa.net/contact-us/",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-content"
+  ]
+ },
+ "template": "wordpress-rest+html",
+ "groups": [],
+ "calendar_feeds": [
+  {
+   "feed_id": "stgregoryofnyssa.net:ics:8bfb7259",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": "https://calendar.google.com/calendar/ical/7scb88ih48jo91943c7sidtcao%40group.calendar.google.com/public/basic.ics",
+   "page_url": "https://stgregoryofnyssa.net/calendar/",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (embedded on page)",
+   "display_tz": "America/New_York",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T17:36:41+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
+ "events": [],
+ "social": {},
+ "bulletin": {
+  "url": "https://stgregoryofnyssa.net/2025/04/13/bulletin-april-13-2025/",
+  "date": "2025-04-13",
+  "kind": "page",
+  "text": "Bulletin April 13, 2025",
+  "source_url": "https://stgregoryofnyssa.net/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:15",
+   "language": null,
+   "raw": "11:15 AM Divine Liturgy",
+   "source_url": "https://stgregoryofnyssa.net/",
+   "fetched_at": "2026-11-01T17:21:32+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Sacrament of Confession: 9:00 AM Saturdays",
+   "source_url": "https://stgregoryofnyssa.net/",
+   "fetched_at": "2026-11-01T17:21:32+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  }
+ ],
+ "source_url": "https://stgregoryofnyssa.net/",
+ "fetched_at": "2026-11-01T17:21:38+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 2
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "skipped_section": 6,
+  "other_location": 52
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(301) 953-9323",
+  "address": "12420 Old Gunpowder Spur Rd Beltsville, MD 20705",
+  "source_url": "https://stgregoryofnyssa.net/contact-us/",
+  "sources": {
+   "phone": "https://stgregoryofnyssa.net/contact-us/",
+   "address": "https://stgregoryofnyssa.net/contact-us/"
+  },
+  "fetched_at": "2026-11-01T17:21:37+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}
