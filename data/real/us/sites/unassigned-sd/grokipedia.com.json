@@ -27,6 +27,12 @@
    "class": "ok"
   },
   {
+   "category": "ministries",
+   "url": "https://grokipedia.com/page/Gerald_L._K._Smith",
+   "status": 200,
+   "class": "ok"
+  },
+  {
    "category": "live",
    "url": "https://grokipedia.com/live",
    "status": 200,
@@ -34,18 +40,75 @@
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "wordpress",
+  "evidence": [
+   "wp-content"
+  ]
  },
- "template": "generic-html:unknown",
- "groups": [],
+ "template": "wordpress-html",
+ "groups": [
+  {
+   "id": "grokipedia.com:bible_study",
+   "name": "Bible",
+   "category": "scripture_study",
+   "category_label": "Scripture & study",
+   "subcategory": "bible_study",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://grokipedia.com/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://grokipedia.com/page/Gerald_L._K._Smith",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T07:19:44+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "grokipedia.com:african_american",
+   "name": "African Americans",
+   "category": "language_cultural",
+   "category_label": "Language & cultural communities",
+   "subcategory": "african_american",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://grokipedia.com/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://grokipedia.com/page/Gerald_L._K._Smith",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T07:19:44+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "grokipedia.com:other_education_and_initial_ministry",
+   "name": "Education and Initial Ministry",
+   "category": "other",
+   "category_label": "Other",
+   "subcategory": "unclassified",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://grokipedia.com/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://grokipedia.com/page/Gerald_L._K._Smith",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T07:19:44+00:00",
+   "confidence": "low"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
  "social": {
   "livestream": [
    {
     "url": "https://grokipedia.com/live",
-    "label": "Watch live →",
+    "label": "[name withheld] · edited 19m ago 1,245,521 approved edits",
     "platform": "grokipedia.com",
     "kind": "link"
    }
@@ -54,9 +117,9 @@
  "bulletin": null,
  "schedule_rows": [],
  "source_url": "https://grokipedia.com/",
- "fetched_at": "2026-11-01T17:27:00+00:00",
+ "fetched_at": "2026-11-01T07:19:45+00:00",
  "schedule_template": {
-  "template": "generic_strict",
+  "template": "wordpress",
   "version": "ca-sites/2",
   "parse_quality": {
    "checks": {
@@ -69,12 +132,14 @@
    },
    "score": "low"
   },
-  "passed_bar": true,
+  "passed_bar": false,
   "trusted_candidate": false,
   "generic_rows": 0
  },
  "has_sunday": false,
- "groups_dropped": {},
+ "groups_dropped": {
+  "unmatched": 1
+ },
  "event_counts": {
   "window_start": "2026-11-01",
   "window_end_exclusive": "2027-01-30",
@@ -86,6 +151,8 @@
   "excluded_by_reason": {}
  },
  "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
+  "screened_by": "ingest/public/privacy.py screen()",
+  "contacts_removed": 0,
+  "names_withheld": 1
  }
 }

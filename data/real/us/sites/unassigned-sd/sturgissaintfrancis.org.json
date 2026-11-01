@@ -16,31 +16,493 @@
  "cities": [],
  "home_url": "https://www.sturgissaintfrancis.org/",
  "final_url": "https://www.sturgissaintfrancis.org/",
- "crawl_status": "ssl_error",
+ "crawl_status": "ok",
  "crawl_env": "sandbox",
- "robots_note": "ssl_error",
+ "robots_note": "ok",
  "pages": [
   {
    "category": "home",
    "url": "https://www.sturgissaintfrancis.org/",
-   "status": null,
-   "class": "ssl_error"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.sturgissaintfrancis.org/ministry-schedule",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.sturgissaintfrancis.org/mass-schedule",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.sturgissaintfrancis.org/ministries",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.sturgissaintfrancis.org/liturgical-ministries",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.sturgissaintfrancis.org/outreach-ministries",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://www.sturgissaintfrancis.org/bulletins",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.sturgissaintfrancis.org/parish-calendar",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://www.sturgissaintfrancis.org/contact-us",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "duda",
+  "evidence": [
+   "irp.cdn-website"
+  ]
  },
- "template": "none",
- "groups": [],
- "calendar_feeds": [],
+ "template": "generic-html:duda",
+ "groups": [
+  {
+   "id": "sturgissaintfrancis.org:rosary|black+hill+maker+shepard",
+   "name": "Black Hills Shepard Rosary Makers",
+   "category": "prayer_devotion",
+   "category_label": "Prayer & devotion",
+   "subcategory": "rosary",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": "Every Tuesday, 4pm",
+   "description": "Do you enjoy crafting? Come join the rosary makers for an hour and help make rosaries! You may also take home a package to create 10 rosaries and return them when completed. The rosaries produced are sent to different missions…",
+   "contact_url": "https://www.sturgissaintfrancis.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.sturgissaintfrancis.org/outreach-ministries",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T07:19:47+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "sturgissaintfrancis.org:prayer_group|fatima",
+   "name": "Fatima Prayer Group",
+   "category": "prayer_devotion",
+   "category_label": "Prayer & devotion",
+   "subcategory": "prayer_group",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "The Fatima Prayer Group comes together in the main church area to pray the rosary and foster devotion to the Blessed Virgin Mary. Everyone is welcome.",
+   "contact_url": "https://www.sturgissaintfrancis.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.sturgissaintfrancis.org/outreach-ministries",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T07:19:47+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "sturgissaintfrancis.org:seniors|supporting",
+   "name": "Supporting Seniors",
+   "category": "seniors",
+   "category_label": "Seniors",
+   "subcategory": "seniors_group",
+   "audience": "seniors",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.sturgissaintfrancis.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.sturgissaintfrancis.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T07:19:42+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "sturgissaintfrancis.org:svdp",
+   "name": "Society of St. Vincent de Paul",
+   "category": "service_mercy",
+   "category_label": "Service & mercy",
+   "subcategory": "st_vincent_de_paul",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "Inspired by Gospel values, the Society of St. Vincent de Paul, a Catholic lay organization, leads women and men to join together to grow spiritually by offering person-to-person service to those who are needy and suffering in the tradition of…",
+   "contact_url": "https://www.sturgissaintfrancis.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.sturgissaintfrancis.org/outreach-ministries",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T07:19:47+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "sturgissaintfrancis.org:servers",
+   "name": "Altar Servers",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "altar_servers",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "In the Roman Catholic Church, altar servers help the priest and deacon during the liturgy, especially the Holy Mass, funerals, weddings, and other special occasions. They have several supporting duties to carry out, such as carrying the processional cross and…",
+   "contact_url": "https://www.sturgissaintfrancis.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.sturgissaintfrancis.org/liturgical-ministries",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T07:19:46+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "sturgissaintfrancis.org:altar_society",
+   "name": "Altar Society",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "altar_society_environment",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "The Altar Society is the lead group which helps coordinate the efforts of the 3 current Circles at St. Francis: The St. Francis Circle, the St. Theresa Circle, and the Holy Family Circle. There are four officers, with a representative…",
+   "contact_url": "https://www.sturgissaintfrancis.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.sturgissaintfrancis.org/outreach-ministries",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T07:19:47+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "sturgissaintfrancis.org:emhc",
+   "name": "Extraordinary Ministers of Holy Communion",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "emhc",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "The Most Holy Eucharist is the most august sacrament, in which Christ the Lord Himself is contained, offered and received, and by which the Church constantly lives and grows.",
+   "contact_url": "https://www.sturgissaintfrancis.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.sturgissaintfrancis.org/liturgical-ministries",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T07:19:46+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "sturgissaintfrancis.org:lectors",
+   "name": "Lectors",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "lectors",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "When you answer the call to be a minister of the Word, you enter a deeper relationship with God revealed in Scripture. A reader has the awesome duty and privilege of bringing the printed word to life, making it flesh.…",
+   "contact_url": "https://www.sturgissaintfrancis.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.sturgissaintfrancis.org/liturgical-ministries",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T07:19:46+00:00",
+   "confidence": "low"
+  },
+  {
+   "id": "sturgissaintfrancis.org:sacristans",
+   "name": "Sacristans",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "sacristans",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "The sacristan diligently arranges the liturgical books, the vestments, the altar, sacred vessels and other things that are necessary for the celebration of Mass and other special occasions.",
+   "contact_url": "https://www.sturgissaintfrancis.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.sturgissaintfrancis.org/liturgical-ministries",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T07:19:46+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "sturgissaintfrancis.org:kofc",
+   "name": "Knights of Columbus",
+   "category": "fraternal_orders",
+   "category_label": "Fraternal & orders",
+   "subcategory": "knights_of_columbus",
+   "audience": "men",
+   "language": "en",
+   "language_assumed": true,
+   "meets": "1st Tuesday",
+   "description": "At Council #6341 in Sturgis, SD, you will find brother Knights working to fulfill the central mission of the Order: striving in charitable works, serving the Church and unified in following its teachings, supporting brother Knights in their temporal and…",
+   "contact_url": "https://www.sturgissaintfrancis.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.sturgissaintfrancis.org/outreach-ministries",
+   "source_kind": "website",
+   "fetched_at": "2026-11-01T07:19:47+00:00",
+   "confidence": "medium"
+  }
+ ],
+ "calendar_feeds": [
+  {
+   "feed_id": "sturgissaintfrancis.org:ics:85a2a69a",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": null,
+   "page_url": "https://www.sturgissaintfrancis.org/parish-calendar",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (website-builder widget)",
+   "url_withheld": "calendar id is an e-mail address; not stored",
+   "feed_key": "85a2a69a46b6",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-01T17:27:50+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/SaintFrancisSturgis"
+  ]
+ },
+ "bulletin": {
+  "url": "https://www.sturgissaintfrancis.org/bulletins",
+  "date": null,
+  "kind": "page",
+  "text": "Bulletins",
+  "source_url": "https://www.sturgissaintfrancis.org/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Lord's Day Mass:: Saturday: 5:00 pm MST",
+   "source_url": "https://www.sturgissaintfrancis.org/mass-schedule",
+   "fetched_at": "2026-11-01T07:19:44+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:30",
+   "language": null,
+   "raw": "Lord's Day Mass:: Sunday: 8:30 am",
+   "source_url": "https://www.sturgissaintfrancis.org/mass-schedule",
+   "fetched_at": "2026-11-01T07:19:44+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Daily Mass: Monday: 8:00 am",
+   "source_url": "https://www.sturgissaintfrancis.org/mass-schedule",
+   "fetched_at": "2026-11-01T07:19:44+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "17:15",
+   "language": null,
+   "raw": "Daily Mass: Tuesday: 5:15 pm",
+   "source_url": "https://www.sturgissaintfrancis.org/mass-schedule",
+   "fetched_at": "2026-11-01T07:19:44+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Daily Mass: Wednesday: 8:00 am",
+   "source_url": "https://www.sturgissaintfrancis.org/mass-schedule",
+   "fetched_at": "2026-11-01T07:19:44+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "First Friday of the month",
+   "time": "12:30-16:00",
+   "language": null,
+   "raw": "Exposition & Adoration: First Friday: 12:30 - 4:00 pm",
+   "source_url": "https://www.sturgissaintfrancis.org/mass-schedule",
+   "fetched_at": "2026-11-01T07:19:44+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "First Sunday of the month",
+   "time": "18:00",
+   "language": null,
+   "raw": "Exposition & Adoration: First Sunday: 6:00 pm",
+   "source_url": "https://www.sturgissaintfrancis.org/mass-schedule",
+   "fetched_at": "2026-11-01T07:19:44+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:30",
+   "language": null,
+   "raw": "Lord's Day Mass: Sunday: 10:30 am MST",
+   "source_url": "https://www.sturgissaintfrancis.org/mass-schedule",
+   "fetched_at": "2026-11-01T07:19:44+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "17:30",
+   "language": null,
+   "raw": "Daily Mass: Thursday: 5:30 pm",
+   "source_url": "https://www.sturgissaintfrancis.org/mass-schedule",
+   "fetched_at": "2026-11-01T07:19:44+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "First Thursday of the month",
+   "time": "18:00",
+   "language": null,
+   "raw": "Exposition & Adoration: First Thursday: 6:00 pm",
+   "source_url": "https://www.sturgissaintfrancis.org/mass-schedule",
+   "fetched_at": "2026-11-01T07:19:44+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Second and Fourth Sunday of the month",
+   "time": "16:00",
+   "language": null,
+   "raw": "Lord's Day Mass:: 2nd & 4th Sunday: 4:00 pm MST",
+   "source_url": "https://www.sturgissaintfrancis.org/mass-schedule",
+   "fetched_at": "2026-11-01T07:19:44+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Daily Mass: Saturday: 8:00 am",
+   "source_url": "https://www.sturgissaintfrancis.org/mass-schedule",
+   "fetched_at": "2026-11-01T07:19:44+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  }
+ ],
  "source_url": "https://www.sturgissaintfrancis.org/",
- "fetched_at": "2026-11-01T17:26:56+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-01T07:19:50+00:00",
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": true,
+  "trusted_candidate": false,
+  "generic_rows": 9
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "relative_time": 2,
+  "prose": 1
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-01",
+  "window_end_exclusive": "2027-01-30",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(605) 720-3579",
+  "address": "1049 Howard Street, Sturgis, SD 57785",
+  "source_url": "https://www.sturgissaintfrancis.org/contact-us",
+  "sources": {
+   "phone": "https://www.sturgissaintfrancis.org/contact-us",
+   "address": "https://www.sturgissaintfrancis.org/contact-us"
+  },
+  "fetched_at": "2026-11-01T07:19:50+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
  }
