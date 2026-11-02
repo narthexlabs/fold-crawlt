@@ -63,6 +63,12 @@
    "url": "https://church.ststanislaus.net/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://church.ststanislaus.net/adoration-schedules/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -339,6 +345,34 @@
    "review_reason": null,
    "confidence": "high",
    "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "First and Third Sunday of the month",
+   "time": "02:00-03:00",
+   "language": null,
+   "raw": "Available Adoration Chapel hours are:: Sunday Morning 2:00am – 3:00am (1st & 3rd)",
+   "source_url": "https://church.ststanislaus.net/adoration-schedules/",
+   "fetched_at": "2026-11-02T04:42:33+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "First, Third and Fifth Sunday of the month",
+   "time": "03:00-04:00",
+   "language": null,
+   "raw": "Available Adoration Chapel hours are:: Sunday Morning 3:00am – 4:00am (1st, 3rd, 5th)",
+   "source_url": "https://church.ststanislaus.net/adoration-schedules/",
+   "fetched_at": "2026-11-02T04:42:33+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "https://church.ststanislaus.net/",
@@ -377,6 +411,34 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Confessions are heard at St. Stanislaus on Saturday’s from 4:30 pm to 5:00 pm or by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://church.ststanislaus.net/confession-times/",
+   "fetched_at": "2026-11-02T04:42:03+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:03+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(573) 636-4925",
@@ -387,8 +449,5 @@
   },
   "fetched_at": "2026-11-01T10:11:57+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

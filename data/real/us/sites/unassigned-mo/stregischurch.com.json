@@ -73,6 +73,12 @@
    "url": "https://www.stregischurch.org/findus",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stregischurch.org/eucharistic-adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -528,7 +534,7 @@
    "note": "Google Calendar public feed (website-builder widget)",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:33:43+00:00",
+    "fetched_at": "2026-11-02T04:52:30+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -544,7 +550,7 @@
    "note": "Google Calendar public feed (website-builder widget)",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:33:44+00:00",
+    "fetched_at": "2026-11-02T04:52:31+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -560,7 +566,7 @@
    "note": "Google Calendar public feed (website-builder widget)",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:33:46+00:00",
+    "fetched_at": "2026-11-02T04:52:33+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -577,7 +583,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": 404,
-    "fetched_at": "2026-11-01T23:33:47+00:00",
+    "fetched_at": "2026-11-02T04:52:34+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -605,9 +611,22 @@
    "day": "Saturday",
    "time": "15:00",
    "language": null,
-   "raw": "Weekend Mass: Saturday 3:00 p.m.",
-   "source_url": "https://www.stregischurch.org/mass---confession-times",
-   "fetched_at": "2026-11-01T17:27:04+00:00",
+   "raw": "Saturday Vigil: 3pm",
+   "source_url": "https://www.stregischurch.org/",
+   "fetched_at": "2026-11-01T17:27:03+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:30",
+   "language": null,
+   "raw": "Worship with us at Mass: Sunday: 8:30am, 10:30am",
+   "source_url": "https://www.stregischurch.org/",
+   "fetched_at": "2026-11-01T17:27:03+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -616,11 +635,138 @@
   {
    "kind": "mass",
    "day": "Sunday",
-   "time": "08:30",
+   "time": "12:30",
    "language": null,
-   "raw": "Weekend Mass: Sunday 8:30 a.m., 10:30 a.m. & 5:00 p.m. (en Español)",
-   "source_url": "https://www.stregischurch.org/mass---confession-times",
-   "fetched_at": "2026-11-01T17:27:04+00:00",
+   "raw": "Worship with us at Mass: 12:30pm",
+   "source_url": "https://www.stregischurch.org/",
+   "fetched_at": "2026-11-01T17:27:03+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Second Sunday of the month",
+   "time": "17:00",
+   "language": "Spanish",
+   "raw": "(2nd Sunday of the Month, Kids' Mass in Spanish): 5pm",
+   "source_url": "https://www.stregischurch.org/",
+   "fetched_at": "2026-11-01T17:27:03+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "19:00",
+   "language": "Spanish",
+   "raw": "(Spanish Mass): 7pm",
+   "source_url": "https://www.stregischurch.org/",
+   "fetched_at": "2026-11-01T17:27:03+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "08:30",
+   "language": "English",
+   "raw": "Daily Mass:: Tuesday-Friday: 8:30am (English)",
+   "source_url": "https://www.stregischurch.org/",
+   "fetched_at": "2026-11-01T17:27:03+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Tuesday-Friday"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "08:30",
+   "language": "English",
+   "raw": "Daily Mass:: Tuesday-Friday: 8:30am (English)",
+   "source_url": "https://www.stregischurch.org/",
+   "fetched_at": "2026-11-01T17:27:03+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Tuesday-Friday",
+   "day_parsed": "Tuesday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "08:30",
+   "language": "English",
+   "raw": "Daily Mass:: Tuesday-Friday: 8:30am (English)",
+   "source_url": "https://www.stregischurch.org/",
+   "fetched_at": "2026-11-01T17:27:03+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Tuesday-Friday",
+   "day_parsed": "Tuesday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "08:30",
+   "language": "English",
+   "raw": "Daily Mass:: Tuesday-Friday: 8:30am (English)",
+   "source_url": "https://www.stregischurch.org/",
+   "fetched_at": "2026-11-01T17:27:03+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Tuesday-Friday",
+   "day_parsed": "Tuesday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "confession",
+   "day": "Wednesday",
+   "time": "18:00-19:00",
+   "language": null,
+   "raw": "Confession:: Wednesday: 6-7pm",
+   "source_url": "https://www.stregischurch.org/",
+   "fetched_at": "2026-11-01T17:27:03+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "14:00",
+   "language": null,
+   "raw": "Confession:: Saturday: 2pm",
+   "source_url": "https://www.stregischurch.org/",
+   "fetched_at": "2026-11-01T17:27:03+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Friday",
+   "time": "09:45-13:50",
+   "language": null,
+   "raw": "with Confession and Benediction: Friday (when school in session): 9:45am-1:50pm",
+   "source_url": "https://www.stregischurch.org/",
+   "fetched_at": "2026-11-01T17:27:03+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -630,7 +776,7 @@
    "kind": "mass",
    "day": "Sunday",
    "time": "10:30",
-   "language": null,
+   "language": "Spanish",
    "raw": "Weekend Mass: Sunday 8:30 a.m., 10:30 a.m. & 5:00 p.m. (en Español)",
    "source_url": "https://www.stregischurch.org/mass---confession-times",
    "fetched_at": "2026-11-01T17:27:04+00:00",
@@ -645,71 +791,6 @@
    "time": "17:00",
    "language": "Spanish",
    "raw": "Weekend Mass: Sunday 8:30 a.m., 10:30 a.m. & 5:00 p.m. (en Español)",
-   "source_url": "https://www.stregischurch.org/mass---confession-times",
-   "fetched_at": "2026-11-01T17:27:04+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
-  {
-   "kind": "mass",
-   "day": "Tuesday",
-   "time": "08:30",
-   "language": "English",
-   "raw": "Daily Mass: Tuesday 8:30 a.m. (English) & 7 p.m. (en Español)",
-   "source_url": "https://www.stregischurch.org/mass---confession-times",
-   "fetched_at": "2026-11-01T17:27:04+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
-  {
-   "kind": "mass",
-   "day": "Tuesday",
-   "time": "19:00",
-   "language": "Spanish",
-   "raw": "Daily Mass: Tuesday 8:30 a.m. (English) & 7 p.m. (en Español)",
-   "source_url": "https://www.stregischurch.org/mass---confession-times",
-   "fetched_at": "2026-11-01T17:27:04+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
-  {
-   "kind": "mass",
-   "day": "Wednesday",
-   "time": "08:30",
-   "language": null,
-   "raw": "Daily Mass: Wednesday 8:30 a.m.",
-   "source_url": "https://www.stregischurch.org/mass---confession-times",
-   "fetched_at": "2026-11-01T17:27:04+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
-  {
-   "kind": "mass",
-   "day": "Thursday",
-   "time": "08:30",
-   "language": null,
-   "raw": "Daily Mass: Thursday 8:30 a.m.",
-   "source_url": "https://www.stregischurch.org/mass---confession-times",
-   "fetched_at": "2026-11-01T17:27:04+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
-  {
-   "kind": "mass",
-   "day": "Friday",
-   "time": "08:30",
-   "language": null,
-   "raw": "Daily Mass: Friday 8:30 a.m.",
    "source_url": "https://www.stregischurch.org/mass---confession-times",
    "fetched_at": "2026-11-01T17:27:04+00:00",
    "needs_review": false,
@@ -924,14 +1005,52 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "18:00-19:00",
+   "language": null,
+   "raw": "Exposition and Benediction in main church:: Wednesdays 6-7 p.m. with confession",
+   "source_url": "https://www.stregischurch.org/eucharistic-adoration",
+   "fetched_at": "2026-11-02T04:41:35+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "09:45-15:00",
+   "language": null,
+   "raw": "Exposition and Benediction in main church:: 9:45 a.m.-3 p.m.",
+   "source_url": "https://www.stregischurch.org/eucharistic-adoration",
+   "fetched_at": "2026-11-02T04:41:35+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
   }
  ],
  "source_url": "https://stregischurch.com/",
  "fetched_at": "2026-11-01T17:27:13+00:00",
  "redirected_off_host": "stregischurch.org",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:36+00:00",
+  "requests": 1,
+  "found": [
+   "adoration"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -945,6 +1064,7 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 26
  },
  "has_sunday": true,
@@ -959,8 +1079,8 @@
   "sacrament_prep": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
