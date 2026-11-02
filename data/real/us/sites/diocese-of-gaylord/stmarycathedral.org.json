@@ -78,6 +78,12 @@
    "url": "https://www.stmarycathedral.org/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stmarycathedral.org/eucharistic-adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -469,6 +475,81 @@
    "confidence": "medium",
    "template": "generic_strict",
    "day_expanded_from": "weekend"
+  },
+  {
+   "kind": "adoration",
+   "day": "Monday",
+   "time": "08:00-22:00",
+   "language": null,
+   "raw": "ADORATION SCHEDULE: Monday-Friday 8 am-10 pm.",
+   "source_url": "https://www.stmarycathedral.org/eucharistic-adoration",
+   "fetched_at": "2026-11-02T04:41:49+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday-Friday",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "08:00-22:00",
+   "language": null,
+   "raw": "ADORATION SCHEDULE: Monday-Friday 8 am-10 pm.",
+   "source_url": "https://www.stmarycathedral.org/eucharistic-adoration",
+   "fetched_at": "2026-11-02T04:41:49+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday-Friday",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "08:00-22:00",
+   "language": null,
+   "raw": "ADORATION SCHEDULE: Monday-Friday 8 am-10 pm.",
+   "source_url": "https://www.stmarycathedral.org/eucharistic-adoration",
+   "fetched_at": "2026-11-02T04:41:49+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday-Friday",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "08:00-22:00",
+   "language": null,
+   "raw": "ADORATION SCHEDULE: Monday-Friday 8 am-10 pm.",
+   "source_url": "https://www.stmarycathedral.org/eucharistic-adoration",
+   "fetched_at": "2026-11-02T04:41:49+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday-Friday",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "08:00-22:00",
+   "language": null,
+   "raw": "ADORATION SCHEDULE: Monday-Friday 8 am-10 pm.",
+   "source_url": "https://www.stmarycathedral.org/eucharistic-adoration",
+   "fetched_at": "2026-11-02T04:41:49+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday-Friday",
+   "topup": true
   }
  ],
  "source_url": "http://www.stmarycathedral.org/",
@@ -513,5 +594,29 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Other times by appointment. Contact the parish office (",
+   "phrase": "by appointment",
+   "source_url": "https://www.stmarycathedral.org/reconciliation/confession",
+   "fetched_at": "2026-11-02T04:41:48+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:49+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 5,
+  "mode": "merge"
  }
 }

@@ -89,6 +89,12 @@
    "url": "https://www.ollrcs.org/church/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.ollrcs.org/church/sacraments/reconciliation/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -563,5 +569,29 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "One hour before all Masses and Wednesday from 11:00 AM - 12:00 PM or by appointment",
+   "phrase": "before all Masses",
+   "source_url": "https://www.ollrcs.org/church/mass-times/",
+   "fetched_at": "2026-11-02T04:41:50+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:51+00:00",
+  "requests": 3,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
  }
 }

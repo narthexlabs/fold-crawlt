@@ -81,6 +81,12 @@
    "url": "https://divinemercymanistee.org/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://divinemercymanistee.org/reconciliation/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -315,6 +321,34 @@
    "confidence": "medium",
    "template": "wordpress",
    "day_expanded_from": "Thursdays & Fridays"
+  },
+  {
+   "kind": "confession",
+   "day": "Friday",
+   "time": "09:30-10:30",
+   "language": null,
+   "raw": "The Sacrament of Reconciliation is offered on Friday afternoon at St. Joseph Church from 9:30 to 10:30 am, and on Saturday from 3:00 to 3:45 pm.",
+   "source_url": "https://divinemercymanistee.org/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:48+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:00-15:45",
+   "language": null,
+   "raw": "The Sacrament of Reconciliation is offered on Friday afternoon at St. Joseph Church from 9:30 to 10:30 am, and on Saturday from 3:00 to 3:45 pm.",
+   "source_url": "https://divinemercymanistee.org/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:48+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "http://www.divinemercymanistee.org/",
@@ -356,5 +390,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:50+00:00",
+  "requests": 3,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
  }
 }
