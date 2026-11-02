@@ -27,6 +27,18 @@
    "url": "https://sacredheartguadalupe.org/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://sacredheartguadalupe.org/reconciliation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://sacredheartguadalupe.org/adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -67,6 +79,34 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "10:30",
+   "language": "Spanish",
+   "raw": "MISAS DOMINICALES :: 10:30 AM Español",
+   "source_url": "https://sacredheartguadalupe.org/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:55+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "12:30",
+   "language": "Spanish",
+   "raw": "MISAS DOMINICALES :: 12:30 PM Español",
+   "source_url": "https://sacredheartguadalupe.org/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:55+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "http://www.sacredheartguadalupe.org/",
@@ -103,6 +143,24 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:57+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(816) 599-7242",
@@ -114,8 +172,5 @@
   },
   "fetched_at": "2026-11-01T05:16:14+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }
