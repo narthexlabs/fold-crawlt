@@ -73,6 +73,12 @@
    "url": "https://stmchurchallentown.org/contact-2/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stmchurchallentown.org/reconciliation/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -511,6 +517,36 @@
    "review_reason": null,
    "confidence": "high",
    "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Wednesday",
+   "time": "19:00-20:00",
+   "language": null,
+   "raw": "Sacrament of Reconciliation:: Wednesday: 7:00 pm to 8:00 pm",
+   "source_url": "https://stmchurchallentown.org/reconciliation/",
+   "fetched_at": "2026-11-02T04:43:18+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "18:00",
+   "language": null,
+   "raw": "Adoration of the Blessed Sacrament:: Wednesday after 6:00 pm Mass",
+   "source_url": "https://stmchurchallentown.org/mass-schedules/",
+   "fetched_at": "2026-11-02T04:43:20+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "Adoration of the Blessed Sacrament:: Wednesday after 6:00 pm Mass",
+   "topup": true
   }
  ],
  "source_url": "http://www.stmchurchallentown.org/",
@@ -552,6 +588,33 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Priests will also be available for confessions 30 minutes before the 9 a.m., 10:30 a.m. & Noon Masses on Sundays. Our priests are also available by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://stmchurchallentown.org/reconciliation/",
+   "fetched_at": "2026-11-02T04:43:18+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:22+00:00",
+  "requests": 3,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(610) 433-7413",
@@ -563,8 +626,5 @@
   },
   "fetched_at": "2026-11-01T03:59:41+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

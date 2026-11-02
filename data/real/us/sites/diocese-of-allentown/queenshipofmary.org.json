@@ -90,6 +90,12 @@
    "url": "https://www.queenshipofmary.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.queenshipofmary.org/meditation-before-the-blessed-sacrament---adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -221,7 +227,7 @@
    "note": "Google Calendar public feed (website-builder widget)",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-02T00:08:57+00:00",
+    "fetched_at": "2026-11-02T04:52:39+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -258,32 +264,6 @@
   "source_url": "https://www.queenshipofmary.org/bulletin9ab2b387"
  },
  "schedule_rows": [
-  {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "15:00-15:50",
-   "language": null,
-   "raw": "Hours for the Sacrament of Penance are: Saturdays: 3:00 - 3:50pm and Sundays: 10:00 - 10:25am",
-   "source_url": "https://www.queenshipofmary.org/recon",
-   "fetched_at": "2026-11-01T20:25:08+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "generic_strict"
-  },
-  {
-   "kind": "confession",
-   "day": "Sunday",
-   "time": "10:00-10:25",
-   "language": null,
-   "raw": "Hours for the Sacrament of Penance are: Saturdays: 3:00 - 3:50pm and Sundays: 10:00 - 10:25am",
-   "source_url": "https://www.queenshipofmary.org/recon",
-   "fetched_at": "2026-11-01T20:25:08+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "generic_strict"
-  },
   {
    "kind": "mass",
    "day": "Saturday",
@@ -402,6 +382,45 @@
    "template": "generic_strict"
   },
   {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:00-15:50",
+   "language": null,
+   "raw": "Confession Schedule: Saturday | 3:00 - 3:50pm",
+   "source_url": "https://www.queenshipofmary.org/",
+   "fetched_at": "2026-11-01T20:25:06+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "07:30-07:50",
+   "language": null,
+   "raw": "Confession Schedule: Sunday |7:30 - 7:50am BVM | 10:00 - 10:25am",
+   "source_url": "https://www.queenshipofmary.org/",
+   "fetched_at": "2026-11-01T20:25:06+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "10:00-10:25",
+   "language": null,
+   "raw": "Confession Schedule: Sunday |7:30 - 7:50am BVM | 10:00 - 10:25am",
+   "source_url": "https://www.queenshipofmary.org/",
+   "fetched_at": "2026-11-01T20:25:06+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
    "kind": "adoration",
    "day": "Monday",
    "time": "07:00-08:00",
@@ -456,9 +475,21 @@
  ],
  "source_url": "https://www.queenshipofmary.org/",
  "fetched_at": "2026-11-01T20:25:16+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:14+00:00",
+  "requests": 1,
+  "found": [
+   "adoration"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -472,13 +503,14 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 11
  },
  "has_sunday": true,
  "schedule_dropped": {
   "relative_time": 1,
   "other_location": 1,
-  "skipped_section": 2
+  "skipped_section": 4
  },
  "groups_dropped": {},
  "event_counts": {
