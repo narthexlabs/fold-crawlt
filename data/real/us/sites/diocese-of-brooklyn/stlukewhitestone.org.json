@@ -69,6 +69,12 @@
    "url": "https://www.stlukewhitestone.org/news_and_events.html",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stlukewhitestone.org/sacraments.html",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -268,7 +274,7 @@
    "day": "Sunday",
    "time": "08:30",
    "language": "Italian/English",
-   "raw": "Saturday Vigil: 8:30 AM (Italian/English)",
+   "raw": "Saturday Vigil 8:30 AM [Mass intention withheld]",
    "source_url": "https://www.stlukewhitestone.org/worship/liturgies_and_devotions.html",
    "fetched_at": "2026-11-01T01:59:34+00:00",
    "needs_review": false,
@@ -479,6 +485,22 @@
   "excluded_by_reason": {}
  },
  "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
+  "screened_by": "ingest/public/privacy.py screen()",
+  "intentions_withheld": 1
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:39+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
  }
 }
