@@ -40,7 +40,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | unassigned-nm | 232 | 263 | 163 | 50 | 4 | 46 | 0 |
 | unassigned-wi | 217 | 265 | 164 | 46 | 6 | 49 | 0 |
 | diocese-of-cleveland | 214 | 250 | 145 | 49 | 1 | 55 | 0 |
-| archdiocese-of-milwaukee | 213 | 213 | 139 | 7 | 2 | 51 | 0 |
+| archdiocese-of-milwaukee | 213 | 214 | 140 | 7 | 2 | 51 | 0 |
 | archdiocese-of-galveston-houston | 209 | 209 | 71 | 30 | 1 | 40 | 0 |
 | diocese-of-buffalo | 201 | 201 | 110 | 21 | 3 | 67 | 0 |
 | unassigned-ny | 201 | 215 | 138 | 19 | 6 | 52 | 0 |
@@ -285,5 +285,5 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-02T00:05:44+00:00: fetched {'robots_disallowed': 1, 'done': 59, 'dns': 4, 'conn_error': 1, 'ssl_error': 3, 'challenge': 7, 'not_found': 1, 'ok': 44, 'cut': 2, 'halted_egress': 0}; parsed 8 dioceses
 - 2026-11-02T00:57:03+00:00: fetched {'ok': 2, 'done': 2, 'halted_egress': 0}; parsed 1 dioceses
 - 2026-11-02T01:56:02+00:00: fetched {'dns': 12, 'done': 92, 'ssl_error': 5, 'not_found': 1, 'challenge': 13, 'http_5xx': 1, 'ok': 56, 'http_4xx': 1, 'blocked_403': 1, 'timeout': 2, 'halted_egress': 0}; parsed 4 dioceses
-- 2026-11-02T02:46:49+00:00: fetched {}; parsed 0 dioceses
-- 2026-11-02T02:47:15+00:00: fetched {'ok': 1, 'done': 1, 'halted_egress': 0}; parsed 1 dioceses
+- 2026-11-02T02:46:45+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-02T02:46:51+00:00: fetched {'ok': 1, 'done': 1, 'halted_egress': 0}; parsed 1 dioceses
