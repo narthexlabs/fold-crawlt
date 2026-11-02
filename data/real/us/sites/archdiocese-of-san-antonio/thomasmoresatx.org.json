@@ -289,174 +289,102 @@
  "schedule_rows": [
   {
    "kind": "mass",
-   "day": "Tuesday",
-   "time": "08:00",
-   "language": null,
-   "raw": "Daily Mass: Tuesday– Friday - 8:00AM",
-   "source_url": "https://www.thomasmoresatx.org/",
-   "fetched_at": "2026-11-01T08:04:56+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wix",
-   "day_expanded_from": "Tuesday– Friday"
-  },
-  {
-   "kind": "mass",
-   "day": "Wednesday",
-   "time": "08:00",
-   "language": null,
-   "raw": "Daily Mass: Tuesday– Friday - 8:00AM",
-   "source_url": "https://www.thomasmoresatx.org/",
-   "fetched_at": "2026-11-01T08:04:56+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wix",
-   "day_expanded_from": "Tuesday– Friday",
-   "day_parsed": "Tuesday",
-   "day_bound_from_line": true
-  },
-  {
-   "kind": "mass",
-   "day": "Thursday",
-   "time": "08:00",
-   "language": null,
-   "raw": "Daily Mass: Tuesday– Friday - 8:00AM",
-   "source_url": "https://www.thomasmoresatx.org/",
-   "fetched_at": "2026-11-01T08:04:56+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wix",
-   "day_expanded_from": "Tuesday– Friday",
-   "day_parsed": "Tuesday",
-   "day_bound_from_line": true
-  },
-  {
-   "kind": "mass",
-   "day": "Friday",
-   "time": "08:00",
-   "language": null,
-   "raw": "Daily Mass: Tuesday– Friday - 8:00AM",
-   "source_url": "https://www.thomasmoresatx.org/",
-   "fetched_at": "2026-11-01T08:04:56+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wix",
-   "day_expanded_from": "Tuesday– Friday",
-   "day_parsed": "Tuesday",
-   "day_bound_from_line": true
-  },
-  {
-   "kind": "mass",
    "day": "Saturday",
    "time": "17:00",
    "language": null,
    "raw": "Saturday Vigil - 5:00PM",
    "source_url": "https://www.thomasmoresatx.org/",
    "fetched_at": "2026-11-01T08:04:56+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "wix"
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
   },
   {
    "kind": "mass",
    "day": "Sunday",
    "time": "08:00",
    "language": null,
-   "raw": "Sunday Masses: 8:00AM",
+   "raw": "Sunday Masses 8:00AM",
    "source_url": "https://www.thomasmoresatx.org/",
    "fetched_at": "2026-11-01T08:04:56+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wix"
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
   },
   {
    "kind": "mass",
    "day": "Sunday",
    "time": "10:00",
    "language": null,
-   "raw": "Sunday Masses: 10:00AM",
+   "raw": "Sunday Masses 10:00AM",
    "source_url": "https://www.thomasmoresatx.org/",
    "fetched_at": "2026-11-01T08:04:56+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wix"
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
   },
   {
    "kind": "mass",
    "day": "Sunday",
    "time": "12:00",
-   "language": "Spanish",
-   "raw": "Sunday Masses: 12 Noon (SPANISH)",
-   "source_url": "https://www.thomasmoresatx.org/",
-   "fetched_at": "2026-11-01T08:04:56+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wix"
-  },
-  {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "15:30-16:45",
    "language": null,
-   "raw": "Confessions: 3:30 PM to 4:45PM",
+   "raw": "Sunday Masses 12 Noon (SPAN",
    "source_url": "https://www.thomasmoresatx.org/",
    "fetched_at": "2026-11-01T08:04:56+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wix"
-  },
-  {
-   "kind": "adoration",
-   "day": "Friday",
-   "time": "09:00-17:00",
-   "language": null,
-   "raw": "Weekly Adoration: Fridays 9AM to 5PM",
-   "source_url": "https://www.thomasmoresatx.org/",
-   "fetched_at": "2026-11-01T08:04:56+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wix"
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
   }
  ],
  "source_url": "http://www.thomasmoresatx.org/",
  "fetched_at": "2026-11-01T08:05:10+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:31+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "wix",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
-    "has_sunday": true,
+    "has_sunday": false,
     "hours_ok": true,
     "counts_ok": true,
     "sunday_not_copied": true,
     "no_daily_on_sunday": true,
     "mostly_high": false
    },
-   "score": "medium"
+   "score": "low"
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 12
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "by appointment only.",
+   "phrase": "by appointment",
+   "source_url": "https://www.thomasmoresatx.org/",
+   "fetched_at": "2026-11-01T08:04:56+00:00"
+  }
+ ],
  "has_sunday": true,
+ "schedule_dropped": {
+  "other_location": 7,
+  "weekend_rescue_added": 4
+ },
  "groups_dropped": {
   "label_not_group": 2,
   "noise": 3,
   "unmatched": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

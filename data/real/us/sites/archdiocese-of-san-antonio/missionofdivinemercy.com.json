@@ -51,6 +51,18 @@
    "url": "https://missionofdivinemercy.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://missionofdivinemercy.org/reconciliation/",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://missionofdivinemercy.org/wp-content/uploads/2019/12/Adoration.jpg",
+   "status": 200,
+   "class": "not_html"
   }
  ],
  "cms_guess": {
@@ -73,7 +85,7 @@
    "note": "Microsoft 365 published calendar",
    "last_fetch": {
     "status": 500,
-    "fetched_at": "2026-11-01T23:32:13+00:00",
+    "fetched_at": "2026-11-02T04:43:57+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -96,9 +108,19 @@
  "source_url": "http://www.missionofdivinemercy.com/",
  "fetched_at": "2026-11-01T17:21:34+00:00",
  "redirected_off_host": "missionofdivinemercy.org",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:34+00:00",
+  "requests": 2,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -112,6 +134,7 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 0
  },
  "has_sunday": false,
@@ -139,8 +162,8 @@
  "schedule_note": "schedule appears to be an image; times not read (needs_review)",
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

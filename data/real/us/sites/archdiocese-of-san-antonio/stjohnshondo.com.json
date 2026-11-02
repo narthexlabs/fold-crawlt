@@ -242,6 +242,19 @@
    "template": "wix"
   },
   {
+   "kind": "devotion",
+   "day": "Thursday",
+   "time": "10:00",
+   "language": null,
+   "raw": "8:00AM Mass; Divine Mercy Chaplet 10am;",
+   "source_url": "https://www.stjohnshondo.com/information",
+   "fetched_at": "2026-11-01T08:04:58+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix"
+  },
+  {
    "kind": "confession",
    "day": "Saturday",
    "time": "17:00",
@@ -257,9 +270,19 @@
  ],
  "source_url": "https://www.stjohnshondo.com/",
  "fetched_at": "2026-11-01T08:05:06+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:31+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "wix",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -273,17 +296,26 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 18
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "or by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://www.stjohnshondo.com/information",
+   "fetched_at": "2026-11-01T08:04:58+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "not_a_service": 1,
   "benediction_end": 1
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

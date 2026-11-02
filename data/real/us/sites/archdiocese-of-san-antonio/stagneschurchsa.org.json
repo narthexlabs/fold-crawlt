@@ -53,6 +53,12 @@
    "url": "https://stagneschurchsa.org/contacts/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stagneschurchsa.org/reconciliation/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -75,7 +81,7 @@
    "note": "The Events Calendar (WordPress) REST API",
    "last_fetch": {
     "status": 200,
-    "fetched_at": "2026-11-01T23:32:40+00:00",
+    "fetched_at": "2026-11-02T04:44:21+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -94,9 +100,9 @@
    "day": "Sunday",
    "time": "08:00",
    "language": "Spanish",
-   "raw": "MASS Day and Time: Sunday 8:00 AM (Spanish)",
-   "source_url": "https://stagneschurchsa.org/our-ministries/",
-   "fetched_at": "2026-11-01T08:05:03+00:00",
+   "raw": "Sunday MASS Service: 8:00 AM (Spanish)",
+   "source_url": "https://stagneschurchsa.org/",
+   "fetched_at": "2026-11-01T08:04:56+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -107,9 +113,22 @@
    "day": "Sunday",
    "time": "10:00",
    "language": "English",
-   "raw": "MASS Day and Time: Sunday 10:00 AM (English)",
-   "source_url": "https://stagneschurchsa.org/our-ministries/",
-   "fetched_at": "2026-11-01T08:05:03+00:00",
+   "raw": "Sunday MASS Service: 10:00 AM (English)",
+   "source_url": "https://stagneschurchsa.org/",
+   "fetched_at": "2026-11-01T08:04:56+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "12:00",
+   "language": "Spanish",
+   "raw": "Sunday MASS Service: 12:00 Noon (Spanish)",
+   "source_url": "https://stagneschurchsa.org/",
+   "fetched_at": "2026-11-01T08:04:56+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -120,9 +139,9 @@
    "day": "Tuesday",
    "time": "09:00",
    "language": null,
-   "raw": "MASS Day and Time: Tuesday 9:00 AM",
-   "source_url": "https://stagneschurchsa.org/our-ministries/",
-   "fetched_at": "2026-11-01T08:05:03+00:00",
+   "raw": "Tuesday MASS Service: 9:00 AM",
+   "source_url": "https://stagneschurchsa.org/",
+   "fetched_at": "2026-11-01T08:04:56+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -133,9 +152,9 @@
    "day": "Wednesday",
    "time": "18:00",
    "language": null,
-   "raw": "MASS Day and Time: Wednesday 6:00 PM",
-   "source_url": "https://stagneschurchsa.org/our-ministries/",
-   "fetched_at": "2026-11-01T08:05:03+00:00",
+   "raw": "Wednesday MASS Service: 6:00 PM",
+   "source_url": "https://stagneschurchsa.org/",
+   "fetched_at": "2026-11-01T08:04:56+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -146,9 +165,22 @@
    "day": "Thursday",
    "time": "18:00",
    "language": null,
-   "raw": "Thursday 6:00 PM (Holy Hour & Confession)",
-   "source_url": "https://stagneschurchsa.org/our-ministries/",
-   "fetched_at": "2026-11-01T08:05:03+00:00",
+   "raw": "Thursday Holy Hour Service: 6:00 PM",
+   "source_url": "https://stagneschurchsa.org/",
+   "fetched_at": "2026-11-01T08:04:56+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "18:00",
+   "language": null,
+   "raw": "Sunday MASS at 8:00 AM (Spanish)Sunday MASS at 10:00 AM (English)Sunday MASS at 12:00 Noon (Spanish)Tuesday MASS at 9:00 AMWednesday MASS at 6:00 PM",
+   "source_url": "https://stagneschurchsa.org/",
+   "fetched_at": "2026-11-01T08:04:56+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "high",
@@ -183,9 +215,19 @@
  ],
  "source_url": "https://stagneschurchsa.org/",
  "fetched_at": "2026-11-01T08:05:10+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:34+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -199,6 +241,7 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 10
  },
  "has_sunday": true,
@@ -208,8 +251,8 @@
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
