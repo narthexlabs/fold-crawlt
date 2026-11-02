@@ -25,22 +25,40 @@
  ],
  "home_url": "http://www.stjohnnepomucene.org/",
  "final_url": "https://www.stjohnnepomucene.org/",
- "crawl_status": "blocked_403",
- "crawl_env": "sandbox",
- "robots_note": "blocked_403",
+ "crawl_status": "wayback-2026-06-17",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
    "url": "https://www.stjohnnepomucene.org/",
-   "status": 403,
-   "class": "blocked_403"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.stjohnnepomucene.org/why-should-you-outsource-the-financial-and-administrative-management-of-your-company",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.stjohnnepomucene.org/how-to-effectively-market-your-nonprofits-silent-auction-event",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://www.stjohnnepomucene.org/why-is-it-important-to-check-your-contact-database",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
   "cms": "unknown",
   "evidence": []
  },
- "template": "none",
+ "template": "generic-html:unknown",
  "groups": [],
  "calendar_feeds": [],
  "events": [],
@@ -48,9 +66,70 @@
  "bulletin": null,
  "schedule_rows": [],
  "source_url": "http://www.stjohnnepomucene.org/",
- "fetched_at": "2026-11-02T01:56:50+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-02T03:00:49+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": true,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "has_sunday": false,
+ "groups_dropped": {},
+ "wayback": {
+  "capture_date": "2026-06-17",
+  "capture_age_days": 138,
+  "prior_status": "blocked_403",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://www.stjohnnepomucene.org/",
+    "capture": "2026-06-17",
+    "archive_url": "https://web.archive.org/web/20260617035851/https://www.stjohnnepomucene.org/"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://www.stjohnnepomucene.org/why-should-you-outsource-the-financial-and-administrative-management-of-your-company",
+    "capture": "2025-08-05",
+    "archive_url": "https://web.archive.org/web/20250805072930/https://www.stjohnnepomucene.org/why-should-you-outsource-the-financial-and-administrative-management-of-your-company"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://www.stjohnnepomucene.org/how-to-effectively-market-your-nonprofits-silent-auction-event",
+    "capture": "2025-08-05",
+    "archive_url": "https://web.archive.org/web/20250805084349/https://www.stjohnnepomucene.org/how-to-effectively-market-your-nonprofits-silent-auction-event"
+   },
+   {
+    "kind": "contact",
+    "original": "https://www.stjohnnepomucene.org/why-is-it-important-to-check-your-contact-database",
+    "capture": "2025-10-13",
+    "archive_url": "https://web.archive.org/web/20251013155208/https://www.stjohnnepomucene.org/why-is-it-important-to-check-your-contact-database"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review.",
+  "grade": {
+   "rule": "wayback-verified-2026-11-01",
+   "template": "generic_strict",
+   "trusted_template": false,
+   "has_sunday": false,
+   "groups": 0,
+   "verified": false,
+   "capture_date": "2026-06-17",
+   "applied": false
+  }
  }
 }
