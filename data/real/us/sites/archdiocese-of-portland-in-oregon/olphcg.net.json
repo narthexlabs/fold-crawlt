@@ -25,32 +25,520 @@
  ],
  "home_url": "https://olphcg.net/",
  "final_url": "https://olphcg.net/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "crawl_status": "wayback-2025-06-20",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
    "url": "https://olphcg.net/",
-   "status": 403,
-   "class": "challenge"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://olphcg.net/mass-times",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.olphcg.net/holy-mass",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.olphcg.net/ministries",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.olphcg.net/faith-formation-youth",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.olphcg.net/faith-formation-adult",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://www.olphcg.net/bulletins",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.olphcg.net/calendar-1",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://olphcg.net/events-1",
+   "status": null,
+   "class": "timeout"
+  },
+  {
+   "category": "contact",
+   "url": "https://www.olphcg.net/contact-us",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "olphcg.net:prayer_group",
+   "name": "Prayer Groups",
+   "category": "prayer_devotion",
+   "category_label": "Prayer & devotion",
+   "subcategory": "prayer_group",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.olphcg.net/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.olphcg.net/ministries",
+   "source_kind": "website",
+   "fetched_at": "2025-02-19T09:29:25+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-06-20"
+  },
+  {
+   "id": "olphcg.net:bible_study",
+   "name": "Bible Study",
+   "category": "scripture_study",
+   "category_label": "Scripture & study",
+   "subcategory": "bible_study",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.olphcg.net/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.olphcg.net/ministries",
+   "source_kind": "website",
+   "fetched_at": "2025-02-19T09:29:25+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-06-20"
+  },
+  {
+   "id": "olphcg.net:wwp",
+   "name": "Walking with Purpose",
+   "category": "scripture_study",
+   "category_label": "Scripture & study",
+   "subcategory": "bible_study",
+   "audience": "women",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.olphcg.net/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.olphcg.net/faith-formation-adult",
+   "source_kind": "website",
+   "fetched_at": "2025-02-19T09:11:47+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-06-20"
+  },
+  {
+   "id": "olphcg.net:adult_formation",
+   "name": "Adult Faith Formation",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "adult_formation",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.olphcg.net/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.olphcg.net/faith-formation-adult",
+   "source_kind": "website",
+   "fetched_at": "2025-02-19T09:11:47+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-06-20"
+  },
+  {
+   "id": "olphcg.net:ocia",
+   "name": "OCIA (Becoming Catholic)",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "ocia",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "OCIA stands for the Order of Christian Initiation for Adults. In other words, \"becoming Catholic”.",
+   "contact_url": "https://www.olphcg.net/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.olphcg.net/faith-formation-adult",
+   "source_kind": "website",
+   "fetched_at": "2025-02-19T09:11:47+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-06-20"
+  },
+  {
+   "id": "olphcg.net:youth_ministry",
+   "name": "Youth Faith Formation",
+   "category": "youth",
+   "category_label": "Youth",
+   "subcategory": "youth_ministry",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.olphcg.net/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.olphcg.net/faith-formation-youth",
+   "source_kind": "website",
+   "fetched_at": "2025-02-19T09:43:33+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-06-20"
+  },
+  {
+   "id": "olphcg.net:altar_society",
+   "name": "Altar Society",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "altar_society_environment",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.olphcg.net/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.olphcg.net/ministries",
+   "source_kind": "website",
+   "fetched_at": "2025-02-19T09:29:25+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-06-20"
+  },
+  {
+   "id": "olphcg.net:hospitality|kitchen",
+   "name": "Kitchen Ministry (Hospitality)",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "hospitality",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.olphcg.net/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.olphcg.net/ministries",
+   "source_kind": "website",
+   "fetched_at": "2025-02-19T09:29:25+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-06-20"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/olphcg"
+  ],
+  "youtube": [
+   "https://www.youtube.com/channel/UCs7N2-JbdWHxuEkjOoJaB-w",
+   "https://www.youtube.com/@ArchbishopSample"
+  ]
+ },
+ "bulletin": {
+  "url": "https://files.ecatholic.com/29208/bulletins/20250216.pdf?t=1739582793000",
+  "date": "2025-02-16",
+  "kind": "ecatholic_pdf",
+  "text": "February 16 , 2025",
+  "source_url": "https://www.olphcg.net/bulletins"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:30",
+   "language": "English",
+   "raw": "Saturday: 5:30 PM English at Our Lady of Perpetual Help",
+   "source_url": "https://olphcg.net/mass-times",
+   "fetched_at": "2025-10-10T11:43:27+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-06-20: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-06-20",
+   "archive_url": "https://web.archive.org/web/20251010114327/https://olphcg.net/mass-times",
+   "capture_date": "2025-10-10"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": "English",
+   "raw": "[St. Philip Benizi] Sunday: 8:00 AM English English at Saint Philip Benizi",
+   "source_url": "https://olphcg.net/mass-times",
+   "fetched_at": "2025-10-10T11:43:27+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-06-20: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "location": "St. Philip Benizi",
+   "source": "wayback-2025-06-20",
+   "archive_url": "https://web.archive.org/web/20251010114327/https://olphcg.net/mass-times",
+   "capture_date": "2025-10-10"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:30",
+   "language": "English",
+   "raw": "Sunday: 10:30 AM English at Our Lady of Perpetual Help",
+   "source_url": "https://olphcg.net/mass-times",
+   "fetched_at": "2025-10-10T11:43:27+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-06-20: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-06-20",
+   "archive_url": "https://web.archive.org/web/20251010114327/https://olphcg.net/mass-times",
+   "capture_date": "2025-10-10"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "12:00",
+   "language": "English",
+   "raw": "November 1: 12:00 PM English",
+   "source_url": "https://olphcg.net/mass-times",
+   "fetched_at": "2025-10-10T11:43:27+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-06-20: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "kind_parsed": "mass",
+   "source": "wayback-2025-06-20",
+   "archive_url": "https://web.archive.org/web/20251010114327/https://olphcg.net/mass-times",
+   "capture_date": "2025-10-10"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "19:00",
+   "language": "English",
+   "raw": "November 1: 7:00 PM English",
+   "source_url": "https://olphcg.net/mass-times",
+   "fetched_at": "2025-10-10T11:43:27+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-06-20: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "kind_parsed": "mass",
+   "source": "wayback-2025-06-20",
+   "archive_url": "https://web.archive.org/web/20251010114327/https://olphcg.net/mass-times",
+   "capture_date": "2025-10-10"
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "07:40",
+   "language": null,
+   "raw": "[St. Philip Benizi] Sunday: 7:40 AM Saint Philip Benizi",
+   "source_url": "https://olphcg.net/mass-times",
+   "fetched_at": "2025-10-10T11:43:27+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-06-20: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "location": "St. Philip Benizi",
+   "source": "wayback-2025-06-20",
+   "archive_url": "https://web.archive.org/web/20251010114327/https://olphcg.net/mass-times",
+   "capture_date": "2025-10-10"
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "09:45-10:15",
+   "language": null,
+   "raw": "Sunday: 9:45 AM - 10:15 AM Our Lady of Perpetual Help",
+   "source_url": "https://olphcg.net/mass-times",
+   "fetched_at": "2025-10-10T11:43:27+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-06-20: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-06-20",
+   "archive_url": "https://web.archive.org/web/20251010114327/https://olphcg.net/mass-times",
+   "capture_date": "2025-10-10"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "09:40-10:30",
+   "language": null,
+   "raw": "Saturday: 9:40 AM - 10:30 AM Our Lady of Perpetual Help",
+   "source_url": "https://olphcg.net/mass-times",
+   "fetched_at": "2025-10-10T11:43:27+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-06-20: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-06-20",
+   "archive_url": "https://web.archive.org/web/20251010114327/https://olphcg.net/mass-times",
+   "capture_date": "2025-10-10"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "16:00-17:15",
+   "language": null,
+   "raw": "Saturday: 4:00 PM - 5:15 PM Our Lady of Perpetual Help",
+   "source_url": "https://olphcg.net/mass-times",
+   "fetched_at": "2025-10-10T11:43:27+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-06-20: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-06-20",
+   "archive_url": "https://web.archive.org/web/20251010114327/https://olphcg.net/mass-times",
+   "capture_date": "2025-10-10"
+  }
+ ],
  "source_url": "https://olphcg.net/",
- "fetched_at": "2026-11-01T17:27:10+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-02T04:58:16+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/3",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": true
+   },
+   "score": "high"
+  },
+  "passed_bar": true,
+  "trusted_candidate": true,
+  "trusted_kinds": [
+   "weekend",
+   "weekday",
+   "confession",
+   "adoration"
+  ],
+  "generic_rows": 2
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "notice_not_schedule": 6,
+  "prose": 7
+ },
+ "groups_dropped": {
+  "noise": 1
+ },
+ "office_contact": {
+  "email": "office@olphcg.net",
+  "phone": "(541) 942-3420",
+  "address": "1025 N 19th Street, Cottage Grove OR, 97424",
+  "source_url": "https://www.olphcg.net/contact-us",
+  "sources": {
+   "email": "https://www.olphcg.net/contact-us",
+   "phone": "https://www.olphcg.net/contact-us",
+   "address": "https://www.olphcg.net/contact-us"
+  },
+  "fetched_at": "2025-02-19T08:43:24+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2025-06-20",
+  "capture_age_days": 500,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://olphcg.net/",
+    "capture": "2025-06-20",
+    "archive_url": "https://web.archive.org/web/20250620154116/https://olphcg.net/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://olphcg.net/mass-times",
+    "capture": "2025-10-10",
+    "archive_url": "https://web.archive.org/web/20251010114327/https://olphcg.net/mass-times"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://www.olphcg.net/holy-mass",
+    "capture": "2025-02-19",
+    "archive_url": "https://web.archive.org/web/20250219085026/https://www.olphcg.net/holy-mass"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://www.olphcg.net/ministries",
+    "capture": "2025-02-19",
+    "archive_url": "https://web.archive.org/web/20250219092925/https://www.olphcg.net/ministries"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://www.olphcg.net/faith-formation-youth",
+    "capture": "2025-02-19",
+    "archive_url": "https://web.archive.org/web/20250219094333/https://www.olphcg.net/faith-formation-youth"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://www.olphcg.net/faith-formation-adult",
+    "capture": "2025-02-19",
+    "archive_url": "https://web.archive.org/web/20250219091147/https://www.olphcg.net/faith-formation-adult"
+   },
+   {
+    "kind": "bulletin",
+    "original": "https://www.olphcg.net/bulletins",
+    "capture": "2025-02-19",
+    "archive_url": "https://web.archive.org/web/20250219080259/https://www.olphcg.net/bulletins"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://www.olphcg.net/calendar-1",
+    "capture": "2025-02-19",
+    "archive_url": "https://web.archive.org/web/20250219073314/https://www.olphcg.net/calendar-1"
+   },
+   {
+    "kind": "contact",
+    "original": "https://www.olphcg.net/contact-us",
+    "capture": "2025-02-19",
+    "archive_url": "https://web.archive.org/web/20250219084324/https://www.olphcg.net/contact-us"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review.",
+  "grade": {
+   "rule": "wayback-verified-2026-11-01",
+   "template": "ecatholic",
+   "trusted_template": true,
+   "has_sunday": true,
+   "groups": 8,
+   "verified": true,
+   "capture_date": "2025-06-20",
+   "applied": false
+  }
  }
 }

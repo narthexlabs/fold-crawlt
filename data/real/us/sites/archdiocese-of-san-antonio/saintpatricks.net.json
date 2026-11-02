@@ -18,32 +18,608 @@
  ],
  "home_url": "https://www.saintpatricks.net/",
  "final_url": "https://www.saintpatricks.net/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "crawl_status": "wayback-2025-02-24",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
    "url": "https://www.saintpatricks.net/",
-   "status": 403,
-   "class": "challenge"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.saintpatricks.net/liturgy",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.saintpatricks.net/events/confessions/20250301",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.saintpatricks.net/reconciliation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.saintpatricks.net/faith-formation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.saintpatricks.net/ministries",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://www.saintpatricks.net/bulletins",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.saintpatricks.net/calendar",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.saintpatricks.net/events?page=1",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "saintpatricks.net:prayer_group_es",
+   "name": "Grupo de Oracion",
+   "category": "prayer_devotion",
+   "category_label": "Prayer & devotion",
+   "subcategory": "prayer_group",
+   "audience": "all",
+   "language": "es",
+   "language_assumed": false,
+   "meets": null,
+   "description": "Estas reuniones son para nosotros el instrumento y el medio en el cual nos movemos para buscar y seguir a Jesuscristo, viviendo una relacion con El , como escencia de toda vida cristiana.",
+   "contact_url": "https://www.saintpatricks.net/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.saintpatricks.net/ministries",
+   "source_kind": "website",
+   "fetched_at": "2025-04-21T04:08:16+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-02-24"
+  },
+  {
+   "id": "saintpatricks.net:guadalupanas_es",
+   "name": "Ministerio Guadalupano",
+   "category": "prayer_devotion",
+   "category_label": "Prayer & devotion",
+   "subcategory": "guadalupanas",
+   "audience": "all",
+   "language": "es",
+   "language_assumed": false,
+   "meets": null,
+   "description": "El propósito de este Ministerio se resume en amar a Dios, a nuestro prójimo como a nosotros mismos, viviendo las virtudes teologales, la fe, esperanza y caridad con la ayuda del rezo del Santo Rosario encomendado por nuestra madre la…",
+   "contact_url": "https://www.saintpatricks.net/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.saintpatricks.net/ministries",
+   "source_kind": "website",
+   "fetched_at": "2025-04-21T04:08:16+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-02-24"
+  },
+  {
+   "id": "saintpatricks.net:children_ff",
+   "name": "Children's Religious Education",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "children_faith_formation",
+   "audience": "families",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.saintpatricks.net/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.saintpatricks.net/faith-formation",
+   "source_kind": "website",
+   "fetched_at": "2025-06-25T07:21:16+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-02-24"
+  },
+  {
+   "id": "saintpatricks.net:ocia",
+   "name": "Rite of Christian Initiation of Adults",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "ocia",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "The process of RCIA brings adults to the sacraments of Christian initiation: Baptism, Confirmation, and Eucharist.",
+   "contact_url": "https://www.saintpatricks.net/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.saintpatricks.net/faith-formation",
+   "source_kind": "website",
+   "fetched_at": "2025-06-25T07:21:16+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-02-24"
+  },
+  {
+   "id": "saintpatricks.net:evangelization",
+   "name": "St. Andrew's School of Evangelization",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "evangelization_team",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.saintpatricks.net/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.saintpatricks.net/ministries",
+   "source_kind": "website",
+   "fetched_at": "2025-04-21T04:08:16+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-02-24"
+  },
+  {
+   "id": "saintpatricks.net:youth_ministry",
+   "name": "Youth Ministry",
+   "category": "youth",
+   "category_label": "Youth",
+   "subcategory": "youth_ministry",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "Youth ministry's focus is to provide religious education for teens of the community. Youth ministry offers faith-based classes and youth group activities led by our youth, ministry leaders, who also recruit local teens often seeking volunteer community service hours to…",
+   "contact_url": "https://www.saintpatricks.net/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.saintpatricks.net/ministries",
+   "source_kind": "website",
+   "fetched_at": "2025-04-21T04:08:16+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-02-24"
+  },
+  {
+   "id": "saintpatricks.net:seniors",
+   "name": "Senior Ministry",
+   "category": "seniors",
+   "category_label": "Seniors",
+   "subcategory": "seniors_group",
+   "audience": "seniors",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.saintpatricks.net/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.saintpatricks.net/ministries",
+   "source_kind": "website",
+   "fetched_at": "2025-04-21T04:08:16+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-02-24"
+  },
+  {
+   "id": "saintpatricks.net:kofc",
+   "name": "Knights of Columbus",
+   "category": "fraternal_orders",
+   "category_label": "Fraternal & orders",
+   "subcategory": "knights_of_columbus",
+   "audience": "men",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.saintpatricks.net/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.saintpatricks.net/ministries",
+   "source_kind": "website",
+   "fetched_at": "2025-04-21T04:08:16+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-02-24"
+  },
+  {
+   "id": "saintpatricks.net:cursillo",
+   "name": "Proposito del Cursillo",
+   "category": "movements",
+   "category_label": "Movements",
+   "subcategory": "cursillo",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "En el mundo de hoy, ¿puede el cristianismo penetrar todas las áreas de la vida secular? ¿Puede trasformar al mundo de manera que sea más fructífero que el pasado y mantenerse con el tiempo? ¡El Movimiento de Cursillos piensa que…",
+   "contact_url": "https://www.saintpatricks.net/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.saintpatricks.net/ministries",
+   "source_kind": "website",
+   "fetched_at": "2025-04-21T04:08:16+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-02-24"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/StPatrickCatholicChurchSanAntonioTx"
+  ],
+  "instagram": [
+   "https://www.instagram.com/st.patrickcatholicchurchsatx/"
+  ]
+ },
+ "bulletin": {
+  "url": "https://files.ecatholic.com/35766/bulletins/20250615.pdf?t=1749827271000",
+  "date": "2025-06-15",
+  "kind": "ecatholic_pdf",
+  "text": "June 15 , 2025",
+  "source_url": "https://www.saintpatricks.net/bulletins"
+ },
+ "schedule_rows": [
+  {
+   "kind": "adoration",
+   "day": "Monday",
+   "time": "08:00-17:30",
+   "language": null,
+   "raw": "Monday - Friday: 8:00 AM - 5:30 PM",
+   "source_url": "https://www.saintpatricks.net/",
+   "fetched_at": "2025-02-24T00:07:33+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-02-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Monday - Friday",
+   "source": "wayback-2025-02-24",
+   "archive_url": "https://web.archive.org/web/20250224000733/https://www.saintpatricks.net/",
+   "capture_date": "2025-02-24"
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "08:00-17:30",
+   "language": null,
+   "raw": "Monday - Friday: 8:00 AM - 5:30 PM",
+   "source_url": "https://www.saintpatricks.net/",
+   "fetched_at": "2025-02-24T00:07:33+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-02-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Monday - Friday",
+   "source": "wayback-2025-02-24",
+   "archive_url": "https://web.archive.org/web/20250224000733/https://www.saintpatricks.net/",
+   "capture_date": "2025-02-24"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "08:00-17:30",
+   "language": null,
+   "raw": "Monday - Friday: 8:00 AM - 5:30 PM",
+   "source_url": "https://www.saintpatricks.net/",
+   "fetched_at": "2025-02-24T00:07:33+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-02-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Monday - Friday",
+   "source": "wayback-2025-02-24",
+   "archive_url": "https://web.archive.org/web/20250224000733/https://www.saintpatricks.net/",
+   "capture_date": "2025-02-24"
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "08:00-17:30",
+   "language": null,
+   "raw": "Monday - Friday: 8:00 AM - 5:30 PM",
+   "source_url": "https://www.saintpatricks.net/",
+   "fetched_at": "2025-02-24T00:07:33+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-02-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Monday - Friday",
+   "source": "wayback-2025-02-24",
+   "archive_url": "https://web.archive.org/web/20250224000733/https://www.saintpatricks.net/",
+   "capture_date": "2025-02-24"
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "08:00-17:30",
+   "language": null,
+   "raw": "Monday - Friday: 8:00 AM - 5:30 PM",
+   "source_url": "https://www.saintpatricks.net/",
+   "fetched_at": "2025-02-24T00:07:33+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-02-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Monday - Friday",
+   "source": "wayback-2025-02-24",
+   "archive_url": "https://web.archive.org/web/20250224000733/https://www.saintpatricks.net/",
+   "capture_date": "2025-02-24"
+  },
+  {
+   "kind": "adoration",
+   "day": "First Friday of the month",
+   "time": "20:00",
+   "language": null,
+   "raw": "1st Friday: 8:00 PM",
+   "source_url": "https://www.saintpatricks.net/",
+   "fetched_at": "2025-02-24T00:07:33+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-02-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-02-24",
+   "archive_url": "https://web.archive.org/web/20250224000733/https://www.saintpatricks.net/",
+   "capture_date": "2025-02-24"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:30",
+   "language": "English",
+   "raw": "Saturday: 5:30 PM English",
+   "source_url": "https://www.saintpatricks.net/",
+   "fetched_at": "2025-02-24T00:07:33+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-02-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-02-24",
+   "archive_url": "https://web.archive.org/web/20250224000733/https://www.saintpatricks.net/",
+   "capture_date": "2025-02-24"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:30",
+   "language": "English",
+   "raw": "Sunday: 8:30 AM English",
+   "source_url": "https://www.saintpatricks.net/",
+   "fetched_at": "2025-02-24T00:07:33+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-02-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-02-24",
+   "archive_url": "https://web.archive.org/web/20250224000733/https://www.saintpatricks.net/",
+   "capture_date": "2025-02-24"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": "Spanish",
+   "raw": "Sunday: 10:00 AM Spanish",
+   "source_url": "https://www.saintpatricks.net/",
+   "fetched_at": "2025-02-24T00:07:33+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-02-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-02-24",
+   "archive_url": "https://web.archive.org/web/20250224000733/https://www.saintpatricks.net/",
+   "capture_date": "2025-02-24"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "12:00",
+   "language": "Bilingual",
+   "raw": "Sunday: 12:00 PM Bilingual",
+   "source_url": "https://www.saintpatricks.net/",
+   "fetched_at": "2025-02-24T00:07:33+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-02-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-02-24",
+   "archive_url": "https://web.archive.org/web/20250224000733/https://www.saintpatricks.net/",
+   "capture_date": "2025-02-24"
+  },
+  {
+   "kind": "mass",
+   "day": "First Friday of the month",
+   "time": "08:00",
+   "language": "Bilingual",
+   "raw": "Tuesday - Friday: 8:00 AM Bilingual no morning mass on first Friday",
+   "source_url": "https://www.saintpatricks.net/",
+   "fetched_at": "2025-02-24T00:07:33+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-02-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-02-24",
+   "archive_url": "https://web.archive.org/web/20250224000733/https://www.saintpatricks.net/",
+   "capture_date": "2025-02-24"
+  },
+  {
+   "kind": "mass",
+   "day": "First Friday of the month",
+   "time": "19:00",
+   "language": "Bilingual",
+   "raw": "1st Friday: 7:00 PM Bilingual Healing Mass",
+   "source_url": "https://www.saintpatricks.net/",
+   "fetched_at": "2025-02-24T00:07:33+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-02-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-02-24",
+   "archive_url": "https://web.archive.org/web/20250224000733/https://www.saintpatricks.net/",
+   "capture_date": "2025-02-24"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "16:30-17:15",
+   "language": null,
+   "raw": "Saturday: 4:30 PM - 5:15 PM",
+   "source_url": "https://www.saintpatricks.net/",
+   "fetched_at": "2025-02-24T00:07:33+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-02-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-02-24",
+   "archive_url": "https://web.archive.org/web/20250224000733/https://www.saintpatricks.net/",
+   "capture_date": "2025-02-24"
+  }
+ ],
  "source_url": "https://www.saintpatricks.net/",
- "fetched_at": "2026-11-01T02:15:22+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-02T05:25:49+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/3",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": true
+   },
+   "score": "high"
+  },
+  "passed_bar": true,
+  "trusted_candidate": true,
+  "trusted_kinds": [
+   "weekend",
+   "weekday",
+   "confession",
+   "adoration"
+  ],
+  "generic_rows": 6
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Confessions are held Saturdays at 4:30 PM on Saturdays. For confession by appointment, please contact the office, to schedule a date and time.",
+   "phrase": "by appointment",
+   "source_url": "https://www.saintpatricks.net/reconciliation",
+   "fetched_at": "2025-06-25T07:22:29+00:00"
+  },
+  {
+   "kind": "confession",
+   "text": "Las confesiones se llevan a cabo los sábados a las 4:30 p. m. Para confesión con cita previa, comuníquese con la oficina al para programar una fecha y hora.",
+   "phrase": "con cita",
+   "source_url": "https://www.saintpatricks.net/reconciliation",
+   "fetched_at": "2025-06-25T07:22:29+00:00"
+  }
+ ],
+ "has_sunday": true,
+ "schedule_dropped": {
+  "text:dated_line": 5,
+  "text:no_day": 2
+ },
+ "groups_dropped": {
+  "unmatched": 1,
+  "noise": 1,
+  "sacrament_prep": 1,
+  "label_not_group": 3
+ },
+ "office_contact": {
+  "email": null,
+  "phone": null,
+  "address": "1114 Willow Street, San Antonio, TX 78208",
+  "source_url": "https://www.saintpatricks.net/",
+  "sources": {
+   "address": "https://www.saintpatricks.net/"
+  },
+  "fetched_at": "2025-02-24T00:07:33+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2025-02-24",
+  "capture_age_days": 616,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://www.saintpatricks.net/",
+    "capture": "2025-02-24",
+    "archive_url": "https://web.archive.org/web/20250224000733/https://www.saintpatricks.net/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://www.saintpatricks.net/liturgy",
+    "capture": "2025-04-21",
+    "archive_url": "https://web.archive.org/web/20250421050713/https://www.saintpatricks.net/liturgy"
+   },
+   {
+    "kind": "confession",
+    "original": "https://www.saintpatricks.net/reconciliation",
+    "capture": "2025-06-25",
+    "archive_url": "https://web.archive.org/web/20250625072229/https://www.saintpatricks.net/reconciliation"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://www.saintpatricks.net/faith-formation",
+    "capture": "2025-06-25",
+    "archive_url": "https://web.archive.org/web/20250625072116/https://www.saintpatricks.net/faith-formation"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://www.saintpatricks.net/ministries",
+    "capture": "2025-04-21",
+    "archive_url": "https://web.archive.org/web/20250421040816/https://www.saintpatricks.net/ministries"
+   },
+   {
+    "kind": "bulletin",
+    "original": "https://www.saintpatricks.net/bulletins",
+    "capture": "2025-06-25",
+    "archive_url": "https://web.archive.org/web/20250625082350/https://www.saintpatricks.net/bulletins"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://www.saintpatricks.net/calendar",
+    "capture": "2025-03-25",
+    "archive_url": "https://web.archive.org/web/20250325160713/https://www.saintpatricks.net/calendar"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://www.saintpatricks.net/events?page=1",
+    "capture": "2024-12-09",
+    "archive_url": "https://web.archive.org/web/20241209210134/https://www.saintpatricks.net/events?page=1"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review.",
+  "grade": {
+   "rule": "wayback-verified-2026-11-01",
+   "template": "ecatholic",
+   "trusted_template": true,
+   "has_sunday": true,
+   "groups": 9,
+   "verified": true,
+   "capture_date": "2025-02-24",
+   "applied": false
+  }
  }
 }
