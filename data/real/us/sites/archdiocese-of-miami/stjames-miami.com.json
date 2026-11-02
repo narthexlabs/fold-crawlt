@@ -22,22 +22,30 @@
  ],
  "home_url": "http://www.stjames-miami.com/",
  "final_url": "https://www.stjames-miami.com/",
- "crawl_status": "blocked_403",
- "crawl_env": "sandbox",
- "robots_note": "blocked_403",
+ "crawl_status": "wayback-2026-04-17",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
    "url": "https://www.stjames-miami.com/",
-   "status": 403,
-   "class": "blocked_403"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://www.stjames-miami.com/contact-us/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "wordpress",
+  "evidence": [
+   "wp-includes"
+  ]
  },
- "template": "none",
+ "template": "wordpress-html",
  "groups": [],
  "calendar_feeds": [],
  "events": [],
@@ -45,9 +53,52 @@
  "bulletin": null,
  "schedule_rows": [],
  "source_url": "http://www.stjames-miami.com/",
- "fetched_at": "2026-11-02T01:57:13+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-02T02:52:40+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "has_sunday": false,
+ "groups_dropped": {},
+ "wayback": {
+  "capture_date": "2026-04-17",
+  "capture_age_days": 199,
+  "prior_status": "blocked_403",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://www.stjames-miami.com/",
+    "capture": "2026-04-17",
+    "archive_url": "https://web.archive.org/web/20260417111447/https://www.stjames-miami.com/"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review.",
+  "grade": {
+   "rule": "wayback-verified-2026-11-01",
+   "template": "wordpress",
+   "trusted_template": false,
+   "has_sunday": false,
+   "groups": 0,
+   "verified": false,
+   "capture_date": "2026-04-17",
+   "applied": false
+  }
  }
 }

@@ -17,33 +17,384 @@
   "Town of Carmel"
  ],
  "home_url": "https://www.sjte.online/",
- "final_url": "https://www.sjte.online/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "final_url": "https://sjte.online/",
+ "crawl_status": "wayback-2025-10-10",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
-   "url": "https://www.sjte.online/",
-   "status": 403,
-   "class": "challenge"
+   "url": "https://sjte.online/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://sjte.online/mass-times",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://sjte.online/mass-times-nationwide",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://sjte.online/parish-organizations",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://sjte.online/administrative-staff",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://sjte.online/parish-ministries-volunteer-opportunities",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://sjte.online/news-events",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://sjte.online/parish-events",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://sjte.online/contact-us",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://sjte.online/bulletins",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "sjte.online:ocia",
+   "name": "RCIA",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "ocia",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://sjte.online/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://sjte.online/administrative-staff",
+   "source_kind": "website",
+   "fetched_at": "2025-10-10T10:10:29+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-10-10"
+  },
+  {
+   "id": "sjte.online:evangelization",
+   "name": "St. John the Evangelist",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "evangelization_team",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://sjte.online/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://sjte.online/parish-organizations",
+   "source_kind": "website",
+   "fetched_at": "2025-10-10T08:23:36+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-10-10"
+  },
+  {
+   "id": "sjte.online:sick",
+   "name": "Ministry to Sick and Homebound",
+   "category": "service_mercy",
+   "category_label": "Service & mercy",
+   "subcategory": "sick_homebound",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://sjte.online/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://sjte.online/",
+   "source_kind": "website",
+   "fetched_at": "2025-10-10T09:50:12+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-10-10"
+  },
+  {
+   "id": "sjte.online:respect_life",
+   "name": "Respect Life Society",
+   "category": "service_mercy",
+   "category_label": "Service & mercy",
+   "subcategory": "respect_life",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://sjte.online/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://sjte.online/",
+   "source_kind": "website",
+   "fetched_at": "2025-10-10T09:50:12+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-10-10"
+  },
+  {
+   "id": "sjte.online:choir|contemporary",
+   "name": "Contemporary Music Group",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "choir_music",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://sjte.online/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://sjte.online/administrative-staff",
+   "source_kind": "website",
+   "fetched_at": "2025-10-10T10:10:29+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-10-10"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/SJTEMahopac"
+  ],
+  "flocknote": [
+   "https://new.flocknote.com"
+  ]
+ },
+ "bulletin": {
+  "url": "https://files.ecatholic.com/5771/bulletins/20220626.pdf?t=1655990663000",
+  "date": "2022-06-26",
+  "kind": "ecatholic_pdf",
+  "text": "June 26 , 2022",
+  "source_url": "https://sjte.online/bulletins"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:15",
+   "language": "Polish",
+   "raw": "Sunday: 10:15 AM Polish Mass in the Chapel",
+   "source_url": "https://sjte.online/mass-times",
+   "fetched_at": "2025-10-10T09:05:24+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-10-10: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-10-10",
+   "archive_url": "https://web.archive.org/web/20251010090524/https://sjte.online/mass-times",
+   "capture_date": "2025-10-10"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "09:00",
+   "language": "English",
+   "raw": "November 1: 9:00 AM English",
+   "source_url": "https://sjte.online/mass-times",
+   "fetched_at": "2025-10-10T09:05:24+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-10-10: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "kind_parsed": "mass",
+   "source": "wayback-2025-10-10",
+   "archive_url": "https://web.archive.org/web/20251010090524/https://sjte.online/mass-times",
+   "capture_date": "2025-10-10"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "12:00",
+   "language": "English",
+   "raw": "November 1: 12:00 PM English",
+   "source_url": "https://sjte.online/mass-times",
+   "fetched_at": "2025-10-10T09:05:24+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-10-10: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "kind_parsed": "mass",
+   "source": "wayback-2025-10-10",
+   "archive_url": "https://web.archive.org/web/20251010090524/https://sjte.online/mass-times",
+   "capture_date": "2025-10-10"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "19:00",
+   "language": "English",
+   "raw": "November 1: 7:00 PM English",
+   "source_url": "https://sjte.online/mass-times",
+   "fetched_at": "2025-10-10T09:05:24+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-10-10: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "kind_parsed": "mass",
+   "source": "wayback-2025-10-10",
+   "archive_url": "https://web.archive.org/web/20251010090524/https://sjte.online/mass-times",
+   "capture_date": "2025-10-10"
+  }
+ ],
  "source_url": "https://www.sjte.online/",
- "fetched_at": "2026-11-01T01:57:08+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-02T03:01:42+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": true
+   },
+   "score": "high"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "other_location": 6
+ },
+ "groups_dropped": {
+  "private_name_risk": 2,
+  "noise": 1,
+  "unmatched": 1,
+  "label_not_group": 1
+ },
+ "office_contact": {
+  "email": "frontdesk@sjte.online",
+  "phone": "(845) 628-2006",
+  "address": "221 East Lake Blvd., Mahopac, NY 10541",
+  "source_url": "https://sjte.online/contact-us",
+  "sources": {
+   "email": "https://sjte.online/contact-us",
+   "phone": "https://sjte.online/contact-us",
+   "address": "https://sjte.online/contact-us"
+  },
+  "fetched_at": "2025-10-10T09:01:55+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2025-10-10",
+  "capture_age_days": 388,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://sjte.online/",
+    "capture": "2025-10-10",
+    "archive_url": "https://web.archive.org/web/20251010095012/https://sjte.online/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://sjte.online/mass-times",
+    "capture": "2025-10-10",
+    "archive_url": "https://web.archive.org/web/20251010090524/https://sjte.online/mass-times"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://sjte.online/mass-times-nationwide",
+    "capture": "2025-10-10",
+    "archive_url": "https://web.archive.org/web/20251010082958/https://sjte.online/mass-times-nationwide"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://sjte.online/parish-organizations",
+    "capture": "2025-10-10",
+    "archive_url": "https://web.archive.org/web/20251010082336/https://sjte.online/parish-organizations"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://sjte.online/administrative-staff",
+    "capture": "2025-10-10",
+    "archive_url": "https://web.archive.org/web/20251010101029/https://sjte.online/administrative-staff"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://sjte.online/parish-ministries-volunteer-opportunities",
+    "capture": "2025-06-25",
+    "archive_url": "https://web.archive.org/web/20250625011739/https://sjte.online/parish-ministries-volunteer-opportunities"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://sjte.online/news-events",
+    "capture": "2025-10-10",
+    "archive_url": "https://web.archive.org/web/20251010085240/https://sjte.online/news-events"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://sjte.online/parish-events",
+    "capture": "2024-05-10",
+    "archive_url": "https://web.archive.org/web/20240510165726/https://sjte.online/parish-events"
+   },
+   {
+    "kind": "contact",
+    "original": "https://sjte.online/contact-us",
+    "capture": "2025-10-10",
+    "archive_url": "https://web.archive.org/web/20251010090155/https://sjte.online/contact-us"
+   },
+   {
+    "kind": "bulletin",
+    "original": "https://sjte.online/bulletins",
+    "capture": "2024-06-17",
+    "archive_url": "https://web.archive.org/web/20240617193207/https://sjte.online/bulletins"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review.",
+  "grade": {
+   "rule": "wayback-verified-2026-11-01",
+   "template": "ecatholic",
+   "trusted_template": false,
+   "has_sunday": true,
+   "groups": 5,
+   "verified": false,
+   "capture_date": "2025-10-10",
+   "applied": false
+  }
  }
 }
