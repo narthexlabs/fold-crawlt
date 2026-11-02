@@ -18,32 +18,156 @@
  ],
  "home_url": "http://stjohnspawling.org/",
  "final_url": "https://stjohnspawling.org/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "crawl_status": "wayback-2025-09-13",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
    "url": "https://stjohnspawling.org/",
-   "status": 403,
-   "class": "challenge"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stjohnspawling.org/mass-times",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stjohnspawling.org/liturgy-sacraments",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "ministries",
+   "url": "https://stjohnspawling.org/ministry-to-the-sick",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "ministries",
+   "url": "https://stjohnspawling.org/devotions",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "ministries",
+   "url": "https://stjohnspawling.org/faith-formation",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://stjohnspawling.org/bulletins",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "calendar",
+   "url": "https://stjohnspawling.org/prep-calendar",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "calendar",
+   "url": "https://stjohnspawling.org/cgs-calendar",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "contact",
+   "url": "https://stjohnspawling.org/contact-us-1",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
+ "template": "ecatholic-fastpath",
  "groups": [],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/sjescb"
+  ],
+  "flocknote": [
+   "https://flocknote.com/stjohnpawling"
+  ]
+ },
+ "bulletin": {
+  "url": "https://stjohnspawling.org/parish-flocknote",
+  "date": null,
+  "kind": "page",
+  "text": "Parish Flocknote",
+  "source_url": "https://stjohnspawling.org/"
+ },
  "schedule_rows": [],
  "source_url": "http://stjohnspawling.org/",
- "fetched_at": "2026-11-01T03:03:38+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-02T03:06:03+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 1
+ },
+ "has_sunday": false,
+ "groups_dropped": {},
+ "office_contact": {
+  "email": null,
+  "phone": "(845) 855-5488",
+  "address": "39 East Main St., Pawling, NY 12564",
+  "source_url": "https://stjohnspawling.org/",
+  "sources": {
+   "phone": "https://stjohnspawling.org/",
+   "address": "https://stjohnspawling.org/"
+  },
+  "fetched_at": "2025-09-13T01:50:32+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2025-09-13",
+  "capture_age_days": 415,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://stjohnspawling.org/",
+    "capture": "2025-09-13",
+    "archive_url": "https://web.archive.org/web/20250913015032/https://stjohnspawling.org/"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review.",
+  "grade": {
+   "rule": "wayback-verified-2026-11-01",
+   "template": "ecatholic",
+   "trusted_template": false,
+   "has_sunday": false,
+   "groups": 0,
+   "verified": false,
+   "capture_date": "2025-09-13",
+   "applied": false
+  }
  }
 }

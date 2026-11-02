@@ -20,33 +20,121 @@
   "Caledonia"
  ],
  "home_url": "https://stlouisparishwi.com/",
- "final_url": "https://www.chateaudemontrouge.com/s-minaires",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "ok",
+ "final_url": "https://stlouisparishwi.com/",
+ "crawl_status": "wayback-2025-10-17",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
-   "url": "https://www.chateaudemontrouge.com/s-minaires",
-   "status": 403,
-   "class": "challenge"
+   "url": "https://stlouisparishwi.com/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "wordpress",
+  "evidence": [
+   "wp-content"
+  ]
  },
- "template": "none",
+ "template": "wordpress-html",
  "groups": [],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/stlouisparishwi",
+   "https://www.facebook.com/profile.php?id=61574387791484"
+  ]
+ },
+ "bulletin": {
+  "url": "https://parishesonline.com/organization/st-louis-catholic-church-53108",
+  "date": null,
+  "kind": "lpi",
+  "text": "BULLETINS",
+  "source_url": "https://stlouisparishwi.com/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Mass Schedule: 8:00 AM - St. Louis",
+   "source_url": "https://stlouisparishwi.com/",
+   "fetched_at": "2025-10-17T10:47:19+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-10-17: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "wordpress",
+   "source": "wayback-2025-10-17",
+   "archive_url": "https://web.archive.org/web/20251017104719/https://stlouisparishwi.com/",
+   "capture_date": "2025-10-17"
+  }
+ ],
  "source_url": "https://stlouisparishwi.com/",
- "fetched_at": "2026-11-01T22:15:30+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-02T02:54:54+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 1
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "other_location": 9
+ },
+ "groups_dropped": {},
+ "office_contact": {
+  "email": null,
+  "phone": "(262) 886-0530",
+  "address": "6400 Spring St., Mt Pleasant, WI 53406",
+  "source_url": "https://stlouisparishwi.com/",
+  "sources": {
+   "phone": "https://stlouisparishwi.com/",
+   "address": "https://stlouisparishwi.com/"
+  },
+  "fetched_at": "2025-10-17T10:47:19+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2025-10-17",
+  "capture_age_days": 381,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://stlouisparishwi.com/",
+    "capture": "2025-10-17",
+    "archive_url": "https://web.archive.org/web/20251017104719/https://stlouisparishwi.com/"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review.",
+  "grade": {
+   "rule": "wayback-verified-2026-11-01",
+   "template": "wordpress",
+   "trusted_template": false,
+   "has_sunday": true,
+   "groups": 0,
+   "verified": false,
+   "capture_date": "2025-10-17",
+   "applied": false
+  }
  }
 }
