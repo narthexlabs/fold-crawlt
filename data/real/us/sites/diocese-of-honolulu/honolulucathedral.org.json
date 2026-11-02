@@ -86,6 +86,12 @@
    "url": "https://honolulucathedral.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://honolulucathedral.org/sunday-liturgy/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -322,6 +328,90 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": null,
+   "raw": "5:00pm (Vigil)",
+   "source_url": "https://honolulucathedral.org/sunday-liturgy/",
+   "fetched_at": "2026-11-02T04:41:55+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "06:00",
+   "language": null,
+   "raw": "Mass Times: 6:00am",
+   "source_url": "https://honolulucathedral.org/sunday-liturgy/",
+   "fetched_at": "2026-11-02T04:41:55+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Mass Times: 8:00am",
+   "source_url": "https://honolulucathedral.org/sunday-liturgy/",
+   "fetched_at": "2026-11-02T04:41:55+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": null,
+   "raw": "Mass Times: 10:00am",
+   "source_url": "https://honolulucathedral.org/sunday-liturgy/",
+   "fetched_at": "2026-11-02T04:41:55+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "12:00",
+   "language": null,
+   "raw": "Mass Times: 12:00pm (Noon)",
+   "source_url": "https://honolulucathedral.org/sunday-liturgy/",
+   "fetched_at": "2026-11-02T04:41:55+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Mass Times: 5:00pm",
+   "source_url": "https://honolulucathedral.org/sunday-liturgy/",
+   "fetched_at": "2026-11-02T04:41:55+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "https://honolulucathedral.org/",
@@ -361,5 +451,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:57+00:00",
+  "requests": 3,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 6,
+  "mode": "merge"
  }
 }
