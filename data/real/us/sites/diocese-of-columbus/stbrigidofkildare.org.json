@@ -81,6 +81,12 @@
    "url": "https://stbrigidofkildare.org/welcome/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stbrigidofkildare.org/eucharistic-adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -502,6 +508,20 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "First Friday of the month",
+   "time": "16:00",
+   "language": null,
+   "raw": "St Brigid First Friday Eucharistic Adoration begins after the 9:00 am Mass and concludes at 4:00 pm with Benediction.",
+   "source_url": "https://stbrigidofkildare.org/eucharistic-adoration/",
+   "fetched_at": "2026-11-02T04:52:43+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "http://www.stbrigidofkildare.org/",
@@ -544,6 +564,25 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:52:45+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(614) 761-3734",
@@ -555,8 +594,5 @@
   },
   "fetched_at": "2026-11-01T05:12:28+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

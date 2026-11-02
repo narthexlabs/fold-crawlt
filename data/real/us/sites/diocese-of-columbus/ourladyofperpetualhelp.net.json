@@ -328,6 +328,23 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "08:30",
+   "language": null,
+   "raw": "Confessions:: Monday – Sunday | after 8:30 am Mass",
+   "source_url": "https://www.ourladygc.org/mass-times-",
+   "fetched_at": "2026-11-02T04:52:43+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "after",
+   "note": "Confessions:: Monday – Sunday | after 8:30 am Mass",
+   "day_expanded_from": "Monday – Sunday",
+   "topup": true
   }
  ],
  "source_url": "http://www.ourladyofperpetualhelp.net/",
@@ -365,6 +382,33 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "adoration",
+   "text": "Or anytime by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://www.ourladygc.org/mass-times-",
+   "fetched_at": "2026-11-02T04:52:43+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:52:43+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "info@ourladygc.org",
   "phone": "(614) 875-3322",
@@ -376,8 +420,5 @@
   },
   "fetched_at": "2026-11-01T05:12:16+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

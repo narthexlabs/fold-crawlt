@@ -87,6 +87,18 @@
    "url": "https://stpacc.org/parish-school-of-religion/psr-contact-information/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stpacc.org/sacraments/reconciliation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://massintentions.com/adorationmanager/dashboard/ba613d1fc0d9300175611e31cca7cf9f525056cb?view=timeGridWeek&start=2025-09-07T00%3A00%3A00-04%3A00&end=2025-09-14T00%3A00%3A00-04%3A00",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -929,6 +941,24 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:52:45+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "stpaulchurch@stpacc.org",
   "phone": "(614) 882-2109",
@@ -941,8 +971,5 @@
   },
   "fetched_at": "2026-11-01T05:12:33+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

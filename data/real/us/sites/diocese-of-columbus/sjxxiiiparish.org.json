@@ -69,6 +69,18 @@
    "url": "https://ihbvm.org/about/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://ihbvm.org/sacraments/reconciliation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://ihbvm.org/announcements/july-at-ihbvm",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -632,6 +644,40 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "By Appt. - Call parish office",
+   "phrase": "By Appt.",
+   "source_url": "https://ihbvm.org/sacraments/reconciliation",
+   "fetched_at": "2026-11-02T04:52:44+00:00"
+  },
+  {
+   "kind": "confession",
+   "text": "By Appointment: Call parish office",
+   "phrase": "By Appointment",
+   "source_url": "https://ihbvm.org/sacraments/reconciliation",
+   "fetched_at": "2026-11-02T04:52:44+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:52:45+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(614) 920-1563",
@@ -643,8 +689,5 @@
   },
   "fetched_at": "2026-11-01T04:00:14+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }
