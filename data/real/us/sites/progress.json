@@ -674,6 +674,17 @@
    "ended_at": "2026-11-02T01:58:03+00:00",
    "result": "fetched {}; parsed 0 dioceses",
    "touched": []
+  },
+  {
+   "started_at": "2026-11-02T01:57:10+00:00",
+   "ended_at": "2026-11-02T01:58:30+00:00",
+   "result": "fetched {'dns': 34, 'done': 77, 'conn_error': 2, 'ssl_error': 11, 'parked': 3, 'ok': 17, 'blocked_403': 1, 'challenge': 1, 'not_found': 2, 'timeout': 5, 'http_5xx': 1, 'halted_egress': 0}; parsed 4 dioceses",
+   "touched": [
+    "archdiocese-of-miami",
+    "diocese-of-orlando",
+    "archdiocese-of-omaha",
+    "diocese-of-palm-beach"
+   ]
   }
  ],
  "dioceses": {
@@ -1218,17 +1229,21 @@
   },
   "archdiocese-of-miami": {
    "sites_in_list": 156,
-   "records": 104,
-   "finished": false,
-   "ok": 86,
+   "records": 156,
+   "finished": true,
+   "ok": 103,
    "by_status": {
-    "ok": 86,
+    "ok": 103,
+    "dns": 21,
+    "timeout": 7,
+    "ssl_error": 7,
+    "not_found": 6,
     "wayback": 5,
-    "not_found": 5,
-    "timeout": 5,
+    "blocked_403": 2,
+    "challenge": 2,
     "parked": 1,
     "social_only": 1,
-    "ssl_error": 1
+    "robots_disallowed": 1
    }
   },
   "unassigned-co": {
@@ -1568,18 +1583,20 @@
   },
   "diocese-of-orlando": {
    "sites_in_list": 122,
-   "records": 94,
-   "finished": false,
-   "ok": 80,
+   "records": 123,
+   "finished": true,
+   "ok": 88,
    "by_status": {
-    "ok": 80,
+    "ok": 88,
+    "dns": 12,
     "challenge": 6,
-    "ssl_error": 3,
-    "conn_error": 1,
+    "ssl_error": 6,
+    "conn_error": 3,
+    "timeout": 3,
+    "parked": 2,
     "social_only": 1,
-    "unreachable_via_proxy": 1,
-    "timeout": 1,
-    "dns": 1
+    "not_found": 1,
+    "unreachable_via_proxy": 1
    }
   },
   "diocese-of-joliet": {
@@ -2174,12 +2191,12 @@
   },
   "archdiocese-of-omaha": {
    "sites_in_list": 86,
-   "records": 81,
-   "finished": false,
-   "ok": 63,
+   "records": 86,
+   "finished": true,
+   "ok": 67,
    "by_status": {
-    "ok": 63,
-    "challenge": 6,
+    "ok": 67,
+    "challenge": 7,
     "not_found": 3,
     "ssl_error": 3,
     "unreachable_via_proxy": 2,
@@ -2661,16 +2678,19 @@
   },
   "diocese-of-palm-beach": {
    "sites_in_list": 67,
-   "records": 56,
-   "finished": false,
-   "ok": 42,
+   "records": 67,
+   "finished": true,
+   "ok": 45,
    "by_status": {
-    "ok": 42,
+    "ok": 45,
     "challenge": 8,
-    "ssl_error": 2,
+    "dns": 4,
+    "ssl_error": 4,
     "social_only": 2,
-    "dns": 1,
-    "conn_error": 1
+    "http_5xx": 1,
+    "conn_error": 1,
+    "parked": 1,
+    "timeout": 1
    }
   },
   "unassigned-nd": {
@@ -4272,9 +4292,9 @@
  },
  "totals": {
   "sites_in_list": 19937,
-  "records": 20466,
-  "ok": 10858
+  "records": 20272,
+  "ok": 10835
  },
  "us_parish_pages_discovermass": 20147,
- "updated_at": "2026-11-02T01:58:31+00:00"
+ "updated_at": "2026-11-02T01:58:32+00:00"
 }

@@ -56,7 +56,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-rockville-centre | 167 | 167 | 112 | 14 | 9 | 32 | 0 |
 | unassigned-in | 166 | 179 | 91 | 48 | 2 | 38 | 0 |
 | archdiocese-of-portland-in-oregon | 157 | 157 | 55 | 69 | 2 | 31 | 0 |
-| archdiocese-of-miami | 156 | 104 | 86 | 0 | 0 | 12 | 1 |
+| archdiocese-of-miami | 156 | 156 | 103 | 2 | 3 | 42 | 1 |
 | unassigned-co | 150 | 185 | 108 | 21 | 7 | 49 | 0 |
 | unassigned-nj | 146 | 156 | 93 | 25 | 10 | 28 | 0 |
 | diocese-of-austin | 145 | 146 | 31 | 86 | 0 | 28 | 1 |
@@ -76,7 +76,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | archdiocese-of-los-angeles | 130 | 41 | 23 | 2 | 5 | 5 | 0 |
 | diocese-of-paterson | 126 | 126 | 12 | 101 | 1 | 12 | 0 |
 | unassigned-ks | 126 | 161 | 92 | 34 | 12 | 23 | 0 |
-| diocese-of-orlando | 122 | 94 | 80 | 6 | 0 | 7 | 1 |
+| diocese-of-orlando | 122 | 123 | 88 | 6 | 0 | 28 | 1 |
 | diocese-of-joliet | 121 | 121 | 80 | 22 | 0 | 19 | 0 |
 | unassigned-ky | 121 | 146 | 82 | 25 | 3 | 36 | 0 |
 | diocese-of-charlotte | 118 | 118 | 62 | 16 | 0 | 40 | 0 |
@@ -113,7 +113,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-columbus | 88 | 88 | 33 | 19 | 1 | 35 | 0 |
 | archdiocese-of-san-francisco | 87 | 53 | 26 | 11 | 0 | 16 | 0 |
 | unassigned-ok | 87 | 114 | 58 | 34 | 4 | 18 | 0 |
-| archdiocese-of-omaha | 86 | 81 | 63 | 6 | 3 | 9 | 0 |
+| archdiocese-of-omaha | 86 | 86 | 67 | 7 | 3 | 9 | 0 |
 | unassigned-ms | 86 | 98 | 45 | 31 | 1 | 21 | 0 |
 | diocese-of-altoona-johnstown | 84 | 84 | 46 | 12 | 1 | 19 | 6 |
 | diocese-of-camden | 84 | 84 | 40 | 5 | 2 | 37 | 0 |
@@ -144,7 +144,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | unassigned-dc | 71 | 83 | 59 | 14 | 4 | 6 | 0 |
 | diocese-of-wichita | 70 | 74 | 33 | 6 | 34 | 1 | 0 |
 | diocese-of-winona-rochester | 70 | 70 | 32 | 15 | 0 | 23 | 0 |
-| diocese-of-palm-beach | 67 | 56 | 42 | 8 | 0 | 4 | 2 |
+| diocese-of-palm-beach | 67 | 67 | 45 | 8 | 0 | 12 | 2 |
 | unassigned-nd | 67 | 99 | 48 | 46 | 1 | 4 | 0 |
 | archdiocese-of-oklahoma-city | 66 | 66 | 28 | 20 | 6 | 12 | 0 |
 | unassigned-ga | 66 | 80 | 56 | 8 | 3 | 13 | 0 |
@@ -273,7 +273,6 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 
 ## Chunk log
 
-- 2026-11-01T16:02:20+00:00: fetched {'dns': 2, 'done': 5, 'challenge': 1, 'parked': 1, 'ok': 1, 'halted_egress': 0}; parsed 0 dioceses
 - 2026-11-01T17:21:18+00:00: fetched {'dns': 54, 'done': 270, 'ssl_error': 14, 'challenge': 52, 'parked': 3, 'ok': 128, 'not_found': 7, 'http_5xx': 3, 'blocked_403': 1, 'conn_error': 2, 'timeout': 7, 'cut': 1, 'halted_egress': 0}; parsed 20 dioceses
 - 2026-11-01T17:42:30+00:00: fetched {'robots_disallowed': 1, 'done': 46, 'dns': 3, 'challenge': 14, 'ssl_error': 2, 'blocked_403': 2, 'not_found': 2, 'ok': 21, 'timeout': 1, 'halted_egress': 0}; parsed 3 dioceses
 - 2026-11-01T17:52:14+00:00: fetched {'ok': 1, 'done': 1, 'halted_egress': 0}; parsed 1 dioceses
@@ -286,5 +285,6 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-01T23:33:52+00:00: fetched {'ok': 4, 'done': 4, 'halted_egress': 0}; parsed 1 dioceses
 - 2026-11-02T00:05:44+00:00: fetched {'robots_disallowed': 1, 'done': 59, 'dns': 4, 'conn_error': 1, 'ssl_error': 3, 'challenge': 7, 'not_found': 1, 'ok': 44, 'cut': 2, 'halted_egress': 0}; parsed 8 dioceses
 - 2026-11-02T00:57:03+00:00: fetched {'ok': 2, 'done': 2, 'halted_egress': 0}; parsed 1 dioceses
-- 2026-11-02T01:56:05+00:00: fetched {'robots_disallowed': 2, 'done': 91, 'dns': 49, 'conn_error': 3, 'ssl_error': 11, 'not_found': 5, 'challenge': 3, 'ok': 12, 'parked': 1, 'http_5xx': 2, 'blocked_403': 1, 'timeout': 2, 'halted_egress': 0}; parsed 2 dioceses
-- 2026-11-02T01:58:00+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-02T01:56:02+00:00: fetched {'dns': 11, 'done': 24, 'ssl_error': 5, 'parked': 1, 'not_found': 1, 'challenge': 1, 'ok': 5, 'halted_egress': 0}; parsed 2 dioceses
+- 2026-11-02T01:56:40+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-02T01:57:10+00:00: fetched {'dns': 34, 'done': 77, 'conn_error': 2, 'ssl_error': 11, 'parked': 3, 'ok': 17, 'blocked_403': 1, 'challenge': 1, 'not_found': 2, 'timeout': 5, 'http_5xx': 1, 'halted_egress': 0}; parsed 4 dioceses
