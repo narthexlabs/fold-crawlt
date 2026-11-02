@@ -135,6 +135,7 @@ def widget_rows(p, own: set[str], names: list[str] | None = None) -> tuple[list[
                         lang = LANG_CLS.get(lc or "", C.norm_space(lsp.get_text(" ")) or None)
                     nsp = st.find("span", class_="notes")
                     notes = C.norm_space(nsp.get_text(" ")) if nsp else ""
+                    notes, exc = C.split_except(notes)    # "(except Holy Saturday)": a note on the row, never a church name
                     raw = C.norm_space(f"{daytxt}: {C.norm_space(st.find('span', class_='startTime').get_text(' '))}"
                                        f"{' - ' + C.norm_space(st.find('span', class_='endTime').get_text(' ')) if end else ''}"
                                        f" {lang or ''} {notes}")
@@ -162,7 +163,7 @@ def widget_rows(p, own: set[str], names: list[str] | None = None) -> tuple[list[
                     seas = C.season_in(notes) or C.season_in(cat)
                     tstr = start if (k == "mass" or not end) else f"{start}-{end}"
                     if holy:
-                        rows.append(_row("other", "Holy days", tstr, lang, raw, p, "high", kind_parsed=k))
+                        rows.append(_row("other", "Holy days", tstr, lang, raw, p, "high", kind_parsed=k, note=exc))
                         continue
                     if not row_days:
                         drop("no_day")
@@ -171,18 +172,20 @@ def widget_rows(p, own: set[str], names: list[str] | None = None) -> tuple[list[
                         day = C.day_text(d, row_nth)
                         if seas:
                             day += f" ({seas})"
-                        r = _row(k, day, tstr, lang, raw, p, "high")
+                        r = _row(k, day, tstr, lang, raw, p, "high", note=exc)
                         if len(row_days) > 1:
                             r["day_expanded_from"] = daytxt[:40]
                         rows.append(r)
     return rows, dropped
 
 
-def _row(kind, day, time, lang, raw, p, conf, kind_parsed=None) -> dict:
+def _row(kind, day, time, lang, raw, p, conf, kind_parsed=None, note=None) -> dict:
     r = {"kind": kind, "day": day, "time": time, "language": lang, "raw": raw[:200], "source_url": p.url, "fetched_at": p.fetched_at,
          "needs_review": False, "review_reason": None, "confidence": conf, "template": NAME}
     if kind_parsed and kind_parsed != kind:
         r["kind_parsed"] = kind_parsed
+    if note:
+        r["note"] = note[:120]
     return r
 
 
