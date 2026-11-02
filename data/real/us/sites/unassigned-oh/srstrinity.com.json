@@ -19,7 +19,7 @@
  "home_url": "https://www.srstrinity.com/",
  "final_url": "https://www.srstrinity.com/",
  "crawl_status": "ok",
- "crawl_env": "sandbox",
+ "crawl_env": "runner-rendered",
  "robots_note": "ok",
  "pages": [
   {
@@ -74,7 +74,7 @@
    "language": null,
    "raw": "Christmas Eve Mass :: 10:00 PM",
    "source_url": "https://www.srstrinity.com/",
-   "fetched_at": "2026-11-01T22:15:22+00:00",
+   "fetched_at": "2026-11-02T07:17:49+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -88,7 +88,7 @@
    "language": null,
    "raw": "Christmas Day Mass :: 8:00 AM",
    "source_url": "https://www.srstrinity.com/",
-   "fetched_at": "2026-11-01T22:15:22+00:00",
+   "fetched_at": "2026-11-02T07:17:49+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -97,28 +97,33 @@
   },
   {
    "kind": "mass",
-   "day": "Sunday",
-   "time": "08:00",
+   "day": "First Sunday of the month",
+   "time": "09:30",
    "language": null,
-   "raw": "Sunday Mass: 8:00 AM",
+   "raw": "* There will be no 9:30 AM Mass outdoor the first Sunday of November until the last Sunday of April.",
    "source_url": "https://www.srstrinity.com/",
-   "fetched_at": "2026-11-01T22:15:22+00:00",
+   "fetched_at": "2026-11-02T07:17:49+00:00",
    "needs_review": false,
-   "review_reason": "schedule_box"
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  },
+  {
+   "kind": "devotion",
+   "day": "First Sunday of the month",
+   "time": "16:00",
+   "language": null,
+   "raw": "9:30 AM Mass, and 4:00 PM Rosary and Benediction are not celebrated.",
+   "source_url": "https://www.srstrinity.com/",
+   "fetched_at": "2026-11-02T07:17:49+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
   }
  ],
  "source_url": "https://www.srstrinity.com/",
- "fetched_at": "2026-11-01T22:15:28+00:00",
- "topup": {
-  "kinds": [
-   "adoration",
-   "confession",
-   "liturgy"
-  ],
-  "at": "2026-11-02T04:52:27+00:00",
-  "requests": 2,
-  "found": []
- },
+ "fetched_at": "2026-11-02T07:17:56+00:00",
  "schedule_template": {
   "template": "wordpress",
   "version": "ca-sites/3",
@@ -129,7 +134,7 @@
     "counts_ok": true,
     "sunday_not_copied": true,
     "no_daily_on_sunday": true,
-    "mostly_high": false
+    "mostly_high": true
    },
    "score": "low"
   },
@@ -142,7 +147,8 @@
  "schedule_dropped": {
   "no_day": 12,
   "benediction_end": 1,
-  "box_rows_added": 1
+  "dated_line": 2,
+  "other_location": 1
  },
  "groups_dropped": {},
  "event_counts": {
@@ -158,15 +164,17 @@
  "office_contact": {
   "email": null,
   "phone": "(216) 481-8232",
-  "address": null,
+  "address": "21281 Chardon Rd., Euclid, OH 44117",
   "source_url": "https://www.srstrinity.com/contact",
   "sources": {
-   "phone": "https://www.srstrinity.com/contact"
+   "phone": "https://www.srstrinity.com/contact",
+   "address": "https://www.srstrinity.com/"
   },
-  "fetched_at": "2026-11-01T22:15:26+00:00",
+  "fetched_at": "2026-11-02T07:17:53+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
- }
+ },
+ "fetch_mode": "rendered"
 }
