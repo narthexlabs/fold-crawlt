@@ -118,7 +118,7 @@
    "feed_key": "85a2a69a46b6",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:31:02+00:00",
+    "fetched_at": "2026-11-02T04:43:49+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -155,19 +155,6 @@
   "source_url": "https://www.saintjamescatholic.org/"
  },
  "schedule_rows": [
-  {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "14:00-15:30",
-   "language": null,
-   "raw": "The Sacrament of Reconciliation is available every Saturday, 2:00-3:30 p.m.",
-   "source_url": "https://www.saintjamescatholic.org/reconciliation-",
-   "fetched_at": "2026-11-01T18:51:43+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "generic_strict"
-  },
   {
    "kind": "mass",
    "day": "Saturday",
@@ -369,6 +356,19 @@
    "template": "generic_strict"
   },
   {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "14:00-15:30",
+   "language": null,
+   "raw": "Reconciliation Schedule: Saturday | 2:00 - 3:30pm",
+   "source_url": "https://www.saintjamescatholic.org/",
+   "fetched_at": "2026-11-01T18:51:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
    "kind": "adoration",
    "day": "Monday",
    "time": "10:00-18:45",
@@ -384,9 +384,19 @@
  ],
  "source_url": "http://www.saintjamescatholic.org/",
  "fetched_at": "2026-11-01T18:51:49+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:35+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -400,6 +410,7 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 14
  },
  "has_sunday": true,
@@ -408,8 +419,8 @@
   "unmatched": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

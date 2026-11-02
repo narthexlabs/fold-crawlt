@@ -63,6 +63,12 @@
    "url": "https://www.steugene.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.steugene.org/penance",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -281,7 +287,7 @@
    "language": "en",
    "language_assumed": true,
    "meets": "Weekly",
-   "description": "This ministry includes a weekly Communion Service at the Craggy Correctional Center along with religious counseling, one-on-one volunteer opportunities, birthday parties, etc. Various other programs are also offered to the inmates of the Craggy Minimum Custody Unit such as Alcoholics…",
+   "description": "This ministry includes a weekly Communion Service at the [name withheld] Center along with religious counseling, one-on-one volunteer opportunities, birthday parties, etc. Various other programs are also offered to the inmates of the Craggy Minimum Custody Unit such as Alcoholics…",
    "contact_url": "https://www.steugene.org/contact",
    "contact_role": "parish office (see contact page)",
    "source_url": "https://www.steugene.org/ministries",
@@ -777,6 +783,34 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()",
+  "contacts_removed": 0,
+  "names_withheld": 1
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Confessions can also be by appointment. Please, call the parish office.",
+   "phrase": "by appointment",
+   "source_url": "https://www.steugene.org/penance",
+   "fetched_at": "2026-11-02T04:41:38+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:39+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(828) 254-5193",
@@ -788,8 +822,5 @@
   },
   "fetched_at": "2026-11-01T03:59:11+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }
