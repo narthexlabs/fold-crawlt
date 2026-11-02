@@ -75,6 +75,12 @@
    "url": "https://sacredheartnorwichct.org/our-parish/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://sacredheartnorwichct.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -278,7 +284,7 @@
    "note": "The Events Calendar (WordPress) REST API",
    "last_fetch": {
     "status": 200,
-    "fetched_at": "2026-11-01T23:36:58+00:00",
+    "fetched_at": "2026-11-02T04:57:04+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -380,6 +386,22 @@
    "day_bound_from_line": true
   },
   {
+   "kind": "adoration",
+   "day": "First Friday of the month",
+   "time": "08:00",
+   "language": null,
+   "raw": "First Friday: each month at SHC – Adoration after the 8:00 am Mass",
+   "source_url": "https://sacredheartnorwichct.org/mass-schedule/",
+   "fetched_at": "2026-11-01T17:27:39+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "First Friday: each month at SHC – Adoration after the 8:00 am Mass",
+   "relative_resolved": false
+  },
+  {
    "kind": "confession",
    "day": "Saturday",
    "time": "15:00",
@@ -395,9 +417,19 @@
  ],
  "source_url": "https://sacredheartnorwichct.org/",
  "fetched_at": "2026-11-01T17:27:49+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:50+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -411,19 +443,29 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 6
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Saturdays at 3:00 pm (Sacred Heart) – Anytime by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://sacredheartnorwichct.org/sacraments/",
+   "fetched_at": "2026-11-01T17:27:41+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "other_location": 3,
-  "relative_time": 2
+  "relative_time": 1
  },
  "groups_dropped": {
   "sentence": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

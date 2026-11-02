@@ -81,6 +81,12 @@
    "url": "https://www.ourladyofpeacestratford.org/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.ourladyofpeacestratford.org/sacraments",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -489,13 +495,94 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "Saturday",
+   "time": "15:30-16:15",
+   "language": null,
+   "raw": "Eucharistic Adoration of the Blessed Sacrament: Saturdays at 3:30 PM - 4:15 PM",
+   "source_url": "https://www.ourladyofpeacestratford.org/",
+   "fetched_at": "2026-11-01T22:15:24+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "location": "Call the Parish Office"
+  },
+  {
+   "kind": "adoration",
+   "day": "First Friday of the month",
+   "time": "09:00-12:00",
+   "language": null,
+   "raw": "Eucharistic Adoration of the Blessed Sacrament: First Friday of the month from 9:00 AM to 12:00 noon",
+   "source_url": "https://www.ourladyofpeacestratford.org/",
+   "fetched_at": "2026-11-01T22:15:24+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "location": "Call the Parish Office"
+  },
+  {
+   "kind": "adoration",
+   "day": "First Sunday of the month",
+   "time": "07:45-08:15",
+   "language": null,
+   "raw": "Eucharistic Adoration of the Blessed Sacrament: First Sunday of the month from 7:45 AM to 8:15 AM",
+   "source_url": "https://www.ourladyofpeacestratford.org/",
+   "fetched_at": "2026-11-01T22:15:24+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "location": "Call the Parish Office"
+  },
+  {
+   "kind": "devotion",
+   "day": "Friday",
+   "time": "15:00",
+   "language": null,
+   "raw": "Divine Mercy Chaplet and Litany to Divine Mercy takes place every Friday at 3:00 p.m.",
+   "source_url": "https://www.ourladyofpeacestratford.org/",
+   "fetched_at": "2026-11-01T22:15:24+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "location": "takes place in the Church on"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:15-16:00",
+   "language": null,
+   "raw": "Reconciliation: Saturdays: 3:15 to 4:00 p.m.",
+   "source_url": "https://www.ourladyofpeacestratford.org/sacraments",
+   "fetched_at": "2026-11-02T04:41:47+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
   }
  ],
  "source_url": "https://www.ourladyofpeacestratford.org/",
  "fetched_at": "2026-11-01T22:15:34+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:47+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -509,17 +596,27 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 9
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Other times by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://www.ourladyofpeacestratford.org/sacraments",
+   "fetched_at": "2026-11-02T04:41:47+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "not_a_service": 1,
-  "other_location": 6
+  "other_location": 2
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

@@ -81,6 +81,12 @@
    "url": "https://stmargaretofscotland.archtoronto.org/en/contact-us/donations/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stmargaretofscotland.archtoronto.org/en/our-faith/sacraments--sacramentals/eucharistic-adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -269,9 +275,21 @@
  "schedule_rows": [],
  "source_url": "https://stmargaretofscotland.archtoronto.org/",
  "fetched_at": "2026-11-01T22:15:35+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:49+00:00",
+  "requests": 1,
+  "found": [
+   "adoration"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -285,6 +303,7 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 2
  },
  "has_sunday": false,
@@ -311,8 +330,8 @@
   "unmatched": 4
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

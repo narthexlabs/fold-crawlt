@@ -51,6 +51,18 @@
    "url": "https://waterburycc.wordpress.com/events/event-calendar/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://waterburycc.wordpress.com/regular-schedules/confession/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://waterburycc.wordpress.com/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -74,7 +86,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:37:53+00:00",
+    "fetched_at": "2026-11-02T04:58:07+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -93,7 +105,7 @@
    "feed_key": "ee830abc71c5",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:37:55+00:00",
+    "fetched_at": "2026-11-02T04:58:09+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -109,20 +121,6 @@
    "time": "06:30",
    "language": null,
    "raw": "Mass: 6:30am – The Basilica of the Immaculate Conception",
-   "source_url": "https://waterburycc.wordpress.com/regular-schedules/masses/",
-   "fetched_at": "2026-11-01T20:25:06+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "low",
-   "template": "wordpress",
-   "kind_parsed": "mass"
-  },
-  {
-   "kind": "other",
-   "day": "Holy days",
-   "time": "08:00",
-   "language": null,
-   "raw": "Mass: 8:00am – The Basilica of the Immaculate Conception; Blessed Sacrament; Our Lady of Lourdes; SS. Peter & Paul",
    "source_url": "https://waterburycc.wordpress.com/regular-schedules/masses/",
    "fetched_at": "2026-11-01T20:25:06+00:00",
    "needs_review": false,
@@ -375,7 +373,7 @@
   },
   {
    "kind": "mass",
-   "day": "Tuesday",
+   "day": "Tuesday (during the school year)",
    "time": "09:15",
    "language": null,
    "raw": "Mass: 9:15am (Sept. – June) – Our Lady of Mount Carmel (Lower Church)",
@@ -392,13 +390,14 @@
    "day": "Tuesday",
    "time": "12:15",
    "language": null,
-   "raw": "Mass: 12:15pm – The Shrine of St. Anne (not during July)",
+   "raw": "Mass: 12:15pm – The Shrine of St. Anne",
    "source_url": "https://waterburycc.wordpress.com/regular-schedules/masses/",
    "fetched_at": "2026-11-01T20:25:06+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "low",
-   "template": "wordpress"
+   "template": "wordpress",
+   "note": "not during July"
   },
   {
    "kind": "mass",
@@ -557,13 +556,53 @@
    "review_reason": null,
    "confidence": "high",
    "template": "wordpress"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "08:00",
+   "language": null,
+   "raw": "Mass: 8:00am – Our Lady of Fatima; Our Lady of Lourdes; St. Michael",
+   "source_url": "https://waterburycc.wordpress.com/regular-schedules/masses/",
+   "fetched_at": "2026-11-01T20:25:06+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "19:00",
+   "language": null,
+   "raw": "Mass: 7:00pm – Our Lady of Lourdes",
+   "source_url": "https://waterburycc.wordpress.com/regular-schedules/masses/",
+   "fetched_at": "2026-11-01T20:25:06+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "kind_parsed": "mass"
   }
  ],
  "source_url": "https://waterburycc.wordpress.com/",
  "fetched_at": "2026-11-01T20:25:09+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:52+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -577,17 +616,19 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 1
+  "trusted_kinds": [],
+  "generic_rows": 2
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 3,
+  "no_day": 1,
+  "not_a_service": 14,
   "prose": 8
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
