@@ -78,6 +78,12 @@
    "url": "https://www.ccsfachurch.org/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.ccsfachurch.org/reconciliation",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -402,6 +408,20 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:00-16:00",
+   "language": null,
+   "raw": "This sacrament of Reconciliation is celebrated each Saturday from 3:00 until 4:00 or by appointment.",
+   "source_url": "https://www.ccsfachurch.org/reconciliation",
+   "fetched_at": "2026-11-02T04:47:57+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "generic_strict",
+   "topup": true
   }
  ],
  "source_url": "https://www.ccsfachurch.org/",
@@ -439,6 +459,33 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "This sacrament of Reconciliation is celebrated each Saturday from 3:00 until 4:00 or by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://www.ccsfachurch.org/reconciliation",
+   "fetched_at": "2026-11-02T04:47:57+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:47:58+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(502) 456-6394",
@@ -450,8 +497,5 @@
   },
   "fetched_at": "2026-11-01T08:35:05+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }
