@@ -292,6 +292,20 @@
    "review_reason": null,
    "confidence": "high",
    "template": "weebly"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "12:30",
+   "language": "Spanish",
+   "raw": "Misa dominical en español 12:30 pm",
+   "source_url": "https://stjohnshotsprings.net/mass-times-misas-del-dia-domingo.html",
+   "fetched_at": "2026-11-02T04:42:03+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly",
+   "topup": true
   }
  ],
  "source_url": "http://stjohnshotsprings.net/",
@@ -332,8 +346,30 @@
   "excluded_by_reason": {}
  },
  "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()",
-  "names_withheld": 0,
-  "contacts_removed": 1
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "or call for an appointment (anonymous confession is available by appointment)",
+   "phrase": "by appointment",
+   "source_url": "https://stjohnshotsprings.net/mass-times-misas-del-dia-domingo.html",
+   "fetched_at": "2026-11-02T04:42:03+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:05+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }
