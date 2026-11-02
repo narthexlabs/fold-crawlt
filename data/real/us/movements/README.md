@@ -55,6 +55,9 @@ conference names, city, public website): never a named officer's phone or e-mail
 - robots.txt of programs.paradisusdei.org is empty (all allowed); paradisusdei.org's legal page reserves copyright in its
   content and allows quoting with the source noted — we store facts (which parish hosts which program) with the source link.
 - The per-course coordinator name / e-mail / phone (route /places/courses) is never requested.
+- From GitHub Actions runners the same route answers 403 with a challenge (2026-11-02 07:45Z, recorded, not retried), so
+  this source is refreshed from the sandbox only (`python3 -I ingest/us/movements/paradisus_dei.py && python3 -I
+  ingest/us/movements/match.py`); it is not a leg of the Actions `movements` matrix.
 
 ## 1c. Secular Franciscan Order USA — `secular_franciscans.py`
 - https://www.secularfranciscansusa.org/map-of-local-fraternities/ embeds its map data (WP Google Map plugin) as base64
@@ -67,7 +70,7 @@ conference names, city, public website): never a named officer's phone or e-mail
   e-mail, phone) is cut before parsing and never stored. Most divisions meet in halls or pubs, so few match a parish.
 
 ## Actions
-`movements` is a matrix with one leg per host (kofc, paradisus_dei, ofs, aoh), each committing only its own file;
+`movements` is a matrix with one leg per host (kofc, ofs, aoh; paradisus_dei is sandbox-only, see 1b), each committing only its own file;
 `movements-match` runs `match.py` on the latest main afterwards. Dispatch:
 `gh api -X POST repos/narthexlabs/fold-crawlt/actions/workflows/crawl.yml/dispatches -f ref=main -f 'inputs[job]=movements' -f 'inputs[minutes]=110'`
 (repeat until `kofc_progress.json` numbers.complete_at is set).

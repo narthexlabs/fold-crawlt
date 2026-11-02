@@ -284,7 +284,8 @@ jobs:
     # Dispatch only (job=movements). National movement directories, ONE matrix leg per host (one crawler per host), each
     # leg commits only its own source file; movements-match then attaches records to parishes (match.py -> by_parish.json).
     #   kofc          www.kofc.org "Find a Council" by council number (resumable: kofc_progress.json["numbers"]), >= 1.05 s apart
-    #   paradisus_dei programs.paradisusdei.org finder JSON (That Man Is You! and other programs), 3 requests
+    #   (paradisus_dei is NOT here: programs.paradisusdei.org answers Actions runners with a 403 challenge, 2026-11-02 07:45Z;
+    #    refresh it from the sandbox: python3 -I ingest/us/movements/paradisus_dei.py, then match.py)
     #   ofs           www.secularfranciscansusa.org map of local fraternities (data embedded in the page), 1 request
     #   aoh           aoh.com AOH Divisions Directory, 1 request (officer contacts never stored)
     # robots.txt honoured by every script (ingest/us/common_fetch.Polite), honest FindTheChurch user agent.
@@ -296,7 +297,6 @@ jobs:
       matrix:
         include:
           - { src: kofc, cmd: 'ingest/us/movements/kofc.py --mode numbers --minutes "$MINUTES"', out: 'kofc.json kofc_progress.json' }
-          - { src: paradisus_dei, cmd: 'ingest/us/movements/paradisus_dei.py', out: 'paradisus_dei.json' }
           - { src: ofs, cmd: 'ingest/us/movements/secular_franciscans.py', out: 'secular_franciscans.json' }
           - { src: aoh, cmd: 'ingest/us/movements/aoh.py', out: 'aoh.json' }
     concurrency:
