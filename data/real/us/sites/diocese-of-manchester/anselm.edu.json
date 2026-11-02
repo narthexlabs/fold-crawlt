@@ -63,6 +63,12 @@
    "url": "https://www.anselm.edu/admission/faqcontact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.anselm.edu/about/offices-centers-institutes/centers-institutes/alva-de-mars-megan-chapel-art-center",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -265,7 +271,7 @@
   "instagram": [
    "https://www.instagram.com/saintanselm/",
    "https://www.instagram.com/saintanselm_ces/",
-   "https://www.instagram.com/anselmadmission/"
+   "https://www.instagram.com/chapelartcenter/"
   ],
   "youtube": [
    "https://www.youtube.com/@centerforethicsinsociety4030"
@@ -289,9 +295,21 @@
  "schedule_rows": [],
  "source_url": "http://www.anselm.edu/Saint-Anselm-Abbey.htm",
  "fetched_at": "2026-11-02T01:56:32+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:42+00:00",
+  "requests": 1,
+  "found": [
+   "adoration"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -305,6 +323,7 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 0
  },
  "has_sunday": false,
