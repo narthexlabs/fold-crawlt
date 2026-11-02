@@ -19,12 +19,18 @@
  "home_url": "https://www.sscm-olyphant.com/",
  "final_url": "https://www.sscm-olyphant.com/",
  "crawl_status": "ok",
- "crawl_env": "sandbox",
+ "crawl_env": "runner-rendered",
  "robots_note": "ok",
  "pages": [
   {
    "category": "home",
    "url": "https://www.sscm-olyphant.com/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.sscm-olyphant.com/im-new-here",
    "status": 200,
    "class": "ok"
   },
@@ -75,7 +81,7 @@
    "feed_key": "85a2a69a46b6",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-02T04:56:37+00:00",
+    "fetched_at": "2026-11-02T07:20:39+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -102,7 +108,7 @@
    "language": null,
    "raw": "Sunday Divine Liturgies: 4:00pm",
    "source_url": "https://www.sscm-olyphant.com/",
-   "fetched_at": "2026-11-01T20:25:13+00:00",
+   "fetched_at": "2026-11-02T07:16:56+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -115,7 +121,7 @@
    "language": null,
    "raw": "Sunday Divine Liturgies: 10:00am",
    "source_url": "https://www.sscm-olyphant.com/",
-   "fetched_at": "2026-11-01T20:25:13+00:00",
+   "fetched_at": "2026-11-02T07:16:56+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -128,7 +134,7 @@
    "language": null,
    "raw": "Weekday Divine Liturgies: 9:00am",
    "source_url": "https://www.sscm-olyphant.com/",
-   "fetched_at": "2026-11-01T20:25:13+00:00",
+   "fetched_at": "2026-11-02T07:16:56+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -142,7 +148,7 @@
    "language": null,
    "raw": "Weekday Divine Liturgies: 9:00am",
    "source_url": "https://www.sscm-olyphant.com/",
-   "fetched_at": "2026-11-01T20:25:13+00:00",
+   "fetched_at": "2026-11-02T07:16:56+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -156,7 +162,7 @@
    "language": null,
    "raw": "Weekday Divine Liturgies: 9:00am",
    "source_url": "https://www.sscm-olyphant.com/",
-   "fetched_at": "2026-11-01T20:25:13+00:00",
+   "fetched_at": "2026-11-02T07:16:56+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -170,7 +176,7 @@
    "language": null,
    "raw": "Weekday Divine Liturgies: 9:00am",
    "source_url": "https://www.sscm-olyphant.com/",
-   "fetched_at": "2026-11-01T20:25:13+00:00",
+   "fetched_at": "2026-11-02T07:16:56+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -184,7 +190,7 @@
    "language": null,
    "raw": "Weekday Divine Liturgies: 9:00am",
    "source_url": "https://www.sscm-olyphant.com/",
-   "fetched_at": "2026-11-01T20:25:13+00:00",
+   "fetched_at": "2026-11-02T07:16:56+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -198,7 +204,7 @@
    "language": null,
    "raw": "Holy Day Liturgies: 9:00am",
    "source_url": "https://www.sscm-olyphant.com/",
-   "fetched_at": "2026-11-01T20:25:13+00:00",
+   "fetched_at": "2026-11-02T07:16:56+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -212,7 +218,7 @@
    "language": null,
    "raw": "Confessions: 2:00pm",
    "source_url": "https://www.sscm-olyphant.com/",
-   "fetched_at": "2026-11-01T20:25:13+00:00",
+   "fetched_at": "2026-11-02T07:16:56+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -220,17 +226,7 @@
   }
  ],
  "source_url": "https://www.sscm-olyphant.com/",
- "fetched_at": "2026-11-01T20:25:17+00:00",
- "topup": {
-  "kinds": [
-   "adoration",
-   "confession",
-   "liturgy"
-  ],
-  "at": "2026-11-02T04:43:02+00:00",
-  "requests": 0,
-  "found": []
- },
+ "fetched_at": "2026-11-02T07:17:06+00:00",
  "schedule_template": {
   "template": "generic_strict",
   "version": "ca-sites/3",
@@ -271,10 +267,11 @@
    "phone": "https://www.sscm-olyphant.com/contact-us",
    "address": "https://www.sscm-olyphant.com/contact-us"
   },
-  "fetched_at": "2026-11-01T20:25:17+00:00",
+  "fetched_at": "2026-11-02T07:17:06+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
- }
+ },
+ "fetch_mode": "rendered"
 }
