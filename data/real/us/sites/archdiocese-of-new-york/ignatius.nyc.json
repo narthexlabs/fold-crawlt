@@ -77,6 +77,12 @@
    "url": "https://ignatius.nyc/our-parish/host-an-event/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://ignatius.nyc/sacrament/reconciliation/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -704,6 +710,20 @@
    "review_reason": null,
    "confidence": "low",
    "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "16:30-17:30",
+   "language": null,
+   "raw": "Confession: The sacrament is available every Saturday from 4:30 PM to 5:30 PM in the Church.",
+   "source_url": "https://ignatius.nyc/sacrament/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:38+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "https://ignatius.nyc/",
@@ -747,5 +767,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:48+00:00",
+  "requests": 3,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }
