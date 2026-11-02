@@ -22,32 +22,408 @@
  ],
  "home_url": "https://staroftheseastcharles.org/",
  "final_url": "https://staroftheseastcharles.org/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "crawl_status": "wayback-2025-04-24",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
    "url": "https://staroftheseastcharles.org/",
-   "status": 403,
-   "class": "challenge"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://staroftheseastcharles.org/mass-times",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://staroftheseastcharles.org/confession-times",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://staroftheseastcharles.org/ministries",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://staroftheseastcharles.org/faith-formation",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "ministries",
+   "url": "https://staroftheseastcharles.org/covid-updates",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://staroftheseastcharles.org/bulletins-1",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://staroftheseastcharles.org/start-of-the-sea-calendar",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://staroftheseastcharles.org/st-charles-calendar",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://staroftheseastcharles.org/contact-us",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "staroftheseastcharles.org:sick",
+   "name": "Ministry to the sick and suffering",
+   "category": "service_mercy",
+   "category_label": "Service & mercy",
+   "subcategory": "sick_homebound",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://staroftheseastcharles.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://staroftheseastcharles.org/ministries",
+   "source_kind": "website",
+   "fetched_at": "2025-05-19T05:22:54+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-04-24"
+  },
+  {
+   "id": "staroftheseastcharles.org:choir|cantor",
+   "name": "Choirs/Cantors",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "choir_music",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://staroftheseastcharles.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://staroftheseastcharles.org/ministries",
+   "source_kind": "website",
+   "fetched_at": "2025-05-19T05:22:54+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-04-24"
+  },
+  {
+   "id": "staroftheseastcharles.org:choir",
+   "name": "Music Ministry / Choir",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "choir_music",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://staroftheseastcharles.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://staroftheseastcharles.org/",
+   "source_kind": "website",
+   "fetched_at": "2025-04-24T11:33:22+00:00",
+   "confidence": "low",
+   "source": "wayback-2025-04-24"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "youtube": [
+   "https://www.youtube.com/channel/UCwLcR2MhKqduaVetoJhLJIw"
+  ]
+ },
+ "bulletin": {
+  "url": "https://files.ecatholic.com/19135/documents/2022/12/Bulletin895750.012223Print.pdf?t=1671821091000",
+  "date": "2023-01-22",
+  "kind": "pdf",
+  "text": "1.22.23",
+  "source_url": "https://staroftheseastcharles.org/bulletins-1"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "17:15",
+   "language": null,
+   "raw": "Daily Mass: Tuesday, Wednesday, and Friday, - 5:15pm",
+   "source_url": "https://staroftheseastcharles.org/mass-times",
+   "fetched_at": "2023-01-31T03:19:24+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic+generic_strict",
+   "day_parsed": "Friday",
+   "day_bound_from_line": true,
+   "source": "wayback-2025-04-24",
+   "archive_url": "https://web.archive.org/web/20230131031924/https://staroftheseastcharles.org/mass-times",
+   "capture_date": "2023-01-31"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "17:15",
+   "language": null,
+   "raw": "Daily Mass: Tuesday, Wednesday, and Friday, - 5:15pm",
+   "source_url": "https://staroftheseastcharles.org/mass-times",
+   "fetched_at": "2023-01-31T03:19:24+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic+generic_strict",
+   "day_parsed": "Friday",
+   "day_bound_from_line": true,
+   "source": "wayback-2025-04-24",
+   "archive_url": "https://web.archive.org/web/20230131031924/https://staroftheseastcharles.org/mass-times",
+   "capture_date": "2023-01-31"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "17:15",
+   "language": null,
+   "raw": "Daily Mass: Tuesday, Wednesday, and Friday, - 5:15pm",
+   "source_url": "https://staroftheseastcharles.org/mass-times",
+   "fetched_at": "2023-01-31T03:19:24+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2025-04-24",
+   "archive_url": "https://web.archive.org/web/20230131031924/https://staroftheseastcharles.org/mass-times",
+   "capture_date": "2023-01-31"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "16:30",
+   "language": "Spanish",
+   "raw": "Weekend Mass: Saturday (Vigil English) – 4:30pm Saturday (Vigil Spanish), - 6:30pm",
+   "source_url": "https://staroftheseastcharles.org/mass-times",
+   "fetched_at": "2023-01-31T03:19:24+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2025-04-24",
+   "archive_url": "https://web.archive.org/web/20230131031924/https://staroftheseastcharles.org/mass-times",
+   "capture_date": "2023-01-31"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "18:30",
+   "language": null,
+   "raw": "Weekend Mass: Saturday (Vigil English) – 4:30pm Saturday (Vigil Spanish), - 6:30pm",
+   "source_url": "https://staroftheseastcharles.org/mass-times",
+   "fetched_at": "2023-01-31T03:19:24+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2025-04-24",
+   "archive_url": "https://web.archive.org/web/20230131031924/https://staroftheseastcharles.org/mass-times",
+   "capture_date": "2023-01-31"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:30",
+   "language": "English",
+   "raw": "Mass Times: Sunday (English) – 8:30am",
+   "source_url": "https://staroftheseastcharles.org/mass-times",
+   "fetched_at": "2023-01-31T03:19:24+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-24: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2025-04-24",
+   "archive_url": "https://web.archive.org/web/20230131031924/https://staroftheseastcharles.org/mass-times",
+   "capture_date": "2023-01-31"
+  },
+  {
+   "kind": "adoration",
+   "day": "First Friday of the month",
+   "time": "16:00-18:00",
+   "language": null,
+   "raw": "First Friday Parish day of Adoration and Prayer: 4:00pm – 6:00pm",
+   "source_url": "https://staroftheseastcharles.org/mass-times",
+   "fetched_at": "2023-01-31T03:19:24+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2025-04-24",
+   "archive_url": "https://web.archive.org/web/20230131031924/https://staroftheseastcharles.org/mass-times",
+   "capture_date": "2023-01-31"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:30-16:15",
+   "language": null,
+   "raw": "Confession time: Saturday - 3:30pm -4:15pm",
+   "source_url": "https://staroftheseastcharles.org/mass-times",
+   "fetched_at": "2023-01-31T03:19:24+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2025-04-24",
+   "archive_url": "https://web.archive.org/web/20230131031924/https://staroftheseastcharles.org/mass-times",
+   "capture_date": "2023-01-31"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "16:30-17:15",
+   "language": null,
+   "raw": "Confession Times: Saturdays 4:30 pm - 5:15pm or by appointment",
+   "source_url": "https://staroftheseastcharles.org/confession-times",
+   "fetched_at": "2023-01-31T03:49:40+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-24: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2025-04-24",
+   "archive_url": "https://web.archive.org/web/20230131034940/https://staroftheseastcharles.org/confession-times",
+   "capture_date": "2023-01-31"
+  }
+ ],
  "source_url": "https://staroftheseastcharles.org/",
- "fetched_at": "2026-11-01T17:27:13+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-02T04:31:23+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": true
+   },
+   "score": "high"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 24
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "text:other_location": 10
+ },
+ "groups_dropped": {
+  "noise": 3
+ },
+ "office_contact": {
+  "email": "parishoffice@sosstc.org",
+  "phone": "(541) 469-2313",
+  "address": "820 Old County Road, Brookings, OR 97415",
+  "source_url": "https://staroftheseastcharles.org/contact-us",
+  "sources": {
+   "email": "https://staroftheseastcharles.org/contact-us",
+   "phone": "https://staroftheseastcharles.org/contact-us",
+   "address": "https://staroftheseastcharles.org/contact-us"
+  },
+  "fetched_at": "2023-01-31T03:05:16+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2025-04-24",
+  "capture_age_days": 557,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://staroftheseastcharles.org/",
+    "capture": "2025-04-24",
+    "archive_url": "https://web.archive.org/web/20250424113322/https://staroftheseastcharles.org/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://staroftheseastcharles.org/mass-times",
+    "capture": "2023-01-31",
+    "archive_url": "https://web.archive.org/web/20230131031924/https://staroftheseastcharles.org/mass-times"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://staroftheseastcharles.org/confession-times",
+    "capture": "2023-01-31",
+    "archive_url": "https://web.archive.org/web/20230131034940/https://staroftheseastcharles.org/confession-times"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://staroftheseastcharles.org/ministries",
+    "capture": "2025-05-19",
+    "archive_url": "https://web.archive.org/web/20250519052254/https://staroftheseastcharles.org/ministries"
+   },
+   {
+    "kind": "bulletin",
+    "original": "https://staroftheseastcharles.org/bulletins-1",
+    "capture": "2023-01-31",
+    "archive_url": "https://web.archive.org/web/20230131041653/https://staroftheseastcharles.org/bulletins-1"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://staroftheseastcharles.org/start-of-the-sea-calendar",
+    "capture": "2023-01-31",
+    "archive_url": "https://web.archive.org/web/20230131042033/https://staroftheseastcharles.org/start-of-the-sea-calendar"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://staroftheseastcharles.org/st-charles-calendar",
+    "capture": "2023-01-31",
+    "archive_url": "https://web.archive.org/web/20230131031244/https://staroftheseastcharles.org/st-charles-calendar"
+   },
+   {
+    "kind": "contact",
+    "original": "https://staroftheseastcharles.org/contact-us",
+    "capture": "2023-01-31",
+    "archive_url": "https://web.archive.org/web/20230131030516/https://staroftheseastcharles.org/contact-us"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review.",
+  "grade": {
+   "rule": "wayback-verified-2026-11-01",
+   "template": "ecatholic",
+   "trusted_template": false,
+   "has_sunday": true,
+   "groups": 3,
+   "verified": false,
+   "capture_date": "2025-04-24",
+   "applied": false
+  }
  }
 }
