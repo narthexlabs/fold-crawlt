@@ -3,20 +3,26 @@
  "diocese": "byzantine-catholic-eparchy-of-passaic",
  "matched_church_ids": [
   "byzantine-catholic-eparchy-of-passaic:Blessed Virgin Mary Byzantine Catholic Church ( www )",
-  "byzantine-catholic-eparchy-of-passaic:St. Michael the Archangel ( www )"
+  "byzantine-catholic-eparchy-of-passaic:St. Michael the Archangel ( www )",
+  "st-michael-the-archangel-byzantine-mont-clare-pa"
  ],
  "matched": {
   "directory": [
    "byzantine-catholic-eparchy-of-passaic:Blessed Virgin Mary Byzantine Catholic Church ( www )",
    "byzantine-catholic-eparchy-of-passaic:St. Michael the Archangel ( www )"
   ],
-  "discovermass": []
+  "discovermass": [
+   "st-michael-the-archangel-byzantine-mont-clare-pa"
+  ]
  },
  "names": [
   "Blessed Virgin Mary Byzantine Catholic Church ( www )",
-  "St. Michael the Archangel ( www )"
+  "St. Michael the Archangel ( www )",
+  "St. Michael the Archangel (Byzantine)"
  ],
- "cities": [],
+ "cities": [
+  "Mont Clare"
+ ],
  "home_url": "https://stmichaelbyzantine.org/",
  "final_url": "https://stmichaelbyzantine.org/",
  "crawl_status": "ok",
@@ -70,6 +76,18 @@
    "url": "https://stmichaelbyzantine.org/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stmichaelbyzantine.org/reconciliation/",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stmichaelbyzantine.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -148,7 +166,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:37:12+00:00",
+    "fetched_at": "2026-11-02T04:55:45+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -165,7 +183,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:37:13+00:00",
+    "fetched_at": "2026-11-02T04:55:47+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -191,11 +209,24 @@
   {
    "kind": "mass",
    "day": "Saturday",
-   "time": "16:00",
+   "time": "15:00",
    "language": null,
-   "raw": "Divine Liturgy (Mass) Times:: Saturday (Coatesville) – 4:00pm",
-   "source_url": "https://stmichaelbyzantine.org/liturgy/",
-   "fetched_at": "2026-11-01T17:21:33+00:00",
+   "raw": "Divine Liturgy (Mass) is celebrated on Saturday at 3:00 pm",
+   "source_url": "https://stmichaelbyzantine.org/",
+   "fetched_at": "2026-11-01T17:21:32+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "08:30",
+   "language": null,
+   "raw": "Rosary / Confessions: 8:30am",
+   "source_url": "https://stmichaelbyzantine.org/",
+   "fetched_at": "2026-11-01T17:21:32+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -206,7 +237,20 @@
    "day": "Sunday",
    "time": "09:00",
    "language": null,
-   "raw": "Divine Liturgy (Mass) Times:: Sunday (Mont Clare) – 9:00am",
+   "raw": "Divine Liturgy (Mass): 9:00am",
+   "source_url": "https://stmichaelbyzantine.org/",
+   "fetched_at": "2026-11-01T17:21:32+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "16:00",
+   "language": null,
+   "raw": "Divine Liturgy (Mass) Times:: Saturday (Coatesville) – 4:00pm",
    "source_url": "https://stmichaelbyzantine.org/liturgy/",
    "fetched_at": "2026-11-01T17:21:33+00:00",
    "needs_review": false,
@@ -231,9 +275,19 @@
  ],
  "source_url": "https://stmichaelbyzantine.org/",
  "fetched_at": "2026-11-01T17:21:40+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:48:01+00:00",
+  "requests": 2,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -247,16 +301,23 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 6
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "is celebrated every Sunday from 8:30-8:50 a.m. and by appointment. To schedule a time, please call Fr. Andrew, .",
+   "phrase": "by appointment",
+   "source_url": "https://stmichaelbyzantine.org/liturgy/",
+   "fetched_at": "2026-11-01T17:21:33+00:00"
+  }
+ ],
  "has_sunday": true,
- "schedule_dropped": {
-  "prose": 1
- },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
