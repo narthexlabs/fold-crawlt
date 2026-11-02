@@ -21,32 +21,130 @@
  ],
  "home_url": "https://stclarestfrancisparish.org/",
  "final_url": "https://stclarestfrancisparish.org/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "crawl_status": "wayback-2025-10-05",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
    "url": "https://stclarestfrancisparish.org/",
-   "status": 403,
-   "class": "challenge"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stclarestfrancisparish.org/mass-times",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stclarestfrancisparish.org/confession-times",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "ministries",
+   "url": "https://stclarestfrancisparish.org/youth-faith-formation-ccd",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://stclarestfrancisparish.org/church-bulletins",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "calendar",
+   "url": "https://stclarestfrancisparish.org/news",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "contact",
+   "url": "https://stclarestfrancisparish.org/contact-us",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
+ "template": "ecatholic-fastpath",
  "groups": [],
  "calendar_feeds": [],
  "events": [],
  "social": {},
- "bulletin": null,
+ "bulletin": {
+  "url": "https://stclarestfrancisparish.org/church-bulletins",
+  "date": null,
+  "kind": "page",
+  "text": "Church Bulletins",
+  "source_url": "https://stclarestfrancisparish.org/"
+ },
  "schedule_rows": [],
  "source_url": "https://stclarestfrancisparish.org/",
- "fetched_at": "2026-11-01T01:57:14+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-02T03:05:59+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "has_sunday": false,
+ "groups_dropped": {},
+ "office_contact": {
+  "email": null,
+  "phone": null,
+  "address": "1027 Rhinelander Ave., Bronx, NY 10462",
+  "source_url": "https://stclarestfrancisparish.org/",
+  "sources": {
+   "address": "https://stclarestfrancisparish.org/"
+  },
+  "fetched_at": "2025-10-05T21:49:30+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2025-10-05",
+  "capture_age_days": 393,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://stclarestfrancisparish.org/",
+    "capture": "2025-10-05",
+    "archive_url": "https://web.archive.org/web/20251005214930/https://stclarestfrancisparish.org/"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review.",
+  "grade": {
+   "rule": "wayback-verified-2026-11-01",
+   "template": "ecatholic",
+   "trusted_template": false,
+   "has_sunday": false,
+   "groups": 0,
+   "verified": false,
+   "capture_date": "2025-10-05",
+   "applied": false
+  }
  }
 }
