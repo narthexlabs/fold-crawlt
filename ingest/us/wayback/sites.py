@@ -112,6 +112,24 @@ def load_state() -> dict:
     return json.loads(STATE.read_text()) if STATE.exists() else {}
 
 
+def load_done() -> dict:
+    """Union of EVERY sites_state*.json (all shard splits, past and present, plus the laptop run): what any runner ever
+    finished. Targets are skipped against this, so changing the shard count (3 -> 6) never re-tries finished sites.
+    Per key, a 'written' result wins; otherwise the latest checked_at."""
+    done: dict = {}
+    for f in sorted(OUTW.glob("sites_state*.json")):
+        try:
+            st = json.loads(f.read_text())
+        except ValueError:
+            continue
+        for k, v in st.items():
+            old = done.get(k)
+            if (old is None or (v.get("result") == "written" and old.get("result") != "written")
+                    or (old.get("result") != "written" and str(v.get("checked_at", "")) > str(old.get("checked_at", "")))):
+                done[k] = v
+    return done
+
+
 def save_state(st: dict) -> None:
     OUTW.mkdir(parents=True, exist_ok=True)
     STATE.write_text(json.dumps(st, indent=1, ensure_ascii=False, sort_keys=True) + "\n")
@@ -132,8 +150,8 @@ def list_targets(only: set[str], retry: bool, state: dict) -> list[Path]:
         if not isinstance(d, dict) or not st:
             continue
         sid = f"{f.parent.name}/{f.stem}"
-        if not only and not retry and sid in state:
-            continue
+        if not only and sid in state and (not retry or state[sid].get("result") == "written"):
+            continue                      # --retry re-tries only results that are not 'written'
         if not _in_shard(sid):
             continue
         if only:
@@ -217,7 +235,7 @@ def run(arch: WB.Archive, minutes: float, only=(), limit=0, retry=False, on_batc
     t0 = time.time()
     today = today or datetime.now(timezone.utc).date().isoformat()
     state = load_state()
-    todo = list_targets(set(only), retry, state)
+    todo = list_targets(set(only), retry, load_done())   # skip what ANY shard file finished; write only this shard's file
     print(f"B: {len(todo)} sites to try (budget {minutes:.0f} min)", flush=True)
     n = 0
     for f in todo:

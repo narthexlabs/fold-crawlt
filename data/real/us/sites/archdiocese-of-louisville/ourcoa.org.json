@@ -17,23 +17,35 @@
   "Shelbyville"
  ],
  "home_url": "http://www.ourcoa.org/",
- "final_url": "https://www.ourcoa.org/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "ok",
+ "final_url": "https://ourcoa.org/",
+ "crawl_status": "wayback-2026-07-10",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
-   "url": "https://www.ourcoa.org/",
-   "status": 403,
-   "class": "challenge"
+   "url": "https://ourcoa.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://ourcoa.org/article/david-gandy-on-fatherhood-supermodel-s-honest-parenting-confessions",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "contact",
+   "url": "https://ourcoa.org/page/contacts",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
   "cms": "unknown",
   "evidence": []
  },
- "template": "none",
+ "template": "generic-html:unknown",
  "groups": [],
  "calendar_feeds": [],
  "events": [],
@@ -41,9 +53,56 @@
  "bulletin": null,
  "schedule_rows": [],
  "source_url": "http://www.ourcoa.org/",
- "fetched_at": "2026-11-01T17:21:55+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-02T00:42:11+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": true,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "has_sunday": false,
+ "schedule_images": [
+  {
+   "url": "https://ts2.mm.bing.net/th?q=David Gandy on Fatherhood: Supermodel's Honest Parenting Confessions",
+   "alt": "",
+   "page": "https://ourcoa.org/"
+  }
+ ],
+ "schedule_note": "schedule appears to be an image; times not read (needs_review)",
+ "groups_dropped": {},
+ "wayback": {
+  "capture_date": "2026-07-10",
+  "capture_age_days": 115,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://ourcoa.org/",
+    "capture": "2026-07-10",
+    "archive_url": "https://web.archive.org/web/20260710111344/https://ourcoa.org/"
+   },
+   {
+    "kind": "contact",
+    "original": "https://ourcoa.org/page/contacts",
+    "capture": "2026-07-10",
+    "archive_url": "https://web.archive.org/web/20260710103514/https://ourcoa.org/page/contacts"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }

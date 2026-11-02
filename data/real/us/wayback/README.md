@@ -4,9 +4,9 @@ What the live crawl could not read (bot challenge, 403, dead site), read from th
 web.archive.org is unreachable from the project sandbox but reachable from GitHub runners: the `wayback` job in
 `.github/workflows/crawl.yml` runs `ingest/us/wayback/run.py`.
 
-**Counts (2026-11-01).**
-- A. Diocese directories: 80 tried; results {'written': 38, 'no-list': 28, 'error': 9, 'cdx-failed': 5}; written 38 sees, 1731 parishes, 1619 with a website.
-- B. Parish sites: 324 tried; results {'written': 231, 'cdx-failed': 65, 'no-capture': 13, 'no-usable-capture': 15}; written 231 sites: 1655 groups, 212 sites with a bulletin link, 2718 schedule rows (all needs_review).
+**Counts (2026-11-02).**
+- A. Diocese directories: 90 tried; results {'written': 41, 'no-list': 34, 'error': 9, 'cdx-failed': 5, 'no-capture': 1}; written 41 sees, 1938 parishes, 1812 with a website.
+- B. Parish sites: 429 tried; results {'written': 306, 'cdx-failed': 87, 'no-capture': 15, 'no-usable-capture': 21}; written 306 sites: 2068 groups, 281 sites with a bulletin link, 3561 schedule rows (all needs_review).
 
 ## What is written
 
@@ -40,3 +40,26 @@ merged parishes and miss new ones; websites may have moved. Treat as a lead list
 
 Run again (state is per item): `python3 -u ingest/us/wayback/run.py --minutes 110 --git` (or Actions -> National crawl ->
 job `wayback`). Parts: `--only-a` (directories), `--only-b` (sites); `dioceses.py --only slug --retry`, `sites.py --only domain --retry`.
+
+## Laptop run (part B from Matthew's laptop, 2026-11-01)
+
+Same targets and output as part B, fetched from Matthew's laptop (web.archive.org is unreachable from the sandbox).
+- Targets: `python3 -I ingest/us/wayback/laptop_targets.py targets.json` (challenge / blocked_403 / blocked_429 site files with
+  no wayback-* status, not in any `sites_state*.json`, not reopened by the laptop live pass). Order: sees in the coverage
+  ledger's `blocked` table, most parishes known minus verified first; then California `ca-*`; then the rest. 4,964 at build.
+- Laptop: `C:\Users\Matthew\Desktop\New folder\wayback-us\` (`$HOME/mnt/New folder/wayback-us/` in the device shell):
+  `wayback_us_run.py` (= `ingest/us/wayback/laptop_run.py`), `repo/` (copies of wblib.py, sites.py, fetch_site.py),
+  `targets.json`, `progress.json` (per-site state; `done` = finished), `raw/<diocese>/<key>__cdx.json` + `raw/<diocese>/<key>/`
+  (manifest + gzipped captures), `out/batch_NN.zip`. The laptop fetches only (stdlib; one request at a time, 4.1 s apart:
+  the archive refused connections at 1.1 s; 429 / refused connection -> persisted cool-down).
+- Sandbox: `python3 -I ingest/us/wayback/laptop_build.py --zip <batch_NN.zip>` unpacks into `data/raw/us/wayback/laptop/`
+  and replays `sites.one()` on the caches with no network, so records are identical in shape to the runner's
+  (`crawl_status "wayback-<date>"`, schedule rows `needs_review`, never over an `ok` read). State: `sites_state.laptop.json`.
+
+**Resume** (device shell; each call <= 170 s; repeat; if it prints COOLDOWN wait that long):
+
+    cd "$HOME/mnt/New folder/wayback-us" && python3 wayback_us_run.py run --budget 165
+
+Every ~150 finished sites: `python3 wayback_us_run.py zip --min 150` (or `--all`), stage `out/batch_NN.zip` back, then
+`python3 -I ingest/us/wayback/laptop_build.py --zip "/mnt/user-data/uploads/New folder/wayback-us/out/batch_NN.zip"`, commit
+`data/real/us/sites/**` changes + `sites_state.laptop.json`. Status: `python3 wayback_us_run.py status`.

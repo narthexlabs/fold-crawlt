@@ -81,6 +81,24 @@ def load_state() -> dict:
     return json.loads(STATE.read_text()) if STATE.exists() else {}
 
 
+def load_done() -> dict:
+    """Union of EVERY dioceses_state*.json (all shard splits, past and present): what any runner ever finished. Targets are
+    skipped against this, so changing the shard count (3 -> 6) never re-tries finished sees. Per key, a 'written' result
+    wins; otherwise the latest checked_at."""
+    done: dict = {}
+    for f in sorted(OUTW.glob("dioceses_state*.json")):
+        try:
+            st = json.loads(f.read_text())
+        except ValueError:
+            continue
+        for k, v in st.items():
+            old = done.get(k)
+            if (old is None or (v.get("result") == "written" and old.get("result") != "written")
+                    or (old.get("result") != "written" and str(v.get("checked_at", "")) > str(old.get("checked_at", "")))):
+                done[k] = v
+    return done
+
+
 def save_state(st: dict) -> None:
     OUTW.mkdir(parents=True, exist_ok=True)
     STATE.write_text(json.dumps(st, indent=1, ensure_ascii=False, sort_keys=True) + "\n")
@@ -139,7 +157,7 @@ def one(slug: str, see: dict, probe: dict, arch: WB.Archive, minutes: float) -> 
 
 def targets(only: set[str], retry: bool):
     sees, st = RN.load()
-    state = load_state()
+    state = load_done()                   # skip what ANY shard file finished; run() writes only this shard's file
     todo = []
     order = {"challenge": 0, "html_unknown": 1, "blocked": 2, "dead": 3}
     for slug, p in sorted(st.items(), key=lambda kv: (order.get(kv[1].get("status"), 9), kv[0])):
@@ -150,9 +168,10 @@ def targets(only: set[str], retry: bool):
         ex = DL.existing(slug)
         if ex and not str(ex.get("source_label", "")).startswith("wayback-"):
             continue
-        if not only and not retry and slug in state and state[slug].get("result") in (
-                "written", "no-capture", "no-list", "rejected-not-a-parish-list", "kept-live-list"):
-            continue
+        r = state.get(slug, {}).get("result")
+        if not only and (r == "written" if retry else r in (
+                "written", "no-capture", "no-list", "rejected-not-a-parish-list", "kept-live-list")):
+            continue                      # --retry re-tries only results that are not 'written'
         todo.append((slug, sees[slug], p))
     return todo
 
