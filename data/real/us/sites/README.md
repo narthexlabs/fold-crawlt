@@ -241,7 +241,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-jackson | 13 | 13 | 5 | 6 | 0 | 2 | 0 |
 | unassigned-xx | 13 | 1 | 0 | 0 | 0 | 1 | 0 |
 | diocese-of-dodge-city | 12 | 12 | 9 | 1 | 0 | 2 | 0 |
-| diocese-of-lubbock | 12 | 12 | 4 | 3 | 0 | 3 | 2 |
+| diocese-of-lubbock | 12 | 13 | 4 | 3 | 0 | 4 | 2 |
 | diocese-of-fairbanks | 9 | 9 | 3 | 4 | 0 | 2 | 0 |
 | diocese-of-st-thomas-vi | 9 | 0 | 0 | 0 | 0 | 0 | 0 |
 | diocese-of-lake-charles | 9 | 9 | 4 | 3 | 1 | 1 | 0 |
@@ -286,5 +286,5 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-01T23:33:52+00:00: fetched {'ok': 4, 'done': 4, 'halted_egress': 0}; parsed 1 dioceses
 - 2026-11-02T00:05:44+00:00: fetched {'robots_disallowed': 1, 'done': 59, 'dns': 4, 'conn_error': 1, 'ssl_error': 3, 'challenge': 7, 'not_found': 1, 'ok': 44, 'cut': 2, 'halted_egress': 0}; parsed 8 dioceses
 - 2026-11-02T00:57:03+00:00: fetched {'ok': 2, 'done': 2, 'halted_egress': 0}; parsed 1 dioceses
-- 2026-11-02T01:56:04+00:00: fetched {'dns': 1, 'done': 1, 'halted_egress': 0}; parsed 1 dioceses
+- 2026-11-02T01:56:02+00:00: fetched {'dns': 11, 'done': 24, 'ssl_error': 5, 'parked': 1, 'not_found': 1, 'challenge': 1, 'ok': 5, 'halted_egress': 0}; parsed 2 dioceses
 - 2026-11-02T01:56:40+00:00: fetched {}; parsed 0 dioceses
