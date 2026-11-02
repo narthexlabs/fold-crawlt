@@ -31,7 +31,7 @@
  "home_url": "http://www.christthekingafc.org/",
  "final_url": "https://www.christthekingafc.com/",
  "crawl_status": "ok",
- "crawl_env": "sandbox",
+ "crawl_env": "runner-rendered",
  "robots_note": "ok",
  "pages": [
   {
@@ -53,6 +53,12 @@
    "class": "ok"
   },
   {
+   "category": "confession",
+   "url": "https://www.christthekingafc.com/sacraments",
+   "status": 200,
+   "class": "ok"
+  },
+  {
    "category": "bulletin",
    "url": "https://www.christthekingafc.com/bulletin91c870eb",
    "status": 200,
@@ -67,12 +73,6 @@
   {
    "category": "contact",
    "url": "https://www.christthekingafc.com/contact",
-   "status": 200,
-   "class": "ok"
-  },
-  {
-   "category": "confession",
-   "url": "https://www.christthekingafc.com/sacraments",
    "status": 200,
    "class": "ok"
   }
@@ -97,7 +97,7 @@
    "note": "Google Calendar public feed (website-builder widget)",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-02T04:55:34+00:00",
+    "fetched_at": "2026-11-02T07:20:19+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -115,7 +115,7 @@
    "feed_key": "85a2a69a46b6",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-02T04:55:36+00:00",
+    "fetched_at": "2026-11-02T07:20:20+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -142,7 +142,7 @@
    "language": null,
    "raw": "Mass Times: 8:15am",
    "source_url": "https://www.christthekingafc.com/",
-   "fetched_at": "2026-11-02T01:56:05+00:00",
+   "fetched_at": "2026-11-02T07:16:07+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -155,7 +155,7 @@
    "language": null,
    "raw": "Mass Times: Saturday: 4:00 P.M.",
    "source_url": "https://www.christthekingafc.com/mass-time",
-   "fetched_at": "2026-11-02T01:56:05+00:00",
+   "fetched_at": "2026-11-02T07:16:08+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -168,7 +168,7 @@
    "language": null,
    "raw": "Mass Times: Sunday: 8:15 A.M.",
    "source_url": "https://www.christthekingafc.com/mass-time",
-   "fetched_at": "2026-11-02T01:56:05+00:00",
+   "fetched_at": "2026-11-02T07:16:08+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -181,7 +181,7 @@
    "language": null,
    "raw": "Mass Times: Sunday: 8:30 A.M.",
    "source_url": "https://www.christthekingafc.com/mass-time",
-   "fetched_at": "2026-11-02T01:56:05+00:00",
+   "fetched_at": "2026-11-02T07:16:08+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -194,7 +194,7 @@
    "language": null,
    "raw": "Mass Times: Sunday: 10:00 A.M.",
    "source_url": "https://www.christthekingafc.com/mass-time",
-   "fetched_at": "2026-11-02T01:56:05+00:00",
+   "fetched_at": "2026-11-02T07:16:08+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -202,20 +202,8 @@
   }
  ],
  "source_url": "http://www.christthekingafc.org/",
- "fetched_at": "2026-11-02T01:56:09+00:00",
+ "fetched_at": "2026-11-02T07:16:19+00:00",
  "redirected_off_host": "christthekingafc.com",
- "topup": {
-  "kinds": [
-   "adoration",
-   "confession",
-   "liturgy"
-  ],
-  "at": "2026-11-02T04:41:58+00:00",
-  "requests": 1,
-  "found": [
-   "confession"
-  ]
- },
  "schedule_template": {
   "template": "generic_strict",
   "version": "ca-sites/3",
@@ -258,10 +246,11 @@
   "sources": {
    "phone": "https://www.christthekingafc.com/"
   },
-  "fetched_at": "2026-11-02T01:56:05+00:00",
+  "fetched_at": "2026-11-02T07:16:07+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
- }
+ },
+ "fetch_mode": "rendered"
 }
