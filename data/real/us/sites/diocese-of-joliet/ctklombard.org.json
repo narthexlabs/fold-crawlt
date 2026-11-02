@@ -75,6 +75,12 @@
    "url": "https://www.ctklombard.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.ctklombard.org/penance",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -244,7 +250,7 @@
    "feed_key": "e1e59d43ff01",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:37:59+00:00",
+    "fetched_at": "2026-11-02T04:55:26+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -760,9 +766,21 @@
  ],
  "source_url": "https://www.ctklombard.org/",
  "fetched_at": "2026-11-01T07:28:22+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:54+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -776,21 +794,31 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
-  "generic_rows": 54
+  "trusted_kinds": [],
+  "generic_rows": 55
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Sacrament of Reconciliation available on Saturdays from 3pm-3:30pm or by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://www.ctklombard.org/",
+   "fetched_at": "2026-11-01T07:28:08+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "relative_time": 1,
-  "no_day": 26,
-  "not_a_service": 12,
+  "no_day": 28,
+  "not_a_service": 11,
   "other_location": 6,
   "skipped_section": 7,
   "no_kind": 1
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

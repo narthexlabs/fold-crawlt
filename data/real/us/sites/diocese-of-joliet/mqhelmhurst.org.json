@@ -60,6 +60,12 @@
    "url": "https://www.mqhelmhurst.org/blank-4",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.mqhelmhurst.org/adoration",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -374,7 +380,7 @@
    "kind": "mass",
    "day": "Sunday",
    "time": "10:00",
-   "language": null,
+   "language": "Polish",
    "raw": "Weekend Masses: Sunday 8:30 am, 10:00 am & 11:30 am (Polish)",
    "source_url": "https://www.mqhelmhurst.org/",
    "fetched_at": "2026-11-01T07:28:13+00:00",
@@ -495,9 +501,19 @@
  ],
  "source_url": "https://mqhelmhurst.org/",
  "fetched_at": "2026-11-01T07:28:25+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:55+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "wix",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -511,8 +527,18 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 9
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Reconciliation takes place Saturday, 9:00AM, or by appointment. Advent & Lenten communal reconciliation schedules will be announced. Children receive First Reconciliation in 2nd grade.",
+   "phrase": "by appointment",
+   "source_url": "https://www.mqhelmhurst.org/about-4",
+   "fetched_at": "2026-11-01T07:28:15+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "not_a_service": 1,
@@ -524,8 +550,8 @@
   "sacrament_prep": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

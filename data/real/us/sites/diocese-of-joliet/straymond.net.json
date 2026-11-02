@@ -88,6 +88,12 @@
    "url": "https://www.straymond.net/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.straymond.net/penance",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -204,7 +210,7 @@
    "feed_key": "e9e19098e802",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:40:05+00:00",
+    "fetched_at": "2026-11-02T04:58:06+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -221,7 +227,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:40:06+00:00",
+    "fetched_at": "2026-11-02T04:58:07+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -238,7 +244,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:40:08+00:00",
+    "fetched_at": "2026-11-02T04:58:08+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -255,7 +261,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:40:09+00:00",
+    "fetched_at": "2026-11-02T04:58:10+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -272,7 +278,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:40:10+00:00",
+    "fetched_at": "2026-11-02T04:58:11+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -289,7 +295,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:40:12+00:00",
+    "fetched_at": "2026-11-02T04:58:12+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -306,7 +312,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:40:14+00:00",
+    "fetched_at": "2026-11-02T04:58:14+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -323,7 +329,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:40:15+00:00",
+    "fetched_at": "2026-11-02T04:58:16+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -340,7 +346,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:40:16+00:00",
+    "fetched_at": "2026-11-02T04:58:17+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -357,7 +363,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:40:18+00:00",
+    "fetched_at": "2026-11-02T04:58:18+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -374,7 +380,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:40:19+00:00",
+    "fetched_at": "2026-11-02T04:58:19+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -586,9 +592,21 @@
  ],
  "source_url": "https://www.straymond.net/",
  "fetched_at": "2026-11-01T07:28:29+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:58+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -602,20 +620,30 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 8
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Saturdays at 3:00pm or by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://www.straymond.net/",
+   "fetched_at": "2026-11-01T07:28:18+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "skipped_section": 6,
   "dated_line": 1,
-  "other_location": 1
+  "other_location": 2
  },
  "groups_dropped": {
   "label_not_group": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

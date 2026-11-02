@@ -74,6 +74,12 @@
    "url": "https://www.stpatrickwiltoncenter.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stpatrickwiltoncenter.org/penance",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -315,7 +321,7 @@
    "feed_key": "85a2a69a46b6",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:39:57+00:00",
+    "fetched_at": "2026-11-02T04:57:56+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -351,9 +357,21 @@
  ],
  "source_url": "https://www.stpatrickwiltoncenter.org/",
  "fetched_at": "2026-11-01T07:28:27+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:57+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -367,15 +385,25 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 0
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "By Appointment",
+   "phrase": "By Appointment",
+   "source_url": "https://www.stpatrickwiltoncenter.org/",
+   "fetched_at": "2026-11-01T07:28:18+00:00"
+  }
+ ],
  "has_sunday": true,
  "groups_dropped": {
   "sentence": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
