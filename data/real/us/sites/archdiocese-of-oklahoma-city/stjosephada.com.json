@@ -39,6 +39,18 @@
    "url": "https://stjosephada.com/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stjosephada.com/reconciliation/",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stjosephada.com/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -169,13 +181,87 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Monday",
+   "time": "18:00",
+   "language": null,
+   "raw": "Confessions: Monday: after 6:00 p.m. Mass SFX",
+   "source_url": "https://stjosephada.com/",
+   "fetched_at": "2026-11-01T07:19:43+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "Confessions: Monday: after 6:00 p.m. Mass SFX",
+   "relative_resolved": true
+  },
+  {
+   "kind": "confession",
+   "day": "Tuesday",
+   "time": "12:00",
+   "language": null,
+   "raw": "Confessions: Tuesday: after noon Mass SJA",
+   "source_url": "https://stjosephada.com/",
+   "fetched_at": "2026-11-01T07:19:43+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "Confessions: Tuesday: after noon Mass SJA",
+   "relative_resolved": true
+  },
+  {
+   "kind": "confession",
+   "day": "Wednesday",
+   "time": "12:00",
+   "language": null,
+   "raw": "Confessions: Wednesday: after noon Mass SJA",
+   "source_url": "https://stjosephada.com/",
+   "fetched_at": "2026-11-01T07:19:43+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "Confessions: Wednesday: after noon Mass SJA",
+   "relative_resolved": true
+  },
+  {
+   "kind": "confession",
+   "day": "Thursday",
+   "time": "12:00",
+   "language": null,
+   "raw": "Confessions: Thursday: after noon Mass SJA",
+   "source_url": "https://stjosephada.com/",
+   "fetched_at": "2026-11-01T07:19:43+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "Confessions: Thursday: after noon Mass SJA",
+   "relative_resolved": false
   }
  ],
  "source_url": "https://stjosephada.com/",
  "fetched_at": "2026-11-01T07:19:46+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:48:00+00:00",
+  "requests": 2,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -189,20 +275,27 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 8
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Confessions may also be made by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://stjosephada.com/",
+   "fetched_at": "2026-11-01T07:19:43+00:00"
+  }
+ ],
  "has_sunday": true,
- "schedule_dropped": {
-  "relative_time": 4
- },
  "groups_dropped": {
   "noise": 2,
   "sacrament_prep": 1,
   "fragment": 2
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

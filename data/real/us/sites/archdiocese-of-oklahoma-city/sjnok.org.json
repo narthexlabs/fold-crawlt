@@ -87,6 +87,12 @@
    "url": "https://www.sjnok.org/contact-school",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.sjnok.org/reconciliation",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -363,7 +369,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:35:54+00:00",
+    "fetched_at": "2026-11-02T04:54:38+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -528,13 +534,38 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:30",
+   "language": null,
+   "raw": "Our Confessionals are located in Assumption Chapel. The Sacr: Saturdays at 3:30PM",
+   "source_url": "https://www.sjnok.org/reconciliation",
+   "fetched_at": "2026-11-02T04:47:56+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
   }
  ],
  "source_url": "https://sjnok.org/",
  "fetched_at": "2026-11-01T07:19:52+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:47:57+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -548,16 +579,26 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
-  "generic_rows": 11
+  "trusted_kinds": [],
+  "generic_rows": 12
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "By Appointment",
+   "phrase": "By Appointment",
+   "source_url": "https://www.sjnok.org/reconciliation",
+   "fetched_at": "2026-11-02T04:47:56+00:00"
+  }
+ ],
  "has_sunday": true,
  "groups_dropped": {
   "noise": 1,
   "unmatched": 2
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
