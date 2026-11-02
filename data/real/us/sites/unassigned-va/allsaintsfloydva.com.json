@@ -19,7 +19,7 @@
  "home_url": "https://www.allsaintsfloydva.com/",
  "final_url": "https://www.allsaintsfloydva.com/",
  "crawl_status": "ok",
- "crawl_env": "sandbox",
+ "crawl_env": "runner-rendered",
  "robots_note": "ok",
  "pages": [
   {
@@ -65,47 +65,54 @@
    "language": null,
    "raw": "Saturday (Vigil) - 5:00pm",
    "source_url": "https://www.allsaintsfloydva.com/",
-   "fetched_at": "2026-11-01T22:15:42+00:00",
+   "fetched_at": "2026-11-02T07:17:51+00:00",
    "needs_review": false,
-   "review_reason": "schedule_box"
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wix"
   },
   {
    "kind": "mass",
    "day": "Wednesday",
    "time": "18:00",
    "language": null,
-   "raw": "Wednesday - 6:00pm",
+   "raw": "Holy Sacrifice of the Mass: Wednesday - 6:00pm",
    "source_url": "https://www.allsaintsfloydva.com/",
-   "fetched_at": "2026-11-01T22:15:42+00:00",
+   "fetched_at": "2026-11-02T07:17:51+00:00",
    "needs_review": false,
-   "review_reason": "schedule_box"
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "16:15-16:45",
+   "language": null,
+   "raw": "Reconciliation: Saturday 4:15-4:45pm",
+   "source_url": "https://www.allsaintsfloydva.com/",
+   "fetched_at": "2026-11-02T07:17:51+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix"
   }
  ],
  "source_url": "https://www.allsaintsfloydva.com/",
- "fetched_at": "2026-11-01T22:15:46+00:00",
- "topup": {
-  "kinds": [
-   "adoration",
-   "confession",
-   "liturgy"
-  ],
-  "at": "2026-11-02T04:42:10+00:00",
-  "requests": 0,
-  "found": []
- },
+ "fetched_at": "2026-11-02T07:17:58+00:00",
  "schedule_template": {
   "template": "wix",
   "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
-    "has_sunday": false,
+    "has_sunday": true,
     "hours_ok": true,
     "counts_ok": true,
     "sunday_not_copied": true,
     "no_daily_on_sunday": true,
     "mostly_high": false
    },
-   "score": "low"
+   "score": "medium"
   },
   "passed_bar": false,
   "trusted_candidate": false,
@@ -113,9 +120,6 @@
   "generic_rows": 2
  },
  "has_sunday": true,
- "schedule_dropped": {
-  "box_rows_added": 2
- },
  "groups_dropped": {},
  "event_counts": {
   "window_start": "2026-11-02",
@@ -136,10 +140,11 @@
    "phone": "https://www.allsaintsfloydva.com/",
    "address": "https://www.allsaintsfloydva.com/"
   },
-  "fetched_at": "2026-11-01T22:15:42+00:00",
+  "fetched_at": "2026-11-02T07:17:51+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
- }
+ },
+ "fetch_mode": "rendered"
 }
