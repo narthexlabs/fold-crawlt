@@ -73,6 +73,12 @@
    "url": "https://www.stjp2.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stjp2.org/reconciliation",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -477,6 +483,26 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "social_shared_links_removed": [
+  "https://www.facebook.com/WixStudio"
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:01+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "info@stjp2.org",
   "phone": "(720) 319-8050",
@@ -489,11 +515,5 @@
   },
   "fetched_at": "2026-11-01T05:11:42+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
- },
- "social_shared_links_removed": [
-  "https://www.facebook.com/WixStudio"
- ]
+ }
 }

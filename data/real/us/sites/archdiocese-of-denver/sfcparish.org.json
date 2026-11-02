@@ -79,6 +79,18 @@
    "url": "https://www.sfcparish.org/bulletin",
    "status": 404,
    "class": "not_found"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.sfcparish.org/sacraments-information",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.sfcparish.org/eucharist",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -789,6 +801,48 @@
    "review_reason": null,
    "confidence": "high",
    "template": "squarespace"
+  },
+  {
+   "kind": "adoration",
+   "day": "Sunday",
+   "time": "12:30",
+   "language": null,
+   "raw": "Exposition of the Blessed Sacrament:: Sunday: 12:30pm following Mass through Saturday 7:00am",
+   "source_url": "https://www.sfcparish.org/eucharist",
+   "fetched_at": "2026-11-02T04:41:51+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "07:00",
+   "language": null,
+   "raw": "Sunday: 12:30pm following Mass through Saturday 7:00am",
+   "source_url": "https://www.sfcparish.org/eucharist",
+   "fetched_at": "2026-11-02T04:41:51+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "squarespace",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "19:30",
+   "language": null,
+   "raw": "Tuesday6: 30pm to 7:30pm Adoration followed by Benediction in the church",
+   "source_url": "https://www.sfcparish.org/eucharist",
+   "fetched_at": "2026-11-02T04:41:51+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "squarespace",
+   "topup": true
   }
  ],
  "source_url": "https://www.sfcparish.org/",
@@ -826,6 +880,36 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "social_shared_links_removed": [
+  "https://www.facebook.com/2008"
+ ],
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "The sacrament of reconciliation is offered at Cabrini Tuesday evenings from 6:30pm-7:30pm and Saturday mornings from 8:00-9:30am, or by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://www.sfcparish.org/sacraments-information",
+   "fetched_at": "2026-11-02T04:41:50+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:54+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 3,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(303) 979-7688",
@@ -837,12 +921,5 @@
   },
   "fetched_at": "2026-11-01T05:11:30+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()",
-  "intentions_withheld": 2
- },
- "social_shared_links_removed": [
-  "https://www.facebook.com/2008"
- ]
+ }
 }

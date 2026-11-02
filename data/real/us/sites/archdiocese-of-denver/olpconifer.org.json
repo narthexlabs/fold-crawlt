@@ -70,6 +70,12 @@
    "url": "https://www.olpconifer.org/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://www.olpconifer.org/liturgical",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -382,6 +388,22 @@
    "review_reason": null,
    "confidence": "high",
    "template": "wix"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "18:00",
+   "language": null,
+   "raw": "[St. Elizabeth - Mission-Buffalo Creek (Our Lady of the Pines Parish, Conifer)] Eucharistic Adoration: Every Wednesday after the 6 pm Mass",
+   "source_url": "https://www.olpconifer.org/liturgical",
+   "fetched_at": "2026-11-02T04:42:01+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wix",
+   "relative": "after",
+   "note": "[St. Elizabeth - Mission-Buffalo Creek (Our Lady of the Pines Parish, Conifer)] Eucharistic Adoration: Every Wednesday a",
+   "topup": true
   }
  ],
  "source_url": "https://www.olpconifer.org/",
@@ -423,6 +445,24 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:02+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "office@olpconifer.org",
   "phone": "(303) 838-0338",
@@ -435,8 +475,5 @@
   },
   "fetched_at": "2026-11-01T05:11:17+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }
