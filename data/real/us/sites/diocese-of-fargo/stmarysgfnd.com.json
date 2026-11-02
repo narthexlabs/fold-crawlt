@@ -74,6 +74,18 @@
    "url": "https://www.stmarysgfnd.com/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stmarysgfnd.com/reconciliation-/-confession",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stmarysgfnd.com/eucharistic-adoration89ea7798",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -298,6 +310,50 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Wednesday",
+   "time": "18:00-18:30",
+   "language": null,
+   "raw": "Reconciliation: 6-6:30 PM Wednesdays (when RE classes)",
+   "source_url": "https://www.stmarysgfnd.com/reconciliation-/-confession",
+   "fetched_at": "2026-11-02T04:52:46+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "09:30-10:30",
+   "language": null,
+   "raw": "Reconciliation: 9:30-10:30 AM Saturdays",
+   "source_url": "https://www.stmarysgfnd.com/reconciliation-/-confession",
+   "fetched_at": "2026-11-02T04:52:46+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "First Friday of the month",
+   "time": "08:00",
+   "language": null,
+   "raw": "Eucharistic Adoration: First Fridays - immediately following 8 AM Mass",
+   "source_url": "https://www.stmarysgfnd.com/eucharistic-adoration89ea7798",
+   "fetched_at": "2026-11-02T04:52:48+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "after",
+   "note": "Eucharistic Adoration: First Fridays - immediately following 8 AM Mass",
+   "topup": true
   }
  ],
  "source_url": "https://www.stmarysgfnd.com/",
@@ -335,6 +391,33 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "or by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://www.stmarysgfnd.com/reconciliation-/-confession",
+   "fetched_at": "2026-11-02T04:52:46+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:52:48+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 3,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(701) 775-9318",
@@ -346,8 +429,5 @@
   },
   "fetched_at": "2026-11-01T09:05:04+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }
