@@ -47,8 +47,11 @@ if [ -f "$CA_RAW/blocked.json" ]; then exit 0; fi
 
 # ---------------------------------------------------------------- national (when the code is present)
 if [ -f ingest/us/media/run.py ]; then
-  echo "== National"
+  echo "== National (every diocese outside California)"
+  mkdir -p data/raw/us/youtube data/real/us/media
+  rm -f data/raw/us/youtube/blocked.json
   python3 -I -u ingest/us/media/run.py all || true
+  if [ -f data/raw/us/youtube/blocked.json ]; then cp data/raw/us/youtube/blocked.json data/real/us/media/_blocked.json; fi
   git add data/real/us/media && git commit -q -m "YouTube catalog: national (Actions $(date -u +%FT%H:%MZ))$TRAILER" || true
   push
 fi
