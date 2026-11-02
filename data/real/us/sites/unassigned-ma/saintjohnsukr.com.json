@@ -1,0 +1,143 @@
+{
+ "domain": "saintjohnsukr.com",
+ "diocese": "unassigned-ma",
+ "matched_church_ids": [
+  "brave:CT|john baptist salem|",
+  "st-john-the-baptist-ukrainian-salem-ma"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "st-john-the-baptist-ukrainian-salem-ma",
+   "brave:CT|john baptist salem|"
+  ]
+ },
+ "names": [
+  "St. John the Baptist (Ukrainian)",
+  "St John The Baptist"
+ ],
+ "cities": [
+  "Salem"
+ ],
+ "home_url": "https://saintjohnsukr.com/",
+ "final_url": "https://saintjohnsukr.com/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://saintjohnsukr.com/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://saintjohnsukr.com/parish-life/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://saintjohnsukr.com/contact/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://saintjohnsukr.com/reconciliation/",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://saintjohnsukr.com/adoration/",
+   "status": 404,
+   "class": "not_found"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-content"
+  ]
+ },
+ "template": "wordpress-rest+html",
+ "groups": [],
+ "calendar_feeds": [],
+ "events": [],
+ "social": {},
+ "bulletin": {
+  "url": "https://saintjohnsukr.com/blog/",
+  "date": null,
+  "kind": "page",
+  "text": "Bulletin",
+  "source_url": "https://saintjohnsukr.com/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": null,
+   "raw": "Divine Liturgy Times: Sundays 10 am all year",
+   "source_url": "https://saintjohnsukr.com/",
+   "fetched_at": "2026-11-02T23:28:06+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  }
+ ],
+ "source_url": "https://saintjohnsukr.com/",
+ "fetched_at": "2026-11-02T23:29:04+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/3",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "trusted_kinds": [],
+  "generic_rows": 1
+ },
+ "has_sunday": true,
+ "groups_dropped": {
+  "schedule": 1,
+  "unmatched": 1
+ },
+ "event_counts": {
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(978) 745-3151",
+  "address": "P.O. Box 206 Salem, MA 01970",
+  "source_url": "https://saintjohnsukr.com/contact/",
+  "sources": {
+   "phone": "https://saintjohnsukr.com/contact/",
+   "address": "https://saintjohnsukr.com/contact/"
+  },
+  "fetched_at": "2026-11-02T23:28:35+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}
