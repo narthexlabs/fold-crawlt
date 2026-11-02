@@ -156,30 +156,26 @@ def numbers(a, stop: float, pol, robots: dict, councils: dict, prog: dict, zips:
     st = prog.setdefault("numbers", {"next": 1, "found_new": 0, "empty": 0, "other": 0, "errors": 0, "started_at": c.now_iso()})
     known_max = max([int(k) for k in councils if k.isdigit()] or [0])
     n = errs = 0
-    while True:
-        cur = st["next"]
-        end = max(known_max, st.get("highest_seen", 0)) + 600
-        st["end"] = end
-        if cur > end:
-            st["complete_at"] = st.get("complete_at") or c.now_iso()
-            break
-        if time.time() > stop or (a.limit and n >= a.limit):
-            break
-        if str(cur) in councils:
-            st["next"] = cur + 1
-            continue
+    streak = 0   # consecutive 5xx answers: back off (10 s each, 120 s after 5 in a row) instead of pressing on
+
+    def one(cur: int) -> str:
+        """fetch council number `cur`; returns ok | empty | error | stop"""
+        nonlocal n, errs, streak
         url = NUM_API.format(n=cur)
         r = pol.get(url, accept="application/json", timeout=30, max_bytes=200000)
         n += 1
         if r["status"] != 200:
-            st["errors"] += 1
             errs += 1
             st.setdefault("error_numbers", {})[str(cur)] = r.get("class") or r.get("err") or f"http_{r['status']}"
             if r.get("class") in ("challenge", "blocked") or (errs > 30 and errs > n / 2):
                 print("stopping:", cur, r.get("class"), r.get("status"), flush=True)
-                break
-            st["next"] = cur + 1
-            continue
+                return "stop"
+            if (r["status"] or 0) >= 500:
+                streak += 1
+                time.sleep(120 if streak >= 5 else 10)
+            return "error"
+        streak = 0
+        st.get("error_numbers", {}).pop(str(cur), None)
         try:
             rows = json.loads(r["body"].decode("utf-8", "replace"))
         except Exception:
@@ -201,10 +197,37 @@ def numbers(a, stop: float, pol, robots: dict, councils: dict, prog: dict, zips:
             rec["fetched_at"] = c.now_iso()
             councils[num] = rec
             st["found_new"] += 1
+        return "ok"
+
+    # numbers that answered an error earlier are retried once per run, first
+    for k in sorted(list((st.get("error_numbers") or {}).keys()), key=int):
+        if time.time() > stop or k in councils:
+            continue
+        if one(int(k)) == "stop":
+            flush_all(councils, robots, prog)
+            return
+    st["errors"] = len(st.get("error_numbers") or {})
+    while True:
+        cur = st["next"]
+        end = max(known_max, st.get("highest_seen", 0)) + 600
+        st["end"] = end
+        if cur > end:
+            st["complete_at"] = st.get("complete_at") or c.now_iso()
+            break
+        if time.time() > stop or (a.limit and n >= a.limit):
+            break
+        if str(cur) in councils:
+            st["next"] = cur + 1
+            continue
+        res = one(cur)
+        if res == "stop":
+            break
         st["next"] = cur + 1
         if n % 100 == 0:
             flush_all(councils, robots, prog)
-            print(f"numbers: {n} requests this run, next {st['next']}/{end}, {len(councils)} councils (+{st['found_new']} by number)", flush=True)
+            st["errors"] = len(st.get("error_numbers") or {})
+            print(f"numbers: {n} requests this run, next {st['next']}/{end}, {len(councils)} councils (+{st['found_new']} by number), errors {st['errors']}", flush=True)
+    st["errors"] = len(st.get("error_numbers") or {})
     flush_all(councils, robots, prog)
     print(f"numbers run end: {n} requests, next {st['next']}/{st['end']}, {len(councils)} councils, errors {errs}", flush=True)
 

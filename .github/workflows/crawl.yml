@@ -291,7 +291,7 @@ jobs:
     # robots.txt honoured by every script (ingest/us/common_fetch.Polite), honest FindTheChurch user agent.
     if: ${{ github.event.inputs.job == 'movements' }}
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 200
     strategy:
       fail-fast: false
       matrix:
@@ -310,6 +310,8 @@ jobs:
         run: |
           set -u
           TRAILER=$'\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01SXKUYETifPNNjUVPkZ7qG5'
+          # a leg that waited in the concurrency queue was checked out at dispatch time: start from the latest resume state
+          git pull --rebase -X theirs --autostash -q origin main || { git rebase --abort 2>/dev/null || true; }
           timeout $(( MINUTES * 60 + 300 )) python3 -I -u ${{ matrix.cmd }} || true
           for f in ${{ matrix.out }}; do [ -f "data/real/us/movements/$f" ] && git add "data/real/us/movements/$f"; done
           git commit -q -m "Movements: ${{ matrix.src }} directory (Actions $(date -u +%FT%H:%MZ))$TRAILER" || true
