@@ -74,6 +74,18 @@
    "url": "https://www.st-augustinechurch.com/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.st-augustinechurch.com/new-page-1",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://www.st-augustinechurch.com/liturgy",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -366,9 +378,22 @@
  ],
  "source_url": "http://www.st-augustinechurch.com/",
  "fetched_at": "2026-11-01T20:25:21+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:08+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ]
+ },
  "schedule_template": {
   "template": "squarespace",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -382,8 +407,18 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 17
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "After Sunday Masses, or anytime by request.",
+   "phrase": "by request",
+   "source_url": "https://www.st-augustinechurch.com/",
+   "fetched_at": "2026-11-01T20:25:14+00:00"
+  }
+ ],
  "has_sunday": true,
  "groups_dropped": {
   "unmatched": 2,

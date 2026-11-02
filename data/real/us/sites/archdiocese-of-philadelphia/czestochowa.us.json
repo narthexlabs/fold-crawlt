@@ -63,6 +63,12 @@
    "url": "https://czestochowa.us/en/services/events?layout=manage",
    "status": 403,
    "class": "blocked_403"
+  },
+  {
+   "category": "adoration",
+   "url": "https://czestochowa.us/en/ministries/eucharistic-adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -160,6 +166,20 @@
    "confidence": "high",
    "template": "generic_strict",
    "day_expanded_from": "Weekday"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Sunday Mass 8:00 AM",
+   "source_url": "https://czestochowa.us/en/services/mass-confession",
+   "fetched_at": "2026-11-02T04:43:07+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "topup": true
   }
  ],
  "source_url": "https://www.czestochowa.us/",
@@ -200,5 +220,21 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:10+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

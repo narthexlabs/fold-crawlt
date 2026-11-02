@@ -76,6 +76,18 @@
    "url": "https://saintanthonyparish.org/contact-information/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://saintanthonyparish.org/sacraments/reconciliation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://saintanthonyparish.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -138,7 +150,7 @@
    "feed_key": "91ec2f8f6ced",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-02T01:58:42+00:00",
+    "fetched_at": "2026-11-02T04:49:33+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -199,6 +211,22 @@
   },
   {
    "kind": "confession",
+   "day": "Monday",
+   "time": "08:15",
+   "language": null,
+   "raw": "Confessions: Monday- after the 8:15 am Mass",
+   "source_url": "https://saintanthonyparish.org/parish-schedules/",
+   "fetched_at": "2026-11-01T20:25:29+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "Confessions: Monday- after the 8:15 am Mass",
+   "relative_resolved": false
+  },
+  {
+   "kind": "confession",
    "day": "Sunday",
    "time": "16:15-16:45",
    "language": null,
@@ -209,13 +237,38 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "14:45-15:45",
+   "language": null,
+   "raw": "Confession: Saturdays at St. Joseph 2:45 to 3:45 PM",
+   "source_url": "https://saintanthonyparish.org/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:43:06+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
   }
  ],
  "source_url": "https://saintanthonyparish.org/",
  "fetched_at": "2026-11-01T20:26:38+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:17+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -229,13 +282,15 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 6
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 7,
-  "relative_time": 3,
-  "not_a_service": 2
+  "other_location": 4,
+  "no_kind": 3,
+  "not_a_service": 2,
+  "relative_time": 1
  },
  "groups_dropped": {},
  "event_counts": {

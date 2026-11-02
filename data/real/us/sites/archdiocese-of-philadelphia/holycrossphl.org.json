@@ -90,6 +90,18 @@
    "url": "https://holycrossphl.org/livestream-9-am-mass/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://holycrossphl.org/liturgy/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://holycrossphl.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -185,7 +197,7 @@
    "note": "Microsoft 365 published calendar",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-02T01:57:35+00:00",
+    "fetched_at": "2026-11-02T04:48:41+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -207,6 +219,12 @@
     "url": "https://holycrossphl.org/livestream-9-am-mass/",
     "label": "Livestream Mass",
     "platform": "holycrossphl.org",
+    "kind": "link"
+   },
+   {
+    "url": "https://vimeo.com/718383800",
+    "label": "Eucharistic Revival (English version)",
+    "platform": "vimeo.com",
     "kind": "link"
    }
   ]
@@ -336,6 +354,48 @@
   {
    "kind": "other",
    "day": "Holy days",
+   "time": "08:00",
+   "language": null,
+   "raw": "Weekday Mass :: 8am",
+   "source_url": "https://holycrossphl.org/mass-times-confession/",
+   "fetched_at": "2026-11-01T20:25:09+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "19:00",
+   "language": null,
+   "raw": "Weekday Mass :: 7pm",
+   "source_url": "https://holycrossphl.org/mass-times-confession/",
+   "fetched_at": "2026-11-01T20:25:09+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "09:00",
+   "language": null,
+   "raw": "Weekday Mass :: 9am",
+   "source_url": "https://holycrossphl.org/mass-times-confession/",
+   "fetched_at": "2026-11-01T20:25:09+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
    "time": "16:00",
    "language": null,
    "raw": "Celebrate the Sacrament of Reconciliation on Saturday afternoon in church from 4pm to 4:30 pm, or by appointment",
@@ -350,9 +410,21 @@
  ],
  "source_url": "https://holycrossphl.org/",
  "fetched_at": "2026-11-01T20:25:54+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:08+00:00",
+  "requests": 2,
+  "found": [
+   "liturgy"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -366,12 +438,19 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 9
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "on Saturday afternoon in church from 4pm to 4:30 pm, or by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://holycrossphl.org/mass-times-confession/",
+   "fetched_at": "2026-11-01T20:25:09+00:00"
+  }
+ ],
  "has_sunday": true,
- "schedule_dropped": {
-  "other_location": 3
- },
  "groups_dropped": {},
  "event_counts": {
   "window_start": "2026-11-02",

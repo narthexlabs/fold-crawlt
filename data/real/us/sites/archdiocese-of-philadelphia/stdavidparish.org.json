@@ -75,6 +75,18 @@
    "url": "https://stdavidparish.org/contact-us-2/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stdavidparish.org/sacraments/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stdavidparish.org/eucharistic-adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -278,84 +290,6 @@
  },
  "schedule_rows": [
   {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "08:30-09:30",
-   "language": null,
-   "raw": "Sacrament of Reconciliation Mass Times: Saturdays from 8:30-9:30",
-   "source_url": "https://stdavidparish.org/mass-schedule/",
-   "fetched_at": "2026-11-01T20:25:37+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "low",
-   "template": "weebly"
-  },
-  {
-   "kind": "confession",
-   "day": "Sunday",
-   "time": "06:30",
-   "language": null,
-   "raw": "Sacrament of Reconciliation Mass Times: 6:30 AM",
-   "source_url": "https://stdavidparish.org/mass-schedule/",
-   "fetched_at": "2026-11-01T20:25:37+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "weebly"
-  },
-  {
-   "kind": "confession",
-   "day": "Sunday",
-   "time": "08:00",
-   "language": null,
-   "raw": "Sacrament of Reconciliation Mass Times: 8:00 AM",
-   "source_url": "https://stdavidparish.org/mass-schedule/",
-   "fetched_at": "2026-11-01T20:25:37+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "weebly"
-  },
-  {
-   "kind": "confession",
-   "day": "Sunday",
-   "time": "16:00",
-   "language": null,
-   "raw": "Sacrament of Reconciliation Mass Times: 4:00 PM",
-   "source_url": "https://stdavidparish.org/mass-schedule/",
-   "fetched_at": "2026-11-01T20:25:37+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "weebly"
-  },
-  {
-   "kind": "confession",
-   "day": "Sunday",
-   "time": "07:00",
-   "language": null,
-   "raw": "Sacrament of Reconciliation Mass Times: 7:00 AM",
-   "source_url": "https://stdavidparish.org/mass-schedule/",
-   "fetched_at": "2026-11-01T20:25:37+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "weebly"
-  },
-  {
-   "kind": "confession",
-   "day": "Sunday",
-   "time": "09:00",
-   "language": null,
-   "raw": "Sacrament of Reconciliation Mass Times: 9:00 AM",
-   "source_url": "https://stdavidparish.org/mass-schedule/",
-   "fetched_at": "2026-11-01T20:25:37+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "weebly"
-  },
-  {
    "kind": "mass",
    "day": "Saturday",
    "time": "16:00",
@@ -499,18 +433,18 @@
    "template": "weebly"
   },
   {
-   "kind": "other",
-   "day": "Holy days",
-   "time": "08:30",
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "08:30-09:30",
    "language": null,
-   "raw": "Confessions: Saturday (excluding Holy Saturday): 8:30 – 9:30 AM",
+   "raw": "Confessions: Saturday : 8:30 – 9:30 AM",
    "source_url": "https://stdavidparish.org/",
    "fetched_at": "2026-11-01T20:25:25+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "high",
    "template": "weebly",
-   "kind_parsed": "confession"
+   "note": "excluding Holy Saturday"
   },
   {
    "kind": "adoration",
@@ -593,13 +527,91 @@
    "review_reason": null,
    "confidence": "high",
    "template": "weebly"
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "06:30",
+   "language": null,
+   "raw": "Sacrament of Reconciliation Mass Times: 6:30 AM",
+   "source_url": "https://stdavidparish.org/mass-schedule/",
+   "fetched_at": "2026-11-01T20:25:37+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly"
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Sacrament of Reconciliation Mass Times: 8:00 AM",
+   "source_url": "https://stdavidparish.org/mass-schedule/",
+   "fetched_at": "2026-11-01T20:25:37+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly"
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "16:00",
+   "language": null,
+   "raw": "Sacrament of Reconciliation Mass Times: 4:00 PM",
+   "source_url": "https://stdavidparish.org/mass-schedule/",
+   "fetched_at": "2026-11-01T20:25:37+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly"
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "07:00",
+   "language": null,
+   "raw": "Sacrament of Reconciliation Mass Times: 7:00 AM",
+   "source_url": "https://stdavidparish.org/mass-schedule/",
+   "fetched_at": "2026-11-01T20:25:37+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly"
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Sacrament of Reconciliation Mass Times: 9:00 AM",
+   "source_url": "https://stdavidparish.org/mass-schedule/",
+   "fetched_at": "2026-11-01T20:25:37+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly"
   }
  ],
  "source_url": "https://stdavidparish.org/",
  "fetched_at": "2026-11-01T20:26:02+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:14+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "weebly",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -613,13 +625,14 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 38
+  "trusted_kinds": [],
+  "generic_rows": 39
  },
  "has_sunday": true,
  "schedule_dropped": {
   "dated_line": 1,
   "relative_time": 1,
-  "no_day": 1,
+  "no_day": 3,
   "other_location": 1
  },
  "groups_dropped": {

@@ -66,6 +66,18 @@
    "url": "https://stpaulcatholicchurcheastnorriton.net/news-events/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://stpaulcatholicchurcheastnorriton.net/easter-schedule/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stpaulcatholicchurcheastnorriton.net/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -285,9 +297,21 @@
  ],
  "source_url": "https://stpaulcatholicchurcheastnorriton.net/",
  "fetched_at": "2026-11-01T20:26:01+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:13+00:00",
+  "requests": 2,
+  "found": [
+   "liturgy"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -301,6 +325,7 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 10
  },
  "has_sunday": true,

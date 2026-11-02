@@ -81,6 +81,18 @@
    "url": "https://www.stthomasofvillanova.org/cdn-cgi/l/email-protection",
    "status": 404,
    "class": "not_found"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stthomasofvillanova.org/reconciliation.html",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://www.stthomasofvillanova.org/liturgy.html",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -585,6 +597,36 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "weebly"
+  },
+  {
+   "kind": "mass",
+   "day": "First Friday of the month (advent)",
+   "time": "09:00",
+   "language": null,
+   "raw": "9am Mass; on First Fridays after the 12:05pm Mass; and every Tuesday in Advent & Lent also",
+   "source_url": "https://www.stthomasofvillanova.org/reconciliation.html",
+   "fetched_at": "2026-11-02T04:43:11+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "weebly",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "12:05",
+   "language": null,
+   "raw": "after the 12:05pm Mass. Dates and times for additional opportunities for Reconciliation will be",
+   "source_url": "https://www.stthomasofvillanova.org/reconciliation.html",
+   "fetched_at": "2026-11-02T04:43:11+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "weebly",
+   "relative": "after",
+   "note": "after the 12:05pm Mass. Dates and times for additional opportunities for Reconciliation will be",
+   "topup": true
   }
  ],
  "source_url": "http://stthomasofvillanova.org/",
@@ -627,5 +669,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:13+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
  }
 }

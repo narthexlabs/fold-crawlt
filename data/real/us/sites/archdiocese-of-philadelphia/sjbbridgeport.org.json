@@ -249,11 +249,79 @@
    "template": "wix"
   },
   {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "07:00",
+   "language": null,
+   "raw": "Confessions: 7 am (said), 10 am (said) & 7 pm (sung)",
+   "source_url": "https://www.sjbbridgeport.org/",
+   "fetched_at": "2026-11-01T20:25:12+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "kind_parsed": "confession"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "10:00",
+   "language": null,
+   "raw": "Confessions: 7 am (said), 10 am (said) & 7 pm (sung)",
+   "source_url": "https://www.sjbbridgeport.org/",
+   "fetched_at": "2026-11-01T20:25:12+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "kind_parsed": "confession"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "19:00",
+   "language": null,
+   "raw": "Confessions: 7 am (said), 10 am (said) & 7 pm (sung)",
+   "source_url": "https://www.sjbbridgeport.org/",
+   "fetched_at": "2026-11-01T20:25:12+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "kind_parsed": "confession"
+  },
+  {
    "kind": "mass",
    "day": "Friday",
    "time": "07:30",
    "language": null,
    "raw": "Friday after Mass: 7:30-8:30 am",
+   "source_url": "https://www.sjbbridgeport.org/",
+   "fetched_at": "2026-11-01T20:25:12+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wix"
+  },
+  {
+   "kind": "devotion",
+   "day": "Sunday",
+   "time": "09:15",
+   "language": null,
+   "raw": "Sunday - 9:15 a.m. (Morning Prayer)",
+   "source_url": "https://www.sjbbridgeport.org/",
+   "fetched_at": "2026-11-01T20:25:12+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wix"
+  },
+  {
+   "kind": "devotion",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Daily (except Saturday) - 5:00 p.m. (Evening Prayer only on Zoom)",
    "source_url": "https://www.sjbbridgeport.org/",
    "fetched_at": "2026-11-01T20:25:12+00:00",
    "needs_review": false,
@@ -330,9 +398,19 @@
  ],
  "source_url": "https://www.sjbbridgeport.org/",
  "fetched_at": "2026-11-01T20:25:17+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:06+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "wix",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -346,12 +424,12 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 9
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 4,
-  "not_a_service": 3,
+  "not_a_service": 1,
   "box_rows_added": 6
  },
  "groups_dropped": {},

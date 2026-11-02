@@ -54,6 +54,12 @@
    "url": "https://www.saintphilipnerichurch.com/bulletins/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.saintphilipnerichurch.com/adoration-of-the-blessed-sacrament-information/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -559,9 +565,21 @@
  ],
  "source_url": "https://www.saintphilipnerichurch.com/",
  "fetched_at": "2026-11-01T20:25:15+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:06+00:00",
+  "requests": 1,
+  "found": [
+   "adoration"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -575,9 +593,18 @@
   },
   "passed_bar": true,
   "trusted_candidate": true,
+  "trusted_kinds": [
+   "weekend",
+   "weekday",
+   "confession",
+   "adoration"
+  ],
   "generic_rows": 9
  },
  "has_sunday": true,
+ "schedule_dropped": {
+  "dated_line": 1
+ },
  "groups_dropped": {
   "noise": 4,
   "unmatched": 3

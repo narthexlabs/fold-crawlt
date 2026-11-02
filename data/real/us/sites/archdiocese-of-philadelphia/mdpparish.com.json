@@ -85,6 +85,18 @@
    "url": "https://mdpparish.com/live-stream/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://mdpparish.com/penance/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://mdpparish.com/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -255,7 +267,7 @@
    "feed_key": "fe77ce0313bb",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-02T01:57:46+00:00",
+    "fetched_at": "2026-11-02T04:48:51+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -274,7 +286,7 @@
    "feed_key": "6e6565b62e33",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-02T01:57:48+00:00",
+    "fetched_at": "2026-11-02T04:48:52+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -308,6 +320,19 @@
   "source_url": "https://mdpparish.com/"
  },
  "schedule_rows": [
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:00-15:45",
+   "language": null,
+   "raw": "Confessions are heard at Mother of Divine Providence on Saturdays from 3:00-3:45pm.",
+   "source_url": "https://mdpparish.com/penance/",
+   "fetched_at": "2026-11-02T04:43:06+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  },
   {
    "kind": "mass",
    "day": "Monday",
@@ -509,9 +534,21 @@
  ],
  "source_url": "https://mdpparish.com/",
  "fetched_at": "2026-11-01T20:25:41+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:08+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -519,14 +556,24 @@
     "counts_ok": true,
     "sunday_not_copied": true,
     "no_daily_on_sunday": true,
-    "mostly_high": false
+    "mostly_high": true
    },
    "score": "low"
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 17
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Confessions: Saturday 3:00 – 3:45 PM or by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://mdpparish.com/",
+   "fetched_at": "2026-11-01T20:25:04+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "box_rows_added": 16

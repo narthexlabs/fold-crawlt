@@ -48,6 +48,12 @@
    "url": "https://saintpius.net/livestream/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://saintpius.net/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -706,9 +712,19 @@
  ],
  "source_url": "https://saintpius.net/",
  "fetched_at": "2026-11-01T20:25:39+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:08+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -722,8 +738,18 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 34
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "OR ANY TIME BY APPOINTMENT",
+   "phrase": "BY APPOINTMENT",
+   "source_url": "https://saintpius.net/sacraments/",
+   "fetched_at": "2026-11-01T20:25:25+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "not_a_service": 1

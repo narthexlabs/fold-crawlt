@@ -66,6 +66,12 @@
    "url": "https://www.stjeromechurchphila.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stjeromechurchphila.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -134,19 +140,6 @@
   "source_url": "https://www.stjeromechurchphila.org/"
  },
  "schedule_rows": [
-  {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "15:30-16:15",
-   "language": null,
-   "raw": "Individual confessions are offered every Saturday from 3:30 to 4:15 p.m. in church.",
-   "source_url": "https://www.stjeromechurchphila.org/reconciliation/",
-   "fetched_at": "2026-11-01T20:25:26+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "wordpress"
-  },
   {
    "kind": "mass",
    "day": "Saturday",
@@ -255,13 +248,92 @@
    "confidence": "medium",
    "template": "wordpress",
    "day_expanded_from": "Monday – Friday"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "08:00",
+   "language": null,
+   "raw": "Weekday Masses: 8:00 am, 10:00 am, 12:00 pm, and 7:00 pm",
+   "source_url": "https://www.stjeromechurchphila.org/",
+   "fetched_at": "2026-11-01T20:25:22+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "10:00",
+   "language": null,
+   "raw": "Weekday Masses: 8:00 am, 10:00 am, 12:00 pm, and 7:00 pm",
+   "source_url": "https://www.stjeromechurchphila.org/",
+   "fetched_at": "2026-11-01T20:25:22+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "12:00",
+   "language": null,
+   "raw": "Weekday Masses: 8:00 am, 10:00 am, 12:00 pm, and 7:00 pm",
+   "source_url": "https://www.stjeromechurchphila.org/",
+   "fetched_at": "2026-11-01T20:25:22+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "19:00",
+   "language": null,
+   "raw": "Weekday Masses: 8:00 am, 10:00 am, 12:00 pm, and 7:00 pm",
+   "source_url": "https://www.stjeromechurchphila.org/",
+   "fetched_at": "2026-11-01T20:25:22+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:30-16:15",
+   "language": null,
+   "raw": "Confessions: 3:30 pm to 4:15 pm",
+   "source_url": "https://www.stjeromechurchphila.org/",
+   "fetched_at": "2026-11-01T20:25:22+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
   }
  ],
  "source_url": "https://www.stjeromechurchphila.org/",
  "fetched_at": "2026-11-01T20:25:33+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:10+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -275,12 +347,12 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 12
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "not_a_service": 1,
-  "other_location": 4
+  "not_a_service": 1
  },
  "groups_dropped": {},
  "event_counts": {
