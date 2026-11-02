@@ -55,6 +55,12 @@
    "url": "https://www.stambroseparishtucson.org/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stambroseparishtucson.org/divine-mercy-holy-hour",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -283,13 +289,38 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wix"
+  },
+  {
+   "kind": "adoration",
+   "day": "Sunday",
+   "time": "15:00",
+   "language": null,
+   "raw": "Divine Mercy Holy Hour: Sundays at 3PM in the Church",
+   "source_url": "https://www.stambroseparishtucson.org/divine-mercy-holy-hour",
+   "fetched_at": "2026-11-02T04:41:35+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix"
   }
  ],
  "source_url": "https://www.stambroseparishtucson.org/",
  "fetched_at": "2026-11-01T17:27:31+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:35+00:00",
+  "requests": 1,
+  "found": [
+   "adoration"
+  ]
+ },
  "schedule_template": {
   "template": "wix",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -303,13 +334,14 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 11
+  "trusted_kinds": [],
+  "generic_rows": 12
  },
  "has_sunday": true,
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
