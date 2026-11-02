@@ -19,12 +19,18 @@
  "home_url": "https://www.huroncatholic.org/",
  "final_url": "https://www.huroncatholic.org/",
  "crawl_status": "ok",
- "crawl_env": "sandbox",
+ "crawl_env": "runner-rendered",
  "robots_note": "ok",
  "pages": [
   {
    "category": "home",
    "url": "https://www.huroncatholic.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.huroncatholic.org/st-stanislaus",
    "status": 200,
    "class": "ok"
   },
@@ -51,7 +57,11 @@
  "groups": [],
  "calendar_feeds": [],
  "events": [],
- "social": {},
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/2008"
+  ]
+ },
  "bulletin": {
   "url": "https://www.huroncatholic.org/bulletins",
   "date": null,
@@ -67,7 +77,7 @@
    "language": null,
    "raw": "Sunday Mass Times: 4:30 p.m. - St. Florence",
    "source_url": "https://www.huroncatholic.org/",
-   "fetched_at": "2026-11-01T22:15:25+00:00",
+   "fetched_at": "2026-11-02T07:17:52+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -80,7 +90,7 @@
    "language": null,
    "raw": "Sunday Mass Times: 6:30 p.m. - Sacred Heart",
    "source_url": "https://www.huroncatholic.org/",
-   "fetched_at": "2026-11-01T22:15:25+00:00",
+   "fetched_at": "2026-11-02T07:17:52+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -93,7 +103,7 @@
    "language": null,
    "raw": "Sunday Mass Times: 9:00 a.m. - Our Lady of the Snows",
    "source_url": "https://www.huroncatholic.org/",
-   "fetched_at": "2026-11-01T22:15:25+00:00",
+   "fetched_at": "2026-11-02T07:17:52+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -106,7 +116,7 @@
    "language": null,
    "raw": "Sunday Mass Times: 11:00 a.m. - St. Stanislaus Kostka",
    "source_url": "https://www.huroncatholic.org/",
-   "fetched_at": "2026-11-01T22:15:25+00:00",
+   "fetched_at": "2026-11-02T07:17:52+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -119,7 +129,7 @@
    "language": null,
    "raw": "Confession Times: 4:00 p.m. - St. Florence",
    "source_url": "https://www.huroncatholic.org/",
-   "fetched_at": "2026-11-01T22:15:25+00:00",
+   "fetched_at": "2026-11-02T07:17:52+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -132,7 +142,7 @@
    "language": null,
    "raw": "Confession Times: 8:15 a.m. - Our Lady of the Snows",
    "source_url": "https://www.huroncatholic.org/",
-   "fetched_at": "2026-11-01T22:15:25+00:00",
+   "fetched_at": "2026-11-02T07:17:52+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -145,7 +155,7 @@
    "language": null,
    "raw": "Confession Times: 1:30 p.m. - St. Stanislaus Kostka",
    "source_url": "https://www.huroncatholic.org/",
-   "fetched_at": "2026-11-01T22:15:25+00:00",
+   "fetched_at": "2026-11-02T07:17:52+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -153,17 +163,7 @@
   }
  ],
  "source_url": "https://www.huroncatholic.org/",
- "fetched_at": "2026-11-01T22:15:32+00:00",
- "topup": {
-  "kinds": [
-   "adoration",
-   "confession",
-   "liturgy"
-  ],
-  "at": "2026-11-02T04:41:31+00:00",
-  "requests": 0,
-  "found": []
- },
+ "fetched_at": "2026-11-02T07:18:00+00:00",
  "schedule_template": {
   "template": "squarespace",
   "version": "ca-sites/3",
@@ -181,9 +181,12 @@
   "passed_bar": false,
   "trusted_candidate": false,
   "trusted_kinds": [],
-  "generic_rows": 7
+  "generic_rows": 8
  },
  "has_sunday": true,
+ "schedule_dropped": {
+  "other_location": 3
+ },
  "groups_dropped": {},
  "event_counts": {
   "window_start": "2026-11-02",
@@ -205,13 +208,11 @@
    "phone": "https://www.huroncatholic.org/contact",
    "address": "https://www.huroncatholic.org/contact"
   },
-  "fetched_at": "2026-11-01T22:15:31+00:00",
+  "fetched_at": "2026-11-02T07:17:59+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
  },
- "social_shared_links_removed": [
-  "https://www.facebook.com/2008"
- ]
+ "fetch_mode": "rendered"
 }
