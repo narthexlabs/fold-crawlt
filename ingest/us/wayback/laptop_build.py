@@ -77,7 +77,10 @@ def main() -> int:
         f = S.SITES / (sid + ".json")
         if not f.exists():
             continue
-        if lp.get("result") == "fetched":
+        cur = json.loads(f.read_text()).get("crawl_status") or ""
+        if cur.startswith("wayback-") and not a.rebuild:      # the runner's shards wrote it meanwhile: keep theirs
+            r = {"result": "runner-had-it", "prior_status": lp.get("prior_status")}
+        elif lp.get("result") == "fetched":
             m0 = arch.miss
             try:
                 r = S.one(arch, f, today)

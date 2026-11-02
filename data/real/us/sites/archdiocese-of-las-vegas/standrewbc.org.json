@@ -21,33 +21,303 @@
   "Boulder City"
  ],
  "home_url": "https://standrewbc.org/",
- "final_url": "https://standrewbc.org/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "final_url": "https://www.standrewbc.org/",
+ "crawl_status": "wayback-2025-04-23",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
-   "url": "https://standrewbc.org/",
-   "status": 403,
-   "class": "challenge"
+   "url": "https://www.standrewbc.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://standrewbc.org/mass-times",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://standrewbc.org/liturgical-ministries",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://standrewbc.org/adult-faith-formation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://standrewbc.org/ministries-1",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://standrewbc.org/bulletins",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://standrewbc.org/calendar-1",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://standrewbc.org/community-builders",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://standrewbc.org/contact-us",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "standrewbc.org:adult_formation",
+   "name": "Adult Faith Formation",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "adult_formation",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://standrewbc.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://standrewbc.org/adult-faith-formation",
+   "source_kind": "website",
+   "fetched_at": "2025-03-24T15:54:06+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-04-23"
+  },
+  {
+   "id": "standrewbc.org:children_ff",
+   "name": "Religious Education",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "children_faith_formation",
+   "audience": "families",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://standrewbc.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://standrewbc.org/liturgical-ministries",
+   "source_kind": "website",
+   "fetched_at": "2025-03-24T16:39:47+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-04-23"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/St-Andrews-Catholic-Community-120369981313029"
+  ],
+  "youtube": [
+   "https://www.youtube.com/channel/UCvrAJ4sO2NJWpf3uHhV83Iw"
+  ]
+ },
+ "bulletin": {
+  "url": "https://files.ecatholic.com/12842/bulletins/20240721.pdf?t=1722017094000",
+  "date": "2024-07-21",
+  "kind": "ecatholic_pdf",
+  "text": "July 21 , 2024",
+  "source_url": "https://standrewbc.org/bulletins"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "08:00",
+   "language": null,
+   "raw": "8 am Mass",
+   "source_url": "https://standrewbc.org/mass-times",
+   "fetched_at": "2024-07-27T00:50:07+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-23: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2025-04-23",
+   "archive_url": "https://web.archive.org/web/20240727005007/https://standrewbc.org/mass-times",
+   "capture_date": "2024-07-27"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Saturday Vigil Mass: 5 pm",
+   "source_url": "https://standrewbc.org/mass-times",
+   "fetched_at": "2024-07-27T00:50:07+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-23: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2025-04-23",
+   "archive_url": "https://web.archive.org/web/20240727005007/https://standrewbc.org/mass-times",
+   "capture_date": "2024-07-27"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:30",
+   "language": null,
+   "raw": "Sunday Mass:: 9:30 am",
+   "source_url": "https://standrewbc.org/mass-times",
+   "fetched_at": "2024-07-27T00:50:07+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-23: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2025-04-23",
+   "archive_url": "https://web.archive.org/web/20240727005007/https://standrewbc.org/mass-times",
+   "capture_date": "2024-07-27"
+  },
+  {
+   "kind": "mass",
+   "day": "Third Wednesday of the month",
+   "time": "09:30",
+   "language": null,
+   "raw": "3rd Wednesday of the Month in June, September, and December – 9:30 am Mass or by appointment – Call .",
+   "source_url": "https://standrewbc.org/mass-times",
+   "fetched_at": "2024-07-27T00:50:07+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-23: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2025-04-23",
+   "archive_url": "https://web.archive.org/web/20240727005007/https://standrewbc.org/mass-times",
+   "capture_date": "2024-07-27"
+  }
+ ],
  "source_url": "https://standrewbc.org/",
- "fetched_at": "2026-11-01T07:20:04+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-02T01:07:02+00:00",
  "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
+  "screened_by": "ingest/public/privacy.py screen()",
+  "names_withheld": 0,
+  "contacts_removed": 1
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 6
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "text:benediction_end": 1,
+  "text:not_a_service": 2,
+  "text:other_location": 1,
+  "not_a_mass": 1,
+  "notice_not_schedule": 1
+ },
+ "groups_dropped": {
+  "noise": 1
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(702) 293-7500",
+  "address": null,
+  "source_url": "https://standrewbc.org/contact-us",
+  "sources": {
+   "phone": "https://standrewbc.org/contact-us"
+  },
+  "fetched_at": "2024-07-27T00:50:06+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2025-04-23",
+  "capture_age_days": 558,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://www.standrewbc.org/",
+    "capture": "2025-04-23",
+    "archive_url": "https://web.archive.org/web/20250423223133/https://www.standrewbc.org/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://standrewbc.org/mass-times",
+    "capture": "2024-07-27",
+    "archive_url": "https://web.archive.org/web/20240727005007/https://standrewbc.org/mass-times"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://standrewbc.org/liturgical-ministries",
+    "capture": "2025-03-24",
+    "archive_url": "https://web.archive.org/web/20250324163947/https://standrewbc.org/liturgical-ministries"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://standrewbc.org/adult-faith-formation",
+    "capture": "2025-03-24",
+    "archive_url": "https://web.archive.org/web/20250324155406/https://standrewbc.org/adult-faith-formation"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://standrewbc.org/ministries-1",
+    "capture": "2025-10-17",
+    "archive_url": "https://web.archive.org/web/20251017004555/https://standrewbc.org/ministries-1"
+   },
+   {
+    "kind": "bulletin",
+    "original": "https://standrewbc.org/bulletins",
+    "capture": "2024-07-27",
+    "archive_url": "https://web.archive.org/web/20240727005007/https://standrewbc.org/bulletins"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://standrewbc.org/calendar-1",
+    "capture": "2025-10-17",
+    "archive_url": "https://web.archive.org/web/20251017021420/https://standrewbc.org/calendar-1"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://standrewbc.org/community-builders",
+    "capture": "2025-10-17",
+    "archive_url": "https://web.archive.org/web/20251017003726/https://standrewbc.org/community-builders"
+   },
+   {
+    "kind": "contact",
+    "original": "https://standrewbc.org/contact-us",
+    "capture": "2024-07-27",
+    "archive_url": "https://web.archive.org/web/20240727005006/https://standrewbc.org/contact-us"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }
