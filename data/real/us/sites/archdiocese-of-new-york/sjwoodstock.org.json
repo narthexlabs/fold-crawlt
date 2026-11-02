@@ -22,32 +22,558 @@
  ],
  "home_url": "https://sjwoodstock.org/",
  "final_url": "https://sjwoodstock.org/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "crawl_status": "wayback-2025-04-24",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
    "url": "https://sjwoodstock.org/",
-   "status": 403,
-   "class": "challenge"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://sjwoodstock.org/mass-times",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://sjwoodstock.org/confessions",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://sjwoodstock.org/ministries",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://sjwoodstock.org/liturgical-ministries",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://sjwoodstock.org/altar-society",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://sjwoodstock.org/bulletins",
+   "status": null,
+   "class": "conn_error"
+  },
+  {
+   "category": "calendar",
+   "url": "https://sjwoodstock.org/events",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://sjwoodstock.org/events?page=1",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://sjwoodstock.org/contact-us",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "sjwoodstock.org:respect_life",
+   "name": "Respect Life",
+   "category": "service_mercy",
+   "category_label": "Service & mercy",
+   "subcategory": "respect_life",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://sjwoodstock.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://sjwoodstock.org/",
+   "source_kind": "website",
+   "fetched_at": "2025-04-24T11:45:12+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-04-24"
+  },
+  {
+   "id": "sjwoodstock.org:servers",
+   "name": "Altar Servers",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "altar_servers",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://sjwoodstock.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://sjwoodstock.org/",
+   "source_kind": "website",
+   "fetched_at": "2025-04-24T11:45:12+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-04-24"
+  },
+  {
+   "id": "sjwoodstock.org:altar_society",
+   "name": "Altar Society",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "altar_society_environment",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://sjwoodstock.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://sjwoodstock.org/altar-society",
+   "source_kind": "website",
+   "fetched_at": "2025-02-12T21:33:57+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-04-24"
+  },
+  {
+   "id": "sjwoodstock.org:emhc",
+   "name": "Extraordinary Ministers of Holy Communion",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "emhc",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://sjwoodstock.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://sjwoodstock.org/",
+   "source_kind": "website",
+   "fetched_at": "2025-04-24T11:45:12+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-04-24"
+  },
+  {
+   "id": "sjwoodstock.org:lectors",
+   "name": "Ministers of the Word/Lectors",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "lectors",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://sjwoodstock.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://sjwoodstock.org/",
+   "source_kind": "website",
+   "fetched_at": "2025-04-24T11:45:12+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-04-24"
+  },
+  {
+   "id": "sjwoodstock.org:choir",
+   "name": "Music Ministry / Choir",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "choir_music",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://sjwoodstock.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://sjwoodstock.org/",
+   "source_kind": "website",
+   "fetched_at": "2025-04-24T11:45:12+00:00",
+   "confidence": "low",
+   "source": "wayback-2025-04-24"
+  },
+  {
+   "id": "sjwoodstock.org:third_order",
+   "name": "Secular Franciscan Order",
+   "category": "fraternal_orders",
+   "category_label": "Fraternal & orders",
+   "subcategory": "third_order",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://sjwoodstock.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://sjwoodstock.org/",
+   "source_kind": "website",
+   "fetched_at": "2025-04-24T11:45:12+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-04-24"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/sjwoodstock.org"
+  ],
+  "youtube": [
+   "https://www.youtube.com/channel/UCup9jVWEBDcWmPU6TwCZZYA"
+  ],
+  "flocknote": [
+   "https://sjwoodstock.flocknote.com"
+  ],
+  "livestream": [
+   {
+    "url": "https://www.heartofthenation.org/online-mass/sunday-mass",
+    "label": "Sunday Mass Online",
+    "platform": "www.heartofthenation.org",
+    "kind": "link"
+   }
+  ]
+ },
+ "bulletin": {
+  "url": "https://www.jppc.net/onlinebulletins/491template.pdf",
+  "date": null,
+  "kind": "pdf",
+  "text": "Bulletin For latest publication",
+  "source_url": "https://sjwoodstock.org/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "16:00",
+   "language": "English",
+   "raw": "[St. Francis De Sales] Saturday: 4:00 PM English St. Francis de Sales Phoenicia",
+   "source_url": "https://sjwoodstock.org/",
+   "fetched_at": "2025-04-24T11:45:12+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "location": "St. Francis De Sales",
+   "source": "wayback-2025-04-24",
+   "archive_url": "https://web.archive.org/web/20250424114512/https://sjwoodstock.org/",
+   "capture_date": "2025-04-24"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:30",
+   "language": "English",
+   "raw": "[St. John] Saturday: 5:30 PM English St. John Woodstock",
+   "source_url": "https://sjwoodstock.org/",
+   "fetched_at": "2025-04-24T11:45:12+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "location": "St. John",
+   "source": "wayback-2025-04-24",
+   "archive_url": "https://web.archive.org/web/20250424114512/https://sjwoodstock.org/",
+   "capture_date": "2025-04-24"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": "English",
+   "raw": "[St. Francis De Sales] Sunday: 9:00 AM English St. Francis de Sales Phoenicia",
+   "source_url": "https://sjwoodstock.org/",
+   "fetched_at": "2025-04-24T11:45:12+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "location": "St. Francis De Sales",
+   "source": "wayback-2025-04-24",
+   "archive_url": "https://web.archive.org/web/20250424114512/https://sjwoodstock.org/",
+   "capture_date": "2025-04-24"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:00",
+   "language": "English",
+   "raw": "[St. John] Sunday: 11:00 AM English St. John Woodstock",
+   "source_url": "https://sjwoodstock.org/",
+   "fetched_at": "2025-04-24T11:45:12+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "location": "St. John",
+   "source": "wayback-2025-04-24",
+   "archive_url": "https://web.archive.org/web/20250424114512/https://sjwoodstock.org/",
+   "capture_date": "2025-04-24"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "09:00",
+   "language": "English",
+   "raw": "[St. John] Monday - Thursday: 9:00 AM English St. John Woodstock",
+   "source_url": "https://sjwoodstock.org/",
+   "fetched_at": "2025-04-24T11:45:12+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Monday - Thursday",
+   "location": "St. John",
+   "source": "wayback-2025-04-24",
+   "archive_url": "https://web.archive.org/web/20250424114512/https://sjwoodstock.org/",
+   "capture_date": "2025-04-24"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "09:00",
+   "language": "English",
+   "raw": "[St. John] Monday - Thursday: 9:00 AM English St. John Woodstock",
+   "source_url": "https://sjwoodstock.org/",
+   "fetched_at": "2025-04-24T11:45:12+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Monday - Thursday",
+   "location": "St. John",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "source": "wayback-2025-04-24",
+   "archive_url": "https://web.archive.org/web/20250424114512/https://sjwoodstock.org/",
+   "capture_date": "2025-04-24"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "09:00",
+   "language": "English",
+   "raw": "[St. John] Monday - Thursday: 9:00 AM English St. John Woodstock",
+   "source_url": "https://sjwoodstock.org/",
+   "fetched_at": "2025-04-24T11:45:12+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Monday - Thursday",
+   "location": "St. John",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "source": "wayback-2025-04-24",
+   "archive_url": "https://web.archive.org/web/20250424114512/https://sjwoodstock.org/",
+   "capture_date": "2025-04-24"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "09:00",
+   "language": "English",
+   "raw": "[St. John] Monday - Thursday: 9:00 AM English St. John Woodstock",
+   "source_url": "https://sjwoodstock.org/",
+   "fetched_at": "2025-04-24T11:45:12+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Monday - Thursday",
+   "location": "St. John",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "source": "wayback-2025-04-24",
+   "archive_url": "https://web.archive.org/web/20250424114512/https://sjwoodstock.org/",
+   "capture_date": "2025-04-24"
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "10:30-11:00",
+   "language": null,
+   "raw": "[St. John] Sunday: 10:30 AM - 11:00 AM St. John's Church",
+   "source_url": "https://sjwoodstock.org/",
+   "fetched_at": "2025-04-24T11:45:12+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "location": "St. John",
+   "source": "wayback-2025-04-24",
+   "archive_url": "https://web.archive.org/web/20250424114512/https://sjwoodstock.org/",
+   "capture_date": "2025-04-24"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:30-16:00",
+   "language": null,
+   "raw": "[St. Francis De Sales] Saturday: 3:30 PM - 4:00 PM St. Francis de Sales",
+   "source_url": "https://sjwoodstock.org/",
+   "fetched_at": "2025-04-24T11:45:12+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "location": "St. Francis De Sales",
+   "source": "wayback-2025-04-24",
+   "archive_url": "https://web.archive.org/web/20250424114512/https://sjwoodstock.org/",
+   "capture_date": "2025-04-24"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "11:19",
+   "language": null,
+   "raw": "Mass Times: Reading I Acts 11:19-26",
+   "source_url": "https://sjwoodstock.org/mass-times",
+   "fetched_at": "2025-05-13T07:50:20+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-24: read by a person before it is shown",
+   "confidence": "low",
+   "template": "ecatholic+generic_strict",
+   "kind_parsed": "mass",
+   "source": "wayback-2025-04-24",
+   "archive_url": "https://web.archive.org/web/20250513075020/https://sjwoodstock.org/mass-times",
+   "capture_date": "2025-05-13"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "10:22",
+   "language": null,
+   "raw": "Mass Times: Gospel John 10:22-30",
+   "source_url": "https://sjwoodstock.org/mass-times",
+   "fetched_at": "2025-05-13T07:50:20+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-24: read by a person before it is shown",
+   "confidence": "low",
+   "template": "ecatholic+generic_strict",
+   "kind_parsed": "mass",
+   "source": "wayback-2025-04-24",
+   "archive_url": "https://web.archive.org/web/20250513075020/https://sjwoodstock.org/mass-times",
+   "capture_date": "2025-05-13"
+  }
+ ],
  "source_url": "https://sjwoodstock.org/",
- "fetched_at": "2026-11-01T17:21:20+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-02T02:26:30+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": true
+   },
+   "score": "high"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "has_sunday": true,
+ "groups_dropped": {
+  "noise": 2,
+  "private_name_risk": 1
+ },
+ "office_contact": {
+  "email": "rectory@sjwoodstock.org",
+  "phone": "(845) 679-7696",
+  "address": "12 Holly Hills Drive, Woodstock, NY 12498",
+  "source_url": "https://sjwoodstock.org/contact-us",
+  "sources": {
+   "email": "https://sjwoodstock.org/contact-us",
+   "phone": "https://sjwoodstock.org/contact-us",
+   "address": "https://sjwoodstock.org/contact-us"
+  },
+  "fetched_at": "2025-01-14T00:16:51+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2025-04-24",
+  "capture_age_days": 557,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://sjwoodstock.org/",
+    "capture": "2025-04-24",
+    "archive_url": "https://web.archive.org/web/20250424114512/https://sjwoodstock.org/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://sjwoodstock.org/mass-times",
+    "capture": "2025-05-13",
+    "archive_url": "https://web.archive.org/web/20250513075020/https://sjwoodstock.org/mass-times"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://sjwoodstock.org/confessions",
+    "capture": "2025-02-12",
+    "archive_url": "https://web.archive.org/web/20250212192952/https://sjwoodstock.org/confessions"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://sjwoodstock.org/ministries",
+    "capture": "2023-02-09",
+    "archive_url": "https://web.archive.org/web/20230209021408/https://sjwoodstock.org/ministries"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://sjwoodstock.org/liturgical-ministries",
+    "capture": "2023-02-09",
+    "archive_url": "https://web.archive.org/web/20230209023028/https://sjwoodstock.org/liturgical-ministries"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://sjwoodstock.org/altar-society",
+    "capture": "2025-02-12",
+    "archive_url": "https://web.archive.org/web/20250212213357/https://sjwoodstock.org/altar-society"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://sjwoodstock.org/events",
+    "capture": "2023-02-09",
+    "archive_url": "https://web.archive.org/web/20230209024338/https://sjwoodstock.org/events"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://sjwoodstock.org/events?page=1",
+    "capture": "2025-01-14",
+    "archive_url": "https://web.archive.org/web/20250114004107/https://sjwoodstock.org/events?page=1"
+   },
+   {
+    "kind": "contact",
+    "original": "https://sjwoodstock.org/contact-us",
+    "capture": "2025-01-14",
+    "archive_url": "https://web.archive.org/web/20250114001651/https://sjwoodstock.org/contact-us"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }
