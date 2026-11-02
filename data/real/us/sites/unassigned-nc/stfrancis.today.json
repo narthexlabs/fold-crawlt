@@ -19,7 +19,7 @@
  "home_url": "https://www.stfrancis.today/",
  "final_url": "https://www.stfrancis.today/",
  "crawl_status": "ok",
- "crawl_env": "sandbox",
+ "crawl_env": "runner-rendered",
  "robots_note": "ok",
  "pages": [
   {
@@ -54,7 +54,26 @@
   ]
  },
  "template": "generic-html:squarespace",
- "groups": [],
+ "groups": [
+  {
+   "id": "stfrancis.today:contemplative",
+   "name": "Contemplative Prayer Group",
+   "category": "prayer_devotion",
+   "category_label": "Prayer & devotion",
+   "subcategory": "contemplative_prayer",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.stfrancis.today/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stfrancis.today/st-francis-springs-hosted-events",
+   "source_kind": "website",
+   "fetched_at": "2026-11-02T07:17:02+00:00",
+   "confidence": "medium"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
  "social": {
@@ -75,23 +94,13 @@
    "language": null,
    "raw": "Yes, Mass is at 10:00am on Sundays in the indoor chapel.",
    "source_url": "https://www.stfrancis.today/",
-   "fetched_at": "2026-11-01T17:27:05+00:00",
+   "fetched_at": "2026-11-02T07:16:53+00:00",
    "needs_review": true,
    "review_reason": "weekend_rescue"
   }
  ],
  "source_url": "https://www.stfrancis.today/",
- "fetched_at": "2026-11-01T17:27:08+00:00",
- "topup": {
-  "kinds": [
-   "adoration",
-   "confession",
-   "liturgy"
-  ],
-  "at": "2026-11-02T04:41:45+00:00",
-  "requests": 0,
-  "found": []
- },
+ "fetched_at": "2026-11-02T07:17:08+00:00",
  "schedule_template": {
   "template": "squarespace",
   "version": "ca-sites/3",
@@ -115,7 +124,10 @@
  "schedule_dropped": {
   "weekend_rescue_added": 1
  },
- "groups_dropped": {},
+ "groups_dropped": {
+  "unmatched": 1,
+  "noise": 1
+ },
  "event_counts": {
   "window_start": "2026-11-02",
   "window_end_exclusive": "2027-01-31",
@@ -136,10 +148,11 @@
    "phone": "https://www.stfrancis.today/contact-us",
    "address": "https://www.stfrancis.today/contact-us"
   },
-  "fetched_at": "2026-11-01T17:27:08+00:00",
+  "fetched_at": "2026-11-02T07:17:08+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
- }
+ },
+ "fetch_mode": "rendered"
 }
