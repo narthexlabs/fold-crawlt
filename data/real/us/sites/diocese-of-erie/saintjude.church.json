@@ -83,6 +83,18 @@
    "url": "https://saintjude.church/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://saintjude.church/reconciliation",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://saintjude.church/adoration",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -395,7 +407,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-02T00:08:42+00:00",
+    "fetched_at": "2026-11-02T04:52:06+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -528,7 +540,7 @@
    "kind": "mass",
    "day": "Thursday",
    "time": "08:00",
-   "language": null,
+   "language": "Spanish",
    "raw": "– Tuesday, No Mass: – Thursday, 8:00am and 6:15pm (Spanish)",
    "source_url": "https://saintjude.church/",
    "fetched_at": "2026-11-01T20:25:10+00:00",
@@ -566,9 +578,19 @@
  ],
  "source_url": "https://saintjude.church/",
  "fetched_at": "2026-11-01T20:25:20+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:14+00:00",
+  "requests": 2,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -582,6 +604,7 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 10
  },
  "has_sunday": true,

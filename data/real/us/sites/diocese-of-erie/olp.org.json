@@ -3,18 +3,20 @@
  "diocese": "diocese-of-erie",
  "matched_church_ids": [
   "brave:PA|peace erie|",
-  "gc-24456"
+  "gc-24456",
+  "our-lady-of-peace-erie-pa"
  ],
  "matched": {
   "directory": [],
   "discovermass": [
+   "our-lady-of-peace-erie-pa",
    "brave:PA|peace erie|",
    "gc-24456"
   ]
  },
  "names": [
-  "Our Lady Of Peace",
-  "Our Lady of Peace"
+  "Our Lady of Peace",
+  "Our Lady Of Peace"
  ],
  "cities": [
   "Erie"
@@ -84,6 +86,12 @@
    "url": "https://www.olp.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.olp.org/adoration",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -494,9 +502,19 @@
  ],
  "source_url": "https://www.olp.org/",
  "fetched_at": "2026-11-01T20:25:14+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:12+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -510,6 +528,7 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 27
  },
  "has_sunday": true,
@@ -521,8 +540,8 @@
   "fragment": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

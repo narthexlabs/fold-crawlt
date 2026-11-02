@@ -216,6 +216,19 @@
   {
    "kind": "confession",
    "day": "Saturday",
+   "time": "15:30-16:00",
+   "language": null,
+   "raw": "Confessions Saturdays: 3:30 - 4:00 PM",
+   "source_url": "https://www.hcsjchurches.org/",
+   "fetched_at": "2026-11-02T00:05:48+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
    "time": "16:00-16:30",
    "language": null,
    "raw": "Reconciliation is offered Saturday 4:00 PM to 4:30 PM, or by appointment.",
@@ -229,9 +242,19 @@
  ],
  "source_url": "https://www.hcsjchurches.org/",
  "fetched_at": "2026-11-02T00:05:50+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:11+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -239,12 +262,13 @@
     "counts_ok": true,
     "sunday_not_copied": true,
     "no_daily_on_sunday": true,
-    "mostly_high": true
+    "mostly_high": false
    },
    "score": "low"
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 3
  },
  "has_sunday": false,
