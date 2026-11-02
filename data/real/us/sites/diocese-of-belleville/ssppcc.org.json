@@ -66,6 +66,12 @@
    "url": "https://www.ssppcc.org/parish-calendar.html",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.ssppcc.org/sacraments.html",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -362,7 +368,7 @@
    "feed_key": "1d35a9fb1ba4",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:42:20+00:00",
+    "fetched_at": "2026-11-02T05:00:11+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -380,12 +386,25 @@
  "schedule_rows": [
   {
    "kind": "mass",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Saturday Vigil: 5:00 pm",
+   "source_url": "https://www.ssppcc.org/",
+   "fetched_at": "2026-11-01T17:21:22+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "weebly"
+  },
+  {
+   "kind": "mass",
    "day": "Sunday",
    "time": "08:00",
    "language": null,
-   "raw": "Mass Times: Sundays: 8 am & 10 am",
-   "source_url": "https://www.ssppcc.org/worship-opportunities.html",
-   "fetched_at": "2026-11-01T17:21:24+00:00",
+   "raw": "Mass Times:: Sunday: 8:00 am & 10:00 am",
+   "source_url": "https://www.ssppcc.org/",
+   "fetched_at": "2026-11-01T17:21:22+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -396,26 +415,88 @@
    "day": "Sunday",
    "time": "10:00",
    "language": null,
-   "raw": "Mass Times: Sundays: 8 am & 10 am",
-   "source_url": "https://www.ssppcc.org/worship-opportunities.html",
-   "fetched_at": "2026-11-01T17:21:24+00:00",
+   "raw": "Mass Times:: Sunday: 8:00 am & 10:00 am",
+   "source_url": "https://www.ssppcc.org/",
+   "fetched_at": "2026-11-01T17:21:22+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "weebly"
   },
   {
-   "kind": "mass",
+   "kind": "confession",
    "day": "Saturday",
-   "time": "17:00",
+   "time": "16:00-16:45",
    "language": null,
-   "raw": "Saturday Vigil: 5 pm",
-   "source_url": "https://www.ssppcc.org/worship-opportunities.html",
-   "fetched_at": "2026-11-01T17:21:24+00:00",
+   "raw": "Sacrament of Reconciliation: Saturdays 4:00 pm - 4:45 pm",
+   "source_url": "https://www.ssppcc.org/",
+   "fetched_at": "2026-11-01T17:21:22+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "high",
    "template": "weebly"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Mass Times:: Weekday Tuesday-Friday: 8 am",
+   "source_url": "https://www.ssppcc.org/",
+   "fetched_at": "2026-11-01T17:21:22+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly",
+   "day_expanded_from": "Tuesday-Friday"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Mass Times:: Weekday Tuesday-Friday: 8 am",
+   "source_url": "https://www.ssppcc.org/",
+   "fetched_at": "2026-11-01T17:21:22+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly",
+   "day_expanded_from": "Tuesday-Friday",
+   "day_parsed": "Tuesday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Mass Times:: Weekday Tuesday-Friday: 8 am",
+   "source_url": "https://www.ssppcc.org/",
+   "fetched_at": "2026-11-01T17:21:22+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly",
+   "day_expanded_from": "Tuesday-Friday",
+   "day_parsed": "Tuesday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Mass Times:: Weekday Tuesday-Friday: 8 am",
+   "source_url": "https://www.ssppcc.org/",
+   "fetched_at": "2026-11-01T17:21:22+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly",
+   "day_expanded_from": "Tuesday-Friday",
+   "day_parsed": "Tuesday",
+   "day_bound_from_line": true
   },
   {
    "kind": "mass",
@@ -430,69 +511,25 @@
    "confidence": "medium",
    "template": "weebly",
    "day_expanded_from": "Weekdays"
-  },
-  {
-   "kind": "mass",
-   "day": "Tuesday",
-   "time": "08:00",
-   "language": null,
-   "raw": "Mass Times: Weekdays: 8 am",
-   "source_url": "https://www.ssppcc.org/worship-opportunities.html",
-   "fetched_at": "2026-11-01T17:21:24+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "weebly",
-   "day_expanded_from": "Weekdays"
-  },
-  {
-   "kind": "mass",
-   "day": "Wednesday",
-   "time": "08:00",
-   "language": null,
-   "raw": "Mass Times: Weekdays: 8 am",
-   "source_url": "https://www.ssppcc.org/worship-opportunities.html",
-   "fetched_at": "2026-11-01T17:21:24+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "weebly",
-   "day_expanded_from": "Weekdays"
-  },
-  {
-   "kind": "mass",
-   "day": "Thursday",
-   "time": "08:00",
-   "language": null,
-   "raw": "Mass Times: Weekdays: 8 am",
-   "source_url": "https://www.ssppcc.org/worship-opportunities.html",
-   "fetched_at": "2026-11-01T17:21:24+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "weebly",
-   "day_expanded_from": "Weekdays"
-  },
-  {
-   "kind": "mass",
-   "day": "Friday",
-   "time": "08:00",
-   "language": null,
-   "raw": "Mass Times: Weekdays: 8 am",
-   "source_url": "https://www.ssppcc.org/worship-opportunities.html",
-   "fetched_at": "2026-11-01T17:21:24+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "weebly",
-   "day_expanded_from": "Weekdays"
   }
  ],
  "source_url": "https://www.ssppcc.org/",
  "fetched_at": "2026-11-01T17:21:32+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:00+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "weebly",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -506,13 +543,24 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 14
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "The Sacrament of Reconciliation is celebrated on Saturday at 4:00 p.m. - 4:45 p.m. and anytime by appointment. During Advent and Lent special parish penance services are held.",
+   "phrase": "by appointment",
+   "source_url": "https://www.ssppcc.org/worship-opportunities.html",
+   "fetched_at": "2026-11-01T17:21:24+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "no_day": 1,
-  "not_a_service": 2,
+  "other_location": 1,
   "relative_time": 1,
+  "not_a_service": 1,
   "prose": 1
  },
  "groups_dropped": {
@@ -521,8 +569,8 @@
   "sacrament_prep": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
