@@ -75,6 +75,12 @@
    "url": "https://cktoledo.org/live-stream/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://cktoledo.org/eucharistic-adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -427,6 +433,20 @@
    "confidence": "high",
    "template": "wordpress",
    "kind_parsed": "mass"
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "08:45-19:00",
+   "language": null,
+   "raw": "Eucharistic Adoration: Tuesdays 8:45AM – 7:00PM",
+   "source_url": "https://cktoledo.org/eucharistic-adoration/",
+   "fetched_at": "2026-11-02T04:52:51+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "http://www.cktoledo.org/",
@@ -470,5 +490,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:52:51+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }
