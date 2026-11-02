@@ -27,7 +27,7 @@
  "home_url": "https://saintsabina.org/",
  "final_url": "https://saintsabina.org/",
  "crawl_status": "ok",
- "crawl_env": "sandbox",
+ "crawl_env": "runner-rendered",
  "robots_note": "ok",
  "pages": [
   {
@@ -50,7 +50,7 @@
   },
   {
    "category": "calendar",
-   "url": "https://saintsabina.org/events/friends-and-family-sunday-1-jts8l",
+   "url": "https://saintsabina.org/events/pet-food-give-away-wd88d",
    "status": 200,
    "class": "ok"
   },
@@ -73,7 +73,8 @@
  "events": [],
  "social": {
   "facebook": [
-   "https://www.facebook.com/stsabinachurch"
+   "https://www.facebook.com/stsabinachurch",
+   "https://www.facebook.com/2008"
   ],
   "youtube": [
    "https://www.youtube.com/c/TheFaithCommunityofSaintSabina",
@@ -103,25 +104,26 @@
    "language": null,
    "raw": "Mass: Worship services are streamed live every Sunday at 10am",
    "source_url": "https://saintsabina.org/live",
-   "fetched_at": "2026-11-01T07:28:04+00:00",
+   "fetched_at": "2026-11-02T07:15:37+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "low",
    "template": "squarespace"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Saturday. November 7th at 5pm",
+   "source_url": "https://saintsabina.org/",
+   "fetched_at": "2026-11-02T07:15:27+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
   }
  ],
  "source_url": "https://saintsabina.org/",
- "fetched_at": "2026-11-01T07:28:05+00:00",
- "topup": {
-  "kinds": [
-   "adoration",
-   "confession",
-   "liturgy"
-  ],
-  "at": "2026-11-02T04:41:36+00:00",
-  "requests": 0,
-  "found": []
- },
+ "fetched_at": "2026-11-02T07:15:38+00:00",
  "schedule_template": {
   "template": "squarespace",
   "version": "ca-sites/3",
@@ -143,8 +145,11 @@
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "dated_line": 1,
-  "no_kind": 1
+  "dated_line": 12,
+  "no_kind": 2,
+  "skipped_section": 3,
+  "dated_block": 4,
+  "box_rows_added": 1
  },
  "groups_dropped": {},
  "event_counts": {
@@ -160,18 +165,17 @@
  "office_contact": {
   "email": null,
   "phone": "(773) 295-2166",
-  "address": null,
+  "address": "1210 W 78th Place, Chicago, IL 60620",
   "source_url": "https://saintsabina.org/",
   "sources": {
-   "phone": "https://saintsabina.org/"
+   "phone": "https://saintsabina.org/",
+   "address": "https://saintsabina.org/"
   },
-  "fetched_at": "2026-11-01T07:27:57+00:00",
+  "fetched_at": "2026-11-02T07:15:27+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
  },
- "social_shared_links_removed": [
-  "https://www.facebook.com/2008"
- ]
+ "fetch_mode": "rendered"
 }
