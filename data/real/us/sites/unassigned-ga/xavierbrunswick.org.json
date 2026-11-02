@@ -25,6 +25,24 @@
    "url": "https://xavierbrunswick.org/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://xavierbrunswick.org/sacraments/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://xavierbrunswick.org/liturgy/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://xavierbrunswick.org/aca/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -37,7 +55,64 @@
  "events": [],
  "social": {},
  "bulletin": null,
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "19:00-20:00",
+   "language": null,
+   "raw": "Adoration Times: from 7:00 pm to 8:00 pm",
+   "source_url": "https://xavierbrunswick.org/liturgy/",
+   "fetched_at": "2026-11-02T04:42:16+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "First Friday of the month",
+   "time": "13:00-19:00",
+   "language": null,
+   "raw": "Adoration Times: from 1:00 pm to 7:00 pm,",
+   "source_url": "https://xavierbrunswick.org/liturgy/",
+   "fetched_at": "2026-11-02T04:42:16+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "First Friday of the month",
+   "time": "19:00",
+   "language": null,
+   "raw": "followed by Mass at 7:00 pm",
+   "source_url": "https://xavierbrunswick.org/liturgy/",
+   "fetched_at": "2026-11-02T04:42:16+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Wednesday",
+   "time": "18:00-18:45",
+   "language": null,
+   "raw": "Confession: Wednesday 6:00 – 6:45 pm",
+   "source_url": "https://xavierbrunswick.org/liturgy/",
+   "fetched_at": "2026-11-02T04:42:16+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  }
+ ],
  "source_url": "https://xavierbrunswick.org/",
  "fetched_at": "2026-11-01T07:20:00+00:00",
  "schedule_template": {
@@ -72,5 +147,21 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:20+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 4,
+  "mode": "merge"
  }
 }
