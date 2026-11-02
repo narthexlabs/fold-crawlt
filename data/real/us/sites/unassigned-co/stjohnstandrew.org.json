@@ -69,6 +69,12 @@
    "url": "https://yumacountycatholic.org/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://yumacountycatholic.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -276,97 +282,6 @@
   },
   {
    "kind": "confession",
-   "day": "Tuesday",
-   "time": "16:30",
-   "language": "Spanish",
-   "raw": "Confession: Tuesday: 4:30pm",
-   "source_url": "https://yumacountycatholic.org/",
-   "fetched_at": "2026-11-01T17:35:39+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress"
-  },
-  {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "15:30",
-   "language": "Spanish",
-   "raw": "Confession: Saturday: 3:30pm",
-   "source_url": "https://yumacountycatholic.org/",
-   "fetched_at": "2026-11-01T17:35:39+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress"
-  },
-  {
-   "kind": "adoration",
-   "day": "Monday",
-   "time": "07:00-08:00",
-   "language": "Spanish",
-   "raw": "Adoration: Monday: 7:00am – 8:00am",
-   "source_url": "https://yumacountycatholic.org/",
-   "fetched_at": "2026-11-01T17:35:39+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress"
-  },
-  {
-   "kind": "adoration",
-   "day": "Tuesday",
-   "time": "18:00-20:00",
-   "language": "Spanish",
-   "raw": "Adoration: Tuesday: 6:00pm – 8:00pm",
-   "source_url": "https://yumacountycatholic.org/",
-   "fetched_at": "2026-11-01T17:35:39+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress"
-  },
-  {
-   "kind": "adoration",
-   "day": "Wednesday",
-   "time": "11:30-12:30",
-   "language": "Spanish",
-   "raw": "Adoration: Wednesday: 11:30am – 12:30pm",
-   "source_url": "https://yumacountycatholic.org/",
-   "fetched_at": "2026-11-01T17:35:39+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress"
-  },
-  {
-   "kind": "adoration",
-   "day": "Thursday",
-   "time": "07:00-08:00",
-   "language": "Spanish",
-   "raw": "Adoration: Thursday: 7:00am – 8:00am",
-   "source_url": "https://yumacountycatholic.org/",
-   "fetched_at": "2026-11-01T17:35:39+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress"
-  },
-  {
-   "kind": "adoration",
-   "day": "Friday",
-   "time": "08:30-09:30",
-   "language": "Spanish",
-   "raw": "Adoration: Friday: 8:30am – 9:30am",
-   "source_url": "https://yumacountycatholic.org/",
-   "fetched_at": "2026-11-01T17:35:39+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress"
-  },
-  {
-   "kind": "confession",
    "day": "Thursday",
    "time": "16:30",
    "language": "Spanish",
@@ -429,14 +344,37 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "08:30-09:30",
+   "language": "Spanish",
+   "raw": "Adoration: Friday: 8:30am – 9:30am",
+   "source_url": "https://yumacountycatholic.org/",
+   "fetched_at": "2026-11-01T17:35:39+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
   }
  ],
  "source_url": "https://www.stjohnstandrew.org/",
  "fetched_at": "2026-11-01T17:35:55+00:00",
  "redirected_off_host": "yumacountycatholic.org",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:46+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -450,11 +388,13 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 17
  },
  "has_sunday": true,
  "schedule_dropped": {
   "no_day": 4,
+  "other_location": 7,
   "no_kind": 1
  },
  "groups_dropped": {
@@ -462,8 +402,8 @@
   "noise": 2
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
