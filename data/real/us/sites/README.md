@@ -236,7 +236,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | archdiocese-of-cincinnati | 18 | 18 | 12 | 1 | 1 | 1 | 0 |
 | diocese-of-rapid-city | 17 | 21 | 14 | 2 | 0 | 5 | 0 |
 | diocese-of-grand-island | 17 | 17 | 7 | 1 | 0 | 8 | 1 |
-| eparchy-of-st-maron-of-brooklyn | 16 | 15 | 10 | 0 | 1 | 3 | 1 |
+| eparchy-of-st-maron-of-brooklyn | 16 | 16 | 11 | 0 | 1 | 3 | 1 |
 | diocese-of-crookston | 15 | 16 | 8 | 3 | 0 | 5 | 0 |
 | diocese-of-jackson | 13 | 13 | 5 | 6 | 0 | 2 | 0 |
 | diocese-of-dodge-city | 12 | 12 | 9 | 1 | 0 | 2 | 0 |
@@ -273,6 +273,7 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 
 ## Chunk log
 
+- 2026-11-01T23:33:52+00:00: fetched {'ok': 4, 'done': 4, 'halted_egress': 0}; parsed 1 dioceses
 - 2026-11-02T00:05:44+00:00: fetched {'robots_disallowed': 1, 'done': 59, 'dns': 4, 'conn_error': 1, 'ssl_error': 3, 'challenge': 7, 'not_found': 1, 'ok': 44, 'cut': 2, 'halted_egress': 0}; parsed 8 dioceses
 - 2026-11-02T00:57:03+00:00: fetched {'ok': 2, 'done': 2, 'halted_egress': 0}; parsed 1 dioceses
 - 2026-11-02T01:56:02+00:00: fetched {'dns': 12, 'done': 92, 'ssl_error': 5, 'not_found': 1, 'challenge': 13, 'http_5xx': 1, 'ok': 56, 'http_4xx': 1, 'blocked_403': 1, 'timeout': 2, 'halted_egress': 0}; parsed 4 dioceses
@@ -286,4 +287,4 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-02T05:04:56+00:00: top-up ('confession', 'adoration', 'liturgy'): {'sites': 692, 'requests': 848, 'found_adoration': 149, 'found_confession': 279, 'found_liturgy': 94}; 0 sites left
 - 2026-11-02T04:52:14+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-02T05:04:59+00:00: top-up ('confession', 'adoration', 'liturgy'): {'sites': 598, 'requests': 693, 'found_adoration': 103, 'found_confession': 195, 'found_liturgy': 117}; 0 sites left
-- 2026-11-02T05:37:05+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-02T05:37:03+00:00: fetched {'ok': 1, 'done': 1, 'halted_egress': 0}; parsed 1 dioceses
