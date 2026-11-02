@@ -81,6 +81,12 @@
    "url": "https://sjabett.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://sjabett.org/eucharistic-adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -470,6 +476,34 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "09:30",
+   "language": null,
+   "raw": "Eucharistic Adoration is offered at the following times:: 9:30am: Five-Decade Rosary",
+   "source_url": "https://sjabett.org/eucharistic-adoration/",
+   "fetched_at": "2026-11-02T04:42:06+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "13:00",
+   "language": null,
+   "raw": "Eucharistic Adoration is offered at the following times:: 1:00pm: Fifteen-Decade Rosary",
+   "source_url": "https://sjabett.org/eucharistic-adoration/",
+   "fetched_at": "2026-11-02T04:42:06+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "http://www.lourdescatholic.com/",
@@ -515,6 +549,24 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:06+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(563) 332-7910",
@@ -526,8 +578,5 @@
   },
   "fetched_at": "2026-11-01T05:17:06+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

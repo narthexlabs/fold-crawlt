@@ -69,6 +69,12 @@
    "url": "https://sau.edu/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://sau.edu/about-sau/campus-location/christ-king-chapel/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -204,6 +210,33 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Individual confession is available every week on Wednesdays at 8:00 p.m. and Thursdays at 8:30 p.m., and by appointment with our chaplain.",
+   "phrase": "by appointment",
+   "source_url": "https://sau.edu/about-sau/campus-location/christ-king-chapel/",
+   "fetched_at": "2026-11-02T04:42:00+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:01+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "liturgy"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(563) 333-6000",
@@ -215,8 +248,5 @@
   },
   "fetched_at": "2026-11-01T05:17:05+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }
