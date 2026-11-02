@@ -20,33 +20,140 @@
   "California"
  ],
  "home_url": "http://www.stignatiussf.org/",
- "final_url": "https://www.stignatiussf.org/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "final_url": "https://stignatiussf.org/",
+ "crawl_status": "wayback-2026-02-23",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
-   "url": "https://www.stignatiussf.org/",
-   "status": 403,
-   "class": "challenge"
+   "url": "https://stignatiussf.org/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "stignatiussf.org:children_ff",
+   "name": "Children's Faith Formation",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "children_faith_formation",
+   "audience": "families",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stignatiussf.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stignatiussf.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-02-23T18:56:09+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-02-23"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/StIgnatiusSF"
+  ],
+  "instagram": [
+   "https://www.instagram.com/stignatiussf/"
+  ],
+  "youtube": [
+   "https://www.youtube.com/channel/UC6Q6VxDyz20OviuRaMhFt6w",
+   "https://www.youtube.com/c/stignatiusparishsf",
+   "https://www.youtube.com/channel/UC8sYK7iv7oYttWOhgyBPMYA"
+  ],
+  "livestream": [
+   {
+    "url": "https://stignatiussf.org/livestream",
+    "label": "Livestream",
+    "platform": "stignatiussf.org",
+    "kind": "link"
+   }
+  ]
+ },
+ "bulletin": {
+  "url": "https://stignatiussf.org/bulletins-sip",
+  "date": null,
+  "kind": "page",
+  "text": "Bulletins",
+  "source_url": "https://stignatiussf.org/"
+ },
  "schedule_rows": [],
  "source_url": "http://www.stignatiussf.org/",
- "fetched_at": "2026-11-01T03:05:19+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-02T05:41:34+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 11
+ },
+ "has_sunday": false,
+ "schedule_dropped": {
+  "text:dated_line": 5
+ },
+ "groups_dropped": {},
+ "office_contact": {
+  "email": "info@stignatiussf.org",
+  "phone": "(415) 422-2188",
+  "address": "650 Parker Avenue, San Francisco, CA 94118",
+  "source_url": "https://stignatiussf.org/",
+  "sources": {
+   "email": "https://stignatiussf.org/",
+   "phone": "https://stignatiussf.org/",
+   "address": "https://stignatiussf.org/"
+  },
+  "fetched_at": "2026-02-23T18:56:09+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2026-02-23",
+  "capture_age_days": 252,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://stignatiussf.org/",
+    "capture": "2026-02-23",
+    "archive_url": "https://web.archive.org/web/20260223185609/https://stignatiussf.org/"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review.",
+  "grade": {
+   "rule": "wayback-verified-2026-11-01",
+   "template": "ecatholic",
+   "trusted_template": false,
+   "has_sunday": false,
+   "groups": 1,
+   "verified": false,
+   "capture_date": "2026-02-23",
+   "applied": false
+  }
  }
 }
