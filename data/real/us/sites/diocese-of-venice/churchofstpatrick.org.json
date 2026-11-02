@@ -69,6 +69,18 @@
    "url": "https://www.churchofstpatrick.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.churchofstpatrick.org/penance---reconciliation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.churchofstpatrick.org/adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -281,6 +293,80 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "Monday (summer)",
+   "time": "08:30-13:00",
+   "language": null,
+   "raw": "SUMMER ADORATION HOURS: 8:30AM to 1:00pm",
+   "source_url": "https://www.churchofstpatrick.org/adoration",
+   "fetched_at": "2026-11-02T04:42:03+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "MONDAY - THURSDAY",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday (summer)",
+   "time": "08:30-13:00",
+   "language": null,
+   "raw": "SUMMER ADORATION HOURS: 8:30AM to 1:00pm",
+   "source_url": "https://www.churchofstpatrick.org/adoration",
+   "fetched_at": "2026-11-02T04:42:03+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "MONDAY - THURSDAY",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday (summer)",
+   "time": "08:30-13:00",
+   "language": null,
+   "raw": "SUMMER ADORATION HOURS: 8:30AM to 1:00pm",
+   "source_url": "https://www.churchofstpatrick.org/adoration",
+   "fetched_at": "2026-11-02T04:42:03+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "MONDAY - THURSDAY",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday (summer)",
+   "time": "08:30-13:00",
+   "language": null,
+   "raw": "SUMMER ADORATION HOURS: 8:30AM to 1:00pm",
+   "source_url": "https://www.churchofstpatrick.org/adoration",
+   "fetched_at": "2026-11-02T04:42:03+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "MONDAY - THURSDAY",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday (summer)",
+   "time": "08:30-12:00",
+   "language": null,
+   "raw": "SUMMER ADORATION HOURS: 8:30AM to 12:00PM",
+   "source_url": "https://www.churchofstpatrick.org/adoration",
+   "fetched_at": "2026-11-02T04:42:03+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
   }
  ],
  "source_url": "http://www.churchofstpatrick.org/",
@@ -323,5 +409,21 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:04+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 5,
+  "mode": "merge"
  }
 }

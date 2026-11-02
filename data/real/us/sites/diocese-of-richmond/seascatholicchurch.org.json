@@ -75,6 +75,18 @@
    "url": "https://seascatholicchurch.org/our-parish/contact-us-directions/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://seascatholicchurch.org/sacraments/reconciliation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://seascatholicchurch.org",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -149,6 +161,62 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": null,
+   "raw": "St. Elizabeth Ann Seton Catholic Church offers Reconciliation on Saturday evenings at 5:00 PM or by appointment.",
+   "source_url": "https://seascatholicchurch.org/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:48+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:30",
+   "language": null,
+   "raw": "5:30 PM Vigil Mass",
+   "source_url": "https://seascatholicchurch.org",
+   "fetched_at": "2026-11-02T04:41:49+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:30",
+   "language": null,
+   "raw": "8:30 AM Mass and 11:00 AM Mass",
+   "source_url": "https://seascatholicchurch.org",
+   "fetched_at": "2026-11-02T04:41:49+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:00",
+   "language": null,
+   "raw": "8:30 AM Mass and 11:00 AM Mass",
+   "source_url": "https://seascatholicchurch.org",
+   "fetched_at": "2026-11-02T04:41:49+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "https://seascatholicchurch.org/support-your-parish/",
@@ -187,5 +255,36 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "St. Elizabeth Ann Seton Catholic Church offers Reconciliation on Saturday evenings at 5:00 PM or by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://seascatholicchurch.org/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:48+00:00"
+  },
+  {
+   "kind": "confession",
+   "text": "Reconciliation by appt, as well.",
+   "phrase": "by appt",
+   "source_url": "https://seascatholicchurch.org/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:48+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:49+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 4,
+  "mode": "merge"
  }
 }

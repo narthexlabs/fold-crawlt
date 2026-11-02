@@ -489,6 +489,34 @@
    "review_reason": null,
    "confidence": "high",
    "template": "weebly"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": null,
+   "raw": "Weekend Liturgies: 10:00am",
+   "source_url": "https://www.stmichaelchurchindependence.org/mass-schedule.html",
+   "fetched_at": "2026-11-02T04:52:38+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "weebly",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "12:00",
+   "language": null,
+   "raw": "Weekend Liturgies: 12:00pm",
+   "source_url": "https://www.stmichaelchurchindependence.org/mass-schedule.html",
+   "fetched_at": "2026-11-02T04:52:38+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "weebly",
+   "topup": true
   }
  ],
  "source_url": "http://www.stmichaelchurchindependence.org/",
@@ -530,5 +558,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:52:38+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
  }
 }

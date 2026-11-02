@@ -64,6 +64,12 @@
    "url": "https://www.ourladyofbelen.org/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.ourladyofbelen.org/reconciliation",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -321,6 +327,34 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Friday",
+   "time": "17:30",
+   "language": null,
+   "raw": "Reconciliation (confession): Fridays at 5:30pm (after the 5:00pm Mass) and on Saturdays 2:30pm to 4:00pm or by appointment (call the parish office at",
+   "source_url": "https://www.ourladyofbelen.org/reconciliation",
+   "fetched_at": "2026-11-02T04:41:50+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "14:30",
+   "language": null,
+   "raw": "Reconciliation (confession): Fridays at 5:30pm (after the 5:00pm Mass) and on Saturdays 2:30pm to 4:00pm or by appointment (call the parish office at",
+   "source_url": "https://www.ourladyofbelen.org/reconciliation",
+   "fetched_at": "2026-11-02T04:41:50+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "topup": true
   }
  ],
  "source_url": "https://www.ourladyofbelen.org/",
@@ -360,5 +394,29 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Reconciliation (confession): Fridays at 5:30pm (after the 5:00pm Mass) and on Saturdays 2:30pm to 4:00pm or by appointment (call the parish office at",
+   "phrase": "by appointment",
+   "source_url": "https://www.ourladyofbelen.org/reconciliation",
+   "fetched_at": "2026-11-02T04:41:50+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:51+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
  }
 }

@@ -69,6 +69,12 @@
    "url": "https://www.mbtparish.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.mbtparish.org/adoracion-nocturna",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -205,32 +211,6 @@
   "source_url": "https://www.mbtparish.org/bulletin-board"
  },
  "schedule_rows": [
-  {
-   "kind": "confession",
-   "day": "Thursday",
-   "time": "17:00-19:00",
-   "language": null,
-   "raw": "Confessions: at Holy Family Thursdays from 5 p.m. to 7:00 pm and Saturdays from 4pm to 6:00pm",
-   "source_url": "https://www.mbtparish.org/reconciliation",
-   "fetched_at": "2026-11-01T18:51:48+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "squarespace"
-  },
-  {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "16:00-18:00",
-   "language": null,
-   "raw": "Confessions: at Holy Family Thursdays from 5 p.m. to 7:00 pm and Saturdays from 4pm to 6:00pm",
-   "source_url": "https://www.mbtparish.org/reconciliation",
-   "fetched_at": "2026-11-01T18:51:48+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "squarespace"
-  },
   {
    "kind": "other",
    "day": "Holy days",
@@ -417,14 +397,52 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "squarespace"
+  },
+  {
+   "kind": "confession",
+   "day": "Thursday",
+   "time": "17:00-19:00",
+   "language": null,
+   "raw": "Reconciliation / Confesiones:: At Holy Family Thursdays from 5 p.m. to 7:00 pm and Saturdays from 4pm to 6:00pm",
+   "source_url": "https://www.mbtparish.org/",
+   "fetched_at": "2026-11-01T18:51:46+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "16:00-18:00",
+   "language": null,
+   "raw": "Reconciliation / Confesiones:: At Holy Family Thursdays from 5 p.m. to 7:00 pm and Saturdays from 4pm to 6:00pm",
+   "source_url": "https://www.mbtparish.org/",
+   "fetched_at": "2026-11-01T18:51:46+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace"
   }
  ],
  "source_url": "http://www.mostblessedtrinityparish.org/home.html",
  "fetched_at": "2026-11-01T18:51:54+00:00",
  "redirected_off_host": "mbtparish.org",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:35+00:00",
+  "requests": 1,
+  "found": [
+   "adoration"
+  ]
+ },
  "schedule_template": {
   "template": "squarespace",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -438,19 +456,22 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 16
+  "trusted_kinds": [],
+  "generic_rows": 20
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 6,
-  "prose": 2
+  "other_location": 8,
+  "no_kind": 1,
+  "no_day": 1,
+  "prose": 4
  },
  "groups_dropped": {
   "noise": 2
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

@@ -69,6 +69,12 @@
    "url": "https://www.stjeromenorwalk.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stjeromenorwalk.org/penance",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -500,9 +506,21 @@
  ],
  "source_url": "http://www.stjeromenorwalk.org/",
  "fetched_at": "2026-11-01T18:51:48+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:00+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -516,20 +534,29 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 17
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Confession available after mass anytime upon request",
+   "phrase": "upon request",
+   "source_url": "https://www.stjeromenorwalk.org/",
+   "fetched_at": "2026-11-01T18:51:41+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "not_a_service": 1,
-  "other_location": 2,
-  "relative_time": 1
+  "no_kind": 2
  },
  "groups_dropped": {
   "noise": 6
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

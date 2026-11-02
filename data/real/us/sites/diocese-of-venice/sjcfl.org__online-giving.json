@@ -75,6 +75,12 @@
    "url": "https://www.sjcfl.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://www.sjcfl.org/liturgy-committee",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -387,9 +393,21 @@
  "schedule_rows": [],
  "source_url": "https://www.sjcfl.org/Online-Giving",
  "fetched_at": "2026-11-01T22:15:45+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:01+00:00",
+  "requests": 1,
+  "found": [
+   "liturgy"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -403,17 +421,18 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 7
  },
  "has_sunday": false,
  "schedule_dropped": {
-  "skipped_section": 4,
+  "skipped_section": 11,
   "prose": 7
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

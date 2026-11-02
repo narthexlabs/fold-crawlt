@@ -64,6 +64,12 @@
    "url": "https://www.divinemercysf.org/staff-contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.divinemercysf.org/adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -563,6 +569,34 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wix"
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "07:30-15:00",
+   "language": null,
+   "raw": "Christ the King Adoration: Every Thursday 7:30 AM - 3:00 PM",
+   "source_url": "https://www.divinemercysf.org/adoration",
+   "fetched_at": "2026-11-02T04:42:03+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "08:30-15:00",
+   "language": null,
+   "raw": "St. Mary Adoration: Every Wednesday 8:30 AM - 3:00 PM",
+   "source_url": "https://www.divinemercysf.org/adoration",
+   "fetched_at": "2026-11-02T04:42:03+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "topup": true
   }
  ],
  "source_url": "https://www.divinemercysf.org/",
@@ -605,5 +639,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:03+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
  }
 }

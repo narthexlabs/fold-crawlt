@@ -78,12 +78,12 @@
  "schedule_rows": [
   {
    "kind": "mass",
-   "day": "Saturday",
-   "time": "17:30",
+   "day": "Sunday",
+   "time": "08:00",
    "language": null,
-   "raw": "Mass & Confession Times: 5:30 p.m. - St. Mary Church, St. Elmo",
-   "source_url": "https://www.triparishil.org/mass-times",
-   "fetched_at": "2026-11-01T20:25:09+00:00",
+   "raw": "Mass Times: Sunday: 8:00a.m.",
+   "source_url": "https://www.triparishil.org/st-anne-church",
+   "fetched_at": "2026-11-01T20:25:06+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -91,10 +91,36 @@
   },
   {
    "kind": "mass",
-   "day": "Sunday",
+   "day": "Thursday",
    "time": "08:00",
    "language": null,
-   "raw": "Mass & Confession Times: 8:00 a.m. - St. Anne Church, Edgewood",
+   "raw": "Mass Times: Thursday: 8:00a.m.",
+   "source_url": "https://www.triparishil.org/st-anne-church",
+   "fetched_at": "2026-11-01T20:25:06+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix"
+  },
+  {
+   "kind": "confession",
+   "day": "First Sunday of the month",
+   "time": "07:00-07:45",
+   "language": null,
+   "raw": "Confessions: 1st Sunday: 7:00 - 7:45a.m.",
+   "source_url": "https://www.triparishil.org/st-anne-church",
+   "fetched_at": "2026-11-01T20:25:06+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:30",
+   "language": null,
+   "raw": "Mass & Confession Times: 5:30 p.m. - St. Mary Church, St. Elmo",
    "source_url": "https://www.triparishil.org/mass-times",
    "fetched_at": "2026-11-01T20:25:09+00:00",
    "needs_review": false,
@@ -156,19 +182,6 @@
   },
   {
    "kind": "mass",
-   "day": "Thursday",
-   "time": "08:00",
-   "language": null,
-   "raw": "no Mass offered: 8:00 a.m. - St. Anne Church, Edgewood",
-   "source_url": "https://www.triparishil.org/mass-times",
-   "fetched_at": "2026-11-01T20:25:09+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wix"
-  },
-  {
-   "kind": "mass",
    "day": "Friday",
    "time": "08:00",
    "language": null,
@@ -205,26 +218,23 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wix"
-  },
-  {
-   "kind": "confession",
-   "day": "First Sunday of the month",
-   "time": "07:00-07:45",
-   "language": null,
-   "raw": "Confession: 7:00 - 7:45 a.m. - St. Anne, Edgewood",
-   "source_url": "https://www.triparishil.org/mass-times",
-   "fetched_at": "2026-11-01T20:25:09+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wix"
   }
  ],
  "source_url": "https://www.triparishil.org/st-anne-church",
  "fetched_at": "2026-11-01T20:25:17+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:44+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "wix",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -238,16 +248,26 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 10
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "The Sacrament of Reconciliation is available anytime by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://www.triparishil.org/st-anne-church",
+   "fetched_at": "2026-11-01T20:25:06+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "other_location": 1
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

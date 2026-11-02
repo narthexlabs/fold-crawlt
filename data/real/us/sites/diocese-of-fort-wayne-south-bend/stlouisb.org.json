@@ -395,6 +395,32 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Saturday 8:30 am - 9:30 am; 3:00 pm – 3:45 pm and by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://www.stlouisb.org/sacraments",
+   "fetched_at": "2026-11-02T04:41:42+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:43+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "secretary@stlouisb.org",
   "phone": "(260) 749-4525",
@@ -406,8 +432,5 @@
   },
   "fetched_at": "2026-11-01T03:59:24+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

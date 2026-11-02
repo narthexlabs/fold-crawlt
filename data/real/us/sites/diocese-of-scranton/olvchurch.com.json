@@ -81,6 +81,12 @@
    "url": "https://olvchurch.com/contacts/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://olvchurch.com/events/exposition-of-the-blessed-sacrament-and-adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -508,6 +514,119 @@
    "confidence": "high",
    "template": "godaddy",
    "kind_parsed": "mass"
+  },
+  {
+   "kind": "confession",
+   "day": "Monday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Confessions: Daily after the 8:00 AM Mass",
+   "source_url": "https://olvchurch.com/mass-schedule/",
+   "fetched_at": "2026-11-02T04:43:12+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "godaddy",
+   "relative": "after",
+   "note": "Confessions: Daily after the 8:00 AM Mass",
+   "day_expanded_from": "Daily",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Tuesday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Confessions: Daily after the 8:00 AM Mass",
+   "source_url": "https://olvchurch.com/mass-schedule/",
+   "fetched_at": "2026-11-02T04:43:12+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "godaddy",
+   "relative": "after",
+   "note": "Confessions: Daily after the 8:00 AM Mass",
+   "day_expanded_from": "Daily",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Wednesday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Confessions: Daily after the 8:00 AM Mass",
+   "source_url": "https://olvchurch.com/mass-schedule/",
+   "fetched_at": "2026-11-02T04:43:12+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "godaddy",
+   "relative": "after",
+   "note": "Confessions: Daily after the 8:00 AM Mass",
+   "day_expanded_from": "Daily",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Thursday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Confessions: Daily after the 8:00 AM Mass",
+   "source_url": "https://olvchurch.com/mass-schedule/",
+   "fetched_at": "2026-11-02T04:43:12+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "godaddy",
+   "relative": "after",
+   "note": "Confessions: Daily after the 8:00 AM Mass",
+   "day_expanded_from": "Daily",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Friday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Confessions: Daily after the 8:00 AM Mass",
+   "source_url": "https://olvchurch.com/mass-schedule/",
+   "fetched_at": "2026-11-02T04:43:12+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "godaddy",
+   "relative": "after",
+   "note": "Confessions: Daily after the 8:00 AM Mass",
+   "day_expanded_from": "Daily",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "16:00-16:45",
+   "language": null,
+   "raw": "Confessions: Saturdays from 4:00 – 4:45 PM",
+   "source_url": "https://olvchurch.com/mass-schedule/",
+   "fetched_at": "2026-11-02T04:43:12+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "godaddy",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "19:00",
+   "language": null,
+   "raw": "Mass Schedule: 7:00 PM on Wednesdays",
+   "source_url": "https://olvchurch.com/mass-schedule/",
+   "fetched_at": "2026-11-02T04:43:12+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "godaddy",
+   "topup": true
   }
  ],
  "source_url": "http://www.olvchurch.com/",
@@ -554,6 +673,24 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:12+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 7,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(570) 629-4572",
@@ -565,8 +702,5 @@
   },
   "fetched_at": "2026-11-01T03:59:02+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

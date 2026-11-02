@@ -61,12 +61,6 @@
    "url": "https://stannechurchingresham.org/ministries",
    "status": 404,
    "class": "not_found"
-  },
-  {
-   "category": "adoration",
-   "url": "https://stannechurchingresham.org/adoration",
-   "status": 404,
-   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -332,32 +326,16 @@
    "source": "wayback-2026-04-14",
    "archive_url": "https://web.archive.org/web/20260414181820/https://stannechurchingresham.org/",
    "capture_date": "2026-04-14"
-  },
-  {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "15:30-16:30",
-   "language": null,
-   "raw": "Saturday: 3:30 PM - 4:30 PM o llame a la oficina para una cita.",
-   "source_url": "https://www.stannechurchingresham.org/confession-times",
-   "fetched_at": "2025-05-14T18:45:44+00:00",
-   "needs_review": true,
-   "review_reason": "wayback capture 2026-04-14: read by a person before it is shown",
-   "confidence": "high",
-   "template": "ecatholic",
-   "source": "wayback-2026-04-14",
-   "archive_url": "https://web.archive.org/web/20250514184544/https://www.stannechurchingresham.org/confession-times",
-   "capture_date": "2025-05-14"
   }
  ],
  "source_url": "https://stannechurchingresham.org/",
- "fetched_at": "2026-11-02T05:04:12+00:00",
+ "fetched_at": "2026-11-02T04:30:30+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
  },
  "schedule_template": {
   "template": "ecatholic",
-  "version": "ca-sites/3",
+  "version": "ca-sites/2",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -369,17 +347,14 @@
    },
    "score": "high"
   },
-  "passed_bar": true,
-  "trusted_candidate": true,
-  "trusted_kinds": [
-   "weekend",
-   "weekday",
-   "confession",
-   "adoration"
-  ],
+  "passed_bar": false,
+  "trusted_candidate": false,
   "generic_rows": 0
  },
  "has_sunday": true,
+ "schedule_dropped": {
+  "prose": 1
+ },
  "groups_dropped": {},
  "office_contact": {
   "email": null,
@@ -433,7 +408,7 @@
   "grade": {
    "rule": "wayback-verified-2026-11-01",
    "template": "ecatholic",
-   "trusted_template": true,
+   "trusted_template": false,
    "has_sunday": true,
    "groups": 0,
    "verified": false,

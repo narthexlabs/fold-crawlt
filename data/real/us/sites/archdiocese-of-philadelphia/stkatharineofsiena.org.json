@@ -84,6 +84,12 @@
    "url": "https://www.stkatharineofsiena.org/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stkatharineofsiena.org/sks-ministries/adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -666,6 +672,19 @@
    "template": "wordpress"
   },
   {
+   "kind": "devotion",
+   "day": "Monday",
+   "time": "08:30-16:30",
+   "language": null,
+   "raw": "We have Exposition of the Blessed Sacrament each Monday from 8:30 AM to 4:30 PM. Devotion begins at 8:30 with the Rosary, followed by quiet prayer time until Benediction at 4:30.",
+   "source_url": "https://www.stkatharineofsiena.org/sks-ministries/adoration/",
+   "fetched_at": "2026-11-02T04:43:08+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  },
+  {
    "kind": "mass",
    "day": "Monday",
    "time": "06:30",
@@ -832,9 +851,21 @@
  ],
  "source_url": "https://www.stkatharineofsiena.org/",
  "fetched_at": "2026-11-01T20:25:38+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:08+00:00",
+  "requests": 1,
+  "found": [
+   "adoration"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -842,12 +873,13 @@
     "counts_ok": true,
     "sunday_not_copied": true,
     "no_daily_on_sunday": true,
-    "mostly_high": true
+    "mostly_high": false
    },
    "score": "low"
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 43
  },
  "has_sunday": true,
@@ -855,7 +887,9 @@
   "skipped_section": 2,
   "no_kind": 3,
   "not_a_service": 2,
-  "no_day": 1,
+  "no_day": 3,
+  "benediction_end": 1,
+  "prose": 1,
   "box_rows_added": 14
  },
  "groups_dropped": {

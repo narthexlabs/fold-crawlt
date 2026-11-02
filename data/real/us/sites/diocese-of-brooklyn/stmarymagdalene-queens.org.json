@@ -57,6 +57,12 @@
    "url": "https://stmarymagdalene-queens.org/about/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stmarymagdalene-queens.org/sacraments/reconciliation",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -540,5 +546,28 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Reconciliation is available before and after all Masses.",
+   "phrase": "after all Masses",
+   "source_url": "https://stmarymagdalene-queens.org/sacraments/reconciliation",
+   "fetched_at": "2026-11-02T04:41:39+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:39+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
  }
 }

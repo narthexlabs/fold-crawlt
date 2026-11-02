@@ -272,7 +272,7 @@
    "feed_key": "dd4959585b97",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-02T03:48:20+00:00",
+    "fetched_at": "2026-11-02T05:00:41+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -311,19 +311,6 @@
    "kind": "mass",
    "day": "Sunday",
    "time": "07:00",
-   "language": null,
-   "raw": "Sunday Mass Schedule:: 7:00AM, 10:30AM on Sunday",
-   "source_url": "https://www.stignatiuspa.com/",
-   "fetched_at": "2026-11-01T20:25:21+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wix"
-  },
-  {
-   "kind": "mass",
-   "day": "Sunday",
-   "time": "10:30",
    "language": null,
    "raw": "Sunday Mass Schedule:: 7:00AM, 10:30AM on Sunday",
    "source_url": "https://www.stignatiuspa.com/",
@@ -440,9 +427,19 @@
  ],
  "source_url": "https://www.stignatiuspa.com/",
  "fetched_at": "2026-11-01T20:25:28+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:09+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "wix",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -456,13 +453,14 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 17
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "no_kind": 1,
   "other_location": 3,
-  "dated_line": 1
+  "dated_line": 1,
+  "prose": 1
  },
  "groups_dropped": {},
  "event_counts": {

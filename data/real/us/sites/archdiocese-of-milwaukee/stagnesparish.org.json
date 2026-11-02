@@ -75,6 +75,12 @@
    "url": "https://www.stagnesparish.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stagnesparish.org/reconciliation",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -423,5 +429,28 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Held on Tuesdays and Thursdays from 5 - 6 pm in church. Also available by appointment, please call the Parish Office.",
+   "phrase": "by appointment",
+   "source_url": "https://www.stagnesparish.org/reconciliation",
+   "fetched_at": "2026-11-02T04:41:43+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:43+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
  }
 }

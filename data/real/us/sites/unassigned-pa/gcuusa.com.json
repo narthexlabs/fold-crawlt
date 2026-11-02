@@ -45,6 +45,18 @@
    "url": "https://gcuusa.com/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://gcuusa.com/reconciliation/",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://gcuusa.com/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -67,7 +79,7 @@
    "note": "The Events Calendar (WordPress) REST API",
    "last_fetch": {
     "status": 200,
-    "fetched_at": "2026-11-01T23:33:36+00:00",
+    "fetched_at": "2026-11-02T04:55:46+00:00",
     "events_in_window": 5,
     "kept": 3,
     "excluded": {
@@ -89,7 +101,7 @@
    "recurring": false,
    "source_url": "https://gcuusa.com/gcu-event/sight-sound-theatre-joshua-beaver-pa-pick-up/",
    "feed_id": "gcuusa.com:tribe_rest:a7ba9c1c",
-   "fetched_at": "2026-11-01T23:33:36+00:00"
+   "fetched_at": "2026-11-02T04:55:46+00:00"
   },
   {
    "id": "5c31918e94ef94af",
@@ -102,7 +114,7 @@
    "recurring": false,
    "source_url": "https://gcuusa.com/gcu-event/scranton-wb-hazleton-american-music-theater-christmas-show-lancaster-bus-trip/",
    "feed_id": "gcuusa.com:tribe_rest:a7ba9c1c",
-   "fetched_at": "2026-11-01T23:33:36+00:00"
+   "fetched_at": "2026-11-02T04:55:46+00:00"
   },
   {
    "id": "bf78cd87da803ff6",
@@ -115,7 +127,7 @@
    "recurring": false,
    "source_url": "https://gcuusa.com/gcu-event/butler-pittsburgh-north-holiday-pops/",
    "feed_id": "gcuusa.com:tribe_rest:a7ba9c1c",
-   "fetched_at": "2026-11-01T23:33:36+00:00"
+   "fetched_at": "2026-11-02T04:55:46+00:00"
   }
  ],
  "social": {
@@ -133,9 +145,19 @@
  "schedule_rows": [],
  "source_url": "https://gcuusa.com/",
  "fetched_at": "2026-11-01T20:25:08+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:04+00:00",
+  "requests": 2,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -149,13 +171,14 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 0
  },
  "has_sunday": false,
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 5,
   "kept_after_privacy": 3,

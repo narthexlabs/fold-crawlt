@@ -67,6 +67,18 @@
    "url": "https://www.glenwoodcatholic.org/event-details/confraternity-of-christian-mothers-2026-11-10-17-00",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.glenwoodcatholic.org/sacraments/reconciliation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.glenwoodcatholic.org/eucharistic-adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -582,6 +594,33 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Confession also available by appointment, call",
+   "phrase": "by appointment",
+   "source_url": "https://www.glenwoodcatholic.org/sacraments/reconciliation",
+   "fetched_at": "2026-11-02T04:41:59+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:03+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "office@ststephen1885.org",
   "phone": "(970) 945-6673",
@@ -594,8 +633,5 @@
   },
   "fetched_at": "2026-11-01T05:11:39+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

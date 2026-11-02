@@ -4,20 +4,25 @@
  "matched_church_ids": [
   "brave:PA|mary protection mount pleasant|",
   "gc-24159",
-  "gc-24170"
+  "gc-24170",
+  "st-pius-x-mount-pleasant-pa",
+  "visitation-of-the-blessed-virgin-mary-mount-pleasant-pa"
  ],
  "matched": {
   "directory": [],
   "discovermass": [
+   "st-pius-x-mount-pleasant-pa",
+   "visitation-of-the-blessed-virgin-mary-mount-pleasant-pa",
    "brave:PA|mary protection mount pleasant|",
    "gc-24159",
    "gc-24170"
   ]
  },
  "names": [
+  "St Pius X Church & Visitation Parish",
+  "Visitation of the Blessed Virgin Mary",
   "St Mary Holy Protection",
-  "St. Pius X",
-  "Visitation of the Blessed Virgin Mary"
+  "St. Pius X"
  ],
  "cities": [
   "Mount Pleasant"
@@ -75,6 +80,12 @@
    "url": "https://www.mpcatholicchurches.org/about/contact-us/",
    "status": null,
    "class": "timeout"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.mpcatholicchurches.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -321,19 +332,6 @@
  },
  "schedule_rows": [
   {
-   "kind": "confession",
-   "day": "First Saturday of the month",
-   "time": "12:00",
-   "language": null,
-   "raw": "Saturday 12:00 p.m. [Mass intention withheld]",
-   "source_url": "https://www.mpcatholicchurches.org/sacraments/overview-sacramental-prep/",
-   "fetched_at": "2026-11-01T20:25:12+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress"
-  },
-  {
    "kind": "mass",
    "day": "Monday",
    "time": "07:00",
@@ -405,7 +403,7 @@
   },
   {
    "kind": "mass",
-   "day": "Saturday",
+   "day": "Saturday (winter, nov-apr)",
    "time": "16:00",
    "language": null,
    "raw": "Visitation Mass Schedule: Saturday: 4:00 p.m.",
@@ -418,7 +416,7 @@
   },
   {
    "kind": "mass",
-   "day": "Sunday",
+   "day": "Sunday (winter, nov-apr)",
    "time": "08:30",
    "language": null,
    "raw": "Visitation Mass Schedule: Sunday: 8:30 a.m.",
@@ -431,64 +429,131 @@
   },
   {
    "kind": "mass",
-   "day": "Saturday",
+   "day": "Saturday (summer, may-oct)",
    "time": "18:00",
    "language": null,
-   "raw": "[St. Pius X] St. Pius X Mass Schedule: Saturday: 6:00 p.m.",
+   "raw": "St. Pius X Mass Schedule: Saturday: 6:00 p.m.",
    "source_url": "https://www.mpcatholicchurches.org/",
    "fetched_at": "2026-11-01T20:25:03+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
-   "template": "wordpress",
-   "location": "St. Pius X"
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday (summer, may-oct)",
+   "time": "10:30",
+   "language": null,
+   "raw": "St. Pius X Mass Schedule: Sunday: 10:30 a.m.",
+   "source_url": "https://www.mpcatholicchurches.org/",
+   "fetched_at": "2026-11-01T20:25:03+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "First Saturday of the month",
+   "time": "12:00",
+   "language": null,
+   "raw": "Saturday 12:00 p.m. [Mass intention withheld]",
+   "source_url": "https://www.mpcatholicchurches.org/sacraments/overview-sacramental-prep/",
+   "fetched_at": "2026-11-01T20:25:12+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "16:00",
+   "language": null,
+   "raw": "Saturday: 4:00 p.m.",
+   "source_url": "https://www.mpcatholicchurches.org/",
+   "fetched_at": "2026-11-01T20:25:03+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:30",
+   "language": null,
+   "raw": "Sunday: 8:30 a.m.",
+   "source_url": "https://www.mpcatholicchurches.org/",
+   "fetched_at": "2026-11-01T20:25:03+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "18:00",
+   "language": null,
+   "raw": "Saturday: 6:00 p.m.",
+   "source_url": "https://www.mpcatholicchurches.org/",
+   "fetched_at": "2026-11-01T20:25:03+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
   },
   {
    "kind": "mass",
    "day": "Sunday",
    "time": "10:30",
    "language": null,
-   "raw": "[St. Pius X] St. Pius X Mass Schedule: Sunday: 10:30 a.m.",
+   "raw": "Sunday: 10:30 a.m.",
    "source_url": "https://www.mpcatholicchurches.org/",
    "fetched_at": "2026-11-01T20:25:03+00:00",
    "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress",
-   "location": "St. Pius X"
+   "review_reason": "schedule_box"
   }
  ],
  "source_url": "https://www.mpcatholicchurches.org/",
  "fetched_at": "2026-11-01T20:26:57+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:21+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
-    "has_sunday": true,
+    "has_sunday": false,
     "hours_ok": true,
     "counts_ok": true,
     "sunday_not_copied": true,
     "no_daily_on_sunday": true,
     "mostly_high": false
    },
-   "score": "medium"
+   "score": "low"
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 14
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 1
+  "other_location": 1,
+  "box_rows_added": 4
  },
  "groups_dropped": {
   "noise": 2,
   "fragment": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

@@ -79,6 +79,12 @@
    "url": "https://saintmarkbuffalo.com/Contact-Us/St-Mark-Rectory",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "http://saintmarkbuffalo.com/Mass-Sacraments/Reconciliation",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -339,8 +345,8 @@
    "time": "16:00",
    "language": null,
    "raw": "Weekend Masses: 4:00 PM St. Mark",
-   "source_url": "http://saintmarkbuffalo.com/Mass-Sacraments",
-   "fetched_at": "2026-11-01T07:27:52+00:00",
+   "source_url": "https://saintmarkbuffalo.com/",
+   "fetched_at": "2026-11-01T07:27:50+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -352,8 +358,8 @@
    "time": "08:00",
    "language": null,
    "raw": "Weekend Masses: 8:00 AM St. Mark",
-   "source_url": "http://saintmarkbuffalo.com/Mass-Sacraments",
-   "fetched_at": "2026-11-01T07:27:52+00:00",
+   "source_url": "https://saintmarkbuffalo.com/",
+   "fetched_at": "2026-11-01T07:27:50+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -362,9 +368,21 @@
  ],
  "source_url": "https://saintmarkbuffalo.com/",
  "fetched_at": "2026-11-01T07:27:58+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:39+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -378,6 +396,7 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 0
  },
  "has_sunday": true,
@@ -391,8 +410,8 @@
   "label_not_group": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

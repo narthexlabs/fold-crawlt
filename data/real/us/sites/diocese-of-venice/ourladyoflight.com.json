@@ -631,6 +631,81 @@
    "confidence": "high",
    "template": "godaddy",
    "kind_parsed": "mass"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday (during the school year)",
+   "time": "17:00",
+   "language": null,
+   "raw": "Mass: September – May: + 5:00 PM",
+   "source_url": "https://www.ourladyoflight.com/mass-confession-adoration-times/",
+   "fetched_at": "2026-11-02T04:42:04+00:00",
+   "needs_review": true,
+   "review_reason": "seasonal",
+   "confidence": "medium",
+   "template": "godaddy",
+   "season": "September – May",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday (winter, dec-apr)",
+   "time": "15:00",
+   "language": null,
+   "raw": "Saturday Evening (Sunday’s vigil): December – April: 3:00 & 5:00 PM",
+   "source_url": "https://www.ourladyoflight.com/mass-confession-adoration-times/",
+   "fetched_at": "2026-11-02T04:42:04+00:00",
+   "needs_review": true,
+   "review_reason": "seasonal",
+   "confidence": "low",
+   "template": "godaddy",
+   "season": "December – April",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday (winter, dec-apr)",
+   "time": "17:00",
+   "language": null,
+   "raw": "Saturday Evening (Sunday’s vigil): December – April: 3:00 & 5:00 PM",
+   "source_url": "https://www.ourladyoflight.com/mass-confession-adoration-times/",
+   "fetched_at": "2026-11-02T04:42:04+00:00",
+   "needs_review": true,
+   "review_reason": "seasonal",
+   "confidence": "medium",
+   "template": "godaddy",
+   "season": "December – April",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday (summer, may-nov)",
+   "time": "15:00-15:45",
+   "language": null,
+   "raw": "Confessions (Reconciliation): May – November: 3:00 – 3:45 PM (before 4:00 PM Mass)",
+   "source_url": "https://www.ourladyoflight.com/mass-confession-adoration-times/",
+   "fetched_at": "2026-11-02T04:42:04+00:00",
+   "needs_review": true,
+   "review_reason": "seasonal",
+   "confidence": "medium",
+   "template": "godaddy",
+   "season": "May – November",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday (winter, dec-apr)",
+   "time": "14:00-14:45",
+   "language": null,
+   "raw": "Confessions (Reconciliation): December – April: 2:00 – 2:45 PM (before 3:00 PM Mass)",
+   "source_url": "https://www.ourladyoflight.com/mass-confession-adoration-times/",
+   "fetched_at": "2026-11-02T04:42:04+00:00",
+   "needs_review": true,
+   "review_reason": "seasonal",
+   "confidence": "medium",
+   "template": "godaddy",
+   "season": "December – April",
+   "topup": true
   }
  ],
  "source_url": "https://www.ourladyoflight.com/",
@@ -672,7 +747,20 @@
   "excluded_by_reason": {}
  },
  "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()",
-  "intentions_withheld": 6
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:04+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ],
+  "rows_added": 5,
+  "mode": "merge"
  }
 }

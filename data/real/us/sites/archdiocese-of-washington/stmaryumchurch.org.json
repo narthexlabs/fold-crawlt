@@ -75,6 +75,18 @@
    "url": "https://stmaryumchurch.org/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stmaryumchurch.org/reconciliation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stmaryumchurch.org/adoration-sign-up/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -459,6 +471,20 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "godaddy"
+  },
+  {
+   "kind": "mass",
+   "day": "First Saturday of the month",
+   "time": "07:30",
+   "language": null,
+   "raw": "On the First Saturday before the 8:00 A.M. Mass at 7:30 A.M.",
+   "source_url": "https://stmaryumchurch.org/mass-times/",
+   "fetched_at": "2026-11-02T04:41:38+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "godaddy",
+   "topup": true
   }
  ],
  "source_url": "https://stmaryumchurch.org/",
@@ -503,5 +529,21 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:39+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

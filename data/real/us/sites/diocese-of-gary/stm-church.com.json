@@ -69,6 +69,12 @@
    "url": "https://www.stm-church.com/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stm-church.com/sacraments",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -443,6 +449,36 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "First Friday of the month",
+   "time": "06:00",
+   "language": null,
+   "raw": "Weekly Confession times:: First Fridays: 6:00 am",
+   "source_url": "https://www.stm-church.com/sacraments",
+   "fetched_at": "2026-11-02T04:41:59+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "First Friday of the month",
+   "time": "06:30",
+   "language": null,
+   "raw": "Weekly Confession times:: (half-hour before the 6:30 am Mass)",
+   "source_url": "https://www.stm-church.com/sacraments",
+   "fetched_at": "2026-11-02T04:41:59+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "before",
+   "note": "Weekly Confession times:: (half-hour before the 6:30 am Mass)",
+   "topup": true
   }
  ],
  "source_url": "http://stm-church.com/",
@@ -484,5 +520,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:01+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
  }
 }

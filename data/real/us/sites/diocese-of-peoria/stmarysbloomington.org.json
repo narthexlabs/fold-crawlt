@@ -63,6 +63,12 @@
    "url": "https://www.stmarysbloomington.org/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stmarysbloomington.org/reconciliation",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -414,6 +420,34 @@
    "confidence": "medium",
    "template": "wix",
    "day_expanded_from": "Monday - Friday"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:00-15:45",
+   "language": null,
+   "raw": "Our weekly confession times include:: Saturdays 3:00 - 3:45 PM",
+   "source_url": "https://www.stmarysbloomington.org/reconciliation",
+   "fetched_at": "2026-11-02T04:41:53+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "13:15-13:45",
+   "language": null,
+   "raw": "Our weekly confession times include:: Sundays 1:15 - 1:45 PM",
+   "source_url": "https://www.stmarysbloomington.org/reconciliation",
+   "fetched_at": "2026-11-02T04:41:53+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "topup": true
   }
  ],
  "source_url": "http://www.stmarysbloomington.org/",
@@ -455,5 +489,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:56+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
  }
 }

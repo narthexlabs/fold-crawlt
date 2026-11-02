@@ -39,6 +39,18 @@
    "url": "https://qaskofc.com/current-newsletter",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://qaskofc.com/reconciliation/",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://qaskofc.com/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -64,7 +76,7 @@
    "feed_key": "c65f4fd4d670",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:31:45+00:00",
+    "fetched_at": "2026-11-02T05:07:14+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -80,7 +92,7 @@
    "note": "The Events Calendar (WordPress) REST API",
    "last_fetch": {
     "status": 200,
-    "fetched_at": "2026-11-01T23:31:45+00:00",
+    "fetched_at": "2026-11-02T05:07:14+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -90,6 +102,20 @@
  "social": {},
  "bulletin": null,
  "schedule_rows": [
+  {
+   "kind": "devotion",
+   "day": "Monday",
+   "time": "19:15",
+   "language": null,
+   "raw": "General membership meetings are held on the second Monday of each month beginning with praying the Rosary at 7:15 pm in the parish hall.",
+   "source_url": "https://qaskofc.com/council-activities",
+   "fetched_at": "2026-11-01T17:26:58+00:00",
+   "needs_review": true,
+   "review_reason": "nth_of_month",
+   "confidence": "high",
+   "template": "wordpress",
+   "nth": "second"
+  },
   {
    "kind": "mass",
    "day": "Monday",
@@ -107,9 +133,19 @@
  ],
  "source_url": "https://qaskofc.com/",
  "fetched_at": "2026-11-01T17:27:02+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:35+00:00",
+  "requests": 2,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -123,20 +159,18 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 0
  },
  "has_sunday": false,
  "schedule_partial": true,
- "schedule_dropped": {
-  "not_a_service": 1
- },
  "groups_dropped": {
   "label_not_group": 1,
   "unmatched": 2
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

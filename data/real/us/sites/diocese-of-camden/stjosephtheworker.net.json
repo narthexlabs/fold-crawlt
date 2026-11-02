@@ -2,21 +2,26 @@
  "domain": "stjosephtheworker.net",
  "diocese": "diocese-of-camden",
  "matched_church_ids": [
-  "diocese-of-camden:St. Joseph the Worker Parish"
+  "diocese-of-camden:St. Joseph the Worker Parish",
+  "st-aloysius-st-joseph-the-worker-parish-oaklyn-nj"
  ],
  "matched": {
   "directory": [
    "diocese-of-camden:St. Joseph the Worker Parish"
   ],
-  "discovermass": []
+  "discovermass": [
+   "st-aloysius-st-joseph-the-worker-parish-oaklyn-nj"
+  ]
  },
  "names": [
-  "St. Joseph the Worker Parish"
+  "St. Joseph the Worker Parish",
+  "St. Aloysius (St. Joseph the Worker Parish)"
  ],
  "cities": [
-  "Haddon Twp"
+  "Haddon Twp",
+  "Oaklyn"
  ],
- "home_url": "http://stjosephtheworker.net/",
+ "home_url": "https://stjosephtheworker.net/",
  "final_url": "https://sjwparish.net",
  "crawl_status": "ok",
  "crawl_env": "sandbox",
@@ -207,7 +212,7 @@
    "feed_key": "e682484fa1cf",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:35:33+00:00",
+    "fetched_at": "2026-11-02T05:00:36+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -236,79 +241,46 @@
  },
  "schedule_rows": [
   {
-   "kind": "mass",
-   "day": "Monday",
+   "kind": "other",
+   "day": "Holy days",
    "time": "08:30",
    "language": null,
-   "raw": "Daily Masses: 8:30am, Mon, Tues, Fri, Sat SVP Chapel",
+   "raw": "Daily Masses: 8:30am & 12 Noon SVP",
    "source_url": "https://sjwparish.net",
    "fetched_at": "2026-11-01T07:27:52+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict",
-   "day_expanded_from": "Mon, Tues, Fri, Sat"
+   "kind_parsed": "mass"
   },
   {
-   "kind": "mass",
-   "day": "Tuesday",
-   "time": "08:30",
+   "kind": "other",
+   "day": "Holy days",
+   "time": "12:00",
    "language": null,
-   "raw": "Daily Masses: 8:30am, Mon, Tues, Fri, Sat SVP Chapel",
+   "raw": "Daily Masses: 8:30am & 12 Noon SVP",
    "source_url": "https://sjwparish.net",
    "fetched_at": "2026-11-01T07:27:52+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict",
-   "day_expanded_from": "Mon, Tues, Fri, Sat",
-   "day_parsed": "Monday",
-   "day_bound_from_line": true
+   "kind_parsed": "mass"
   },
   {
-   "kind": "mass",
-   "day": "Friday",
-   "time": "08:30",
+   "kind": "other",
+   "day": "Holy days",
+   "time": "18:00",
    "language": null,
-   "raw": "Daily Masses: 8:30am, Mon, Tues, Fri, Sat SVP Chapel",
+   "raw": "Daily Masses: 6:00pm SA",
    "source_url": "https://sjwparish.net",
    "fetched_at": "2026-11-01T07:27:52+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict",
-   "day_expanded_from": "Mon, Tues, Fri, Sat",
-   "day_parsed": "Monday",
-   "day_bound_from_line": true
-  },
-  {
-   "kind": "mass",
-   "day": "Saturday",
-   "time": "08:30",
-   "language": null,
-   "raw": "Daily Masses: 8:30am, Mon, Tues, Fri, Sat SVP Chapel",
-   "source_url": "https://sjwparish.net",
-   "fetched_at": "2026-11-01T07:27:52+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict",
-   "day_expanded_from": "Mon, Tues, Fri, Sat",
-   "day_parsed": "Monday",
-   "day_bound_from_line": true
-  },
-  {
-   "kind": "mass",
-   "day": "Thursday",
-   "time": "08:30",
-   "language": null,
-   "raw": "Daily Masses: 8:30am, Thurs SA Church",
-   "source_url": "https://sjwparish.net",
-   "fetched_at": "2026-11-01T07:27:52+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
+   "kind_parsed": "mass"
   },
   {
    "kind": "mass",
@@ -316,32 +288,6 @@
    "time": "16:00",
    "language": null,
    "raw": "Weekend Masses: 4pm, Saturday SA Church",
-   "source_url": "https://sjwparish.net",
-   "fetched_at": "2026-11-01T07:27:52+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
-  {
-   "kind": "mass",
-   "day": "Saturday",
-   "time": "17:00",
-   "language": null,
-   "raw": "Weekend Masses: 5pm, Saturday SVP Church",
-   "source_url": "https://sjwparish.net",
-   "fetched_at": "2026-11-01T07:27:52+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
-  {
-   "kind": "mass",
-   "day": "Sunday",
-   "time": "08:30",
-   "language": null,
-   "raw": "Weekend Masses: 8:30am, Sunday SVP Church",
    "source_url": "https://sjwparish.net",
    "fetched_at": "2026-11-01T07:27:52+00:00",
    "needs_review": false,
@@ -361,66 +307,24 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
-  },
-  {
-   "kind": "mass",
-   "day": "Sunday",
-   "time": "11:00",
-   "language": null,
-   "raw": "Weekend Masses: 11am, Sunday SVP Church",
-   "source_url": "https://sjwparish.net",
-   "fetched_at": "2026-11-01T07:27:52+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
-  {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "15:00-15:45",
-   "language": null,
-   "raw": "Confessions: 3pm - 3:45pm, Sat SA Church",
-   "source_url": "https://sjwparish.net",
-   "fetched_at": "2026-11-01T07:27:52+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
-  {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "16:00-16:45",
-   "language": null,
-   "raw": "Confessions: 4pm - 4:45pm, Sat SVP Church",
-   "source_url": "https://sjwparish.net",
-   "fetched_at": "2026-11-01T07:27:52+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
-  {
-   "kind": "adoration",
-   "day": "First Friday of the month",
-   "time": "09:00-10:00",
-   "language": null,
-   "raw": "Adoration: 9 - 10 am, 1st Fri. of month SVP Church",
-   "source_url": "https://sjwparish.net",
-   "fetched_at": "2026-11-01T07:27:52+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
   }
  ],
- "source_url": "http://stjosephtheworker.net/",
+ "source_url": "https://stjosephtheworker.net/",
  "fetched_at": "2026-11-01T07:27:57+00:00",
  "redirected_off_host": "sjwparish.net",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:47:53+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -434,18 +338,19 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 9
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 5
+  "other_location": 10
  },
  "groups_dropped": {
   "noise": 4
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

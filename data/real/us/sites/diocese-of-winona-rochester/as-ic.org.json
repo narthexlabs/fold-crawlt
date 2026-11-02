@@ -94,6 +94,12 @@
    "url": "https://www.as-ic.org/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.as-ic.org/copy-of-parish-councils",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -345,6 +351,29 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "refetch_attempt": {
+  "status": "ssl_error",
+  "at": "2026-11-02",
+  "env": "sandbox"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:00+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "liturgy"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "stann.triparish@gmail.com",
   "phone": "(507) 243-3319",
@@ -357,13 +386,5 @@
   },
   "fetched_at": "2026-11-01T08:34:58+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
- },
- "refetch_attempt": {
-  "status": "ssl_error",
-  "at": "2026-11-01",
-  "env": "sandbox"
  }
 }

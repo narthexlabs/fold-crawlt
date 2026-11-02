@@ -81,6 +81,12 @@
    "url": "https://stbartselmhurst.org/important-information/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stbartselmhurst.org/worship/sacraments/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -108,7 +114,50 @@
   "text": "Bulletin",
   "source_url": "https://stbartselmhurst.org/"
  },
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "confession",
+   "day": "Wednesday",
+   "time": "10:30",
+   "language": null,
+   "raw": "Confession is heard in the Church on Wednesdays 10:30 am & 5:30 pm and Saturdays at 4:00 pm",
+   "source_url": "https://stbartselmhurst.org/worship/sacraments/",
+   "fetched_at": "2026-11-02T04:41:38+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Wednesday",
+   "time": "17:30",
+   "language": null,
+   "raw": "Confession is heard in the Church on Wednesdays 10:30 am & 5:30 pm and Saturdays at 4:00 pm",
+   "source_url": "https://stbartselmhurst.org/worship/sacraments/",
+   "fetched_at": "2026-11-02T04:41:38+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "16:00",
+   "language": null,
+   "raw": "Confession is heard in the Church on Wednesdays 10:30 am & 5:30 pm and Saturdays at 4:00 pm",
+   "source_url": "https://stbartselmhurst.org/worship/sacraments/",
+   "fetched_at": "2026-11-02T04:41:38+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
+  }
+ ],
  "source_url": "https://stbartselmhurst.org/",
  "fetched_at": "2026-11-01T01:59:28+00:00",
  "schedule_template": {
@@ -167,5 +216,19 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:41+00:00",
+  "requests": 3,
+  "found": [
+   "confession"
+  ],
+  "rows_added": 3,
+  "mode": "merge"
  }
 }

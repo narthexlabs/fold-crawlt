@@ -2,15 +2,18 @@
  "domain": "sspeterpaulukrchurch.us",
  "diocese": "unassigned-pa",
  "matched_church_ids": [
-  "brave:PA|peter and paul bridgeport|"
+  "brave:PA|peter and paul bridgeport|",
+  "sts-peter-and-paul-ukrainian-bridgeport-pa"
  ],
  "matched": {
   "directory": [],
   "discovermass": [
+   "sts-peter-and-paul-ukrainian-bridgeport-pa",
    "brave:PA|peter and paul bridgeport|"
   ]
  },
  "names": [
+  "Sts. Peter and Paul [Ukrainian]",
   "Sts Peter And Paul"
  ],
  "cities": [
@@ -91,19 +94,6 @@
  "schedule_rows": [
   {
    "kind": "mass",
-   "day": "Saturday",
-   "time": "18:00",
-   "language": "English",
-   "raw": "6 pm English Divine Liturgy",
-   "source_url": "https://www.sspeterpaulukrchurch.us/",
-   "fetched_at": "2026-11-01T20:25:13+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "weebly"
-  },
-  {
-   "kind": "mass",
    "day": "Sunday",
    "time": "09:00",
    "language": null,
@@ -118,9 +108,19 @@
  ],
  "source_url": "https://www.sspeterpaulukrchurch.us/",
  "fetched_at": "2026-11-01T20:25:17+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:03+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "weebly",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -134,14 +134,15 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 1
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "dated_line": 2,
-  "relative_time": 1,
   "other_location": 2,
-  "skipped_section": 2
+  "skipped_section": 2,
+  "dated_line": 1,
+  "dated_block": 1
  },
  "groups_dropped": {
   "unmatched": 3,
@@ -149,8 +150,8 @@
   "sentence": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

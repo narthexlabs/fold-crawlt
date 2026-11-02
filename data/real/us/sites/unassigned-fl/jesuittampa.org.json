@@ -75,6 +75,12 @@
    "url": "https://www.jesuittampa.org/about/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.jesuittampa.org/spiritual-life/the-chapel-of-the-holy-cross",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -170,7 +176,7 @@
    "feed_key": "c2367dbfa7cc",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:35:24+00:00",
+    "fetched_at": "2026-11-02T04:59:39+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -201,12 +207,38 @@
   ]
  },
  "bulletin": null,
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "14:43",
+   "language": null,
+   "raw": "School Mass - All Saints of the Society of Jesus: 2:43pm Dismissal",
+   "source_url": "https://www.jesuittampa.org/",
+   "fetched_at": "2026-11-01T22:15:25+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  }
+ ],
  "source_url": "https://www.jesuittampa.org/",
  "fetched_at": "2026-11-01T22:16:04+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:51+00:00",
+  "requests": 1,
+  "found": [
+   "adoration"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -220,18 +252,21 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 0
  },
  "has_sunday": false,
+ "schedule_partial": true,
  "schedule_dropped": {
+  "not_a_service": 1,
   "prose": 10
  },
  "groups_dropped": {
   "unmatched": 2
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

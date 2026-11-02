@@ -81,6 +81,12 @@
    "url": "https://www.stgabrielgv.info/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stgabrielgv.info/nocturnal-adorationf546c4c6",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -298,6 +304,49 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "First Saturday of the month",
+   "time": "07:00",
+   "language": null,
+   "raw": "Special Saturday Masses: 1st Saturdays: 7:00 AM",
+   "source_url": "https://www.stgabrielgv.info/mass-confession-times",
+   "fetched_at": "2026-11-02T04:41:42+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "note": "Except during Advent",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "19:00",
+   "language": "Spanish",
+   "raw": "Mass: Study and reflection of the Bible is conducted, in Spanish, at 7 p.m. on Fridays.",
+   "source_url": "https://www.stgabrielgv.info/nocturnal-adorationf546c4c6",
+   "fetched_at": "2026-11-02T04:41:43+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "First Saturday of the month",
+   "time": "05:00-12:00",
+   "language": null,
+   "raw": "sábado 12 p.m. [Mass intention withheld]",
+   "source_url": "https://www.stgabrielgv.info/nocturnal-adorationf546c4c6",
+   "fetched_at": "2026-11-02T04:41:43+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "topup": true
   }
  ],
  "source_url": "https://www.stgabrielgv.info/",
@@ -338,6 +387,31 @@
   "excluded_by_reason": {}
  },
  "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
+  "screened_by": "ingest/public/privacy.py screen()",
+  "intentions_withheld": 1
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Other Confession Times: only by appointment made directly with the Pastor",
+   "phrase": "by appointment",
+   "source_url": "https://www.stgabrielgv.info/mass-confession-times",
+   "fetched_at": "2026-11-02T04:41:42+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:43+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 3,
+  "mode": "merge"
  }
 }

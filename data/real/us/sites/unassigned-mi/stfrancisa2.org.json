@@ -75,6 +75,12 @@
    "url": "https://www.stfrancisa2.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stfrancisa2.org/reconciliation",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -655,13 +661,38 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "First Thursday of the month",
+   "time": "10:15-10:45",
+   "language": null,
+   "raw": "Confession Schedule: First Thursday of the month from 10:15 a.m. - 10:45 a.m. (during Holy Hour) in the Church.",
+   "source_url": "https://www.stfrancisa2.org/reconciliation",
+   "fetched_at": "2026-11-02T04:41:32+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
   }
  ],
  "source_url": "https://www.stfrancisa2.org/",
  "fetched_at": "2026-11-01T22:15:45+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:33+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -675,8 +706,18 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
-  "generic_rows": 12
+  "trusted_kinds": [],
+  "generic_rows": 13
  },
+ "schedule_notes": [
+  {
+   "kind": "adoration",
+   "text": "Other: By Appointment",
+   "phrase": "By Appointment",
+   "source_url": "https://www.stfrancisa2.org/mass-schedule",
+   "fetched_at": "2026-11-01T22:15:28+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "skipped_section": 2
@@ -686,8 +727,8 @@
   "unmatched": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

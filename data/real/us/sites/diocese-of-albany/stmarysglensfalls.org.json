@@ -216,6 +216,22 @@
    "review_reason": null,
    "confidence": "high",
    "template": "wix"
+  },
+  {
+   "kind": "confession",
+   "day": "Wednesday",
+   "time": "12:10",
+   "language": null,
+   "raw": "Reconciliation Times:: Each Wednesday, following the 12:10 p.m. Mass",
+   "source_url": "https://www.stmarysglensfalls.org/mass-schedule",
+   "fetched_at": "2026-11-02T04:41:47+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wix",
+   "relative": "after",
+   "note": "Reconciliation Times:: Each Wednesday, following the 12:10 p.m. Mass",
+   "topup": true
   }
  ],
  "source_url": "http://www.stmarysglensfalls.org/",
@@ -258,5 +274,29 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "By appointment - please call to schedule!",
+   "phrase": "By appointment",
+   "source_url": "https://www.stmarysglensfalls.org/mass-schedule",
+   "fetched_at": "2026-11-02T04:41:47+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:47+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

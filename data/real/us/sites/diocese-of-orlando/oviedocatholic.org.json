@@ -3,18 +3,21 @@
  "diocese": "diocese-of-orlando",
  "matched_church_ids": [
   "brave:FL|most precious blood|oviedo",
+  "gc-23259",
   "most-precious-blood-oviedo-fl"
  ],
  "matched": {
   "directory": [],
   "discovermass": [
    "most-precious-blood-oviedo-fl",
-   "brave:FL|most precious blood|oviedo"
+   "brave:FL|most precious blood|oviedo",
+   "gc-23259"
   ]
  },
  "names": [
   "Most Precious Blood",
-  "Most Precious Blood Parish"
+  "Most Precious Blood Parish",
+  "Precious Blood"
  ],
  "cities": [
   "Oviedo"
@@ -82,6 +85,12 @@
   {
    "category": "contact",
    "url": "https://oviedocatholic.org/contact-us/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://oviedocatholic.org/eucharistic-adoration/",
    "status": 200,
    "class": "ok"
   }
@@ -176,8 +185,8 @@
    "time": "08:00",
    "language": null,
    "raw": "Mass Times: 8:00 AM",
-   "source_url": "https://oviedocatholic.org/mass-times/",
-   "fetched_at": "2026-11-01T20:25:03+00:00",
+   "source_url": "https://oviedocatholic.org/",
+   "fetched_at": "2026-11-01T20:25:02+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -189,8 +198,8 @@
    "time": "10:00",
    "language": null,
    "raw": "Mass Times: 10:00 AM",
-   "source_url": "https://oviedocatholic.org/mass-times/",
-   "fetched_at": "2026-11-01T20:25:03+00:00",
+   "source_url": "https://oviedocatholic.org/",
+   "fetched_at": "2026-11-01T20:25:02+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -202,8 +211,8 @@
    "time": "12:00",
    "language": "Spanish",
    "raw": "Mass Times: 12:00 PM (Spanish)",
-   "source_url": "https://oviedocatholic.org/mass-times/",
-   "fetched_at": "2026-11-01T20:25:03+00:00",
+   "source_url": "https://oviedocatholic.org/",
+   "fetched_at": "2026-11-01T20:25:02+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -215,73 +224,8 @@
    "time": "17:30",
    "language": null,
    "raw": "Mass Times: 5:30 PM",
-   "source_url": "https://oviedocatholic.org/mass-times/",
-   "fetched_at": "2026-11-01T20:25:03+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress"
-  },
-  {
-   "kind": "mass",
-   "day": "Monday",
-   "time": "09:15",
-   "language": null,
-   "raw": "Mass Times: 9:15 AM",
-   "source_url": "https://oviedocatholic.org/mass-times/",
-   "fetched_at": "2026-11-01T20:25:03+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress"
-  },
-  {
-   "kind": "mass",
-   "day": "Tuesday",
-   "time": "09:15",
-   "language": null,
-   "raw": "Mass Times: 9:15 AM",
-   "source_url": "https://oviedocatholic.org/mass-times/",
-   "fetched_at": "2026-11-01T20:25:03+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress"
-  },
-  {
-   "kind": "mass",
-   "day": "Wednesday",
-   "time": "09:15",
-   "language": null,
-   "raw": "Mass Times: 9:15 AM",
-   "source_url": "https://oviedocatholic.org/mass-times/",
-   "fetched_at": "2026-11-01T20:25:03+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress"
-  },
-  {
-   "kind": "mass",
-   "day": "Thursday",
-   "time": "09:15",
-   "language": null,
-   "raw": "Mass Times: 9:15 AM",
-   "source_url": "https://oviedocatholic.org/mass-times/",
-   "fetched_at": "2026-11-01T20:25:03+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress"
-  },
-  {
-   "kind": "mass",
-   "day": "Friday",
-   "time": "09:15",
-   "language": null,
-   "raw": "Mass Times: 9:15 AM",
-   "source_url": "https://oviedocatholic.org/mass-times/",
-   "fetched_at": "2026-11-01T20:25:03+00:00",
+   "source_url": "https://oviedocatholic.org/",
+   "fetched_at": "2026-11-01T20:25:02+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -293,19 +237,135 @@
    "time": "17:00",
    "language": null,
    "raw": "5:00 PM Vigil",
-   "source_url": "https://oviedocatholic.org/mass-times/",
-   "fetched_at": "2026-11-01T20:25:03+00:00",
+   "source_url": "https://oviedocatholic.org/",
+   "fetched_at": "2026-11-01T20:25:02+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "high",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "09:15",
+   "language": null,
+   "raw": "Mass Times: Monday - Friday 9:15 AM",
+   "source_url": "https://oviedocatholic.org/",
+   "fetched_at": "2026-11-01T20:25:02+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Monday - Friday"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "09:15",
+   "language": null,
+   "raw": "Mass Times: Monday - Friday 9:15 AM",
+   "source_url": "https://oviedocatholic.org/",
+   "fetched_at": "2026-11-01T20:25:02+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Monday - Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "09:15",
+   "language": null,
+   "raw": "Mass Times: Monday - Friday 9:15 AM",
+   "source_url": "https://oviedocatholic.org/",
+   "fetched_at": "2026-11-01T20:25:02+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Monday - Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "09:15",
+   "language": null,
+   "raw": "Mass Times: Monday - Friday 9:15 AM",
+   "source_url": "https://oviedocatholic.org/",
+   "fetched_at": "2026-11-01T20:25:02+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Monday - Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "09:15",
+   "language": null,
+   "raw": "Mass Times: Monday - Friday 9:15 AM",
+   "source_url": "https://oviedocatholic.org/",
+   "fetched_at": "2026-11-01T20:25:02+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Monday - Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "15:30",
+   "language": null,
+   "raw": "Tuesday & Thursday After Daily Mass: Saturday 3:30 PM - 4:30 PM,",
+   "source_url": "https://oviedocatholic.org/",
+   "fetched_at": "2026-11-01T20:25:02+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "16:30",
+   "language": null,
+   "raw": "Tuesday & Thursday After Daily Mass: Saturday 3:30 PM - 4:30 PM,",
+   "source_url": "https://oviedocatholic.org/",
+   "fetched_at": "2026-11-01T20:25:02+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
    "template": "wordpress"
   }
  ],
  "source_url": "https://oviedocatholic.org/",
  "fetched_at": "2026-11-01T20:25:12+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:41+00:00",
+  "requests": 1,
+  "found": [
+   "adoration"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -319,11 +379,22 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 19
+  "trusted_kinds": [],
+  "generic_rows": 20
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "The Sacrament of Reconciliation is offered on Tuesdays and Thursdays after Daily Mass, and on Saturdays from 3:30 pm to 4:30 pm in the Blessed Sacrament Chapel, or by appointment by calling the Parish",
+   "phrase": "by appointment",
+   "source_url": "https://oviedocatholic.org/reconciliation-confession/",
+   "fetched_at": "2026-11-01T20:25:03+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 1
+  "other_location": 3,
+  "dated_block": 3
  },
  "groups_dropped": {
   "label_not_group": 3,
@@ -331,8 +402,8 @@
   "unmatched": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

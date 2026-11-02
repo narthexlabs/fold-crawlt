@@ -75,6 +75,12 @@
    "url": "https://stfrancishoboken.net/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stfrancishoboken.net/sacraments/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -511,6 +517,23 @@
    "review_reason": null,
    "confidence": "high",
    "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Daily Mass 8 AM, Monday through Saturday",
+   "source_url": "https://stfrancishoboken.net/mass-and-novena-schedule/",
+   "fetched_at": "2026-11-02T04:47:53+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "Daily",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "topup": true
   }
  ],
  "source_url": "https://stfrancishoboken.net/",
@@ -548,5 +571,36 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "4:00 PM to 5:00 PM or upon request",
+   "phrase": "upon request",
+   "source_url": "https://stfrancishoboken.net/sacraments/",
+   "fetched_at": "2026-11-02T04:47:50+00:00"
+  },
+  {
+   "kind": "confession",
+   "text": "The Sacrament of Reconciliation is available in church on Saturdays, 4:30 to 5 p.m., and by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://stfrancishoboken.net/mass-and-novena-schedule/",
+   "fetched_at": "2026-11-02T04:47:53+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:47:54+00:00",
+  "requests": 3,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

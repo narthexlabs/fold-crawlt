@@ -3,16 +3,22 @@
  "diocese": "diocese-of-erie",
  "matched_church_ids": [
   "brave:PA|james erie|",
-  "gc-24511"
+  "gc-24511",
+  "saint-james-erie-pa",
+  "saint-mark-the-evangelist-erie-pa"
  ],
  "matched": {
   "directory": [],
   "discovermass": [
+   "saint-james-erie-pa",
+   "saint-mark-the-evangelist-erie-pa",
    "brave:PA|james erie|",
    "gc-24511"
   ]
  },
  "names": [
+  "Saint James",
+  "Saint Mark the Evangelist",
   "St James",
   "St. James"
  ],
@@ -200,6 +206,20 @@
   {
    "kind": "mass",
    "day": "Sunday",
+   "time": "09:30",
+   "language": null,
+   "raw": "[Saint Mark the Evangelist] Mass Times: 7:30, (9:30 at St. Mark), 11:30 a.m.; 5 p.m.",
+   "source_url": "https://www.saintjamesrcc.org/",
+   "fetched_at": "2026-11-01T20:25:09+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "generic_strict",
+   "location": "Saint Mark the Evangelist"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
    "time": "11:30",
    "language": null,
    "raw": "Mass Times: 7:30, (9:30 at St. Mark), 11:30 a.m.; 5 p.m.",
@@ -289,13 +309,38 @@
    "confidence": "medium",
    "template": "generic_strict",
    "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "17:30",
+   "language": null,
+   "raw": "[Saint Mark the Evangelist] Holy Day Mass:: 7, 10 a.m.; 12:10 p.m., (5:30 p.m. at St. Mark)",
+   "source_url": "https://www.saintjamesrcc.org/",
+   "fetched_at": "2026-11-01T20:25:09+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "kind_parsed": "mass",
+   "location": "Saint Mark the Evangelist"
   }
  ],
  "source_url": "https://www.saintjamesrcc.org/",
  "fetched_at": "2026-11-01T20:25:09+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:11+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -309,16 +354,14 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 21
  },
  "has_sunday": true,
- "schedule_dropped": {
-  "other_location": 2
- },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

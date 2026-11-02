@@ -57,6 +57,18 @@
    "url": "https://ourladyofthehillsoh.com/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://ourladyofthehillsoh.com",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://ourladyofthehillsoh.com",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -127,6 +139,14 @@
  "social": {
   "facebook": [
    "https://www.facebook.com/p"
+  ],
+  "livestream": [
+   {
+    "url": "https://www.twitch.tv/saintmaryhillsboro",
+    "label": "St. Mary Livestream / WLRU Radio",
+    "platform": "www.twitch.tv",
+    "kind": "link"
+   }
   ]
  },
  "bulletin": {
@@ -257,9 +277,22 @@
  ],
  "source_url": "https://ourladyofthehillsoh.com/our-lady-of-the-hills-west-union/",
  "fetched_at": "2026-11-01T17:21:30+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:52:30+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -273,16 +306,26 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 9
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Confession available upon request",
+   "phrase": "upon request",
+   "source_url": "https://ourladyofthehillsoh.com/our-lady-of-the-hills-west-union/",
+   "fetched_at": "2026-11-01T17:21:22+00:00"
+  }
+ ],
  "has_sunday": true,
  "groups_dropped": {
   "unmatched": 2,
   "private_name_risk": 3
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

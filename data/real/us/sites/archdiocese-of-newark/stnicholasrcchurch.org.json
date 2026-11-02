@@ -63,6 +63,12 @@
    "url": "https://stnicholasrcchurch.org/contact-3/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stnicholasrcchurch.org/adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -312,7 +318,7 @@
    "day": "Sunday",
    "time": "11:00",
    "language": "Italian",
-   "raw": "(Saturday Vigil Mass fulfills our obligation of attending a : 11:00 AM (Italian)",
+   "raw": "Saturday Vigil 11:00 AM [Mass intention withheld]",
    "source_url": "https://stnicholasrcchurch.org/mass-schedule/",
    "fetched_at": "2026-11-01T01:58:36+00:00",
    "needs_review": false,
@@ -436,6 +442,20 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "First Friday of the month",
+   "time": "20:30-19:30",
+   "language": null,
+   "raw": "we will also have Adoration of the Blessed Sacrament from 8:30 PM to 7:30 PM.",
+   "source_url": "https://stnicholasrcchurch.org/adoration/",
+   "fetched_at": "2026-11-02T04:47:55+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "https://stnicholasrcchurch.org/",
@@ -475,6 +495,23 @@
   "excluded_by_reason": {}
  },
  "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
+  "screened_by": "ingest/public/privacy.py screen()",
+  "intentions_withheld": 1
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:48:00+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

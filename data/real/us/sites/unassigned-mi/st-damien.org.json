@@ -75,6 +75,12 @@
    "url": "https://www.st-damien.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.st-damien.org/perpetual-adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -478,7 +484,7 @@
    "feed_key": "476fe478cc2d",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:35:03+00:00",
+    "fetched_at": "2026-11-02T04:53:00+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -504,15 +510,98 @@
   {
    "kind": "mass",
    "day": "Sunday",
-   "time": "12:00",
+   "time": "08:30",
    "language": null,
-   "raw": "wEEKEND mASSES: 12:00pm*",
-   "source_url": "https://www.st-damien.org/masses",
-   "fetched_at": "2026-11-01T20:25:02+00:00",
+   "raw": "Sunday Mass: 8:30 am",
+   "source_url": "https://www.st-damien.org/",
+   "fetched_at": "2026-11-01T20:25:01+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "16:00",
+   "language": null,
+   "raw": "Saturday Vigil Mass: 4:00pm St Vincent",
+   "source_url": "https://www.st-damien.org/",
+   "fetched_at": "2026-11-01T20:25:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "12:00",
+   "language": null,
+   "raw": "Daily Mass: 12:00 pm St. Vincent",
+   "source_url": "https://www.st-damien.org/",
+   "fetched_at": "2026-11-01T20:25:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday to Friday"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "12:00",
+   "language": null,
+   "raw": "Daily Mass: 12:00 pm St. Vincent",
+   "source_url": "https://www.st-damien.org/",
+   "fetched_at": "2026-11-01T20:25:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday to Friday"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "12:00",
+   "language": null,
+   "raw": "Daily Mass: 12:00 pm St. Vincent",
+   "source_url": "https://www.st-damien.org/",
+   "fetched_at": "2026-11-01T20:25:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday to Friday"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "12:00",
+   "language": null,
+   "raw": "Daily Mass: 12:00 pm St. Vincent",
+   "source_url": "https://www.st-damien.org/",
+   "fetched_at": "2026-11-01T20:25:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday to Friday"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "12:00",
+   "language": null,
+   "raw": "Daily Mass: 12:00 pm St. Vincent",
+   "source_url": "https://www.st-damien.org/",
+   "fetched_at": "2026-11-01T20:25:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday to Friday"
   },
   {
    "kind": "confession",
@@ -617,39 +706,74 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "12:00",
+   "language": null,
+   "raw": "wEEKEND mASSES: 12:00pm*",
+   "source_url": "https://www.st-damien.org/masses",
+   "fetched_at": "2026-11-01T20:25:02+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
   }
  ],
  "source_url": "https://www.st-damien.org/",
  "fetched_at": "2026-11-01T20:25:08+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:35+00:00",
+  "requests": 1,
+  "found": [
+   "adoration"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
     "hours_ok": true,
     "counts_ok": true,
     "sunday_not_copied": true,
-    "no_daily_on_sunday": true,
+    "no_daily_on_sunday": false,
     "mostly_high": false
    },
    "score": "medium"
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 23
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Or by appointment, please call our parish office",
+   "phrase": "by appointment",
+   "source_url": "https://www.st-damien.org/",
+   "fetched_at": "2026-11-01T20:25:01+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "other_location": 10,
-  "skipped_section": 2
+  "skipped_section": 4
  },
  "groups_dropped": {
   "unmatched": 6
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

@@ -81,6 +81,12 @@
    "url": "https://holytrinitybucyrus.org/about-us/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://holytrinitybucyrus.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -223,12 +229,12 @@
    "day": "Saturday",
    "time": "17:00",
    "language": null,
-   "raw": "5:00 PM (Vigil)",
-   "source_url": "https://holytrinitybucyrus.org/about-us/mass-times/",
-   "fetched_at": "2026-11-01T22:15:23+00:00",
+   "raw": "Join Us For Mass: 5:00PM",
+   "source_url": "https://holytrinitybucyrus.org/",
+   "fetched_at": "2026-11-01T22:15:22+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "high",
+   "confidence": "medium",
    "template": "wordpress"
   },
   {
@@ -236,12 +242,12 @@
    "day": "Sunday",
    "time": "08:30",
    "language": null,
-   "raw": "Mass: 8:30 AM",
-   "source_url": "https://holytrinitybucyrus.org/about-us/mass-times/",
-   "fetched_at": "2026-11-01T22:15:23+00:00",
+   "raw": "Join Us For Mass: 8:30AM",
+   "source_url": "https://holytrinitybucyrus.org/",
+   "fetched_at": "2026-11-01T22:15:22+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "low",
+   "confidence": "medium",
    "template": "wordpress"
   },
   {
@@ -284,6 +290,82 @@
    "template": "wordpress"
   },
   {
+   "kind": "confession",
+   "day": "Monday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Sacrament of Penance: After the 9:00 AM Mass",
+   "source_url": "https://holytrinitybucyrus.org/about-us/mass-times/",
+   "fetched_at": "2026-11-01T22:15:23+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "Sacrament of Penance: After the 9:00 AM Mass",
+   "day_expanded_from": "Monday & Friday",
+   "relative_resolved": true
+  },
+  {
+   "kind": "confession",
+   "day": "Friday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Sacrament of Penance: After the 9:00 AM Mass",
+   "source_url": "https://holytrinitybucyrus.org/about-us/mass-times/",
+   "fetched_at": "2026-11-01T22:15:23+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "Sacrament of Penance: After the 9:00 AM Mass",
+   "day_expanded_from": "Monday & Friday",
+   "relative_resolved": true
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Sacrament of Penance: Prior to the 5:00 PM Mass",
+   "source_url": "https://holytrinitybucyrus.org/about-us/mass-times/",
+   "fetched_at": "2026-11-01T22:15:23+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "before",
+   "note": "Sacrament of Penance: Prior to the 5:00 PM Mass",
+   "relative_resolved": true
+  },
+  {
+   "kind": "devotion",
+   "day": "Saturday",
+   "time": "16:30",
+   "language": null,
+   "raw": "4:30pm Rosary before Mass",
+   "source_url": "https://holytrinitybucyrus.org/about-us/mass-times/",
+   "fetched_at": "2026-11-01T22:15:23+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "devotion",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "8:00am Rosary before Mass",
+   "source_url": "https://holytrinitybucyrus.org/about-us/mass-times/",
+   "fetched_at": "2026-11-01T22:15:23+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
    "kind": "adoration",
    "day": "First Friday of the month",
    "time": "10:00-18:00",
@@ -299,9 +381,19 @@
  ],
  "source_url": "https://holytrinitybucyrus.org/",
  "fetched_at": "2026-11-01T22:15:55+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:52:26+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -315,13 +407,13 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 10
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "relative_time": 2,
-  "not_a_service": 7,
   "no_day": 2,
+  "not_a_service": 5,
   "other_location": 1
  },
  "groups_dropped": {
@@ -329,8 +421,8 @@
   "noise": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

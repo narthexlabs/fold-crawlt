@@ -81,6 +81,24 @@
    "url": "https://holynameofmary.net/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://holynameofmary.net/sacraments/reconciliation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://holynameofmary.net/liturgy/adoration/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://holynameofmary.net/liturgy/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -263,6 +281,34 @@
    "review_reason": null,
    "confidence": "high",
    "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Wednesday",
+   "time": "17:30-18:30",
+   "language": null,
+   "raw": "The Sacrament of Reconciliation is available on Wednesdays from 5:30-6:30 PM or by appointment.",
+   "source_url": "https://holynameofmary.net/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:46+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Second Saturday of the month",
+   "time": "21:30-07:00",
+   "language": null,
+   "raw": "Exposition and Adoration of the Blessed Sacrament takes place every 2nd Saturday of each month from 9:30PM – 7AM, and on Wednesdays from 10am-6:45pm.",
+   "source_url": "https://holynameofmary.net/liturgy/adoration/",
+   "fetched_at": "2026-11-02T04:41:48+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "http://www.holynameofmary.net/general-info/online-giving/",
@@ -301,5 +347,30 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "The Sacrament of Reconciliation is available on Wednesdays from 5:30-6:30 PM or by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://holynameofmary.net/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:46+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:49+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
  }
 }

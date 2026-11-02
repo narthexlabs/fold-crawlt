@@ -90,6 +90,18 @@
    "url": "https://www.epiphanycathedral.org/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.epiphanycathedral.org/reconciliation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://www.epiphanycathedral.org/liturgy-committee",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -425,6 +437,50 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "14:00-14:45",
+   "language": null,
+   "raw": "The Sacrament of Reconciliation is offered on...: Saturday: 2-2:45 p.m.",
+   "source_url": "https://www.epiphanycathedral.org/reconciliation",
+   "fetched_at": "2026-11-02T04:42:02+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "First Friday of the month",
+   "time": "08:30",
+   "language": null,
+   "raw": "The Sacrament of Reconciliation is offered on...: Thursdays before the First Friday after the 8:30 a.m. Mass.",
+   "source_url": "https://www.epiphanycathedral.org/reconciliation",
+   "fetched_at": "2026-11-02T04:42:02+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "after",
+   "note": "The Sacrament of Reconciliation is offered on...: Thursdays before the First Friday after the 8:30 a.m. Mass.",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "First Friday of the month",
+   "time": "18:00-19:00",
+   "language": null,
+   "raw": "The Sacrament of Reconciliation is offered on...: On First Fridays from 6-7 p.m.",
+   "source_url": "https://www.epiphanycathedral.org/reconciliation",
+   "fetched_at": "2026-11-02T04:42:02+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
   }
  ],
  "source_url": "https://epiphanycathedral.org/",
@@ -468,5 +524,21 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:04+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 3,
+  "mode": "merge"
  }
 }

@@ -73,6 +73,12 @@
    "url": "https://www.iccjenkintown.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.iccjenkintown.org/copy-of-contact",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -378,6 +384,34 @@
    "day_expanded_from": "Monday - Saturday"
   },
   {
+   "kind": "devotion",
+   "day": "Wednesday",
+   "time": "07:30",
+   "language": null,
+   "raw": "Wednesdays and Fridays, 7:30 AM",
+   "source_url": "https://www.iccjenkintown.org/",
+   "fetched_at": "2026-11-01T20:25:04+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "day_expanded_from": "Wednesdays and Fridays"
+  },
+  {
+   "kind": "devotion",
+   "day": "Friday",
+   "time": "07:30",
+   "language": null,
+   "raw": "Wednesdays and Fridays, 7:30 AM",
+   "source_url": "https://www.iccjenkintown.org/",
+   "fetched_at": "2026-11-01T20:25:04+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "day_expanded_from": "Wednesdays and Fridays"
+  },
+  {
    "kind": "adoration",
    "day": "Friday",
    "time": "08:30",
@@ -497,23 +531,63 @@
   {
    "kind": "other",
    "day": "Holy days",
-   "time": "11:30",
+   "time": "08:00",
    "language": null,
-   "raw": "Our parish celebrates the great feast of All Souls day with a Remembrance Mass on Sunday, November 2 at 11:30.",
+   "raw": "Vigil Mass: 8:00 AM, 12:00 PM,",
    "source_url": "https://www.iccjenkintown.org/",
    "fetched_at": "2026-11-01T20:25:04+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "low",
+   "confidence": "medium",
+   "template": "wix",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "12:00",
+   "language": null,
+   "raw": "Vigil Mass: 8:00 AM, 12:00 PM,",
+   "source_url": "https://www.iccjenkintown.org/",
+   "fetched_at": "2026-11-01T20:25:04+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "19:00",
+   "language": null,
+   "raw": "Vigil Mass: 7:00 PM",
+   "source_url": "https://www.iccjenkintown.org/",
+   "fetched_at": "2026-11-01T20:25:04+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
    "template": "wix",
    "kind_parsed": "mass"
   }
  ],
  "source_url": "https://www.iccjenkintown.org/",
  "fetched_at": "2026-11-01T20:25:15+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:07+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wix",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -527,14 +601,10 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 8
+  "trusted_kinds": [],
+  "generic_rows": 9
  },
  "has_sunday": true,
- "schedule_dropped": {
-  "not_a_service": 1,
-  "other_location": 3,
-  "dated_line": 1
- },
  "groups_dropped": {},
  "event_counts": {
   "window_start": "2026-11-02",

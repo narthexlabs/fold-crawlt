@@ -45,6 +45,12 @@
    "url": "https://catholiccbn.com/get-involved",
    "status": 429,
    "class": "blocked_429"
+  },
+  {
+   "category": "confession",
+   "url": "https://catholiccbn.com/sacraments/reconciliation",
+   "status": null,
+   "class": "timeout"
   }
  ],
  "cms_guess": {
@@ -77,6 +83,32 @@
   {
    "kind": "mass",
    "day": "Saturday",
+   "time": "16:30",
+   "language": null,
+   "raw": "Weekend Mass Times: Saturday: 4:30 PM & Sunday: 10:00 AM",
+   "source_url": "https://catholiccbn.com/history/162-church-of-the-assumption-of-the-blessed-virgin-mary",
+   "fetched_at": "2026-11-01T17:21:23+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": null,
+   "raw": "Weekend Mass Times: Saturday: 4:30 PM & Sunday: 10:00 AM",
+   "source_url": "https://catholiccbn.com/history/162-church-of-the-assumption-of-the-blessed-virgin-mary",
+   "fetched_at": "2026-11-01T17:21:23+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
    "time": "16:00",
    "language": null,
    "raw": "Full Mass Schedule: 4:00 p.m. at St. Mark - Confessions heard from 3:00 p.m. to 3:45 p.m.",
@@ -93,19 +125,6 @@
    "time": "15:00-15:45",
    "language": null,
    "raw": "4:00 p.m. at St. Mark - Confessions heard from 3:00 p.m. to 3:45 p.m.",
-   "source_url": "https://catholiccbn.com/news/mass-schedule",
-   "fetched_at": "2026-11-01T17:21:24+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
-  {
-   "kind": "mass",
-   "day": "Saturday",
-   "time": "16:30",
-   "language": null,
-   "raw": "Full Mass Schedule: 4:30 p.m. at Assumption - Confessions heard from 3:30 p.m. to 4:15 p.m.",
    "source_url": "https://catholiccbn.com/news/mass-schedule",
    "fetched_at": "2026-11-01T17:21:24+00:00",
    "needs_review": false,
@@ -155,35 +174,9 @@
   {
    "kind": "mass",
    "day": "Sunday",
-   "time": "10:00",
-   "language": null,
-   "raw": "Full Mass Schedule: 10:00 a.m. at Assumption",
-   "source_url": "https://catholiccbn.com/news/mass-schedule",
-   "fetched_at": "2026-11-01T17:21:24+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
-  {
-   "kind": "mass",
-   "day": "Sunday",
    "time": "10:30",
    "language": null,
    "raw": "Full Mass Schedule: 10:30 a.m. at St. Rose of Lima",
-   "source_url": "https://catholiccbn.com/news/mass-schedule",
-   "fetched_at": "2026-11-01T17:21:24+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
-  {
-   "kind": "mass",
-   "day": "Sunday",
-   "time": "11:00",
-   "language": null,
-   "raw": "Full Mass Schedule: 11:00 a.m. at Holy Spirit",
    "source_url": "https://catholiccbn.com/news/mass-schedule",
    "fetched_at": "2026-11-01T17:21:24+00:00",
    "needs_review": false,
@@ -288,19 +281,6 @@
    "template": "generic_strict"
   },
   {
-   "kind": "mass",
-   "day": "First Saturday of the month",
-   "time": "12:00",
-   "language": null,
-   "raw": "FIRST SATURDAY MASS: 12:00 p.m. at St Rose of Lima",
-   "source_url": "https://catholiccbn.com/news/mass-schedule",
-   "fetched_at": "2026-11-01T17:21:24+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
-  {
    "kind": "other",
    "day": "Holy days",
    "time": "18:00",
@@ -327,27 +307,23 @@
    "confidence": "medium",
    "template": "generic_strict",
    "kind_parsed": "mass"
-  },
-  {
-   "kind": "other",
-   "day": "Holy days",
-   "time": "08:30",
-   "language": null,
-   "raw": "HOLY DAY OF OBLIGATION MASSES: 8:30 a.m. at Holy Spirit",
-   "source_url": "https://catholiccbn.com/news/mass-schedule",
-   "fetched_at": "2026-11-01T17:21:24+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict",
-   "kind_parsed": "mass"
   }
  ],
  "source_url": "https://catholiccbn.com/history/162-church-of-the-assumption-of-the-blessed-virgin-mary",
  "fetched_at": "2026-11-01T17:21:29+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:56+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -361,15 +337,19 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 27
  },
  "has_sunday": true,
+ "schedule_dropped": {
+  "other_location": 3
+ },
  "groups_dropped": {
   "noise": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

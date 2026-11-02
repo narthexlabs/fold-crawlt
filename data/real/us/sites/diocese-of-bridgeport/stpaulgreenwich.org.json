@@ -234,19 +234,6 @@
  },
  "schedule_rows": [
   {
-   "kind": "adoration",
-   "day": "Wednesday",
-   "time": "16:00-19:00",
-   "language": null,
-   "raw": "Adoration is held every Wednesday from 4:00–7:00 PM.",
-   "source_url": "https://www.stpaulgreenwich.org/adoration",
-   "fetched_at": "2026-11-01T18:51:42+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "generic_strict"
-  },
-  {
    "kind": "mass",
    "day": "Sunday",
    "time": "07:30",
@@ -351,6 +338,48 @@
    "day_bound_from_line": true
   },
   {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "08:00",
+   "language": null,
+   "raw": "8 AM 12 PM [Mass intention withheld]",
+   "source_url": "https://www.stpaulgreenwich.org/",
+   "fetched_at": "2026-11-01T18:51:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "12:00",
+   "language": null,
+   "raw": "8 AM 12 PM [Mass intention withheld]",
+   "source_url": "https://www.stpaulgreenwich.org/",
+   "fetched_at": "2026-11-01T18:51:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "17:30",
+   "language": null,
+   "raw": "5:30 PM (Solemn Mass)",
+   "source_url": "https://www.stpaulgreenwich.org/",
+   "fetched_at": "2026-11-01T18:51:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "kind_parsed": "mass"
+  },
+  {
    "kind": "confession",
    "day": "Monday",
    "time": "07:30",
@@ -440,13 +469,36 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "16:00-19:00",
+   "language": null,
+   "raw": "Adoration is held every Wednesday from 4:00–7:00 PM.",
+   "source_url": "https://www.stpaulgreenwich.org/adoration",
+   "fetched_at": "2026-11-01T18:51:42+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict"
   }
  ],
  "source_url": "http://www.stpaulgreenwich.org/",
  "fetched_at": "2026-11-01T18:51:49+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:59+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -460,12 +512,12 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 24
  },
  "has_sunday": true,
  "schedule_dropped": {
   "no_day": 3,
-  "other_location": 3,
   "skipped_section": 2
  },
  "groups_dropped": {
@@ -474,8 +526,8 @@
   "unmatched": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
@@ -497,6 +549,7 @@
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
  },
  "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
+  "screened_by": "ingest/public/privacy.py screen()",
+  "intentions_withheld": 2
  }
 }

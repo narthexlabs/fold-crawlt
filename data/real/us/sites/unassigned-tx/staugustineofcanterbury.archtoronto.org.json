@@ -81,6 +81,12 @@
    "url": "https://staugustineofcanterbury.archtoronto.org/en/contact-us/donations/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://staugustineofcanterbury.archtoronto.org/en/our-faith/sacraments--sacramentals/eucharistic-adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -577,7 +583,7 @@
   },
   {
    "kind": "mass",
-   "day": "Sunday",
+   "day": "Sunday (winter, oct-may)",
    "time": "19:00",
    "language": "English",
    "raw": "Mass Schedule: 7 p.m. (English)",
@@ -587,13 +593,120 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "Monday",
+   "time": "07:00-17:00",
+   "language": null,
+   "raw": "Perpetual Adoration Schedule at St. Augustine of Canterbury:: Monday: 7 am - 5 pm",
+   "source_url": "https://staugustineofcanterbury.archtoronto.org/en/our-faith/sacraments--sacramentals/eucharistic-adoration/",
+   "fetched_at": "2026-11-02T04:41:33+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "07:00-20:00",
+   "language": null,
+   "raw": "Perpetual Adoration Schedule at St. Augustine of Canterbury:: Tuesday - Friday: 7 am - 8 pm",
+   "source_url": "https://staugustineofcanterbury.archtoronto.org/en/our-faith/sacraments--sacramentals/eucharistic-adoration/",
+   "fetched_at": "2026-11-02T04:41:33+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Tuesday - Friday"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "07:00-20:00",
+   "language": null,
+   "raw": "Perpetual Adoration Schedule at St. Augustine of Canterbury:: Tuesday - Friday: 7 am - 8 pm",
+   "source_url": "https://staugustineofcanterbury.archtoronto.org/en/our-faith/sacraments--sacramentals/eucharistic-adoration/",
+   "fetched_at": "2026-11-02T04:41:33+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Tuesday - Friday"
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "07:00-20:00",
+   "language": null,
+   "raw": "Perpetual Adoration Schedule at St. Augustine of Canterbury:: Tuesday - Friday: 7 am - 8 pm",
+   "source_url": "https://staugustineofcanterbury.archtoronto.org/en/our-faith/sacraments--sacramentals/eucharistic-adoration/",
+   "fetched_at": "2026-11-02T04:41:33+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Tuesday - Friday"
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "07:00-20:00",
+   "language": null,
+   "raw": "Perpetual Adoration Schedule at St. Augustine of Canterbury:: Tuesday - Friday: 7 am - 8 pm",
+   "source_url": "https://staugustineofcanterbury.archtoronto.org/en/our-faith/sacraments--sacramentals/eucharistic-adoration/",
+   "fetched_at": "2026-11-02T04:41:33+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Tuesday - Friday"
+  },
+  {
+   "kind": "adoration",
+   "day": "Saturday",
+   "time": "07:00-18:30",
+   "language": null,
+   "raw": "Perpetual Adoration Schedule at St. Augustine of Canterbury:: Saturday: 7 am - 6:30 pm",
+   "source_url": "https://staugustineofcanterbury.archtoronto.org/en/our-faith/sacraments--sacramentals/eucharistic-adoration/",
+   "fetched_at": "2026-11-02T04:41:33+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "Sunday",
+   "time": "07:00-16:00",
+   "language": null,
+   "raw": "Perpetual Adoration Schedule at St. Augustine of Canterbury:: Sunday: 7 am - 4 pm",
+   "source_url": "https://staugustineofcanterbury.archtoronto.org/en/our-faith/sacraments--sacramentals/eucharistic-adoration/",
+   "fetched_at": "2026-11-02T04:41:33+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
   }
  ],
  "source_url": "https://staugustineofcanterbury.archtoronto.org/",
  "fetched_at": "2026-11-01T22:15:32+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:34+00:00",
+  "requests": 1,
+  "found": [
+   "adoration"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -607,7 +720,8 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
-  "generic_rows": 24
+  "trusted_kinds": [],
+  "generic_rows": 31
  },
  "has_sunday": true,
  "schedule_dropped": {
@@ -620,8 +734,8 @@
   "unmatched": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

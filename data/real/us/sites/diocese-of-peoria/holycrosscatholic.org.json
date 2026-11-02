@@ -3,17 +3,20 @@
  "diocese": "diocese-of-peoria",
  "matched_church_ids": [
   "brave:AR|cross crossett|",
+  "gc-30492",
   "holy-cross-champaign-il"
  ],
  "matched": {
   "directory": [],
   "discovermass": [
    "holy-cross-champaign-il",
-   "brave:AR|cross crossett|"
+   "brave:AR|cross crossett|",
+   "gc-30492"
   ]
  },
  "names": [
-  "Holy Cross"
+  "Holy Cross",
+  "Exaltation of the Holy Cross"
  ],
  "cities": [
   "Champaign",
@@ -175,6 +178,19 @@
   {
    "kind": "mass",
    "day": "Saturday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Vigil Mass: 8:00 AM",
+   "source_url": "https://www.holycrosscatholic.org/",
+   "fetched_at": "2026-11-01T20:25:04+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
    "time": "17:30",
    "language": null,
    "raw": "5:30 pm Mass Vigil",
@@ -297,6 +313,19 @@
    "template": "wix"
   },
   {
+   "kind": "devotion",
+   "day": "Wednesday",
+   "time": "17:30-18:00",
+   "language": null,
+   "raw": "5:30-6:00 pm Wednesday",
+   "source_url": "https://www.holycrosscatholic.org/mass-schedule",
+   "fetched_at": "2026-11-01T20:25:08+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix"
+  },
+  {
    "kind": "confession",
    "day": "Saturday",
    "time": "16:00-17:00",
@@ -366,9 +395,19 @@
  ],
  "source_url": "https://www.holycrosscatholic.org/",
  "fetched_at": "2026-11-01T20:25:15+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:44+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "wix",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -382,19 +421,19 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 8
  },
  "has_sunday": true,
  "schedule_dropped": {
   "no_day": 7,
-  "not_a_service": 1,
   "relative_time": 1,
   "benediction_end": 1
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

@@ -87,6 +87,12 @@
    "url": "https://nocateecatholic.com/reach-out-to-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://nocateecatholic.com/event/adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -614,7 +620,7 @@
    "note": "The Events Calendar (WordPress) REST API",
    "last_fetch": {
     "status": 200,
-    "fetched_at": "2026-11-02T00:06:24+00:00",
+    "fetched_at": "2026-11-02T05:02:45+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -860,14 +866,41 @@
    "review_reason": null,
    "confidence": "high",
    "template": "wordpress"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "19:00",
+   "language": null,
+   "raw": "7:00pm Vigil",
+   "source_url": "https://nocateecatholic.com/mass-sacrament-schedule/",
+   "fetched_at": "2026-11-02T00:05:49+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "kind_parsed": "mass",
+   "note": "except on Sundays, or when the Holy Day obligation is moved to the weekend"
   }
  ],
  "source_url": "http://stjp2.net/",
  "fetched_at": "2026-11-02T00:05:58+00:00",
  "redirected_off_host": "nocateecatholic.com",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:09+00:00",
+  "requests": 1,
+  "found": [
+   "adoration"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -881,17 +914,36 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 22
+  "trusted_kinds": [],
+  "generic_rows": 23
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "& 30 minutes before every Mass",
+   "phrase": "30 minutes before every Mass",
+   "source_url": "https://nocateecatholic.com/",
+   "fetched_at": "2026-11-02T00:05:47+00:00"
+  },
+  {
+   "kind": "confession",
+   "text": "Saturdays from 2:30p.m. – 3:45 p.m. or by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://nocateecatholic.com/sacraments/",
+   "fetched_at": "2026-11-02T00:05:48+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "relative_time": 1,
   "no_day": 1,
-  "dated_line": 1,
-  "other_location": 5,
+  "dated_line": 2,
+  "other_location": 2,
   "not_a_service": 1,
   "range_not_a_mass": 1,
-  "skipped_section": 1
+  "no_kind": 2,
+  "skipped_section": 1,
+  "dated_block": 1
  },
  "groups_dropped": {
   "label_not_group": 3,

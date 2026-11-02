@@ -377,6 +377,20 @@
    "confidence": "medium",
    "template": "weebly",
    "day_expanded_from": "Monday through Saturday"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "14:30-15:30",
+   "language": null,
+   "raw": "Confessions: Every Saturday at 2:30pm–3:30pm in the church.",
+   "source_url": "https://www.sosmarblehead.org/mass-schedule--sacraments.html",
+   "fetched_at": "2026-11-02T04:41:34+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly",
+   "topup": true
   }
  ],
  "source_url": "http://staroftheseamarblehead.org/",
@@ -418,6 +432,32 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Also upon request, at any reasonable time. Please call for an appointment.",
+   "phrase": "upon request",
+   "source_url": "https://www.sosmarblehead.org/mass-schedule--sacraments.html",
+   "fetched_at": "2026-11-02T04:41:34+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:35+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "sosrectory@verizon.net",
   "phone": "(781) 631-0086",
@@ -430,8 +470,5 @@
   },
   "fetched_at": "2026-11-01T05:09:34+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

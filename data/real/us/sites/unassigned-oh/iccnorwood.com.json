@@ -237,7 +237,7 @@
   },
   {
    "kind": "mass",
-   "day": "Friday (summer)",
+   "day": "Friday",
    "time": "18:00",
    "language": null,
    "raw": "No morning Mass during the summer: 6:00 PM",
@@ -250,7 +250,7 @@
   },
   {
    "kind": "mass",
-   "day": "Saturday (summer)",
+   "day": "Saturday",
    "time": "08:00",
    "language": null,
    "raw": "No morning Mass during the summer: 8:00 AM",
@@ -273,13 +273,49 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wix"
+  },
+  {
+   "kind": "devotion",
+   "day": "First Sunday of the month",
+   "time": "14:00",
+   "language": null,
+   "raw": "First Sunday of the month - 2:00 PM",
+   "source_url": "https://www.iccnorwood.com/mass-times",
+   "fetched_at": "2026-11-01T22:15:26+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix"
+  },
+  {
+   "kind": "devotion",
+   "day": "Friday (lent)",
+   "time": "19:30",
+   "language": null,
+   "raw": "Fridays during Lent - 7:30 PM",
+   "source_url": "https://www.iccnorwood.com/mass-times",
+   "fetched_at": "2026-11-01T22:15:26+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix"
   }
  ],
  "source_url": "https://www.iccnorwood.com/",
  "fetched_at": "2026-11-01T22:15:31+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:52:23+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "wix",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -293,16 +329,14 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 12
  },
  "has_sunday": true,
- "schedule_dropped": {
-  "not_a_service": 2
- },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

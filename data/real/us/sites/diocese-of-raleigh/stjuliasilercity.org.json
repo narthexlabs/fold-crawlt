@@ -69,6 +69,12 @@
    "url": "https://stjuliasilercity.org/en/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stjuliasilercity.org/en/adoration-quiet-why-adoracion-silencio-por-que/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -522,6 +528,41 @@
   "liturgy_and_confession_instances_total": 3,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Other times by appointment. For more information, please contact Friar Julio.",
+   "phrase": "by appointment",
+   "source_url": "https://stjuliasilercity.org/en/mass-schedule/",
+   "fetched_at": "2026-11-02T04:41:44+00:00"
+  },
+  {
+   "kind": "confession",
+   "text": "Otros horarios con cita previa.",
+   "phrase": "con cita",
+   "source_url": "https://stjuliasilercity.org/en/mass-schedule/",
+   "fetched_at": "2026-11-02T04:41:44+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:46+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "office@stjsc.org",
   "phone": "(919) 742-5584",
@@ -534,8 +575,5 @@
   },
   "fetched_at": "2026-11-01T03:58:54+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

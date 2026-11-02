@@ -126,7 +126,36 @@
   "text": "Church Bulletin",
   "source_url": "https://stnicholascathedral.org/"
  },
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:30",
+   "language": null,
+   "raw": "10:30 Divine Liturgy",
+   "source_url": "https://stnicholascathedral.org/schedule",
+   "fetched_at": "2026-11-02T04:42:13+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:20",
+   "language": null,
+   "raw": "Mass: 9:20 Orthros (Matins)",
+   "source_url": "https://stnicholascathedral.org/schedule",
+   "fetched_at": "2026-11-02T04:42:13+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "generic_strict",
+   "topup": true
+  }
+ ],
  "source_url": "https://stnicholascathedral.org/",
  "fetched_at": "2026-11-01T02:29:16+00:00",
  "schedule_template": {
@@ -168,5 +197,19 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:13+00:00",
+  "requests": 1,
+  "found": [
+   "liturgy"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
  }
 }

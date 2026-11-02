@@ -80,6 +80,12 @@
    "url": "https://www.stpetschurch.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stpetschurch.org/celebrate-and-pray/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -263,6 +269,14 @@
   ],
   "youtube": [
    "https://www.youtube.com/channel/UCvNo_3DRlBPSBkdhbEB3j7Q"
+  ],
+  "livestream": [
+   {
+    "url": "https://www.stpetschurch.org/celebrate-and-pray/",
+    "label": "Livestream",
+    "platform": "www.stpetschurch.org",
+    "kind": "link"
+   }
   ]
  },
  "bulletin": {
@@ -273,6 +287,32 @@
   "source_url": "https://www.stpetschurch.org/welcome/"
  },
  "schedule_rows": [
+  {
+   "kind": "confession",
+   "day": "Friday",
+   "time": "07:00",
+   "language": null,
+   "raw": "Saint Petronille offers the Sacrament of Reconciliation every week at the following times or other times as in our parish calendar: Friday 7:00 am, Saturday 4:00 pm.",
+   "source_url": "https://www.stpetschurch.org/celebrate-and-pray/",
+   "fetched_at": "2026-11-02T04:42:00+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "16:00",
+   "language": null,
+   "raw": "Saint Petronille offers the Sacrament of Reconciliation every week at the following times or other times as in our parish calendar: Friday 7:00 am, Saturday 4:00 pm.",
+   "source_url": "https://www.stpetschurch.org/celebrate-and-pray/",
+   "fetched_at": "2026-11-02T04:42:00+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  },
   {
    "kind": "mass",
    "day": "Saturday",
@@ -449,28 +489,6 @@
   },
   {
    "kind": "confession",
-   "day": "Friday",
-   "time": "07:00",
-   "language": null,
-   "raw": "Friday 7:00 am",
-   "source_url": "https://www.stpetschurch.org/calendar/",
-   "fetched_at": "2026-11-01T07:28:25+00:00",
-   "needs_review": false,
-   "review_reason": "schedule_box"
-  },
-  {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "16:00",
-   "language": null,
-   "raw": "Saturday 4:00 pm",
-   "source_url": "https://www.stpetschurch.org/calendar/",
-   "fetched_at": "2026-11-01T07:28:25+00:00",
-   "needs_review": false,
-   "review_reason": "schedule_box"
-  },
-  {
-   "kind": "confession",
    "day": "Sunday",
    "time": "16:00",
    "language": null,
@@ -483,9 +501,21 @@
  ],
  "source_url": "https://www.stpetschurch.org/",
  "fetched_at": "2026-11-01T07:28:32+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:01+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -493,17 +523,21 @@
     "counts_ok": true,
     "sunday_not_copied": true,
     "no_daily_on_sunday": true,
-    "mostly_high": false
+    "mostly_high": true
    },
    "score": "low"
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 17
+  "trusted_kinds": [],
+  "generic_rows": 21
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "box_rows_added": 17
+  "relative_time": 1,
+  "no_day": 3,
+  "prose": 3,
+  "box_rows_added": 15
  },
  "groups_dropped": {
   "label_not_group": 3,
@@ -513,8 +547,8 @@
   "private_name_risk": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

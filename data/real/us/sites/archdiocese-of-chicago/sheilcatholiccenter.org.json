@@ -87,6 +87,18 @@
    "url": "https://sheilcatholiccenter.org/about/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://sheilcatholiccenter.org/worship/sacraments/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://sheilcatholiccenter.org/worship/adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -280,55 +292,26 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
-  },
-  {
-   "kind": "other",
-   "day": "Holy days",
-   "time": "09:30",
-   "language": null,
-   "raw": "Sunday Mass (9:30, 11:00, 5:00)",
-   "source_url": "https://sheilcatholiccenter.org/",
-   "fetched_at": "2026-11-01T20:25:02+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "low",
-   "template": "wordpress",
-   "kind_parsed": "mass"
-  },
-  {
-   "kind": "other",
-   "day": "Holy days",
-   "time": "11:00",
-   "language": null,
-   "raw": "Sunday Mass (9:30, 11:00, 5:00)",
-   "source_url": "https://sheilcatholiccenter.org/",
-   "fetched_at": "2026-11-01T20:25:02+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "low",
-   "template": "wordpress",
-   "kind_parsed": "mass"
-  },
-  {
-   "kind": "other",
-   "day": "Holy days",
-   "time": "17:00",
-   "language": null,
-   "raw": "Sunday Mass (9:30, 11:00, 5:00)",
-   "source_url": "https://sheilcatholiccenter.org/",
-   "fetched_at": "2026-11-01T20:25:02+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "low",
-   "template": "wordpress",
-   "kind_parsed": "mass"
   }
  ],
  "source_url": "https://sheilcatholiccenter.org/",
  "fetched_at": "2026-11-01T20:25:23+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:39+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -342,19 +325,23 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 23
+  "trusted_kinds": [],
+  "generic_rows": 24
  },
  "has_sunday": true,
  "schedule_dropped": {
   "no_day": 2,
   "dated_block": 1,
   "dated_line": 2,
-  "other_location": 6
+  "other_location": 8,
+  "not_a_service": 1,
+  "range_not_a_mass": 1,
+  "prose": 1
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

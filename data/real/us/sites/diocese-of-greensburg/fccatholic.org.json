@@ -3,21 +3,27 @@
  "diocese": "diocese-of-greensburg",
  "matched_church_ids": [
   "brave:PA|christ prince peace ford city|",
-  "gc-24096"
+  "christ-prince-of-peace-ford-city-pa",
+  "gc-24096",
+  "st-lawrence-cadogan-pa"
  ],
  "matched": {
   "directory": [],
   "discovermass": [
+   "christ-prince-of-peace-ford-city-pa",
+   "st-lawrence-cadogan-pa",
    "brave:PA|christ prince peace ford city|",
    "gc-24096"
   ]
  },
  "names": [
-  "Christ Prince Of Peace",
-  "Christ, Prince of Peace"
+  "Christ, Prince of Peace",
+  "St. Lawrence",
+  "Christ Prince Of Peace"
  ],
  "cities": [
-  "Ford City"
+  "Ford City",
+  "Cadogan"
  ],
  "home_url": "https://www.fccatholic.org/",
  "final_url": "https://www.fccatholic.org/",
@@ -60,6 +66,12 @@
    "url": "https://www.fccatholic.org/about/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.fccatholic.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -192,6 +204,20 @@
   {
    "kind": "mass",
    "day": "Sunday",
+   "time": "09:00",
+   "language": null,
+   "raw": "[St. Lawrence] Mass Times: Sunday-9:00AM-St. Lawrence",
+   "source_url": "https://www.fccatholic.org/",
+   "fetched_at": "2026-11-01T20:25:02+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "location": "St. Lawrence"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
    "time": "11:00",
    "language": null,
    "raw": "Sunday 11:00AM [Mass intention withheld]",
@@ -201,6 +227,20 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "18:00",
+   "language": null,
+   "raw": "[St. Lawrence] Mass Times: Sunday-6:00PM-St. Lawrence (Note the time)",
+   "source_url": "https://www.fccatholic.org/",
+   "fetched_at": "2026-11-01T20:25:02+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "location": "St. Lawrence"
   },
   {
    "kind": "mass",
@@ -217,6 +257,20 @@
   },
   {
    "kind": "mass",
+   "day": "Tuesday",
+   "time": "08:00",
+   "language": null,
+   "raw": "[St. Lawrence] Mass Times: Tuesday-8:00AM-St. Lawrence",
+   "source_url": "https://www.fccatholic.org/",
+   "fetched_at": "2026-11-01T20:25:02+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "location": "St. Lawrence"
+  },
+  {
+   "kind": "mass",
    "day": "Wednesday",
    "time": "09:00",
    "language": null,
@@ -227,6 +281,20 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "08:00",
+   "language": null,
+   "raw": "[St. Lawrence] Mass Times: Thursday-8:00AM-St. Lawrence",
+   "source_url": "https://www.fccatholic.org/",
+   "fetched_at": "2026-11-01T20:25:02+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "location": "St. Lawrence"
   },
   {
    "kind": "mass",
@@ -257,9 +325,19 @@
  ],
  "source_url": "https://www.fccatholic.org/",
  "fetched_at": "2026-11-01T20:26:29+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:19+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -273,16 +351,14 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 8
  },
  "has_sunday": true,
- "schedule_dropped": {
-  "other_location": 4
- },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

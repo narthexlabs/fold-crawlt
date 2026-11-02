@@ -75,6 +75,12 @@
    "url": "https://www.srcharitycinti.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.srcharitycinti.org/series/adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -844,6 +850,20 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "17:30-18:30",
+   "language": null,
+   "raw": "Adoration: 5:30 pm - 6:30 pm",
+   "source_url": "https://www.srcharitycinti.org/series/adoration/",
+   "fetched_at": "2026-11-02T04:52:52+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "http://www.srcharitycinti.org/",
@@ -886,6 +906,23 @@
    "names_person_shared_screen": 1
   }
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:52:53+00:00",
+  "requests": 2,
+  "found": [
+   "adoration"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(513) 347-5300",
@@ -897,8 +934,5 @@
   },
   "fetched_at": "2026-11-01T04:00:32+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

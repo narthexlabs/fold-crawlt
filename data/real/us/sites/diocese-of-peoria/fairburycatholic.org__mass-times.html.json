@@ -63,7 +63,7 @@
    "kind": "mass",
    "day": "Sunday",
    "time": "09:00",
-   "language": null,
+   "language": "Latin",
    "raw": " Mass & Confession Times Weekend Masses Saturday - 4:00 p.m. Sunday - 9:00 a.m. & 10:30 a.m. (Tridentine) Weekday Masses Monday, Wednesday, Thursday, and Friday - 8:00 a.m. Confessions Saturday - 3:30",
    "source_url": "https://www.fairburycatholic.org/mass-times.html",
    "fetched_at": "2026-11-01T20:25:06+00:00",
@@ -172,9 +172,19 @@
  ],
  "source_url": "http://www.fairburycatholic.org/mass-times.html",
  "fetched_at": "2026-11-01T20:25:07+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:44+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -188,13 +198,19 @@
   },
   "passed_bar": true,
   "trusted_candidate": true,
+  "trusted_kinds": [
+   "weekend",
+   "weekday",
+   "confession",
+   "adoration"
+  ],
   "generic_rows": 6
  },
  "has_sunday": true,
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

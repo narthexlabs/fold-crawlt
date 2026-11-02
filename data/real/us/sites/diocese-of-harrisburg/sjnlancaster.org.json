@@ -75,6 +75,12 @@
    "url": "https://www.sjnlancaster.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.sjnlancaster.org/adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -326,6 +332,48 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wix"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "16:00",
+   "language": null,
+   "raw": "Adoration: 12 ~ 4 p.m.",
+   "source_url": "https://www.sjnlancaster.org/adoration",
+   "fetched_at": "2026-11-02T04:43:21+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "18:30",
+   "language": null,
+   "raw": "Adoration: 6:30 ~ 7:30 p.m.",
+   "source_url": "https://www.sjnlancaster.org/adoration",
+   "fetched_at": "2026-11-02T04:43:21+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "wix",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "19:30",
+   "language": null,
+   "raw": "Adoration: 6:30 ~ 7:30 p.m.",
+   "source_url": "https://www.sjnlancaster.org/adoration",
+   "fetched_at": "2026-11-02T04:43:21+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "topup": true
   }
  ],
  "source_url": "http://www.sjnlancaster.org/",
@@ -361,6 +409,33 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "or by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://www.sjnlancaster.org/confession-times",
+   "fetched_at": "2026-11-02T04:43:20+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:22+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 3,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(717) 569-8531",
@@ -372,8 +447,5 @@
   },
   "fetched_at": "2026-11-01T03:59:00+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

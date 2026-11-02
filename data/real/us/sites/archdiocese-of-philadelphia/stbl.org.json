@@ -78,6 +78,18 @@
    "url": "https://stbl.org/whats-happening-at-st-bernadettes/past-updates/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stbl.org/reconciliation/",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stbl.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -390,6 +402,84 @@
    "template": "wordpress"
   },
   {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "08:30",
+   "language": null,
+   "raw": "Weekday Mass Schedule: Monday thru Friday: 8:30 am",
+   "source_url": "https://stbl.org/view-mass-online/",
+   "fetched_at": "2026-11-01T20:25:36+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Monday thru Friday"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "08:30",
+   "language": null,
+   "raw": "Weekday Mass Schedule: Monday thru Friday: 8:30 am",
+   "source_url": "https://stbl.org/view-mass-online/",
+   "fetched_at": "2026-11-01T20:25:36+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Monday thru Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "08:30",
+   "language": null,
+   "raw": "Weekday Mass Schedule: Monday thru Friday: 8:30 am",
+   "source_url": "https://stbl.org/view-mass-online/",
+   "fetched_at": "2026-11-01T20:25:36+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Monday thru Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "08:30",
+   "language": null,
+   "raw": "Weekday Mass Schedule: Monday thru Friday: 8:30 am",
+   "source_url": "https://stbl.org/view-mass-online/",
+   "fetched_at": "2026-11-01T20:25:36+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Monday thru Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "08:30",
+   "language": null,
+   "raw": "Weekday Mass Schedule: Monday thru Friday: 8:30 am",
+   "source_url": "https://stbl.org/view-mass-online/",
+   "fetched_at": "2026-11-01T20:25:36+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Monday thru Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
+  },
+  {
    "kind": "confession",
    "day": "Saturday",
    "time": "15:30-16:15",
@@ -475,9 +565,19 @@
  ],
  "source_url": "https://stbl.org/",
  "fetched_at": "2026-11-01T20:25:57+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:11+00:00",
+  "requests": 2,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -485,17 +585,18 @@
     "counts_ok": true,
     "sunday_not_copied": true,
     "no_daily_on_sunday": true,
-    "mostly_high": true
+    "mostly_high": false
    },
-   "score": "high"
+   "score": "medium"
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 19
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "notice_not_schedule": 10
+  "notice_not_schedule": 5
  },
  "groups_dropped": {
   "label_not_group": 1,

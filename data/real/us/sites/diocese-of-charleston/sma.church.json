@@ -33,6 +33,12 @@
    "url": "https://www.sma.church/confessions.html",
    "status": 429,
    "class": "challenge"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.sma.church/masses--adoration.html",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -270,6 +276,48 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "weebly"
+  },
+  {
+   "kind": "adoration",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Saturday 5:00 p.m. [Mass intention withheld]",
+   "source_url": "https://www.sma.church/masses--adoration.html",
+   "fetched_at": "2026-11-02T04:41:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Sunday",
+   "time": "09:30",
+   "language": null,
+   "raw": "Sunday 9:30 a.m. [Mass intention withheld]",
+   "source_url": "https://www.sma.church/masses--adoration.html",
+   "fetched_at": "2026-11-02T04:41:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Sunday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Sunday 5:00 p.m. [Mass intention withheld]",
+   "source_url": "https://www.sma.church/masses--adoration.html",
+   "fetched_at": "2026-11-02T04:41:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly",
+   "topup": true
   }
  ],
  "source_url": "https://sma.church/",
@@ -311,6 +359,25 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()",
+  "intentions_withheld": 3
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:55+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 3,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(843) 722-7696",
@@ -321,8 +388,5 @@
   },
   "fetched_at": "2026-11-01T05:14:33+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

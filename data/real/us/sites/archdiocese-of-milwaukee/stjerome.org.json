@@ -594,6 +594,20 @@
    "confidence": "high",
    "template": "generic_strict",
    "day_expanded_from": "Mon-Sat"
+  },
+  {
+   "kind": "mass",
+   "day": "First Friday of the month",
+   "time": "08:00",
+   "language": null,
+   "raw": "First Friday Mass & Benediction: 8:00 AM every First Friday of the month",
+   "source_url": "https://www.stjerome.org/parishlife.php",
+   "fetched_at": "2026-11-02T04:41:45+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
   }
  ],
  "source_url": "http://www.stjerome.org/",
@@ -637,5 +651,36 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "We offer the Sacrament of Reconciliation on Tuesdays & Thursdays 5:30 - 6:00 PM, Saturdays 2:30 – 3:30 PM, Sundays 7:30 AM & 10:00 AM, and by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://www.stjerome.org/sacraments.php",
+   "fetched_at": "2026-11-02T04:41:42+00:00"
+  },
+  {
+   "kind": "adoration",
+   "text": "and by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://www.stjerome.org/parishlife.php",
+   "fetched_at": "2026-11-02T04:41:45+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:46+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

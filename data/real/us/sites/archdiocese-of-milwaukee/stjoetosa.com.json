@@ -1178,6 +1178,78 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Monday",
+   "time": "08:15",
+   "language": null,
+   "raw": "Fr. Justin is available for confessions, in the Bride's Room: Mondays after the 8:15 a.m. Mass (during Adoration)",
+   "source_url": "https://www.stjoetosa.com/confessions",
+   "fetched_at": "2026-11-02T04:41:40+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "after",
+   "note": "Fr. Justin is available for confessions, in the Bride's Room: Mondays after the 8:15 a.m. Mass (during Adoration)",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "First Saturday of the month",
+   "time": "10:00",
+   "language": null,
+   "raw": "Mass of Remembrance in Church 10:00 a.m. - 11:00 a.m.",
+   "source_url": "https://www.stjoetosa.com/daily-schedule",
+   "fetched_at": "2026-11-02T04:41:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "First Saturday of the month",
+   "time": "11:00",
+   "language": null,
+   "raw": "Mass of Remembrance in Church 10:00 a.m. - 11:00 a.m.",
+   "source_url": "https://www.stjoetosa.com/daily-schedule",
+   "fetched_at": "2026-11-02T04:41:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "First Saturday of the month",
+   "time": "16:00",
+   "language": null,
+   "raw": "Mass in Church 4:00 p.m. - 5:00 p.m.",
+   "source_url": "https://www.stjoetosa.com/daily-schedule",
+   "fetched_at": "2026-11-02T04:41:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "First Saturday of the month",
+   "time": "17:00",
+   "language": null,
+   "raw": "Mass in Church 4:00 p.m. - 5:00 p.m.",
+   "source_url": "https://www.stjoetosa.com/daily-schedule",
+   "fetched_at": "2026-11-02T04:41:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
   }
  ],
  "source_url": "https://www.stjoetosa.com/",
@@ -1223,5 +1295,29 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "adoration",
+   "text": "By appointment with Fr. Justin",
+   "phrase": "By appointment",
+   "source_url": "https://www.stjoetosa.com/confessions",
+   "fetched_at": "2026-11-02T04:41:40+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:42+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 5,
+  "mode": "merge"
  }
 }

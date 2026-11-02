@@ -75,6 +75,12 @@
    "url": "https://www.stmichaelbridgeport.com/welcome/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stmichaelbridgeport.com/devotion/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -432,6 +438,48 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "18:00",
+   "language": null,
+   "raw": "Eucharistic Adoration: Tuesday 6:00 PM",
+   "source_url": "https://www.stmichaelbridgeport.com/devotion/",
+   "fetched_at": "2026-11-02T04:42:07+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "18:00",
+   "language": null,
+   "raw": "Eucharistic Adoration: Wednesday 6:00 PM",
+   "source_url": "https://www.stmichaelbridgeport.com/devotion/",
+   "fetched_at": "2026-11-02T04:42:07+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "18:00",
+   "language": null,
+   "raw": "Eucharistic Adoration: Thursday 6:00 PM",
+   "source_url": "https://www.stmichaelbridgeport.com/devotion/",
+   "fetched_at": "2026-11-02T04:42:07+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "http://www.stmichaelbridgeport.com/",
@@ -468,7 +516,21 @@
   "excluded_by_reason": {}
  },
  "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()",
-  "intentions_withheld": 3
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:07+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 3,
+  "mode": "merge"
  }
 }

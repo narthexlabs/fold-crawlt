@@ -156,6 +156,58 @@
  },
  "schedule_rows": [
   {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "18:00",
+   "language": null,
+   "raw": "Saturday Vigil 6 pm",
+   "source_url": "https://ourladyoflourdesnewlondon.weebly.com/",
+   "fetched_at": "2026-11-01T22:15:22+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "weebly"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:30",
+   "language": null,
+   "raw": "MASS SCHEDULES:: Sunday 8:30 am",
+   "source_url": "https://ourladyoflourdesnewlondon.weebly.com/",
+   "fetched_at": "2026-11-01T22:15:22+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "19:00",
+   "language": null,
+   "raw": "MASS SCHEDULES:: Tuesday 7 pm",
+   "source_url": "https://ourladyoflourdesnewlondon.weebly.com/",
+   "fetched_at": "2026-11-01T22:15:22+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Wednesday 8 am - Eucharistic Adoration",
+   "source_url": "https://ourladyoflourdesnewlondon.weebly.com/",
+   "fetched_at": "2026-11-01T22:15:22+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "weebly"
+  },
+  {
    "kind": "adoration",
    "day": "Tuesday (lent)",
    "time": "18:00",
@@ -174,19 +226,6 @@
    "time": "18:30",
    "language": null,
    "raw": "Confession: 6:30pm",
-   "source_url": "https://ourladyoflourdesnewlondon.weebly.com/olol--st-marys-sister-parish-weekly-schedule.html",
-   "fetched_at": "2026-11-01T22:15:25+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "weebly"
-  },
-  {
-   "kind": "mass",
-   "day": "Tuesday",
-   "time": "19:00",
-   "language": null,
-   "raw": "Mass: 7pm",
    "source_url": "https://ourladyoflourdesnewlondon.weebly.com/olol--st-marys-sister-parish-weekly-schedule.html",
    "fetched_at": "2026-11-01T22:15:25+00:00",
    "needs_review": false,
@@ -234,19 +273,6 @@
    "template": "weebly"
   },
   {
-   "kind": "mass",
-   "day": "Saturday",
-   "time": "18:00",
-   "language": null,
-   "raw": "Our Lady of Lourdes- Confession: 5:30pm, Mass: 6pm",
-   "source_url": "https://ourladyoflourdesnewlondon.weebly.com/olol--st-marys-sister-parish-weekly-schedule.html",
-   "fetched_at": "2026-11-01T22:15:25+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "weebly"
-  },
-  {
    "kind": "confession",
    "day": "Sunday",
    "time": "08:00",
@@ -258,54 +284,23 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "weebly"
-  },
-  {
-   "kind": "mass",
-   "day": "Sunday",
-   "time": "08:30",
-   "language": null,
-   "raw": "Our Lady of Lourdes- Confession 8am, Mass: 8:30am",
-   "source_url": "https://ourladyoflourdesnewlondon.weebly.com/olol--st-marys-sister-parish-weekly-schedule.html",
-   "fetched_at": "2026-11-01T22:15:25+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "weebly"
-  },
-  {
-   "kind": "other",
-   "day": "Holy days",
-   "time": "08:30",
-   "language": null,
-   "raw": "All Saints Feast Day Mass: Sunday, November 1st, at the 8:30AM Mass",
-   "source_url": "https://ourladyoflourdesnewlondon.weebly.com/",
-   "fetched_at": "2026-11-01T22:15:22+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "weebly",
-   "kind_parsed": "mass"
-  },
-  {
-   "kind": "other",
-   "day": "Holy days",
-   "time": "19:00",
-   "language": null,
-   "raw": "7PM Mass",
-   "source_url": "https://ourladyoflourdesnewlondon.weebly.com/",
-   "fetched_at": "2026-11-01T22:15:22+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "weebly",
-   "kind_parsed": "mass"
   }
  ],
  "source_url": "https://ourladyoflourdesnewlondon.weebly.com/",
  "fetched_at": "2026-11-01T22:15:32+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:52:24+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "weebly",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -319,22 +314,32 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 21
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Confession is available before each Mass and upon request.",
+   "phrase": "upon request",
+   "source_url": "https://ourladyoflourdesnewlondon.weebly.com/confession.html",
+   "fetched_at": "2026-11-01T22:15:26+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "relative_time": 3,
   "implausible_hour": 1,
-  "not_a_service": 3,
-  "other_location": 5
+  "other_location": 16,
+  "relative_time": 1,
+  "not_a_service": 1
  },
  "groups_dropped": {
   "sacrament_prep": 1,
   "unmatched": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

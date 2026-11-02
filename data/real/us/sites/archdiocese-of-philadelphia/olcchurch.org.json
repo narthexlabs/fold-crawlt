@@ -2,19 +2,23 @@
  "domain": "olcchurch.org",
  "diocese": "archdiocese-of-philadelphia",
  "matched_church_ids": [
-  "our-lady-of-consolation-parkesburg-pa"
+  "our-lady-of-consolation-parkesburg-pa",
+  "st-malachy-doe-run-pa"
  ],
  "matched": {
   "directory": [],
   "discovermass": [
-   "our-lady-of-consolation-parkesburg-pa"
+   "our-lady-of-consolation-parkesburg-pa",
+   "st-malachy-doe-run-pa"
   ]
  },
  "names": [
-  "Our Lady of Consolation"
+  "Our Lady of Consolation",
+  "St. Malachy"
  ],
  "cities": [
-  "Parkesburg"
+  "Parkesburg",
+  "Doe Run"
  ],
  "home_url": "http://www.olcchurch.org/",
  "final_url": "https://www.olcchurch.org/",
@@ -447,7 +451,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-02T01:58:02+00:00",
+    "fetched_at": "2026-11-02T04:58:06+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -464,7 +468,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-02T01:58:04+00:00",
+    "fetched_at": "2026-11-02T04:58:08+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -481,7 +485,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-02T01:58:05+00:00",
+    "fetched_at": "2026-11-02T04:58:09+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -571,6 +575,34 @@
    "template": "weebly"
   },
   {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "08:30",
+   "language": null,
+   "raw": "Mass Schedule:: 8:30 AM & 7:00 PM -",
+   "source_url": "https://www.olcchurch.org/",
+   "fetched_at": "2026-11-02T01:56:07+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "19:00",
+   "language": null,
+   "raw": "Mass Schedule:: 8:30 AM & 7:00 PM -",
+   "source_url": "https://www.olcchurch.org/",
+   "fetched_at": "2026-11-02T01:56:07+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly",
+   "kind_parsed": "mass"
+  },
+  {
    "kind": "mass",
    "day": "Monday",
    "time": "08:30",
@@ -648,9 +680,19 @@
  ],
  "source_url": "http://www.olcchurch.org/",
  "fetched_at": "2026-11-02T01:56:15+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:05+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "weebly",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -664,12 +706,19 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 6
  },
+ "schedule_none": [
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "text": "​(No Daily Mass on Tuesdays).",
+   "source_url": "https://www.olcchurch.org/",
+   "fetched_at": "2026-11-02T01:56:07+00:00"
+  }
+ ],
  "has_sunday": true,
- "schedule_dropped": {
-  "other_location": 2
- },
  "groups_dropped": {
   "unmatched": 5,
   "noise": 16,

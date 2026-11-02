@@ -73,6 +73,18 @@
    "url": "https://www.blessedsacrament.net/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.blessedsacrament.net/reconciliation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.blessedsacrament.net/adoration-of-the-blessed-sacrament",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -271,6 +283,34 @@
    "confidence": "medium",
    "template": "wix",
    "day_expanded_from": "Weekdays"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Confessions Times: Saturdays: 8:00 AM until finished and 3:00 - 4:00 PM",
+   "source_url": "https://www.blessedsacrament.net/reconciliation",
+   "fetched_at": "2026-11-02T04:41:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:00-16:00",
+   "language": null,
+   "raw": "Confessions Times: Saturdays: 8:00 AM until finished and 3:00 - 4:00 PM",
+   "source_url": "https://www.blessedsacrament.net/reconciliation",
+   "fetched_at": "2026-11-02T04:41:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "topup": true
   }
  ],
  "source_url": "https://www.blessedsacrament.net/",
@@ -312,6 +352,25 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:03+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "parishoffice@bscs-denver.net",
   "phone": "(303) 355-7361",
@@ -324,8 +383,5 @@
   },
   "fetched_at": "2026-11-01T05:11:03+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

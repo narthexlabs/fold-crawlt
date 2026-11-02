@@ -75,6 +75,18 @@
    "url": "https://holyfamilyparishrcc.org/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://holyfamilyparishrcc.org/reconciliation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://holyfamilyparishrcc.org/events/adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -391,19 +403,6 @@
   },
   {
    "kind": "adoration",
-   "day": "Thursday",
-   "time": "10:00-18:00",
-   "language": null,
-   "raw": "Adoration Times: 10:00 AM to 6:00 PM - St. Louis",
-   "source_url": "https://holyfamilyparishrcc.org/mass-times/",
-   "fetched_at": "2026-11-01T17:21:25+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "godaddy"
-  },
-  {
-   "kind": "adoration",
    "day": "Saturday",
    "time": "14:30-15:30",
    "language": null,
@@ -440,14 +439,66 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "godaddy"
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "11:15",
+   "language": null,
+   "raw": "Confession Times: Sunday:10:30 AM to 11:15 AM – Holy Trinity",
+   "source_url": "https://holyfamilyparishrcc.org/reconciliation/",
+   "fetched_at": "2026-11-02T04:52:23+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "godaddy"
+  },
+  {
+   "kind": "confession",
+   "day": "Thursday",
+   "time": "18:00",
+   "language": null,
+   "raw": "Confession Times: Thursday:5:00 PM to 6:00 PM – St. Louis",
+   "source_url": "https://holyfamilyparishrcc.org/reconciliation/",
+   "fetched_at": "2026-11-02T04:52:23+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "godaddy"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:15",
+   "language": null,
+   "raw": "Confession Times: Saturday:2:45 PM to 3:15 PM – St. Ann",
+   "source_url": "https://holyfamilyparishrcc.org/reconciliation/",
+   "fetched_at": "2026-11-02T04:52:23+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "godaddy"
   }
  ],
  "source_url": "https://cincinnatise5.org/",
  "fetched_at": "2026-11-01T17:21:33+00:00",
  "redirected_off_host": "holyfamilyparishrcc.org",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:52:26+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "godaddy",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -461,6 +512,7 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 31
  },
  "has_sunday": true,
@@ -468,7 +520,9 @@
   "other_location": 3,
   "skipped_section": 318,
   "not_a_service": 1,
-  "dated_line": 7
+  "dated_line": 7,
+  "dated_block": 1,
+  "no_day": 1
  },
  "groups_dropped": {
   "unmatched": 2,
@@ -476,8 +530,8 @@
   "fragment": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

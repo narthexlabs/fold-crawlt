@@ -89,7 +89,7 @@
    "feed_key": "85a2a69a46b6",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-02T01:57:19+00:00",
+    "fetched_at": "2026-11-02T04:57:35+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -109,19 +109,6 @@
   "source_url": "https://www.bvm-darby.com/"
  },
  "schedule_rows": [
-  {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "15:15-16:00",
-   "language": null,
-   "raw": "RITE OF RECONCILIATION:: Saturdays: 3:15 to 4:00 PM",
-   "source_url": "https://www.bvm-darby.com/reconciliation/penance",
-   "fetched_at": "2026-11-01T20:25:03+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
   {
    "kind": "mass",
    "day": "Saturday",
@@ -280,13 +267,36 @@
    "day_expanded_from": "Monday - Saturday",
    "day_parsed": "Monday",
    "day_bound_from_line": true
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:15-16:00",
+   "language": null,
+   "raw": "Confession: Saturday: 3:15 - 4:00pm",
+   "source_url": "https://www.bvm-darby.com/",
+   "fetched_at": "2026-11-01T20:25:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
   }
  ],
  "source_url": "https://www.bvm-darby.com/",
  "fetched_at": "2026-11-01T20:25:07+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:04+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -300,11 +310,12 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 11
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 4,
+  "no_kind": 4,
   "range_not_a_mass": 1,
   "no_day": 1
  },

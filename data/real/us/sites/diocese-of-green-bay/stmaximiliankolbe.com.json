@@ -66,6 +66,18 @@
    "url": "https://stmaximiliankolbe.com/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stmaximiliankolbe.com/event/reconciliation-during-faith-formation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stmaximiliankolbe.com/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -107,7 +119,7 @@
    "note": "The Events Calendar (WordPress) REST API",
    "last_fetch": {
     "status": 200,
-    "fetched_at": "2026-11-01T23:35:49+00:00",
+    "fetched_at": "2026-11-02T05:02:53+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -236,6 +248,34 @@
    "template": "wordpress"
   },
   {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "11:00",
+   "language": null,
+   "raw": "Good Friday – Stations of the Cross 11AM – Passion at Noon",
+   "source_url": "https://stmaximiliankolbe.com/about-us/mass/",
+   "fetched_at": "2026-11-01T22:15:37+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "kind_parsed": "devotion"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "12:00",
+   "language": null,
+   "raw": "Good Friday – Stations of the Cross 11AM – Passion at Noon",
+   "source_url": "https://stmaximiliankolbe.com/about-us/mass/",
+   "fetched_at": "2026-11-01T22:15:37+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "kind_parsed": "devotion"
+  },
+  {
    "kind": "mass",
    "day": "Sunday",
    "time": "07:00",
@@ -251,9 +291,21 @@
  ],
  "source_url": "https://stmaximiliankolbe.com/",
  "fetched_at": "2026-11-01T22:15:46+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:59+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -267,13 +319,15 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 12
+  "trusted_kinds": [],
+  "generic_rows": 13
  },
  "has_sunday": true,
  "schedule_dropped": {
   "relative_time": 1,
-  "dated_line": 1,
-  "other_location": 7,
+  "dated_line": 2,
+  "other_location": 5,
+  "dated_block": 1,
   "prose": 2
  },
  "groups_dropped": {
@@ -281,8 +335,8 @@
   "noise": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

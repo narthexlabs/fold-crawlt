@@ -72,6 +72,12 @@
    "url": "https://stmolph.com/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stmolph.com/adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -103,7 +109,6 @@
    "https://www.instagram.com/stmolph/"
   ],
   "flocknote": [
-   "https://new.flocknote.com",
    "https://stmolph.flocknote.com"
   ]
  },
@@ -335,6 +340,20 @@
    "review_reason": null,
    "confidence": "high",
    "template": "ecatholic"
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "09:30-10:30",
+   "language": null,
+   "raw": "Eucharistic Adoration: FRIDAY: 9:30 AM to 10:30 AM St. Matthew Church",
+   "source_url": "https://stmolph.com/adoration",
+   "fetched_at": "2026-11-02T04:41:51+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "topup": true
   }
  ],
  "source_url": "https://stmolph.com/",
@@ -373,5 +392,23 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "social_shared_links_removed": [
+  "https://new.flocknote.com"
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:51+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

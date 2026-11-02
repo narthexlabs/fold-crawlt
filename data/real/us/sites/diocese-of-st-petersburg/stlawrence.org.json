@@ -75,6 +75,18 @@
    "url": "https://stlawrence.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://stlawrence.org/priest-schedule/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stlawrence.org/adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -447,6 +459,34 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "09:00-19:00",
+   "language": null,
+   "raw": "Exposition and Adoration of the Blessed Sacrament is available weekly in the church from 9:00 AM to 7:00 PM on Wednesdays.",
+   "source_url": "https://stlawrence.org/adoration",
+   "fetched_at": "2026-11-02T04:42:10+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "First Friday of the month",
+   "time": "09:00-10:00",
+   "language": null,
+   "raw": "Every First Friday of the month there is also Exposition of the Blessed Sacrament from 9:00 AM – 10: 30 AM.",
+   "source_url": "https://stlawrence.org/adoration",
+   "fetched_at": "2026-11-02T04:42:10+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "http://www.stlawrence.org/",
@@ -482,6 +522,25 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:10+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "contact@stlawrence.org",
   "phone": "(813) 875-4040",
@@ -494,8 +553,5 @@
   },
   "fetched_at": "2026-11-01T05:14:08+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

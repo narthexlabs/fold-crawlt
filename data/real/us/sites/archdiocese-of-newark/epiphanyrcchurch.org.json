@@ -57,6 +57,12 @@
    "url": "https://www.epiphanyrcchurch.org/parish-ministries/ministry-to-the-sick-and-homebound",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.epiphanyrcchurch.org/sacraments/sacraments-of-healing/reconciliation",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -437,6 +443,22 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "First Friday of the month",
+   "time": "11:00",
+   "language": null,
+   "raw": "Adoration: 1st Friday: After 11:00 Am Mass",
+   "source_url": "https://www.epiphanyrcchurch.org/liturgy/devotion-adoration-schedule",
+   "fetched_at": "2026-11-02T04:47:50+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "after",
+   "note": "Adoration: 1st Friday: After 11:00 Am Mass",
+   "topup": true
   }
  ],
  "source_url": "https://www.epiphanyrcchurch.org/",
@@ -479,5 +501,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:47:50+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

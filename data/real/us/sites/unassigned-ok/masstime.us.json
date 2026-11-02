@@ -37,6 +37,18 @@
    "url": "https://masstime.us/nebraska-catholic-churches/lincoln-mass-times/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://masstime.us/perpetual-adoration-chapels-in-the-united-states/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://masstime.us/reconciliation/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -127,9 +139,21 @@
  ],
  "source_url": "https://masstime.us/",
  "fetched_at": "2026-11-01T07:19:55+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:47:57+00:00",
+  "requests": 2,
+  "found": [
+   "adoration"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -143,6 +167,7 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 92
  },
  "has_sunday": true,
@@ -151,8 +176,8 @@
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

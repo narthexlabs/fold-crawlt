@@ -63,6 +63,18 @@
    "url": "https://sfsm.church/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://sfsm.church/reconciliation/",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://sfsm.church/adoration-holy-hour/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -141,7 +153,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:34:38+00:00",
+    "fetched_at": "2026-11-02T04:52:39+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -339,9 +351,21 @@
  ],
  "source_url": "https://sfsm.church/",
  "fetched_at": "2026-11-01T22:15:39+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:37+00:00",
+  "requests": 2,
+  "found": [
+   "adoration"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -355,18 +379,20 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 14
+  "trusted_kinds": [],
+  "generic_rows": 15
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "skipped_section": 4
+  "skipped_section": 4,
+  "dated_block": 1
  },
  "groups_dropped": {
   "noise": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

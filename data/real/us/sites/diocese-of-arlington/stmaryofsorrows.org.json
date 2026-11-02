@@ -32,6 +32,24 @@
    "url": "https://stmaryofsorrows.org/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stmaryofsorrows.org/?page_id=8828",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stmaryofsorrows.org/?page_id=8811",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://stmaryofsorrows.org/?page_id=1463",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -60,7 +78,50 @@
   "text": "Current & Past Bulletins",
   "source_url": "https://stmaryofsorrows.org/"
  },
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:30-16:30",
+   "language": null,
+   "raw": "Confessions are held at the New Church: Saturday: 3:30 – 4:30pm",
+   "source_url": "https://stmaryofsorrows.org/?page_id=8828",
+   "fetched_at": "2026-11-02T04:42:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Monday",
+   "time": "10:00",
+   "language": null,
+   "raw": "Confessions are held at the New Church: Monday: 10am until the line ends",
+   "source_url": "https://stmaryofsorrows.org/?page_id=8828",
+   "fetched_at": "2026-11-02T04:42:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Wednesday",
+   "time": "18:30-19:00",
+   "language": null,
+   "raw": "Confessions are held at the New Church: Wednesday: 6:30 – 7:00pm",
+   "source_url": "https://stmaryofsorrows.org/?page_id=8828",
+   "fetched_at": "2026-11-02T04:42:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  }
+ ],
  "source_url": "https://stmaryofsorrows.org/",
  "fetched_at": "2026-11-01T02:15:58+00:00",
  "schedule_template": {
@@ -94,5 +155,21 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:03+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 3,
+  "mode": "merge"
  }
 }

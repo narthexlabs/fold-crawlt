@@ -84,6 +84,12 @@
    "url": "https://avoncc.org/about/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://avoncc.org/worship/sacraments/reconciliation-2/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -1378,6 +1384,34 @@
    "confidence": "high",
    "template": "wordpress",
    "day_expanded_from": "Monday to Friday."
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "16:00-16:30",
+   "language": null,
+   "raw": "[Holy Trinity Parish – Avon] Confession Times: 4:00 p.m – 4:30 p.m.",
+   "source_url": "https://avoncc.org/worship/sacraments/reconciliation-2/",
+   "fetched_at": "2026-11-02T04:52:33+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Monday",
+   "time": "19:00-19:25",
+   "language": null,
+   "raw": "[St. Mary of the Immaculate Conception Parish – Avon] Confession Times: 7:00 p.m. – 7:25 p.m.",
+   "source_url": "https://avoncc.org/worship/sacraments/reconciliation-2/",
+   "fetched_at": "2026-11-02T04:52:33+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "https://avoncc.org/",
@@ -1423,7 +1457,30 @@
   }
  },
  "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()",
-  "intentions_withheld": 14
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "By appointment:",
+   "phrase": "By appointment",
+   "source_url": "https://avoncc.org/worship/sacraments/reconciliation-2/",
+   "fetched_at": "2026-11-02T04:52:33+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:52:37+00:00",
+  "requests": 3,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
  }
 }

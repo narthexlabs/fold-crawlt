@@ -79,6 +79,18 @@
    "url": "https://www.transfigurationwauconda.com/contact-form/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://www.transfigurationwauconda.com/prayer/liturgy/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.transfigurationwauconda.com/adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -546,6 +558,20 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Fourth Wednesday of the month",
+   "time": "19:00",
+   "language": null,
+   "raw": "LITURGY COMMITTEE: Regular meetings at 7:00 PM in Parish Offices on 4th Wednesday of each month.",
+   "source_url": "https://www.transfigurationwauconda.com/prayer/liturgy/",
+   "fetched_at": "2026-11-02T04:41:46+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "https://www.transfigurationwauconda.com/",
@@ -591,5 +617,30 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "By APPOINTMENT",
+   "phrase": "By APPOINTMENT",
+   "source_url": "https://www.transfigurationwauconda.com/prayer/sacraments/",
+   "fetched_at": "2026-11-02T04:41:44+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:48+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

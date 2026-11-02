@@ -603,6 +603,48 @@
  },
  "schedule_rows": [
   {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "08:00",
+   "language": null,
+   "raw": "*Adoration of the Blessed Sacrament: Wednesdays following 8AM Mass through",
+   "source_url": "https://sfaparish.org/",
+   "fetched_at": "2026-11-02T01:56:07+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "*Adoration of the Blessed Sacrament: Wednesdays following 8AM Mass through",
+   "relative_resolved": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "19:00",
+   "language": null,
+   "raw": "evening Holy Hour 7PM~ 8PM",
+   "source_url": "https://sfaparish.org/",
+   "fetched_at": "2026-11-02T01:56:07+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "20:00",
+   "language": null,
+   "raw": "evening Holy Hour 7PM~ 8PM",
+   "source_url": "https://sfaparish.org/",
+   "fetched_at": "2026-11-02T01:56:07+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
    "kind": "confession",
    "day": "Saturday",
    "time": "15:00-15:45",
@@ -613,32 +655,6 @@
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
-   "template": "wordpress"
-  },
-  {
-   "kind": "adoration",
-   "day": "Wednesday",
-   "time": "19:00",
-   "language": null,
-   "raw": "*Holy Hour Wednesday evenings 7PM~8PM.",
-   "source_url": "https://sfaparish.org/adoration/",
-   "fetched_at": "2026-11-02T01:56:09+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "wordpress"
-  },
-  {
-   "kind": "adoration",
-   "day": "Wednesday",
-   "time": "20:00",
-   "language": null,
-   "raw": "*Holy Hour Wednesday evenings 7PM~8PM.",
-   "source_url": "https://sfaparish.org/adoration/",
-   "fetched_at": "2026-11-02T01:56:09+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
    "template": "wordpress"
   },
   {
@@ -724,9 +740,19 @@
  ],
  "source_url": "https://sfaparish.org/",
  "fetched_at": "2026-11-02T01:56:15+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:06+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -734,17 +760,17 @@
     "counts_ok": true,
     "sunday_not_copied": true,
     "no_daily_on_sunday": true,
-    "mostly_high": true
+    "mostly_high": false
    },
    "score": "low"
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 10
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "relative_time": 1,
   "skipped_section": 4,
   "dated_block": 1,
   "other_location": 1,

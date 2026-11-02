@@ -63,6 +63,12 @@
    "url": "https://divinemercyatl.com/calendario-nuevos-eventos/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://divinemercyatl.com/adoracion/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -359,6 +365,36 @@
    "confidence": "medium",
    "template": "wordpress",
    "day_expanded_from": "MIércoles ,Jueves"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "18:00",
+   "language": null,
+   "raw": "Adoración al Santísimo – Miércoles, y Jueves – 6:00 pm (antes de la Santa Misa).",
+   "source_url": "https://divinemercyatl.com/adoracion/",
+   "fetched_at": "2026-11-02T04:41:53+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_parsed": "Thursday",
+   "day_bound_from_line": true,
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "18:00",
+   "language": null,
+   "raw": "Adoración al Santísimo – Miércoles, y Jueves – 6:00 pm (antes de la Santa Misa).",
+   "source_url": "https://divinemercyatl.com/adoracion/",
+   "fetched_at": "2026-11-02T04:41:53+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "https://divinemercyatl.com/",
@@ -394,5 +430,19 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:55+00:00",
+  "requests": 2,
+  "found": [
+   "adoration"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
  }
 }

@@ -263,6 +263,19 @@
    "template": "generic_strict"
   },
   {
+   "kind": "devotion",
+   "day": "Thursday",
+   "time": "08:00",
+   "language": null,
+   "raw": "- 8:00am Rosary",
+   "source_url": "https://www.olmcarrollton.org/",
+   "fetched_at": "2026-11-01T22:15:30+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
    "kind": "mass",
    "day": "Thursday",
    "time": "08:30",
@@ -369,9 +382,19 @@
  ],
  "source_url": "http://www.olmcarrollton.org/",
  "fetched_at": "2026-11-01T22:15:37+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:52:46+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -385,19 +408,33 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 15
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Sunday before Mass by request",
+   "phrase": "by request",
+   "source_url": "https://www.olmcarrollton.org/",
+   "fetched_at": "2026-11-01T22:15:30+00:00"
+  },
+  {
+   "kind": "confession",
+   "text": "or by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://www.olmcarrollton.org/",
+   "fetched_at": "2026-11-01T22:15:30+00:00"
+  }
+ ],
  "has_sunday": true,
- "schedule_dropped": {
-  "not_a_service": 1
- },
  "groups_dropped": {
   "unmatched": 2,
   "noise": 2
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

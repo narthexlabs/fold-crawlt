@@ -3,13 +3,15 @@
  "diocese": "diocese-of-camden",
  "matched_church_ids": [
   "diocese-of-camden:St. Joseph Parish - Sea Isle",
-  "gc-18900"
+  "gc-18900",
+  "st-joseph-sea-isle-city-nj"
  ],
  "matched": {
   "directory": [
    "diocese-of-camden:St. Joseph Parish - Sea Isle"
   ],
   "discovermass": [
+   "st-joseph-sea-isle-city-nj",
    "gc-18900"
   ]
  },
@@ -350,24 +352,89 @@
  "schedule_rows": [
   {
    "kind": "mass",
-   "day": "Friday",
+   "day": "Monday",
    "time": "08:00",
    "language": null,
-   "raw": "Weekday Mass: Friday: 8:00am",
-   "source_url": "https://www.stjosephsic.org/masses-confession/",
+   "raw": "MASS TIMES: Mon-Friday: 8:00am",
+   "source_url": "https://www.stjosephsic.org",
    "fetched_at": "2026-11-01T07:27:53+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
-   "template": "generic_strict"
+   "template": "generic_strict",
+   "day_expanded_from": "Mon-Friday"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "08:00",
+   "language": null,
+   "raw": "MASS TIMES: Mon-Friday: 8:00am",
+   "source_url": "https://www.stjosephsic.org",
+   "fetched_at": "2026-11-01T07:27:53+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Mon-Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "08:00",
+   "language": null,
+   "raw": "MASS TIMES: Mon-Friday: 8:00am",
+   "source_url": "https://www.stjosephsic.org",
+   "fetched_at": "2026-11-01T07:27:53+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Mon-Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "08:00",
+   "language": null,
+   "raw": "MASS TIMES: Mon-Friday: 8:00am",
+   "source_url": "https://www.stjosephsic.org",
+   "fetched_at": "2026-11-01T07:27:53+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Mon-Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "08:00",
+   "language": null,
+   "raw": "MASS TIMES: Mon-Friday: 8:00am",
+   "source_url": "https://www.stjosephsic.org",
+   "fetched_at": "2026-11-01T07:27:53+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Mon-Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
   },
   {
    "kind": "mass",
    "day": "Saturday",
    "time": "16:00",
    "language": null,
-   "raw": "Weekend Mass Schedule: Saturday: 4:00pm",
-   "source_url": "https://www.stjosephsic.org/masses-confession/",
+   "raw": "MASS TIMES: Saturday: 4:00pm",
+   "source_url": "https://www.stjosephsic.org",
    "fetched_at": "2026-11-01T07:27:53+00:00",
    "needs_review": false,
    "review_reason": null,
@@ -379,8 +446,8 @@
    "day": "Sunday",
    "time": "08:00",
    "language": null,
-   "raw": "Weekend Mass Schedule: Sunday: 8:00am,",
-   "source_url": "https://www.stjosephsic.org/masses-confession/",
+   "raw": "MASS TIMES: Sunday: 8:00am, 10:30am",
+   "source_url": "https://www.stjosephsic.org",
    "fetched_at": "2026-11-01T07:27:53+00:00",
    "needs_review": false,
    "review_reason": null,
@@ -389,73 +456,44 @@
   },
   {
    "kind": "mass",
-   "day": "Monday",
+   "day": "Sunday",
    "time": "10:30",
    "language": null,
-   "raw": "Weekend Mass Schedule: 10:30am",
-   "source_url": "https://www.stjosephsic.org/masses-confession/",
+   "raw": "MASS TIMES: Sunday: 8:00am, 10:30am",
+   "source_url": "https://www.stjosephsic.org",
    "fetched_at": "2026-11-01T07:27:53+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
-   "template": "generic_strict",
-   "day_expanded_from": "Weekend"
+   "template": "generic_strict"
   },
   {
-   "kind": "mass",
-   "day": "Tuesday",
-   "time": "10:30",
+   "kind": "other",
+   "day": "Holy days",
+   "time": "08:00",
    "language": null,
-   "raw": "Weekend Mass Schedule: 10:30am",
+   "raw": "Holy Day Masses: 8:00am & 5:30pm",
    "source_url": "https://www.stjosephsic.org/masses-confession/",
    "fetched_at": "2026-11-01T07:27:53+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict",
-   "day_expanded_from": "Weekend"
+   "kind_parsed": "mass"
   },
   {
-   "kind": "mass",
-   "day": "Wednesday",
-   "time": "10:30",
+   "kind": "other",
+   "day": "Holy days",
+   "time": "17:30",
    "language": null,
-   "raw": "Weekend Mass Schedule: 10:30am",
+   "raw": "Holy Day Masses: 8:00am & 5:30pm",
    "source_url": "https://www.stjosephsic.org/masses-confession/",
    "fetched_at": "2026-11-01T07:27:53+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict",
-   "day_expanded_from": "Weekend"
-  },
-  {
-   "kind": "mass",
-   "day": "Thursday",
-   "time": "10:30",
-   "language": null,
-   "raw": "Weekend Mass Schedule: 10:30am",
-   "source_url": "https://www.stjosephsic.org/masses-confession/",
-   "fetched_at": "2026-11-01T07:27:53+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict",
-   "day_expanded_from": "Weekend"
-  },
-  {
-   "kind": "mass",
-   "day": "Friday",
-   "time": "10:30",
-   "language": null,
-   "raw": "Weekend Mass Schedule: 10:30am",
-   "source_url": "https://www.stjosephsic.org/masses-confession/",
-   "fetched_at": "2026-11-01T07:27:53+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict",
-   "day_expanded_from": "Weekend"
+   "kind_parsed": "mass"
   },
   {
    "kind": "confession",
@@ -481,6 +519,19 @@
    "needs_review": false,
    "review_reason": null,
    "confidence": "low",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "devotion",
+   "day": "Thursday",
+   "time": "07:35",
+   "language": null,
+   "raw": "Thursday at 7:35am",
+   "source_url": "https://www.stjosephsic.org/masses-confession/",
+   "fetched_at": "2026-11-01T07:27:53+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
    "template": "generic_strict"
   },
   {
@@ -512,28 +563,46 @@
  ],
  "source_url": "http://stjosephsic.org/",
  "fetched_at": "2026-11-01T07:28:00+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:47:53+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
     "hours_ok": true,
     "counts_ok": true,
     "sunday_not_copied": true,
-    "no_daily_on_sunday": true,
+    "no_daily_on_sunday": false,
     "mostly_high": false
    },
    "score": "medium"
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 12
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "3:30pm or by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://www.stjosephsic.org/masses-confession/",
+   "fetched_at": "2026-11-01T07:27:53+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 2,
-  "not_a_service": 1,
   "relative_time": 1
  },
  "groups_dropped": {
@@ -541,8 +610,8 @@
   "noise": 3
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

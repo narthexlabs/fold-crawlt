@@ -301,7 +301,7 @@
    "note": "Google Calendar public feed (website-builder widget)",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:39:28+00:00",
+    "fetched_at": "2026-11-02T05:14:28+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -486,9 +486,19 @@
  ],
  "source_url": "https://www.stjosephmanteno.com/",
  "fetched_at": "2026-11-01T07:28:26+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:55+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -502,22 +512,31 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 15
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Sunday @ 8am | Tuesday 6-6:30pm or by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://www.stjosephmanteno.com/",
+   "fetched_at": "2026-11-01T07:28:17+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "relative_time": 1,
-  "skipped_section": 4,
+  "skipped_section": 10,
   "not_a_service": 1,
-  "no_day": 1,
-  "prose": 3
+  "no_day": 1
  },
  "groups_dropped": {
   "noise": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

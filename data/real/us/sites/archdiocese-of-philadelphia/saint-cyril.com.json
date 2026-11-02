@@ -60,6 +60,24 @@
    "url": "https://saint-cyril.com/calendar/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://saint-cyril.com/prep/level-2-sacraments/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://saint-cyril.com/mass-schedule-2/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://saint-cyril.com/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -194,7 +212,7 @@
    "feed_key": "05a6383a50dd",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-02T01:58:33+00:00",
+    "fetched_at": "2026-11-02T04:58:31+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -225,6 +243,45 @@
   "source_url": "https://saint-cyril.com/"
  },
  "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Click here for Mass Live Stream: Sunday 8am – 10am – Noon",
+   "source_url": "https://saint-cyril.com/",
+   "fetched_at": "2026-11-01T20:25:18+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": null,
+   "raw": "Click here for Mass Live Stream: Sunday 8am – 10am – Noon",
+   "source_url": "https://saint-cyril.com/",
+   "fetched_at": "2026-11-01T20:25:18+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "12:00",
+   "language": null,
+   "raw": "Click here for Mass Live Stream: Sunday 8am – 10am – Noon",
+   "source_url": "https://saint-cyril.com/",
+   "fetched_at": "2026-11-01T20:25:18+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
   {
    "kind": "mass",
    "day": "Monday",
@@ -309,37 +366,165 @@
    "template": "wordpress"
   },
   {
-   "kind": "mass",
-   "day": "Sunday",
-   "time": "08:00",
+   "kind": "other",
+   "day": "Holy days",
+   "time": "17:30",
    "language": null,
-   "raw": "Sunday Mass Times: Sunday 8 am – 10 am and Noon",
+   "raw": "Vigil 5:30 PM",
+   "source_url": "https://saint-cyril.com/mass/",
+   "fetched_at": "2026-11-01T20:25:25+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "06:30",
+   "language": null,
+   "raw": "Sunday Mass Times: 6:30 AM – 9 AM – 7 PM",
    "source_url": "https://saint-cyril.com/mass/",
    "fetched_at": "2026-11-01T20:25:25+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
-   "template": "wordpress"
+   "template": "wordpress",
+   "kind_parsed": "mass"
   },
   {
-   "kind": "mass",
-   "day": "Sunday",
-   "time": "10:00",
+   "kind": "other",
+   "day": "Holy days",
+   "time": "09:00",
    "language": null,
-   "raw": "Sunday Mass Times: Sunday 8 am – 10 am and Noon",
+   "raw": "Sunday Mass Times: 6:30 AM – 9 AM – 7 PM",
    "source_url": "https://saint-cyril.com/mass/",
    "fetched_at": "2026-11-01T20:25:25+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
-   "template": "wordpress"
+   "template": "wordpress",
+   "kind_parsed": "mass"
   },
   {
-   "kind": "mass",
-   "day": "Sunday",
-   "time": "12:00",
+   "kind": "other",
+   "day": "Holy days",
+   "time": "19:00",
    "language": null,
-   "raw": "Sunday Mass Times: Sunday 8 am – 10 am and Noon",
+   "raw": "Sunday Mass Times: 6:30 AM – 9 AM – 7 PM",
+   "source_url": "https://saint-cyril.com/mass/",
+   "fetched_at": "2026-11-01T20:25:25+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "adoration",
+   "day": "Monday",
+   "time": "09:30-12:30",
+   "language": null,
+   "raw": "Eucharistic Adoration: Daily 9:30-12:30 PM",
+   "source_url": "https://saint-cyril.com/mass/",
+   "fetched_at": "2026-11-01T20:25:25+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Daily"
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "09:30-12:30",
+   "language": null,
+   "raw": "Eucharistic Adoration: Daily 9:30-12:30 PM",
+   "source_url": "https://saint-cyril.com/mass/",
+   "fetched_at": "2026-11-01T20:25:25+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Daily"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "09:30-12:30",
+   "language": null,
+   "raw": "Eucharistic Adoration: Daily 9:30-12:30 PM",
+   "source_url": "https://saint-cyril.com/mass/",
+   "fetched_at": "2026-11-01T20:25:25+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Daily"
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "09:30-12:30",
+   "language": null,
+   "raw": "Eucharistic Adoration: Daily 9:30-12:30 PM",
+   "source_url": "https://saint-cyril.com/mass/",
+   "fetched_at": "2026-11-01T20:25:25+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Daily"
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "09:30-12:30",
+   "language": null,
+   "raw": "Eucharistic Adoration: Daily 9:30-12:30 PM",
+   "source_url": "https://saint-cyril.com/mass/",
+   "fetched_at": "2026-11-01T20:25:25+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Daily"
+  },
+  {
+   "kind": "adoration",
+   "day": "Saturday",
+   "time": "09:30-12:30",
+   "language": null,
+   "raw": "Eucharistic Adoration: Daily 9:30-12:30 PM",
+   "source_url": "https://saint-cyril.com/mass/",
+   "fetched_at": "2026-11-01T20:25:25+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Daily"
+  },
+  {
+   "kind": "adoration",
+   "day": "Sunday",
+   "time": "09:30-12:30",
+   "language": null,
+   "raw": "Eucharistic Adoration: Daily 9:30-12:30 PM",
+   "source_url": "https://saint-cyril.com/mass/",
+   "fetched_at": "2026-11-01T20:25:25+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Daily"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "19:30-20:30",
+   "language": null,
+   "raw": "Eucharistic Adoration: Wednesday Evenings 7:30-8:30 PM",
    "source_url": "https://saint-cyril.com/mass/",
    "fetched_at": "2026-11-01T20:25:25+00:00",
    "needs_review": false,
@@ -350,9 +535,22 @@
  ],
  "source_url": "https://saint-cyril.com/",
  "fetched_at": "2026-11-01T20:25:37+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:13+00:00",
+  "requests": 3,
+  "found": [
+   "confession",
+   "liturgy"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -366,11 +564,23 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 12
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Saturday 3-3:45 pm or by request",
+   "phrase": "by request",
+   "source_url": "https://saint-cyril.com/",
+   "fetched_at": "2026-11-01T20:25:18+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 10
+  "other_location": 4,
+  "dated_line": 5,
+  "dated_block": 1
  },
  "groups_dropped": {
   "noise": 5,

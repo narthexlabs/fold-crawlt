@@ -93,6 +93,18 @@
    "url": "https://spiresoffaith.com/about-us/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://spiresoffaith.com/sacraments/reconcilation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://spiresoffaith.com/getting-involved/prayer/adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -371,6 +383,48 @@
    "confidence": "medium",
    "template": "generic_strict",
    "kind_parsed": "mass"
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "08:00-00:00",
+   "language": null,
+   "raw": "What is Eucharistic Adoration?: 8:00am - 12:00am (midnight) Beckman Catholic High School, Dyersville",
+   "source_url": "https://spiresoffaith.com/getting-involved/prayer/adoration",
+   "fetched_at": "2026-11-02T04:41:45+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "00:00-08:00",
+   "language": null,
+   "raw": "What is Eucharistic Adoration?: 12:00am - 8:00am Beckman Catholic High School, Dyersville",
+   "source_url": "https://spiresoffaith.com/getting-involved/prayer/adoration",
+   "fetched_at": "2026-11-02T04:41:45+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "09:00-22:00",
+   "language": null,
+   "raw": "What is Eucharistic Adoration?: 9:00am - 10:00pm Beckman Catholic High School, Dyersville",
+   "source_url": "https://spiresoffaith.com/getting-involved/prayer/adoration",
+   "fetched_at": "2026-11-02T04:41:45+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
   }
  ],
  "source_url": "http://www.spiresoffaith.com/",
@@ -408,6 +462,33 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "By appointment; just call the parish office and ask to speak with a priest.",
+   "phrase": "By appointment",
+   "source_url": "https://spiresoffaith.com/sacraments/reconcilation",
+   "fetched_at": "2026-11-02T04:41:44+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:47+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 3,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(563) 875-7325",
@@ -419,8 +500,5 @@
   },
   "fetched_at": "2026-11-01T05:15:55+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

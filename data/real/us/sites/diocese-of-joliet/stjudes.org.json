@@ -80,6 +80,12 @@
    "url": "https://stjudes.org/our-church/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stjudes.org/sacraments/reconciliation/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -261,6 +267,84 @@
    "template": "generic_strict"
   },
   {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Mass: Monday - Friday 8:00am",
+   "source_url": "https://stjudes.org/mass-times/",
+   "fetched_at": "2026-11-01T07:28:19+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday - Friday"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Mass: Monday - Friday 8:00am",
+   "source_url": "https://stjudes.org/mass-times/",
+   "fetched_at": "2026-11-01T07:28:19+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday - Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Mass: Monday - Friday 8:00am",
+   "source_url": "https://stjudes.org/mass-times/",
+   "fetched_at": "2026-11-01T07:28:19+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday - Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Mass: Monday - Friday 8:00am",
+   "source_url": "https://stjudes.org/mass-times/",
+   "fetched_at": "2026-11-01T07:28:19+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday - Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Mass: Monday - Friday 8:00am",
+   "source_url": "https://stjudes.org/mass-times/",
+   "fetched_at": "2026-11-01T07:28:19+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday - Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
+  },
+  {
    "kind": "adoration",
    "day": "Thursday",
    "time": "15:00-18:00",
@@ -302,9 +386,21 @@
  ],
  "source_url": "http://stjudes.org/",
  "fetched_at": "2026-11-01T07:29:06+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:56+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -318,19 +414,28 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 13
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Appointments available upon request. Please call .",
+   "phrase": "upon request",
+   "source_url": "https://stjudes.org/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:56+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "not_a_service": 1,
   "relative_time": 1
  },
  "groups_dropped": {
   "noise": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

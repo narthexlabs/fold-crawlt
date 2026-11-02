@@ -52,6 +52,12 @@
    "url": "https://www.stedolv.org/weekly-bulletin",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stedolv.org/welcome-st-edward-the-confessor",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -280,6 +286,22 @@
    "template": "generic_strict"
   },
   {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "17:15",
+   "language": null,
+   "raw": "Saturday Confessions after the 5:15 PM Mass",
+   "source_url": "https://www.stedolv.org/mass-schedule",
+   "fetched_at": "2026-11-01T20:25:17+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "after",
+   "note": "Saturday Confessions after the 5:15 PM Mass",
+   "relative_resolved": true
+  },
+  {
    "kind": "adoration",
    "day": "Sunday",
    "time": "16:00-17:00",
@@ -292,13 +314,38 @@
    "confidence": "high",
    "template": "generic_strict",
    "nth": "second"
+  },
+  {
+   "kind": "devotion",
+   "day": "First Sunday of the month",
+   "time": "08:40",
+   "language": null,
+   "raw": "Recitation of the Rosary in Common at 8:40 AM on the First Sunday of each month",
+   "source_url": "https://www.stedolv.org/mass-schedule",
+   "fetched_at": "2026-11-01T20:25:17+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict"
   }
  ],
  "source_url": "https://www.stedolv.org/",
  "fetched_at": "2026-11-01T20:25:19+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:48:05+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -312,13 +359,30 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
-  "generic_rows": 14
+  "trusted_kinds": [],
+  "generic_rows": 16
  },
+ "schedule_notes": [
+  {
+   "kind": "adoration",
+   "text": "Knights of Columbus Praying of the Rosary 25 minutes before each Mass the Third Sunday of each month",
+   "phrase": "25 minutes before each Mass",
+   "source_url": "https://www.stedolv.org/mass-schedule",
+   "fetched_at": "2026-11-01T20:25:17+00:00"
+  },
+  {
+   "kind": "confession",
+   "text": "open by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://www.stedolv.org/welcome-st-edward-the-confessor",
+   "fetched_at": "2026-11-02T04:48:05+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "skipped_section": 3,
-  "not_a_service": 3,
-  "relative_time": 1
+  "skipped_section": 5,
+  "not_a_service": 2,
+  "other_location": 9
  },
  "groups_dropped": {},
  "event_counts": {

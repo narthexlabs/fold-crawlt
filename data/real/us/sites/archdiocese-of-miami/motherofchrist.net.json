@@ -3,13 +3,15 @@
  "diocese": "archdiocese-of-miami",
  "matched_church_ids": [
   "brave:FL|mother christ miami|",
+  "gc-23089",
   "mother-of-christ-miami-fl"
  ],
  "matched": {
   "directory": [],
   "discovermass": [
    "mother-of-christ-miami-fl",
-   "brave:FL|mother christ miami|"
+   "brave:FL|mother christ miami|",
+   "gc-23089"
   ]
  },
  "names": [
@@ -151,19 +153,6 @@
    "day_bound_from_line": true
   },
   {
-   "kind": "mass",
-   "day": "Saturday",
-   "time": "18:00",
-   "language": "Spanish",
-   "raw": "Saturday Vigil 6:00 P.M. (Spanish)",
-   "source_url": "https://www.motherofchrist.net/",
-   "fetched_at": "2026-11-01T22:15:28+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "wix"
-  },
-  {
    "kind": "confession",
    "day": "Saturday",
    "time": "08:30-09:30",
@@ -193,6 +182,17 @@
    "time": "08:00",
    "language": null,
    "raw": "Sabado: 8:00 A.M. en la Capilla",
+   "source_url": "https://www.motherofchrist.net/",
+   "fetched_at": "2026-11-01T22:15:28+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "18:00",
+   "language": "Spanish",
+   "raw": "Vigilia Sabado: 6:00 P.M. (Español)",
    "source_url": "https://www.motherofchrist.net/",
    "fetched_at": "2026-11-01T22:15:28+00:00",
    "needs_review": false,
@@ -352,32 +352,44 @@
  ],
  "source_url": "https://www.motherofchrist.net/",
  "fetched_at": "2026-11-01T22:15:41+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:34+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "wix",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
-    "has_sunday": true,
+    "has_sunday": false,
     "hours_ok": true,
     "counts_ok": true,
     "sunday_not_copied": true,
     "no_daily_on_sunday": true,
     "mostly_high": false
    },
-   "score": "medium"
+   "score": "low"
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 17
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "box_rows_added": 15
+  "other_location": 1,
+  "box_rows_added": 16
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

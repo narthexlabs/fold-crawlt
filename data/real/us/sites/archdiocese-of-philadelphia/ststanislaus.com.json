@@ -87,6 +87,12 @@
    "url": "https://ststanislaus.com/home/staff/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://ststanislaus.com/home/perpetual-adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -372,6 +378,19 @@
  "schedule_rows": [
   {
    "kind": "mass",
+   "day": "Sunday",
+   "time": "11:00",
+   "language": null,
+   "raw": "Sunday’s 9am and 11am Masses",
+   "source_url": "https://ststanislaus.com/",
+   "fetched_at": "2026-11-01T20:25:40+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
    "day": "Saturday",
    "time": "16:30",
    "language": null,
@@ -412,19 +431,6 @@
   {
    "kind": "mass",
    "day": "Sunday",
-   "time": "11:00",
-   "language": null,
-   "raw": "Masses: Sunday: 7am; 9am*, 11am*, 1pm (Spanish)",
-   "source_url": "https://ststanislaus.com/home/services/",
-   "fetched_at": "2026-11-01T20:25:44+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress"
-  },
-  {
-   "kind": "mass",
-   "day": "Sunday",
    "time": "13:00",
    "language": "Spanish",
    "raw": "Masses: Sunday: 7am; 9am*, 11am*, 1pm (Spanish)",
@@ -448,13 +454,65 @@
    "confidence": "high",
    "template": "wordpress",
    "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "19:00",
+   "language": null,
+   "raw": "Vigil Mass – 7:00pm",
+   "source_url": "https://ststanislaus.com/home/services/",
+   "fetched_at": "2026-11-01T20:25:44+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:30-16:00",
+   "language": "American Sign Language",
+   "raw": "Sacrament of Reconciliation (Confession): Saturdays: 3:30pm – 4:00pm; Mondays 5:00 – 5:30pm",
+   "source_url": "https://ststanislaus.com/home/services/",
+   "fetched_at": "2026-11-01T20:25:44+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Monday",
+   "time": "17:00-17:30",
+   "language": "American Sign Language",
+   "raw": "Sacrament of Reconciliation (Confession): Saturdays: 3:30pm – 4:00pm; Mondays 5:00 – 5:30pm",
+   "source_url": "https://ststanislaus.com/home/services/",
+   "fetched_at": "2026-11-01T20:25:44+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
   }
  ],
  "source_url": "https://ststanislaus.com/",
  "fetched_at": "2026-11-01T20:25:57+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:11+00:00",
+  "requests": 1,
+  "found": [
+   "adoration"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -468,13 +526,24 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 9
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Other times by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://ststanislaus.com/home/services/",
+   "fetched_at": "2026-11-01T20:25:44+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "no_kind": 1,
   "dated_line": 1,
-  "other_location": 10
+  "other_location": 6,
+  "prose": 1
  },
  "groups_dropped": {
   "noise": 2,

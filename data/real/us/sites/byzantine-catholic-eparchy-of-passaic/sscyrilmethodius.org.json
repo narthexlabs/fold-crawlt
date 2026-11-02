@@ -78,6 +78,18 @@
    "url": "https://www.sscyrilmethodius.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.sscyrilmethodius.org/entering-our-chapel/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.sscyrilmethodius.org/reconciliation/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -179,6 +191,20 @@
  },
  "schedule_rows": [
   {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "15:34",
+   "language": null,
+   "raw": "The cycle begins again anew with the new day beginning with Vespers: “AND AT THE NINTH HOUR … JESUS UTTERED A LOUD CRY AND BREATHED HIS LAST.” (Mark 15:34-37)",
+   "source_url": "https://www.sscyrilmethodius.org/the-divine-liturgy/",
+   "fetched_at": "2026-11-01T17:21:33+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "kind_parsed": "devotion"
+  },
+  {
    "kind": "mass",
    "day": "Sunday",
    "time": "09:00",
@@ -203,9 +229,21 @@
  ],
  "source_url": "https://www.sscyrilmethodius.org/",
  "fetched_at": "2026-11-01T17:21:41+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:48:02+00:00",
+  "requests": 2,
+  "found": [
+   "adoration"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -219,6 +257,7 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 20
  },
  "has_sunday": true,
@@ -226,7 +265,6 @@
   "dated_line": 5,
   "relative_time": 1,
   "no_kind": 15,
-  "not_a_service": 1,
   "prose": 1,
   "weekend_rescue_added": 2
  },
@@ -236,8 +274,8 @@
   "label_not_group": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

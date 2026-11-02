@@ -479,7 +479,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:32:04+00:00",
+    "fetched_at": "2026-11-02T05:05:22+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -499,6 +499,46 @@
   "source_url": "https://ourladylakesparish.org/"
  },
  "schedule_rows": [
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "11:30-12:30",
+   "language": null,
+   "raw": "Sacrament of Reconciliation: 11:30am-12:30pm Saturday",
+   "source_url": "https://ourladylakesparish.org/",
+   "fetched_at": "2026-11-01T07:27:53+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "squarespace"
+  },
+  {
+   "kind": "adoration",
+   "day": "First and Third Friday of the month",
+   "time": "18:30-19:30",
+   "language": null,
+   "raw": "Eucharistic Adoration: First and Third Fridays 6:30pm-7:30pm",
+   "source_url": "https://ourladylakesparish.org/",
+   "fetched_at": "2026-11-01T07:27:53+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "squarespace"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "08:15-09:00",
+   "language": null,
+   "raw": "[St. Peter] Sacrament of Reconciliation: 8:15am-9:00am Saturday",
+   "source_url": "https://ourladylakesparish.org/",
+   "fetched_at": "2026-11-01T07:27:53+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "squarespace",
+   "location": "St. Peter"
+  },
   {
    "kind": "mass",
    "day": "Monday",
@@ -600,34 +640,6 @@
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
-   "template": "squarespace",
-   "location": "St. Bede"
-  },
-  {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "11:30-12:30",
-   "language": null,
-   "raw": "[St. Bede] Sacrament of Reconciliation: Saturdays 11:30am-12:30pm",
-   "source_url": "https://ourladylakesparish.org/mass-times",
-   "fetched_at": "2026-11-01T07:27:56+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "squarespace",
-   "location": "St. Bede"
-  },
-  {
-   "kind": "adoration",
-   "day": "First and Third Friday of the month",
-   "time": "18:30-19:30",
-   "language": null,
-   "raw": "[St. Bede] Eucharistic Adoration: First and Third Fridays 6:30pm-7:30pm",
-   "source_url": "https://ourladylakesparish.org/mass-times",
-   "fetched_at": "2026-11-01T07:27:56+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
    "template": "squarespace",
    "location": "St. Bede"
   },
@@ -767,20 +779,6 @@
   },
   {
    "kind": "confession",
-   "day": "Saturday",
-   "time": "08:15-09:00",
-   "language": null,
-   "raw": "[St. Peter] Sacrament of Reconciliation: Saturdays 8:15am-9:00am",
-   "source_url": "https://ourladylakesparish.org/mass-times",
-   "fetched_at": "2026-11-01T07:27:56+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "squarespace",
-   "location": "St. Peter"
-  },
-  {
-   "kind": "confession",
    "day": "First Friday of the month",
    "time": "18:30-19:30",
    "language": null,
@@ -796,9 +794,19 @@
  ],
  "source_url": "https://ourladylakesparish.org/",
  "fetched_at": "2026-11-01T07:28:10+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:35+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "squarespace",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -812,19 +820,21 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 20
  },
  "has_sunday": true,
  "schedule_dropped": {
   "other_location": 9,
-  "not_a_service": 1
+  "not_a_service": 1,
+  "prose": 1
  },
  "groups_dropped": {
   "unmatched": 4
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

@@ -81,6 +81,12 @@
    "url": "https://sjcolumbia.org/streaming/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://sjcolumbia.org/sacraments/reconciliation/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -1031,5 +1037,29 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "En español: Si desea confesarse, el Padre Hilario lo espera 45 minutos antes de cada misa, afuera del salón 1, a la derecha.",
+   "phrase": "antes de cada misa",
+   "source_url": "https://sjcolumbia.org/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:34+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:37+00:00",
+  "requests": 3,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
  }
 }

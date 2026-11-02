@@ -81,6 +81,18 @@
    "url": "https://stmarypvdri.org/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stmarypvdri.org/penance/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stmarypvdri.org/four-oh-four/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -140,7 +152,7 @@
    "note": "The Events Calendar (WordPress) REST API",
    "last_fetch": {
     "status": 200,
-    "fetched_at": "2026-11-01T23:34:30+00:00",
+    "fetched_at": "2026-11-02T04:58:43+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -157,7 +169,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:34:30+00:00",
+    "fetched_at": "2026-11-02T04:58:44+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -174,7 +186,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:34:32+00:00",
+    "fetched_at": "2026-11-02T04:58:45+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -191,7 +203,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:34:33+00:00",
+    "fetched_at": "2026-11-02T04:58:46+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -208,7 +220,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:34:34+00:00",
+    "fetched_at": "2026-11-02T04:58:47+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -227,7 +239,7 @@
    "feed_key": "9a98844d8031",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:34:35+00:00",
+    "fetched_at": "2026-11-02T04:58:49+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -246,7 +258,7 @@
    "feed_key": "d33d98bef1ad",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:34:36+00:00",
+    "fetched_at": "2026-11-02T04:58:50+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -265,7 +277,7 @@
    "feed_key": "06e1ed2cc901",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:34:37+00:00",
+    "fetched_at": "2026-11-02T04:58:51+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -284,7 +296,7 @@
    "feed_key": "6bbb35e72e06",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:34:39+00:00",
+    "fetched_at": "2026-11-02T04:58:52+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -303,7 +315,7 @@
    "feed_key": "5f44500d045b",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:34:40+00:00",
+    "fetched_at": "2026-11-02T04:58:53+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -504,9 +516,22 @@
  "source_url": "http://www.stmaryonbroadway.org/",
  "fetched_at": "2026-11-01T17:27:33+00:00",
  "redirected_off_host": "stmarypvdri.org",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:41+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -520,8 +545,18 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 22
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "30 minutes before Mass and during Mass on days that groups meet.",
+   "phrase": "30 minutes before Mass",
+   "source_url": "https://stmarypvdri.org/",
+   "fetched_at": "2026-11-01T17:27:14+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "other_location": 3,
@@ -531,8 +566,8 @@
   "unmatched": 2
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

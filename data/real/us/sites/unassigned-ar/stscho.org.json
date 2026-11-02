@@ -63,6 +63,18 @@
    "url": "https://www.stscho.org/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stscho.org/hospitality-tours/tour-the-monastery/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stscho.org/product/reconciliation-cross-w-prayer-booklet/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -72,7 +84,44 @@
   ]
  },
  "template": "wordpress-html",
- "groups": [],
+ "groups": [
+  {
+   "id": "stscho.org:bible_study",
+   "name": "Bible Study",
+   "category": "scripture_study",
+   "category_label": "Scripture & study",
+   "subcategory": "bible_study",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.stscho.org/contact/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stscho.org/product/reconciliation-cross-w-prayer-booklet/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-02T04:42:10+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "stscho.org:ocia",
+   "name": "RCIA 6 6 products",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "ocia",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.stscho.org/contact/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stscho.org/product/reconciliation-cross-w-prayer-booklet/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-02T04:42:10+00:00",
+   "confidence": "medium"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
  "social": {
@@ -483,9 +532,22 @@
  ],
  "source_url": "https://www.stscho.org/",
  "fetched_at": "2026-11-01T17:35:54+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:10+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -499,6 +561,7 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 11
  },
  "has_sunday": true,
@@ -506,12 +569,12 @@
   "not_a_service": 1
  },
  "groups_dropped": {
-  "unmatched": 1,
-  "noise": 1
+  "sacrament_prep": 1,
+  "unmatched": 2
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

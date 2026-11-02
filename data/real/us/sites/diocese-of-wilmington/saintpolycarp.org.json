@@ -81,6 +81,24 @@
    "url": "https://saintpolycarp.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://saintpolycarp.org/reconciliation-refresher/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://saintpolycarp.org/eucharistic-adoration-2/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://saintpolycarp.org/liturgy-committee/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -451,6 +469,39 @@
    "review_reason": null,
    "confidence": "high",
    "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "Sunday",
+   "time": "16:00",
+   "language": null,
+   "raw": "Sunday 4 pm Vigil [Mass intention withheld]",
+   "source_url": "https://saintpolycarp.org/eucharistic-adoration-2/",
+   "fetched_at": "2026-11-02T04:41:56+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time,nth_of_month",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "Eucharistic Adoration at ST. POLYCARP CHURCH takes place on the Second Sunday of the month following the 4 pm Vigil Mass",
+   "nth": "second",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Eucharistic Adoration at ST. DENNIS CHURCH takes place on the Fourth Sunday of the month following the 8 am Sunday Mass.",
+   "source_url": "https://saintpolycarp.org/eucharistic-adoration-2/",
+   "fetched_at": "2026-11-02T04:41:56+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "Eucharistic Adoration at ST. DENNIS CHURCH takes place on the Fourth Sunday of the month following the 8 am Sunday Mass.",
+   "topup": true
   }
  ],
  "source_url": "https://saintpolycarp.org/",
@@ -490,6 +541,26 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()",
+  "intentions_withheld": 1
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:59+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "office@saintpolycarp.org",
   "phone": "(302) 653-8279",
@@ -502,8 +573,5 @@
   },
   "fetched_at": "2026-11-01T03:59:42+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

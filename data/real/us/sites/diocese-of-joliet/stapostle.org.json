@@ -92,6 +92,18 @@
    "url": "https://www.stapostle.org/religious-education/contact-re-team/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stapostle.org/sacraments/reconciliation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stapostle.org/adoration",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -442,13 +454,38 @@
    "confidence": "medium",
    "template": "wordpress",
    "day_expanded_from": "Daily"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "15:30",
+   "language": null,
+   "raw": "Thomas the Apostle Catholic Church offers the Sacrament of Reconciliation every Saturday before 4:30 pm Mass, between 3:30-4:15 pm or by appointment on weekdays (call the main office at .)",
+   "source_url": "https://www.stapostle.org/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:57+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
   }
  ],
  "source_url": "https://www.stapostle.org/",
  "fetched_at": "2026-11-01T07:35:27+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:16+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -462,20 +499,31 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 10
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Always available at other times by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://www.stapostle.org/mass-times/",
+   "fetched_at": "2026-11-01T07:28:34+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "not_a_service": 1,
-  "dated_block": 5
+  "dated_block": 5,
+  "relative_time": 1
  },
  "groups_dropped": {
   "unmatched": 4,
   "label_not_group": 5
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
@@ -497,6 +545,8 @@
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
  },
  "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
+  "screened_by": "ingest/public/privacy.py screen()",
+  "names_withheld": 0,
+  "contacts_removed": 1
  }
 }

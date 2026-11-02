@@ -51,6 +51,12 @@
    "url": "https://stanthonyatlanta.org/people-profiles/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stanthonyatlanta.org/sacrements/reconciliation/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -169,6 +175,34 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "08:15-08:30",
+   "language": null,
+   "raw": "The sacrament of Reconciliation is administered on Sundays, 8:15 a.m. – 8:30 a.m. and 11:15 a.m. – 11:30 a.m. in the church.",
+   "source_url": "https://stanthonyatlanta.org/sacrements/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:58+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "11:15-11:30",
+   "language": null,
+   "raw": "The sacrament of Reconciliation is administered on Sundays, 8:15 a.m. – 8:30 a.m. and 11:15 a.m. – 11:30 a.m. in the church.",
+   "source_url": "https://stanthonyatlanta.org/sacrements/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:58+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "https://stanthonyatlanta.org/",
@@ -209,5 +243,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:00+00:00",
+  "requests": 3,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
  }
 }

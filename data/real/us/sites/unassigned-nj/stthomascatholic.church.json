@@ -1,0 +1,156 @@
+{
+ "domain": "stthomascatholic.church",
+ "diocese": "unassigned-nj",
+ "matched_church_ids": [
+  "saints-peter-and-paul-byzantine-elizabeth-nj"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "saints-peter-and-paul-byzantine-elizabeth-nj"
+  ]
+ },
+ "names": [
+  "Saints Peter and Paul (Byzantine)"
+ ],
+ "cities": [
+  "Elizabeth"
+ ],
+ "home_url": "https://stthomascatholic.church/",
+ "final_url": "https://stthomascatholic.church/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://stthomascatholic.church/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://stthomascatholic.church/administration/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://stthomascatholic.church/parish-calendar/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://stthomascatholic.church/contact-info/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stthomascatholic.church/reconciliation/",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stthomascatholic.church/adoration/",
+   "status": 404,
+   "class": "not_found"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-content"
+  ]
+ },
+ "template": "wordpress-html",
+ "groups": [],
+ "calendar_feeds": [
+  {
+   "feed_id": "stthomascatholic.church:ics:22ba057c",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": "https://calendar.google.com/calendar/ical/nf4p15601olndf4fmol9094n4o%40group.calendar.google.com/public/basic.ics",
+   "page_url": "https://stthomascatholic.church/parish-calendar/",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (embedded on page)",
+   "display_tz": "America/New_York",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-02T05:41:39+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
+ "events": [],
+ "social": {},
+ "bulletin": null,
+ "schedule_rows": [],
+ "source_url": "https://stthomascatholic.church/",
+ "fetched_at": "2026-11-02T05:37:16+00:00",
+ "topup": {
+  "kinds": [
+   "liturgy"
+  ],
+  "at": "2026-11-02T05:40:54+00:00",
+  "requests": 0,
+  "found": []
+ },
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/3",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "trusted_kinds": [],
+  "generic_rows": 0
+ },
+ "has_sunday": false,
+ "schedule_dropped": {
+  "no_kind": 2,
+  "not_a_service": 1
+ },
+ "groups_dropped": {
+  "noise": 7
+ },
+ "event_counts": {
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": "contact@stthomasmcc.org",
+  "phone": "(732) 352-3527",
+  "address": "11 Delaware Street, Elizabeth, NJ 07206",
+  "source_url": "https://stthomascatholic.church/contact-info/",
+  "sources": {
+   "email": "https://stthomascatholic.church/contact-info/",
+   "phone": "https://stthomascatholic.church/contact-info/",
+   "address": "https://stthomascatholic.church/contact-info/"
+  },
+  "fetched_at": "2026-11-02T05:37:13+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

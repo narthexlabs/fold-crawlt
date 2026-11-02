@@ -75,6 +75,12 @@
    "url": "https://www.stregischurch.org/findus",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stregischurch.org/eucharistic-adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -872,6 +878,34 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "18:00-19:00",
+   "language": null,
+   "raw": "Exposition and Benediction in main church:: Wednesdays 6-7 p.m. with confession",
+   "source_url": "https://www.stregischurch.org/eucharistic-adoration",
+   "fetched_at": "2026-11-02T04:41:57+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "09:45-15:00",
+   "language": null,
+   "raw": "Exposition and Benediction in main church:: 9:45 a.m.-3 p.m.",
+   "source_url": "https://www.stregischurch.org/eucharistic-adoration",
+   "fetched_at": "2026-11-02T04:41:57+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
   }
  ],
  "source_url": "https://www.stregischurch.org/",
@@ -913,6 +947,33 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Or by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://www.stregischurch.org/mass---confession-times",
+   "fetched_at": "2026-11-02T04:41:56+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:57+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(816) 761-1608",
@@ -923,8 +984,5 @@
   },
   "fetched_at": "2026-11-01T05:16:39+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

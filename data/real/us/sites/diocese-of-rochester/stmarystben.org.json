@@ -73,6 +73,12 @@
    "url": "https://www.stmarystben.org/contacts/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stmarystben.org",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -135,7 +141,7 @@
    "feed_key": "5d9746c56816",
    "last_fetch": {
     "status": 404,
-    "fetched_at": "2026-11-01T23:42:56+00:00",
+    "fetched_at": "2026-11-02T05:01:41+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -171,13 +177,53 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "[St. Benedict] Mass Times: 8:00 am and 10:00 am Sunday",
+   "source_url": "https://www.stmarystben.org/",
+   "fetched_at": "2026-11-01T17:21:51+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "location": "St. Benedict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": null,
+   "raw": "[St. Benedict] Mass Times: 8:00 am and 10:00 am Sunday",
+   "source_url": "https://www.stmarystben.org/",
+   "fetched_at": "2026-11-01T17:21:51+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "location": "St. Benedict"
   }
  ],
  "source_url": "https://www.stmarystben.org/",
  "fetched_at": "2026-11-01T17:22:03+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:54+00:00",
+  "requests": 1,
+  "found": [
+   "adoration"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -191,13 +237,14 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 9
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 3,
-  "relative_time": 1,
-  "range_not_a_mass": 1
+  "other_location": 2,
+  "relative_time": 2,
+  "range_not_a_mass": 2
  },
  "groups_dropped": {
   "noise": 2,
@@ -206,8 +253,8 @@
   "label_not_group": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

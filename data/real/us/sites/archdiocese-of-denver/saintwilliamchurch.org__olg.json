@@ -73,6 +73,12 @@
    "url": "https://www.saintwilliamchurch.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.saintwilliamchurch.org/eucharistic-adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -240,6 +246,36 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wix"
+  },
+  {
+   "kind": "adoration",
+   "day": "Monday",
+   "time": "08:00-20:00",
+   "language": null,
+   "raw": "Eucharistic Adoration is open to the public:: 8:00 a.m. - 8:00 p.m.",
+   "source_url": "https://www.saintwilliamchurch.org/eucharistic-adoration",
+   "fetched_at": "2026-11-02T04:42:03+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "day_expanded_from": "Monday, Wednesday",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "08:00-20:00",
+   "language": null,
+   "raw": "Eucharistic Adoration is open to the public:: 8:00 a.m. - 8:00 p.m.",
+   "source_url": "https://www.saintwilliamchurch.org/eucharistic-adoration",
+   "fetched_at": "2026-11-02T04:42:03+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "day_expanded_from": "Monday, Wednesday",
+   "topup": true
   }
  ],
  "source_url": "https://saintwilliamchurch.org/olg/",
@@ -278,6 +314,28 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "social_shared_links_removed": [
+  "https://www.facebook.com/WixStudio",
+  "https://x.com/WixStudio"
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:03+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "secretary@saintwilliamchurch.org",
   "phone": "(303) 857-6642",
@@ -290,12 +348,5 @@
   },
   "fetched_at": "2026-11-01T05:11:39+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
- },
- "social_shared_links_removed": [
-  "https://www.facebook.com/WixStudio",
-  "https://x.com/WixStudio"
- ]
+ }
 }

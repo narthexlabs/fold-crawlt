@@ -69,6 +69,18 @@
    "url": "https://nittanycatholic.org/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://nittanycatholic.org/worship-guide/wg-30ot-a/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://nittanycatholic.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -167,7 +179,7 @@
    "feed_key": "1f6acf7a6833",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:34:39+00:00",
+    "fetched_at": "2026-11-02T04:56:17+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -199,6 +211,19 @@
   "source_url": "https://nittanycatholic.org/about-us/music-ministry/"
  },
  "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "15:00",
+   "language": null,
+   "raw": "Semester Mass & Confession Times: 3pm",
+   "source_url": "https://nittanycatholic.org",
+   "fetched_at": "2026-11-01T22:15:23+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
   {
    "kind": "mass",
    "day": "Sunday (winter)",
@@ -369,31 +394,54 @@
  "source_url": "http://www.psucatholic.org/",
  "fetched_at": "2026-11-01T22:15:32+00:00",
  "redirected_off_host": "nittanycatholic.org",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:04+00:00",
+  "requests": 2,
+  "found": [
+   "liturgy"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
-    "has_sunday": false,
+    "has_sunday": true,
     "hours_ok": true,
     "counts_ok": true,
     "sunday_not_copied": true,
     "no_daily_on_sunday": true,
     "mostly_high": false
    },
-   "score": "low"
+   "score": "medium"
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 28
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Confessions always available by appointment • Fr. Joachim [",
+   "phrase": "by appointment",
+   "source_url": "https://nittanycatholic.org/masses/",
+   "fetched_at": "2026-11-01T22:15:25+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "other_location": 54,
   "no_day": 3,
   "skipped_section": 4,
   "dated_line": 8,
-  "no_kind": 2,
+  "dated_block": 2,
+  "not_a_service": 2,
   "box_rows_added": 4
  },
  "groups_dropped": {
@@ -403,8 +451,8 @@
   "label_not_group": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

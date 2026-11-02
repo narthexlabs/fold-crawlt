@@ -73,6 +73,12 @@
    "url": "https://www.stmichaelalbion.com/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stmichaelalbion.com/reconciliation",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -178,6 +184,50 @@
    "review_reason": null,
    "confidence": "low",
    "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "16:55-17:20",
+   "language": null,
+   "raw": "Confessions are heard Saturdays at St. Michael's from 4-4:25 a.m. at St. Anthony's 4:55-5:20 pm and Sunday from 7:30-7:50 am at St. Edward's.",
+   "source_url": "https://www.stmichaelalbion.com/reconciliation",
+   "fetched_at": "2026-11-02T04:41:59+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "07:30-07:50",
+   "language": null,
+   "raw": "Confessions are heard Saturdays at St. Michael's from 4-4:25 a.m. at St. Anthony's 4:55-5:20 pm and Sunday from 7:30-7:50 am at St. Edward's.",
+   "source_url": "https://www.stmichaelalbion.com/reconciliation",
+   "fetched_at": "2026-11-02T04:41:59+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "First Saturday of the month",
+   "time": "17:30",
+   "language": null,
+   "raw": "Please join us for Adoration every Wed and First Fridays at : St. Anthony's in Cedar Rapids on the First Sat. of every month after the 5:30 p.m. Mass",
+   "source_url": "https://www.stmichaelalbion.com/adoration",
+   "fetched_at": "2026-11-02T04:42:00+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "after",
+   "note": "Please join us for Adoration every Wed and First Fridays at : St. Anthony's in Cedar Rapids on the First Sat. of every m",
+   "topup": true
   }
  ],
  "source_url": "https://www.stmichaelalbion.com/",
@@ -217,6 +267,24 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:00+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 3,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(402) 395-2332",
@@ -228,8 +296,5 @@
   },
   "fetched_at": "2026-11-01T05:13:13+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

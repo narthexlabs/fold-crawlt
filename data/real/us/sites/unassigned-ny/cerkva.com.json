@@ -75,6 +75,12 @@
    "url": "https://www.cerkva.com/contacts/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.cerkva.com/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -100,7 +106,7 @@
    "feed_key": "d2c18f7af5bc",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:33:34+00:00",
+    "fetched_at": "2026-11-02T04:57:08+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -119,7 +125,7 @@
    "feed_key": "4d5b26af8d1c",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:33:37+00:00",
+    "fetched_at": "2026-11-02T04:57:11+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -136,7 +142,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:33:41+00:00",
+    "fetched_at": "2026-11-02T04:57:15+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -178,9 +184,19 @@
  "schedule_rows": [],
  "source_url": "http://www.cerkva.com/",
  "fetched_at": "2026-11-01T17:22:08+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:42+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -194,6 +210,7 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 0
  },
  "has_sunday": false,
@@ -202,8 +219,8 @@
   "unmatched": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

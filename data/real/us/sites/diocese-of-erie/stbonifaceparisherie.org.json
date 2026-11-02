@@ -3,16 +3,19 @@
  "diocese": "diocese-of-erie",
  "matched_church_ids": [
   "brave:PA|boniface erie|",
-  "gc-24491"
+  "gc-24491",
+  "saint-boniface-erie-pa"
  ],
  "matched": {
   "directory": [],
   "discovermass": [
+   "saint-boniface-erie-pa",
    "brave:PA|boniface erie|",
    "gc-24491"
   ]
  },
  "names": [
+  "Saint Boniface",
   "St Boniface",
   "St. Boniface"
  ],
@@ -366,7 +369,7 @@
    "feed_key": "a1f321616c32",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:38:23+00:00",
+    "fetched_at": "2026-11-02T05:01:09+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -491,9 +494,19 @@
  ],
  "source_url": "https://stbonifaceparisherie.org/",
  "fetched_at": "2026-11-01T20:25:26+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:12+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -507,6 +520,7 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 0
  },
  "has_sunday": true,
@@ -518,8 +532,8 @@
   "unmatched": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

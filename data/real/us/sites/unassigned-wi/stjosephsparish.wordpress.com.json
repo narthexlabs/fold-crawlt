@@ -69,6 +69,18 @@
    "url": "https://stjosephsparish.wordpress.com/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stjosephsparish.wordpress.com/reconciliation/",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stjosephsparish.wordpress.com/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -331,8 +343,8 @@
    "time": "17:00",
    "language": null,
    "raw": "Mass Schedule: Saturday Evening - 5:00 pm",
-   "source_url": "https://stjosephsparish.wordpress.com/committees/prayer-and-worship/",
-   "fetched_at": "2026-11-01T22:15:30+00:00",
+   "source_url": "https://stjosephsparish.wordpress.com/",
+   "fetched_at": "2026-11-01T22:15:26+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -344,32 +356,29 @@
    "time": "09:30",
    "language": null,
    "raw": "Mass Schedule: Sunday Morning - 9:30 am",
-   "source_url": "https://stjosephsparish.wordpress.com/committees/prayer-and-worship/",
-   "fetched_at": "2026-11-01T22:15:30+00:00",
+   "source_url": "https://stjosephsparish.wordpress.com/",
+   "fetched_at": "2026-11-01T22:15:26+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
-   "template": "wordpress"
-  },
-  {
-   "kind": "mass",
-   "day": "Second Tuesday of the month",
-   "time": "19:00",
-   "language": null,
-   "raw": "Mass: at 7:00 pm in the Parish Center.",
-   "source_url": "https://stjosephsparish.wordpress.com/committees/prayer-and-worship/",
-   "fetched_at": "2026-11-01T22:15:30+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "low",
    "template": "wordpress"
   }
  ],
  "source_url": "https://stjosephsparish.wordpress.com/",
  "fetched_at": "2026-11-01T22:15:38+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:36+00:00",
+  "requests": 2,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -383,12 +392,14 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 11
  },
  "has_sunday": true,
  "schedule_dropped": {
   "other_location": 4,
   "skipped_section": 1,
+  "not_a_service": 1,
   "range_not_a_mass": 1
  },
  "groups_dropped": {
@@ -396,8 +407,8 @@
   "unmatched": 2
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

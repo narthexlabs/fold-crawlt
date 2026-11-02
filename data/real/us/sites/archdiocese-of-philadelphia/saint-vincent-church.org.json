@@ -63,6 +63,18 @@
    "url": "https://www.saint-vincent-church.org/about/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.saint-vincent-church.org/reconciliation/",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.saint-vincent-church.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -737,7 +749,7 @@
    "feed_key": "b427405c134f",
    "last_fetch": {
     "status": 404,
-    "fetched_at": "2026-11-02T01:58:35+00:00",
+    "fetched_at": "2026-11-02T04:58:32+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -754,7 +766,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-02T01:58:37+00:00",
+    "fetched_at": "2026-11-02T04:58:33+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -945,9 +957,19 @@
  ],
  "source_url": "https://saint-vincent-church.org/",
  "fetched_at": "2026-11-02T01:56:15+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:07+00:00",
+  "requests": 2,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -961,6 +983,7 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 9
  },
  "has_sunday": true,

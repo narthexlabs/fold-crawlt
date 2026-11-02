@@ -81,6 +81,12 @@
    "url": "https://www.hgaparish.org/new-page-4b08d4d4c",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.hgaparish.org/page-template-1b",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -195,7 +201,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:31:11+00:00",
+    "fetched_at": "2026-11-02T05:04:18+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -212,7 +218,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:31:13+00:00",
+    "fetched_at": "2026-11-02T05:04:19+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -237,12 +243,39 @@
   "text": "LPi",
   "source_url": "https://www.hgaparish.org/"
  },
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "09:00-10:00",
+   "language": null,
+   "raw": "[St. Louise De Marillac] Reconciliation-St Louise: Saturdays: 9:00 am - 10:00 am",
+   "source_url": "https://www.hgaparish.org/page-template-1b",
+   "fetched_at": "2026-11-02T04:41:40+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "location": "St. Louise De Marillac"
+  }
+ ],
  "source_url": "https://www.hgaparish.org/",
  "fetched_at": "2026-11-01T07:28:07+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:41+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -256,15 +289,17 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
-  "generic_rows": 0
+  "trusted_kinds": [],
+  "generic_rows": 1
  },
  "has_sunday": false,
+ "schedule_partial": true,
  "groups_dropped": {
   "noise": 2
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

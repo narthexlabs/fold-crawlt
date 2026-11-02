@@ -71,6 +71,12 @@
    "url": "https://www.icjacksonmo.com/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.icjacksonmo.com/2021/08/31/adoration-at-ic/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -495,9 +501,21 @@
  ],
  "source_url": "https://www.icjacksonmo.com/",
  "fetched_at": "2026-11-01T17:27:48+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:02+00:00",
+  "requests": 1,
+  "found": [
+   "adoration"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -511,12 +529,15 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 0
+  "trusted_kinds": [],
+  "generic_rows": 1
  },
  "has_sunday": true,
  "schedule_dropped": {
   "not_a_service": 2,
   "no_day": 6,
+  "relative_time": 1,
+  "blog_post": 1,
   "box_rows_added": 15
  },
  "groups_dropped": {
@@ -525,8 +546,8 @@
   "fragment": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

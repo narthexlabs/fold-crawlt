@@ -314,7 +314,7 @@
    "note": "Google Calendar public feed (website-builder widget)",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:31:30+00:00",
+    "fetched_at": "2026-11-02T04:47:45+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -330,19 +330,6 @@
   "source_url": "https://www.saintpatricks-springfield.org/"
  },
  "schedule_rows": [
-  {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "15:00-15:30",
-   "language": null,
-   "raw": "Reconciliation: Saturdays 3:00pm - 3:30pm",
-   "source_url": "https://www.saintpatricks-springfield.org/sacraments",
-   "fetched_at": "2026-11-01T20:25:01+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
   {
    "kind": "mass",
    "day": "Saturday",
@@ -471,13 +458,36 @@
    "confidence": "medium",
    "template": "generic_strict",
    "kind_parsed": "mass"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:00-15:30",
+   "language": null,
+   "raw": "Reconciliation: Saturdays 3:00pm - 3:30pm",
+   "source_url": "https://www.saintpatricks-springfield.org/sacraments",
+   "fetched_at": "2026-11-01T20:25:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
   }
  ],
  "source_url": "https://www.saintpatricks-springfield.org/",
  "fetched_at": "2026-11-01T20:25:08+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:37+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -491,8 +501,18 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 8
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "or by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://www.saintpatricks-springfield.org/sacraments",
+   "fetched_at": "2026-11-01T20:25:01+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "not_a_service": 1,
@@ -503,8 +523,8 @@
   "sacrament_prep": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

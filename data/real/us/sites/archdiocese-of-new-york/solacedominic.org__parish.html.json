@@ -66,6 +66,18 @@
    "url": "https://www.solacedominic.org/contact-us1.html",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.solacedominic.org/sacrament-of-penance.html",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.solacedominic.org/eucharistic-adoration.html",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -189,7 +201,8 @@
  "events": [],
  "social": {
   "facebook": [
-   "https://www.facebook.com/SolaceStDominic"
+   "https://www.facebook.com/SolaceStDominic",
+   "https://www.facebook.com/TheEncounterNYC"
   ]
  },
  "bulletin": null,
@@ -442,9 +455,22 @@
  ],
  "source_url": "http://www.solacedominic.org/parish.html",
  "fetched_at": "2026-11-01T17:21:31+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:33+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "weebly",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -458,17 +484,23 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 18
+  "trusted_kinds": [],
+  "generic_rows": 20
  },
  "has_sunday": true,
+ "schedule_dropped": {
+  "range_not_a_mass": 3,
+  "other_location": 2,
+  "skipped_section": 1
+ },
  "groups_dropped": {
   "noise": 1,
   "unmatched": 2,
   "fragment": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

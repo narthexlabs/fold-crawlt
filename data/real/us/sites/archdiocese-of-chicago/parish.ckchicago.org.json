@@ -79,6 +79,32 @@
  "schedule_rows": [
   {
    "kind": "mass",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Sunday Mass: Time: 9 AM",
+   "source_url": "https://parish.ckchicago.org/",
+   "fetched_at": "2026-11-01T18:51:44+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:00",
+   "language": null,
+   "raw": "Sunday Mass: Time: 11 AM",
+   "source_url": "https://parish.ckchicago.org/",
+   "fetched_at": "2026-11-01T18:51:44+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
    "day": "Monday",
    "time": "08:30",
    "language": null,
@@ -154,39 +180,23 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
-  },
-  {
-   "kind": "mass",
-   "day": "Sunday",
-   "time": "09:00",
-   "language": null,
-   "raw": "Christ the King Mass Schedule: Sunday 9:00am and 11:00am",
-   "source_url": "https://parish.ckchicago.org/apps/pages/index.jsp?uREC_ID=1590517&type=d&pREC_ID=1717660",
-   "fetched_at": "2026-11-01T18:51:48+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
-  {
-   "kind": "mass",
-   "day": "Sunday",
-   "time": "11:00",
-   "language": null,
-   "raw": "Christ the King Mass Schedule: Sunday 9:00am and 11:00am",
-   "source_url": "https://parish.ckchicago.org/apps/pages/index.jsp?uREC_ID=1590517&type=d&pREC_ID=1717660",
-   "fetched_at": "2026-11-01T18:51:48+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
   }
  ],
  "source_url": "https://parish.ckchicago.org/",
  "fetched_at": "2026-11-01T18:52:02+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:35+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -200,6 +210,7 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 10
  },
  "has_sunday": true,
@@ -211,8 +222,8 @@
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

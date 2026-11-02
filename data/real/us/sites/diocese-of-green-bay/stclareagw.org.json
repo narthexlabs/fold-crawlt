@@ -62,6 +62,24 @@
    "url": "https://www.stclareagw.org/bulletins-news",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stclareagw.org/general",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stclareagw.org/mass-worship-1-1",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://www.stclareagw.org/jubilee-2025",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -146,13 +164,79 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "squarespace"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "08:30-09:00",
+   "language": null,
+   "raw": "Adoration: 8:30-9:00am @ Askeaton",
+   "source_url": "https://www.stclareagw.org/mass-worship-1-1",
+   "fetched_at": "2026-11-02T04:41:53+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace"
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "08:30-09:00",
+   "language": null,
+   "raw": "Adoration: 8:30-9:00am @ Wrightstown",
+   "source_url": "https://www.stclareagw.org/mass-worship-1-1",
+   "fetched_at": "2026-11-02T04:41:53+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace"
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "11:00",
+   "language": null,
+   "raw": "Adoration: 11:00-Noon @ Greenleaf",
+   "source_url": "https://www.stclareagw.org/mass-worship-1-1",
+   "fetched_at": "2026-11-02T04:41:53+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "squarespace"
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "12:00",
+   "language": null,
+   "raw": "Adoration: 11:00-Noon @ Greenleaf",
+   "source_url": "https://www.stclareagw.org/mass-worship-1-1",
+   "fetched_at": "2026-11-02T04:41:53+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace"
   }
  ],
  "source_url": "https://www.stclareagw.org/",
  "fetched_at": "2026-11-01T22:15:36+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:57+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ]
+ },
  "schedule_template": {
   "template": "squarespace",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -166,7 +250,8 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 8
+  "trusted_kinds": [],
+  "generic_rows": 9
  },
  "has_sunday": true,
  "schedule_dropped": {
@@ -176,8 +261,8 @@
   "noise": 2
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

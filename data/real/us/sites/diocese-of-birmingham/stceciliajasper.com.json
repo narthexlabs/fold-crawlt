@@ -63,6 +63,18 @@
    "url": "https://www.stceciliajasper.com/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stceciliajasper.com/reconciliation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://www.stceciliajasper.com/liturgy",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -263,6 +275,34 @@
    "confidence": "medium",
    "template": "generic_strict",
    "kind_parsed": "mass"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:45-16:15",
+   "language": "English",
+   "raw": "Saturday 3:45 - 4:15 p.m. English Only in the Reconciliation Room",
+   "source_url": "https://www.stceciliajasper.com/reconciliation",
+   "fetched_at": "2026-11-02T04:42:08+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday (advent)",
+   "time": "17:18",
+   "language": null,
+   "raw": "“And all this is from God, who has reconciled us to himself : 2 Corinthians 5:18",
+   "source_url": "https://www.stceciliajasper.com/reconciliation",
+   "fetched_at": "2026-11-02T04:42:08+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "generic_strict",
+   "topup": true
   }
  ],
  "source_url": "http://www.stceciliajasper.com/",
@@ -307,6 +347,24 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:09+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(205) 384-4800",
@@ -317,8 +375,5 @@
   },
   "fetched_at": "2026-11-01T17:21:29+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

@@ -87,6 +87,12 @@
    "url": "https://superiorcatholics.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://superiorcatholics.org/adoration/",
+   "status": null,
+   "class": "timeout"
   }
  ],
  "cms_guess": {
@@ -306,14 +312,28 @@
   {
    "kind": "other",
    "day": "Holy days",
-   "time": "19:00",
+   "time": "08:30",
    "language": null,
-   "raw": "Mass: Holy Thursday at 7:00 PM",
+   "raw": "Holy Days of obligation masses are 8:30 AM and 7:00 PM.",
    "source_url": "https://superiorcatholics.org/church-schedules/",
    "fetched_at": "2026-11-01T08:35:02+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "low",
+   "confidence": "high",
+   "template": "wordpress",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "19:00",
+   "language": null,
+   "raw": "Holy Days of obligation masses are 8:30 AM and 7:00 PM.",
+   "source_url": "https://superiorcatholics.org/church-schedules/",
+   "fetched_at": "2026-11-01T08:35:02+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
    "template": "wordpress",
    "kind_parsed": "mass"
   },
@@ -424,6 +444,20 @@
    "template": "wordpress"
   },
   {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "18:00",
+   "language": null,
+   "raw": "Holy Day Vigil (Mary, Mother of God) at 6:00 PM – St. William",
+   "source_url": "https://superiorcatholics.org/church-schedules/",
+   "fetched_at": "2026-11-01T08:35:02+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "kind_parsed": "mass"
+  },
+  {
    "kind": "adoration",
    "day": "First Saturday of the month",
    "time": "17:30-18:00",
@@ -491,9 +525,19 @@
  ],
  "source_url": "https://superiorcatholics.org/",
  "fetched_at": "2026-11-01T08:35:16+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:56+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -507,17 +551,28 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 27
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://superiorcatholics.org/church-schedules/",
+   "fetched_at": "2026-11-01T08:35:02+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 19,
-  "no_kind": 2
+  "no_kind": 13,
+  "other_location": 5,
+  "prose": 6
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

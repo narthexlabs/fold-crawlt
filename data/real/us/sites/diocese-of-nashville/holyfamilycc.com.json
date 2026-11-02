@@ -78,6 +78,12 @@
    "url": "https://holyfamilycc.com/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://holyfamilycc.com/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -641,7 +647,7 @@
    "note": "CCB public calendar iCal",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-02T01:56:44+00:00",
+    "fetched_at": "2026-11-02T04:52:43+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -743,9 +749,19 @@
  ],
  "source_url": "https://holyfamilycc.com/",
  "fetched_at": "2026-11-02T01:56:17+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:59+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -759,6 +775,7 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 11
  },
  "has_sunday": true,

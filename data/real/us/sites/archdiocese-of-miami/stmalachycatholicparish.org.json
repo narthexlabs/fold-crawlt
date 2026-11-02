@@ -60,6 +60,12 @@
    "url": "https://stmalachycatholicparish.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stmalachycatholicparish.org/sacraments",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -309,7 +315,7 @@
    "kind": "mass",
    "day": "Sunday",
    "time": "08:30",
-   "language": null,
+   "language": "English",
    "raw": "Vigil Mass: 8:30 AM and 10:30 AM - English",
    "source_url": "https://stmalachycatholicparish.org/mass-times-%26-office-hours",
    "fetched_at": "2026-11-01T22:15:30+00:00",
@@ -373,9 +379,21 @@
  ],
  "source_url": "https://stmalachycatholicparish.org/",
  "fetched_at": "2026-11-01T22:15:37+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:36+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "godaddy",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -389,20 +407,21 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 10
  },
  "has_sunday": true,
  "schedule_dropped": {
   "skipped_section": 2,
-  "not_a_service": 1
+  "no_day": 1
  },
  "groups_dropped": {
   "unmatched": 1,
   "noise": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

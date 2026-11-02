@@ -83,6 +83,18 @@
    "url": "https://corpuschristilansdale.org/live-video/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://corpuschristilansdale.org/liturgy-committee/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://corpuschristilansdale.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -541,7 +553,7 @@
    "feed_key": "295e4041670a",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-02T01:57:21+00:00",
+    "fetched_at": "2026-11-02T04:57:36+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -573,6 +585,46 @@
    "raw": "The Sacrament of Reconciliation (Confession/Penance) is celebrated every Saturday in the chapel of Corpus Christi Church following the 7:15 AM Mass and from 3:00 PM to 4:00 PM.",
    "source_url": "https://corpuschristilansdale.org/sacraments/reconciliation/",
    "fetched_at": "2026-11-01T20:25:09+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  },
+  {
+   "kind": "devotion",
+   "day": "Wednesday",
+   "time": "18:30",
+   "language": null,
+   "raw": "Novena devotions honoring the Immaculate Heart of Mary are held on the second and fourth Wednesday of each month at 6:30 PM in the chapel.",
+   "source_url": "https://corpuschristilansdale.org/sacraments/devotions/",
+   "fetched_at": "2026-11-01T20:25:30+00:00",
+   "needs_review": true,
+   "review_reason": "nth_of_month",
+   "confidence": "high",
+   "template": "wordpress",
+   "nth": "fourth"
+  },
+  {
+   "kind": "devotion",
+   "day": "First and Third Wednesday of the month",
+   "time": "18:30",
+   "language": null,
+   "raw": "Novena devotions in honor of Saint Peregrine, Patron Saint of Cancer Patients, are offered on the first and third Wednesdays of each month at 6:30 PM in the chapel.",
+   "source_url": "https://corpuschristilansdale.org/sacraments/devotions/",
+   "fetched_at": "2026-11-01T20:25:30+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  },
+  {
+   "kind": "devotion",
+   "day": "Friday",
+   "time": "19:00",
+   "language": null,
+   "raw": "These devotions begin each Friday at 7:00 PM in the church.",
+   "source_url": "https://corpuschristilansdale.org/sacraments/devotions/",
+   "fetched_at": "2026-11-01T20:25:30+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "high",
@@ -707,9 +759,21 @@
  ],
  "source_url": "https://corpuschristilansdale.org/",
  "fetched_at": "2026-11-01T20:26:00+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:09+00:00",
+  "requests": 2,
+  "found": [
+   "liturgy"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -723,6 +787,7 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 2
  },
  "has_sunday": true,
@@ -730,7 +795,7 @@
   "relative_time": 6,
   "other_location": 2,
   "benediction_end": 1,
-  "not_a_service": 5,
+  "not_a_service": 2,
   "box_rows_added": 10
  },
  "groups_dropped": {

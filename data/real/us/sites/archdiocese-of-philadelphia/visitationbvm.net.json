@@ -36,6 +36,12 @@
    "url": "https://visitationbvm.net/sacraments/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://visitationbvm.net/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -119,9 +125,19 @@
  ],
  "source_url": "https://visitationbvm.net/",
  "fetched_at": "2026-11-01T20:25:52+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:12+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -135,8 +151,18 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 5
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Saturday 4-5 pm or by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://visitationbvm.net/",
+   "fetched_at": "2026-11-01T20:25:45+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "not_a_service": 3,

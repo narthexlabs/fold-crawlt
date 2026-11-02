@@ -75,6 +75,12 @@
    "url": "https://www.padrepio.org/about/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.padrepio.org/events/first-friday-mass-eucharistic-adoration-2026-11-06/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -239,6 +245,19 @@
    "template": "wordpress"
   },
   {
+   "kind": "devotion",
+   "day": "First Friday of the month",
+   "time": "11:30",
+   "language": null,
+   "raw": "Rosary with Veneration of the Relic Glove of Padre Pio – 11:30 AM",
+   "source_url": "https://www.padrepio.org/events/first-friday-mass-eucharistic-adoration-2026-11-06/",
+   "fetched_at": "2026-11-02T04:43:03+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
    "kind": "mass",
    "day": "Saturday",
    "time": "15:00",
@@ -263,9 +282,21 @@
  ],
  "source_url": "https://www.padrepio.org/",
  "fetched_at": "2026-11-01T20:26:36+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:03+00:00",
+  "requests": 1,
+  "found": [
+   "adoration"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -279,12 +310,14 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 9
+  "trusted_kinds": [],
+  "generic_rows": 13
  },
  "has_sunday": true,
  "schedule_dropped": {
   "relative_time": 2,
-  "dated_block": 3,
+  "dated_block": 7,
+  "benediction_end": 1,
   "prose": 5,
   "weekend_rescue_added": 2
  },
@@ -292,8 +325,8 @@
   "label_not_group": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

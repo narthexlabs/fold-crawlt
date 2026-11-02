@@ -75,6 +75,12 @@
    "url": "https://stlukebarefootbay.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stlukebarefootbay.org/reconciliation/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -326,6 +332,76 @@
    "confidence": "high",
    "template": "wordpress",
    "kind_parsed": "mass"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:15-15:45",
+   "language": null,
+   "raw": "Reconciliation Preparation: 3:15pm – 3:45pm",
+   "source_url": "https://stlukebarefootbay.org/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:45+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Thursday",
+   "time": "08:30",
+   "language": null,
+   "raw": "Reconciliation Preparation: 8:30am after Mass",
+   "source_url": "https://stlukebarefootbay.org/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:45+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday (winter, nov-apr)",
+   "time": "08:00",
+   "language": null,
+   "raw": "Mass Times: 8AM & 10AM",
+   "source_url": "https://stlukebarefootbay.org/mass-times/",
+   "fetched_at": "2026-11-02T04:41:46+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday (winter, nov-apr)",
+   "time": "10:00",
+   "language": null,
+   "raw": "Mass Times: 8AM & 10AM",
+   "source_url": "https://stlukebarefootbay.org/mass-times/",
+   "fetched_at": "2026-11-02T04:41:46+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday (winter, nov-apr)",
+   "time": "12:00",
+   "language": "Latin",
+   "raw": "Latin Mass: 12 PM Latin",
+   "source_url": "https://stlukebarefootbay.org/mass-times/",
+   "fetched_at": "2026-11-02T04:41:46+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "http://www.stlukebarefootbay.org/",
@@ -368,5 +444,29 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Also by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://stlukebarefootbay.org/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:45+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:50+00:00",
+  "requests": 3,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 5,
+  "mode": "merge"
  }
 }

@@ -75,6 +75,12 @@
    "url": "https://smip.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://smip.org/sacraments/reconciliation/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -372,15 +378,54 @@
  "schedule_rows": [
   {
    "kind": "mass",
-   "day": "Saturday",
-   "time": "17:30",
-   "language": "Spanish",
-   "raw": "The Choir leads song in rotation with the Spanish Teen Choir for the Sunday 12:15 PM and Saturday evening Spanish 5:30 PM Masses.",
-   "source_url": "https://smip.org/ministries/liturgy-worship/",
-   "fetched_at": "2026-11-01T07:28:17+00:00",
+   "day": "Sunday",
+   "time": "07:30",
+   "language": "English",
+   "raw": "Mass Times: 7:30 am (English)",
+   "source_url": "https://smip.org/",
+   "fetched_at": "2026-11-01T07:28:14+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "high",
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": "English",
+   "raw": "Mass Times: 9:00 am (English)",
+   "source_url": "https://smip.org/",
+   "fetched_at": "2026-11-01T07:28:14+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:45",
+   "language": "English",
+   "raw": "Mass Times: 10:45 am (English)",
+   "source_url": "https://smip.org/",
+   "fetched_at": "2026-11-01T07:28:14+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "12:15",
+   "language": "English",
+   "raw": "Mass Times: 12:15 pm (English)",
+   "source_url": "https://smip.org/",
+   "fetched_at": "2026-11-01T07:28:14+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
    "template": "wordpress"
   },
   {
@@ -398,36 +443,10 @@
   },
   {
    "kind": "mass",
-   "day": "Sunday",
-   "time": "07:30",
-   "language": "English",
-   "raw": "Weekend Masses: 7:30 AM English",
-   "source_url": "https://smip.org/masstimes/",
-   "fetched_at": "2026-11-01T07:28:18+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress"
-  },
-  {
-   "kind": "mass",
-   "day": "Sunday",
-   "time": "09:00",
-   "language": "English",
-   "raw": "Weekend Masses: 9:00 AM English",
-   "source_url": "https://smip.org/masstimes/",
-   "fetched_at": "2026-11-01T07:28:18+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress"
-  },
-  {
-   "kind": "mass",
-   "day": "Sunday",
-   "time": "10:45",
-   "language": "English",
-   "raw": "Weekend Masses: 10:45 AM English",
+   "day": "Saturday",
+   "time": "17:30",
+   "language": "Spanish",
+   "raw": "Weekend Masses: 5:30 PM Español",
    "source_url": "https://smip.org/masstimes/",
    "fetched_at": "2026-11-01T07:28:18+00:00",
    "needs_review": false,
@@ -441,19 +460,6 @@
    "time": "12:15",
    "language": "Spanish",
    "raw": "Weekend Masses: 12:15 PM Español",
-   "source_url": "https://smip.org/masstimes/",
-   "fetched_at": "2026-11-01T07:28:18+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress"
-  },
-  {
-   "kind": "mass",
-   "day": "Sunday",
-   "time": "12:15",
-   "language": "English",
-   "raw": "Weekend Masses: 12:15 PM English (in Cana Hall — incense-free)",
    "source_url": "https://smip.org/masstimes/",
    "fetched_at": "2026-11-01T07:28:18+00:00",
    "needs_review": false,
@@ -639,13 +645,41 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "Monday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Adoration Chapel:: Open starting after the 9:00 AM Mass on Monday until midnight on Thursday.",
+   "source_url": "https://smip.org/masstimes/",
+   "fetched_at": "2026-11-01T07:28:18+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "Adoration Chapel:: Open starting after the 9:00 AM Mass on Monday until midnight on Thursday.",
+   "relative_resolved": true
   }
  ],
  "source_url": "https://smip.org/",
  "fetched_at": "2026-11-01T07:28:29+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:56+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -659,13 +693,14 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 20
  },
  "has_sunday": true,
  "schedule_dropped": {
   "other_location": 7,
   "no_day": 2,
-  "relative_time": 2,
+  "relative_time": 1,
   "not_a_service": 6
  },
  "groups_dropped": {
@@ -673,8 +708,8 @@
   "noise": 3
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

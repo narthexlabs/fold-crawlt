@@ -74,6 +74,12 @@
    "url": "https://www.stfrancisbb.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stfrancisbb.org/penance",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -531,7 +537,7 @@
    "feed_key": "ddf6757ac4ef",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:39:09+00:00",
+    "fetched_at": "2026-11-02T05:14:08+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -699,76 +705,6 @@
   },
   {
    "kind": "confession",
-   "day": "Monday",
-   "time": "09:00",
-   "language": null,
-   "raw": "Confession:: the 9:00am Weekday Mass.",
-   "source_url": "https://www.stfrancisbb.org/",
-   "fetched_at": "2026-11-01T07:28:15+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict",
-   "day_expanded_from": "Weekday"
-  },
-  {
-   "kind": "confession",
-   "day": "Tuesday",
-   "time": "09:00",
-   "language": null,
-   "raw": "Confession:: the 9:00am Weekday Mass.",
-   "source_url": "https://www.stfrancisbb.org/",
-   "fetched_at": "2026-11-01T07:28:15+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict",
-   "day_expanded_from": "Weekday"
-  },
-  {
-   "kind": "confession",
-   "day": "Wednesday",
-   "time": "09:00",
-   "language": null,
-   "raw": "Confession:: the 9:00am Weekday Mass.",
-   "source_url": "https://www.stfrancisbb.org/",
-   "fetched_at": "2026-11-01T07:28:15+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict",
-   "day_expanded_from": "Weekday"
-  },
-  {
-   "kind": "confession",
-   "day": "Thursday",
-   "time": "09:00",
-   "language": null,
-   "raw": "Confession:: the 9:00am Weekday Mass.",
-   "source_url": "https://www.stfrancisbb.org/",
-   "fetched_at": "2026-11-01T07:28:15+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict",
-   "day_expanded_from": "Weekday"
-  },
-  {
-   "kind": "confession",
-   "day": "Friday",
-   "time": "09:00",
-   "language": null,
-   "raw": "Confession:: the 9:00am Weekday Mass.",
-   "source_url": "https://www.stfrancisbb.org/",
-   "fetched_at": "2026-11-01T07:28:15+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict",
-   "day_expanded_from": "Weekday"
-  },
-  {
-   "kind": "confession",
    "day": "Saturday",
    "time": "15:30-16:30",
    "language": null,
@@ -783,9 +719,21 @@
  ],
  "source_url": "https://www.stfrancisbb.org/",
  "fetched_at": "2026-11-01T07:28:26+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:56+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -799,6 +747,7 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 20
  },
  "has_sunday": true,
@@ -811,8 +760,8 @@
   "unmatched": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

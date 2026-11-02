@@ -79,6 +79,12 @@
    "url": "https://risenchristchurch.org/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://risenchristchurch.org/fr-scotts-guided-holy-hour",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -893,6 +899,24 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:53+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "parishinfo@risenchristchurch.org",
   "phone": "(303) 758-8826",
@@ -905,8 +929,5 @@
   },
   "fetched_at": "2026-11-01T05:11:25+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

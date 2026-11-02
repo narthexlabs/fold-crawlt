@@ -27,6 +27,24 @@
    "url": "https://www.stfrancislenoir.com/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stfrancislenoir.com/?page_id=2",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stfrancislenoir.com/?page_id=42",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://www.stfrancislenoir.com/?page_id=496",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -303,6 +321,20 @@
    "review_reason": null,
    "confidence": "high",
    "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "Sunday",
+   "time": "06:00-07:00",
+   "language": null,
+   "raw": "Eucharistic Adoration Times: Sunday 6 AM – 7 AM",
+   "source_url": "https://www.stfrancislenoir.com/?page_id=42",
+   "fetched_at": "2026-11-02T04:41:43+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "http://www.stfrancislenoir.com/",
@@ -336,6 +368,25 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:44+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(704) 269-8537",
@@ -346,8 +397,5 @@
   },
   "fetched_at": "2026-11-01T03:59:03+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

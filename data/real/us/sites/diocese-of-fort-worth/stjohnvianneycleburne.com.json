@@ -367,7 +367,7 @@
    "feed_key": "672b6d991617",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:35:05+00:00",
+    "fetched_at": "2026-11-02T04:50:44+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -384,7 +384,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:35:06+00:00",
+    "fetched_at": "2026-11-02T04:50:45+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -401,7 +401,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:35:07+00:00",
+    "fetched_at": "2026-11-02T04:50:46+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -418,7 +418,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:35:08+00:00",
+    "fetched_at": "2026-11-02T04:50:47+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -435,7 +435,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": 404,
-    "fetched_at": "2026-11-01T23:35:10+00:00",
+    "fetched_at": "2026-11-02T04:50:49+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -553,9 +553,19 @@
  ],
  "source_url": "http://www.stjohnvianneycleburne.com/",
  "fetched_at": "2026-11-01T17:21:31+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:35+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "squarespace",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -569,11 +579,21 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 7
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Confession is 45 minutes before each Mass, however there is no confession before the 11:30 Mass on Sunday.",
+   "phrase": "45 minutes before each Mass",
+   "source_url": "https://www.stjohnvianneycleburne.com/",
+   "fetched_at": "2026-11-01T17:21:23+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "relative_time": 1
+  "negated": 1
  },
  "groups_dropped": {
   "sentence": 1,
@@ -582,8 +602,8 @@
   "sacrament_prep": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

@@ -63,6 +63,18 @@
    "url": "https://fortmonroe.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://fortmonroe.org/place_to_visit/chapel-of-the-centurion/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://fortmonroe.org/reconciliation/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -104,9 +116,9 @@
    "note": "The Events Calendar (WordPress) REST API",
    "last_fetch": {
     "status": 200,
-    "fetched_at": "2026-11-01T23:41:13+00:00",
-    "events_in_window": 7,
-    "kept": 4,
+    "fetched_at": "2026-11-02T05:03:13+00:00",
+    "events_in_window": 6,
+    "kept": 3,
     "excluded": {
      "names_person_shared_screen": 3
     }
@@ -114,19 +126,6 @@
   }
  ],
  "events": [
-  {
-   "id": "54e98dd6669e5ad1",
-   "title": "Special Event: Harvest Market at Oozlefinch",
-   "start": "2026-11-01T09:00:00-08:00",
-   "end": "2026-11-01T12:00:00-08:00",
-   "all_day": false,
-   "location": null,
-   "category": "other",
-   "recurring": true,
-   "source_url": "https://fortmonroe.org/event/special-event-harvest-market-at-oozlefinch-33/2026-11-01/",
-   "feed_id": "fortmonroe.org:tribe_rest:bff6aaa0",
-   "fetched_at": "2026-11-01T23:41:13+00:00"
-  },
   {
    "id": "ef6b633ecdfda765",
    "title": "Veterans Day Celebration",
@@ -138,7 +137,7 @@
    "recurring": false,
    "source_url": "https://fortmonroe.org/event/veterans-day-celebration/",
    "feed_id": "fortmonroe.org:tribe_rest:bff6aaa0",
-   "fetched_at": "2026-11-01T23:41:13+00:00"
+   "fetched_at": "2026-11-02T05:03:13+00:00"
   },
   {
    "id": "945f9ea90ca600bf",
@@ -151,7 +150,7 @@
    "recurring": true,
    "source_url": "https://fortmonroe.org/event/special-event-harvest-market-at-oozlefinch-33/2026-11-08/",
    "feed_id": "fortmonroe.org:tribe_rest:bff6aaa0",
-   "fetched_at": "2026-11-01T23:41:13+00:00"
+   "fetched_at": "2026-11-02T05:03:13+00:00"
   },
   {
    "id": "b581ac5186a4e359",
@@ -164,7 +163,7 @@
    "recurring": true,
    "source_url": "https://fortmonroe.org/event/special-event-harvest-market-at-oozlefinch-33/2026-11-15/",
    "feed_id": "fortmonroe.org:tribe_rest:bff6aaa0",
-   "fetched_at": "2026-11-01T23:41:13+00:00"
+   "fetched_at": "2026-11-02T05:03:13+00:00"
   }
  ],
  "social": {
@@ -188,9 +187,21 @@
  "schedule_rows": [],
  "source_url": "https://fortmonroe.org/",
  "fetched_at": "2026-11-01T22:17:01+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:21+00:00",
+  "requests": 2,
+  "found": [
+   "adoration"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -204,6 +215,7 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 0
  },
  "has_sunday": false,
@@ -211,12 +223,12 @@
   "unmatched": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
-  "in_window": 7,
-  "kept_after_privacy": 4,
-  "stored": 4,
+  "in_window": 6,
+  "kept_after_privacy": 3,
+  "stored": 3,
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {
    "names_person_shared_screen": 3

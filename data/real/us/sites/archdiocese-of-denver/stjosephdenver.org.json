@@ -425,6 +425,32 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "o con cita previa",
+   "phrase": "con cita",
+   "source_url": "https://www.stjosephdenver.org/reconciliation",
+   "fetched_at": "2026-11-02T04:41:59+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:59+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "secretary@stjosephdenver.org",
   "phone": "(303) 534-4408",
@@ -437,8 +463,5 @@
   },
   "fetched_at": "2026-11-01T05:11:43+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

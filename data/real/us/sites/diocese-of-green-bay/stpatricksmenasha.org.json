@@ -246,7 +246,7 @@
    "feed_key": "0f2889f5050d",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:35:53+00:00",
+    "fetched_at": "2026-11-02T05:02:57+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -270,10 +270,10 @@
    "kind": "mass",
    "day": "Sunday",
    "time": "08:00",
-   "language": null,
+   "language": "English",
    "raw": "MASS TIMES/Horarios de Misa: 8am & 10am - English",
-   "source_url": "https://www.stpatricksmenasha.org/mass-times",
-   "fetched_at": "2026-11-01T22:15:42+00:00",
+   "source_url": "https://www.stpatricksmenasha.org/",
+   "fetched_at": "2026-11-01T22:15:33+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -285,8 +285,8 @@
    "time": "10:00",
    "language": "English",
    "raw": "MASS TIMES/Horarios de Misa: 8am & 10am - English",
-   "source_url": "https://www.stpatricksmenasha.org/mass-times",
-   "fetched_at": "2026-11-01T22:15:42+00:00",
+   "source_url": "https://www.stpatricksmenasha.org/",
+   "fetched_at": "2026-11-01T22:15:33+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -298,8 +298,8 @@
    "time": "12:00",
    "language": "Spanish",
    "raw": "MASS TIMES/Horarios de Misa: 12pm - Español",
-   "source_url": "https://www.stpatricksmenasha.org/mass-times",
-   "fetched_at": "2026-11-01T22:15:42+00:00",
+   "source_url": "https://www.stpatricksmenasha.org/",
+   "fetched_at": "2026-11-01T22:15:33+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -311,8 +311,8 @@
    "time": "08:00",
    "language": "English",
    "raw": "Daily Mass/Misa diaria: Tuesday-Friday 8am - English",
-   "source_url": "https://www.stpatricksmenasha.org/mass-times",
-   "fetched_at": "2026-11-01T22:15:42+00:00",
+   "source_url": "https://www.stpatricksmenasha.org/",
+   "fetched_at": "2026-11-01T22:15:33+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -325,8 +325,8 @@
    "time": "08:00",
    "language": "English",
    "raw": "Daily Mass/Misa diaria: Tuesday-Friday 8am - English",
-   "source_url": "https://www.stpatricksmenasha.org/mass-times",
-   "fetched_at": "2026-11-01T22:15:42+00:00",
+   "source_url": "https://www.stpatricksmenasha.org/",
+   "fetched_at": "2026-11-01T22:15:33+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -341,8 +341,8 @@
    "time": "08:00",
    "language": "English",
    "raw": "Daily Mass/Misa diaria: Tuesday-Friday 8am - English",
-   "source_url": "https://www.stpatricksmenasha.org/mass-times",
-   "fetched_at": "2026-11-01T22:15:42+00:00",
+   "source_url": "https://www.stpatricksmenasha.org/",
+   "fetched_at": "2026-11-01T22:15:33+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -357,8 +357,8 @@
    "time": "08:00",
    "language": "English",
    "raw": "Daily Mass/Misa diaria: Tuesday-Friday 8am - English",
-   "source_url": "https://www.stpatricksmenasha.org/mass-times",
-   "fetched_at": "2026-11-01T22:15:42+00:00",
+   "source_url": "https://www.stpatricksmenasha.org/",
+   "fetched_at": "2026-11-01T22:15:33+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -373,8 +373,8 @@
    "time": "08:30",
    "language": null,
    "raw": "Adoration is the first Friday of the month - 8:30am",
-   "source_url": "https://www.stpatricksmenasha.org/mass-times",
-   "fetched_at": "2026-11-01T22:15:42+00:00",
+   "source_url": "https://www.stpatricksmenasha.org/",
+   "fetched_at": "2026-11-01T22:15:33+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "high",
@@ -383,9 +383,19 @@
  ],
  "source_url": "https://www.stpatricksmenasha.org/",
  "fetched_at": "2026-11-01T22:16:52+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:50+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -399,12 +409,21 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 12
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Communal celebrations are held during Advent and Lent. Reconciliation is also offered on Sunday following every Mass. Other times by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://www.stpatricksmenasha.org/sacraments",
+   "fetched_at": "2026-11-01T22:15:52+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "dated_block": 12,
-  "other_location": 16,
+  "dated_block": 28,
   "skipped_section": 2
  },
  "groups_dropped": {
@@ -413,8 +432,8 @@
   "label_not_group": 4
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

@@ -61,6 +61,18 @@
    "url": "https://olphsyromalabardc.org/events/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://olphsyromalabardc.org/reconciliation/",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://olphsyromalabardc.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -318,13 +330,26 @@
    "note": "The Events Calendar (WordPress) REST API",
    "last_fetch": {
     "status": 200,
-    "fetched_at": "2026-11-01T23:40:30+00:00",
-    "events_in_window": 1,
-    "kept": 1
+    "fetched_at": "2026-11-02T05:02:35+00:00",
+    "events_in_window": 2,
+    "kept": 2
    }
   }
  ],
  "events": [
+  {
+   "id": "5730f0414346b135",
+   "title": "Parish Day 2026",
+   "start": "2026-11-06",
+   "end": "2026-11-07",
+   "all_day": true,
+   "location": "Our Lady of Perpetual Help Church, Gaithersburg",
+   "category": "other",
+   "recurring": false,
+   "source_url": "https://olphsyromalabardc.org/event/parish-day-2026/",
+   "feed_id": "syromalabargw.org:tribe_rest:8ea2149b",
+   "fetched_at": "2026-11-02T05:02:35+00:00"
+  },
   {
    "id": "b5a114c67f49a305",
    "title": "CCD Midterm Exam",
@@ -336,7 +361,7 @@
    "recurring": false,
    "source_url": "https://olphsyromalabardc.org/event/ccd-midterm-exam/",
    "feed_id": "syromalabargw.org:tribe_rest:8ea2149b",
-   "fetched_at": "2026-11-01T23:40:30+00:00"
+   "fetched_at": "2026-11-02T05:02:35+00:00"
   }
  ],
  "social": {
@@ -356,9 +381,19 @@
  "source_url": "https://www.syromalabargw.org/",
  "fetched_at": "2026-11-01T17:27:33+00:00",
  "redirected_off_host": "olphsyromalabardc.org",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:08+00:00",
+  "requests": 2,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -372,6 +407,7 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 11
  },
  "has_sunday": false,
@@ -384,12 +420,12 @@
   "noise": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
-  "in_window": 1,
-  "kept_after_privacy": 1,
-  "stored": 1,
+  "in_window": 2,
+  "kept_after_privacy": 2,
+  "stored": 2,
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },

@@ -67,6 +67,12 @@
    "url": "https://assumptionlauderdale.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://assumptionlauderdale.org/reconciliation/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -329,6 +335,71 @@
    "template": "wordpress"
   },
   {
+   "kind": "devotion",
+   "day": "Monday",
+   "time": "08:15",
+   "language": null,
+   "raw": "Monday: 8:15 AM Rosary",
+   "source_url": "https://assumptionlauderdale.org/mass-schedule/",
+   "fetched_at": "2026-11-01T22:15:27+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  },
+  {
+   "kind": "devotion",
+   "day": "Tuesday",
+   "time": "08:15",
+   "language": null,
+   "raw": "Tuesday: 8:15 AM Rosary",
+   "source_url": "https://assumptionlauderdale.org/mass-schedule/",
+   "fetched_at": "2026-11-01T22:15:27+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  },
+  {
+   "kind": "devotion",
+   "day": "Wednesday",
+   "time": "08:15",
+   "language": null,
+   "raw": "Wednesday: 8:15 AM Rosary",
+   "source_url": "https://assumptionlauderdale.org/mass-schedule/",
+   "fetched_at": "2026-11-01T22:15:27+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  },
+  {
+   "kind": "devotion",
+   "day": "Thursday",
+   "time": "08:15",
+   "language": null,
+   "raw": "Thursday: 8:15 AM Rosary",
+   "source_url": "https://assumptionlauderdale.org/mass-schedule/",
+   "fetched_at": "2026-11-01T22:15:27+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  },
+  {
+   "kind": "devotion",
+   "day": "Friday",
+   "time": "08:15",
+   "language": null,
+   "raw": "Friday: 8:15 AM Rosary",
+   "source_url": "https://assumptionlauderdale.org/mass-schedule/",
+   "fetched_at": "2026-11-01T22:15:27+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  },
+  {
    "kind": "mass",
    "day": "Sunday",
    "time": "08:00",
@@ -405,13 +476,54 @@
    "review_reason": null,
    "confidence": "high",
    "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Friday",
+   "time": "09:00",
+   "language": null,
+   "raw": "PENANCE / RECONCILIATION – The Sacrament of Reconciliation is offered every Friday after the 9:00 a.m.",
+   "source_url": "https://assumptionlauderdale.org/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:34+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "PENANCE / RECONCILIATION – The Sacrament of Reconciliation is offered every Friday after the 9:00 a.m.",
+   "relative_resolved": true
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "15:30",
+   "language": null,
+   "raw": "Mass and Saturday afternoons at 3:30 p.m.",
+   "source_url": "https://assumptionlauderdale.org/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:34+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
   }
  ],
  "source_url": "https://assumptionlauderdale.org/",
  "fetched_at": "2026-11-01T22:15:38+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:34+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -425,20 +537,20 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 17
  },
  "has_sunday": true,
  "schedule_dropped": {
   "skipped_section": 3,
-  "not_a_service": 5,
   "relative_time": 2
  },
  "groups_dropped": {
   "unmatched": 2
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

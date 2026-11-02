@@ -67,6 +67,12 @@
    "url": "https://www.holyghostvinita.org/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.holyghostvinita.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -224,9 +230,9 @@
    "day": "Sunday",
    "time": "10:00",
    "language": null,
-   "raw": "Regular Mass Schedule: Sunday 10:00 AM",
-   "source_url": "https://www.holyghostvinita.org/location/",
-   "fetched_at": "2026-11-01T07:19:57+00:00",
+   "raw": "Mass Times: Sunday 10:00 AM",
+   "source_url": "https://www.holyghostvinita.org/",
+   "fetched_at": "2026-11-01T07:19:45+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -237,9 +243,9 @@
    "day": "Wednesday",
    "time": "18:00",
    "language": null,
-   "raw": "Regular Mass Schedule: Wednesday 6:00 PM",
-   "source_url": "https://www.holyghostvinita.org/location/",
-   "fetched_at": "2026-11-01T07:19:57+00:00",
+   "raw": "Mass Times: Wednesday 6:00 PM",
+   "source_url": "https://www.holyghostvinita.org/",
+   "fetched_at": "2026-11-01T07:19:45+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -248,9 +254,19 @@
  ],
  "source_url": "https://www.holyghostvinita.org/",
  "fetched_at": "2026-11-01T07:21:06+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:47:57+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -264,15 +280,25 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 4
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "By appointment only. Call to schedule.",
+   "phrase": "By appointment",
+   "source_url": "https://www.holyghostvinita.org/sacraments/",
+   "fetched_at": "2026-11-01T07:20:05+00:00"
+  }
+ ],
  "has_sunday": true,
  "groups_dropped": {
   "label_not_group": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

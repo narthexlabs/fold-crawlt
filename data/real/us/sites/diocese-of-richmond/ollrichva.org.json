@@ -81,6 +81,12 @@
    "url": "https://ollrichva.org/contact-us-directions/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://ollrichva.org/sacraments/reconciliation/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -136,7 +142,52 @@
   "text": "Bulletin/Boletín Parroquial",
   "source_url": "https://ollrichva.org/giving/"
  },
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "confession",
+   "day": "Tuesday",
+   "time": "18:00-19:00",
+   "language": null,
+   "raw": "Confession is offered on Tuesdays and Thursdays (6-7pm) or Saturdays 3-4pm (English and Spanish).",
+   "source_url": "https://ollrichva.org/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:46+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "Tuesdays and Thursdays",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Thursday",
+   "time": "18:00-19:00",
+   "language": null,
+   "raw": "Confession is offered on Tuesdays and Thursdays (6-7pm) or Saturdays 3-4pm (English and Spanish).",
+   "source_url": "https://ollrichva.org/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:46+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "Tuesdays and Thursdays",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:00-16:00",
+   "language": "English/Spanish",
+   "raw": "Confession is offered on Tuesdays and Thursdays (6-7pm) or Saturdays 3-4pm (English and Spanish).",
+   "source_url": "https://ollrichva.org/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:46+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
+  }
+ ],
  "source_url": "https://ollrichva.org/giving/",
  "fetched_at": "2026-11-01T02:02:15+00:00",
  "schedule_template": {
@@ -185,5 +236,19 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:47+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ],
+  "rows_added": 3,
+  "mode": "merge"
  }
 }

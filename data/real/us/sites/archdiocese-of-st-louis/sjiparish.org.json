@@ -79,6 +79,12 @@
    "url": "https://sjiparish.org/livestream/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://sjiparish.org/adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -761,6 +767,34 @@
    "confidence": "high",
    "template": "ecatholic+generic_strict",
    "kind_parsed": "mass"
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "09:00-21:00",
+   "language": null,
+   "raw": "The Eucharist is exposed for adoration on Tuesdays, Wednesdays, and Thursdays from 9 am to 9 pm.",
+   "source_url": "https://sjiparish.org/adoration/",
+   "fetched_at": "2026-11-02T04:41:46+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "godaddy",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Monday",
+   "time": "17:30-19:00",
+   "language": null,
+   "raw": "Confession Times: MONDAY: 5:30 PM to 7:00 PM",
+   "source_url": "https://sjiparish.org/mass-times/",
+   "fetched_at": "2026-11-02T04:41:45+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "godaddy",
+   "topup": true
   }
  ],
  "source_url": "https://www.sjiparish.org/",
@@ -799,5 +833,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:46+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
  }
 }

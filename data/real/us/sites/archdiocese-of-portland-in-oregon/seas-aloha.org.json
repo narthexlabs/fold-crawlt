@@ -85,18 +85,6 @@
    "url": "https://seas-aloha.org/contact-us",
    "status": 200,
    "class": "ok"
-  },
-  {
-   "category": "confession",
-   "url": "https://seas-aloha.org/penance",
-   "status": 200,
-   "class": "ok"
-  },
-  {
-   "category": "adoration",
-   "url": "https://seas-aloha.org/adoration",
-   "status": 404,
-   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -694,13 +682,13 @@
   }
  ],
  "source_url": "https://seas-aloha.org/",
- "fetched_at": "2026-11-02T04:59:59+00:00",
+ "fetched_at": "2026-11-02T04:25:26+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
  },
  "schedule_template": {
   "template": "ecatholic",
-  "version": "ca-sites/3",
+  "version": "ca-sites/2",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -712,29 +700,13 @@
    },
    "score": "high"
   },
-  "passed_bar": true,
-  "trusted_candidate": true,
-  "trusted_kinds": [
-   "weekend",
-   "weekday",
-   "confession",
-   "adoration"
-  ],
+  "passed_bar": false,
+  "trusted_candidate": false,
   "generic_rows": 0
  },
- "schedule_notes": [
-  {
-   "kind": "confession",
-   "text": "Confessions are also available by appointment with Fr. Edgar. ---- Las confesiones tambien estan disponibles haciendo una cita con el P. Edgar",
-   "phrase": "by appointment",
-   "source_url": "https://seas-aloha.org/",
-   "fetched_at": "2026-04-20T06:55:35+00:00"
-  }
- ],
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 2,
-  "text:no_day": 1
+  "other_location": 2
  },
  "groups_dropped": {
   "unmatched": 1,
@@ -816,22 +788,16 @@
     "original": "https://seas-aloha.org/contact-us",
     "capture": "2026-05-18",
     "archive_url": "https://web.archive.org/web/20260518062956/https://seas-aloha.org/contact-us"
-   },
-   {
-    "kind": "confession",
-    "original": "https://seas-aloha.org/penance",
-    "capture": "2026-05-18",
-    "archive_url": "https://web.archive.org/web/20260518062744/https://seas-aloha.org/penance"
    }
   ],
   "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review.",
   "grade": {
    "rule": "wayback-verified-2026-11-01",
    "template": "ecatholic",
-   "trusted_template": true,
+   "trusted_template": false,
    "has_sunday": true,
    "groups": 15,
-   "verified": true,
+   "verified": false,
    "capture_date": "2026-04-20",
    "applied": false
   }

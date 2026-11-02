@@ -78,6 +78,18 @@
    "url": "https://www.stjoeco.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stjoeco.org/reconciliation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stjoeco.org/eucharistic-adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -197,12 +209,67 @@
   "text": "LPi",
   "source_url": "https://www.stjoeco.org/"
  },
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "adoration",
+   "day": "Monday",
+   "time": "07:00-19:00",
+   "language": null,
+   "raw": "The Blessed Sacrament is placed on the altar for Eucharistic Adoration each Monday from 7 a.m. until 7 p.m.",
+   "source_url": "https://www.stjoeco.org/eucharistic-adoration",
+   "fetched_at": "2026-11-02T04:41:59+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "06:00",
+   "language": null,
+   "raw": "Eucharistic Adoration: This twenty-four hour period begins on Tuesday morning at 6 am and concludes on Wednesday at 6 am.",
+   "source_url": "https://www.stjoeco.org/eucharistic-adoration",
+   "fetched_at": "2026-11-02T04:41:59+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "06:00",
+   "language": null,
+   "raw": "Eucharistic Adoration: This twenty-four hour period begins on Tuesday morning at 6 am and concludes on Wednesday at 6 am.",
+   "source_url": "https://www.stjoeco.org/eucharistic-adoration",
+   "fetched_at": "2026-11-02T04:41:59+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_parsed": "Tuesday",
+   "day_bound_from_line": true
+  }
+ ],
  "source_url": "https://www.stjoeco.org/",
  "fetched_at": "2026-11-01T22:15:31+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:00+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -216,16 +283,21 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
-  "generic_rows": 1
+  "trusted_kinds": [],
+  "generic_rows": 5
  },
  "has_sunday": false,
+ "schedule_partial": true,
+ "schedule_dropped": {
+  "prose": 2
+ },
  "groups_dropped": {
   "schedule": 1,
   "noise": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

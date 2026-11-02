@@ -73,6 +73,18 @@
    "url": "https://www.qopc.org/welcome/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.qopc.org/worship/sacraments.cfm",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.qopc.org/worship/adoration.cfm",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -389,82 +401,186 @@
  },
  "schedule_rows": [
   {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "17:30",
+   "language": null,
+   "raw": "Join us for the annual Mass of Remembrance on All Souls Day, November 2, at 5:30pm.",
+   "source_url": "https://www.qopc.org/",
+   "fetched_at": "2026-11-01T08:35:00+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "kind_parsed": "mass"
+  },
+  {
    "kind": "mass",
    "day": "Monday",
    "time": "08:30",
    "language": null,
-   "raw": "Monday-Friday 8:30 AM / Wednesday Evening Mass at 5:30pm",
-   "source_url": "https://www.qopc.org/worship/",
+   "raw": "Daily Mass: 8:30 AM - 9:00 AM",
+   "source_url": "https://www.qopc.org/",
    "fetched_at": "2026-11-01T08:35:00+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict",
-   "day_expanded_from": "Monday-Friday"
+   "day_expanded_from": "Daily"
   },
   {
    "kind": "mass",
    "day": "Tuesday",
    "time": "08:30",
    "language": null,
-   "raw": "Monday-Friday 8:30 AM / Wednesday Evening Mass at 5:30pm",
-   "source_url": "https://www.qopc.org/worship/",
+   "raw": "Daily Mass: 8:30 AM - 9:00 AM",
+   "source_url": "https://www.qopc.org/",
    "fetched_at": "2026-11-01T08:35:00+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict",
-   "day_expanded_from": "Monday-Friday",
-   "day_parsed": "Monday",
-   "day_bound_from_line": true
+   "day_expanded_from": "Daily"
   },
   {
    "kind": "mass",
    "day": "Wednesday",
    "time": "08:30",
    "language": null,
-   "raw": "Monday-Friday 8:30 AM / Wednesday Evening Mass at 5:30pm",
-   "source_url": "https://www.qopc.org/worship/",
+   "raw": "Daily Mass: 8:30 AM - 9:00 AM",
+   "source_url": "https://www.qopc.org/",
    "fetched_at": "2026-11-01T08:35:00+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict",
-   "day_expanded_from": "Monday-Friday",
-   "day_parsed": "Monday",
-   "day_bound_from_line": true
+   "day_expanded_from": "Daily"
   },
   {
    "kind": "mass",
    "day": "Thursday",
    "time": "08:30",
    "language": null,
-   "raw": "Monday-Friday 8:30 AM / Wednesday Evening Mass at 5:30pm",
-   "source_url": "https://www.qopc.org/worship/",
+   "raw": "Daily Mass: 8:30 AM - 9:00 AM",
+   "source_url": "https://www.qopc.org/",
    "fetched_at": "2026-11-01T08:35:00+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict",
-   "day_expanded_from": "Monday-Friday",
-   "day_parsed": "Monday",
-   "day_bound_from_line": true
+   "day_expanded_from": "Daily"
   },
   {
    "kind": "mass",
    "day": "Friday",
    "time": "08:30",
    "language": null,
-   "raw": "Monday-Friday 8:30 AM / Wednesday Evening Mass at 5:30pm",
-   "source_url": "https://www.qopc.org/worship/",
+   "raw": "Daily Mass: 8:30 AM - 9:00 AM",
+   "source_url": "https://www.qopc.org/",
    "fetched_at": "2026-11-01T08:35:00+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict",
-   "day_expanded_from": "Monday-Friday",
-   "day_parsed": "Monday",
-   "day_bound_from_line": true
+   "day_expanded_from": "Daily"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "08:30",
+   "language": null,
+   "raw": "Daily Mass: 8:30 AM - 9:00 AM",
+   "source_url": "https://www.qopc.org/",
+   "fetched_at": "2026-11-01T08:35:00+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Daily"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Daily Mass: 8:30 AM - 9:00 AM",
+   "source_url": "https://www.qopc.org/",
+   "fetched_at": "2026-11-01T08:35:00+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Daily"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Daily Mass: 8:30 AM - 9:00 AM",
+   "source_url": "https://www.qopc.org/",
+   "fetched_at": "2026-11-01T08:35:00+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Daily"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Daily Mass: 8:30 AM - 9:00 AM",
+   "source_url": "https://www.qopc.org/",
+   "fetched_at": "2026-11-01T08:35:00+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Daily"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Daily Mass: 8:30 AM - 9:00 AM",
+   "source_url": "https://www.qopc.org/",
+   "fetched_at": "2026-11-01T08:35:00+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Daily"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Daily Mass: 8:30 AM - 9:00 AM",
+   "source_url": "https://www.qopc.org/",
+   "fetched_at": "2026-11-01T08:35:00+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Daily"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Daily Mass: 8:30 AM - 9:00 AM",
+   "source_url": "https://www.qopc.org/",
+   "fetched_at": "2026-11-01T08:35:00+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Daily"
   },
   {
    "kind": "mass",
@@ -558,25 +674,37 @@
    "template": "generic_strict"
   },
   {
-   "kind": "other",
-   "day": "Holy days",
-   "time": "17:30",
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "09:00-17:00",
    "language": null,
-   "raw": "Join us for the annual Mass of Remembrance on All Souls Day, November 2, at 5:30pm.",
-   "source_url": "https://www.qopc.org/",
-   "fetched_at": "2026-11-01T08:35:00+00:00",
+   "raw": "All parishioners and visitors are invited to participate in : Tuesdays: 9:00am - 5:00pm",
+   "source_url": "https://www.qopc.org/worship/adoration.cfm",
+   "fetched_at": "2026-11-02T04:42:03+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "high",
-   "template": "generic_strict",
-   "kind_parsed": "mass"
+   "confidence": "medium",
+   "template": "generic_strict"
   }
  ],
  "source_url": "https://www.qopc.org/",
  "fetched_at": "2026-11-01T08:35:06+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:03+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -590,13 +718,13 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
-  "generic_rows": 31
+  "trusted_kinds": [],
+  "generic_rows": 34
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "no_day": 2,
+  "no_day": 8,
   "other_location": 1,
-  "not_a_service": 1,
   "no_kind": 1
  },
  "groups_dropped": {
@@ -606,8 +734,8 @@
   "label_not_group": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

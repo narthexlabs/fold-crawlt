@@ -39,6 +39,18 @@
    "url": "https://stmichaelgrandrapids.org/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stmichaelgrandrapids.org/reconciliation/",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stmichaelgrandrapids.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -63,66 +75,64 @@
    "day": "Sunday",
    "time": "10:00",
    "language": null,
-   "raw": "Divine Liturgy:: Sundays - 10am",
+   "raw": "Sundays - 10am",
    "source_url": "https://stmichaelgrandrapids.org/",
    "fetched_at": "2026-11-01T22:15:28+00:00",
    "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "godaddy"
+   "review_reason": "schedule_box"
   },
   {
    "kind": "mass",
    "day": "Sunday",
    "time": "09:15",
    "language": null,
-   "raw": "Divine Liturgy:: Matins - 9:15am",
+   "raw": "Matins - 9:15am",
    "source_url": "https://stmichaelgrandrapids.org/",
    "fetched_at": "2026-11-01T22:15:28+00:00",
    "needs_review": false,
-   "review_reason": null,
-   "confidence": "low",
-   "template": "godaddy"
-  },
-  {
-   "kind": "confession",
-   "day": "Sunday",
-   "time": "09:15-09:45",
-   "language": null,
-   "raw": "Confessions:: Sundays - 9:15 to 9:45am",
-   "source_url": "https://stmichaelgrandrapids.org/",
-   "fetched_at": "2026-11-01T22:15:28+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "godaddy"
+   "review_reason": "schedule_box"
   }
  ],
  "source_url": "https://stmichaelgrandrapids.org/",
  "fetched_at": "2026-11-01T22:15:35+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:35+00:00",
+  "requests": 2,
+  "found": []
+ },
  "schedule_template": {
   "template": "godaddy",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
-    "has_sunday": true,
+    "has_sunday": false,
     "hours_ok": true,
     "counts_ok": true,
     "sunday_not_copied": true,
     "no_daily_on_sunday": true,
     "mostly_high": false
    },
-   "score": "medium"
+   "score": "low"
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 2
  },
  "has_sunday": true,
+ "schedule_dropped": {
+  "other_location": 3,
+  "box_rows_added": 2
+ },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

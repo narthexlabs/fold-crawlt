@@ -87,6 +87,12 @@
    "url": "https://www.saintpaultheapostle.church/live-streaming",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.saintpaultheapostle.church/sacraments",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -512,13 +518,66 @@
    "confidence": "medium",
    "template": "wix",
    "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "07:30",
+   "language": null,
+   "raw": "Adoration following Mass on Tuesdays and Thursdays: 7:30am and 7:00pm",
+   "source_url": "https://www.saintpaultheapostle.church/mass-times-directions",
+   "fetched_at": "2026-11-01T07:27:59+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "kind_parsed": "adoration"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "19:00",
+   "language": null,
+   "raw": "Adoration following Mass on Tuesdays and Thursdays: 7:30am and 7:00pm",
+   "source_url": "https://www.saintpaultheapostle.church/mass-times-directions",
+   "fetched_at": "2026-11-01T07:27:59+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "kind_parsed": "adoration"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "11:00-12:00",
+   "language": null,
+   "raw": "WEEKLY CONFESSION: Saturday at 11:00am-12pm in the Chapel.",
+   "source_url": "https://www.saintpaultheapostle.church/sacraments",
+   "fetched_at": "2026-11-02T04:41:42+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix"
   }
  ],
  "source_url": "https://www.saintpaultheapostle.church/",
  "fetched_at": "2026-11-01T07:28:24+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:42+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wix",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -532,12 +591,13 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 9
+  "trusted_kinds": [],
+  "generic_rows": 10
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 3,
   "skipped_section": 3,
+  "other_location": 1,
   "dated_line": 5
  },
  "groups_dropped": {
@@ -545,8 +605,8 @@
   "unmatched": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

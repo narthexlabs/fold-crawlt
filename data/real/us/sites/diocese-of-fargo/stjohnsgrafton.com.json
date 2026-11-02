@@ -79,6 +79,12 @@
    "url": "https://www.stjohnsgrafton.com/calendar",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://www.stjohnsgrafton.com/liturgy-sacraments",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -195,6 +201,34 @@
    "confidence": "medium",
    "template": "ecatholic+generic_strict",
    "location": "Sacred Heart Church"
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "09:00-09:15",
+   "language": null,
+   "raw": "[St. John’s Church] Reconciliation Times: SUNDAY: 7:10 AM - 7:25 AM Sacred Heart - Oakwood l 9:00 AM - 9:15 AM St. John's - Grafton",
+   "source_url": "https://www.stjohnsgrafton.com/mass-times",
+   "fetched_at": "2026-11-02T04:52:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "16:15-16:45",
+   "language": null,
+   "raw": "[St. John’s Church] Reconciliation Times: SATURDAY: 4:15 PM - 4:45 PM St. John's - Grafton",
+   "source_url": "https://www.stjohnsgrafton.com/mass-times",
+   "fetched_at": "2026-11-02T04:52:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "topup": true
   }
  ],
  "source_url": "https://www.stjohnsgrafton.com/",
@@ -235,6 +269,24 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:53:14+00:00",
+  "requests": 3,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(701) 352-1648",
@@ -245,8 +297,5 @@
   },
   "fetched_at": "2026-11-01T17:21:21+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

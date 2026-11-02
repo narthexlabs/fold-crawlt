@@ -51,6 +51,18 @@
    "url": "https://www.smatt.org/CatholicChurch.php?pg=Contact+Us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.smatt.org/CatholicChurch.php?pg=Penance",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.smatt.org/CatholicChurch.php?pg=Adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -77,6 +89,32 @@
   "source_url": "https://www.smatt.org/CatholicChurch.php"
  },
  "schedule_rows": [
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "14:30-15:30",
+   "language": null,
+   "raw": "Confessions: Every Saturday 2:30pm-3:30pm or during the week with an appointment by calling",
+   "source_url": "https://www.smatt.org/CatholicChurch.php",
+   "fetched_at": "2026-11-01T22:15:28+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "09:00-12:00",
+   "language": null,
+   "raw": "Adoration is on Fridays from 9:00 am - 12:00 pm.",
+   "source_url": "https://www.smatt.org/CatholicChurch.php",
+   "fetched_at": "2026-11-01T22:15:28+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict"
+  },
   {
    "kind": "mass",
    "day": "Monday",
@@ -390,39 +428,26 @@
    "confidence": "high",
    "template": "generic_strict",
    "day_expanded_from": "Weekday"
-  },
-  {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "14:30-15:30",
-   "language": null,
-   "raw": "Confessions: Saturday:: 2:30pm - 3:30pm",
-   "source_url": "https://www.smatt.org/CatholicChurch.php?pg=Mass+Schedule",
-   "fetched_at": "2026-11-01T22:15:30+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
-  {
-   "kind": "adoration",
-   "day": "Friday",
-   "time": "09:00-12:00",
-   "language": null,
-   "raw": "Adoration is on Fridays from 9:00 am - 12:00 pm.",
-   "source_url": "https://www.smatt.org/CatholicChurch.php",
-   "fetched_at": "2026-11-01T22:15:28+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "generic_strict"
   }
  ],
  "source_url": "https://www.smatt.org/CatholicChurch.php",
  "fetched_at": "2026-11-01T22:15:34+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:38+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -436,16 +461,33 @@
   },
   "passed_bar": true,
   "trusted_candidate": true,
+  "trusted_kinds": [
+   "weekend",
+   "weekday",
+   "confession",
+   "adoration"
+  ],
   "generic_rows": 12
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Todos los sábados de 2:30pm a 3:30pm o entre semana con cita previa llamando al",
+   "phrase": "con cita",
+   "source_url": "https://www.smatt.org/CatholicChurch.php",
+   "fetched_at": "2026-11-01T22:15:28+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 1
+  "other_location": 1,
+  "relative_time": 1,
+  "prose": 1
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

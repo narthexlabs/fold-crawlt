@@ -67,6 +67,12 @@
    "url": "https://www.scsjcluster.org/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.scsjcluster.org/sacraments",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -2953,6 +2959,20 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "First and Fourth Saturday of the month",
+   "time": "16:00",
+   "language": null,
+   "raw": "At our parishes, Reconciliation is offered on the 1st and 4th Saturdays of the month at 4:00 pm at the parish hosting Saturday evening Mass, or by appointment.",
+   "source_url": "https://www.scsjcluster.org/sacraments",
+   "fetched_at": "2026-11-02T04:41:40+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "topup": true
   }
  ],
  "source_url": "http://www.scsjcluster.org/",
@@ -2995,5 +3015,29 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "At our parishes, Reconciliation is offered on the 1st and 4th Saturdays of the month at 4:00 pm at the parish hosting Saturday evening Mass, or by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://www.scsjcluster.org/sacraments",
+   "fetched_at": "2026-11-02T04:41:40+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:43+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

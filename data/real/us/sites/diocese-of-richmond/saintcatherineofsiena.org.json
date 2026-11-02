@@ -75,6 +75,12 @@
    "url": "https://saintcatherineofsiena.org/welcome/contact-directions/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://saintcatherineofsiena.org/sacraments/reconciliation/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -337,5 +343,28 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "is offered before Mass or by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://saintcatherineofsiena.org/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:47+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:49+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
  }
 }

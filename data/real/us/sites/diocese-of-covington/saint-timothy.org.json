@@ -79,6 +79,18 @@
    "url": "https://saint-timothy.org/about/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://saint-timothy.org/community-special-events/reconciliation-15/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://saint-timothy.org/worship/adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -1020,6 +1032,20 @@
    "confidence": "medium",
    "template": "wordpress",
    "kind_parsed": "mass"
+  },
+  {
+   "kind": "adoration",
+   "day": "First Friday of the month",
+   "time": "10:30",
+   "language": null,
+   "raw": "Adoration for Vocations: Held in the church from 10:30am on the first Friday of the month until 7:00am on the first Saturday of the month.",
+   "source_url": "https://saint-timothy.org/worship/adoration/",
+   "fetched_at": "2026-11-02T04:48:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "http://www.saint-timothy.org/",
@@ -1063,6 +1089,24 @@
   "liturgy_and_confession_instances_total": 13,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:48:01+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(859) 384-1100",
@@ -1074,8 +1118,5 @@
   },
   "fetched_at": "2026-11-01T04:00:07+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

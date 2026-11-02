@@ -55,6 +55,12 @@
    "url": "https://www.shrineofsainttherese.org/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.shrineofsainttherese.org/reconciliation/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -83,9 +89,9 @@
    "day": "Friday",
    "time": "14:00-15:00",
    "language": null,
-   "raw": "Eucharistic Adoration / Holy Hour: 2:00 – 3:00 pm",
-   "source_url": "https://www.shrineofsainttherese.org/shrine/mass-times/",
-   "fetched_at": "2026-11-01T17:42:35+00:00",
+   "raw": "Eucharistic Adoration: Every Friday, 2:00 - 3:00 pm",
+   "source_url": "https://www.shrineofsainttherese.org/",
+   "fetched_at": "2026-11-01T17:42:33+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -176,6 +182,34 @@
    "day_expanded_from": "Daily"
   },
   {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "12:10",
+   "language": null,
+   "raw": "St. Paul the Apostle Catholic Parish Mass Schedule: 12:10 pm",
+   "source_url": "https://www.shrineofsainttherese.org/shrine/mass-times/",
+   "fetched_at": "2026-11-01T17:42:35+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "19:00",
+   "language": null,
+   "raw": "St. Paul the Apostle Catholic Parish Mass Schedule: 7:00 pm",
+   "source_url": "https://www.shrineofsainttherese.org/shrine/mass-times/",
+   "fetched_at": "2026-11-01T17:42:35+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "kind_parsed": "mass"
+  },
+  {
    "kind": "mass",
    "day": "Sunday",
    "time": "08:30",
@@ -222,9 +256,19 @@
  ],
  "source_url": "https://www.shrineofsainttherese.org/",
  "fetched_at": "2026-11-01T17:42:39+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:52:48+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -238,18 +282,19 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 36
  },
  "has_sunday": true,
  "schedule_dropped": {
   "dated_block": 8,
-  "other_location": 13,
+  "other_location": 11,
   "box_rows_added": 4
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

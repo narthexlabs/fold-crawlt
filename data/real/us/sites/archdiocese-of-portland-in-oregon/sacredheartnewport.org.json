@@ -76,12 +76,6 @@
    "url": "https://sacredheartnewport.org/contact-us",
    "status": 200,
    "class": "ok"
-  },
-  {
-   "category": "adoration",
-   "url": "https://sacredheartnewport.org/adoration",
-   "status": 200,
-   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -285,32 +279,16 @@
    "source": "wayback-2025-04-24",
    "archive_url": "https://web.archive.org/web/20230201023214/https://sacredheartnewport.org/mass-times",
    "capture_date": "2023-02-01"
-  },
-  {
-   "kind": "adoration",
-   "day": "Friday",
-   "time": "09:30-15:00",
-   "language": null,
-   "raw": "Friday: 9:30 AM - 3:00 PM In Chapel following daily mass - Benediction at 2:50",
-   "source_url": "https://sacredheartnewport.org/adoration",
-   "fetched_at": "2026-10-24T11:24:13+00:00",
-   "needs_review": true,
-   "review_reason": "wayback capture 2025-04-24: read by a person before it is shown",
-   "confidence": "high",
-   "template": "ecatholic",
-   "source": "wayback-2025-04-24",
-   "archive_url": "https://web.archive.org/web/20261024112413/https://sacredheartnewport.org/adoration",
-   "capture_date": "2026-10-24"
   }
  ],
  "source_url": "https://sacredheartnewport.org/",
- "fetched_at": "2026-11-02T04:59:56+00:00",
+ "fetched_at": "2026-11-02T04:24:30+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
  },
  "schedule_template": {
   "template": "ecatholic",
-  "version": "ca-sites/3",
+  "version": "ca-sites/2",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -322,14 +300,8 @@
    },
    "score": "high"
   },
-  "passed_bar": true,
-  "trusted_candidate": true,
-  "trusted_kinds": [
-   "weekend",
-   "weekday",
-   "confession",
-   "adoration"
-  ],
+  "passed_bar": false,
+  "trusted_candidate": false,
   "generic_rows": 2
  },
  "has_sunday": true,
@@ -404,22 +376,16 @@
     "original": "https://sacredheartnewport.org/contact-us",
     "capture": "2024-01-22",
     "archive_url": "https://web.archive.org/web/20240122230335/https://sacredheartnewport.org/contact-us"
-   },
-   {
-    "kind": "adoration",
-    "original": "https://sacredheartnewport.org/adoration",
-    "capture": "2026-10-24",
-    "archive_url": "https://web.archive.org/web/20261024112413/https://sacredheartnewport.org/adoration"
    }
   ],
   "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review.",
   "grade": {
    "rule": "wayback-verified-2026-11-01",
    "template": "ecatholic",
-   "trusted_template": true,
+   "trusted_template": false,
    "has_sunday": true,
    "groups": 2,
-   "verified": true,
+   "verified": false,
    "capture_date": "2025-04-24",
    "applied": false
   }

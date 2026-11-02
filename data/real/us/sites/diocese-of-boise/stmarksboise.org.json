@@ -57,6 +57,12 @@
    "url": "https://www.stmarksboise.org/bulletin",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stmarksboise.org/perpetualadoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -315,5 +321,19 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:48:00+00:00",
+  "requests": 1,
+  "found": [
+   "adoration"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
  }
 }

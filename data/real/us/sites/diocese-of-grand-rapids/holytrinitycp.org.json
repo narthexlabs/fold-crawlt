@@ -75,6 +75,12 @@
    "url": "https://holytrinitycp.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://holytrinitycp.org/spiritual-life/eucharistic-adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -418,6 +424,20 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "10:00-20:00",
+   "language": null,
+   "raw": "Eucharistic Adoration is held in the chapel every Tuesday from 10 a.m. to 8 p.m.",
+   "source_url": "https://holytrinitycp.org/spiritual-life/eucharistic-adoration/",
+   "fetched_at": "2026-11-02T04:41:55+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "http://www.holytrinitycp.org/",
@@ -456,5 +476,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:55+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

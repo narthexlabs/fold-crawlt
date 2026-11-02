@@ -69,6 +69,12 @@
    "url": "https://sth-mdc.org/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://sth-mdc.org/sacraments/reconciliation",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -571,6 +577,78 @@
    "confidence": "medium",
    "template": "generic_strict",
    "day_expanded_from": "Weekend"
+  },
+  {
+   "kind": "confession",
+   "day": "First Saturday of the month",
+   "time": "15:00",
+   "language": null,
+   "raw": "Confession: 3:00pm",
+   "source_url": "https://sth-mdc.org/mass-schedule",
+   "fetched_at": "2026-11-02T04:42:09+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "First Saturday of the month",
+   "time": "11:00",
+   "language": null,
+   "raw": "Confession: 11:00am",
+   "source_url": "https://sth-mdc.org/mass-schedule",
+   "fetched_at": "2026-11-02T04:42:09+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "First Saturday of the month",
+   "time": "07:00",
+   "language": null,
+   "raw": "Confession: 7:00am",
+   "source_url": "https://sth-mdc.org/mass-schedule",
+   "fetched_at": "2026-11-02T04:42:09+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Monday",
+   "time": "07:30",
+   "language": null,
+   "raw": "Confession: 7:30am",
+   "source_url": "https://sth-mdc.org/mass-schedule",
+   "fetched_at": "2026-11-02T04:42:09+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday, Tuesday",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Tuesday",
+   "time": "07:30",
+   "language": null,
+   "raw": "Confession: 7:30am",
+   "source_url": "https://sth-mdc.org/mass-schedule",
+   "fetched_at": "2026-11-02T04:42:09+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday, Tuesday",
+   "topup": true
   }
  ],
  "source_url": "http://materdolorosa.net/",
@@ -613,5 +691,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:09+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 5,
+  "mode": "merge"
  }
 }

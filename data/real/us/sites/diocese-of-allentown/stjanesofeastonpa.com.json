@@ -891,6 +891,32 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Saturdays: 3:45 - 4:45 p.m., or by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://www.stjanesofeastonpa.com/about/office-and-mass-schedule",
+   "fetched_at": "2026-11-02T04:43:32+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:32+00:00",
+  "requests": 1,
+  "found": [
+   "liturgy"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(610) 253-3553",
@@ -902,8 +928,5 @@
   },
   "fetched_at": "2026-11-01T03:59:40+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

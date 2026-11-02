@@ -29,32 +29,512 @@
  ],
  "home_url": "https://sacredheartalva.org/",
  "final_url": "https://sacredheartalva.org/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "crawl_status": "wayback-2026-03-31",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
    "url": "https://sacredheartalva.org/",
-   "status": 403,
-   "class": "challenge"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.sacredheartalva.org/mass-confession-times",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://sacredheartalva.org/liturgy-sacraments",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://sacredheartalva.org/faith-formation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.sacredheartalva.org/ministries",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.sacredheartalva.org/campus-ministry",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://www.sacredheartalva.org/bulletins",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.sacredheartalva.org/events",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://sacredheartalva.org/news-events",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://sacredheartalva.org/contact-us-directions",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "sacredheartalva.org:young_adults",
+   "name": "Campus Ministry",
+   "category": "young_adults",
+   "category_label": "Young adults",
+   "subcategory": "young_adult_group",
+   "audience": "young_adult",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://sacredheartalva.org/contact-us-directions",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.sacredheartalva.org/campus-ministry",
+   "source_kind": "website",
+   "fetched_at": "2025-10-14T23:36:04+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-03-31"
+  },
+  {
+   "id": "sacredheartalva.org:altar_society",
+   "name": "Altar Society",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "altar_society_environment",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://sacredheartalva.org/contact-us-directions",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://sacredheartalva.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-03-31T05:16:56+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-03-31"
+  },
+  {
+   "id": "sacredheartalva.org:kofc",
+   "name": "Knights of Columbus",
+   "category": "fraternal_orders",
+   "category_label": "Fraternal & orders",
+   "subcategory": "knights_of_columbus",
+   "audience": "men",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://sacredheartalva.org/contact-us-directions",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://sacredheartalva.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-03-31T05:16:56+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-03-31"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
  "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "bulletin": {
+  "url": "https://files.ecatholic.com/2996/bulletins/20241110.pdf?t=1730474266000",
+  "date": "2024-11-10",
+  "kind": "ecatholic_pdf",
+  "text": "November 10 , 2024",
+  "source_url": "https://www.sacredheartalva.org/bulletins"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Weekend Masses Daily Masses: Saturday: 5:00 pm (Waynoka)",
+   "source_url": "https://www.sacredheartalva.org/mass-confession-times",
+   "fetched_at": "2025-06-14T01:29:59+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-03-31: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-03-31",
+   "archive_url": "https://web.archive.org/web/20250614012959/https://www.sacredheartalva.org/mass-confession-times",
+   "capture_date": "2025-06-14"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday (winter)",
+   "time": "16:00",
+   "language": null,
+   "raw": "Weekend Masses Daily Masses: Saturday: Winter; 4:00 pm (Waynoka)",
+   "source_url": "https://www.sacredheartalva.org/mass-confession-times",
+   "fetched_at": "2025-06-14T01:29:59+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-03-31: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-03-31",
+   "archive_url": "https://web.archive.org/web/20250614012959/https://www.sacredheartalva.org/mass-confession-times",
+   "capture_date": "2025-06-14"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "12:15",
+   "language": null,
+   "raw": "Weekend Masses Daily Masses: Saturday: 12:15 pm (Alva)**",
+   "source_url": "https://www.sacredheartalva.org/mass-confession-times",
+   "fetched_at": "2025-06-14T01:29:59+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-03-31: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-03-31",
+   "archive_url": "https://web.archive.org/web/20250614012959/https://www.sacredheartalva.org/mass-confession-times",
+   "capture_date": "2025-06-14"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Weekend Masses Daily Masses: Sunday: 9:00 am (Alva)",
+   "source_url": "https://www.sacredheartalva.org/mass-confession-times",
+   "fetched_at": "2025-06-14T01:29:59+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-03-31: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-03-31",
+   "archive_url": "https://web.archive.org/web/20250614012959/https://www.sacredheartalva.org/mass-confession-times",
+   "capture_date": "2025-06-14"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "12:15",
+   "language": null,
+   "raw": "Weekend Masses Daily Masses: Sunday: 12:15 pm (Alva)**",
+   "source_url": "https://www.sacredheartalva.org/mass-confession-times",
+   "fetched_at": "2025-06-14T01:29:59+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-03-31: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-03-31",
+   "archive_url": "https://web.archive.org/web/20250614012959/https://www.sacredheartalva.org/mass-confession-times",
+   "capture_date": "2025-06-14"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "11:30",
+   "language": null,
+   "raw": "Weekend Masses Daily Masses:  11:30 am (Cherokee) Thursday - Friday 12:15 pm (Alva)**",
+   "source_url": "https://www.sacredheartalva.org/mass-confession-times",
+   "fetched_at": "2025-06-14T01:29:59+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-03-31: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "day_expanded_from": "Thursday - Friday",
+   "source": "wayback-2026-03-31",
+   "archive_url": "https://web.archive.org/web/20250614012959/https://www.sacredheartalva.org/mass-confession-times",
+   "capture_date": "2025-06-14"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "11:30",
+   "language": null,
+   "raw": "Weekend Masses Daily Masses:  11:30 am (Cherokee) Thursday - Friday 12:15 pm (Alva)**",
+   "source_url": "https://www.sacredheartalva.org/mass-confession-times",
+   "fetched_at": "2025-06-14T01:29:59+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-03-31: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "day_expanded_from": "Thursday - Friday",
+   "source": "wayback-2026-03-31",
+   "archive_url": "https://web.archive.org/web/20250614012959/https://www.sacredheartalva.org/mass-confession-times",
+   "capture_date": "2025-06-14"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "12:15",
+   "language": null,
+   "raw": "Weekend Masses Daily Masses:  11:30 am (Cherokee) Thursday - Friday 12:15 pm (Alva)**",
+   "source_url": "https://www.sacredheartalva.org/mass-confession-times",
+   "fetched_at": "2025-06-14T01:29:59+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-03-31: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "day_expanded_from": "Thursday - Friday",
+   "source": "wayback-2026-03-31",
+   "archive_url": "https://web.archive.org/web/20250614012959/https://www.sacredheartalva.org/mass-confession-times",
+   "capture_date": "2025-06-14"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "12:15",
+   "language": null,
+   "raw": "Weekend Masses Daily Masses:  11:30 am (Cherokee) Thursday - Friday 12:15 pm (Alva)**",
+   "source_url": "https://www.sacredheartalva.org/mass-confession-times",
+   "fetched_at": "2025-06-14T01:29:59+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-03-31: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "day_expanded_from": "Thursday - Friday",
+   "source": "wayback-2026-03-31",
+   "archive_url": "https://web.archive.org/web/20250614012959/https://www.sacredheartalva.org/mass-confession-times",
+   "capture_date": "2025-06-14"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "16:30",
+   "language": null,
+   "raw": "Confession Times Holy Day Masses : Saturday: 4:30 pm - 4:55 (Waynoka)",
+   "source_url": "https://www.sacredheartalva.org/mass-confession-times",
+   "fetched_at": "2025-06-14T01:29:59+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-03-31: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "kind_parsed": "confession",
+   "source": "wayback-2026-03-31",
+   "archive_url": "https://web.archive.org/web/20250614012959/https://www.sacredheartalva.org/mass-confession-times",
+   "capture_date": "2025-06-14"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "15:30",
+   "language": null,
+   "raw": "Confession Times Holy Day Masses : Saturday: Winter; 3.30 pm - 3:55 (Waynoka)",
+   "source_url": "https://www.sacredheartalva.org/mass-confession-times",
+   "fetched_at": "2025-06-14T01:29:59+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-03-31: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "kind_parsed": "confession",
+   "source": "wayback-2026-03-31",
+   "archive_url": "https://web.archive.org/web/20250614012959/https://www.sacredheartalva.org/mass-confession-times",
+   "capture_date": "2025-06-14"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "18:30",
+   "language": null,
+   "raw": "Confession Times Holy Day Masses : Saturday: 6:30 pm (Cherokee)",
+   "source_url": "https://www.sacredheartalva.org/mass-confession-times",
+   "fetched_at": "2025-06-14T01:29:59+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-03-31: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "kind_parsed": "confession",
+   "source": "wayback-2026-03-31",
+   "archive_url": "https://web.archive.org/web/20250614012959/https://www.sacredheartalva.org/mass-confession-times",
+   "capture_date": "2025-06-14"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "08:15",
+   "language": null,
+   "raw": "Confession Times Holy Day Masses : Sunday: 8:15 am - 8:50 (Alva)",
+   "source_url": "https://www.sacredheartalva.org/mass-confession-times",
+   "fetched_at": "2025-06-14T01:29:59+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-03-31: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "kind_parsed": "confession",
+   "source": "wayback-2026-03-31",
+   "archive_url": "https://web.archive.org/web/20250614012959/https://www.sacredheartalva.org/mass-confession-times",
+   "capture_date": "2025-06-14"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "12:00",
+   "language": null,
+   "raw": "Confession Times Holy Day Masses : Sunday: 12:00 pm (Waynoka)",
+   "source_url": "https://www.sacredheartalva.org/mass-confession-times",
+   "fetched_at": "2025-06-14T01:29:59+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-03-31: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "kind_parsed": "confession",
+   "source": "wayback-2026-03-31",
+   "archive_url": "https://web.archive.org/web/20250614012959/https://www.sacredheartalva.org/mass-confession-times",
+   "capture_date": "2025-06-14"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "11:15",
+   "language": null,
+   "raw": "Confession Times Holy Day Masses :  11:15 am (Cherokee)  6:30 pm (Alva)",
+   "source_url": "https://www.sacredheartalva.org/mass-confession-times",
+   "fetched_at": "2025-06-14T01:29:59+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-03-31: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "kind_parsed": "confession",
+   "source": "wayback-2026-03-31",
+   "archive_url": "https://web.archive.org/web/20250614012959/https://www.sacredheartalva.org/mass-confession-times",
+   "capture_date": "2025-06-14"
+  }
+ ],
  "source_url": "https://sacredheartalva.org/",
- "fetched_at": "2026-11-01T07:19:42+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-02T04:44:28+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 6
+ },
+ "has_sunday": true,
+ "groups_dropped": {},
+ "office_contact": {
+  "email": null,
+  "phone": "(580) 327-0339",
+  "address": "627 12th Street, Alva, OK 73717",
+  "source_url": "https://sacredheartalva.org/contact-us-directions",
+  "sources": {
+   "phone": "https://sacredheartalva.org/contact-us-directions",
+   "address": "https://sacredheartalva.org/contact-us-directions"
+  },
+  "fetched_at": "2026-03-31T05:17:25+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2026-03-31",
+  "capture_age_days": 216,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://sacredheartalva.org/",
+    "capture": "2026-03-31",
+    "archive_url": "https://web.archive.org/web/20260331051656/https://sacredheartalva.org/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://www.sacredheartalva.org/mass-confession-times",
+    "capture": "2025-06-14",
+    "archive_url": "https://web.archive.org/web/20250614012959/https://www.sacredheartalva.org/mass-confession-times"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://sacredheartalva.org/liturgy-sacraments",
+    "capture": "2025-05-24",
+    "archive_url": "https://web.archive.org/web/20250524133302/https://sacredheartalva.org/liturgy-sacraments"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://sacredheartalva.org/faith-formation",
+    "capture": "2025-03-19",
+    "archive_url": "https://web.archive.org/web/20250319150048/https://sacredheartalva.org/faith-formation"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://www.sacredheartalva.org/ministries",
+    "capture": "2025-05-14",
+    "archive_url": "https://web.archive.org/web/20250514054005/https://www.sacredheartalva.org/ministries"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://www.sacredheartalva.org/campus-ministry",
+    "capture": "2025-10-14",
+    "archive_url": "https://web.archive.org/web/20251014233604/https://www.sacredheartalva.org/campus-ministry"
+   },
+   {
+    "kind": "bulletin",
+    "original": "https://www.sacredheartalva.org/bulletins",
+    "capture": "2024-11-06",
+    "archive_url": "https://web.archive.org/web/20241106083941/https://www.sacredheartalva.org/bulletins"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://www.sacredheartalva.org/events",
+    "capture": "2025-04-29",
+    "archive_url": "https://web.archive.org/web/20250429001605/https://www.sacredheartalva.org/events"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://sacredheartalva.org/news-events",
+    "capture": "2026-03-31",
+    "archive_url": "https://web.archive.org/web/20260331051725/https://sacredheartalva.org/news-events"
+   },
+   {
+    "kind": "contact",
+    "original": "https://sacredheartalva.org/contact-us-directions",
+    "capture": "2026-03-31",
+    "archive_url": "https://web.archive.org/web/20260331051725/https://sacredheartalva.org/contact-us-directions"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review.",
+  "grade": {
+   "rule": "wayback-verified-2026-11-01",
+   "template": "ecatholic",
+   "trusted_template": false,
+   "has_sunday": true,
+   "groups": 3,
+   "verified": false,
+   "capture_date": "2026-03-31",
+   "applied": false
+  }
  }
 }

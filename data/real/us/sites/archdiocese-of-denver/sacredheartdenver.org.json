@@ -61,6 +61,12 @@
    "url": "https://www.sacredheartdenver.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.sacredheartdenver.org/sacraments/reconciliation",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -338,6 +344,66 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wix"
+  },
+  {
+   "kind": "confession",
+   "day": "Friday",
+   "time": "09:00-13:00",
+   "language": null,
+   "raw": "Sacred Heart's Confession Schedule: 9:00 AM to 1:00 PM",
+   "source_url": "https://www.sacredheartdenver.org/sacraments/reconciliation",
+   "fetched_at": "2026-11-02T04:41:58+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "First Friday of the month",
+   "time": "18:30",
+   "language": "Spanish",
+   "raw": "Sacred Heart's Confession Schedule: After 6:30 PM Spanish mass",
+   "source_url": "https://www.sacredheartdenver.org/sacraments/reconciliation",
+   "fetched_at": "2026-11-02T04:41:58+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wix",
+   "relative": "after",
+   "note": "Sacred Heart's Confession Schedule: After 6:30 PM Spanish mass",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "First Friday of the month",
+   "time": "20:21",
+   "language": null,
+   "raw": "Sacred Heart's Confession Schedule: 1 JOHN 20:21-23",
+   "source_url": "https://www.sacredheartdenver.org/sacraments/reconciliation",
+   "fetched_at": "2026-11-02T04:41:58+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "First Friday of the month",
+   "time": "18:30",
+   "language": null,
+   "raw": "Adoration after 6:30 PM Mass",
+   "source_url": "https://www.sacredheartdenver.org/mass-times",
+   "fetched_at": "2026-11-02T04:42:01+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wix",
+   "relative": "after",
+   "note": "Adoration after 6:30 PM Mass",
+   "topup": true
   }
  ],
  "source_url": "https://sacredheartdenver.org/",
@@ -375,6 +441,28 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "social_shared_links_removed": [
+  "https://www.facebook.com/WixStudio",
+  "https://x.com/WixStudio"
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:02+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 4,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(303) 294-9830",
@@ -386,12 +474,5 @@
   },
   "fetched_at": "2026-11-01T05:11:22+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
- },
- "social_shared_links_removed": [
-  "https://www.facebook.com/WixStudio",
-  "https://x.com/WixStudio"
- ]
+ }
 }

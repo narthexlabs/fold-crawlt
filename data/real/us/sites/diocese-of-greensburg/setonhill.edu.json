@@ -69,6 +69,12 @@
    "url": "https://www.setonhill.edu/contact-us.html",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.setonhill.edu/student-life/catholic-identity/saint-joseph-chapel.html",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -965,41 +971,33 @@
    "day": "Sunday",
    "time": "19:00",
    "language": null,
-   "raw": "Mass Schedule for Saint Joseph Chapel: Sunday - 7:00 p.m.",
+   "raw": "Sunday - 7:00 p.m.",
    "source_url": "https://www.setonhill.edu/student-life/catholic-identity/campus-ministry.html",
    "fetched_at": "2026-11-02T00:05:48+00:00",
    "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
+   "review_reason": "schedule_box"
   },
   {
    "kind": "mass",
    "day": "Monday",
    "time": "12:00",
    "language": null,
-   "raw": "Mass Schedule for Saint Joseph Chapel: Monday & Wednesday - 12:00 p.m.",
+   "raw": "Monday & Wednesday - 12:00 p.m.",
    "source_url": "https://www.setonhill.edu/student-life/catholic-identity/campus-ministry.html",
    "fetched_at": "2026-11-02T00:05:48+00:00",
    "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict",
-   "day_expanded_from": "Monday & Wednesday"
+   "review_reason": "schedule_box"
   },
   {
    "kind": "mass",
    "day": "Wednesday",
    "time": "12:00",
    "language": null,
-   "raw": "Mass Schedule for Saint Joseph Chapel: Monday & Wednesday - 12:00 p.m.",
+   "raw": "Monday & Wednesday - 12:00 p.m.",
    "source_url": "https://www.setonhill.edu/student-life/catholic-identity/campus-ministry.html",
    "fetched_at": "2026-11-02T00:05:48+00:00",
    "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict",
-   "day_expanded_from": "Monday & Wednesday",
+   "review_reason": "schedule_box",
    "day_parsed": "Monday",
    "day_bound_from_line": true
   },
@@ -1008,38 +1006,50 @@
    "day": "Tuesday",
    "time": "20:30",
    "language": null,
-   "raw": "Mass Schedule for Saint Joseph Chapel: Tuesday - 8:30 p.m.",
+   "raw": "Tuesday - 8:30 p.m.",
    "source_url": "https://www.setonhill.edu/student-life/catholic-identity/campus-ministry.html",
    "fetched_at": "2026-11-02T00:05:48+00:00",
    "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
+   "review_reason": "schedule_box"
   }
  ],
  "source_url": "https://www.setonhill.edu/about/our-catholic-identity/campus-ministry/",
  "fetched_at": "2026-11-02T00:05:55+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:21+00:00",
+  "requests": 1,
+  "found": [
+   "adoration"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
-    "has_sunday": true,
+    "has_sunday": false,
     "hours_ok": true,
     "counts_ok": true,
     "sunday_not_copied": true,
     "no_daily_on_sunday": true,
     "mostly_high": false
    },
-   "score": "medium"
+   "score": "low"
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 3
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "prose": 1
+  "other_location": 4,
+  "box_rows_added": 4
  },
  "groups_dropped": {
   "unmatched": 9,

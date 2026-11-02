@@ -63,6 +63,12 @@
    "url": "https://wethersfieldcatholic.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://wethersfieldcatholic.org/reconciliation/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -461,6 +467,20 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Monday (lent)",
+   "time": "17:30",
+   "language": null,
+   "raw": "About Reconciliation: Mondays during Lent: 5:30 PM at Corpus Christi Church",
+   "source_url": "https://wethersfieldcatholic.org/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:48+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "http://www.thechurchoftheincarnation.com/",
@@ -504,5 +524,28 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Saturday 2:30 PM at Corpus Christi Church, or by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://wethersfieldcatholic.org/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:48+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:51+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

@@ -75,6 +75,18 @@
    "url": "https://www.sjb-brusly.com/contact-us.html",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.sjb-brusly.com/reconciliation.html",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://www.sjb-brusly.com/worship.html",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -168,7 +180,36 @@
   "text": "Click her for instructions.",
   "source_url": "https://www.sjb-brusly.com/"
  },
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:30-16:15",
+   "language": null,
+   "raw": "The Sacrament of Reconciliation is celebrated at: Saturday 3:30—4:15 PM",
+   "source_url": "https://www.sjb-brusly.com/reconciliation.html",
+   "fetched_at": "2026-11-02T04:41:52+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Friday",
+   "time": "07:40-07:50",
+   "language": null,
+   "raw": "The Sacrament of Reconciliation is celebrated at: Monday, Wednesday, Thursday, and Friday 7:40 - 7:50 AM",
+   "source_url": "https://www.sjb-brusly.com/reconciliation.html",
+   "fetched_at": "2026-11-02T04:41:52+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly",
+   "topup": true
+  }
+ ],
  "source_url": "http://www.sjb-brusly.com/",
  "fetched_at": "2026-11-01T03:04:43+00:00",
  "schedule_template": {
@@ -205,5 +246,29 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Other times available by appointment only.",
+   "phrase": "by appointment",
+   "source_url": "https://www.sjb-brusly.com/reconciliation.html",
+   "fetched_at": "2026-11-02T04:41:52+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:53+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
  }
 }

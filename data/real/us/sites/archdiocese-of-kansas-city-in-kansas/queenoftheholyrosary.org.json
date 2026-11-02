@@ -78,6 +78,12 @@
    "url": "https://www.queenoftheholyrosary.org/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.queenoftheholyrosary.org/adoration",
+   "status": null,
+   "class": "ssl_error"
   }
  ],
  "cms_guess": {
@@ -243,28 +249,129 @@
  "schedule_rows": [
   {
    "kind": "mass",
-   "day": "First Saturday of the month",
+   "day": "Tuesday",
    "time": "08:15",
    "language": null,
-   "raw": "1st Saturday Mass, 8:15 a.m.",
-   "source_url": "https://www.queenoftheholyrosary.org/mass-prayer",
-   "fetched_at": "2026-11-01T17:28:13+00:00",
+   "raw": "Weekday Masses: Tuesday–Friday | 8:15am",
+   "source_url": "https://www.queenoftheholyrosary.org/",
+   "fetched_at": "2026-11-01T17:28:12+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "high",
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Tuesday–Friday"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "08:15",
+   "language": null,
+   "raw": "Weekday Masses: Tuesday–Friday | 8:15am",
+   "source_url": "https://www.queenoftheholyrosary.org/",
+   "fetched_at": "2026-11-01T17:28:12+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Tuesday–Friday",
+   "day_parsed": "Tuesday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "08:15",
+   "language": null,
+   "raw": "Weekday Masses: Tuesday–Friday | 8:15am",
+   "source_url": "https://www.queenoftheholyrosary.org/",
+   "fetched_at": "2026-11-01T17:28:12+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Tuesday–Friday",
+   "day_parsed": "Tuesday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "08:15",
+   "language": null,
+   "raw": "Weekday Masses: Tuesday–Friday | 8:15am",
+   "source_url": "https://www.queenoftheholyrosary.org/",
+   "fetched_at": "2026-11-01T17:28:12+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Tuesday–Friday",
+   "day_parsed": "Tuesday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "08:15",
+   "language": null,
+   "raw": "Saturday | 8:15am (1st Saturday Mass, 2nd-4th Saturdays Communion Service)",
+   "source_url": "https://www.queenoftheholyrosary.org/",
+   "fetched_at": "2026-11-01T17:28:12+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
    "template": "generic_strict"
   },
   {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "14:30-15:15",
+   "kind": "mass",
+   "day": "Fourth Saturday of the month",
+   "time": "16:00",
    "language": null,
-   "raw": "The Sacrament of Confession is offered every Saturday 2:30-3:15 p.m.",
-   "source_url": "https://www.queenoftheholyrosary.org/sacraments",
-   "fetched_at": "2026-11-01T17:28:14+00:00",
+   "raw": "Weekend Masses: | 4:00pm*",
+   "source_url": "https://www.queenoftheholyrosary.org/",
+   "fetched_at": "2026-11-01T17:28:12+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "high",
+   "confidence": "low",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "07:00",
+   "language": null,
+   "raw": "Weekend Masses: Sunday | 7:00am, 9:00am, 11:00am",
+   "source_url": "https://www.queenoftheholyrosary.org/",
+   "fetched_at": "2026-11-01T17:28:12+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Weekend Masses: Sunday | 7:00am, 9:00am, 11:00am",
+   "source_url": "https://www.queenoftheholyrosary.org/",
+   "fetched_at": "2026-11-01T17:28:12+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:00",
+   "language": null,
+   "raw": "Weekend Masses: Sunday | 7:00am, 9:00am, 11:00am",
+   "source_url": "https://www.queenoftheholyrosary.org/",
+   "fetched_at": "2026-11-01T17:28:12+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
    "template": "generic_strict"
   },
   {
@@ -282,93 +389,87 @@
    "kind_parsed": "mass"
   },
   {
-   "kind": "mass",
+   "kind": "confession",
    "day": "Saturday",
-   "time": "08:15",
+   "time": "14:30-15:15",
    "language": null,
-   "raw": "Saturday | 8:15am (1st Saturday Mass, 2nd-4th Saturdays Communion Service)",
+   "raw": "Confession: Saturday | 2:30pm–3:15pm",
    "source_url": "https://www.queenoftheholyrosary.org/",
    "fetched_at": "2026-11-01T17:28:12+00:00",
    "needs_review": false,
-   "review_reason": "schedule_box"
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
   },
   {
    "kind": "mass",
    "day": "Saturday",
    "time": "16:00",
    "language": null,
-   "raw": "| 4:00pm*",
-   "source_url": "https://www.queenoftheholyrosary.org/",
-   "fetched_at": "2026-11-01T17:28:12+00:00",
+   "raw": "Please join us in praying the Rosary before Mass. The Rosary: Saturday, 4:00 p.m.",
+   "source_url": "https://www.queenoftheholyrosary.org/mass-prayer",
+   "fetched_at": "2026-11-01T17:28:13+00:00",
    "needs_review": false,
-   "review_reason": "schedule_box"
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
   },
   {
    "kind": "mass",
-   "day": "Sunday",
-   "time": "07:00",
+   "day": "First Saturday of the month",
+   "time": "08:15",
    "language": null,
-   "raw": "Sunday | 7:00am, 9:00am, 11:00am",
-   "source_url": "https://www.queenoftheholyrosary.org/",
-   "fetched_at": "2026-11-01T17:28:12+00:00",
+   "raw": "1st Saturday Mass, 8:15 a.m.",
+   "source_url": "https://www.queenoftheholyrosary.org/mass-prayer",
+   "fetched_at": "2026-11-01T17:28:13+00:00",
    "needs_review": false,
-   "review_reason": "schedule_box"
-  },
-  {
-   "kind": "mass",
-   "day": "Sunday",
-   "time": "09:00",
-   "language": null,
-   "raw": "Sunday | 7:00am, 9:00am, 11:00am",
-   "source_url": "https://www.queenoftheholyrosary.org/",
-   "fetched_at": "2026-11-01T17:28:12+00:00",
-   "needs_review": false,
-   "review_reason": "schedule_box"
-  },
-  {
-   "kind": "mass",
-   "day": "Sunday",
-   "time": "11:00",
-   "language": null,
-   "raw": "Sunday | 7:00am, 9:00am, 11:00am",
-   "source_url": "https://www.queenoftheholyrosary.org/",
-   "fetched_at": "2026-11-01T17:28:12+00:00",
-   "needs_review": false,
-   "review_reason": "schedule_box"
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict"
   }
  ],
  "source_url": "https://www.queenoftheholyrosary.org/",
  "fetched_at": "2026-11-01T17:28:20+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:46+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
-    "has_sunday": false,
+    "has_sunday": true,
     "hours_ok": true,
     "counts_ok": true,
     "sunday_not_copied": true,
     "no_daily_on_sunday": true,
-    "mostly_high": true
+    "mostly_high": false
    },
-   "score": "low"
+   "score": "medium"
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 11
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "not_a_service": 7,
-  "relative_time": 1,
-  "box_rows_added": 5
+  "not_a_service": 3,
+  "relative_time": 1
  },
  "groups_dropped": {
   "noise": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

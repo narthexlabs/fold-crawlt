@@ -185,6 +185,34 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": "English",
+   "raw": "* Rosary 30 minutes before each Sunday Mass*: Every Sunday at 10:00 a.m. (English) in Main Sanctuary",
+   "source_url": "https://stbernadettecc.org/mass-schedule/",
+   "fetched_at": "2026-11-02T04:42:05+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "12:30",
+   "language": "Spanish",
+   "raw": "* Rosary 30 minutes before each Sunday Mass*: Every Sunday at 12:30 p.m. (Spanish) in Main Sanctuary",
+   "source_url": "https://stbernadettecc.org/mass-schedule/",
+   "fetched_at": "2026-11-02T04:42:05+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "https://www.stbernadettecc.org/",
@@ -224,5 +252,35 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "* Rosary 30 minutes before each Sunday Mass*",
+   "phrase": "30 minutes before each Sunday Mass",
+   "source_url": "https://stbernadettecc.org/mass-schedule/",
+   "fetched_at": "2026-11-02T04:42:05+00:00"
+  },
+  {
+   "kind": "confession",
+   "text": "Or by appointment – or",
+   "phrase": "by appointment",
+   "source_url": "https://stbernadettecc.org/mass-schedule/",
+   "fetched_at": "2026-11-02T04:42:05+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:07+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
  }
 }

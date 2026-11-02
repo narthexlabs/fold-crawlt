@@ -81,6 +81,12 @@
    "url": "https://stjosephrockdale.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stjosephrockdale.org/sacraments/reconciliation/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -494,8 +500,29 @@
   "excluded_by_reason": {}
  },
  "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()",
-  "names_withheld": 0,
-  "contacts_removed": 1
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "He will also hear confessions by appointment if necessary.",
+   "phrase": "by appointment",
+   "source_url": "https://stjosephrockdale.org/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:35+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:36+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
  }
 }

@@ -49,6 +49,12 @@
    "url": "https://www.moultoncatholics.org/contact-us.html",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.moultoncatholics.org/sisters-assigned-to-resurrection-chapel.html",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -118,6 +124,23 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:08+00:00",
+  "requests": 1,
+  "found": [
+   "adoration"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(256) 476-0134",
@@ -129,8 +152,5 @@
   },
   "fetched_at": "2026-11-01T09:04:59+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

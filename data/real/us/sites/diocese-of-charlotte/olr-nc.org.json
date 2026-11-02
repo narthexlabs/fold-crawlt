@@ -75,6 +75,12 @@
    "url": "https://olr-nc.org/calendar/our-lady-of-the-rosary-calendar/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://olr-nc.org/adoration-of-the-blessed-sacrament/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -398,6 +404,50 @@
    "confidence": "high",
    "template": "wordpress",
    "day_expanded_from": "Tuesday and Thursday"
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "11:00-12:00",
+   "language": null,
+   "raw": "At Our Lady of the Rosary, Eucharistic Adoration is held every Friday from 11:00 am – 12:00 pm and on Tuesday and Thursday evenings from 5:00 – 7:00 pm.",
+   "source_url": "https://olr-nc.org/adoration-of-the-blessed-sacrament/",
+   "fetched_at": "2026-11-02T04:41:40+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "17:00-19:00",
+   "language": null,
+   "raw": "At Our Lady of the Rosary, Eucharistic Adoration is held every Friday from 11:00 am – 12:00 pm and on Tuesday and Thursday evenings from 5:00 – 7:00 pm.",
+   "source_url": "https://olr-nc.org/adoration-of-the-blessed-sacrament/",
+   "fetched_at": "2026-11-02T04:41:40+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "Tuesday and Thursday",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "17:00-19:00",
+   "language": null,
+   "raw": "At Our Lady of the Rosary, Eucharistic Adoration is held every Friday from 11:00 am – 12:00 pm and on Tuesday and Thursday evenings from 5:00 – 7:00 pm.",
+   "source_url": "https://olr-nc.org/adoration-of-the-blessed-sacrament/",
+   "fetched_at": "2026-11-02T04:41:40+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "Tuesday and Thursday",
+   "topup": true
   }
  ],
  "source_url": "http://www.olr-nc.org/",
@@ -433,6 +483,25 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:42+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 3,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(336) 248-2463",
@@ -443,8 +512,5 @@
   },
   "fetched_at": "2026-11-01T03:59:01+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

@@ -25,6 +25,18 @@
    "url": "https://mogchurch.com/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://mogchurch.com/resources/confession/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://mogchurch.com/resources/liturgy-schedule-for-the-week/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -72,5 +84,29 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "The Sacrament of Reconciliation is available before or after Divine Liturgy and also upon request. If priest is not in the confessional, please try to find him and notify that you want to go to confes",
+   "phrase": "upon request",
+   "source_url": "https://mogchurch.com/resources/confession/",
+   "fetched_at": "2026-11-02T04:42:10+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:12+00:00",
+  "requests": 3,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
  }
 }

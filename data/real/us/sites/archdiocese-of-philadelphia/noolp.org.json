@@ -72,6 +72,18 @@
    "url": "https://www.noolp.org/about-us/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.noolp.org/parish-information/mass-sacraments/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.noolp.org/adoration",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -401,7 +413,7 @@
    "note": "The Events Calendar (WordPress) REST API",
    "last_fetch": {
     "status": 200,
-    "fetched_at": "2026-11-02T01:57:55+00:00",
+    "fetched_at": "2026-11-02T04:58:00+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -436,6 +448,76 @@
   "source_url": "https://www.noolp.org/parish-information/church-bulletins/"
  },
  "schedule_rows": [
+  {
+   "kind": "devotion",
+   "day": "Monday",
+   "time": "16:00",
+   "language": null,
+   "raw": "Click HERE to join the Rosary at 4:00pm, Monday-Friday.",
+   "source_url": "https://www.noolp.org/",
+   "fetched_at": "2026-11-01T20:25:03+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "Monday-Friday."
+  },
+  {
+   "kind": "devotion",
+   "day": "Tuesday",
+   "time": "16:00",
+   "language": null,
+   "raw": "Click HERE to join the Rosary at 4:00pm, Monday-Friday.",
+   "source_url": "https://www.noolp.org/",
+   "fetched_at": "2026-11-01T20:25:03+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "Monday-Friday."
+  },
+  {
+   "kind": "devotion",
+   "day": "Wednesday",
+   "time": "16:00",
+   "language": null,
+   "raw": "Click HERE to join the Rosary at 4:00pm, Monday-Friday.",
+   "source_url": "https://www.noolp.org/",
+   "fetched_at": "2026-11-01T20:25:03+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "Monday-Friday."
+  },
+  {
+   "kind": "devotion",
+   "day": "Thursday",
+   "time": "16:00",
+   "language": null,
+   "raw": "Click HERE to join the Rosary at 4:00pm, Monday-Friday.",
+   "source_url": "https://www.noolp.org/",
+   "fetched_at": "2026-11-01T20:25:03+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "Monday-Friday."
+  },
+  {
+   "kind": "devotion",
+   "day": "Friday",
+   "time": "16:00",
+   "language": null,
+   "raw": "Click HERE to join the Rosary at 4:00pm, Monday-Friday.",
+   "source_url": "https://www.noolp.org/",
+   "fetched_at": "2026-11-01T20:25:03+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "Monday-Friday."
+  },
   {
    "kind": "mass",
    "day": "Monday",
@@ -607,13 +689,39 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "First Friday of the month (winter, oct-jun)",
+   "time": "09:00",
+   "language": null,
+   "raw": "Mass & Sacraments: First Friday: 9:00 A.M. (October thru June)",
+   "source_url": "https://www.noolp.org/parish-information/mass-sacraments/",
+   "fetched_at": "2026-11-02T04:43:06+00:00",
+   "needs_review": true,
+   "review_reason": "seasonal",
+   "confidence": "medium",
+   "template": "wordpress",
+   "season": "October thru June"
   }
  ],
  "source_url": "https://www.noolp.org/",
  "fetched_at": "2026-11-01T20:26:23+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:15+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -627,11 +735,11 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 13
+  "trusted_kinds": [],
+  "generic_rows": 15
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "not_a_service": 1,
   "dated_line": 2,
   "other_location": 1
  },

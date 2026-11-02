@@ -69,6 +69,12 @@
    "url": "https://www.oloacm.org/contactenos",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.oloacm.org/confesion",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -253,6 +259,66 @@
    "review_reason": null,
    "confidence": "low",
    "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Tuesday",
+   "time": "18:00-19:00",
+   "language": null,
+   "raw": "Confesión: Martes a Viernes: 6:00 - 7:00 PM",
+   "source_url": "https://www.oloacm.org/confesion",
+   "fetched_at": "2026-11-02T04:41:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Martes a Viernes",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Wednesday",
+   "time": "18:00-19:00",
+   "language": null,
+   "raw": "Confesión: Martes a Viernes: 6:00 - 7:00 PM",
+   "source_url": "https://www.oloacm.org/confesion",
+   "fetched_at": "2026-11-02T04:41:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Martes a Viernes",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Thursday",
+   "time": "18:00-19:00",
+   "language": null,
+   "raw": "Confesión: Martes a Viernes: 6:00 - 7:00 PM",
+   "source_url": "https://www.oloacm.org/confesion",
+   "fetched_at": "2026-11-02T04:41:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Martes a Viernes",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Friday",
+   "time": "18:00-19:00",
+   "language": null,
+   "raw": "Confesión: Martes a Viernes: 6:00 - 7:00 PM",
+   "source_url": "https://www.oloacm.org/confesion",
+   "fetched_at": "2026-11-02T04:41:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Martes a Viernes",
+   "topup": true
   }
  ],
  "source_url": "https://www.oloacm.org/",
@@ -292,5 +358,19 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:54+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ],
+  "rows_added": 4,
+  "mode": "merge"
  }
 }

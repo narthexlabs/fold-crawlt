@@ -196,7 +196,7 @@
    "note": "Google Calendar public feed (website-builder widget)",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:33:17+00:00",
+    "fetched_at": "2026-11-02T04:52:17+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -329,6 +329,48 @@
    "day_bound_from_line": true
   },
   {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "18:30",
+   "language": null,
+   "raw": "6:30 p.m. (vigil evening prior),",
+   "source_url": "https://www.holyfamilyjasper.com/",
+   "fetched_at": "2026-11-01T22:15:23+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "06:00",
+   "language": null,
+   "raw": "Mass Times: 6:00 a.m., 8:00 a.m., 6:30 p.m. (feast day)",
+   "source_url": "https://www.holyfamilyjasper.com/",
+   "fetched_at": "2026-11-01T22:15:23+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "08:00",
+   "language": null,
+   "raw": "Mass Times: 6:00 a.m., 8:00 a.m., 6:30 p.m. (feast day)",
+   "source_url": "https://www.holyfamilyjasper.com/",
+   "fetched_at": "2026-11-01T22:15:23+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "kind_parsed": "mass"
+  },
+  {
    "kind": "adoration",
    "day": "Tuesday",
    "time": "07:00-18:15",
@@ -383,9 +425,19 @@
  ],
  "source_url": "https://www.holyfamilyjasper.com/",
  "fetched_at": "2026-11-01T22:15:31+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:56+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -399,19 +451,28 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 23
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Saturdays from 4:00-4:45 p.m., Sundays from 8:00-8:15 a.m., and any time by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://www.holyfamilyjasper.com/sacramentsd1848db7",
+   "fetched_at": "2026-11-01T22:15:24+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 4,
   "skipped_section": 3
  },
  "groups_dropped": {
   "label_not_group": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

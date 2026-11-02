@@ -73,6 +73,12 @@
    "url": "https://resurrectionadw.org/contact-information/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://resurrectionadw.org/adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -786,6 +792,33 @@
    "names_person_shared_screen": 1
   }
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "By appointment, please call",
+   "phrase": "By appointment",
+   "source_url": "https://resurrectionadw.org/mass-and-reconciliation/",
+   "fetched_at": "2026-11-02T04:41:35+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:37+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(301) 236-5200",
@@ -796,8 +829,5 @@
   },
   "fetched_at": "2026-11-01T03:58:40+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

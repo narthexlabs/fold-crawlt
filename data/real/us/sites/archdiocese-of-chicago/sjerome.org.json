@@ -54,6 +54,12 @@
    "url": "https://www.sjerome.org/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.sjerome.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -86,16 +92,86 @@
  },
  "schedule_rows": [
   {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "16:00-16:45",
-   "language": null,
-   "raw": "Reconciliation | Reconciliación: Saturdays from 4PM – 4:45PM in the church.",
-   "source_url": "https://www.sjerome.org/sacraments-sacramentos/reconciliation-reconciliacion/",
-   "fetched_at": "2026-11-01T07:28:02+00:00",
+   "kind": "devotion",
+   "day": "Monday",
+   "time": "17:30",
+   "language": "Spanish",
+   "raw": "5:30PM – Rosary & Devotions Spanish (Monday to Friday)",
+   "source_url": "https://www.sjerome.org/",
+   "fetched_at": "2026-11-01T07:27:54+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "medium",
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "Monday to Friday"
+  },
+  {
+   "kind": "devotion",
+   "day": "Tuesday",
+   "time": "17:30",
+   "language": "Spanish",
+   "raw": "5:30PM – Rosary & Devotions Spanish (Monday to Friday)",
+   "source_url": "https://www.sjerome.org/",
+   "fetched_at": "2026-11-01T07:27:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "Monday to Friday"
+  },
+  {
+   "kind": "devotion",
+   "day": "Wednesday",
+   "time": "17:30",
+   "language": "Spanish",
+   "raw": "5:30PM – Rosary & Devotions Spanish (Monday to Friday)",
+   "source_url": "https://www.sjerome.org/",
+   "fetched_at": "2026-11-01T07:27:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "Monday to Friday"
+  },
+  {
+   "kind": "devotion",
+   "day": "Thursday",
+   "time": "17:30",
+   "language": "Spanish",
+   "raw": "5:30PM – Rosary & Devotions Spanish (Monday to Friday)",
+   "source_url": "https://www.sjerome.org/",
+   "fetched_at": "2026-11-01T07:27:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "Monday to Friday"
+  },
+  {
+   "kind": "devotion",
+   "day": "Friday",
+   "time": "17:30",
+   "language": "Spanish",
+   "raw": "5:30PM – Rosary & Devotions Spanish (Monday to Friday)",
+   "source_url": "https://www.sjerome.org/",
+   "fetched_at": "2026-11-01T07:27:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "Monday to Friday"
+  },
+  {
+   "kind": "devotion",
+   "day": "Wednesday",
+   "time": "18:00",
+   "language": null,
+   "raw": "6:00PM – Novena to Our Lady of Perpetual Help (Wednesday)",
+   "source_url": "https://www.sjerome.org/",
+   "fetched_at": "2026-11-01T07:27:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
    "template": "wordpress"
   },
   {
@@ -172,11 +248,37 @@
    "template": "wordpress"
   },
   {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "16:00",
+   "language": "English",
+   "raw": "4:00PM – Reconciliation",
+   "source_url": "https://www.sjerome.org/",
+   "fetched_at": "2026-11-01T07:27:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
    "kind": "mass",
    "day": "Saturday",
    "time": "17:00",
    "language": "Bilingual",
    "raw": "5:00PM – Mass Bilingual",
+   "source_url": "https://www.sjerome.org/",
+   "fetched_at": "2026-11-01T07:27:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "devotion",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": "Spanish",
+   "raw": "8:00AM – Lauds Spanish",
    "source_url": "https://www.sjerome.org/",
    "fetched_at": "2026-11-01T07:27:54+00:00",
    "needs_review": false,
@@ -252,9 +354,19 @@
  ],
  "source_url": "https://www.sjerome.org/",
  "fetched_at": "2026-11-01T07:28:10+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:38+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -268,17 +380,26 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 1
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "For confessions by appointment, call the Parish Office: .",
+   "phrase": "by appointment",
+   "source_url": "https://www.sjerome.org/sacraments-sacramentos/reconciliation-reconciliacion/",
+   "fetched_at": "2026-11-01T07:28:02+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "not_a_service": 3,
   "not_a_mass": 1
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

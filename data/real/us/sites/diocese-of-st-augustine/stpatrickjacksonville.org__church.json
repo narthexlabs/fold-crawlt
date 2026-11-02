@@ -81,6 +81,18 @@
    "url": "https://www.stpatrickjacksonville.org/church/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stpatrickjacksonville.org/church/church-history/sacraments/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stpatrickjacksonville.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -339,7 +351,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:40:38+00:00",
+    "fetched_at": "2026-11-02T05:02:46+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -362,6 +374,46 @@
   "source_url": "https://www.stpatrickjacksonville.org/church/bulletins/"
  },
  "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": null,
+   "raw": "SATURDAYS – 5pm Vigil",
+   "source_url": "https://www.stpatrickjacksonville.org/church/",
+   "fetched_at": "2026-11-01T22:15:39+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "location": "Parish Fax"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "MASS TIMES: SUNDAYS – 8:00 & 10:00 AM",
+   "source_url": "https://www.stpatrickjacksonville.org/church/",
+   "fetched_at": "2026-11-01T22:15:39+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": null,
+   "raw": "MASS TIMES: SUNDAYS – 8:00 & 10:00 AM",
+   "source_url": "https://www.stpatrickjacksonville.org/church/",
+   "fetched_at": "2026-11-01T22:15:39+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
   {
    "kind": "mass",
    "day": "Monday",
@@ -423,45 +475,6 @@
    "day_expanded_from": "Monday, Tuesday, Wednesday, Friday",
    "day_parsed": "Monday",
    "day_bound_from_line": true
-  },
-  {
-   "kind": "mass",
-   "day": "Saturday",
-   "time": "17:00",
-   "language": null,
-   "raw": "Saturday Vigil – 5 PM",
-   "source_url": "https://www.stpatrickjacksonville.org/church/mass-schedule/",
-   "fetched_at": "2026-11-01T22:15:59+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "wordpress"
-  },
-  {
-   "kind": "mass",
-   "day": "Sunday",
-   "time": "08:00",
-   "language": null,
-   "raw": "Regular Mass Schedules: Sunday 8 AM and 10 AM",
-   "source_url": "https://www.stpatrickjacksonville.org/church/mass-schedule/",
-   "fetched_at": "2026-11-01T22:15:59+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress"
-  },
-  {
-   "kind": "mass",
-   "day": "Sunday",
-   "time": "10:00",
-   "language": null,
-   "raw": "Regular Mass Schedules: Sunday 8 AM and 10 AM",
-   "source_url": "https://www.stpatrickjacksonville.org/church/mass-schedule/",
-   "fetched_at": "2026-11-01T22:15:59+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress"
   },
   {
    "kind": "other",
@@ -532,9 +545,21 @@
  ],
  "source_url": "https://www.stpatrickjacksonville.org/church/",
  "fetched_at": "2026-11-01T23:30:28+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:50+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -548,13 +573,23 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 7
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Before all Masses",
+   "phrase": "Before all Masses",
+   "source_url": "https://www.stpatrickjacksonville.org/church/mass-schedule/",
+   "fetched_at": "2026-11-01T22:15:59+00:00"
+  }
+ ],
  "has_sunday": true,
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

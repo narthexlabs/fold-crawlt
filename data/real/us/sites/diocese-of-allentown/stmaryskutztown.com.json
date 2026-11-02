@@ -61,6 +61,12 @@
    "url": "https://stmaryskutztown.com/parish-calendar/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stmaryskutztown.com/sacrament-of-reconciliation/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -158,7 +164,64 @@
   "text": "HERE",
   "source_url": "https://stmaryskutztown.com/"
  },
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "confession",
+   "day": "Wednesday",
+   "time": "19:00-20:00",
+   "language": null,
+   "raw": "Confessions are available at the following scheduled times, : Wednesday 7:00 to 8:00 pm",
+   "source_url": "https://stmaryskutztown.com/sacrament-of-reconciliation/",
+   "fetched_at": "2026-11-02T04:43:20+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:30-16:20",
+   "language": null,
+   "raw": "Confessions are available at the following scheduled times, : Saturday 3:30 to 4:20 pm",
+   "source_url": "https://stmaryskutztown.com/sacrament-of-reconciliation/",
+   "fetched_at": "2026-11-02T04:43:20+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "08:00-08:20",
+   "language": null,
+   "raw": "Confessions are available at the following scheduled times, : Sunday 8:00 to 8:20 & 10:30 to 10:50 am",
+   "source_url": "https://stmaryskutztown.com/sacrament-of-reconciliation/",
+   "fetched_at": "2026-11-02T04:43:20+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "10:30-10:50",
+   "language": null,
+   "raw": "Confessions are available at the following scheduled times, : Sunday 8:00 to 8:20 & 10:30 to 10:50 am",
+   "source_url": "https://stmaryskutztown.com/sacrament-of-reconciliation/",
+   "fetched_at": "2026-11-02T04:43:20+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  }
+ ],
  "source_url": "http://www.stmaryskutztown.com/",
  "fetched_at": "2026-11-01T03:59:38+00:00",
  "schedule_template": {
@@ -200,6 +263,33 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "are available at the following scheduled times, and anytime by appointment:",
+   "phrase": "by appointment",
+   "source_url": "https://stmaryskutztown.com/sacrament-of-reconciliation/",
+   "fetched_at": "2026-11-02T04:43:20+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:22+00:00",
+  "requests": 3,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 4,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(610) 683-7443",
@@ -211,8 +301,5 @@
   },
   "fetched_at": "2026-11-01T03:59:22+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

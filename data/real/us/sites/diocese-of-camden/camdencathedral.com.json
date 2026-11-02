@@ -63,6 +63,12 @@
    "url": "https://www.camdencathedral.com/events.html",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.camdencathedral.com/sacraments-list.html",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -116,7 +122,53 @@
   "text": "Weekly Bulletin/ Boletín Semanal",
   "source_url": "https://www.camdencathedral.com/"
  },
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "12:05",
+   "language": "Bilingual",
+   "raw": "Misa en Semana - lunes a viernes: 12:05 pm Bilingual (Spanish/English)",
+   "source_url": "https://www.camdencathedral.com/mass-schedule2.html",
+   "fetched_at": "2026-11-02T04:47:55+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly",
+   "day_expanded_from": "lunes a viernes",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": "Bilingual",
+   "raw": "Sunday Mass: 10:00 am Bilingual (Polish/English)",
+   "source_url": "https://www.camdencathedral.com/mass-schedule2.html",
+   "fetched_at": "2026-11-02T04:47:55+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "08:30",
+   "language": null,
+   "raw": "Weekday Mass: Friday 8:30 am in the Rectory Chapel",
+   "source_url": "https://www.camdencathedral.com/mass-schedule2.html",
+   "fetched_at": "2026-11-02T04:47:55+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly",
+   "topup": true
+  }
+ ],
  "source_url": "http://www.camdencathedral.com/",
  "fetched_at": "2026-11-01T02:19:02+00:00",
  "schedule_template": {
@@ -153,5 +205,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:47:57+00:00",
+  "requests": 3,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 3,
+  "mode": "merge"
  }
 }

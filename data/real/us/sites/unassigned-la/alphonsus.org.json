@@ -87,6 +87,18 @@
    "url": "https://www.alphonsus.org/content.cfm?id=1463",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.alphonsus.org/content.cfm?id=1601",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.alphonsus.org/content.cfm?id=1484",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -689,9 +701,22 @@
  ],
  "source_url": "http://www.alphonsus.org/",
  "fetched_at": "2026-11-01T17:27:53+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:38+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -705,11 +730,14 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 11
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "no_day": 1
+  "no_day": 1,
+  "benediction_end": 1,
+  "prose": 1
  },
  "groups_dropped": {
   "unmatched": 1,
@@ -718,8 +746,8 @@
   "label_not_group": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

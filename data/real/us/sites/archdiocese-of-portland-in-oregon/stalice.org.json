@@ -22,32 +22,502 @@
  ],
  "home_url": "https://stalice.org/",
  "final_url": "https://stalice.org/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "crawl_status": "wayback-2026-06-10",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
    "url": "https://stalice.org/",
-   "status": 403,
-   "class": "challenge"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stalice.org/mass-times",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stalice.org/catholic-mass-times-in-the-vicariate",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.stalice.org/young-family-ministry",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://stalice.org/youth-ministry-1",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://stalice.org/womens-group-1",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.stalice.org/upcoming-events",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://stalice.org/events/mass/20260531",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://stalice.org/staff",
+   "status": null,
+   "class": "conn_error"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "stalice.org:womens_group",
+   "name": "Women's Group",
+   "category": "women",
+   "category_label": "Women",
+   "subcategory": "womens_group",
+   "audience": "women",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stalice.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stalice.org/womens-group-1",
+   "source_kind": "website",
+   "fetched_at": "2026-04-18T13:35:20+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-06-10"
+  },
+  {
+   "id": "stalice.org:youth_ministry",
+   "name": "Youth Ministry",
+   "category": "youth",
+   "category_label": "Youth",
+   "subcategory": "youth_ministry",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stalice.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stalice.org/youth-ministry-1",
+   "source_kind": "website",
+   "fetched_at": "2026-03-08T21:14:44+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-06-10"
+  },
+  {
+   "id": "stalice.org:family",
+   "name": "St. Alice Young Family Ministry",
+   "category": "families",
+   "category_label": "Families",
+   "subcategory": "family_ministry",
+   "audience": "families",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "We are a community of Catholic families with children ages 0-5 seeking to grow in communion with Christ, uphold the truth and dignity of marriage, and support one another through the joys and sorrows of family life.",
+   "contact_url": "https://stalice.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stalice.org/young-family-ministry",
+   "source_kind": "website",
+   "fetched_at": "2026-02-14T20:15:04+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-06-10"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/staliceweb"
+  ],
+  "youtube": [
+   "https://www.youtube.com/@st.aliceweb4151"
+  ],
+  "x": [
+   "https://x.com/stalicecatholic"
+  ],
+  "flocknote": [
+   "https://stalicecatholicchurch.flocknote.com",
+   "https://new.flocknote.com"
+  ],
+  "livestream": [
+   {
+    "url": "https://www.youtube.com/@st.aliceweb4151/streams",
+    "label": "youtube live",
+    "platform": "youtube",
+    "kind": "link"
+   }
+  ]
+ },
+ "bulletin": {
+  "url": "https://parishesonline.com/organization/st-alice-catholic-church",
+  "date": null,
+  "kind": "lpi",
+  "text": "Bulletins",
+  "source_url": "https://stalice.org/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": "English",
+   "raw": "Saturday: 5:00 PM English",
+   "source_url": "https://stalice.org/mass-times",
+   "fetched_at": "2026-06-10T09:04:37+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-06-10: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-06-10",
+   "archive_url": "https://web.archive.org/web/20260610090437/https://stalice.org/mass-times",
+   "capture_date": "2026-06-10"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": "English",
+   "raw": "Sunday: 9:00 AM English",
+   "source_url": "https://stalice.org/mass-times",
+   "fetched_at": "2026-06-10T09:04:37+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-06-10: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-06-10",
+   "archive_url": "https://web.archive.org/web/20260610090437/https://stalice.org/mass-times",
+   "capture_date": "2026-06-10"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:00",
+   "language": "Spanish",
+   "raw": "Sunday: 11:00 AM Spanish Español",
+   "source_url": "https://stalice.org/mass-times",
+   "fetched_at": "2026-06-10T09:04:37+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-06-10: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-06-10",
+   "archive_url": "https://web.archive.org/web/20260610090437/https://stalice.org/mass-times",
+   "capture_date": "2026-06-10"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "18:30",
+   "language": "Spanish",
+   "raw": "Tuesday: 6:30 PM Spanish Español",
+   "source_url": "https://stalice.org/mass-times",
+   "fetched_at": "2026-06-10T09:04:37+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-06-10: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-06-10",
+   "archive_url": "https://web.archive.org/web/20260610090437/https://stalice.org/mass-times",
+   "capture_date": "2026-06-10"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "12:15",
+   "language": "English",
+   "raw": "Wednesday - Friday: 12:15 PM English",
+   "source_url": "https://stalice.org/mass-times",
+   "fetched_at": "2026-06-10T09:04:37+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-06-10: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Wednesday - Friday",
+   "source": "wayback-2026-06-10",
+   "archive_url": "https://web.archive.org/web/20260610090437/https://stalice.org/mass-times",
+   "capture_date": "2026-06-10"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "12:15",
+   "language": "English",
+   "raw": "Wednesday - Friday: 12:15 PM English",
+   "source_url": "https://stalice.org/mass-times",
+   "fetched_at": "2026-06-10T09:04:37+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-06-10: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Wednesday - Friday",
+   "day_parsed": "Wednesday",
+   "day_bound_from_line": true,
+   "source": "wayback-2026-06-10",
+   "archive_url": "https://web.archive.org/web/20260610090437/https://stalice.org/mass-times",
+   "capture_date": "2026-06-10"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "12:15",
+   "language": "English",
+   "raw": "Wednesday - Friday: 12:15 PM English",
+   "source_url": "https://stalice.org/mass-times",
+   "fetched_at": "2026-06-10T09:04:37+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-06-10: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Wednesday - Friday",
+   "day_parsed": "Wednesday",
+   "day_bound_from_line": true,
+   "source": "wayback-2026-06-10",
+   "archive_url": "https://web.archive.org/web/20260610090437/https://stalice.org/mass-times",
+   "capture_date": "2026-06-10"
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "07:30-08:30",
+   "language": null,
+   "raw": "Sunday: 7:30 AM - 8:30 AM English & Español",
+   "source_url": "https://stalice.org/mass-times",
+   "fetched_at": "2026-06-10T09:04:37+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-06-10: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-06-10",
+   "archive_url": "https://web.archive.org/web/20260610090437/https://stalice.org/mass-times",
+   "capture_date": "2026-06-10"
+  },
+  {
+   "kind": "confession",
+   "day": "Tuesday",
+   "time": "17:00-18:00",
+   "language": null,
+   "raw": "Tuesday: 5:00 PM - 6:00 PM English & Español",
+   "source_url": "https://stalice.org/mass-times",
+   "fetched_at": "2026-06-10T09:04:37+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-06-10: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-06-10",
+   "archive_url": "https://web.archive.org/web/20260610090437/https://stalice.org/mass-times",
+   "capture_date": "2026-06-10"
+  },
+  {
+   "kind": "confession",
+   "day": "Wednesday",
+   "time": "10:30-11:30",
+   "language": null,
+   "raw": "Wednesday: 10:30 AM - 11:30 AM English & Español",
+   "source_url": "https://stalice.org/mass-times",
+   "fetched_at": "2026-06-10T09:04:37+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-06-10: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-06-10",
+   "archive_url": "https://web.archive.org/web/20260610090437/https://stalice.org/mass-times",
+   "capture_date": "2026-06-10"
+  },
+  {
+   "kind": "confession",
+   "day": "Thursday",
+   "time": "10:30-11:30",
+   "language": null,
+   "raw": "Thursday: 10:30 AM - 11:30 AM English & Español",
+   "source_url": "https://stalice.org/mass-times",
+   "fetched_at": "2026-06-10T09:04:37+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-06-10: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-06-10",
+   "archive_url": "https://web.archive.org/web/20260610090437/https://stalice.org/mass-times",
+   "capture_date": "2026-06-10"
+  },
+  {
+   "kind": "confession",
+   "day": "Friday",
+   "time": "10:30-11:30",
+   "language": null,
+   "raw": "Friday: 10:30 AM - 11:30 AM English & Español",
+   "source_url": "https://stalice.org/mass-times",
+   "fetched_at": "2026-06-10T09:04:37+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-06-10: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-06-10",
+   "archive_url": "https://web.archive.org/web/20260610090437/https://stalice.org/mass-times",
+   "capture_date": "2026-06-10"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "14:00-16:00",
+   "language": null,
+   "raw": "Saturday: 2:00 PM - 4:00 PM English & Español",
+   "source_url": "https://stalice.org/mass-times",
+   "fetched_at": "2026-06-10T09:04:37+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-06-10: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-06-10",
+   "archive_url": "https://web.archive.org/web/20260610090437/https://stalice.org/mass-times",
+   "capture_date": "2026-06-10"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "18:30",
+   "language": null,
+   "raw": "All are invited to join the Nocturnal Adoration Society for a special Solemnity of Corpus Christi Vigil from 6:30pm to 7:30pm in the church.",
+   "source_url": "https://stalice.org/",
+   "fetched_at": "2026-06-10T09:44:05+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-06-10: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic+generic_strict",
+   "kind_parsed": "mass",
+   "source": "wayback-2026-06-10",
+   "archive_url": "https://web.archive.org/web/20260610094405/https://stalice.org/",
+   "capture_date": "2026-06-10"
+  }
+ ],
  "source_url": "https://stalice.org/",
- "fetched_at": "2026-11-01T17:27:13+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-02T05:00:56+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": true
+   },
+   "score": "high"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 4
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "no_time": 2,
+  "text:dated_line": 76,
+  "text:not_a_service": 29,
+  "text:other_location": 9,
+  "text:range_not_a_mass": 4,
+  "text:no_day": 1
+ },
+ "groups_dropped": {
+  "unmatched": 1
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(541) 912-6889",
+  "address": "1520 E Street, Springfield, OR 97477",
+  "source_url": "https://stalice.org/",
+  "sources": {
+   "phone": "https://stalice.org/",
+   "address": "https://stalice.org/"
+  },
+  "fetched_at": "2026-06-10T09:44:05+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2026-06-10",
+  "capture_age_days": 145,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://stalice.org/",
+    "capture": "2026-06-10",
+    "archive_url": "https://web.archive.org/web/20260610094405/https://stalice.org/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://stalice.org/mass-times",
+    "capture": "2026-06-10",
+    "archive_url": "https://web.archive.org/web/20260610090437/https://stalice.org/mass-times"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://www.stalice.org/young-family-ministry",
+    "capture": "2026-02-14",
+    "archive_url": "https://web.archive.org/web/20260214201504/https://www.stalice.org/young-family-ministry"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://stalice.org/youth-ministry-1",
+    "capture": "2026-03-08",
+    "archive_url": "https://web.archive.org/web/20260308211444/https://stalice.org/youth-ministry-1"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://stalice.org/womens-group-1",
+    "capture": "2026-04-18",
+    "archive_url": "https://web.archive.org/web/20260418133520/https://stalice.org/womens-group-1"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://www.stalice.org/upcoming-events",
+    "capture": "2026-05-21",
+    "archive_url": "https://web.archive.org/web/20260521113650/https://www.stalice.org/upcoming-events"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://stalice.org/events/mass/20260531",
+    "capture": "2026-06-14",
+    "archive_url": "https://web.archive.org/web/20260614031613/https://stalice.org/events/mass/20260531"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review.",
+  "grade": {
+   "rule": "wayback-verified-2026-11-01",
+   "template": "ecatholic",
+   "trusted_template": false,
+   "has_sunday": true,
+   "groups": 3,
+   "verified": false,
+   "capture_date": "2026-06-10",
+   "applied": false
+  }
  }
 }

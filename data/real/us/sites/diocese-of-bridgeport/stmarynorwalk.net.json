@@ -63,6 +63,18 @@
    "url": "https://www.stmarynorwalk.net/contacts/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stmarynorwalk.net/about/sacraments/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stmarynorwalk.net/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -339,7 +351,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:40:28+00:00",
+    "fetched_at": "2026-11-02T05:16:46+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -494,6 +506,48 @@
    "template": "wordpress"
   },
   {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "08:00",
+   "language": "Latin",
+   "raw": "8:00 AM Mass (Latin)",
+   "source_url": "https://www.stmarynorwalk.net/liturgy/",
+   "fetched_at": "2026-11-01T18:52:48+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "12:10",
+   "language": "English",
+   "raw": "12:10 PM Mass (English)",
+   "source_url": "https://www.stmarynorwalk.net/liturgy/",
+   "fetched_at": "2026-11-01T18:52:48+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "19:00",
+   "language": "Latin",
+   "raw": "7:00 PM Solemn Mass (Latin) *Office is closed on these days",
+   "source_url": "https://www.stmarynorwalk.net/liturgy/",
+   "fetched_at": "2026-11-01T18:52:48+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "kind_parsed": "mass"
+  },
+  {
    "kind": "adoration",
    "day": "Tuesday",
    "time": "13:00-16:00",
@@ -635,9 +689,21 @@
  ],
  "source_url": "http://www.stmarynorwalk.net/",
  "fetched_at": "2026-11-01T20:26:04+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:30+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -651,13 +717,13 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 25
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 6,
   "dated_line": 36,
-  "no_kind": 2,
+  "dated_block": 2,
   "weekend_rescue_added": 4
  },
  "groups_dropped": {
@@ -665,8 +731,8 @@
   "noise": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

@@ -165,6 +165,22 @@
    "confidence": "high",
    "template": "wordpress",
    "day_expanded_from": "Weekday"
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Eucharistic Adoration is held on Tuesdays each week throughout the year following 9 a.m. Mass until 8 p.m.",
+   "source_url": "https://stmaryavoca.com/sacraments-devotions/",
+   "fetched_at": "2026-11-02T04:43:15+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "Eucharistic Adoration is held on Tuesdays each week throughout the year following 9 a.m. Mass until 8 p.m.",
+   "topup": true
   }
  ],
  "source_url": "https://stmaryavoca.com/",
@@ -202,6 +218,23 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:16+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(570) 457-3412",
@@ -212,8 +245,5 @@
   },
   "fetched_at": "2026-11-01T03:58:58+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

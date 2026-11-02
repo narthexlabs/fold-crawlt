@@ -73,6 +73,12 @@
    "url": "https://tellercatholic.org/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://tellercatholic.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -298,32 +304,6 @@
  },
  "schedule_rows": [
   {
-   "kind": "adoration",
-   "day": "Wednesday",
-   "time": "16:30-17:45",
-   "language": null,
-   "raw": "Our Lady of the Woods: Wednesdays during Holy Hour at 4:30 – 5:45 pm and Saturdays at 3:30 pm – 4:15 pm",
-   "source_url": "https://tellercatholic.org/sacraments/",
-   "fetched_at": "2026-11-01T17:35:44+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "wordpress"
-  },
-  {
-   "kind": "adoration",
-   "day": "Saturday",
-   "time": "15:30-16:15",
-   "language": null,
-   "raw": "Our Lady of the Woods: Wednesdays during Holy Hour at 4:30 – 5:45 pm and Saturdays at 3:30 pm – 4:15 pm",
-   "source_url": "https://tellercatholic.org/sacraments/",
-   "fetched_at": "2026-11-01T17:35:44+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "wordpress"
-  },
-  {
    "kind": "mass",
    "day": "Sunday",
    "time": "09:00",
@@ -439,13 +419,160 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Holy Hour is every Wednesday and Friday: Wednesday 5:00 pm",
+   "source_url": "https://tellercatholic.org/",
+   "fetched_at": "2026-11-01T17:35:40+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Holy Hour is every Wednesday and Friday: Wednesday 5:00 pm",
+   "source_url": "https://tellercatholic.org/",
+   "fetched_at": "2026-11-01T17:35:40+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_parsed": "Wednesday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "09:30-10:00",
+   "language": null,
+   "raw": "Holy Hour is every Wednesday and Friday: Friday 9:30 am to 10:00 am",
+   "source_url": "https://tellercatholic.org/",
+   "fetched_at": "2026-11-01T17:35:40+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "09:00",
+   "language": null,
+   "raw": "NOV 1, 2026 (SUNDAY) – ALL SAINTS’ DAY. Masses at 9 a.m. and 6 p.m at OLW and 11:30 a.m. at St. Peter Chapel",
+   "source_url": "https://tellercatholic.org/",
+   "fetched_at": "2026-11-01T17:35:40+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "18:00",
+   "language": null,
+   "raw": "NOV 1, 2026 (SUNDAY) – ALL SAINTS’ DAY. Masses at 9 a.m. and 6 p.m at OLW and 11:30 a.m. at St. Peter Chapel",
+   "source_url": "https://tellercatholic.org/",
+   "fetched_at": "2026-11-01T17:35:40+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "11:30",
+   "language": null,
+   "raw": "NOV 1, 2026 (SUNDAY) – ALL SAINTS’ DAY. Masses at 9 a.m. and 6 p.m at OLW and 11:30 a.m. at St. Peter Chapel",
+   "source_url": "https://tellercatholic.org/",
+   "fetched_at": "2026-11-01T17:35:40+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "16:00",
+   "language": null,
+   "raw": "DEC 24, 2026 — (THURSDAY) CHRISTMAS EVE. Masses at 4 p.m. St. Peter Chapel and 7 p.m. OLW",
+   "source_url": "https://tellercatholic.org/",
+   "fetched_at": "2026-11-01T17:35:40+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "19:00",
+   "language": null,
+   "raw": "DEC 24, 2026 — (THURSDAY) CHRISTMAS EVE. Masses at 4 p.m. St. Peter Chapel and 7 p.m. OLW",
+   "source_url": "https://tellercatholic.org/",
+   "fetched_at": "2026-11-01T17:35:40+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "16:30-17:45",
+   "language": null,
+   "raw": "Our Lady of the Woods: Wednesdays during Holy Hour at 4:30 – 5:45 pm and Saturdays at 3:30 pm – 4:15 pm",
+   "source_url": "https://tellercatholic.org/sacraments/",
+   "fetched_at": "2026-11-01T17:35:44+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "Saturday",
+   "time": "15:30-16:15",
+   "language": null,
+   "raw": "Our Lady of the Woods: Wednesdays during Holy Hour at 4:30 – 5:45 pm and Saturdays at 3:30 pm – 4:15 pm",
+   "source_url": "https://tellercatholic.org/sacraments/",
+   "fetched_at": "2026-11-01T17:35:44+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
   }
  ],
  "source_url": "https://tellercatholic.org/",
  "fetched_at": "2026-11-01T17:35:53+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:47+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -459,11 +586,11 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 19
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 10,
   "not_a_service": 1,
   "no_day": 1
  },
@@ -471,8 +598,8 @@
   "unmatched": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

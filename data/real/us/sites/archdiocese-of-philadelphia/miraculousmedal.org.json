@@ -55,6 +55,12 @@
    "url": "https://miraculousmedal.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://miraculousmedal.org/news-from-camm/de-la-salle-chapel-choir-lifts-their-voices-at-the-basilica-shrine/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -905,6 +911,20 @@
    "review_reason": null,
    "confidence": "high",
    "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "First Tuesday of the month",
+   "time": "17:30",
+   "language": "Spanish",
+   "raw": "Starting at 10:00 a.m. in the morning and at 5:30 p.m. in the evening, we pray the Rosary, followed by the Miraculous Medal Novena and Holy Mass.",
+   "source_url": "https://miraculousmedal.org/visit-us/worship/",
+   "fetched_at": "2026-11-02T04:43:08+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "http://www.miraculousmedal.org/",
@@ -945,5 +965,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:10+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

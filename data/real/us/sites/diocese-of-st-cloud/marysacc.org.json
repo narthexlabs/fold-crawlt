@@ -76,6 +76,12 @@
    "url": "https://www.marysacc.org/communitycalendar",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.marysacc.org/weekdays",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -139,7 +145,78 @@
   "text": "Sunday Bulletin",
   "source_url": "https://www.marysacc.org/"
  },
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "08:30",
+   "language": null,
+   "raw": "[Staples - Sacred Heart] Weekday Masses & Reconciliation: 8:30 AM—Sacred Heart, Staples",
+   "source_url": "https://www.marysacc.org/weekdays",
+   "fetched_at": "2026-11-02T04:42:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "08:30",
+   "language": null,
+   "raw": "[Staples - Sacred Heart] Weekday Masses & Reconciliation: 8:30 AM—Sacred Heart, Staples",
+   "source_url": "https://www.marysacc.org/weekdays",
+   "fetched_at": "2026-11-02T04:42:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "08:30",
+   "language": null,
+   "raw": "[Staples - Sacred Heart] Weekday Masses & Reconciliation: 8:30 AM—Sacred Heart, Staples",
+   "source_url": "https://www.marysacc.org/weekdays",
+   "fetched_at": "2026-11-02T04:42:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "08:30",
+   "language": null,
+   "raw": "[Staples - Sacred Heart] Weekday Masses & Reconciliation: 8:30 AM—Sacred Heart, Staples",
+   "source_url": "https://www.marysacc.org/weekdays",
+   "fetched_at": "2026-11-02T04:42:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Thursday",
+   "time": "17:30-18:30",
+   "language": null,
+   "raw": "[Staples - Sacred Heart] Confession: 5:30—6:30 PM—Sacred Heart, Staples",
+   "source_url": "https://www.marysacc.org/weekdays",
+   "fetched_at": "2026-11-02T04:42:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  }
+ ],
  "source_url": "https://www.marysacc.org/",
  "fetched_at": "2026-11-01T02:10:53+00:00",
  "schedule_template": {
@@ -179,5 +256,28 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "By Appointment",
+   "phrase": "By Appointment",
+   "source_url": "https://www.marysacc.org/weekdays",
+   "fetched_at": "2026-11-02T04:42:01+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:01+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ],
+  "rows_added": 5,
+  "mode": "merge"
  }
 }

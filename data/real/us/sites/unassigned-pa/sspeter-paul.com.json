@@ -2,15 +2,18 @@
  "domain": "sspeter-paul.com",
  "diocese": "unassigned-pa",
  "matched_church_ids": [
-  "brave:PA|peter and paul ambridge|"
+  "brave:PA|peter and paul ambridge|",
+  "ss-peter-and-paul-ambridge-pa"
  ],
  "matched": {
   "directory": [],
   "discovermass": [
+   "ss-peter-and-paul-ambridge-pa",
    "brave:PA|peter and paul ambridge|"
   ]
  },
  "names": [
+  "Ss. Peter and Paul",
   "Sts Peter And Paul"
  ],
  "cities": [
@@ -48,10 +51,8 @@
    "raw": "Saturday 6 PM - Divine Liturgy in anticipation of Sunday",
    "source_url": "https://sspeter-paul.com/",
    "fetched_at": "2026-11-01T20:25:14+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "generic_strict"
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
   },
   {
    "kind": "mass",
@@ -61,50 +62,61 @@
    "raw": "Sunday 8 AM Divine Liturgy in Church Slavonic",
    "source_url": "https://sspeter-paul.com/",
    "fetched_at": "2026-11-01T20:25:14+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "generic_strict"
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
   },
   {
    "kind": "mass",
    "day": "Sunday",
    "time": "11:00",
-   "language": "English",
+   "language": null,
    "raw": "Sunday 11 AM Divine Liturgy in English",
    "source_url": "https://sspeter-paul.com/",
    "fetched_at": "2026-11-01T20:25:14+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "generic_strict"
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
   }
  ],
  "source_url": "https://sspeter-paul.com/",
  "fetched_at": "2026-11-01T20:25:14+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:03+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
-    "has_sunday": true,
+    "has_sunday": false,
     "hours_ok": true,
     "counts_ok": true,
     "sunday_not_copied": true,
     "no_daily_on_sunday": true,
-    "mostly_high": true
+    "mostly_high": false
    },
-   "score": "high"
+   "score": "low"
   },
   "passed_bar": true,
-  "trusted_candidate": true,
+  "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 3
  },
  "has_sunday": true,
+ "schedule_dropped": {
+  "other_location": 3,
+  "weekend_rescue_added": 3
+ },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

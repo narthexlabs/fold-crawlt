@@ -75,6 +75,12 @@
    "url": "https://shchartsdale.com/about/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://shchartsdale.com/liturgy-sacraments/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -255,7 +261,7 @@
    "day": "Sunday",
    "time": "14:00",
    "language": "Korean",
-   "raw": "Saturday Vigil: 2:00 PM Korean",
+   "raw": "Saturday Vigil 2:00 PM [Mass intention withheld]",
    "source_url": "https://shchartsdale.com/liturgy-sacraments/mass-times/",
    "fetched_at": "2026-11-01T01:57:11+00:00",
    "needs_review": false,
@@ -454,6 +460,34 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "First and Third Saturday of the month",
+   "time": "20:15-05:00",
+   "language": null,
+   "raw": "Nocturnal Adoration – 8:15 pm – 5 am, 1st and 3rd Saturday-Sunday of the month",
+   "source_url": "https://shchartsdale.com/liturgy-sacraments/",
+   "fetched_at": "2026-11-02T04:41:36+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Friday (lent)",
+   "time": "19:00",
+   "language": null,
+   "raw": "Stations of the Cross – After the 12:10 pm mass and 7 pm, every Friday of Lent",
+   "source_url": "https://shchartsdale.com/liturgy-sacraments/",
+   "fetched_at": "2026-11-02T04:41:36+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "https://shchartsdale.com/",
@@ -494,6 +528,30 @@
   "excluded_by_reason": {}
  },
  "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
+  "screened_by": "ingest/public/privacy.py screen()",
+  "intentions_withheld": 1
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Saturday between 3:45 and 4:30 p.m. and anytime upon request.",
+   "phrase": "upon request",
+   "source_url": "https://shchartsdale.com/liturgy-sacraments/",
+   "fetched_at": "2026-11-02T04:41:36+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:37+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
  }
 }

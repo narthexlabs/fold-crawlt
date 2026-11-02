@@ -60,6 +60,24 @@
    "url": "https://clearcreekmonks.org/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://clearcreekmonks.org/abbey/liturgy/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://clearcreekmonks.org/reconciliation/",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://clearcreekmonks.org/gift-shop/adoration-at-ephesus/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -220,6 +238,19 @@
    "template": "wordpress"
   },
   {
+   "kind": "devotion",
+   "day": "Monday",
+   "time": "18:00",
+   "language": null,
+   "raw": "Mon Low Mass: Vespers at 6 PM",
+   "source_url": "https://clearcreekmonks.org/visit/daily-mass-times/",
+   "fetched_at": "2026-11-01T07:19:47+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  },
+  {
    "kind": "mass",
    "day": "Monday",
    "time": "06:40",
@@ -300,9 +331,22 @@
  ],
  "source_url": "https://clearcreekmonks.org/",
  "fetched_at": "2026-11-01T07:19:51+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:48:03+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "liturgy"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -316,6 +360,7 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 21
  },
  "has_sunday": true,
@@ -323,16 +368,15 @@
   "no_kind": 1,
   "other_location": 17,
   "skipped_section": 20,
-  "benediction_end": 1,
-  "not_a_service": 1
+  "benediction_end": 1
  },
  "groups_dropped": {
   "unmatched": 3,
   "schedule": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

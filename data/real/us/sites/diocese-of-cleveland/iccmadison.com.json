@@ -87,6 +87,18 @@
    "url": "https://www.iccmadison.com/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.iccmadison.com/penance",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.iccmadison.com/Adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -367,6 +379,22 @@
    "confidence": "medium",
    "template": "generic_strict",
    "kind_parsed": "mass"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "08:30",
+   "language": null,
+   "raw": "Jesus waits for us in this sacrament of love. Eucharistic Adoration begins Wednesday after the 8:30am Mass until 6:00pm.",
+   "source_url": "https://www.iccmadison.com/Adoration",
+   "fetched_at": "2026-11-02T04:52:37+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "after",
+   "note": "Jesus waits for us in this sacrament of love. Eucharistic Adoration begins Wednesday after the 8:30am Mass until 6:00pm.",
+   "topup": true
   }
  ],
  "source_url": "http://www.iccmadison.com/",
@@ -409,5 +437,37 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "30 minutes before every Mass",
+   "phrase": "30 minutes before every Mass",
+   "source_url": "https://www.iccmadison.com/penance",
+   "fetched_at": "2026-11-02T04:52:36+00:00"
+  },
+  {
+   "kind": "adoration",
+   "text": "30 minutes before every Mass",
+   "phrase": "30 minutes before every Mass",
+   "source_url": "https://www.iccmadison.com/Adoration",
+   "fetched_at": "2026-11-02T04:52:37+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:52:39+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

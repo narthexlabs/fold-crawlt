@@ -578,6 +578,22 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Friday",
+   "time": "08:30",
+   "language": null,
+   "raw": "Reconciliation Opportunities:: First Fridays & Saturdays 8:30 am.",
+   "source_url": "https://www.stmarys-waverly.net/our-services",
+   "fetched_at": "2026-11-02T04:41:37+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_parsed": "Saturday",
+   "day_bound_from_line": true,
+   "topup": true
   }
  ],
  "source_url": "http://www.stmarys-waverly.net/",
@@ -617,6 +633,23 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:38+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(763) 726-7300",
@@ -628,8 +661,5 @@
   },
   "fetched_at": "2026-11-01T03:58:18+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

@@ -88,6 +88,18 @@
    "url": "https://www.stjohn23evanston.org/contact--directions.html",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stjohn23evanston.org/reconciliation.html",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stjohn23evanston.org/eucharistic-adoration.html",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -705,7 +717,7 @@
    "note": "Microsoft 365 published calendar",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:34:39+00:00",
+    "fetched_at": "2026-11-02T05:08:13+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -997,13 +1009,84 @@
    "confidence": "medium",
    "template": "weebly",
    "location": "St. Nicholas"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:30-16:45",
+   "language": null,
+   "raw": "Sacrament of Reconciliation Schedule: Saturdays from 3:30-4:45 p.m., before the 5 p.m. Mass",
+   "source_url": "https://www.stjohn23evanston.org/reconciliation.html",
+   "fetched_at": "2026-11-02T04:41:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly"
+  },
+  {
+   "kind": "adoration",
+   "day": "Saturday",
+   "time": "07:30-08:00",
+   "language": null,
+   "raw": "[St. Nicholas] At St. Nicholas, Adoration of the Blessed Sacrament is held:: Saturday, 7:30 - 8 a.m. in the church",
+   "source_url": "https://www.stjohn23evanston.org/eucharistic-adoration.html",
+   "fetched_at": "2026-11-02T04:41:43+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly",
+   "location": "St. Nicholas"
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "08:00",
+   "language": null,
+   "raw": "[St. Mary] At St. Mary, Adoration of the Blessed Sacrament is held:: Friday mornings after the 8 a.m. Mass until 10 a.m. in the church",
+   "source_url": "https://www.stjohn23evanston.org/eucharistic-adoration.html",
+   "fetched_at": "2026-11-02T04:41:43+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "weebly",
+   "relative": "after",
+   "note": "[St. Mary] At St. Mary, Adoration of the Blessed Sacrament is held:: Friday mornings after the 8 a.m. Mass until 10 a.m.",
+   "location": "St. Mary",
+   "relative_resolved": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Sunday",
+   "time": "15:00-18:00",
+   "language": null,
+   "raw": "[St. Mary] At St. Mary, Adoration of the Blessed Sacrament is held:: Sunday afternoons 3-6 p.m. in the Parish Center chapel",
+   "source_url": "https://www.stjohn23evanston.org/eucharistic-adoration.html",
+   "fetched_at": "2026-11-02T04:41:43+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly",
+   "location": "St. Mary"
   }
  ],
  "source_url": "https://www.stjohn23evanston.org/",
  "fetched_at": "2026-11-01T07:28:18+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:43+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "weebly",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -1017,15 +1100,26 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 16
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "By appointment - Call the parish office at",
+   "phrase": "By appointment",
+   "source_url": "https://www.stjohn23evanston.org/mass-schedule.html",
+   "fetched_at": "2026-11-01T07:28:00+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "no_day": 2,
+  "no_day": 3,
   "other_location": 1,
   "not_a_service": 2,
   "dated_line": 2,
-  "skipped_section": 2
+  "skipped_section": 2,
+  "relative_time": 2
  },
  "groups_dropped": {
   "noise": 5,
@@ -1034,8 +1128,8 @@
   "label_not_group": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
