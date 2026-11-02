@@ -15,10 +15,37 @@ from pathlib import Path
 from media_common import OUT, RAW
 
 
+def _screen():
+    root = Path(__file__).resolve().parents[2] / "ingest" / "public"
+    import sys  # noqa: PLC0415
+    for x in (str(root), str(root / "media")):
+        if x not in sys.path:
+            sys.path.insert(0, x)
+    import media_privacy  # noqa: PLC0415
+    return media_privacy
+
+
+def audit_row(c: dict, keep: tuple) -> dict:
+    """An audit row; a channel whose title names a private person (someone's personal channel linked from a parish site)
+    keeps only its opaque channel id and a redacted title: no @handle, no linked URL that could carry the name."""
+    row = {k: c.get(k) for k in keep if c.get(k) not in (None, [], "")}
+    mp = _screen()
+    ok, why = mp.screen(c.get("title") or "", "video", "other")
+    if not ok:
+        row["title"] = mp.redacted(c.get("title") or "")
+        row["title_withheld"] = why
+        row["url"] = f"https://www.youtube.com/channel/{c['channel_id']}"
+        for k in ("handle", "linked_as"):
+            row.pop(k, None)
+        if row.get("reason"):
+            row["reason"] = mp.redacted(row["reason"])
+    return row
+
+
 def _compact(c: dict) -> dict:
     keep = ("channel_id", "title", "handle", "url", "status", "reason", "linked_by", "dioceses_linking", "diocese", "belongs_to",
             "candidates", "diocese_of_channel", "linked_as", "fetched_at")
-    return {k: c.get(k) for k in keep if c.get(k) not in (None, [], "")}
+    return audit_row(c, keep)
 
 
 def write_channels_and_readme(items, quarantine, stat_by_channel, counts, ver, ranked, ts, yt, label: str = "California",

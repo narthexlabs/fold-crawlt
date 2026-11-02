@@ -473,6 +473,7 @@ def feed() -> None:
 
 
 def summarize(ver: dict, by_dio: dict, complete: bool, yt, media_feed) -> None:
+    from media_report import audit_row  # noqa: PLC0415  (privacy screen on audit titles)
     idx = json.loads(INDEX.read_text())
     cands = json.loads(CANDS.read_text())
     per = collections.defaultdict(collections.Counter)
@@ -515,9 +516,9 @@ def summarize(ver: dict, by_dio: dict, complete: bool, yt, media_feed) -> None:
            "dioceses": {k: dict(v) for k, v in sorted(per.items())}}
     (OUT / "coverage.json").write_text(json.dumps(cov, ensure_ascii=False, indent=1) + "\n")
     audit = {"generated_at": mc.now_iso(), "note": "Channels linked from parish sites that were not catalogued, and why.",
-             "unverified": [{k: c.get(k) for k in ("channel_id", "title", "url", "reason", "linked_by", "dioceses_linking", "candidates") if c.get(k)}
+             "unverified": [audit_row(c, ("channel_id", "title", "url", "reason", "linked_by", "dioceses_linking", "candidates"))
                             for c in ver["unverified"]],
-             "borrowed": [{k: c.get(k) for k in ("channel_id", "title", "url", "reason", "linked_by", "belongs_to", "diocese_of_channel") if c.get(k)}
+             "borrowed": [audit_row(c, ("channel_id", "title", "url", "reason", "linked_by", "belongs_to", "diocese_of_channel"))
                           for c in ver["borrowed"]],
              "unresolved": ver["unresolved"]}
     (OUT / "audit.json").write_text(json.dumps(audit, ensure_ascii=False, separators=(",", ":")) + "\n")
