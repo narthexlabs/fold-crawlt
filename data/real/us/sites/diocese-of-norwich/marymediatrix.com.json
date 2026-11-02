@@ -43,6 +43,18 @@
    "url": "https://marymediatrix.com/contactus/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://marymediatrix.com/who-we-are/our-life-and-charism/our-life-of-penance/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://marymediatrix.com/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -257,13 +269,39 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "weebly"
+  },
+  {
+   "kind": "devotion",
+   "day": "Friday",
+   "time": "15:45",
+   "language": null,
+   "raw": "Friday: 3:45 pm Stations of the Cross , rest of schedule as for other weekdays",
+   "source_url": "https://marymediatrix.com/who-we-are/maine-ny/",
+   "fetched_at": "2026-11-02T01:57:15+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "weebly",
+   "note": "except on feasts and solemnities, and during the seasons of Advent, Christmas, and Easter"
   }
  ],
  "source_url": "http://marymediatrix.com/who-we-are/maine-ny/",
  "fetched_at": "2026-11-02T01:57:19+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:59+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "weebly",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -277,12 +315,23 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 8
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Confessions and spiritual direction are available on request.",
+   "phrase": "on request",
+   "source_url": "https://marymediatrix.com/who-we-are/maine-ny/",
+   "fetched_at": "2026-11-02T01:57:15+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "other_location": 2,
-  "not_a_service": 3,
+  "not_a_service": 2,
+  "no_day": 2,
   "prose": 1
  },
  "groups_dropped": {},

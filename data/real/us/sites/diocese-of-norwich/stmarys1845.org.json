@@ -33,6 +33,12 @@
    "url": "https://www.stmarys1845.org/home",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stmarys1845.org/st-anthony-pictures",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -50,9 +56,21 @@
  "schedule_rows": [],
  "source_url": "http://www.stmarys1845.org/",
  "fetched_at": "2026-11-02T01:57:16+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:00+00:00",
+  "requests": 1,
+  "found": [
+   "adoration"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -66,6 +84,7 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 0
  },
  "has_sunday": false,

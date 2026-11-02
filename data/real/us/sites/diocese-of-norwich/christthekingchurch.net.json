@@ -2,16 +2,20 @@
  "domain": "christthekingchurch.net",
  "diocese": "diocese-of-norwich",
  "matched_church_ids": [
-  "diocese-of-norwich:Christ the King Parish"
+  "diocese-of-norwich:Christ the King Parish",
+  "gc-22252"
  ],
  "matched": {
   "directory": [
    "diocese-of-norwich:Christ the King Parish"
   ],
-  "discovermass": []
+  "discovermass": [
+   "gc-22252"
+  ]
  },
  "names": [
-  "Christ the King Parish"
+  "Christ the King Parish",
+  "Christ the King"
  ],
  "cities": [
   "Old Lyme"
@@ -73,6 +77,12 @@
   {
    "category": "contact",
    "url": "https://www.christthekingchurch.net/contact",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.christthekingchurch.net/sacraments",
    "status": 200,
    "class": "ok"
   }
@@ -240,12 +250,38 @@
  "schedule_rows": [
   {
    "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Mass schedule:: Sundays: 8:00 am & 10:30 am Saturday Vigil: 5:00 pm",
+   "source_url": "https://www.christthekingchurch.net/",
+   "fetched_at": "2026-11-01T17:27:31+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:30",
+   "language": null,
+   "raw": "Mass schedule:: Sundays: 8:00 am & 10:30 am Saturday Vigil: 5:00 pm",
+   "source_url": "https://www.christthekingchurch.net/",
+   "fetched_at": "2026-11-01T17:27:31+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix"
+  },
+  {
+   "kind": "mass",
    "day": "Saturday",
    "time": "17:00",
    "language": null,
-   "raw": "Saturday vigil 5:00 pm",
-   "source_url": "https://www.christthekingchurch.net/liturgy",
-   "fetched_at": "2026-11-01T17:27:36+00:00",
+   "raw": "Sundays: 8:00 am & 10:30 am Saturday Vigil: 5:00 pm",
+   "source_url": "https://www.christthekingchurch.net/",
+   "fetched_at": "2026-11-01T17:27:31+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "high",
@@ -253,57 +289,31 @@
   },
   {
    "kind": "mass",
-   "day": "Sunday",
-   "time": "08:00",
-   "language": null,
-   "raw": "Weekend Masses: Mon – Fri: Holy Days: Youth Mass:: Sunday 8 am & 10:30 am",
-   "source_url": "https://www.christthekingchurch.net/liturgy",
-   "fetched_at": "2026-11-01T17:27:36+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wix"
-  },
-  {
-   "kind": "mass",
-   "day": "Sunday",
-   "time": "10:30",
-   "language": null,
-   "raw": "Weekend Masses: Mon – Fri: Holy Days: Youth Mass:: Sunday 8 am & 10:30 am",
-   "source_url": "https://www.christthekingchurch.net/liturgy",
-   "fetched_at": "2026-11-01T17:27:36+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wix"
-  },
-  {
-   "kind": "mass",
    "day": "Monday",
    "time": "08:00",
    "language": null,
-   "raw": "Weekend Masses: Mon – Fri: Holy Days: Youth Mass:: 8:00 am",
-   "source_url": "https://www.christthekingchurch.net/liturgy",
-   "fetched_at": "2026-11-01T17:27:36+00:00",
+   "raw": "Mass schedule:: Monday thru Friday: 8:00 am",
+   "source_url": "https://www.christthekingchurch.net/",
+   "fetched_at": "2026-11-01T17:27:31+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "wix",
-   "day_expanded_from": "Weekend"
+   "day_expanded_from": "Monday thru Friday"
   },
   {
    "kind": "mass",
    "day": "Tuesday",
    "time": "08:00",
    "language": null,
-   "raw": "Weekend Masses: Mon – Fri: Holy Days: Youth Mass:: 8:00 am",
-   "source_url": "https://www.christthekingchurch.net/liturgy",
-   "fetched_at": "2026-11-01T17:27:36+00:00",
+   "raw": "Mass schedule:: Monday thru Friday: 8:00 am",
+   "source_url": "https://www.christthekingchurch.net/",
+   "fetched_at": "2026-11-01T17:27:31+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "wix",
-   "day_expanded_from": "Weekend",
+   "day_expanded_from": "Monday thru Friday",
    "day_parsed": "Monday",
    "day_bound_from_line": true
   },
@@ -312,14 +322,14 @@
    "day": "Wednesday",
    "time": "08:00",
    "language": null,
-   "raw": "Weekend Masses: Mon – Fri: Holy Days: Youth Mass:: 8:00 am",
-   "source_url": "https://www.christthekingchurch.net/liturgy",
-   "fetched_at": "2026-11-01T17:27:36+00:00",
+   "raw": "Mass schedule:: Monday thru Friday: 8:00 am",
+   "source_url": "https://www.christthekingchurch.net/",
+   "fetched_at": "2026-11-01T17:27:31+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "wix",
-   "day_expanded_from": "Weekend",
+   "day_expanded_from": "Monday thru Friday",
    "day_parsed": "Monday",
    "day_bound_from_line": true
   },
@@ -328,14 +338,14 @@
    "day": "Thursday",
    "time": "08:00",
    "language": null,
-   "raw": "Weekend Masses: Mon – Fri: Holy Days: Youth Mass:: 8:00 am",
-   "source_url": "https://www.christthekingchurch.net/liturgy",
-   "fetched_at": "2026-11-01T17:27:36+00:00",
+   "raw": "Mass schedule:: Monday thru Friday: 8:00 am",
+   "source_url": "https://www.christthekingchurch.net/",
+   "fetched_at": "2026-11-01T17:27:31+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "wix",
-   "day_expanded_from": "Weekend",
+   "day_expanded_from": "Monday thru Friday",
    "day_parsed": "Monday",
    "day_bound_from_line": true
   },
@@ -344,107 +354,16 @@
    "day": "Friday",
    "time": "08:00",
    "language": null,
-   "raw": "Weekend Masses: Mon – Fri: Holy Days: Youth Mass:: 8:00 am",
-   "source_url": "https://www.christthekingchurch.net/liturgy",
-   "fetched_at": "2026-11-01T17:27:36+00:00",
+   "raw": "Mass schedule:: Monday thru Friday: 8:00 am",
+   "source_url": "https://www.christthekingchurch.net/",
+   "fetched_at": "2026-11-01T17:27:31+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "wix",
-   "day_expanded_from": "Weekend",
+   "day_expanded_from": "Monday thru Friday",
    "day_parsed": "Monday",
    "day_bound_from_line": true
-  },
-  {
-   "kind": "mass",
-   "day": "Monday",
-   "time": "18:30",
-   "language": null,
-   "raw": "Weekend Masses: Mon – Fri: Holy Days: Youth Mass:: 8:00 am & 6:30 pm (except as noted)",
-   "source_url": "https://www.christthekingchurch.net/liturgy",
-   "fetched_at": "2026-11-01T17:27:36+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wix",
-   "day_expanded_from": "Weekend"
-  },
-  {
-   "kind": "mass",
-   "day": "Tuesday",
-   "time": "18:30",
-   "language": null,
-   "raw": "Weekend Masses: Mon – Fri: Holy Days: Youth Mass:: 8:00 am & 6:30 pm (except as noted)",
-   "source_url": "https://www.christthekingchurch.net/liturgy",
-   "fetched_at": "2026-11-01T17:27:36+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wix",
-   "day_expanded_from": "Weekend",
-   "day_parsed": "Monday",
-   "day_bound_from_line": true
-  },
-  {
-   "kind": "mass",
-   "day": "Wednesday",
-   "time": "18:30",
-   "language": null,
-   "raw": "Weekend Masses: Mon – Fri: Holy Days: Youth Mass:: 8:00 am & 6:30 pm (except as noted)",
-   "source_url": "https://www.christthekingchurch.net/liturgy",
-   "fetched_at": "2026-11-01T17:27:36+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wix",
-   "day_expanded_from": "Weekend",
-   "day_parsed": "Monday",
-   "day_bound_from_line": true
-  },
-  {
-   "kind": "mass",
-   "day": "Thursday",
-   "time": "18:30",
-   "language": null,
-   "raw": "Weekend Masses: Mon – Fri: Holy Days: Youth Mass:: 8:00 am & 6:30 pm (except as noted)",
-   "source_url": "https://www.christthekingchurch.net/liturgy",
-   "fetched_at": "2026-11-01T17:27:36+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wix",
-   "day_expanded_from": "Weekend",
-   "day_parsed": "Monday",
-   "day_bound_from_line": true
-  },
-  {
-   "kind": "mass",
-   "day": "Friday",
-   "time": "18:30",
-   "language": null,
-   "raw": "Weekend Masses: Mon – Fri: Holy Days: Youth Mass:: 8:00 am & 6:30 pm (except as noted)",
-   "source_url": "https://www.christthekingchurch.net/liturgy",
-   "fetched_at": "2026-11-01T17:27:36+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wix",
-   "day_expanded_from": "Weekend",
-   "day_parsed": "Monday",
-   "day_bound_from_line": true
-  },
-  {
-   "kind": "mass",
-   "day": "Third Sunday of the month",
-   "time": "10:30",
-   "language": null,
-   "raw": "10:30 am Mass, 3rd Sunday of each month (except as noted)",
-   "source_url": "https://www.christthekingchurch.net/liturgy",
-   "fetched_at": "2026-11-01T17:27:36+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "wix"
   },
   {
    "kind": "confession",
@@ -458,13 +377,119 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wix"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "18:30",
+   "language": null,
+   "raw": "Weekend Masses: Mon – Fri: Holy Days: Youth Mass:: 8:00 am & 6:30 pm",
+   "source_url": "https://www.christthekingchurch.net/liturgy",
+   "fetched_at": "2026-11-01T17:27:36+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "wix",
+   "note": "except as noted",
+   "day_parsed": "Sunday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "18:30",
+   "language": null,
+   "raw": "Weekend Masses: Mon – Fri: Holy Days: Youth Mass:: 8:00 am & 6:30 pm",
+   "source_url": "https://www.christthekingchurch.net/liturgy",
+   "fetched_at": "2026-11-01T17:27:36+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "wix",
+   "note": "except as noted",
+   "day_parsed": "Sunday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "18:30",
+   "language": null,
+   "raw": "Weekend Masses: Mon – Fri: Holy Days: Youth Mass:: 8:00 am & 6:30 pm",
+   "source_url": "https://www.christthekingchurch.net/liturgy",
+   "fetched_at": "2026-11-01T17:27:36+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "wix",
+   "note": "except as noted",
+   "day_parsed": "Sunday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "18:30",
+   "language": null,
+   "raw": "Weekend Masses: Mon – Fri: Holy Days: Youth Mass:: 8:00 am & 6:30 pm",
+   "source_url": "https://www.christthekingchurch.net/liturgy",
+   "fetched_at": "2026-11-01T17:27:36+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "wix",
+   "note": "except as noted",
+   "day_parsed": "Sunday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "18:30",
+   "language": null,
+   "raw": "Weekend Masses: Mon – Fri: Holy Days: Youth Mass:: 8:00 am & 6:30 pm",
+   "source_url": "https://www.christthekingchurch.net/liturgy",
+   "fetched_at": "2026-11-01T17:27:36+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "wix",
+   "note": "except as noted",
+   "day_parsed": "Sunday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Third Sunday of the month",
+   "time": "10:30",
+   "language": null,
+   "raw": "10:30 am Mass, 3rd Sunday of each month",
+   "source_url": "https://www.christthekingchurch.net/liturgy",
+   "fetched_at": "2026-11-01T17:27:36+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wix",
+   "note": "except as noted"
   }
  ],
  "source_url": "https://www.christthekingchurch.net/",
  "fetched_at": "2026-11-01T17:27:45+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:59+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wix",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -478,8 +503,18 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 15
+  "trusted_kinds": [],
+  "generic_rows": 16
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "The Eucharist is offered every day at Christ the King Church; Reconciliation is on Saturdays at 4pm, but can be scheduled anytime by appointment. Please read further for information on specific sacram",
+   "phrase": "by appointment",
+   "source_url": "https://www.christthekingchurch.net/sacraments",
+   "fetched_at": "2026-11-02T04:41:58+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "other_location": 2,
@@ -490,8 +525,8 @@
   "noise": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
