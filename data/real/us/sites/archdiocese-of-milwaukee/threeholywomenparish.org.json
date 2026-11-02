@@ -87,6 +87,18 @@
    "url": "https://www.threeholywomenparish.org/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.threeholywomenparish.org/sacraments/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.threeholywomenparish.org/events/eucharistic-adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -363,6 +375,36 @@
    "review_reason": null,
    "confidence": "high",
    "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:30-16:15",
+   "language": null,
+   "raw": "[Three Holy Women Parish - Holy Rosary Church] Reconciliation (Penance or Confession): 3:30-4:15 pm, Holy Rosary Church, 2011 N Oakland Ave",
+   "source_url": "https://www.threeholywomenparish.org/sacraments/",
+   "fetched_at": "2026-11-02T04:41:45+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "15:30",
+   "language": null,
+   "raw": "[Three Holy Women Parish - Holy Rosary Church] Sunday Mass Schedule: 3:30 pm Saturday Confession at Holy Rosary",
+   "source_url": "https://www.threeholywomenparish.org/mass-times/",
+   "fetched_at": "2026-11-02T04:41:47+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_parsed": "Saturday",
+   "day_bound_from_line": true,
+   "topup": true
   }
  ],
  "source_url": "https://www.threeholywomenparish.org/",
@@ -406,5 +448,30 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "adoration",
+   "text": "after all Masses",
+   "phrase": "after all Masses",
+   "source_url": "https://www.threeholywomenparish.org/events/eucharistic-adoration/",
+   "fetched_at": "2026-11-02T04:41:46+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:47+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
  }
 }

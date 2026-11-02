@@ -75,6 +75,12 @@
    "url": "https://www.stkatharinedrexelbd.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stkatharinedrexelbd.org/adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -531,6 +537,92 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "08:20",
+   "language": null,
+   "raw": "Adoration of the Blessed Sacrament: Every Friday following the 8:20 AM Mass.",
+   "source_url": "https://www.stkatharinedrexelbd.org/adoration",
+   "fetched_at": "2026-11-02T04:41:45+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "after",
+   "note": "Adoration of the Blessed Sacrament: Every Friday following the 8:20 AM Mass.",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Exposition at 9:00 AM; Closing Benediction at 6:45 PM",
+   "source_url": "https://www.stkatharinedrexelbd.org/adoration",
+   "fetched_at": "2026-11-02T04:41:45+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Friday",
+   "time": "12:00-13:00",
+   "language": null,
+   "raw": "CONFESSION: Every Friday during Adoration from: 12:00 to 1:00 PM",
+   "source_url": "https://www.stkatharinedrexelbd.org/adoration",
+   "fetched_at": "2026-11-02T04:41:45+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Friday",
+   "time": "17:30-18:30",
+   "language": null,
+   "raw": "CONFESSION: Every Friday during Adoration from: and 5:30 to 6:30 PM",
+   "source_url": "https://www.stkatharinedrexelbd.org/adoration",
+   "fetched_at": "2026-11-02T04:41:45+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "10:00",
+   "language": null,
+   "raw": "ROSARY: Every Friday during Adoration: at 10:00 AM; Occasional Fridays - Bilingual",
+   "source_url": "https://www.stkatharinedrexelbd.org/adoration",
+   "fetched_at": "2026-11-02T04:41:45+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "18:30",
+   "language": null,
+   "raw": "ROSARY: Every Friday during Adoration: at 6:30 PM",
+   "source_url": "https://www.stkatharinedrexelbd.org/adoration",
+   "fetched_at": "2026-11-02T04:41:45+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
   }
  ],
  "source_url": "http://www.stkatharinedrexelbd.org/",
@@ -575,5 +667,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:45+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 6,
+  "mode": "merge"
  }
 }

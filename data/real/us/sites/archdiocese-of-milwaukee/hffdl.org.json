@@ -84,6 +84,18 @@
    "url": "https://www.hffdl.org/events/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.hffdl.org/areas_of_ministry/prayer-and-worship/adoration/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.hffdl.org/areas_of_ministry/sacraments/reconciliation/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -2948,6 +2960,20 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Friday",
+   "time": "19:00-19:45",
+   "language": "Spanish",
+   "raw": "[Holy Family Parish - St. Mary Church] Holy Family Catholic Community will offer Confession:: Friday: From 7:00 to 7:45 pm at St. Mary (primarily in Spanish)",
+   "source_url": "https://www.hffdl.org/areas_of_ministry/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:45+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "http://www.hffdl.org/",
@@ -2992,5 +3018,21 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:46+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

@@ -128,7 +128,7 @@
    "feed_key": "06dd057eb5be",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-02T01:59:06+00:00",
+    "fetched_at": "2026-11-02T04:47:59+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -148,19 +148,6 @@
   "source_url": "https://www.stmarycatholic.org/"
  },
  "schedule_rows": [
-  {
-   "kind": "confession",
-   "day": "First and Third Saturday of the month",
-   "time": "15:00-15:30",
-   "language": null,
-   "raw": "The ordinary time for reconciliation is the First and Third Saturday of the month, 3:00-3:30 pm.",
-   "source_url": "https://www.stmarycatholic.org/sacraments",
-   "fetched_at": "2026-11-01T08:35:00+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "generic_strict"
-  },
   {
    "kind": "mass",
    "day": "Saturday",
@@ -290,13 +277,65 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Eucharistic Adoration: Friday: After 8:00 AM Mass at St. Mary",
+   "source_url": "https://www.stmarycatholic.org/",
+   "fetched_at": "2026-11-01T08:35:00+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "after",
+   "note": "Eucharistic Adoration: Friday: After 8:00 AM Mass at St. Mary",
+   "relative_resolved": true
+  },
+  {
+   "kind": "confession",
+   "day": "First and Third Saturday of the month",
+   "time": "15:00-15:30",
+   "language": null,
+   "raw": "Confession/Rosary: 1st & 3rd Saturday: 3:00 PM–3:30 PM",
+   "source_url": "https://www.stmarycatholic.org/",
+   "fetched_at": "2026-11-01T08:35:00+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "devotion",
+   "day": "Thursday",
+   "time": "19:00",
+   "language": null,
+   "raw": "7:00 PM [Mass intention withheld]",
+   "source_url": "https://www.stmarycatholic.org/",
+   "fetched_at": "2026-11-01T08:35:00+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict"
   }
  ],
  "source_url": "https://www.stmarycatholic.org/",
  "fetched_at": "2026-11-01T08:35:08+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:39+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -310,12 +349,11 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 8
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "relative_time": 1,
-  "not_a_service": 1,
   "no_day": 5,
   "other_location": 1
  },
@@ -346,6 +384,7 @@
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
  },
  "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
+  "screened_by": "ingest/public/privacy.py screen()",
+  "intentions_withheld": 1
  }
 }

@@ -63,6 +63,12 @@
    "url": "https://www.mystelizabeth.com/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.mystelizabeth.com/adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -649,6 +655,20 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wix"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "06:30-21:30",
+   "language": null,
+   "raw": "Adoration Information: Time: 6:30am to 9:30pm",
+   "source_url": "https://www.mystelizabeth.com/adoration",
+   "fetched_at": "2026-11-02T04:41:56+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "topup": true
   }
  ],
  "source_url": "http://www.mystelizabeth.com/",
@@ -687,5 +707,29 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "The Sacrament of Reconciliation is offered Saturdays 4:00 - 4:30pm in the church Reconciliation Room or any other time by request.",
+   "phrase": "by request",
+   "source_url": "https://www.mystelizabeth.com/reconciliation",
+   "fetched_at": "2026-11-02T04:41:46+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:56+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }
