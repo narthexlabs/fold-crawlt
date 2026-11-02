@@ -39,6 +39,12 @@
    "url": "https://ourladyqueenofangelsparish.wordpress.com/whatsup/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://ourladyqueenofangelsparish.wordpress.com/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -54,19 +60,6 @@
  "social": {},
  "bulletin": null,
  "schedule_rows": [
-  {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "14:00-15:00",
-   "language": null,
-   "raw": "CONFESSIONS/CONFECIONES: Saturdays @ 2:00pm-3:00pm/ Sabados @ 2:00pm-3:00pm",
-   "source_url": "https://ourladyqueenofangelsparish.wordpress.com/sacramentssacramentos/",
-   "fetched_at": "2026-11-01T08:05:02+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress"
-  },
   {
    "kind": "mass",
    "day": "Monday",
@@ -131,13 +124,36 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "14:00-15:00",
+   "language": null,
+   "raw": "CONFESSIONS/CONFECIONES: Saturdays @ 2:00pm-3:00pm/ Sabados @ 2:00pm-3:00pm",
+   "source_url": "https://ourladyqueenofangelsparish.wordpress.com/sacramentssacramentos/",
+   "fetched_at": "2026-11-01T08:05:02+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
   }
  ],
  "source_url": "https://ourladyqueenofangelsparish.wordpress.com/mass-timesmisas",
  "fetched_at": "2026-11-01T08:05:06+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:37+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -151,14 +167,15 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 9
  },
  "has_sunday": false,
  "schedule_partial": true,
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
