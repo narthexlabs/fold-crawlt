@@ -81,6 +81,18 @@
    "url": "https://www.popplano.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.popplano.org/sacraments/reconciliation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.popplano.org/sacraments/eucharistic-adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -934,6 +946,20 @@
    "confidence": "medium",
    "template": "generic_strict",
    "day_expanded_from": "Monday - Friday"
+  },
+  {
+   "kind": "confession",
+   "day": "Third Tuesday of the month",
+   "time": "19:00-21:00",
+   "language": null,
+   "raw": "Confession is held the 3rd Tuesday of every month from 7pm-9pm. Confession is also held on Saturdays from 3:30pm-4:30pm before Mass.",
+   "source_url": "https://www.popplano.org/sacraments/reconciliation",
+   "fetched_at": "2026-11-02T04:41:36+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "topup": true
   }
  ],
  "source_url": "http://www.popplano.org/",
@@ -976,5 +1002,21 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:38+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }
