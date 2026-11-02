@@ -19,12 +19,18 @@
  "home_url": "https://www.scnj.org/",
  "final_url": "https://www.scnj.org/",
  "crawl_status": "ok",
- "crawl_env": "sandbox",
+ "crawl_env": "runner-rendered",
  "robots_note": "ok",
  "pages": [
   {
    "category": "home",
    "url": "https://www.scnj.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.scnj.org/chapel",
    "status": 200,
    "class": "ok"
   },
@@ -49,12 +55,6 @@
   {
    "category": "contact",
    "url": "https://www.scnj.org/contact-us",
-   "status": 200,
-   "class": "ok"
-  },
-  {
-   "category": "adoration",
-   "url": "https://www.scnj.org/chapel",
    "status": 200,
    "class": "ok"
   }
@@ -89,7 +89,7 @@
    "language": null,
    "raw": "Daily Mass Times: Monday - Friday 11:00 a.m.",
    "source_url": "https://www.scnj.org/chapel",
-   "fetched_at": "2026-11-02T04:47:49+00:00",
+   "fetched_at": "2026-11-02T07:16:55+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -103,7 +103,7 @@
    "language": null,
    "raw": "Daily Mass Times: Monday - Friday 11:00 a.m.",
    "source_url": "https://www.scnj.org/chapel",
-   "fetched_at": "2026-11-02T04:47:49+00:00",
+   "fetched_at": "2026-11-02T07:16:55+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -119,7 +119,7 @@
    "language": null,
    "raw": "Daily Mass Times: Monday - Friday 11:00 a.m.",
    "source_url": "https://www.scnj.org/chapel",
-   "fetched_at": "2026-11-02T04:47:49+00:00",
+   "fetched_at": "2026-11-02T07:16:55+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -135,7 +135,7 @@
    "language": null,
    "raw": "Daily Mass Times: Monday - Friday 11:00 a.m.",
    "source_url": "https://www.scnj.org/chapel",
-   "fetched_at": "2026-11-02T04:47:49+00:00",
+   "fetched_at": "2026-11-02T07:16:55+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -151,7 +151,7 @@
    "language": null,
    "raw": "Daily Mass Times: Monday - Friday 11:00 a.m.",
    "source_url": "https://www.scnj.org/chapel",
-   "fetched_at": "2026-11-02T04:47:49+00:00",
+   "fetched_at": "2026-11-02T07:16:55+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -167,7 +167,7 @@
    "language": null,
    "raw": "Daily Mass Times: Saturday 9:15 a.m.",
    "source_url": "https://www.scnj.org/chapel",
-   "fetched_at": "2026-11-02T04:47:49+00:00",
+   "fetched_at": "2026-11-02T07:16:55+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -180,7 +180,7 @@
    "language": null,
    "raw": "Daily Mass Times: Sunday 9:15 a.m.",
    "source_url": "https://www.scnj.org/chapel",
-   "fetched_at": "2026-11-02T04:47:49+00:00",
+   "fetched_at": "2026-11-02T07:16:55+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -188,19 +188,7 @@
   }
  ],
  "source_url": "https://www.scnj.org/",
- "fetched_at": "2026-11-01T22:16:34+00:00",
- "topup": {
-  "kinds": [
-   "adoration",
-   "confession",
-   "liturgy"
-  ],
-  "at": "2026-11-02T04:47:50+00:00",
-  "requests": 1,
-  "found": [
-   "adoration"
-  ]
- },
+ "fetched_at": "2026-11-02T07:17:09+00:00",
  "schedule_template": {
   "template": "wix",
   "version": "ca-sites/3",
@@ -243,10 +231,11 @@
    "phone": "https://www.scnj.org/contact-us",
    "address": "https://www.scnj.org/contact-us"
   },
-  "fetched_at": "2026-11-01T22:16:34+00:00",
+  "fetched_at": "2026-11-02T07:17:09+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
- }
+ },
+ "fetch_mode": "rendered"
 }
