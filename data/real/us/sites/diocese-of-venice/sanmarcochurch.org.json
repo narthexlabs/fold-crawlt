@@ -132,6 +132,21 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday (summer, may-dec)",
+   "time": "16:00-17:00",
+   "language": null,
+   "raw": "Penance and Reconciliation: (May to December) Saturday from 4:00 pm. to 5:00 pm.",
+   "source_url": "https://sanmarcochurch.org/sacraments/",
+   "fetched_at": "2026-11-02T04:42:14+00:00",
+   "needs_review": true,
+   "review_reason": "seasonal",
+   "confidence": "medium",
+   "template": "wordpress",
+   "season": "May to December",
+   "topup": true
   }
  ],
  "source_url": "http://sanmarcochurch.org/",
@@ -167,5 +182,29 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Confessions are also available by appointment by calling the office.",
+   "phrase": "by appointment",
+   "source_url": "https://sanmarcochurch.org/sacraments/",
+   "fetched_at": "2026-11-02T04:42:14+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:19+00:00",
+  "requests": 3,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

@@ -87,6 +87,18 @@
    "url": "https://www.stmichaelssiesta.com/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stmichaelssiesta.com/penance-and-reconciliation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stmichaelssiesta.com/adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -310,6 +322,20 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "09:30-15:00",
+   "language": null,
+   "raw": "At St. Michael the Archangel, we offer Eucharistic Adoration every Tuesday from 9:30am-3:00pm.",
+   "source_url": "https://www.stmichaelssiesta.com/adoration",
+   "fetched_at": "2026-11-02T04:42:06+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "topup": true
   }
  ],
  "source_url": "http://www.stmichaelssiesta.com/",
@@ -345,5 +371,21 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:07+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

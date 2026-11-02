@@ -75,6 +75,12 @@
    "url": "https://www.olqhhmm.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.olqhhmm.org/holy-hour-at-olqh-church",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -314,6 +320,20 @@
    "confidence": "medium",
    "template": "wordpress",
    "kind_parsed": "adoration"
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Adoration of Blessed Sacrament: Friday at 5pm is transfered to the church.",
+   "source_url": "https://www.olqhhmm.org/holy-hour-at-olqh-church",
+   "fetched_at": "2026-11-02T04:42:21+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "https://www.olqhhmm.org/",
@@ -354,5 +374,29 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "adoration",
+   "text": "Date: OLQH 30 minutes before Mass on Weekends; every Friday, during Adoration from 7pm-8pm",
+   "phrase": "30 minutes before Mass",
+   "source_url": "https://www.olqhhmm.org/reconciliation-reconciliaci-n",
+   "fetched_at": "2026-11-02T04:42:11+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:21+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }
