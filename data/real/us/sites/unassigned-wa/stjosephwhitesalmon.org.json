@@ -57,6 +57,18 @@
    "url": "https://stjosephwhitesalmon.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stjosephwhitesalmon.org/reconciliation/",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stjosephwhitesalmon.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -96,48 +108,22 @@
   {
    "kind": "mass",
    "day": "Saturday",
-   "time": "19:00",
-   "language": "Spanish",
-   "raw": "White Salmon, WA | Saturday Vigil: 5 p.m. (Eng), 7 p.m. (Esp) | Sunday Mass: 9 a.m. (Eng), 11 a.m. (Esp), 1 p.m. (Esp)",
+   "time": "17:00",
+   "language": "English",
+   "raw": "Masses / Misas: 5:00 p.m. English",
    "source_url": "https://stjosephwhitesalmon.org/masses/",
    "fetched_at": "2026-11-01T20:25:10+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "high",
-   "template": "wordpress"
-  },
-  {
-   "kind": "mass",
-   "day": "Sunday",
-   "time": "11:00",
-   "language": "Spanish",
-   "raw": "White Salmon, WA | Saturday Vigil: 5 p.m. (Eng), 7 p.m. (Esp) | Sunday Mass: 9 a.m. (Eng), 11 a.m. (Esp), 1 p.m. (Esp)",
-   "source_url": "https://stjosephwhitesalmon.org/masses/",
-   "fetched_at": "2026-11-01T20:25:10+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "wordpress"
-  },
-  {
-   "kind": "mass",
-   "day": "Sunday",
-   "time": "13:00",
-   "language": "Spanish",
-   "raw": "White Salmon, WA | Saturday Vigil: 5 p.m. (Eng), 7 p.m. (Esp) | Sunday Mass: 9 a.m. (Eng), 11 a.m. (Esp), 1 p.m. (Esp)",
-   "source_url": "https://stjosephwhitesalmon.org/masses/",
-   "fetched_at": "2026-11-01T20:25:10+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
+   "confidence": "medium",
    "template": "wordpress"
   },
   {
    "kind": "mass",
    "day": "Saturday",
-   "time": "17:00",
-   "language": "English",
-   "raw": "Masses / Misas: 5:00 p.m. English",
+   "time": "19:00",
+   "language": "Spanish",
+   "raw": "Masses / Misas: 7:00 p.m. Español",
    "source_url": "https://stjosephwhitesalmon.org/masses/",
    "fetched_at": "2026-11-01T20:25:10+00:00",
    "needs_review": false,
@@ -151,6 +137,32 @@
    "time": "09:00",
    "language": "English",
    "raw": "Masses / Misas: 9:00 a.m. English",
+   "source_url": "https://stjosephwhitesalmon.org/masses/",
+   "fetched_at": "2026-11-01T20:25:10+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:00",
+   "language": "Spanish",
+   "raw": "Masses / Misas: 11:00 a.m. Español",
+   "source_url": "https://stjosephwhitesalmon.org/masses/",
+   "fetched_at": "2026-11-01T20:25:10+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "13:00",
+   "language": "Spanish",
+   "raw": "Masses / Misas: 1:00 p.m. Español",
    "source_url": "https://stjosephwhitesalmon.org/masses/",
    "fetched_at": "2026-11-01T20:25:10+00:00",
    "needs_review": false,
@@ -233,9 +245,19 @@
  ],
  "source_url": "https://stjosephwhitesalmon.org/",
  "fetched_at": "2026-11-01T20:25:21+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:47+00:00",
+  "requests": 2,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -249,13 +271,14 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 15
  },
  "has_sunday": true,
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
@@ -276,8 +299,6 @@
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
  },
  "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()",
-  "names_withheld": 0,
-  "contacts_removed": 3
+  "screened_by": "ingest/public/privacy.py screen()"
  }
 }
