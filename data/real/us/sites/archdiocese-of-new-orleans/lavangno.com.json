@@ -18,32 +18,175 @@
  ],
  "home_url": "https://lavangno.com/",
  "final_url": "https://lavangno.com/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "crawl_status": "wayback-2026-04-15",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
    "url": "https://lavangno.com/",
-   "status": 403,
-   "class": "challenge"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://lavangno.com/bulletins",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.lavangno.com/events-news",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://lavangno.com/calendar",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://lavangno.com/mass-times",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://lavangno.com/mass-schedule",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "ministries",
+   "url": "https://lavangno.com/ministries",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
+ "template": "ecatholic-fastpath",
  "groups": [],
  "calendar_feeds": [],
  "events": [],
  "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "bulletin": {
+  "url": "https://lavangno.com/bulletins",
+  "date": null,
+  "kind": "page",
+  "text": "Bulletins",
+  "source_url": "https://lavangno.com/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "17:30-17:50",
+   "language": null,
+   "raw": "5:30 pm 5:50 pm [Mass intention withheld]",
+   "source_url": "https://lavangno.com/",
+   "fetched_at": "2026-04-15T19:28:51+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-15: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-04-15",
+   "archive_url": "https://web.archive.org/web/20260415192851/https://lavangno.com/",
+   "capture_date": "2026-04-15"
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "09:30-09:50",
+   "language": null,
+   "raw": "Bí Tích Hòa Giải (Reconciliation): Chúa Nhật: 9:30 am - 9:50 am",
+   "source_url": "https://lavangno.com/",
+   "fetched_at": "2026-04-15T19:28:51+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-15: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-04-15",
+   "archive_url": "https://web.archive.org/web/20260415192851/https://lavangno.com/",
+   "capture_date": "2026-04-15"
+  }
+ ],
  "source_url": "https://lavangno.com/",
- "fetched_at": "2026-11-01T17:27:31+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-02T01:03:31+00:00",
  "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
+  "screened_by": "ingest/public/privacy.py screen()",
+  "intentions_withheld": 1
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 2
+ },
+ "has_sunday": false,
+ "schedule_partial": true,
+ "groups_dropped": {},
+ "office_contact": {
+  "email": "lavangoffice@gmail.com",
+  "phone": "(504) 283-0559",
+  "address": "6054 Vermillion Blvd., New Orleans, LA 70122",
+  "source_url": "https://lavangno.com/",
+  "sources": {
+   "email": "https://lavangno.com/",
+   "phone": "https://lavangno.com/",
+   "address": "https://lavangno.com/"
+  },
+  "fetched_at": "2026-04-15T19:28:51+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2026-04-15",
+  "capture_age_days": 201,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://lavangno.com/",
+    "capture": "2026-04-15",
+    "archive_url": "https://web.archive.org/web/20260415192851/https://lavangno.com/"
+   },
+   {
+    "kind": "bulletin",
+    "original": "https://lavangno.com/bulletins",
+    "capture": "2025-05-01",
+    "archive_url": "https://web.archive.org/web/20250501000800/https://lavangno.com/bulletins"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://www.lavangno.com/events-news",
+    "capture": "2026-04-17",
+    "archive_url": "https://web.archive.org/web/20260417013450/https://www.lavangno.com/events-news"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://lavangno.com/calendar",
+    "capture": "2025-03-25",
+    "archive_url": "https://web.archive.org/web/20250325012926/https://lavangno.com/calendar"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }

@@ -17,33 +17,119 @@
   "New Orleans"
  ],
  "home_url": "http://www.stpiusxnola.org/",
- "final_url": "https://www.stpiusxnola.org/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "final_url": "https://stpiusxnola.org/",
+ "crawl_status": "wayback-2025-10-12",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
-   "url": "https://www.stpiusxnola.org/",
-   "status": 403,
-   "class": "challenge"
+   "url": "https://stpiusxnola.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stpiusxnola.org/mass-times",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stpiusxnola.org/mass-schedule",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "ministries",
+   "url": "https://stpiusxnola.org/ministries",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://stpiusxnola.org/bulletins",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://stpiusxnola.org/bulletin",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
+ "template": "ecatholic-fastpath",
  "groups": [],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/stpiusxnola"
+  ]
+ },
+ "bulletin": {
+  "url": "https://parish.stpiusxnola.org/bulletins",
+  "date": null,
+  "kind": "page",
+  "text": "Bulletins",
+  "source_url": "https://stpiusxnola.org/"
+ },
  "schedule_rows": [],
  "source_url": "http://www.stpiusxnola.org/",
- "fetched_at": "2026-11-01T17:27:35+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-02T01:39:33+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "has_sunday": false,
+ "groups_dropped": {},
+ "office_contact": {
+  "email": null,
+  "phone": "(504) 282-3332",
+  "address": null,
+  "source_url": "https://stpiusxnola.org/",
+  "sources": {
+   "phone": "https://stpiusxnola.org/"
+  },
+  "fetched_at": "2025-10-12T20:05:45+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2025-10-12",
+  "capture_age_days": 386,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://stpiusxnola.org/",
+    "capture": "2025-10-12",
+    "archive_url": "https://web.archive.org/web/20251012200545/https://stpiusxnola.org/"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }
