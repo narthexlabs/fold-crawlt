@@ -535,6 +535,19 @@
  "bulletin": null,
  "schedule_rows": [
   {
+   "kind": "devotion",
+   "day": "Wednesday",
+   "time": "19:30",
+   "language": null,
+   "raw": "7:30 PM",
+   "source_url": "https://www.stthomassyronj.org/liturgy",
+   "fetched_at": "2026-11-01T20:25:03+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix"
+  },
+  {
    "kind": "mass",
    "day": "Saturday (lent)",
    "time": "09:00",
@@ -546,13 +559,71 @@
    "review_reason": null,
    "confidence": "low",
    "template": "wix"
+  },
+  {
+   "kind": "confession",
+   "day": "Friday",
+   "time": "19:30",
+   "language": null,
+   "raw": "Confession: Friday after the 7:30 PM Holy Qurbana",
+   "source_url": "https://www.stthomassyronj.org/liturgy",
+   "fetched_at": "2026-11-01T20:25:03+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wix",
+   "relative": "after",
+   "note": "Confession: Friday after the 7:30 PM Holy Qurbana",
+   "relative_resolved": false
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Confession: Saturday after the 9:00 AM Holy Qurbana.",
+   "source_url": "https://www.stthomassyronj.org/liturgy",
+   "fetched_at": "2026-11-01T20:25:03+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wix",
+   "relative": "after",
+   "note": "Confession: Saturday after the 9:00 AM Holy Qurbana.",
+   "relative_resolved": false
+  },
+  {
+   "kind": "adoration",
+   "day": "Saturday",
+   "time": "19:30",
+   "language": null,
+   "raw": "Adoration after the 7:30 PM Holy Qurbana until 9:00 AM Saturday morning.",
+   "source_url": "https://www.stthomassyronj.org/liturgy",
+   "fetched_at": "2026-11-01T20:25:03+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wix",
+   "relative": "after",
+   "note": "Adoration after the 7:30 PM Holy Qurbana until 9:00 AM Saturday morning.",
+   "relative_resolved": false
   }
  ],
  "source_url": "https://www.stthomassyronj.org/",
  "fetched_at": "2026-11-01T20:25:07+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:47:48+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "wix",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -566,15 +637,14 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 0
  },
  "has_sunday": false,
  "schedule_partial": true,
  "schedule_dropped": {
-  "no_kind": 6,
-  "other_location": 8,
-  "not_a_service": 1,
-  "relative_time": 4
+  "other_location": 14,
+  "relative_time": 1
  },
  "groups_dropped": {
   "unmatched": 5,
@@ -583,8 +653,8 @@
   "private_name_risk": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
