@@ -23,33 +23,633 @@
   "New Castle"
  ],
  "home_url": "http://www.hsplc.org/",
- "final_url": "https://www.hsplc.org/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "final_url": "https://hsplc.org/",
+ "crawl_status": "wayback-2026-04-09",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
-   "url": "https://www.hsplc.org/",
-   "status": 403,
-   "class": "challenge"
+   "url": "https://hsplc.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.hsplc.org/mass",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.hsplc.org/confession",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://hsplc.org/formation-2",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.hsplc.org/high-school-youth-groups-calendar-times-location",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.hsplc.org/adult-formation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://www.hsplc.org/bulletins-1",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://hsplc.org/cgs-calendar",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://hsplc.org/middle-school-calendar-times-location",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://www.hsplc.org/se-contacts",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "hsplc.org:bible_study",
+   "name": "Bible Studies",
+   "category": "scripture_study",
+   "category_label": "Scripture & study",
+   "subcategory": "bible_study",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.hsplc.org/se-contacts",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.hsplc.org/adult-formation",
+   "source_kind": "website",
+   "fetched_at": "2025-10-11T21:48:23+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-04-09"
+  },
+  {
+   "id": "hsplc.org:bible_study|general",
+   "name": "General Bible Study",
+   "category": "scripture_study",
+   "category_label": "Scripture & study",
+   "subcategory": "bible_study",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.hsplc.org/se-contacts",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://hsplc.org/formation-2",
+   "source_kind": "website",
+   "fetched_at": "2025-10-11T00:58:56+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-04-09"
+  },
+  {
+   "id": "hsplc.org:bible_study_women",
+   "name": "Women's Bible Study",
+   "category": "scripture_study",
+   "category_label": "Scripture & study",
+   "subcategory": "bible_study",
+   "audience": "women",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.hsplc.org/se-contacts",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://hsplc.org/formation-2",
+   "source_kind": "website",
+   "fetched_at": "2025-10-11T00:58:56+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-04-09"
+  },
+  {
+   "id": "hsplc.org:adult_formation",
+   "name": "Adult Formation",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "adult_formation",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.hsplc.org/se-contacts",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://hsplc.org/formation-2",
+   "source_kind": "website",
+   "fetched_at": "2025-10-11T00:58:56+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-04-09"
+  },
+  {
+   "id": "hsplc.org:adult_formation|special",
+   "name": "Adult Formation Special Offerings",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "adult_formation",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.hsplc.org/se-contacts",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.hsplc.org/adult-formation",
+   "source_kind": "website",
+   "fetched_at": "2025-10-11T21:48:23+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-04-09"
+  },
+  {
+   "id": "hsplc.org:children_ff",
+   "name": "Catechesis of the Good Shepherd",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "children_faith_formation",
+   "audience": "families",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.hsplc.org/se-contacts",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://hsplc.org/formation-2",
+   "source_kind": "website",
+   "fetched_at": "2025-10-11T00:58:56+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-04-09"
+  },
+  {
+   "id": "hsplc.org:children_ff|elementary",
+   "name": "K-5 Elementary",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "children_faith_formation",
+   "audience": "families",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.hsplc.org/se-contacts",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://hsplc.org/formation-2",
+   "source_kind": "website",
+   "fetched_at": "2025-10-11T00:58:56+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-04-09"
+  },
+  {
+   "id": "hsplc.org:ocia",
+   "name": "OCIA Info",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "ocia",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.hsplc.org/se-contacts",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://hsplc.org/formation-2",
+   "source_kind": "website",
+   "fetched_at": "2025-10-11T00:58:56+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-04-09"
+  },
+  {
+   "id": "hsplc.org:youth_ministry",
+   "name": "High School & Youth Group Info",
+   "category": "youth",
+   "category_label": "Youth",
+   "subcategory": "youth_ministry",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.hsplc.org/se-contacts",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://hsplc.org/formation-2",
+   "source_kind": "website",
+   "fetched_at": "2025-10-11T00:58:56+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-04-09"
+  },
+  {
+   "id": "hsplc.org:youth_ministry|advisory",
+   "name": "YAC: Youth Advisory Council Info",
+   "category": "youth",
+   "category_label": "Youth",
+   "subcategory": "youth_ministry",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.hsplc.org/se-contacts",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://hsplc.org/formation-2",
+   "source_kind": "website",
+   "fetched_at": "2025-10-11T00:58:56+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-04-09"
+  },
+  {
+   "id": "hsplc.org:food",
+   "name": "Weekly Food Pantry",
+   "category": "service_mercy",
+   "category_label": "Service & mercy",
+   "subcategory": "food_ministry",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.hsplc.org/se-contacts",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://hsplc.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-04-09T04:44:25+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-04-09"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/Faithful-Catholics-of-Lawrence-County-261206961200337"
+  ],
+  "youtube": [
+   "https://www.youtube.com/@hsplc",
+   "https://www.youtube.com/channel/UCFIxNhgAyyTXA-l4DOHYQBQ"
+  ],
+  "flocknote": [
+   "https://holyspiritparish9.flocknote.com"
+  ],
+  "livestream": [
+   {
+    "url": "https://www.youtube.com/@hsplc/streams",
+    "label": "Youtube Channel",
+    "platform": "youtube",
+    "kind": "link"
+   }
+  ]
+ },
+ "bulletin": {
+  "url": "https://hsplc.org/bulletins-1",
+  "date": null,
+  "kind": "page",
+  "text": "Bulletins",
+  "source_url": "https://hsplc.org/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "16:00",
+   "language": "English",
+   "raw": "[Holy Spirit Parish - St. Vitus Church (New Castle)] Saturday: 4:00 PM English St. Vitus Church",
+   "source_url": "https://www.hsplc.org/mass",
+   "fetched_at": "2025-04-29T15:11:53+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-09: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "location": "Holy Spirit Parish - St. Vitus Church (New Castle)",
+   "source": "wayback-2026-04-09",
+   "archive_url": "https://web.archive.org/web/20250429151153/https://www.hsplc.org/mass",
+   "capture_date": "2025-04-29"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "07:00",
+   "language": "English",
+   "raw": "[Holy Spirit Parish - St. Vitus Church (New Castle)] Sunday: 7:00 AM English St. Vitus Church",
+   "source_url": "https://www.hsplc.org/mass",
+   "fetched_at": "2025-04-29T15:11:53+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-09: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "location": "Holy Spirit Parish - St. Vitus Church (New Castle)",
+   "source": "wayback-2026-04-09",
+   "archive_url": "https://web.archive.org/web/20250429151153/https://www.hsplc.org/mass",
+   "capture_date": "2025-04-29"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": "English",
+   "raw": "[Holy Spirit Parish - St. Mary Church (New Castle)] Sunday: 8:00 AM English St. Mary Church",
+   "source_url": "https://www.hsplc.org/mass",
+   "fetched_at": "2025-04-29T15:11:53+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-09: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "location": "Holy Spirit Parish - St. Mary Church (New Castle)",
+   "source": "wayback-2026-04-09",
+   "archive_url": "https://web.archive.org/web/20250429151153/https://www.hsplc.org/mass",
+   "capture_date": "2025-04-29"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": "English",
+   "raw": "[Holy Spirit Parish - St. Vitus Church (New Castle)] Sunday: 9:00 AM English St. Vitus Church",
+   "source_url": "https://www.hsplc.org/mass",
+   "fetched_at": "2025-04-29T15:11:53+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-09: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "location": "Holy Spirit Parish - St. Vitus Church (New Castle)",
+   "source": "wayback-2026-04-09",
+   "archive_url": "https://web.archive.org/web/20250429151153/https://www.hsplc.org/mass",
+   "capture_date": "2025-04-29"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:00",
+   "language": "English",
+   "raw": "[Holy Spirit Parish - St. Camillus Church (Neshannock Twp.)] Sunday: 11:00 AM English St. Camillus Church",
+   "source_url": "https://www.hsplc.org/mass",
+   "fetched_at": "2025-04-29T15:11:53+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-09: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "location": "Holy Spirit Parish - St. Camillus Church (Neshannock Twp.)",
+   "source": "wayback-2026-04-09",
+   "archive_url": "https://web.archive.org/web/20250429151153/https://www.hsplc.org/mass",
+   "capture_date": "2025-04-29"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "09:00",
+   "language": "English",
+   "raw": "[Holy Spirit Parish - St. Mary Church (New Castle)] Monday - Friday: 9:00 AM English St. Mary Church",
+   "source_url": "https://www.hsplc.org/mass",
+   "fetched_at": "2025-04-29T15:11:53+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-09: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Monday - Friday",
+   "location": "Holy Spirit Parish - St. Mary Church (New Castle)",
+   "source": "wayback-2026-04-09",
+   "archive_url": "https://web.archive.org/web/20250429151153/https://www.hsplc.org/mass",
+   "capture_date": "2025-04-29"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "09:00",
+   "language": "English",
+   "raw": "[Holy Spirit Parish - St. Mary Church (New Castle)] Monday - Friday: 9:00 AM English St. Mary Church",
+   "source_url": "https://www.hsplc.org/mass",
+   "fetched_at": "2025-04-29T15:11:53+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-09: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Monday - Friday",
+   "location": "Holy Spirit Parish - St. Mary Church (New Castle)",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "source": "wayback-2026-04-09",
+   "archive_url": "https://web.archive.org/web/20250429151153/https://www.hsplc.org/mass",
+   "capture_date": "2025-04-29"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "09:00",
+   "language": "English",
+   "raw": "[Holy Spirit Parish - St. Mary Church (New Castle)] Monday - Friday: 9:00 AM English St. Mary Church",
+   "source_url": "https://www.hsplc.org/mass",
+   "fetched_at": "2025-04-29T15:11:53+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-09: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Monday - Friday",
+   "location": "Holy Spirit Parish - St. Mary Church (New Castle)",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "source": "wayback-2026-04-09",
+   "archive_url": "https://web.archive.org/web/20250429151153/https://www.hsplc.org/mass",
+   "capture_date": "2025-04-29"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "09:00",
+   "language": "English",
+   "raw": "[Holy Spirit Parish - St. Mary Church (New Castle)] Monday - Friday: 9:00 AM English St. Mary Church",
+   "source_url": "https://www.hsplc.org/mass",
+   "fetched_at": "2025-04-29T15:11:53+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-09: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Monday - Friday",
+   "location": "Holy Spirit Parish - St. Mary Church (New Castle)",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "source": "wayback-2026-04-09",
+   "archive_url": "https://web.archive.org/web/20250429151153/https://www.hsplc.org/mass",
+   "capture_date": "2025-04-29"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "09:00",
+   "language": "English",
+   "raw": "[Holy Spirit Parish - St. Mary Church (New Castle)] Monday - Friday: 9:00 AM English St. Mary Church",
+   "source_url": "https://www.hsplc.org/mass",
+   "fetched_at": "2025-04-29T15:11:53+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-09: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Monday - Friday",
+   "location": "Holy Spirit Parish - St. Mary Church (New Castle)",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "source": "wayback-2026-04-09",
+   "archive_url": "https://web.archive.org/web/20250429151153/https://www.hsplc.org/mass",
+   "capture_date": "2025-04-29"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "11:00-12:00",
+   "language": null,
+   "raw": "[Holy Spirit Parish - St. Vitus Church (New Castle)] Saturday: 11:00 AM - 12:00 PM St. Vitus Church",
+   "source_url": "https://www.hsplc.org/confession",
+   "fetched_at": "2025-04-29T14:29:09+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-09: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "location": "Holy Spirit Parish - St. Vitus Church (New Castle)",
+   "source": "wayback-2026-04-09",
+   "archive_url": "https://web.archive.org/web/20250429142909/https://www.hsplc.org/confession",
+   "capture_date": "2025-04-29"
+  }
+ ],
  "source_url": "http://www.hsplc.org/",
- "fetched_at": "2026-11-01T17:21:19+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-02T01:17:48+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": true
+   },
+   "score": "high"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "text:not_a_service": 1,
+  "text:skipped_section": 1
+ },
+ "groups_dropped": {
+  "sacrament_prep": 1,
+  "noise": 2,
+  "unmatched": 1
+ },
+ "office_contact": {
+  "email": "parishoffice@hsplc.org",
+  "phone": "(724) 652-3422",
+  "address": "915 S. Jefferson St., New Castle, PA 16101",
+  "source_url": "https://www.hsplc.org/se-contacts",
+  "sources": {
+   "email": "https://www.hsplc.org/se-contacts",
+   "phone": "https://www.hsplc.org/se-contacts",
+   "address": "https://hsplc.org/"
+  },
+  "fetched_at": "2025-04-29T15:21:03+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2026-04-09",
+  "capture_age_days": 207,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://hsplc.org/",
+    "capture": "2026-04-09",
+    "archive_url": "https://web.archive.org/web/20260409044425/https://hsplc.org/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://www.hsplc.org/mass",
+    "capture": "2025-04-29",
+    "archive_url": "https://web.archive.org/web/20250429151153/https://www.hsplc.org/mass"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://www.hsplc.org/confession",
+    "capture": "2025-04-29",
+    "archive_url": "https://web.archive.org/web/20250429142909/https://www.hsplc.org/confession"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://hsplc.org/formation-2",
+    "capture": "2025-10-11",
+    "archive_url": "https://web.archive.org/web/20251011005856/https://hsplc.org/formation-2"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://www.hsplc.org/high-school-youth-groups-calendar-times-location",
+    "capture": "2025-10-11",
+    "archive_url": "https://web.archive.org/web/20251011234232/https://www.hsplc.org/high-school-youth-groups-calendar-times-location"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://www.hsplc.org/adult-formation",
+    "capture": "2025-10-11",
+    "archive_url": "https://web.archive.org/web/20251011214823/https://www.hsplc.org/adult-formation"
+   },
+   {
+    "kind": "bulletin",
+    "original": "https://www.hsplc.org/bulletins-1",
+    "capture": "2025-04-29",
+    "archive_url": "https://web.archive.org/web/20250429154416/https://www.hsplc.org/bulletins-1"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://hsplc.org/cgs-calendar",
+    "capture": "2025-10-11",
+    "archive_url": "https://web.archive.org/web/20251011003356/https://hsplc.org/cgs-calendar"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://hsplc.org/middle-school-calendar-times-location",
+    "capture": "2025-10-11",
+    "archive_url": "https://web.archive.org/web/20251011002101/https://hsplc.org/middle-school-calendar-times-location"
+   },
+   {
+    "kind": "contact",
+    "original": "https://www.hsplc.org/se-contacts",
+    "capture": "2025-04-29",
+    "archive_url": "https://web.archive.org/web/20250429152103/https://www.hsplc.org/se-contacts"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }
