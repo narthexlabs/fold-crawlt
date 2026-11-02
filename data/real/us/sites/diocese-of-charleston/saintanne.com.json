@@ -81,6 +81,12 @@
    "url": "https://saintannerockhill.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://saintannerockhill.org/reconciliation/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -358,6 +364,20 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:00-16:45",
+   "language": null,
+   "raw": "The Sacrament of Reconciliation is celebrated each Saturday from 3:00 PM to 4:45 PM or by appointment with one of our priests.",
+   "source_url": "https://saintannerockhill.org/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:53+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "https://www.saintanne.com/",
@@ -400,6 +420,25 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:57+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "secretary@charlestondiocese.org",
   "phone": "(803) 329-2662",
@@ -412,8 +451,5 @@
   },
   "fetched_at": "2026-11-01T05:14:34+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

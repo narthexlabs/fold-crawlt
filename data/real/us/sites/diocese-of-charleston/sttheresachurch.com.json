@@ -69,6 +69,12 @@
    "url": "https://www.sttheresachurch.com/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.sttheresachurch.com/mass-reconciliation",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -592,6 +598,62 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "squarespace"
+  },
+  {
+   "kind": "confession",
+   "day": "Wednesday",
+   "time": "10:00",
+   "language": "English",
+   "raw": "Reconciliation: Wednesdays 10:00am",
+   "source_url": "https://www.sttheresachurch.com/mass-reconciliation",
+   "fetched_at": "2026-11-02T04:41:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Thursday",
+   "time": "19:30",
+   "language": "English",
+   "raw": "Reconciliation: Thursdays 7:30pm",
+   "source_url": "https://www.sttheresachurch.com/mass-reconciliation",
+   "fetched_at": "2026-11-02T04:41:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "09:30",
+   "language": "English",
+   "raw": "Reconciliation: Saturdays 9:30am and 3:30pm",
+   "source_url": "https://www.sttheresachurch.com/mass-reconciliation",
+   "fetched_at": "2026-11-02T04:41:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:30",
+   "language": "English",
+   "raw": "Reconciliation: Saturdays 9:30am and 3:30pm",
+   "source_url": "https://www.sttheresachurch.com/mass-reconciliation",
+   "fetched_at": "2026-11-02T04:41:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace",
+   "topup": true
   }
  ],
  "source_url": "https://sttheresachurch.com/",
@@ -631,6 +693,25 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:59+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 4,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(843) 875-5002",
@@ -642,8 +723,5 @@
   },
   "fetched_at": "2026-11-01T05:14:51+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }
