@@ -79,6 +79,12 @@
    "url": "https://stnicholasmunster.com/about-us/contact-us",
    "status": 429,
    "class": "blocked_429"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://stnicholasmunster.com/liturgical-information",
+   "status": null,
+   "class": "timeout"
   }
  ],
  "cms_guess": {
@@ -121,7 +127,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:42:04+00:00",
+    "fetched_at": "2026-11-02T05:03:35+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -138,7 +144,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:42:06+00:00",
+    "fetched_at": "2026-11-02T05:03:36+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -159,8 +165,21 @@
  },
  "schedule_rows": [
   {
+   "kind": "devotion",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Vespers at 5 PM on Saturday in Whiting",
+   "source_url": "https://stnicholasmunster.com/",
+   "fetched_at": "2026-11-01T22:15:33+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict"
+  },
+  {
    "kind": "mass",
-   "day": "Monday",
+   "day": "Saturday",
    "time": "08:00",
    "language": null,
    "raw": "Divine Liturgy at 8 AM in Munster",
@@ -169,68 +188,11 @@
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
-   "template": "generic_strict",
-   "day_expanded_from": "Weekend"
+   "template": "generic_strict"
   },
   {
    "kind": "mass",
-   "day": "Tuesday",
-   "time": "08:00",
-   "language": null,
-   "raw": "Divine Liturgy at 8 AM in Munster",
-   "source_url": "https://stnicholasmunster.com/",
-   "fetched_at": "2026-11-01T22:15:33+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict",
-   "day_expanded_from": "Weekend"
-  },
-  {
-   "kind": "mass",
-   "day": "Wednesday",
-   "time": "08:00",
-   "language": null,
-   "raw": "Divine Liturgy at 8 AM in Munster",
-   "source_url": "https://stnicholasmunster.com/",
-   "fetched_at": "2026-11-01T22:15:33+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict",
-   "day_expanded_from": "Weekend"
-  },
-  {
-   "kind": "mass",
-   "day": "Thursday",
-   "time": "08:00",
-   "language": null,
-   "raw": "Divine Liturgy at 8 AM in Munster",
-   "source_url": "https://stnicholasmunster.com/",
-   "fetched_at": "2026-11-01T22:15:33+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict",
-   "day_expanded_from": "Weekend"
-  },
-  {
-   "kind": "mass",
-   "day": "Friday",
-   "time": "08:00",
-   "language": null,
-   "raw": "Divine Liturgy at 8 AM in Munster",
-   "source_url": "https://stnicholasmunster.com/",
-   "fetched_at": "2026-11-01T22:15:33+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict",
-   "day_expanded_from": "Weekend"
-  },
-  {
-   "kind": "mass",
-   "day": "Monday",
+   "day": "Saturday",
    "time": "09:00",
    "language": null,
    "raw": "Matins followed by Divine Liturgy at 9 AM in Whiting",
@@ -239,71 +201,24 @@
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
-   "template": "generic_strict",
-   "day_expanded_from": "Weekend"
-  },
-  {
-   "kind": "mass",
-   "day": "Tuesday",
-   "time": "09:00",
-   "language": null,
-   "raw": "Matins followed by Divine Liturgy at 9 AM in Whiting",
-   "source_url": "https://stnicholasmunster.com/",
-   "fetched_at": "2026-11-01T22:15:33+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict",
-   "day_expanded_from": "Weekend"
-  },
-  {
-   "kind": "mass",
-   "day": "Wednesday",
-   "time": "09:00",
-   "language": null,
-   "raw": "Matins followed by Divine Liturgy at 9 AM in Whiting",
-   "source_url": "https://stnicholasmunster.com/",
-   "fetched_at": "2026-11-01T22:15:33+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict",
-   "day_expanded_from": "Weekend"
-  },
-  {
-   "kind": "mass",
-   "day": "Thursday",
-   "time": "09:00",
-   "language": null,
-   "raw": "Matins followed by Divine Liturgy at 9 AM in Whiting",
-   "source_url": "https://stnicholasmunster.com/",
-   "fetched_at": "2026-11-01T22:15:33+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict",
-   "day_expanded_from": "Weekend"
-  },
-  {
-   "kind": "mass",
-   "day": "Friday",
-   "time": "09:00",
-   "language": null,
-   "raw": "Matins followed by Divine Liturgy at 9 AM in Whiting",
-   "source_url": "https://stnicholasmunster.com/",
-   "fetched_at": "2026-11-01T22:15:33+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict",
-   "day_expanded_from": "Weekend"
+   "template": "generic_strict"
   }
  ],
  "source_url": "https://stnicholasmunster.com/",
  "fetched_at": "2026-11-01T22:15:40+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:53:08+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -317,17 +232,15 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 2
  },
  "has_sunday": false,
  "schedule_partial": true,
- "schedule_dropped": {
-  "not_a_service": 1
- },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
