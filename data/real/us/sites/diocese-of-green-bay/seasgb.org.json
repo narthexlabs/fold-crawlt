@@ -84,6 +84,18 @@
    "url": "https://seasgb.org/about-us/location-how-to-connect-with-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://seasgb.org/about-us/sacraments/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://seasgb.org/about-us/adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -377,26 +389,13 @@
    "note": "The Events Calendar (WordPress) REST API",
    "last_fetch": {
     "status": 200,
-    "fetched_at": "2026-11-01T23:34:59+00:00",
-    "events_in_window": 6,
-    "kept": 6
+    "fetched_at": "2026-11-02T04:51:17+00:00",
+    "events_in_window": 5,
+    "kept": 5
    }
   }
  ],
  "events": [
-  {
-   "id": "13c8778c5e89919d",
-   "title": "Saint Celebration",
-   "start": "2026-11-01T08:00:00-08:00",
-   "end": "2026-11-01T09:30:00-08:00",
-   "all_day": false,
-   "location": "St. Elizabeth Ann Seton, Green Bay",
-   "category": "community",
-   "recurring": false,
-   "source_url": "https://seasgb.org/event/all-saints-day-family-fun-celebration/",
-   "feed_id": "seasgb.org:tribe_rest:5bfa3f1a",
-   "fetched_at": "2026-11-01T23:34:59+00:00"
-  },
   {
    "id": "cdab5e9d826a3ca1",
    "title": "Eucharistic Holy Hour",
@@ -408,7 +407,7 @@
    "recurring": false,
    "source_url": "https://seasgb.org/event/eucharistic-holy-hour/",
    "feed_id": "seasgb.org:tribe_rest:5bfa3f1a",
-   "fetched_at": "2026-11-01T23:34:59+00:00"
+   "fetched_at": "2026-11-02T04:51:17+00:00"
   },
   {
    "id": "b3444591baeff5c9",
@@ -421,7 +420,7 @@
    "recurring": false,
    "source_url": "https://seasgb.org/event/eucharistic-adoration-morning/",
    "feed_id": "seasgb.org:tribe_rest:5bfa3f1a",
-   "fetched_at": "2026-11-01T23:34:59+00:00"
+   "fetched_at": "2026-11-02T04:51:17+00:00"
   },
   {
    "id": "8e9bf0479d1784df",
@@ -434,7 +433,7 @@
    "recurring": false,
    "source_url": "https://seasgb.org/event/pray-the-rosary-2/",
    "feed_id": "seasgb.org:tribe_rest:5bfa3f1a",
-   "fetched_at": "2026-11-01T23:34:59+00:00"
+   "fetched_at": "2026-11-02T04:51:17+00:00"
   },
   {
    "id": "e5fcf37e1661dd9f",
@@ -447,7 +446,7 @@
    "recurring": false,
    "source_url": "https://seasgb.org/event/veterans-supporting-veterans-fellowship-support-group/",
    "feed_id": "seasgb.org:tribe_rest:5bfa3f1a",
-   "fetched_at": "2026-11-01T23:34:59+00:00"
+   "fetched_at": "2026-11-02T04:51:17+00:00"
   },
   {
    "id": "96ba9d594ed42acd",
@@ -460,7 +459,7 @@
    "recurring": false,
    "source_url": "https://seasgb.org/event/a-w-e-adoration-worship-encounter/",
    "feed_id": "seasgb.org:tribe_rest:5bfa3f1a",
-   "fetched_at": "2026-11-01T23:34:59+00:00"
+   "fetched_at": "2026-11-02T04:51:17+00:00"
   }
  ],
  "social": {
@@ -481,6 +480,33 @@
   "source_url": "https://seasgb.org/"
  },
  "schedule_rows": [
+  {
+   "kind": "adoration",
+   "day": "First Wednesday of the month (winter, oct-jun)",
+   "time": "18:00-19:00",
+   "language": null,
+   "raw": "Holy Hour is held on the first Wednesday of the month from 6:00 to 7:00 p.m. from October through June.",
+   "source_url": "https://seasgb.org/about-us/adoration/",
+   "fetched_at": "2026-11-02T04:41:52+00:00",
+   "needs_review": true,
+   "review_reason": "seasonal",
+   "confidence": "high",
+   "template": "wordpress",
+   "season": "from October through June"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:00",
+   "language": null,
+   "raw": "Individual Reconciliation can be received every Saturday at 3:00 p.m. or by calling the Parish office for an appointment.",
+   "source_url": "https://seasgb.org/about-us/sacraments/",
+   "fetched_at": "2026-11-02T04:41:51+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  },
   {
    "kind": "mass",
    "day": "Saturday",
@@ -550,9 +576,22 @@
  ],
  "source_url": "https://seasgb.org/",
  "fetched_at": "2026-11-01T08:35:12+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:52+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -560,12 +599,13 @@
     "counts_ok": true,
     "sunday_not_copied": true,
     "no_daily_on_sunday": true,
-    "mostly_high": false
+    "mostly_high": true
    },
    "score": "low"
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 11
  },
  "has_sunday": true,
@@ -578,12 +618,12 @@
   "noise": 9
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
-  "in_window": 6,
-  "kept_after_privacy": 6,
-  "stored": 6,
+  "in_window": 5,
+  "kept_after_privacy": 5,
+  "stored": 5,
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },

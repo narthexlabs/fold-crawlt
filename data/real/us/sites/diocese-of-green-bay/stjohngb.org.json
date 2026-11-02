@@ -259,7 +259,7 @@
    "feed_key": "85a2a69a46b6",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:35:37+00:00",
+    "fetched_at": "2026-11-02T04:52:22+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -279,32 +279,6 @@
   "source_url": "https://www.stjohngb.org/"
  },
  "schedule_rows": [
-  {
-   "kind": "confession",
-   "day": "Wednesday",
-   "time": "17:30-19:30",
-   "language": null,
-   "raw": "Confessions take place at St. Francis Xavier Cathedral.: Celebrated Wednesdays 5:30pm - 7:30pm and Saturdays 8am - 9:00am.",
-   "source_url": "https://www.stjohngb.org/confession",
-   "fetched_at": "2026-11-01T22:15:32+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
-  {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "08:00-09:00",
-   "language": null,
-   "raw": "Confessions take place at St. Francis Xavier Cathedral.: Celebrated Wednesdays 5:30pm - 7:30pm and Saturdays 8am - 9:00am.",
-   "source_url": "https://www.stjohngb.org/confession",
-   "fetched_at": "2026-11-01T22:15:32+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
   {
    "kind": "mass",
    "day": "Sunday",
@@ -351,6 +325,32 @@
    "day_bound_from_line": true
   },
   {
+   "kind": "confession",
+   "day": "Wednesday",
+   "time": "18:00-19:30",
+   "language": null,
+   "raw": "Confession: Wednesday 6:00-7:30 PM at Cathedral",
+   "source_url": "https://www.stjohngb.org/",
+   "fetched_at": "2026-11-01T22:15:30+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "08:00-09:00",
+   "language": null,
+   "raw": "Confession: Saturday 8:00-9:00 AM at Cathedral",
+   "source_url": "https://www.stjohngb.org/",
+   "fetched_at": "2026-11-01T22:15:30+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
    "kind": "mass",
    "day": "Sunday",
    "time": "07:30",
@@ -375,13 +375,49 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Weekend Mass Schedule at St. Francis Xavier Cathedral: Sunday 9:00 AM",
+   "source_url": "https://www.stjohngb.org/",
+   "fetched_at": "2026-11-01T22:15:30+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Wednesday",
+   "time": "17:30-19:30",
+   "language": null,
+   "raw": "Confessions take place at St. Francis Xavier Cathedral.: Celebrated Wednesdays 5:30pm - 7:30pm and Saturdays 8am - 9:00am.",
+   "source_url": "https://www.stjohngb.org/confession",
+   "fetched_at": "2026-11-01T22:15:32+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
   }
  ],
  "source_url": "https://www.stjohngb.org/",
  "fetched_at": "2026-11-01T22:15:36+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:50+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -389,24 +425,25 @@
     "counts_ok": true,
     "sunday_not_copied": true,
     "no_daily_on_sunday": true,
-    "mostly_high": true
+    "mostly_high": false
    },
-   "score": "high"
+   "score": "medium"
   },
   "passed_bar": true,
-  "trusted_candidate": true,
+  "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 12
  },
  "has_sunday": true,
  "schedule_dropped": {
   "other_location": 6,
-  "skipped_section": 4,
-  "prose": 3
+  "skipped_section": 1,
+  "prose": 2
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
