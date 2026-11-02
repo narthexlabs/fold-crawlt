@@ -87,6 +87,12 @@
    "url": "https://stmaryrockledge.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stmaryrockledge.org/adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -361,6 +367,20 @@
    "confidence": "low",
    "template": "wordpress",
    "day_expanded_from": "Mon, Tue, Wed, Thu, Fri, Sat"
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "09:00-15:00",
+   "language": null,
+   "raw": "Join us for Eucharistic Exposition and Adoration from 9:00 AM to 3:00 PM every Friday in the Marian Chapel.",
+   "source_url": "https://stmaryrockledge.org/adoration/",
+   "fetched_at": "2026-11-02T04:41:53+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "https://www.stmaryrockledge.org/",
@@ -403,5 +423,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:53+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

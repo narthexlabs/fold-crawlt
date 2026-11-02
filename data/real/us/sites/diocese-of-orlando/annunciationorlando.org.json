@@ -85,6 +85,12 @@
    "url": "https://annunciationorlando.org/need-more-information/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://annunciationorlando.org/adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -692,6 +698,104 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "Monday",
+   "time": "07:30",
+   "language": null,
+   "raw": "The Chapel of the Angels is open for Eucharistic Adoration, Monday to Friday from 7:30am (after the 7am Mass) until 7pm.",
+   "source_url": "https://annunciationorlando.org/adoration/",
+   "fetched_at": "2026-11-02T04:41:42+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "Monday to Friday",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "07:30",
+   "language": null,
+   "raw": "The Chapel of the Angels is open for Eucharistic Adoration, Monday to Friday from 7:30am (after the 7am Mass) until 7pm.",
+   "source_url": "https://annunciationorlando.org/adoration/",
+   "fetched_at": "2026-11-02T04:41:42+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "Monday to Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "07:30",
+   "language": null,
+   "raw": "The Chapel of the Angels is open for Eucharistic Adoration, Monday to Friday from 7:30am (after the 7am Mass) until 7pm.",
+   "source_url": "https://annunciationorlando.org/adoration/",
+   "fetched_at": "2026-11-02T04:41:42+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "Monday to Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "07:30",
+   "language": null,
+   "raw": "The Chapel of the Angels is open for Eucharistic Adoration, Monday to Friday from 7:30am (after the 7am Mass) until 7pm.",
+   "source_url": "https://annunciationorlando.org/adoration/",
+   "fetched_at": "2026-11-02T04:41:42+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "Monday to Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "07:30",
+   "language": null,
+   "raw": "The Chapel of the Angels is open for Eucharistic Adoration, Monday to Friday from 7:30am (after the 7am Mass) until 7pm.",
+   "source_url": "https://annunciationorlando.org/adoration/",
+   "fetched_at": "2026-11-02T04:41:42+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "Monday to Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "12:15",
+   "language": null,
+   "raw": "Adoration will close for the 12:15pm Daily Mass.",
+   "source_url": "https://annunciationorlando.org/adoration/",
+   "fetched_at": "2026-11-02T04:41:42+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "Daily",
+   "topup": true
   }
  ],
  "source_url": "https://annunciationorlando.org/",
@@ -733,5 +837,21 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:47+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 6,
+  "mode": "merge"
  }
 }

@@ -75,6 +75,18 @@
    "url": "https://www.saintmcc.com/staff",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.saintmcc.com/saintschapel",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://www.saintmcc.com/liturgical-donations",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -390,6 +402,42 @@
    "day_bound_from_line": true
   },
   {
+   "kind": "confession",
+   "day": "Monday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Confession Times: Monday & Friday: after the 9:00 a.m. Mass",
+   "source_url": "https://www.saintmcc.com/confession",
+   "fetched_at": "2026-11-02T01:57:14+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "after",
+   "note": "Confession Times: Monday & Friday: after the 9:00 a.m. Mass",
+   "day_expanded_from": "Monday & Friday",
+   "relative_resolved": false
+  },
+  {
+   "kind": "confession",
+   "day": "Friday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Confession Times: Monday & Friday: after the 9:00 a.m. Mass",
+   "source_url": "https://www.saintmcc.com/confession",
+   "fetched_at": "2026-11-02T01:57:14+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "after",
+   "note": "Confession Times: Monday & Friday: after the 9:00 a.m. Mass",
+   "day_expanded_from": "Monday & Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "relative_resolved": true
+  },
+  {
    "kind": "mass",
    "day": "Tuesday",
    "time": "09:00",
@@ -508,9 +556,22 @@
  "source_url": "http://stmatthewwh.com/",
  "fetched_at": "2026-11-02T01:57:21+00:00",
  "redirected_off_host": "saintmcc.com",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:44+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "liturgy"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -524,11 +585,11 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 12
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "relative_time": 1,
   "no_day": 1
  },
  "groups_dropped": {

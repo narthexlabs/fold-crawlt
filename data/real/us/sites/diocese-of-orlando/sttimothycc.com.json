@@ -81,6 +81,12 @@
    "url": "https://www.sttimothycc.com/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.sttimothycc.com/sacraments",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -583,6 +589,39 @@
    "confidence": "high",
    "template": "generic_strict",
    "day_expanded_from": "Monday-Saturday"
+  },
+  {
+   "kind": "confession",
+   "day": "Tuesday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Confession Times: TUESDAY: Following the 8:00 AM Mass",
+   "source_url": "https://www.sttimothycc.com/sacraments",
+   "fetched_at": "2026-11-02T04:41:44+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "after",
+   "note": "Confession Times: TUESDAY: Following the 8:00 AM Mass",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "08:30",
+   "language": null,
+   "raw": "We live stream Mass daily at 8:30 AM on Monday-Saturday and at 9:00 AM on Sunday.",
+   "source_url": "https://www.sttimothycc.com/mass-schedule",
+   "fetched_at": "2026-11-02T04:41:45+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "day_expanded_from": "daily",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "topup": true
   }
  ],
  "source_url": "http://www.sttimothycc.com/",
@@ -626,5 +665,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:45+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
  }
 }
