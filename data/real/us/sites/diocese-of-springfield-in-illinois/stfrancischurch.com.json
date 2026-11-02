@@ -75,6 +75,12 @@
    "url": "https://stfrancischurch.com/about-us/live-stream-and-recorded-masses/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stfrancischurch.com/sacraments/reconcilation/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -305,6 +311,20 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "First Friday of the month",
+   "time": "15:00-16:00",
+   "language": null,
+   "raw": "Confessions are held on:: Thursdays before First Fridays: 3:00-4:00 pm",
+   "source_url": "https://stfrancischurch.com/sacraments/reconcilation/",
+   "fetched_at": "2026-11-02T04:41:46+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "http://stfrancischurch.com/",
@@ -342,5 +362,29 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Anytime by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://stfrancischurch.com/sacraments/reconcilation/",
+   "fetched_at": "2026-11-02T04:41:46+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:48+00:00",
+  "requests": 3,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

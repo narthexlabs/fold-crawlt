@@ -83,6 +83,18 @@
    "url": "https://stmarytaylorville.org/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stmarytaylorville.org/sacraments/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stmarytaylorville.org/adoration/",
+   "status": null,
+   "class": "timeout"
   }
  ],
  "cms_guess": {
@@ -233,7 +245,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:37:31+00:00",
+    "fetched_at": "2026-11-02T04:54:04+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -250,7 +262,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:37:32+00:00",
+    "fetched_at": "2026-11-02T04:54:05+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -269,7 +281,7 @@
    "feed_key": "c6873229725a",
    "last_fetch": {
     "status": 404,
-    "fetched_at": "2026-11-01T23:37:33+00:00",
+    "fetched_at": "2026-11-02T04:54:06+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -294,12 +306,12 @@
    "day": "Saturday",
    "time": "17:30",
    "language": null,
-   "raw": "Mass: 5:30 pm",
-   "source_url": "https://stmarytaylorville.org/about-us/mass-times/",
-   "fetched_at": "2026-11-01T18:51:50+00:00",
+   "raw": "Mass Times: 5:30PM",
+   "source_url": "https://stmarytaylorville.org/",
+   "fetched_at": "2026-11-01T18:51:49+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "low",
+   "confidence": "medium",
    "template": "wordpress"
   },
   {
@@ -307,64 +319,97 @@
    "day": "Sunday",
    "time": "11:00",
    "language": null,
-   "raw": "Mass: 11:00 am",
-   "source_url": "https://stmarytaylorville.org/about-us/mass-times/",
-   "fetched_at": "2026-11-01T18:51:50+00:00",
+   "raw": "Mass Times: 11:00AM",
+   "source_url": "https://stmarytaylorville.org/",
+   "fetched_at": "2026-11-01T18:51:49+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "low",
+   "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "07:30",
+   "language": null,
+   "raw": "No Mass Wed & Fri;: Mon, Tue 7:30 AM",
+   "source_url": "https://stmarytaylorville.org/",
+   "fetched_at": "2026-11-01T18:51:49+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Mon, Tue"
   },
   {
    "kind": "mass",
    "day": "Tuesday",
    "time": "07:30",
    "language": null,
-   "raw": "No Mass on Monday;: 7:30 am",
-   "source_url": "https://stmarytaylorville.org/about-us/mass-times/",
-   "fetched_at": "2026-11-01T18:51:50+00:00",
+   "raw": "No Mass Wed & Fri;: Mon, Tue 7:30 AM",
+   "source_url": "https://stmarytaylorville.org/",
+   "fetched_at": "2026-11-01T18:51:49+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress",
-   "day_expanded_from": "Tuesday, Wednesday, Friday"
+   "day_expanded_from": "Mon, Tue",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
   },
   {
    "kind": "mass",
    "day": "Wednesday",
    "time": "07:30",
    "language": null,
-   "raw": "No Mass on Monday;: 7:30 am",
-   "source_url": "https://stmarytaylorville.org/about-us/mass-times/",
-   "fetched_at": "2026-11-01T18:51:50+00:00",
+   "raw": "No Mass Wed & Fri;: Mon, Tue 7:30 AM",
+   "source_url": "https://stmarytaylorville.org/",
+   "fetched_at": "2026-11-01T18:51:49+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress",
-   "day_expanded_from": "Tuesday, Wednesday, Friday"
+   "day_expanded_from": "Mon, Tue",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
   },
   {
    "kind": "mass",
    "day": "Friday",
    "time": "07:30",
    "language": null,
-   "raw": "No Mass on Monday;: 7:30 am",
-   "source_url": "https://stmarytaylorville.org/about-us/mass-times/",
-   "fetched_at": "2026-11-01T18:51:50+00:00",
+   "raw": "No Mass Wed & Fri;: Mon, Tue 7:30 AM",
+   "source_url": "https://stmarytaylorville.org/",
+   "fetched_at": "2026-11-01T18:51:49+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress",
-   "day_expanded_from": "Tuesday, Wednesday, Friday"
+   "day_expanded_from": "Mon, Tue",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
   },
   {
    "kind": "mass",
    "day": "Thursday (during the school year)",
    "time": "09:00",
    "language": null,
-   "raw": "No Mass on Monday;: 9:00 am during School year, 7:30 am during summer",
-   "source_url": "https://stmarytaylorville.org/about-us/mass-times/",
-   "fetched_at": "2026-11-01T18:51:50+00:00",
+   "raw": "No Mass Wed & Fri;: Thurs 9:00AM school year",
+   "source_url": "https://stmarytaylorville.org/",
+   "fetched_at": "2026-11-01T18:51:49+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": null,
+   "raw": "No Mass: 9:00AM",
+   "source_url": "https://stmarytaylorville.org/",
+   "fetched_at": "2026-11-01T18:51:49+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -440,9 +485,21 @@
  ],
  "source_url": "https://stmarytaylorville.org/",
  "fetched_at": "2026-11-01T18:51:58+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:05+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -456,8 +513,34 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 14
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "By Appointment",
+   "phrase": "By Appointment",
+   "source_url": "https://stmarytaylorville.org/",
+   "fetched_at": "2026-11-01T18:51:49+00:00"
+  }
+ ],
+ "schedule_none": [
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "text": "No Mass Wed & Fri;",
+   "source_url": "https://stmarytaylorville.org/",
+   "fetched_at": "2026-11-01T18:51:49+00:00"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "text": "No Mass on Monday;",
+   "source_url": "https://stmarytaylorville.org/about-us/mass-times/",
+   "fetched_at": "2026-11-01T18:51:50+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "other_location": 2
@@ -466,8 +549,8 @@
   "noise": 4
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

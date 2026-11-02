@@ -31,6 +31,24 @@
    "url": "https://www.sap-brighton.org/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://www.sap-brighton.org/?page_id=1276",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.sap-brighton.org/reconciliation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.sap-brighton.org/adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -87,9 +105,23 @@
  ],
  "source_url": "https://www.sap-brighton.org/",
  "fetched_at": "2026-11-01T20:25:09+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:46+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ]
+ },
  "schedule_template": {
   "template": "godaddy",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -103,17 +135,18 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 1
+  "trusted_kinds": [],
+  "generic_rows": 2
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "no_kind": 3,
+  "other_location": 9,
   "weekend_rescue_added": 1
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

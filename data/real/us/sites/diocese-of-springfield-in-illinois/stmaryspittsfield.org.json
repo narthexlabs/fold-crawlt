@@ -73,6 +73,12 @@
    "url": "https://www.stmaryspittsfield.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stmaryspittsfield.org/penance",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -206,7 +212,7 @@
    "feed_key": "9de06e00e4cc",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:37:29+00:00",
+    "fetched_at": "2026-11-02T04:54:02+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -299,13 +305,92 @@
    "template": "generic_strict",
    "day_expanded_from": "Tuesday, Wednesday, Friday & Saturday",
    "location": "Pittsfield, St. Mary"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "18:00",
+   "language": null,
+   "raw": "[Pittsfield, St. Mary] Confession:: -- After 6:00 PM Mass at St. Mary in Pittsfield",
+   "source_url": "https://www.stmaryspittsfield.org/",
+   "fetched_at": "2026-11-01T20:25:03+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "after",
+   "note": "[Pittsfield, St. Mary] Confession:: -- After 6:00 PM Mass at St. Mary in Pittsfield",
+   "location": "Pittsfield, St. Mary",
+   "relative_resolved": false
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "10:30",
+   "language": null,
+   "raw": "Confession:: Sunday -- After 10:30 AM Mass at",
+   "source_url": "https://www.stmaryspittsfield.org/",
+   "fetched_at": "2026-11-01T20:25:03+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "after",
+   "note": "Confession:: Sunday -- After 10:30 AM Mass at",
+   "relative_resolved": false
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "08:00",
+   "language": null,
+   "raw": "[Pittsfield, St. Mary] Eucharistic Adoration:: Every Friday after 8:00 AM Mass at St. Mary's in Pittsfield",
+   "source_url": "https://www.stmaryspittsfield.org/",
+   "fetched_at": "2026-11-01T20:25:03+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "after",
+   "note": "[Pittsfield, St. Mary] Eucharistic Adoration:: Every Friday after 8:00 AM Mass at St. Mary's in Pittsfield",
+   "location": "Pittsfield, St. Mary",
+   "relative_resolved": true
+  },
+  {
+   "kind": "adoration",
+   "day": "First Friday of the month",
+   "time": "08:00",
+   "language": null,
+   "raw": "[Pittsfield, St. Mary] First Friday's: 24-hour Eucharistic Adoration: beginning after 8 AM Mass at St. Mary's in Pittsfield",
+   "source_url": "https://www.stmaryspittsfield.org/",
+   "fetched_at": "2026-11-01T20:25:03+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "after",
+   "note": "[Pittsfield, St. Mary] First Friday's: 24-hour Eucharistic Adoration: beginning after 8 AM Mass at St. Mary's in Pittsfi",
+   "location": "Pittsfield, St. Mary",
+   "relative_resolved": false
   }
  ],
  "source_url": "https://www.stmaryspittsfield.org/",
  "fetched_at": "2026-11-01T20:25:13+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:44+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -319,14 +404,15 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 6
  },
  "has_sunday": true,
  "schedule_dropped": {
   "other_location": 2,
-  "relative_time": 4,
   "dated_line": 1,
-  "not_a_service": 2
+  "dated_block": 1,
+  "not_a_service": 1
  },
  "groups_dropped": {
   "noise": 3,
@@ -334,8 +420,8 @@
   "sentence": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
