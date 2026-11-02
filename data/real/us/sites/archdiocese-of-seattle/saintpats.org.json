@@ -196,6 +196,21 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "First Friday of the month (winter, oct-may)",
+   "time": "11:00",
+   "language": null,
+   "raw": "First Friday Mass (Oct. – May) | 11:00 am",
+   "source_url": "https://www.saintpats.org/parish/parish-life/mass-schedule/",
+   "fetched_at": "2026-11-02T04:41:44+00:00",
+   "needs_review": true,
+   "review_reason": "seasonal",
+   "confidence": "high",
+   "template": "wordpress",
+   "season": "Oct. – May",
+   "topup": true
   }
  ],
  "source_url": "http://www.saintpats.org/",
@@ -229,6 +244,32 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "30 minutes before the daily Masses",
+   "phrase": "30 minutes before the daily Masses",
+   "source_url": "https://www.saintpats.org/parish/parish-life/mass-schedule/",
+   "fetched_at": "2026-11-02T04:41:44+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:49+00:00",
+  "requests": 3,
+  "found": [
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "parish@saintpats.org",
   "phone": "(253) 383-2783",
@@ -241,8 +282,5 @@
   },
   "fetched_at": "2026-11-01T03:58:18+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }
