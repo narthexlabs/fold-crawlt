@@ -75,6 +75,12 @@
    "url": "https://sacredheartbolivar.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://sacredheartbolivar.org/eucharistic-adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -255,101 +261,78 @@
  "schedule_rows": [
   {
    "kind": "mass",
-   "day": "Saturday",
-   "time": "16:30",
+   "day": "First Friday of the month",
+   "time": "18:30",
    "language": null,
-   "raw": "SATURDAY: 4:30 PM",
-   "source_url": "https://sacredheartbolivar.org/",
-   "fetched_at": "2026-11-01T17:27:39+00:00",
+   "raw": "[Sacred Heart] First Friday: 6:30pm-7:30pm (after Mass)",
+   "source_url": "https://sacredheartbolivar.org/eucharistic-adoration/",
+   "fetched_at": "2026-11-02T04:42:01+00:00",
    "needs_review": false,
-   "review_reason": "schedule_box"
+   "review_reason": null,
+   "confidence": "low",
+   "template": "wordpress",
+   "location": "Sacred Heart"
   },
   {
    "kind": "mass",
-   "day": "Sunday",
-   "time": "09:00",
+   "day": "First Friday of the month",
+   "time": "19:30",
    "language": null,
-   "raw": "SUNDAY: 9:00 AM",
-   "source_url": "https://sacredheartbolivar.org/",
-   "fetched_at": "2026-11-01T17:27:39+00:00",
+   "raw": "[Sacred Heart] First Friday: 6:30pm-7:30pm (after Mass)",
+   "source_url": "https://sacredheartbolivar.org/eucharistic-adoration/",
+   "fetched_at": "2026-11-02T04:42:01+00:00",
    "needs_review": false,
-   "review_reason": "schedule_box"
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "location": "Sacred Heart"
   },
   {
    "kind": "mass",
-   "day": "Wednesday",
-   "time": "08:30",
+   "day": "Fourth Sunday of the month",
+   "time": "09:15",
    "language": null,
-   "raw": "Wednesdays: 8:30 AM",
-   "source_url": "https://sacredheartbolivar.org/",
-   "fetched_at": "2026-11-01T17:27:39+00:00",
+   "raw": "[Sacred Heart] 4th Sunday: Between the Masses 9:15am-10:20am",
+   "source_url": "https://sacredheartbolivar.org/eucharistic-adoration/",
+   "fetched_at": "2026-11-02T04:42:01+00:00",
    "needs_review": false,
-   "review_reason": "schedule_box"
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "location": "Sacred Heart"
   },
   {
    "kind": "mass",
-   "day": "Friday",
-   "time": "12:15",
+   "day": "Fourth Sunday of the month",
+   "time": "10:20",
    "language": null,
-   "raw": "Fridays (Except 1st Friday): 12:15 PM",
-   "source_url": "https://sacredheartbolivar.org/",
-   "fetched_at": "2026-11-01T17:27:39+00:00",
+   "raw": "[Sacred Heart] 4th Sunday: Between the Masses 9:15am-10:20am",
+   "source_url": "https://sacredheartbolivar.org/eucharistic-adoration/",
+   "fetched_at": "2026-11-02T04:42:01+00:00",
    "needs_review": false,
-   "review_reason": "schedule_box"
-  },
-  {
-   "kind": "mass",
-   "day": "Friday",
-   "time": "18:00",
-   "language": null,
-   "raw": "FIRST FRIDAY: 6:00 PM",
-   "source_url": "https://sacredheartbolivar.org/",
-   "fetched_at": "2026-11-01T17:27:39+00:00",
-   "needs_review": true,
-   "review_reason": "schedule_box,nth_of_month",
-   "nth": "first"
-  },
-  {
-   "kind": "mass",
-   "day": "Saturday",
-   "time": "08:30",
-   "language": null,
-   "raw": "FIRST SATURDAY OF MONTH: 8:30 AM",
-   "source_url": "https://sacredheartbolivar.org/",
-   "fetched_at": "2026-11-01T17:27:39+00:00",
-   "needs_review": true,
-   "review_reason": "schedule_box,nth_of_month",
-   "nth": "first"
-  },
-  {
-   "kind": "mass",
-   "day": "Wednesday",
-   "time": "18:00",
-   "language": null,
-   "raw": "2nd and 3rd Wednesday of the Month: 6:00PM",
-   "source_url": "https://sacredheartbolivar.org/",
-   "fetched_at": "2026-11-01T17:27:39+00:00",
-   "needs_review": true,
-   "review_reason": "schedule_box,nth_of_month",
-   "nth": "3rd"
-  },
-  {
-   "kind": "mass",
-   "day": "Sunday",
-   "time": "11:00",
-   "language": null,
-   "raw": "Sunday, 11:00am (St Williams, Buffalo)",
-   "source_url": "https://sacredheartbolivar.org/",
-   "fetched_at": "2026-11-01T17:27:39+00:00",
-   "needs_review": false,
-   "review_reason": "schedule_box"
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "location": "Sacred Heart"
   }
  ],
  "source_url": "https://sacredheartbolivar.org/",
  "fetched_at": "2026-11-01T17:27:48+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:02+00:00",
+  "requests": 1,
+  "found": [
+   "adoration"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -363,12 +346,13 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 10
+  "trusted_kinds": [],
+  "generic_rows": 11
  },
  "has_sunday": true,
  "schedule_dropped": {
   "other_location": 1,
-  "box_rows_added": 8
+  "range_not_a_mass": 1
  },
  "groups_dropped": {
   "noise": 1,
@@ -376,8 +360,8 @@
   "sentence": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
