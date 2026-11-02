@@ -76,6 +76,12 @@
    "url": "https://www.fatimalafayette.org/contact-us.html",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.fatimalafayette.org/eucharistic-adoration.html",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -226,7 +232,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:37:01+00:00",
+    "fetched_at": "2026-11-02T04:51:12+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -464,13 +470,81 @@
    "review_reason": null,
    "confidence": "high",
    "template": "weebly"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday (seasonal, oct-dec)",
+   "time": "16:00",
+   "language": null,
+   "raw": "Mass: 4:00 PM Saturday from October to December 2026",
+   "source_url": "https://www.fatimalafayette.org/liturgical-ministry-sign-up--schedules.html",
+   "fetched_at": "2026-11-01T17:28:10+00:00",
+   "needs_review": true,
+   "review_reason": "seasonal",
+   "confidence": "low",
+   "template": "weebly",
+   "season": "from October to December"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday (seasonal, oct-dec)",
+   "time": "09:00",
+   "language": null,
+   "raw": "Mass: 9:00 AM Sunday from October to December 2026",
+   "source_url": "https://www.fatimalafayette.org/liturgical-ministry-sign-up--schedules.html",
+   "fetched_at": "2026-11-01T17:28:10+00:00",
+   "needs_review": true,
+   "review_reason": "seasonal",
+   "confidence": "medium",
+   "template": "weebly",
+   "season": "from October to December"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday (seasonal, oct-dec)",
+   "time": "11:00",
+   "language": null,
+   "raw": "Mass: 11:00 AM Sunday from October to December 2026",
+   "source_url": "https://www.fatimalafayette.org/liturgical-ministry-sign-up--schedules.html",
+   "fetched_at": "2026-11-01T17:28:10+00:00",
+   "needs_review": true,
+   "review_reason": "seasonal",
+   "confidence": "medium",
+   "template": "weebly",
+   "season": "from October to December"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday (seasonal, oct-dec)",
+   "time": "17:00",
+   "language": null,
+   "raw": "Mass: 5:00 PM Sunday from October to December 2026",
+   "source_url": "https://www.fatimalafayette.org/liturgical-ministry-sign-up--schedules.html",
+   "fetched_at": "2026-11-01T17:28:10+00:00",
+   "needs_review": true,
+   "review_reason": "seasonal",
+   "confidence": "medium",
+   "template": "weebly",
+   "season": "from October to December"
   }
  ],
  "source_url": "http://fatimalafayette.org/",
  "fetched_at": "2026-11-01T17:28:19+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:45+00:00",
+  "requests": 1,
+  "found": [
+   "adoration"
+  ]
+ },
  "schedule_template": {
   "template": "weebly",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -484,11 +558,12 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 15
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 1,
+  "other_location": 5,
   "relative_time": 1,
   "implausible_hour": 1
  },
@@ -499,8 +574,8 @@
   "unmatched": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
