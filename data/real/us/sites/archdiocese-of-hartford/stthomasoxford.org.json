@@ -63,6 +63,12 @@
    "url": "https://stthomasoxford.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stthomasoxford.org/reconciliation/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -389,6 +395,34 @@
    "confidence": "high",
    "template": "wordpress",
    "kind_parsed": "confession"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "15:00",
+   "language": null,
+   "raw": "Confessions are heard every Saturday before the Vigil Mass – 3:00 PM to 3:45 PM, every Tuesday 5:15 to 5:45 PM, or by calling Fr.",
+   "source_url": "https://stthomasoxford.org/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:40+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "17:15",
+   "language": null,
+   "raw": "Confessions are heard every Saturday before the Vigil Mass – 3:00 PM to 3:45 PM, every Tuesday 5:15 to 5:45 PM, or by calling Fr.",
+   "source_url": "https://stthomasoxford.org/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:40+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "http://www.stthomasoxford.org/",
@@ -430,5 +464,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:42+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
  }
 }

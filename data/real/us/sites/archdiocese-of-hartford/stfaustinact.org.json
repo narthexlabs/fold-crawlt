@@ -49,6 +49,12 @@
    "url": "https://stfaustinact.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stfaustinact.org/reconciliation/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -199,6 +205,36 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:00",
+   "language": null,
+   "raw": "[St. Faustina Parish: St. Stanislaus Church] Confession: Saturday/Sobota at 3:00PM at St. Stanislaus Church or by Appointment",
+   "source_url": "https://stfaustinact.org/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:52+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Thursday",
+   "time": "18:00",
+   "language": null,
+   "raw": "[St. Faustina Parish: SS. Peter and Paul Church] Confession: Thursday evening following the 6:00PM Mass at SS. Peter & Paul Church",
+   "source_url": "https://stfaustinact.org/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:52+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "[St. Faustina Parish: SS. Peter and Paul Church] Confession: Thursday evening following the 6:00PM Mass at SS. Peter & P",
+   "topup": true
   }
  ],
  "source_url": "http://www.stfaustinact.org/",
@@ -237,5 +273,29 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Saturday/Sobota at 3:00PM at St. Stanislaus Church or by Appointment",
+   "phrase": "by Appointment",
+   "source_url": "https://stfaustinact.org/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:52+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:54+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
  }
 }
