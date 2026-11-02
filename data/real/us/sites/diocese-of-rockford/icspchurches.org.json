@@ -67,6 +67,12 @@
    "url": "https://www.icspchurches.org/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.icspchurches.org/reconciliation",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -201,7 +207,7 @@
    "feed_key": "dca4a3408767",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:41:06+00:00",
+    "fetched_at": "2026-11-02T04:58:42+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -461,65 +467,100 @@
    "day": "Thursday",
    "time": "17:30",
    "language": null,
-   "raw": "Weekday Masses: Thursday | 5:30pm",
+   "raw": "[St. Patrick] Weekday Masses: Thursday | 5:30pm",
    "source_url": "https://www.icspchurches.org/",
    "fetched_at": "2026-11-01T20:25:03+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
-   "template": "generic_strict"
+   "template": "generic_strict",
+   "location": "St. Patrick"
   },
   {
    "kind": "adoration",
    "day": "Thursday",
    "time": "16:30",
    "language": null,
-   "raw": "Adoration: Thursday | 4:30pm",
+   "raw": "[St. Patrick] Adoration: Thursday | 4:30pm",
    "source_url": "https://www.icspchurches.org/",
    "fetched_at": "2026-11-01T20:25:03+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
-   "template": "generic_strict"
+   "template": "generic_strict",
+   "location": "St. Patrick"
   },
   {
    "kind": "adoration",
    "day": "Sunday",
    "time": "07:00",
    "language": null,
-   "raw": "Adoration: Sunday | 7:00am",
+   "raw": "[St. Patrick] Adoration: Sunday | 7:00am",
    "source_url": "https://www.icspchurches.org/",
    "fetched_at": "2026-11-01T20:25:03+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
-   "template": "generic_strict"
+   "template": "generic_strict",
+   "location": "St. Patrick"
   },
   {
    "kind": "confession",
    "day": "Thursday",
    "time": "16:30",
    "language": null,
-   "raw": "Confession: Thursday | 4:30pm",
+   "raw": "[St. Patrick] Confession: Thursday | 4:30pm",
    "source_url": "https://www.icspchurches.org/",
    "fetched_at": "2026-11-01T20:25:03+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
-   "template": "generic_strict"
+   "template": "generic_strict",
+   "location": "St. Patrick"
   },
   {
    "kind": "confession",
    "day": "First Sunday of the month",
    "time": "07:00",
    "language": null,
-   "raw": "Confession: First Sunday | 7:00am",
+   "raw": "[St. Patrick] Confession: First Sunday | 7:00am",
    "source_url": "https://www.icspchurches.org/",
    "fetched_at": "2026-11-01T20:25:03+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
-   "template": "generic_strict"
+   "template": "generic_strict",
+   "location": "St. Patrick"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "08:40",
+   "language": null,
+   "raw": "[Immacualate Conception] Immaculate Conception Reconciliation/Confession Schedule: Saturday,8:40am -10am and 3:30 - 4:15 pm prior to 4:30 pm Mass. Also on Tuesday evenings from 4:30 -5:15 pm prior to ",
+   "source_url": "https://www.icspchurches.org/reconciliation",
+   "fetched_at": "2026-11-02T04:41:58+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "kind_parsed": "confession",
+   "location": "Immacualate Conception"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "15:30",
+   "language": null,
+   "raw": "[Immacualate Conception] Immaculate Conception Reconciliation/Confession Schedule: Saturday,8:40am -10am and 3:30 - 4:15 pm prior to 4:30 pm Mass. Also on Tuesday evenings from 4:30 -5:15 pm prior to ",
+   "source_url": "https://www.icspchurches.org/reconciliation",
+   "fetched_at": "2026-11-02T04:41:58+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "kind_parsed": "confession",
+   "location": "Immacualate Conception"
   },
   {
    "kind": "mass",
@@ -569,9 +610,21 @@
  ],
  "source_url": "https://www.icspchurches.org/",
  "fetched_at": "2026-11-01T20:25:11+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:59+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -585,10 +638,24 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 18
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "St. Patrick Reconciliation/Confession Schedule: Thursday, 4:30 - 5:15 pm prior to 5:30 pm Mass. Sunday mornings confessions are available before Mass upon request.",
+   "phrase": "upon request",
+   "source_url": "https://www.icspchurches.org/reconciliation",
+   "fetched_at": "2026-11-02T04:41:58+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
+  "relative_time": 3,
+  "no_day": 2,
+  "other_location": 5,
+  "skipped_section": 1,
   "box_rows_added": 4
  },
  "groups_dropped": {
@@ -597,8 +664,8 @@
   "label_not_group": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

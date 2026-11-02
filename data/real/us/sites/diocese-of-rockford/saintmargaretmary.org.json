@@ -61,6 +61,18 @@
    "url": "https://saintmargaretmary.org/events",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://saintmargaretmary.org/sacraments",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://saintmargaretmary.org/adoration-2",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -879,6 +891,20 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday (summer)",
+   "time": "08:30",
+   "language": null,
+   "raw": "Beginning after the 9:15 AM Mass (8:30 AM Mass in the summer) until the 6:00 PM closing prayer with Benediction.",
+   "source_url": "https://saintmargaretmary.org/adoration-2",
+   "fetched_at": "2026-11-02T04:42:08+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "http://www.saintmargaretmary.org/",
@@ -924,5 +950,21 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:10+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }
