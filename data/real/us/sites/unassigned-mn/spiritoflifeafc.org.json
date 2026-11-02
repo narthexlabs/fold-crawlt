@@ -19,7 +19,7 @@
  "home_url": "https://www.spiritoflifeafc.org/",
  "final_url": "https://www.spiritoflifeafc.org/",
  "crawl_status": "ok",
- "crawl_env": "sandbox",
+ "crawl_env": "runner-rendered",
  "robots_note": "ok",
  "pages": [
   {
@@ -31,6 +31,12 @@
   {
    "category": "mass_times",
    "url": "https://www.spiritoflifeafc.org/liturgical-ministry-schedules",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.spiritoflifeafc.org/i-m-new",
    "status": 200,
    "class": "ok"
   },
@@ -76,7 +82,7 @@
    "feed_key": "2ba8e0b66a61",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-02T04:53:29+00:00",
+    "fetched_at": "2026-11-02T07:19:40+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -106,7 +112,7 @@
    "language": null,
    "raw": "Saturday Vigil: 5:00 PM",
    "source_url": "https://www.spiritoflifeafc.org/",
-   "fetched_at": "2026-11-01T22:15:24+00:00",
+   "fetched_at": "2026-11-02T07:18:17+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -119,7 +125,7 @@
    "language": null,
    "raw": "Weekday Mass: Tuesday | 5:00 PM",
    "source_url": "https://www.spiritoflifeafc.org/",
-   "fetched_at": "2026-11-01T22:15:24+00:00",
+   "fetched_at": "2026-11-02T07:18:17+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -132,7 +138,7 @@
    "language": null,
    "raw": "Adoration: Monday 7:00 AM - 9:00 PM",
    "source_url": "https://www.spiritoflifeafc.org/",
-   "fetched_at": "2026-11-01T22:15:24+00:00",
+   "fetched_at": "2026-11-02T07:18:17+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -145,7 +151,7 @@
    "language": null,
    "raw": "Confession: Tuesday | 4:00 PM",
    "source_url": "https://www.spiritoflifeafc.org/",
-   "fetched_at": "2026-11-01T22:15:24+00:00",
+   "fetched_at": "2026-11-02T07:18:17+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -153,17 +159,7 @@
   }
  ],
  "source_url": "https://www.spiritoflifeafc.org/",
- "fetched_at": "2026-11-01T22:15:28+00:00",
- "topup": {
-  "kinds": [
-   "adoration",
-   "confession",
-   "liturgy"
-  ],
-  "at": "2026-11-02T04:41:45+00:00",
-  "requests": 0,
-  "found": []
- },
+ "fetched_at": "2026-11-02T07:18:25+00:00",
  "schedule_template": {
   "template": "generic_strict",
   "version": "ca-sites/3",
@@ -181,11 +177,11 @@
   "passed_bar": true,
   "trusted_candidate": false,
   "trusted_kinds": [],
-  "generic_rows": 15
+  "generic_rows": 16
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 15
+  "other_location": 30
  },
  "groups_dropped": {
   "noise": 1
@@ -209,10 +205,11 @@
    "phone": "https://www.spiritoflifeafc.org/contact",
    "address": "https://www.spiritoflifeafc.org/contact"
   },
-  "fetched_at": "2026-11-01T22:15:28+00:00",
+  "fetched_at": "2026-11-02T07:18:25+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
- }
+ },
+ "fetch_mode": "rendered"
 }
