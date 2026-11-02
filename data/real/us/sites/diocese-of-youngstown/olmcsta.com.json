@@ -95,6 +95,18 @@
    "url": "https://olmcsta.com/our-parish/parish-staff/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://olmcsta.com/prayer/eucharistic-adoration/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://olmcsta.com/mass-times/seasonal-schedules/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -304,6 +316,90 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "Sunday",
+   "time": "16:00-20:00",
+   "language": null,
+   "raw": "Eucharistic Adoration at the Basilica: Sundays 4:00PM - 8:00PM",
+   "source_url": "https://olmcsta.com/prayer/eucharistic-adoration/",
+   "fetched_at": "2026-11-02T04:52:51+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Monday",
+   "time": "14:00-20:00",
+   "language": null,
+   "raw": "Eucharistic Adoration at the Basilica: Mondays 2:00PM-8:00PM",
+   "source_url": "https://olmcsta.com/prayer/eucharistic-adoration/",
+   "fetched_at": "2026-11-02T04:52:51+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "08:00-19:00",
+   "language": null,
+   "raw": "Eucharistic Adoration at the Basilica: Tuesdays 8:00AM-7:00PM",
+   "source_url": "https://olmcsta.com/prayer/eucharistic-adoration/",
+   "fetched_at": "2026-11-02T04:52:51+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "13:00-20:00",
+   "language": null,
+   "raw": "Eucharistic Adoration at the Basilica: Wednesdays 1:00PM - 8:00PM",
+   "source_url": "https://olmcsta.com/prayer/eucharistic-adoration/",
+   "fetched_at": "2026-11-02T04:52:51+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "08:00-20:00",
+   "language": null,
+   "raw": "Eucharistic Adoration at the Basilica: Thursdays 8:00AM-8:00PM",
+   "source_url": "https://olmcsta.com/prayer/eucharistic-adoration/",
+   "fetched_at": "2026-11-02T04:52:51+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "15:00-16:00",
+   "language": null,
+   "raw": "Eucharistic Adoration at the Basilica: Fridays 3:00PM-4:00PM",
+   "source_url": "https://olmcsta.com/prayer/eucharistic-adoration/",
+   "fetched_at": "2026-11-02T04:52:51+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "https://olmcsta.com/",
@@ -345,5 +441,21 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:52:54+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 6,
+  "mode": "merge"
  }
 }
