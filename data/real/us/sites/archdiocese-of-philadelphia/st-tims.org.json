@@ -23,33 +23,326 @@
   "Philadelphia"
  ],
  "home_url": "https://st-tims.org/",
- "final_url": "https://st-tims.org/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "final_url": "https://www.st-tims.org/",
+ "crawl_status": "wayback-2025-04-24",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
-   "url": "https://st-tims.org/",
-   "status": 403,
-   "class": "challenge"
+   "url": "https://www.st-tims.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://st-tims.org/mass-times",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.st-tims.org/confession-times",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.st-tims.org/music-ministry",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://st-tims.org/bulletins",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.st-tims.org/calendar",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://st-tims.org/contact-us",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "st-tims.org:children_ff",
+   "name": "Religious Education",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "children_faith_formation",
+   "audience": "families",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://st-tims.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.st-tims.org/",
+   "source_kind": "website",
+   "fetched_at": "2025-04-24T11:55:29+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-04-24"
+  },
+  {
+   "id": "st-tims.org:choir",
+   "name": "Music Ministry / Choir",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "choir_music",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://st-tims.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.st-tims.org/music-ministry",
+   "source_kind": "website",
+   "fetched_at": "2025-03-17T21:31:40+00:00",
+   "confidence": "low",
+   "source": "wayback-2025-04-24"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/SaintTimothyChurchMayfairPhila"
+  ]
+ },
+ "bulletin": {
+  "url": "https://files.ecatholic.com/22681/bulletins/20250329.pdf?t=1743105069000",
+  "date": "2025-03-29",
+  "kind": "ecatholic_pdf",
+  "text": "March 29 , 2025",
+  "source_url": "https://st-tims.org/bulletins"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": "English",
+   "raw": "[St. Bartholomew] Sunday: 10:00 AM English Saint Bartholomew Church",
+   "source_url": "https://st-tims.org/mass-times",
+   "fetched_at": "2025-10-08T02:44:19+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "location": "St. Bartholomew",
+   "source": "wayback-2025-04-24",
+   "archive_url": "https://web.archive.org/web/20251008024419/https://st-tims.org/mass-times",
+   "capture_date": "2025-10-08"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "08:30",
+   "language": "English",
+   "raw": "Tuesday - Friday: 8:30 AM English",
+   "source_url": "https://st-tims.org/mass-times",
+   "fetched_at": "2025-10-08T02:44:19+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Tuesday - Friday",
+   "source": "wayback-2025-04-24",
+   "archive_url": "https://web.archive.org/web/20251008024419/https://st-tims.org/mass-times",
+   "capture_date": "2025-10-08"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "08:30",
+   "language": "English",
+   "raw": "Tuesday - Friday: 8:30 AM English",
+   "source_url": "https://st-tims.org/mass-times",
+   "fetched_at": "2025-10-08T02:44:19+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Tuesday - Friday",
+   "day_parsed": "Tuesday",
+   "day_bound_from_line": true,
+   "source": "wayback-2025-04-24",
+   "archive_url": "https://web.archive.org/web/20251008024419/https://st-tims.org/mass-times",
+   "capture_date": "2025-10-08"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "08:30",
+   "language": "English",
+   "raw": "Tuesday - Friday: 8:30 AM English",
+   "source_url": "https://st-tims.org/mass-times",
+   "fetched_at": "2025-10-08T02:44:19+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Tuesday - Friday",
+   "day_parsed": "Tuesday",
+   "day_bound_from_line": true,
+   "source": "wayback-2025-04-24",
+   "archive_url": "https://web.archive.org/web/20251008024419/https://st-tims.org/mass-times",
+   "capture_date": "2025-10-08"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "08:30",
+   "language": "English",
+   "raw": "Tuesday - Friday: 8:30 AM English",
+   "source_url": "https://st-tims.org/mass-times",
+   "fetched_at": "2025-10-08T02:44:19+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Tuesday - Friday",
+   "day_parsed": "Tuesday",
+   "day_bound_from_line": true,
+   "source": "wayback-2025-04-24",
+   "archive_url": "https://web.archive.org/web/20251008024419/https://st-tims.org/mass-times",
+   "capture_date": "2025-10-08"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "08:30",
+   "language": "English",
+   "raw": "Saturday: 8:30 AM English",
+   "source_url": "https://st-tims.org/mass-times",
+   "fetched_at": "2025-10-08T02:44:19+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-04-24",
+   "archive_url": "https://web.archive.org/web/20251008024419/https://st-tims.org/mass-times",
+   "capture_date": "2025-10-08"
+  }
+ ],
  "source_url": "https://st-tims.org/",
- "fetched_at": "2026-11-01T20:25:15+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-02T04:35:46+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": true
+   },
+   "score": "high"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 9
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "other_location": 3,
+  "text:no_day": 5,
+  "text:not_a_service": 2,
+  "text:relative_time": 1,
+  "text:other_location": 1
+ },
+ "groups_dropped": {},
+ "office_contact": {
+  "email": null,
+  "phone": "(215) 624-6188",
+  "address": "3001 Levick Street, Philadelphia, PA 19149",
+  "source_url": "https://st-tims.org/contact-us",
+  "sources": {
+   "phone": "https://st-tims.org/contact-us",
+   "address": "https://st-tims.org/contact-us"
+  },
+  "fetched_at": "2025-10-08T04:37:30+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2025-04-24",
+  "capture_age_days": 557,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://www.st-tims.org/",
+    "capture": "2025-04-24",
+    "archive_url": "https://web.archive.org/web/20250424115529/https://www.st-tims.org/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://st-tims.org/mass-times",
+    "capture": "2025-10-08",
+    "archive_url": "https://web.archive.org/web/20251008024419/https://st-tims.org/mass-times"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://www.st-tims.org/confession-times",
+    "capture": "2025-03-17",
+    "archive_url": "https://web.archive.org/web/20250317221653/https://www.st-tims.org/confession-times"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://www.st-tims.org/music-ministry",
+    "capture": "2025-03-17",
+    "archive_url": "https://web.archive.org/web/20250317213140/https://www.st-tims.org/music-ministry"
+   },
+   {
+    "kind": "bulletin",
+    "original": "https://st-tims.org/bulletins",
+    "capture": "2025-06-13",
+    "archive_url": "https://web.archive.org/web/20250613200511/https://st-tims.org/bulletins"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://www.st-tims.org/calendar",
+    "capture": "2025-03-17",
+    "archive_url": "https://web.archive.org/web/20250317213457/https://www.st-tims.org/calendar"
+   },
+   {
+    "kind": "contact",
+    "original": "https://st-tims.org/contact-us",
+    "capture": "2025-10-08",
+    "archive_url": "https://web.archive.org/web/20251008043730/https://st-tims.org/contact-us"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review.",
+  "grade": {
+   "rule": "wayback-verified-2026-11-01",
+   "template": "ecatholic",
+   "trusted_template": false,
+   "has_sunday": true,
+   "groups": 2,
+   "verified": false,
+   "capture_date": "2025-04-24",
+   "applied": false
+  }
  }
 }
