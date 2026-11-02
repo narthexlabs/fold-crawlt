@@ -16,32 +16,172 @@
  "cities": [],
  "home_url": "https://stjohninglewood.org/",
  "final_url": "https://stjohninglewood.org/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "crawl_status": "wayback-2025-04-24",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
    "url": "https://stjohninglewood.org/",
-   "status": 403,
-   "class": "challenge"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.stjohninglewood.org/spiritual-formation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.stjohninglewood.org/sports-1",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.stjohninglewood.org/calendars",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.stjohninglewood.org/events-1",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://www.stjohninglewood.org/contact",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stjohninglewood.org/mass-times",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stjohninglewood.org/mass-schedule",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://stjohninglewood.org/bulletins",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://stjohninglewood.org/bulletin",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
+ "template": "ecatholic-fastpath",
  "groups": [],
  "calendar_feeds": [],
  "events": [],
- "social": {},
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/stjohninglewood.org",
+   "https://www.facebook.com/stjohnchrysostominglewood"
+  ],
+  "instagram": [
+   "https://www.instagram.com/stjohninglewood/"
+  ]
+ },
  "bulletin": null,
  "schedule_rows": [],
  "source_url": "https://stjohninglewood.org/",
- "fetched_at": "2026-11-01T02:13:32+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-02T00:38:25+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "has_sunday": false,
+ "groups_dropped": {},
+ "office_contact": {
+  "email": "info@stjohninglewood.org",
+  "phone": "(310) 677-5868",
+  "address": "530 East Florence Avenue, Inglewood, CA 90301",
+  "source_url": "https://www.stjohninglewood.org/contact",
+  "sources": {
+   "email": "https://www.stjohninglewood.org/contact",
+   "phone": "https://www.stjohninglewood.org/contact",
+   "address": "https://www.stjohninglewood.org/contact"
+  },
+  "fetched_at": "2025-10-13T15:35:37+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2025-04-24",
+  "capture_age_days": 557,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://stjohninglewood.org/",
+    "capture": "2025-04-24",
+    "archive_url": "https://web.archive.org/web/20250424102651/https://stjohninglewood.org/"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://www.stjohninglewood.org/spiritual-formation",
+    "capture": "2025-04-17",
+    "archive_url": "https://web.archive.org/web/20250417204002/https://www.stjohninglewood.org/spiritual-formation"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://www.stjohninglewood.org/sports-1",
+    "capture": "2025-10-13",
+    "archive_url": "https://web.archive.org/web/20251013160634/https://www.stjohninglewood.org/sports-1"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://www.stjohninglewood.org/calendars",
+    "capture": "2025-10-13",
+    "archive_url": "https://web.archive.org/web/20251013155321/https://www.stjohninglewood.org/calendars"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://www.stjohninglewood.org/events-1",
+    "capture": "2025-10-13",
+    "archive_url": "https://web.archive.org/web/20251013153501/https://www.stjohninglewood.org/events-1"
+   },
+   {
+    "kind": "contact",
+    "original": "https://www.stjohninglewood.org/contact",
+    "capture": "2025-10-13",
+    "archive_url": "https://web.archive.org/web/20251013153537/https://www.stjohninglewood.org/contact"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }

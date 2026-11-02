@@ -17,23 +17,31 @@
   "Louisville"
  ],
  "home_url": "http://www.mbsparish.com/",
- "final_url": "https://www.mbsparish.com/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "final_url": "http://www.mbsparish.com/",
+ "crawl_status": "wayback-2026-05-17",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
-   "url": "https://www.mbsparish.com/",
-   "status": 403,
-   "class": "challenge"
+   "url": "http://www.mbsparish.com/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "http://www.mbsparish.com/contact-us/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "wordpress",
+  "evidence": [
+   "wp-includes"
+  ]
  },
- "template": "none",
+ "template": "wordpress-html",
  "groups": [],
  "calendar_feeds": [],
  "events": [],
@@ -41,9 +49,48 @@
  "bulletin": null,
  "schedule_rows": [],
  "source_url": "http://www.mbsparish.com/",
- "fetched_at": "2026-11-01T17:21:53+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-02T00:43:35+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "has_sunday": false,
+ "groups_dropped": {},
+ "wayback": {
+  "capture_date": "2026-05-17",
+  "capture_age_days": 169,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "http://www.mbsparish.com/",
+    "capture": "2026-05-17",
+    "archive_url": "https://web.archive.org/web/20260517125023/http://www.mbsparish.com/"
+   },
+   {
+    "kind": "contact",
+    "original": "http://www.mbsparish.com/contact-us/",
+    "capture": "2026-05-17",
+    "archive_url": "https://web.archive.org/web/20260517120113/http://www.mbsparish.com/contact-us/"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }
