@@ -81,6 +81,12 @@
    "url": "https://www.stjosephsnewport.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stjosephsnewport.org/penance",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -253,15 +259,67 @@
  "schedule_rows": [
   {
    "kind": "mass",
+   "day": "Saturday",
+   "time": "17:15",
+   "language": null,
+   "raw": "Vigil (Saturday evening): 5:15PM",
+   "source_url": "https://www.stjosephsnewport.org/",
+   "fetched_at": "2026-11-01T17:27:11+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "07:00",
+   "language": null,
+   "raw": "Sunday Masses:: Sunday Morning: 7:00AM & 10:30AM",
+   "source_url": "https://www.stjosephsnewport.org/",
+   "fetched_at": "2026-11-01T17:27:11+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
    "day": "Sunday",
    "time": "10:30",
    "language": null,
-   "raw": "Sing at 10:30am Sunday Mass.",
-   "source_url": "https://www.stjosephsnewport.org/sacraments",
-   "fetched_at": "2026-11-01T17:27:12+00:00",
+   "raw": "Sunday Masses:: Sunday Morning: 7:00AM & 10:30AM",
+   "source_url": "https://www.stjosephsnewport.org/",
+   "fetched_at": "2026-11-01T17:27:11+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "low",
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "18:30",
+   "language": "Spanish",
+   "raw": "Misa Dominical en Español 6:30PM",
+   "source_url": "https://www.stjosephsnewport.org/",
+   "fetched_at": "2026-11-01T17:27:11+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "12:05",
+   "language": null,
+   "raw": "Daily Mass:: Monday* and Thursday: 12:05PM",
+   "source_url": "https://www.stjosephsnewport.org/",
+   "fetched_at": "2026-11-01T17:27:11+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
    "template": "generic_strict"
   },
   {
@@ -305,90 +363,36 @@
    "template": "generic_strict"
   },
   {
-   "kind": "mass",
-   "day": "Saturday",
-   "time": "17:15",
+   "kind": "devotion",
+   "day": "Tuesday",
+   "time": "19:00",
    "language": null,
-   "raw": "Vigil (Saturday evening): 5:15PM",
+   "raw": "Rosary (Spanish): Tuesdays at 7PM",
    "source_url": "https://www.stjosephsnewport.org/",
    "fetched_at": "2026-11-01T17:27:11+00:00",
    "needs_review": false,
-   "review_reason": "schedule_box"
-  },
-  {
-   "kind": "mass",
-   "day": "Sunday",
-   "time": "07:00",
-   "language": null,
-   "raw": "Sunday Morning: 7:00AM & 10:30AM",
-   "source_url": "https://www.stjosephsnewport.org/",
-   "fetched_at": "2026-11-01T17:27:11+00:00",
-   "needs_review": false,
-   "review_reason": "schedule_box"
-  },
-  {
-   "kind": "mass",
-   "day": "Sunday",
-   "time": "18:30",
-   "language": "Spanish",
-   "raw": "Misa Dominical en Español 6:30PM",
-   "source_url": "https://www.stjosephsnewport.org/",
-   "fetched_at": "2026-11-01T17:27:11+00:00",
-   "needs_review": false,
-   "review_reason": "schedule_box"
-  },
-  {
-   "kind": "mass",
-   "day": "Thursday",
-   "time": "12:05",
-   "language": null,
-   "raw": "Monday* and Thursday: 12:05PM",
-   "source_url": "https://www.stjosephsnewport.org/",
-   "fetched_at": "2026-11-01T17:27:11+00:00",
-   "needs_review": false,
-   "review_reason": "schedule_box",
-   "day_parsed": "Monday",
-   "day_bound_from_line": true
-  },
-  {
-   "kind": "confession",
-   "day": "Thursday",
-   "time": "11:00",
-   "language": null,
-   "raw": "Holy Hour with Adoration (Confession available): 11:00AM-noon Thursdays before 12:05PM",
-   "source_url": "https://www.stjosephsnewport.org/",
-   "fetched_at": "2026-11-01T17:27:11+00:00",
-   "needs_review": false,
-   "review_reason": "schedule_box"
-  },
-  {
-   "kind": "confession",
-   "day": "Thursday",
-   "time": "12:00",
-   "language": null,
-   "raw": "Holy Hour with Adoration (Confession available): 11:00AM-noon Thursdays before 12:05PM",
-   "source_url": "https://www.stjosephsnewport.org/",
-   "fetched_at": "2026-11-01T17:27:11+00:00",
-   "needs_review": false,
-   "review_reason": "schedule_box"
-  },
-  {
-   "kind": "confession",
-   "day": "Thursday",
-   "time": "12:05",
-   "language": null,
-   "raw": "Holy Hour with Adoration (Confession available): 11:00AM-noon Thursdays before 12:05PM",
-   "source_url": "https://www.stjosephsnewport.org/",
-   "fetched_at": "2026-11-01T17:27:11+00:00",
-   "needs_review": false,
-   "review_reason": "schedule_box"
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict"
   }
  ],
  "source_url": "https://www.stjosephsnewport.org/",
  "fetched_at": "2026-11-01T17:27:19+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:38+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -402,22 +406,22 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 8
  },
  "has_sunday": true,
  "schedule_dropped": {
   "relative_time": 1,
-  "not_a_service": 2,
-  "range_not_a_mass": 2,
-  "box_rows_added": 7
+  "range_not_a_mass": 4,
+  "not_a_service": 2
  },
  "groups_dropped": {
   "sacrament_prep": 1,
   "sentence": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
