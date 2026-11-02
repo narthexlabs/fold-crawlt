@@ -75,6 +75,7 @@ class Fetcher:
         self.last = 0.0
         self.deadline = deadline
         self.n = 0
+        self.last_status = "cached"
 
     def get(self, path: str, cache: Path) -> str | None:
         """Cached HTML, else one polite GET. Raises Stop on 403/429/challenge/time. Returns None on 404."""
@@ -89,6 +90,7 @@ class Fetcher:
         self.last = time.monotonic()
         self.n += 1
         st, body = r["status"], r["body"] or b""
+        self.last_status = st or r.get("err")
         txt = body.decode("utf-8", "replace")
         if st in (403, 429) or (st == 200 and len(txt) < 30000 and re.search(r"Just a moment|cf-challenge|challenge-platform|verify you are human", txt, re.I)):
             note = {"at": now(), "path": path, "status": st, "bytes": len(txt)}
@@ -219,6 +221,13 @@ def crawl(args) -> int:
     try:
         h = f.get("/dioceses/country/US", RAW / "index.html")
         gcs = parse_index(h or "")
+        if not gcs:
+            # 2026-11-02 15:33Z: the runner's raw cache was empty, the one index request returned a page that parsed to 0
+            # sees, that page was cached (and saved with the job's actions/cache), and build() then wrote gcatholic.json with
+            # 0 records over the full file. Now: drop the unreadable cached index (the next run asks again), leave
+            # diocese_map.json as it is, and stop; build() below carries every earlier record forward.
+            (RAW / "index.html").unlink(missing_ok=True)
+            raise Stop(f"index unreadable: HTTP {f.last_status}, {len(h or '')} bytes, 0 sees parsed (cached copy removed)")
         mp, un = map_dioceses(gcs)
         (GC_OUT / "diocese_map.json").write_text(json.dumps({
             "source_url": INDEX_URL, "fetched_at": now(), "gcatholic_dioceses": len(gcs), "mapped": len(mp), "unmatched": un,
@@ -247,11 +256,27 @@ def crawl(args) -> int:
     return 0 if status in ("ok", "time") else 1
 
 
+def previous() -> dict:
+    """The gcatholic.json on disk (the last good build), or {} ."""
+    try:
+        j = json.loads((OUT / "gcatholic.json").read_text())
+        return j if isinstance(j, dict) else {}
+    except (OSError, json.JSONDecodeError):
+        return {}
+
+
 def build() -> dict:
+    """Rebuild the outputs from the raw cache. Never loses records: a church page not in this runner's cache (the cache was
+    evicted, or the crawl is still re-filling it) keeps its record from the previous gcatholic.json (counted in
+    carried_over), so an empty or partial cache can never overwrite a full file (2026-11-02 15:33Z wipe: 15,599 -> 0)."""
     ix = RAW / "index.html"
     if not ix.exists():
+        print("build: no cached index; outputs left as they are", flush=True)
         return {}
     gcs = parse_index(ix.read_text("utf-8", "replace"))
+    if not gcs:
+        print("build: cached index parses to 0 sees; outputs left as they are", flush=True)
+        return {}
     mp, un = map_dioceses(gcs)
     sstate = see_state_map()
     names = {g["code"]: g["name"] for g in gcs}
@@ -277,11 +302,22 @@ def build() -> dict:
                          .replace(microsecond=0).isoformat()})
         if complete:
             done.append(c)
+    prev = previous()
+    have = {r["gc_id"] for r in recs}
+    carried = [r for r in prev.get("records") or [] if isinstance(r, dict) and r.get("gc_id") and r["gc_id"] not in have]
+    recs += carried
+    if len(recs) < len(prev.get("records") or []):   # cannot happen with the carry-over; a last guard all the same
+        print(f"build: {len(recs)} records < {len(prev.get('records') or [])} on disk; outputs left as they are", flush=True)
+        return {}
     recs.sort(key=lambda r: (r["state"] or "", r["diocese_slug"], r["city"], r["name"]))
     (OUT / "gcatholic.json").write_text(json.dumps({
         "source": "GCatholic.org church pages", "source_label": "url-sources", "attribution": ATTR,
         "robots": "robots.txt allows; /temp/ and AI-training bots disallowed; no Crawl-delay; we wait >= 2.2 s",
-        "built_at": now(), "dioceses_complete": len(done), "counts": {
+        "built_at": now(), "dioceses_complete": max(len(done), int(prev.get("dioceses_complete") or 0)),
+        "dioceses_complete_this_cache": len(done), "carried_over": len(carried),
+        "carried_over_note": "records whose church page is not in this runner's raw cache, kept from the previous build "
+                             f"({prev.get('built_at')}); fetched_at on each record says when its page was read",
+        "counts": {
             "churches": len(recs), "with_website": sum(bool(r["website"]) for r in recs),
             "with_latlng": sum(r["lat"] is not None for r in recs)}, "records": recs}, ensure_ascii=False, indent=1) + "\n")
     # DiscoverMass-shaped website files per state
@@ -315,6 +351,13 @@ def build() -> dict:
             continue
         wl = sorted(sites.values(), key=lambda e: e["churches"][0]["slug"])
         nsites[st] = len(wl)
+        try:   # a state file never shrinks below what is on disk (same guard as gcatholic.json)
+            old_n = len(json.loads((GC_OUT / f"{st}.websites.json").read_text()).get("websites") or [])
+        except (OSError, json.JSONDecodeError):
+            old_n = 0
+        if len(wl) < old_n:
+            print(f"build: {st}.websites.json kept ({len(wl)} < {old_n} on disk)", flush=True)
+            continue
         (GC_OUT / f"{st}.websites.json").write_text(json.dumps({
             "source": "GCatholic.org church pages (website field)", "source_label": "url-sources", "attribution": ATTR,
             "state": st, "built_at": now(), "consumer": "lane G4 national parish-site crawler",
@@ -322,7 +365,8 @@ def build() -> dict:
             "counts": {"churches": len(rs), "distinct_websites": len(wl), "social_only": len(social)},
             "websites": wl, "social_only": social}, ensure_ascii=False, indent=1) + "\n")
     summ = {"built_at": now(), "gcatholic_sees": len(gcs), "mapped": len(mp), "unmatched": [u["name"] for u in un],
-            "dioceses_complete": len(done), "churches": len(recs), "websites_by_state": dict(nsites.most_common()),
+            "dioceses_complete": len(done), "churches": len(recs), "carried_over": len(carried),
+            "websites_by_state": dict(nsites.most_common()),
             "skipped_hosts": dict(skipped)}
     (GC_OUT / "summary.json").write_text(json.dumps(summ, indent=1, ensure_ascii=False) + "\n")
     print(f"build: {len(done)} dioceses complete, {len(recs)} churches, {sum(nsites.values())} distinct sites", flush=True)
