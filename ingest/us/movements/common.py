@@ -206,49 +206,32 @@ class Matcher:
     def match(self, name: str | None, state: str | None, city: str | None = None, alt_cities=(), zip_: str | None = None,
               lat=None, lng=None, street: str | None = None) -> tuple[dict | None, str, str]:
         st = state or ""
-        cands: dict = {}
+        city_pool: dict = {}
         for cty in [city, *alt_cities]:
             for p in self.city.get((st, norm_city(cty)), []) if cty else []:
-                cands[p["id"]] = p
+                city_pool[p["id"]] = p
+        wide: dict = dict(city_pool)
         z = (zip_ or "")[:5]
         for p in self.zip.get(z, []) if z else []:
-            cands[p["id"]] = p
+            wide[p["id"]] = p
         if lat is not None and lng is not None:
             for _, p in self.near(float(lat), float(lng), 3.0):
                 if (p.get("state") or "") == st or not st:
-                    cands[p["id"]] = p
-        if not cands:
+                    wide[p["id"]] = p
+        if not wide:
             return None, "unmatched", "no parish of ours in that city / ZIP / within 3 km"
         core = norm_name2(name, city)
-        pool = list(cands.values())
         if core:
-            exact = [p for p in pool if p["_core"] == core]
-            if len(exact) == 1:
-                return exact[0], "exact", "same city or ZIP, same name"
-            if len(exact) > 1:
-                pick = self._nearest(exact, lat, lng)
-                if pick:
-                    return pick, "fuzzy", f"{len(exact)} parishes of that name nearby; the nearest is under 1 km"
-                return None, "unmatched", f"ambiguous: {len(exact)} parishes of that name in the city / ZIP"
-            stt = strong_tokens(core)
-            fz = []
-            for p in pool:
-                pc = p["_core"]
-                ps = strong_tokens(pc)
-                r = difflib.SequenceMatcher(None, core, pc).ratio()
-                prefix = (len(core) >= 6 and len(pc) >= 6 and (pc.startswith(core + " ") or core.startswith(pc + " "))
-                          and core.startswith("st") == pc.startswith("st"))
-                if (stt and ps and stt == ps and core.startswith("st") == pc.startswith("st")) or r >= 0.9 or prefix:
-                    fz.append(p)
-            if len(fz) == 1:
-                return fz[0], "fuzzy", "same city or ZIP, distinctive words equal / near-identical / one name extends the other"
-            if len(fz) > 1:
-                pick = self._nearest(fz, lat, lng)
-                if pick:
-                    return pick, "fuzzy", f"{len(fz)} similar names nearby; the nearest is under 1 km"
+            # the named city first; the ZIP / 3 km ring only when the city has no parish of that name at all
+            for pool, where in ((list(city_pool.values()), "same city"), (list(wide.values()), "same ZIP or within 3 km")):
+                if not pool:
+                    continue
+                res = self._by_name(core, pool, lat, lng, where)
+                if res[0] or res[2].startswith("ambiguous"):
+                    return res
         ns = norm_street(street)
         if ns:
-            same = [p for p in pool if p["_street"] == ns]
+            same = [p for p in wide.values() if p["_street"] == ns]
             if len(same) == 1:
                 return same[0], "exact", "same street address"
         if lat is not None and lng is not None and (not name or CHURCHY.search(ascii_(name))):
@@ -256,6 +239,58 @@ class Matcher:
             if len(nb) == 1 or (len(nb) > 1 and nb[1][0] > 3 * max(nb[0][0], 0.01)):
                 return nb[0][1], "fuzzy", f"meets at a church {nb[0][0] * 1000:.0f} m from this parish's map pin"
         return None, "unmatched", "no parish of that name / address in the city or ZIP"
+
+    def _by_name(self, core: str, pool: list[dict], lat, lng, where: str) -> tuple[dict | None, str, str]:
+        exact = [p for p in pool if p["_core"] == core]
+        if len(exact) == 1:
+            return exact[0], "exact", f"{where}, same name"
+        if len(exact) > 1:
+            pick = self._nearest(exact, lat, lng)
+            if pick:
+                return pick, "fuzzy", f"{len(exact)} parishes of that name nearby; the nearest is under 1 km"
+            pick = self._listed_twice(exact)
+            if pick:
+                return pick, "exact", f"{where}, same name; the other page of that name has no address (the church listed twice)"
+            return None, "unmatched", f"ambiguous: {len(exact)} parishes of that name ({where})"
+        stt = strong_tokens(core)
+        fz = []
+        for p in pool:
+            pc = p["_core"]
+            ps = strong_tokens(pc)
+            r = difflib.SequenceMatcher(None, core, pc).ratio()
+            prefix = (len(core) >= 6 and len(pc) >= 6 and (pc.startswith(core + " ") or core.startswith(pc + " "))
+                      and core.startswith("st") == pc.startswith("st"))
+            if (stt and ps and stt == ps and core.startswith("st") == pc.startswith("st")) or r >= 0.9 or prefix:
+                fz.append(p)
+        if len(fz) == 1:
+            return fz[0], "fuzzy", f"{where}, distinctive words equal / near-identical / one name extends the other"
+        if len(fz) > 1:
+            pick = self._nearest(fz, lat, lng)
+            if pick:
+                return pick, "fuzzy", f"{len(fz)} similar names nearby; the nearest is under 1 km"
+            if len({p["_core"] for p in fz}) == 1:
+                pick = self._listed_twice(fz)
+                if pick:
+                    return pick, "fuzzy", f"{where}, similar name; the other page of that name has no address (the church listed twice)"
+            return None, "unmatched", f"ambiguous: {len(fz)} similar names ({where})"
+        return None, "unmatched", f"no parish of that name ({where})"
+
+    RITE = re.compile(r"ukrain|byzantin|maronit|melkit|syro|chaldea|armenia|ruthenia|copt|romania|slovak|greek|eparch|"
+                      r"polish national|vietnam|korea|filipin|chinese|hispanic|spanish|latin mass|traditional|fssp|sspx", re.I)
+
+    @classmethod
+    def _listed_twice(cls, ps: list[dict]) -> dict | None:
+        """The Find build sometimes has the same church twice: the directory's page (with an address) and a name-only page
+        from the national website list. With exactly one addressed page and the rest name-only (no street, ZIP or pin),
+        and no rite / language word in any of the names, the addressed page is the church."""
+        if any(cls.RITE.search(p.get("name") or "") for p in ps):
+            return None
+        if len({(p.get("state"), norm_city(p.get("city"))) for p in ps}) != 1:
+            return None
+        addressed = [p for p in ps if p.get("street") or p.get("zip") or p.get("lat") is not None]
+        if len(addressed) == 1 and all(not (p.get("street") or p.get("zip") or p.get("lat") is not None) for p in ps if p is not addressed[0]):
+            return addressed[0]
+        return None
 
     @staticmethod
     def _nearest(ps: list[dict], lat, lng) -> dict | None:
