@@ -692,16 +692,19 @@
    "touched": []
   },
   {
-   "started_at": "2026-11-02T03:46:32+00:00",
-   "ended_at": "2026-11-02T03:46:35+00:00",
-   "result": "fetched {}; parsed 0 dioceses",
-   "touched": []
-  },
-  {
-   "started_at": "2026-11-02T03:47:14+00:00",
-   "ended_at": "2026-11-02T03:47:15+00:00",
-   "result": "fetched {}; parsed 0 dioceses",
-   "touched": []
+   "started_at": "2026-11-02T03:46:30+00:00",
+   "ended_at": "2026-11-02T03:48:30+00:00",
+   "result": "fetched {'dns': 3, 'done': 31, 'challenge': 1, 'ssl_error': 4, 'not_found': 1, 'ok': 20, 'timeout': 2, 'halted_egress': 0}; parsed 8 dioceses",
+   "touched": [
+    "unassigned-pa",
+    "archdiocese-of-philadelphia",
+    "diocese-of-scranton",
+    "diocese-of-erie",
+    "diocese-of-allentown",
+    "diocese-of-harrisburg",
+    "diocese-of-greensburg",
+    "diocese-of-altoona-johnstown"
+   ]
   }
  ],
  "dioceses": {
@@ -786,15 +789,15 @@
   },
   "unassigned-pa": {
    "sites_in_list": 299,
-   "records": 620,
+   "records": 626,
    "finished": true,
-   "ok": 432,
+   "ok": 433,
    "by_status": {
-    "ok": 432,
-    "challenge": 87,
+    "ok": 433,
+    "challenge": 88,
     "dns": 31,
-    "ssl_error": 18,
-    "social_only": 15,
+    "ssl_error": 19,
+    "social_only": 18,
     "timeout": 9,
     "conn_error": 8,
     "http_5xx": 6,
@@ -848,17 +851,17 @@
   },
   "archdiocese-of-philadelphia": {
    "sites_in_list": 255,
-   "records": 248,
-   "finished": false,
-   "ok": 168,
+   "records": 255,
+   "finished": true,
+   "ok": 171,
    "by_status": {
-    "ok": 168,
-    "challenge": 54,
+    "ok": 171,
+    "challenge": 56,
     "dns": 10,
     "ssl_error": 6,
-    "timeout": 4,
+    "timeout": 5,
+    "social_only": 2,
     "blocked_403": 2,
-    "social_only": 1,
     "conn_error": 1,
     "not_found": 1,
     "http_5xx": 1
@@ -1803,24 +1806,26 @@
   },
   "diocese-of-scranton": {
    "sites_in_list": 107,
-   "records": 87,
-   "finished": false,
-   "ok": 66,
+   "records": 110,
+   "finished": true,
+   "ok": 80,
    "by_status": {
-    "ok": 66,
+    "ok": 80,
     "challenge": 11,
-    "conn_error": 4,
-    "ssl_error": 4,
-    "dns": 2
+    "ssl_error": 7,
+    "conn_error": 5,
+    "dns": 5,
+    "timeout": 1,
+    "not_found": 1
    }
   },
   "diocese-of-erie": {
    "sites_in_list": 107,
-   "records": 106,
-   "finished": false,
-   "ok": 69,
+   "records": 107,
+   "finished": true,
+   "ok": 70,
    "by_status": {
-    "ok": 69,
+    "ok": 70,
     "dns": 18,
     "challenge": 6,
     "timeout": 3,
@@ -1852,11 +1857,11 @@
   },
   "diocese-of-allentown": {
    "sites_in_list": 103,
-   "records": 103,
+   "records": 105,
    "finished": true,
-   "ok": 71,
+   "ok": 73,
    "by_status": {
-    "ok": 71,
+    "ok": 73,
     "dns": 8,
     "challenge": 8,
     "ssl_error": 6,
@@ -1919,11 +1924,11 @@
   },
   "diocese-of-harrisburg": {
    "sites_in_list": 100,
-   "records": 98,
-   "finished": false,
-   "ok": 63,
+   "records": 101,
+   "finished": true,
+   "ok": 66,
    "by_status": {
-    "ok": 63,
+    "ok": 66,
     "challenge": 31,
     "ssl_error": 2,
     "not_found": 1,
@@ -2066,11 +2071,11 @@
   },
   "diocese-of-greensburg": {
    "sites_in_list": 94,
-   "records": 98,
+   "records": 100,
    "finished": true,
-   "ok": 79,
+   "ok": 81,
    "by_status": {
-    "ok": 79,
+    "ok": 81,
     "challenge": 8,
     "dns": 6,
     "timeout": 2,
@@ -2267,11 +2272,11 @@
   },
   "diocese-of-altoona-johnstown": {
    "sites_in_list": 86,
-   "records": 84,
-   "finished": false,
-   "ok": 46,
+   "records": 86,
+   "finished": true,
+   "ok": 48,
    "by_status": {
-    "ok": 46,
+    "ok": 48,
     "challenge": 12,
     "dns": 7,
     "social_only": 6,
@@ -4326,9 +4331,9 @@
  },
  "totals": {
   "sites_in_list": 20003,
-  "records": 20974,
-  "ok": 11102
+  "records": 21020,
+  "ok": 11130
  },
  "us_parish_pages_discovermass": 20147,
- "updated_at": "2026-11-02T03:47:55+00:00"
+ "updated_at": "2026-11-02T03:48:31+00:00"
 }
