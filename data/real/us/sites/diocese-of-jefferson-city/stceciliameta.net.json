@@ -75,6 +75,12 @@
    "url": "https://www.stceciliameta.net/contact.html",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stceciliameta.net/penance.html",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -212,6 +218,20 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "weebly"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "16:00",
+   "language": null,
+   "raw": "Confessions are heard at St. Thomas every Saturday before Mass, 4:00 – 4:45 pm.",
+   "source_url": "https://www.stceciliameta.net/penance.html",
+   "fetched_at": "2026-11-02T04:41:59+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "weebly",
+   "topup": true
   }
  ],
  "source_url": "http://stceciliameta.net/",
@@ -254,5 +274,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:01+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

@@ -69,6 +69,12 @@
    "url": "https://newmantruman.org/about/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://newmantruman.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -149,7 +155,7 @@
    "feed_key": "a68bec2fc6f2",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:39:30+00:00",
+    "fetched_at": "2026-11-02T05:00:29+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -296,9 +302,19 @@
  ],
  "source_url": "http://www.newmantruman.org/",
  "fetched_at": "2026-11-01T22:15:36+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:58+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -312,8 +328,18 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 10
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Newman Times: Wednesday 7:00 PM, or by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://newmantruman.org/faith/sacraments/",
+   "fetched_at": "2026-11-01T22:15:28+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "benediction_end": 1
@@ -322,8 +348,8 @@
   "unmatched": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
