@@ -34,6 +34,27 @@ robots.txt read and honoured (`/feeds/videos.xml` and `/results` are disallowed 
 agent `FindTheChurch/0.1 (+https://oakland-diocese-dashboard.vercel.app/about)`; no API key. A consent page or a
 "confirm you're not a bot" page stops the run and is committed as `_blocked.json`; it is never worked around.
 Runs as ONE GitHub Actions job (`media` in narthexlabs/fold-crawlt `.github/workflows/crawl.yml`; one host = one job).
+Saving (scripts/us/media_chunk.sh): prints file count, size and the largest files, refuses files over 50 MB, commits, pushes and
+then checks the commit is on origin/main; the step fails if it is not. The YouTube cache is saved even when it fails.
+
+## Diocese pass (diocese home pages and cathedral sites)
+`ingest/us/media/diocese_pages.py` (2026-11-02, Matthew: a diocese's main video content is often on its own site or its
+cathedral's) read each see's home page (USCCB `website`) and its cathedral's site (crawled parish sites named Cathedral /
+Co-Cathedral in the see, else in `unassigned-<state>` in the see city, else Wikidata; California: the cathedral named in
+`data/real/california/dioceses.json`), plus at most one same-site page whose link reads as video / livestream / media.
+Honest user agent, robots.txt and Crawl-delay honoured, one request at a time per host, >= 1.5 s apart; a challenge is
+recorded, never worked around; no page body is kept. Output `_inputs/diocese_pages.json` (status per target and the
+YouTube links found); both collect steps add those links (diocese home page -> owner the diocese; cathedral site -> owner
+the cathedral parish when its site is in our index). First pass 2026-11-02 16:3xZ: 425 targets (195 diocese home pages,
+230 cathedral sites) on 419 hosts; 239 read, 134 behind a challenge, 33 http-only, 19 other errors; 478 YouTube links on
+175 pages; 122 dioceses with at least one link.
+
+## Status (run 41411732959, 2026-11-02 09:23-14:20Z, commit "YouTube catalog: national")
+19,502 parish sites indexed outside California; 3,843 with a YouTube link (4,467 distinct links; 2,397 YouTube requests to
+resolve them, no consent / bot page). Catalogued 3,169 parish / school channels (2,925 verified, 244 probable) and 50 diocese
+channels; 323 unverified, 214 borrowed, 180 links that led to no channel. Tabs read for every catalogued channel:
+63,760 videos kept, 5,166 quarantined by the privacy screen, 5,264 on the national HEURISTIC list; 210 diocese files
+(largest 455 KB). 2,075 channels posted in the last 45 days; 1,836 streamed in the last 30.
 
 ## Files
 | file | what |
