@@ -224,13 +224,57 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wix"
+  },
+  {
+   "kind": "confession",
+   "day": "Tuesday",
+   "time": "08:15",
+   "language": null,
+   "raw": "Reconciliation: after 8:15am Mass",
+   "source_url": "https://www.stgerardinaiken.org/",
+   "fetched_at": "2026-11-01T17:27:01+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wix",
+   "relative": "after",
+   "note": "Reconciliation: after 8:15am Mass",
+   "day_expanded_from": "Tuesday and Thursday",
+   "relative_resolved": true
+  },
+  {
+   "kind": "confession",
+   "day": "Thursday",
+   "time": "08:15",
+   "language": null,
+   "raw": "Reconciliation: after 8:15am Mass",
+   "source_url": "https://www.stgerardinaiken.org/",
+   "fetched_at": "2026-11-01T17:27:01+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wix",
+   "relative": "after",
+   "note": "Reconciliation: after 8:15am Mass",
+   "day_expanded_from": "Tuesday and Thursday",
+   "relative_resolved": false
   }
  ],
  "source_url": "https://www.stgerardinaiken.org/",
  "fetched_at": "2026-11-01T17:27:08+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:59+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "wix",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -244,16 +288,14 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 5
  },
  "has_sunday": true,
- "schedule_dropped": {
-  "relative_time": 1
- },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

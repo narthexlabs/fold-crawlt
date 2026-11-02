@@ -21,7 +21,8 @@ Rules (CLAUDE.md, docs/design/scaling-california.md)
   * TLS is always verified (a certificate failure is recorded as ssl_error).
 
 Per-site plan (at most MAX_PAGES pages): robots.txt, home, then the best same-site link for each of
-mass times / ministries / bulletin / calendar / livestream / contact (see CATS), plus per-CMS fast paths:
+mass times / confession / adoration / liturgy / ministries / bulletin / calendar / livestream / contact (see CATS), plus
+per-CMS fast paths (one guessed /reconciliation and /adoration for eCatholic and WordPress when the nav has neither):
   eCatholic  -> guessed /mass-times, /ministries, /bulletins when the nav has no such link
   WordPress  -> /wp-json/wp/v2/pages index (one request) to find those pages when the nav hides them, and a probe
                 of The Events Calendar REST route (cached for the next 90 days when it answers).
@@ -338,6 +339,15 @@ CATS = {
                    r"\bmsz[aey]\b|\bmsze\b|nabo[zż]e[nń]stw|porz[aą]dek|th[aá]nh[\s_-]*l[eễ]|gi[oờ][\s_-]*l[eễ]|"
                    r"divine[\s_-]*liturgy|service[\s_-]*times|(?:worship|weekend|church)[\s_-]*services|"
                    r"plan[\s_-]*(?:your|a)[\s_-]*visit|new[\s_-]*here|i'?m[\s_-]*new|first[\s_-]*visit|visit[\s_-]*us", 2),
+    # 2026-11-01 (Matthew: completion = the parish's whole posted weekly schedule): sites that post confession or adoration
+    # times on their own page ("Reconciliation", "Sacraments", "Adoration Chapel") were never fetched, because the two
+    # mass_times slots went to "Mass Times" links. One slot each, plus the "Liturgy" / "Worship" page, where confession often
+    # sits. NOT_KIND below keeps sacrament-preparation, ministry-roster and calendar pages out of these slots.
+    "confession": (r"confess|reconcil|penance|\bsacraments?\b|confesi[oó]n|reconciliaci[oó]n|spowied[zź]|"
+                   r"gi[aả]i[\s_-]*t[oộ]i|x[uư]ng[\s_-]*t[oộ]i", 1),
+    "adoration": (r"adorat|adoraci[oó]n|adoracj|holy[\s_-]*hour|hora[\s_-]*santa|exposition|perpetual[\s_-]*adoration|"
+                  r"ch[aầ]u[\s_-]*th[aá]nh|\bchapel\b", 1),
+    "liturgy": (r"liturg|\bworship\b|\bschedules?\b", 1),
     "ministries": (r"ministr|\bgroups?\b|organi[sz]ations|get[\s_-]*involved|societ|clubs?\b|apostolate|"
                    r"parish[\s_-]*life|community[\s_-]*life|ministerios|grupos|faith[\s_-]*formation|\bserve\b|"
                    r"\bformation\b|devotions|^involve", 3),
@@ -351,7 +361,17 @@ SKIP_PATH = re.compile(r"\.(?:pdf|jpe?g|png|gif|webp|svg|docx?|xlsx?|pptx?|zip|m
                        r"/feed/?$|/tag/|/category/|/author/|/\d{4}/\d{2}/|/event/|/events?/(?:category|tag|list|month|day)/|"
                        r"[?&](?:month|date|tribe|eventdate|ical|outlook|replytocom|share|print)=|/cart|/checkout|/search|"
                        r"/privacy|/terms|/login|/account|/donate|/giving|/give/|/shop|/store|/blog/|/news/[^/]+/", re.I)
+NEW_KINDS = ("confession", "adoration", "liturgy")
+NOT_KIND = {
+    "confession": re.compile(r"first[\s_-]*(?:reconcil|confess|penance|communion|eucharist)|prepar|certificat|baptis|confirm|"
+                             r"marriage|matrimon|wedding|funeral|anoint|holy[\s_-]*orders|ordination|rcia|ocia|ministr|quince|reservation", re.I),
+    "adoration": re.compile(r"perpetual[\s_-]*help|wedding|rental|rent\b|facilit|columbarium|cemetery|sign[\s_-]*up|signup|volunteer", re.I),
+    "liturgy": re.compile(r"ministr|calendar|volunteer|minister|lector|usher|server|music|choir|readings|planning|wedding|funeral|child|chrild|youth|copy-of", re.I),
+}
 PREF = {
+    "confession": re.compile(r"confess|reconcil|penance|confesi|spowied", re.I),
+    "adoration": re.compile(r"adorat|adoraci|holy[\s_-]*hour|perpetual", re.I),
+    "liturgy": re.compile(r"liturgy/?$|worship/?$|schedules?/?$", re.I),
     "mass_times": re.compile(r"mass[\s_-]*(?:times?|schedule)|schedule|horario|mass-?and|confession|worship/?$", re.I),
     "ministries": re.compile(r"/ministr[a-z]*/?$|ministerios|/groups?/?$|get-involved|/involved|organi[sz]ations|parish-life", re.I),
     "calendar": re.compile(r"/calendar/?$|/events/?$|calendario|/eventos/?$|upcoming", re.I),
@@ -383,6 +403,8 @@ def pick_links(scan: Scan, base: str) -> dict[str, list[str]]:
             m_text = re.search(rx, text, re.I)
             m_path = re.search(rx, path, re.I)
             if not (m_text or m_path):
+                continue
+            if cat in NOT_KIND and NOT_KIND[cat].search(path + " " + text):
                 continue
             score = (2 if m_text else 0) + (1 if m_path else 0)
             if cat in PREF and PREF[cat].search(path + " " + text):
@@ -446,6 +468,22 @@ def cms_hint(text: str) -> set[str]:
     if "wp-content" in t or "wp-includes" in t or "wp-json" in t:
         s.add("wordpress")
     return s
+
+
+# One guessed URL per new kind, only when the nav has no such link: the commonest real paths among the 1,725 cached US home
+# pages read on 2026-11-01 (eCatholic: /reconciliation 22, /penance 6, /adoration 5, /eucharistic-adoration 5; WordPress:
+# /reconciliation 57, /sacraments/reconciliation 42, /adoration 17, /eucharistic-adoration 16). At most two requests.
+GUESS_NEW = {
+    "ecatholic": {"confession": "/reconciliation", "adoration": "/adoration"},
+    "wordpress": {"confession": "/reconciliation/", "adoration": "/adoration/"},
+}
+
+
+def new_kind_guesses(hint: set[str], picks: dict[str, list[str]], netloc: str) -> list[tuple[str, str]]:
+    cms = "ecatholic" if "ecatholic" in hint else "wordpress" if "wordpress" in hint else None
+    if cms is None:
+        return []
+    return [(k, netloc + path) for k, path in GUESS_NEW[cms].items() if not picks.get(k)]
 
 
 # ------------------------------------------------------------------------------------------------ one site
@@ -607,6 +645,7 @@ class Site:
                 guesses.append(("ministries", netloc + "/ministries"))
             if not picks["bulletin"]:
                 guesses += [("bulletin", netloc + "/bulletins"), ("bulletin", netloc + "/bulletin")]
+        guesses += new_kind_guesses(hint, picks, netloc)
         # --- a landing / door page: fetch the door's target as a schedule candidate and pick links from it too
         door_done: set[str] = set()
         for du in door_links(scan, base):
@@ -633,6 +672,8 @@ class Site:
                 break
             if u in done_urls or (is_guess and got_cat.get(cat)):
                 continue
+            if cat in NEW_KINDS and u.rstrip("/") in {x.rstrip("/") for x in done_urls if x}:
+                continue
             done_urls.add(u)
             r = self.get(u, cat)
             n += 1
@@ -644,13 +685,74 @@ class Site:
         # --- feeds that live on this site
         self._feeds(hint, scan)
 
-    def _feeds(self, hint: set[str], home_scan: Scan) -> None:
+    # -- top-up: only the page kinds a complete earlier crawl did not have (run_state.py topup)
+    def topup(self, kinds: tuple[str, ...]) -> dict:
+        """Fetch only `kinds` (of NEW_KINDS) for a site whose crawl is complete: the home page (and the WordPress pages
+        index) come from the cache, so a top-up costs at most one request per kind plus one guess per kind for eCatholic /
+        WordPress sites with no such link. Same pacer, robots.txt, Crawl-delay and refusal rules as a full crawl."""
+        m = self.m
+        have = {p.get("kind") for p in m["pages"]}
+        todo = [k for k in kinds if k not in have and k not in (m.get("topup") or {}).get("kinds", [])]
+        if not todo or m.get("status") != "ok":
+            return m
+        try:
+            self._robots()
+            home = next((p for p in m["pages"] if p.get("kind") == "home" and p.get("class") == "ok"), None)
+            if home is None:
+                return m
+            base = m.get("final_home") or self.home
+            netloc = urlparse(base).scheme + "://" + urlparse(base).netloc
+            hbody = self.body(home)
+            scan = scan_html(hbody)
+            for d in m.get("door") or []:
+                r = self.byurl.get(d)
+                if r and r.get("class") == "ok":
+                    scan.links += scan_html(self.body(r)).links
+            picks = pick_links(scan, base)
+            idx = next((p for p in m["pages"] if p.get("kind") == "wp_pages" and p.get("class") == "ok"), None)
+            if idx is not None:
+                try:
+                    pseudo = Scan()
+                    pseudo.links = [{"href": p.get("link", ""), "text": (p.get("title") or {}).get("rendered", ""), "label": ""}
+                                    for p in json.loads(self.body(idx)) if isinstance(p, dict)]
+                    extra = pick_links(pseudo, base)
+                    for c in todo:
+                        picks[c] += [u for u in extra[c] if u not in picks[c]]
+                except Exception:  # noqa: BLE001
+                    pass
+            hint = cms_hint(hbody.decode("utf-8", "replace"))
+            done = {p["url"].rstrip("/") for p in m["pages"]} | {(p.get("final_url") or "").rstrip("/") for p in m["pages"]}
+            plan = [(c, u, False) for c in todo for u in picks[c][:CATS[c][1]]]
+            plan += [(c, u, True) for c, u in new_kind_guesses(hint, {c: picks[c] for c in todo}, netloc) if c in todo]
+            got, n = set(), 0
+            for cat, u, is_guess in plan:
+                if u.rstrip("/") in done or (is_guess and cat in got):
+                    continue
+                done.add(u.rstrip("/"))
+                r = self.get(u, cat)
+                n += 1
+                if r and r["class"] == "ok":
+                    got.add(cat)
+                elif r and r["class"] in ("challenge", "blocked_403", "blocked_429"):
+                    m["note"] = f"top-up stopped: {r['class']} on {cat} page"
+                    break
+            m["picks"] = dict(m.get("picks") or {}, **{c: picks[c][:4] for c in todo})
+            m["topup"] = {"kinds": sorted(set((m.get("topup") or {}).get("kinds", [])) | set(todo)), "at": now_iso(),
+                          "requests": n, "found": sorted(got)}
+            if got:
+                self._feeds(hint, scan, ics_only=True)     # .ics links on the new pages; the events feed is not re-read
+        except Deadline:
+            m["note"] = "top-up cut by time cap; rerun resumes from cache"
+        self.save()
+        return m
+
+    def _feeds(self, hint: set[str], home_scan: Scan, ics_only: bool = False) -> None:
         m = self.m
         base = m["final_home"]
         netloc = urlparse(base).scheme + "://" + urlparse(base).netloc
         texts = []
         for p in m["pages"]:
-            if p.get("kind") in ("home", "mass_times", "ministries", "bulletin", "calendar", "live", "contact") \
+            if p.get("kind") in ("home", "mass_times", "ministries", "bulletin", "calendar", "live", "contact") + NEW_KINDS \
                     and p.get("class") == "ok":
                 texts.append(self.body(p).decode("utf-8", "replace"))
         blob = "\n".join(texts)
@@ -659,7 +761,7 @@ class Site:
             full = urljoin(base, u.replace("webcal://", "https://"))
             if host_of(full) == host_of(base) and full not in ics:
                 ics.append(full)
-        tribe = bool(re.search(r"tribe-events|tribe_events|/wp-json/tribe/events/v1", blob)) or "wordpress" in hint
+        tribe = (bool(re.search(r"tribe-events|tribe_events|/wp-json/tribe/events/v1", blob)) or "wordpress" in hint) and not ics_only
         if tribe:
             ws = date.fromisoformat(self.window_start)
             end = ws + timedelta(days=FEED_DAYS - 1)

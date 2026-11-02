@@ -50,8 +50,65 @@
     "recall": 0.757,
     "sunday_recall": 0.818
    },
-   "passed": false,
-   "why": "too few truth parishes"
+   "passed": true,
+   "why": "meets the bar on the live US truth set (held-out 12: weekend precision 90.0%, Sunday recall 87.1%; referee 78.7%)",
+   "live": {
+    "truth_set": "us-live-ecatholic (docs/review/ecatholic-check-2026-11-01.md, rounds 1 and 2)",
+    "measured_at": "2026-11-01",
+    "n": 11,
+    "convention": "slots a card shows (rows the crawl flags needs_review held back); weekend = Saturday from 14:00 + Sunday",
+    "heldout": {
+     "sites": 12,
+     "seed": 20261102,
+     "precision": 0.9,
+     "sunday_recall": 0.871,
+     "recall": 0.878,
+     "slot_error": 0.2,
+     "genuine_ecatholic_12": {
+      "precision": 1.0,
+      "sunday_recall": 0.9,
+      "slot_error": 0.098
+     }
+    },
+    "all": {
+     "sites": 32,
+     "precision": 0.944,
+     "note": "round-1 20 after its fixes (82 of 85 shown weekend slots right) + round-2 held-out 12 (36 of 40): 118 of 125"
+    }
+   },
+   "kinds": {
+    "weekend": {
+     "n": 11,
+     "precision": 0.9,
+     "recall": 0.878,
+     "heldout_precision": 0.9,
+     "trusted": true
+    },
+    "weekday": {
+     "n": 24,
+     "precision": 0.953,
+     "recall": 0.916,
+     "heldout_precision": 1.0,
+     "heldout_recall": 0.889,
+     "trusted": true
+    },
+    "confession": {
+     "n": 22,
+     "precision": 0.964,
+     "recall": 0.981,
+     "heldout_precision": 1.0,
+     "heldout_recall": 0.929,
+     "trusted": true
+    },
+    "adoration": {
+     "n": 12,
+     "precision": 1.0,
+     "recall": 0.935,
+     "heldout_precision": 1.0,
+     "heldout_recall": 0.933,
+     "trusted": true
+    }
+   }
   },
   "wix": {
    "oakland": {

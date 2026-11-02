@@ -66,6 +66,12 @@
    "url": "https://www.stmichaelbuffalo.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stmichaelbuffalo.org/sacraments",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -256,6 +262,74 @@
    "day_expanded_from": "Monday, Tuesday, Thursday, Friday"
   },
   {
+   "kind": "confession",
+   "day": "Monday",
+   "time": "06:45",
+   "language": null,
+   "raw": "CONFESSIONS: after the 6:45 AM Mass until 8:30 AM",
+   "source_url": "https://www.stmichaelbuffalo.org/",
+   "fetched_at": "2026-11-01T07:27:50+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "squarespace",
+   "relative": "after",
+   "note": "CONFESSIONS: after the 6:45 AM Mass until 8:30 AM",
+   "day_expanded_from": "Monday,Tuesday,Thursday,Friday",
+   "relative_resolved": true
+  },
+  {
+   "kind": "confession",
+   "day": "Tuesday",
+   "time": "06:45",
+   "language": null,
+   "raw": "CONFESSIONS: after the 6:45 AM Mass until 8:30 AM",
+   "source_url": "https://www.stmichaelbuffalo.org/",
+   "fetched_at": "2026-11-01T07:27:50+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "squarespace",
+   "relative": "after",
+   "note": "CONFESSIONS: after the 6:45 AM Mass until 8:30 AM",
+   "day_expanded_from": "Monday,Tuesday,Thursday,Friday",
+   "relative_resolved": true
+  },
+  {
+   "kind": "confession",
+   "day": "Thursday",
+   "time": "06:45",
+   "language": null,
+   "raw": "CONFESSIONS: after the 6:45 AM Mass until 8:30 AM",
+   "source_url": "https://www.stmichaelbuffalo.org/",
+   "fetched_at": "2026-11-01T07:27:50+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "squarespace",
+   "relative": "after",
+   "note": "CONFESSIONS: after the 6:45 AM Mass until 8:30 AM",
+   "day_expanded_from": "Monday,Tuesday,Thursday,Friday",
+   "relative_resolved": true
+  },
+  {
+   "kind": "confession",
+   "day": "Friday",
+   "time": "06:45",
+   "language": null,
+   "raw": "CONFESSIONS: after the 6:45 AM Mass until 8:30 AM",
+   "source_url": "https://www.stmichaelbuffalo.org/",
+   "fetched_at": "2026-11-01T07:27:50+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "squarespace",
+   "relative": "after",
+   "note": "CONFESSIONS: after the 6:45 AM Mass until 8:30 AM",
+   "day_expanded_from": "Monday,Tuesday,Thursday,Friday",
+   "relative_resolved": true
+  },
+  {
    "kind": "mass",
    "day": "Wednesday",
    "time": "06:45",
@@ -441,13 +515,42 @@
    "confidence": "low",
    "template": "squarespace",
    "day_expanded_from": "Monday - Friday"
+  },
+  {
+   "kind": "confession",
+   "day": "Wednesday",
+   "time": "06:45",
+   "language": null,
+   "raw": "RECONCILIATION / CONFESSIONS: Weekdays: after the 6:45 AM Mass until 8 AM",
+   "source_url": "https://www.stmichaelbuffalo.org/sacraments",
+   "fetched_at": "2026-11-02T04:41:39+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "squarespace",
+   "relative": "after",
+   "note": "RECONCILIATION / CONFESSIONS: Weekdays: after the 6:45 AM Mass until 8 AM",
+   "day_expanded_from": "Weekdays",
+   "relative_resolved": true
   }
  ],
  "source_url": "http://www.stmichaelbuffalo.org/",
  "fetched_at": "2026-11-01T07:27:56+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:40+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "squarespace",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -461,8 +564,18 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 28
  },
+ "schedule_none": [
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "text": "No confessions Saturday, Sunday and Holy Days",
+   "source_url": "https://www.stmichaelbuffalo.org/",
+   "fetched_at": "2026-11-01T07:27:50+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "relative_time": 2,
@@ -470,8 +583,8 @@
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

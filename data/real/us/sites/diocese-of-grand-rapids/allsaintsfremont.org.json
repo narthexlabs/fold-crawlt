@@ -81,6 +81,18 @@
    "url": "https://allsaintsfremont.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://allsaintsfremont.org/sacraments/reconciliation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://allsaintsfremont.org/liturgical/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -163,6 +175,20 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:00-15:30",
+   "language": null,
+   "raw": "Confession Times: Saturdays 3:00p.m.-3:30p.m. at Christ the King, Hesperia",
+   "source_url": "https://allsaintsfremont.org/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:43+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "http://www.allsaintsfremont.org/",
@@ -200,5 +226,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:45+00:00",
+  "requests": 3,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

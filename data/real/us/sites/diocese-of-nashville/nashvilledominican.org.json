@@ -66,6 +66,24 @@
    "url": "https://nashvilledominican.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://nashvilledominican.org/prayer/sacramental-life-and-liturgy/sacrament-of-penance/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://nashvilledominican.org/prayer/eucharistic-devotions/eucharistic-adoration/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://nashvilledominican.org/prayer/sacramental-life-and-liturgy/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -126,9 +144,23 @@
  "schedule_rows": [],
  "source_url": "https://nashvilledominican.org/",
  "fetched_at": "2026-11-02T01:56:14+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:04+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -142,12 +174,13 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 2
  },
  "has_sunday": false,
  "schedule_dropped": {
   "not_a_service": 2,
-  "relative_time": 1
+  "relative_time": 2
  },
  "schedule_images": [
   {

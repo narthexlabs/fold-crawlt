@@ -81,6 +81,18 @@
    "url": "https://www.olqprotterdam.org/contactus",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.olqprotterdam.org/reconciliation-times",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://www.olqprotterdam.org/prayer-and-worship-committee",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -317,6 +329,34 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wix"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:00-15:45",
+   "language": null,
+   "raw": "Weekly Reconciliation: 3-3:45 pm Our Lady Queen of Peace",
+   "source_url": "https://www.olqprotterdam.org/reconciliation-times",
+   "fetched_at": "2026-11-02T04:41:45+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "11:30",
+   "language": null,
+   "raw": "Weekly Reconciliation: Sundays 11:30 am St. Gabriel’s",
+   "source_url": "https://www.olqprotterdam.org/reconciliation-times",
+   "fetched_at": "2026-11-02T04:41:45+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "topup": true
   }
  ],
  "source_url": "http://www.olqprotterdam.org/",
@@ -354,5 +394,21 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:47+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
  }
 }

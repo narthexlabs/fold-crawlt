@@ -75,6 +75,18 @@
    "url": "https://www.saintspeterandpaulionia.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.saintspeterandpaulionia.org/sacraments/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://www.saintspeterandpaulionia.org/liturgy-commission/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -251,6 +263,20 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:00-15:45",
+   "language": null,
+   "raw": "Reconciliation: Saturday: 3:00-3:45 p.m., or by appointment. See the bulletin for additional seasonal opportunities.",
+   "source_url": "https://www.saintspeterandpaulionia.org/sacraments/",
+   "fetched_at": "2026-11-02T04:41:44+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "http://www.saintspeterandpaulionia.org/",
@@ -295,5 +321,29 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Saturday: 3:00-3:45 p.m., or by appointment. See the bulletin for additional seasonal opportunities.",
+   "phrase": "by appointment",
+   "source_url": "https://www.saintspeterandpaulionia.org/sacraments/",
+   "fetched_at": "2026-11-02T04:41:44+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:46+00:00",
+  "requests": 3,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

@@ -75,6 +75,18 @@
    "url": "https://www.transfigurationsc.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.transfigurationsc.org/sacrament-of-reconciliation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.transfigurationsc.org/eucharistic-adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -365,6 +377,80 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:00-15:45",
+   "language": null,
+   "raw": "The Sacrament of Reconciliation: Saturday afternoon from 3:00 to 3:45 before the 4:00 pm Mass",
+   "source_url": "https://www.transfigurationsc.org/sacrament-of-reconciliation",
+   "fetched_at": "2026-11-02T04:41:53+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Monday",
+   "time": "17:00-17:45",
+   "language": null,
+   "raw": "Eucharistic Adoration: Monday & Tuesday 5:00 pm - 5:45 pm",
+   "source_url": "https://www.transfigurationsc.org/eucharistic-adoration",
+   "fetched_at": "2026-11-02T04:41:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday & Tuesday",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "17:00-17:45",
+   "language": null,
+   "raw": "Eucharistic Adoration: Monday & Tuesday 5:00 pm - 5:45 pm",
+   "source_url": "https://www.transfigurationsc.org/eucharistic-adoration",
+   "fetched_at": "2026-11-02T04:41:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday & Tuesday",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "17:00-17:45",
+   "language": null,
+   "raw": "Eucharistic Adoration: Thursday & Friday 5:00 pm - 5:45 pm",
+   "source_url": "https://www.transfigurationsc.org/eucharistic-adoration",
+   "fetched_at": "2026-11-02T04:41:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Thursday & Friday",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "17:00-17:45",
+   "language": null,
+   "raw": "Eucharistic Adoration: Thursday & Friday 5:00 pm - 5:45 pm",
+   "source_url": "https://www.transfigurationsc.org/eucharistic-adoration",
+   "fetched_at": "2026-11-02T04:41:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Thursday & Friday",
+   "topup": true
   }
  ],
  "source_url": "https://www.transfigurationsc.org/",
@@ -402,6 +488,34 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "and by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://www.transfigurationsc.org/sacrament-of-reconciliation",
+   "fetched_at": "2026-11-02T04:41:53+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:57+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 5,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(803) 735-0512",
@@ -413,8 +527,5 @@
   },
   "fetched_at": "2026-11-01T05:14:52+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

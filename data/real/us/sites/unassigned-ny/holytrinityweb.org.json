@@ -75,6 +75,12 @@
    "url": "https://holytrinityweb.org/events/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://holytrinityweb.org/events/adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -283,33 +289,6 @@
  },
  "schedule_rows": [
   {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "15:00-16:00",
-   "language": null,
-   "raw": "Confession Times at Holy Trinity: Saturdays: 3:00 – 4:00 pm",
-   "source_url": "https://holytrinityweb.org/sacraments/",
-   "fetched_at": "2026-11-01T22:15:26+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress"
-  },
-  {
-   "kind": "confession",
-   "day": "Tuesday",
-   "time": "16:30-17:30",
-   "language": null,
-   "raw": "Confession Times at Holy Trinity: Tuesdays: 4:30 – 5:30 pm (October – June)",
-   "source_url": "https://holytrinityweb.org/sacraments/",
-   "fetched_at": "2026-11-01T22:15:26+00:00",
-   "needs_review": true,
-   "review_reason": "seasonal",
-   "confidence": "medium",
-   "template": "wordpress",
-   "season": "October – June"
-  },
-  {
    "kind": "mass",
    "day": "Saturday",
    "time": "16:30",
@@ -347,13 +326,52 @@
    "review_reason": null,
    "confidence": "high",
    "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:00-16:00",
+   "language": null,
+   "raw": "Confession Times at Holy Trinity: Saturdays: 3:00 – 4:00 pm",
+   "source_url": "https://holytrinityweb.org/sacraments/",
+   "fetched_at": "2026-11-01T22:15:26+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Tuesday (winter, oct-jun)",
+   "time": "16:30-17:30",
+   "language": null,
+   "raw": "Confession Times at Holy Trinity: Tuesdays: 4:30 – 5:30 pm (October – June)",
+   "source_url": "https://holytrinityweb.org/sacraments/",
+   "fetched_at": "2026-11-01T22:15:26+00:00",
+   "needs_review": true,
+   "review_reason": "seasonal",
+   "confidence": "medium",
+   "template": "wordpress",
+   "season": "October – June"
   }
  ],
  "source_url": "https://holytrinityweb.org/",
  "fetched_at": "2026-11-01T22:15:33+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:42+00:00",
+  "requests": 1,
+  "found": [
+   "adoration"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -367,6 +385,7 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 18
  },
  "has_sunday": true,
@@ -374,7 +393,7 @@
   "dated_line": 1,
   "not_a_service": 1,
   "no_day": 1,
-  "skipped_section": 2
+  "skipped_section": 3
  },
  "groups_dropped": {
   "unmatched": 5,
@@ -383,8 +402,8 @@
   "label_not_group": 2
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

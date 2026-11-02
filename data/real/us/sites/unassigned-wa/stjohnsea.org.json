@@ -979,6 +979,29 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "refetch_attempt": {
+  "status": "ssl_error",
+  "at": "2026-11-01",
+  "env": "sandbox"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:48+00:00",
+  "requests": 3,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "info@parishfamily14.org",
   "phone": "(206) 632-0843",
@@ -991,13 +1014,5 @@
   },
   "fetched_at": "2026-11-01T17:21:52+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
- },
- "refetch_attempt": {
-  "status": "ssl_error",
-  "at": "2026-11-01",
-  "env": "sandbox"
  }
 }

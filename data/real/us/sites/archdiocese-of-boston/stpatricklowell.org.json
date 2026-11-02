@@ -63,6 +63,12 @@
    "url": "https://stpatricklowell.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stpatricklowell.org/adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -280,6 +286,38 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Confession: Sundays – after 8:00am Mass until 9:45am",
+   "source_url": "https://stpatricklowell.org/sacraments/",
+   "fetched_at": "2026-11-02T04:41:43+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "Confession: Sundays – after 8:00am Mass until 9:45am",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": null,
+   "raw": "Confession: and after 10:00am Mass until 11:45am",
+   "source_url": "https://stpatricklowell.org/sacraments/",
+   "fetched_at": "2026-11-02T04:41:43+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "Confession: and after 10:00am Mass until 11:45am",
+   "topup": true
   }
  ],
  "source_url": "http://stpatricklowell.org/",
@@ -316,6 +354,34 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "or by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://stpatricklowell.org/sacraments/",
+   "fetched_at": "2026-11-02T04:41:43+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:02+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(978) 459-0561",
@@ -327,8 +393,5 @@
   },
   "fetched_at": "2026-11-01T05:09:48+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

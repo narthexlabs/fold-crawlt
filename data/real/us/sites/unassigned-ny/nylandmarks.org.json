@@ -45,6 +45,18 @@
    "url": "https://nylandmarks.org/who-we-are/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://nylandmarks.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://nylandmarks.org/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -67,7 +79,7 @@
    "note": "The Events Calendar (WordPress) REST API",
    "last_fetch": {
     "status": 200,
-    "fetched_at": "2026-11-01T23:34:30+00:00",
+    "fetched_at": "2026-11-02T04:47:49+00:00",
     "events_in_window": 2,
     "kept": 2
    }
@@ -85,7 +97,7 @@
    "recurring": false,
    "source_url": "https://nylandmarks.org/event/2026-living-landmarks-celebration/",
    "feed_id": "nylandmarks.org:tribe_rest:54985b6c",
-   "fetched_at": "2026-11-01T23:34:30+00:00"
+   "fetched_at": "2026-11-02T04:47:49+00:00"
   },
   {
    "id": "191c4593f1fa29b1",
@@ -98,7 +110,7 @@
    "recurring": false,
    "source_url": "https://nylandmarks.org/event/moses-awards-call-for-nominations-2026/",
    "feed_id": "nylandmarks.org:tribe_rest:54985b6c",
-   "fetched_at": "2026-11-01T23:34:30+00:00"
+   "fetched_at": "2026-11-02T04:47:49+00:00"
   }
  ],
  "social": {
@@ -119,9 +131,22 @@
  "schedule_rows": [],
  "source_url": "https://nylandmarks.org/",
  "fetched_at": "2026-11-01T22:15:29+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:43+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -135,13 +160,14 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 0
  },
  "has_sunday": false,
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 2,
   "kept_after_privacy": 2,

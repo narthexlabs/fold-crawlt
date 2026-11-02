@@ -509,6 +509,22 @@
    "location": "St. Mary (linked with St. Mark, Kendall)"
   },
   {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "17:30",
+   "language": null,
+   "raw": "CONFESSIONS: Following the 5:30 PM Masses in Albion and Kendall, by asking the priest",
+   "source_url": "https://www.onecatholic.org/",
+   "fetched_at": "2026-11-01T17:21:23+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wix",
+   "relative": "after",
+   "note": "CONFESSIONS: Following the 5:30 PM Masses in Albion and Kendall, by asking the priest",
+   "relative_resolved": true
+  },
+  {
    "kind": "adoration",
    "day": "Monday",
    "time": "08:30-20:00",
@@ -609,9 +625,19 @@
  ],
  "source_url": "http://www.onecatholic.org/",
  "fetched_at": "2026-11-01T17:21:40+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:37+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "wix",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -625,17 +651,14 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 9
  },
  "has_sunday": true,
- "schedule_dropped": {
-  "other_location": 1,
-  "relative_time": 1
- },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

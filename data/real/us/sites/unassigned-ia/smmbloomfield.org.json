@@ -39,6 +39,18 @@
    "url": "https://smmbloomfield.org/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://smmbloomfield.org/reconciliation/",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://smmbloomfield.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -60,32 +72,6 @@
   "source_url": "https://smmbloomfield.org/bulletin/"
  },
  "schedule_rows": [
-  {
-   "kind": "mass",
-   "day": "Sunday",
-   "time": "17:30",
-   "language": null,
-   "raw": "of the Mass: Sunday at 5:30pm",
-   "source_url": "https://smmbloomfield.org/",
-   "fetched_at": "2026-11-01T20:25:06+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress"
-  },
-  {
-   "kind": "mass",
-   "day": "First Saturday of the month",
-   "time": "09:00",
-   "language": null,
-   "raw": "of the Mass: First Saturday at 9:00am",
-   "source_url": "https://smmbloomfield.org/",
-   "fetched_at": "2026-11-01T20:25:06+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress"
-  },
   {
    "kind": "adoration",
    "day": "Sunday",
@@ -111,33 +97,71 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "17:30",
+   "language": null,
+   "raw": "Sunday 5:30pm",
+   "source_url": "https://smmbloomfield.org/",
+   "fetched_at": "2026-11-01T20:25:06+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "09:00",
+   "language": null,
+   "raw": "First Saturday 9:00am",
+   "source_url": "https://smmbloomfield.org/",
+   "fetched_at": "2026-11-01T20:25:06+00:00",
+   "needs_review": true,
+   "review_reason": "schedule_box,nth_of_month",
+   "nth": "first"
   }
  ],
  "source_url": "https://smmbloomfield.org/",
  "fetched_at": "2026-11-01T20:25:11+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:42+00:00",
+  "requests": 2,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
-    "has_sunday": true,
+    "has_sunday": false,
     "hours_ok": true,
     "counts_ok": true,
     "sunday_not_copied": true,
     "no_daily_on_sunday": true,
     "mostly_high": false
    },
-   "score": "medium"
+   "score": "low"
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 2
  },
  "has_sunday": true,
+ "schedule_dropped": {
+  "other_location": 2,
+  "box_rows_added": 2
+ },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

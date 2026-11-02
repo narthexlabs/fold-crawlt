@@ -252,7 +252,7 @@
    "note": "Google Calendar public feed (website-builder widget)",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:35:44+00:00",
+    "fetched_at": "2026-11-02T04:44:30+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -291,12 +291,12 @@
  "schedule_rows": [
   {
    "kind": "mass",
-   "day": "Saturday",
+   "day": "Saturday (winter, jan-jun)",
    "time": "16:00",
    "language": null,
    "raw": "Saturday Vigil: 4:00 PM (January - June)",
-   "source_url": "https://www.allsaintslockport.org/mass-schedule",
-   "fetched_at": "2026-11-01T07:28:02+00:00",
+   "source_url": "https://www.allsaintslockport.org/",
+   "fetched_at": "2026-11-01T07:28:01+00:00",
    "needs_review": true,
    "review_reason": "seasonal",
    "confidence": "medium",
@@ -309,8 +309,8 @@
    "time": "09:00",
    "language": null,
    "raw": "Saturday Vigil: 9:00 AM (year around)",
-   "source_url": "https://www.allsaintslockport.org/mass-schedule",
-   "fetched_at": "2026-11-01T07:28:02+00:00",
+   "source_url": "https://www.allsaintslockport.org/",
+   "fetched_at": "2026-11-01T07:28:01+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -318,28 +318,57 @@
   },
   {
    "kind": "mass",
-   "day": "Saturday",
+   "day": "Monday (winter, jan-jun)",
    "time": "07:30",
    "language": null,
    "raw": "Saturday Vigil: 7:30am Mon, Tues, Thurs (Jan - June)",
-   "source_url": "https://www.allsaintslockport.org/mass-schedule",
-   "fetched_at": "2026-11-01T07:28:02+00:00",
-   "needs_review": false,
-   "review_reason": null,
+   "source_url": "https://www.allsaintslockport.org/",
+   "fetched_at": "2026-11-01T07:28:01+00:00",
+   "needs_review": true,
+   "review_reason": "seasonal",
    "confidence": "medium",
    "template": "generic_strict",
    "day_expanded_from": "Mon, Tues, Thurs",
-   "day_parsed": "Monday",
-   "day_bound_from_line": true
+   "season": "Jan - June"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday (winter, jan-jun)",
+   "time": "07:30",
+   "language": null,
+   "raw": "Saturday Vigil: 7:30am Mon, Tues, Thurs (Jan - June)",
+   "source_url": "https://www.allsaintslockport.org/",
+   "fetched_at": "2026-11-01T07:28:01+00:00",
+   "needs_review": true,
+   "review_reason": "seasonal",
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Mon, Tues, Thurs",
+   "season": "Jan - June"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday (winter, jan-jun)",
+   "time": "07:30",
+   "language": null,
+   "raw": "Saturday Vigil: 7:30am Mon, Tues, Thurs (Jan - June)",
+   "source_url": "https://www.allsaintslockport.org/",
+   "fetched_at": "2026-11-01T07:28:01+00:00",
+   "needs_review": true,
+   "review_reason": "seasonal",
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Mon, Tues, Thurs",
+   "season": "Jan - June"
   },
   {
    "kind": "confession",
-   "day": "Saturday",
+   "day": "Saturday (winter, jan-jun)",
    "time": "15:00",
    "language": null,
    "raw": "Reconciliation: Saturday | 3:00 PM (Jan - June)",
-   "source_url": "https://www.allsaintslockport.org/mass-schedule",
-   "fetched_at": "2026-11-01T07:28:02+00:00",
+   "source_url": "https://www.allsaintslockport.org/",
+   "fetched_at": "2026-11-01T07:28:01+00:00",
    "needs_review": true,
    "review_reason": "seasonal",
    "confidence": "medium",
@@ -352,8 +381,8 @@
    "time": "08:45-12:00",
    "language": null,
    "raw": "Eucharistic Adoration: Thursday | 8:45 AM-12:00 PM",
-   "source_url": "https://www.allsaintslockport.org/mass-schedule",
-   "fetched_at": "2026-11-01T07:28:02+00:00",
+   "source_url": "https://www.allsaintslockport.org/",
+   "fetched_at": "2026-11-01T07:28:01+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -362,9 +391,19 @@
  ],
  "source_url": "https://www.allsaintslockport.org/",
  "fetched_at": "2026-11-01T07:28:09+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:36+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -378,6 +417,7 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 13
  },
  "has_sunday": true,
@@ -390,8 +430,8 @@
   "noise": 2
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

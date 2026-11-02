@@ -75,6 +75,18 @@
    "url": "https://bnvyazilim.com/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.motherofsorrows.net/mass-reconciliation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.motherofsorrows.net/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -329,7 +341,7 @@
    "fetched_at": "2026-11-01T22:15:25+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "medium",
+   "confidence": "high",
    "template": "wordpress"
   },
   {
@@ -355,7 +367,7 @@
    "fetched_at": "2026-11-01T22:15:25+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "medium",
+   "confidence": "high",
    "template": "wordpress"
   },
   {
@@ -374,9 +386,21 @@
  ],
  "source_url": "https://www.motherofsorrows.net/",
  "fetched_at": "2026-11-01T22:15:35+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:43+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -384,23 +408,24 @@
     "counts_ok": true,
     "sunday_not_copied": true,
     "no_daily_on_sunday": true,
-    "mostly_high": false
+    "mostly_high": true
    },
-   "score": "medium"
+   "score": "high"
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 16
+  "trusted_kinds": [],
+  "generic_rows": 17
  },
  "has_sunday": true,
  "schedule_dropped": {
   "other_location": 4,
   "dated_line": 1,
+  "no_day": 1,
   "not_a_service": 1,
   "dated_block": 6,
   "skipped_section": 1,
-  "notice_not_schedule": 1,
-  "prose": 5
+  "notice_not_schedule": 1
  },
  "groups_dropped": {
   "noise": 8,
@@ -408,8 +433,8 @@
   "label_not_group": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

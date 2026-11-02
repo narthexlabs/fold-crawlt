@@ -75,6 +75,18 @@
    "url": "https://www.sbccaustin.org/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.sbccaustin.org/reconciliation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.sbccaustin.org/page-template-1",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -452,6 +464,48 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Tuesday",
+   "time": "11:50",
+   "language": null,
+   "raw": "Times of confession: Tuesday: 11:00 a. m. a 11:50 a. m.",
+   "source_url": "https://www.sbccaustin.org/reconciliation",
+   "fetched_at": "2026-11-02T04:41:34+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Thursday",
+   "time": "11:50",
+   "language": null,
+   "raw": "Times of confession: Thursday: 11:00 a. m. a 11:50 a. m.",
+   "source_url": "https://www.sbccaustin.org/reconciliation",
+   "fetched_at": "2026-11-02T04:41:34+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Third Saturday of the month",
+   "time": "20:00",
+   "language": null,
+   "raw": "Mass: at 8pm in Room #1",
+   "source_url": "https://www.sbccaustin.org/page-template-1",
+   "fetched_at": "2026-11-02T04:41:35+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "generic_strict",
+   "topup": true
   }
  ],
  "source_url": "https://www.sbccaustin.org/",
@@ -495,5 +549,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:35+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 3,
+  "mode": "merge"
  }
 }

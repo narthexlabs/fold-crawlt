@@ -87,6 +87,12 @@
    "url": "https://stjosephkannapolis.com/about-st-joseph/contact-us-directions",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://stjosephkannapolis.com/news-events/150-ash-wednesday-schedule",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -459,6 +465,40 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Half an hour before mass or by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://stjosephkannapolis.com/sacraments/confession",
+   "fetched_at": "2026-11-02T04:41:39+00:00"
+  },
+  {
+   "kind": "confession",
+   "text": "Media hora antes de la misa o con cita previa.",
+   "phrase": "con cita",
+   "source_url": "https://stjosephkannapolis.com/sacraments/confession",
+   "fetched_at": "2026-11-02T04:41:39+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:41+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(704) 932-4607",
@@ -469,8 +509,5 @@
   },
   "fetched_at": "2026-11-01T03:59:18+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

@@ -22,7 +22,7 @@ from __future__ import annotations
 
 import re
 import unicodedata
-from dataclasses import dataclass, field
+from dataclasses import dataclass, field, replace
 
 from bs4 import BeautifulSoup, Comment, NavigableString, Tag
 
@@ -30,9 +30,16 @@ DAYN = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sun
 ORDN = {1: "First", 2: "Second", 3: "Third", 4: "Fourth", 5: "Fifth", -1: "Last"}
 
 
+# typographic punctuation folded to ASCII before matching (a curly apostrophe in "St. John’s" must read as "St. John's",
+# an en dash in "May – Aug" as "-"); without this NFKD + ASCII drops them and "John’s" became the word "johns"
+PUNCT_ASCII = str.maketrans({"\u2018": "'", "\u2019": "'", "\u02bc": "'", "\u2032": "'", "\u00b4": "'", "\u0060": "'",
+                             "\u201c": '"', "\u201d": '"', "\u2010": "-", "\u2011": "-", "\u2012": "-", "\u2013": "-",
+                             "\u2014": "-", "\u2015": "-", "\u2212": "-"})
+
+
 def fold(s: str) -> str:
-    """Lower case, accents removed (so "Sábado" and "Sabado" read alike)."""
-    return unicodedata.normalize("NFKD", s or "").encode("ascii", "ignore").decode().lower()
+    """Lower case, accents removed (so "Sábado" and "Sabado" read alike), typographic quotes and dashes as ASCII."""
+    return unicodedata.normalize("NFKD", (s or "").translate(PUNCT_ASCII)).encode("ascii", "ignore").decode().lower()
 
 
 def norm_space(s: str) -> str:
@@ -228,6 +235,7 @@ LIST_CONN = r"\s*(?:,|&|\+|/|and|y|or|o)\s*"
 
 ORD_RX = re.compile(rf"\b(?:every\s+|each\s+|cada\s+)?(?P<ord>{_ORD}(?:{LIST_CONN}{_ORD})*)\s+(?P<d>{_DWP})"
                     rf"(?:\s+(?:of\s+(?:the|each|every)\s+month|del\s+mes|de\s+cada\s+mes|of\s+every\s+month))?", re.I)
+PAREN_ORD_RX = re.compile(rf"\(\s*(?P<ord>{_ORD}(?:{LIST_CONN}{_ORD})*)\s*\)", re.I)   # "(1st & 3rd)", no day word
 RANGE_DAY_RX = re.compile(rf"\b(?:from\s+|de\s+)?(?P<a>{_DWP}){RANGE_CONN}(?P<b>{_DWP})", re.I)
 LIST_DAY_RX = re.compile(rf"\b(?P<l>{_DWP}(?:{LIST_CONN}{_DWP})+)", re.I)
 ONE_DAY_RX = re.compile(rf"\b(?P<d>{_DWP})", re.I)
@@ -339,7 +347,9 @@ def days_in(text: str) -> list[DayTok]:
         if not free(m.start(), m.end()):
             continue
         g = fold(m.group("g"))
-        if g.startswith(("week", "entre", "de lunes")):
+        if g.startswith(("weekend", "fin")):     # before "week": "Weekend" is not "Weekday" (it named Mon-Fri until 2026-11-01)
+            out.append(DayTok(m.start(), m.end(), [], None, "weekend", m.group(0)))
+        elif g.startswith(("week", "entre", "de lunes")):
             out.append(DayTok(m.start(), m.end(), [0, 1, 2, 3, 4], None, "weekday", m.group(0)))
         elif g.startswith(("daily", "every", "each", "diaria")):
             out.append(DayTok(m.start(), m.end(), [0, 1, 2, 3, 4, 5], None, "daily", m.group(0)))
@@ -367,13 +377,18 @@ KIND_RX = [
     ("benediction", re.compile(r"\bbenediction\b|\bbendici[oó]n\b", re.I)),
     ("mass", re.compile(r"\bmass(?:es)?\b|\bmisas?\b|\bvigil(?:ia)?\b|\beucharist\b|divine liturgy|th[áa]nh l[ễe]|"
                         r"\bliturg(?:y|ies|ia)\b(?! of the)|\bmesse\b|\bmsza\b", re.I)),
+    # devotions are offerings too (Matthew, 2026-11-01): kept as kind "devotion" (merge.py / lib/schedule.ts show it as
+    # "other"), never dropped; "Stations of the Cross, followed by Holy Mass" is a devotion row, the Mass after it unstated
+    ("devotion", re.compile(r"stations of the cross|via crucis|\bchaplet\b|\bnovena\b|\brosary\b|\brosario\b|"
+                            r"divine mercy (?:hour|devotion|chaplet)|gorzkie [żz]ale|miraculous medal|perpetual help devotion|"
+                            r"\bdevotions?\b(?! (?:schedule|times))|\bmorning prayer\b|\bevening prayer\b|\bvespers\b|\blauds\b", re.I)),
     ("not", re.compile(
         r"rehears\w*|\bpractice\b|\bchoir\b|\bcoro\b|\bschola\b|communion service|eucharistic service|liturgy service|"
         r"word and communion|celebration of the word|liturgy of the (?:word|hours)|children'?s liturgy|"
-        r"morning prayer|evening prayer|night prayer|\bvespers\b|\blauds\b|divine office|office hours?|horario de oficina|"
+        r"night prayer|divine office|office hours?|horario de oficina|"
         r"office (?:is )?(?:open|closed)|parish office|\boficina\b|\bcoffee\b|\bcaf[eé]\b|gift shop|book ?store|\bthrift\b|"
-        r"\bshop\b|\bbingo\b|stations of the cross|via crucis|\bchaplet\b|\bnovena\b|\brosary\b|\brosario\b|\bdevotion\w*|"
-        r"perpetual help|\bknights\b|caballeros|\bmeeting\b|\bjunta\b|\bclass(?:es)?\b|\bclases?\b|bible study|"
+        r"\bshop\b|\bbingo\b|"
+        r"perpetual help|\bknights\b|caballeros|\bmeeting\b|\bmeets?\b|\bse reúnen?\b|\bjunta\b|\bclass(?:es)?\b|\bclases?\b|bible study|"
         r"estudio b[ií]blico|church (?:is )?open|open daily|doors open|food (?:pantry|bank|distribution)|"
         r"religious education|faith formation|catechism|catequesis|\bdoctrina\b|\bocia\b|\brcia\b|youth group|"
         r"\bschool office\b|\blunch\b|\bclosed\b|cerrad[oa]|\bwedding|\bboda|quincea\w*|\bbaptism\w*|\bbautismo\w*|"
@@ -387,8 +402,50 @@ HOLY_RX = re.compile(r"\bholy\s*days?\b|\bholidays?\b|d[ií]as? (?:feriados?|fes
                      r"\bnavidad\b|nochebuena|new\s+year|ash\s+wednesday|mi[eé]rcoles\s+de\s+ceniza|holy\s+(?:thursday|week|saturday)|"
                      r"good\s+friday|viernes\s+santo|semana\s+santa|triduum|\beaster\b|\bpascua\b|immaculate\s+conception|"
                      r"\binmaculada\b|simbang\s+gabi|\bassumption of\b|our lady of guadalupe feast|feast of", re.I)
+_MON = r"jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|june?|july?|aug(?:ust)?|sept?(?:ember)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?"
+_RANGE_TO = r"\s*(?:-|\u2013|\u2014|to|through|thru|until|till|\u2019?til)\s*"
+# a seasonal block: "Summer", "Lent", "from Memorial Day to Labor Day", "May - Aug", "June through August", "(Sept-May)"
 SEASON_RX = re.compile(r"\b(?P<s>summer|lent(?:en)?|advent|winter|during the school year|school year|while school is in session|"
-                       r"school days?|cuaresma|adviento|verano)\b", re.I)
+                       r"school days?|cuaresma|adviento|verano|"
+                       rf"memorial\s+day{_RANGE_TO}labou?r\s+day|"
+                       rf"(?:{_MON})\.?{_RANGE_TO}(?:{_MON})\b\.?)(?:\b|(?<=\.))", re.I)
+_MON_N = {"jan": 1, "feb": 2, "mar": 3, "apr": 4, "may": 5, "jun": 6, "jul": 7, "aug": 8, "sep": 9, "oct": 10, "nov": 11, "dec": 12}
+
+
+def season_in(text: str) -> str | None:
+    """The season a line or heading limits its rows to (season_label), or None. "Except from Memorial Day thru Labor Day",
+    "no 5:30 PM Mass in summer" name the season the row is NOT held in: the row is the regular schedule."""
+    for m in SEASON_RX.finditer(text or ""):
+        pre = (text or "")[max(0, m.start() - 30):m.start()]
+        if re.search(r"\b(?:except|excluding|exc\.|not|no|other than|but|outside|excepto|menos)\b[^.;:]*$", pre, re.I):
+            continue
+        return season_label(m.group("s"))
+    return None
+
+
+def season_label(s: str | None) -> str | None:
+    """The qualifier written after a seasonal row's day ("Sunday (summer)"): a month range reads as summer / winter / the
+    school year when it is one ("May - Aug" -> "summer, may-aug"), so merge.py and lib/find.ts keep it off the weekly list."""
+    if not s:
+        return None
+    f = fold(s).strip(" .")
+    if re.search(r"school", f):
+        return "during the school year"
+    if re.search(r"memorial", f):
+        return "summer"
+    ms = re.findall(r"[a-z]+", f)
+    if len(ms) >= 2 and ms[0][:3] in _MON_N and ms[-1][:3] in _MON_N:
+        a, b = _MON_N[ms[0][:3]], _MON_N[ms[-1][:3]]
+        span = list(range(a, b + 1)) if a <= b else list(range(a, 13)) + list(range(1, b + 1))
+        tag = f"{ms[0][:3]}-{ms[-1][:3]}"
+        if a in (8, 9) and b in (5, 6):
+            return f"during the school year, {tag}"
+        if 7 in span and 1 not in span:
+            return f"summer, {tag}"
+        if 1 in span and 7 not in span:
+            return f"winter, {tag}"
+        return f"seasonal, {tag}"
+    return f.replace("lenten", "lent")
 SKIP_HEAD = re.compile(r"mass intentions?|intenciones|week at a glance|this week|upcoming|calendar|calendario|\bnews\b|noticias|"
                        r"bulletin|bolet[ií]n|\breadings?\b|lecturas|office hours?|horario de oficina|parish office|\bstaff\b|"
                        r"\bevents?\b|eventos|announcements?|anuncios|ministry schedule|minister(?:s)? schedule|lector|usher|"
@@ -444,6 +501,31 @@ DATE_RX = re.compile(rf"\b(?:{MONTHS})\.?\s+\d{{1,2}}(?:st|nd|rd|th)?\b|\b\d{{1,
                      r"(?<![\d:])\d{1,2}/\d{1,2}(?:/\d{2,4})?(?![\d:])", re.I)
 NEG_RX = re.compile(r"\bno\s+(?:mass|misa|masses|confessions?|adoration)\b|\bno hay\b|\bcancel+ed\b|\bsuspended\b", re.I)
 CHANGE_RX = re.compile(r"\b(effective|starting|beginning|begins|as of|until further notice|a partir|comenzando)\b", re.I)
+# An exception qualifier on a standing time: "(except: Ash Wednesday & Holy Week)", "(except Holy Saturday)", "except
+# January 1", "(no confessions on holy days)". The row stands; the qualifier is kept as the row's `note` and removed from
+# the text the reader judges, so its feast / holy / date / church words never turn the row into a holy-day row, a dated
+# line or another place's schedule (ihmatlanta.org, 2026-11-01: Confession and Adoration rows were dropped as
+# other_location because "Holy Saturday" reads as a church name). A clause holding a time, or one naming a plain weekday
+# ("Mon-Sat 8 am (except Wed)") is left alone: it changes which days the row covers.
+EXCEPT_RX = re.compile(
+    r"[(\[]\s*(?:except(?:ing)?|excepto|excluding|no\s+(?:mass(?:es)?|confessions?|adoration|misas?)\s+(?:on|during)|"
+    r"not\s+(?:on|during)|closed\s+(?:on|during))\b[^()\[\]]*[)\]]"
+    r"|(?:^|[,;]\s*|\s[-–—]\s*|\s)(?:except(?:ing)?|excepto|excluding)\b\s*:?[^;|()]*$", re.I)
+
+
+def split_except(text: str) -> tuple[str, str | None]:
+    """(text without its exception qualifiers, the qualifiers joined) -- see EXCEPT_RX."""
+    notes, out = [], text or ""
+    for m in reversed(list(EXCEPT_RX.finditer(out))):
+        seg = m.group(0)
+        if times_in(seg):
+            continue
+        plain_day = [d for d in days_in(seg) if d.days and d.generic != "holy"]
+        if plain_day and not HOLY_RX.search(seg) and not DATE_RX.search(seg):
+            continue
+        notes.insert(0, norm_space(seg.strip(" ,;-–—()")))
+        out = out[:m.start()] + out[m.end():]
+    return (norm_space(out), "; ".join(notes)) if notes else (text, None)
 
 
 # ------------------------------------------------------------------------------------------------ page items
@@ -610,10 +692,16 @@ def other_place(text: str, own: set[str]) -> bool:
                r"english|spanish|vigil)\b", " ", text, flags=re.I)
     if not (PLACE_RX.search(t) or ADDR_RX.search(t)):
         return False
+    if re.match(r"\s*(?:welcome to|bienvenidos? a|about)\b", t, re.I):
+        return False                                   # "Welcome to St. Raphael RC Church": the site's own banner
     words = name_words(t)
     if not words:
         return False
-    return not (words & own)
+    if words & own:
+        return False
+    # a misspelt name in the input list ("St. Raphel") still names the parish's own church
+    import difflib
+    return not any(len(w) >= 5 and len(o) >= 5 and difflib.SequenceMatcher(None, w, o).ratio() >= 0.8 for w in words for o in own)
 
 
 # ------------------------------------------------------------------------------------------------ the reader
@@ -627,6 +715,7 @@ class Ctx:
     other_loc: tuple | None = None
     loc: tuple | None = None         # (church name, level): one of the site's own churches
     season: tuple | None = None
+    season_days: set = field(default_factory=set)   # weekdays already listed under the current seasonal heading
     dated: bool = False
     sticky_kind: str | None = None
     last_line_day: DayTok | None = None
@@ -662,6 +751,7 @@ class Reader:
         self.rows: list[dict] = []
         self.dropped: dict[str, int] = {}
         self.section = 0
+        self._note: str | None = None
 
     def drop(self, why: str, n: int = 1):
         self.dropped[why] = self.dropped.get(why, 0) + n
@@ -693,6 +783,8 @@ class Reader:
         if DATE_RX.search(f) and len(f) <= 40 and not CHANGE_RX.search(f):
             ctx.dated = True
             return
+        if len(re.sub(r"[^A-Za-zÀ-ỹ]", "", f)) < 3 and not days_in(f):
+            return            # "|", "-", "18": a separator in an events list keeps the date above it in force
         ctx.dated = False
         holy = HOLY_RX.search(f)
         ks = [k for _, _, k in kinds_in(f)]
@@ -708,39 +800,70 @@ class Reader:
         elif level <= 7 or (ks and "not" not in ks) or [d for d in dts if d.generic != "holy"]:
             ctx.holy = None
         loc_text = re.split(r"[:\-–—]\s", f)[0]
-        if other_place(loc_text, self.own) and not ks:
+        holy_head = bool(holy) and not re.search(r"\b(?:church|chapel|parish|cathedral|basilica|shrine|oratory|mission|iglesia|"
+                                                 r"parroquia|capilla)\b", f, re.I) and not ADDR_RX.search(f)
+        if other_place(loc_text, self.own) and not ks and not holy_head:   # "Holy Days of Obligation:" names no church
             ctx.other_loc = (loc_text, level)
-        elif level <= 7 or (PLACE_RX.search(f) and not ks):
-            ctx.other_loc = None
+        elif (level <= 7 and (ctx.other_loc is None or level <= ctx.other_loc[1])) or (PLACE_RX.search(f) and not ks):
+            ctx.other_loc = None      # a sub-heading under another church's heading ("MASS TIMES", its address) keeps it
         own_loc = self.which_church(loc_text) if (PLACE_RX.search(loc_text) or ADDR_RX.search(loc_text)) else None
         if own_loc:
             ctx.loc = (own_loc, level)
-        for k in ks:
-            if k in ("confession", "adoration", "mass", "not"):
+        # "Novena with Mass" / "Mass, then Rosary": a service named beside a devotion is the section's kind
+        for k in sorted(ks, key=lambda k: k == "devotion"):
+            if k in ("confession", "adoration", "mass", "devotion", "not"):
                 ctx.kind = (k, level, "heading" if level <= 7 else "line", text[:60])
                 ctx.sticky_kind = None
                 break
         ls = langs_in(f)
         if ls and len(f) < 70:
             ctx.lang = (ls[0][2], level)
-        se = SEASON_RX.search(f)
+        se = season_in(f)
         if se:
-            ctx.season = (se.group("s"), level)
+            ctx.season = (se, level)
+            ctx.season_days = set()
         elif level <= 7 and not dts:
             ctx.season = None
+        elif ctx.season and dts and {x for d in dts for x in d.days} & ctx.season_days:
+            # "Weekday Masses (July-August)" Mon 8:00 ... Fri 8:00, then "Monday - Friday" 8 am / 6 pm: a second list of the same
+            # days after a seasonal one is the regular schedule, not more of the season
+            ctx.season = None
+            ctx.season_days = set()
         if dts:
             d = next((x for x in dts if x.generic != "holy"), None)
             if d is not None:
                 ctx.day = (d, level)
                 ctx.last_line_day = None
 
+    # -- the church heading above a home-page schedule block (schedule_blocks): sets only the place, never the kind or day
+    def place(self, ctx: Ctx, text: str, level: int):
+        loc_text = re.split(r"[:\-–—]\s", text)[0]
+        if other_place(loc_text, self.own):
+            ctx.other_loc = (loc_text, level)
+        else:
+            ctx.other_loc = None
+            own_loc = self.which_church(loc_text)
+            if own_loc:
+                ctx.loc = (own_loc, level)
+
     # -- one line with times
     def line(self, ctx: Ctx, text: str, cell_day: DayTok | None = None, cell_lang: str | None = None,
              cell_kind: str | None = None, from_table: bool = False):
+        text, self._note = split_except(text)
         toks = [t for t in times_in(text)]
         if not toks:
             return
         toks = split_lists(text, toks, ctx)
+        # "3:00 pm — Confessions (until about 3:30 pm)": the second time is the first one's end, not a start of its own
+        merged = []
+        for t in toks:
+            if merged and not merged[-1].end_hhmm and not merged[-1].ref and t.hh is not None and re.search(
+                    r"\b(?:until|till|to|hasta)\s+(?:about|approximately|approx\.?|around|roughly|aprox\w*)\s*$|\bends?\s+(?:at\s+)?(?:about|around)\s*$",
+                    text[max(0, t.start - 30):t.start], re.I) and t.minutes() > merged[-1].minutes():
+                merged[-1].end_hhmm = t.hhmm
+                continue
+            merged.append(t)
+        toks = merged
         if ctx.skip:
             self.drop("skipped_section", len(toks))
             return
@@ -749,7 +872,13 @@ class Reader:
             return
         if DATE_RX.search(text) and not HOLY_RX.search(text):
             self.drop("dated_line", len(toks))
+            self._dated_line = True           # an events list: "October 18 | 9:00 am", then its title "Mass 9:00AM - English"
             return
+        if getattr(self, "_dated_line", False) and not [d for d in days_in(text) if d.days]:
+            self._dated_line = False
+            self.drop("dated_block", len(toks))
+            return
+        self._dated_line = False
         if ctx.dated:
             self.drop("dated_block", len(toks))
             return
@@ -757,29 +886,44 @@ class Reader:
         if prefix and len(prefix) < 70 and not TIME_RX.search(prefix) and other_place(prefix, self.own):
             self.drop("other_location", len(toks))
             return
+        at = re.search(r"\b(?:at|en)\s+((?:the\s+)?(?:St\.?|Saint|Sts\.?|San|Santa|Our Lady|Holy|Sacred|Blessed|Christ|Mission|"
+                       r"[A-Z][a-z]+\s+(?:Cathedral|Basilica|Shrine|Parish))\b[^,;.()|]{0,60})", text)
+        if at and not self.multi and other_place(at.group(1), self.own):
+            self.drop("other_location", len(toks))      # "8:15am - Mass at Christ Cathedral with Bishop Vann": another church's
+            return
         line_loc = self.which_church(prefix) if prefix and len(prefix) < 70 and not TIME_RX.search(prefix) else None
         holy_line = bool(HOLY_RX.search(text)) or bool(ctx.holy)
         dts = [d for d in days_in(text) if d.generic != "holy"]
         ks = kinds_in(text)
         ls = langs_in(text)
         starts_with_time = toks[0].start <= min([d.start for d in dts] + [len(text)])
-        season = SEASON_RX.search(text)
-        season = season.group("s") if season else (ctx.season[0] if ctx.season else None)
+        season = season_in(text) or (ctx.season[0] if ctx.season else None)
         consumed_k, consumed_l = set(), set()
         last_day_used = None
         for i, t in enumerate(toks):
+            # "Friday after the 8:30 am Mass", "Saturday following 9:00am Mass", "before the 5 pm Mass": a confession or
+            # adoration time stated against a Mass. Kept (2026-11-01, Matthew: the whole posted schedule) as a row at the
+            # Mass's time with `relative` = after / before, the line as its `note`, and needs_review (merge never shows a
+            # needs_review row), so a person or a later pass can state the real start. A reference beside a stated start
+            # ("4:50 - 5:20 pm (before the 5:30 Mass)") or an end ("until 4 pm") stays dropped.
+            self._rel = None
             if t.ref:
-                self.drop("relative_time")
-                continue
+                lead = text[max(0, t.start - 30):t.start]
+                if any(not x.ref for x in toks) or re.search(r"(?:ends? (?:at|by)|until|till|\bby)\s+(?:the\s+)?$", lead, re.I) \
+                        or any(x.ref and x.start < t.start for x in toks):
+                    self.drop("relative_time")
+                    continue
+                self._rel = "before" if re.search(r"before|prior to|antes de|preceding", lead, re.I) else "after"
             nxt_start = toks[i + 1].start if i + 1 < len(toks) else len(text)
             prv_end = toks[i - 1].end if i else 0
             # ---- kind
             kind, ksrc = None, None
-            for (a, b, k) in ks:
+            for (a, b, k) in ([] if t.ref else ks):     # "after the 8 am Mass": that Mass is the reference, not the kind
                 if a >= t.end and a < nxt_start:
                     gap = text[t.end:a]
-                    if re.fullmatch(r"[\s\-–:()]*(?:[A-Za-zÀ-ỹ'’.]+\s*){0,2}[\s\-–:()]*", gap) and not re.search(r"[,;|]", gap) \
-                            and (not gap.strip(" -–:()") or langs_in(gap) or re.fullmatch(r"\s*(?:the|la|el|de)?\s*", gap.strip(" -–:()"))):
+                    if re.fullmatch(r"[\s\-–—:()@|]*(?:[A-Za-zÀ-ỹ'’.]+\s*){0,2}[\s\-–—:()@]*", gap) and not re.search(r"[,;|]", gap) \
+                            and (not gap.strip(" -–—:()@") or langs_in(gap) or re.fullmatch(r"\s*(?:(?:the|la|el|de|eucharistic|blessed|holy|daily|weekday|weekend|sunday|anticipated|"
+                                                                          r"sacrament(?:al)?|of|individual|private|communal|perpetual)\s*)*", gap.strip(" -–—:()@"), re.I)):
                         kind, ksrc = k, "line"
                         consumed_k.add(a)
                         break
@@ -793,6 +937,9 @@ class Reader:
                 kind, ksrc = ctx.kind[0], ("section" if ctx.kind[2] == "heading" else "context")
             if kind is None and ctx.sticky_kind == "mass":     # a Mass list continues; confession / adoration lines do not
                 kind, ksrc = ctx.sticky_kind, "sticky"
+            if t.ref and kind not in ("confession", "adoration"):
+                self.drop("relative_time")
+                continue
             if kind is None and self.mode == "full" and (dts or ctx.day or cell_day):
                 kind, ksrc = "mass", "default"
             if kind is None:
@@ -821,7 +968,10 @@ class Reader:
                 last_day_used = day
             elif cell_day is not None:
                 day, dsrc = cell_day, "table"
-            elif ctx.last_line_day is not None and starts_with_time and not ctx.day:
+            elif ctx.last_line_day is not None and starts_with_time and (not ctx.day or (ctx.day[0].generic == "weekend"
+                                                                                       and not ctx.day[0].days)):
+                # a bare time under a "Weekend" heading continues the line above ("Sunday: 9:00 AM" / "11:00 AM"); the
+                # weekend word names no single day of its own
                 day, dsrc = ctx.last_line_day, "carry"
             elif ctx.day:
                 day, dsrc = ctx.day[0], "context"
@@ -843,6 +993,16 @@ class Reader:
                 prev = [(a, b, L) for (a, b, L) in ls if lo <= a and b <= t.start and a not in consumed_l]
                 if prev:
                     lang = prev[-1][2]
+            if lang is None:
+                # "11:30 am and 1:00 pm in Spanish": a list of times shares the language written after its last time
+                j = i
+                while j + 1 < len(toks) and re.fullmatch(r"\s*,?\s*(?:and|&|y)\s*", text[toks[j].end:toks[j + 1].start], re.I):
+                    j += 1
+                if j > i:
+                    lim = toks[j + 1].start if j + 1 < len(toks) else len(text)
+                    after = [L for (a, b, L) in ls if toks[j].end <= a < lim and not re.search(r"[;|]", text[toks[j].end:a])]
+                    if after:
+                        lang = after[0]
             lang = lang or cell_lang or (ctx.lang[0] if ctx.lang else None)
             # ---- church (multi-church sites): the time's own suffix ("8:30 a.m., St. Philip, Occidental"), the line's
             # prefix, else the heading above
@@ -881,6 +1041,13 @@ class Reader:
             if kind == "confession" and not (6 * 60 <= t.minutes() <= 22 * 60):
                 self.drop("implausible_hour")
                 continue
+            if len(day.days) == 1 and not day.nth:
+                # "English (1st & 3rd) 09:00 AM" under a "Sundays" heading: an ordinal list with no day word of its own
+                po = PAREN_ORD_RX.search(text)
+                if po:
+                    nth = sorted({ORD_N.get(fold(x).strip(), 0) for x in re.split(LIST_CONN, po.group("ord")) if fold(x).strip() in ORD_N})
+                    if nth:
+                        day = replace(day, nth=nth)
             days = day.days
             if day.generic == "daily" and kind == "adoration":
                 days = list(range(7))
@@ -888,6 +1055,8 @@ class Reader:
             for d in days:
                 self.emit(kind, day_text(d, day.nth), tstr, lang, raw_out, t, ksrc, dsrc, d, daily=day.generic == "daily",
                           season=season, from_table=from_table, multi=len(days) > 1, daytxt=day.text)
+            if season and ctx.season and season == ctx.season[0]:
+                ctx.season_days.update(days)
             if kind in ("mass", "confession", "adoration"):
                 ctx.sticky_kind = kind
         if dts:
@@ -900,14 +1069,18 @@ class Reader:
         pen += {"explicit": 0, "24h": 0, "propagated": 0.5, "guessed": 1.5}.get(t.meridiem, 1)
         conf = "high" if pen == 0 else "medium" if pen <= 1 else "low"
         if season and day != "Holy days":
-            q = "during the school year" if re.search(r"school", season, re.I) else fold(season).replace("lenten", "lent")
-            day = f"{day} ({q})"
+            day = f"{day} ({season_label(season)})"
         row = {"kind": kind, "day": day, "time": time, "language": lang, "raw": raw[:200], "source_url": self.url,
                "fetched_at": self.fetched_at, "needs_review": False, "review_reason": None, "confidence": conf,
                "template": self.template, "_why": {"kind": ksrc, "day": dsrc, "meridiem": t.meridiem}, "_dnum": dnum,
                "_daily": daily, "_section": self.section}
         if kind_parsed and kind_parsed != kind:
             row["kind_parsed"] = kind_parsed
+        if getattr(self, "_note", None):
+            row["note"] = self._note[:120]
+        if getattr(self, "_rel", None):
+            row.update(relative=self._rel, needs_review=True, review_reason="relative_time", note=norm_space(raw)[:120],
+                       confidence="low")
         if multi and daytxt:
             row["day_expanded_from"] = daytxt[:40]
         self.rows.append(row)
@@ -975,6 +1148,9 @@ class Reader:
     def run(self, items: list[Item], ctx: Ctx | None = None):
         ctx = ctx or Ctx()
         for it in items:
+            if it.kind == "place":
+                self.place(ctx, it.text, it.level)
+                continue
             if it.kind == "table":
                 self.table(ctx, it.rows)
             elif not times_in(it.text):
@@ -993,17 +1169,7 @@ class Reader:
         # "Daily" is Monday to Friday where the same section gives Saturday a time of its own
         sat_explicit = {(r["_section"], r["kind"]) for r in rows if r["_dnum"] == 5 and not r["_daily"]}
         rows = [r for r in rows if not (r["_daily"] and r["_dnum"] == 5 and (r["_section"], r["kind"]) in sat_explicit and r["kind"] != "adoration")]
-        out, seen = [], set()
-        for r in rows:
-            k = (r["kind"], r["day"], r["time"][:5], r["language"])
-            if k in seen:
-                continue
-            # the same slot with and without a language: keep the labelled one
-            if r["language"] is None and any((r["kind"], r["day"], r["time"][:5]) == (x["kind"], x["day"], x["time"][:5]) and x["language"] for x in rows):
-                continue
-            seen.add(k)
-            out.append(r)
-        return out
+        return dedupe(rows)       # same rules (labelled slot kept; a schedule line beats a sentence for one slot)
 
 
 # ------------------------------------------------------------------------------------------------ pages
@@ -1033,10 +1199,31 @@ def page_mode(p) -> str | None:
         return None
     if getattr(p, "kind", "") == "home":
         return "block"
+    if page_kind_default(p):
+        return "full"
+    if getattr(p, "kind", "") in ("confession", "adoration", "liturgy"):
+        return "block"           # a "Sacraments" hub or "Worship" page: only under its schedule headings
     if SCHED_URL.search(path) or SCHED_HEAD.search(title):
         return "full"
     if getattr(p, "kind", "") == "mass_times":
         return "block"
+    return None
+
+
+PAGE_KIND_URL = {"confession": re.compile(r"confess|reconcil|penance|confesi|spowied|giai-?toi|xung-?toi", re.I),
+                 "adoration": re.compile(r"adorat|adoraci|adoracj|holy-?hours?|hora-?santa|exposition|chau-?thanh", re.I)}
+
+
+def page_kind_default(p) -> str | None:
+    """A page fetched as the confession / adoration page whose own URL or title names that service (".../reconciliation",
+    "Eucharistic Adoration"): its times are that service unless a heading on it says otherwise (2026-11-01)."""
+    k = getattr(p, "kind", "")
+    if k not in PAGE_KIND_URL:
+        return None
+    path = re.sub(r"^https?://[^/]+", "", p.url or "")
+    title = page_title(p)
+    if PAGE_KIND_URL[k].search(path) or PAGE_KIND_URL[k].search(fold(title)):
+        return k
     return None
 
 
@@ -1045,17 +1232,32 @@ def schedule_blocks(items: list[Item]) -> list[Item]:
     up to the next heading of the same or a higher level that is not about the schedule."""
     out: list[Item] = []
     on, lvl, n = False, 9, 0
+    # The church heading a schedule block sits under ("HOLY GHOST CHURCH" / address / phone / "MASS TIMES"): carried into the
+    # block, so a two-church home page keeps each church's times apart (holyghost-stbernadette.org, 2026-11-01). Address,
+    # city and phone lines between the two do not break the link; any other heading or more than 8 items does.
+    place, since = None, 0
     for it in items:
         is_head = it.kind == "h" or (it.kind == "line" and len(it.text) < 50 and not times_in(it.text) and SCHED_HEAD.search(it.text)
                                      and not SKIP_HEAD.search(it.text))
-        if is_head and SCHED_HEAD.search(it.text) and not SKIP_HEAD.search(it.text) and not HOLY_RX.search(it.text):
+        if is_head and SCHED_HEAD.search(it.text) and not SKIP_HEAD.search(it.text) and not HOLY_RX.search(it.text) \
+                and not (not on and times_in(it.text) and DATE_RX.search(" ".join(x.text for x in items[max(0, items.index(it) - 2):items.index(it) + 3]))):
+            # (an events list's entry title, "Mass 9:00AM - English" beside "October 18 | 9:00 am", starts no block)
+            if place is not None and since <= 8:
+                out.append(Item("place", place.text, place.level))
+            place = None
             on, lvl, n = True, (it.level if it.kind == "h" else 8), 0
             out.append(Item("h", it.text, min(it.level, 7)))
             continue
         if on and it.kind == "h" and it.level <= lvl and not SCHED_HEAD.search(it.text) and not days_in(it.text) and not langs_in(it.text):
             on = False
             out.append(Item("h", "—", it.level))
-            continue
+            since = 0
+        if not on:
+            since += 1
+            if it.kind == "h" and len(it.text) < 80 and PLACE_RX.search(it.text) and not times_in(it.text) and not ADDR_RX.search(it.text):
+                place, since = it, 0
+            elif it.kind == "h" and not (ADDR_RX.search(it.text) or (re.search(r"\d", it.text) and len(it.text) < 60)):
+                place = None
         if on:
             n += 1
             if n > 60:
@@ -1083,25 +1285,34 @@ def read_pages(pages, own: set[str], template: str, main_selectors=(), drop=(), 
         if mode == "block":
             items = schedule_blocks(items)
         rd = Reader(p.url, p.fetched_at, own, template, mode, names)
-        rows = rd.run(items)
+        pk = page_kind_default(p)
+        rows = rd.run(items, Ctx(kind=(pk, 0, "heading", pk.capitalize())) if pk else None)
         for k, v in rd.dropped.items():
             dropped[k] = dropped.get(k, 0) + v
         (full_rows if mode == "full" else block_rows).extend(rows)
+    # The home page is always a schedule source (2026-11-01, Matthew: the home page often carries the whole weekly schedule
+    # and sub-pages only part of it): its block rows are added wherever a schedule page did not already give that kind, day
+    # and start time (listed first, so a home row and a sub-page row for one slot keep the home row). Other block pages (a
+    # Mass page read only under its headings) still fill only kinds the full pages lack.
     have = {r["kind"] for r in full_rows}
-    rows = full_rows + [r for r in block_rows if r["kind"] not in have]
+    home_urls = {p.url for p in pages if getattr(p, "kind", "") == "home"}
+    home_rows = [r for r in block_rows if r["source_url"] in home_urls]
+    rows = home_rows + full_rows + [r for r in block_rows if r["source_url"] not in home_urls and r["kind"] not in have]
     return dedupe(rows), dropped
 
 
 def dedupe(rows: list[dict]) -> list[dict]:
-    out, seen = [], set()
+    """One row per (kind, day, start, language); of two readings of one slot the schedule line wins over a sentence
+    ("Our 11am & 12:30pm Sunday Masses are live streamed", which row hygiene later drops as prose)."""
+    keep, seen = set(), set()
     labelled = {(r["kind"], r["day"], r["time"][:5]) for r in rows if r.get("language")}
-    for r in rows:
+    for i, r in sorted(enumerate(rows), key=lambda x: len(x[1].get("raw") or "") > 110):
         k = (r["kind"], r["day"], r["time"][:5], r.get("language"))
         if k in seen or (not r.get("language") and (r["kind"], r["day"], r["time"][:5]) in labelled):
             continue
         seen.add(k)
-        out.append(r)
-    return out
+        keep.add(i)
+    return [r for i, r in enumerate(rows) if i in keep]
 
 
 def public(rows: list[dict]) -> list[dict]:

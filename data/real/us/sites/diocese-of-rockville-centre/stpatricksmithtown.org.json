@@ -929,6 +929,38 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "12:10",
+   "language": null,
+   "raw": "Exposition of the Blessed Sacrament: Thursdays for one hour following 12:10 PM Mass",
+   "source_url": "https://stpatricksmithtown.org/adoration/",
+   "fetched_at": "2026-11-02T04:41:50+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "Exposition of the Blessed Sacrament: Thursdays for one hour following 12:10 PM Mass",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Third Saturday of the month",
+   "time": "20:00",
+   "language": null,
+   "raw": "Nocturnal Adoration, third Saturday of the month starting after the 8 PM Mass",
+   "source_url": "https://stpatricksmithtown.org/adoration/",
+   "fetched_at": "2026-11-02T04:41:50+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "Nocturnal Adoration, third Saturday of the month starting after the 8 PM Mass",
+   "topup": true
   }
  ],
  "source_url": "http://stpatricksmithtown.org/",
@@ -971,6 +1003,24 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:50+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "rectory@stpatricksmithtown.org",
   "phone": "(631) 265-2668",
@@ -983,8 +1033,5 @@
   },
   "fetched_at": "2026-11-01T05:10:55+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

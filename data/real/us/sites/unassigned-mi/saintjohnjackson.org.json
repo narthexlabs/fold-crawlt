@@ -81,6 +81,12 @@
    "url": "https://saintjohnjackson.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://saintjohnjackson.org/first-friday-holy-hour-adoration-prayer/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -448,13 +454,41 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Thursday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Confession: After 9:00 AM Mass",
+   "source_url": "https://saintjohnjackson.org/",
+   "fetched_at": "2026-11-01T22:15:36+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "Confession: After 9:00 AM Mass",
+   "relative_resolved": true
   }
  ],
  "source_url": "https://saintjohnjackson.org/",
  "fetched_at": "2026-11-01T22:16:19+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:33+00:00",
+  "requests": 1,
+  "found": [
+   "adoration"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -468,17 +502,18 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 22
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "relative_time": 1,
-  "no_day": 3
+  "no_day": 3,
+  "dated_line": 2
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

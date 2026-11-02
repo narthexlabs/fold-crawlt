@@ -593,6 +593,32 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "The Sacrament of Reconciliation takes place three times a week. Confessions are heard on Monday, 6pm - 7pm, Friday, 7:30am-8:30am and Saturday at 9:30am-10:30am or by appointment by calling the parish",
+   "phrase": "by appointment",
+   "source_url": "https://www.queenoftheapostles.org/sacraments",
+   "fetched_at": "2026-11-02T04:41:37+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:37+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "office@queenoftheapostles.org",
   "phone": "(704) 825-9600",
@@ -605,10 +631,5 @@
   },
   "fetched_at": "2026-11-01T03:58:57+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()",
-  "names_withheld": 0,
-  "contacts_removed": 3
  }
 }

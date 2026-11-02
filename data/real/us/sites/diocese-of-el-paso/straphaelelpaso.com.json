@@ -75,6 +75,18 @@
    "url": "https://www.straphaelelpaso.com/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.straphaelelpaso.com/reconciliation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.straphaelelpaso.com/eucharisticadoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -365,6 +377,38 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "squarespace"
+  },
+  {
+   "kind": "adoration",
+   "day": "First Friday of the month",
+   "time": "07:00",
+   "language": null,
+   "raw": "Raphael Parish has Eucharistic Adoration every first Friday of the month following the 7a.m.",
+   "source_url": "https://www.straphaelelpaso.com/eucharisticadoration",
+   "fetched_at": "2026-11-02T04:41:42+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "squarespace",
+   "relative": "after",
+   "note": "Raphael Parish has Eucharistic Adoration every first Friday of the month following the 7a.m.",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "First Friday of the month",
+   "time": "18:00",
+   "language": null,
+   "raw": "Beginning in January 2023, Nighttime Adoration will take place following the 6:00 p.m.",
+   "source_url": "https://www.straphaelelpaso.com/eucharisticadoration",
+   "fetched_at": "2026-11-02T04:41:42+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "squarespace",
+   "relative": "after",
+   "note": "Beginning in January 2023, Nighttime Adoration will take place following the 6:00 p.m.",
+   "topup": true
   }
  ],
  "source_url": "https://www.straphaelelpaso.com/",
@@ -411,5 +455,21 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:43+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
  }
 }

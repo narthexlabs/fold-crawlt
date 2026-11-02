@@ -81,6 +81,18 @@
    "url": "https://www.mqp.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.mqp.org/reconciliation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://www.mqp.org/liturgy",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -277,6 +289,48 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "squarespace"
+  },
+  {
+   "kind": "confession",
+   "day": "Wednesday",
+   "time": "16:30-17:45",
+   "language": null,
+   "raw": "NEW CONFESSION SCHEDULE:: Wednesday 4:30 p.m.—5:45 p.m.",
+   "source_url": "https://www.mqp.org/reconciliation",
+   "fetched_at": "2026-11-02T04:41:43+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Friday",
+   "time": "08:00-08:45",
+   "language": null,
+   "raw": "NEW CONFESSION SCHEDULE:: Friday 8:00 a.m. - 8:45 a.m.",
+   "source_url": "https://www.mqp.org/reconciliation",
+   "fetched_at": "2026-11-02T04:41:43+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "09:45-11:00",
+   "language": null,
+   "raw": "NEW CONFESSION SCHEDULE:: Saturday 9:45 a.m.—11:00 a.m.",
+   "source_url": "https://www.mqp.org/reconciliation",
+   "fetched_at": "2026-11-02T04:41:43+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace",
+   "topup": true
   }
  ],
  "source_url": "http://www.mqp.org/",
@@ -317,6 +371,24 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:46+00:00",
+  "requests": 3,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 3,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "office@mqp.org",
   "phone": "(425) 391-1178",
@@ -329,8 +401,5 @@
   },
   "fetched_at": "2026-11-01T03:58:32+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

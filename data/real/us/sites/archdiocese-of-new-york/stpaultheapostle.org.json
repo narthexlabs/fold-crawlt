@@ -454,6 +454,42 @@
    "review_reason": null,
    "confidence": "high",
    "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Tuesday",
+   "time": "12:10",
+   "language": null,
+   "raw": "Confessions can be heard:: Tuesdays and Thursdays immediately following the 12:10 pm Mass",
+   "source_url": "https://stpaultheapostle.org/faith-formation/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:33+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "Confessions can be heard:: Tuesdays and Thursdays immediately following the 12:10 pm Mass",
+   "day_expanded_from": "Tuesdays and Thursdays",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Thursday",
+   "time": "12:10",
+   "language": null,
+   "raw": "Confessions can be heard:: Tuesdays and Thursdays immediately following the 12:10 pm Mass",
+   "source_url": "https://stpaultheapostle.org/faith-formation/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:33+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "Confessions can be heard:: Tuesdays and Thursdays immediately following the 12:10 pm Mass",
+   "day_expanded_from": "Tuesdays and Thursdays",
+   "day_parsed": "Tuesday",
+   "day_bound_from_line": true,
+   "topup": true
   }
  ],
  "source_url": "https://www.stpaultheapostle.org/",
@@ -499,5 +535,28 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "By appointment",
+   "phrase": "By appointment",
+   "source_url": "https://stpaultheapostle.org/faith-formation/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:33+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:35+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
  }
 }

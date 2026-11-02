@@ -63,6 +63,12 @@
    "url": "https://www.stanthonyangola.com/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stanthonyangola.com/reconciliation-eucharist",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -564,6 +570,20 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wix"
+  },
+  {
+   "kind": "confession",
+   "day": "Tuesday",
+   "time": "08:30-09:30",
+   "language": null,
+   "raw": "Confessions are held on:: Tuesday's from 8:30 a.m. - 9:30 a.m.",
+   "source_url": "https://www.stanthonyangola.com/reconciliation-eucharist",
+   "fetched_at": "2026-11-02T04:41:43+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "topup": true
   }
  ],
  "source_url": "https://stanthonyangola.com/",
@@ -604,6 +624,33 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "By appointment.",
+   "phrase": "By appointment",
+   "source_url": "https://www.stanthonyangola.com/reconciliation-eucharist",
+   "fetched_at": "2026-11-02T04:41:43+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:46+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "office@stanthonyangola.com",
   "phone": "(260) 665-2259",
@@ -615,8 +662,5 @@
   },
   "fetched_at": "2026-11-01T03:59:24+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

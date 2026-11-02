@@ -81,6 +81,12 @@
    "url": "https://saintmarysonline.org/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://saintmarysonline.org/adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -347,6 +353,20 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "godaddy"
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "15:00-16:00",
+   "language": null,
+   "raw": "Each week the Adoration Chapel will be cleaned on Thursday from 3pm-4pm.",
+   "source_url": "https://saintmarysonline.org/adoration/",
+   "fetched_at": "2026-11-02T04:41:36+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "godaddy",
+   "topup": true
   }
  ],
  "source_url": "https://www.saintmarysonline.org/",
@@ -387,5 +407,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:36+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

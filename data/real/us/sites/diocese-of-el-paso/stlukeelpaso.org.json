@@ -63,6 +63,12 @@
    "url": "https://www.stlukeelpaso.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stlukeelpaso.org/penance",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -388,6 +394,48 @@
    "day_bound_from_line": true
   },
   {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "19:00",
+   "language": "Spanish",
+   "raw": "Anticipated Mass (Spanish) - eve of Holy Day at 7:00 pm",
+   "source_url": "https://www.stlukeelpaso.org/",
+   "fetched_at": "2026-11-01T08:05:02+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "07:30",
+   "language": "English",
+   "raw": "English Masses - on Holy Day at 7:30 am and 7:00 pm",
+   "source_url": "https://www.stlukeelpaso.org/",
+   "fetched_at": "2026-11-01T08:05:02+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "19:00",
+   "language": "English",
+   "raw": "English Masses - on Holy Day at 7:30 am and 7:00 pm",
+   "source_url": "https://www.stlukeelpaso.org/",
+   "fetched_at": "2026-11-01T08:05:02+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "kind_parsed": "mass"
+  },
+  {
    "kind": "confession",
    "day": "Saturday",
    "time": "15:00-16:00",
@@ -403,9 +451,21 @@
  ],
  "source_url": "https://www.stlukeelpaso.org/",
  "fetched_at": "2026-11-01T08:05:09+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:40+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -419,12 +479,21 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
-  "generic_rows": 9
+  "trusted_kinds": [],
+  "generic_rows": 10
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "or by appointment. Please call the office",
+   "phrase": "by appointment",
+   "source_url": "https://www.stlukeelpaso.org/",
+   "fetched_at": "2026-11-01T08:05:02+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 3,
-  "skipped_section": 4
+  "skipped_section": 8
  },
  "groups_dropped": {
   "noise": 1,
@@ -432,8 +501,8 @@
   "unmatched": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

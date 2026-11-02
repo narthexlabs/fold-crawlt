@@ -69,6 +69,18 @@
    "url": "https://www.stpatrickligonier.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stpatrickligonier.org/eucharistic-adoration",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://www.stpatrickligonier.org/newcomers",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -385,6 +397,34 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "adoration",
+   "text": "45 minutes before every Mass and",
+   "phrase": "45 minutes before every Mass",
+   "source_url": "https://www.stpatrickligonier.org/eucharistic-adoration",
+   "fetched_at": "2026-11-02T04:41:41+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:43+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(260) 894-4946",
@@ -396,8 +436,5 @@
   },
   "fetched_at": "2026-11-01T03:59:27+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

@@ -206,7 +206,7 @@
    "note": "Google Calendar public feed (website-builder widget)",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:34:02+00:00",
+    "fetched_at": "2026-11-02T04:47:28+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -229,32 +229,6 @@
   "source_url": "https://www.holytrinityfulton.org/"
  },
  "schedule_rows": [
-  {
-   "kind": "mass",
-   "day": "Saturday",
-   "time": "16:00",
-   "language": null,
-   "raw": "Weekend Masses: 4:00 p.m. at Holy Trinity",
-   "source_url": "https://www.holytrinityfulton.org/mass-schedule",
-   "fetched_at": "2026-11-01T20:25:03+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
-  {
-   "kind": "mass",
-   "day": "Sunday",
-   "time": "08:30",
-   "language": null,
-   "raw": "Weekend Masses: 8:30 a.m. at Holy Trinity",
-   "source_url": "https://www.holytrinityfulton.org/mass-schedule",
-   "fetched_at": "2026-11-01T20:25:03+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
   {
    "kind": "mass",
    "day": "Sunday",
@@ -297,65 +271,11 @@
    "day_expanded_from": "Monday and Thursday"
   },
   {
-   "kind": "mass",
-   "day": "Tuesday",
-   "time": "09:00",
-   "language": null,
-   "raw": "Weekday Masses: 9:00 a.m. at Holy Trinity",
-   "source_url": "https://www.holytrinityfulton.org/mass-schedule",
-   "fetched_at": "2026-11-01T20:25:03+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict",
-   "day_expanded_from": "Tuesday and Wednesday"
-  },
-  {
-   "kind": "mass",
-   "day": "Wednesday",
-   "time": "09:00",
-   "language": null,
-   "raw": "Weekday Masses: 9:00 a.m. at Holy Trinity",
-   "source_url": "https://www.holytrinityfulton.org/mass-schedule",
-   "fetched_at": "2026-11-01T20:25:03+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict",
-   "day_expanded_from": "Tuesday and Wednesday"
-  },
-  {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "15:00-15:30",
-   "language": null,
-   "raw": "Confession: 3:00-3:30 p.m. at Holy Trinity",
-   "source_url": "https://www.holytrinityfulton.org/mass-schedule",
-   "fetched_at": "2026-11-01T20:25:03+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
-  {
    "kind": "confession",
    "day": "First Saturday of the month",
    "time": "09:30-10:00",
    "language": null,
    "raw": "Confession: 9:30-10:00 a.m. at St. Stephen",
-   "source_url": "https://www.holytrinityfulton.org/mass-schedule",
-   "fetched_at": "2026-11-01T20:25:03+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
-  {
-   "kind": "mass",
-   "day": "First Friday of the month",
-   "time": "09:00",
-   "language": null,
-   "raw": "First Monthly Masses: 9:00 a.m. at Holy Trinty",
    "source_url": "https://www.holytrinityfulton.org/mass-schedule",
    "fetched_at": "2026-11-01T20:25:03+00:00",
    "needs_review": false,
@@ -379,9 +299,19 @@
  ],
  "source_url": "https://www.holytrinityfulton.org/",
  "fetched_at": "2026-11-01T20:25:10+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:40+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -395,9 +325,13 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 11
  },
  "has_sunday": true,
+ "schedule_dropped": {
+  "other_location": 5
+ },
  "groups_dropped": {
   "noise": 2,
   "sentence": 1,
@@ -405,8 +339,8 @@
   "unmatched": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

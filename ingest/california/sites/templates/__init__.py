@@ -30,6 +30,34 @@ BAR = {"truth_set": "oakland", "min_units": 10, "precision": 0.90, "sunday_recal
 GRADES_FILE = __import__("pathlib").Path(__file__).resolve().parent / "grades.json"
 
 
+# A template with fewer than BAR["min_units"] Oakland truth parishes (eCatholic: none) may pass on a LIVE truth set instead:
+# sites drawn at random from the national crawl, read by a person off the live page, with a held-out part the parser fixes
+# never saw (docs/review/ecatholic-check-2026-11-01.md). Same thresholds: >= 10 parishes with weekend Masses, weekend slot
+# precision >= 90% on the held-out sites AND on all graded sites, Sunday recall >= 85% (held-out), referee >= 75%.
+# Per kind (Matthew 2026-11-01 19:02: the ledger tracks weekend Mass, weekday Mass, confession and adoration separately), a
+# template's rows of one kind are trusted only when that kind passes on its own: >= 10 parishes with rows of that kind on
+# the page (dev + held-out pooled), pooled slot precision >= 90% and recall >= 85%, and held-out precision >= 90%.
+# grades.json `kinds`; trusted_kinds() below. A template graded only on the Oakland set (no `kinds`) is trusted for every
+# kind its Oakland grade covered (Mass, confession and adoration slots pooled), as before.
+KINDS = ("weekend", "weekday", "confession", "adoration")
+KIND_BAR = {"min_units": 10, "precision": 0.90, "recall": 0.85, "heldout_precision": 0.90}
+
+
+def passes_live(live: dict | None, referee: dict | None) -> bool:
+    """A live truth grade ({n, heldout: {precision, sunday_recall}, all: {precision}}) against BAR."""
+    lv, r = live or {}, referee or {}
+    ho, al = lv.get("heldout") or {}, lv.get("all") or {}
+    return bool(lv.get("n", 0) >= BAR["min_units"] and (ho.get("precision") or 0) >= BAR["precision"]
+                and (al.get("precision") or 0) >= BAR["precision"] and (ho.get("sunday_recall") or 0) >= BAR["sunday_recall"]
+                and (r.get("precision") or 0) >= BAR["referee_precision"])
+
+
+def kind_passes(k: dict | None) -> bool:
+    k = k or {}
+    return bool(k.get("n", 0) >= KIND_BAR["min_units"] and (k.get("precision") or 0) >= KIND_BAR["precision"]
+                and (k.get("recall") or 0) >= KIND_BAR["recall"] and (k.get("heldout_precision") or 0) >= KIND_BAR["heldout_precision"])
+
+
 def passes(truth: dict | None, referee: dict | None) -> bool:
     """One template's pooled scores ({n, precision, sunday_recall}) against BAR."""
     t, r = truth or {}, referee or {}
@@ -46,6 +74,28 @@ def _load_passed() -> set[str]:
 
 
 PASSED: set[str] = _load_passed()
+
+
+def _load_kinds() -> dict[str, set[str]]:
+    try:
+        g = __import__("json").loads(GRADES_FILE.read_text("utf-8"))
+    except (OSError, ValueError):
+        return {}
+    out = {}
+    for name, v in (g.get("templates") or {}).items():
+        if not v.get("passed"):
+            continue
+        ks = v.get("kinds")
+        out[name] = set(KINDS) if not ks else {k for k in KINDS if (ks.get(k) or {}).get("trusted")}
+    return out
+
+
+TRUSTED_KINDS: dict[str, set[str]] = _load_kinds()
+
+
+def trusted_kinds(template: str) -> list[str]:
+    """The kinds (weekend / weekday / confession / adoration) whose rows a passed template is trusted for."""
+    return [k for k in KINDS if k in TRUSTED_KINDS.get(template, set())]
 
 
 def platform_of(pages) -> str:

@@ -57,6 +57,12 @@
    "url": "https://www.stpetersaustin.org/contact-us.html",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stpetersaustin.org/adoration.html",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -331,6 +337,48 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "weebly"
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "11:00",
+   "language": null,
+   "raw": "Adoration: Fridays 11:00 AM",
+   "source_url": "https://www.stpetersaustin.org/adoration.html",
+   "fetched_at": "2026-11-02T04:41:35+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:00",
+   "language": "English",
+   "raw": "WEEKEND MASS: 11:00 AM (English)",
+   "source_url": "https://www.stpetersaustin.org/mass-schedule.html",
+   "fetched_at": "2026-11-02T04:41:36+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "weebly",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "13:00",
+   "language": "Spanish",
+   "raw": "WEEKEND MASS: 1:00 PM (Español)",
+   "source_url": "https://www.stpetersaustin.org/mass-schedule.html",
+   "fetched_at": "2026-11-02T04:41:36+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "weebly",
+   "topup": true
   }
  ],
  "source_url": "https://www.stpetersaustin.org/",
@@ -369,5 +417,21 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:37+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 3,
+  "mode": "merge"
  }
 }

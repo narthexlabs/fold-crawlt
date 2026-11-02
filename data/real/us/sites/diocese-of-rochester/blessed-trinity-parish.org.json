@@ -75,6 +75,18 @@
    "url": "https://blessed-trinity-parish.org/bulletins-archive/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://blessed-trinity-parish.org/worship-sites/st-james/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://blessed-trinity-parish.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -145,6 +157,7 @@
  "social": {
   "facebook": [
    "https://www.facebook.com/pages/Blessed-Trinity-and-St-Patrick-Parish/122237741221862",
+   "https://www.facebook.com/pg",
    "https://www.facebook.com/pages/Blessed-Trinity-St-Patrick-Jr-Sr-High-Youth-Groups/180195411997568"
   ],
   "youtube": [
@@ -343,9 +356,21 @@
  ],
  "source_url": "https://blessed-trinity-parish.org/",
  "fetched_at": "2026-11-01T17:22:01+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:55+00:00",
+  "requests": 2,
+  "found": [
+   "liturgy"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -359,6 +384,7 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 8
  },
  "has_sunday": true,
@@ -375,8 +401,8 @@
   "unmatched": 4
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

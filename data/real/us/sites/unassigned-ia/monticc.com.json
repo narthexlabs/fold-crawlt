@@ -45,6 +45,18 @@
    "url": "https://monticc.com/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://monticc.com/reconciliation/",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://monticc.com/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -67,7 +79,7 @@
    "note": "The Events Calendar (WordPress) REST API",
    "last_fetch": {
     "status": 200,
-    "fetched_at": "2026-11-01T23:32:50+00:00",
+    "fetched_at": "2026-11-02T04:51:33+00:00",
     "events_in_window": 9,
     "kept": 6,
     "excluded": {
@@ -88,7 +100,7 @@
    "recurring": false,
    "source_url": "https://monticc.com/event/sunday-fun-day-darrellkaren-connie/",
    "feed_id": "monticc.com:tribe_rest:a259e014",
-   "fetched_at": "2026-11-01T23:32:50+00:00"
+   "fetched_at": "2026-11-02T04:51:33+00:00"
   },
   {
    "id": "c73448f3f23cbb99",
@@ -101,7 +113,7 @@
    "recurring": false,
    "source_url": "https://monticc.com/event/4-h-meeting-23/",
    "feed_id": "monticc.com:tribe_rest:a259e014",
-   "fetched_at": "2026-11-01T23:32:50+00:00"
+   "fetched_at": "2026-11-02T04:51:33+00:00"
   },
   {
    "id": "d0d056d6d38cc974",
@@ -114,7 +126,7 @@
    "recurring": false,
    "source_url": "https://monticc.com/event/baragary-thanksgiving-6/",
    "feed_id": "monticc.com:tribe_rest:a259e014",
-   "fetched_at": "2026-11-01T23:32:50+00:00"
+   "fetched_at": "2026-11-02T04:51:33+00:00"
   },
   {
    "id": "015c1e8f2202cc1d",
@@ -127,7 +139,7 @@
    "recurring": false,
    "source_url": "https://monticc.com/event/4-h-meeting-24/",
    "feed_id": "monticc.com:tribe_rest:a259e014",
-   "fetched_at": "2026-11-01T23:32:50+00:00"
+   "fetched_at": "2026-11-02T04:51:33+00:00"
   },
   {
    "id": "ee7dc9e7188ba06e",
@@ -140,7 +152,7 @@
    "recurring": false,
    "source_url": "https://monticc.com/event/loughren-christmas-4/",
    "feed_id": "monticc.com:tribe_rest:a259e014",
-   "fetched_at": "2026-11-01T23:32:50+00:00"
+   "fetched_at": "2026-11-02T04:51:33+00:00"
   },
   {
    "id": "ee5b242f55ad5f91",
@@ -153,7 +165,7 @@
    "recurring": false,
    "source_url": "https://monticc.com/event/4-h-meeting-25/",
    "feed_id": "monticc.com:tribe_rest:a259e014",
-   "fetched_at": "2026-11-01T23:32:50+00:00"
+   "fetched_at": "2026-11-02T04:51:33+00:00"
   }
  ],
  "social": {
@@ -165,9 +177,19 @@
  "schedule_rows": [],
  "source_url": "https://monticc.com/",
  "fetched_at": "2026-11-01T20:25:11+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:41+00:00",
+  "requests": 2,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -181,13 +203,14 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 0
  },
  "has_sunday": false,
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 9,
   "kept_after_privacy": 6,

@@ -81,6 +81,18 @@
    "url": "https://www.cpewc.org/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.cpewc.org/events/book-group/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.cpewc.org/letter/reconciliation-and-the-season-of-lent-part-1/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -284,6 +296,49 @@
  },
  "schedule_rows": [
   {
+   "kind": "adoration",
+   "day": "Monday",
+   "time": "08:30",
+   "language": null,
+   "raw": "CCBT Parish Holy Hour: Every Monday following 8:30 am Mass at St. Mary Magdalene Church",
+   "source_url": "https://www.cpewc.org/",
+   "fetched_at": "2026-11-01T17:21:46+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "CCBT Parish Holy Hour: Every Monday following 8:30 am Mass at St. Mary Magdalene Church",
+   "relative_resolved": false
+  },
+  {
+   "kind": "adoration",
+   "day": "Monday",
+   "time": "09:00",
+   "language": null,
+   "raw": "CCBT Parish Holy Hour: 9:00 amCCBT Parish Book GroupTime: 9:00 am",
+   "source_url": "https://www.cpewc.org/",
+   "fetched_at": "2026-11-01T17:21:46+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "wordpress"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "09:00",
+   "language": null,
+   "raw": "CCBT Parish Holy Hour: 9:00 am - 2:00 pmSJTW Holiday Bazaar and Bake SaleTime: 9:00 am - 2:00 pm",
+   "source_url": "https://www.cpewc.org/",
+   "fetched_at": "2026-11-01T17:21:46+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "kind_parsed": "adoration"
+  },
+  {
    "kind": "mass",
    "day": "Saturday",
    "time": "16:00",
@@ -307,6 +362,45 @@
    "needs_review": false,
    "review_reason": null,
    "confidence": "low",
+   "template": "wordpress"
+  },
+  {
+   "kind": "devotion",
+   "day": "Sunday",
+   "time": "08:15",
+   "language": null,
+   "raw": "8:15 am - St. Michael's, Newark",
+   "source_url": "https://www.cpewc.org/mass/",
+   "fetched_at": "2026-11-01T17:21:50+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "devotion",
+   "day": "Sunday",
+   "time": "10:30",
+   "language": null,
+   "raw": "10:30 am - St. Michael's, Newark",
+   "source_url": "https://www.cpewc.org/mass/",
+   "fetched_at": "2026-11-01T17:21:50+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "devotion",
+   "day": "Monday",
+   "time": "08:30",
+   "language": null,
+   "raw": "8:30 am - St. Mary Magdalene Church in Wolcott, NY",
+   "source_url": "https://www.cpewc.org/mass/",
+   "fetched_at": "2026-11-01T17:21:50+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
    "template": "wordpress"
   },
   {
@@ -347,40 +441,26 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
-  },
-  {
-   "kind": "adoration",
-   "day": "Monday",
-   "time": "09:00-10:00",
-   "language": null,
-   "raw": "Holy Hour Monday from 9:00-10:00 AM - St. Mary Magdalene in Wolcott, NY",
-   "source_url": "https://www.cpewc.org/mass/",
-   "fetched_at": "2026-11-01T17:21:50+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "wordpress"
-  },
-  {
-   "kind": "other",
-   "day": "Holy days",
-   "time": "09:00",
-   "language": null,
-   "raw": "CCBT Parish Holy Hour: 9:00 am - 2:00 pmSJTW Holiday Bazaar and Bake SaleTime: 9:00 am - 2:00 pm",
-   "source_url": "https://www.cpewc.org/",
-   "fetched_at": "2026-11-01T17:21:46+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress",
-   "kind_parsed": "adoration"
   }
  ],
  "source_url": "https://cpewc.org/",
  "fetched_at": "2026-11-01T17:22:02+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:53+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -394,16 +474,16 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 18
  },
  "has_sunday": true,
  "schedule_dropped": {
   "skipped_section": 11,
   "no_day": 4,
-  "relative_time": 2,
+  "not_a_service": 2,
   "other_location": 6,
-  "not_a_service": 6,
-  "prose": 2,
+  "prose": 3,
   "notice_not_schedule": 6
  },
  "groups_dropped": {
@@ -412,8 +492,8 @@
   "unmatched": 2
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

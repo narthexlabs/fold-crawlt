@@ -75,6 +75,24 @@
    "url": "https://www.holyfamilychurch.com/contact-us.html",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.holyfamilychurch.com/reconciliation.html",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.holyfamilychurch.com/family-adoration-hour.html",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://www.holyfamilychurch.com/liturgy-and-worship.html",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -919,6 +937,20 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "weebly"
+  },
+  {
+   "kind": "adoration",
+   "day": "Sunday",
+   "time": "10:00-11:00",
+   "language": null,
+   "raw": "Family Adoration Hour: Every Sunday From 10-11 am",
+   "source_url": "https://www.holyfamilychurch.com/family-adoration-hour.html",
+   "fetched_at": "2026-11-02T04:41:37+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly",
+   "topup": true
   }
  ],
  "source_url": "https://www.holyfamilychurch.com/",
@@ -961,5 +993,30 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "or by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://www.holyfamilychurch.com/reconciliation.html",
+   "fetched_at": "2026-11-02T04:41:36+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:39+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

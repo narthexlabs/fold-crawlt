@@ -69,6 +69,12 @@
    "url": "https://goodshepherdwayland.org/upcoming-events/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://goodshepherdwayland.org/adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -488,6 +494,96 @@
    "confidence": "low",
    "template": "wordpress",
    "kind_parsed": "confession"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:00-15:45",
+   "language": null,
+   "raw": "At Good Shepherd, Confessions are held every Saturday afternoon from 3:00-3:45 .",
+   "source_url": "https://goodshepherdwayland.org/confession/",
+   "fetched_at": "2026-11-02T04:41:33+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "wordpress",
+   "note": "excepting Holy Saturday",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "09:30",
+   "language": null,
+   "raw": "Every Friday, following daily Mass (9:30-10:30 am)",
+   "source_url": "https://goodshepherdwayland.org/adoration/",
+   "fetched_at": "2026-11-02T04:41:34+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "daily",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "09:30",
+   "language": null,
+   "raw": "Every Friday, following daily Mass (9:30-10:30 am)",
+   "source_url": "https://goodshepherdwayland.org/adoration/",
+   "fetched_at": "2026-11-02T04:41:34+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "daily",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "09:30",
+   "language": null,
+   "raw": "Every Friday, following daily Mass (9:30-10:30 am)",
+   "source_url": "https://goodshepherdwayland.org/adoration/",
+   "fetched_at": "2026-11-02T04:41:34+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "daily",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "09:30",
+   "language": null,
+   "raw": "Every Friday, following daily Mass (9:30-10:30 am)",
+   "source_url": "https://goodshepherdwayland.org/adoration/",
+   "fetched_at": "2026-11-02T04:41:34+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "daily",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "09:30",
+   "language": null,
+   "raw": "Every Friday, following daily Mass (9:30-10:30 am)",
+   "source_url": "https://goodshepherdwayland.org/adoration/",
+   "fetched_at": "2026-11-02T04:41:34+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "daily",
+   "topup": true
   }
  ],
  "source_url": "http://goodshepherdwayland.org/",
@@ -524,6 +620,25 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:35+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 6,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "parish@goodshepherdwayland.org",
   "phone": "(508) 650-3545",
@@ -536,8 +651,5 @@
   },
   "fetched_at": "2026-11-01T05:09:04+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

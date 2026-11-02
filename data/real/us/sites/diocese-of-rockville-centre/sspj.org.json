@@ -61,6 +61,12 @@
    "url": "https://www.sspj.org/copy-of-bulletins-1",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.sspj.org/reconcilation",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -3523,6 +3529,24 @@
    "names_person": 1
   }
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:49+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "info@sspj.org",
   "phone": "(631) 584-5454",
@@ -3534,8 +3558,5 @@
   },
   "fetched_at": "2026-11-01T05:10:22+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

@@ -75,6 +75,18 @@
    "url": "https://rensselaernewman.org/cdn-cgi/l/email-protection",
    "status": 404,
    "class": "not_found"
+  },
+  {
+   "category": "confession",
+   "url": "https://rensselaernewman.org/sacraments/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://rensselaernewman.org/ccc/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -170,7 +182,7 @@
    "note": "The Events Calendar (WordPress) REST API",
    "last_fetch": {
     "status": 200,
-    "fetched_at": "2026-11-01T23:38:33+00:00",
+    "fetched_at": "2026-11-02T04:48:45+00:00",
     "events_in_window": 3,
     "kept": 1,
     "excluded": {
@@ -191,7 +203,7 @@
    "recurring": false,
    "source_url": "https://rensselaernewman.org/event/piano-recital-students-of-yuvon-joy/",
    "feed_id": "rensselaernewman.com:tribe_rest:de11125b",
-   "fetched_at": "2026-11-01T23:38:33+00:00"
+   "fetched_at": "2026-11-02T04:48:45+00:00"
   }
  ],
  "social": {
@@ -232,9 +244,9 @@
    "day": "Sunday",
    "time": "10:00",
    "language": null,
-   "raw": "Mass Times: 10am, 5pm",
-   "source_url": "https://rensselaernewman.org/worship/",
-   "fetched_at": "2026-11-01T17:21:29+00:00",
+   "raw": "Mass Times: 10am & 5 pm",
+   "source_url": "https://rensselaernewman.org/",
+   "fetched_at": "2026-11-01T17:21:26+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -245,9 +257,9 @@
    "day": "Sunday",
    "time": "17:00",
    "language": null,
-   "raw": "Mass Times: 10am, 5pm",
-   "source_url": "https://rensselaernewman.org/worship/",
-   "fetched_at": "2026-11-01T17:21:29+00:00",
+   "raw": "Mass Times: 10am & 5 pm",
+   "source_url": "https://rensselaernewman.org/",
+   "fetched_at": "2026-11-01T17:21:26+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -258,37 +270,89 @@
    "day": "Monday",
    "time": "17:00",
    "language": null,
-   "raw": "Mass Times: 5pm",
-   "source_url": "https://rensselaernewman.org/worship/",
-   "fetched_at": "2026-11-01T17:21:29+00:00",
+   "raw": "Mass Times: 5 pm",
+   "source_url": "https://rensselaernewman.org/",
+   "fetched_at": "2026-11-01T17:21:26+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
-   "template": "wordpress",
-   "day_expanded_from": "Monday-Tuesday"
+   "template": "wordpress"
   },
   {
    "kind": "mass",
    "day": "Tuesday",
    "time": "17:00",
    "language": null,
-   "raw": "Mass Times: 5pm",
-   "source_url": "https://rensselaernewman.org/worship/",
-   "fetched_at": "2026-11-01T17:21:29+00:00",
+   "raw": "Mass Times: 5 pm",
+   "source_url": "https://rensselaernewman.org/",
+   "fetched_at": "2026-11-01T17:21:26+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
-   "template": "wordpress",
-   "day_expanded_from": "Monday-Tuesday"
+   "template": "wordpress"
   },
   {
    "kind": "mass",
    "day": "Wednesday",
    "time": "09:00",
    "language": null,
-   "raw": "Mass Times: 9am",
-   "source_url": "https://rensselaernewman.org/worship/",
-   "fetched_at": "2026-11-01T17:21:29+00:00",
+   "raw": "Mass Times: 9 am",
+   "source_url": "https://rensselaernewman.org/",
+   "fetched_at": "2026-11-01T17:21:26+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "12:15",
+   "language": null,
+   "raw": "Holy Day Masses: 12:15 pm and 5:00 pm",
+   "source_url": "https://rensselaernewman.org/",
+   "fetched_at": "2026-11-01T17:21:26+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "17:00",
+   "language": null,
+   "raw": "Holy Day Masses: 12:15 pm and 5:00 pm",
+   "source_url": "https://rensselaernewman.org/",
+   "fetched_at": "2026-11-01T17:21:26+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "09:15",
+   "language": null,
+   "raw": "Confession: 9:15 am on Sun",
+   "source_url": "https://rensselaernewman.org/",
+   "fetched_at": "2026-11-01T17:21:26+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Wednesday",
+   "time": "09:15",
+   "language": null,
+   "raw": "Confession – 9:15 AM and by appointment",
+   "source_url": "https://rensselaernewman.org/",
+   "fetched_at": "2026-11-01T17:21:26+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -307,33 +371,6 @@
    "confidence": "medium",
    "template": "wordpress",
    "kind_parsed": "mass"
-  },
-  {
-   "kind": "other",
-   "day": "Holy days",
-   "time": "17:00",
-   "language": null,
-   "raw": "Holy Day Masses: 12:15 am and 5:00 pm",
-   "source_url": "https://rensselaernewman.org/worship/",
-   "fetched_at": "2026-11-01T17:21:29+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress",
-   "kind_parsed": "mass"
-  },
-  {
-   "kind": "confession",
-   "day": "Sunday",
-   "time": "09:15",
-   "language": null,
-   "raw": "Confession: 9:15 am Sunday and by appointment",
-   "source_url": "https://rensselaernewman.org/worship/",
-   "fetched_at": "2026-11-01T17:21:29+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress"
   },
   {
    "kind": "mass",
@@ -365,9 +402,22 @@
  "source_url": "http://www.rensselaernewman.com/",
  "fetched_at": "2026-11-01T17:21:43+00:00",
  "redirected_off_host": "rensselaernewman.org",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:47+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -381,8 +431,18 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 8
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://rensselaernewman.org/",
+   "fetched_at": "2026-11-01T17:21:26+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "other_location": 2
@@ -392,8 +452,8 @@
   "unmatched": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 3,
   "kept_after_privacy": 1,

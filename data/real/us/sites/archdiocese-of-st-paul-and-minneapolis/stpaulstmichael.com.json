@@ -79,6 +79,12 @@
    "url": "https://www.stpaulstmichael.com/copy-of-faith-formation-schedule",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stpaulstmichael.com/sacraments",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -136,6 +142,109 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wix"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "16:00",
+   "language": null,
+   "raw": "[St Michael Catholic Church] Confession:: Sat. 4:00pm at St. Michael",
+   "source_url": "https://www.stpaulstmichael.com/sacraments",
+   "fetched_at": "2026-11-02T04:41:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "08:30",
+   "language": null,
+   "raw": "[St Paul Catholic Church] Confession:: Sun. 8:30am at St. Paul",
+   "source_url": "https://www.stpaulstmichael.com/sacraments",
+   "fetched_at": "2026-11-02T04:41:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Before weekday Holy Mass at 8am or by appointment.",
+   "source_url": "https://www.stpaulstmichael.com/sacraments",
+   "fetched_at": "2026-11-02T04:41:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wix",
+   "day_expanded_from": "weekday",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Before weekday Holy Mass at 8am or by appointment.",
+   "source_url": "https://www.stpaulstmichael.com/sacraments",
+   "fetched_at": "2026-11-02T04:41:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wix",
+   "day_expanded_from": "weekday",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Before weekday Holy Mass at 8am or by appointment.",
+   "source_url": "https://www.stpaulstmichael.com/sacraments",
+   "fetched_at": "2026-11-02T04:41:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wix",
+   "day_expanded_from": "weekday",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Before weekday Holy Mass at 8am or by appointment.",
+   "source_url": "https://www.stpaulstmichael.com/sacraments",
+   "fetched_at": "2026-11-02T04:41:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wix",
+   "day_expanded_from": "weekday",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Before weekday Holy Mass at 8am or by appointment.",
+   "source_url": "https://www.stpaulstmichael.com/sacraments",
+   "fetched_at": "2026-11-02T04:41:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wix",
+   "day_expanded_from": "weekday",
+   "topup": true
   }
  ],
  "source_url": "http://www.stpaulstmichael.com/",
@@ -171,6 +280,33 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "or by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://www.stpaulstmichael.com/sacraments",
+   "fetched_at": "2026-11-02T04:41:41+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:44+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 7,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "stmichaeloffice@bevcomm.net",
   "phone": "(507) 356-4280",
@@ -183,9 +319,5 @@
   },
   "fetched_at": "2026-11-01T03:58:07+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()",
-  "intentions_withheld": 1
  }
 }

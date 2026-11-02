@@ -73,6 +73,12 @@
    "url": "https://stroseoflimaparish.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stroseoflimaparish.org/receiving-the-sacraments",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -2249,6 +2255,113 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "16:00-17:00",
+   "language": null,
+   "raw": "The sacrament of Reconciliation is offered as follows:: Saturdays from 4:00 – 5:00 pm",
+   "source_url": "https://stroseoflimaparish.org/receiving-the-sacraments",
+   "fetched_at": "2026-11-02T04:41:50+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Monday",
+   "time": "09:00",
+   "language": null,
+   "raw": "The sacrament of Reconciliation is offered as follows:: Monday – Friday after 9:00 am Mass",
+   "source_url": "https://stroseoflimaparish.org/receiving-the-sacraments",
+   "fetched_at": "2026-11-02T04:41:50+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "The sacrament of Reconciliation is offered as follows:: Monday – Friday after 9:00 am Mass",
+   "day_expanded_from": "Monday – Friday",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Tuesday",
+   "time": "09:00",
+   "language": null,
+   "raw": "The sacrament of Reconciliation is offered as follows:: Monday – Friday after 9:00 am Mass",
+   "source_url": "https://stroseoflimaparish.org/receiving-the-sacraments",
+   "fetched_at": "2026-11-02T04:41:50+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "The sacrament of Reconciliation is offered as follows:: Monday – Friday after 9:00 am Mass",
+   "day_expanded_from": "Monday – Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Wednesday",
+   "time": "09:00",
+   "language": null,
+   "raw": "The sacrament of Reconciliation is offered as follows:: Monday – Friday after 9:00 am Mass",
+   "source_url": "https://stroseoflimaparish.org/receiving-the-sacraments",
+   "fetched_at": "2026-11-02T04:41:50+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "The sacrament of Reconciliation is offered as follows:: Monday – Friday after 9:00 am Mass",
+   "day_expanded_from": "Monday – Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Thursday",
+   "time": "09:00",
+   "language": null,
+   "raw": "The sacrament of Reconciliation is offered as follows:: Monday – Friday after 9:00 am Mass",
+   "source_url": "https://stroseoflimaparish.org/receiving-the-sacraments",
+   "fetched_at": "2026-11-02T04:41:50+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "The sacrament of Reconciliation is offered as follows:: Monday – Friday after 9:00 am Mass",
+   "day_expanded_from": "Monday – Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Friday",
+   "time": "09:00",
+   "language": null,
+   "raw": "The sacrament of Reconciliation is offered as follows:: Monday – Friday after 9:00 am Mass",
+   "source_url": "https://stroseoflimaparish.org/receiving-the-sacraments",
+   "fetched_at": "2026-11-02T04:41:50+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "The sacrament of Reconciliation is offered as follows:: Monday – Friday after 9:00 am Mass",
+   "day_expanded_from": "Monday – Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "topup": true
   }
  ],
  "source_url": "http://www.srolchurch.org/",
@@ -2294,6 +2407,33 @@
   "liturgy_and_confession_instances_total": 56,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "By appointment",
+   "phrase": "By appointment",
+   "source_url": "https://stroseoflimaparish.org/receiving-the-sacraments",
+   "fetched_at": "2026-11-02T04:41:50+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:53+00:00",
+  "requests": 3,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 6,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "info@srolchurch.org",
   "phone": "(516) 798-4992",
@@ -2306,8 +2446,5 @@
   },
   "fetched_at": "2026-11-01T05:10:29+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }
