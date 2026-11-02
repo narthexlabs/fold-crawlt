@@ -89,6 +89,12 @@
    "url": "https://stagnesweiser.wordpress.com/bulletin",
    "status": 404,
    "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stagnesweiser.wordpress.com/adoration",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -451,6 +457,33 @@
    "template": "wordpress"
   },
   {
+   "kind": "devotion",
+   "day": "Fifth Sunday of the month",
+   "time": "10:00",
+   "language": null,
+   "raw": "10:00 AM",
+   "source_url": "https://stagnesweiser.wordpress.com/mass-times/",
+   "fetched_at": "2026-11-01T18:51:43+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "devotion",
+   "day": "Fifth Sunday of the month",
+   "time": "15:30",
+   "language": null,
+   "raw": "[3:30 PM]",
+   "source_url": "https://stagnesweiser.wordpress.com/mass-times/",
+   "fetched_at": "2026-11-01T18:51:43+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "location": "3:30 PM"
+  },
+  {
    "kind": "confession",
    "day": "Saturday",
    "time": "15:30-16:30",
@@ -466,9 +499,19 @@
  ],
  "source_url": "http://stagnesweiser.wordpress.com/",
  "fetched_at": "2026-11-01T18:51:52+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:47:59+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -482,11 +525,21 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 15
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "or by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://stagnesweiser.wordpress.com/sacraments/",
+   "fetched_at": "2026-11-01T18:51:44+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "not_a_service": 3
+  "not_a_service": 1
  },
  "groups_dropped": {
   "noise": 7,
@@ -494,8 +547,8 @@
   "private_name_risk": 2
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

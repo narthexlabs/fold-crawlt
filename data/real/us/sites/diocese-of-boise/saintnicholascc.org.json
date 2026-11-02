@@ -69,6 +69,12 @@
    "url": "https://www.saintnicholascc.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.saintnicholascc.org/penance",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -346,6 +352,114 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "12:00",
+   "language": null,
+   "raw": "Mass: Tuesdays thru Fridays @ 12:00 pm",
+   "source_url": "https://www.saintnicholascc.org/penance",
+   "fetched_at": "2026-11-02T04:48:00+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "generic_strict",
+   "day_expanded_from": "Tuesdays thru Fridays",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "12:00",
+   "language": null,
+   "raw": "Mass: Tuesdays thru Fridays @ 12:00 pm",
+   "source_url": "https://www.saintnicholascc.org/penance",
+   "fetched_at": "2026-11-02T04:48:00+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "generic_strict",
+   "day_expanded_from": "Tuesdays thru Fridays",
+   "day_parsed": "Tuesday",
+   "day_bound_from_line": true,
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "12:00",
+   "language": null,
+   "raw": "Mass: Tuesdays thru Fridays @ 12:00 pm",
+   "source_url": "https://www.saintnicholascc.org/penance",
+   "fetched_at": "2026-11-02T04:48:00+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "generic_strict",
+   "day_expanded_from": "Tuesdays thru Fridays",
+   "day_parsed": "Tuesday",
+   "day_bound_from_line": true,
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "12:00",
+   "language": null,
+   "raw": "Mass: Tuesdays thru Fridays @ 12:00 pm",
+   "source_url": "https://www.saintnicholascc.org/penance",
+   "fetched_at": "2026-11-02T04:48:00+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "generic_strict",
+   "day_expanded_from": "Tuesdays thru Fridays",
+   "day_parsed": "Tuesday",
+   "day_bound_from_line": true,
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Mass: Thursdays @ 5:00 pm",
+   "source_url": "https://www.saintnicholascc.org/penance",
+   "fetched_at": "2026-11-02T04:48:00+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "15:45",
+   "language": null,
+   "raw": "Mass: Saturdays @ 3:45 pm",
+   "source_url": "https://www.saintnicholascc.org/penance",
+   "fetched_at": "2026-11-02T04:48:00+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "18:00",
+   "language": null,
+   "raw": "Mass: Sundays @ 6:00 pm",
+   "source_url": "https://www.saintnicholascc.org/penance",
+   "fetched_at": "2026-11-02T04:48:00+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
   }
  ],
  "source_url": "https://www.saintnicholascc.org/",
@@ -383,5 +497,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:48:01+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 7,
+  "mode": "merge"
  }
 }

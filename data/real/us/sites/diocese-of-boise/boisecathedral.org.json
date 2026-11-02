@@ -88,6 +88,18 @@
    "url": "https://www.boisecathedral.org/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.boisecathedral.org/reconciliation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.boisecathedral.org/adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -572,6 +584,76 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "First Friday of the month",
+   "time": "09:30-11:00",
+   "language": null,
+   "raw": "Confession Times: All confessions are held in the St. Joseph: First Friday of the month 9:30—11:00 AM and 1—2:30 PM",
+   "source_url": "https://www.boisecathedral.org/reconciliation",
+   "fetched_at": "2026-11-02T04:47:59+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "12:00",
+   "language": null,
+   "raw": "Eucharistic Exposition days & times in the downstairs Chapel: Tuesdays: 9 AM - noon",
+   "source_url": "https://www.boisecathedral.org/adoration",
+   "fetched_at": "2026-11-02T04:48:00+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "12:00",
+   "language": null,
+   "raw": "Eucharistic Exposition days & times in the downstairs Chapel: Thursdays: 9 AM - noon",
+   "source_url": "https://www.boisecathedral.org/adoration",
+   "fetched_at": "2026-11-02T04:48:00+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Second Thursday of the month",
+   "time": "18:30",
+   "language": null,
+   "raw": "Holy Hour Every 2nd Thursday of each month in the Cathedral at 6:30 PM",
+   "source_url": "https://www.boisecathedral.org/adoration",
+   "fetched_at": "2026-11-02T04:48:00+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Second Thursday of the month",
+   "time": "14:37",
+   "language": null,
+   "raw": "Eucharistic Exposition days & times in the downstairs Chapel: ~ Mark 14:37",
+   "source_url": "https://www.boisecathedral.org/adoration",
+   "fetched_at": "2026-11-02T04:48:00+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "generic_strict",
+   "topup": true
   }
  ],
  "source_url": "http://www.boisecathedral.org/",
@@ -610,5 +692,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:48:01+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 5,
+  "mode": "merge"
  }
 }

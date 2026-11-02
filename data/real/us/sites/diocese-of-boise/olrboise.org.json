@@ -85,6 +85,18 @@
    "url": "https://olrboise.org/about-contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://olrboise.org/page-r",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://olrboise.org/adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -324,6 +336,40 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "squarespace"
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "08:00",
+   "language": null,
+   "raw": "We currently have Eucharistic Adoration beginning after the 8:00 am Mass on Thursdays until 8:00am Friday.",
+   "source_url": "https://olrboise.org/adoration",
+   "fetched_at": "2026-11-02T04:48:01+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "squarespace",
+   "relative": "after",
+   "note": "We currently have Eucharistic Adoration beginning after the 8:00 am Mass on Thursdays until 8:00am Friday.",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "08:00",
+   "language": null,
+   "raw": "We currently have Eucharistic Adoration beginning after the 8:00 am Mass on Thursdays until 8:00am Friday.",
+   "source_url": "https://olrboise.org/adoration",
+   "fetched_at": "2026-11-02T04:48:01+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "squarespace",
+   "relative": "after",
+   "note": "We currently have Eucharistic Adoration beginning after the 8:00 am Mass on Thursdays until 8:00am Friday.",
+   "day_parsed": "Thursday",
+   "day_bound_from_line": true,
+   "topup": true
   }
  ],
  "source_url": "https://www.olrboise.org/",
@@ -366,5 +412,30 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "or by appointment ~ call the Parish Office",
+   "phrase": "by appointment",
+   "source_url": "https://olrboise.org/page-r",
+   "fetched_at": "2026-11-02T04:48:00+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:48:02+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
  }
 }
