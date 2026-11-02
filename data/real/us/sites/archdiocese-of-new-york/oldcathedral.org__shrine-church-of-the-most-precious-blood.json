@@ -18,32 +18,158 @@
  ],
  "home_url": "https://oldcathedral.org/shrine-church-of-the-most-precious-blood",
  "final_url": "https://oldcathedral.org/shrine-church-of-the-most-precious-blood",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "crawl_status": "wayback-2026-09-20",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
    "url": "https://oldcathedral.org/shrine-church-of-the-most-precious-blood",
-   "status": 403,
-   "class": "challenge"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://oldcathedral.org/confession",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://oldcathedral.org/obtaining-a-sacramental-record",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "ministries",
+   "url": "https://oldcathedral.org/groups",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "ministries",
+   "url": "https://oldcathedral.org/apostolate",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://oldcathedral.org/bulletins",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "contact",
+   "url": "https://oldcathedral.org/contact-us",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "oldcathedral.org/shrine-church-of-the-most-precious-blood:youth_ministry|warrior",
+   "name": "Warriors (WarriorYouthNYC)",
+   "category": "youth",
+   "category_label": "Youth",
+   "subcategory": "youth_ministry",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://oldcathedral.org/shrine-church-of-the-most-precious-blood",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://oldcathedral.org/shrine-church-of-the-most-precious-blood",
+   "source_kind": "website",
+   "fetched_at": "2026-09-20T05:11:55+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-09-20"
+  },
+  {
+   "id": "oldcathedral.org/shrine-church-of-the-most-precious-blood:kofc",
+   "name": "Knights of Columbus",
+   "category": "fraternal_orders",
+   "category_label": "Fraternal & orders",
+   "subcategory": "knights_of_columbus",
+   "audience": "men",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://oldcathedral.org/shrine-church-of-the-most-precious-blood",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://oldcathedral.org/shrine-church-of-the-most-precious-blood",
+   "source_kind": "website",
+   "fetched_at": "2026-09-20T05:11:55+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-09-20"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/oldcathedral"
+  ],
+  "instagram": [
+   "https://www.instagram.com/oldcathedral/"
+  ],
+  "x": [
+   "https://x.com/oldcathedral"
+  ]
+ },
+ "bulletin": {
+  "url": "https://oldcathedral.org/bulletins",
+  "date": null,
+  "kind": "page",
+  "text": "Bulletin",
+  "source_url": "https://oldcathedral.org/shrine-church-of-the-most-precious-blood"
+ },
  "schedule_rows": [],
  "source_url": "https://oldcathedral.org/shrine-church-of-the-most-precious-blood",
- "fetched_at": "2026-11-01T01:56:58+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-02T01:55:46+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "has_sunday": false,
+ "groups_dropped": {},
+ "wayback": {
+  "capture_date": "2026-09-20",
+  "capture_age_days": 43,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://oldcathedral.org/shrine-church-of-the-most-precious-blood",
+    "capture": "2026-09-20",
+    "archive_url": "https://web.archive.org/web/20260920051155/https://oldcathedral.org/shrine-church-of-the-most-precious-blood"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }
