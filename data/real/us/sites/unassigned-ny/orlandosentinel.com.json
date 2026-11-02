@@ -39,6 +39,18 @@
    "url": "https://myaccount.orlandosentinel.com/5orlsent/preference?categories=32,33,34,35,36,1,86,87,88,89,90,91,92,93,94",
    "status": 200,
    "class": "challenge"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.orlandosentinel.com/1989/02/25/reconciliation-10/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.orlandosentinel.com/1999/10/23/adoration-singers-to-give-gospel-concert-at-mid-lakes-christian/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -63,9 +75,22 @@
  "schedule_rows": [],
  "source_url": "https://www.orlandosentinel.com/",
  "fetched_at": "2026-11-01T22:15:28+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:44+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -79,13 +104,19 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 0
+  "trusted_kinds": [],
+  "generic_rows": 2
  },
  "has_sunday": false,
+ "schedule_dropped": {
+  "dated_line": 4,
+  "dated_block": 1,
+  "not_a_service": 14
+ },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

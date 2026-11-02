@@ -149,7 +149,36 @@
   ]
  },
  "bulletin": null,
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "12:00",
+   "language": null,
+   "raw": "Sunday Divine Liturgy from 12 noon to 1:45 p.m.",
+   "source_url": "https://armenianchurch.us/services/",
+   "fetched_at": "2026-11-02T04:41:43+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "13:45",
+   "language": null,
+   "raw": "Sunday Divine Liturgy from 12 noon to 1:45 p.m.",
+   "source_url": "https://armenianchurch.us/services/",
+   "fetched_at": "2026-11-02T04:41:43+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
+  }
+ ],
  "source_url": "https://armenianchurch.us/",
  "fetched_at": "2026-11-01T02:16:03+00:00",
  "schedule_template": {
@@ -186,5 +215,19 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:46+00:00",
+  "requests": 3,
+  "found": [
+   "liturgy"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
  }
 }
