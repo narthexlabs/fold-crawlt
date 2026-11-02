@@ -19,12 +19,18 @@
  "home_url": "https://www.stmarysmf.com/",
  "final_url": "https://www.stmarysmf.com/",
  "crawl_status": "ok",
- "crawl_env": "sandbox",
+ "crawl_env": "runner-rendered",
  "robots_note": "not_found",
  "pages": [
   {
    "category": "home",
    "url": "https://www.stmarysmf.com/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.stmarysmf.com/home",
    "status": 200,
    "class": "ok"
   },
@@ -61,7 +67,7 @@
    "language": null,
    "raw": "Mass: SATURDAY: 4:30 PM",
    "source_url": "https://www.stmarysmf.com/",
-   "fetched_at": "2026-11-01T22:15:33+00:00",
+   "fetched_at": "2026-11-02T07:15:47+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -74,7 +80,7 @@
    "language": null,
    "raw": "Mass: SUNDAY: 10:00 AM",
    "source_url": "https://www.stmarysmf.com/",
-   "fetched_at": "2026-11-01T22:15:33+00:00",
+   "fetched_at": "2026-11-02T07:15:47+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -87,7 +93,7 @@
    "language": null,
    "raw": "Confession: SATURDAY: 11 AM - 12 PM",
    "source_url": "https://www.stmarysmf.com/",
-   "fetched_at": "2026-11-01T22:15:33+00:00",
+   "fetched_at": "2026-11-02T07:15:47+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -95,17 +101,7 @@
   }
  ],
  "source_url": "https://www.stmarysmf.com/",
- "fetched_at": "2026-11-01T22:15:34+00:00",
- "topup": {
-  "kinds": [
-   "adoration",
-   "confession",
-   "liturgy"
-  ],
-  "at": "2026-11-02T04:52:47+00:00",
-  "requests": 0,
-  "found": []
- },
+ "fetched_at": "2026-11-02T07:15:50+00:00",
  "schedule_template": {
   "template": "generic_strict",
   "version": "ca-sites/3",
@@ -146,10 +142,11 @@
    "phone": "https://www.stmarysmf.com/",
    "address": "https://www.stmarysmf.com/"
   },
-  "fetched_at": "2026-11-01T22:15:33+00:00",
+  "fetched_at": "2026-11-02T07:15:47+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
- }
+ },
+ "fetch_mode": "rendered"
 }
