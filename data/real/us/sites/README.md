@@ -137,7 +137,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | unassigned-or | 75 | 152 | 45 | 88 | 1 | 18 | 0 |
 | diocese-of-jefferson-city | 73 | 73 | 28 | 4 | 0 | 41 | 0 |
 | diocese-of-las-cruces | 73 | 73 | 12 | 1 | 0 | 60 | 0 |
-| diocese-of-norwich | 73 | 58 | 25 | 7 | 2 | 24 | 0 |
+| diocese-of-norwich | 73 | 77 | 29 | 8 | 2 | 38 | 0 |
 | archdiocese-of-kansas-city-in-kansas | 73 | 74 | 28 | 4 | 1 | 23 | 3 |
 | diocese-of-venice | 72 | 72 | 55 | 7 | 0 | 10 | 0 |
 | unassigned-hi | 71 | 76 | 54 | 12 | 3 | 7 | 0 |
@@ -273,8 +273,6 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 
 ## Chunk log
 
-- 2026-11-01T13:09:20+00:00: fetched {}; parsed 0 dioceses
-- 2026-11-01T16:02:20+00:00: fetched {'dns': 2, 'done': 5, 'challenge': 1, 'parked': 1, 'ok': 1, 'halted_egress': 0}; parsed 0 dioceses
 - 2026-11-01T17:21:18+00:00: fetched {'dns': 54, 'done': 270, 'ssl_error': 14, 'challenge': 52, 'parked': 3, 'ok': 128, 'not_found': 7, 'http_5xx': 3, 'blocked_403': 1, 'conn_error': 2, 'timeout': 7, 'cut': 1, 'halted_egress': 0}; parsed 20 dioceses
 - 2026-11-01T17:42:30+00:00: fetched {'robots_disallowed': 1, 'done': 46, 'dns': 3, 'challenge': 14, 'ssl_error': 2, 'blocked_403': 2, 'not_found': 2, 'ok': 21, 'timeout': 1, 'halted_egress': 0}; parsed 3 dioceses
 - 2026-11-01T17:52:14+00:00: fetched {'ok': 1, 'done': 1, 'halted_egress': 0}; parsed 1 dioceses
@@ -287,4 +285,6 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-01T23:33:52+00:00: fetched {'ok': 4, 'done': 4, 'halted_egress': 0}; parsed 1 dioceses
 - 2026-11-02T00:05:44+00:00: fetched {'robots_disallowed': 1, 'done': 59, 'dns': 4, 'conn_error': 1, 'ssl_error': 3, 'challenge': 7, 'not_found': 1, 'ok': 44, 'cut': 2, 'halted_egress': 0}; parsed 8 dioceses
 - 2026-11-02T00:57:03+00:00: fetched {'ok': 2, 'done': 2, 'halted_egress': 0}; parsed 1 dioceses
-- 2026-11-02T01:56:02+00:00: fetched {'dns': 23, 'done': 52, 'challenge': 11, 'ssl_error': 2, 'not_found': 1, 'ok': 13, 'timeout': 2, 'halted_egress': 0}; parsed 2 dioceses
+- 2026-11-02T01:56:02+00:00: fetched {'dns': 11, 'done': 24, 'ssl_error': 5, 'parked': 1, 'not_found': 1, 'challenge': 1, 'ok': 5, 'halted_egress': 0}; parsed 2 dioceses
+- 2026-11-02T01:56:40+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-02T01:57:12+00:00: fetched {'dns': 11, 'done': 18, 'conn_error': 2, 'challenge': 1, 'ok': 4, 'halted_egress': 0}; parsed 1 dioceses

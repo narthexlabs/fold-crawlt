@@ -668,6 +668,20 @@
     "diocese-of-memphis",
     "diocese-of-nashville"
    ]
+  },
+  {
+   "started_at": "2026-11-02T01:56:40+00:00",
+   "ended_at": "2026-11-02T01:56:42+00:00",
+   "result": "fetched {}; parsed 0 dioceses",
+   "touched": []
+  },
+  {
+   "started_at": "2026-11-02T01:57:12+00:00",
+   "ended_at": "2026-11-02T01:57:30+00:00",
+   "result": "fetched {'dns': 11, 'done': 18, 'conn_error': 2, 'challenge': 1, 'ok': 4, 'halted_egress': 0}; parsed 1 dioceses",
+   "touched": [
+    "diocese-of-norwich"
+   ]
   }
  ],
  "dioceses": {
@@ -2540,18 +2554,18 @@
   },
   "diocese-of-norwich": {
    "sites_in_list": 73,
-   "records": 58,
-   "finished": false,
-   "ok": 25,
+   "records": 77,
+   "finished": true,
+   "ok": 29,
    "by_status": {
-    "ok": 25,
-    "dns": 8,
+    "ok": 29,
+    "dns": 20,
+    "challenge": 8,
     "ssl_error": 7,
-    "challenge": 7,
+    "conn_error": 4,
     "timeout": 3,
     "http_5xx": 2,
     "robots_disallowed": 2,
-    "conn_error": 2,
     "unreachable_via_proxy": 1,
     "parked": 1
    }
@@ -4253,9 +4267,9 @@
  },
  "totals": {
   "sites_in_list": 19937,
-  "records": 20227,
-  "ok": 10816
+  "records": 20194,
+  "ok": 10807
  },
  "us_parish_pages_discovermass": 20147,
- "updated_at": "2026-11-02T01:57:16+00:00"
+ "updated_at": "2026-11-02T01:57:32+00:00"
 }
