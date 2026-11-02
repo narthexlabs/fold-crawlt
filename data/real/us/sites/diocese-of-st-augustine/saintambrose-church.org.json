@@ -353,6 +353,22 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Adoration: After 9:00 am Mass",
+   "source_url": "https://saintambrose-church.org/mass-times/",
+   "fetched_at": "2026-11-02T04:42:22+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "Adoration: After 9:00 am Mass",
+   "topup": true
   }
  ],
  "source_url": "http://www.saintambrose-church.org/",
@@ -392,5 +408,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:26+00:00",
+  "requests": 3,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

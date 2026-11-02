@@ -60,6 +60,18 @@
    "url": "https://crucifixionjax.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://crucifixionjax.org/reconciliation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://crucifixionjax.org/adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -272,8 +284,8 @@
    "time": "08:00",
    "language": null,
    "raw": "Weekday Masses: 8:00 am",
-   "source_url": "https://crucifixionjax.org/mass-times/",
-   "fetched_at": "2026-11-01T20:25:05+00:00",
+   "source_url": "https://crucifixionjax.org/",
+   "fetched_at": "2026-11-01T20:25:04+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -285,8 +297,8 @@
    "time": "08:00",
    "language": null,
    "raw": "Weekday Masses: 8:00 am",
-   "source_url": "https://crucifixionjax.org/mass-times/",
-   "fetched_at": "2026-11-01T20:25:05+00:00",
+   "source_url": "https://crucifixionjax.org/",
+   "fetched_at": "2026-11-01T20:25:04+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -298,8 +310,8 @@
    "time": "08:00",
    "language": null,
    "raw": "Weekday Masses: 8:00 am",
-   "source_url": "https://crucifixionjax.org/mass-times/",
-   "fetched_at": "2026-11-01T20:25:05+00:00",
+   "source_url": "https://crucifixionjax.org/",
+   "fetched_at": "2026-11-01T20:25:04+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -311,8 +323,8 @@
    "time": "08:30",
    "language": null,
    "raw": "Weekend Mass: 8:30 am",
-   "source_url": "https://crucifixionjax.org/mass-times/",
-   "fetched_at": "2026-11-01T20:25:05+00:00",
+   "source_url": "https://crucifixionjax.org/",
+   "fetched_at": "2026-11-01T20:25:04+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -324,8 +336,8 @@
    "time": "07:45-08:00",
    "language": null,
    "raw": "Confessions: 7:45 am - 8:00 am (other times available by appointment)",
-   "source_url": "https://crucifixionjax.org/mass-times/",
-   "fetched_at": "2026-11-01T20:25:05+00:00",
+   "source_url": "https://crucifixionjax.org/",
+   "fetched_at": "2026-11-01T20:25:04+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -334,9 +346,22 @@
  ],
  "source_url": "https://crucifixionjax.org/",
  "fetched_at": "2026-11-01T20:25:11+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:08+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -350,6 +375,7 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 5
  },
  "has_sunday": true,
@@ -357,8 +383,8 @@
   "noise": 3
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
