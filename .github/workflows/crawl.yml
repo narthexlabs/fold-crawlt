@@ -242,7 +242,9 @@ jobs:
           git pull --rebase --autostash -q origin main && git push -q origin HEAD:main
 
   wayback:
-    if: ${{ github.event_name == 'schedule' || github.event.inputs.job == 'all' || github.event.inputs.job == 'wayback' }}
+    # Dispatch only since 2026-11-01 22:20 (Matthew): Gemini URL-context now reads the blocked sites live; Wayback returns
+    # later for what that leaves. Out of job=all so its queued shards stop cancelling into the chain.
+    if: ${{ github.event.inputs.job == 'wayback' }}
     runs-on: ubuntu-latest
     timeout-minutes: 140
     strategy:
@@ -323,13 +325,23 @@ jobs:
   chain:
     # GitHub's cron has not fired on this repo, so each round dispatches the next one when its jobs are done
     # (workflow_dispatch via the API with GITHUB_TOKEN does start a run). Disable the workflow to stop the chain.
-    needs: [sites, discovermass, gcatholic, bulletins, wayback]
+    # Loop guard (2026-11-01 22:20): a queued job cancelled by the NEXT round counts as "done" for needs+always(), which made
+    # rounds start every ~2 min from 05:36Z. Dispatch only if no other run of this workflow is queued or in progress.
+    needs: [sites, discovermass, gcatholic, bulletins]
     if: ${{ always() && (github.event_name == 'schedule' || github.event.inputs.job == 'all') }}
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
       - run: |
           sleep 60
+          other=0
+          for s in queued in_progress waiting pending; do
+            n=$(curl -sS -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" -H "Accept: application/vnd.github+json" \
+              "https://api.github.com/repos/${{ github.repository }}/actions/workflows/crawl.yml/runs?status=$s&per_page=50" \
+              | python3 -c "import json,sys;print(sum(1 for r in json.load(sys.stdin).get('workflow_runs',[]) if r['id']!=${{ github.run_id }}))")
+            other=$(( other + ${n:-0} ))
+          done
+          if [ "$other" -gt 0 ]; then echo "another round is queued/running ($other): not dispatching"; exit 0; fi
           curl -sS -X POST -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" -H "Accept: application/vnd.github+json" \
             https://api.github.com/repos/${{ github.repository }}/actions/workflows/crawl.yml/dispatches \
             -d '{"ref":"main","inputs":{"job":"all","minutes":"110"}}' && echo "next round dispatched"
