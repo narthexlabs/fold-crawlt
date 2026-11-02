@@ -224,6 +224,27 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "render_attempt": {
+  "status": "http_202",
+  "refused": false,
+  "note": null,
+  "at": "2026-11-01"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:42+00:00",
+  "requests": 1,
+  "found": [],
+  "rows_added": 0,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "info@svdvocations.org",
   "phone": "(563) 876-3353",
@@ -236,14 +257,5 @@
   },
   "fetched_at": "2026-11-01T05:15:39+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
- },
- "render_attempt": {
-  "status": "http_202",
-  "refused": false,
-  "note": null,
-  "at": "2026-11-01"
  }
 }
