@@ -75,6 +75,12 @@
    "url": "https://stawy.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stawy.org/sacraments/reconciliation/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -369,6 +375,20 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "06:00-21:00",
+   "language": null,
+   "raw": "Exposition of the Blessed Sacrament: Thursday: 6:00am - 9:00pm",
+   "source_url": "https://stawy.org/about-us/parish-schedule/",
+   "fetched_at": "2026-11-02T04:42:20+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "https://stawy.org/",
@@ -409,5 +429,29 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "By appointment",
+   "phrase": "By appointment",
+   "source_url": "https://stawy.org/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:42:11+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:21+00:00",
+  "requests": 3,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }
