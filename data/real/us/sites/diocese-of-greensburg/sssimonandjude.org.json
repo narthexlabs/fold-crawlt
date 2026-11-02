@@ -54,6 +54,12 @@
    "url": "https://www.sssimonandjude.org/about/",
    "status": null,
    "class": "timeout"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.sssimonandjude.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -75,20 +81,6 @@
   "source_url": "https://www.sssimonandjude.org/"
  },
  "schedule_rows": [
-  {
-   "kind": "other",
-   "day": "Holy days",
-   "time": "15:00",
-   "language": null,
-   "raw": "Penance: Saturday at 3:00 p.m. or by appointment. Penance services twice a year.",
-   "source_url": "https://www.sssimonandjude.org/sacraments/",
-   "fetched_at": "2026-11-01T20:25:25+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "wordpress",
-   "kind_parsed": "confession"
-  },
   {
    "kind": "mass",
    "day": "Saturday",
@@ -160,13 +152,37 @@
    "day_expanded_from": "Monday, Wednesday & Friday",
    "day_parsed": "Monday",
    "day_bound_from_line": true
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "15:00",
+   "language": null,
+   "raw": "Penance: Saturday at 3:00 p.m. or by appointment. Penance services twice a year.",
+   "source_url": "https://www.sssimonandjude.org/sacraments/",
+   "fetched_at": "2026-11-01T20:25:25+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "kind_parsed": "confession"
   }
  ],
  "source_url": "https://www.sssimonandjude.org/",
  "fetched_at": "2026-11-01T20:26:34+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:31+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -180,8 +196,18 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 4
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Saturday at 3:00 p.m. or by appointment. Penance services twice a year.",
+   "phrase": "by appointment",
+   "source_url": "https://www.sssimonandjude.org/sacraments/",
+   "fetched_at": "2026-11-01T20:25:25+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "relative_time": 1

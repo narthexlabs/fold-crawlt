@@ -71,6 +71,18 @@
    "url": "https://www.icirwin.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.icirwin.org/sacraments/reconciliation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.icirwin.org/worship/eucharistic-adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -112,7 +124,7 @@
    "note": "The Events Calendar (WordPress) REST API",
    "last_fetch": {
     "status": 200,
-    "fetched_at": "2026-11-02T00:09:22+00:00",
+    "fetched_at": "2026-11-02T04:53:23+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -330,13 +342,124 @@
    "review_reason": null,
    "confidence": "high",
    "template": "wordpress"
+  },
+  {
+   "kind": "devotion",
+   "day": "Monday",
+   "time": "15:00",
+   "language": null,
+   "raw": "Join us for the Divine Mercy Chaplet at 3 p.m. Monday through Friday.",
+   "source_url": "https://www.icirwin.org/worship/mass-schedule/",
+   "fetched_at": "2026-11-01T20:25:34+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "Monday through Friday."
+  },
+  {
+   "kind": "devotion",
+   "day": "Tuesday",
+   "time": "15:00",
+   "language": null,
+   "raw": "Join us for the Divine Mercy Chaplet at 3 p.m. Monday through Friday.",
+   "source_url": "https://www.icirwin.org/worship/mass-schedule/",
+   "fetched_at": "2026-11-01T20:25:34+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "Monday through Friday."
+  },
+  {
+   "kind": "devotion",
+   "day": "Wednesday",
+   "time": "15:00",
+   "language": null,
+   "raw": "Join us for the Divine Mercy Chaplet at 3 p.m. Monday through Friday.",
+   "source_url": "https://www.icirwin.org/worship/mass-schedule/",
+   "fetched_at": "2026-11-01T20:25:34+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "Monday through Friday."
+  },
+  {
+   "kind": "devotion",
+   "day": "Thursday",
+   "time": "15:00",
+   "language": null,
+   "raw": "Join us for the Divine Mercy Chaplet at 3 p.m. Monday through Friday.",
+   "source_url": "https://www.icirwin.org/worship/mass-schedule/",
+   "fetched_at": "2026-11-01T20:25:34+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "Monday through Friday."
+  },
+  {
+   "kind": "devotion",
+   "day": "Friday",
+   "time": "15:00",
+   "language": null,
+   "raw": "Join us for the Divine Mercy Chaplet at 3 p.m. Monday through Friday.",
+   "source_url": "https://www.icirwin.org/worship/mass-schedule/",
+   "fetched_at": "2026-11-01T20:25:34+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "Monday through Friday."
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "09:00",
+   "language": null,
+   "raw": "Saturdays: 9 a.m. – 10 a.m. (no confessions on the first Saturday of the month)",
+   "source_url": "https://www.icirwin.org/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:43:23+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "kind_parsed": "confession"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "17:15",
+   "language": null,
+   "raw": "Penance/Confession is available at Immaculate Conception:: Tuesdays: 5:15 p.m. – 6:15 p.m.",
+   "source_url": "https://www.icirwin.org/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:43:23+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "kind_parsed": "confession"
   }
  ],
  "source_url": "https://www.icirwin.org/",
  "fetched_at": "2026-11-01T22:16:22+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:50+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -350,13 +473,24 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 15
+  "trusted_kinds": [],
+  "generic_rows": 17
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Anytime by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://www.icirwin.org/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:43:23+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "other_location": 4,
-  "not_a_service": 2,
+  "not_a_service": 1,
   "no_kind": 2,
+  "no_day": 2,
   "prose": 1
  },
  "groups_dropped": {

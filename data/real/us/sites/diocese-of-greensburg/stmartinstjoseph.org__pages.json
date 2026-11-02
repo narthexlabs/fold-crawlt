@@ -69,6 +69,12 @@
    "url": "https://www.stmartinstjoseph.org/parish-calendar/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stmartinstjoseph.org/adoration/",
+   "status": null,
+   "class": "timeout"
   }
  ],
  "cms_guess": {
@@ -113,32 +119,6 @@
   "source_url": "https://www.stmartinstjoseph.org/"
  },
  "schedule_rows": [
-  {
-   "kind": "confession",
-   "day": "Monday",
-   "time": "17:30",
-   "language": null,
-   "raw": "This sacrament is also referred to as the sacrament of penan: Martin every Monday at 5:30 p.m. before evening Mass, and at St.",
-   "source_url": "https://www.stmartinstjoseph.org/sacraments/reconciliation/",
-   "fetched_at": "2026-11-02T00:06:07+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress"
-  },
-  {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "15:15",
-   "language": null,
-   "raw": "This sacrament is also referred to as the sacrament of penan: Joseph every Saturday afternoon at 3:15p.m.",
-   "source_url": "https://www.stmartinstjoseph.org/sacraments/reconciliation/",
-   "fetched_at": "2026-11-02T00:06:07+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress"
-  },
   {
    "kind": "mass",
    "day": "Saturday",
@@ -242,13 +222,65 @@
    "review_reason": null,
    "confidence": "high",
    "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Thursday Adoration: St. Joseph, Immediately after 8am Mass until 10am.",
+   "source_url": "https://www.stmartinstjoseph.org/",
+   "fetched_at": "2026-11-02T00:05:48+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "Thursday Adoration: St. Joseph, Immediately after 8am Mass until 10am.",
+   "relative_resolved": true
+  },
+  {
+   "kind": "confession",
+   "day": "Monday",
+   "time": "17:30",
+   "language": null,
+   "raw": "This sacrament is also referred to as the sacrament of penan: Martin every Monday at 5:30 p.m. before evening Mass, and at St.",
+   "source_url": "https://www.stmartinstjoseph.org/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T00:06:07+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:15",
+   "language": null,
+   "raw": "This sacrament is also referred to as the sacrament of penan: Joseph every Saturday afternoon at 3:15p.m.",
+   "source_url": "https://www.stmartinstjoseph.org/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T00:06:07+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
   }
  ],
  "source_url": "https://www.stmartinstjoseph.org/pages/default.aspx",
  "fetched_at": "2026-11-02T00:07:08+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:50+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -262,11 +294,21 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 12
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "The Sacrament of Reconciliation at the partner parishes of St. Martin (New Derry) and St. Joseph (Derry) is available by appointment or at",
+   "phrase": "by appointment",
+   "source_url": "https://www.stmartinstjoseph.org/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T00:06:07+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "relative_time": 2
+  "relative_time": 1
  },
  "groups_dropped": {
   "noise": 1

@@ -3,16 +3,19 @@
  "diocese": "diocese-of-greensburg",
  "matched_church_ids": [
   "brave:PA|mary mother god yatesboro|",
-  "gc-24153"
+  "gc-24153",
+  "st-mary-yatesboro-pa"
  ],
  "matched": {
   "directory": [],
   "discovermass": [
+   "st-mary-yatesboro-pa",
    "brave:PA|mary mother god yatesboro|",
    "gc-24153"
   ]
  },
  "names": [
+  "St. Mary",
   "St Mary Mother Of God",
   "St. Mary, Mother of God"
  ],
@@ -78,6 +81,12 @@
    "url": "https://www.saintmaryyatesboro.org/about/",
    "status": null,
    "class": "timeout"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.saintmaryyatesboro.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -412,9 +421,19 @@
  ],
  "source_url": "https://www.saintmaryyatesboro.org/",
  "fetched_at": "2026-11-01T20:27:41+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:23+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -428,6 +447,7 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 11
  },
  "has_sunday": true,
@@ -435,8 +455,8 @@
   "noise": 2
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

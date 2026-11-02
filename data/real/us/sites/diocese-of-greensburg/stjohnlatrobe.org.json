@@ -66,6 +66,18 @@
    "url": "https://www.stjohnlatrobe.org/about/",
    "status": null,
    "class": "timeout"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stjohnlatrobe.org/sacraments/penance/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stjohnlatrobe.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -163,9 +175,21 @@
  ],
  "source_url": "https://www.stjohnlatrobe.org/",
  "fetched_at": "2026-11-01T20:27:17+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:49+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -179,6 +203,7 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 8
  },
  "has_sunday": true,

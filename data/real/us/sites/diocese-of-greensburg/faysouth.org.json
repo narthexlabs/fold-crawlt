@@ -4,6 +4,7 @@
  "matched_church_ids": [
   "brave:PA|nativity mary uniontown|",
   "ss-cyril-and-methodius-fairchance-pa",
+  "st-mary-lemont-furnace-pa",
   "st-therese-little-flower-of-jesus-uniontown-pa"
  ],
  "matched": {
@@ -11,12 +12,14 @@
   "discovermass": [
    "ss-cyril-and-methodius-fairchance-pa",
    "st-therese-little-flower-of-jesus-uniontown-pa",
+   "st-mary-lemont-furnace-pa",
    "brave:PA|nativity mary uniontown|"
   ]
  },
  "names": [
   "SS Cyril and Methodius",
   "St. Therese, Little Flower of Jesus",
+  "St. Mary",
   "Nativity Of St Mary"
  ],
  "cities": [
@@ -88,6 +91,18 @@
    "url": "https://www.faysouth.org/about/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.faysouth.org/about/reconciliation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.faysouth.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -255,45 +270,42 @@
    "day": "Monday",
    "time": "08:30",
    "language": null,
-   "raw": "[Nativity Of St Mary] Daily Mass: 8:30 AM at St. Mary",
+   "raw": "Daily Mass: 8:30 AM at St. Mary",
    "source_url": "https://www.faysouth.org/",
    "fetched_at": "2026-11-01T20:25:01+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress",
-   "day_expanded_from": "Monday, Tuesday and Friday",
-   "location": "Nativity Of St Mary"
+   "day_expanded_from": "Monday, Tuesday and Friday"
   },
   {
    "kind": "mass",
    "day": "Tuesday",
    "time": "08:30",
    "language": null,
-   "raw": "[Nativity Of St Mary] Daily Mass: 8:30 AM at St. Mary",
+   "raw": "Daily Mass: 8:30 AM at St. Mary",
    "source_url": "https://www.faysouth.org/",
    "fetched_at": "2026-11-01T20:25:01+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress",
-   "day_expanded_from": "Monday, Tuesday and Friday",
-   "location": "Nativity Of St Mary"
+   "day_expanded_from": "Monday, Tuesday and Friday"
   },
   {
    "kind": "mass",
    "day": "Friday",
    "time": "08:30",
    "language": null,
-   "raw": "[Nativity Of St Mary] Daily Mass: 8:30 AM at St. Mary",
+   "raw": "Daily Mass: 8:30 AM at St. Mary",
    "source_url": "https://www.faysouth.org/",
    "fetched_at": "2026-11-01T20:25:01+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress",
-   "day_expanded_from": "Monday, Tuesday and Friday",
-   "location": "Nativity Of St Mary"
+   "day_expanded_from": "Monday, Tuesday and Friday"
   },
   {
    "kind": "mass",
@@ -383,14 +395,13 @@
    "day": "Tuesday",
    "time": "14:00-18:00",
    "language": null,
-   "raw": "[Nativity Of St Mary] Adoration/Private Prayer: St. Mary: Tuesday, 2 p.m. – 6 p.m.",
+   "raw": "Adoration/Private Prayer: St. Mary: Tuesday, 2 p.m. – 6 p.m.",
    "source_url": "https://www.faysouth.org/",
    "fetched_at": "2026-11-01T20:25:01+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
-   "template": "wordpress",
-   "location": "Nativity Of St Mary"
+   "template": "wordpress"
   },
   {
    "kind": "confession",
@@ -411,21 +422,32 @@
    "day": "Tuesday",
    "time": "17:00-17:45",
    "language": null,
-   "raw": "[Nativity Of St Mary] Confession: St. Mary: Tuesday, 5 p.m. – 5:45 p.m.",
+   "raw": "Confession: St. Mary: Tuesday, 5 p.m. – 5:45 p.m.",
    "source_url": "https://www.faysouth.org/",
    "fetched_at": "2026-11-01T20:25:01+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
-   "template": "wordpress",
-   "location": "Nativity Of St Mary"
+   "template": "wordpress"
   }
  ],
  "source_url": "https://www.faysouth.org/",
  "fetched_at": "2026-11-01T23:31:09+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:44:48+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -439,11 +461,13 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 16
  },
  "has_sunday": true,
  "schedule_dropped": {
   "other_location": 20,
+  "skipped_section": 4,
   "prose": 3
  },
  "groups_dropped": {
