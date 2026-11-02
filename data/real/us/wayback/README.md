@@ -56,9 +56,10 @@ Same targets and output as part B, fetched from Matthew's laptop (web.archive.or
   and replays `sites.one()` on the caches with no network, so records are identical in shape to the runner's
   (`crawl_status "wayback-<date>"`, schedule rows `needs_review`, never over an `ok` read). State: `sites_state.laptop.json`.
 
-**Status (2026-11-02 ~01:30Z, stopped at the agent's 2-hour limit):** 18 of 4,864 targets finished (all Diocese of
-Pittsburgh, the first see in priority order): 15 written (156 groups, 15 sites with a bulletin link, 318 schedule rows, all
-needs_review), 3 no capture since 2023; 2 more partly fetched on the laptop. California `ca-*` not reached. Throughput is the
+**Status (2026-11-02 01:35Z, stopped at the agent's 2-hour limit):** 24 of 4,864 targets finished (all Diocese of
+Pittsburgh, the first see in priority order): 19 written (172 captures used, 204 groups, 19 sites with a bulletin link, 353
+schedule rows, all needs_review), 5 with no capture since 2023; 1 more partly fetched on the laptop. California `ca-*` not
+reached. 233 archive requests in 4 batches. Throughput is the
 archive's limit, not ours: CDX listings take 30-145 s each, and web.archive.org refused TCP connections from the laptop for
 minutes at a time after ~13 requests at 1.1-6 s pace and after ~70 requests at 10 s pace, so the real rate is ~10-15 sites an
 hour. The California laptop run hit the same wall. At this rate the full list is ~300+ hours; the GitHub runner shards
