@@ -16,32 +16,583 @@
  "cities": [],
  "home_url": "http://www.lumenchristiparish.org/",
  "final_url": "https://www.lumenchristiparish.org/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "crawl_status": "wayback-2025-10-16",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
    "url": "https://www.lumenchristiparish.org/",
-   "status": 403,
-   "class": "challenge"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.lumenchristiparish.org/mass-times",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.lumenchristiparish.org/confession-times-1",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.lumenchristiparish.org/get-involved",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.lumenchristiparish.org/catholic-formation",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.lumenchristiparish.org/adult-formation",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://www.lumenchristiparish.org/bulletin",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "calendar",
+   "url": "https://lumenchristiparish.org/upcomingevents",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.lumenchristiparish.org/calendar",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "contact",
+   "url": "https://www.lumenchristiparish.org/parish-office-information",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "lumenchristiparish.org:adult_formation",
+   "name": "Adult Formation Offerings",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "adult_formation",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.lumenchristiparish.org/parish-office-information",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.lumenchristiparish.org/",
+   "source_kind": "website",
+   "fetched_at": "2025-10-16T12:30:54+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-10-16"
+  },
+  {
+   "id": "lumenchristiparish.org:ocia",
+   "name": "Becoming Catholic (OCIA)",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "ocia",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.lumenchristiparish.org/parish-office-information",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.lumenchristiparish.org/",
+   "source_kind": "website",
+   "fetched_at": "2025-10-16T12:30:54+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-10-16"
+  },
+  {
+   "id": "lumenchristiparish.org:catechists",
+   "name": "Catechists",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "catechists",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.lumenchristiparish.org/parish-office-information",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.lumenchristiparish.org/",
+   "source_kind": "website",
+   "fetched_at": "2025-10-16T12:30:54+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-10-16"
+  },
+  {
+   "id": "lumenchristiparish.org:young_adults",
+   "name": "Young Adults",
+   "category": "young_adults",
+   "category_label": "Young adults",
+   "subcategory": "young_adult_group",
+   "audience": "young_adult",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.lumenchristiparish.org/parish-office-information",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.lumenchristiparish.org/",
+   "source_kind": "website",
+   "fetched_at": "2025-10-16T12:30:54+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-10-16"
+  },
+  {
+   "id": "lumenchristiparish.org:youth_ministry",
+   "name": "Middle School",
+   "category": "youth",
+   "category_label": "Youth",
+   "subcategory": "youth_ministry",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.lumenchristiparish.org/parish-office-information",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.lumenchristiparish.org/",
+   "source_kind": "website",
+   "fetched_at": "2025-10-16T12:30:54+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-10-16"
+  },
+  {
+   "id": "lumenchristiparish.org:youth_ministry|athletic",
+   "name": "Youth Athletic Program",
+   "category": "youth",
+   "category_label": "Youth",
+   "subcategory": "youth_ministry",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.lumenchristiparish.org/parish-office-information",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.lumenchristiparish.org/",
+   "source_kind": "website",
+   "fetched_at": "2025-10-16T12:30:54+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-10-16"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/lumenchristicatholicchurch"
+  ],
+  "instagram": [
+   "https://www.instagram.com/lumenchristicatholicchurch/"
+  ],
+  "youtube": [
+   "https://www.youtube.com/channel/UCV_UNj0v-pMOF_wk5P5bQvQ",
+   "https://www.youtube.com/@LCYouTube",
+   "https://www.youtube.com/c/LCYouTube"
+  ],
+  "flocknote": [
+   "https://lumenchristicongregation.flocknote.com"
+  ],
+  "livestream": [
+   {
+    "url": "https://www.youtube.com/@LCYouTube/streams",
+    "label": "Click here for live-stream",
+    "platform": "youtube",
+    "kind": "link"
+   }
+  ]
+ },
+ "bulletin": {
+  "url": "https://www.lumenchristiparish.org/bulletin",
+  "date": null,
+  "kind": "page",
+  "text": "Bulletin",
+  "source_url": "https://www.lumenchristiparish.org/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "16:30",
+   "language": "English",
+   "raw": "Saturday: 4:30 PM English",
+   "source_url": "https://www.lumenchristiparish.org/",
+   "fetched_at": "2025-10-16T12:30:54+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-10-16: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-10-16",
+   "archive_url": "https://web.archive.org/web/20251016123054/https://www.lumenchristiparish.org/",
+   "capture_date": "2025-10-16"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "07:30",
+   "language": "English",
+   "raw": "Sunday: 7:30 AM English",
+   "source_url": "https://www.lumenchristiparish.org/",
+   "fetched_at": "2025-10-16T12:30:54+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-10-16: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-10-16",
+   "archive_url": "https://web.archive.org/web/20251016123054/https://www.lumenchristiparish.org/",
+   "capture_date": "2025-10-16"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": "English",
+   "raw": "Sunday: 9:00 AM English live-streamed",
+   "source_url": "https://www.lumenchristiparish.org/",
+   "fetched_at": "2025-10-16T12:30:54+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-10-16: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-10-16",
+   "archive_url": "https://web.archive.org/web/20251016123054/https://www.lumenchristiparish.org/",
+   "capture_date": "2025-10-16"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:00",
+   "language": "English",
+   "raw": "Sunday: 11:00 AM English",
+   "source_url": "https://www.lumenchristiparish.org/",
+   "fetched_at": "2025-10-16T12:30:54+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-10-16: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-10-16",
+   "archive_url": "https://web.archive.org/web/20251016123054/https://www.lumenchristiparish.org/",
+   "capture_date": "2025-10-16"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "08:30",
+   "language": "English",
+   "raw": "Tuesday - Friday: 8:30 AM English",
+   "source_url": "https://www.lumenchristiparish.org/",
+   "fetched_at": "2025-10-16T12:30:54+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-10-16: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Tuesday - Friday",
+   "source": "wayback-2025-10-16",
+   "archive_url": "https://web.archive.org/web/20251016123054/https://www.lumenchristiparish.org/",
+   "capture_date": "2025-10-16"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "08:30",
+   "language": "English",
+   "raw": "Tuesday - Friday: 8:30 AM English",
+   "source_url": "https://www.lumenchristiparish.org/",
+   "fetched_at": "2025-10-16T12:30:54+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-10-16: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Tuesday - Friday",
+   "day_parsed": "Tuesday",
+   "day_bound_from_line": true,
+   "source": "wayback-2025-10-16",
+   "archive_url": "https://web.archive.org/web/20251016123054/https://www.lumenchristiparish.org/",
+   "capture_date": "2025-10-16"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "08:30",
+   "language": "English",
+   "raw": "Tuesday - Friday: 8:30 AM English",
+   "source_url": "https://www.lumenchristiparish.org/",
+   "fetched_at": "2025-10-16T12:30:54+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-10-16: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Tuesday - Friday",
+   "day_parsed": "Tuesday",
+   "day_bound_from_line": true,
+   "source": "wayback-2025-10-16",
+   "archive_url": "https://web.archive.org/web/20251016123054/https://www.lumenchristiparish.org/",
+   "capture_date": "2025-10-16"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "08:30",
+   "language": "English",
+   "raw": "Tuesday - Friday: 8:30 AM English",
+   "source_url": "https://www.lumenchristiparish.org/",
+   "fetched_at": "2025-10-16T12:30:54+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-10-16: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Tuesday - Friday",
+   "day_parsed": "Tuesday",
+   "day_bound_from_line": true,
+   "source": "wayback-2025-10-16",
+   "archive_url": "https://web.archive.org/web/20251016123054/https://www.lumenchristiparish.org/",
+   "capture_date": "2025-10-16"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "16:30",
+   "language": "English",
+   "raw": "November 1: 4:30 PM English This is the regular 4:30 PM weekend Mass.",
+   "source_url": "https://www.lumenchristiparish.org/",
+   "fetched_at": "2025-10-16T12:30:54+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-10-16: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "kind_parsed": "mass",
+   "source": "wayback-2025-10-16",
+   "archive_url": "https://web.archive.org/web/20251016123054/https://www.lumenchristiparish.org/",
+   "capture_date": "2025-10-16"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "07:30",
+   "language": "English",
+   "raw": "November 2: 7:30 AM English This is the regular 7:30 AM weekend Mass.",
+   "source_url": "https://www.lumenchristiparish.org/",
+   "fetched_at": "2025-10-16T12:30:54+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-10-16: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "kind_parsed": "mass",
+   "source": "wayback-2025-10-16",
+   "archive_url": "https://web.archive.org/web/20251016123054/https://www.lumenchristiparish.org/",
+   "capture_date": "2025-10-16"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "09:00",
+   "language": "English",
+   "raw": "November 2: 9:00 AM English This is the regular 9 AM weekend Mass.",
+   "source_url": "https://www.lumenchristiparish.org/",
+   "fetched_at": "2025-10-16T12:30:54+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-10-16: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "kind_parsed": "mass",
+   "source": "wayback-2025-10-16",
+   "archive_url": "https://web.archive.org/web/20251016123054/https://www.lumenchristiparish.org/",
+   "capture_date": "2025-10-16"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "11:00",
+   "language": "English",
+   "raw": "November 2: 11:00 AM English This is the regular 11 AM weekend Mass.",
+   "source_url": "https://www.lumenchristiparish.org/",
+   "fetched_at": "2025-10-16T12:30:54+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-10-16: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "kind_parsed": "mass",
+   "source": "wayback-2025-10-16",
+   "archive_url": "https://web.archive.org/web/20251016123054/https://www.lumenchristiparish.org/",
+   "capture_date": "2025-10-16"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "18:00-20:00",
+   "language": null,
+   "raw": "Wednesday: 6:00 PM - 8:00 PM",
+   "source_url": "https://www.lumenchristiparish.org/",
+   "fetched_at": "2025-10-16T12:30:54+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-10-16: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-10-16",
+   "archive_url": "https://web.archive.org/web/20251016123054/https://www.lumenchristiparish.org/",
+   "capture_date": "2025-10-16"
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "09:00-17:00",
+   "language": null,
+   "raw": "Thursday: 9:00 AM - 5:00 PM",
+   "source_url": "https://www.lumenchristiparish.org/",
+   "fetched_at": "2025-10-16T12:30:54+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-10-16: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-10-16",
+   "archive_url": "https://web.archive.org/web/20251016123054/https://www.lumenchristiparish.org/",
+   "capture_date": "2025-10-16"
+  },
+  {
+   "kind": "confession",
+   "day": "Thursday",
+   "time": "16:00-17:00",
+   "language": null,
+   "raw": "Thursday: 4:00 PM - 5:00 PM",
+   "source_url": "https://www.lumenchristiparish.org/",
+   "fetched_at": "2025-10-16T12:30:54+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-10-16: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-10-16",
+   "archive_url": "https://web.archive.org/web/20251016123054/https://www.lumenchristiparish.org/",
+   "capture_date": "2025-10-16"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "09:00-10:00",
+   "language": null,
+   "raw": "Saturday: 9:00 AM - 10:00 AM",
+   "source_url": "https://www.lumenchristiparish.org/",
+   "fetched_at": "2025-10-16T12:30:54+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-10-16: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-10-16",
+   "archive_url": "https://web.archive.org/web/20251016123054/https://www.lumenchristiparish.org/",
+   "capture_date": "2025-10-16"
+  }
+ ],
  "source_url": "http://www.lumenchristiparish.org/",
- "fetched_at": "2026-11-01T01:59:55+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-02T01:15:50+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": true
+   },
+   "score": "high"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 7
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "other_location": 1,
+  "text:dated_line": 165,
+  "text:not_a_service": 85,
+  "text:range_not_a_mass": 6,
+  "text:other_location": 10,
+  "text:skipped_section": 15
+ },
+ "groups_dropped": {
+  "noise": 12,
+  "unmatched": 2
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(262) 242-7967",
+  "address": "2750 W Mequon Road, Mequon, WI 53092",
+  "source_url": "https://www.lumenchristiparish.org/parish-office-information",
+  "sources": {
+   "phone": "https://www.lumenchristiparish.org/parish-office-information",
+   "address": "https://www.lumenchristiparish.org/parish-office-information"
+  },
+  "fetched_at": "2025-06-20T00:08:07+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2025-10-16",
+  "capture_age_days": 382,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://www.lumenchristiparish.org/",
+    "capture": "2025-10-16",
+    "archive_url": "https://web.archive.org/web/20251016123054/https://www.lumenchristiparish.org/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://www.lumenchristiparish.org/mass-times",
+    "capture": "2025-03-25",
+    "archive_url": "https://web.archive.org/web/20250325123315/https://www.lumenchristiparish.org/mass-times"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://www.lumenchristiparish.org/get-involved",
+    "capture": "2024-06-26",
+    "archive_url": "https://web.archive.org/web/20240626201745/https://www.lumenchristiparish.org/get-involved"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://lumenchristiparish.org/upcomingevents",
+    "capture": "2025-10-05",
+    "archive_url": "https://web.archive.org/web/20251005193956/https://lumenchristiparish.org/upcomingevents"
+   },
+   {
+    "kind": "contact",
+    "original": "https://www.lumenchristiparish.org/parish-office-information",
+    "capture": "2025-06-20",
+    "archive_url": "https://web.archive.org/web/20250620000807/https://www.lumenchristiparish.org/parish-office-information"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }

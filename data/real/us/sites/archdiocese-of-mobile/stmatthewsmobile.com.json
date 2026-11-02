@@ -20,23 +20,23 @@
   "Mobile"
  ],
  "home_url": "https://stmatthewsmobile.com/",
- "final_url": "https://stmatthewsmobile.com/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "final_url": "http://stmatthewsmobile.com/",
+ "crawl_status": "wayback-2025-08-09",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
-   "url": "https://stmatthewsmobile.com/",
-   "status": 403,
-   "class": "challenge"
+   "url": "http://stmatthewsmobile.com/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
   "cms": "unknown",
   "evidence": []
  },
- "template": "none",
+ "template": "generic-html:unknown",
  "groups": [],
  "calendar_feeds": [],
  "events": [],
@@ -44,9 +44,42 @@
  "bulletin": null,
  "schedule_rows": [],
  "source_url": "https://stmatthewsmobile.com/",
- "fetched_at": "2026-11-01T09:04:56+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-02T01:42:17+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": true,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "has_sunday": false,
+ "groups_dropped": {},
+ "wayback": {
+  "capture_date": "2025-08-09",
+  "capture_age_days": 450,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "http://stmatthewsmobile.com/",
+    "capture": "2025-08-09",
+    "archive_url": "https://web.archive.org/web/20250809120838/http://stmatthewsmobile.com/"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }

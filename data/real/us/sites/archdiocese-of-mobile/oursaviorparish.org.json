@@ -19,33 +19,265 @@
   "Mobile"
  ],
  "home_url": "https://oursaviorparish.org/",
- "final_url": "https://oursaviorparish.org/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "final_url": "https://www.oursaviorparish.org/",
+ "crawl_status": "wayback-2025-11-02",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
-   "url": "https://oursaviorparish.org/",
-   "status": 403,
-   "class": "challenge"
+   "url": "https://www.oursaviorparish.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.oursaviorparish.org/mass-times",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://oursaviorparish.org/liturgical-ministries-schedule",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://oursaviorparish.org/faith-formation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.oursaviorparish.org/adult-faith-formation",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "ministries",
+   "url": "https://oursaviorparish.org/ministries",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://oursaviorparish.org/bulletins",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://oursaviorparish.org/events-news",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://oursaviorparish.org/calendar",
+   "status": null,
+   "class": "conn_error"
+  },
+  {
+   "category": "contact",
+   "url": "https://oursaviorparish.org/contact-us",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "oursaviorparish.org:children_ff",
+   "name": "Religious Education",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "children_faith_formation",
+   "audience": "families",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://oursaviorparish.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://oursaviorparish.org/faith-formation",
+   "source_kind": "website",
+   "fetched_at": "2023-02-01T05:30:13+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-11-02"
+  },
+  {
+   "id": "oursaviorparish.org:youth_ministry",
+   "name": "Youth",
+   "category": "youth",
+   "category_label": "Youth",
+   "subcategory": "youth_ministry",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://oursaviorparish.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://oursaviorparish.org/ministries",
+   "source_kind": "website",
+   "fetched_at": "2023-02-01T06:22:52+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-11-02"
+  },
+  {
+   "id": "oursaviorparish.org:choir",
+   "name": "Music Ministry / Choir",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "choir_music",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://oursaviorparish.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://oursaviorparish.org/ministries",
+   "source_kind": "website",
+   "fetched_at": "2023-02-01T06:22:52+00:00",
+   "confidence": "low",
+   "source": "wayback-2025-11-02"
+  },
+  {
+   "id": "oursaviorparish.org:kofc",
+   "name": "Knights of Columbus",
+   "category": "fraternal_orders",
+   "category_label": "Fraternal & orders",
+   "subcategory": "knights_of_columbus",
+   "audience": "men",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://oursaviorparish.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://oursaviorparish.org/ministries",
+   "source_kind": "website",
+   "fetched_at": "2023-02-01T06:22:52+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-11-02"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/Our-Savior-Catholic-Church-265590583522388"
+  ],
+  "youtube": [
+   "https://www.youtube.com/user/oursaviorparish"
+  ]
+ },
+ "bulletin": {
+  "url": "https://files.ecatholic.com/28553/bulletins/20251005.pdf?t=1759761677000",
+  "date": "2025-10-05",
+  "kind": "ecatholic_pdf",
+  "text": "October 5 , 2025",
+  "source_url": "https://oursaviorparish.org/bulletins"
+ },
  "schedule_rows": [],
  "source_url": "https://oursaviorparish.org/",
- "fetched_at": "2026-11-01T09:04:55+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-02T01:40:59+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 2
+ },
+ "has_sunday": false,
+ "schedule_dropped": {
+  "text:dated_line": 6
+ },
+ "groups_dropped": {
+  "noise": 1
+ },
+ "office_contact": {
+  "email": "office@oursaviorparish.org",
+  "phone": "(251) 633-6762",
+  "address": null,
+  "source_url": "https://oursaviorparish.org/contact-us",
+  "sources": {
+   "email": "https://oursaviorparish.org/contact-us",
+   "phone": "https://oursaviorparish.org/contact-us"
+  },
+  "fetched_at": "2023-02-01T06:39:35+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2025-11-02",
+  "capture_age_days": 365,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://www.oursaviorparish.org/",
+    "capture": "2025-11-02",
+    "archive_url": "https://web.archive.org/web/20251102081215/https://www.oursaviorparish.org/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://oursaviorparish.org/liturgical-ministries-schedule",
+    "capture": "2025-05-15",
+    "archive_url": "https://web.archive.org/web/20250515123737/https://oursaviorparish.org/liturgical-ministries-schedule"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://oursaviorparish.org/faith-formation",
+    "capture": "2023-02-01",
+    "archive_url": "https://web.archive.org/web/20230201053013/https://oursaviorparish.org/faith-formation"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://oursaviorparish.org/ministries",
+    "capture": "2023-02-01",
+    "archive_url": "https://web.archive.org/web/20230201062252/https://oursaviorparish.org/ministries"
+   },
+   {
+    "kind": "bulletin",
+    "original": "https://oursaviorparish.org/bulletins",
+    "capture": "2025-10-09",
+    "archive_url": "https://web.archive.org/web/20251009163430/https://oursaviorparish.org/bulletins"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://oursaviorparish.org/events-news",
+    "capture": "2023-02-01",
+    "archive_url": "https://web.archive.org/web/20230201060344/https://oursaviorparish.org/events-news"
+   },
+   {
+    "kind": "contact",
+    "original": "https://oursaviorparish.org/contact-us",
+    "capture": "2023-02-01",
+    "archive_url": "https://web.archive.org/web/20230201063935/https://oursaviorparish.org/contact-us"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }
