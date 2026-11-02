@@ -18,32 +18,150 @@
  ],
  "home_url": "https://stanthonypineplains.org/",
  "final_url": "https://stanthonypineplains.org/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "crawl_status": "wayback-2025-04-24",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
    "url": "https://stanthonypineplains.org/",
-   "status": 403,
-   "class": "challenge"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stanthonypineplains.org/liturgy-sacraments",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://stanthonypineplains.org/faith-formation",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://stanthonypineplains.org/bulletins",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://stanthonypineplains.org/news-events",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://stanthonypineplains.org/contact-us",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
+ "template": "ecatholic-fastpath",
  "groups": [],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
+ "social": {
+  "flocknote": [
+   "https://new.flocknote.com"
+  ]
+ },
+ "bulletin": {
+  "url": "https://files.ecatholic.com/6951/bulletins/20151115.pdf?t=1561890334000",
+  "date": "2015-11-15",
+  "kind": "ecatholic_pdf",
+  "text": "November 15 , 2015",
+  "source_url": "https://stanthonypineplains.org/bulletins"
+ },
  "schedule_rows": [],
  "source_url": "https://stanthonypineplains.org/",
- "fetched_at": "2026-11-01T01:57:12+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-02T02:39:45+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "has_sunday": false,
+ "schedule_images": [
+  {
+   "url": "https://files.ecatholic.com/6951/pictures/2018/5/Crisp%20Mass.jpg?t=1526334653000",
+   "alt": "Mass Times",
+   "page": "https://stanthonypineplains.org/"
+  }
+ ],
+ "schedule_note": "schedule appears to be an image; times not read (needs_review)",
+ "groups_dropped": {},
+ "office_contact": {
+  "email": null,
+  "phone": null,
+  "address": "68 Poplar Ave, Pine Plains, NY 12567",
+  "source_url": "https://stanthonypineplains.org/contact-us",
+  "sources": {
+   "address": "https://stanthonypineplains.org/contact-us"
+  },
+  "fetched_at": "2023-02-08T04:23:05+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2025-04-24",
+  "capture_age_days": 557,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://stanthonypineplains.org/",
+    "capture": "2025-04-24",
+    "archive_url": "https://web.archive.org/web/20250424121807/https://stanthonypineplains.org/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://stanthonypineplains.org/liturgy-sacraments",
+    "capture": "2025-10-10",
+    "archive_url": "https://web.archive.org/web/20251010093848/https://stanthonypineplains.org/liturgy-sacraments"
+   },
+   {
+    "kind": "bulletin",
+    "original": "https://stanthonypineplains.org/bulletins",
+    "capture": "2025-10-10",
+    "archive_url": "https://web.archive.org/web/20251010083657/https://stanthonypineplains.org/bulletins"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://stanthonypineplains.org/news-events",
+    "capture": "2023-02-08",
+    "archive_url": "https://web.archive.org/web/20230208033109/https://stanthonypineplains.org/news-events"
+   },
+   {
+    "kind": "contact",
+    "original": "https://stanthonypineplains.org/contact-us",
+    "capture": "2023-02-08",
+    "archive_url": "https://web.archive.org/web/20230208042305/https://stanthonypineplains.org/contact-us"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }
