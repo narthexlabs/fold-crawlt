@@ -21,33 +21,132 @@
   "Manhattan"
  ],
  "home_url": "https://htcny.org/",
- "final_url": "https://htcny.org/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "final_url": "https://www.htcny.org/",
+ "crawl_status": "wayback-2025-12-17",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
-   "url": "https://htcny.org/",
-   "status": 403,
-   "class": "challenge"
+   "url": "https://www.htcny.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.htcny.org/mass-times",
+   "status": null,
+   "class": "conn_error"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://htcny.org/holy-day-mass-and-services-schedule",
+   "status": null,
+   "class": "timeout"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "htcny.org:young_adults",
+   "name": "Young Adult Catholics",
+   "category": "young_adults",
+   "category_label": "Young adults",
+   "subcategory": "young_adult_group",
+   "audience": "young_adult",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.htcny.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.htcny.org/",
+   "source_kind": "website",
+   "fetched_at": "2025-12-17T23:03:23+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-12-17"
+  },
+  {
+   "id": "htcny.org:choir",
+   "name": "Music Ministry / Choir",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "choir_music",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.htcny.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.htcny.org/",
+   "source_kind": "website",
+   "fetched_at": "2025-12-17T23:03:23+00:00",
+   "confidence": "low",
+   "source": "wayback-2025-12-17"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
+ "social": {
+  "flocknote": [
+   "https://new.flocknote.com"
+  ]
+ },
+ "bulletin": {
+  "url": "https://www.htcny.org/bulletins",
+  "date": null,
+  "kind": "page",
+  "text": "Bulletins",
+  "source_url": "https://www.htcny.org/"
+ },
  "schedule_rows": [],
  "source_url": "https://htcny.org/",
- "fetched_at": "2026-11-01T01:56:56+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-02T01:37:50+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 13
+ },
+ "has_sunday": false,
+ "groups_dropped": {
+  "noise": 1,
+  "unmatched": 2
+ },
+ "wayback": {
+  "capture_date": "2025-12-17",
+  "capture_age_days": 320,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://www.htcny.org/",
+    "capture": "2025-12-17",
+    "archive_url": "https://web.archive.org/web/20251217230323/https://www.htcny.org/"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }

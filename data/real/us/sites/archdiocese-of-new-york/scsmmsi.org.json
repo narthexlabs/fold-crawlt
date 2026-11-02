@@ -17,33 +17,336 @@
   "Staten Island"
  ],
  "home_url": "https://scsmmsi.org/",
- "final_url": "https://scsmmsi.org/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "final_url": "https://www.scsmmsi.org/",
+ "crawl_status": "wayback-2025-05-23",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
-   "url": "https://scsmmsi.org/",
-   "status": 403,
-   "class": "challenge"
+   "url": "https://www.scsmmsi.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://scsmmsi.org/liturgy-sacraments",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://scsmmsi.org/news/mass-in-memory-of-pope-franics",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.scsmmsi.org/ministries",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://scsmmsi.org/news-events",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://scsmmsi.org/contact-us",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://scsmmsi.org/bulletins",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "scsmmsi.org:rosary_es",
+   "name": "Grupo de Oracion del Santo Rosario",
+   "category": "prayer_devotion",
+   "category_label": "Prayer & devotion",
+   "subcategory": "rosary",
+   "audience": "all",
+   "language": "es",
+   "language_assumed": false,
+   "meets": "Every Friday, 7:30pm",
+   "description": "Nos reunimos todos los viernes a las 7:30 pm.",
+   "contact_url": "https://scsmmsi.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.scsmmsi.org/ministries",
+   "source_kind": "website",
+   "fetched_at": "2023-12-02T15:49:43+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-05-23"
+  },
+  {
+   "id": "scsmmsi.org:servers",
+   "name": "Altar Servers",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "altar_servers",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "Altar Servers assist our clergy at religious services and ceremonies. Servers should be mature enough to understand their responsibilities and to carry them out with appropriate reverence. They should have already received their first holy communion. If you would like…",
+   "contact_url": "https://scsmmsi.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.scsmmsi.org/ministries",
+   "source_kind": "website",
+   "fetched_at": "2023-12-02T15:49:43+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-05-23"
+  },
+  {
+   "id": "scsmmsi.org:altar_society",
+   "name": "Altar Society",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "altar_society_environment",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "The Altar Society insures the cleanliness, order and beauty of our church. To join, please call the parish office.",
+   "contact_url": "https://scsmmsi.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.scsmmsi.org/ministries",
+   "source_kind": "website",
+   "fetched_at": "2023-12-02T15:49:43+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-05-23"
+  },
+  {
+   "id": "scsmmsi.org:kofc",
+   "name": "Knights of Columbus",
+   "category": "fraternal_orders",
+   "category_label": "Fraternal & orders",
+   "subcategory": "knights_of_columbus",
+   "audience": "men",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "The Knights of Columbus is the world's largest Catholic fraternal service organization. Membership is open to \"practicing”",
+   "contact_url": "https://scsmmsi.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.scsmmsi.org/ministries",
+   "source_kind": "website",
+   "fetched_at": "2023-12-02T15:49:43+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-05-23"
+  },
+  {
+   "id": "scsmmsi.org:other_holy_name_society",
+   "name": "Holy Name Society",
+   "category": "other",
+   "category_label": "Other",
+   "subcategory": "unclassified",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "Members of the Holy Name Society are called to contribute to the evangelization mission of the Church and to make perpetual acts ofreverence and love for our Lord and Savior. The apostolate of the society is to assist in parish…",
+   "contact_url": "https://scsmmsi.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.scsmmsi.org/ministries",
+   "source_kind": "website",
+   "fetched_at": "2023-12-02T15:49:43+00:00",
+   "confidence": "low",
+   "source": "wayback-2025-05-23"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/fatherrosado"
+  ],
+  "youtube": [
+   "https://www.youtube.com/c/padrerosado"
+  ],
+  "flocknote": [
+   "https://flocknote.com/stchristopher"
+  ]
+ },
+ "bulletin": {
+  "url": "https://files.ecatholic.com/6730/bulletins/20141109.pdf",
+  "date": "2014-11-09",
+  "kind": "ecatholic_pdf",
+  "text": "November 9 , 2014",
+  "source_url": "https://scsmmsi.org/bulletins"
+ },
+ "schedule_rows": [
+  {
+   "kind": "adoration",
+   "day": "First Thursday of the month",
+   "time": "09:30-10:30",
+   "language": null,
+   "raw": "Thursday: 9:30 AM - 10:30 AM First Thursday of every month we will have adoration for vocations to the Priesthood.",
+   "source_url": "https://www.scsmmsi.org/",
+   "fetched_at": "2025-05-23T10:23:55+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-05-23: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-05-23",
+   "archive_url": "https://web.archive.org/web/20250523102355/https://www.scsmmsi.org/",
+   "capture_date": "2025-05-23"
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "12:00-13:00",
+   "language": null,
+   "raw": "Friday: 12:00 PM - 1:00 PM",
+   "source_url": "https://www.scsmmsi.org/",
+   "fetched_at": "2025-05-23T10:23:55+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-05-23: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-05-23",
+   "archive_url": "https://web.archive.org/web/20250523102355/https://www.scsmmsi.org/",
+   "capture_date": "2025-05-23"
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "19:30-20:30",
+   "language": null,
+   "raw": "Friday: 7:30 PM - 8:30 PM Spanish",
+   "source_url": "https://www.scsmmsi.org/",
+   "fetched_at": "2025-05-23T10:23:55+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-05-23: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-05-23",
+   "archive_url": "https://web.archive.org/web/20250523102355/https://www.scsmmsi.org/",
+   "capture_date": "2025-05-23"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:15-16:15",
+   "language": null,
+   "raw": "Confession Times: Saturday 3:15 pm to 4:15 pm or by appointment",
+   "source_url": "https://www.scsmmsi.org/",
+   "fetched_at": "2025-05-23T10:23:55+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-05-23: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2025-05-23",
+   "archive_url": "https://web.archive.org/web/20250523102355/https://www.scsmmsi.org/",
+   "capture_date": "2025-05-23"
+  }
+ ],
  "source_url": "https://scsmmsi.org/",
- "fetched_at": "2026-11-01T01:57:05+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-02T02:17:57+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": true
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 1
+ },
+ "has_sunday": false,
+ "schedule_partial": true,
+ "schedule_dropped": {
+  "other_location": 1,
+  "text:dated_line": 2,
+  "text:not_a_service": 1
+ },
+ "groups_dropped": {},
+ "office_contact": {
+  "email": "office@archny.org",
+  "phone": "(718) 351-2452",
+  "address": "130 Midland Ave, Staten Island, NY 10306",
+  "source_url": "https://www.scsmmsi.org/",
+  "sources": {
+   "email": "https://www.scsmmsi.org/",
+   "phone": "https://scsmmsi.org/contact-us",
+   "address": "https://www.scsmmsi.org/"
+  },
+  "fetched_at": "2025-05-23T10:23:55+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2025-05-23",
+  "capture_age_days": 528,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://www.scsmmsi.org/",
+    "capture": "2025-05-23",
+    "archive_url": "https://web.archive.org/web/20250523102355/https://www.scsmmsi.org/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://scsmmsi.org/liturgy-sacraments",
+    "capture": "2025-10-06",
+    "archive_url": "https://web.archive.org/web/20251006203615/https://scsmmsi.org/liturgy-sacraments"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://scsmmsi.org/news/mass-in-memory-of-pope-franics",
+    "capture": "2025-05-16",
+    "archive_url": "https://web.archive.org/web/20250516150013/https://scsmmsi.org/news/mass-in-memory-of-pope-franics"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://www.scsmmsi.org/ministries",
+    "capture": "2023-12-02",
+    "archive_url": "https://web.archive.org/web/20231202154943/https://www.scsmmsi.org/ministries"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://scsmmsi.org/news-events",
+    "capture": "2025-06-18",
+    "archive_url": "https://web.archive.org/web/20250618024305/https://scsmmsi.org/news-events"
+   },
+   {
+    "kind": "contact",
+    "original": "https://scsmmsi.org/contact-us",
+    "capture": "2023-01-31",
+    "archive_url": "https://web.archive.org/web/20230131010640/https://scsmmsi.org/contact-us"
+   },
+   {
+    "kind": "bulletin",
+    "original": "https://scsmmsi.org/bulletins",
+    "capture": "2025-05-16",
+    "archive_url": "https://web.archive.org/web/20250516142054/https://scsmmsi.org/bulletins"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }

@@ -10,7 +10,7 @@ then the SAME page plan fetch_site.Site uses (home -> mass-times / ministries / 
 guesses) answered from the archive as raw `id_` captures, then ingest/california/sites/parse_site.parse_site + privacy
 screen. The result is merged into the existing site file: crawl_status "wayback-<capture date>", groups / social /
 bulletin / pages / cms; schedule rows keep `needs_review: true` (a person reads a Wayback schedule before it is shown;
-California's rule). The earlier status is kept in `wayback.prior_status`. State: data/real/us/wayback/sites_state.json
+California's rule), except where grade.py's Wayback-verified rule passes and FOLD_WAYBACK_VERIFIED=1. The earlier status is kept in `wayback.prior_status`. State: data/real/us/wayback/sites_state.json
 (committed) + data/raw/us/wayback/sites/ (gitignored caches, one folder per site).
 """
 from __future__ import annotations
@@ -32,6 +32,7 @@ sys.path.insert(0, str(ROOT / "ingest" / "public"))
 import wblib as WB  # noqa: E402
 import fetch_site as fs  # noqa: E402
 import parse_site as ps  # noqa: E402
+import grade as WG  # noqa: E402  (Wayback-verified rule, gated by FOLD_WAYBACK_VERIFIED; writes wayback.grade always)
 
 SITES = ROOT / "data" / "real" / "us" / "sites"
 OUTW = ROOT / "data" / "real" / "us" / "wayback"
@@ -223,6 +224,7 @@ def one(arch: WB.Archive, f: Path, today: str) -> dict:
                       datetime.strptime(date, "%Y-%m-%d").date()).days, "prior_status": st, "captures": caps,
                       "note": "Read from archived copies (Wayback Machine) because the live site could not be read. "
                               "Groups, social and bulletin links are as of the capture; schedule rows are needs_review."}
+    WG.apply(new)   # trusted template + Sunday Mass + a group -> verified (rows lose needs_review only when the gate is on)
     cur = json.loads(f.read_text())
     if cur.get("crawl_status") == "ok":                       # the live crawl got in first: never overwrite an ok read
         return dict(res, result="live-ok-meanwhile")

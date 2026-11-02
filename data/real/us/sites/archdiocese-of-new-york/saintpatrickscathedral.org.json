@@ -20,33 +20,387 @@
   "Manhattan"
  ],
  "home_url": "https://saintpatrickscathedral.org/",
- "final_url": "https://saintpatrickscathedral.org/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "final_url": "https://www.saintpatrickscathedral.org/",
+ "crawl_status": "wayback-2026-10-19",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
-   "url": "https://saintpatrickscathedral.org/",
-   "status": 403,
-   "class": "challenge"
+   "url": "https://www.saintpatrickscathedral.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.saintpatrickscathedral.org/masses",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.saintpatrickscathedral.org/mass-enrollments",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "ministries",
+   "url": "https://saintpatrickscathedral.org/socialministry",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.saintpatrickscathedral.org/st-vincent-de-paul-society",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.saintpatrickscathedral.org/youngadult",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.saintpatrickscathedral.org/upcoming-events",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "live",
+   "url": "https://www.saintpatrickscathedral.org/live",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "contact",
+   "url": "https://www.saintpatrickscathedral.org/contact-us",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://www.saintpatrickscathedral.org/bulletins",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://www.saintpatrickscathedral.org/bulletin",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "saintpatrickscathedral.org:young_adults",
+   "name": "St. Patrick's Cathedral Young Adult Minsitry",
+   "category": "young_adults",
+   "category_label": "Young adults",
+   "subcategory": "young_adult_group",
+   "audience": "young_adult",
+   "language": "en",
+   "language_assumed": true,
+   "meets": "3rd Sunday, 5:30p.m",
+   "description": "You are invited to join the NEW Young Adult Group here at St. Patrick's Cathedral! All young adults in their 20s, 30s and *40s* are welcome, yes 40’s welcome! We will attend the 5:30 p.m. Mass, followed by a wine…",
+   "contact_url": "https://www.saintpatrickscathedral.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.saintpatrickscathedral.org/youngadult",
+   "source_kind": "website",
+   "fetched_at": "2026-07-10T03:47:01+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-10-19"
+  },
+  {
+   "id": "saintpatrickscathedral.org:svdp",
+   "name": "St. Vincent de Paul Society",
+   "category": "service_mercy",
+   "category_label": "Service & mercy",
+   "subcategory": "st_vincent_de_paul",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "St. Patrick’s Cathedral is especially excited by the formation of a new Cathedral conference of the St. Vincent de Paul Society. This parish conference is part of an international Catholic society dedicated to encountering Christ through service to those in…",
+   "contact_url": "https://www.saintpatrickscathedral.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://saintpatrickscathedral.org/socialministry",
+   "source_kind": "website",
+   "fetched_at": "2026-07-24T11:36:54+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-10-19"
+  },
+  {
+   "id": "saintpatrickscathedral.org:emhc",
+   "name": "Extraordinary Ministers of Holy Communion",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "emhc",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "For the hundreds of thousands of faithful who receive the Lord every year, these specially trained servants of the Church, fulfill a vital role in ensuring that all who want to receive the Blessed Sacrament of Communion can do so.",
+   "contact_url": "https://www.saintpatrickscathedral.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://saintpatrickscathedral.org/socialministry",
+   "source_kind": "website",
+   "fetched_at": "2026-07-24T11:36:54+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-10-19"
+  },
+  {
+   "id": "saintpatrickscathedral.org:lectors",
+   "name": "Lectors",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "lectors",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": "Weekly",
+   "description": "Our Lectors, diverse as the community of faithful we serve, proclaim the Word of The Lord at our forty-six weekly Masses with reverence and solemnity. This vital ministry which the Word of The Lord is heard by the faithful from…",
+   "contact_url": "https://www.saintpatrickscathedral.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://saintpatrickscathedral.org/socialministry",
+   "source_kind": "website",
+   "fetched_at": "2026-07-24T11:36:54+00:00",
+   "confidence": "low",
+   "source": "wayback-2026-10-19"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/StPatricksCathedralNYC"
+  ],
+  "instagram": [
+   "https://www.instagram.com/stpatrickscathedral/",
+   "https://www.instagram.com/stpatsya/"
+  ],
+  "youtube": [
+   "https://www.youtube.com/channel/UCqKoOWZHPDB6LCyGateHgYA"
+  ],
+  "x": [
+   "https://x.com/stpatsnyc"
+  ],
+  "livestream": [
+   {
+    "url": "https://www.saintpatrickscathedral.org/live",
+    "label": "Live Stream",
+    "platform": "www.saintpatrickscathedral.org",
+    "kind": "link"
+   },
+   {
+    "url": "https://saintpatrickscathedral.org/live",
+    "label": "Live Stream",
+    "platform": "saintpatrickscathedral.org",
+    "kind": "link"
+   }
+  ]
+ },
  "bulletin": null,
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "07:00",
+   "language": null,
+   "raw": "Monday through Friday: 7:00 AM",
+   "source_url": "https://www.saintpatrickscathedral.org/",
+   "fetched_at": "2026-10-19T04:22:47+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-10-19: read by a person before it is shown",
+   "day_expanded_from": "Monday through Friday",
+   "source": "wayback-2026-10-19",
+   "archive_url": "https://web.archive.org/web/20261019042247/https://www.saintpatrickscathedral.org/",
+   "capture_date": "2026-10-19"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "07:00",
+   "language": null,
+   "raw": "Monday through Friday: 7:00 AM",
+   "source_url": "https://www.saintpatrickscathedral.org/",
+   "fetched_at": "2026-10-19T04:22:47+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-10-19: read by a person before it is shown",
+   "day_expanded_from": "Monday through Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "source": "wayback-2026-10-19",
+   "archive_url": "https://web.archive.org/web/20261019042247/https://www.saintpatrickscathedral.org/",
+   "capture_date": "2026-10-19"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "07:00",
+   "language": null,
+   "raw": "Monday through Friday: 7:00 AM",
+   "source_url": "https://www.saintpatrickscathedral.org/",
+   "fetched_at": "2026-10-19T04:22:47+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-10-19: read by a person before it is shown",
+   "day_expanded_from": "Monday through Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "source": "wayback-2026-10-19",
+   "archive_url": "https://web.archive.org/web/20261019042247/https://www.saintpatrickscathedral.org/",
+   "capture_date": "2026-10-19"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "07:00",
+   "language": null,
+   "raw": "Monday through Friday: 7:00 AM",
+   "source_url": "https://www.saintpatrickscathedral.org/",
+   "fetched_at": "2026-10-19T04:22:47+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-10-19: read by a person before it is shown",
+   "day_expanded_from": "Monday through Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "source": "wayback-2026-10-19",
+   "archive_url": "https://web.archive.org/web/20261019042247/https://www.saintpatrickscathedral.org/",
+   "capture_date": "2026-10-19"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "07:00",
+   "language": null,
+   "raw": "Monday through Friday: 7:00 AM",
+   "source_url": "https://www.saintpatrickscathedral.org/",
+   "fetched_at": "2026-10-19T04:22:47+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-10-19: read by a person before it is shown",
+   "day_expanded_from": "Monday through Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "source": "wayback-2026-10-19",
+   "archive_url": "https://web.archive.org/web/20261019042247/https://www.saintpatrickscathedral.org/",
+   "capture_date": "2026-10-19"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Saturday: 8:00 AM",
+   "source_url": "https://www.saintpatrickscathedral.org/",
+   "fetched_at": "2026-10-19T04:22:47+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-10-19: read by a person before it is shown",
+   "source": "wayback-2026-10-19",
+   "archive_url": "https://web.archive.org/web/20261019042247/https://www.saintpatrickscathedral.org/",
+   "capture_date": "2026-10-19"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:15",
+   "language": null,
+   "raw": "Sunday: 10:15 A.M.",
+   "source_url": "https://www.saintpatrickscathedral.org/",
+   "fetched_at": "2026-10-19T04:22:47+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-10-19: read by a person before it is shown",
+   "source": "wayback-2026-10-19",
+   "archive_url": "https://web.archive.org/web/20261019042247/https://www.saintpatrickscathedral.org/",
+   "capture_date": "2026-10-19"
+  }
+ ],
  "source_url": "https://saintpatrickscathedral.org/",
- "fetched_at": "2026-11-01T01:57:03+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-02T02:17:38+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 7
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "text:skipped_section": 3,
+  "box_rows_added": 7
+ },
+ "groups_dropped": {
+  "unmatched": 4,
+  "noise": 2
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(212) 753-2261",
+  "address": null,
+  "source_url": "https://www.saintpatrickscathedral.org/",
+  "sources": {
+   "phone": "https://www.saintpatrickscathedral.org/"
+  },
+  "fetched_at": "2026-10-19T04:22:47+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2026-10-19",
+  "capture_age_days": 14,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://www.saintpatrickscathedral.org/",
+    "capture": "2026-10-19",
+    "archive_url": "https://web.archive.org/web/20261019042247/https://www.saintpatrickscathedral.org/"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://saintpatrickscathedral.org/socialministry",
+    "capture": "2026-07-24",
+    "archive_url": "https://web.archive.org/web/20260724113654/https://saintpatrickscathedral.org/socialministry"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://www.saintpatrickscathedral.org/st-vincent-de-paul-society",
+    "capture": "2026-07-10",
+    "archive_url": "https://web.archive.org/web/20260710034716/https://www.saintpatrickscathedral.org/st-vincent-de-paul-society"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://www.saintpatrickscathedral.org/youngadult",
+    "capture": "2026-07-10",
+    "archive_url": "https://web.archive.org/web/20260710034701/https://www.saintpatrickscathedral.org/youngadult"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://www.saintpatrickscathedral.org/upcoming-events",
+    "capture": "2026-07-10",
+    "archive_url": "https://web.archive.org/web/20260710034654/https://www.saintpatrickscathedral.org/upcoming-events"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }

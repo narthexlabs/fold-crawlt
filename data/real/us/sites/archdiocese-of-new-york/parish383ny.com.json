@@ -17,33 +17,448 @@
   "Town of Ulster"
  ],
  "home_url": "https://www.parish383ny.com/",
- "final_url": "https://www.parish383ny.com/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "final_url": "https://parish383ny.com/",
+ "crawl_status": "wayback-2026-03-30",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
-   "url": "https://www.parish383ny.com/",
-   "status": 403,
-   "class": "challenge"
+   "url": "https://parish383ny.com/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://parish383ny.com/mass-times",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://parish383ny.com/eucharistic-adoration",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://parish383ny.com/rosary-group",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://parish383ny.com/altar-rosary-society",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://parish383ny.com/liturgical-ministries",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://parish383ny.com/parish-calendar",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://parish383ny.com/contact-us",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://parish383ny.com/bulletins",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "parish383ny.com:rosary|altar",
+   "name": "Altar Rosary Society",
+   "category": "prayer_devotion",
+   "category_label": "Prayer & devotion",
+   "subcategory": "rosary",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://parish383ny.com/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://parish383ny.com/altar-rosary-society",
+   "source_kind": "website",
+   "fetched_at": "2025-10-08T07:37:30+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-03-30"
+  },
+  {
+   "id": "parish383ny.com:rosary",
+   "name": "Rosary Group",
+   "category": "prayer_devotion",
+   "category_label": "Prayer & devotion",
+   "subcategory": "rosary",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://parish383ny.com/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://parish383ny.com/rosary-group",
+   "source_kind": "website",
+   "fetched_at": "2024-06-15T13:56:50+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-03-30"
+  },
+  {
+   "id": "parish383ny.com:sick",
+   "name": "Homebound Ministry",
+   "category": "service_mercy",
+   "category_label": "Service & mercy",
+   "subcategory": "sick_homebound",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://parish383ny.com/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://parish383ny.com/",
+   "source_kind": "website",
+   "fetched_at": "2026-03-30T17:40:51+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-03-30"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/stcatherinelakekatrine",
+   "https://www.facebook.com/Church-of-St-Colman-East-Kingston-NY-173207373051848"
+  ],
+  "youtube": [
+   "https://www.youtube.com/channel/UCC9ntZMRJT9jqHF-587R_9A"
+  ],
+  "flocknote": [
+   "https://labourecolman.flocknote.com"
+  ]
+ },
+ "bulletin": {
+  "url": "https://files.ecatholic.com/29749/bulletins/20211024.pdf?t=1635174459000",
+  "date": "2021-10-24",
+  "kind": "ecatholic_pdf",
+  "text": "October 24 , 2021",
+  "source_url": "https://parish383ny.com/bulletins"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:15",
+   "language": "English",
+   "raw": "Saturday: 5:15 PM English St. Catherine Labouré",
+   "source_url": "https://parish383ny.com/mass-times",
+   "fetched_at": "2025-04-30T14:06:31+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-03-30: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-03-30",
+   "archive_url": "https://web.archive.org/web/20250430140631/https://parish383ny.com/mass-times",
+   "capture_date": "2025-04-30"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "07:30",
+   "language": "English",
+   "raw": "Sunday: 7:30 AM English St. Catherine Labouré",
+   "source_url": "https://parish383ny.com/mass-times",
+   "fetched_at": "2025-04-30T14:06:31+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-03-30: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-03-30",
+   "archive_url": "https://web.archive.org/web/20250430140631/https://parish383ny.com/mass-times",
+   "capture_date": "2025-04-30"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": "English",
+   "raw": "Sunday: 9:00 AM English St. Colman",
+   "source_url": "https://parish383ny.com/mass-times",
+   "fetched_at": "2025-04-30T14:06:31+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-03-30: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-03-30",
+   "archive_url": "https://web.archive.org/web/20250430140631/https://parish383ny.com/mass-times",
+   "capture_date": "2025-04-30"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:30",
+   "language": "English",
+   "raw": "Sunday: 10:30 AM English St. Catherine Labouré (traditional choir)",
+   "source_url": "https://parish383ny.com/mass-times",
+   "fetched_at": "2025-04-30T14:06:31+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-03-30: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-03-30",
+   "archive_url": "https://web.archive.org/web/20250430140631/https://parish383ny.com/mass-times",
+   "capture_date": "2025-04-30"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "09:00",
+   "language": "English",
+   "raw": "Monday - Friday: 9:00 AM English St. Catherine Labouré",
+   "source_url": "https://parish383ny.com/mass-times",
+   "fetched_at": "2025-04-30T14:06:31+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-03-30: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Monday - Friday",
+   "source": "wayback-2026-03-30",
+   "archive_url": "https://web.archive.org/web/20250430140631/https://parish383ny.com/mass-times",
+   "capture_date": "2025-04-30"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "09:00",
+   "language": "English",
+   "raw": "Monday - Friday: 9:00 AM English St. Catherine Labouré",
+   "source_url": "https://parish383ny.com/mass-times",
+   "fetched_at": "2025-04-30T14:06:31+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-03-30: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Monday - Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "source": "wayback-2026-03-30",
+   "archive_url": "https://web.archive.org/web/20250430140631/https://parish383ny.com/mass-times",
+   "capture_date": "2025-04-30"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "09:00",
+   "language": "English",
+   "raw": "Monday - Friday: 9:00 AM English St. Catherine Labouré",
+   "source_url": "https://parish383ny.com/mass-times",
+   "fetched_at": "2025-04-30T14:06:31+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-03-30: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Monday - Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "source": "wayback-2026-03-30",
+   "archive_url": "https://web.archive.org/web/20250430140631/https://parish383ny.com/mass-times",
+   "capture_date": "2025-04-30"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "09:00",
+   "language": "English",
+   "raw": "Monday - Friday: 9:00 AM English St. Catherine Labouré",
+   "source_url": "https://parish383ny.com/mass-times",
+   "fetched_at": "2025-04-30T14:06:31+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-03-30: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Monday - Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "source": "wayback-2026-03-30",
+   "archive_url": "https://web.archive.org/web/20250430140631/https://parish383ny.com/mass-times",
+   "capture_date": "2025-04-30"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "09:00",
+   "language": "English",
+   "raw": "Monday - Friday: 9:00 AM English St. Catherine Labouré",
+   "source_url": "https://parish383ny.com/mass-times",
+   "fetched_at": "2025-04-30T14:06:31+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-03-30: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Monday - Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "source": "wayback-2026-03-30",
+   "archive_url": "https://web.archive.org/web/20250430140631/https://parish383ny.com/mass-times",
+   "capture_date": "2025-04-30"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "17:17",
+   "language": null,
+   "raw": "Mass Times: Reading 1 Acts 5:17-26",
+   "source_url": "https://parish383ny.com/mass-times",
+   "fetched_at": "2025-04-30T14:06:31+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-03-30: read by a person before it is shown",
+   "confidence": "low",
+   "template": "ecatholic+generic_strict",
+   "kind_parsed": "mass",
+   "source": "wayback-2026-03-30",
+   "archive_url": "https://web.archive.org/web/20250430140631/https://parish383ny.com/mass-times",
+   "capture_date": "2025-04-30"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "15:16",
+   "language": null,
+   "raw": "Mass Times: Gospel John 3:16-21",
+   "source_url": "https://parish383ny.com/mass-times",
+   "fetched_at": "2025-04-30T14:06:31+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-03-30: read by a person before it is shown",
+   "confidence": "low",
+   "template": "ecatholic+generic_strict",
+   "kind_parsed": "mass",
+   "source": "wayback-2026-03-30",
+   "archive_url": "https://web.archive.org/web/20250430140631/https://parish383ny.com/mass-times",
+   "capture_date": "2025-04-30"
+  }
+ ],
  "source_url": "https://www.parish383ny.com/",
- "fetched_at": "2026-11-01T01:57:00+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-02T02:08:51+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": true
+   },
+   "score": "high"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 5
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "text:not_a_service": 1,
+  "text:benediction_end": 1
+ },
+ "groups_dropped": {},
+ "office_contact": {
+  "email": "parish383ny@gmail.com",
+  "phone": "(845) 382-1133",
+  "address": "200 Tuytenbridge Rd.,, Lake Katrine, NY 12449",
+  "source_url": "https://parish383ny.com/contact-us",
+  "sources": {
+   "email": "https://parish383ny.com/contact-us",
+   "phone": "https://parish383ny.com/contact-us",
+   "address": "https://parish383ny.com/contact-us"
+  },
+  "fetched_at": "2026-03-30T17:40:56+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2026-03-30",
+  "capture_age_days": 217,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://parish383ny.com/",
+    "capture": "2026-03-30",
+    "archive_url": "https://web.archive.org/web/20260330174051/https://parish383ny.com/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://parish383ny.com/mass-times",
+    "capture": "2025-04-30",
+    "archive_url": "https://web.archive.org/web/20250430140631/https://parish383ny.com/mass-times"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://parish383ny.com/eucharistic-adoration",
+    "capture": "2025-10-08",
+    "archive_url": "https://web.archive.org/web/20251008075238/https://parish383ny.com/eucharistic-adoration"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://parish383ny.com/rosary-group",
+    "capture": "2024-06-15",
+    "archive_url": "https://web.archive.org/web/20240615135650/https://parish383ny.com/rosary-group"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://parish383ny.com/altar-rosary-society",
+    "capture": "2025-10-08",
+    "archive_url": "https://web.archive.org/web/20251008073730/https://parish383ny.com/altar-rosary-society"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://parish383ny.com/liturgical-ministries",
+    "capture": "2025-10-08",
+    "archive_url": "https://web.archive.org/web/20251008063111/https://parish383ny.com/liturgical-ministries"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://parish383ny.com/parish-calendar",
+    "capture": "2025-10-08",
+    "archive_url": "https://web.archive.org/web/20251008071056/https://parish383ny.com/parish-calendar"
+   },
+   {
+    "kind": "contact",
+    "original": "https://parish383ny.com/contact-us",
+    "capture": "2026-03-30",
+    "archive_url": "https://web.archive.org/web/20260330174056/https://parish383ny.com/contact-us"
+   },
+   {
+    "kind": "bulletin",
+    "original": "https://parish383ny.com/bulletins",
+    "capture": "2025-02-08",
+    "archive_url": "https://web.archive.org/web/20250208011012/https://parish383ny.com/bulletins"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }

@@ -79,8 +79,14 @@
   {
    "category": "bulletin",
    "url": "https://goodshepherdnyc.org/bulletins",
-   "status": 200,
-   "class": "ok"
+   "status": null,
+   "class": "conn_error"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://www.goodshepherdnyc.org/bulletin",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -593,7 +599,7 @@
   }
  ],
  "source_url": "https://goodshepherdnyc.org/",
- "fetched_at": "2026-11-02T01:42:53+00:00",
+ "fetched_at": "2026-11-02T02:13:48+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
  },
@@ -631,7 +637,7 @@
  "wayback": {
   "capture_date": "2026-06-12",
   "capture_age_days": 143,
-  "prior_status": "challenge",
+  "prior_status": "wayback-2026-06-12",
   "captures": [
    {
     "kind": "home",
@@ -686,12 +692,6 @@
     "original": "https://goodshepherdnyc.org/contact-us",
     "capture": "2026-06-06",
     "archive_url": "https://web.archive.org/web/20260606135344/https://goodshepherdnyc.org/contact-us"
-   },
-   {
-    "kind": "bulletin",
-    "original": "https://goodshepherdnyc.org/bulletins",
-    "capture": "2026-05-16",
-    "archive_url": "https://web.archive.org/web/20260516175512/https://goodshepherdnyc.org/bulletins"
    }
   ],
   "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."

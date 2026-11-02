@@ -31,8 +31,38 @@
   {
    "category": "mass_times",
    "url": "https://olphla.org/visit-us",
-   "status": null,
-   "class": "timeout"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://olphla.org/calendar",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://olphla.org/events?page=1",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://olphla.org/contact-us",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://olphla.org/ministries",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://olphla.org/bulletins",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -50,10 +80,16 @@
    "https://www.facebook.com/olphla"
   ]
  },
- "bulletin": null,
+ "bulletin": {
+  "url": "https://olphla.org/bulletins",
+  "date": null,
+  "kind": "page",
+  "text": "|||",
+  "source_url": "https://olphla.org/bulletins"
+ },
  "schedule_rows": [],
  "source_url": "http://www.olphla.org/",
- "fetched_at": "2026-11-02T02:12:28+00:00",
+ "fetched_at": "2026-11-02T01:35:52+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
  },
@@ -81,12 +117,12 @@
   "email": null,
   "phone": "(504) 464-0531",
   "address": "531 Williams Blvd., Kenner, LA 70062",
-  "source_url": "https://olphla.org/",
+  "source_url": "https://olphla.org/contact-us",
   "sources": {
-   "phone": "https://olphla.org/",
-   "address": "https://olphla.org/"
+   "phone": "https://olphla.org/contact-us",
+   "address": "https://olphla.org/contact-us"
   },
-  "fetched_at": "2025-03-20T04:27:52+00:00",
+  "fetched_at": "2024-04-17T09:51:22+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
  },
  "wayback": {
@@ -99,6 +135,36 @@
     "original": "https://olphla.org/",
     "capture": "2025-03-20",
     "archive_url": "https://web.archive.org/web/20250320042752/https://olphla.org/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://olphla.org/visit-us",
+    "capture": "2023-01-30",
+    "archive_url": "https://web.archive.org/web/20230130190549/https://olphla.org/visit-us"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://olphla.org/calendar",
+    "capture": "2024-05-25",
+    "archive_url": "https://web.archive.org/web/20240525175902/https://olphla.org/calendar"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://olphla.org/events?page=1",
+    "capture": "2025-10-18",
+    "archive_url": "https://web.archive.org/web/20251018193203/https://olphla.org/events?page=1"
+   },
+   {
+    "kind": "contact",
+    "original": "https://olphla.org/contact-us",
+    "capture": "2024-04-17",
+    "archive_url": "https://web.archive.org/web/20240417095122/https://olphla.org/contact-us"
+   },
+   {
+    "kind": "bulletin",
+    "original": "https://olphla.org/bulletins",
+    "capture": "2025-10-13",
+    "archive_url": "https://web.archive.org/web/20251013221019/https://olphla.org/bulletins"
    }
   ],
   "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."

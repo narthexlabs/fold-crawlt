@@ -64,8 +64,14 @@
   {
    "category": "calendar",
    "url": "https://olgcommunity.com/calendar",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://olgcommunity.com/contact-us",
    "status": null,
-   "class": "timeout"
+   "class": "conn_error"
   }
  ],
  "cms_guess": {
@@ -468,7 +474,7 @@
   }
  ],
  "source_url": "https://olgcommunity.com/",
- "fetched_at": "2026-11-02T02:07:41+00:00",
+ "fetched_at": "2026-11-02T01:33:38+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()",
   "intentions_withheld": 1
@@ -489,7 +495,7 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 3
+  "generic_rows": 5
  },
  "has_sunday": true,
  "schedule_dropped": {
@@ -551,6 +557,12 @@
     "original": "https://olgcommunity.com/events-news",
     "capture": "2026-03-30",
     "archive_url": "https://web.archive.org/web/20260330114058/https://olgcommunity.com/events-news"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://olgcommunity.com/calendar",
+    "capture": "2024-05-12",
+    "archive_url": "https://web.archive.org/web/20240512235038/https://olgcommunity.com/calendar"
    }
   ],
   "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
