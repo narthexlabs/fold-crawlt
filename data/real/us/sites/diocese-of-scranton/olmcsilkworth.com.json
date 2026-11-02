@@ -306,6 +306,39 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "render_attempt": {
+  "status": "ok",
+  "result": "no_gain",
+  "groups": 0,
+  "mass_rows": 8,
+  "at": "2026-11-01"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": ", and by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://www.olmcsilkworth.com/sacraments",
+   "fetched_at": "2026-11-02T04:43:11+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:12+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "office@olmcsilkworth.com",
   "phone": "(570) 477-5040",
@@ -318,15 +351,5 @@
   },
   "fetched_at": "2026-11-01T03:58:54+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
- },
- "render_attempt": {
-  "status": "ok",
-  "result": "no_gain",
-  "groups": 0,
-  "mass_rows": 8,
-  "at": "2026-11-01"
  }
 }

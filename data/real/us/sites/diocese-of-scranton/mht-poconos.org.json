@@ -51,6 +51,12 @@
    "url": "https://www.mht-poconos.org/contactus",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.mht-poconos.org/faith-sacraments",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -461,6 +467,20 @@
    "confidence": "high",
    "template": "wix",
    "kind_parsed": "mass"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "12:00",
+   "language": "Spanish",
+   "raw": "Weekend Mass Schedule: 12:00 pm (en espanol)",
+   "source_url": "https://www.mht-poconos.org/Mass-Schedules",
+   "fetched_at": "2026-11-02T04:43:15+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "wix",
+   "topup": true
   }
  ],
  "source_url": "http://www.mht-poconos.org/",
@@ -498,6 +518,24 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:16+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "office@mht-poconos.org",
   "phone": "(570) 595-3100",
@@ -509,8 +547,5 @@
   },
   "fetched_at": "2026-11-01T03:58:57+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

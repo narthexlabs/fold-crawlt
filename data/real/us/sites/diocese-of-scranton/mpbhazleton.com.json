@@ -483,42 +483,42 @@
    "template": "generic_strict"
   },
   {
-   "kind": "mass",
+   "kind": "devotion",
    "day": "Monday",
    "time": "12:05",
    "language": "English",
-   "raw": "Daily Mass Schedule in English: Monday -12:05 p.m. - Holy Rosary Parish",
+   "raw": "Monday -12:05 p.m. - Holy Rosary Parish",
    "source_url": "https://www.olpphazleton.org/",
    "fetched_at": "2026-11-02T03:46:33+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "medium",
+   "confidence": "high",
    "template": "generic_strict"
   },
   {
-   "kind": "mass",
+   "kind": "devotion",
    "day": "Tuesday",
    "time": "12:05",
    "language": "English",
-   "raw": "Daily Mass Schedule in English: Tuesday -12:05 p.m. - Holy Rosary Parish",
+   "raw": "Tuesday -12:05 p.m. - Holy Rosary Parish",
    "source_url": "https://www.olpphazleton.org/",
    "fetched_at": "2026-11-02T03:46:33+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "medium",
+   "confidence": "high",
    "template": "generic_strict"
   },
   {
-   "kind": "mass",
+   "kind": "devotion",
    "day": "Wednesday",
    "time": "12:05",
    "language": "English",
-   "raw": "Daily Mass Schedule in English: Wednesday -12:05 p.m. - Holy Rosary Parish",
+   "raw": "Wednesday -12:05 p.m. - Holy Rosary Parish",
    "source_url": "https://www.olpphazleton.org/",
    "fetched_at": "2026-11-02T03:46:33+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "medium",
+   "confidence": "high",
    "template": "generic_strict"
   },
   {
@@ -572,14 +572,52 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "17:30",
+   "language": null,
+   "raw": "Vigil Mass 5:30 p.m., Holy Day 6:00 p.m.",
+   "source_url": "https://www.olpphazleton.org/",
+   "fetched_at": "2026-11-02T03:46:33+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "18:00",
+   "language": null,
+   "raw": "Vigil Mass 5:30 p.m., Holy Day 6:00 p.m.",
+   "source_url": "https://www.olpphazleton.org/",
+   "fetched_at": "2026-11-02T03:46:33+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "kind_parsed": "mass"
   }
  ],
  "source_url": "https://www.mpbhazleton.com/",
  "fetched_at": "2026-11-02T03:46:39+00:00",
  "redirected_off_host": "olpphazleton.org",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:08+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -593,12 +631,10 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 22
  },
  "has_sunday": true,
- "schedule_dropped": {
-  "other_location": 2
- },
  "groups_dropped": {
   "unmatched": 1,
   "label_not_group": 1

@@ -418,6 +418,34 @@
    "confidence": "medium",
    "template": "wix",
    "kind_parsed": "mass"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:00",
+   "language": "Spanish",
+   "raw": "11:00 AM Spanish Mass",
+   "source_url": "https://www.stcparish.com/mass-times",
+   "fetched_at": "2026-11-02T04:43:17+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "18:00",
+   "language": "Spanish",
+   "raw": "Sunday Masses: 6:00 PM Spanish",
+   "source_url": "https://www.stcparish.com/mass-times",
+   "fetched_at": "2026-11-02T04:43:17+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "topup": true
   }
  ],
  "source_url": "https://www.stcparish.com/",
@@ -454,6 +482,24 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:17+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "info@stcparish.com",
   "phone": "(570) 343-6420",
@@ -466,8 +512,5 @@
   },
   "fetched_at": "2026-11-01T03:58:50+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }
