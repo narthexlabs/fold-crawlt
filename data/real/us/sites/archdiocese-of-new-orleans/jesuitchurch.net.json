@@ -62,8 +62,32 @@
   {
    "category": "ministries",
    "url": "https://jesuitchurch.net/the-society-of-jesus",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://www.jesuitchurch.net/bulletins",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://jesuitchurch.net/calendar-1",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "live",
+   "url": "https://www.jesuitchurch.net/daily-mass-livestream",
    "status": null,
-   "class": "timeout"
+   "class": "conn_error"
+  },
+  {
+   "category": "contact",
+   "url": "https://jesuitchurch.net/location-and-directions",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -85,7 +109,7 @@
    "language_assumed": true,
    "meets": "Each Sunday, 9:30am",
    "description": null,
-   "contact_url": "https://jesuitchurch.net/",
+   "contact_url": "https://jesuitchurch.net/location-and-directions",
    "contact_role": "parish office (see contact page)",
    "source_url": "https://jesuitchurch.net/get-involved",
    "source_kind": "website",
@@ -104,7 +128,7 @@
    "language_assumed": true,
    "meets": null,
    "description": null,
-   "contact_url": "https://jesuitchurch.net/",
+   "contact_url": "https://jesuitchurch.net/location-and-directions",
    "contact_role": "parish office (see contact page)",
    "source_url": "https://jesuitchurch.net/get-involved",
    "source_kind": "website",
@@ -123,7 +147,7 @@
    "language_assumed": true,
    "meets": null,
    "description": "Visit and bring communion to homebound and hospitalized Parishioners. Contact: Parish Office , ext. 224.",
-   "contact_url": "https://jesuitchurch.net/",
+   "contact_url": "https://jesuitchurch.net/location-and-directions",
    "contact_role": "parish office (see contact page)",
    "source_url": "https://jesuitchurch.net/get-involved",
    "source_kind": "website",
@@ -142,7 +166,7 @@
    "language_assumed": true,
    "meets": null,
    "description": null,
-   "contact_url": "https://jesuitchurch.net/",
+   "contact_url": "https://jesuitchurch.net/location-and-directions",
    "contact_role": "parish office (see contact page)",
    "source_url": "https://jesuitchurch.net/get-involved",
    "source_kind": "website",
@@ -161,7 +185,7 @@
    "language_assumed": true,
    "meets": null,
    "description": null,
-   "contact_url": "https://jesuitchurch.net/",
+   "contact_url": "https://jesuitchurch.net/location-and-directions",
    "contact_role": "parish office (see contact page)",
    "source_url": "https://jesuitchurch.net/get-involved",
    "source_kind": "website",
@@ -180,7 +204,7 @@
    "language_assumed": true,
    "meets": null,
    "description": null,
-   "contact_url": "https://jesuitchurch.net/",
+   "contact_url": "https://jesuitchurch.net/location-and-directions",
    "contact_role": "parish office (see contact page)",
    "source_url": "https://jesuitchurch.net/get-involved",
    "source_kind": "website",
@@ -199,7 +223,7 @@
    "language_assumed": true,
    "meets": null,
    "description": "Support families through the initial stages of grief following the death of a loved one. Contact: Parish office, , ext. 224",
-   "contact_url": "https://jesuitchurch.net/",
+   "contact_url": "https://jesuitchurch.net/location-and-directions",
    "contact_role": "parish office (see contact page)",
    "source_url": "https://jesuitchurch.net/get-involved",
    "source_kind": "website",
@@ -218,7 +242,7 @@
    "language_assumed": true,
    "meets": null,
    "description": null,
-   "contact_url": "https://jesuitchurch.net/",
+   "contact_url": "https://jesuitchurch.net/location-and-directions",
    "contact_role": "parish office (see contact page)",
    "source_url": "https://jesuitchurch.net/get-involved",
    "source_kind": "website",
@@ -239,15 +263,21 @@
     "label": "Daily Mass Livestream",
     "platform": "jesuitchurch.net",
     "kind": "link"
+   },
+   {
+    "url": "https://www.jesuitchurch.net/daily-mass-livestream",
+    "label": "Daily Mass Livestream",
+    "platform": "www.jesuitchurch.net",
+    "kind": "link"
    }
   ]
  },
  "bulletin": {
-  "url": "https://jesuitchurch.net/bulletins",
-  "date": null,
-  "kind": "page",
-  "text": "Bulletins",
-  "source_url": "https://jesuitchurch.net/"
+  "url": "https://files.ecatholic.com/22539/bulletins/20250330.pdf?t=1742850624000",
+  "date": "2025-03-30",
+  "kind": "ecatholic_pdf",
+  "text": "March 30 , 2025",
+  "source_url": "https://www.jesuitchurch.net/bulletins"
  },
  "schedule_rows": [
   {
@@ -651,7 +681,7 @@
   }
  ],
  "source_url": "https://jesuitchurch.net/",
- "fetched_at": "2026-11-02T01:06:16+00:00",
+ "fetched_at": "2026-11-02T01:57:11+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
  },
@@ -680,23 +710,24 @@
  },
  "groups_dropped": {
   "unmatched": 6,
-  "noise": 5
+  "noise": 5,
+  "label_not_group": 1
  },
  "office_contact": {
   "email": null,
   "phone": "(504) 529-1477",
   "address": null,
-  "source_url": "https://jesuitchurch.net/",
+  "source_url": "https://jesuitchurch.net/location-and-directions",
   "sources": {
-   "phone": "https://jesuitchurch.net/"
+   "phone": "https://jesuitchurch.net/location-and-directions"
   },
-  "fetched_at": "2026-03-11T11:39:03+00:00",
+  "fetched_at": "2025-02-09T07:28:55+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
  },
  "wayback": {
   "capture_date": "2026-03-11",
   "capture_age_days": 236,
-  "prior_status": "challenge",
+  "prior_status": "wayback-2026-03-11",
   "captures": [
    {
     "kind": "home",
@@ -727,6 +758,30 @@
     "original": "https://jesuitchurch.net/new-parish-members-ministry-opportunities",
     "capture": "2025-03-22",
     "archive_url": "https://web.archive.org/web/20250322121301/https://jesuitchurch.net/new-parish-members-ministry-opportunities"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://jesuitchurch.net/the-society-of-jesus",
+    "capture": "2025-10-06",
+    "archive_url": "https://web.archive.org/web/20251006042504/https://jesuitchurch.net/the-society-of-jesus"
+   },
+   {
+    "kind": "bulletin",
+    "original": "https://www.jesuitchurch.net/bulletins",
+    "capture": "2025-03-25",
+    "archive_url": "https://web.archive.org/web/20250325044628/https://www.jesuitchurch.net/bulletins"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://jesuitchurch.net/calendar-1",
+    "capture": "2025-04-25",
+    "archive_url": "https://web.archive.org/web/20250425222304/https://jesuitchurch.net/calendar-1"
+   },
+   {
+    "kind": "contact",
+    "original": "https://jesuitchurch.net/location-and-directions",
+    "capture": "2025-02-09",
+    "archive_url": "https://web.archive.org/web/20250209072855/https://jesuitchurch.net/location-and-directions"
    }
   ],
   "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
