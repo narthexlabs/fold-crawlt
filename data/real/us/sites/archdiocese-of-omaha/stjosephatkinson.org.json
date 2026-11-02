@@ -16,32 +16,326 @@
  "cities": [],
  "home_url": "https://stjosephatkinson.org/",
  "final_url": "https://stjosephatkinson.org/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "crawl_status": "wayback-2025-04-08",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
    "url": "https://stjosephatkinson.org/",
-   "status": 403,
-   "class": "challenge"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stjosephatkinson.org/schedules",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stjosephatkinson.org/mass-live-stream",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://stjosephatkinson.org/faith-formation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://stjosephatkinson.org/youth-ministry-1",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://stjosephatkinson.org/bulletins",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://stjosephatkinson.org/calendar",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://stjosephatkinson.org/news-events",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "contact",
+   "url": "https://stjosephatkinson.org/contact-us",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "stjosephatkinson.org:youth_ministry|christ+encounter",
+   "name": "Teens Encounter Christ",
+   "category": "youth",
+   "category_label": "Youth",
+   "subcategory": "youth_ministry",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stjosephatkinson.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stjosephatkinson.org/youth-ministry-1",
+   "source_kind": "website",
+   "fetched_at": "2025-03-22T01:49:17+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-04-08"
+  },
+  {
+   "id": "stjosephatkinson.org:youth_ministry",
+   "name": "Youth Ministry",
+   "category": "youth",
+   "category_label": "Youth",
+   "subcategory": "youth_ministry",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stjosephatkinson.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stjosephatkinson.org/youth-ministry-1",
+   "source_kind": "website",
+   "fetched_at": "2025-03-22T01:49:17+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-04-08"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/St-Josephs-Catholic-Church-Atkinson-NE-190623257772671"
+  ],
+  "youtube": [
+   "https://www.youtube.com/c/holtboydcatholic"
+  ],
+  "livestream": [
+   {
+    "url": "https://stjosephatkinson.org/mass-live-stream",
+    "label": "Mass Live Stream",
+    "platform": "stjosephatkinson.org",
+    "kind": "link"
+   },
+   {
+    "url": "https://www.youtube.com/c/holtboydcatholic/live",
+    "label": "CLICK HERE",
+    "platform": "youtube",
+    "kind": "link"
+   }
+  ]
+ },
+ "bulletin": {
+  "url": "https://files.ecatholic.com/17121/bulletins/20251005.pdf?t=1759503374000",
+  "date": "2025-10-05",
+  "kind": "ecatholic_pdf",
+  "text": "October 5 , 2025",
+  "source_url": "https://stjosephatkinson.org/bulletins"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": "English",
+   "raw": "Sunday: 9:00 AM English",
+   "source_url": "https://stjosephatkinson.org/",
+   "fetched_at": "2025-04-08T17:23:15+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-08: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-04-08",
+   "archive_url": "https://web.archive.org/web/20250408172315/https://stjosephatkinson.org/",
+   "capture_date": "2025-04-08"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "08:15",
+   "language": "English",
+   "raw": "Wednesday: 8:15 AM English",
+   "source_url": "https://stjosephatkinson.org/",
+   "fetched_at": "2025-04-08T17:23:15+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-08: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-04-08",
+   "archive_url": "https://web.archive.org/web/20250408172315/https://stjosephatkinson.org/",
+   "capture_date": "2025-04-08"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "08:15",
+   "language": "English",
+   "raw": "Friday: 8:15 AM English",
+   "source_url": "https://stjosephatkinson.org/",
+   "fetched_at": "2025-04-08T17:23:15+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-08: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-04-08",
+   "archive_url": "https://web.archive.org/web/20250408172315/https://stjosephatkinson.org/",
+   "capture_date": "2025-04-08"
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "08:30-08:50",
+   "language": null,
+   "raw": "Sunday: 8:30 AM - 8:50 AM",
+   "source_url": "https://stjosephatkinson.org/",
+   "fetched_at": "2025-04-08T17:23:15+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-08: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-04-08",
+   "archive_url": "https://web.archive.org/web/20250408172315/https://stjosephatkinson.org/",
+   "capture_date": "2025-04-08"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "09:00-15:00",
+   "language": null,
+   "raw": "Wednesday: 9:00 AM - 3:00 PM",
+   "source_url": "https://stjosephatkinson.org/",
+   "fetched_at": "2025-04-08T17:23:15+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-04-08: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-04-08",
+   "archive_url": "https://web.archive.org/web/20250408172315/https://stjosephatkinson.org/",
+   "capture_date": "2025-04-08"
+  }
+ ],
  "source_url": "https://stjosephatkinson.org/",
- "fetched_at": "2026-11-01T05:12:59+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-02T04:07:58+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": true
+   },
+   "score": "high"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "has_sunday": true,
+ "groups_dropped": {},
+ "office_contact": {
+  "email": null,
+  "phone": "(402) 925-2122",
+  "address": "PO Box 220, Atkinson, NE 68713",
+  "source_url": "https://stjosephatkinson.org/contact-us",
+  "sources": {
+   "phone": "https://stjosephatkinson.org/contact-us",
+   "address": "https://stjosephatkinson.org/contact-us"
+  },
+  "fetched_at": "2025-10-08T07:17:21+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2025-04-08",
+  "capture_age_days": 573,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://stjosephatkinson.org/",
+    "capture": "2025-04-08",
+    "archive_url": "https://web.archive.org/web/20250408172315/https://stjosephatkinson.org/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://stjosephatkinson.org/schedules",
+    "capture": "2024-05-22",
+    "archive_url": "https://web.archive.org/web/20240522043049/https://stjosephatkinson.org/schedules"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://stjosephatkinson.org/mass-live-stream",
+    "capture": "2025-03-22",
+    "archive_url": "https://web.archive.org/web/20250322020408/https://stjosephatkinson.org/mass-live-stream"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://stjosephatkinson.org/faith-formation",
+    "capture": "2025-01-13",
+    "archive_url": "https://web.archive.org/web/20250113212057/https://stjosephatkinson.org/faith-formation"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://stjosephatkinson.org/youth-ministry-1",
+    "capture": "2025-03-22",
+    "archive_url": "https://web.archive.org/web/20250322014917/https://stjosephatkinson.org/youth-ministry-1"
+   },
+   {
+    "kind": "bulletin",
+    "original": "https://stjosephatkinson.org/bulletins",
+    "capture": "2025-10-08",
+    "archive_url": "https://web.archive.org/web/20251008063623/https://stjosephatkinson.org/bulletins"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://stjosephatkinson.org/calendar",
+    "capture": "2023-01-28",
+    "archive_url": "https://web.archive.org/web/20230128034820/https://stjosephatkinson.org/calendar"
+   },
+   {
+    "kind": "contact",
+    "original": "https://stjosephatkinson.org/contact-us",
+    "capture": "2025-10-08",
+    "archive_url": "https://web.archive.org/web/20251008071721/https://stjosephatkinson.org/contact-us"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review.",
+  "grade": {
+   "rule": "wayback-verified-2026-11-01",
+   "template": "ecatholic",
+   "trusted_template": false,
+   "has_sunday": true,
+   "groups": 2,
+   "verified": false,
+   "capture_date": "2025-04-08",
+   "applied": false
+  }
  }
 }

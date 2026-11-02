@@ -6,7 +6,7 @@ web.archive.org is unreachable from the project sandbox but reachable from GitHu
 
 **Counts (2026-11-02).**
 - A. Diocese directories: 90 tried; results {'written': 42, 'no-list': 36, 'error': 9, 'cdx-failed': 1, 'no-capture': 2}; written 42 sees, 1944 parishes, 1818 with a website.
-- B. Parish sites: 744 tried; results {'written': 558, 'cdx-failed': 125, 'no-capture': 29, 'no-usable-capture': 32}; written 558 sites: 3802 groups, 525 sites with a bulletin link, 7138 schedule rows (all needs_review).
+- B. Parish sites: 844 tried; results {'written': 633, 'cdx-failed': 143, 'no-capture': 29, 'no-usable-capture': 39}; written 633 sites: 4234 groups, 595 sites with a bulletin link, 7978 schedule rows (all needs_review).
 
 ## What is written
 
