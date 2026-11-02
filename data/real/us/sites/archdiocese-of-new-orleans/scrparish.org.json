@@ -73,8 +73,20 @@
   {
    "category": "calendar",
    "url": "https://scrparish.org/events-1",
-   "status": null,
-   "class": "conn_error"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://scrparish.org/events?page=1",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "contact",
+   "url": "https://www.scrparish.org/contact-us-1",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -96,7 +108,7 @@
    "language_assumed": true,
    "meets": null,
    "description": null,
-   "contact_url": "https://scrparish.org/",
+   "contact_url": "https://www.scrparish.org/contact-us-1",
    "contact_role": "parish office (see contact page)",
    "source_url": "https://www.scrparish.org/get-involved-1",
    "source_kind": "website",
@@ -115,7 +127,7 @@
    "language_assumed": true,
    "meets": null,
    "description": null,
-   "contact_url": "https://scrparish.org/",
+   "contact_url": "https://www.scrparish.org/contact-us-1",
    "contact_role": "parish office (see contact page)",
    "source_url": "https://www.scrparish.org/high-school-faith-formation",
    "source_kind": "website",
@@ -134,7 +146,7 @@
    "language_assumed": true,
    "meets": null,
    "description": null,
-   "contact_url": "https://scrparish.org/",
+   "contact_url": "https://www.scrparish.org/contact-us-1",
    "contact_role": "parish office (see contact page)",
    "source_url": "https://www.scrparish.org/get-involved-1",
    "source_kind": "website",
@@ -613,7 +625,7 @@
   }
  ],
  "source_url": "https://scrparish.org/",
- "fetched_at": "2026-11-02T01:16:35+00:00",
+ "fetched_at": "2026-11-02T01:09:04+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
  },
@@ -633,7 +645,7 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 6
+  "generic_rows": 9
  },
  "has_sunday": true,
  "schedule_dropped": {
@@ -652,12 +664,12 @@
   "email": null,
   "phone": "(504) 887-7821",
   "address": "4317 Richland Avenue, Metairie, LA 70002",
-  "source_url": "https://scrparish.org/",
+  "source_url": "https://www.scrparish.org/contact-us-1",
   "sources": {
-   "phone": "https://scrparish.org/",
-   "address": "https://scrparish.org/"
+   "phone": "https://www.scrparish.org/contact-us-1",
+   "address": "https://www.scrparish.org/contact-us-1"
   },
-  "fetched_at": "2026-03-11T11:38:55+00:00",
+  "fetched_at": "2025-04-28T19:38:17+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
  },
  "wayback": {
@@ -700,6 +712,18 @@
     "original": "https://scrparish.org/bulletins-1",
     "capture": "2025-01-21",
     "archive_url": "https://web.archive.org/web/20250121151919/https://scrparish.org/bulletins-1"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://scrparish.org/events-1",
+    "capture": "2025-10-11",
+    "archive_url": "https://web.archive.org/web/20251011134857/https://scrparish.org/events-1"
+   },
+   {
+    "kind": "contact",
+    "original": "https://www.scrparish.org/contact-us-1",
+    "capture": "2025-04-28",
+    "archive_url": "https://web.archive.org/web/20250428193817/https://www.scrparish.org/contact-us-1"
    }
   ],
   "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."

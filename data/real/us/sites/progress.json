@@ -651,6 +651,14 @@
     "diocese-of-pittsburgh",
     "archdiocese-of-philadelphia"
    ]
+  },
+  {
+   "started_at": "2026-11-02T00:57:03+00:00",
+   "ended_at": "2026-11-02T00:59:08+00:00",
+   "result": "fetched {'ok': 2, 'done': 2, 'halted_egress': 0}; parsed 1 dioceses",
+   "touched": [
+    "diocese-of-greensburg"
+   ]
   }
  ],
  "dioceses": {
@@ -872,8 +880,8 @@
    "ok": 71,
    "by_status": {
     "ok": 71,
-    "wayback": 54,
-    "challenge": 43,
+    "wayback": 64,
+    "challenge": 33,
     "dns": 25,
     "ssl_error": 7,
     "timeout": 3,
@@ -1018,9 +1026,9 @@
    "by_status": {
     "ok": 73,
     "dns": 36,
-    "challenge": 23,
+    "wayback": 29,
     "ssl_error": 18,
-    "wayback": 18,
+    "challenge": 12,
     "timeout": 5,
     "conn_error": 4,
     "parked": 3,
@@ -1077,7 +1085,7 @@
     "not_found": 5,
     "conn_error": 5,
     "http_5xx": 4,
-    "challenge": 3,
+    "wayback": 3,
     "parked": 3,
     "unreachable_via_proxy": 2,
     "not_html": 1,
@@ -1203,7 +1211,8 @@
    "ok": 116,
    "by_status": {
     "ok": 116,
-    "challenge": 18,
+    "challenge": 14,
+    "wayback": 4,
     "conn_error": 4,
     "dns": 3,
     "blocked_429": 1,
@@ -1431,14 +1440,15 @@
    "finished": true,
    "ok": 21,
    "by_status": {
-    "challenge": 91,
+    "challenge": 90,
     "ok": 21,
     "dns": 10,
     "conn_error": 2,
     "ssl_error": 2,
     "timeout": 2,
     "not_found": 2,
-    "http_5xx": 1
+    "http_5xx": 1,
+    "wayback": 1
    }
   },
   "diocese-of-paterson": {
@@ -1691,10 +1701,11 @@
    "ok": 86,
    "by_status": {
     "ok": 86,
-    "challenge": 5,
     "not_found": 5,
     "timeout": 5,
+    "challenge": 4,
     "parked": 1,
+    "wayback": 1,
     "social_only": 1,
     "ssl_error": 1
    }
@@ -1941,11 +1952,11 @@
   },
   "diocese-of-greensburg": {
    "sites_in_list": 92,
-   "records": 96,
+   "records": 98,
    "finished": true,
-   "ok": 77,
+   "ok": 79,
    "by_status": {
-    "ok": 77,
+    "ok": 79,
     "challenge": 8,
     "dns": 6,
     "timeout": 2,
@@ -2011,8 +2022,9 @@
    "ok": 23,
    "by_status": {
     "ok": 23,
-    "challenge": 8,
+    "wayback": 5,
     "robots_disallowed": 5,
+    "challenge": 3,
     "ssl_error": 2,
     "dns": 1,
     "parked": 1,
@@ -2333,8 +2345,9 @@
    "finished": true,
    "ok": 9,
    "by_status": {
-    "challenge": 65,
+    "challenge": 57,
     "ok": 9,
+    "wayback": 8,
     "dns": 2,
     "not_found": 1,
     "parked": 1
@@ -2364,13 +2377,13 @@
    "ok": 46,
    "by_status": {
     "ok": 46,
-    "challenge": 11,
     "dns": 9,
+    "wayback": 8,
     "ssl_error": 5,
     "timeout": 5,
+    "challenge": 4,
     "parked": 3,
-    "conn_error": 2,
-    "blocked_429": 1
+    "conn_error": 2
    }
   },
   "diocese-of-brownsville": {
@@ -2510,13 +2523,14 @@
    "ok": 28,
    "by_status": {
     "ok": 28,
-    "challenge": 17,
+    "wayback": 13,
     "dns": 13,
+    "challenge": 6,
     "not_found": 4,
     "social_only": 3,
     "ssl_error": 3,
-    "blocked_429": 3,
     "parked": 1,
+    "blocked_429": 1,
     "not_html": 1,
     "timeout": 1
    }
@@ -3310,10 +3324,11 @@
    "finished": true,
    "ok": 12,
    "by_status": {
-    "challenge": 13,
     "ok": 12,
+    "challenge": 10,
     "dns": 7,
     "ssl_error": 5,
+    "wayback": 3,
     "timeout": 2
    }
   },
@@ -3464,8 +3479,9 @@
    "finished": true,
    "ok": 12,
    "by_status": {
-    "challenge": 15,
     "ok": 12,
+    "wayback": 8,
+    "challenge": 7,
     "dns": 2,
     "ssl_error": 2,
     "conn_error": 1
@@ -4024,7 +4040,7 @@
    "by_status": {
     "dns": 3,
     "ok": 3,
-    "challenge": 1
+    "wayback": 1
    }
   },
   "archdiocese-of-the-military-services": {
@@ -4219,9 +4235,9 @@
  },
  "totals": {
   "sites_in_list": 19365,
-  "records": 20137,
-  "ok": 10791
+  "records": 20139,
+  "ok": 10793
  },
  "us_parish_pages_discovermass": 20147,
- "updated_at": "2026-11-02T00:10:09+00:00"
+ "updated_at": "2026-11-02T00:59:14+00:00"
 }
