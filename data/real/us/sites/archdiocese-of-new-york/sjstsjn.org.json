@@ -21,32 +21,564 @@
  ],
  "home_url": "https://sjstsjn.org/",
  "final_url": "https://sjstsjn.org/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "crawl_status": "wayback-2026-05-11",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
    "url": "https://sjstsjn.org/",
-   "status": 403,
-   "class": "challenge"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://sjstsjn.org/mass-schedules",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://sjstsjn.org/confession",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://sjstsjn.org/liturgical-ministries",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://sjstsjn.org/st-vincent-de-paul-society",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://sjstsjn.org/bulletins",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://sjstsjn.org/parish-calendar",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://sjstsjn.org/contact-us",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "sjstsjn.org:ocia",
+   "name": "OCIA (becoming Catholic)",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "ocia",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "The RCIA is a program to help all of us understand and recognize more clearly the presence of Christ in the Church and in our lives. The program is available to:",
+   "contact_url": "https://sjstsjn.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://sjstsjn.org/liturgical-ministries",
+   "source_kind": "website",
+   "fetched_at": "2024-12-02T19:39:08+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-05-11"
+  },
+  {
+   "id": "sjstsjn.org:servers",
+   "name": "Altar Servers",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "altar_servers",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "This ministry is open to all young people of the parish in the fourth grade and above. The servers assist the celebrant in the preparation of the Mass, and assist throughout the celebration of the Eucharist. Altar servers are also…",
+   "contact_url": "https://sjstsjn.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://sjstsjn.org/liturgical-ministries",
+   "source_kind": "website",
+   "fetched_at": "2024-12-02T19:39:08+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-05-11"
+  },
+  {
+   "id": "sjstsjn.org:emhc",
+   "name": "Extraordinary Ministers of Holy Communion",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "emhc",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "Extraordinary Ministers of Holy Communion, or Eucharist Ministers participate in the Mass in the distribution of the Eucharist. There is a group of Eucharist Ministers who bring Holy Communion to the homebound. Whether in the sanctuary at Mass or visiting…",
+   "contact_url": "https://sjstsjn.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://sjstsjn.org/liturgical-ministries",
+   "source_kind": "website",
+   "fetched_at": "2024-12-02T19:39:08+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-05-11"
+  },
+  {
+   "id": "sjstsjn.org:lectors",
+   "name": "Lectors",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "lectors",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "Lectors proclaim the Word of God at Mass. As stated in the Constitution of the Sacred Liturgy: \"He is present in His Word, since it is He Himself who speaks when the Holy Scriptures are read in church\". This is…",
+   "contact_url": "https://sjstsjn.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://sjstsjn.org/liturgical-ministries",
+   "source_kind": "website",
+   "fetched_at": "2024-12-02T19:39:08+00:00",
+   "confidence": "low",
+   "source": "wayback-2026-05-11"
+  },
+  {
+   "id": "sjstsjn.org:ushers",
+   "name": "Ministers of Hospitality - Ushers",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "ushers_greeters",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "The first people to greet the parishioners when they arrive for Mass and conferring of sacraments are the ushers. They are very instrumental in maintaining reverence and order at the Mass. The dedication of this group sometimes goes unheralded, and…",
+   "contact_url": "https://sjstsjn.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://sjstsjn.org/liturgical-ministries",
+   "source_kind": "website",
+   "fetched_at": "2024-12-02T19:39:08+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-05-11"
+  },
+  {
+   "id": "sjstsjn.org:choir",
+   "name": "Ministry of Music",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "choir_music",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "The ministry of hymns and music set the tone of our worship. Our opening song gathers us together. The music and song throughout the Mass reminds us of the readings of the day and the liturgical season. Our Junior Choir…",
+   "contact_url": "https://sjstsjn.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://sjstsjn.org/liturgical-ministries",
+   "source_kind": "website",
+   "fetched_at": "2024-12-02T19:39:08+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-05-11"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/profile.php?id=61558994566706"
+  ],
+  "instagram": [
+   "https://www.instagram.com/sjstsjnreligioused/"
+  ],
+  "x": [
+   "https://x.com/CardinalDolan"
+  ],
+  "flocknote": [
+   "https://sjstsjnparish.flocknote.com"
+  ]
+ },
+ "bulletin": {
+  "url": "https://files.ecatholic.com/6604/bulletins/20241201.pdf?t=1732631791000",
+  "date": "2024-12-01",
+  "kind": "ecatholic_pdf",
+  "text": "December 1 , 2024",
+  "source_url": "https://sjstsjn.org/bulletins"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Mass Schedules: St. Joseph: 5:00 P.M.",
+   "source_url": "https://sjstsjn.org/mass-schedules",
+   "fetched_at": "2025-10-05T15:59:09+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-05-11: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-05-11",
+   "archive_url": "https://web.archive.org/web/20251005155909/https://sjstsjn.org/mass-schedules",
+   "capture_date": "2025-10-05"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "18:00",
+   "language": null,
+   "raw": "Mass Schedules: St. Thomas: 6:00 P.M.",
+   "source_url": "https://sjstsjn.org/mass-schedules",
+   "fetched_at": "2025-10-05T15:59:09+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-05-11: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-05-11",
+   "archive_url": "https://web.archive.org/web/20251005155909/https://sjstsjn.org/mass-schedules",
+   "capture_date": "2025-10-05"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Mass Schedules: St. Joseph: 8:00 A.M., 10:00 A.M., 12:00 Noon.",
+   "source_url": "https://sjstsjn.org/mass-schedules",
+   "fetched_at": "2025-10-05T15:59:09+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-05-11: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-05-11",
+   "archive_url": "https://web.archive.org/web/20251005155909/https://sjstsjn.org/mass-schedules",
+   "capture_date": "2025-10-05"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "12:00",
+   "language": null,
+   "raw": "Mass Schedules: St. Joseph: 8:00 A.M., 10:00 A.M., 12:00 Noon.",
+   "source_url": "https://sjstsjn.org/mass-schedules",
+   "fetched_at": "2025-10-05T15:59:09+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-05-11: read by a person before it is shown",
+   "confidence": "low",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-05-11",
+   "archive_url": "https://web.archive.org/web/20251005155909/https://sjstsjn.org/mass-schedules",
+   "capture_date": "2025-10-05"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": null,
+   "raw": "St. Thomas: 9:00 A.M., 10:00A.M. - Italian Mass",
+   "source_url": "https://sjstsjn.org/mass-schedules",
+   "fetched_at": "2025-10-05T15:59:09+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-05-11: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-05-11",
+   "archive_url": "https://web.archive.org/web/20251005155909/https://sjstsjn.org/mass-schedules",
+   "capture_date": "2025-10-05"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": "Italian",
+   "raw": "St. Thomas: 9:00 A.M., 10:00A.M. - Italian Mass",
+   "source_url": "https://sjstsjn.org/mass-schedules",
+   "fetched_at": "2025-10-05T15:59:09+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-05-11: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-05-11",
+   "archive_url": "https://web.archive.org/web/20251005155909/https://sjstsjn.org/mass-schedules",
+   "capture_date": "2025-10-05"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:00",
+   "language": null,
+   "raw": "Mass Schedules: 11:00 A.M., 1:00 P.M., 6:00 P.M.",
+   "source_url": "https://sjstsjn.org/mass-schedules",
+   "fetched_at": "2025-10-05T15:59:09+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-05-11: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-05-11",
+   "archive_url": "https://web.archive.org/web/20251005155909/https://sjstsjn.org/mass-schedules",
+   "capture_date": "2025-10-05"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "13:00",
+   "language": null,
+   "raw": "Mass Schedules: 11:00 A.M., 1:00 P.M., 6:00 P.M.",
+   "source_url": "https://sjstsjn.org/mass-schedules",
+   "fetched_at": "2025-10-05T15:59:09+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-05-11: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-05-11",
+   "archive_url": "https://web.archive.org/web/20251005155909/https://sjstsjn.org/mass-schedules",
+   "capture_date": "2025-10-05"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "18:00",
+   "language": null,
+   "raw": "Mass Schedules: 11:00 A.M., 1:00 P.M., 6:00 P.M.",
+   "source_url": "https://sjstsjn.org/mass-schedules",
+   "fetched_at": "2025-10-05T15:59:09+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-05-11: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-05-11",
+   "archive_url": "https://web.archive.org/web/20251005155909/https://sjstsjn.org/mass-schedules",
+   "capture_date": "2025-10-05"
+  },
+  {
+   "kind": "mass",
+   "day": "First Saturday of the month",
+   "time": "19:15",
+   "language": null,
+   "raw": "Saturday 6:00 PM 7:15 PM [Mass intention withheld]",
+   "source_url": "https://sjstsjn.org/mass-schedules",
+   "fetched_at": "2025-10-05T15:59:09+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-05-11: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-05-11",
+   "archive_url": "https://web.archive.org/web/20251005155909/https://sjstsjn.org/mass-schedules",
+   "capture_date": "2025-10-05"
+  },
+  {
+   "kind": "adoration",
+   "day": "Monday",
+   "time": "13:00-16:00",
+   "language": null,
+   "raw": "ADORATION OF THE MOST BLESSED SACRAMENT: Monday 1-4 PM (ST)",
+   "source_url": "https://sjstsjn.org/",
+   "fetched_at": "2026-05-11T03:10:19+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-05-11: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-05-11",
+   "archive_url": "https://web.archive.org/web/20260511031019/https://sjstsjn.org/",
+   "capture_date": "2026-05-11"
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "18:00-21:00",
+   "language": null,
+   "raw": "ADORATION OF THE MOST BLESSED SACRAMENT: Tuesday 6-9 PM (ST)",
+   "source_url": "https://sjstsjn.org/",
+   "fetched_at": "2026-05-11T03:10:19+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-05-11: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-05-11",
+   "archive_url": "https://web.archive.org/web/20260511031019/https://sjstsjn.org/",
+   "capture_date": "2026-05-11"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "13:00-16:00",
+   "language": null,
+   "raw": "ADORATION OF THE MOST BLESSED SACRAMENT: Wednesday 1-4 PM (ST)",
+   "source_url": "https://sjstsjn.org/",
+   "fetched_at": "2026-05-11T03:10:19+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-05-11: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-05-11",
+   "archive_url": "https://web.archive.org/web/20260511031019/https://sjstsjn.org/",
+   "capture_date": "2026-05-11"
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "17:00-20:00",
+   "language": null,
+   "raw": "ADORATION OF THE MOST BLESSED SACRAMENT: Thursday 5-8 PM (SJ)",
+   "source_url": "https://sjstsjn.org/",
+   "fetched_at": "2026-05-11T03:10:19+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-05-11: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-05-11",
+   "archive_url": "https://web.archive.org/web/20260511031019/https://sjstsjn.org/",
+   "capture_date": "2026-05-11"
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "09:30-13:00",
+   "language": null,
+   "raw": "ADORATION OF THE MOST BLESSED SACRAMENT: Friday 9:30 AM-1:00 PM (SJ)",
+   "source_url": "https://sjstsjn.org/",
+   "fetched_at": "2026-05-11T03:10:19+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-05-11: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-05-11",
+   "archive_url": "https://web.archive.org/web/20260511031019/https://sjstsjn.org/",
+   "capture_date": "2026-05-11"
+  },
+  {
+   "kind": "confession",
+   "day": "First Sunday of the month",
+   "time": "15:30",
+   "language": "Polish",
+   "raw": "Confessions will be heard in polish at 3:30pm.",
+   "source_url": "https://sjstsjn.org/",
+   "fetched_at": "2026-05-11T03:10:19+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-05-11: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-05-11",
+   "archive_url": "https://web.archive.org/web/20260511031019/https://sjstsjn.org/",
+   "capture_date": "2026-05-11"
+  }
+ ],
  "source_url": "https://sjstsjn.org/",
- "fetched_at": "2026-11-01T01:57:08+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-02T02:29:07+00:00",
  "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
+  "screened_by": "ingest/public/privacy.py screen()",
+  "intentions_withheld": 1
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 13
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "text:dated_block": 9,
+  "text:skipped_section": 12,
+  "text:other_location": 4,
+  "text:not_a_service": 2,
+  "text:no_day": 2,
+  "prose": 1
+ },
+ "groups_dropped": {
+  "noise": 2
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(718) 356-0294",
+  "address": null,
+  "source_url": "https://sjstsjn.org/contact-us",
+  "sources": {
+   "phone": "https://sjstsjn.org/contact-us"
+  },
+  "fetched_at": "2026-05-11T03:18:08+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2026-05-11",
+  "capture_age_days": 175,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://sjstsjn.org/",
+    "capture": "2026-05-11",
+    "archive_url": "https://web.archive.org/web/20260511031019/https://sjstsjn.org/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://sjstsjn.org/mass-schedules",
+    "capture": "2025-10-05",
+    "archive_url": "https://web.archive.org/web/20251005155909/https://sjstsjn.org/mass-schedules"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://sjstsjn.org/confession",
+    "capture": "2024-12-02",
+    "archive_url": "https://web.archive.org/web/20241202195726/https://sjstsjn.org/confession"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://sjstsjn.org/liturgical-ministries",
+    "capture": "2024-12-02",
+    "archive_url": "https://web.archive.org/web/20241202193908/https://sjstsjn.org/liturgical-ministries"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://sjstsjn.org/st-vincent-de-paul-society",
+    "capture": "2024-12-02",
+    "archive_url": "https://web.archive.org/web/20241202195105/https://sjstsjn.org/st-vincent-de-paul-society"
+   },
+   {
+    "kind": "bulletin",
+    "original": "https://sjstsjn.org/bulletins",
+    "capture": "2024-12-02",
+    "archive_url": "https://web.archive.org/web/20241202194721/https://sjstsjn.org/bulletins"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://sjstsjn.org/parish-calendar",
+    "capture": "2024-12-02",
+    "archive_url": "https://web.archive.org/web/20241202194344/https://sjstsjn.org/parish-calendar"
+   },
+   {
+    "kind": "contact",
+    "original": "https://sjstsjn.org/contact-us",
+    "capture": "2026-05-11",
+    "archive_url": "https://web.archive.org/web/20260511031808/https://sjstsjn.org/contact-us"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }
