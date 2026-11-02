@@ -2,15 +2,21 @@
  "domain": "camdencathedral.com",
  "diocese": "diocese-of-camden",
  "matched_church_ids": [
+  "cathedral-of-the-immaculate-conception-camden-nj",
+  "diocese-of-camden:The Parish of the Cathedral of the Immaculate Conception",
   "wd-Q5052443"
  ],
  "matched": {
-  "directory": [],
+  "directory": [
+   "diocese-of-camden:The Parish of the Cathedral of the Immaculate Conception"
+  ],
   "discovermass": [
+   "cathedral-of-the-immaculate-conception-camden-nj",
    "wd-Q5052443"
   ]
  },
  "names": [
+  "The Parish of the Cathedral of the Immaculate Conception",
   "Cathedral of the Immaculate Conception"
  ],
  "cities": [
@@ -19,7 +25,7 @@
  "home_url": "http://www.camdencathedral.com/",
  "final_url": "https://www.camdencathedral.com/",
  "crawl_status": "ok",
- "crawl_env": "sandbox",
+ "crawl_env": "runner-rendered",
  "robots_note": "ok",
  "pages": [
   {
@@ -36,9 +42,15 @@
   },
   {
    "category": "mass_times",
-   "url": "http://www.camdencathedral.com/mass-schedule2.html",
-   "status": null,
-   "class": "dns"
+   "url": "https://www.camdencathedral.com/mass-schedule2.html",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.camdencathedral.com/sacraments-list.html",
+   "status": 200,
+   "class": "ok"
   },
   {
    "category": "ministries",
@@ -65,10 +77,10 @@
    "class": "ok"
   },
   {
-   "category": "confession",
-   "url": "https://www.camdencathedral.com/sacraments-list.html",
-   "status": 200,
-   "class": "ok"
+   "category": "adoration",
+   "url": "https://www.camdencathedral.com/adoration",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -78,7 +90,26 @@
   ]
  },
  "template": "generic-html:weebly",
- "groups": [],
+ "groups": [
+  {
+   "id": "camdencathedral.com:other_st_joseph_polish_apostolate",
+   "name": "St. Joseph Polish Apostolate",
+   "category": "other",
+   "category_label": "Other",
+   "subcategory": "unclassified",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.camdencathedral.com/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.camdencathedral.com/st-joseph-polish-apostolate.html",
+   "source_kind": "website",
+   "fetched_at": "2026-11-02T07:16:31+00:00",
+   "confidence": "low"
+  }
+ ],
  "calendar_feeds": [
   {
    "feed_id": "camdencathedral.com:ics:dd971a73",
@@ -94,7 +125,7 @@
    "feed_key": "dd971a7311d3",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T03:48:43+00:00",
+    "fetched_at": "2026-11-02T07:18:58+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -124,56 +155,61 @@
  },
  "schedule_rows": [
   {
-   "kind": "mass",
-   "day": "Friday",
+   "kind": "other",
+   "day": "Holy days",
    "time": "12:05",
    "language": "Bilingual",
    "raw": "Misa en Semana - lunes a viernes: 12:05 pm Bilingual (Spanish/English)",
    "source_url": "https://www.camdencathedral.com/mass-schedule2.html",
-   "fetched_at": "2026-11-02T04:47:55+00:00",
+   "fetched_at": "2026-11-02T07:16:23+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "weebly",
-   "day_expanded_from": "lunes a viernes",
-   "day_parsed": "Monday",
-   "day_bound_from_line": true,
-   "topup": true
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "19:00",
+   "language": "Spanish",
+   "raw": "Misa en Semana - lunes a viernes: 7pm Español",
+   "source_url": "https://www.camdencathedral.com/mass-schedule2.html",
+   "fetched_at": "2026-11-02T07:16:23+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly",
+   "kind_parsed": "mass"
   },
   {
    "kind": "mass",
    "day": "Sunday",
    "time": "10:00",
-   "language": "Bilingual",
-   "raw": "Sunday Mass: 10:00 am Bilingual (Polish/English)",
+   "language": "English",
+   "raw": "10:00 am Bilingual (Polish/English)",
    "source_url": "https://www.camdencathedral.com/mass-schedule2.html",
-   "fetched_at": "2026-11-02T04:47:55+00:00",
+   "fetched_at": "2026-11-02T07:16:23+00:00",
    "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "weebly",
-   "topup": true
+   "review_reason": "schedule_box"
   },
   {
    "kind": "mass",
    "day": "Friday",
    "time": "08:30",
    "language": null,
-   "raw": "Weekday Mass: Friday 8:30 am in the Rectory Chapel",
+   "raw": "Friday 8:30 am in the Rectory Chapel",
    "source_url": "https://www.camdencathedral.com/mass-schedule2.html",
-   "fetched_at": "2026-11-02T04:47:55+00:00",
+   "fetched_at": "2026-11-02T07:16:23+00:00",
    "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "weebly",
-   "topup": true
+   "review_reason": "schedule_box"
   }
  ],
  "source_url": "http://www.camdencathedral.com/",
- "fetched_at": "2026-11-01T02:19:02+00:00",
+ "fetched_at": "2026-11-02T07:16:40+00:00",
  "schedule_template": {
   "template": "weebly",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -187,15 +223,18 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 5
  },
+ "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 8
+  "other_location": 12,
+  "box_rows_added": 2
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-10-31",
-  "window_end_exclusive": "2027-01-29",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
@@ -203,22 +242,20 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "office_contact": {
+  "email": null,
+  "phone": "(856) 964-1580",
+  "address": "15 N7th St. Camden, NJ 08102",
+  "source_url": "https://www.camdencathedral.com/",
+  "sources": {
+   "phone": "https://www.camdencathedral.com/",
+   "address": "https://www.camdencathedral.com/"
+  },
+  "fetched_at": "2026-11-02T07:16:20+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
  },
- "topup": {
-  "kinds": [
-   "adoration",
-   "confession",
-   "liturgy"
-  ],
-  "at": "2026-11-02T04:47:57+00:00",
-  "requests": 3,
-  "found": [
-   "confession",
-   "liturgy"
-  ],
-  "rows_added": 3,
-  "mode": "merge"
- }
+ "fetch_mode": "rendered"
 }
