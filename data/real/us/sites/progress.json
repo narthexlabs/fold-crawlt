@@ -661,11 +661,12 @@
    ]
   },
   {
-   "started_at": "2026-11-02T01:56:04+00:00",
-   "ended_at": "2026-11-02T01:56:08+00:00",
-   "result": "fetched {'dns': 1, 'done': 1, 'halted_egress': 0}; parsed 1 dioceses",
+   "started_at": "2026-11-02T01:56:02+00:00",
+   "ended_at": "2026-11-02T01:56:37+00:00",
+   "result": "fetched {'dns': 11, 'done': 24, 'ssl_error': 5, 'parked': 1, 'not_found': 1, 'challenge': 1, 'ok': 5, 'halted_egress': 0}; parsed 2 dioceses",
    "touched": [
-    "diocese-of-lubbock"
+    "unassigned-mn",
+    "diocese-of-new-ulm"
    ]
   }
  ],
@@ -1665,13 +1666,13 @@
   },
   "unassigned-mn": {
    "sites_in_list": 116,
-   "records": 153,
+   "records": 154,
    "finished": true,
    "ok": 95,
    "by_status": {
     "ok": 95,
     "challenge": 32,
-    "dns": 9,
+    "dns": 10,
     "ssl_error": 8,
     "conn_error": 3,
     "robots_disallowed": 2,
@@ -3317,13 +3318,17 @@
   },
   "diocese-of-new-ulm": {
    "sites_in_list": 39,
-   "records": 7,
-   "finished": false,
-   "ok": 5,
+   "records": 41,
+   "finished": true,
+   "ok": 15,
    "by_status": {
-    "ok": 5,
-    "challenge": 1,
-    "not_found": 1
+    "ok": 15,
+    "dns": 12,
+    "ssl_error": 6,
+    "challenge": 4,
+    "not_found": 2,
+    "conn_error": 1,
+    "parked": 1
    }
   },
   "diocese-of-monterey": {
@@ -3978,7 +3983,7 @@
   },
   "diocese-of-lubbock": {
    "sites_in_list": 12,
-   "records": 13,
+   "records": 12,
    "finished": true,
    "ok": 4,
    "by_status": {
@@ -4242,9 +4247,9 @@
  },
  "totals": {
   "sites_in_list": 19937,
-  "records": 20140,
-  "ok": 10793
+  "records": 20174,
+  "ok": 10803
  },
  "us_parish_pages_discovermass": 20147,
- "updated_at": "2026-11-02T01:56:27+00:00"
+ "updated_at": "2026-11-02T01:56:39+00:00"
 }
