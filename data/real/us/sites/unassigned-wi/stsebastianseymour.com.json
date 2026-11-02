@@ -19,7 +19,7 @@
  "home_url": "https://www.stsebastianseymour.com/",
  "final_url": "https://www.stsebastianseymour.com/",
  "crawl_status": "ok",
- "crawl_env": "sandbox",
+ "crawl_env": "runner-rendered",
  "robots_note": "ok",
  "pages": [
   {
@@ -41,6 +41,12 @@
    "class": "ok"
   },
   {
+   "category": "confession",
+   "url": "https://www.stsebastianseymour.com/sacraments",
+   "status": 200,
+   "class": "ok"
+  },
+  {
    "category": "bulletin",
    "url": "https://www.stsebastianseymour.com/bulletins",
    "status": 200,
@@ -55,12 +61,6 @@
   {
    "category": "contact",
    "url": "https://www.stsebastianseymour.com/contact",
-   "status": 200,
-   "class": "ok"
-  },
-  {
-   "category": "confession",
-   "url": "https://www.stsebastianseymour.com/sacraments",
    "status": 200,
    "class": "ok"
   }
@@ -88,7 +88,7 @@
    "feed_key": "c194926b0fae",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-02T04:58:44+00:00",
+    "fetched_at": "2026-11-02T07:20:46+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -111,7 +111,7 @@
    "language": null,
    "raw": "Weekday Mass: Wednesday | 9:00am",
    "source_url": "https://www.stsebastianseymour.com/",
-   "fetched_at": "2026-11-01T22:15:27+00:00",
+   "fetched_at": "2026-11-02T07:17:48+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -124,7 +124,7 @@
    "language": null,
    "raw": "Weekend Mass: Sunday | 8:00am",
    "source_url": "https://www.stsebastianseymour.com/",
-   "fetched_at": "2026-11-01T22:15:27+00:00",
+   "fetched_at": "2026-11-02T07:17:48+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -137,7 +137,7 @@
    "language": null,
    "raw": "Friday: 8:15am Mass",
    "source_url": "https://www.stsebastianseymour.com/mass-times",
-   "fetched_at": "2026-11-01T22:15:29+00:00",
+   "fetched_at": "2026-11-02T07:17:50+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "high",
@@ -145,19 +145,7 @@
   }
  ],
  "source_url": "https://www.stsebastianseymour.com/",
- "fetched_at": "2026-11-01T22:15:34+00:00",
- "topup": {
-  "kinds": [
-   "adoration",
-   "confession",
-   "liturgy"
-  ],
-  "at": "2026-11-02T04:41:36+00:00",
-  "requests": 1,
-  "found": [
-   "confession"
-  ]
- },
+ "fetched_at": "2026-11-02T07:17:58+00:00",
  "schedule_template": {
   "template": "generic_strict",
   "version": "ca-sites/3",
@@ -201,10 +189,11 @@
   "sources": {
    "phone": "https://www.stsebastianseymour.com/contact"
   },
-  "fetched_at": "2026-11-01T22:15:33+00:00",
+  "fetched_at": "2026-11-02T07:17:58+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
- }
+ },
+ "fetch_mode": "rendered"
 }
