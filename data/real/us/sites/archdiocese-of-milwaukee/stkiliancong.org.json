@@ -21,33 +21,299 @@
   "Neosho"
  ],
  "home_url": "https://stkiliancong.org/",
- "final_url": "https://stkiliancong.org/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "final_url": "https://www.stkiliancong.org/",
+ "crawl_status": "wayback-2026-01-06",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
-   "url": "https://stkiliancong.org/",
-   "status": 403,
-   "class": "challenge"
+   "url": "https://www.stkiliancong.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stkiliancong.org/liturgy",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.stkiliancong.org/mass-times",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.stkiliancong.org/christian-formation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://stkiliancong.org/formation-schedules-1",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://stkiliancong.org/ministries",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://www.stkiliancong.org/bulletins-1",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.stkiliancong.org/upcoming-events",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://stkiliancong.org/calendar-1",
+   "status": null,
+   "class": "conn_error"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "stkiliancong.org:sick|communion",
+   "name": "Homebound Communion Ministers",
+   "category": "service_mercy",
+   "category_label": "Service & mercy",
+   "subcategory": "sick_homebound",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.stkiliancong.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stkiliancong.org/ministries",
+   "source_kind": "website",
+   "fetched_at": "2025-06-25T04:53:27+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-01-06"
+  },
+  {
+   "id": "stkiliancong.org:altar_society|art",
+   "name": "Art and Environment",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "altar_society_environment",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.stkiliancong.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stkiliancong.org/ministries",
+   "source_kind": "website",
+   "fetched_at": "2025-06-25T04:53:27+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-01-06"
+  },
+  {
+   "id": "stkiliancong.org:choir",
+   "name": "SCRIP Program Music and Choir",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "choir_music",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.stkiliancong.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stkiliancong.org/ministries",
+   "source_kind": "website",
+   "fetched_at": "2025-06-25T04:53:27+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-01-06"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/StKilianParishSchool"
+  ],
+  "instagram": [
+   "https://www.instagram.com/stkilianhartford/"
+  ]
+ },
+ "bulletin": {
+  "url": "https://www.stkiliancong.org/bulletins-1",
+  "date": null,
+  "kind": "page",
+  "text": "Bulletins",
+  "source_url": "https://www.stkiliancong.org/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "16:30",
+   "language": null,
+   "raw": "Regular Mass Schedule: 4:30 PM - St. Kilian, Hartford",
+   "source_url": "https://www.stkiliancong.org/mass-times",
+   "fetched_at": "2025-04-20T23:05:56+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-01-06: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-01-06",
+   "archive_url": "https://web.archive.org/web/20250420230556/https://www.stkiliancong.org/mass-times",
+   "capture_date": "2025-04-20"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": null,
+   "raw": "Regular Mass Schedule: 10:00 AM - St. Kilian, Hartford",
+   "source_url": "https://www.stkiliancong.org/mass-times",
+   "fetched_at": "2025-04-20T23:05:56+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-01-06: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-01-06",
+   "archive_url": "https://web.archive.org/web/20250420230556/https://www.stkiliancong.org/mass-times",
+   "capture_date": "2025-04-20"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "20:00",
+   "language": null,
+   "raw": "8:00 PM - St. Kilian, Hartford (Mass)",
+   "source_url": "https://www.stkiliancong.org/mass-times",
+   "fetched_at": "2025-04-20T23:05:56+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-01-06: read by a person before it is shown",
+   "confidence": "low",
+   "template": "ecatholic+generic_strict",
+   "kind_parsed": "mass",
+   "source": "wayback-2026-01-06",
+   "archive_url": "https://web.archive.org/web/20250420230556/https://www.stkiliancong.org/mass-times",
+   "capture_date": "2025-04-20"
+  }
+ ],
  "source_url": "https://stkiliancong.org/",
- "fetched_at": "2026-11-01T02:00:28+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-02T00:36:42+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 12
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "text:other_location": 8,
+  "text:skipped_section": 1,
+  "text:no_kind": 3,
+  "text:relative_time": 1
+ },
+ "groups_dropped": {
+  "noise": 2,
+  "unmatched": 1
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(262) 673-4831",
+  "address": null,
+  "source_url": "https://www.stkiliancong.org/",
+  "sources": {
+   "phone": "https://www.stkiliancong.org/"
+  },
+  "fetched_at": "2026-01-06T17:27:14+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2026-01-06",
+  "capture_age_days": 300,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://www.stkiliancong.org/",
+    "capture": "2026-01-06",
+    "archive_url": "https://web.archive.org/web/20260106172714/https://www.stkiliancong.org/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://stkiliancong.org/liturgy",
+    "capture": "2025-03-22",
+    "archive_url": "https://web.archive.org/web/20250322001128/https://stkiliancong.org/liturgy"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://www.stkiliancong.org/mass-times",
+    "capture": "2025-04-20",
+    "archive_url": "https://web.archive.org/web/20250420230556/https://www.stkiliancong.org/mass-times"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://www.stkiliancong.org/christian-formation",
+    "capture": "2025-03-19",
+    "archive_url": "https://web.archive.org/web/20250319151711/https://www.stkiliancong.org/christian-formation"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://stkiliancong.org/formation-schedules-1",
+    "capture": "2025-05-12",
+    "archive_url": "https://web.archive.org/web/20250512043043/https://stkiliancong.org/formation-schedules-1"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://stkiliancong.org/ministries",
+    "capture": "2025-06-25",
+    "archive_url": "https://web.archive.org/web/20250625045327/https://stkiliancong.org/ministries"
+   },
+   {
+    "kind": "bulletin",
+    "original": "https://www.stkiliancong.org/bulletins-1",
+    "capture": "2024-06-24",
+    "archive_url": "https://web.archive.org/web/20240624174331/https://www.stkiliancong.org/bulletins-1"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://www.stkiliancong.org/upcoming-events",
+    "capture": "2025-04-20",
+    "archive_url": "https://web.archive.org/web/20250420223228/https://www.stkiliancong.org/upcoming-events"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }
