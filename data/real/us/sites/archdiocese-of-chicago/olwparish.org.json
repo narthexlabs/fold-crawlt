@@ -96,6 +96,24 @@
    "url": "https://olwparish.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://olwparish.org/events/christ-is-forgiving-and-merciful-reconciliation-saturdays-at-1000-am/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://olwparish.org/events/come-adore-prayer-adoration-wednesdays-at-200-pm/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://olwparish.org/events/weekend-liturgy-e-worship-aid/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -679,6 +697,19 @@
  "schedule_rows": [
   {
    "kind": "mass",
+   "day": "Tuesday",
+   "time": "18:00",
+   "language": null,
+   "raw": "Monday through Saturday at 8:30 am (also live-streamed on FACEBOOK and YOUTUBE) Tuesdays Together: Mass at 6:00 pm, followed by Adoration and Confession",
+   "source_url": "https://olwparish.org/",
+   "fetched_at": "2026-11-01T07:27:57+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
    "day": "Monday",
    "time": "08:30",
    "language": null,
@@ -837,6 +868,90 @@
    "template": "wordpress"
   },
   {
+   "kind": "devotion",
+   "day": "Monday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Pray the Rosary: Monday through Saturday at 8:00 am — preceding 8:30 am Daily Mass.",
+   "source_url": "https://olwparish.org/welcome/mass-times/",
+   "fetched_at": "2026-11-01T07:28:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "Monday through Saturday"
+  },
+  {
+   "kind": "devotion",
+   "day": "Tuesday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Pray the Rosary: Monday through Saturday at 8:00 am — preceding 8:30 am Daily Mass.",
+   "source_url": "https://olwparish.org/welcome/mass-times/",
+   "fetched_at": "2026-11-01T07:28:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "Monday through Saturday"
+  },
+  {
+   "kind": "devotion",
+   "day": "Wednesday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Pray the Rosary: Monday through Saturday at 8:00 am — preceding 8:30 am Daily Mass.",
+   "source_url": "https://olwparish.org/welcome/mass-times/",
+   "fetched_at": "2026-11-01T07:28:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "Monday through Saturday"
+  },
+  {
+   "kind": "devotion",
+   "day": "Thursday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Pray the Rosary: Monday through Saturday at 8:00 am — preceding 8:30 am Daily Mass.",
+   "source_url": "https://olwparish.org/welcome/mass-times/",
+   "fetched_at": "2026-11-01T07:28:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "Monday through Saturday"
+  },
+  {
+   "kind": "devotion",
+   "day": "Friday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Pray the Rosary: Monday through Saturday at 8:00 am — preceding 8:30 am Daily Mass.",
+   "source_url": "https://olwparish.org/welcome/mass-times/",
+   "fetched_at": "2026-11-01T07:28:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "Monday through Saturday"
+  },
+  {
+   "kind": "devotion",
+   "day": "Saturday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Pray the Rosary: Monday through Saturday at 8:00 am — preceding 8:30 am Daily Mass.",
+   "source_url": "https://olwparish.org/welcome/mass-times/",
+   "fetched_at": "2026-11-01T07:28:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "Monday through Saturday"
+  },
+  {
    "kind": "adoration",
    "day": "Wednesday",
    "time": "09:00-09:45",
@@ -865,9 +980,23 @@
  ],
  "source_url": "https://www.olwparish.org/",
  "fetched_at": "2026-11-01T07:28:24+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:41+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -881,15 +1010,27 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 29
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "(except the first Tuesday of the month) immediately following Tuesdays Together Mass. The sacrament is also available by appointment by contacting a priest through our parish office at .",
+   "phrase": "by appointment",
+   "source_url": "https://olwparish.org/events/christ-is-forgiving-and-merciful-reconciliation-saturdays-at-1000-am/",
+   "fetched_at": "2026-11-02T04:41:36+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "dated_line": 2,
-  "not_a_service": 3,
-  "relative_time": 2,
+  "relative_time": 3,
+  "not_a_service": 2,
   "other_location": 1,
-  "not_a_mass": 6
+  "dated_block": 2,
+  "not_a_mass": 6,
+  "prose": 2
  },
  "groups_dropped": {
   "noise": 5,
@@ -897,8 +1038,8 @@
   "label_not_group": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

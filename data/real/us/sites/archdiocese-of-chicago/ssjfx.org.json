@@ -91,6 +91,18 @@
    "url": "https://www.ssjfx.org/contact--directions.html",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.ssjfx.org/reconciliation.html",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.ssjfx.org/adoration.html",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -313,7 +325,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:33:20+00:00",
+    "fetched_at": "2026-11-02T04:48:38+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -330,7 +342,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:33:22+00:00",
+    "fetched_at": "2026-11-02T04:48:40+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -347,7 +359,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:33:23+00:00",
+    "fetched_at": "2026-11-02T04:48:41+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -364,7 +376,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:33:25+00:00",
+    "fetched_at": "2026-11-02T04:48:42+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -383,7 +395,7 @@
    "feed_key": "0afc88355e1c",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:33:26+00:00",
+    "fetched_at": "2026-11-02T04:48:44+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -414,7 +426,7 @@
  "schedule_rows": [
   {
    "kind": "mass",
-   "day": "Saturday",
+   "day": "Saturday (summer, may-oct)",
    "time": "17:00",
    "language": null,
    "raw": "Saturday (Vigil): 5:00 pm - St. Francis Xavier Church- (May through October)",
@@ -425,6 +437,20 @@
    "confidence": "medium",
    "template": "weebly",
    "season": "May through October"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday (winter, nov-apr)",
+   "time": "17:00",
+   "language": null,
+   "raw": "Saturday (Vigil): 5:00 pm - St. Joseph Church- (November through April)",
+   "source_url": "https://www.ssjfx.org/mass-times--presiders.html",
+   "fetched_at": "2026-11-01T07:27:59+00:00",
+   "needs_review": true,
+   "review_reason": "seasonal",
+   "confidence": "medium",
+   "template": "weebly",
+   "season": "November through April"
   },
   {
    "kind": "mass",
@@ -493,7 +519,7 @@
   },
   {
    "kind": "mass",
-   "day": "Sunday",
+   "day": "Sunday (during the school year)",
    "time": "19:30",
    "language": null,
    "raw": "7:30 pm [Mass intention withheld]",
@@ -676,13 +702,52 @@
    "day_expanded_from": "Monday - Saturday",
    "day_parsed": "Monday",
    "day_bound_from_line": true
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "09:00-10:00",
+   "language": null,
+   "raw": "Reconcilation Schedule: Saturday : 9:00–10:00 a.m. at Saint Joseph Church (after the 8:30 am Mass)",
+   "source_url": "https://www.ssjfx.org/reconciliation.html",
+   "fetched_at": "2026-11-02T04:41:38+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly"
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "09:00-10:00",
+   "language": null,
+   "raw": "Adoration Schedule: Tuesday: 9:00–10:00 a.m. at St. Joseph Church (following the 8:30 am Mass)",
+   "source_url": "https://www.ssjfx.org/adoration.html",
+   "fetched_at": "2026-11-02T04:41:40+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly"
   }
  ],
  "source_url": "https://ssjfx.org/",
  "fetched_at": "2026-11-01T07:28:14+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:40+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "weebly",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -696,9 +761,13 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 16
  },
  "has_sunday": true,
+ "schedule_dropped": {
+  "relative_time": 2
+ },
  "groups_dropped": {
   "label_not_group": 4,
   "sacrament_prep": 1,
@@ -708,8 +777,8 @@
   "private_name_risk": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

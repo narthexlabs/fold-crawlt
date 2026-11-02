@@ -76,6 +76,18 @@
    "url": "https://www.sjbchicago.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.sjbchicago.org/penance",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.sjbchicago.org/adoraci%C3%B3n-nocturna",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -782,13 +794,39 @@
    "confidence": "medium",
    "template": "generic_strict",
    "day_expanded_from": "Monday to Sunday"
+  },
+  {
+   "kind": "adoration",
+   "day": "Saturday",
+   "time": "20:00",
+   "language": null,
+   "raw": "Adoration is every Saturday at 8PM in the Church.",
+   "source_url": "https://www.sjbchicago.org/adoraci%C3%B3n-nocturna",
+   "fetched_at": "2026-11-02T04:41:38+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict"
   }
  ],
  "source_url": "https://www.sjbchicago.org/",
  "fetched_at": "2026-11-01T07:28:10+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:39+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -802,7 +840,8 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
-  "generic_rows": 27
+  "trusted_kinds": [],
+  "generic_rows": 28
  },
  "has_sunday": true,
  "schedule_dropped": {
@@ -816,8 +855,8 @@
   "unmatched": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

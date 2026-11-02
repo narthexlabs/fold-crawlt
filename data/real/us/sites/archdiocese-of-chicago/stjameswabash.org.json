@@ -78,6 +78,18 @@
    "url": "https://www.stjameswabash.org/staff/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stjameswabash.org/events/reconciliation-and-forgiveness-being-christs-presence-in-our-wounded-world-virtual-lenten-retreat/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stjameswabash.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -212,7 +224,7 @@
    "feed_key": "948a730c7cb3",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:34:32+00:00",
+    "fetched_at": "2026-11-02T04:50:27+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -344,6 +356,22 @@
   },
   {
    "kind": "confession",
+   "day": "Sunday",
+   "time": "09:30",
+   "language": null,
+   "raw": "Confessions are available at the following times:: Every Sunday, before and after the 9:30 AM Mass",
+   "source_url": "https://www.stjameswabash.org/worship/",
+   "fetched_at": "2026-11-01T07:28:02+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "before",
+   "note": "Confessions are available at the following times:: Every Sunday, before and after the 9:30 AM Mass",
+   "relative_resolved": true
+  },
+  {
+   "kind": "confession",
    "day": "First Friday of the month",
    "time": "18:00-19:00",
    "language": null,
@@ -371,9 +399,21 @@
  ],
  "source_url": "https://www.stjameswabash.org/",
  "fetched_at": "2026-11-01T07:28:25+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:44+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -387,12 +427,11 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 13
+  "trusted_kinds": [],
+  "generic_rows": 14
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "not_a_service": 2,
-  "relative_time": 2,
   "prose": 4
  },
  "groups_dropped": {
@@ -402,8 +441,8 @@
   "fragment": 2
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

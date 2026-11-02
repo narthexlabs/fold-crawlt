@@ -77,6 +77,18 @@
    "url": "https://ourladyofhumility.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://ourladyofhumility.org/sacraments/reconciliation-confession/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://ourladyofhumility.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -283,6 +295,20 @@
   "source_url": "https://ourladyofhumility.org/"
  },
  "schedule_rows": [
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "19:00",
+   "language": null,
+   "raw": "On Monday, November 2, 2026, we will celebrate the Feast of All Souls with a Candlelight Mass Of Remembrance at 7 PM at St. Patrick’s Church, 15000 W. Wadsworth Road, Wadsworth.",
+   "source_url": "https://ourladyofhumility.org/",
+   "fetched_at": "2026-11-01T18:51:45+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "kind_parsed": "mass"
+  },
   {
    "kind": "mass",
    "day": "Saturday",
@@ -492,25 +518,36 @@
    "template": "wordpress"
   },
   {
-   "kind": "other",
-   "day": "Holy days",
-   "time": "19:00",
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:30-16:30",
    "language": null,
-   "raw": "On Monday, November 2, 2026, we will celebrate the Feast of All Souls with a Candlelight Mass Of Remembrance at 7 PM at St. Patrick’s Church, 15000 W. Wadsworth Road, Wadsworth.",
-   "source_url": "https://ourladyofhumility.org/",
-   "fetched_at": "2026-11-01T18:51:45+00:00",
+   "raw": "Reconciliation Services :: Saturdays: 3:30 PM – 4:30 PM",
+   "source_url": "https://ourladyofhumility.org/sacraments/reconciliation-confession/",
+   "fetched_at": "2026-11-02T04:41:36+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "high",
-   "template": "wordpress",
-   "kind_parsed": "mass"
+   "confidence": "medium",
+   "template": "wordpress"
   }
  ],
  "source_url": "http://www.ourladyofhumility.org/",
  "fetched_at": "2026-11-01T20:26:30+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:06+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -524,11 +561,11 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 24
+  "trusted_kinds": [],
+  "generic_rows": 25
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "skipped_section": 57,
   "not_a_service": 1,
   "relative_time": 2
  },
@@ -538,8 +575,8 @@
   "unmatched": 3
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

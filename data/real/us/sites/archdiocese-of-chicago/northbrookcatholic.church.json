@@ -85,6 +85,12 @@
    "url": "https://www.northbrookcatholic.church/clergy-and-staff-contact-us.html",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.northbrookcatholic.church/reconciliation.html",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -252,7 +258,7 @@
    "note": "CCB public calendar iCal",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:31:41+00:00",
+    "fetched_at": "2026-11-02T04:44:24+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -489,9 +495,21 @@
  ],
  "source_url": "https://www.northbrookcatholic.church/",
  "fetched_at": "2026-11-01T07:28:15+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:36+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "weebly",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -505,8 +523,18 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 18
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Saturday from 11:30am-12:30pm ​or by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://www.northbrookcatholic.church/",
+   "fetched_at": "2026-11-01T07:27:54+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "skipped_section": 3,
@@ -519,8 +547,8 @@
   "sentence": 2
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
