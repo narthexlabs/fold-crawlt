@@ -24,32 +24,473 @@
  ],
  "home_url": "https://materdeiparish.org/",
  "final_url": "https://materdeiparish.org/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "crawl_status": "wayback-2025-05-22",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
    "url": "https://materdeiparish.org/",
-   "status": 403,
-   "class": "challenge"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://materdeiparish.org/mass-times",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://materdeiparish.org/reconciliation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://materdeiparish.org/catholic-organizations",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://materdeiparish.org/community-events",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://materdeiparish.org/mater-dei-event-center",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://materdeiparish.org/contact",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://materdeiparish.org/bulletins",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "materdeiparish.org:altar_society",
+   "name": "Altar Society",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "altar_society_environment",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://materdeiparish.org/contact",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://materdeiparish.org/catholic-organizations",
+   "source_kind": "website",
+   "fetched_at": "2025-10-08T10:20:10+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-05-22"
+  },
+  {
+   "id": "materdeiparish.org:kofc",
+   "name": "Knights of Columbus",
+   "category": "fraternal_orders",
+   "category_label": "Fraternal & orders",
+   "subcategory": "knights_of_columbus",
+   "audience": "men",
+   "language": "en",
+   "language_assumed": true,
+   "meets": "3rd Sunday",
+   "description": null,
+   "contact_url": "https://materdeiparish.org/contact",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://materdeiparish.org/catholic-organizations",
+   "source_kind": "website",
+   "fetched_at": "2025-10-08T10:20:10+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-05-22"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/profile.php?id=100081136159080"
+  ],
+  "instagram": [
+   "https://www.instagram.com/materdeitopeka/"
+  ],
+  "flocknote": [
+   "https://new.flocknote.com",
+   "https://materdeiparishtopeka.flocknote.com"
+  ]
+ },
+ "bulletin": {
+  "url": "https://parishesonline.com/organization/mater-dei-parish-assumption-church-holy-name-church-in-topeka-ks",
+  "date": null,
+  "kind": "lpi",
+  "text": "Bulletin",
+  "source_url": "https://materdeiparish.org/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": null,
+   "raw": "[Holy Name] Mass Times:: Saturday: 5:00 p.m.; Sunday: 10:30 a.m.;",
+   "source_url": "https://materdeiparish.org/mass-times",
+   "fetched_at": "2025-10-08T09:58:57+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-05-22: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "location": "Holy Name",
+   "source": "wayback-2025-05-22",
+   "archive_url": "https://web.archive.org/web/20251008095857/https://materdeiparish.org/mass-times",
+   "capture_date": "2025-10-08"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:30",
+   "language": null,
+   "raw": "[Holy Name] Mass Times:: Saturday: 5:00 p.m.; Sunday: 10:30 a.m.;",
+   "source_url": "https://materdeiparish.org/mass-times",
+   "fetched_at": "2025-10-08T09:58:57+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-05-22: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "location": "Holy Name",
+   "source": "wayback-2025-05-22",
+   "archive_url": "https://web.archive.org/web/20251008095857/https://materdeiparish.org/mass-times",
+   "capture_date": "2025-10-08"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "08:00",
+   "language": null,
+   "raw": "[Holy Name] Daily Mass: Wednesday & Friday - 8:00 a.m.",
+   "source_url": "https://materdeiparish.org/mass-times",
+   "fetched_at": "2025-10-08T09:58:57+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-05-22: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic+generic_strict",
+   "day_expanded_from": "Wednesday & Friday",
+   "location": "Holy Name",
+   "source": "wayback-2025-05-22",
+   "archive_url": "https://web.archive.org/web/20251008095857/https://materdeiparish.org/mass-times",
+   "capture_date": "2025-10-08"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "08:00",
+   "language": null,
+   "raw": "[Holy Name] Daily Mass: Wednesday & Friday - 8:00 a.m.",
+   "source_url": "https://materdeiparish.org/mass-times",
+   "fetched_at": "2025-10-08T09:58:57+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-05-22: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic+generic_strict",
+   "day_expanded_from": "Wednesday & Friday",
+   "location": "Holy Name",
+   "day_parsed": "Wednesday",
+   "day_bound_from_line": true,
+   "source": "wayback-2025-05-22",
+   "archive_url": "https://web.archive.org/web/20251008095857/https://materdeiparish.org/mass-times",
+   "capture_date": "2025-10-08"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "[Holy Name] Mass Times:: Sunday: 8:00 a.m. & 5:00 p.m.",
+   "source_url": "https://materdeiparish.org/mass-times",
+   "fetched_at": "2025-10-08T09:58:57+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-05-22: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "location": "Holy Name",
+   "source": "wayback-2025-05-22",
+   "archive_url": "https://web.archive.org/web/20251008095857/https://materdeiparish.org/mass-times",
+   "capture_date": "2025-10-08"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "17:00",
+   "language": null,
+   "raw": "[Holy Name] Mass Times:: Sunday: 8:00 a.m. & 5:00 p.m.",
+   "source_url": "https://materdeiparish.org/mass-times",
+   "fetched_at": "2025-10-08T09:58:57+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-05-22: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "location": "Holy Name",
+   "source": "wayback-2025-05-22",
+   "archive_url": "https://web.archive.org/web/20251008095857/https://materdeiparish.org/mass-times",
+   "capture_date": "2025-10-08"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "12:00",
+   "language": null,
+   "raw": "[Holy Name] Daily Mass: Monday through Friday 12:00 p.m.",
+   "source_url": "https://materdeiparish.org/mass-times",
+   "fetched_at": "2025-10-08T09:58:57+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-05-22: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic+generic_strict",
+   "day_expanded_from": "Monday through Friday",
+   "location": "Holy Name",
+   "source": "wayback-2025-05-22",
+   "archive_url": "https://web.archive.org/web/20251008095857/https://materdeiparish.org/mass-times",
+   "capture_date": "2025-10-08"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "12:00",
+   "language": null,
+   "raw": "[Holy Name] Daily Mass: Monday through Friday 12:00 p.m.",
+   "source_url": "https://materdeiparish.org/mass-times",
+   "fetched_at": "2025-10-08T09:58:57+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-05-22: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic+generic_strict",
+   "day_expanded_from": "Monday through Friday",
+   "location": "Holy Name",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "source": "wayback-2025-05-22",
+   "archive_url": "https://web.archive.org/web/20251008095857/https://materdeiparish.org/mass-times",
+   "capture_date": "2025-10-08"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "12:00",
+   "language": null,
+   "raw": "[Holy Name] Daily Mass: Monday through Friday 12:00 p.m.",
+   "source_url": "https://materdeiparish.org/mass-times",
+   "fetched_at": "2025-10-08T09:58:57+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-05-22: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic+generic_strict",
+   "day_expanded_from": "Monday through Friday",
+   "location": "Holy Name",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "source": "wayback-2025-05-22",
+   "archive_url": "https://web.archive.org/web/20251008095857/https://materdeiparish.org/mass-times",
+   "capture_date": "2025-10-08"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "12:00",
+   "language": null,
+   "raw": "[Holy Name] Daily Mass: Monday through Friday 12:00 p.m.",
+   "source_url": "https://materdeiparish.org/mass-times",
+   "fetched_at": "2025-10-08T09:58:57+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-05-22: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic+generic_strict",
+   "day_expanded_from": "Monday through Friday",
+   "location": "Holy Name",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "source": "wayback-2025-05-22",
+   "archive_url": "https://web.archive.org/web/20251008095857/https://materdeiparish.org/mass-times",
+   "capture_date": "2025-10-08"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "12:00",
+   "language": null,
+   "raw": "[Holy Name] Daily Mass: Monday through Friday 12:00 p.m.",
+   "source_url": "https://materdeiparish.org/mass-times",
+   "fetched_at": "2025-10-08T09:58:57+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-05-22: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic+generic_strict",
+   "day_expanded_from": "Monday through Friday",
+   "location": "Holy Name",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "source": "wayback-2025-05-22",
+   "archive_url": "https://web.archive.org/web/20251008095857/https://materdeiparish.org/mass-times",
+   "capture_date": "2025-10-08"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:00-16:30",
+   "language": null,
+   "raw": "[Holy Name] Reconciliation Times: Holy Name Church - Saturday: 3:00 pm to 4:30pm",
+   "source_url": "https://materdeiparish.org/reconciliation",
+   "fetched_at": "2025-10-08T09:05:02+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-05-22: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "location": "Holy Name",
+   "source": "wayback-2025-05-22",
+   "archive_url": "https://web.archive.org/web/20251008090502/https://materdeiparish.org/reconciliation",
+   "capture_date": "2025-10-08"
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "16:00-16:50",
+   "language": null,
+   "raw": "Reconciliation Times: Assumption Church - Sunday: 4:00pm to 4:50pm",
+   "source_url": "https://materdeiparish.org/reconciliation",
+   "fetched_at": "2025-10-08T09:05:02+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-05-22: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2025-05-22",
+   "archive_url": "https://web.archive.org/web/20251008090502/https://materdeiparish.org/reconciliation",
+   "capture_date": "2025-10-08"
+  },
+  {
+   "kind": "confession",
+   "day": "Tuesday",
+   "time": "11:00-11:50",
+   "language": null,
+   "raw": "Reconciliation Times: Assumption Church - Tuesday: 11:00 to 11:50am",
+   "source_url": "https://materdeiparish.org/reconciliation",
+   "fetched_at": "2025-10-08T09:05:02+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-05-22: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2025-05-22",
+   "archive_url": "https://web.archive.org/web/20251008090502/https://materdeiparish.org/reconciliation",
+   "capture_date": "2025-10-08"
+  }
+ ],
  "source_url": "https://materdeiparish.org/",
- "fetched_at": "2026-11-01T17:28:11+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-02T01:02:54+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "has_sunday": true,
+ "groups_dropped": {},
+ "office_contact": {
+  "email": null,
+  "phone": "(785) 232-7744",
+  "address": "911 SW Clay Street, Topeka, KS 66606",
+  "source_url": "https://materdeiparish.org/contact",
+  "sources": {
+   "phone": "https://materdeiparish.org/contact",
+   "address": "https://materdeiparish.org/contact"
+  },
+  "fetched_at": "2025-05-22T04:11:30+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2025-05-22",
+  "capture_age_days": 529,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://materdeiparish.org/",
+    "capture": "2025-05-22",
+    "archive_url": "https://web.archive.org/web/20250522034621/https://materdeiparish.org/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://materdeiparish.org/mass-times",
+    "capture": "2025-10-08",
+    "archive_url": "https://web.archive.org/web/20251008095857/https://materdeiparish.org/mass-times"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://materdeiparish.org/reconciliation",
+    "capture": "2025-10-08",
+    "archive_url": "https://web.archive.org/web/20251008090502/https://materdeiparish.org/reconciliation"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://materdeiparish.org/catholic-organizations",
+    "capture": "2025-10-08",
+    "archive_url": "https://web.archive.org/web/20251008102010/https://materdeiparish.org/catholic-organizations"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://materdeiparish.org/community-events",
+    "capture": "2025-10-08",
+    "archive_url": "https://web.archive.org/web/20251008093115/https://materdeiparish.org/community-events"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://materdeiparish.org/mater-dei-event-center",
+    "capture": "2025-10-08",
+    "archive_url": "https://web.archive.org/web/20251008091122/https://materdeiparish.org/mater-dei-event-center"
+   },
+   {
+    "kind": "contact",
+    "original": "https://materdeiparish.org/contact",
+    "capture": "2025-05-22",
+    "archive_url": "https://web.archive.org/web/20250522041130/https://materdeiparish.org/contact"
+   },
+   {
+    "kind": "bulletin",
+    "original": "https://materdeiparish.org/bulletins",
+    "capture": "2025-05-22",
+    "archive_url": "https://web.archive.org/web/20250522024534/https://materdeiparish.org/bulletins"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }

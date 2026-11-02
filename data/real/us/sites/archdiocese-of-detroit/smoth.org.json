@@ -21,32 +21,535 @@
  ],
  "home_url": "https://smoth.org/",
  "final_url": "https://smoth.org/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "crawl_status": "wayback-2026-02-15",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
    "url": "https://smoth.org/",
-   "status": 403,
-   "class": "challenge"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.smoth.org/worship",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.smoth.org/masstimes",
+   "status": null,
+   "class": "timeout"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.smoth.org/musicministry",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://smoth.org/mentalhealthministry",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.smoth.org/stephenministry",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://www.smoth.org/bulletin",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.smoth.org/parishcalendar",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://smoth.org/event-change-cancel-form",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "live",
+   "url": "https://www.smoth.org/livemass/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://www.smoth.org/stay-in-touch",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "smoth.org:choir",
+   "name": "Music Ministry / Choir",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "choir_music",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.smoth.org/stay-in-touch",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.smoth.org/musicministry",
+   "source_kind": "website",
+   "fetched_at": "2025-03-18T23:16:34+00:00",
+   "confidence": "low",
+   "source": "wayback-2026-02-15"
+  },
+  {
+   "id": "smoth.org:choir|playlist",
+   "name": "Music Ministry Playlist",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "choir_music",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.smoth.org/stay-in-touch",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.smoth.org/musicministry",
+   "source_kind": "website",
+   "fetched_at": "2025-03-18T23:16:34+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-02-15"
+  },
+  {
+   "id": "smoth.org:mental_health|general",
+   "name": "General Mental Health",
+   "category": "grief_support",
+   "category_label": "Grief & support",
+   "subcategory": "mental_health",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.smoth.org/stay-in-touch",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://smoth.org/mentalhealthministry",
+   "source_kind": "website",
+   "fetched_at": "2025-10-08T03:57:51+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-02-15"
+  },
+  {
+   "id": "smoth.org:bereavement",
+   "name": "Grief",
+   "category": "grief_support",
+   "category_label": "Grief & support",
+   "subcategory": "bereavement",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.smoth.org/stay-in-touch",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://smoth.org/mentalhealthministry",
+   "source_kind": "website",
+   "fetched_at": "2025-10-08T03:57:51+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-02-15"
+  },
+  {
+   "id": "smoth.org:mental_health|benefit+movement",
+   "name": "Mental Health Benefits of Movement",
+   "category": "grief_support",
+   "category_label": "Grief & support",
+   "subcategory": "mental_health",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.smoth.org/stay-in-touch",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://smoth.org/mentalhealthministry",
+   "source_kind": "website",
+   "fetched_at": "2025-10-08T03:57:51+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-02-15"
+  },
+  {
+   "id": "smoth.org:mental_health",
+   "name": "Mental Health Ministry",
+   "category": "grief_support",
+   "category_label": "Grief & support",
+   "subcategory": "mental_health",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.smoth.org/stay-in-touch",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://smoth.org/mentalhealthministry",
+   "source_kind": "website",
+   "fetched_at": "2025-10-08T03:57:51+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-02-15"
+  },
+  {
+   "id": "smoth.org:stephen",
+   "name": "Stephen Ministry",
+   "category": "grief_support",
+   "category_label": "Grief & support",
+   "subcategory": "stephen_ministry",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.smoth.org/stay-in-touch",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.smoth.org/stephenministry",
+   "source_kind": "website",
+   "fetched_at": "2025-04-24T06:46:53+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-02-15"
+  },
+  {
+   "id": "smoth.org:other_a_one_to_one_caring_ministry",
+   "name": "A One-to-One Caring Ministry",
+   "category": "other",
+   "category_label": "Other",
+   "subcategory": "unclassified",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "Stephen Ministry is a lay ministry that helps those facing life's difficulties receive Christian love and support through one-to-one confidential caring relationships.",
+   "contact_url": "https://www.smoth.org/stay-in-touch",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.smoth.org/stephenministry",
+   "source_kind": "website",
+   "fetched_at": "2025-04-24T06:46:53+00:00",
+   "confidence": "low",
+   "source": "wayback-2026-02-15"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/stmaryofthehills"
+  ],
+  "instagram": [
+   "https://www.instagram.com/stmaryrochhills/"
+  ],
+  "youtube": [
+   "https://www.youtube.com/channel/UCR8jKjB9CPnJjrzA88vQOaw",
+   "https://www.youtube.com/c/StMaryoftheHillsCatholicChurch",
+   "https://www.youtube.com/channel/UCUO0prOptUqI5WVYrUjfTzA"
+  ],
+  "x": [
+   "https://x.com/StMaryRochHills"
+  ],
+  "livestream": [
+   {
+    "url": "https://smoth.org/livemass",
+    "label": "Mass Livestream",
+    "platform": "smoth.org",
+    "kind": "link"
+   },
+   {
+    "url": "https://www.smoth.org/livemass",
+    "label": "Mass Livestream",
+    "platform": "www.smoth.org",
+    "kind": "link"
+   }
+  ]
+ },
+ "bulletin": {
+  "url": "https://discovermass.com/church/saint-mary-of-the-hills-rochester-hills-mi/",
+  "date": null,
+  "kind": "discovermass",
+  "text": "St. Mary of the Hills Bulletins",
+  "source_url": "https://www.smoth.org/bulletin"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "16:00",
+   "language": "English",
+   "raw": "Saturday: 4:00 PM English",
+   "source_url": "https://smoth.org/",
+   "fetched_at": "2026-02-15T19:08:15+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-02-15: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-02-15",
+   "archive_url": "https://web.archive.org/web/20260215190815/https://smoth.org/",
+   "capture_date": "2026-02-15"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": "English",
+   "raw": "Sunday: 9:00 AM English",
+   "source_url": "https://smoth.org/",
+   "fetched_at": "2026-02-15T19:08:15+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-02-15: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-02-15",
+   "archive_url": "https://web.archive.org/web/20260215190815/https://smoth.org/",
+   "capture_date": "2026-02-15"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:00",
+   "language": "English",
+   "raw": "Sunday: 11:00 AM English",
+   "source_url": "https://smoth.org/",
+   "fetched_at": "2026-02-15T19:08:15+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-02-15: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-02-15",
+   "archive_url": "https://web.archive.org/web/20260215190815/https://smoth.org/",
+   "capture_date": "2026-02-15"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "19:00",
+   "language": "English",
+   "raw": "Monday: 7:00 PM English",
+   "source_url": "https://smoth.org/",
+   "fetched_at": "2026-02-15T19:08:15+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-02-15: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-02-15",
+   "archive_url": "https://web.archive.org/web/20260215190815/https://smoth.org/",
+   "capture_date": "2026-02-15"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "09:00",
+   "language": "English",
+   "raw": "Tuesday: 9:00 AM English",
+   "source_url": "https://smoth.org/",
+   "fetched_at": "2026-02-15T19:08:15+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-02-15: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-02-15",
+   "archive_url": "https://web.archive.org/web/20260215190815/https://smoth.org/",
+   "capture_date": "2026-02-15"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "09:00",
+   "language": "English",
+   "raw": "Thursday: 9:00 AM English",
+   "source_url": "https://smoth.org/",
+   "fetched_at": "2026-02-15T19:08:15+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-02-15: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-02-15",
+   "archive_url": "https://web.archive.org/web/20260215190815/https://smoth.org/",
+   "capture_date": "2026-02-15"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "19:00",
+   "language": "English",
+   "raw": "February 23: 7:00 PM English",
+   "source_url": "https://smoth.org/",
+   "fetched_at": "2026-02-15T19:08:15+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-02-15: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "kind_parsed": "mass",
+   "source": "wayback-2026-02-15",
+   "archive_url": "https://web.archive.org/web/20260215190815/https://smoth.org/",
+   "capture_date": "2026-02-15"
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "12:00-16:00",
+   "language": null,
+   "raw": "Thursday: 12:00 PM - 4:00 PM",
+   "source_url": "https://smoth.org/",
+   "fetched_at": "2026-02-15T19:08:15+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-02-15: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-02-15",
+   "archive_url": "https://web.archive.org/web/20260215190815/https://smoth.org/",
+   "capture_date": "2026-02-15"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:00-15:30",
+   "language": null,
+   "raw": "Saturday: 3:00 PM - 3:30 PM",
+   "source_url": "https://smoth.org/",
+   "fetched_at": "2026-02-15T19:08:15+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-02-15: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-02-15",
+   "archive_url": "https://web.archive.org/web/20260215190815/https://smoth.org/",
+   "capture_date": "2026-02-15"
+  }
+ ],
  "source_url": "https://smoth.org/",
- "fetched_at": "2026-11-01T22:15:34+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-02T00:51:30+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": true
+   },
+   "score": "high"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 2
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "text:dated_line": 3
+ },
+ "groups_dropped": {
+  "sentence": 1,
+  "noise": 1,
+  "fragment": 16
+ },
+ "office_contact": {
+  "email": "contactus@smoth.org",
+  "phone": "(248) 853-5390",
+  "address": "2675 John R. Road, Rochester Hills, MI 48307",
+  "source_url": "https://www.smoth.org/stay-in-touch",
+  "sources": {
+   "email": "https://www.smoth.org/stay-in-touch",
+   "phone": "https://www.smoth.org/stay-in-touch",
+   "address": "https://www.smoth.org/stay-in-touch"
+  },
+  "fetched_at": "2024-04-14T23:43:43+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2026-02-15",
+  "capture_age_days": 260,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://smoth.org/",
+    "capture": "2026-02-15",
+    "archive_url": "https://web.archive.org/web/20260215190815/https://smoth.org/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://www.smoth.org/worship",
+    "capture": "2024-05-24",
+    "archive_url": "https://web.archive.org/web/20240524214534/https://www.smoth.org/worship"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://www.smoth.org/musicministry",
+    "capture": "2025-03-18",
+    "archive_url": "https://web.archive.org/web/20250318231634/https://www.smoth.org/musicministry"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://smoth.org/mentalhealthministry",
+    "capture": "2025-10-08",
+    "archive_url": "https://web.archive.org/web/20251008035751/https://smoth.org/mentalhealthministry"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://www.smoth.org/stephenministry",
+    "capture": "2025-04-24",
+    "archive_url": "https://web.archive.org/web/20250424064653/https://www.smoth.org/stephenministry"
+   },
+   {
+    "kind": "bulletin",
+    "original": "https://www.smoth.org/bulletin",
+    "capture": "2025-03-18",
+    "archive_url": "https://web.archive.org/web/20250318235040/https://www.smoth.org/bulletin"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://www.smoth.org/parishcalendar",
+    "capture": "2025-04-24",
+    "archive_url": "https://web.archive.org/web/20250424055723/https://www.smoth.org/parishcalendar"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://smoth.org/event-change-cancel-form",
+    "capture": "2025-10-08",
+    "archive_url": "https://web.archive.org/web/20251008030723/https://smoth.org/event-change-cancel-form"
+   },
+   {
+    "kind": "live",
+    "original": "https://www.smoth.org/livemass/",
+    "capture": "2025-09-16",
+    "archive_url": "https://web.archive.org/web/20250916032310/https://www.smoth.org/livemass/"
+   },
+   {
+    "kind": "contact",
+    "original": "https://www.smoth.org/stay-in-touch",
+    "capture": "2024-04-14",
+    "archive_url": "https://web.archive.org/web/20240414234343/https://www.smoth.org/stay-in-touch"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }
