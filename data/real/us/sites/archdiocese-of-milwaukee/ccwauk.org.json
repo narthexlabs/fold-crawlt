@@ -26,33 +26,632 @@
   "Waukesha"
  ],
  "home_url": "https://www.ccwauk.org/",
- "final_url": "https://www.ccwauk.org/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "final_url": "https://ccwauk.org/",
+ "crawl_status": "wayback-2026-04-22",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
-   "url": "https://www.ccwauk.org/",
-   "status": 403,
-   "class": "challenge"
+   "url": "https://ccwauk.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://ccwauk.org/mass-times",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://ccwauk.org/worship",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://ccwauk.org/child-ministry",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://ccwauk.org/child-formation-program",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://ccwauk.org/young-adult-formation-18-30-years-old",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://www.ccwauk.org/bulletin",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://ccwauk.org/calendar-1",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://ccwauk.org/special-events",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "live",
+   "url": "https://ccwauk.org/weekly-mass-livestream",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://ccwauk.org/contact-us",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "ccwauk.org:adult_formation_young_adult|discipleship",
+   "name": "Young Adult Formation / Discipleship",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "adult_formation",
+   "audience": "young_adult",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://ccwauk.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://ccwauk.org/young-adult-formation-18-30-years-old",
+   "source_kind": "website",
+   "fetched_at": "2025-10-12T08:46:48+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-04-22"
+  },
+  {
+   "id": "ccwauk.org:kofc",
+   "name": "Knights Of Columbus",
+   "category": "fraternal_orders",
+   "category_label": "Fraternal & orders",
+   "subcategory": "knights_of_columbus",
+   "audience": "men",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://ccwauk.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://ccwauk.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-04-22T02:57:43+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-04-22"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/ccwauk",
+   "https://www.facebook.com/CCWYoungAdult"
+  ],
+  "instagram": [
+   "https://www.instagram.com/ccwauk/"
+  ],
+  "youtube": [
+   "https://www.youtube.com/channel/UChhWwGcvm3lKGqL-NVOOWOw",
+   "https://www.youtube.com/@CorpusChristiParishWaukesha"
+  ],
+  "flocknote": [
+   "https://ccwauk.flocknote.com"
+  ],
+  "livestream": [
+   {
+    "url": "https://ccwauk.org/weekly-mass-livestream",
+    "label": "Weekly Mass Livestream",
+    "platform": "ccwauk.org",
+    "kind": "link"
+   },
+   {
+    "url": "https://www.youtube.com/@CorpusChristiParishWaukesha/streams",
+    "label": "Livestream Mass",
+    "platform": "youtube",
+    "kind": "link"
+   }
+  ]
+ },
+ "bulletin": {
+  "url": "https://ccwauk.org/bulletin",
+  "date": null,
+  "kind": "page",
+  "text": "Bulletins",
+  "source_url": "https://ccwauk.org/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "07:30",
+   "language": "English",
+   "raw": "[Corpus Christi Parish - St. William Church] Sunday: 7:30 AM English St. William",
+   "source_url": "https://ccwauk.org/mass-times",
+   "fetched_at": "2025-10-12T08:41:14+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-22: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "location": "Corpus Christi Parish - St. William Church",
+   "source": "wayback-2026-04-22",
+   "archive_url": "https://web.archive.org/web/20251012084114/https://ccwauk.org/mass-times",
+   "capture_date": "2025-10-12"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": "English",
+   "raw": "[Corpus Christi Parish - St. John Neumann Church] Sunday: 8:00 AM English St. John Neumann",
+   "source_url": "https://ccwauk.org/mass-times",
+   "fetched_at": "2025-10-12T08:41:14+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-22: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "location": "Corpus Christi Parish - St. John Neumann Church",
+   "source": "wayback-2026-04-22",
+   "archive_url": "https://web.archive.org/web/20251012084114/https://ccwauk.org/mass-times",
+   "capture_date": "2025-10-12"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:30",
+   "language": "English",
+   "raw": "[Corpus Christi Parish - St. Mary Church] Sunday: 8:30 AM English St. Mary",
+   "source_url": "https://ccwauk.org/mass-times",
+   "fetched_at": "2025-10-12T08:41:14+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-22: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "location": "Corpus Christi Parish - St. Mary Church",
+   "source": "wayback-2026-04-22",
+   "archive_url": "https://web.archive.org/web/20251012084114/https://ccwauk.org/mass-times",
+   "capture_date": "2025-10-12"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": "English",
+   "raw": "[Corpus Christi Parish - St. Joseph Church] Sunday: 9:00 AM English St. Joseph",
+   "source_url": "https://ccwauk.org/mass-times",
+   "fetched_at": "2025-10-12T08:41:14+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-22: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "location": "Corpus Christi Parish - St. Joseph Church",
+   "source": "wayback-2026-04-22",
+   "archive_url": "https://web.archive.org/web/20251012084114/https://ccwauk.org/mass-times",
+   "capture_date": "2025-10-12"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:30",
+   "language": "English",
+   "raw": "[Corpus Christi Parish - St. William Church] Sunday: 9:30 AM English St. William (Live streamed on YouTube)",
+   "source_url": "https://ccwauk.org/mass-times",
+   "fetched_at": "2025-10-12T08:41:14+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-22: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "location": "Corpus Christi Parish - St. William Church",
+   "source": "wayback-2026-04-22",
+   "archive_url": "https://web.archive.org/web/20251012084114/https://ccwauk.org/mass-times",
+   "capture_date": "2025-10-12"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:30",
+   "language": "English",
+   "raw": "[Corpus Christi Parish - St. John Neumann Church] Sunday: 10:30 AM English St. John Neumann",
+   "source_url": "https://ccwauk.org/mass-times",
+   "fetched_at": "2025-10-12T08:41:14+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-22: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "location": "Corpus Christi Parish - St. John Neumann Church",
+   "source": "wayback-2026-04-22",
+   "archive_url": "https://web.archive.org/web/20251012084114/https://ccwauk.org/mass-times",
+   "capture_date": "2025-10-12"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:00",
+   "language": "English",
+   "raw": "[Corpus Christi Parish - St. Mary Church] Sunday: 11:00 AM English St. Mary",
+   "source_url": "https://ccwauk.org/mass-times",
+   "fetched_at": "2025-10-12T08:41:14+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-22: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "location": "Corpus Christi Parish - St. Mary Church",
+   "source": "wayback-2026-04-22",
+   "archive_url": "https://web.archive.org/web/20251012084114/https://ccwauk.org/mass-times",
+   "capture_date": "2025-10-12"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:30",
+   "language": "Spanish",
+   "raw": "[Corpus Christi Parish - St. William Church] Sunday: 11:30 AM Spanish St. William (Español)",
+   "source_url": "https://ccwauk.org/mass-times",
+   "fetched_at": "2025-10-12T08:41:14+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-22: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "location": "Corpus Christi Parish - St. William Church",
+   "source": "wayback-2026-04-22",
+   "archive_url": "https://web.archive.org/web/20251012084114/https://ccwauk.org/mass-times",
+   "capture_date": "2025-10-12"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "17:30",
+   "language": "English",
+   "raw": "[Corpus Christi Parish - St. Mary Church] Sunday: 5:30 PM English St. Mary",
+   "source_url": "https://ccwauk.org/mass-times",
+   "fetched_at": "2025-10-12T08:41:14+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-22: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "location": "Corpus Christi Parish - St. Mary Church",
+   "source": "wayback-2026-04-22",
+   "archive_url": "https://web.archive.org/web/20251012084114/https://ccwauk.org/mass-times",
+   "capture_date": "2025-10-12"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "07:45",
+   "language": "English",
+   "raw": "[Corpus Christi Parish - St. William Church] Monday: 7:45 AM English St. William",
+   "source_url": "https://ccwauk.org/mass-times",
+   "fetched_at": "2025-10-12T08:41:14+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-22: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "location": "Corpus Christi Parish - St. William Church",
+   "source": "wayback-2026-04-22",
+   "archive_url": "https://web.archive.org/web/20251012084114/https://ccwauk.org/mass-times",
+   "capture_date": "2025-10-12"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "08:30",
+   "language": "English",
+   "raw": "[Corpus Christi Parish - St. Mary Church] Tuesday: 8:30 AM English St. Mary",
+   "source_url": "https://ccwauk.org/mass-times",
+   "fetched_at": "2025-10-12T08:41:14+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-22: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "location": "Corpus Christi Parish - St. Mary Church",
+   "source": "wayback-2026-04-22",
+   "archive_url": "https://web.archive.org/web/20251012084114/https://ccwauk.org/mass-times",
+   "capture_date": "2025-10-12"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "17:30",
+   "language": "English",
+   "raw": "[Corpus Christi Parish - St. William Church] Tuesday: 5:30 PM English St. William",
+   "source_url": "https://ccwauk.org/mass-times",
+   "fetched_at": "2025-10-12T08:41:14+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-22: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "location": "Corpus Christi Parish - St. William Church",
+   "source": "wayback-2026-04-22",
+   "archive_url": "https://web.archive.org/web/20251012084114/https://ccwauk.org/mass-times",
+   "capture_date": "2025-10-12"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "08:30",
+   "language": "English",
+   "raw": "[Corpus Christi Parish - St. John Neumann Church] Wednesday: 8:30 AM English St. John Neumann",
+   "source_url": "https://ccwauk.org/mass-times",
+   "fetched_at": "2025-10-12T08:41:14+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-22: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "location": "Corpus Christi Parish - St. John Neumann Church",
+   "source": "wayback-2026-04-22",
+   "archive_url": "https://web.archive.org/web/20251012084114/https://ccwauk.org/mass-times",
+   "capture_date": "2025-10-12"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "18:00",
+   "language": "Spanish",
+   "raw": "[Corpus Christi Parish - St. Joseph Church] Wednesday: 6:00 PM Spanish St. Joseph (Español)",
+   "source_url": "https://ccwauk.org/mass-times",
+   "fetched_at": "2025-10-12T08:41:14+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-22: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "location": "Corpus Christi Parish - St. Joseph Church",
+   "source": "wayback-2026-04-22",
+   "archive_url": "https://web.archive.org/web/20251012084114/https://ccwauk.org/mass-times",
+   "capture_date": "2025-10-12"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "08:30",
+   "language": "English",
+   "raw": "[Corpus Christi Parish - St. John Neumann Church] Thursday: 8:30 AM English St. John Neumann",
+   "source_url": "https://ccwauk.org/mass-times",
+   "fetched_at": "2025-10-12T08:41:14+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-22: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "location": "Corpus Christi Parish - St. John Neumann Church",
+   "source": "wayback-2026-04-22",
+   "archive_url": "https://web.archive.org/web/20251012084114/https://ccwauk.org/mass-times",
+   "capture_date": "2025-10-12"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "08:00",
+   "language": "English",
+   "raw": "[Corpus Christi Parish - St. Joseph Church] Friday: 8:00 AM English St. Joseph",
+   "source_url": "https://ccwauk.org/mass-times",
+   "fetched_at": "2025-10-12T08:41:14+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-22: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "location": "Corpus Christi Parish - St. Joseph Church",
+   "source": "wayback-2026-04-22",
+   "archive_url": "https://web.archive.org/web/20251012084114/https://ccwauk.org/mass-times",
+   "capture_date": "2025-10-12"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "08:00",
+   "language": "English",
+   "raw": "[Corpus Christi Parish - St. Joseph Church] Saturday: 8:00 AM English St. Joseph",
+   "source_url": "https://ccwauk.org/mass-times",
+   "fetched_at": "2025-10-12T08:41:14+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-22: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "location": "Corpus Christi Parish - St. Joseph Church",
+   "source": "wayback-2026-04-22",
+   "archive_url": "https://web.archive.org/web/20251012084114/https://ccwauk.org/mass-times",
+   "capture_date": "2025-10-12"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "16:00",
+   "language": "English",
+   "raw": "[Corpus Christi Parish - St. William Church] Saturday: 4:00 PM English St. William",
+   "source_url": "https://ccwauk.org/mass-times",
+   "fetched_at": "2025-10-12T08:41:14+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-22: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "location": "Corpus Christi Parish - St. William Church",
+   "source": "wayback-2026-04-22",
+   "archive_url": "https://web.archive.org/web/20251012084114/https://ccwauk.org/mass-times",
+   "capture_date": "2025-10-12"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": "English",
+   "raw": "[Corpus Christi Parish - St. John Neumann Church] Saturday: 5:00 PM English St. John Neumann",
+   "source_url": "https://ccwauk.org/mass-times",
+   "fetched_at": "2025-10-12T08:41:14+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-22: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "location": "Corpus Christi Parish - St. John Neumann Church",
+   "source": "wayback-2026-04-22",
+   "archive_url": "https://web.archive.org/web/20251012084114/https://ccwauk.org/mass-times",
+   "capture_date": "2025-10-12"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "18:00",
+   "language": "Spanish",
+   "raw": "[Corpus Christi Parish - St. Joseph Church] Saturday: 6:00 PM Spanish St. Joseph (Español)",
+   "source_url": "https://ccwauk.org/mass-times",
+   "fetched_at": "2025-10-12T08:41:14+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-22: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "location": "Corpus Christi Parish - St. Joseph Church",
+   "source": "wayback-2026-04-22",
+   "archive_url": "https://web.archive.org/web/20251012084114/https://ccwauk.org/mass-times",
+   "capture_date": "2025-10-12"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "08:00",
+   "language": "English",
+   "raw": "[Corpus Christi Parish - St. Joseph Church] November 1: 8:00 AM English St. Joseph",
+   "source_url": "https://ccwauk.org/mass-times",
+   "fetched_at": "2025-10-12T08:41:14+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-22: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "kind_parsed": "mass",
+   "location": "Corpus Christi Parish - St. Joseph Church",
+   "source": "wayback-2026-04-22",
+   "archive_url": "https://web.archive.org/web/20251012084114/https://ccwauk.org/mass-times",
+   "capture_date": "2025-10-12"
+  }
+ ],
  "source_url": "https://www.ccwauk.org/",
- "fetched_at": "2026-11-01T01:59:49+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-02T00:22:11+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": true
+   },
+   "score": "high"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "has_sunday": true,
+ "groups_dropped": {},
+ "office_contact": {
+  "email": null,
+  "phone": "(262) 922-9285",
+  "address": null,
+  "source_url": "https://ccwauk.org/contact-us",
+  "sources": {
+   "phone": "https://ccwauk.org/contact-us"
+  },
+  "fetched_at": "2026-04-22T02:58:35+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2026-04-22",
+  "capture_age_days": 194,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://ccwauk.org/",
+    "capture": "2026-04-22",
+    "archive_url": "https://web.archive.org/web/20260422025743/https://ccwauk.org/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://ccwauk.org/mass-times",
+    "capture": "2025-10-12",
+    "archive_url": "https://web.archive.org/web/20251012084114/https://ccwauk.org/mass-times"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://ccwauk.org/worship",
+    "capture": "2025-10-12",
+    "archive_url": "https://web.archive.org/web/20251012083105/https://ccwauk.org/worship"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://ccwauk.org/child-ministry",
+    "capture": "2025-10-12",
+    "archive_url": "https://web.archive.org/web/20251012075948/https://ccwauk.org/child-ministry"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://ccwauk.org/child-formation-program",
+    "capture": "2025-10-12",
+    "archive_url": "https://web.archive.org/web/20251012074254/https://ccwauk.org/child-formation-program"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://ccwauk.org/young-adult-formation-18-30-years-old",
+    "capture": "2025-10-12",
+    "archive_url": "https://web.archive.org/web/20251012084648/https://ccwauk.org/young-adult-formation-18-30-years-old"
+   },
+   {
+    "kind": "bulletin",
+    "original": "https://www.ccwauk.org/bulletin",
+    "capture": "2025-04-18",
+    "archive_url": "https://web.archive.org/web/20250418072653/https://www.ccwauk.org/bulletin"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://ccwauk.org/calendar-1",
+    "capture": "2025-10-12",
+    "archive_url": "https://web.archive.org/web/20251012080539/https://ccwauk.org/calendar-1"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://ccwauk.org/special-events",
+    "capture": "2026-02-17",
+    "archive_url": "https://web.archive.org/web/20260217115742/https://ccwauk.org/special-events"
+   },
+   {
+    "kind": "live",
+    "original": "https://ccwauk.org/weekly-mass-livestream",
+    "capture": "2025-10-12",
+    "archive_url": "https://web.archive.org/web/20251012073915/https://ccwauk.org/weekly-mass-livestream"
+   },
+   {
+    "kind": "contact",
+    "original": "https://ccwauk.org/contact-us",
+    "capture": "2026-04-22",
+    "archive_url": "https://web.archive.org/web/20260422025835/https://ccwauk.org/contact-us"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }

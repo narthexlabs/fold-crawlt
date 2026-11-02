@@ -20,33 +20,381 @@
   "Flaherty"
  ],
  "home_url": "https://stmartinfl.org/",
- "final_url": "https://www.stmartinfl.org/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "final_url": "https://stmartinfl.org/",
+ "crawl_status": "wayback-2025-06-25",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
-   "url": "https://www.stmartinfl.org/",
-   "status": 403,
-   "class": "challenge"
+   "url": "https://stmartinfl.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stmartinfl.org/sacraments",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stmartinfl.org/confession-times",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://stmartinfl.org/liturgical-ministry",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://stmartinfl.org/formation",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "ministries",
+   "url": "https://stmartinfl.org/men-and-womens-formation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://stmartinfl.org/bulletins",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.stmartinfl.org/calendar",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://stmartinfl.org/events?page=1",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://stmartinfl.org/contact-us",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "stmartinfl.org:adult_formation",
+   "name": "Adult Formation",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "adult_formation",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stmartinfl.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stmartinfl.org/men-and-womens-formation",
+   "source_kind": "website",
+   "fetched_at": "2025-04-25T15:32:52+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-06-25"
+  },
+  {
+   "id": "stmartinfl.org:ocia",
+   "name": "OCIA (becoming Catholic)",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "ocia",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stmartinfl.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stmartinfl.org/men-and-womens-formation",
+   "source_kind": "website",
+   "fetched_at": "2025-04-25T15:32:52+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-06-25"
+  },
+  {
+   "id": "stmartinfl.org:mens_group",
+   "name": "Men's Group",
+   "category": "men",
+   "category_label": "Men",
+   "subcategory": "mens_group",
+   "audience": "men",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stmartinfl.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stmartinfl.org/men-and-womens-formation",
+   "source_kind": "website",
+   "fetched_at": "2025-04-25T15:32:52+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-06-25"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
  "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "bulletin": {
+  "url": "https://files.ecatholic.com/19786/bulletins/20230205.pdf?t=1675356068000",
+  "date": "2023-02-05",
+  "kind": "ecatholic_pdf",
+  "text": "February 5 , 2023",
+  "source_url": "https://stmartinfl.org/bulletins"
+ },
+ "schedule_rows": [
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "18:30-19:00",
+   "language": null,
+   "raw": "Wednesday 6:30 PM 7:00 PM [Mass intention withheld]",
+   "source_url": "https://stmartinfl.org/",
+   "fetched_at": "2025-06-25T07:50:28+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-06-25: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-06-25",
+   "archive_url": "https://web.archive.org/web/20250625075028/https://stmartinfl.org/",
+   "capture_date": "2025-06-25"
+  },
+  {
+   "kind": "confession",
+   "day": "Wednesday",
+   "time": "18:00-19:00",
+   "language": null,
+   "raw": "Wednesday 6:00 PM 7:00 PM [Mass intention withheld]",
+   "source_url": "https://stmartinfl.org/",
+   "fetched_at": "2025-06-25T07:50:28+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-06-25: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-06-25",
+   "archive_url": "https://web.archive.org/web/20250625075028/https://stmartinfl.org/",
+   "capture_date": "2025-06-25"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "16:30",
+   "language": "English",
+   "raw": "Saturday: 4:30 PM English New Times",
+   "source_url": "https://stmartinfl.org/",
+   "fetched_at": "2025-06-25T07:50:28+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-06-25: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-06-25",
+   "archive_url": "https://web.archive.org/web/20250625075028/https://stmartinfl.org/",
+   "capture_date": "2025-06-25"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:30",
+   "language": "English",
+   "raw": "Sunday: 9:30 AM English",
+   "source_url": "https://stmartinfl.org/",
+   "fetched_at": "2025-06-25T07:50:28+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-06-25: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-06-25",
+   "archive_url": "https://web.archive.org/web/20250625075028/https://stmartinfl.org/",
+   "capture_date": "2025-06-25"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "09:00",
+   "language": "English",
+   "raw": "Monday: 9:00 AM English New Mass date and time",
+   "source_url": "https://stmartinfl.org/",
+   "fetched_at": "2025-06-25T07:50:28+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-06-25: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-06-25",
+   "archive_url": "https://web.archive.org/web/20250625075028/https://stmartinfl.org/",
+   "capture_date": "2025-06-25"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "09:00",
+   "language": "English",
+   "raw": "Tuesday: 9:00 AM English",
+   "source_url": "https://stmartinfl.org/",
+   "fetched_at": "2025-06-25T07:50:28+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-06-25: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-06-25",
+   "archive_url": "https://web.archive.org/web/20250625075028/https://stmartinfl.org/",
+   "capture_date": "2025-06-25"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "18:00",
+   "language": "English",
+   "raw": "Wednesday: 6:00 PM English New Mass date and time",
+   "source_url": "https://stmartinfl.org/",
+   "fetched_at": "2025-06-25T07:50:28+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-06-25: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-06-25",
+   "archive_url": "https://web.archive.org/web/20250625075028/https://stmartinfl.org/",
+   "capture_date": "2025-06-25"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "09:00",
+   "language": "English",
+   "raw": "Thursday: 9:00 AM English",
+   "source_url": "https://stmartinfl.org/",
+   "fetched_at": "2025-06-25T07:50:28+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-06-25: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-06-25",
+   "archive_url": "https://web.archive.org/web/20250625075028/https://stmartinfl.org/",
+   "capture_date": "2025-06-25"
+  }
+ ],
  "source_url": "https://stmartinfl.org/",
- "fetched_at": "2026-11-01T08:34:58+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-02T00:13:34+00:00",
  "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
+  "screened_by": "ingest/public/privacy.py screen()",
+  "intentions_withheld": 2
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": true
+   },
+   "score": "high"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 4
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "text:relative_time": 4
+ },
+ "groups_dropped": {
+  "unmatched": 1
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(270) 828-2552",
+  "address": "440 St. Martin Road, Vine Grove, KY 40175",
+  "source_url": "https://stmartinfl.org/contact-us",
+  "sources": {
+   "phone": "https://stmartinfl.org/contact-us",
+   "address": "https://stmartinfl.org/contact-us"
+  },
+  "fetched_at": "2024-01-20T12:24:08+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2025-06-25",
+  "capture_age_days": 495,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://stmartinfl.org/",
+    "capture": "2025-06-25",
+    "archive_url": "https://web.archive.org/web/20250625075028/https://stmartinfl.org/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://stmartinfl.org/sacraments",
+    "capture": "2025-03-23",
+    "archive_url": "https://web.archive.org/web/20250323144940/https://stmartinfl.org/sacraments"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://stmartinfl.org/confession-times",
+    "capture": "2025-06-25",
+    "archive_url": "https://web.archive.org/web/20250625083518/https://stmartinfl.org/confession-times"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://stmartinfl.org/liturgical-ministry",
+    "capture": "2023-02-07",
+    "archive_url": "https://web.archive.org/web/20230207142734/https://stmartinfl.org/liturgical-ministry"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://stmartinfl.org/men-and-womens-formation",
+    "capture": "2025-04-25",
+    "archive_url": "https://web.archive.org/web/20250425153252/https://stmartinfl.org/men-and-womens-formation"
+   },
+   {
+    "kind": "bulletin",
+    "original": "https://stmartinfl.org/bulletins",
+    "capture": "2023-02-07",
+    "archive_url": "https://web.archive.org/web/20230207155859/https://stmartinfl.org/bulletins"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://www.stmartinfl.org/calendar",
+    "capture": "2023-10-04",
+    "archive_url": "https://web.archive.org/web/20231004172859/https://www.stmartinfl.org/calendar"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://stmartinfl.org/events?page=1",
+    "capture": "2025-05-23",
+    "archive_url": "https://web.archive.org/web/20250523075356/https://stmartinfl.org/events?page=1"
+   },
+   {
+    "kind": "contact",
+    "original": "https://stmartinfl.org/contact-us",
+    "capture": "2024-01-20",
+    "archive_url": "https://web.archive.org/web/20240120122408/https://stmartinfl.org/contact-us"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }
