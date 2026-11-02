@@ -18,32 +18,539 @@
  ],
  "home_url": "https://www.scscedargrove.org/",
  "final_url": "https://www.scscedargrove.org/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "crawl_status": "wayback-2026-05-07",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
    "url": "https://www.scscedargrove.org/",
-   "status": 403,
-   "class": "challenge"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://scscedargrove.org/mass-times",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://scscedargrove.org/confession-times",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://scscedargrove.org/faith-formation-religious-ed",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.scscedargrove.org/faith-formation-newsletters",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://scscedargrove.org/ministries",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://www.scscedargrove.org/bulletins",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.scscedargrove.org/events-news",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "live",
+   "url": "https://www.scscedargrove.org/mass-live-streams",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "contact",
+   "url": "https://scscedargrove.org/contact-us",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "scscedargrove.org:ocia",
+   "name": "OCIA",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "ocia",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://scscedargrove.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.scscedargrove.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-05-07T23:18:16+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-05-07"
+  },
+  {
+   "id": "scscedargrove.org:children_ff",
+   "name": "Religious Education",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "children_faith_formation",
+   "audience": "families",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://scscedargrove.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://scscedargrove.org/faith-formation-religious-ed",
+   "source_kind": "website",
+   "fetched_at": "2025-10-12T11:28:31+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-05-07"
+  },
+  {
+   "id": "scscedargrove.org:seniors",
+   "name": "Society for Seniors",
+   "category": "seniors",
+   "category_label": "Seniors",
+   "subcategory": "seniors_group",
+   "audience": "seniors",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://scscedargrove.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.scscedargrove.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-05-07T23:18:16+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-05-07"
+  },
+  {
+   "id": "scscedargrove.org:sick",
+   "name": "Ministry to the Homebound",
+   "category": "service_mercy",
+   "category_label": "Service & mercy",
+   "subcategory": "sick_homebound",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://scscedargrove.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://scscedargrove.org/ministries",
+   "source_kind": "website",
+   "fetched_at": "2025-10-12T11:40:28+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-05-07"
+  },
+  {
+   "id": "scscedargrove.org:choir",
+   "name": "SCS Choir",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "choir_music",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "We are looking for new members to join the SCS Choir. If you sing professionally or just in the shower, we have a place for you. All are welcome!",
+   "contact_url": "https://scscedargrove.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://scscedargrove.org/ministries",
+   "source_kind": "website",
+   "fetched_at": "2025-10-12T11:40:28+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-05-07"
+  },
+  {
+   "id": "scscedargrove.org:kofc",
+   "name": "Knights of Columbus",
+   "category": "fraternal_orders",
+   "category_label": "Fraternal & orders",
+   "subcategory": "knights_of_columbus",
+   "audience": "men",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://scscedargrove.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.scscedargrove.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-05-07T23:18:16+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-05-07"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/sienaonfire"
+  ],
+  "youtube": [
+   "https://www.youtube.com/channel/UCnrMU4Ejd7M-i4nWlDeUP8Q"
+  ],
+  "livestream": [
+   {
+    "url": "https://www.scscedargrove.org/mass-live-streams",
+    "label": "Mass Live Streams",
+    "platform": "www.scscedargrove.org",
+    "kind": "link"
+   },
+   {
+    "url": "https://scscedargrove.org/mass-live-streams",
+    "label": "Mass Live Streams",
+    "platform": "scscedargrove.org",
+    "kind": "link"
+   }
+  ]
+ },
+ "bulletin": {
+  "url": "https://www.scscedargrove.org/bulletins",
+  "date": null,
+  "kind": "page",
+  "text": "Bulletins",
+  "source_url": "https://www.scscedargrove.org/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": "English",
+   "raw": "Saturday Vigil: 5:00 PM English",
+   "source_url": "https://www.scscedargrove.org/",
+   "fetched_at": "2026-05-07T23:18:16+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-05-07: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-05-07",
+   "archive_url": "https://web.archive.org/web/20260507231816/https://www.scscedargrove.org/",
+   "capture_date": "2026-05-07"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": "English",
+   "raw": "Sunday: 8:00 AM English",
+   "source_url": "https://www.scscedargrove.org/",
+   "fetched_at": "2026-05-07T23:18:16+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-05-07: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-05-07",
+   "archive_url": "https://web.archive.org/web/20260507231816/https://www.scscedargrove.org/",
+   "capture_date": "2026-05-07"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:30",
+   "language": "English",
+   "raw": "Sunday: 10:30 AM English",
+   "source_url": "https://www.scscedargrove.org/",
+   "fetched_at": "2026-05-07T23:18:16+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-05-07: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-05-07",
+   "archive_url": "https://web.archive.org/web/20260507231816/https://www.scscedargrove.org/",
+   "capture_date": "2026-05-07"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "12:00",
+   "language": "English",
+   "raw": "Sunday: 12:00 PM English",
+   "source_url": "https://www.scscedargrove.org/",
+   "fetched_at": "2026-05-07T23:18:16+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-05-07: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-05-07",
+   "archive_url": "https://web.archive.org/web/20260507231816/https://www.scscedargrove.org/",
+   "capture_date": "2026-05-07"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "08:30",
+   "language": "English",
+   "raw": "Monday - Friday: 8:30 AM English",
+   "source_url": "https://www.scscedargrove.org/",
+   "fetched_at": "2026-05-07T23:18:16+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-05-07: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Monday - Friday",
+   "source": "wayback-2026-05-07",
+   "archive_url": "https://web.archive.org/web/20260507231816/https://www.scscedargrove.org/",
+   "capture_date": "2026-05-07"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "08:30",
+   "language": "English",
+   "raw": "Monday - Friday: 8:30 AM English",
+   "source_url": "https://www.scscedargrove.org/",
+   "fetched_at": "2026-05-07T23:18:16+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-05-07: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Monday - Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "source": "wayback-2026-05-07",
+   "archive_url": "https://web.archive.org/web/20260507231816/https://www.scscedargrove.org/",
+   "capture_date": "2026-05-07"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "08:30",
+   "language": "English",
+   "raw": "Monday - Friday: 8:30 AM English",
+   "source_url": "https://www.scscedargrove.org/",
+   "fetched_at": "2026-05-07T23:18:16+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-05-07: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Monday - Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "source": "wayback-2026-05-07",
+   "archive_url": "https://web.archive.org/web/20260507231816/https://www.scscedargrove.org/",
+   "capture_date": "2026-05-07"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "08:30",
+   "language": "English",
+   "raw": "Monday - Friday: 8:30 AM English",
+   "source_url": "https://www.scscedargrove.org/",
+   "fetched_at": "2026-05-07T23:18:16+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-05-07: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Monday - Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "source": "wayback-2026-05-07",
+   "archive_url": "https://web.archive.org/web/20260507231816/https://www.scscedargrove.org/",
+   "capture_date": "2026-05-07"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "08:30",
+   "language": "English",
+   "raw": "Monday - Friday: 8:30 AM English",
+   "source_url": "https://www.scscedargrove.org/",
+   "fetched_at": "2026-05-07T23:18:16+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-05-07: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Monday - Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "source": "wayback-2026-05-07",
+   "archive_url": "https://web.archive.org/web/20260507231816/https://www.scscedargrove.org/",
+   "capture_date": "2026-05-07"
+  },
+  {
+   "kind": "mass",
+   "day": "First Saturday of the month",
+   "time": "08:30",
+   "language": "English",
+   "raw": "First Saturday: 8:30 AM English",
+   "source_url": "https://www.scscedargrove.org/",
+   "fetched_at": "2026-05-07T23:18:16+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-05-07: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-05-07",
+   "archive_url": "https://web.archive.org/web/20260507231816/https://www.scscedargrove.org/",
+   "capture_date": "2026-05-07"
+  },
+  {
+   "kind": "adoration",
+   "day": "Monday",
+   "time": "16:00-19:00",
+   "language": null,
+   "raw": "Monday: 4:00 PM - 7:00 PM September through June except holidays",
+   "source_url": "https://www.scscedargrove.org/",
+   "fetched_at": "2026-05-07T23:18:16+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-05-07: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "season": "September through June",
+   "source": "wayback-2026-05-07",
+   "archive_url": "https://web.archive.org/web/20260507231816/https://www.scscedargrove.org/",
+   "capture_date": "2026-05-07"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "13:00",
+   "language": null,
+   "raw": "Saturday: 1:00 PM or by appointment (Appointments only during August)",
+   "source_url": "https://www.scscedargrove.org/",
+   "fetched_at": "2026-05-07T23:18:16+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-05-07: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-05-07",
+   "archive_url": "https://web.archive.org/web/20260507231816/https://www.scscedargrove.org/",
+   "capture_date": "2026-05-07"
+  }
+ ],
  "source_url": "https://www.scscedargrove.org/",
- "fetched_at": "2026-11-01T01:58:05+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-02T04:47:29+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": true
+   },
+   "score": "high"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "has_sunday": true,
+ "groups_dropped": {
+  "fragment": 1,
+  "noise": 3,
+  "schedule": 1,
+  "label_not_group": 1
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(973) 239-7960",
+  "address": "339 Pompton Avenue, Cedar Grove, NJ 07009-2032",
+  "source_url": "https://scscedargrove.org/contact-us",
+  "sources": {
+   "phone": "https://scscedargrove.org/contact-us",
+   "address": "https://scscedargrove.org/contact-us"
+  },
+  "fetched_at": "2026-05-07T23:17:18+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2026-05-07",
+  "capture_age_days": 179,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://www.scscedargrove.org/",
+    "capture": "2026-05-07",
+    "archive_url": "https://web.archive.org/web/20260507231816/https://www.scscedargrove.org/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://scscedargrove.org/mass-times",
+    "capture": "2025-10-12",
+    "archive_url": "https://web.archive.org/web/20251012115327/https://scscedargrove.org/mass-times"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://scscedargrove.org/confession-times",
+    "capture": "2025-10-12",
+    "archive_url": "https://web.archive.org/web/20251012110134/https://scscedargrove.org/confession-times"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://scscedargrove.org/faith-formation-religious-ed",
+    "capture": "2025-10-12",
+    "archive_url": "https://web.archive.org/web/20251012112831/https://scscedargrove.org/faith-formation-religious-ed"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://www.scscedargrove.org/faith-formation-newsletters",
+    "capture": "2025-10-16",
+    "archive_url": "https://web.archive.org/web/20251016165454/https://www.scscedargrove.org/faith-formation-newsletters"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://scscedargrove.org/ministries",
+    "capture": "2025-10-12",
+    "archive_url": "https://web.archive.org/web/20251012114028/https://scscedargrove.org/ministries"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://www.scscedargrove.org/events-news",
+    "capture": "2026-05-07",
+    "archive_url": "https://web.archive.org/web/20260507231814/https://www.scscedargrove.org/events-news"
+   },
+   {
+    "kind": "contact",
+    "original": "https://scscedargrove.org/contact-us",
+    "capture": "2026-05-07",
+    "archive_url": "https://web.archive.org/web/20260507231718/https://scscedargrove.org/contact-us"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review.",
+  "grade": {
+   "rule": "wayback-verified-2026-11-01",
+   "template": "ecatholic",
+   "trusted_template": false,
+   "has_sunday": true,
+   "groups": 6,
+   "verified": false,
+   "capture_date": "2026-05-07",
+   "applied": false
+  }
  }
 }
