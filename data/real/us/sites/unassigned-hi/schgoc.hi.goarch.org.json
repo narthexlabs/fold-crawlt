@@ -81,6 +81,12 @@
    "url": "https://www.schgoc.hi.goarch.org/contact_us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.schgoc.hi.goarch.org/schedule-directions/online-chapel",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -277,8 +283,21 @@
   "excluded_by_reason": {}
  },
  "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()",
-  "names_withheld": 0,
-  "contacts_removed": 1
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:51+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "liturgy"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
  }
 }

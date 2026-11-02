@@ -79,6 +79,12 @@
    "url": "https://www.stcmv.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stcmv.org/penance",
+   "status": null,
+   "class": "ssl_error"
   }
  ],
  "cms_guess": {
@@ -212,7 +218,7 @@
    "feed_key": "094b5fd38c63",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:39:04+00:00",
+    "fetched_at": "2026-11-02T04:53:55+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -228,6 +234,71 @@
   "source_url": "https://www.stcmv.org/"
  },
  "schedule_rows": [
+  {
+   "kind": "devotion",
+   "day": "Sunday",
+   "time": "07:30",
+   "language": null,
+   "raw": "Sunday -7:30AM",
+   "source_url": "https://www.stcmv.org/",
+   "fetched_at": "2026-11-01T17:28:04+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "devotion",
+   "day": "Wednesday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Wednesday - 8:00am",
+   "source_url": "https://www.stcmv.org/",
+   "fetched_at": "2026-11-01T17:28:04+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "devotion",
+   "day": "Thursday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Thursday - 8:00am",
+   "source_url": "https://www.stcmv.org/",
+   "fetched_at": "2026-11-01T17:28:04+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "devotion",
+   "day": "First Friday of the month",
+   "time": "08:00",
+   "language": null,
+   "raw": "First Friday of the Month 8:00am",
+   "source_url": "https://www.stcmv.org/",
+   "fetched_at": "2026-11-01T17:28:04+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "devotion",
+   "day": "Thursday",
+   "time": "08:30",
+   "language": null,
+   "raw": "Thursday - 8:30am",
+   "source_url": "https://www.stcmv.org/",
+   "fetched_at": "2026-11-01T17:28:04+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
   {
    "kind": "adoration",
    "day": "Thursday",
@@ -421,6 +492,20 @@
    "confidence": "medium",
    "template": "generic_strict",
    "day_expanded_from": "Daily"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "08:00",
+   "language": null,
+   "raw": "Adoration After Mass HRC: 8am",
+   "source_url": "https://www.stcmv.org/",
+   "fetched_at": "2026-11-01T17:28:04+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "kind_parsed": "adoration"
   },
   {
    "kind": "mass",
@@ -654,9 +739,19 @@
  ],
  "source_url": "https://www.stcmv.org/",
  "fetched_at": "2026-11-01T17:28:13+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:47+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -670,22 +765,32 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 39
  },
+ "schedule_notes": [
+  {
+   "kind": "adoration",
+   "text": "(or by appointment)",
+   "phrase": "by appointment",
+   "source_url": "https://www.stcmv.org/",
+   "fetched_at": "2026-11-01T17:28:04+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 20,
-  "not_a_service": 9,
+  "other_location": 19,
   "no_day": 46,
   "relative_time": 2,
+  "not_a_service": 3,
   "box_rows_added": 12
  },
  "groups_dropped": {
   "unmatched": 2
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
