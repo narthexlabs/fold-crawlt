@@ -73,6 +73,12 @@
    "url": "https://www.guadalupedoral.org/CatholicChurch.php?pg=Contact+Us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.guadalupedoral.org/CatholicChurch.php?pg=Groups&Section=EucharisticAdoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -543,6 +549,24 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:48:04+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(305) 593-6123",
@@ -554,10 +578,5 @@
   },
   "fetched_at": "2026-11-01T09:05:02+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()",
-  "names_withheld": 0,
-  "contacts_removed": 1
  }
 }
