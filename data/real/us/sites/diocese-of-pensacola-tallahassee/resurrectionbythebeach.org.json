@@ -78,6 +78,12 @@
    "url": "https://www.resurrectionbythebeach.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://www.resurrectionbythebeach.org/liturgical",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -261,6 +267,76 @@
    "day_bound_from_line": true
   },
   {
+   "kind": "devotion",
+   "day": "Monday",
+   "time": "08:40",
+   "language": null,
+   "raw": "Rosary 8:40AM",
+   "source_url": "https://www.resurrectionbythebeach.org/mass-times",
+   "fetched_at": "2026-11-01T17:27:29+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace",
+   "day_expanded_from": "M-F"
+  },
+  {
+   "kind": "devotion",
+   "day": "Tuesday",
+   "time": "08:40",
+   "language": null,
+   "raw": "Rosary 8:40AM",
+   "source_url": "https://www.resurrectionbythebeach.org/mass-times",
+   "fetched_at": "2026-11-01T17:27:29+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace",
+   "day_expanded_from": "M-F"
+  },
+  {
+   "kind": "devotion",
+   "day": "Wednesday",
+   "time": "08:40",
+   "language": null,
+   "raw": "Rosary 8:40AM",
+   "source_url": "https://www.resurrectionbythebeach.org/mass-times",
+   "fetched_at": "2026-11-01T17:27:29+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace",
+   "day_expanded_from": "M-F"
+  },
+  {
+   "kind": "devotion",
+   "day": "Thursday",
+   "time": "08:40",
+   "language": null,
+   "raw": "Rosary 8:40AM",
+   "source_url": "https://www.resurrectionbythebeach.org/mass-times",
+   "fetched_at": "2026-11-01T17:27:29+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace",
+   "day_expanded_from": "M-F"
+  },
+  {
+   "kind": "devotion",
+   "day": "Friday",
+   "time": "08:40",
+   "language": null,
+   "raw": "Rosary 8:40AM",
+   "source_url": "https://www.resurrectionbythebeach.org/mass-times",
+   "fetched_at": "2026-11-01T17:27:29+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace",
+   "day_expanded_from": "M-F"
+  },
+  {
    "kind": "adoration",
    "day": "Friday",
    "time": "09:45-10:30",
@@ -317,9 +393,21 @@
  ],
  "source_url": "https://resurrectionbythebeach.org/",
  "fetched_at": "2026-11-01T17:27:36+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:10+00:00",
+  "requests": 1,
+  "found": [
+   "liturgy"
+  ]
+ },
  "schedule_template": {
   "template": "squarespace",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -333,19 +421,26 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 13
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "(Or by appointment)",
+   "phrase": "by appointment",
+   "source_url": "https://www.resurrectionbythebeach.org/mass-times",
+   "fetched_at": "2026-11-01T17:27:29+00:00"
+  }
+ ],
  "has_sunday": true,
- "schedule_dropped": {
-  "not_a_service": 1
- },
  "groups_dropped": {
   "unmatched": 3,
   "sacrament_prep": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

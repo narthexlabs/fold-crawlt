@@ -86,6 +86,12 @@
    "url": "https://stthomasmore.ptdiocese.org/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stthomasmore.ptdiocese.org/events/eucharistic-adoration/20261106",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -411,27 +417,25 @@
    "review_reason": null,
    "confidence": "high",
    "template": "ecatholic"
-  },
-  {
-   "kind": "other",
-   "day": "Holy days",
-   "time": "08:00",
-   "language": null,
-   "raw": "Thanksgiving Day Mass: 8:00 Eucharistic Adoration",
-   "source_url": "https://stthomasmore.ptdiocese.org/",
-   "fetched_at": "2026-11-01T20:25:02+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "low",
-   "template": "ecatholic+generic_strict",
-   "kind_parsed": "mass"
   }
  ],
  "source_url": "https://stthomasmore.ptdiocese.org/",
  "fetched_at": "2026-11-01T20:26:31+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:11+00:00",
+  "requests": 1,
+  "found": [
+   "adoration"
+  ]
+ },
  "schedule_template": {
   "template": "ecatholic",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -443,16 +447,22 @@
    },
    "score": "high"
   },
-  "passed_bar": false,
-  "trusted_candidate": false,
+  "passed_bar": true,
+  "trusted_candidate": true,
+  "trusted_kinds": [
+   "weekend",
+   "weekday",
+   "confession",
+   "adoration"
+  ],
   "generic_rows": 6
  },
  "has_sunday": true,
  "schedule_dropped": {
   "text:dated_line": 40,
   "text:skipped_section": 32,
-  "text:other_location": 12,
-  "text:not_a_service": 2,
+  "text:other_location": 14,
+  "text:dated_block": 5,
   "text:relative_time": 1
  },
  "groups_dropped": {
@@ -460,8 +470,8 @@
   "noise": 5
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

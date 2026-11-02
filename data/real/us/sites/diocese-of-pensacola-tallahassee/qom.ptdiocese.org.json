@@ -33,6 +33,18 @@
    "url": "https://qom.ptdiocese.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://qom.ptdiocese.org/reconciliation/",
+   "status": null,
+   "class": "timeout"
+  },
+  {
+   "category": "adoration",
+   "url": "https://qom.ptdiocese.org/adoration/",
+   "status": 504,
+   "class": "http_5xx"
   }
  ],
  "cms_guess": {
@@ -90,9 +102,19 @@
  ],
  "source_url": "https://qom.ptdiocese.org/",
  "fetched_at": "2026-11-01T22:16:08+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:29+00:00",
+  "requests": 2,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -106,13 +128,23 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 3
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Half hour before weekend Masses or by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://qom.ptdiocese.org/",
+   "fetched_at": "2026-11-01T22:15:39+00:00"
+  }
+ ],
  "has_sunday": true,
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
