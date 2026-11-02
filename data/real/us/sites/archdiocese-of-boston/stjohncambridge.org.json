@@ -74,6 +74,12 @@
    "url": "https://www.stjohncambridge.org/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stjohncambridge.org/chapel",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -405,6 +411,22 @@
    "confidence": "high",
    "template": "generic_strict",
    "day_expanded_from": "Monday thru Friday"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "16:00",
+   "language": null,
+   "raw": "Reconciliation hours are Saturday afternoons before the 4p.m.",
+   "source_url": "https://www.stjohncambridge.org/reconciliation",
+   "fetched_at": "2026-11-02T04:41:33+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "before",
+   "note": "Reconciliation hours are Saturday afternoons before the 4p.m.",
+   "topup": true
   }
  ],
  "source_url": "http://www.stjohncambridge.org/",
@@ -446,8 +468,21 @@
   "excluded_by_reason": {}
  },
  "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()",
-  "names_withheld": 0,
-  "contacts_removed": 5
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:34+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }
