@@ -22,12 +22,18 @@
  "home_url": "https://www.stmaryjohnstown.com/",
  "final_url": "https://www.stmaryjohnstown.com/",
  "crawl_status": "ok",
- "crawl_env": "sandbox",
+ "crawl_env": "runner-rendered",
  "robots_note": "ok",
  "pages": [
   {
    "category": "home",
    "url": "https://www.stmaryjohnstown.com/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.stmaryjohnstown.com/home",
    "status": 200,
    "class": "ok"
   },
@@ -61,7 +67,7 @@
    "feed_key": "1d0b51d7234f",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-02T04:56:59+00:00",
+    "fetched_at": "2026-11-02T07:19:47+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -89,7 +95,7 @@
    "language": null,
    "raw": "Divine Liturgy:: Saturdays: 4:00pm | Sundays: 10:00am",
    "source_url": "https://www.stmaryjohnstown.com/",
-   "fetched_at": "2026-11-01T20:25:29+00:00",
+   "fetched_at": "2026-11-02T07:17:21+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -102,7 +108,7 @@
    "language": null,
    "raw": "Divine Liturgy:: Saturdays: 4:00pm | Sundays: 10:00am",
    "source_url": "https://www.stmaryjohnstown.com/",
-   "fetched_at": "2026-11-01T20:25:29+00:00",
+   "fetched_at": "2026-11-02T07:17:21+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -110,17 +116,7 @@
   }
  ],
  "source_url": "https://www.stmaryjohnstown.com/",
- "fetched_at": "2026-11-01T20:25:29+00:00",
- "topup": {
-  "kinds": [
-   "adoration",
-   "confession",
-   "liturgy"
-  ],
-  "at": "2026-11-02T04:43:03+00:00",
-  "requests": 0,
-  "found": []
- },
+ "fetched_at": "2026-11-02T07:17:27+00:00",
  "schedule_template": {
   "template": "squarespace",
   "version": "ca-sites/3",
@@ -146,7 +142,7 @@
    "text": "One hour before all Divine Liturgies, or by appointment",
    "phrase": "by appointment",
    "source_url": "https://www.stmaryjohnstown.com/",
-   "fetched_at": "2026-11-01T20:25:29+00:00"
+   "fetched_at": "2026-11-02T07:17:21+00:00"
   }
  ],
  "has_sunday": true,
@@ -170,10 +166,11 @@
    "phone": "https://www.stmaryjohnstown.com/",
    "address": "https://www.stmaryjohnstown.com/"
   },
-  "fetched_at": "2026-11-01T20:25:29+00:00",
+  "fetched_at": "2026-11-02T07:17:21+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
- }
+ },
+ "fetch_mode": "rendered"
 }

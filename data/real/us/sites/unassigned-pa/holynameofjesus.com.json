@@ -17,7 +17,7 @@
  "home_url": "https://www.holynameofjesus.com/",
  "final_url": "https://www.holynameofjesus.com/",
  "crawl_status": "ok",
- "crawl_env": "sandbox",
+ "crawl_env": "runner-rendered",
  "robots_note": "ok",
  "pages": [
   {
@@ -29,8 +29,8 @@
   {
    "category": "ministries",
    "url": "https://www.holynameofjesus.com/team",
-   "status": null,
-   "class": "ssl_error"
+   "status": 200,
+   "class": "ok"
   },
   {
    "category": "calendar",
@@ -58,7 +58,116 @@
   ]
  },
  "template": "generic-html:duda",
- "groups": [],
+ "groups": [
+  {
+   "id": "holynameofjesus.com:youth_ministry|bishop+mcdevitt",
+   "name": "Bishop McDevitt High School",
+   "category": "youth",
+   "category_label": "Youth",
+   "subcategory": "youth_ministry",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.holynameofjesus.com/contact-the-school",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.holynameofjesus.com/team",
+   "source_kind": "website",
+   "fetched_at": "2026-11-02T07:17:20+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "holynameofjesus.com:cyo",
+   "name": "Boys CYO Basketball",
+   "category": "youth",
+   "category_label": "Youth",
+   "subcategory": "cyo_sports",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.holynameofjesus.com/contact-the-school",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.holynameofjesus.com/team",
+   "source_kind": "website",
+   "fetched_at": "2026-11-02T07:17:20+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "holynameofjesus.com:scouts",
+   "name": "Girl Scouts",
+   "category": "youth",
+   "category_label": "Youth",
+   "subcategory": "scouting",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "HNJ Girl Scouts welcomes all girls in kindergarten through high school in our multi-level troop.",
+   "contact_url": "https://www.holynameofjesus.com/contact-the-school",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.holynameofjesus.com/team",
+   "source_kind": "website",
+   "fetched_at": "2026-11-02T07:17:20+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "holynameofjesus.com:youth_ministry",
+   "name": "HNJ Youth Ministry",
+   "category": "youth",
+   "category_label": "Youth",
+   "subcategory": "youth_ministry",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.holynameofjesus.com/contact-the-school",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.holynameofjesus.com/team",
+   "source_kind": "website",
+   "fetched_at": "2026-11-02T07:17:20+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "holynameofjesus.com:youth_ministry|athletic",
+   "name": "Youth Athletics",
+   "category": "youth",
+   "category_label": "Youth",
+   "subcategory": "youth_ministry",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.holynameofjesus.com/contact-the-school",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.holynameofjesus.com/team",
+   "source_kind": "website",
+   "fetched_at": "2026-11-02T07:17:20+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "holynameofjesus.com:choir",
+   "name": "Liturgy Choir",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "choir_music",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "Liturgy Choir is for 5th to 8th grade students. Students will perform at Christmas and the Night of the Arts in addition to Friday Mass at school. We will normally meet at Recess.",
+   "contact_url": "https://www.holynameofjesus.com/contact-the-school",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.holynameofjesus.com/team",
+   "source_kind": "website",
+   "fetched_at": "2026-11-02T07:17:20+00:00",
+   "confidence": "medium"
+  }
+ ],
  "calendar_feeds": [
   {
    "feed_id": "holynameofjesus.com:ics:3f59b06b",
@@ -71,7 +180,7 @@
    "note": "Google Calendar public feed (website-builder widget)",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-02T04:55:50+00:00",
+    "fetched_at": "2026-11-02T07:19:44+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -92,7 +201,7 @@
    "language": null,
    "raw": "Mass (6A): 8:30am",
    "source_url": "https://www.holynameofjesus.com/",
-   "fetched_at": "2026-11-01T22:15:21+00:00",
+   "fetched_at": "2026-11-02T07:17:18+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -106,7 +215,7 @@
    "language": null,
    "raw": "Mass (5A): 2:15pm",
    "source_url": "https://www.holynameofjesus.com/",
-   "fetched_at": "2026-11-01T22:15:21+00:00",
+   "fetched_at": "2026-11-02T07:17:18+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -115,17 +224,7 @@
   }
  ],
  "source_url": "https://www.holynameofjesus.com/",
- "fetched_at": "2026-11-01T22:15:25+00:00",
- "topup": {
-  "kinds": [
-   "adoration",
-   "confession",
-   "liturgy"
-  ],
-  "at": "2026-11-02T04:43:02+00:00",
-  "requests": 0,
-  "found": []
- },
+ "fetched_at": "2026-11-02T07:17:27+00:00",
  "schedule_template": {
   "template": "generic_strict",
   "version": "ca-sites/3",
@@ -143,7 +242,7 @@
   "passed_bar": true,
   "trusted_candidate": false,
   "trusted_kinds": [],
-  "generic_rows": 4
+  "generic_rows": 7
  },
  "has_sunday": false,
  "schedule_partial": true,
@@ -172,10 +271,11 @@
    "phone": "https://www.holynameofjesus.com/contact-the-school",
    "address": "https://www.holynameofjesus.com/contact-the-school"
   },
-  "fetched_at": "2026-11-01T22:15:25+00:00",
+  "fetched_at": "2026-11-02T07:17:27+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
- }
+ },
+ "fetch_mode": "rendered"
 }
