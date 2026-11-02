@@ -81,6 +81,12 @@
    "url": "https://maryourqueen.com/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://maryourqueen.com/reconciliation/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -360,6 +366,34 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Wednesday",
+   "time": "12:30",
+   "language": null,
+   "raw": "Wednesday, 12:30 pm (after the Noon Mass) to 1:30 pm (or when the line is gone) | Walk-In | Confessional",
+   "source_url": "https://maryourqueen.com/reconciliation/",
+   "fetched_at": "2026-11-02T04:42:02+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "13:30",
+   "language": null,
+   "raw": "Wednesday, 12:30 pm (after the Noon Mass) to 1:30 pm (or when the line is gone) | Walk-In | Confessional",
+   "source_url": "https://maryourqueen.com/reconciliation/",
+   "fetched_at": "2026-11-02T04:42:02+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "https://www.maryourqueen.com/",
@@ -400,5 +434,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:04+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
  }
 }
