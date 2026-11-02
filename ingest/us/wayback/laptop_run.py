@@ -13,8 +13,8 @@ with no network, so the output is byte-for-byte the runner's shape.
     python3 wayback_us_run.py status
     python3 wayback_us_run.py zip [--min 150|--all] # out/batch_NN.zip of finished, not-yet-zipped sites
 
-Politeness: one request at a time, >= 4.1 s apart (PACE), honest FindTheChurch UA (fetch_site), no request
-is started that could outlive the call's budget; 429 -> 120 s, refused connection -> 300 s persisted cool-down; 6 failed requests in a row -> 600 s
+Politeness: one request at a time, >= 10 s apart (PACE), honest FindTheChurch UA (fetch_site), no request
+is started that could outlive the call's budget; 429 -> 120 s, refused connection -> 600 s persisted cool-down; 6 failed requests in a row -> 600 s
 cool-down. A site whose CDX listing fails twice is finished as cdx-failed.
 """
 from __future__ import annotations
@@ -41,8 +41,8 @@ PROG = HERE / "progress.json"
 TARGETS = HERE / "targets.json"
 OUT = HERE / "out"
 # web.archive.org refuses connections for a while when a client goes faster than ~15 requests a minute (seen 2026-11-01:
-# conn_error streak at 1.1 s pace), so the laptop paces every request 4.1 s apart, as the California laptop run did.
-PACE = 4.1
+# conn_error streak at 1.1 s, and again after ~13 requests at 4.1 s), and at 6 s; the archive answers with a TCP refusal for some minutes), so the laptop paces every request 10 s apart.
+PACE = 10.0
 
 
 def now_iso() -> str:
@@ -83,13 +83,15 @@ class LaptopArchive(WB.Archive):
             self.diag = (st, r.get("err"), round(time.time() - self.last_start, 1), url[:60])
             if st == 429:
                 self.prog["cooldown_until"] = time.time() + 120
+                self.prog.setdefault("events", []).append([now_iso(), "429", self.n, url[:80]])
                 raise Budget("429")
             if r.get("err") or (st and st >= 500):
                 if r.get("err") == "timeout" and t < timeout:
                     raise Budget("timeout clamped by budget")
                 if r.get("err") == "conn_error":           # the archive is refusing us: cool down, never push harder
-                    self.prog["cooldown_until"] = time.time() + 300
-                    raise Budget("conn_error: archive refusing connections, 300 s cool-down")
+                    self.prog["cooldown_until"] = time.time() + 600
+                    self.prog.setdefault("events", []).append([now_iso(), "conn_error", self.n, url[:80]])
+                    raise Budget("conn_error: archive refusing connections, 600 s cool-down")
                 if attempt == 0 and self.deadline - time.time() > 40:
                     time.sleep(8)
                     continue
