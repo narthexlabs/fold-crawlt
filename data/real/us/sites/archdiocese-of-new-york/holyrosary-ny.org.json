@@ -18,32 +18,453 @@
  ],
  "home_url": "http://holyrosary-ny.org/",
  "final_url": "https://holyrosary-ny.org/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "crawl_status": "wayback-2025-03-18",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
    "url": "https://holyrosary-ny.org/",
-   "status": 403,
-   "class": "challenge"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://holyrosary-ny.org/mass-schedule",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://holyrosary-ny.org/reconciliation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://holyrosary-ny.org/altar-servers",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://holyrosary-ny.org/bulletins",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://holyrosary-ny.org/staffcontact",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "holyrosary-ny.org:rosary",
+   "name": "Church of the Holy Rosary",
+   "category": "prayer_devotion",
+   "category_label": "Prayer & devotion",
+   "subcategory": "rosary",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://holyrosary-ny.org/staffcontact",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://holyrosary-ny.org/altar-servers",
+   "source_kind": "website",
+   "fetched_at": "2025-02-07T10:29:57+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-03-18"
+  },
+  {
+   "id": "holyrosary-ny.org:servers",
+   "name": "Altar Servers",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "altar_servers",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://holyrosary-ny.org/staffcontact",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://holyrosary-ny.org/",
+   "source_kind": "website",
+   "fetched_at": "2025-03-18T05:49:54+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-03-18"
+  },
+  {
+   "id": "holyrosary-ny.org:emhc",
+   "name": "Extraordinary Ministers of Holy Communion",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "emhc",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://holyrosary-ny.org/staffcontact",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://holyrosary-ny.org/",
+   "source_kind": "website",
+   "fetched_at": "2025-03-18T05:49:54+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-03-18"
+  },
+  {
+   "id": "holyrosary-ny.org:choir",
+   "name": "Music Ministry / Choir",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "choir_music",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://holyrosary-ny.org/staffcontact",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://holyrosary-ny.org/",
+   "source_kind": "website",
+   "fetched_at": "2025-03-18T05:49:54+00:00",
+   "confidence": "low",
+   "source": "wayback-2025-03-18"
+  },
+  {
+   "id": "holyrosary-ny.org:lectors",
+   "name": "Readers",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "lectors",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://holyrosary-ny.org/staffcontact",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://holyrosary-ny.org/",
+   "source_kind": "website",
+   "fetched_at": "2025-03-18T05:49:54+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-03-18"
+  },
+  {
+   "id": "holyrosary-ny.org:ushers",
+   "name": "Ushers & Greeters",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "ushers_greeters",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://holyrosary-ny.org/staffcontact",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://holyrosary-ny.org/",
+   "source_kind": "website",
+   "fetched_at": "2025-03-18T05:49:54+00:00",
+   "confidence": "low",
+   "source": "wayback-2025-03-18"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/hrnewyork"
+  ],
+  "flocknote": [
+   "https://new.flocknote.com"
+  ],
+  "livestream": [
+   {
+    "url": "https://holyrosary-ny.org/masslivestreams",
+    "label": "MASS LIVESTREAMS",
+    "platform": "holyrosary-ny.org",
+    "kind": "link"
+   }
+  ]
+ },
+ "bulletin": {
+  "url": "https://files.ecatholic.com/10189/bulletins/20230205.pdf?t=1675265260000",
+  "date": "2023-02-05",
+  "kind": "ecatholic_pdf",
+  "text": "February 5 , 2023",
+  "source_url": "https://holyrosary-ny.org/bulletins"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:30",
+   "language": "English",
+   "raw": "Saturday Vigil: 5:30 PM English",
+   "source_url": "https://holyrosary-ny.org/",
+   "fetched_at": "2025-03-18T05:49:54+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-03-18: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-03-18",
+   "archive_url": "https://web.archive.org/web/20250318054954/https://holyrosary-ny.org/",
+   "capture_date": "2025-03-18"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": "English",
+   "raw": "Sunday: 8:00 AM English",
+   "source_url": "https://holyrosary-ny.org/",
+   "fetched_at": "2025-03-18T05:49:54+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-03-18: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-03-18",
+   "archive_url": "https://web.archive.org/web/20250318054954/https://holyrosary-ny.org/",
+   "capture_date": "2025-03-18"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": "English",
+   "raw": "Sunday: 10:00 AM English",
+   "source_url": "https://holyrosary-ny.org/",
+   "fetched_at": "2025-03-18T05:49:54+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-03-18: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-03-18",
+   "archive_url": "https://web.archive.org/web/20250318054954/https://holyrosary-ny.org/",
+   "capture_date": "2025-03-18"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "08:30",
+   "language": "English",
+   "raw": "Monday: 8:30 AM English",
+   "source_url": "https://holyrosary-ny.org/",
+   "fetched_at": "2025-03-18T05:49:54+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-03-18: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-03-18",
+   "archive_url": "https://web.archive.org/web/20250318054954/https://holyrosary-ny.org/",
+   "capture_date": "2025-03-18"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "08:30",
+   "language": "English",
+   "raw": "Tuesday: 8:30 AM English",
+   "source_url": "https://holyrosary-ny.org/",
+   "fetched_at": "2025-03-18T05:49:54+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-03-18: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-03-18",
+   "archive_url": "https://web.archive.org/web/20250318054954/https://holyrosary-ny.org/",
+   "capture_date": "2025-03-18"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "12:00",
+   "language": "English",
+   "raw": "Thursday: 12:00 PM English",
+   "source_url": "https://holyrosary-ny.org/",
+   "fetched_at": "2025-03-18T05:49:54+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-03-18: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-03-18",
+   "archive_url": "https://web.archive.org/web/20250318054954/https://holyrosary-ny.org/",
+   "capture_date": "2025-03-18"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "08:30",
+   "language": "English",
+   "raw": "Friday: 8:30 AM English",
+   "source_url": "https://holyrosary-ny.org/",
+   "fetched_at": "2025-03-18T05:49:54+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-03-18: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-03-18",
+   "archive_url": "https://web.archive.org/web/20250318054954/https://holyrosary-ny.org/",
+   "capture_date": "2025-03-18"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "08:30",
+   "language": "English",
+   "raw": "Saturday: 8:30 AM English",
+   "source_url": "https://holyrosary-ny.org/",
+   "fetched_at": "2025-03-18T05:49:54+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-03-18: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-03-18",
+   "archive_url": "https://web.archive.org/web/20250318054954/https://holyrosary-ny.org/",
+   "capture_date": "2025-03-18"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "16:00-17:00",
+   "language": null,
+   "raw": "Saturday: 4:00 PM - 5:00 PM at the Church",
+   "source_url": "https://holyrosary-ny.org/",
+   "fetched_at": "2025-03-18T05:49:54+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-03-18: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-03-18",
+   "archive_url": "https://web.archive.org/web/20250318054954/https://holyrosary-ny.org/",
+   "capture_date": "2025-03-18"
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "11:00",
+   "language": null,
+   "raw": "Thu: 11:00 AM followed by Noon Mass",
+   "source_url": "https://holyrosary-ny.org/",
+   "fetched_at": "2025-03-18T05:49:54+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-03-18: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-03-18",
+   "archive_url": "https://web.archive.org/web/20250318054954/https://holyrosary-ny.org/",
+   "capture_date": "2025-03-18"
+  }
+ ],
  "source_url": "http://holyrosary-ny.org/",
- "fetched_at": "2026-11-01T17:21:20+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-02T02:48:10+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": true
+   },
+   "score": "high"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 12
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "not_a_service": 1,
+  "text:skipped_section": 4,
+  "text:other_location": 2,
+  "text:relative_time": 1
+ },
+ "groups_dropped": {},
+ "office_contact": {
+  "email": "office@holyrosaryny.com",
+  "phone": "(845) 477-8378",
+  "address": "41 Windermere Avenue, Greenwood Lake, NY 10925",
+  "source_url": "https://holyrosary-ny.org/staffcontact",
+  "sources": {
+   "email": "https://holyrosary-ny.org/staffcontact",
+   "phone": "https://holyrosary-ny.org/staffcontact",
+   "address": "https://holyrosary-ny.org/staffcontact"
+  },
+  "fetched_at": "2025-02-07T11:41:52+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2025-03-18",
+  "capture_age_days": 594,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://holyrosary-ny.org/",
+    "capture": "2025-03-18",
+    "archive_url": "https://web.archive.org/web/20250318054954/https://holyrosary-ny.org/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://holyrosary-ny.org/mass-schedule",
+    "capture": "2023-02-05",
+    "archive_url": "https://web.archive.org/web/20230205005732/https://holyrosary-ny.org/mass-schedule"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://holyrosary-ny.org/reconciliation",
+    "capture": "2023-02-05",
+    "archive_url": "https://web.archive.org/web/20230205020813/https://holyrosary-ny.org/reconciliation"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://holyrosary-ny.org/altar-servers",
+    "capture": "2025-02-07",
+    "archive_url": "https://web.archive.org/web/20250207102957/https://holyrosary-ny.org/altar-servers"
+   },
+   {
+    "kind": "bulletin",
+    "original": "https://holyrosary-ny.org/bulletins",
+    "capture": "2023-02-05",
+    "archive_url": "https://web.archive.org/web/20230205000950/https://holyrosary-ny.org/bulletins"
+   },
+   {
+    "kind": "contact",
+    "original": "https://holyrosary-ny.org/staffcontact",
+    "capture": "2025-02-07",
+    "archive_url": "https://web.archive.org/web/20250207114152/https://holyrosary-ny.org/staffcontact"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review.",
+  "grade": {
+   "rule": "wayback-verified-2026-11-01",
+   "template": "ecatholic",
+   "trusted_template": false,
+   "has_sunday": true,
+   "groups": 6,
+   "verified": false,
+   "capture_date": "2025-03-18",
+   "applied": false
+  }
  }
 }
