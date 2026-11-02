@@ -13,11 +13,13 @@ if ! flock -n 9; then echo "$(date -u +%FT%TZ) another sites_chunk is running in
 TRAILER=$'\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01SXKUYETifPNNjUVPkZ7qG5'
 
 push() {
-  # 8 matrix runners push at once: rebase with -X theirs (our fresh records win for our own dioceses), retry with jitter
-  for i in 1 2 3 4; do
+  # 14 matrix runners push at once: rebase with -X theirs (our fresh records win for our own dioceses), retry with jitter.
+  # 15 tries, 10-90 s apart (2026-11-01: 4 tries 5-25 s apart lost pushes to "cannot lock ref" when 14 jobs ended together).
+  for i in $(seq 1 15); do
     git pull --rebase -X theirs --autostash -q origin main || { git rebase --abort 2>/dev/null || true; }
     git push -q origin HEAD:main && return 0
-    sleep $((RANDOM % 20 + 5))
+    echo "push $i rejected; retrying"
+    sleep $(( 10 + RANDOM % 81 ))
   done
   return 1
 }
@@ -58,6 +60,6 @@ if [ "$TOPUP_MIN" -gt 0 ] && [ "$rc" -ne 3 ]; then
 fi
 git add data/real/us/sites/progress.json data/real/us/sites/README.md
 git commit -q -m "US parish sites: progress $(date -u +%FT%H:%MZ)${TRAILER}" 2>/dev/null
-push
+push || echo "PUSH FAILED after 15 tries: this chunk's commits did not reach origin"
 echo "probe rc=$probe_rc chunk rc=$rc"
 exit $rc

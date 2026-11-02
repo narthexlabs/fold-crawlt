@@ -20,6 +20,15 @@ on:
       minutes:
         description: 'minutes per chunk'
         default: '110'
+      reset:
+        description: 'reparse: 1 = delete data/raw/us/sites/_reparsed.json first (re-parse every cached site again)'
+        default: '0'
+      only_states:
+        description: 'sites/reparse: run only the matrix group whose states equal this (e.g. NY or IL,GA,UT); empty = all 14'
+        default: ''
+      topup_minutes:
+        description: 'sites: minutes of the chunk given to the confession / adoration / liturgy page top-up'
+        default: '25'
 
 permissions:
   contents: write
@@ -60,47 +69,44 @@ jobs:
     concurrency:
       group: crawl-sites-${{ strategy.job-index }}
       cancel-in-progress: false
+    env:
+      # only_states (dispatch input): every step of the other groups is skipped, so their runner caches are left untouched
+      RUN_GROUP: ${{ (!github.event.inputs.only_states || github.event.inputs.only_states == matrix.states) && '1' || '0' }}
     steps:
+      - name: Stagger start (job index x 20 s) so 14 jobs do not push at the same moment
+        if: ${{ env.RUN_GROUP == '1' }}
+        run: sleep $(( ${{ strategy.job-index }} * 20 ))
       - uses: actions/checkout@v4
+        if: ${{ env.RUN_GROUP == '1' }}
         with: { fetch-depth: 1 }
-      - run: git config user.name "fold-crawl[bot]" && git config user.email "crawl@narthexlabs.invalid"
+      - if: ${{ env.RUN_GROUP == '1' }}
+        run: git config user.name "fold-crawl[bot]" && git config user.email "crawl@narthexlabs.invalid"
       - uses: actions/cache@v4
+        if: ${{ env.RUN_GROUP == '1' }}
         with:
           path: data/raw/us/sites
           key: raw-sites-${{ strategy.job-index }}-${{ github.run_id }}
           restore-keys: raw-sites-${{ strategy.job-index }}-
-      - run: sudo pip3 install -q --break-system-packages requests beautifulsoup4 lxml   # system site: visible to python3 -I
+      - if: ${{ env.RUN_GROUP == '1' }}
+        run: sudo pip3 install -q --break-system-packages requests beautifulsoup4 lxml   # system site: visible to python3 -I
       - name: Parish-website crawl chunk, then the confession / adoration / liturgy page top-up (128 hosts in parallel, one request at a time per host)
-        if: ${{ github.event.inputs.job != 'reparse' }}
+        if: ${{ env.RUN_GROUP == '1' && github.event.inputs.job != 'reparse' }}
         env:
           WORKERS: '128'
           STATES: ${{ matrix.states }}
-          TOPUP_MINUTES: '25'      # taken out of the chunk's minutes (scripts/us/sites_chunk.sh); '0' turns the top-up off
+          # taken out of the chunk's minutes (scripts/us/sites_chunk.sh); '0' turns the top-up off
+          TOPUP_MINUTES: ${{ github.event.inputs.topup_minutes || '25' }}
           SKIP_PROBE: ${{ strategy.job-index == 0 && '0' || '1' }}
         run: bash scripts/us/sites_chunk.sh "$MINUTES"
       - name: Re-parse this group's cached sites with the current parser (same runner, same cache; once per parser version, resumable)
-        if: ${{ always() }}
+        # scripts/us/reparse_chunk.sh: one commit per diocese, push with 15 tries, and a diocese is stamped in
+        # data/raw/us/sites/_reparsed.json only once its commit is confirmed on origin/main. reset=1 deletes the stamp first.
+        if: ${{ always() && env.RUN_GROUP == '1' }}
         env:
           STATES: ${{ matrix.states }}
+          RESET: ${{ github.event.inputs.reset || '0' }}
           RMIN: ${{ github.event.inputs.job == 'reparse' && (github.event.inputs.minutes || '60') || '20' }}
-        run: |
-          set -u
-          TRAILER=$'\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01SXKUYETifPNNjUVPkZ7qG5'
-          git rebase --abort 2>/dev/null || true
-          git pull --rebase -X theirs --autostash -q origin main || { git rebase --abort 2>/dev/null || true; }
-          timeout $(( RMIN * 60 + 600 )) python3 -I ingest/us/sites/run_state.py reparse --state "$STATES" --minutes "$RMIN" || true
-          if [ -f data/raw/us/sites/_last_touched.json ]; then
-            for d in $(python3 -c "import json;print(' '.join(json.load(open('data/raw/us/sites/_last_touched.json'))))"); do
-              git add "data/real/us/sites/$d/" && git commit -q -m "US parish sites: re-parse $d (current parser, runner cache)$TRAILER" 2>/dev/null
-            done
-          fi
-          git add data/real/us/sites/progress.json data/real/us/sites/README.md
-          git commit -q -m "US parish sites: re-parse progress $(date -u +%FT%H:%MZ)$TRAILER" 2>/dev/null || true
-          for i in 1 2 3 4; do
-            git pull --rebase -X theirs --autostash -q origin main || { git rebase --abort 2>/dev/null || true; }
-            git push -q origin HEAD:main && break
-            sleep $((RANDOM % 20 + 5))
-          done
+        run: bash scripts/us/reparse_chunk.sh "$RMIN"
 
   render:
     # Dispatch only (job=render). Re-reads, ONCE, sites that answered the plain crawl (crawl_status ok: never a challenge/403
@@ -327,8 +333,10 @@ jobs:
     # (workflow_dispatch via the API with GITHUB_TOKEN does start a run). Disable the workflow to stop the chain.
     # Loop guard (2026-11-01 22:20): a queued job cancelled by the NEXT round counts as "done" for needs+always(), which made
     # rounds start every ~2 min from 05:36Z. Dispatch only if no other run of this workflow is queued or in progress.
+    # OFF since 2026-11-01 23:13 (Matthew): the loop guard deadlocked when two rounds ended together, so rounds are
+    # dispatched on purpose (workflow_dispatch) instead. Do not turn back on without Matthew's say-so.
     needs: [sites, discovermass, gcatholic, bulletins]
-    if: ${{ always() && (github.event_name == 'schedule' || github.event.inputs.job == 'all') }}
+    if: false
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:

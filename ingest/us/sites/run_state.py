@@ -5,6 +5,7 @@
     python3 -I ingest/us/sites/run_state.py chunk --minutes 100 [--workers 24] [--state TX] [--diocese <slug>,...]
     python3 -I ingest/us/sites/run_state.py parse <diocese-slug> [--all]   # (re)parse cached sites of one diocese
     python3 -I ingest/us/sites/run_state.py reparse --state TX,IA --minutes 30  # all cached sites, once per parser version
+    python3 -I ingest/us/sites/run_state.py stamp --diocese a,b             # mark re-parsed dioceses once confirmed on origin
     python3 -I ingest/us/sites/run_state.py topup --kinds confession,adoration,liturgy --state TX --minutes 25 [--workers 128]
                                                                            # only the new page kinds, for sites already crawled ok
     python3 -I ingest/us/sites/run_state.py readme                         # data/real/us/sites/README.md tables
@@ -477,46 +478,105 @@ def cmd_chunk(a) -> int:
     return 4 if stats.get("halted_egress") else 0
 
 
-def cmd_reparse(a) -> int:
-    """Re-parse every cached site of the --state group with the current parser (on a runner: its own fresh raw cache, so the
-    fixes reach records whose crawl is newer than any other machine's cache). Runs once per parser version: the hash of
-    ingest/california/sites/parse_site.py + templates is stamped in data/raw/us/sites/_reparsed.json with the dioceses done,
-    so a cut run resumes and a finished one is a no-op until the parser changes. --minutes is the budget."""
+def parser_version() -> str:
+    """Hash of ingest/california/sites/parse_site.py + templates: the re-parse stamp is per parser version."""
     import hashlib
-    t0 = time.time()
     h = hashlib.sha256()
     for f in sorted([CA_SITES / "parse_site.py", *sorted((CA_SITES / "templates").glob("*.py"))]):
         h.update(f.read_bytes())
-    ver = h.hexdigest()[:16]
-    stamp_f = RAW / "_reparsed.json"
-    stamp = json.loads(stamp_f.read_text()) if stamp_f.exists() else {}
-    if stamp.get("parser") != ver:
-        stamp = {"parser": ver, "done": []}
+    return h.hexdigest()[:16]
+
+
+REPARSE_STAMP = RAW / "_reparsed.json"
+REPARSE_STATS = RAW / "_reparse_stats.json"
+
+
+def _load_stamp(ver: str) -> dict:
+    try:
+        stamp = json.loads(REPARSE_STAMP.read_text()) if REPARSE_STAMP.exists() else {}
+    except ValueError:
+        stamp = {}
+    return stamp if stamp.get("parser") == ver else {"parser": ver, "done": []}
+
+
+def _rec_digest(dio: str) -> dict[str, str]:
+    """sha1 of each record of a diocese (top-level fetched_at left out), to count the records a re-parse changed."""
+    import hashlib
+    out = {}
+    if not (OUT / dio).exists():
+        return out
+    for f in (OUT / dio).glob("*.json"):
+        if f.name == "summary.json":
+            continue
+        try:
+            r = json.loads(f.read_text())
+            if isinstance(r, dict):
+                r.pop("fetched_at", None)
+            out[f.name] = hashlib.sha1(json.dumps(r, sort_keys=True).encode()).hexdigest()
+        except ValueError:
+            out[f.name] = "unreadable"
+    return out
+
+
+def cmd_reparse(a) -> int:
+    """Re-parse every cached site of the --state group with the current parser (on a runner: its own fresh raw cache, so the
+    fixes reach records whose crawl is newer than any other machine's cache). --minutes is the budget.
+
+    Once per parser version, but a diocese counts as done only when its re-parsed records are confirmed on origin/main:
+    this command never writes the stamp. It writes data/raw/us/sites/_last_touched.json (every diocese it processed, for
+    the caller to commit) and _reparse_stats.json (records re-parsed / changed per diocese, dioceses left); the caller
+    pushes, checks the commit reached origin, then runs `stamp --diocese a,b` (2026-11-01: stamps saved with the runner
+    cache after rejected pushes made every later re-parse a no-op). --skip: dioceses already processed in this job."""
+    t0 = time.time()
+    ver = parser_version()
+    stamp = _load_stamp(ver)
+    skip = {x for x in (a.skip or "").split(",") if x}
     inputs = build_inputs()
     order = diocese_order(inputs)
     if a.state:
         sees = {s["slug"]: s["see_state"] for s in load_sees()}
         sts = {x.upper() for x in a.state.split(",")}
         order = [d for d in order if sees.get(d) in sts or (d.startswith("unassigned-") and d[-2:].upper() in sts)]
-    touched = []
+    done_now, stats = [], {}
     for d in order:
-        if d in stamp["done"]:
+        if d in stamp["done"] or d in skip:
             continue
         if time.time() > t0 + a.minutes * 60:
             break
+        before = _rec_digest(d)
         try:
-            if parse(d, True, log=print):
-                touched.append(d)
-            stamp["done"].append(d)
+            n = parse(d, True, log=print)
         except Exception as e:  # noqa: BLE001 - one diocese must not stop the pass
             print(f"  REPARSE FAILED {d}: {e!r}", flush=True)
-        RAW.mkdir(parents=True, exist_ok=True)
-        stamp_f.write_text(json.dumps(stamp))
-    left = [d for d in order if d not in stamp["done"]]
-    print(f"reparse parser={ver}: {len(touched)} dioceses re-parsed, {len(left)} left", flush=True)
+            continue
+        after = _rec_digest(d)
+        changed = sum(1 for k, v in after.items() if before.get(k) != v)
+        stats[d] = {"records": n, "changed": changed}
+        done_now.append(d)
+        print(f"  reparsed {d}: {n} records, {changed} changed", flush=True)
+    left = [d for d in order if d not in stamp["done"] and d not in skip and d not in done_now]
+    rec_n = sum(v["records"] for v in stats.values())
+    chg_n = sum(v["changed"] for v in stats.values())
+    print(f"reparse parser={ver}: {len(done_now)} dioceses processed ({rec_n} records re-parsed, {chg_n} changed); "
+          f"{len(stamp['done'])} already stamped; {len(left)} left", flush=True)
     write_progress(inputs)
     cmd_readme()
-    (RAW / "_last_touched.json").write_text(json.dumps(touched))
+    RAW.mkdir(parents=True, exist_ok=True)
+    (RAW / "_last_touched.json").write_text(json.dumps(done_now))
+    REPARSE_STATS.write_text(json.dumps({"parser": ver, "dioceses": stats, "records": rec_n, "changed": chg_n,
+                                         "left": left, "stamped": len(stamp["done"])}))
+    return 0
+
+
+def cmd_stamp(a) -> int:
+    """Mark dioceses as re-parsed with the current parser (call only after their commits are confirmed on origin/main)."""
+    ver = parser_version()
+    stamp = _load_stamp(ver)
+    add = [x for x in (a.diocese or "").split(",") if x and x not in stamp["done"]]
+    stamp["done"] += add
+    RAW.mkdir(parents=True, exist_ok=True)
+    REPARSE_STAMP.write_text(json.dumps(stamp))
+    print(f"stamp parser={ver}: +{len(add)} dioceses confirmed on origin, {len(stamp['done'])} stamped in all", flush=True)
     return 0
 
 
@@ -702,7 +762,7 @@ def cmd_topup(a) -> int:
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("cmd", choices=["inputs", "chunk", "parse", "reparse", "topup", "readme", "status"])
+    ap.add_argument("cmd", choices=["inputs", "chunk", "parse", "reparse", "stamp", "topup", "readme", "status"])
     ap.add_argument("--kinds", default="confession,adoration,liturgy", help="topup: page kinds to add (fetch_site.NEW_KINDS)")
     ap.add_argument("slug", nargs="?")
     ap.add_argument("--minutes", type=float, default=100)
@@ -710,6 +770,7 @@ def main() -> int:
     ap.add_argument("--state", default="")
     ap.add_argument("--diocese", default="")
     ap.add_argument("--all", action="store_true")
+    ap.add_argument("--skip", default="", help="reparse: dioceses already processed in this job (comma-separated)")
     ap.add_argument("--skip-egress-check", action="store_true", help="local tests only")
     a = ap.parse_args()
     if a.cmd == "inputs":
@@ -723,6 +784,8 @@ def main() -> int:
         write_progress(build_inputs())
     elif a.cmd == "reparse":
         return cmd_reparse(a)
+    elif a.cmd == "stamp":
+        return cmd_stamp(a)
     elif a.cmd == "topup":
         return cmd_topup(a)
     elif a.cmd == "readme":
