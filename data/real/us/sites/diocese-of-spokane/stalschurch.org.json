@@ -81,6 +81,18 @@
    "url": "https://stalschurch.org/bulletin",
    "status": 404,
    "class": "not_found"
+  },
+  {
+   "category": "confession",
+   "url": "https://stalschurch.org/reconciliation/",
+   "status": 202,
+   "class": "http_202"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stalschurch.org/adoration",
+   "status": 202,
+   "class": "http_202"
   }
  ],
  "cms_guess": {
@@ -265,6 +277,19 @@
   {
    "kind": "mass",
    "day": "Sunday",
+   "time": "11:00",
+   "language": null,
+   "raw": "Weekend Masses: Sunday: 8:30 a.m., 11 a.m., and 7 p.m.",
+   "source_url": "https://stalschurch.org/mass-schedule/",
+   "fetched_at": "2026-11-01T17:27:08+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
    "time": "19:00",
    "language": null,
    "raw": "Weekend Masses: Sunday: 8:30 a.m., 11 a.m., and 7 p.m.",
@@ -369,9 +394,19 @@
  ],
  "source_url": "https://stalschurch.org/",
  "fetched_at": "2026-11-01T17:27:18+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:01+00:00",
+  "requests": 2,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -385,16 +420,14 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 30
  },
  "has_sunday": true,
- "schedule_dropped": {
-  "prose": 1
- },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
