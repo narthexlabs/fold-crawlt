@@ -61,6 +61,12 @@
    "url": "https://www.immaculateheartofmarycatholicchurch.com/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.immaculateheartofmarycatholicchurch.com/eucharist-adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -157,7 +163,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:38:06+00:00",
+    "fetched_at": "2026-11-02T04:58:20+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -166,7 +172,8 @@
  "events": [],
  "social": {
   "facebook": [
-   "https://www.facebook.com/ihmgw"
+   "https://www.facebook.com/ihmgw",
+   "https://www.facebook.com/2008"
   ]
  },
  "bulletin": {
@@ -267,13 +274,52 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "squarespace"
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "08:00-13:00",
+   "language": null,
+   "raw": "Adoration of the Blessed Sacrament is held every Thursday from 8:00 to 1:00 PM and the first Thursday of each month from 6:00 to 7:00 PM",
+   "source_url": "https://www.immaculateheartofmarycatholicchurch.com/eucharist-adoration",
+   "fetched_at": "2026-11-02T04:41:54+00:00",
+   "needs_review": true,
+   "review_reason": "nth_of_month",
+   "confidence": "high",
+   "template": "squarespace",
+   "nth": "first"
+  },
+  {
+   "kind": "adoration",
+   "day": "First Thursday of the month",
+   "time": "18:00-19:00",
+   "language": null,
+   "raw": "Adoration of the Blessed Sacrament is held every Thursday from 8:00 to 1:00 PM and the first Thursday of each month from 6:00 to 7:00 PM",
+   "source_url": "https://www.immaculateheartofmarycatholicchurch.com/eucharist-adoration",
+   "fetched_at": "2026-11-02T04:41:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "squarespace"
   }
  ],
  "source_url": "https://www.immaculateheartofmarycatholicchurch.com/",
  "fetched_at": "2026-11-01T17:27:29+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:54+00:00",
+  "requests": 1,
+  "found": [
+   "adoration"
+  ]
+ },
  "schedule_template": {
   "template": "squarespace",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -287,16 +333,29 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 6
+  "trusted_kinds": [],
+  "generic_rows": 7
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "OR BY APPOINTMENT ANY TIME",
+   "phrase": "BY APPOINTMENT",
+   "source_url": "https://www.immaculateheartofmarycatholicchurch.com/mass-and-reconciliation",
+   "fetched_at": "2026-11-01T17:27:21+00:00"
+  }
+ ],
  "has_sunday": true,
+ "schedule_dropped": {
+  "no_day": 1
+ },
  "groups_dropped": {
   "unmatched": 1,
   "sacrament_prep": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
@@ -319,8 +378,5 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
- },
- "social_shared_links_removed": [
-  "https://www.facebook.com/2008"
- ]
+ }
 }
