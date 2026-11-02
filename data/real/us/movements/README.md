@@ -47,6 +47,15 @@ conference names, city, public website): never a named officer's phone or e-mail
   436); 446 of those parishes show no other group. The rest (6,306) are named after a person or a town, or their name is
   ambiguous in the city: they stay unmatched (never guessed). Re-run later only to refresh (new councils get numbers above
   18,990): set `numbers.next` back to 1 in kofc_progress.json, or to ~18,900 for new ones only.
+- Meeting place? (Matthew asked 2026-11-02 09:04 why councils have only a city.) Checked 2026-11-02 against the finder itself
+  (robots.txt allows /api/; honest user agent; 23 requests >= 1.2 s apart): both API calls return the same council object —
+  councilNumber, councilName, status, type, language, `location` (the town), city, state, zipCode, country, assembly (the
+  4th-degree assembly number), webSite, mileDistance/kilometerDistance (ZIP search only). It also carries address1-address4,
+  contact, email, phoneNumber and cityStateZip, but they were EMPTY in every reply sampled (20 unmatched councils by number +
+  2 ZIP searches, 36 council objects); the page's main.js shows address1 only when present. The page's other calls are
+  agentsByCouncil (insurance agents: named people, not used) and sendContactRequest (a contact form, not used). So there is
+  no meeting address, meeting place or parish field to re-match the 6,306 unmatched councils by; only council name + town +
+  ZIP. 13 of the 36 sampled replies give a council website, which is the one place a meeting address could be read later.
 - Resume (sandbox): `python3 -I ingest/us/movements/kofc.py --mode numbers --minutes 60 && python3 -I ingest/us/movements/match.py`
 - Resume (Actions): Actions -> "National crawl" -> Run workflow, job=`movements`, minutes=`110` (repeat until
   `kofc_progress.json` zips_done = zips_total). Never run both at once (one crawler per host).
