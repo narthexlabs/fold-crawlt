@@ -61,6 +61,18 @@
    "url": "https://olg-parish.com/bulletins",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://olg-parish.com/perpetual-adoration",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://olg-parish.com/liturgy-committee",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -304,32 +316,6 @@
  },
  "schedule_rows": [
   {
-   "kind": "confession",
-   "day": "Wednesday",
-   "time": "17:30-18:30",
-   "language": null,
-   "raw": "Reconciliations are scheduled at Our Lady of Guadalupe Paris: Wednesday: 5:30 - 6:30 pm",
-   "source_url": "https://olg-parish.com/reconciliation%2Fconfession",
-   "fetched_at": "2026-11-01T17:27:26+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "godaddy"
-  },
-  {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "14:30-15:30",
-   "language": null,
-   "raw": "Reconciliations are scheduled at Our Lady of Guadalupe Paris: Saturday: 2:30 - 3:30 pm",
-   "source_url": "https://olg-parish.com/reconciliation%2Fconfession",
-   "fetched_at": "2026-11-01T17:27:26+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "godaddy"
-  },
-  {
    "kind": "mass",
    "day": "Saturday",
    "time": "16:00",
@@ -458,13 +444,52 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "godaddy"
+  },
+  {
+   "kind": "confession",
+   "day": "Wednesday",
+   "time": "17:30-18:30",
+   "language": null,
+   "raw": "Confessions held in the church: Wednesdays from 5:30 to 6:30 pm",
+   "source_url": "https://olg-parish.com/",
+   "fetched_at": "2026-11-01T17:27:24+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "godaddy"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "14:30-15:30",
+   "language": null,
+   "raw": "Confessions held in the church: Saturdays from 2:30 to 3:30 pm",
+   "source_url": "https://olg-parish.com/",
+   "fetched_at": "2026-11-01T17:27:24+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "godaddy"
   }
  ],
  "source_url": "https://olg-parish.com/",
  "fetched_at": "2026-11-01T17:27:32+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:41+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "liturgy"
+  ]
+ },
  "schedule_template": {
   "template": "godaddy",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -478,17 +503,21 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 10
+  "trusted_kinds": [],
+  "generic_rows": 11
  },
  "has_sunday": true,
+ "schedule_dropped": {
+  "no_day": 3
+ },
  "groups_dropped": {
   "noise": 9,
   "sacrament_prep": 1,
   "unmatched": 9
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

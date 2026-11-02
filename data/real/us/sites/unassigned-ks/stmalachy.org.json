@@ -302,32 +302,6 @@
  },
  "schedule_rows": [
   {
-   "kind": "confession",
-   "day": "Tuesday",
-   "time": "17:00-18:00",
-   "language": null,
-   "raw": "When Can I receive confession?: 5:00 pm to 6:00 pm / St. Francis Room",
-   "source_url": "https://stmalachy.org/clover/confession/",
-   "fetched_at": "2026-11-01T17:27:29+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
-  {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "09:00-10:00",
-   "language": null,
-   "raw": "When Can I receive confession?: 9:00 am to 10:00 am / Parish Office",
-   "source_url": "https://stmalachy.org/clover/confession/",
-   "fetched_at": "2026-11-01T17:27:29+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
-  {
    "kind": "mass",
    "day": "Saturday",
    "time": "16:30",
@@ -378,13 +352,49 @@
    "review_reason": null,
    "confidence": "high",
    "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Tuesday",
+   "time": "17:00-18:00",
+   "language": null,
+   "raw": "Confession - Tuesdays 5:00 pm - 6:00 pm; Saturdays 9:00 am - 10:00 am",
+   "source_url": "https://stmalachy.org/",
+   "fetched_at": "2026-11-01T17:27:28+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "09:00-10:00",
+   "language": null,
+   "raw": "Confession - Tuesdays 5:00 pm - 6:00 pm; Saturdays 9:00 am - 10:00 am",
+   "source_url": "https://stmalachy.org/",
+   "fetched_at": "2026-11-01T17:27:28+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict"
   }
  ],
  "source_url": "https://stmalachy.org/",
  "fetched_at": "2026-11-01T17:27:37+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:38+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -398,6 +408,12 @@
   },
   "passed_bar": true,
   "trusted_candidate": true,
+  "trusted_kinds": [
+   "weekend",
+   "weekday",
+   "confession",
+   "adoration"
+  ],
   "generic_rows": 20
  },
  "has_sunday": true,
@@ -411,8 +427,8 @@
   "private_name_risk": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

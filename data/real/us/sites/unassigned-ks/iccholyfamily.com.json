@@ -51,6 +51,12 @@
    "url": "https://iccholyfamily.com/bulletin",
    "status": 429,
    "class": "blocked_429"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://iccholyfamily.com/liturgy",
+   "status": null,
+   "class": "timeout"
   }
  ],
  "cms_guess": {
@@ -111,7 +117,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:33:59+00:00",
+    "fetched_at": "2026-11-02T04:47:21+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -128,7 +134,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:34:00+00:00",
+    "fetched_at": "2026-11-02T04:47:22+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -145,7 +151,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:34:02+00:00",
+    "fetched_at": "2026-11-02T04:47:23+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -162,7 +168,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:34:03+00:00",
+    "fetched_at": "2026-11-02T04:47:25+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -211,7 +217,7 @@
   },
   {
    "kind": "mass",
-   "day": "Monday",
+   "day": "Sunday",
    "time": "08:00",
    "language": null,
    "raw": "Weekend Mass: 8:00am (Odin)",
@@ -219,65 +225,38 @@
    "fetched_at": "2026-11-01T17:27:24+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict",
-   "day_expanded_from": "Weekend"
-  },
-  {
-   "kind": "mass",
-   "day": "Tuesday",
-   "time": "08:00",
-   "language": null,
-   "raw": "Weekend Mass: 8:00am (Odin)",
-   "source_url": "https://iccholyfamily.com/home/mass-confession-times",
-   "fetched_at": "2026-11-01T17:27:24+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict",
-   "day_expanded_from": "Weekend"
+   "confidence": "low",
+   "template": "generic_strict"
   },
   {
    "kind": "mass",
    "day": "Wednesday",
    "time": "08:00",
    "language": null,
-   "raw": "Weekend Mass: 8:00am (Odin)",
+   "raw": "Daily Mass: Wed & Fri - 8:00am (Claflin)",
    "source_url": "https://iccholyfamily.com/home/mass-confession-times",
    "fetched_at": "2026-11-01T17:27:24+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict",
-   "day_expanded_from": "Weekend"
-  },
-  {
-   "kind": "mass",
-   "day": "Thursday",
-   "time": "08:00",
-   "language": null,
-   "raw": "Weekend Mass: 8:00am (Odin)",
-   "source_url": "https://iccholyfamily.com/home/mass-confession-times",
-   "fetched_at": "2026-11-01T17:27:24+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict",
-   "day_expanded_from": "Weekend"
+   "day_expanded_from": "Wed & Fri"
   },
   {
    "kind": "mass",
    "day": "Friday",
    "time": "08:00",
    "language": null,
-   "raw": "Weekend Mass: 8:00am (Odin)",
+   "raw": "Daily Mass: Wed & Fri - 8:00am (Claflin)",
    "source_url": "https://iccholyfamily.com/home/mass-confession-times",
    "fetched_at": "2026-11-01T17:27:24+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict",
-   "day_expanded_from": "Weekend"
+   "day_expanded_from": "Wed & Fri",
+   "day_parsed": "Wednesday",
+   "day_bound_from_line": true
   },
   {
    "kind": "mass",
@@ -308,24 +287,23 @@
    "day_expanded_from": "Tues & Thurs",
    "day_parsed": "Tuesday",
    "day_bound_from_line": true
-  },
-  {
-   "kind": "mass",
-   "day": "Sunday",
-   "time": "08:00",
-   "language": null,
-   "raw": "8:00am (Odin)",
-   "source_url": "https://iccholyfamily.com/home/mass-confession-times",
-   "fetched_at": "2026-11-01T17:27:24+00:00",
-   "needs_review": false,
-   "review_reason": "schedule_box"
   }
  ],
  "source_url": "https://iccholyfamily.com/",
  "fetched_at": "2026-11-01T17:27:28+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:57+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -339,18 +317,32 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 5
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "30 Minutes before each Mass",
+   "phrase": "30 Minutes before each Mass",
+   "source_url": "https://iccholyfamily.com/home/mass-confession-times",
+   "fetched_at": "2026-11-01T17:27:24+00:00"
+  },
+  {
+   "kind": "confession",
+   "text": "*Anytime by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://iccholyfamily.com/home/mass-confession-times",
+   "fetched_at": "2026-11-01T17:27:24+00:00"
+  }
+ ],
  "has_sunday": true,
- "schedule_dropped": {
-  "box_rows_added": 1
- },
  "groups_dropped": {
   "noise": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
