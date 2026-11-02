@@ -727,6 +727,21 @@
    "confidence": "medium",
    "template": "wix",
    "day_expanded_from": "Tues. - Fri."
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "19:00",
+   "language": null,
+   "raw": "Thursday 7:00 PM [Mass intention withheld]",
+   "source_url": "https://www.onestrongfamily.org/adoration",
+   "fetched_at": "2026-11-02T04:41:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wix",
+   "note": "except during the summer.",
+   "topup": true
   }
  ],
  "source_url": "http://www.onestrongfamily.org/",
@@ -762,6 +777,25 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()",
+  "intentions_withheld": 1
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:42+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "parishcenter@onestrongfamily.org",
   "phone": "(651) 645-5717",
@@ -774,9 +808,5 @@
   },
   "fetched_at": "2026-11-01T03:58:24+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()",
-  "intentions_withheld": 1
  }
 }
