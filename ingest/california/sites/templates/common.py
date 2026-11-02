@@ -692,10 +692,16 @@ def other_place(text: str, own: set[str]) -> bool:
                r"english|spanish|vigil)\b", " ", text, flags=re.I)
     if not (PLACE_RX.search(t) or ADDR_RX.search(t)):
         return False
+    if re.match(r"\s*(?:welcome to|bienvenidos? a|about)\b", t, re.I):
+        return False                                   # "Welcome to St. Raphael RC Church": the site's own banner
     words = name_words(t)
     if not words:
         return False
-    return not (words & own)
+    if words & own:
+        return False
+    # a misspelt name in the input list ("St. Raphel") still names the parish's own church
+    import difflib
+    return not any(len(w) >= 5 and len(o) >= 5 and difflib.SequenceMatcher(None, w, o).ratio() >= 0.8 for w in words for o in own)
 
 
 # ------------------------------------------------------------------------------------------------ the reader
@@ -829,6 +835,17 @@ class Reader:
                 ctx.day = (d, level)
                 ctx.last_line_day = None
 
+    # -- the church heading above a home-page schedule block (schedule_blocks): sets only the place, never the kind or day
+    def place(self, ctx: Ctx, text: str, level: int):
+        loc_text = re.split(r"[:\-–—]\s", text)[0]
+        if other_place(loc_text, self.own):
+            ctx.other_loc = (loc_text, level)
+        else:
+            ctx.other_loc = None
+            own_loc = self.which_church(loc_text)
+            if own_loc:
+                ctx.loc = (own_loc, level)
+
     # -- one line with times
     def line(self, ctx: Ctx, text: str, cell_day: DayTok | None = None, cell_lang: str | None = None,
              cell_kind: str | None = None, from_table: bool = False):
@@ -869,8 +886,8 @@ class Reader:
         if prefix and len(prefix) < 70 and not TIME_RX.search(prefix) and other_place(prefix, self.own):
             self.drop("other_location", len(toks))
             return
-        at = re.search(r"\b(?:at|en)\s+((?:the\s+)?(?:St\.?|Saint|Sts\.?|San|Santa|Our Lady|Holy|Sacred|Blessed|Christ|Mission|[A-Z][a-z]+\s+"
-                       r"(?:Church|Chapel|Cathedral|Basilica|Shrine|Parish))[^,;.()|]{0,60})", text)
+        at = re.search(r"\b(?:at|en)\s+((?:the\s+)?(?:St\.?|Saint|Sts\.?|San|Santa|Our Lady|Holy|Sacred|Blessed|Christ|Mission|"
+                       r"[A-Z][a-z]+\s+(?:Cathedral|Basilica|Shrine|Parish))\b[^,;.()|]{0,60})", text)
         if at and not self.multi and other_place(at.group(1), self.own):
             self.drop("other_location", len(toks))      # "8:15am - Mass at Christ Cathedral with Bishop Vann": another church's
             return
@@ -1131,6 +1148,9 @@ class Reader:
     def run(self, items: list[Item], ctx: Ctx | None = None):
         ctx = ctx or Ctx()
         for it in items:
+            if it.kind == "place":
+                self.place(ctx, it.text, it.level)
+                continue
             if it.kind == "table":
                 self.table(ctx, it.rows)
             elif not times_in(it.text):
@@ -1223,7 +1243,7 @@ def schedule_blocks(items: list[Item]) -> list[Item]:
                 and not (not on and times_in(it.text) and DATE_RX.search(" ".join(x.text for x in items[max(0, items.index(it) - 2):items.index(it) + 3]))):
             # (an events list's entry title, "Mass 9:00AM - English" beside "October 18 | 9:00 am", starts no block)
             if place is not None and since <= 8:
-                out.append(Item("h", place.text, min(place.level, 6)))
+                out.append(Item("place", place.text, place.level))
             place = None
             on, lvl, n = True, (it.level if it.kind == "h" else 8), 0
             out.append(Item("h", it.text, min(it.level, 7)))
