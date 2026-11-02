@@ -69,6 +69,12 @@
    "url": "https://olgcsb.org/bernadette/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://olgcsb.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -122,8 +128,8 @@
    "time": "18:00",
    "language": null,
    "raw": "Sunday Mass: Saturday at 6:00 pm (Sunday Obligation)",
-   "source_url": "https://olgcsb.org/bernadette/mass-schedule/",
-   "fetched_at": "2026-11-02T03:46:38+00:00",
+   "source_url": "https://olgcsb.org/bernadette/",
+   "fetched_at": "2026-11-02T03:46:37+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -135,12 +141,28 @@
    "time": "11:00",
    "language": null,
    "raw": "Sunday Mass: Sunday at 11:00 am",
-   "source_url": "https://olgcsb.org/bernadette/mass-schedule/",
-   "fetched_at": "2026-11-02T03:46:38+00:00",
+   "source_url": "https://olgcsb.org/bernadette/",
+   "fetched_at": "2026-11-02T03:46:37+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "First Saturday of the month",
+   "time": "18:00",
+   "language": null,
+   "raw": "Adoration: immediately after the 6 p.m. Mass",
+   "source_url": "https://olgcsb.org/bernadette/mass-schedule/",
+   "fetched_at": "2026-11-02T03:46:38+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "Adoration: immediately after the 6 p.m. Mass",
+   "relative_resolved": false
   },
   {
    "kind": "mass",
@@ -240,9 +262,19 @@
  ],
  "source_url": "https://olgcsb.org/bernadette/",
  "fetched_at": "2026-11-02T03:46:47+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:18+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -256,12 +288,19 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 6
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "By appointment",
+   "phrase": "By appointment",
+   "source_url": "https://olgcsb.org/bernadette/",
+   "fetched_at": "2026-11-02T03:46:37+00:00"
+  }
+ ],
  "has_sunday": true,
- "schedule_dropped": {
-  "relative_time": 1
- },
  "groups_dropped": {},
  "event_counts": {
   "window_start": "2026-11-02",

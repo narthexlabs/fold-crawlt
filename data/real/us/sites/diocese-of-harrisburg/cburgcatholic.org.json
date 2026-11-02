@@ -63,6 +63,12 @@
    "url": "https://cburgcatholic.org/corpus-christi-catholic-church-events",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://cburgcatholic.org/adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -358,9 +364,21 @@
  ],
  "source_url": "https://cburgcatholic.org/",
  "fetched_at": "2026-11-02T00:05:55+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:16+00:00",
+  "requests": 1,
+  "found": [
+   "adoration"
+  ]
+ },
  "schedule_template": {
   "template": "squarespace",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -374,11 +392,23 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 5
+  "trusted_kinds": [],
+  "generic_rows": 25
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "If the times listed above do not work with your schedule, our priests are also available by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://cburgcatholic.org/en/confession",
+   "fetched_at": "2026-11-02T00:05:49+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "not_a_service": 2,
+  "other_location": 4,
+  "no_kind": 5,
   "box_rows_added": 18
  },
  "groups_dropped": {
