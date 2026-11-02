@@ -202,32 +202,6 @@
  "schedule_rows": [
   {
    "kind": "confession",
-   "day": "Wednesday",
-   "time": "17:30-18:20",
-   "language": null,
-   "raw": "Reconciliation: Wednesday: 5:30-6:20 p.m. & following mass until 7:30 p.m.",
-   "source_url": "https://www.saintisidoreholyfamily.org/",
-   "fetched_at": "2026-11-01T22:15:27+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wix"
-  },
-  {
-   "kind": "adoration",
-   "day": "Wednesday",
-   "time": "17:30-18:20",
-   "language": null,
-   "raw": "Adoration: Wednesday: 5:30-6:20 p.m. & following mass until 7:30 p.m.",
-   "source_url": "https://www.saintisidoreholyfamily.org/",
-   "fetched_at": "2026-11-01T22:15:27+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wix"
-  },
-  {
-   "kind": "confession",
    "day": "Thursday",
    "time": "17:30-18:20",
    "language": null,
@@ -369,9 +343,19 @@
  ],
  "source_url": "https://www.saintisidoreholyfamily.org/",
  "fetched_at": "2026-11-01T22:15:47+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:32+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "wix",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -385,20 +369,20 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 8
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 4,
-  "relative_time": 2,
+  "other_location": 8,
   "box_rows_added": 9
  },
  "groups_dropped": {
   "unmatched": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

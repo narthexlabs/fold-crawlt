@@ -85,6 +85,18 @@
    "url": "https://www.corlansing.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.corlansing.org/sacraments/reconciliation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.corlansing.org/worship/adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -365,12 +377,12 @@
    "day": "Saturday",
    "time": "17:00",
    "language": null,
-   "raw": "DAILY MASS: 8:15am, 5:00pm (Sunday Vigil)",
+   "raw": "8:15am, 5:00pm (Sunday Vigil)",
    "source_url": "https://www.corlansing.org/",
    "fetched_at": "2026-11-01T22:15:27+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "medium",
+   "confidence": "high",
    "template": "generic_strict",
    "day_parsed": "Sunday"
   },
@@ -555,13 +567,82 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "devotion",
+   "day": "Wednesday",
+   "time": "07:45",
+   "language": null,
+   "raw": "Daily Rosary: Wednesday-Saturday at 7:45am",
+   "source_url": "https://www.corlansing.org/worship/devotions",
+   "fetched_at": "2026-11-01T22:15:44+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "day_expanded_from": "Wednesday-Saturday"
+  },
+  {
+   "kind": "devotion",
+   "day": "Thursday",
+   "time": "07:45",
+   "language": null,
+   "raw": "Daily Rosary: Wednesday-Saturday at 7:45am",
+   "source_url": "https://www.corlansing.org/worship/devotions",
+   "fetched_at": "2026-11-01T22:15:44+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "day_expanded_from": "Wednesday-Saturday"
+  },
+  {
+   "kind": "devotion",
+   "day": "Friday",
+   "time": "07:45",
+   "language": null,
+   "raw": "Daily Rosary: Wednesday-Saturday at 7:45am",
+   "source_url": "https://www.corlansing.org/worship/devotions",
+   "fetched_at": "2026-11-01T22:15:44+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "day_expanded_from": "Wednesday-Saturday"
+  },
+  {
+   "kind": "devotion",
+   "day": "Saturday",
+   "time": "07:45",
+   "language": null,
+   "raw": "Daily Rosary: Wednesday-Saturday at 7:45am",
+   "source_url": "https://www.corlansing.org/worship/devotions",
+   "fetched_at": "2026-11-01T22:15:44+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "day_expanded_from": "Wednesday-Saturday"
   }
  ],
  "source_url": "https://www.corlansing.org/",
  "fetched_at": "2026-11-01T22:15:58+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:37+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -575,12 +656,22 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 12
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "by appointment here",
+   "phrase": "by appointment",
+   "source_url": "https://www.corlansing.org/sacraments/reconciliation",
+   "fetched_at": "2026-11-02T04:41:33+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "other_location": 3,
-  "not_a_service": 2
+  "not_a_service": 1
  },
  "groups_dropped": {
   "unmatched": 10,
@@ -589,8 +680,8 @@
   "label_not_group": 2
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

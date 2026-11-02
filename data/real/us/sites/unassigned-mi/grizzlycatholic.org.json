@@ -282,7 +282,7 @@
    "note": "Microsoft 365 published calendar",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:33:24+00:00",
+    "fetched_at": "2026-11-02T04:43:33+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -305,6 +305,58 @@
   "source_url": "https://www.grizzlycatholic.org/"
  },
  "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "19:15",
+   "language": null,
+   "raw": "MASS TIMES: THURSDAY 7:15pm",
+   "source_url": "https://www.grizzlycatholic.org/",
+   "fetched_at": "2026-11-01T22:15:25+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "12:05",
+   "language": null,
+   "raw": "MASS TIMES: FRIDAY 12:05pm",
+   "source_url": "https://www.grizzlycatholic.org/",
+   "fetched_at": "2026-11-01T22:15:25+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "09:00",
+   "language": null,
+   "raw": "MASS TIMES: SATURDAY 9:00am",
+   "source_url": "https://www.grizzlycatholic.org/",
+   "fetched_at": "2026-11-01T22:15:25+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace"
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "18:00-19:15",
+   "language": null,
+   "raw": "ADORATION: 6:00 - 7:15pm",
+   "source_url": "https://www.grizzlycatholic.org/",
+   "fetched_at": "2026-11-01T22:15:25+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace"
+  },
   {
    "kind": "mass",
    "day": "Sunday",
@@ -356,65 +408,23 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "squarespace"
-  },
-  {
-   "kind": "mass",
-   "day": "Thursday",
-   "time": "19:15",
-   "language": null,
-   "raw": "Mass: THURSDAY 7:15pm",
-   "source_url": "https://www.grizzlycatholic.org/worship-schedule",
-   "fetched_at": "2026-11-01T22:15:29+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "squarespace"
-  },
-  {
-   "kind": "mass",
-   "day": "Friday",
-   "time": "12:05",
-   "language": null,
-   "raw": "Mass: FRIDAY 12:05pm",
-   "source_url": "https://www.grizzlycatholic.org/worship-schedule",
-   "fetched_at": "2026-11-01T22:15:29+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "squarespace"
-  },
-  {
-   "kind": "mass",
-   "day": "Saturday",
-   "time": "09:00",
-   "language": null,
-   "raw": "Mass: SATURDAY 9:00am",
-   "source_url": "https://www.grizzlycatholic.org/worship-schedule",
-   "fetched_at": "2026-11-01T22:15:29+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "squarespace"
-  },
-  {
-   "kind": "adoration",
-   "day": "Thursday",
-   "time": "18:00-19:15",
-   "language": null,
-   "raw": "ADORATION: 6:00 - 7:15pm",
-   "source_url": "https://www.grizzlycatholic.org/",
-   "fetched_at": "2026-11-01T22:15:25+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "squarespace"
   }
  ],
  "source_url": "https://www.grizzlycatholic.org/",
  "fetched_at": "2026-11-01T22:15:47+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:31+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "squarespace",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -428,6 +438,7 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 15
  },
  "has_sunday": true,
@@ -441,8 +452,8 @@
   "unmatched": 2
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
