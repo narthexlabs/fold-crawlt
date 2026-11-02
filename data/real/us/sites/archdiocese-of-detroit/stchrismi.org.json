@@ -69,6 +69,18 @@
    "url": "https://www.stchrismi.org/home/contacts/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://www.stchrismi.org/home/lenten_schedule/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stchrismi.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -321,9 +333,21 @@
  ],
  "source_url": "http://www.stchrismi.org/",
  "fetched_at": "2026-11-01T18:51:54+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:42+00:00",
+  "requests": 2,
+  "found": [
+   "liturgy"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -337,8 +361,18 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 2
+  "trusted_kinds": [],
+  "generic_rows": 7
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Reconciliation is offered on most Saturdays beginning at 3:30 pm before 5:00 pm Mass or by appointment by calling",
+   "phrase": "by appointment",
+   "source_url": "https://www.stchrismi.org/home/sacraments-2/",
+   "fetched_at": "2026-11-01T18:51:47+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "other_location": 2,
@@ -349,8 +383,8 @@
   "noise": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

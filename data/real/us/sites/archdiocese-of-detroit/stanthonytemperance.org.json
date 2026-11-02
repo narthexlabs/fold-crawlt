@@ -72,6 +72,12 @@
    "url": "https://www.stanthonytemperance.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stanthonytemperance.org/chapel-renovation",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -186,9 +192,9 @@
    "day": "Saturday",
    "time": "16:00",
    "language": null,
-   "raw": "Our Weekend Mass Schedule:: 4:00pm",
-   "source_url": "https://www.stanthonytemperance.org/liturgical-schedule",
-   "fetched_at": "2026-11-01T22:15:41+00:00",
+   "raw": "MASS TIMES: Saturday: 4:00pm",
+   "source_url": "https://www.stanthonytemperance.org/",
+   "fetched_at": "2026-11-01T22:15:36+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -199,9 +205,35 @@
    "day": "Sunday",
    "time": "09:00",
    "language": null,
-   "raw": "Our Weekend Mass Schedule:: 9:00am; 11:00am (NLM)",
-   "source_url": "https://www.stanthonytemperance.org/liturgical-schedule",
-   "fetched_at": "2026-11-01T22:15:41+00:00",
+   "raw": "MASS TIMES: Sunday: 9:00am, and",
+   "source_url": "https://www.stanthonytemperance.org/",
+   "fetched_at": "2026-11-01T22:15:36+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix"
+  },
+  {
+   "kind": "confession",
+   "day": "Thursday",
+   "time": "17:00-18:00",
+   "language": null,
+   "raw": "Confession Times: Thursday: 5:00-6:00pm",
+   "source_url": "https://www.stanthonytemperance.org/",
+   "fetched_at": "2026-11-01T22:15:36+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix"
+  },
+  {
+   "kind": "confession",
+   "day": "First Saturday of the month",
+   "time": "10:00-11:00",
+   "language": null,
+   "raw": "Confession Times: First Saturdays: 10:00am-11:00am",
+   "source_url": "https://www.stanthonytemperance.org/",
+   "fetched_at": "2026-11-01T22:15:36+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -273,19 +305,6 @@
    "template": "wix"
   },
   {
-   "kind": "confession",
-   "day": "Thursday",
-   "time": "17:00-18:00",
-   "language": null,
-   "raw": "Confessions: Thursday 5:00pm-6:00pm;",
-   "source_url": "https://www.stanthonytemperance.org/liturgical-schedule",
-   "fetched_at": "2026-11-01T22:15:41+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "wix"
-  },
-  {
    "kind": "mass",
    "day": "First Saturday of the month",
    "time": "10:00",
@@ -314,9 +333,21 @@
  ],
  "source_url": "https://www.stanthonytemperance.org/",
  "fetched_at": "2026-11-01T22:15:50+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:44+00:00",
+  "requests": 1,
+  "found": [
+   "adoration"
+  ]
+ },
  "schedule_template": {
   "template": "wix",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -330,6 +361,7 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 15
  },
  "has_sunday": true,
@@ -339,8 +371,8 @@
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
