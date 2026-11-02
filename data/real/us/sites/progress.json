@@ -1680,13 +1680,13 @@
   },
   "unassigned-mn": {
    "sites_in_list": 116,
-   "records": 153,
+   "records": 154,
    "finished": true,
    "ok": 95,
    "by_status": {
     "ok": 95,
     "challenge": 32,
-    "dns": 9,
+    "dns": 10,
     "ssl_error": 8,
     "conn_error": 3,
     "robots_disallowed": 2,
@@ -2556,18 +2556,18 @@
   },
   "diocese-of-norwich": {
    "sites_in_list": 73,
-   "records": 58,
-   "finished": false,
-   "ok": 25,
+   "records": 77,
+   "finished": true,
+   "ok": 29,
    "by_status": {
-    "ok": 25,
-    "dns": 8,
+    "ok": 29,
+    "dns": 20,
+    "challenge": 8,
     "ssl_error": 7,
-    "challenge": 7,
+    "conn_error": 4,
     "timeout": 3,
     "http_5xx": 2,
     "robots_disallowed": 2,
-    "conn_error": 2,
     "unreachable_via_proxy": 1,
     "parked": 1
    }
@@ -2736,16 +2736,17 @@
   },
   "diocese-of-memphis": {
    "sites_in_list": 65,
-   "records": 52,
-   "finished": false,
+   "records": 65,
+   "finished": true,
    "ok": 39,
    "by_status": {
     "ok": 39,
+    "dns": 14,
     "unreachable_via_proxy": 4,
     "conn_error": 3,
     "challenge": 3,
-    "dns": 2,
-    "not_found": 1
+    "not_found": 1,
+    "timeout": 1
    }
   },
   "diocese-of-owensboro": {
@@ -3325,22 +3326,31 @@
   },
   "diocese-of-nashville": {
    "sites_in_list": 40,
-   "records": 1,
-   "finished": false,
-   "ok": 0,
+   "records": 40,
+   "finished": true,
+   "ok": 13,
    "by_status": {
-    "ssl_error": 1
+    "ok": 13,
+    "challenge": 11,
+    "dns": 11,
+    "ssl_error": 3,
+    "timeout": 1,
+    "not_found": 1
    }
   },
   "diocese-of-new-ulm": {
    "sites_in_list": 39,
-   "records": 7,
-   "finished": false,
-   "ok": 5,
+   "records": 41,
+   "finished": true,
+   "ok": 15,
    "by_status": {
-    "ok": 5,
-    "challenge": 1,
-    "not_found": 1
+    "ok": 15,
+    "dns": 12,
+    "ssl_error": 6,
+    "challenge": 4,
+    "not_found": 2,
+    "conn_error": 1,
+    "parked": 1
    }
   },
   "diocese-of-monterey": {
@@ -4260,9 +4270,9 @@
  },
  "totals": {
   "sites_in_list": 19937,
-  "records": 20269,
-  "ok": 10819
+  "records": 20278,
+  "ok": 10828
  },
  "us_parish_pages_discovermass": 20147,
- "updated_at": "2026-11-02T01:57:59+00:00"
+ "updated_at": "2026-11-02T01:58:03+00:00"
 }

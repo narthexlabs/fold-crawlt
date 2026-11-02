@@ -83,7 +83,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | archdiocese-of-seattle | 117 | 117 | 81 | 30 | 0 | 6 | 0 |
 | diocese-of-green-bay | 117 | 118 | 48 | 26 | 0 | 44 | 0 |
 | diocese-of-la-crosse | 117 | 119 | 71 | 21 | 4 | 23 | 0 |
-| unassigned-mn | 116 | 153 | 95 | 32 | 3 | 23 | 0 |
+| unassigned-mn | 116 | 154 | 95 | 32 | 3 | 24 | 0 |
 | diocese-of-richmond | 114 | 124 | 89 | 19 | 1 | 15 | 0 |
 | diocese-of-dallas | 111 | 112 | 47 | 46 | 0 | 19 | 0 |
 | unassigned-wv | 110 | 119 | 97 | 3 | 3 | 16 | 0 |
@@ -137,7 +137,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | unassigned-or | 75 | 152 | 45 | 88 | 1 | 18 | 0 |
 | diocese-of-jefferson-city | 73 | 73 | 28 | 4 | 0 | 41 | 0 |
 | diocese-of-las-cruces | 73 | 73 | 12 | 1 | 0 | 60 | 0 |
-| diocese-of-norwich | 73 | 58 | 25 | 7 | 2 | 24 | 0 |
+| diocese-of-norwich | 73 | 77 | 29 | 8 | 2 | 38 | 0 |
 | archdiocese-of-kansas-city-in-kansas | 73 | 74 | 28 | 4 | 1 | 23 | 3 |
 | diocese-of-venice | 72 | 72 | 55 | 7 | 0 | 10 | 0 |
 | unassigned-hi | 71 | 76 | 54 | 12 | 3 | 7 | 0 |
@@ -149,7 +149,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | archdiocese-of-oklahoma-city | 66 | 66 | 28 | 20 | 6 | 12 | 0 |
 | unassigned-ga | 66 | 80 | 56 | 8 | 3 | 13 | 0 |
 | diocese-of-worcester | 66 | 66 | 11 | 30 | 0 | 25 | 0 |
-| diocese-of-memphis | 65 | 52 | 39 | 3 | 0 | 10 | 0 |
+| diocese-of-memphis | 65 | 65 | 39 | 3 | 0 | 23 | 0 |
 | diocese-of-owensboro | 65 | 48 | 31 | 10 | 0 | 7 | 0 |
 | diocese-of-st-augustine | 65 | 71 | 45 | 15 | 0 | 11 | 0 |
 | diocese-of-pensacola-tallahassee | 64 | 64 | 34 | 16 | 1 | 12 | 1 |
@@ -190,8 +190,8 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-springfield-massachusetts | 42 | 42 | 19 | 3 | 0 | 20 | 0 |
 | unassigned-ut | 41 | 47 | 35 | 2 | 0 | 10 | 0 |
 | diocese-of-davenport | 40 | 40 | 22 | 3 | 0 | 15 | 0 |
-| diocese-of-nashville | 40 | 1 | 0 | 0 | 0 | 1 | 0 |
-| diocese-of-new-ulm | 39 | 7 | 5 | 1 | 0 | 1 | 0 |
+| diocese-of-nashville | 40 | 40 | 13 | 11 | 0 | 16 | 0 |
+| diocese-of-new-ulm | 39 | 41 | 15 | 4 | 0 | 22 | 0 |
 | diocese-of-monterey | 39 | 21 | 5 | 7 | 0 | 9 | 0 |
 | diocese-of-victoria | 38 | 38 | 1 | 31 | 0 | 6 | 0 |
 | unassigned-nv | 38 | 51 | 27 | 19 | 0 | 5 | 0 |
