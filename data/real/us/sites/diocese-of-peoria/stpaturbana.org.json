@@ -75,6 +75,12 @@
    "url": "https://www.stpaturbana.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stpaturbana.org/sacraments-1",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -4232,10 +4238,33 @@
   }
  },
  "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()",
-  "intentions_withheld": 1
+  "screened_by": "ingest/public/privacy.py screen()"
  },
  "social_shared_links_removed": [
   "https://www.facebook.com/2008"
- ]
+ ],
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "First Reconciliation typically happens in November with an evening service at St. Patrick Catholic Church. Confessions can also be arranged by appointment with Fr. Anthony.",
+   "phrase": "by appointment",
+   "source_url": "https://www.stpaturbana.org/sacraments-1",
+   "fetched_at": "2026-11-02T04:41:50+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:52+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
+ }
 }

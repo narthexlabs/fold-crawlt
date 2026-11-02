@@ -87,6 +87,18 @@
    "url": "https://stanthonybartonville.com/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stanthonybartonville.com/reconciliation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stanthonybartonville.com/adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -310,6 +322,36 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "First Friday of the month",
+   "time": "07:30",
+   "language": null,
+   "raw": "Join Us for Adoration: Following 7:30 am Mass until 5:00 pm with:",
+   "source_url": "https://stanthonybartonville.com/adoration/",
+   "fetched_at": "2026-11-02T04:41:50+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "Join Us for Adoration: Following 7:30 am Mass until 5:00 pm with:",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "First Friday of the month",
+   "time": "16:00",
+   "language": null,
+   "raw": "Join Us for Adoration: Litany of St. Joseph at 4:00 pm",
+   "source_url": "https://stanthonybartonville.com/adoration/",
+   "fetched_at": "2026-11-02T04:41:50+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "http://stanthonybartonville.com/",
@@ -351,5 +393,29 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "The Sacrament of Reconciliation is celebrated at St. Anthony every Saturday afternoon from 3:30 – 4:15. The pastor is also available by appointment. Please call the parish office at",
+   "phrase": "by appointment",
+   "source_url": "https://stanthonybartonville.com/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:49+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:51+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
  }
 }

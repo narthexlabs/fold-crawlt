@@ -63,6 +63,18 @@
    "url": "https://www.holyfamilydanville.net/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.holyfamilydanville.net/reconciliation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.holyfamilydanville.net/eucharistic-adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -244,6 +256,22 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "squarespace"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "09:00",
+   "language": null,
+   "raw": "We expose the Blessed Sacrament following the 9:00 AM Wednesday Mass. Adoration continues until noon, when the priest offers Benediction.",
+   "source_url": "https://www.holyfamilydanville.net/eucharistic-adoration",
+   "fetched_at": "2026-11-02T04:41:50+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "squarespace",
+   "relative": "after",
+   "note": "We expose the Blessed Sacrament following the 9:00 AM Wednesday Mass. Adoration continues until noon, when the priest of",
+   "topup": true
   }
  ],
  "source_url": "http://holyfamilydanville.net/",
@@ -288,5 +316,20 @@
  },
  "social_shared_links_removed": [
   "https://www.facebook.com/2008"
- ]
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:51+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
+ }
 }
