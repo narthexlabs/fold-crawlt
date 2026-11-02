@@ -31,13 +31,30 @@ if [ "${SKIP_PROBE:-0}" != 1 ]; then   # in a matrix only one job probes; otherw
   git commit -q -m "US diocese directory probe: $(date -u +%FT%H:%MZ)${TRAILER}" 2>/dev/null
 fi
 
-python3 -I ingest/us/sites/run_state.py chunk --minutes "$MIN" --workers "${WORKERS:-128}" ${STATES:+--state "$STATES"}
+# Top-up (2026-11-01): after the chunk, fetch only the confession / adoration / liturgy pages of sites already crawled ok
+# (ingest/us/sites/run_state.py topup). Its minutes come out of the chunk's, so the job's total time is unchanged.
+# TOPUP_MINUTES=0 turns it off.
+TOPUP_MIN="${TOPUP_MINUTES:-25}"
+CHUNK_MIN=$(( MIN > TOPUP_MIN + 20 ? MIN - TOPUP_MIN : MIN ))
+python3 -I ingest/us/sites/run_state.py chunk --minutes "$CHUNK_MIN" --workers "${WORKERS:-128}" ${STATES:+--state "$STATES"}
 rc=$?
 if [ -f data/raw/us/sites/_last_touched.json ]; then
   for d in $(python3 -c "import json;print(' '.join(json.load(open('data/raw/us/sites/_last_touched.json'))))"); do
     git add "data/real/us/sites/$d/"
     git commit -q -m "US parish sites: $d$TRAILER" 2>/dev/null
   done
+fi
+if [ "$TOPUP_MIN" -gt 0 ] && [ "$rc" -ne 3 ]; then
+  rm -f data/raw/us/sites/_last_touched.json
+  timeout $(( TOPUP_MIN * 60 + 300 )) python3 -I ingest/us/sites/run_state.py topup --kinds confession,adoration,liturgy \
+    --minutes "$TOPUP_MIN" --workers "${WORKERS:-128}" ${STATES:+--state "$STATES"}
+  echo "topup rc=$?"
+  if [ -f data/raw/us/sites/_last_touched.json ]; then
+    for d in $(python3 -c "import json;print(' '.join(json.load(open('data/raw/us/sites/_last_touched.json'))))"); do
+      git add "data/real/us/sites/$d/"
+      git commit -q -m "US parish sites: confession / adoration / liturgy pages top-up, $d$TRAILER" 2>/dev/null
+    done
+  fi
 fi
 git add data/real/us/sites/progress.json data/real/us/sites/README.md
 git commit -q -m "US parish sites: progress $(date -u +%FT%H:%MZ)${TRAILER}" 2>/dev/null

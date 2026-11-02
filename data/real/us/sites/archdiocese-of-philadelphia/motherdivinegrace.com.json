@@ -21,32 +21,194 @@
  ],
  "home_url": "https://motherdivinegrace.com/",
  "final_url": "https://motherdivinegrace.com/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "crawl_status": "wayback-2025-10-16",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
    "url": "https://motherdivinegrace.com/",
-   "status": 403,
-   "class": "challenge"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://motherdivinegrace.com/weekly-masses",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://motherdivinegrace.com/staff",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://motherdivinegrace.com/administration-of-medication",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "calendar",
+   "url": "https://motherdivinegrace.com/september-calendar",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://motherdivinegrace.com/events-1",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://motherdivinegrace.com/bulletins",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "motherdivinegrace.com:divine_mercy",
+   "name": "Divine Mercy Chaplet",
+   "category": "prayer_devotion",
+   "category_label": "Prayer & devotion",
+   "subcategory": "divine_mercy",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://motherdivinegrace.com/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://motherdivinegrace.com/weekly-masses",
+   "source_kind": "website",
+   "fetched_at": "2025-10-16T19:09:52+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-10-16"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/mdginterparchochial",
+   "https://www.facebook.com/1098194647"
+  ],
+  "instagram": [
+   "https://www.instagram.com/mdg_school/"
+  ],
+  "x": [
+   "https://x.com/MDGSchool"
+  ]
+ },
+ "bulletin": {
+  "url": "https://motherdivinegrace.com/bulletins",
+  "date": null,
+  "kind": "page",
+  "text": "|||",
+  "source_url": "https://motherdivinegrace.com/bulletins"
+ },
  "schedule_rows": [],
  "source_url": "https://motherdivinegrace.com/",
- "fetched_at": "2026-11-01T20:25:02+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-02T04:13:32+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "has_sunday": false,
+ "groups_dropped": {
+  "schedule": 1
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(215) 426-7325",
+  "address": "2612 E Monmouth St, Philadelphia, PA 19134",
+  "source_url": "https://motherdivinegrace.com/",
+  "sources": {
+   "phone": "https://motherdivinegrace.com/",
+   "address": "https://motherdivinegrace.com/"
+  },
+  "fetched_at": "2025-10-16T19:19:45+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2025-10-16",
+  "capture_age_days": 382,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://motherdivinegrace.com/",
+    "capture": "2025-10-16",
+    "archive_url": "https://web.archive.org/web/20251016191945/https://motherdivinegrace.com/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://motherdivinegrace.com/weekly-masses",
+    "capture": "2025-10-16",
+    "archive_url": "https://web.archive.org/web/20251016190952/https://motherdivinegrace.com/weekly-masses"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://motherdivinegrace.com/staff",
+    "capture": "2025-04-26",
+    "archive_url": "https://web.archive.org/web/20250426065611/https://motherdivinegrace.com/staff"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://motherdivinegrace.com/september-calendar",
+    "capture": "2025-03-16",
+    "archive_url": "https://web.archive.org/web/20250316151836/https://motherdivinegrace.com/september-calendar"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://motherdivinegrace.com/events-1",
+    "capture": "2025-10-16",
+    "archive_url": "https://web.archive.org/web/20251016181841/https://motherdivinegrace.com/events-1"
+   },
+   {
+    "kind": "bulletin",
+    "original": "https://motherdivinegrace.com/bulletins",
+    "capture": "2023-02-01",
+    "archive_url": "https://web.archive.org/web/20230201154919/https://motherdivinegrace.com/bulletins"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review.",
+  "grade": {
+   "rule": "wayback-verified-2026-11-01",
+   "template": "ecatholic",
+   "trusted_template": false,
+   "has_sunday": false,
+   "groups": 1,
+   "verified": false,
+   "capture_date": "2025-10-16",
+   "applied": false
+  }
  }
 }

@@ -22,32 +22,455 @@
  ],
  "home_url": "https://church.holycrosspdx.org/",
  "final_url": "https://church.holycrosspdx.org/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "crawl_status": "wayback-2026-03-30",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
    "url": "https://church.holycrosspdx.org/",
-   "status": 403,
-   "class": "challenge"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://church.holycrosspdx.org/mass-times",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://church.holycrosspdx.org/ministry-schedule",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://church.holycrosspdx.org/ministros",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://church.holycrosspdx.org/ongoing-adult-formation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://church.holycrosspdx.org/calendar-1",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://church.holycrosspdx.org/contact-us",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://church.holycrosspdx.org/bulletins",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://church.holycrosspdx.org/bulletin",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "church.holycrosspdx.org:adult_formation|ongoing",
+   "name": "Ongoing Adult Formation",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "adult_formation",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://church.holycrosspdx.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://church.holycrosspdx.org/ongoing-adult-formation",
+   "source_kind": "website",
+   "fetched_at": "2025-10-16T00:16:46+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-03-30"
+  },
+  {
+   "id": "church.holycrosspdx.org:svdp_es",
+   "name": "San Vicente de Paúl",
+   "category": "service_mercy",
+   "category_label": "Service & mercy",
+   "subcategory": "st_vincent_de_paul",
+   "audience": "all",
+   "language": "es",
+   "language_assumed": false,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://church.holycrosspdx.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://church.holycrosspdx.org/ministros",
+   "source_kind": "website",
+   "fetched_at": "2025-10-16T01:11:19+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-03-30"
+  },
+  {
+   "id": "church.holycrosspdx.org:servers",
+   "name": "Altar Servers",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "altar_servers",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "Please arrive at least 15 minutes before Mass",
+   "contact_url": "https://church.holycrosspdx.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://church.holycrosspdx.org/ministry-schedule",
+   "source_kind": "website",
+   "fetched_at": "2025-10-15T23:56:44+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-03-30"
+  },
+  {
+   "id": "church.holycrosspdx.org:ushers",
+   "name": "Greeter/ushers",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "ushers_greeters",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "Please arrive at least 15 minutes before Mass",
+   "contact_url": "https://church.holycrosspdx.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://church.holycrosspdx.org/ministry-schedule",
+   "source_kind": "website",
+   "fetched_at": "2025-10-15T23:56:44+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-03-30"
+  },
+  {
+   "id": "church.holycrosspdx.org:lectors_es",
+   "name": "Lectors (Spanish)",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "lectors",
+   "audience": "all",
+   "language": "es",
+   "language_assumed": false,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://church.holycrosspdx.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://church.holycrosspdx.org/ministros",
+   "source_kind": "website",
+   "fetched_at": "2025-10-16T01:11:19+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-03-30"
+  },
+  {
+   "id": "church.holycrosspdx.org:emhc",
+   "name": "Ministros de la Eucaristía",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "emhc",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://church.holycrosspdx.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://church.holycrosspdx.org/ministros",
+   "source_kind": "website",
+   "fetched_at": "2025-10-16T01:11:19+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-03-30"
+  },
+  {
+   "id": "church.holycrosspdx.org:choir_es",
+   "name": "Músicos/Coro",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "choir_music",
+   "audience": "all",
+   "language": "es",
+   "language_assumed": false,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://church.holycrosspdx.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://church.holycrosspdx.org/ministros",
+   "source_kind": "website",
+   "fetched_at": "2025-10-16T01:11:19+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-03-30"
+  },
+  {
+   "id": "church.holycrosspdx.org:servers_es",
+   "name": "Servidores del Altar (Monaguillos)",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "altar_servers",
+   "audience": "youth",
+   "language": "es",
+   "language_assumed": false,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://church.holycrosspdx.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://church.holycrosspdx.org/ministros",
+   "source_kind": "website",
+   "fetched_at": "2025-10-16T01:11:19+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-03-30"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/holycrosscatholicchurchpdx"
+  ],
+  "instagram": [
+   "https://www.instagram.com/holycrosspdx/"
+  ]
+ },
  "bulletin": null,
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": "English",
+   "raw": "Saturday Vigil: 5:00 PM English",
+   "source_url": "https://church.holycrosspdx.org/mass-times",
+   "fetched_at": "2025-10-16T01:12:54+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-03-30: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-03-30",
+   "archive_url": "https://web.archive.org/web/20251016011254/https://church.holycrosspdx.org/mass-times",
+   "capture_date": "2025-10-16"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": "English",
+   "raw": "Sunday: 9:00 AM English",
+   "source_url": "https://church.holycrosspdx.org/mass-times",
+   "fetched_at": "2025-10-16T01:12:54+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-03-30: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-03-30",
+   "archive_url": "https://web.archive.org/web/20251016011254/https://church.holycrosspdx.org/mass-times",
+   "capture_date": "2025-10-16"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "12:00",
+   "language": "Spanish",
+   "raw": "Sunday: 12:00 PM Spanish",
+   "source_url": "https://church.holycrosspdx.org/mass-times",
+   "fetched_at": "2025-10-16T01:12:54+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-03-30: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-03-30",
+   "archive_url": "https://web.archive.org/web/20251016011254/https://church.holycrosspdx.org/mass-times",
+   "capture_date": "2025-10-16"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "08:30",
+   "language": "English",
+   "raw": "Friday: 8:30 AM English School Mass - September through June",
+   "source_url": "https://church.holycrosspdx.org/mass-times",
+   "fetched_at": "2025-10-16T01:12:54+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-03-30: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "season": "September through June",
+   "source": "wayback-2026-03-30",
+   "archive_url": "https://web.archive.org/web/20251016011254/https://church.holycrosspdx.org/mass-times",
+   "capture_date": "2025-10-16"
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "08:30-20:30",
+   "language": null,
+   "raw": "Thursday: 8:30 AM - 8:30 PM",
+   "source_url": "https://church.holycrosspdx.org/mass-times",
+   "fetched_at": "2025-10-16T01:12:54+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-03-30: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-03-30",
+   "archive_url": "https://web.archive.org/web/20251016011254/https://church.holycrosspdx.org/mass-times",
+   "capture_date": "2025-10-16"
+  },
+  {
+   "kind": "confession",
+   "day": "Wednesday",
+   "time": "19:00",
+   "language": null,
+   "raw": "Wednesday: 7:00 PM",
+   "source_url": "https://church.holycrosspdx.org/mass-times",
+   "fetched_at": "2025-10-16T01:12:54+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-03-30: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-03-30",
+   "archive_url": "https://web.archive.org/web/20251016011254/https://church.holycrosspdx.org/mass-times",
+   "capture_date": "2025-10-16"
+  },
+  {
+   "kind": "confession",
+   "day": "Friday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Friday: 9:00 AM Following the 8:30 am Mass",
+   "source_url": "https://church.holycrosspdx.org/mass-times",
+   "fetched_at": "2025-10-16T01:12:54+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-03-30: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-03-30",
+   "archive_url": "https://web.archive.org/web/20251016011254/https://church.holycrosspdx.org/mass-times",
+   "capture_date": "2025-10-16"
+  }
+ ],
  "source_url": "https://church.holycrosspdx.org/",
- "fetched_at": "2026-11-01T17:27:08+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-02T04:13:44+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": true
+   },
+   "score": "high"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 1
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "not_a_service": 1,
+  "text:skipped_section": 1
+ },
+ "groups_dropped": {
+  "unmatched": 1,
+  "fragment": 2
+ },
+ "office_contact": {
+  "email": "holycrossoffice@archdpdx.org",
+  "phone": "(503) 289-2834",
+  "address": "7455 N. Hodge Ave, Portland, OR 97203",
+  "source_url": "https://church.holycrosspdx.org/contact-us",
+  "sources": {
+   "email": "https://church.holycrosspdx.org/contact-us",
+   "phone": "https://church.holycrosspdx.org/contact-us",
+   "address": "https://church.holycrosspdx.org/contact-us"
+  },
+  "fetched_at": "2026-03-30T16:50:20+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2026-03-30",
+  "capture_age_days": 217,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://church.holycrosspdx.org/",
+    "capture": "2026-03-30",
+    "archive_url": "https://web.archive.org/web/20260330164932/https://church.holycrosspdx.org/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://church.holycrosspdx.org/mass-times",
+    "capture": "2025-10-16",
+    "archive_url": "https://web.archive.org/web/20251016011254/https://church.holycrosspdx.org/mass-times"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://church.holycrosspdx.org/ministry-schedule",
+    "capture": "2025-10-15",
+    "archive_url": "https://web.archive.org/web/20251015235644/https://church.holycrosspdx.org/ministry-schedule"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://church.holycrosspdx.org/ministros",
+    "capture": "2025-10-16",
+    "archive_url": "https://web.archive.org/web/20251016011119/https://church.holycrosspdx.org/ministros"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://church.holycrosspdx.org/ongoing-adult-formation",
+    "capture": "2025-10-16",
+    "archive_url": "https://web.archive.org/web/20251016001646/https://church.holycrosspdx.org/ongoing-adult-formation"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://church.holycrosspdx.org/calendar-1",
+    "capture": "2025-10-16",
+    "archive_url": "https://web.archive.org/web/20251016002547/https://church.holycrosspdx.org/calendar-1"
+   },
+   {
+    "kind": "contact",
+    "original": "https://church.holycrosspdx.org/contact-us",
+    "capture": "2026-03-30",
+    "archive_url": "https://web.archive.org/web/20260330165020/https://church.holycrosspdx.org/contact-us"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review.",
+  "grade": {
+   "rule": "wayback-verified-2026-11-01",
+   "template": "ecatholic",
+   "trusted_template": false,
+   "has_sunday": true,
+   "groups": 8,
+   "verified": false,
+   "capture_date": "2026-03-30",
+   "applied": false
+  }
  }
 }
