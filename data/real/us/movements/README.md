@@ -42,6 +42,11 @@ conference names, city, public website): never a named officer's phone or e-mail
   country). `kofc.py --mode numbers` walks n = 1 .. highest known + 600, skipping numbers already found by ZIP, keeping
   active US councils (status A, country USA, type R or C). This replaces the ZIP pass (stopped at 6,535 / 6,920 ZIPs, which
   only ever returns the ~5 councils nearest each ZIP) with the complete list. ~1.3 s per request.
+- Done 2026-11-02 13:21Z (three Actions runs): every number 1 .. 19,592 asked; 8,483 active US councils (8,363 parish /
+  community councils type R, 120 college councils type C). match.py: 2,057 councils -> 2,049 parishes (exact 1,621, fuzzy
+  436); 446 of those parishes show no other group. The rest (6,306) are named after a person or a town, or their name is
+  ambiguous in the city: they stay unmatched (never guessed). Re-run later only to refresh (new councils get numbers above
+  18,990): set `numbers.next` back to 1 in kofc_progress.json, or to ~18,900 for new ones only.
 - Resume (sandbox): `python3 -I ingest/us/movements/kofc.py --mode numbers --minutes 60 && python3 -I ingest/us/movements/match.py`
 - Resume (Actions): Actions -> "National crawl" -> Run workflow, job=`movements`, minutes=`110` (repeat until
   `kofc_progress.json` zips_done = zips_total). Never run both at once (one crawler per host).
