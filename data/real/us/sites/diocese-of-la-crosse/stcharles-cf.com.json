@@ -78,6 +78,12 @@
    "url": "https://www.ourladyofthefalls.org/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.ourladyofthefalls.org/eucharistic-adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -791,6 +797,34 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wix"
+  },
+  {
+   "kind": "adoration",
+   "day": "Sunday",
+   "time": "07:00",
+   "language": null,
+   "raw": "The Goldsmith Eucharistic Adoration Chapel: Hours: Sunday 7am through Friday at 3pm",
+   "source_url": "https://www.ourladyofthefalls.org/eucharistic-adoration",
+   "fetched_at": "2026-11-02T04:42:03+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "15:00",
+   "language": null,
+   "raw": "The Goldsmith Eucharistic Adoration Chapel: Hours: Sunday 7am through Friday at 3pm",
+   "source_url": "https://www.ourladyofthefalls.org/eucharistic-adoration",
+   "fetched_at": "2026-11-02T04:42:03+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "topup": true
   }
  ],
  "source_url": "https://stcharles-cf.com/",
@@ -827,6 +861,24 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:03+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(715) 723-4088",
@@ -838,8 +890,5 @@
   },
   "fetched_at": "2026-11-01T05:12:10+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }
