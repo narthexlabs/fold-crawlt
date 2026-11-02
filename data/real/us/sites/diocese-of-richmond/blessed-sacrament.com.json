@@ -366,6 +366,20 @@
    "review_reason": null,
    "confidence": "high",
    "template": "squarespace"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:45-16:30",
+   "language": null,
+   "raw": "Sacrament of Reconciliation: 3:45 - 4:30 pm on Saturday or by appointment",
+   "source_url": "https://www.blessed-sacrament.com/mass",
+   "fetched_at": "2026-11-02T04:41:45+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace",
+   "topup": true
   }
  ],
  "source_url": "http://www.blessed-sacrament.com/",
@@ -405,5 +419,28 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "3:45 - 4:30 pm on Saturday or by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://www.blessed-sacrament.com/mass",
+   "fetched_at": "2026-11-02T04:41:45+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:48+00:00",
+  "requests": 3,
+  "found": [
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

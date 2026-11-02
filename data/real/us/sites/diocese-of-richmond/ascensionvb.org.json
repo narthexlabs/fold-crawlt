@@ -356,6 +356,22 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "11:00",
+   "language": null,
+   "raw": "Reconciliation: You MUST be on site prior to 11:00 am to receive this Sacrament.",
+   "source_url": "https://www.ascensionvb.org/masstimes",
+   "fetched_at": "2026-11-02T04:41:45+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "before",
+   "note": "Reconciliation: You MUST be on site prior to 11:00 am to receive this Sacrament.",
+   "topup": true
   }
  ],
  "source_url": "https://www.ascensionvb.org/giving",
@@ -400,5 +416,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:45+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

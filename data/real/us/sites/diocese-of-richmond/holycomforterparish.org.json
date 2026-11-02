@@ -81,6 +81,18 @@
    "url": "https://holycomforterparish.org/contact-information/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://holycomforterparish.org/events-archive/confession-2026-06-07-2026-06-14-2026-06-21-2026-06-28-2026-07-05-2026-07-12-2026-07-19-2026-07-26-2026-08-02-2026-08-09-2026-08-16-2026-08-23-2026-08-30-2026-09-06-2026-09-13-2026-09-20-25-2026-11-01/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://holycomforterparish.org/events-archive/adoration-2-2026-11-04/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -263,6 +275,34 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "13:00-13:45",
+   "language": null,
+   "raw": "Father Joseph Mary hears Confessions on Sundays from 1-1:45pm.",
+   "source_url": "https://holycomforterparish.org/events-archive/confession-2026-06-07-2026-06-14-2026-06-21-2026-06-28-2026-07-05-2026-07-12-2026-07-19-2026-07-26-2026-08-02-2026-08-09-2026-08-16-2026-08-23-2026-08-30-2026-09-06-2026-09-13-2026-09-20-25-2026-11-01/",
+   "fetched_at": "2026-11-02T04:41:46+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "18:00-20:00",
+   "language": null,
+   "raw": "Please join us in Adoration on Wednesdays from 6-8pm.",
+   "source_url": "https://holycomforterparish.org/events-archive/adoration-2-2026-11-04/",
+   "fetched_at": "2026-11-02T04:41:47+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "http://www.holycomforterparish.org/",
@@ -305,5 +345,37 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Or by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://holycomforterparish.org/events-archive/confession-2026-06-07-2026-06-14-2026-06-21-2026-06-28-2026-07-05-2026-07-12-2026-07-19-2026-07-26-2026-08-02-2026-08-09-2026-08-16-2026-08-23-2026-08-30-2026-09-06-2026-09-13-2026-09-20-25-2026-11-01/",
+   "fetched_at": "2026-11-02T04:41:46+00:00"
+  },
+  {
+   "kind": "adoration",
+   "text": "Or by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://holycomforterparish.org/events-archive/adoration-2-2026-11-04/",
+   "fetched_at": "2026-11-02T04:41:47+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:49+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
  }
 }

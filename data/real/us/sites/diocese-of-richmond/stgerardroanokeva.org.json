@@ -75,6 +75,18 @@
    "url": "https://stgerardroanokeva.org/contact-us-directions/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stgerardroanokeva.org/sacraments/reconciliation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stgerardroanokeva.org/ministries/nocturnal-adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -280,6 +292,20 @@
    "review_reason": null,
    "confidence": "high",
    "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Thursday",
+   "time": "19:45-20:40",
+   "language": null,
+   "raw": "Confession is offered on Saturday’s from 4:30 PM to 5:15 PM and on Thursdays from 7:45 PM to 8:40 PM or by appointment.",
+   "source_url": "https://stgerardroanokeva.org/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:49+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "http://www.stgerardroanokeva.org/",
@@ -313,6 +339,24 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:51+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "office@stgerardroanokeva.org",
   "phone": "(540) 343-7744",
@@ -324,8 +368,5 @@
   },
   "fetched_at": "2026-11-01T03:58:46+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }
