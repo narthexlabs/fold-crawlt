@@ -81,6 +81,18 @@
    "url": "https://olgcc.net/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://olgcc.net/reconciliation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://olgcc.net/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -233,7 +245,7 @@
    "feed_key": "15953d393aa1",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:32:11+00:00",
+    "fetched_at": "2026-11-02T04:53:08+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -252,7 +264,7 @@
    "feed_key": "5020d603c9bc",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:32:12+00:00",
+    "fetched_at": "2026-11-02T04:53:10+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -287,13 +299,13 @@
    "day": "Monday",
    "time": "07:30",
    "language": null,
-   "raw": "MASS TIMES: Monday thru Friday – 7:30 AM",
+   "raw": "Mass: Monday thru Friday – 7:30 AM",
    "source_url": "https://olgcc.net/mass-times/",
    "fetched_at": "2026-11-01T17:21:29+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "medium",
-   "template": "ecatholic+generic_strict",
+   "confidence": "low",
+   "template": "wordpress",
    "day_expanded_from": "Monday thru Friday"
   },
   {
@@ -301,13 +313,13 @@
    "day": "Tuesday",
    "time": "07:30",
    "language": null,
-   "raw": "MASS TIMES: Monday thru Friday – 7:30 AM",
+   "raw": "Mass: Monday thru Friday – 7:30 AM",
    "source_url": "https://olgcc.net/mass-times/",
    "fetched_at": "2026-11-01T17:21:29+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "medium",
-   "template": "ecatholic+generic_strict",
+   "confidence": "low",
+   "template": "wordpress",
    "day_expanded_from": "Monday thru Friday",
    "day_parsed": "Monday",
    "day_bound_from_line": true
@@ -317,13 +329,13 @@
    "day": "Wednesday",
    "time": "07:30",
    "language": null,
-   "raw": "MASS TIMES: Monday thru Friday – 7:30 AM",
+   "raw": "Mass: Monday thru Friday – 7:30 AM",
    "source_url": "https://olgcc.net/mass-times/",
    "fetched_at": "2026-11-01T17:21:29+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "medium",
-   "template": "ecatholic+generic_strict",
+   "confidence": "low",
+   "template": "wordpress",
    "day_expanded_from": "Monday thru Friday",
    "day_parsed": "Monday",
    "day_bound_from_line": true
@@ -333,13 +345,13 @@
    "day": "Thursday",
    "time": "07:30",
    "language": null,
-   "raw": "MASS TIMES: Monday thru Friday – 7:30 AM",
+   "raw": "Mass: Monday thru Friday – 7:30 AM",
    "source_url": "https://olgcc.net/mass-times/",
    "fetched_at": "2026-11-01T17:21:29+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "medium",
-   "template": "ecatholic+generic_strict",
+   "confidence": "low",
+   "template": "wordpress",
    "day_expanded_from": "Monday thru Friday",
    "day_parsed": "Monday",
    "day_bound_from_line": true
@@ -349,13 +361,13 @@
    "day": "Friday",
    "time": "07:30",
    "language": null,
-   "raw": "MASS TIMES: Monday thru Friday – 7:30 AM",
+   "raw": "Mass: Monday thru Friday – 7:30 AM",
    "source_url": "https://olgcc.net/mass-times/",
    "fetched_at": "2026-11-01T17:21:29+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "medium",
-   "template": "ecatholic+generic_strict",
+   "confidence": "low",
+   "template": "wordpress",
    "day_expanded_from": "Monday thru Friday",
    "day_parsed": "Monday",
    "day_bound_from_line": true
@@ -365,13 +377,13 @@
    "day": "Saturday",
    "time": "08:00",
    "language": null,
-   "raw": "MASS TIMES: Saturday – 8:00 AM",
+   "raw": "Mass: Saturday – 8:00 AM",
    "source_url": "https://olgcc.net/mass-times/",
    "fetched_at": "2026-11-01T17:21:29+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
-   "template": "ecatholic+generic_strict"
+   "template": "wordpress"
   },
   {
    "kind": "other",
@@ -384,7 +396,7 @@
    "needs_review": false,
    "review_reason": null,
    "confidence": "high",
-   "template": "ecatholic+generic_strict",
+   "template": "wordpress",
    "kind_parsed": "mass"
   },
   {
@@ -398,40 +410,107 @@
    "needs_review": false,
    "review_reason": null,
    "confidence": "high",
-   "template": "ecatholic+generic_strict"
+   "template": "wordpress"
   },
   {
    "kind": "mass",
    "day": "Sunday",
    "time": "08:30",
    "language": null,
-   "raw": "MASS TIMES: Sunday – 8:30 AM & 10:30 AM",
+   "raw": "Mass: Sunday – 8:30 AM & 10:30 AM",
    "source_url": "https://olgcc.net/mass-times/",
    "fetched_at": "2026-11-01T17:21:29+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
-   "template": "ecatholic+generic_strict"
+   "template": "wordpress"
   },
   {
    "kind": "mass",
    "day": "Sunday",
    "time": "10:30",
    "language": null,
-   "raw": "MASS TIMES: Sunday – 8:30 AM & 10:30 AM",
+   "raw": "Mass: Sunday – 8:30 AM & 10:30 AM",
    "source_url": "https://olgcc.net/mass-times/",
    "fetched_at": "2026-11-01T17:21:29+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
-   "template": "ecatholic+generic_strict"
+   "template": "wordpress"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "07:30",
+   "language": null,
+   "raw": "Mass: 7:30 AM‚ 12 Noon & 7:00 PM",
+   "source_url": "https://olgcc.net/mass-times/",
+   "fetched_at": "2026-11-01T17:21:29+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "12:00",
+   "language": null,
+   "raw": "Mass: 7:30 AM‚ 12 Noon & 7:00 PM",
+   "source_url": "https://olgcc.net/mass-times/",
+   "fetched_at": "2026-11-01T17:21:29+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "19:00",
+   "language": null,
+   "raw": "Mass: 7:30 AM‚ 12 Noon & 7:00 PM",
+   "source_url": "https://olgcc.net/mass-times/",
+   "fetched_at": "2026-11-01T17:21:29+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "16:00-16:30",
+   "language": null,
+   "raw": "Reconciliation: The Sacrament is available on an individual basis Saturdays 4:00-4:30 p.m. or by a special appointment with a priest.",
+   "source_url": "https://olgcc.net/reconciliation/",
+   "fetched_at": "2026-11-02T04:47:55+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
   }
  ],
  "source_url": "http://www.olgcc.net/",
  "fetched_at": "2026-11-01T17:21:40+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:47:56+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
-  "template": "ecatholic",
-  "version": "ca-sites/2",
+  "template": "wordpress",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -445,19 +524,17 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 10
  },
  "has_sunday": true,
- "schedule_dropped": {
-  "text:other_location": 3
- },
  "groups_dropped": {
   "sentence": 1,
   "noise": 4
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

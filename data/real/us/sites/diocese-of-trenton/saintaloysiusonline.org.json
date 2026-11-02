@@ -75,6 +75,18 @@
    "url": "https://saintaloysiusonline.org/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://saintaloysiusonline.org/penance-reconciliation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://saintaloysiusonline.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -293,19 +305,6 @@
  },
  "schedule_rows": [
   {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "16:00-16:45",
-   "language": null,
-   "raw": "Confessions – Saturday 4:00pm – 4:45pm or schedule an appointment by calling the the parish office at",
-   "source_url": "https://saintaloysiusonline.org/",
-   "fetched_at": "2026-11-01T17:21:24+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "wordpress"
-  },
-  {
    "kind": "mass",
    "day": "Monday",
    "time": "08:30",
@@ -434,13 +433,65 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "16:00",
+   "language": null,
+   "raw": "Reconciliation/Confessions:: Saturday at 4:00 p.m. and by appointment.",
+   "source_url": "https://saintaloysiusonline.org/",
+   "fetched_at": "2026-11-01T17:21:24+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "16:00",
+   "language": null,
+   "raw": "Confessions are held on Saturdays throughout the year, with the exception of Holy Saturday, from 4:00 pm – 4:30 pm.",
+   "source_url": "https://saintaloysiusonline.org/penance-reconciliation/",
+   "fetched_at": "2026-11-02T04:47:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "kind_parsed": "confession"
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": null,
+   "raw": "The Sacrament of Penance: They are also held on Sundays at 10:00am or by appointment with a priest (call parish office).",
+   "source_url": "https://saintaloysiusonline.org/penance-reconciliation/",
+   "fetched_at": "2026-11-02T04:47:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
   }
  ],
  "source_url": "http://www.saintaloysiusonline.org/",
  "fetched_at": "2026-11-01T17:21:34+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:47:55+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -454,13 +505,23 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 8
+  "trusted_kinds": [],
+  "generic_rows": 10
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Saturday at 4:00 p.m. and by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://saintaloysiusonline.org/",
+   "fetched_at": "2026-11-01T17:21:24+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "skipped_section": 9,
-  "dated_line": 5,
-  "no_day": 2,
+  "dated_line": 2,
+  "dated_block": 1,
   "not_a_service": 5
  },
  "groups_dropped": {
@@ -468,8 +529,8 @@
   "noise": 4
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
@@ -490,8 +551,6 @@
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
  },
  "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()",
-  "names_withheld": 0,
-  "contacts_removed": 1
+  "screened_by": "ingest/public/privacy.py screen()"
  }
 }
