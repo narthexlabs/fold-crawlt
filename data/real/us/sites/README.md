@@ -287,4 +287,4 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-02T02:46:49+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-02T02:46:51+00:00: fetched {'ok': 1, 'done': 1, 'halted_egress': 0}; parsed 1 dioceses
 - 2026-11-02T02:48:31+00:00: fetched {}; parsed 0 dioceses
-- 2026-11-02T02:48:45+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-02T02:48:48+00:00: fetched {}; parsed 0 dioceses
