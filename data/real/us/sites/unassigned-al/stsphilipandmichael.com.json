@@ -45,6 +45,12 @@
    "url": "https://stsphilipandmichael.com/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stsphilipandmichael.com/2021/05/18/adoration-praise-this-week/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -377,6 +383,23 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:08+00:00",
+  "requests": 2,
+  "found": [
+   "adoration"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(251) 973-2096",
@@ -388,8 +411,5 @@
   },
   "fetched_at": "2026-11-01T08:35:07+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }
