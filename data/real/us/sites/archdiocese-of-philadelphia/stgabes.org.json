@@ -21,32 +21,626 @@
  ],
  "home_url": "https://stgabes.org/",
  "final_url": "https://stgabes.org/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "crawl_status": "wayback-2025-06-24",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
    "url": "https://stgabes.org/",
-   "status": 403,
-   "class": "challenge"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stgabes.org/mass-times",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stgabes.org/sacraments",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.stgabes.org/liturgical-ministries",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://stgabes.org/ministries",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.stgabes.org/faith",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://www.stgabes.org/bulletins",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.stgabes.org/calendar",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://stgabes.org/events?page=1",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://stgabes.org/contact-us",
+   "status": null,
+   "class": "conn_error"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "stgabes.org:rosary",
+   "name": "Rosary",
+   "category": "prayer_devotion",
+   "category_label": "Prayer & devotion",
+   "subcategory": "rosary",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stgabes.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stgabes.org/ministries",
+   "source_kind": "website",
+   "fetched_at": "2025-05-16T11:46:21+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-06-24"
+  },
+  {
+   "id": "stgabes.org:adult_confirmation",
+   "name": "Adult Confirmation",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "adult_confirmation",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stgabes.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stgabes.org/",
+   "source_kind": "website",
+   "fetched_at": "2025-06-24T01:50:45+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-06-24"
+  },
+  {
+   "id": "stgabes.org:adult_formation",
+   "name": "Adult Faith Formation",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "adult_formation",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stgabes.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stgabes.org/ministries",
+   "source_kind": "website",
+   "fetched_at": "2025-05-16T11:46:21+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-06-24"
+  },
+  {
+   "id": "stgabes.org:evangelization|ation+neighborhood",
+   "name": "Neighborhood Evangelization",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "evangelization_team",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stgabes.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stgabes.org/ministries",
+   "source_kind": "website",
+   "fetched_at": "2025-05-16T11:46:21+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-06-24"
+  },
+  {
+   "id": "stgabes.org:ocia",
+   "name": "OCIA",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "ocia",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stgabes.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stgabes.org/",
+   "source_kind": "website",
+   "fetched_at": "2025-06-24T01:50:45+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-06-24"
+  },
+  {
+   "id": "stgabes.org:sick",
+   "name": "Homebound",
+   "category": "service_mercy",
+   "category_label": "Service & mercy",
+   "subcategory": "sick_homebound",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stgabes.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stgabes.org/ministries",
+   "source_kind": "website",
+   "fetched_at": "2025-05-16T11:46:21+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-06-24"
+  },
+  {
+   "id": "stgabes.org:servers",
+   "name": "Altar Servers",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "altar_servers",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stgabes.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stgabes.org/liturgical-ministries",
+   "source_kind": "website",
+   "fetched_at": "2025-04-27T20:57:50+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-06-24"
+  },
+  {
+   "id": "stgabes.org:altar_society|art",
+   "name": "Art & Environment",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "altar_society_environment",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stgabes.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stgabes.org/liturgical-ministries",
+   "source_kind": "website",
+   "fetched_at": "2025-04-27T20:57:50+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-06-24"
+  },
+  {
+   "id": "stgabes.org:childrens_liturgy",
+   "name": "Children's Liturgy",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "childrens_liturgy_of_the_word",
+   "audience": "families",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stgabes.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stgabes.org/liturgical-ministries",
+   "source_kind": "website",
+   "fetched_at": "2025-04-27T20:57:50+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-06-24"
+  },
+  {
+   "id": "stgabes.org:emhc",
+   "name": "Extraordinary Minister of Holy Communion",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "emhc",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stgabes.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stgabes.org/liturgical-ministries",
+   "source_kind": "website",
+   "fetched_at": "2025-04-27T20:57:50+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-06-24"
+  },
+  {
+   "id": "stgabes.org:ushers",
+   "name": "Greeters",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "ushers_greeters",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stgabes.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stgabes.org/liturgical-ministries",
+   "source_kind": "website",
+   "fetched_at": "2025-04-27T20:57:50+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-06-24"
+  },
+  {
+   "id": "stgabes.org:hospitality",
+   "name": "Hospitality Ministry",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "hospitality",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": "If you are interested in joining any of the ministries above, please fill out the form below!",
+   "contact_url": "https://stgabes.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stgabes.org/liturgical-ministries",
+   "source_kind": "website",
+   "fetched_at": "2025-04-27T20:57:50+00:00",
+   "confidence": "low",
+   "source": "wayback-2025-06-24"
+  },
+  {
+   "id": "stgabes.org:lectors",
+   "name": "Lectors",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "lectors",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stgabes.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stgabes.org/liturgical-ministries",
+   "source_kind": "website",
+   "fetched_at": "2025-04-27T20:57:50+00:00",
+   "confidence": "low",
+   "source": "wayback-2025-06-24"
+  },
+  {
+   "id": "stgabes.org:choir|ian",
+   "name": "Musicians",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "choir_music",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stgabes.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stgabes.org/liturgical-ministries",
+   "source_kind": "website",
+   "fetched_at": "2025-04-27T20:57:50+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-06-24"
+  },
+  {
+   "id": "stgabes.org:sacristans",
+   "name": "Sacristans",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "sacristans",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stgabes.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stgabes.org/liturgical-ministries",
+   "source_kind": "website",
+   "fetched_at": "2025-04-27T20:57:50+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-06-24"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/stgabesphilly",
+   "https://www.facebook.com/MattTalbotShrine"
+  ],
+  "instagram": [
+   "https://www.instagram.com/stgabesphilly/"
+  ],
+  "youtube": [
+   "https://www.youtube.com/channel/UC2JanrXPxZhTQHx_fX2t2Nw"
+  ]
+ },
+ "bulletin": {
+  "url": "https://files.ecatholic.com/23166/bulletins/20251005.pdf?t=1759346432000",
+  "date": "2025-10-05",
+  "kind": "ecatholic_pdf",
+  "text": "October 5 , 2025",
+  "source_url": "https://www.stgabes.org/bulletins"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "16:30",
+   "language": "English",
+   "raw": "Saturday: 4:30 PM English",
+   "source_url": "https://stgabes.org/mass-times",
+   "fetched_at": "2025-05-16T11:12:30+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-06-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-06-24",
+   "archive_url": "https://web.archive.org/web/20250516111230/https://stgabes.org/mass-times",
+   "capture_date": "2025-05-16"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": "English",
+   "raw": "Sunday: 10:00 AM English",
+   "source_url": "https://stgabes.org/mass-times",
+   "fetched_at": "2025-05-16T11:12:30+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-06-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-06-24",
+   "archive_url": "https://web.archive.org/web/20250516111230/https://stgabes.org/mass-times",
+   "capture_date": "2025-05-16"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "08:30",
+   "language": "English",
+   "raw": "Tuesday - Friday: 8:30 AM English (please use side entrance)",
+   "source_url": "https://stgabes.org/mass-times",
+   "fetched_at": "2025-05-16T11:12:30+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-06-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Tuesday - Friday",
+   "source": "wayback-2025-06-24",
+   "archive_url": "https://web.archive.org/web/20250516111230/https://stgabes.org/mass-times",
+   "capture_date": "2025-05-16"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "08:30",
+   "language": "English",
+   "raw": "Tuesday - Friday: 8:30 AM English (please use side entrance)",
+   "source_url": "https://stgabes.org/mass-times",
+   "fetched_at": "2025-05-16T11:12:30+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-06-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Tuesday - Friday",
+   "day_parsed": "Tuesday",
+   "day_bound_from_line": true,
+   "source": "wayback-2025-06-24",
+   "archive_url": "https://web.archive.org/web/20250516111230/https://stgabes.org/mass-times",
+   "capture_date": "2025-05-16"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "08:30",
+   "language": "English",
+   "raw": "Tuesday - Friday: 8:30 AM English (please use side entrance)",
+   "source_url": "https://stgabes.org/mass-times",
+   "fetched_at": "2025-05-16T11:12:30+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-06-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Tuesday - Friday",
+   "day_parsed": "Tuesday",
+   "day_bound_from_line": true,
+   "source": "wayback-2025-06-24",
+   "archive_url": "https://web.archive.org/web/20250516111230/https://stgabes.org/mass-times",
+   "capture_date": "2025-05-16"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "08:30",
+   "language": "English",
+   "raw": "Tuesday - Friday: 8:30 AM English (please use side entrance)",
+   "source_url": "https://stgabes.org/mass-times",
+   "fetched_at": "2025-05-16T11:12:30+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-06-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Tuesday - Friday",
+   "day_parsed": "Tuesday",
+   "day_bound_from_line": true,
+   "source": "wayback-2025-06-24",
+   "archive_url": "https://web.archive.org/web/20250516111230/https://stgabes.org/mass-times",
+   "capture_date": "2025-05-16"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:00-16:00",
+   "language": null,
+   "raw": "Saturday: 3:00 PM - 4:00 PM Or by appointment @ .",
+   "source_url": "https://stgabes.org/mass-times",
+   "fetched_at": "2025-05-16T11:12:30+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-06-24: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-06-24",
+   "archive_url": "https://web.archive.org/web/20250516111230/https://stgabes.org/mass-times",
+   "capture_date": "2025-05-16"
+  }
+ ],
  "source_url": "https://stgabes.org/",
- "fetched_at": "2026-11-01T20:25:20+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-02T04:42:17+00:00",
  "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
+  "screened_by": "ingest/public/privacy.py screen()",
+  "names_withheld": 0,
+  "contacts_removed": 1
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": true
+   },
+   "score": "high"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 10
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "text:other_location": 2,
+  "prose": 1
+ },
+ "groups_dropped": {
+  "unmatched": 1
+ },
+ "office_contact": {
+  "email": "rectory@stgabes.org",
+  "phone": "(215) 463-4060",
+  "address": "2917 Dickinson Street, Philadelphia, PA 19146",
+  "source_url": "https://stgabes.org/",
+  "sources": {
+   "email": "https://stgabes.org/",
+   "phone": "https://stgabes.org/",
+   "address": "https://stgabes.org/"
+  },
+  "fetched_at": "2025-06-24T01:50:45+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2025-06-24",
+  "capture_age_days": 496,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://stgabes.org/",
+    "capture": "2025-06-24",
+    "archive_url": "https://web.archive.org/web/20250624015045/https://stgabes.org/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://stgabes.org/mass-times",
+    "capture": "2025-05-16",
+    "archive_url": "https://web.archive.org/web/20250516111230/https://stgabes.org/mass-times"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://stgabes.org/sacraments",
+    "capture": "2025-06-24",
+    "archive_url": "https://web.archive.org/web/20250624010618/https://stgabes.org/sacraments"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://www.stgabes.org/liturgical-ministries",
+    "capture": "2025-04-27",
+    "archive_url": "https://web.archive.org/web/20250427205750/https://www.stgabes.org/liturgical-ministries"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://stgabes.org/ministries",
+    "capture": "2025-05-16",
+    "archive_url": "https://web.archive.org/web/20250516114621/https://stgabes.org/ministries"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://www.stgabes.org/faith",
+    "capture": "2025-03-24",
+    "archive_url": "https://web.archive.org/web/20250324095830/https://www.stgabes.org/faith"
+   },
+   {
+    "kind": "bulletin",
+    "original": "https://www.stgabes.org/bulletins",
+    "capture": "2025-10-07",
+    "archive_url": "https://web.archive.org/web/20251007182251/https://www.stgabes.org/bulletins"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://www.stgabes.org/calendar",
+    "capture": "2025-03-24",
+    "archive_url": "https://web.archive.org/web/20250324103512/https://www.stgabes.org/calendar"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://stgabes.org/events?page=1",
+    "capture": "2025-04-20",
+    "archive_url": "https://web.archive.org/web/20250420162212/https://stgabes.org/events?page=1"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review.",
+  "grade": {
+   "rule": "wayback-verified-2026-11-01",
+   "template": "ecatholic",
+   "trusted_template": false,
+   "has_sunday": true,
+   "groups": 15,
+   "verified": false,
+   "capture_date": "2025-06-24",
+   "applied": false
+  }
  }
 }

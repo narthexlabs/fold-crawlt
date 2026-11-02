@@ -21,32 +21,166 @@
  ],
  "home_url": "https://stmalachyphilly.org/",
  "final_url": "https://stmalachyphilly.org/",
- "crawl_status": "blocked_403",
- "crawl_env": "sandbox",
- "robots_note": "ok",
+ "crawl_status": "wayback-2026-05-09",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
    "url": "https://stmalachyphilly.org/",
-   "status": 403,
-   "class": "blocked_403"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://stmalachyphilly.org/bulletins/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "wordpress",
+  "evidence": [
+   "wp-content"
+  ]
  },
- "template": "none",
+ "template": "wordpress-html",
  "groups": [],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/profile.php?id=100088184492879"
+  ],
+  "instagram": [
+   "https://www.instagram.com/st.malachy_phl/"
+  ]
+ },
+ "bulletin": {
+  "url": "https://stmalachyphilly.org/wp-content/uploads/2026/06/St.Malachy-Bulletin-6072026.pdf",
+  "date": "2026-06-07",
+  "kind": "pdf",
+  "text": "St.Malachy Bulletin June 7th, 2026",
+  "source_url": "https://stmalachyphilly.org/bulletins/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": null,
+   "raw": "Sunday Mass:: 10:00 AM at Saint Malachy Church",
+   "source_url": "https://stmalachyphilly.org/",
+   "fetched_at": "2026-05-09T20:13:36+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-05-09: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "wordpress",
+   "source": "wayback-2026-05-09",
+   "archive_url": "https://web.archive.org/web/20260509201336/https://stmalachyphilly.org/",
+   "capture_date": "2026-05-09"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Daily Mass:: Saturday 9:00 AM at Saint Malachy Church",
+   "source_url": "https://stmalachyphilly.org/",
+   "fetched_at": "2026-05-09T20:13:36+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-05-09: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "wordpress",
+   "source": "wayback-2026-05-09",
+   "archive_url": "https://web.archive.org/web/20260509201336/https://stmalachyphilly.org/",
+   "capture_date": "2026-05-09"
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "09:00-09:45",
+   "language": null,
+   "raw": "Confession Times: 9:00 AM – 9:45 AM at Saint Malachy Church",
+   "source_url": "https://stmalachyphilly.org/",
+   "fetched_at": "2026-05-09T20:13:36+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-05-09: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "wordpress",
+   "source": "wayback-2026-05-09",
+   "archive_url": "https://web.archive.org/web/20260509201336/https://stmalachyphilly.org/",
+   "capture_date": "2026-05-09"
+  }
+ ],
  "source_url": "https://stmalachyphilly.org/",
- "fetched_at": "2026-11-01T20:25:27+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-02T04:52:37+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 9
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "other_location": 2
+ },
+ "groups_dropped": {},
+ "office_contact": {
+  "email": null,
+  "phone": "(215) 763-1305",
+  "address": "1429 N 11th St, Philadelphia, PA 19122",
+  "source_url": "https://stmalachyphilly.org/",
+  "sources": {
+   "phone": "https://stmalachyphilly.org/",
+   "address": "https://stmalachyphilly.org/"
+  },
+  "fetched_at": "2026-05-09T20:13:36+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2026-05-09",
+  "capture_age_days": 177,
+  "prior_status": "blocked_403",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://stmalachyphilly.org/",
+    "capture": "2026-05-09",
+    "archive_url": "https://web.archive.org/web/20260509201336/https://stmalachyphilly.org/"
+   },
+   {
+    "kind": "bulletin",
+    "original": "https://stmalachyphilly.org/bulletins/",
+    "capture": "2026-06-15",
+    "archive_url": "https://web.archive.org/web/20260615145404/https://stmalachyphilly.org/bulletins/"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review.",
+  "grade": {
+   "rule": "wayback-verified-2026-11-01",
+   "template": "wordpress",
+   "trusted_template": false,
+   "has_sunday": true,
+   "groups": 0,
+   "verified": false,
+   "capture_date": "2026-05-09",
+   "applied": false
+  }
  }
 }

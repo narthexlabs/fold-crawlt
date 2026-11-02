@@ -21,33 +21,626 @@
   "Weatherford"
  ],
  "home_url": "https://steugenewf.com/",
- "final_url": "https://steugenewf.com/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "final_url": "https://www.steugenewf.com/",
+ "crawl_status": "wayback-2025-11-27",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
-   "url": "https://steugenewf.com/",
-   "status": 403,
-   "class": "challenge"
+   "url": "https://www.steugenewf.com/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://steugenewf.com/mass-times",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://steugenewf.com/confession-times",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://steugenewf.com/ministries",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://steugenewf.com/re",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://steugenewf.com/bulletins",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://steugenewf.com/events-1",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://steugenewf.com/contact",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "steugenewf.com:catechists",
+   "name": "Catechist",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "catechists",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://steugenewf.com/contact",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://steugenewf.com/ministries",
+   "source_kind": "website",
+   "fetched_at": "2025-02-14T21:38:35+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-11-27"
+  },
+  {
+   "id": "steugenewf.com:children_ff",
+   "name": "Class Times Religious Education and Sacraments",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "children_faith_formation",
+   "audience": "families",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://steugenewf.com/contact",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://steugenewf.com/re",
+   "source_kind": "website",
+   "fetched_at": "2025-04-18T15:22:47+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-11-27"
+  },
+  {
+   "id": "steugenewf.com:children_ff|sacrament",
+   "name": "Religious Education and Sacraments",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "children_faith_formation",
+   "audience": "families",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://steugenewf.com/contact",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://steugenewf.com/re",
+   "source_kind": "website",
+   "fetched_at": "2025-04-18T15:22:47+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-11-27"
+  },
+  {
+   "id": "steugenewf.com:youth_ministry",
+   "name": "Youth Ministry Aide",
+   "category": "youth",
+   "category_label": "Youth",
+   "subcategory": "youth_ministry",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://steugenewf.com/contact",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://steugenewf.com/ministries",
+   "source_kind": "website",
+   "fetched_at": "2025-02-14T21:38:35+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-11-27"
+  },
+  {
+   "id": "steugenewf.com:food",
+   "name": "St. Vincent Food Pantry",
+   "category": "service_mercy",
+   "category_label": "Service & mercy",
+   "subcategory": "food_ministry",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://steugenewf.com/contact",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://steugenewf.com/ministries",
+   "source_kind": "website",
+   "fetched_at": "2025-02-14T21:38:35+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-11-27"
+  },
+  {
+   "id": "steugenewf.com:emhc",
+   "name": "Extraordinary Ministers of Holy Communion",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "emhc",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://steugenewf.com/contact",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://steugenewf.com/ministries",
+   "source_kind": "website",
+   "fetched_at": "2025-02-14T21:38:35+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-11-27"
+  },
+  {
+   "id": "steugenewf.com:lectors",
+   "name": "Lectors",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "lectors",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://steugenewf.com/contact",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://steugenewf.com/ministries",
+   "source_kind": "website",
+   "fetched_at": "2025-02-14T21:38:35+00:00",
+   "confidence": "low",
+   "source": "wayback-2025-11-27"
+  },
+  {
+   "id": "steugenewf.com:choir",
+   "name": "Musical",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "choir_music",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://steugenewf.com/contact",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://steugenewf.com/ministries",
+   "source_kind": "website",
+   "fetched_at": "2025-02-14T21:38:35+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-11-27"
+  },
+  {
+   "id": "steugenewf.com:ushers",
+   "name": "Ushers/greeters",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "ushers_greeters",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://steugenewf.com/contact",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://steugenewf.com/ministries",
+   "source_kind": "website",
+   "fetched_at": "2025-02-14T21:38:35+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-11-27"
+  },
+  {
+   "id": "steugenewf.com:funeral|luncheon",
+   "name": "Funeral Luncheons",
+   "category": "grief_support",
+   "category_label": "Grief & support",
+   "subcategory": "funeral_ministry",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://steugenewf.com/contact",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://steugenewf.com/ministries",
+   "source_kind": "website",
+   "fetched_at": "2025-02-14T21:38:35+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-11-27"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/St-Eugene-Catholic-Church-209131515810217",
+   "https://www.facebook.com/steugenewf"
+  ],
+  "instagram": [
+   "https://www.instagram.com/st.eugene.wf/"
+  ],
+  "flocknote": [
+   "https://steugenewf.flocknote.com"
+  ]
+ },
+ "bulletin": {
+  "url": "https://files.ecatholic.com/23938/bulletins/20250615.pdf?t=1749762158000",
+  "date": "2025-06-15",
+  "kind": "ecatholic_pdf",
+  "text": "June 15 , 2025",
+  "source_url": "https://steugenewf.com/bulletins"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": "English",
+   "raw": "[St Eugene Weatherford] Saturday: 5:00 PM English - St. Eugene, Weatherford",
+   "source_url": "https://www.steugenewf.com/",
+   "fetched_at": "2025-11-27T15:52:40+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-11-27: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "location": "St Eugene Weatherford",
+   "source": "wayback-2025-11-27",
+   "archive_url": "https://web.archive.org/web/20251127155240/https://www.steugenewf.com/",
+   "capture_date": "2025-11-27"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:00",
+   "language": "Bilingual",
+   "raw": "[St Eugene Weatherford] Sunday: 11:00 AM Bilingual - St. Eugene, Weatherford",
+   "source_url": "https://www.steugenewf.com/",
+   "fetched_at": "2025-11-27T15:52:40+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-11-27: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "location": "St Eugene Weatherford",
+   "source": "wayback-2025-11-27",
+   "archive_url": "https://web.archive.org/web/20251127155240/https://www.steugenewf.com/",
+   "capture_date": "2025-11-27"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "12:10",
+   "language": "English",
+   "raw": "Wednesday: 12:10 PM English - St. Eugene",
+   "source_url": "https://www.steugenewf.com/",
+   "fetched_at": "2025-11-27T15:52:40+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-11-27: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-11-27",
+   "archive_url": "https://web.archive.org/web/20251127155240/https://www.steugenewf.com/",
+   "capture_date": "2025-11-27"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "09:00",
+   "language": "English",
+   "raw": "Friday: 9:00 AM English St Eugene",
+   "source_url": "https://www.steugenewf.com/",
+   "fetched_at": "2025-11-27T15:52:40+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-11-27: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-11-27",
+   "archive_url": "https://web.archive.org/web/20251127155240/https://www.steugenewf.com/",
+   "capture_date": "2025-11-27"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "12:00",
+   "language": "English",
+   "raw": "December 8: 12:00 PM English St Eugene",
+   "source_url": "https://www.steugenewf.com/",
+   "fetched_at": "2025-11-27T15:52:40+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-11-27: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "kind_parsed": "mass",
+   "source": "wayback-2025-11-27",
+   "archive_url": "https://web.archive.org/web/20251127155240/https://www.steugenewf.com/",
+   "capture_date": "2025-11-27"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "18:00",
+   "language": "English",
+   "raw": "December 8: 6:00 PM English St Eugene",
+   "source_url": "https://www.steugenewf.com/",
+   "fetched_at": "2025-11-27T15:52:40+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-11-27: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "kind_parsed": "mass",
+   "source": "wayback-2025-11-27",
+   "archive_url": "https://web.archive.org/web/20251127155240/https://www.steugenewf.com/",
+   "capture_date": "2025-11-27"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "09:00",
+   "language": "English",
+   "raw": "December 25: 9:00 AM English St Eugene",
+   "source_url": "https://www.steugenewf.com/",
+   "fetched_at": "2025-11-27T15:52:40+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-11-27: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "kind_parsed": "mass",
+   "source": "wayback-2025-11-27",
+   "archive_url": "https://web.archive.org/web/20251127155240/https://www.steugenewf.com/",
+   "capture_date": "2025-11-27"
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "10:30",
+   "language": null,
+   "raw": "[St Eugene Weatherford] Sunday: 10:30 AM - St. Eugene, Weatherford",
+   "source_url": "https://www.steugenewf.com/",
+   "fetched_at": "2025-11-27T15:52:40+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-11-27: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "location": "St Eugene Weatherford",
+   "source": "wayback-2025-11-27",
+   "archive_url": "https://web.archive.org/web/20251127155240/https://www.steugenewf.com/",
+   "capture_date": "2025-11-27"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "16:30",
+   "language": null,
+   "raw": "[St Eugene Weatherford] Saturday: 4:30 PM - St. Eugene, Weatherford",
+   "source_url": "https://www.steugenewf.com/",
+   "fetched_at": "2025-11-27T15:52:40+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-11-27: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "location": "St Eugene Weatherford",
+   "source": "wayback-2025-11-27",
+   "archive_url": "https://web.archive.org/web/20251127155240/https://www.steugenewf.com/",
+   "capture_date": "2025-11-27"
+  },
+  {
+   "kind": "adoration",
+   "day": "Sunday",
+   "time": "11:50-17:00",
+   "language": null,
+   "raw": "Sunday: 11:50 AM - 5:00 PM following Mass",
+   "source_url": "https://www.steugenewf.com/",
+   "fetched_at": "2025-11-27T15:52:40+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-11-27: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-11-27",
+   "archive_url": "https://web.archive.org/web/20251127155240/https://www.steugenewf.com/",
+   "capture_date": "2025-11-27"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "13:00-17:00",
+   "language": null,
+   "raw": "Wednesday: 1:00 PM - 5:00 PM",
+   "source_url": "https://www.steugenewf.com/",
+   "fetched_at": "2025-11-27T15:52:40+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-11-27: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-11-27",
+   "archive_url": "https://web.archive.org/web/20251127155240/https://www.steugenewf.com/",
+   "capture_date": "2025-11-27"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "12:10",
+   "language": "English",
+   "raw": "March 5: 12:10 PM English St Eugene",
+   "source_url": "https://steugenewf.com/mass-times",
+   "fetched_at": "2025-02-14T20:49:07+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-11-27: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "kind_parsed": "mass",
+   "source": "wayback-2025-11-27",
+   "archive_url": "https://web.archive.org/web/20250214204907/https://steugenewf.com/mass-times",
+   "capture_date": "2025-02-14"
+  },
+  {
+   "kind": "confession",
+   "day": "Tuesday",
+   "time": "17:30-18:15",
+   "language": null,
+   "raw": "Tuesday 5:30 PM 6:15 PM [Mass intention withheld]",
+   "source_url": "https://steugenewf.com/confession-times",
+   "fetched_at": "2023-06-22T17:41:50+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-11-27: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-11-27",
+   "archive_url": "https://web.archive.org/web/20230622174150/https://steugenewf.com/confession-times",
+   "capture_date": "2023-06-22"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "16:00",
+   "language": null,
+   "raw": "[St Eugene Weatherford] Saturday: 4:00 PM (St. Eugene, Weatherford)",
+   "source_url": "https://steugenewf.com/confession-times",
+   "fetched_at": "2023-06-22T17:41:50+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-11-27: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "location": "St Eugene Weatherford",
+   "source": "wayback-2025-11-27",
+   "archive_url": "https://web.archive.org/web/20230622174150/https://steugenewf.com/confession-times",
+   "capture_date": "2023-06-22"
+  }
+ ],
  "source_url": "https://steugenewf.com/",
- "fetched_at": "2026-11-01T07:19:42+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-02T04:42:04+00:00",
  "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
+  "screened_by": "ingest/public/privacy.py screen()",
+  "intentions_withheld": 1
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": true
+   },
+   "score": "high"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 2
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "other_location": 3,
+  "text:no_day": 1,
+  "text:skipped_section": 1
+ },
+ "groups_dropped": {
+  "noise": 4,
+  "sacrament_prep": 1,
+  "unmatched": 1,
+  "fragment": 2
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(580) 772-3209",
+  "address": null,
+  "source_url": "https://steugenewf.com/contact",
+  "sources": {
+   "phone": "https://steugenewf.com/contact"
+  },
+  "fetched_at": "2024-01-23T04:06:14+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2025-11-27",
+  "capture_age_days": 340,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://www.steugenewf.com/",
+    "capture": "2025-11-27",
+    "archive_url": "https://web.archive.org/web/20251127155240/https://www.steugenewf.com/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://steugenewf.com/mass-times",
+    "capture": "2025-02-14",
+    "archive_url": "https://web.archive.org/web/20250214204907/https://steugenewf.com/mass-times"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://steugenewf.com/confession-times",
+    "capture": "2023-06-22",
+    "archive_url": "https://web.archive.org/web/20230622174150/https://steugenewf.com/confession-times"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://steugenewf.com/ministries",
+    "capture": "2025-02-14",
+    "archive_url": "https://web.archive.org/web/20250214213835/https://steugenewf.com/ministries"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://steugenewf.com/re",
+    "capture": "2025-04-18",
+    "archive_url": "https://web.archive.org/web/20250418152247/https://steugenewf.com/re"
+   },
+   {
+    "kind": "bulletin",
+    "original": "https://steugenewf.com/bulletins",
+    "capture": "2025-06-22",
+    "archive_url": "https://web.archive.org/web/20250622170957/https://steugenewf.com/bulletins"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://steugenewf.com/events-1",
+    "capture": "2023-06-22",
+    "archive_url": "https://web.archive.org/web/20230622185729/https://steugenewf.com/events-1"
+   },
+   {
+    "kind": "contact",
+    "original": "https://steugenewf.com/contact",
+    "capture": "2024-01-23",
+    "archive_url": "https://web.archive.org/web/20240123040614/https://steugenewf.com/contact"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review.",
+  "grade": {
+   "rule": "wayback-verified-2026-11-01",
+   "template": "ecatholic",
+   "trusted_template": false,
+   "has_sunday": true,
+   "groups": 10,
+   "verified": false,
+   "capture_date": "2025-11-27",
+   "applied": false
+  }
  }
 }
