@@ -17,7 +17,7 @@
  "home_url": "https://www.stmaryscv.org/",
  "final_url": "https://www.stmaryscv.org/",
  "crawl_status": "ok",
- "crawl_env": "sandbox",
+ "crawl_env": "runner-rendered",
  "robots_note": "ok",
  "pages": [
   {
@@ -34,6 +34,12 @@
   },
   {
    "category": "mass_times",
+   "url": "https://www.stmaryscv.org/visit-us",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "confession",
    "url": "https://www.stmaryscv.org/sacraments",
    "status": 200,
    "class": "ok"
@@ -75,7 +81,7 @@
    "language": null,
    "raw": "Weekday Masses:: Tues. at 5:15 PM; Thurs. at 8:00 AM",
    "source_url": "https://www.stmaryscv.org/",
-   "fetched_at": "2026-11-01T22:15:26+00:00",
+   "fetched_at": "2026-11-02T07:17:01+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -88,7 +94,7 @@
    "language": null,
    "raw": "Weekday Masses:: Tues. at 5:15 PM; Thurs. at 8:00 AM",
    "source_url": "https://www.stmaryscv.org/",
-   "fetched_at": "2026-11-01T22:15:26+00:00",
+   "fetched_at": "2026-11-02T07:17:01+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -99,54 +105,48 @@
    "day": "Saturday",
    "time": "16:00",
    "language": null,
-   "raw": "Weekend Mass Times: Saturday 4:00 PM and",
-   "source_url": "https://www.stmaryscv.org/",
-   "fetched_at": "2026-11-01T22:15:26+00:00",
+   "raw": "We are currently offering Mass on: Saturday at 4:00 PM and Sunday at 8:00 AM, as well as, Tues. at 5:15 PM, Thurs. at 8:00 AM.",
+   "source_url": "https://www.stmaryscv.org/visit-us",
+   "fetched_at": "2026-11-02T07:17:07+00:00",
    "needs_review": false,
-   "review_reason": "schedule_box"
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix"
   },
   {
    "kind": "mass",
    "day": "Sunday",
    "time": "08:00",
    "language": null,
-   "raw": "Sunday 8:00 AM",
-   "source_url": "https://www.stmaryscv.org/",
-   "fetched_at": "2026-11-01T22:15:26+00:00",
+   "raw": "We are currently offering Mass on: Saturday at 4:00 PM and Sunday at 8:00 AM, as well as, Tues. at 5:15 PM, Thurs. at 8:00 AM.",
+   "source_url": "https://www.stmaryscv.org/visit-us",
+   "fetched_at": "2026-11-02T07:17:07+00:00",
    "needs_review": false,
-   "review_reason": "schedule_box"
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix"
   }
  ],
  "source_url": "https://www.stmaryscv.org/",
- "fetched_at": "2026-11-01T22:15:34+00:00",
- "topup": {
-  "kinds": [
-   "adoration",
-   "confession",
-   "liturgy"
-  ],
-  "at": "2026-11-02T04:41:34+00:00",
-  "requests": 0,
-  "found": []
- },
+ "fetched_at": "2026-11-02T07:17:13+00:00",
  "schedule_template": {
   "template": "wix",
   "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
-    "has_sunday": false,
+    "has_sunday": true,
     "hours_ok": true,
     "counts_ok": true,
     "sunday_not_copied": true,
     "no_daily_on_sunday": true,
     "mostly_high": false
    },
-   "score": "low"
+   "score": "medium"
   },
   "passed_bar": false,
   "trusted_candidate": false,
   "trusted_kinds": [],
-  "generic_rows": 4
+  "generic_rows": 5
  },
  "schedule_notes": [
   {
@@ -154,13 +154,10 @@
    "text": "Individual Confessions heard before Mass on Saturday and by appointment. Please feel free to call priest outside of the Saturday time.",
    "phrase": "by appointment",
    "source_url": "https://www.stmaryscv.org/sacraments",
-   "fetched_at": "2026-11-01T22:15:31+00:00"
+   "fetched_at": "2026-11-02T07:17:10+00:00"
   }
  ],
  "has_sunday": true,
- "schedule_dropped": {
-  "box_rows_added": 2
- },
  "groups_dropped": {},
  "event_counts": {
   "window_start": "2026-11-02",
@@ -181,10 +178,11 @@
    "phone": "https://www.stmaryscv.org/",
    "address": "https://www.stmaryscv.org/"
   },
-  "fetched_at": "2026-11-01T22:15:26+00:00",
+  "fetched_at": "2026-11-02T07:17:01+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
- }
+ },
+ "fetch_mode": "rendered"
 }
