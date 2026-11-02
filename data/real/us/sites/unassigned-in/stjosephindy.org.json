@@ -260,7 +260,7 @@
    "note": "Google Calendar public feed (website-builder widget)",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:32:25+00:00",
+    "fetched_at": "2026-11-02T04:44:45+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -292,6 +292,19 @@
   "source_url": "https://www.stjosephindy.org/weekly-bulletin"
  },
  "schedule_rows": [
+  {
+   "kind": "adoration",
+   "day": "Third Thursday of the month",
+   "time": "11:00-19:00",
+   "language": null,
+   "raw": "Third Thursday Adoration: monthly from 11 a.m. to 7 p.m.",
+   "source_url": "https://www.stjosephindy.org/",
+   "fetched_at": "2026-11-01T22:15:22+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
   {
    "kind": "mass",
    "day": "Saturday",
@@ -404,24 +417,34 @@
    "template": "generic_strict"
   },
   {
-   "kind": "adoration",
+   "kind": "devotion",
    "day": "Third Thursday of the month",
-   "time": "11:00-17:30",
+   "time": "16:30",
    "language": null,
-   "raw": "Third Thursday Adoration: 11:00 AM to 5:30 PM",
+   "raw": "Flame of Love Devotion begins at 4:30 PM",
    "source_url": "https://www.stjosephindy.org/mass-schedule982c36c7",
    "fetched_at": "2026-11-01T22:15:24+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "high",
+   "confidence": "medium",
    "template": "generic_strict"
   }
  ],
  "source_url": "https://www.stjosephindy.org/",
  "fetched_at": "2026-11-01T22:15:27+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:35+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -435,19 +458,20 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 33
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "not_a_service": 2
+  "not_a_service": 1
  },
  "groups_dropped": {
   "noise": 2,
   "unmatched": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

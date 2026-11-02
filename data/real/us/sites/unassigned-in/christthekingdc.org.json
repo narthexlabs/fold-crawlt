@@ -75,6 +75,12 @@
    "url": "https://www.christthekingdc.org/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.christthekingdc.org/reconciliation",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -368,7 +374,7 @@
    "note": "Google Calendar public feed (website-builder widget)",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:31:30+00:00",
+    "fetched_at": "2026-11-02T04:43:22+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -392,11 +398,11 @@
   ]
  },
  "bulletin": {
-  "url": "https://4lpi.com/",
+  "url": "http://www.usccb.org/prayer-and-worship/sacraments-and-sacramentals/penance/upload/Bulletin-Insert-Penance-ENG.pdf",
   "date": null,
-  "kind": "lpi",
-  "text": "LPi",
-  "source_url": "https://www.christthekingdc.org/"
+  "kind": "pdf",
+  "text": "How To Go To Confession",
+  "source_url": "https://www.christthekingdc.org/reconciliation"
  },
  "schedule_rows": [
   {
@@ -541,13 +547,38 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Friday",
+   "time": "06:30-07:30",
+   "language": null,
+   "raw": "Reconciliation and Penance: 6:30 AM to 7:30 AM St. Ferdinand Church",
+   "source_url": "https://www.christthekingdc.org/reconciliation",
+   "fetched_at": "2026-11-02T04:41:35+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
   }
  ],
  "source_url": "https://www.christthekingdc.org/",
  "fetched_at": "2026-11-01T22:15:29+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:35+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -561,19 +592,22 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
-  "generic_rows": 28
+  "trusted_kinds": [],
+  "generic_rows": 29
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 2
+  "other_location": 8,
+  "no_day": 1,
+  "no_kind": 2
  },
  "groups_dropped": {
   "noise": 1,
   "unmatched": 4
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

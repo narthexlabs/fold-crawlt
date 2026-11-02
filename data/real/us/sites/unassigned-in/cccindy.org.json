@@ -740,6 +740,20 @@
    "review_reason": null,
    "confidence": "low",
    "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Holy Eucharist – 8 a.m.",
+   "source_url": "https://cccindy.org/worship/",
+   "fetched_at": "2026-11-02T04:41:38+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "http://www.cccindy.org/",
@@ -783,5 +797,19 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:44+00:00",
+  "requests": 3,
+  "found": [
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }
