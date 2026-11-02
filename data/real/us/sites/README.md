@@ -31,7 +31,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | unassigned-ca | 467 | 56 | 36 | 8 | 1 | 11 | 0 |
 | archdiocese-of-new-york | 457 | 459 | 94 | 60 | 3 | 102 | 0 |
 | unassigned-oh | 392 | 397 | 258 | 74 | 5 | 60 | 0 |
-| unassigned-pa | 299 | 620 | 432 | 87 | 7 | 79 | 15 |
+| unassigned-pa | 299 | 626 | 433 | 88 | 7 | 80 | 18 |
 | archdiocese-of-newark | 282 | 284 | 152 | 38 | 2 | 82 | 0 |
 | archdiocese-of-boston | 257 | 258 | 82 | 11 | 2 | 123 | 0 |
 | archdiocese-of-philadelphia | 255 | 255 | 171 | 56 | 2 | 24 | 2 |
@@ -91,7 +91,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-scranton | 107 | 110 | 80 | 11 | 0 | 19 | 0 |
 | diocese-of-erie | 107 | 107 | 70 | 6 | 3 | 28 | 0 |
 | unassigned-fl | 104 | 139 | 83 | 16 | 6 | 34 | 0 |
-| diocese-of-allentown | 103 | 103 | 71 | 8 | 1 | 23 | 0 |
+| diocese-of-allentown | 103 | 105 | 73 | 8 | 1 | 23 | 0 |
 | diocese-of-camden | 102 | 102 | 54 | 5 | 2 | 41 | 0 |
 | unassigned-ma | 101 | 119 | 48 | 51 | 2 | 18 | 0 |
 | diocese-of-fort-wayne-south-bend | 100 | 100 | 52 | 22 | 0 | 26 | 0 |
