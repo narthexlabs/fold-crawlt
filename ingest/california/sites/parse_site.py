@@ -823,8 +823,8 @@ def has_sunday(rows: list[dict]) -> bool:
     for r in rows:
         if r.get("kind") != "mass":
             continue
-        if r.get("day") == "Sunday":
-            return True
+        if r.get("day") == "Sunday" or re.fullmatch(r".+ Sunday of the month", r.get("day") or ""):
+            return True                   # alternating Sundays ("First and Third Sunday of the month") are Sunday Masses
         if r.get("day") == "Saturday" and ((r.get("time") or "") >= "14:00" or re.search(r"vigil|anticipat", r.get("raw") or "", re.I)):
             return True
     return False
@@ -1033,7 +1033,7 @@ def box_rows(pages: list[Page], key: str, home: str, today: str, names: list[str
 
 
 def weekend_masses(rows: list[dict]) -> int:
-    return sum(1 for r in rows if r.get("kind") == "mass" and (r.get("day") == "Sunday" or (
+    return sum(1 for r in rows if r.get("kind") == "mass" and (r.get("day") == "Sunday" or re.fullmatch(r".+ Sunday of the month", r.get("day") or "") or (
         r.get("day") == "Saturday" and ((r.get("time") or "") >= "14:00" or re.search(r"vigil|anticipat", r.get("raw") or "", re.I)))))
 
 
@@ -1828,6 +1828,7 @@ def schedule_rows_templated(rec: dict, pages: list[Page], key: str, home: str, t
     rec["schedule_template"] = {"template": res["template"], "version": TEMPLATE_VERSION, "parse_quality": q,
                                 "passed_bar": res["template"] in T.PASSED,
                                 "trusted_candidate": T.trusted(res["template"], q),
+                                "trusted_kinds": T.trusted_kinds(res["template"]) if T.trusted(res["template"], q) else [],
                                 "generic_rows": len(gen_rows)}
     return res["rows"], imgs
 

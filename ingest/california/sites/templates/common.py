@@ -22,7 +22,7 @@ from __future__ import annotations
 
 import re
 import unicodedata
-from dataclasses import dataclass, field
+from dataclasses import dataclass, field, replace
 
 from bs4 import BeautifulSoup, Comment, NavigableString, Tag
 
@@ -30,9 +30,16 @@ DAYN = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sun
 ORDN = {1: "First", 2: "Second", 3: "Third", 4: "Fourth", 5: "Fifth", -1: "Last"}
 
 
+# typographic punctuation folded to ASCII before matching (a curly apostrophe in "St. John’s" must read as "St. John's",
+# an en dash in "May – Aug" as "-"); without this NFKD + ASCII drops them and "John’s" became the word "johns"
+PUNCT_ASCII = str.maketrans({"\u2018": "'", "\u2019": "'", "\u02bc": "'", "\u2032": "'", "\u00b4": "'", "\u0060": "'",
+                             "\u201c": '"', "\u201d": '"', "\u2010": "-", "\u2011": "-", "\u2012": "-", "\u2013": "-",
+                             "\u2014": "-", "\u2015": "-", "\u2212": "-"})
+
+
 def fold(s: str) -> str:
-    """Lower case, accents removed (so "Sábado" and "Sabado" read alike)."""
-    return unicodedata.normalize("NFKD", s or "").encode("ascii", "ignore").decode().lower()
+    """Lower case, accents removed (so "Sábado" and "Sabado" read alike), typographic quotes and dashes as ASCII."""
+    return unicodedata.normalize("NFKD", (s or "").translate(PUNCT_ASCII)).encode("ascii", "ignore").decode().lower()
 
 
 def norm_space(s: str) -> str:
@@ -228,6 +235,7 @@ LIST_CONN = r"\s*(?:,|&|\+|/|and|y|or|o)\s*"
 
 ORD_RX = re.compile(rf"\b(?:every\s+|each\s+|cada\s+)?(?P<ord>{_ORD}(?:{LIST_CONN}{_ORD})*)\s+(?P<d>{_DWP})"
                     rf"(?:\s+(?:of\s+(?:the|each|every)\s+month|del\s+mes|de\s+cada\s+mes|of\s+every\s+month))?", re.I)
+PAREN_ORD_RX = re.compile(rf"\(\s*(?P<ord>{_ORD}(?:{LIST_CONN}{_ORD})*)\s*\)", re.I)   # "(1st & 3rd)", no day word
 RANGE_DAY_RX = re.compile(rf"\b(?:from\s+|de\s+)?(?P<a>{_DWP}){RANGE_CONN}(?P<b>{_DWP})", re.I)
 LIST_DAY_RX = re.compile(rf"\b(?P<l>{_DWP}(?:{LIST_CONN}{_DWP})+)", re.I)
 ONE_DAY_RX = re.compile(rf"\b(?P<d>{_DWP})", re.I)
@@ -339,7 +347,9 @@ def days_in(text: str) -> list[DayTok]:
         if not free(m.start(), m.end()):
             continue
         g = fold(m.group("g"))
-        if g.startswith(("week", "entre", "de lunes")):
+        if g.startswith(("weekend", "fin")):     # before "week": "Weekend" is not "Weekday" (it named Mon-Fri until 2026-11-01)
+            out.append(DayTok(m.start(), m.end(), [], None, "weekend", m.group(0)))
+        elif g.startswith(("week", "entre", "de lunes")):
             out.append(DayTok(m.start(), m.end(), [0, 1, 2, 3, 4], None, "weekday", m.group(0)))
         elif g.startswith(("daily", "every", "each", "diaria")):
             out.append(DayTok(m.start(), m.end(), [0, 1, 2, 3, 4, 5], None, "daily", m.group(0)))
@@ -387,8 +397,50 @@ HOLY_RX = re.compile(r"\bholy\s*days?\b|\bholidays?\b|d[ií]as? (?:feriados?|fes
                      r"\bnavidad\b|nochebuena|new\s+year|ash\s+wednesday|mi[eé]rcoles\s+de\s+ceniza|holy\s+(?:thursday|week|saturday)|"
                      r"good\s+friday|viernes\s+santo|semana\s+santa|triduum|\beaster\b|\bpascua\b|immaculate\s+conception|"
                      r"\binmaculada\b|simbang\s+gabi|\bassumption of\b|our lady of guadalupe feast|feast of", re.I)
+_MON = r"jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|june?|july?|aug(?:ust)?|sept?(?:ember)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?"
+_RANGE_TO = r"\s*(?:-|\u2013|\u2014|to|through|thru|until|till|\u2019?til)\s*"
+# a seasonal block: "Summer", "Lent", "from Memorial Day to Labor Day", "May - Aug", "June through August", "(Sept-May)"
 SEASON_RX = re.compile(r"\b(?P<s>summer|lent(?:en)?|advent|winter|during the school year|school year|while school is in session|"
-                       r"school days?|cuaresma|adviento|verano)\b", re.I)
+                       r"school days?|cuaresma|adviento|verano|"
+                       rf"memorial\s+day{_RANGE_TO}labou?r\s+day|"
+                       rf"(?:{_MON})\.?{_RANGE_TO}(?:{_MON})\b\.?)(?:\b|(?<=\.))", re.I)
+_MON_N = {"jan": 1, "feb": 2, "mar": 3, "apr": 4, "may": 5, "jun": 6, "jul": 7, "aug": 8, "sep": 9, "oct": 10, "nov": 11, "dec": 12}
+
+
+def season_in(text: str) -> str | None:
+    """The season a line or heading limits its rows to (season_label), or None. "Except from Memorial Day thru Labor Day",
+    "no 5:30 PM Mass in summer" name the season the row is NOT held in: the row is the regular schedule."""
+    for m in SEASON_RX.finditer(text or ""):
+        pre = (text or "")[max(0, m.start() - 30):m.start()]
+        if re.search(r"\b(?:except|excluding|exc\.|not|no|other than|but|outside|excepto|menos)\b[^.;:]*$", pre, re.I):
+            continue
+        return season_label(m.group("s"))
+    return None
+
+
+def season_label(s: str | None) -> str | None:
+    """The qualifier written after a seasonal row's day ("Sunday (summer)"): a month range reads as summer / winter / the
+    school year when it is one ("May - Aug" -> "summer, may-aug"), so merge.py and lib/find.ts keep it off the weekly list."""
+    if not s:
+        return None
+    f = fold(s).strip(" .")
+    if re.search(r"school", f):
+        return "during the school year"
+    if re.search(r"memorial", f):
+        return "summer"
+    ms = re.findall(r"[a-z]+", f)
+    if len(ms) >= 2 and ms[0][:3] in _MON_N and ms[-1][:3] in _MON_N:
+        a, b = _MON_N[ms[0][:3]], _MON_N[ms[-1][:3]]
+        span = list(range(a, b + 1)) if a <= b else list(range(a, 13)) + list(range(1, b + 1))
+        tag = f"{ms[0][:3]}-{ms[-1][:3]}"
+        if a in (8, 9) and b in (5, 6):
+            return f"during the school year, {tag}"
+        if 7 in span and 1 not in span:
+            return f"summer, {tag}"
+        if 1 in span and 7 not in span:
+            return f"winter, {tag}"
+        return f"seasonal, {tag}"
+    return f.replace("lenten", "lent")
 SKIP_HEAD = re.compile(r"mass intentions?|intenciones|week at a glance|this week|upcoming|calendar|calendario|\bnews\b|noticias|"
                        r"bulletin|bolet[ií]n|\breadings?\b|lecturas|office hours?|horario de oficina|parish office|\bstaff\b|"
                        r"\bevents?\b|eventos|announcements?|anuncios|ministry schedule|minister(?:s)? schedule|lector|usher|"
@@ -627,6 +679,7 @@ class Ctx:
     other_loc: tuple | None = None
     loc: tuple | None = None         # (church name, level): one of the site's own churches
     season: tuple | None = None
+    season_days: set = field(default_factory=set)   # weekdays already listed under the current seasonal heading
     dated: bool = False
     sticky_kind: str | None = None
     last_line_day: DayTok | None = None
@@ -723,11 +776,17 @@ class Reader:
         ls = langs_in(f)
         if ls and len(f) < 70:
             ctx.lang = (ls[0][2], level)
-        se = SEASON_RX.search(f)
+        se = season_in(f)
         if se:
-            ctx.season = (se.group("s"), level)
+            ctx.season = (se, level)
+            ctx.season_days = set()
         elif level <= 7 and not dts:
             ctx.season = None
+        elif ctx.season and dts and {x for d in dts for x in d.days} & ctx.season_days:
+            # "Weekday Masses (July-August)" Mon 8:00 ... Fri 8:00, then "Monday - Friday" 8 am / 6 pm: a second list of the same
+            # days after a seasonal one is the regular schedule, not more of the season
+            ctx.season = None
+            ctx.season_days = set()
         if dts:
             d = next((x for x in dts if x.generic != "holy"), None)
             if d is not None:
@@ -763,8 +822,7 @@ class Reader:
         ks = kinds_in(text)
         ls = langs_in(text)
         starts_with_time = toks[0].start <= min([d.start for d in dts] + [len(text)])
-        season = SEASON_RX.search(text)
-        season = season.group("s") if season else (ctx.season[0] if ctx.season else None)
+        season = season_in(text) or (ctx.season[0] if ctx.season else None)
         consumed_k, consumed_l = set(), set()
         last_day_used = None
         for i, t in enumerate(toks):
@@ -821,7 +879,10 @@ class Reader:
                 last_day_used = day
             elif cell_day is not None:
                 day, dsrc = cell_day, "table"
-            elif ctx.last_line_day is not None and starts_with_time and not ctx.day:
+            elif ctx.last_line_day is not None and starts_with_time and (not ctx.day or (ctx.day[0].generic == "weekend"
+                                                                                       and not ctx.day[0].days)):
+                # a bare time under a "Weekend" heading continues the line above ("Sunday: 9:00 AM" / "11:00 AM"); the
+                # weekend word names no single day of its own
                 day, dsrc = ctx.last_line_day, "carry"
             elif ctx.day:
                 day, dsrc = ctx.day[0], "context"
@@ -881,6 +942,13 @@ class Reader:
             if kind == "confession" and not (6 * 60 <= t.minutes() <= 22 * 60):
                 self.drop("implausible_hour")
                 continue
+            if len(day.days) == 1 and not day.nth:
+                # "English (1st & 3rd) 09:00 AM" under a "Sundays" heading: an ordinal list with no day word of its own
+                po = PAREN_ORD_RX.search(text)
+                if po:
+                    nth = sorted({ORD_N.get(fold(x).strip(), 0) for x in re.split(LIST_CONN, po.group("ord")) if fold(x).strip() in ORD_N})
+                    if nth:
+                        day = replace(day, nth=nth)
             days = day.days
             if day.generic == "daily" and kind == "adoration":
                 days = list(range(7))
@@ -888,6 +956,8 @@ class Reader:
             for d in days:
                 self.emit(kind, day_text(d, day.nth), tstr, lang, raw_out, t, ksrc, dsrc, d, daily=day.generic == "daily",
                           season=season, from_table=from_table, multi=len(days) > 1, daytxt=day.text)
+            if season and ctx.season and season == ctx.season[0]:
+                ctx.season_days.update(days)
             if kind in ("mass", "confession", "adoration"):
                 ctx.sticky_kind = kind
         if dts:
@@ -900,8 +970,7 @@ class Reader:
         pen += {"explicit": 0, "24h": 0, "propagated": 0.5, "guessed": 1.5}.get(t.meridiem, 1)
         conf = "high" if pen == 0 else "medium" if pen <= 1 else "low"
         if season and day != "Holy days":
-            q = "during the school year" if re.search(r"school", season, re.I) else fold(season).replace("lenten", "lent")
-            day = f"{day} ({q})"
+            day = f"{day} ({season_label(season)})"
         row = {"kind": kind, "day": day, "time": time, "language": lang, "raw": raw[:200], "source_url": self.url,
                "fetched_at": self.fetched_at, "needs_review": False, "review_reason": None, "confidence": conf,
                "template": self.template, "_why": {"kind": ksrc, "day": dsrc, "meridiem": t.meridiem}, "_dnum": dnum,
