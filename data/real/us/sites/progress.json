@@ -661,26 +661,12 @@
    ]
   },
   {
-   "started_at": "2026-11-02T01:56:02+00:00",
-   "ended_at": "2026-11-02T01:57:08+00:00",
-   "result": "fetched {'dns': 23, 'done': 52, 'challenge': 11, 'ssl_error': 2, 'not_found': 1, 'ok': 13, 'timeout': 2, 'halted_egress': 0}; parsed 2 dioceses",
+   "started_at": "2026-11-02T01:56:07+00:00",
+   "ended_at": "2026-11-02T01:57:54+00:00",
+   "result": "fetched {'robots_disallowed': 1, 'done': 26, 'dns': 13, 'ssl_error': 1, 'not_found': 4, 'conn_error': 1, 'ok': 5, 'timeout': 1, 'halted_egress': 0}; parsed 2 dioceses",
    "touched": [
-    "diocese-of-memphis",
-    "diocese-of-nashville"
-   ]
-  },
-  {
-   "started_at": "2026-11-02T01:56:40+00:00",
-   "ended_at": "2026-11-02T01:56:42+00:00",
-   "result": "fetched {}; parsed 0 dioceses",
-   "touched": []
-  },
-  {
-   "started_at": "2026-11-02T01:57:12+00:00",
-   "ended_at": "2026-11-02T01:57:30+00:00",
-   "result": "fetched {'dns': 11, 'done': 18, 'conn_error': 2, 'challenge': 1, 'ok': 4, 'halted_egress': 0}; parsed 1 dioceses",
-   "touched": [
-    "diocese-of-norwich"
+    "diocese-of-peoria",
+    "unassigned-il"
    ]
   }
  ],
@@ -1417,15 +1403,18 @@
   },
   "diocese-of-peoria": {
    "sites_in_list": 137,
-   "records": 109,
-   "finished": false,
-   "ok": 91,
+   "records": 140,
+   "finished": true,
+   "ok": 98,
    "by_status": {
-    "ok": 91,
+    "ok": 98,
+    "dns": 21,
     "challenge": 8,
-    "dns": 7,
-    "ssl_error": 2,
-    "robots_disallowed": 1
+    "not_found": 5,
+    "ssl_error": 3,
+    "robots_disallowed": 2,
+    "timeout": 2,
+    "conn_error": 1
    }
   },
   "diocese-of-syracuse": {
@@ -1680,13 +1669,13 @@
   },
   "unassigned-mn": {
    "sites_in_list": 116,
-   "records": 154,
+   "records": 153,
    "finished": true,
    "ok": 95,
    "by_status": {
     "ok": 95,
     "challenge": 32,
-    "dns": 10,
+    "dns": 9,
     "ssl_error": 8,
     "conn_error": 3,
     "robots_disallowed": 2,
@@ -2489,11 +2478,11 @@
   },
   "unassigned-il": {
    "sites_in_list": 75,
-   "records": 143,
+   "records": 144,
    "finished": true,
-   "ok": 100,
+   "ok": 101,
    "by_status": {
-    "ok": 100,
+    "ok": 101,
     "challenge": 17,
     "dns": 10,
     "ssl_error": 6,
@@ -2554,18 +2543,18 @@
   },
   "diocese-of-norwich": {
    "sites_in_list": 73,
-   "records": 77,
-   "finished": true,
-   "ok": 29,
+   "records": 58,
+   "finished": false,
+   "ok": 25,
    "by_status": {
-    "ok": 29,
-    "dns": 20,
-    "challenge": 8,
+    "ok": 25,
+    "dns": 8,
     "ssl_error": 7,
-    "conn_error": 4,
+    "challenge": 7,
     "timeout": 3,
     "http_5xx": 2,
     "robots_disallowed": 2,
+    "conn_error": 2,
     "unreachable_via_proxy": 1,
     "parked": 1
    }
@@ -2734,17 +2723,16 @@
   },
   "diocese-of-memphis": {
    "sites_in_list": 65,
-   "records": 65,
-   "finished": true,
+   "records": 52,
+   "finished": false,
    "ok": 39,
    "by_status": {
     "ok": 39,
-    "dns": 14,
     "unreachable_via_proxy": 4,
     "conn_error": 3,
     "challenge": 3,
-    "not_found": 1,
-    "timeout": 1
+    "dns": 2,
+    "not_found": 1
    }
   },
   "diocese-of-owensboro": {
@@ -3324,31 +3312,22 @@
   },
   "diocese-of-nashville": {
    "sites_in_list": 40,
-   "records": 40,
-   "finished": true,
-   "ok": 13,
+   "records": 1,
+   "finished": false,
+   "ok": 0,
    "by_status": {
-    "ok": 13,
-    "challenge": 11,
-    "dns": 11,
-    "ssl_error": 3,
-    "timeout": 1,
-    "not_found": 1
+    "ssl_error": 1
    }
   },
   "diocese-of-new-ulm": {
    "sites_in_list": 39,
-   "records": 41,
-   "finished": true,
-   "ok": 15,
+   "records": 7,
+   "finished": false,
+   "ok": 5,
    "by_status": {
-    "ok": 15,
-    "dns": 12,
-    "ssl_error": 6,
-    "challenge": 4,
-    "not_found": 2,
-    "conn_error": 1,
-    "parked": 1
+    "ok": 5,
+    "challenge": 1,
+    "not_found": 1
    }
   },
   "diocese-of-monterey": {
@@ -4003,7 +3982,7 @@
   },
   "diocese-of-lubbock": {
    "sites_in_list": 12,
-   "records": 13,
+   "records": 12,
    "finished": true,
    "ok": 4,
    "by_status": {
@@ -4267,9 +4246,9 @@
  },
  "totals": {
   "sites_in_list": 19937,
-  "records": 20246,
-  "ok": 10820
+  "records": 20171,
+  "ok": 10801
  },
  "us_parish_pages_discovermass": 20147,
- "updated_at": "2026-11-02T01:57:39+00:00"
+ "updated_at": "2026-11-02T01:57:56+00:00"
 }
