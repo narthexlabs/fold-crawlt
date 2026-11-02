@@ -446,6 +446,48 @@
    "needs_review": true,
    "review_reason": "schedule_box,nth_of_month",
    "nth": "first"
+  },
+  {
+   "kind": "confession",
+   "day": "First and Third Sunday of the month",
+   "time": "10:30",
+   "language": "Spanish",
+   "raw": "10:30am Confessions in Spanish (1st/3rd Sundays)",
+   "source_url": "https://www.frankfortgoodshepherd.org/sacraments",
+   "fetched_at": "2026-11-02T04:47:51+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Wednesday",
+   "time": "18:00",
+   "language": null,
+   "raw": "6:00pm Confessions following Mass",
+   "source_url": "https://www.frankfortgoodshepherd.org/sacraments",
+   "fetched_at": "2026-11-02T04:47:51+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "First Friday of the month",
+   "time": "12:45",
+   "language": null,
+   "raw": "12:45pm Adoration -- until 4:45pm (First Fridays only)",
+   "source_url": "https://www.frankfortgoodshepherd.org/sacraments",
+   "fetched_at": "2026-11-02T04:47:51+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "topup": true
   }
  ],
  "source_url": "https://frankfortgoodshepherd.org/",
@@ -492,6 +534,33 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "can be received upon request. Please",
+   "phrase": "upon request",
+   "source_url": "https://www.frankfortgoodshepherd.org/sacraments",
+   "fetched_at": "2026-11-02T04:47:51+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:47:52+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 3,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "office@gssfrankfort.org",
   "phone": "(502) 227-4511",
@@ -504,8 +573,5 @@
   },
   "fetched_at": "2026-11-01T08:35:05+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }
