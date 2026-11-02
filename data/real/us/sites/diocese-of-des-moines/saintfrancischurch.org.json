@@ -75,6 +75,12 @@
    "url": "https://www.saintfrancischurch.org/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.saintfrancischurch.org/grow-your-faith/adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -488,6 +494,20 @@
    "confidence": "medium",
    "template": "generic_strict",
    "day_expanded_from": "Monday through Friday"
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "19:00-20:00",
+   "language": null,
+   "raw": "Exposition at St. Francis: **Exception - Tuesdays, 7:00-8:00 pm: Church",
+   "source_url": "https://www.saintfrancischurch.org/grow-your-faith/adoration",
+   "fetched_at": "2026-11-02T04:42:00+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
   }
  ],
  "source_url": "http://www.saintfrancischurch.org/",
@@ -531,5 +551,21 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:02+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }
