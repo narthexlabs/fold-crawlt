@@ -29,7 +29,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 |---|---:|---:|---:|---:|---:|---:|---:|
 | archdiocese-of-chicago | 479 | 483 | 248 | 17 | 8 | 152 | 3 |
 | unassigned-ca | 467 | 56 | 36 | 8 | 1 | 11 | 0 |
-| archdiocese-of-new-york | 457 | 459 | 94 | 137 | 4 | 102 | 0 |
+| archdiocese-of-new-york | 457 | 459 | 94 | 135 | 4 | 102 | 0 |
 | unassigned-oh | 392 | 397 | 258 | 74 | 5 | 60 | 0 |
 | unassigned-pa | 303 | 620 | 432 | 87 | 7 | 79 | 15 |
 | archdiocese-of-newark | 276 | 279 | 149 | 47 | 3 | 80 | 0 |
