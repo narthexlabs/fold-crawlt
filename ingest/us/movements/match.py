@@ -37,6 +37,10 @@ def main() -> None:
     if d:
         cnt = Counter()
         for r in d["records"]:
+            if (r.get("type") or "R") != "R":   # college councils (type C) belong to a campus, not a parish
+                r["match"] = {"parish_id": None, "confidence": "unmatched", "method": "college council (type C)"}
+                cnt["college"] += 1
+                continue
             p, conf, how = c.match(r.get("councilName"), r.get("city"), r.get("state"), ix)
             r["match"] = {"parish_id": p["id"] if p else None, "parish_name": p["name"] if p else None,
                           "parish_city": p.get("city") if p else None, "state": r.get("state"),

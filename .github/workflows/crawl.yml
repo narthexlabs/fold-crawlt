@@ -290,7 +290,7 @@ jobs:
         run: |
           set -u
           TRAILER=$'\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01SXKUYETifPNNjUVPkZ7qG5'
-          timeout $(( MINUTES * 60 + 300 )) python3 -I -u ingest/us/movements/kofc.py --minutes "$MINUTES" || true
+          timeout $(( MINUTES * 60 + 300 )) python3 -I -u ingest/us/movements/kofc.py --mode numbers --minutes "$MINUTES" || true
           python3 -I ingest/us/movements/match.py
           git add data/real/us/movements/
           git commit -q -m "Movements: Knights of Columbus councils (Actions $(date -u +%FT%H:%MZ))$TRAILER" || true
