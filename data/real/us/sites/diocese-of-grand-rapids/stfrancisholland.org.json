@@ -75,6 +75,12 @@
    "url": "https://www.stfrancisholland.org/bulletins",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stfrancisholland.org/eucharistic-adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -554,6 +560,34 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "08:00-20:00",
+   "language": null,
+   "raw": "Eucharistic Adoration: Tuesdays, 8:00AM to 8:00PM (following 8:00AM Mass) @ St. Francis de Sales",
+   "source_url": "https://www.stfrancisholland.org/eucharistic-adoration",
+   "fetched_at": "2026-11-02T04:42:02+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "20:00",
+   "language": null,
+   "raw": "Adoración Eucarística: Cada martes de 8:00AM - 8:00PM (después de la Misa de 8AM) en la iglesia",
+   "source_url": "https://www.stfrancisholland.org/eucharistic-adoration",
+   "fetched_at": "2026-11-02T04:42:02+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
   }
  ],
  "source_url": "http://www.stfrancisholland.org/",
@@ -595,5 +629,21 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:13+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
  }
 }

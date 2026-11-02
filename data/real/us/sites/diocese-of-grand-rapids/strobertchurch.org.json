@@ -81,6 +81,18 @@
    "url": "https://strobertchurch.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://strobertchurch.org/sacraments/adoration/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://strobertchurch.org/eva/6cefb1eb8ac2651444424a732cc17ec17fc6c0e1/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -636,6 +648,65 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "09:45-20:00",
+   "language": null,
+   "raw": "Eucharistic Adoration Schedule: Wednesdays: 9:45 a.m. to 8:00 p.m. in the Eucharistic Chapel",
+   "source_url": "https://strobertchurch.org/sacraments/adoration/",
+   "fetched_at": "2026-11-02T04:42:18+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "09:45-11:00",
+   "language": null,
+   "raw": "Eucharistic Adoration Schedule: Thursdays & Fridays: 9:45 to 11:00 a.m. in the Eucharistic Chapel",
+   "source_url": "https://strobertchurch.org/sacraments/adoration/",
+   "fetched_at": "2026-11-02T04:42:18+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Thursdays & Fridays",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "09:45-11:00",
+   "language": null,
+   "raw": "Eucharistic Adoration Schedule: Thursdays & Fridays: 9:45 to 11:00 a.m. in the Eucharistic Chapel",
+   "source_url": "https://strobertchurch.org/sacraments/adoration/",
+   "fetched_at": "2026-11-02T04:42:18+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Thursdays & Fridays",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Mass at 9:00 a.m. and Eucharistic Adoration from 9:45 a.m. to 8:00 p.m.",
+   "source_url": "https://strobertchurch.org/eva/6cefb1eb8ac2651444424a732cc17ec17fc6c0e1/",
+   "fetched_at": "2026-11-02T04:42:19+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Tuesday, Thursday and Friday",
+   "topup": true
   }
  ],
  "source_url": "http://www.strobertchurch.org/",
@@ -678,5 +749,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:19+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "liturgy"
+  ],
+  "rows_added": 4,
+  "mode": "merge"
  }
 }
