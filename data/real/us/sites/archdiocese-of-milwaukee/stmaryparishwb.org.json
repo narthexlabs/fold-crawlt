@@ -31,8 +31,38 @@
   {
    "category": "mass_times",
    "url": "https://www.stmaryparishwb.org/prayer-and-worship",
-   "status": null,
-   "class": "timeout"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stmaryparishwb.org/im-new-parish-registration-info",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://stmaryparishwb.org/pastoral-council",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://www.stmaryparishwb.org/e-bulletin-sign-up",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://stmaryparishwb.org/events?page=1",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://stmaryparishwb.org/contact-us",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -54,7 +84,7 @@
    "language_assumed": true,
    "meets": null,
    "description": null,
-   "contact_url": "https://stmaryparishwb.org/",
+   "contact_url": "https://stmaryparishwb.org/contact-us",
    "contact_role": "parish office (see contact page)",
    "source_url": "https://stmaryparishwb.org/",
    "source_kind": "website",
@@ -67,10 +97,14 @@
  "events": [],
  "social": {
   "facebook": [
-   "https://www.facebook.com/SaintFrancesCabriniWestBend"
+   "https://www.facebook.com/SaintFrancesCabriniWestBend",
+   "https://www.facebook.com/ImmaculateConceptionWestBend"
   ],
   "instagram": [
    "https://www.instagram.com/wbparishes/"
+  ],
+  "flocknote": [
+   "https://new.flocknote.com"
   ]
  },
  "bulletin": {
@@ -227,7 +261,7 @@
   }
  ],
  "source_url": "http://www.stmaryparishwb.org/",
- "fetched_at": "2026-11-02T01:36:14+00:00",
+ "fetched_at": "2026-11-02T01:02:36+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
  },
@@ -254,17 +288,19 @@
   "other_location": 3,
   "no_time": 1
  },
- "groups_dropped": {},
+ "groups_dropped": {
+  "noise": 2
+ },
  "office_contact": {
   "email": null,
   "phone": "(262) 338-5600",
   "address": "415 Roosevelt Drive, West Bend, WI 53090",
-  "source_url": "https://stmaryparishwb.org/",
+  "source_url": "https://stmaryparishwb.org/contact-us",
   "sources": {
-   "phone": "https://stmaryparishwb.org/",
-   "address": "https://stmaryparishwb.org/"
+   "phone": "https://stmaryparishwb.org/contact-us",
+   "address": "https://stmaryparishwb.org/contact-us"
   },
-  "fetched_at": "2026-05-17T10:14:46+00:00",
+  "fetched_at": "2026-05-17T10:16:17+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
  },
  "wayback": {
@@ -277,6 +313,42 @@
     "original": "https://stmaryparishwb.org/",
     "capture": "2026-05-17",
     "archive_url": "https://web.archive.org/web/20260517101446/https://stmaryparishwb.org/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://www.stmaryparishwb.org/prayer-and-worship",
+    "capture": "2025-01-18",
+    "archive_url": "https://web.archive.org/web/20250118145806/https://www.stmaryparishwb.org/prayer-and-worship"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://stmaryparishwb.org/im-new-parish-registration-info",
+    "capture": "2025-11-10",
+    "archive_url": "https://web.archive.org/web/20251110012657/https://stmaryparishwb.org/im-new-parish-registration-info"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://stmaryparishwb.org/pastoral-council",
+    "capture": "2025-10-12",
+    "archive_url": "https://web.archive.org/web/20251012040318/https://stmaryparishwb.org/pastoral-council"
+   },
+   {
+    "kind": "bulletin",
+    "original": "https://www.stmaryparishwb.org/e-bulletin-sign-up",
+    "capture": "2025-01-18",
+    "archive_url": "https://web.archive.org/web/20250118142919/https://www.stmaryparishwb.org/e-bulletin-sign-up"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://stmaryparishwb.org/events?page=1",
+    "capture": "2025-10-12",
+    "archive_url": "https://web.archive.org/web/20251012042601/https://stmaryparishwb.org/events?page=1"
+   },
+   {
+    "kind": "contact",
+    "original": "https://stmaryparishwb.org/contact-us",
+    "capture": "2026-05-17",
+    "archive_url": "https://web.archive.org/web/20260517101617/https://stmaryparishwb.org/contact-us"
    }
   ],
   "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."

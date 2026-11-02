@@ -37,8 +37,38 @@
   {
    "category": "mass_times",
    "url": "https://maryqueenvn.org/liturgy-sacraments",
-   "status": null,
-   "class": "timeout"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://maryqueenvn.org/dieu-hanh-administrative-staff-1",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://maryqueenvn.org/faith-formation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://maryqueenvn.org/thanh-nhac-music-ministry",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://maryqueenvn.org/lich-phung-vu-church-calendar",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://maryqueenvn.org/bulletins",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -48,7 +78,46 @@
   ]
  },
  "template": "ecatholic-fastpath",
- "groups": [],
+ "groups": [
+  {
+   "id": "maryqueenvn.org:choir|nhac+thanh",
+   "name": "BAN THÁNH NHẠC Music Ministry",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "choir_music",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://maryqueenvn.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://maryqueenvn.org/thanh-nhac-music-ministry",
+   "source_kind": "website",
+   "fetched_at": "2024-05-25T18:19:56+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-10-16"
+  },
+  {
+   "id": "maryqueenvn.org:choir",
+   "name": "Music Ministry / Choir",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "choir_music",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://maryqueenvn.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://maryqueenvn.org/thanh-nhac-music-ministry",
+   "source_kind": "website",
+   "fetched_at": "2024-05-25T18:19:56+00:00",
+   "confidence": "low",
+   "source": "wayback-2026-10-16"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
  "social": {
@@ -56,7 +125,13 @@
    "https://www.facebook.com/MaryQueenofVietnamchurch"
   ]
  },
- "bulletin": null,
+ "bulletin": {
+  "url": "https://maryqueenvn.org/bulletins",
+  "date": null,
+  "kind": "page",
+  "text": "|||",
+  "source_url": "https://maryqueenvn.org/bulletins"
+ },
  "schedule_rows": [
   {
    "kind": "adoration",
@@ -320,7 +395,7 @@
   }
  ],
  "source_url": "https://maryqueenvn.org/",
- "fetched_at": "2026-11-02T02:12:23+00:00",
+ "fetched_at": "2026-11-02T01:38:35+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
  },
@@ -346,7 +421,9 @@
  "schedule_dropped": {
   "box_rows_added": 11
  },
- "groups_dropped": {},
+ "groups_dropped": {
+  "private_name_risk": 1
+ },
  "office_contact": {
   "email": null,
   "phone": "(504) 254-5660",
@@ -375,6 +452,42 @@
     "original": "https://maryqueenvn.org/ban-huong-dan-mass-announcers",
     "capture": "2025-04-24",
     "archive_url": "https://web.archive.org/web/20250424004128/https://maryqueenvn.org/ban-huong-dan-mass-announcers"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://maryqueenvn.org/liturgy-sacraments",
+    "capture": "2024-05-25",
+    "archive_url": "https://web.archive.org/web/20240525181540/https://maryqueenvn.org/liturgy-sacraments"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://maryqueenvn.org/dieu-hanh-administrative-staff-1",
+    "capture": "2024-05-25",
+    "archive_url": "https://web.archive.org/web/20240525162314/https://maryqueenvn.org/dieu-hanh-administrative-staff-1"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://maryqueenvn.org/faith-formation",
+    "capture": "2025-10-18",
+    "archive_url": "https://web.archive.org/web/20251018082501/https://maryqueenvn.org/faith-formation"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://maryqueenvn.org/thanh-nhac-music-ministry",
+    "capture": "2024-05-25",
+    "archive_url": "https://web.archive.org/web/20240525181956/https://maryqueenvn.org/thanh-nhac-music-ministry"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://maryqueenvn.org/lich-phung-vu-church-calendar",
+    "capture": "2025-04-24",
+    "archive_url": "https://web.archive.org/web/20250424011117/https://maryqueenvn.org/lich-phung-vu-church-calendar"
+   },
+   {
+    "kind": "bulletin",
+    "original": "https://maryqueenvn.org/bulletins",
+    "capture": "2025-05-20",
+    "archive_url": "https://web.archive.org/web/20250520171343/https://maryqueenvn.org/bulletins"
    }
   ],
   "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."

@@ -55,8 +55,32 @@
   {
    "category": "ministries",
    "url": "https://hfparish.org/parish-administration-1",
-   "status": null,
-   "class": "timeout"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://hfparish.org/bulletin-newsletter",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://hfparish.org/events-1",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://hfparish.org/calendar",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "contact",
+   "url": "https://hfparish.org/contact-pastor",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -78,7 +102,7 @@
    "language_assumed": true,
    "meets": null,
    "description": null,
-   "contact_url": "https://hfparish.org/",
+   "contact_url": "https://hfparish.org/contact-pastor",
    "contact_role": "parish office (see contact page)",
    "source_url": "https://hfparish.org/high-school-youth-ministry",
    "source_kind": "website",
@@ -97,7 +121,7 @@
    "language_assumed": true,
    "meets": null,
    "description": "We invite and welcome any high school student to enhance and grow their Catholic faith. Religious education for all high school aged teens occurs in the context of preparation for Confirmation, usually beginning in 9th grade. Holy Family and St.…",
-   "contact_url": "https://hfparish.org/",
+   "contact_url": "https://hfparish.org/contact-pastor",
    "contact_role": "parish office (see contact page)",
    "source_url": "https://hfparish.org/high-school-youth-ministry",
    "source_kind": "website",
@@ -116,7 +140,7 @@
    "language_assumed": true,
    "meets": null,
    "description": null,
-   "contact_url": "https://hfparish.org/",
+   "contact_url": "https://hfparish.org/contact-pastor",
    "contact_role": "parish office (see contact page)",
    "source_url": "https://hfparish.org/high-school-youth-ministry",
    "source_kind": "website",
@@ -135,7 +159,7 @@
    "language_assumed": true,
    "meets": null,
    "description": "Senior parishioners (55+) gather socially and reach out to those who are homebound. Join this vibrant group by contacting",
-   "contact_url": "https://hfparish.org/",
+   "contact_url": "https://hfparish.org/contact-pastor",
    "contact_role": "parish office (see contact page)",
    "source_url": "https://hfparish.org/parish-life",
    "source_kind": "website",
@@ -154,7 +178,7 @@
    "language_assumed": true,
    "meets": "Fourth Monday",
    "description": "If you've knitted for years or want to learn something new- come join us! We will provide the yarn, tools and directions. We meet on the second and fourth Monday of the month. We would love to meet you!",
-   "contact_url": "https://hfparish.org/",
+   "contact_url": "https://hfparish.org/contact-pastor",
    "contact_role": "parish office (see contact page)",
    "source_url": "https://hfparish.org/parish-life",
    "source_kind": "website",
@@ -173,7 +197,7 @@
    "language_assumed": true,
    "meets": "First Saturday",
    "description": "It's so much more than coffee and donuts. Hospitality is a joyful tradition at Holy Family that builds community and welcomes strangers as friends. Saturday evening hospitality is held the first Saturday of the month, as possible. Coffee and donuts…",
-   "contact_url": "https://hfparish.org/",
+   "contact_url": "https://hfparish.org/contact-pastor",
    "contact_role": "parish office (see contact page)",
    "source_url": "https://hfparish.org/parish-life",
    "source_kind": "website",
@@ -193,11 +217,11 @@
   ]
  },
  "bulletin": {
-  "url": "https://hfparish.org/bulletin-newsletter",
+  "url": "https://www.parishesonline.com/organization/holy-family-church-53217",
   "date": null,
-  "kind": "page",
-  "text": "Bulletin & News",
-  "source_url": "https://hfparish.org/"
+  "kind": "lpi",
+  "text": "Subscribe to Bulletin",
+  "source_url": "https://hfparish.org/bulletin-newsletter"
  },
  "schedule_rows": [
   {
@@ -346,7 +370,7 @@
   }
  ],
  "source_url": "http://www.hfparish.org/",
- "fetched_at": "2026-11-02T01:15:21+00:00",
+ "fetched_at": "2026-11-02T00:58:25+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
  },
@@ -366,7 +390,7 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 0
+  "generic_rows": 1
  },
  "has_sunday": true,
  "schedule_dropped": {
@@ -375,7 +399,9 @@
  },
  "groups_dropped": {
   "sacrament_prep": 1,
-  "private_name_risk": 2
+  "private_name_risk": 2,
+  "noise": 2,
+  "unmatched": 1
  },
  "office_contact": {
   "email": null,
@@ -384,7 +410,7 @@
   "source_url": "https://hfparish.org/",
   "sources": {
    "phone": "https://hfparish.org/",
-   "address": "https://hfparish.org/"
+   "address": "https://hfparish.org/contact-pastor"
   },
   "fetched_at": "2026-02-08T08:15:39+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
@@ -423,6 +449,30 @@
     "original": "https://hfparish.org/high-school-youth-ministry",
     "capture": "2024-06-24",
     "archive_url": "https://web.archive.org/web/20240624162224/https://hfparish.org/high-school-youth-ministry"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://hfparish.org/parish-administration-1",
+    "capture": "2024-06-24",
+    "archive_url": "https://web.archive.org/web/20240624162221/https://hfparish.org/parish-administration-1"
+   },
+   {
+    "kind": "bulletin",
+    "original": "https://hfparish.org/bulletin-newsletter",
+    "capture": "2024-06-24",
+    "archive_url": "https://web.archive.org/web/20240624162221/https://hfparish.org/bulletin-newsletter"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://hfparish.org/events-1",
+    "capture": "2024-06-24",
+    "archive_url": "https://web.archive.org/web/20240624162224/https://hfparish.org/events-1"
+   },
+   {
+    "kind": "contact",
+    "original": "https://hfparish.org/contact-pastor",
+    "capture": "2026-01-04",
+    "archive_url": "https://web.archive.org/web/20260104025352/https://hfparish.org/contact-pastor"
    }
   ],
   "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."

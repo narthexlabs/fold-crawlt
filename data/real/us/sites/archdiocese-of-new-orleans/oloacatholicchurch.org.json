@@ -43,6 +43,36 @@
    "url": "https://oloacatholicchurch.org/living-my-sacraments",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://oloacatholicchurch.org/faith-formation-news",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "ministries",
+   "url": "https://oloacatholicchurch.org/ministry-to-separated-and-divorced-catholics",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://oloacatholicchurch.org/other-ministries-and-efforts-within-the-archdiocese",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://oloacatholicchurch.org/bulletins",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://oloacatholicchurch.org/contact-us",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -52,7 +82,27 @@
   ]
  },
  "template": "ecatholic-fastpath",
- "groups": [],
+ "groups": [
+  {
+   "id": "oloacatholicchurch.org:divorced",
+   "name": "Ministry to Separated and Divorced Catholics",
+   "category": "grief_support",
+   "category_label": "Grief & support",
+   "subcategory": "divorced_separated",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://oloacatholicchurch.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://oloacatholicchurch.org/ministry-to-separated-and-divorced-catholics",
+   "source_kind": "website",
+   "fetched_at": "2024-05-13T03:02:13+00:00",
+   "confidence": "medium",
+   "source": "wayback-2024-12-21"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
  "social": {
@@ -64,11 +114,11 @@
   ]
  },
  "bulletin": {
-  "url": "https://oloacatholicchurch.org/bulletins",
-  "date": null,
-  "kind": "page",
-  "text": "BULLETINS",
-  "source_url": "https://oloacatholicchurch.org/"
+  "url": "https://files.ecatholic.com/16978/bulletins/20240512.pdf?t=1715349434000",
+  "date": "2024-05-12",
+  "kind": "ecatholic_pdf",
+  "text": "May 12 , 2024",
+  "source_url": "https://oloacatholicchurch.org/bulletins"
  },
  "schedule_rows": [
   {
@@ -349,7 +399,7 @@
   }
  ],
  "source_url": "https://oloacatholicchurch.org/",
- "fetched_at": "2026-11-02T02:19:33+00:00",
+ "fetched_at": "2026-11-02T01:21:40+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
  },
@@ -377,13 +427,13 @@
   "email": "office@oloa.nocoxmail.com",
   "phone": "(504) 436-4459",
   "address": "6851 River Road, Waggaman LA, 70094",
-  "source_url": "https://oloacatholicchurch.org/",
+  "source_url": "https://oloacatholicchurch.org/contact-us",
   "sources": {
-   "email": "https://oloacatholicchurch.org/",
-   "phone": "https://oloacatholicchurch.org/",
-   "address": "https://oloacatholicchurch.org/"
+   "email": "https://oloacatholicchurch.org/contact-us",
+   "phone": "https://oloacatholicchurch.org/contact-us",
+   "address": "https://oloacatholicchurch.org/contact-us"
   },
-  "fetched_at": "2024-12-21T00:50:51+00:00",
+  "fetched_at": "2024-05-13T03:02:06+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
  },
  "wayback": {
@@ -408,6 +458,30 @@
     "original": "https://oloacatholicchurch.org/living-my-sacraments",
     "capture": "2024-05-13",
     "archive_url": "https://web.archive.org/web/20240513030209/https://oloacatholicchurch.org/living-my-sacraments"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://oloacatholicchurch.org/ministry-to-separated-and-divorced-catholics",
+    "capture": "2024-05-13",
+    "archive_url": "https://web.archive.org/web/20240513030213/https://oloacatholicchurch.org/ministry-to-separated-and-divorced-catholics"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://oloacatholicchurch.org/other-ministries-and-efforts-within-the-archdiocese",
+    "capture": "2024-06-22",
+    "archive_url": "https://web.archive.org/web/20240622171614/https://oloacatholicchurch.org/other-ministries-and-efforts-within-the-archdiocese"
+   },
+   {
+    "kind": "bulletin",
+    "original": "https://oloacatholicchurch.org/bulletins",
+    "capture": "2024-05-13",
+    "archive_url": "https://web.archive.org/web/20240513030206/https://oloacatholicchurch.org/bulletins"
+   },
+   {
+    "kind": "contact",
+    "original": "https://oloacatholicchurch.org/contact-us",
+    "capture": "2024-05-13",
+    "archive_url": "https://web.archive.org/web/20240513030206/https://oloacatholicchurch.org/contact-us"
    }
   ],
   "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
