@@ -774,19 +774,25 @@
    ]
   },
   {
-   "started_at": "2026-11-02T05:37:02+00:00",
-   "ended_at": "2026-11-02T05:38:45+00:00",
-   "result": "fetched {'challenge': 36, 'done': 61, 'ssl_error': 1, 'ok': 23, 'timeout': 1, 'halted_egress': 0}; parsed 2 dioceses",
+   "started_at": "2026-11-02T05:37:06+00:00",
+   "ended_at": "2026-11-02T05:40:49+00:00",
+   "result": "fetched {'conn_error': 1, 'done': 63, 'dns': 5, 'challenge': 20, 'ssl_error': 3, 'not_found': 1, 'ok': 29, 'timeout': 5, 'cut': 1, 'halted_egress': 0}; parsed 5 dioceses",
    "touched": [
-    "archdiocese-of-boston",
-    "eparchy-of-newton"
+    "archdiocese-of-newark",
+    "diocese-of-trenton",
+    "diocese-of-paterson",
+    "unassigned-nj",
+    "diocese-of-camden"
    ]
   },
   {
-   "started_at": "2026-11-02T05:39:24+00:00",
-   "result": "top-up ('confession', 'adoration', 'liturgy'): {'sites': 23, 'requests': 0}; 0 sites left",
+   "started_at": "2026-11-02T05:41:41+00:00",
+   "result": "top-up ('confession', 'adoration', 'liturgy'): {'sites': 27, 'requests': 0}; 0 sites left",
    "touched": [
-    "archdiocese-of-boston"
+    "archdiocese-of-newark",
+    "diocese-of-paterson",
+    "diocese-of-trenton",
+    "unassigned-nj"
    ]
   }
  ],
@@ -872,16 +878,16 @@
   },
   "archdiocese-of-boston": {
    "sites_in_list": 325,
-   "records": 326,
-   "finished": true,
-   "ok": 108,
+   "records": 258,
+   "finished": false,
+   "ok": 82,
    "by_status": {
-    "ok": 108,
+    "ok": 82,
     "unreachable_via_proxy": 69,
-    "challenge": 52,
     "wayback": 40,
-    "ssl_error": 25,
+    "ssl_error": 24,
     "conn_error": 13,
+    "challenge": 11,
     "not_found": 8,
     "http_5xx": 4,
     "robots_disallowed": 2,
@@ -892,20 +898,21 @@
   },
   "archdiocese-of-newark": {
    "sites_in_list": 299,
-   "records": 284,
-   "finished": false,
-   "ok": 152,
+   "records": 302,
+   "finished": true,
+   "ok": 160,
    "by_status": {
-    "ok": 152,
-    "dns": 42,
+    "ok": 160,
+    "dns": 44,
     "wayback": 40,
-    "ssl_error": 16,
+    "ssl_error": 18,
+    "challenge": 11,
+    "conn_error": 10,
     "not_found": 9,
-    "conn_error": 9,
-    "challenge": 8,
-    "timeout": 2,
+    "timeout": 3,
     "robots_disallowed": 2,
     "http_5xx": 2,
+    "social_only": 1,
     "parked": 1,
     "unreachable_via_proxy": 1
    }
@@ -1383,18 +1390,18 @@
   },
   "diocese-of-trenton": {
    "sites_in_list": 147,
-   "records": 98,
-   "finished": false,
-   "ok": 38,
+   "records": 147,
+   "finished": true,
+   "ok": 61,
    "by_status": {
-    "ok": 38,
+    "ok": 61,
+    "challenge": 30,
     "dns": 26,
-    "challenge": 13,
-    "timeout": 8,
+    "timeout": 15,
     "ssl_error": 4,
+    "not_found": 3,
+    "conn_error": 3,
     "blocked_403": 2,
-    "conn_error": 2,
-    "not_found": 2,
     "unreachable_via_proxy": 1,
     "blocked_429": 1,
     "http_5xx": 1
@@ -1595,12 +1602,12 @@
   },
   "diocese-of-paterson": {
    "sites_in_list": 134,
-   "records": 126,
-   "finished": false,
-   "ok": 12,
+   "records": 135,
+   "finished": true,
+   "ok": 15,
    "by_status": {
-    "challenge": 101,
-    "ok": 12,
+    "challenge": 107,
+    "ok": 15,
     "dns": 7,
     "parked": 2,
     "unreachable_via_proxy": 1,
@@ -1731,15 +1738,16 @@
   },
   "unassigned-nj": {
    "sites_in_list": 121,
-   "records": 156,
+   "records": 171,
    "finished": true,
-   "ok": 93,
+   "ok": 101,
    "by_status": {
-    "ok": 93,
+    "ok": 101,
     "challenge": 25,
-    "ssl_error": 9,
-    "dns": 8,
+    "ssl_error": 10,
+    "dns": 9,
     "timeout": 7,
+    "social_only": 5,
     "blocked_403": 4,
     "robots_disallowed": 3,
     "conn_error": 3,
@@ -1942,12 +1950,12 @@
   },
   "diocese-of-camden": {
    "sites_in_list": 104,
-   "records": 102,
-   "finished": false,
+   "records": 104,
+   "finished": true,
    "ok": 54,
    "by_status": {
     "ok": 54,
-    "dns": 17,
+    "dns": 19,
     "timeout": 14,
     "challenge": 5,
     "conn_error": 3,
@@ -3554,7 +3562,7 @@
   },
   "eparchy-of-newton": {
    "sites_in_list": 37,
-   "records": 40,
+   "records": 39,
    "finished": true,
    "ok": 26,
    "by_status": {
@@ -3563,10 +3571,10 @@
     "conn_error": 2,
     "unreachable_via_proxy": 2,
     "ssl_error": 2,
-    "timeout": 2,
     "challenge": 2,
     "http_5xx": 1,
-    "blocked_429": 1
+    "blocked_429": 1,
+    "timeout": 1
    }
   },
   "archdiocese-of-mobile": {
@@ -4092,9 +4100,9 @@
   },
   "eparchy-of-st-maron-of-brooklyn": {
    "sites_in_list": 16,
-   "records": 16,
-   "finished": true,
-   "ok": 11,
+   "records": 15,
+   "finished": false,
+   "ok": 10,
    "by_status": {
     "ok": 11,
     "robots_disallowed": 1,
@@ -4417,9 +4425,9 @@
  },
  "totals": {
   "sites_in_list": 20129,
-  "records": 21139,
-  "ok": 11187
+  "records": 21162,
+  "ok": 11202
  },
  "us_parish_pages_discovermass": 20147,
- "updated_at": "2026-11-02T05:39:33+00:00"
+ "updated_at": "2026-11-02T05:41:43+00:00"
 }
