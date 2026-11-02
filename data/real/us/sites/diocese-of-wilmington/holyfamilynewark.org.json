@@ -75,6 +75,12 @@
    "url": "https://holyfamilynewark.org/holy-family-church-newark-delware-parish-calendar/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://holyfamilynewark.org/adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -403,6 +409,24 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:57+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "liturgy"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "parish@holyfamilynewark.org",
   "phone": "(302) 368-4665",
@@ -415,8 +439,5 @@
   },
   "fetched_at": "2026-11-01T03:59:28+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }
