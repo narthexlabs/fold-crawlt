@@ -286,5 +286,5 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-02T03:46:33+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-02T03:46:50+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-02T03:47:01+00:00: fetched {'challenge': 7, 'done': 32, 'dns': 1, 'not_found': 4, 'ssl_error': 1, 'ok': 19, 'timeout': 1, 'cut': 1, 'halted_egress': 0}; parsed 4 dioceses
-- 2026-11-02T04:45:36+00:00: fetched {'ok': 1, 'done': 1, 'halted_egress': 0}; parsed 1 dioceses
-- 2026-11-02T04:56:58+00:00: top-up ('confession', 'adoration', 'liturgy'): {'sites': 659, 'requests': 739, 'found_confession': 236, 'found_adoration': 100, 'found_liturgy': 113}; 0 sites left
+- 2026-11-02T04:41:26+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-02T04:56:08+00:00: top-up ('confession', 'adoration', 'liturgy'): {'sites': 724, 'requests': 854, 'found_adoration': 135, 'found_confession': 287, 'found_liturgy': 130}; 0 sites left
