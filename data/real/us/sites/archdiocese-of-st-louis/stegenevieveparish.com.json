@@ -73,6 +73,12 @@
    "url": "https://www.stegenevieveparish.com/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stegenevieveparish.com/eucharistic-adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -602,5 +608,37 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "30 minutes before each weekend Mass",
+   "phrase": "30 minutes before each weekend Mass",
+   "source_url": "https://www.stegenevieveparish.com/reconciliation",
+   "fetched_at": "2026-11-02T04:41:47+00:00"
+  },
+  {
+   "kind": "confession",
+   "text": "Any time upon request",
+   "phrase": "upon request",
+   "source_url": "https://www.stegenevieveparish.com/reconciliation",
+   "fetched_at": "2026-11-02T04:41:47+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:52+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
  }
 }

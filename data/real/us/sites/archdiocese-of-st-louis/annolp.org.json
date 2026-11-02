@@ -82,6 +82,12 @@
    "url": "https://www.annolp.org/connect-with-us.html",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.annolp.org/sacraments.html",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -559,6 +565,38 @@
    "review_reason": null,
    "confidence": "low",
    "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Eucharistic Adoration is every Tuesday following 8 am Mass until 4 pm.",
+   "source_url": "https://www.annolp.org/eucharistic-adoration.html",
+   "fetched_at": "2026-11-02T04:41:50+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "after",
+   "note": "Eucharistic Adoration is every Tuesday following 8 am Mass until 4 pm.",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "07:30",
+   "language": null,
+   "raw": "[Our Lady of Providence (Crestwood)] Eucharistic Adoration is the 4h Tuesday of every month following 7:30am Mass until 2:30pm.",
+   "source_url": "https://www.annolp.org/eucharistic-adoration.html",
+   "fetched_at": "2026-11-02T04:41:50+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "after",
+   "note": "[Our Lady of Providence (Crestwood)] Eucharistic Adoration is the 4h Tuesday of every month following 7:30am Mass until ",
+   "topup": true
   }
  ],
  "source_url": "https://www.annolp.org/",
@@ -598,5 +636,29 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Note: Special hearing devices for the hearing impaired are available from an usher upon request.",
+   "phrase": "upon request",
+   "source_url": "https://www.annolp.org/sacraments.html",
+   "fetched_at": "2026-11-02T04:41:46+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:50+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
  }
 }
