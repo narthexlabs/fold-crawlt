@@ -79,6 +79,12 @@
    "url": "https://www.olsparish.com/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.olsparish.com/event/adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -282,7 +288,7 @@
    "note": "The Events Calendar (WordPress) REST API",
    "last_fetch": {
     "status": 200,
-    "fetched_at": "2026-11-01T23:39:27+00:00",
+    "fetched_at": "2026-11-02T04:49:49+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -512,9 +518,21 @@
  ],
  "source_url": "https://www.olsparish.com/",
  "fetched_at": "2026-11-01T07:21:41+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:15+00:00",
+  "requests": 1,
+  "found": [
+   "adoration"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -528,13 +546,24 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 7
+  "trusted_kinds": [],
+  "generic_rows": 9
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Saturdays: 2:00 pm – 3:00 pm or by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://www.olsparish.com/mass-confession-times/",
+   "fetched_at": "2026-11-01T07:20:42+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "relative_time": 1,
   "other_location": 3,
   "not_a_service": 1,
+  "dated_block": 2,
   "not_a_mass": 3
  },
  "groups_dropped": {
@@ -542,8 +571,8 @@
   "private_name_risk": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
