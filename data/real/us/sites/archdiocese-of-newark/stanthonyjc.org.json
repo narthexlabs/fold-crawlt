@@ -65,7 +65,8 @@
  "events": [],
  "social": {
   "facebook": [
-   "https://www.facebook.com/stanthonyjc"
+   "https://www.facebook.com/stanthonyjc",
+   "https://www.facebook.com/2008"
   ],
   "livestream": [
    {
@@ -84,6 +85,45 @@
   "source_url": "https://www.saintanthonyjc.com/"
  },
  "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": "English",
+   "raw": "Sunday Mass Schedule:: 8:00am (English),",
+   "source_url": "https://www.saintanthonyjc.com/",
+   "fetched_at": "2026-11-02T01:56:09+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": "Polish",
+   "raw": "Sunday Mass Schedule:: 10:00am (Polish),",
+   "source_url": "https://www.saintanthonyjc.com/",
+   "fetched_at": "2026-11-02T01:56:09+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "12:00",
+   "language": "English",
+   "raw": "Sunday Mass Schedule:: 12 noon (English)",
+   "source_url": "https://www.saintanthonyjc.com/",
+   "fetched_at": "2026-11-02T01:56:09+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace"
+  },
   {
    "kind": "mass",
    "day": "Monday",
@@ -216,51 +256,35 @@
    "template": "squarespace"
   },
   {
-   "kind": "mass",
-   "day": "Sunday",
-   "time": "08:00",
+   "kind": "devotion",
+   "day": "First Friday of the month",
+   "time": "18:00",
    "language": "English",
-   "raw": "Sunday Mass Schedule:: 8:00am (English),",
+   "raw": "First Friday of the Month Devotions: 6:00pm (English)",
    "source_url": "https://www.saintanthonyjc.com/mass-schedule",
    "fetched_at": "2026-11-02T01:56:09+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "medium",
-   "template": "squarespace"
-  },
-  {
-   "kind": "mass",
-   "day": "Sunday",
-   "time": "10:00",
-   "language": "Polish",
-   "raw": "Sunday Mass Schedule:: 10:00am (Polish),",
-   "source_url": "https://www.saintanthonyjc.com/mass-schedule",
-   "fetched_at": "2026-11-02T01:56:09+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "squarespace"
-  },
-  {
-   "kind": "mass",
-   "day": "Sunday",
-   "time": "12:00",
-   "language": "English",
-   "raw": "Sunday Mass Schedule:: 12 noon (English)",
-   "source_url": "https://www.saintanthonyjc.com/mass-schedule",
-   "fetched_at": "2026-11-02T01:56:09+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
+   "confidence": "high",
    "template": "squarespace"
   }
  ],
  "source_url": "http://www.stanthonyjc.org/",
  "fetched_at": "2026-11-02T01:56:12+00:00",
  "redirected_off_host": "saintanthonyjc.com",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:47:45+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "squarespace",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -274,12 +298,10 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 10
  },
  "has_sunday": true,
- "schedule_dropped": {
-  "not_a_service": 1
- },
  "groups_dropped": {},
  "event_counts": {
   "window_start": "2026-11-02",
@@ -305,8 +327,5 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
- },
- "social_shared_links_removed": [
-  "https://www.facebook.com/2008"
- ]
+ }
 }

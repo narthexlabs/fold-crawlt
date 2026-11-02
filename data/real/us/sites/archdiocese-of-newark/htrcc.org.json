@@ -81,6 +81,12 @@
    "url": "https://www.htrcc.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.htrcc.org/reconciliation",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -675,6 +681,20 @@
    "confidence": "medium",
    "template": "squarespace",
    "day_expanded_from": "Monday - Friday"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "16:30-17:00",
+   "language": null,
+   "raw": "Sacrament of Reconciliation Schedule: 4:30 - 5:00 PM",
+   "source_url": "https://www.htrcc.org/reconciliation",
+   "fetched_at": "2026-11-02T04:47:47+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace",
+   "topup": true
   }
  ],
  "source_url": "https://www.htrcc.org/",
@@ -721,5 +741,29 @@
  },
  "social_shared_links_removed": [
   "https://www.facebook.com/2008"
- ]
+ ],
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Reconciliation also Available by Appointment",
+   "phrase": "by Appointment",
+   "source_url": "https://www.htrcc.org/reconciliation",
+   "fetched_at": "2026-11-02T04:47:47+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:47:49+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
+ }
 }

@@ -69,6 +69,12 @@
    "url": "https://www.stjohnhillsdale.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stjohnhillsdale.org/sacraments-1",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -561,5 +567,29 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "This sacrament of Christ’s forgiveness is celebrated each Saturday from 2:00-3:00pm in the Church, or by appointment on weekdays immediately following 8:00am Mass.",
+   "phrase": "by appointment",
+   "source_url": "https://www.stjohnhillsdale.org/sacraments-1",
+   "fetched_at": "2026-11-02T04:47:49+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:47:51+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
  }
 }
