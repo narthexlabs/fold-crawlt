@@ -87,6 +87,18 @@
    "url": "https://www.stmikes.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stmikes.org/eucharistic-adoration",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://www.stmikes.org/liturgy-of-the-church",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -653,6 +665,41 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "By request, after most English Masses.",
+   "phrase": "By request",
+   "source_url": "https://www.stmikes.org/mass-confession-times",
+   "fetched_at": "2026-11-02T04:41:34+00:00"
+  },
+  {
+   "kind": "confession",
+   "text": "By appointment",
+   "phrase": "By appointment",
+   "source_url": "https://www.stmikes.org/mass-confession-times",
+   "fetched_at": "2026-11-02T04:41:34+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:36+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(978) 562-2552",
@@ -664,8 +711,5 @@
   },
   "fetched_at": "2026-11-01T05:09:56+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

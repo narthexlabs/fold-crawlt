@@ -81,6 +81,12 @@
    "url": "https://www.ctredeemer.org/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.ctredeemer.org/reconciliation",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -263,9 +269,9 @@
    "day": "Saturday",
    "time": "17:00",
    "language": null,
-   "raw": "Weekend Masses: Saturday | 5:00 PM at Christ the Redeemer",
-   "source_url": "https://www.ctredeemer.org/mass-schedulec5adba80",
-   "fetched_at": "2026-11-01T18:51:45+00:00",
+   "raw": "Weekend Masses: Saturday | 5:00 PM",
+   "source_url": "https://www.ctredeemer.org/",
+   "fetched_at": "2026-11-01T18:51:43+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -276,9 +282,9 @@
    "day": "Sunday",
    "time": "09:00",
    "language": null,
-   "raw": "Weekend Masses: Sunday | 9:00 AM, 11:00 AM at Christ the Redeemer",
-   "source_url": "https://www.ctredeemer.org/mass-schedulec5adba80",
-   "fetched_at": "2026-11-01T18:51:45+00:00",
+   "raw": "Weekend Masses: Sunday | 9:00 AM, 11:00 AM",
+   "source_url": "https://www.ctredeemer.org/",
+   "fetched_at": "2026-11-01T18:51:43+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -289,9 +295,35 @@
    "day": "Sunday",
    "time": "11:00",
    "language": null,
-   "raw": "Weekend Masses: Sunday | 9:00 AM, 11:00 AM at Christ the Redeemer",
-   "source_url": "https://www.ctredeemer.org/mass-schedulec5adba80",
-   "fetched_at": "2026-11-01T18:51:45+00:00",
+   "raw": "Weekend Masses: Sunday | 9:00 AM, 11:00 AM",
+   "source_url": "https://www.ctredeemer.org/",
+   "fetched_at": "2026-11-01T18:51:43+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "19:00",
+   "language": null,
+   "raw": "Weekday Masses: Tuesday | 7:00 PM",
+   "source_url": "https://www.ctredeemer.org/",
+   "fetched_at": "2026-11-01T18:51:43+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Weekday Masses: Thursday | 9:00 AM",
+   "source_url": "https://www.ctredeemer.org/",
+   "fetched_at": "2026-11-01T18:51:43+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -312,36 +344,10 @@
   },
   {
    "kind": "mass",
-   "day": "Tuesday",
-   "time": "19:00",
-   "language": null,
-   "raw": "Weekday Masses*: Tuesday | 7:00 PM at Christ the Redeemer",
-   "source_url": "https://www.ctredeemer.org/mass-schedulec5adba80",
-   "fetched_at": "2026-11-01T18:51:45+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
-  {
-   "kind": "mass",
    "day": "Wednesday",
    "time": "09:00",
    "language": null,
    "raw": "Weekday Masses*: Wednesday | 9:00 AM at St. Joseph",
-   "source_url": "https://www.ctredeemer.org/mass-schedulec5adba80",
-   "fetched_at": "2026-11-01T18:51:45+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
-  {
-   "kind": "mass",
-   "day": "Thursday",
-   "time": "09:00",
-   "language": null,
-   "raw": "Weekday Masses*: Thursday | 9:00 AM at Christ the Redeemer",
    "source_url": "https://www.ctredeemer.org/mass-schedulec5adba80",
    "fetched_at": "2026-11-01T18:51:45+00:00",
    "needs_review": false,
@@ -391,9 +397,21 @@
  ],
  "source_url": "http://www.ctredeemer.org/",
  "fetched_at": "2026-11-01T18:51:52+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:39+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -407,11 +425,21 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 9
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Weekday | By Appointment",
+   "phrase": "By Appointment",
+   "source_url": "https://www.ctredeemer.org/mass-schedulec5adba80",
+   "fetched_at": "2026-11-01T18:51:45+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "relative_time": 1
+  "relative_time": 2
  },
  "groups_dropped": {
   "label_not_group": 3,
@@ -419,8 +447,8 @@
   "sentence": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

@@ -69,6 +69,18 @@
    "url": "https://www.stcharlesnederland.org/about-us/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stcharlesnederland.org/sacraments-and-services/penance",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stcharlesnederland.org/ministries/adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -188,7 +200,36 @@
   "text": "Current Bulletin",
   "source_url": "https://www.stcharlesnederland.org/news-and-events/weekly-bulletin"
  },
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "09:00-17:45",
+   "language": null,
+   "raw": "Adoration Ministry Information: Wednesdays • 9:00 - 5:45 pm",
+   "source_url": "https://www.stcharlesnederland.org/ministries/adoration",
+   "fetched_at": "2026-11-02T04:41:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "18:00",
+   "language": null,
+   "raw": "Followed by Mass at 6:00 pm",
+   "source_url": "https://www.stcharlesnederland.org/ministries/adoration",
+   "fetched_at": "2026-11-02T04:41:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  }
+ ],
  "source_url": "https://www.stcharlesnederland.org/",
  "fetched_at": "2026-11-01T03:05:16+00:00",
  "schedule_template": {
@@ -228,5 +269,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:41+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
  }
 }

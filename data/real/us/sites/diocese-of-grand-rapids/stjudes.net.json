@@ -81,6 +81,18 @@
    "url": "https://stjudes.net/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stjudes.net/reconciliation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stjudes.net/adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -235,6 +247,21 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "09:00-19:00",
+   "language": null,
+   "raw": "Adoration: Jude Parish the fourth Tuesday of each month from 9:00am to 7:00pm.",
+   "source_url": "https://stjudes.net/adoration/",
+   "fetched_at": "2026-11-02T04:41:45+00:00",
+   "needs_review": true,
+   "review_reason": "nth_of_month",
+   "confidence": "medium",
+   "template": "wordpress",
+   "nth": "fourth",
+   "topup": true
   }
  ],
  "source_url": "http://www.stjudes.net/",
@@ -277,5 +304,30 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Or by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://stjudes.net/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:44+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:46+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

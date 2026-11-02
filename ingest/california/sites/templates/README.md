@@ -105,3 +105,21 @@ holidays as kind other; "no Mass at ..." negation; sticky kind only for Mass lis
    `build_ca_static.py --no-geocode`, `npm run typecheck`, `npm run build`.
 5. Re-measure with /tmp/review/compare.js (seed 20261031) against 33.5% and the other agent's 5.3%; trusted counts per
    platform; Oakland Find counts. Commit in steps; append "Templates 2026-10-31" to the review doc and a line to CLAUDE.md.
+
+## 2026-11-01: whole weekly schedule (confession, adoration, devotions)
+
+Matthew: a parish is complete only with its whole posted weekly schedule. Changes (parser version `ca-sites/3`):
+- Fetch: page kinds `confession`, `adoration`, `liturgy` (fetch_site.CATS; one page each, one guessed `/reconciliation` and
+  `/adoration` for eCatholic / WordPress without such a link). A page fetched as confession / adoration whose URL or title
+  names it is read with that kind as its default (common.page_kind_default). `run_state.py topup` fetches only these kinds
+  for sites already crawled ok (runners: scripts/us/sites_chunk.sh, TOPUP_MINUTES, default 25 taken from the chunk).
+- Parse: "(except ...)" / "[except in Summer]" / "except January 1" become the row's `note` and never drop it
+  (common.split_except); "until about 3:30 pm" is the end; em dashes join a time to its kind; "Eucharistic Adoration"
+  after a range is adoration; devotions (rosary, novena, stations, chaplet, Gorzkie Zale, vespers) are kind `devotion`
+  (merge / lib/schedule.ts show it as other); "Holy Days of Obligation:" is not a church name; a church heading above a
+  home-page "MASS TIMES" block is carried into the block (two-church sites); the home page is always a schedule source;
+  "Friday after the 8:30 Mass" is kept as a needs_review row with `relative`; "by appointment" / "30 minutes before each
+  Mass" go to `schedule_notes`; "No Mass on Mondays" to `schedule_none`; weekly calendar-feed entries to
+  `calendar_schedule_rows` (merge tier 7, off until docs/patches/2026-11-01-find-calendar-tier.patch is built and applied).
+- Regression cases: `truth/fixtures/` (real caches + three screenshot reconstructions ending `.invalid`):
+  `python3 -I ingest/california/sites/templates/truth/fixtures/check_fixtures.py`

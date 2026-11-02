@@ -87,6 +87,12 @@
    "url": "https://www.parishfamily45.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://www.parishfamily45.org/liturgy",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -654,9 +660,21 @@
  ],
  "source_url": "https://www.parishfamily45.org/",
  "fetched_at": "2026-11-01T20:25:14+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:42+00:00",
+  "requests": 1,
+  "found": [
+   "liturgy"
+  ]
+ },
  "schedule_template": {
   "template": "wix",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -670,8 +688,18 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 20
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Reconciliation by appointment is also available by contacting any of our parish offices!",
+   "phrase": "by appointment",
+   "source_url": "https://www.parishfamily45.org/reconciliation",
+   "fetched_at": "2026-11-01T20:25:05+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "relative_time": 1,
@@ -680,8 +708,8 @@
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

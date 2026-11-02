@@ -63,6 +63,18 @@
    "url": "https://www.saintjoachimchurch.org/contact-us--directions.html",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.saintjoachimchurch.org/sacraments.html",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.saintjoachimchurch.org/adoration.html",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -298,13 +310,96 @@
    "confidence": "medium",
    "template": "weebly",
    "location": "St. Joachim"
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "05:00-22:00",
+   "language": null,
+   "raw": "[St. Joachim] The Eucharist is exposed for Adoration in the church on Tuesdays from 5 am until 10 pm and Wednesdays from 5 am-9 pm.",
+   "source_url": "https://www.saintjoachimchurch.org/adoration.html",
+   "fetched_at": "2026-11-02T04:41:57+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "weebly",
+   "location": "St. Joachim"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "05:00-21:00",
+   "language": null,
+   "raw": "[St. Joachim] The Eucharist is exposed for Adoration in the church on Tuesdays from 5 am until 10 pm and Wednesdays from 5 am-9 pm.",
+   "source_url": "https://www.saintjoachimchurch.org/adoration.html",
+   "fetched_at": "2026-11-02T04:41:57+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "weebly",
+   "location": "St. Joachim"
+  },
+  {
+   "kind": "devotion",
+   "day": "First Friday of the month",
+   "time": "08:30",
+   "language": null,
+   "raw": "[St. Joachim] 8:30 am at St. Joachim",
+   "source_url": "https://www.saintjoachimchurch.org/adoration.html",
+   "fetched_at": "2026-11-02T04:41:57+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly",
+   "location": "St. Joachim"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "08:00",
+   "language": null,
+   "raw": "[St. Joachim] 8:00 am at Immaculate Conception",
+   "source_url": "https://www.saintjoachimchurch.org/adoration.html",
+   "fetched_at": "2026-11-02T04:41:57+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly",
+   "kind_parsed": "devotion",
+   "location": "St. Joachim"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:30",
+   "language": null,
+   "raw": "RECONCILIATION: Every Saturday 3:30 PM or by appointment.",
+   "source_url": "https://www.saintjoachimchurch.org/sacraments.html",
+   "fetched_at": "2026-11-02T04:41:55+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly"
   }
  ],
  "source_url": "https://www.saintjoachimchurch.org/",
  "fetched_at": "2026-11-01T17:27:05+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:57+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "weebly",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -318,19 +413,31 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 9
+  "trusted_kinds": [],
+  "generic_rows": 17
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Every Saturday 3:30 PM or by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://www.saintjoachimchurch.org/sacraments.html",
+   "fetched_at": "2026-11-02T04:41:55+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 1
+  "other_location": 1,
+  "relative_time": 1,
+  "dated_block": 2
  },
  "groups_dropped": {
   "sacrament_prep": 1,
   "noise": 5
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

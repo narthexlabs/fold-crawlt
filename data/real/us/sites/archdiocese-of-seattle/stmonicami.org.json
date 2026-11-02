@@ -387,7 +387,7 @@
    "language": "zh",
    "language_assumed": false,
    "meets": null,
-   "description": "Founded in 1982, the Seattle Chinese Catholic Community is a Catholic faith group serving the Chinese community in Western Washington.",
+   "description": "Founded in 1982, the Seattle Chinese Catholic Community is a Catholic faith group serving the Chinese community in [name withheld]",
    "contact_url": "https://www.stmonicami.org/contact",
    "contact_role": "parish office (see contact page)",
    "source_url": "https://www.stmonicami.org/community",
@@ -968,6 +968,26 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()",
+  "contacts_removed": 0,
+  "names_withheld": 1
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:48+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "parishoffice@stmonicami.org",
   "phone": "(206) 232-2900",
@@ -980,8 +1000,5 @@
   },
   "fetched_at": "2026-11-01T02:18:02+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

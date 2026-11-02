@@ -63,6 +63,12 @@
    "url": "https://stgen.sacredheartbrewster.org/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stgen.sacredheartbrewster.org/adoration/",
+   "status": null,
+   "class": "timeout"
   }
  ],
  "cms_guess": {
@@ -188,12 +194,25 @@
    "day": "Sunday",
    "time": "11:00",
    "language": null,
-   "raw": "Public Masses: 11:00 AM, Rosary 10:20 AM",
-   "source_url": "https://stgen.sacredheartbrewster.org/mass-schedule/",
-   "fetched_at": "2026-11-01T17:27:23+00:00",
+   "raw": "MASS SCHEDULE:: Sunday 11:00 a.m., Rosary 10:20 a.m.",
+   "source_url": "https://stgen.sacredheartbrewster.org/",
+   "fetched_at": "2026-11-01T17:27:03+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "devotion",
+   "day": "Sunday",
+   "time": "10:20",
+   "language": null,
+   "raw": "Sunday 11:00 a.m., Rosary 10:20 a.m.",
+   "source_url": "https://stgen.sacredheartbrewster.org/",
+   "fetched_at": "2026-11-01T17:27:03+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
    "template": "wordpress"
   },
   {
@@ -201,9 +220,9 @@
    "day": "Wednesday",
    "time": "09:30",
    "language": null,
-   "raw": "Public Masses: 9:30 AM Wednesday",
-   "source_url": "https://stgen.sacredheartbrewster.org/mass-schedule/",
-   "fetched_at": "2026-11-01T17:27:23+00:00",
+   "raw": "MASS SCHEDULE:: Wednesday 9:30 a.m.",
+   "source_url": "https://stgen.sacredheartbrewster.org/",
+   "fetched_at": "2026-11-01T17:27:03+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -214,11 +233,13 @@
    "day": "Sunday",
    "time": "10:00",
    "language": null,
-   "raw": "10:00 AM ET every Sunday",
+   "raw": "Live Mass from the Basilica of the Sacred Heart at Notre Dam: 10:00 AM ET every Sunday",
    "source_url": "https://stgen.sacredheartbrewster.org/",
    "fetched_at": "2026-11-01T17:27:03+00:00",
    "needs_review": false,
-   "review_reason": "schedule_box"
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
   },
   {
    "kind": "mass",
@@ -229,7 +250,42 @@
    "source_url": "https://stgen.sacredheartbrewster.org/",
    "fetched_at": "2026-11-01T17:27:03+00:00",
    "needs_review": false,
-   "review_reason": "schedule_box"
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Monday-Friday"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "09:30",
+   "language": null,
+   "raw": "9:30 AM Monday Friday [Mass intention withheld]",
+   "source_url": "https://stgen.sacredheartbrewster.org/",
+   "fetched_at": "2026-11-01T17:27:03+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Monday-Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "09:30",
+   "language": null,
+   "raw": "9:30 AM Monday Friday [Mass intention withheld]",
+   "source_url": "https://stgen.sacredheartbrewster.org/",
+   "fetched_at": "2026-11-01T17:27:03+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Monday-Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
   },
   {
    "kind": "mass",
@@ -240,71 +296,55 @@
    "source_url": "https://stgen.sacredheartbrewster.org/",
    "fetched_at": "2026-11-01T17:27:03+00:00",
    "needs_review": false,
-   "review_reason": "schedule_box",
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Monday-Friday",
    "day_parsed": "Monday",
    "day_bound_from_line": true
   },
   {
    "kind": "mass",
    "day": "Sunday",
-   "time": "10:15",
-   "language": null,
-   "raw": "10:15 AM ET every Sunday",
-   "source_url": "https://stgen.sacredheartbrewster.org/",
-   "fetched_at": "2026-11-01T17:27:03+00:00",
-   "needs_review": false,
-   "review_reason": "schedule_box"
-  },
-  {
-   "kind": "mass",
-   "day": "Sunday",
    "time": "08:00",
-   "language": null,
-   "raw": "8:00 AM, 5:30 PM, 10:00 PM ET every Sunday",
+   "language": "Spanish",
+   "raw": "Spanish Masses:: 8:00 AM, 5:30 PM, 10:00 PM ET every Sunday",
    "source_url": "https://stgen.sacredheartbrewster.org/",
    "fetched_at": "2026-11-01T17:27:03+00:00",
    "needs_review": false,
-   "review_reason": "schedule_box"
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
   },
   {
    "kind": "mass",
    "day": "Sunday",
    "time": "17:30",
-   "language": null,
-   "raw": "8:00 AM, 5:30 PM, 10:00 PM ET every Sunday",
+   "language": "Spanish",
+   "raw": "Spanish Masses:: 8:00 AM, 5:30 PM, 10:00 PM ET every Sunday",
    "source_url": "https://stgen.sacredheartbrewster.org/",
    "fetched_at": "2026-11-01T17:27:03+00:00",
    "needs_review": false,
-   "review_reason": "schedule_box"
-  },
-  {
-   "kind": "mass",
-   "day": "Sunday",
-   "time": "22:00",
-   "language": null,
-   "raw": "8:00 AM, 5:30 PM, 10:00 PM ET every Sunday",
-   "source_url": "https://stgen.sacredheartbrewster.org/",
-   "fetched_at": "2026-11-01T17:27:03+00:00",
-   "needs_review": false,
-   "review_reason": "schedule_box"
-  },
-  {
-   "kind": "mass",
-   "day": "Sunday",
-   "time": "12:00",
-   "language": null,
-   "raw": "8:00 AM, 12:00 PM every Sunday",
-   "source_url": "https://stgen.sacredheartbrewster.org/",
-   "fetched_at": "2026-11-01T17:27:03+00:00",
-   "needs_review": false,
-   "review_reason": "schedule_box"
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
   }
  ],
  "source_url": "https://stgen.sacredheartbrewster.org/",
  "fetched_at": "2026-11-01T17:28:23+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:18+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -318,16 +358,15 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 7
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "not_a_service": 2,
   "relative_time": 2,
   "other_location": 3,
   "implausible_hour": 1,
-  "not_a_mass": 1,
-  "box_rows_added": 8
+  "not_a_mass": 1
  },
  "groups_dropped": {
   "noise": 6,
@@ -335,8 +374,8 @@
   "unmatched": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
@@ -357,6 +396,7 @@
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
  },
  "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
+  "screened_by": "ingest/public/privacy.py screen()",
+  "intentions_withheld": 4
  }
 }

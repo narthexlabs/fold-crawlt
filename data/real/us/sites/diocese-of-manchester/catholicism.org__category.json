@@ -51,6 +51,12 @@
    "url": "https://catholicism.org/contactus",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://catholicism.org/adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -171,6 +177,19 @@
    "needs_review": false,
    "review_reason": null,
    "confidence": "high",
+   "template": "wordpress"
+  },
+  {
+   "kind": "devotion",
+   "day": "Sunday",
+   "time": "22:00",
+   "language": null,
+   "raw": "Sunday Masses: 8:30 a.m. low Mass, 10:30 a.m. Missa Cantata (with Rosary preceding at 10:00).",
+   "source_url": "https://catholicism.org/mass-schedule.html",
+   "fetched_at": "2026-11-02T01:57:27+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
    "template": "wordpress"
   },
   {
@@ -398,9 +417,21 @@
  ],
  "source_url": "http://catholicism.org/category/saint-benedict-center-in-richmond-new-hampshire",
  "fetched_at": "2026-11-02T02:47:18+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:43+00:00",
+  "requests": 1,
+  "found": [
+   "adoration"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -414,11 +445,20 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 9
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://catholicism.org/mass-schedule.html",
+   "fetched_at": "2026-11-02T01:57:27+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "not_a_service": 1,
   "skipped_section": 1
  },
  "groups_dropped": {},

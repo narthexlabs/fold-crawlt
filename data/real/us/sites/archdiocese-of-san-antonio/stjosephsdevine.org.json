@@ -337,68 +337,23 @@
    "day_expanded_from": "MONDAY through FRIDAY",
    "day_parsed": "Monday",
    "day_bound_from_line": true
-  },
-  {
-   "kind": "adoration",
-   "day": "Monday",
-   "time": "08:30-12:00",
-   "language": null,
-   "raw": "Daily Adoration of the Blessed Sacrament: Monday-Wednesday: 8:30am-12:00pm Thursday: 8:30am-7:00pm",
-   "source_url": "https://stjosephsdevine.org/",
-   "fetched_at": "2026-11-01T08:04:54+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "godaddy",
-   "day_expanded_from": "Monday-Wednesday"
-  },
-  {
-   "kind": "adoration",
-   "day": "Tuesday",
-   "time": "08:30-12:00",
-   "language": null,
-   "raw": "Daily Adoration of the Blessed Sacrament: Monday-Wednesday: 8:30am-12:00pm Thursday: 8:30am-7:00pm",
-   "source_url": "https://stjosephsdevine.org/",
-   "fetched_at": "2026-11-01T08:04:54+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "godaddy",
-   "day_expanded_from": "Monday-Wednesday"
-  },
-  {
-   "kind": "adoration",
-   "day": "Wednesday",
-   "time": "08:30-12:00",
-   "language": null,
-   "raw": "Daily Adoration of the Blessed Sacrament: Monday-Wednesday: 8:30am-12:00pm Thursday: 8:30am-7:00pm",
-   "source_url": "https://stjosephsdevine.org/",
-   "fetched_at": "2026-11-01T08:04:54+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "godaddy",
-   "day_expanded_from": "Monday-Wednesday"
-  },
-  {
-   "kind": "adoration",
-   "day": "Thursday",
-   "time": "08:30-19:00",
-   "language": null,
-   "raw": "Daily Adoration of the Blessed Sacrament: Monday-Wednesday: 8:30am-12:00pm Thursday: 8:30am-7:00pm",
-   "source_url": "https://stjosephsdevine.org/",
-   "fetched_at": "2026-11-01T08:04:54+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "godaddy"
   }
  ],
  "source_url": "https://stjosephsdevine.org/",
  "fetched_at": "2026-11-01T08:05:06+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:31+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "godaddy",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -412,11 +367,21 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 23
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Confessions-30 minutes before every Mass at all locations and by appointment if needed.",
+   "phrase": "30 minutes before every Mass",
+   "source_url": "https://stjosephsdevine.org/",
+   "fetched_at": "2026-11-01T08:04:54+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 2,
+  "other_location": 4,
   "no_kind": 1
  },
  "groups_dropped": {
@@ -425,8 +390,8 @@
   "noise": 4
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

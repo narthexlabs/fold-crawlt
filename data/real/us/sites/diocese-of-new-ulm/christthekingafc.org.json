@@ -69,6 +69,12 @@
    "url": "https://www.christthekingafc.com/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.christthekingafc.com/sacraments",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -91,7 +97,7 @@
    "note": "Google Calendar public feed (website-builder widget)",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-02T01:56:21+00:00",
+    "fetched_at": "2026-11-02T04:48:13+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -109,7 +115,7 @@
    "feed_key": "85a2a69a46b6",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-02T01:56:22+00:00",
+    "fetched_at": "2026-11-02T04:48:14+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -129,6 +135,19 @@
   "source_url": "https://www.christthekingafc.com/"
  },
  "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "08:15",
+   "language": null,
+   "raw": "Mass Times: 8:15am",
+   "source_url": "https://www.christthekingafc.com/",
+   "fetched_at": "2026-11-02T01:56:05+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
   {
    "kind": "mass",
    "day": "Saturday",
@@ -185,9 +204,21 @@
  "source_url": "http://www.christthekingafc.org/",
  "fetched_at": "2026-11-02T01:56:09+00:00",
  "redirected_off_host": "christthekingafc.com",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:58+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -201,12 +232,12 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 9
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "no_day": 90,
-  "not_a_service": 5
+  "no_day": 95
  },
  "groups_dropped": {},
  "event_counts": {

@@ -69,6 +69,18 @@
    "url": "https://www.queenofpeaceparishep.org/parish-calendar.html",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.queenofpeaceparishep.org/reconciliation.html",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.queenofpeaceparishep.org/adoration-ministry.html",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -437,6 +449,20 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "weebly"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:30-16:30",
+   "language": null,
+   "raw": "Sacrament of Reconciliation: 3:30 pm-4:30 pm",
+   "source_url": "https://www.queenofpeaceparishep.org/reconciliation.html",
+   "fetched_at": "2026-11-02T04:41:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly",
+   "topup": true
   }
  ],
  "source_url": "https://www.queenofpeaceparishep.org/",
@@ -478,5 +504,29 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Confessions are also available by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://www.queenofpeaceparishep.org/reconciliation.html",
+   "fetched_at": "2026-11-02T04:41:41+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:42+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

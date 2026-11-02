@@ -81,6 +81,18 @@
    "url": "https://www.sta-stm.org/st-anthony-contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.sta-stm.org/st-anthony-sacraments",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://www.sta-stm.org/liturgical-options-at-st-mary",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -321,6 +333,20 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Tuesday",
+   "time": "17:30-18:00",
+   "language": null,
+   "raw": "Confession times:: Tuesday: 5:30 pm - 6:00 pm",
+   "source_url": "https://www.sta-stm.org/st-anthony-sacraments",
+   "fetched_at": "2026-11-02T04:41:48+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
   }
  ],
  "source_url": "http://stanthonyofsaranac.org/",
@@ -365,5 +391,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:51+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

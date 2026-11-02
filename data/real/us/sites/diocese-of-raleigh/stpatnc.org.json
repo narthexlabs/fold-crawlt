@@ -69,6 +69,18 @@
    "url": "https://faithconnector.s3.amazonaws.com/3308/files/HSM/2024-2025_hym_calendar.pdf",
    "status": 403,
    "class": "blocked_403"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stpatnc.org/penance",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://www.stpatnc.org/environment",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -685,5 +697,29 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "The Sacrament of Penance (confession) is celebrated each Saturday from 3 to 4:30 PM in the Church. In addition, the sacrament is available by appointment. Please call the church office at to set up an",
+   "phrase": "by appointment",
+   "source_url": "https://www.stpatnc.org/penance",
+   "fetched_at": "2026-11-02T04:41:44+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:45+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
  }
 }

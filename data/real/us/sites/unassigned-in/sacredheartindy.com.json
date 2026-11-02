@@ -75,6 +75,12 @@
    "url": "https://www.sacredheartindy.com/team-4",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.sacredheartindy.com/general-9-3",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -220,9 +226,9 @@
    "day": "Sunday",
    "time": "09:00",
    "language": null,
-   "raw": "Weekend Mass: Sunday 9:00 AM",
-   "source_url": "https://www.sacredheartindy.com/general-9",
-   "fetched_at": "2026-11-01T20:25:07+00:00",
+   "raw": "MASS TIMES: Sunday 9:00 AM",
+   "source_url": "https://www.sacredheartindy.com/",
+   "fetched_at": "2026-11-01T20:25:04+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -233,9 +239,9 @@
    "day": "First Saturday of the month",
    "time": "08:30",
    "language": null,
-   "raw": "Mass & Devotion to Sacred Heart: 8:30 AM",
-   "source_url": "https://www.sacredheartindy.com/general-9",
-   "fetched_at": "2026-11-01T20:25:07+00:00",
+   "raw": "MASS TIMES: 1st Saturday of every month 8:30 AM",
+   "source_url": "https://www.sacredheartindy.com/",
+   "fetched_at": "2026-11-01T20:25:04+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -246,22 +252,9 @@
    "day": "Tuesday",
    "time": "17:30",
    "language": null,
-   "raw": "Weekday Mass: Tuesday 5:30 PM",
-   "source_url": "https://www.sacredheartindy.com/general-9",
-   "fetched_at": "2026-11-01T20:25:07+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wix"
-  },
-  {
-   "kind": "adoration",
-   "day": "Sunday",
-   "time": "08:00-08:30",
-   "language": null,
-   "raw": "Eucharistic Adoration: Sunday 8:00-8:30 AM",
-   "source_url": "https://www.sacredheartindy.com/general-9",
-   "fetched_at": "2026-11-01T20:25:07+00:00",
+   "raw": "MASS TIMES: Tuesday 5:30 PM",
+   "source_url": "https://www.sacredheartindy.com/",
+   "fetched_at": "2026-11-01T20:25:04+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -272,7 +265,33 @@
    "day": "Sunday",
    "time": "08:00-08:30",
    "language": null,
-   "raw": "Confession: Sunday 8:00 AM-8:30 AM",
+   "raw": "CONFESSION: Sunday 8:00 - 8:30 AM",
+   "source_url": "https://www.sacredheartindy.com/",
+   "fetched_at": "2026-11-01T20:25:04+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix"
+  },
+  {
+   "kind": "adoration",
+   "day": "Sunday",
+   "time": "08:00-08:30",
+   "language": null,
+   "raw": "EUCHARISTIC ADORATION: Sunday 8:00 - 8:30 AM",
+   "source_url": "https://www.sacredheartindy.com/",
+   "fetched_at": "2026-11-01T20:25:04+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix"
+  },
+  {
+   "kind": "devotion",
+   "day": "Sunday",
+   "time": "08:10-08:30",
+   "language": null,
+   "raw": "Sunday 8:10-8:30 AM",
    "source_url": "https://www.sacredheartindy.com/general-9",
    "fetched_at": "2026-11-01T20:25:07+00:00",
    "needs_review": false,
@@ -283,9 +302,21 @@
  ],
  "source_url": "https://www.sacredheartindy.com/",
  "fetched_at": "2026-11-01T20:25:15+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:36+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wix",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -299,18 +330,25 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 4
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Other | By appointment",
+   "phrase": "By appointment",
+   "source_url": "https://www.sacredheartindy.com/",
+   "fetched_at": "2026-11-01T20:25:04+00:00"
+  }
+ ],
  "has_sunday": true,
- "schedule_dropped": {
-  "not_a_service": 1
- },
  "groups_dropped": {
   "unmatched": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

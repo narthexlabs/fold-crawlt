@@ -75,6 +75,18 @@
    "url": "https://holymartyrschaldean.com/about/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://holymartyrschaldean.com/thanksgiving-adoration/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://holymartyrschaldean.com/christmas-schedule/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -134,7 +146,7 @@
    "note": "The Events Calendar (WordPress) REST API",
    "last_fetch": {
     "status": 200,
-    "fetched_at": "2026-11-01T23:33:29+00:00",
+    "fetched_at": "2026-11-02T04:43:43+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -173,13 +185,40 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "11:00",
+   "language": null,
+   "raw": "Sign up for adoration from 11am - 6:30pm on Thanksgiving Day",
+   "source_url": "https://holymartyrschaldean.com/thanksgiving-adoration/",
+   "fetched_at": "2026-11-02T04:41:36+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "kind_parsed": "adoration"
   }
  ],
  "source_url": "https://holymartyrschaldean.com/",
  "fetched_at": "2026-11-01T22:16:12+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:41+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "liturgy"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -193,14 +232,15 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 1
+  "trusted_kinds": [],
+  "generic_rows": 2
  },
  "has_sunday": false,
  "schedule_partial": true,
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

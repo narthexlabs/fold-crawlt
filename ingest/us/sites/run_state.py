@@ -5,6 +5,8 @@
     python3 -I ingest/us/sites/run_state.py chunk --minutes 100 [--workers 24] [--state TX] [--diocese <slug>,...]
     python3 -I ingest/us/sites/run_state.py parse <diocese-slug> [--all]   # (re)parse cached sites of one diocese
     python3 -I ingest/us/sites/run_state.py reparse --state TX,IA --minutes 30  # all cached sites, once per parser version
+    python3 -I ingest/us/sites/run_state.py topup --kinds confession,adoration,liturgy --state TX --minutes 25 [--workers 128]
+                                                                           # only the new page kinds, for sites already crawled ok
     python3 -I ingest/us/sites/run_state.py readme                         # data/real/us/sites/README.md tables
     python3 -I ingest/us/sites/run_state.py status
 
@@ -518,9 +520,190 @@ def cmd_reparse(a) -> int:
     return 0
 
 
+# ------------------------------------------------------------------------------------------------ top-up (2026-11-01)
+TOPUP = RAW / "_topup"
+
+
+def _record(dio: str, key: str) -> dict | None:
+    fn = OUT / dio / (key.replace("/", "__") + ".json")
+    try:
+        return json.loads(fn.read_text()) if fn.exists() else None
+    except ValueError:
+        return None
+
+
+def topup_needed(dio: str, s: dict, kinds: tuple[str, ...]) -> bool:
+    """A site whose record says crawl_status ok, which has none of `kinds` among its fetched pages and has not been
+    topped up for them yet (the stamp lives in the record, so a fresh runner cache does not repeat the work)."""
+    if s["social_only"]:
+        return False
+    rec = _record(dio, s["key"])
+    if not rec or rec.get("crawl_status") != "ok" or rec.get("fetch_mode") == "rendered":
+        return False
+    done = set((rec.get("topup") or {}).get("kinds") or [])
+    have = {p.get("category") for p in rec.get("pages") or []}
+    return any(k not in have and k not in done for k in kinds)
+
+
+def topup_merge(dio: str, s: dict, tdir: Path, m: dict, kinds: tuple[str, ...]) -> bool:
+    """A site topped up without its full raw cache (crawled on another machine): parse its home page plus the new pages
+    and add to the stored record only what is new -- confession / adoration rows (and Mass rows when the record has no
+    Sunday Mass) whose (kind, day, start) the record lacks, the new pages' entries, schedule notes. Nothing is removed."""
+    import parse_site as P
+    import templates as T
+    fn = OUT / dio / (s["key"].replace("/", "__") + ".json")
+    rec = _record(dio, s["key"])
+    if rec is None:
+        return False
+    pages = P.load_pages(tdir, m)
+    new = [p for p in pages if p.kind in kinds]
+    added = 0
+    if new:
+        home = [p for p in pages if p.kind == "home"]
+        try:
+            res = T.parse_schedule(home + new, rec.get("names") or [])
+            rows = P.row_hygiene(res["rows"], {})
+        except Exception as e:  # noqa: BLE001
+            rows = []
+            rec.setdefault("topup_errors", []).append(repr(e)[:160])
+        new_urls = {p.url for p in new}
+        have = {(r.get("kind"), r.get("day"), (r.get("time") or "")[:5]) for r in rec.get("schedule_rows") or []}
+        for r in rows:
+            if r.get("source_url") not in new_urls:
+                continue
+            if r["kind"] not in ("confession", "adoration") and not (r["kind"] == "mass" and not rec.get("has_sunday")):
+                continue
+            k = (r["kind"], r["day"], (r["time"] or "")[:5])
+            if k in have:
+                continue
+            have.add(k)
+            rec.setdefault("schedule_rows", []).append(dict(r, topup=True))
+            added += 1
+        known = {p.get("url") for p in rec.get("pages") or []}
+        rec["pages"] = (rec.get("pages") or []) + [{"category": p.kind, "url": p.url, "status": p.rec.get("status"), "class": "ok"}
+                                                   for p in new if p.url not in known]
+        notes = P.schedule_notes(new)
+        if notes:
+            seen = {(n["kind"], n["phrase"].lower()) for n in rec.get("schedule_notes") or []}
+            rec["schedule_notes"] = (rec.get("schedule_notes") or []) + [n for n in notes if (n["kind"], n["phrase"].lower()) not in seen]
+    tu = m.get("topup") or {}
+    rec["topup"] = {"kinds": sorted(set((rec.get("topup") or {}).get("kinds") or []) | set(kinds)), "at": tu.get("at") or now_iso(),
+                    "requests": tu.get("requests"), "found": tu.get("found") or [], "rows_added": added, "mode": "merge"}
+    P.screen_record(rec)
+    fn.write_text(json.dumps(rec, indent=1, ensure_ascii=False) + "\n", "utf-8")
+    return True
+
+
+def cmd_topup(a) -> int:
+    """Fetch only the new page kinds (fetch_site.NEW_KINDS: confession, adoration, liturgy) for sites already crawled ok,
+    then re-parse them. Same pacer, robots.txt, Crawl-delay, honest user agent and refusal rules as the crawl; at most one
+    page per kind plus one guessed URL per kind for eCatholic / WordPress sites whose nav has no such link. A site whose
+    full raw cache is on this machine is topped up in that cache and parsed in full; any other site is topped up in
+    data/raw/us/sites/_topup/<domain>/ (its home page fetched once more) and the new rows are merged into its record."""
+    t0 = time.time()
+    log = lambda s: print(f"{now_iso()} {s}", flush=True)  # noqa: E731
+    kinds = tuple(k for k in a.kinds.split(",") if k in fs.NEW_KINDS)
+    if not kinds:
+        log(f"no known kinds in {a.kinds!r} (known: {fs.NEW_KINDS})")
+        return 2
+    if not a.skip_egress_check:
+        ok, _ = CF.egress_open()
+        if not ok:
+            log("EGRESS CLOSED: nothing topped up.")
+            return 3
+    inputs = build_inputs()
+    order = diocese_order(inputs)
+    if a.state:
+        sees = {s["slug"]: s["see_state"] for s in load_sees()}
+        sts = {x.upper() for x in a.state.split(",")}
+        order = [d for d in order if sees.get(d) in sts or (d.startswith("unassigned-") and d[-2:].upper() in sts)]
+    if a.diocese:
+        order = [d for d in a.diocese.split(",") if d in inputs]
+    queue = [(d, s) for d in order for s in inputs[d]["sites"] if topup_needed(d, s, kinds)]
+    log(f"top-up {kinds}: {len(queue)} sites")
+    reserve = min(8 * 60, a.minutes * 60 * 0.25)
+    stop_at = t0 + a.minutes * 60 - reserve
+    pacer = fs.Pacer(1.0)
+    stats, lock = Counter(), threading.Lock()
+    full: dict[str, set] = defaultdict(set)
+    merge: list[tuple[str, dict, Path, dict]] = []
+
+    def work(item):
+        dio, s = item
+        if time.time() > stop_at:
+            return
+        dl = time.monotonic() + max(30.0, min(fs.SITE_SECONDS, stop_at - time.time()))
+        m0 = manifest(s["key"])
+        try:
+            if m0 and m0.get("complete") and m0.get("status") == "ok":
+                site = fs.Site(s["key"], m0["home"], str(RAW), pacer, False, today(), "sandbox", dl)
+                m = site.topup(kinds)
+                with lock:
+                    full[dio].add(s["key"])
+            else:
+                rec = _record(dio, s["key"]) or {}
+                home = CF.https_only(rec.get("final_url") or rec.get("home_url") or s["home"])
+                site = fs.Site(s["key"], home, str(TOPUP), pacer, False, today(), "sandbox", dl)
+                site._robots()
+                if site.rp is not None and not site.rp.can_fetch("*", home):
+                    m = dict(site.m, topup={"kinds": list(kinds), "at": now_iso(), "requests": 0, "found": [], "note": "robots_disallowed"})
+                else:
+                    h = site.get(home, "home")
+                    site.m["status"] = h["class"]
+                    site.m["final_home"] = h.get("final_url") or home
+                    site.m["topup_only"] = True
+                    m = site.topup(kinds) if h["class"] == "ok" else dict(site.m, topup={"kinds": list(kinds), "at": now_iso(),
+                                                                                             "requests": 1, "found": [], "note": h["class"]})
+                with lock:
+                    merge.append((dio, s, TOPUP / s["key"].replace("/", "__"), m))
+        except fs.Deadline:
+            return
+        except Exception as e:  # noqa: BLE001 - one site must not stop the run
+            with lock:
+                stats["error"] += 1
+            log(f"  topup error {s['key']}: {e!r}")
+            return
+        with lock:
+            stats["sites"] += 1
+            for k in (m.get("topup") or {}).get("found") or []:
+                stats["found_" + k] += 1
+            stats["requests"] += (m.get("topup") or {}).get("requests") or 0
+            if stats["sites"] % 50 == 0:
+                log(f"  topped up {stats['sites']}: {dict(stats)}")
+
+    with cf.ThreadPoolExecutor(max_workers=a.workers) as ex:
+        list(ex.map(work, queue))
+    log(f"fetch: {dict(stats)}")
+    rd = run_diocese()
+    touched = set()
+    for dio, keys in full.items():
+        try:
+            rd.cmd_parse(dio, keys, False)
+            touched.add(dio)
+        except Exception as e:  # noqa: BLE001
+            log(f"  PARSE FAILED {dio}: {e!r}")
+    for dio, s, tdir, m in merge:
+        try:
+            if topup_merge(dio, s, tdir, m, kinds):
+                touched.add(dio)
+        except Exception as e:  # noqa: BLE001
+            log(f"  MERGE FAILED {s['key']}: {e!r}")
+    for dio in touched:
+        try:
+            rd.finalize(dio)
+        except Exception:  # noqa: BLE001
+            pass
+    left = sum(1 for d in order for s in inputs[d]["sites"] if topup_needed(d, s, kinds))
+    write_progress(inputs, {"started_at": now_iso(), "result": f"top-up {kinds}: {dict(stats)}; {left} sites left", "touched": sorted(touched)})
+    (RAW / "_last_touched.json").write_text(json.dumps(sorted(touched)))
+    log(f"top-up done; touched {sorted(touched)}; {left} sites still to top up")
+    return 0
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("cmd", choices=["inputs", "chunk", "parse", "reparse", "readme", "status"])
+    ap.add_argument("cmd", choices=["inputs", "chunk", "parse", "reparse", "topup", "readme", "status"])
+    ap.add_argument("--kinds", default="confession,adoration,liturgy", help="topup: page kinds to add (fetch_site.NEW_KINDS)")
     ap.add_argument("slug", nargs="?")
     ap.add_argument("--minutes", type=float, default=100)
     ap.add_argument("--workers", type=int, default=24)
@@ -540,6 +723,8 @@ def main() -> int:
         write_progress(build_inputs())
     elif a.cmd == "reparse":
         return cmd_reparse(a)
+    elif a.cmd == "topup":
+        return cmd_topup(a)
     elif a.cmd == "readme":
         cmd_readme()
     elif a.cmd == "status":

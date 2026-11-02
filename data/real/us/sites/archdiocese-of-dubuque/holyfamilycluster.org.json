@@ -77,6 +77,18 @@
    "url": "https://www.holyfamilycluster.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.holyfamilycluster.org/sacrament",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://www.holyfamilycluster.org/cluster-liturgy-committee",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -481,6 +493,33 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "- Scheduled confessions are 20 minutes before Mass. Communal penance services are celebrated in Advent and Lent. Other times are available by appointment.",
+   "phrase": "20 minutes before Mass",
+   "source_url": "https://www.holyfamilycluster.org/sacrament",
+   "fetched_at": "2026-11-02T04:41:43+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:45+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(515) 532-3586",
@@ -492,8 +531,5 @@
   },
   "fetched_at": "2026-11-01T05:15:40+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

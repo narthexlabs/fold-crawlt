@@ -601,6 +601,33 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Confessions will be offered: Saturdays 4:15 PM - 5:00 PM or by appointment, in the St. Francis de Sales Chapel, in the Church.",
+   "phrase": "by appointment",
+   "source_url": "https://www.ihmchurch.org/sacraments.html",
+   "fetched_at": "2026-11-02T04:41:37+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:39+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(336) 869-7739",
@@ -612,10 +639,5 @@
   },
   "fetched_at": "2026-11-01T03:59:13+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()",
-  "names_withheld": 0,
-  "contacts_removed": 1
  }
 }

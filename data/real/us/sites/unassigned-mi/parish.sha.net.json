@@ -75,6 +75,12 @@
    "url": "https://parish.sha.net/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://parish.sha.net/sacraments/reconciliation.cfm",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -397,13 +403,38 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:30-16:30",
+   "language": null,
+   "raw": "Reconciliation opportunities are offered on Saturdays from 3:30 p.m. - 4:30 p.m. or by appointment.",
+   "source_url": "https://parish.sha.net/sacraments/reconciliation.cfm",
+   "fetched_at": "2026-11-02T04:41:32+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict"
   }
  ],
  "source_url": "https://parish.sha.net/",
  "fetched_at": "2026-11-01T22:15:41+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:32+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -417,7 +448,8 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
-  "generic_rows": 19
+  "trusted_kinds": [],
+  "generic_rows": 20
  },
  "has_sunday": true,
  "schedule_dropped": {
@@ -432,8 +464,8 @@
   "sacrament_prep": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

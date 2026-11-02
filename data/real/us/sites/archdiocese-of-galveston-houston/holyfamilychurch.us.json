@@ -75,6 +75,18 @@
    "url": "https://www.holyfamilychurch.us/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.holyfamilychurch.us/penance---reconciliation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.holyfamilychurch.us/adoraci%C3%B3n-nocturna",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -413,6 +425,34 @@
    "confidence": "high",
    "template": "generic_strict",
    "day_expanded_from": "Monday through Friday"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:30-17:00",
+   "language": null,
+   "raw": "Confessions are heard every Saturday from 3:30 pm-5:00 pm in the Chapel, on First Fridays from 9:15 am to 10:15 am in the Chapel, or by appointment with a priest.",
+   "source_url": "https://www.holyfamilychurch.us/penance---reconciliation",
+   "fetched_at": "2026-11-02T04:41:31+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "First Friday of the month",
+   "time": "09:15-10:15",
+   "language": null,
+   "raw": "Confessions are heard every Saturday from 3:30 pm-5:00 pm in the Chapel, on First Fridays from 9:15 am to 10:15 am in the Chapel, or by appointment with a priest.",
+   "source_url": "https://www.holyfamilychurch.us/penance---reconciliation",
+   "fetched_at": "2026-11-02T04:41:31+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "topup": true
   }
  ],
  "source_url": "https://holyfamilychurch.us/",
@@ -457,5 +497,29 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Confessions are heard every Saturday from 3:30 pm-5:00 pm in the Chapel, on First Fridays from 9:15 am to 10:15 am in the Chapel, or by appointment with a priest.",
+   "phrase": "by appointment",
+   "source_url": "https://www.holyfamilychurch.us/penance---reconciliation",
+   "fetched_at": "2026-11-02T04:41:31+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:33+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
  }
 }

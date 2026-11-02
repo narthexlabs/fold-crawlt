@@ -69,6 +69,12 @@
    "url": "https://www.saintjosephlagrange.org/contact-4",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.saintjosephlagrange.org/penance-reconciliation",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -552,6 +558,48 @@
    "review_reason": null,
    "confidence": "low",
    "template": "wix"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "18:30",
+   "language": null,
+   "raw": "Confessions:: Saturday at 6:30 p.m. until last Penitent",
+   "source_url": "https://www.saintjosephlagrange.org/penance-reconciliation",
+   "fetched_at": "2026-11-02T04:41:43+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Thursday",
+   "time": "10:00-10:45",
+   "language": null,
+   "raw": "Confessions:: Thursday from 10:00 a.m. to 10:45 a.m. and from 5:00 p.m. to 6:00 p.m.",
+   "source_url": "https://www.saintjosephlagrange.org/penance-reconciliation",
+   "fetched_at": "2026-11-02T04:41:43+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "17:00-18:00",
+   "language": null,
+   "raw": "Adoration: 5:00 p.m. to 6:00 p.m.",
+   "source_url": "https://www.saintjosephlagrange.org/mass-schedule-events",
+   "fetched_at": "2026-11-02T04:41:47+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "wix",
+   "topup": true
   }
  ],
  "source_url": "https://saintjosephlagrange.org/",
@@ -590,6 +638,33 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Spiritual Direction: By appointment",
+   "phrase": "By appointment",
+   "source_url": "https://www.saintjosephlagrange.org/penance-reconciliation",
+   "fetched_at": "2026-11-02T04:41:43+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:48+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 3,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "secretary@saintjosephlagrange.org",
   "phone": "(260) 463-3472",
@@ -601,8 +676,5 @@
   },
   "fetched_at": "2026-11-01T03:59:22+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

@@ -668,6 +668,22 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "First Friday of the month",
+   "time": "08:00",
+   "language": null,
+   "raw": "First Friday Adoration, after 8:00 AM Mass",
+   "source_url": "https://www.olmmercedes.org/mass-schedule.php",
+   "fetched_at": "2026-11-02T04:41:40+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "after",
+   "note": "First Friday Adoration, after 8:00 AM Mass",
+   "topup": true
   }
  ],
  "source_url": "http://www.olmmercedes.org/",
@@ -710,5 +726,29 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Confessions 3:30–4:30 PM, or by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://www.olmmercedes.org/mass-schedule.php",
+   "fetched_at": "2026-11-02T04:41:40+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:40+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

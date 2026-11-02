@@ -69,6 +69,18 @@
    "url": "https://stfrancisofassisi-jefferson.org/Contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stfrancisofassisi-jefferson.org/Pray-with-Us/Eucharistic-Adoration",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://stfrancisofassisi-jefferson.org/pray-with-us/mass-times",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -284,6 +296,48 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "17:30-18:30",
+   "language": null,
+   "raw": "Eucharistic Adoration Schedule: Tuesday: 5:30 PM-6:30 PM",
+   "source_url": "https://stfrancisofassisi-jefferson.org/Pray-with-Us/Eucharistic-Adoration",
+   "fetched_at": "2026-11-02T04:41:39+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "09:30-10:30",
+   "language": null,
+   "raw": "Eucharistic Adoration Schedule: Friday: 9:30 AM-10:30 AM",
+   "source_url": "https://stfrancisofassisi-jefferson.org/Pray-with-Us/Eucharistic-Adoration",
+   "fetched_at": "2026-11-02T04:41:39+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "First Saturday of the month",
+   "time": "20:30-07:45",
+   "language": null,
+   "raw": "Eucharistic Adoration Schedule: First Saturday of the Month: 8:30 PM-7:45 AM on Sunday",
+   "source_url": "https://stfrancisofassisi-jefferson.org/Pray-with-Us/Eucharistic-Adoration",
+   "fetched_at": "2026-11-02T04:41:39+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
   }
  ],
  "source_url": "http://stfrancisofassisi-jefferson.org/",
@@ -323,6 +377,25 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:41+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 3,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(336) 246-9151",
@@ -334,8 +407,5 @@
   },
   "fetched_at": "2026-11-01T03:59:15+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

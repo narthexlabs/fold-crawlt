@@ -71,6 +71,12 @@
    "url": "https://www.stthomasderry.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stthomasderry.org/penance",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -526,7 +532,7 @@
    "note": "Google Calendar public feed (website-builder widget)",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-02T01:59:28+00:00",
+    "fetched_at": "2026-11-02T04:48:20+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -716,6 +722,34 @@
    "kind_parsed": "mass"
   },
   {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "07:30",
+   "language": null,
+   "raw": "Monday - Friday: 7:30 AM (8:30 AM Monday Federal Holidays)",
+   "source_url": "https://www.stthomasderry.org/",
+   "fetched_at": "2026-11-01T17:26:58+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "kind_parsed": "devotion"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "08:30",
+   "language": null,
+   "raw": "Monday - Friday: 7:30 AM (8:30 AM Monday Federal Holidays)",
+   "source_url": "https://www.stthomasderry.org/",
+   "fetched_at": "2026-11-01T17:26:58+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "kind_parsed": "devotion"
+  },
+  {
    "kind": "confession",
    "day": "Saturday",
    "time": "15:00-16:00",
@@ -757,9 +791,21 @@
  ],
  "source_url": "https://www.stthomasderry.org/",
  "fetched_at": "2026-11-01T17:27:07+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:45+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -773,11 +819,20 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 31
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Saturdays: 3:00-4:00 PM or by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://www.stthomasderry.org/",
+   "fetched_at": "2026-11-01T17:26:58+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "not_a_service": 2,
   "range_not_a_mass": 1
  },
  "groups_dropped": {

@@ -91,6 +91,12 @@
    "url": "https://www.ourladyofthecape.org/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://www.ourladyofthecape.org/faith-formation/liturgies-and-sacraments/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -732,6 +738,34 @@
    "review_reason": null,
    "confidence": "high",
    "template": "wix"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday (summer)",
+   "time": "17:00",
+   "language": null,
+   "raw": "Mass: Saturday 5:00 PM",
+   "source_url": "https://www.ourladyofthecape.org/mass-schedule-2/",
+   "fetched_at": "2026-11-02T04:41:43+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday (summer)",
+   "time": "09:30",
+   "language": null,
+   "raw": "Mass: Sunday 9:30 AM",
+   "source_url": "https://www.ourladyofthecape.org/mass-schedule-2/",
+   "fetched_at": "2026-11-02T04:41:43+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "topup": true
   }
  ],
  "source_url": "https://www.ourladyofthecape.org/",
@@ -773,6 +807,33 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "The Sacrament of Reconciliation is on Saturdays 3:15 – 3:45 PM or by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://www.ourladyofthecape.org/mass-schedule-2/",
+   "fetched_at": "2026-11-02T04:41:43+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:44+00:00",
+  "requests": 3,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(508) 385-3252",
@@ -784,8 +845,5 @@
   },
   "fetched_at": "2026-11-01T03:59:45+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

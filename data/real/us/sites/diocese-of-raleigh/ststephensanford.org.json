@@ -473,6 +473,40 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "or by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://ststephensanford.org/mass-times",
+   "fetched_at": "2026-11-02T04:41:42+00:00"
+  },
+  {
+   "kind": "confession",
+   "text": "3:30-4:30pm (bilingue) o con cita",
+   "phrase": "con cita",
+   "source_url": "https://ststephensanford.org/mass-times",
+   "fetched_at": "2026-11-02T04:41:42+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:44+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(919) 306-3935",
@@ -484,8 +518,5 @@
   },
   "fetched_at": "2026-11-01T03:58:34+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

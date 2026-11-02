@@ -63,6 +63,12 @@
    "url": "https://www.stmarycatholic.faith/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://www.stmarycatholic.faith/liturgy",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -489,5 +495,29 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "- 4 pm to 4:45 pm every Saturday or by Appointment only",
+   "phrase": "by Appointment",
+   "source_url": "https://www.stmarycatholic.faith/confession-times",
+   "fetched_at": "2026-11-02T04:41:35+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:36+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
  }
 }

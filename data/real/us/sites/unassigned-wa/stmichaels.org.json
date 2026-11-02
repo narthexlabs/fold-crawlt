@@ -69,6 +69,18 @@
    "url": "https://www.stmichaels.org/parish/clergy-staff/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stmichaels.org/chapel-grounds/chapel-of-the-angels/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://www.stmichaels.org/traditional-catholic-faith/liturgical-year/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -182,6 +194,90 @@
  },
  "schedule_rows": [
   {
+   "kind": "devotion",
+   "day": "Monday",
+   "time": "07:30",
+   "language": null,
+   "raw": "daily 7:30 a.m. [Mass intention withheld]",
+   "source_url": "https://www.stmichaels.org/parish/scheduled-devotions-and-blessings/",
+   "fetched_at": "2026-11-01T22:15:27+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "daily"
+  },
+  {
+   "kind": "devotion",
+   "day": "Tuesday",
+   "time": "07:30",
+   "language": null,
+   "raw": "daily 7:30 a.m. [Mass intention withheld]",
+   "source_url": "https://www.stmichaels.org/parish/scheduled-devotions-and-blessings/",
+   "fetched_at": "2026-11-01T22:15:27+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "daily"
+  },
+  {
+   "kind": "devotion",
+   "day": "Wednesday",
+   "time": "07:30",
+   "language": null,
+   "raw": "daily 7:30 a.m. [Mass intention withheld]",
+   "source_url": "https://www.stmichaels.org/parish/scheduled-devotions-and-blessings/",
+   "fetched_at": "2026-11-01T22:15:27+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "daily"
+  },
+  {
+   "kind": "devotion",
+   "day": "Thursday",
+   "time": "07:30",
+   "language": null,
+   "raw": "daily 7:30 a.m. [Mass intention withheld]",
+   "source_url": "https://www.stmichaels.org/parish/scheduled-devotions-and-blessings/",
+   "fetched_at": "2026-11-01T22:15:27+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "daily"
+  },
+  {
+   "kind": "devotion",
+   "day": "Friday",
+   "time": "07:30",
+   "language": null,
+   "raw": "daily 7:30 a.m. [Mass intention withheld]",
+   "source_url": "https://www.stmichaels.org/parish/scheduled-devotions-and-blessings/",
+   "fetched_at": "2026-11-01T22:15:27+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "daily"
+  },
+  {
+   "kind": "devotion",
+   "day": "Saturday",
+   "time": "07:30",
+   "language": null,
+   "raw": "daily 7:30 a.m. [Mass intention withheld]",
+   "source_url": "https://www.stmichaels.org/parish/scheduled-devotions-and-blessings/",
+   "fetched_at": "2026-11-01T22:15:27+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "daily"
+  },
+  {
    "kind": "confession",
    "day": "Sunday",
    "time": "07:20-07:50",
@@ -288,9 +384,22 @@
  ],
  "source_url": "https://www.stmichaels.org/",
  "fetched_at": "2026-11-01T22:15:33+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:43+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "liturgy"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -304,18 +413,19 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 2
+  "trusted_kinds": [],
+  "generic_rows": 26
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "not_a_service": 2,
+  "not_a_service": 1,
   "other_location": 3,
   "relative_time": 1
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
@@ -335,6 +445,7 @@
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
  },
  "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
+  "screened_by": "ingest/public/privacy.py screen()",
+  "intentions_withheld": 6
  }
 }

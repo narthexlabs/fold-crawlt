@@ -75,6 +75,12 @@
    "url": "https://www.saintbonaventure.org/contact-us.html",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.saintbonaventure.org/adoration.html",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -492,6 +498,52 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "weebly"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "12:00",
+   "language": null,
+   "raw": "Where: Adoration Chapel is located in the NE corner of the c: Angelus Prayer Sunday and Wednesday at Noon",
+   "source_url": "https://www.saintbonaventure.org/adoration.html",
+   "fetched_at": "2026-11-02T04:41:39+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly",
+   "day_expanded_from": "Sunday and Wednesday",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Sunday",
+   "time": "12:00",
+   "language": null,
+   "raw": "Where: Adoration Chapel is located in the NE corner of the c: Angelus Prayer Sunday and Wednesday at Noon",
+   "source_url": "https://www.saintbonaventure.org/adoration.html",
+   "fetched_at": "2026-11-02T04:41:39+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly",
+   "day_expanded_from": "Sunday and Wednesday",
+   "day_parsed": "Wednesday",
+   "day_bound_from_line": true,
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Monday",
+   "time": "09:00-10:00",
+   "language": null,
+   "raw": "Children’s Adoration Hour Every Monday from 9-10 a.m.",
+   "source_url": "https://www.saintbonaventure.org/adoration.html",
+   "fetched_at": "2026-11-02T04:41:39+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "weebly",
+   "topup": true
   }
  ],
  "source_url": "http://www.saintbonaventure.org/",
@@ -534,6 +586,33 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "By request, call the parish office.",
+   "phrase": "By request",
+   "source_url": "https://www.saintbonaventure.org/sacraments.html",
+   "fetched_at": "2026-11-02T04:41:38+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:39+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 3,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "office@saintbonaventure.org",
   "phone": "(952) 854-4733",
@@ -546,8 +625,5 @@
   },
   "fetched_at": "2026-11-01T03:58:15+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }
