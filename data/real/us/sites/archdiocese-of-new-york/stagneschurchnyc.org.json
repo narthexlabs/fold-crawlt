@@ -17,33 +17,545 @@
   "Manhattan"
  ],
  "home_url": "https://stagneschurchnyc.org/",
- "final_url": "https://stagneschurchnyc.org/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "final_url": "https://www.stagneschurchnyc.org/",
+ "crawl_status": "wayback-2026-08-23",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
-   "url": "https://stagneschurchnyc.org/",
-   "status": 403,
-   "class": "challenge"
+   "url": "https://www.stagneschurchnyc.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stagneschurchnyc.org/prayers",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stagneschurchnyc.org/specialintention",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://stagneschurchnyc.org/legion-of-mary",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://stagneschurchnyc.org/bulletins",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://stagneschurchnyc.org/contact-us",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "stagneschurchnyc.org:legion",
+   "name": "The Legion of Mary",
+   "category": "prayer_devotion",
+   "category_label": "Prayer & devotion",
+   "subcategory": "legion_of_mary",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stagneschurchnyc.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stagneschurchnyc.org/legion-of-mary",
+   "source_kind": "website",
+   "fetched_at": "2026-03-16T22:44:23+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-08-23"
+  },
+  {
+   "id": "stagneschurchnyc.org:opus_dei",
+   "name": "Opus Dei",
+   "category": "movements",
+   "category_label": "Movements",
+   "subcategory": "opus_dei",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stagneschurchnyc.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stagneschurchnyc.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-08-23T15:54:01+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-08-23"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/Church-of-Saint-Agnes-918846061593380",
+   "https://www.facebook.com/stagneschurchnyc"
+  ],
+  "youtube": [
+   "https://www.youtube.com/c/ChurchofSaintAgnesNYC",
+   "https://www.youtube.com/channel/UCw48NlqoLRWw6LbqR80iBow"
+  ]
+ },
+ "bulletin": {
+  "url": "https://files.ecatholic.com/14510/bulletins/20260315.pdf?t=1773241952000",
+  "date": "2026-03-15",
+  "kind": "ecatholic_pdf",
+  "text": "March 15 , 2026",
+  "source_url": "https://stagneschurchnyc.org/bulletins"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:00",
+   "language": null,
+   "raw": "Sunday 11:00am Mass",
+   "source_url": "https://www.stagneschurchnyc.org/",
+   "fetched_at": "2026-08-23T15:54:01+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-08-23: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-08-23",
+   "archive_url": "https://web.archive.org/web/20260823155401/https://www.stagneschurchnyc.org/",
+   "capture_date": "2026-08-23"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "12:10",
+   "language": null,
+   "raw": "Weekday 12:10pm Mass",
+   "source_url": "https://www.stagneschurchnyc.org/",
+   "fetched_at": "2026-08-23T15:54:01+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-08-23: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic+generic_strict",
+   "day_expanded_from": "Weekday",
+   "source": "wayback-2026-08-23",
+   "archive_url": "https://web.archive.org/web/20260823155401/https://www.stagneschurchnyc.org/",
+   "capture_date": "2026-08-23"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "12:10",
+   "language": null,
+   "raw": "Weekday 12:10pm Mass",
+   "source_url": "https://www.stagneschurchnyc.org/",
+   "fetched_at": "2026-08-23T15:54:01+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-08-23: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic+generic_strict",
+   "day_expanded_from": "Weekday",
+   "source": "wayback-2026-08-23",
+   "archive_url": "https://web.archive.org/web/20260823155401/https://www.stagneschurchnyc.org/",
+   "capture_date": "2026-08-23"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "12:10",
+   "language": null,
+   "raw": "Weekday 12:10pm Mass",
+   "source_url": "https://www.stagneschurchnyc.org/",
+   "fetched_at": "2026-08-23T15:54:01+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-08-23: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic+generic_strict",
+   "day_expanded_from": "Weekday",
+   "source": "wayback-2026-08-23",
+   "archive_url": "https://web.archive.org/web/20260823155401/https://www.stagneschurchnyc.org/",
+   "capture_date": "2026-08-23"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "12:10",
+   "language": null,
+   "raw": "Weekday 12:10pm Mass",
+   "source_url": "https://www.stagneschurchnyc.org/",
+   "fetched_at": "2026-08-23T15:54:01+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-08-23: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic+generic_strict",
+   "day_expanded_from": "Weekday",
+   "source": "wayback-2026-08-23",
+   "archive_url": "https://web.archive.org/web/20260823155401/https://www.stagneschurchnyc.org/",
+   "capture_date": "2026-08-23"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "12:10",
+   "language": null,
+   "raw": "Weekday 12:10pm Mass",
+   "source_url": "https://www.stagneschurchnyc.org/",
+   "fetched_at": "2026-08-23T15:54:01+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-08-23: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic+generic_strict",
+   "day_expanded_from": "Weekday",
+   "source": "wayback-2026-08-23",
+   "archive_url": "https://web.archive.org/web/20260823155401/https://www.stagneschurchnyc.org/",
+   "capture_date": "2026-08-23"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "12:10",
+   "language": null,
+   "raw": "Saturday 12:10pm Mass",
+   "source_url": "https://www.stagneschurchnyc.org/",
+   "fetched_at": "2026-08-23T15:54:01+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-08-23: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-08-23",
+   "archive_url": "https://web.archive.org/web/20260823155401/https://www.stagneschurchnyc.org/",
+   "capture_date": "2026-08-23"
+  },
+  {
+   "kind": "mass",
+   "day": "First Sunday of the month",
+   "time": "12:30",
+   "language": "Latin",
+   "raw": "*On the first Sunday of the month the 12:30pm Mass will be in Latin (Novus Order-Mass of St Paul VI)",
+   "source_url": "https://www.stagneschurchnyc.org/",
+   "fetched_at": "2026-08-23T15:54:01+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-08-23: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-08-23",
+   "archive_url": "https://web.archive.org/web/20260823155401/https://www.stagneschurchnyc.org/",
+   "capture_date": "2026-08-23"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:10",
+   "language": null,
+   "raw": "The Saturday Mass Schedule is:: 5:10 PM (Sunday Vigil)",
+   "source_url": "https://www.stagneschurchnyc.org/",
+   "fetched_at": "2026-08-23T15:54:01+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-08-23: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "day_parsed": "Sunday",
+   "source": "wayback-2026-08-23",
+   "archive_url": "https://web.archive.org/web/20260823155401/https://www.stagneschurchnyc.org/",
+   "capture_date": "2026-08-23"
+  },
+  {
+   "kind": "confession",
+   "day": "Monday",
+   "time": "12:40-13:40",
+   "language": null,
+   "raw": "Confession Schedule:: 12:40pm - 1:40pm and 5:00pm - 5:30pm",
+   "source_url": "https://www.stagneschurchnyc.org/",
+   "fetched_at": "2026-08-23T15:54:01+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-08-23: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "day_expanded_from": "Monday through Friday",
+   "source": "wayback-2026-08-23",
+   "archive_url": "https://web.archive.org/web/20260823155401/https://www.stagneschurchnyc.org/",
+   "capture_date": "2026-08-23"
+  },
+  {
+   "kind": "confession",
+   "day": "Tuesday",
+   "time": "12:40-13:40",
+   "language": null,
+   "raw": "Confession Schedule:: 12:40pm - 1:40pm and 5:00pm - 5:30pm",
+   "source_url": "https://www.stagneschurchnyc.org/",
+   "fetched_at": "2026-08-23T15:54:01+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-08-23: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "day_expanded_from": "Monday through Friday",
+   "source": "wayback-2026-08-23",
+   "archive_url": "https://web.archive.org/web/20260823155401/https://www.stagneschurchnyc.org/",
+   "capture_date": "2026-08-23"
+  },
+  {
+   "kind": "confession",
+   "day": "Wednesday",
+   "time": "12:40-13:40",
+   "language": null,
+   "raw": "Confession Schedule:: 12:40pm - 1:40pm and 5:00pm - 5:30pm",
+   "source_url": "https://www.stagneschurchnyc.org/",
+   "fetched_at": "2026-08-23T15:54:01+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-08-23: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "day_expanded_from": "Monday through Friday",
+   "source": "wayback-2026-08-23",
+   "archive_url": "https://web.archive.org/web/20260823155401/https://www.stagneschurchnyc.org/",
+   "capture_date": "2026-08-23"
+  },
+  {
+   "kind": "confession",
+   "day": "Thursday",
+   "time": "12:40-13:40",
+   "language": null,
+   "raw": "Confession Schedule:: 12:40pm - 1:40pm and 5:00pm - 5:30pm",
+   "source_url": "https://www.stagneschurchnyc.org/",
+   "fetched_at": "2026-08-23T15:54:01+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-08-23: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "day_expanded_from": "Monday through Friday",
+   "source": "wayback-2026-08-23",
+   "archive_url": "https://web.archive.org/web/20260823155401/https://www.stagneschurchnyc.org/",
+   "capture_date": "2026-08-23"
+  },
+  {
+   "kind": "confession",
+   "day": "Friday",
+   "time": "12:40-13:40",
+   "language": null,
+   "raw": "Confession Schedule:: 12:40pm - 1:40pm and 5:00pm - 5:30pm",
+   "source_url": "https://www.stagneschurchnyc.org/",
+   "fetched_at": "2026-08-23T15:54:01+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-08-23: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "day_expanded_from": "Monday through Friday",
+   "source": "wayback-2026-08-23",
+   "archive_url": "https://web.archive.org/web/20260823155401/https://www.stagneschurchnyc.org/",
+   "capture_date": "2026-08-23"
+  },
+  {
+   "kind": "confession",
+   "day": "Monday",
+   "time": "17:00-17:30",
+   "language": null,
+   "raw": "Confession Schedule:: 12:40pm - 1:40pm and 5:00pm - 5:30pm",
+   "source_url": "https://www.stagneschurchnyc.org/",
+   "fetched_at": "2026-08-23T15:54:01+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-08-23: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "day_expanded_from": "Monday through Friday",
+   "source": "wayback-2026-08-23",
+   "archive_url": "https://web.archive.org/web/20260823155401/https://www.stagneschurchnyc.org/",
+   "capture_date": "2026-08-23"
+  },
+  {
+   "kind": "confession",
+   "day": "Tuesday",
+   "time": "17:00-17:30",
+   "language": null,
+   "raw": "Confession Schedule:: 12:40pm - 1:40pm and 5:00pm - 5:30pm",
+   "source_url": "https://www.stagneschurchnyc.org/",
+   "fetched_at": "2026-08-23T15:54:01+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-08-23: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "day_expanded_from": "Monday through Friday",
+   "source": "wayback-2026-08-23",
+   "archive_url": "https://web.archive.org/web/20260823155401/https://www.stagneschurchnyc.org/",
+   "capture_date": "2026-08-23"
+  },
+  {
+   "kind": "confession",
+   "day": "Wednesday",
+   "time": "17:00-17:30",
+   "language": null,
+   "raw": "Confession Schedule:: 12:40pm - 1:40pm and 5:00pm - 5:30pm",
+   "source_url": "https://www.stagneschurchnyc.org/",
+   "fetched_at": "2026-08-23T15:54:01+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-08-23: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "day_expanded_from": "Monday through Friday",
+   "source": "wayback-2026-08-23",
+   "archive_url": "https://web.archive.org/web/20260823155401/https://www.stagneschurchnyc.org/",
+   "capture_date": "2026-08-23"
+  },
+  {
+   "kind": "confession",
+   "day": "Thursday",
+   "time": "17:00-17:30",
+   "language": null,
+   "raw": "Confession Schedule:: 12:40pm - 1:40pm and 5:00pm - 5:30pm",
+   "source_url": "https://www.stagneschurchnyc.org/",
+   "fetched_at": "2026-08-23T15:54:01+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-08-23: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "day_expanded_from": "Monday through Friday",
+   "source": "wayback-2026-08-23",
+   "archive_url": "https://web.archive.org/web/20260823155401/https://www.stagneschurchnyc.org/",
+   "capture_date": "2026-08-23"
+  },
+  {
+   "kind": "confession",
+   "day": "Friday",
+   "time": "17:00-17:30",
+   "language": null,
+   "raw": "Confession Schedule:: 12:40pm - 1:40pm and 5:00pm - 5:30pm",
+   "source_url": "https://www.stagneschurchnyc.org/",
+   "fetched_at": "2026-08-23T15:54:01+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-08-23: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "day_expanded_from": "Monday through Friday",
+   "source": "wayback-2026-08-23",
+   "archive_url": "https://web.archive.org/web/20260823155401/https://www.stagneschurchnyc.org/",
+   "capture_date": "2026-08-23"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "12:30-13:30",
+   "language": null,
+   "raw": "Confession Schedule:: 12:30pm - 1:30pm",
+   "source_url": "https://www.stagneschurchnyc.org/",
+   "fetched_at": "2026-08-23T15:54:01+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-08-23: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-08-23",
+   "archive_url": "https://web.archive.org/web/20260823155401/https://www.stagneschurchnyc.org/",
+   "capture_date": "2026-08-23"
+  }
+ ],
  "source_url": "https://stagneschurchnyc.org/",
- "fetched_at": "2026-11-01T01:57:10+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-02T03:00:31+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 12
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "text:relative_time": 1,
+  "text:skipped_section": 1
+ },
+ "groups_dropped": {},
+ "office_contact": {
+  "email": "church@stagneschurchnyc.org",
+  "phone": "(212) 682-5722",
+  "address": null,
+  "source_url": "https://stagneschurchnyc.org/contact-us",
+  "sources": {
+   "email": "https://stagneschurchnyc.org/contact-us",
+   "phone": "https://stagneschurchnyc.org/contact-us"
+  },
+  "fetched_at": "2025-03-24T17:12:10+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2026-08-23",
+  "capture_age_days": 71,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://www.stagneschurchnyc.org/",
+    "capture": "2026-08-23",
+    "archive_url": "https://web.archive.org/web/20260823155401/https://www.stagneschurchnyc.org/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://stagneschurchnyc.org/prayers",
+    "capture": "2026-03-16",
+    "archive_url": "https://web.archive.org/web/20260316224423/https://stagneschurchnyc.org/prayers"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://stagneschurchnyc.org/specialintention",
+    "capture": "2025-07-19",
+    "archive_url": "https://web.archive.org/web/20250719013806/https://stagneschurchnyc.org/specialintention"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://stagneschurchnyc.org/legion-of-mary",
+    "capture": "2026-03-16",
+    "archive_url": "https://web.archive.org/web/20260316224423/https://stagneschurchnyc.org/legion-of-mary"
+   },
+   {
+    "kind": "bulletin",
+    "original": "https://stagneschurchnyc.org/bulletins",
+    "capture": "2026-03-16",
+    "archive_url": "https://web.archive.org/web/20260316224423/https://stagneschurchnyc.org/bulletins"
+   },
+   {
+    "kind": "contact",
+    "original": "https://stagneschurchnyc.org/contact-us",
+    "capture": "2025-03-24",
+    "archive_url": "https://web.archive.org/web/20250324171210/https://stagneschurchnyc.org/contact-us"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review.",
+  "grade": {
+   "rule": "wayback-verified-2026-11-01",
+   "template": "ecatholic",
+   "trusted_template": false,
+   "has_sunday": true,
+   "groups": 2,
+   "verified": false,
+   "capture_date": "2026-08-23",
+   "applied": false
+  }
  }
 }

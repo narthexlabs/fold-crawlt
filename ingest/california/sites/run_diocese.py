@@ -286,6 +286,9 @@ def cmd_parse(slug: str, only: set[str] | None = None, offline: bool = False) ->
                 carry_over_feeds(rec, json.loads(fn.read_text("utf-8")))
             except (ValueError, OSError):
                 pass
+        cal = P.calendar_rows(rec.get("events") or [])      # weekly calendar entries -> schedule rows (tier 7 in merge)
+        if cal:
+            rec["calendar_schedule_rows"] = cal
         P.screen_record(rec)
         fn.write_text(json.dumps(rec, indent=1, ensure_ascii=False) + "\n", "utf-8")
         n += 1
