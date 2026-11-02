@@ -112,7 +112,7 @@ def write_channels_and_readme(items, quarantine, stat_by_channel, counts, ver, r
             by_dio[it["diocese"]]["routine_liturgy_flagged"] += 1
     org_dio = {it["org_id"]: it["diocese"] for it in items}
     for q in quarantine:
-        by_dio[org_dio.get(q["org_id"]) or "unknown"]["quarantined"] += 1
+        by_dio[org_dio.get(q["org_id"]) or (q["org_id"] if q["org_id"] in dio_names else "unknown")]["quarantined"] += 1
     for slug, d in (ranked.get("dioceses") or {}).items():
         by_dio[slug]["on_feed_candidates"] = d.get("on_feed", 0)
     cov = {"generated_at": ts, "label": label,

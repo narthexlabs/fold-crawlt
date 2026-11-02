@@ -191,6 +191,9 @@ NATIONAL = re.compile(
 DIOCESE_WORD = re.compile(r"\b(arch)?dioceses?\b|\beparchy\b|di[oó]cesis|arquidi[oó]cesis", re.I)
 SCHOOL_WORD = re.compile(r"\b(school|academy|escuela|high school|elementary|prep|preparatory|montessori|college|university)\b", re.I)
 CHURCH_WORD = re.compile(r"\b(church|parish|catholic|iglesia|parroquia|mass|misa|shrine|mission|cathedral|basilica|chapel)\b", re.I)
+PARISH_WORD = re.compile(r"\b(church|parish|iglesia|parroquia|shrine|mission|misi[oó]n|basilica|chapel|cathedral|catedral|"
+                         r"igreja|par[oó]quia|giao xu|gi[aá]o x[uứ]|nh[aà] th[oờ])\b|천주교회|성당|본당", re.I)
+PATRON = re.compile(r"^\s*(st\.?|sts\.?|saints?|ste\.?|our\s+lady|holy|sacred|blessed|immaculate|nuestra\s+se[nñ]ora|christ\s+the|mother\s+of)\b", re.I)
 PERSON_TITLE = re.compile(r"^(fr\.?|father|padre|bishop|msgr\.?|monsignor|deacon|dcn\.?|sister|sr\.?|brother|br\.?|dr\.?)\s+\w", re.I)
 SAINT_WORDS = {"saint", "st", "sts", "saints", "san", "santa", "santo", "sainte", "ste"}
 
@@ -391,6 +394,11 @@ def match_diocese(ch: dict, slug: str) -> dict | None:
         checks["name"] = f"title '{title}' is the diocese's name for itself ({place_hit} Catholic)"
         reasons.append(checks["name"])
     if not checks:
+        return None
+    # A parish's own channel often lists the diocesan website under About (2026-11-02 California run: St. Brendan,
+    # St. John the Baptist Milpitas, Saint Anne's Porterville, a Korean parish). A title that names a church / parish and
+    # not a diocese is a parish channel, whatever it links.
+    if (PARISH_WORD.search(title) or PATRON.search(title)) and not DIOCESE_WORD.search(title) and not re.search(r"diocese", fold(handle)):
         return None
     exact = bool(re.match(r"^\s*(the\s+)?(roman\s+catholic\s+)?(arch)?diocese\s+of\s+", fold(title))) or \
         bool(re.match(rf"^\s*(roman\s+catholic\s+)?(arch)?diocese\s+of\s+", fold(title)))
