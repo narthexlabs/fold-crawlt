@@ -73,6 +73,18 @@
    "url": "https://holyfamilycolumbus.com/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://holyfamilycolumbus.com/adoration-of-our-lord-in-the-blessed-sacrament/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://holyfamilycolumbus.com/worship-sacraments/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -310,6 +322,21 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "Third Wednesday of the month (during the school year)",
+   "time": "13:00-18:00",
+   "language": null,
+   "raw": "Adoration Schedule: (September to May only) Third Wednesday of the month, 1:00-6:00pm",
+   "source_url": "https://holyfamilycolumbus.com/adoration-of-our-lord-in-the-blessed-sacrament/",
+   "fetched_at": "2026-11-02T04:42:11+00:00",
+   "needs_review": true,
+   "review_reason": "seasonal",
+   "confidence": "medium",
+   "template": "wordpress",
+   "season": "September to May",
+   "topup": true
   }
  ],
  "source_url": "http://holyfamilycolumbus.com/",
@@ -348,5 +375,21 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:11+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }
