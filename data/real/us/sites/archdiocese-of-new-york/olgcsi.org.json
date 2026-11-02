@@ -21,32 +21,476 @@
  ],
  "home_url": "https://olgcsi.org/",
  "final_url": "https://olgcsi.org/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "crawl_status": "wayback-2025-10-06",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
    "url": "https://olgcsi.org/",
-   "status": 403,
-   "class": "challenge"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.olgcsi.org/mass-schedule",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://olgcsi.org/alter-servers-schedules",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://olgcsi.org/youth-group",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://olgcsi.org/adult-faith-formation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://www.olgcsi.org/bulletins",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://olgcsi.org/news-events",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.olgcsi.org/events",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://www.olgcsi.org/contact-us",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "olgcsi.org:servers",
+   "name": "Altar Servers",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "altar_servers",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.olgcsi.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://olgcsi.org/",
+   "source_kind": "website",
+   "fetched_at": "2025-10-06T10:33:04+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-10-06"
+  },
+  {
+   "id": "olgcsi.org:altar_society",
+   "name": "Altar Society / Environment",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "altar_society_environment",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.olgcsi.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://olgcsi.org/",
+   "source_kind": "website",
+   "fetched_at": "2025-10-06T10:33:04+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-10-06"
+  },
+  {
+   "id": "olgcsi.org:other_300_club",
+   "name": "300 Club",
+   "category": "other",
+   "category_label": "Other",
+   "subcategory": "unclassified",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.olgcsi.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://olgcsi.org/",
+   "source_kind": "website",
+   "fetched_at": "2025-10-06T10:33:04+00:00",
+   "confidence": "low",
+   "source": "wayback-2025-10-06"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "flocknote": [
+   "https://flocknote.com/OLofGoodCounsel"
+  ]
+ },
+ "bulletin": {
+  "url": "https://files.ecatholic.com/6605/bulletins/20250525.pdf?t=1748106441000",
+  "date": "2025-05-25",
+  "kind": "ecatholic_pdf",
+  "text": "May 25 , 2025",
+  "source_url": "https://www.olgcsi.org/bulletins"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Masses are celebrated in the OLGC Church at the following ti: 9:00 AM",
+   "source_url": "https://www.olgcsi.org/mass-schedule",
+   "fetched_at": "2024-05-21T22:19:18+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-10-06: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2025-10-06",
+   "archive_url": "https://web.archive.org/web/20240521221918/https://www.olgcsi.org/mass-schedule",
+   "capture_date": "2024-05-21"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": "English",
+   "raw": "5:00 PM (English Vigil)",
+   "source_url": "https://www.olgcsi.org/mass-schedule",
+   "fetched_at": "2024-05-21T22:19:18+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-10-06: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2025-10-06",
+   "archive_url": "https://web.archive.org/web/20240521221918/https://www.olgcsi.org/mass-schedule",
+   "capture_date": "2024-05-21"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "19:00",
+   "language": "Spanish",
+   "raw": "7:00 PM (Spanish Vigil)",
+   "source_url": "https://www.olgcsi.org/mass-schedule",
+   "fetched_at": "2024-05-21T22:19:18+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-10-06: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2025-10-06",
+   "archive_url": "https://web.archive.org/web/20240521221918/https://www.olgcsi.org/mass-schedule",
+   "capture_date": "2024-05-21"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": "English",
+   "raw": "Masses are celebrated in the OLGC Church at the following ti: 8:00 AM (English)",
+   "source_url": "https://www.olgcsi.org/mass-schedule",
+   "fetched_at": "2024-05-21T22:19:18+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-10-06: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2025-10-06",
+   "archive_url": "https://web.archive.org/web/20240521221918/https://www.olgcsi.org/mass-schedule",
+   "capture_date": "2024-05-21"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:30",
+   "language": "English",
+   "raw": "Masses are celebrated in the OLGC Church at the following ti: 9:30 AM (English)",
+   "source_url": "https://www.olgcsi.org/mass-schedule",
+   "fetched_at": "2024-05-21T22:19:18+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-10-06: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2025-10-06",
+   "archive_url": "https://web.archive.org/web/20240521221918/https://www.olgcsi.org/mass-schedule",
+   "capture_date": "2024-05-21"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:00",
+   "language": "English",
+   "raw": "Masses are celebrated in the OLGC Church at the following ti: 11:00 AM (English)",
+   "source_url": "https://www.olgcsi.org/mass-schedule",
+   "fetched_at": "2024-05-21T22:19:18+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-10-06: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2025-10-06",
+   "archive_url": "https://web.archive.org/web/20240521221918/https://www.olgcsi.org/mass-schedule",
+   "capture_date": "2024-05-21"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "12:30",
+   "language": "Spanish",
+   "raw": "Masses are celebrated in the OLGC Church at the following ti: 12:30 PM (Spanish)",
+   "source_url": "https://www.olgcsi.org/mass-schedule",
+   "fetched_at": "2024-05-21T22:19:18+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-10-06: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2025-10-06",
+   "archive_url": "https://web.archive.org/web/20240521221918/https://www.olgcsi.org/mass-schedule",
+   "capture_date": "2024-05-21"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "12:00",
+   "language": "English",
+   "raw": "Masses are celebrated in the OLGC Church at the following ti: 12:00 PM (English) - St. Peter's Church",
+   "source_url": "https://www.olgcsi.org/mass-schedule",
+   "fetched_at": "2024-05-21T22:19:18+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-10-06: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2025-10-06",
+   "archive_url": "https://web.archive.org/web/20240521221918/https://www.olgcsi.org/mass-schedule",
+   "capture_date": "2024-05-21"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "08:30",
+   "language": "English",
+   "raw": "Masses are celebrated in the OLGC Church at the following ti: 8:30 AM (English)",
+   "source_url": "https://www.olgcsi.org/mass-schedule",
+   "fetched_at": "2024-05-21T22:19:18+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-10-06: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "day_expanded_from": "Monday, Wednesday",
+   "source": "wayback-2025-10-06",
+   "archive_url": "https://web.archive.org/web/20240521221918/https://www.olgcsi.org/mass-schedule",
+   "capture_date": "2024-05-21"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "08:30",
+   "language": "English",
+   "raw": "Masses are celebrated in the OLGC Church at the following ti: 8:30 AM (English)",
+   "source_url": "https://www.olgcsi.org/mass-schedule",
+   "fetched_at": "2024-05-21T22:19:18+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-10-06: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "day_expanded_from": "Monday, Wednesday",
+   "source": "wayback-2025-10-06",
+   "archive_url": "https://web.archive.org/web/20240521221918/https://www.olgcsi.org/mass-schedule",
+   "capture_date": "2024-05-21"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "08:30",
+   "language": "English",
+   "raw": "Masses are celebrated in the OLGC Church at the following ti: 8:30 AM (English)",
+   "source_url": "https://www.olgcsi.org/mass-schedule",
+   "fetched_at": "2024-05-21T22:19:18+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-10-06: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "day_expanded_from": "Tuesday & Thursday",
+   "source": "wayback-2025-10-06",
+   "archive_url": "https://web.archive.org/web/20240521221918/https://www.olgcsi.org/mass-schedule",
+   "capture_date": "2024-05-21"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "08:30",
+   "language": "English",
+   "raw": "Masses are celebrated in the OLGC Church at the following ti: 8:30 AM (English)",
+   "source_url": "https://www.olgcsi.org/mass-schedule",
+   "fetched_at": "2024-05-21T22:19:18+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-10-06: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "day_expanded_from": "Tuesday & Thursday",
+   "source": "wayback-2025-10-06",
+   "archive_url": "https://web.archive.org/web/20240521221918/https://www.olgcsi.org/mass-schedule",
+   "capture_date": "2024-05-21"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "19:30",
+   "language": "Spanish",
+   "raw": "Masses are celebrated in the OLGC Church at the following ti: 7:30 PM (Spanish)",
+   "source_url": "https://www.olgcsi.org/mass-schedule",
+   "fetched_at": "2024-05-21T22:19:18+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-10-06: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "day_expanded_from": "Tuesday & Thursday",
+   "source": "wayback-2025-10-06",
+   "archive_url": "https://web.archive.org/web/20240521221918/https://www.olgcsi.org/mass-schedule",
+   "capture_date": "2024-05-21"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "19:30",
+   "language": "Spanish",
+   "raw": "Masses are celebrated in the OLGC Church at the following ti: 7:30 PM (Spanish)",
+   "source_url": "https://www.olgcsi.org/mass-schedule",
+   "fetched_at": "2024-05-21T22:19:18+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-10-06: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "day_expanded_from": "Tuesday & Thursday",
+   "source": "wayback-2025-10-06",
+   "archive_url": "https://web.archive.org/web/20240521221918/https://www.olgcsi.org/mass-schedule",
+   "capture_date": "2024-05-21"
+  }
+ ],
  "source_url": "https://olgcsi.org/",
- "fetched_at": "2026-11-01T01:56:58+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-02T02:22:33+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 38
+ },
+ "has_sunday": true,
+ "groups_dropped": {
+  "fragment": 1
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(718) 447-1503",
+  "address": null,
+  "source_url": "https://www.olgcsi.org/contact-us",
+  "sources": {
+   "phone": "https://www.olgcsi.org/contact-us",
+   "address": "https://www.olgcsi.org/contact-us"
+  },
+  "fetched_at": "2025-03-26T00:40:39+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2025-10-06",
+  "capture_age_days": 392,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://olgcsi.org/",
+    "capture": "2025-10-06",
+    "archive_url": "https://web.archive.org/web/20251006103304/https://olgcsi.org/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://www.olgcsi.org/mass-schedule",
+    "capture": "2024-05-21",
+    "archive_url": "https://web.archive.org/web/20240521221918/https://www.olgcsi.org/mass-schedule"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://olgcsi.org/alter-servers-schedules",
+    "capture": "2025-05-24",
+    "archive_url": "https://web.archive.org/web/20250524190927/https://olgcsi.org/alter-servers-schedules"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://olgcsi.org/youth-group",
+    "capture": "2025-10-06",
+    "archive_url": "https://web.archive.org/web/20251006095436/https://olgcsi.org/youth-group"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://olgcsi.org/adult-faith-formation",
+    "capture": "2025-04-28",
+    "archive_url": "https://web.archive.org/web/20250428110107/https://olgcsi.org/adult-faith-formation"
+   },
+   {
+    "kind": "bulletin",
+    "original": "https://www.olgcsi.org/bulletins",
+    "capture": "2025-05-25",
+    "archive_url": "https://web.archive.org/web/20250525060128/https://www.olgcsi.org/bulletins"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://olgcsi.org/news-events",
+    "capture": "2024-04-20",
+    "archive_url": "https://web.archive.org/web/20240420192652/https://olgcsi.org/news-events"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://www.olgcsi.org/events",
+    "capture": "2025-04-30",
+    "archive_url": "https://web.archive.org/web/20250430141319/https://www.olgcsi.org/events"
+   },
+   {
+    "kind": "contact",
+    "original": "https://www.olgcsi.org/contact-us",
+    "capture": "2025-03-26",
+    "archive_url": "https://web.archive.org/web/20250326004039/https://www.olgcsi.org/contact-us"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }

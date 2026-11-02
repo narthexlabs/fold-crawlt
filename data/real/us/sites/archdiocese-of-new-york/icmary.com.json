@@ -22,32 +22,183 @@
  ],
  "home_url": "https://icmary.com/",
  "final_url": "https://icmary.com/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "crawl_status": "wayback-2025-10-15",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
    "url": "https://icmary.com/",
-   "status": 403,
-   "class": "challenge"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://icmary.com/archdioces-letters",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://icmary.com/funeral-mass",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://icmary.com/bulletins",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "live",
+   "url": "https://icmary.com/https-youtubecom-live-i3ms7ongsryfeatureshare",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "contact",
+   "url": "https://icmary.com/contact-us",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://icmary.com/ministries",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
+ "template": "ecatholic-fastpath",
  "groups": [],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/Immaculate-Conception-St-Marys-Church-113450840355106"
+  ],
+  "livestream": [
+   {
+    "url": "https://icmary.com/live-stream-mass",
+    "label": "Live Stream Mass",
+    "platform": "icmary.com",
+    "kind": "link"
+   }
+  ]
+ },
+ "bulletin": {
+  "url": "https://files.ecatholic.com/6767/bulletins/20251012.pdf?t=1760146158000",
+  "date": "2025-10-12",
+  "kind": "ecatholic_pdf",
+  "text": "October 12 , 2025",
+  "source_url": "https://icmary.com/bulletins"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": "English",
+   "raw": "English: Sunday 10:00am",
+   "source_url": "https://icmary.com/",
+   "fetched_at": "2025-10-15T17:56:30+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-10-15: read by a person before it is shown",
+   "source": "wayback-2025-10-15",
+   "archive_url": "https://web.archive.org/web/20251015175630/https://icmary.com/",
+   "capture_date": "2025-10-15"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "12:30",
+   "language": "Arabic",
+   "raw": "Arabic: Sunday-12:30pm",
+   "source_url": "https://icmary.com/",
+   "fetched_at": "2025-10-15T17:56:30+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-10-15: read by a person before it is shown",
+   "source": "wayback-2025-10-15",
+   "archive_url": "https://web.archive.org/web/20251015175630/https://icmary.com/",
+   "capture_date": "2025-10-15"
+  }
+ ],
  "source_url": "https://icmary.com/",
- "fetched_at": "2026-11-01T01:56:56+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-02T02:17:07+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 2
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "box_rows_added": 2
+ },
+ "groups_dropped": {},
+ "office_contact": {
+  "email": null,
+  "phone": "(914) 963-0156",
+  "address": "103 South Broadway, Yonkers, NY 10701",
+  "source_url": "https://icmary.com/contact-us",
+  "sources": {
+   "phone": "https://icmary.com/contact-us",
+   "address": "https://icmary.com/contact-us"
+  },
+  "fetched_at": "2024-01-17T03:28:29+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2025-10-15",
+  "capture_age_days": 383,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://icmary.com/",
+    "capture": "2025-10-15",
+    "archive_url": "https://web.archive.org/web/20251015175630/https://icmary.com/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://icmary.com/archdioces-letters",
+    "capture": "2025-05-13",
+    "archive_url": "https://web.archive.org/web/20250513230010/https://icmary.com/archdioces-letters"
+   },
+   {
+    "kind": "bulletin",
+    "original": "https://icmary.com/bulletins",
+    "capture": "2025-10-15",
+    "archive_url": "https://web.archive.org/web/20251015175919/https://icmary.com/bulletins"
+   },
+   {
+    "kind": "contact",
+    "original": "https://icmary.com/contact-us",
+    "capture": "2024-01-17",
+    "archive_url": "https://web.archive.org/web/20240117032829/https://icmary.com/contact-us"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }
