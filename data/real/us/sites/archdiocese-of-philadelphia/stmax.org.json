@@ -20,33 +20,566 @@
   "West Chester"
  ],
  "home_url": "https://stmax.org/",
- "final_url": "https://stmax.org/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "final_url": "https://www.stmax.org/",
+ "crawl_status": "wayback-2025-10-09",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
-   "url": "https://stmax.org/",
-   "status": 403,
-   "class": "challenge"
+   "url": "https://www.stmax.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.stmax.org/mass-confession-times",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stmax.org/live-mass",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.stmax.org/faith-formation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.stmax.org/adult-faith-formation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.stmax.org/spiritual-reading-group",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://stmax.org/bulletins",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://stmax.org/news-events",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://stmax.org/events",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://www.stmax.org/contact-us-directions",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "stmax.org:book_club|spiritual",
+   "name": "Spiritual Reading Group",
+   "category": "scripture_study",
+   "category_label": "Scripture & study",
+   "subcategory": "book_club",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.stmax.org/contact-us-directions",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stmax.org/spiritual-reading-group",
+   "source_kind": "website",
+   "fetched_at": "2025-06-18T18:32:15+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-10-09"
+  },
+  {
+   "id": "stmax.org:study_group",
+   "name": "Study Group",
+   "category": "scripture_study",
+   "category_label": "Scripture & study",
+   "subcategory": "study_group",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.stmax.org/contact-us-directions",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stmax.org/adult-faith-formation",
+   "source_kind": "website",
+   "fetched_at": "2025-06-18T18:08:26+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-10-09"
+  },
+  {
+   "id": "stmax.org:adult_formation",
+   "name": "Adult Faith Formation",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "adult_formation",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.stmax.org/contact-us-directions",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stmax.org/adult-faith-formation",
+   "source_kind": "website",
+   "fetched_at": "2025-06-18T18:08:26+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-10-09"
+  },
+  {
+   "id": "stmax.org:scouts",
+   "name": "Scouts",
+   "category": "youth",
+   "category_label": "Youth",
+   "subcategory": "scouting",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.stmax.org/contact-us-directions",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stmax.org/",
+   "source_kind": "website",
+   "fetched_at": "2025-10-09T11:04:35+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-10-09"
+  },
+  {
+   "id": "stmax.org:choir",
+   "name": "Music Ministry / Choir",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "choir_music",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.stmax.org/contact-us-directions",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stmax.org/",
+   "source_kind": "website",
+   "fetched_at": "2025-10-09T11:04:35+00:00",
+   "confidence": "low",
+   "source": "wayback-2025-10-09"
+  },
+  {
+   "id": "stmax.org:kofc",
+   "name": "Knights of Columbus",
+   "category": "fraternal_orders",
+   "category_label": "Fraternal & orders",
+   "subcategory": "knights_of_columbus",
+   "audience": "men",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://www.stmax.org/contact-us-directions",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stmax.org/",
+   "source_kind": "website",
+   "fetched_at": "2025-10-09T11:04:35+00:00",
+   "confidence": "medium",
+   "source": "wayback-2025-10-09"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/stmaxwestchester"
+  ],
+  "flocknote": [
+   "https://new.flocknote.com"
+  ],
+  "livestream": [
+   {
+    "url": "https://play.webvideocore.net/popplayer.php?it=3qfx6u0cqhc0",
+    "label": "Mass Livestream Saturday:4:00pm; Sundays:7:30,9:00,10:30am; ",
+    "platform": "play.webvideocore.net",
+    "kind": "link"
+   }
+  ]
+ },
+ "bulletin": {
+  "url": "https://files.ecatholic.com/2560/bulletins/20251012.pdf?t=1760109867000",
+  "date": "2025-10-12",
+  "kind": "ecatholic_pdf",
+  "text": "October 12 , 2025",
+  "source_url": "https://stmax.org/bulletins"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "16:00",
+   "language": "English",
+   "raw": "Saturday: 4:00 PM English",
+   "source_url": "https://www.stmax.org/mass-confession-times",
+   "fetched_at": "2025-06-18T18:03:04+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-10-09: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-10-09",
+   "archive_url": "https://web.archive.org/web/20250618180304/https://www.stmax.org/mass-confession-times",
+   "capture_date": "2025-06-18"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "07:30",
+   "language": "English",
+   "raw": "Sunday: 7:30 AM English",
+   "source_url": "https://www.stmax.org/mass-confession-times",
+   "fetched_at": "2025-06-18T18:03:04+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-10-09: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-10-09",
+   "archive_url": "https://web.archive.org/web/20250618180304/https://www.stmax.org/mass-confession-times",
+   "capture_date": "2025-06-18"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": "English",
+   "raw": "Sunday: 9:00 AM English",
+   "source_url": "https://www.stmax.org/mass-confession-times",
+   "fetched_at": "2025-06-18T18:03:04+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-10-09: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-10-09",
+   "archive_url": "https://web.archive.org/web/20250618180304/https://www.stmax.org/mass-confession-times",
+   "capture_date": "2025-06-18"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:30",
+   "language": "English",
+   "raw": "Sunday: 10:30 AM English",
+   "source_url": "https://www.stmax.org/mass-confession-times",
+   "fetched_at": "2025-06-18T18:03:04+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-10-09: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-10-09",
+   "archive_url": "https://web.archive.org/web/20250618180304/https://www.stmax.org/mass-confession-times",
+   "capture_date": "2025-06-18"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "08:00",
+   "language": "English",
+   "raw": "Monday - Saturday: 8:00 AM English Daily Mass",
+   "source_url": "https://www.stmax.org/mass-confession-times",
+   "fetched_at": "2025-06-18T18:03:04+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-10-09: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Monday - Saturday",
+   "source": "wayback-2025-10-09",
+   "archive_url": "https://web.archive.org/web/20250618180304/https://www.stmax.org/mass-confession-times",
+   "capture_date": "2025-06-18"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "08:00",
+   "language": "English",
+   "raw": "Monday - Saturday: 8:00 AM English Daily Mass",
+   "source_url": "https://www.stmax.org/mass-confession-times",
+   "fetched_at": "2025-06-18T18:03:04+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-10-09: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Monday - Saturday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "source": "wayback-2025-10-09",
+   "archive_url": "https://web.archive.org/web/20250618180304/https://www.stmax.org/mass-confession-times",
+   "capture_date": "2025-06-18"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "08:00",
+   "language": "English",
+   "raw": "Monday - Saturday: 8:00 AM English Daily Mass",
+   "source_url": "https://www.stmax.org/mass-confession-times",
+   "fetched_at": "2025-06-18T18:03:04+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-10-09: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Monday - Saturday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "source": "wayback-2025-10-09",
+   "archive_url": "https://web.archive.org/web/20250618180304/https://www.stmax.org/mass-confession-times",
+   "capture_date": "2025-06-18"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "08:00",
+   "language": "English",
+   "raw": "Monday - Saturday: 8:00 AM English Daily Mass",
+   "source_url": "https://www.stmax.org/mass-confession-times",
+   "fetched_at": "2025-06-18T18:03:04+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-10-09: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Monday - Saturday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "source": "wayback-2025-10-09",
+   "archive_url": "https://web.archive.org/web/20250618180304/https://www.stmax.org/mass-confession-times",
+   "capture_date": "2025-06-18"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "08:00",
+   "language": "English",
+   "raw": "Monday - Saturday: 8:00 AM English Daily Mass",
+   "source_url": "https://www.stmax.org/mass-confession-times",
+   "fetched_at": "2025-06-18T18:03:04+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-10-09: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Monday - Saturday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "source": "wayback-2025-10-09",
+   "archive_url": "https://web.archive.org/web/20250618180304/https://www.stmax.org/mass-confession-times",
+   "capture_date": "2025-06-18"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "08:00",
+   "language": "English",
+   "raw": "Monday - Saturday: 8:00 AM English Daily Mass",
+   "source_url": "https://www.stmax.org/mass-confession-times",
+   "fetched_at": "2025-06-18T18:03:04+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-10-09: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Monday - Saturday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "source": "wayback-2025-10-09",
+   "archive_url": "https://web.archive.org/web/20250618180304/https://www.stmax.org/mass-confession-times",
+   "capture_date": "2025-06-18"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "08:30-09:30",
+   "language": null,
+   "raw": "Saturday: 8:30 AM - 9:30 AM or by Appointment.",
+   "source_url": "https://www.stmax.org/mass-confession-times",
+   "fetched_at": "2025-06-18T18:03:04+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-10-09: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2025-10-09",
+   "archive_url": "https://web.archive.org/web/20250618180304/https://www.stmax.org/mass-confession-times",
+   "capture_date": "2025-06-18"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "17:30",
+   "language": null,
+   "raw": "VIGIL: 5:30 PM",
+   "source_url": "https://www.stmax.org/mass-confession-times",
+   "fetched_at": "2025-06-18T18:03:04+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-10-09: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic+generic_strict",
+   "kind_parsed": "mass",
+   "source": "wayback-2025-10-09",
+   "archive_url": "https://web.archive.org/web/20250618180304/https://www.stmax.org/mass-confession-times",
+   "capture_date": "2025-06-18"
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "08:30-16:30",
+   "language": null,
+   "raw": "ADORATION: Every Tuesday from 8:30 am - 4:30 pm",
+   "source_url": "https://www.stmax.org/",
+   "fetched_at": "2025-10-09T11:04:35+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-10-09: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2025-10-09",
+   "archive_url": "https://web.archive.org/web/20251009110435/https://www.stmax.org/",
+   "capture_date": "2025-10-09"
+  }
+ ],
  "source_url": "https://stmax.org/",
- "fetched_at": "2026-11-01T20:25:30+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-02T04:00:24+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": true
+   },
+   "score": "high"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 13
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "text:other_location": 3,
+  "text:dated_line": 7
+ },
+ "groups_dropped": {
+  "noise": 1
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(610) 399-6936",
+  "address": "15 East Pleasant Grove Road, West Chester, PA 19382",
+  "source_url": "https://www.stmax.org/contact-us-directions",
+  "sources": {
+   "phone": "https://www.stmax.org/contact-us-directions",
+   "address": "https://www.stmax.org/contact-us-directions"
+  },
+  "fetched_at": "2025-06-18T17:41:06+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2025-10-09",
+  "capture_age_days": 389,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://www.stmax.org/",
+    "capture": "2025-10-09",
+    "archive_url": "https://web.archive.org/web/20251009110435/https://www.stmax.org/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://www.stmax.org/mass-confession-times",
+    "capture": "2025-06-18",
+    "archive_url": "https://web.archive.org/web/20250618180304/https://www.stmax.org/mass-confession-times"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://stmax.org/live-mass",
+    "capture": "2025-10-09",
+    "archive_url": "https://web.archive.org/web/20251009103552/https://stmax.org/live-mass"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://www.stmax.org/faith-formation",
+    "capture": "2025-06-18",
+    "archive_url": "https://web.archive.org/web/20250618184115/https://www.stmax.org/faith-formation"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://www.stmax.org/adult-faith-formation",
+    "capture": "2025-06-18",
+    "archive_url": "https://web.archive.org/web/20250618180826/https://www.stmax.org/adult-faith-formation"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://www.stmax.org/spiritual-reading-group",
+    "capture": "2025-06-18",
+    "archive_url": "https://web.archive.org/web/20250618183215/https://www.stmax.org/spiritual-reading-group"
+   },
+   {
+    "kind": "bulletin",
+    "original": "https://stmax.org/bulletins",
+    "capture": "2025-10-16",
+    "archive_url": "https://web.archive.org/web/20251016160549/https://stmax.org/bulletins"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://stmax.org/news-events",
+    "capture": "2025-10-16",
+    "archive_url": "https://web.archive.org/web/20251016152058/https://stmax.org/news-events"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://stmax.org/events",
+    "capture": "2025-10-09",
+    "archive_url": "https://web.archive.org/web/20251009112314/https://stmax.org/events"
+   },
+   {
+    "kind": "contact",
+    "original": "https://www.stmax.org/contact-us-directions",
+    "capture": "2025-06-18",
+    "archive_url": "https://web.archive.org/web/20250618174106/https://www.stmax.org/contact-us-directions"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review.",
+  "grade": {
+   "rule": "wayback-verified-2026-11-01",
+   "template": "ecatholic",
+   "trusted_template": false,
+   "has_sunday": true,
+   "groups": 6,
+   "verified": false,
+   "capture_date": "2025-10-09",
+   "applied": false
+  }
  }
 }
