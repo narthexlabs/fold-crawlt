@@ -81,6 +81,24 @@
    "url": "https://richmonddiocese.org/about-us/contact-info/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://richmonddiocese.org/livestream/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://richmonddiocese.org/reconciliation/",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://richmonddiocese.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -103,7 +121,7 @@
    "note": "All-in-One Event Calendar export (WordPress)",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:41:29+00:00",
+    "fetched_at": "2026-11-02T04:52:53+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -202,9 +220,21 @@
  "source_url": "http://www.saintpatrickcc.org/",
  "fetched_at": "2026-11-01T20:25:13+00:00",
  "redirected_off_host": "richmonddiocese.org",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:13+00:00",
+  "requests": 3,
+  "found": [
+   "liturgy"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -218,16 +248,26 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 32
+  "trusted_kinds": [],
+  "generic_rows": 35
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Daily: 12:00 Noon (Tuesday & Wednesday) 9:00 AM (Thursdays) Vigil: 5:00 PM Sunday Mass: 8:30 AM, 11:00 AM Holy Day: Varies Reconciliation: 4:00 PM (Every Saturday and by appointment)",
+   "phrase": "by appointment",
+   "source_url": "https://richmonddiocese.org/parishes/",
+   "fetched_at": "2026-11-01T20:25:04+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "weekend_rescue_added": 4
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
