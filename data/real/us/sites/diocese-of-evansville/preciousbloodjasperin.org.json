@@ -83,6 +83,18 @@
    "url": "https://preciousbloodjasperin.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://preciousbloodjasperin.org/sacraments/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://preciousbloodjasperin.org/divine-providence-chapel/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -245,13 +257,137 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "16:00",
+   "language": null,
+   "raw": "Christmas Eve (December 24): 4 pm and 10 pm",
+   "source_url": "https://preciousbloodjasperin.org/liturgy-schedule/",
+   "fetched_at": "2026-11-01T22:15:35+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "kind_parsed": "devotion"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "22:00",
+   "language": null,
+   "raw": "Christmas Eve (December 24): 4 pm and 10 pm",
+   "source_url": "https://preciousbloodjasperin.org/liturgy-schedule/",
+   "fetched_at": "2026-11-01T22:15:35+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "kind_parsed": "devotion"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "09:00",
+   "language": null,
+   "raw": "Christmas Day (December 25): 9 am Mass Only",
+   "source_url": "https://preciousbloodjasperin.org/liturgy-schedule/",
+   "fetched_at": "2026-11-01T22:15:35+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "14:00",
+   "language": null,
+   "raw": "Good Friday (March 29): 2 pm",
+   "source_url": "https://preciousbloodjasperin.org/liturgy-schedule/",
+   "fetched_at": "2026-11-01T22:15:35+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "kind_parsed": "devotion"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "21:00",
+   "language": null,
+   "raw": "Holy Saturday (March 30): 9 pm",
+   "source_url": "https://preciousbloodjasperin.org/liturgy-schedule/",
+   "fetched_at": "2026-11-01T22:15:35+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "kind_parsed": "devotion"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "08:00",
+   "language": null,
+   "raw": "Easter Sunday (March 31): 8 am & 10:30",
+   "source_url": "https://preciousbloodjasperin.org/liturgy-schedule/",
+   "fetched_at": "2026-11-01T22:15:35+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "kind_parsed": "devotion"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "10:30",
+   "language": null,
+   "raw": "Easter Sunday (March 31): 8 am & 10:30",
+   "source_url": "https://preciousbloodjasperin.org/liturgy-schedule/",
+   "fetched_at": "2026-11-01T22:15:35+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "kind_parsed": "devotion"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:00-15:45",
+   "language": null,
+   "raw": "The sacrament of Reconciliation is offered on Saturday afternoon 3:00 pm – 3:45 pm or by appointment by contacting the pastor.",
+   "source_url": "https://preciousbloodjasperin.org/sacraments/",
+   "fetched_at": "2026-11-02T04:41:58+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
   }
  ],
  "source_url": "https://preciousbloodjasperin.org/",
  "fetched_at": "2026-11-01T22:16:04+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:00+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -265,18 +401,29 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 8
+  "trusted_kinds": [],
+  "generic_rows": 9
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "The sacrament of Reconciliation is offered on Saturday afternoon 3:00 pm – 3:45 pm or by appointment by contacting the pastor.",
+   "phrase": "by appointment",
+   "source_url": "https://preciousbloodjasperin.org/sacraments/",
+   "fetched_at": "2026-11-02T04:41:58+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 28,
-  "no_kind": 4,
-  "dated_line": 6
+  "dated_block": 10,
+  "other_location": 4,
+  "dated_line": 8,
+  "no_kind": 2
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

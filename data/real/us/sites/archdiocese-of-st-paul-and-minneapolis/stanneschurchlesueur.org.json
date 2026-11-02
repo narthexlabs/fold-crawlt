@@ -75,6 +75,24 @@
    "url": "https://www.stanneschurchlesueur.org/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stanneschurchlesueur.org/reconciliation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stanneschurchlesueur.org/eucharistic-adoration",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://www.stanneschurchlesueur.org/liturgy",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -265,6 +283,20 @@
    "review_reason": null,
    "confidence": "low",
    "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "First Friday of the month",
+   "time": "09:00-17:00",
+   "language": null,
+   "raw": "Eucharistic Adoration is held the first Friday of each month from 9:00 am to 5:00 pm at St Anne's Church",
+   "source_url": "https://www.stanneschurchlesueur.org/eucharistic-adoration",
+   "fetched_at": "2026-11-02T04:41:37+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "topup": true
   }
  ],
  "source_url": "https://www.stanneschurchlesueur.org/",
@@ -301,6 +333,25 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:38+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "stanneschurchoffice@gmail.com",
   "phone": "(507) 665-3811",
@@ -313,8 +364,5 @@
   },
   "fetched_at": "2026-11-01T03:58:01+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

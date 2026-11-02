@@ -75,6 +75,12 @@
    "url": "https://www.sfparish.org/contact-parish-staff",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.sfparish.org/reconciliation",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -105,7 +111,64 @@
   "text": "Bulletins",
   "source_url": "https://www.sfparish.org/bulletins"
  },
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "14:30",
+   "language": null,
+   "raw": "Reconciliation: 2:30 pm",
+   "source_url": "https://www.sfparish.org/reconciliation",
+   "fetched_at": "2026-11-02T04:41:49+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "19:00",
+   "language": null,
+   "raw": "(Prior to Mass): 7:00 pm",
+   "source_url": "https://www.sfparish.org/reconciliation",
+   "fetched_at": "2026-11-02T04:41:49+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "12:00",
+   "language": null,
+   "raw": "(Prior to Mass): 12:00 noon -",
+   "source_url": "https://www.sfparish.org/reconciliation",
+   "fetched_at": "2026-11-02T04:41:49+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "wix",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "13:00",
+   "language": null,
+   "raw": "(Prior to Mass): 1:00 pm",
+   "source_url": "https://www.sfparish.org/reconciliation",
+   "fetched_at": "2026-11-02T04:41:49+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "topup": true
+  }
+ ],
  "source_url": "http://www.sfparish.org/",
  "fetched_at": "2026-11-01T02:14:12+00:00",
  "schedule_template": {
@@ -142,5 +205,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:50+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 4,
+  "mode": "merge"
  }
 }

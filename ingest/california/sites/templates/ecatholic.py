@@ -37,12 +37,23 @@ LANG_CLS = {"ENGLISH": "English", "SPANISH": "Spanish", "VIETNAMESE": "Vietnames
             "CANTONESE": "Chinese", "POLISH": "Polish", "ITALIAN": "Italian", "FRENCH": "French", "BILINGUAL": "Bilingual",
             "SWAHILI": "Swahili", "IGBO": "Igbo", "TONGAN": "Tongan", "SAMOAN": "Samoan", "ARABIC": "Arabic", "GERMAN": "German",
             "AMERICAN_SIGN_LANGUAGE": "American Sign Language", "ASL": "American Sign Language", "HMONG": "Hmong"}
+DEDIC_RX = re.compile(r"\b(?:st\.?|saint|sts\.?|san|santa|santo|our lady|nuestra se[nñ]ora|holy|sacred|blessed|immaculate|"
+                      r"cathedral|basilica|shrine|mission)\b", re.I)
 NOT_NOTE = re.compile(r"communion service|liturgy of the word|novena|rosary|rosario|chaplet|stations|morning prayer|"
                       r"evening prayer|choir rehearsal|no mass|cancel", re.I)
 
 
+# a WordPress site is not eCatholic even when its theme reuses a "moduleInner" class (stgall.org, htparish.org moved to
+# WordPress and kept being read as eCatholic, 2026-11-01); eCatholic's own widget or CDN still wins
+WORDPRESS = re.compile(r"/wp-content/|/wp-includes/|<meta[^>]+name=[\"']generator[\"'][^>]+content=[\"']WordPress|/wp-json/", re.I)
+OWN_MARKUP = re.compile(r"sacramentTimesModule|ecatholiccdn\.com|powered by\s*(?:<[^>]+>\s*)*ecatholic", re.I)
+
+
 def detect(html: str, url: str) -> bool:
-    return bool(DETECT.search(html or ""))
+    h = html or ""
+    if not DETECT.search(h):
+        return False
+    return not WORDPRESS.search(h) or bool(OWN_MARKUP.search(h))
 
 
 def _hhmm(span) -> str | None:
@@ -63,6 +74,10 @@ def _days_of(dspan) -> tuple[list[int], list[int] | None, str | None]:
             return [DAYCLS[m.group(2)]], [NTH_N[m.group(1)]], None
         if c in ("HOLY_DAY", "HOLY_DAY_VIGIL"):
             return [], None, "holy"
+    if "DAILY" in cls and "MULTIDAY" not in cls:
+        ds = [d for d in C.days_in(C.norm_space(dspan.get_text(" ")).rstrip(" :")) if d.days]
+        if ds:
+            return sorted({x for d in ds for x in d.days}), None, None
     if "MULTIDAY" in cls:
         listed = [MULTI_CLS[c] for c in cls if c in MULTI_CLS]
         if listed:
@@ -87,7 +102,11 @@ def widget_rows(p, own: set[str], names: list[str] | None = None) -> tuple[list[
     def drop(k):
         dropped[k] = dropped.get(k, 0) + 1
 
-    for mod in p.soup.select("div.sacramentTimesModule"):
+    # current markup: div.sacramentTimesModule; older sites (2014-era theme) carry only div.massTimesModule /
+    # confessionTimesModule / adorationTimesModule around the same ul.sacramentTimes lists
+    for mod in p.soup.select("div.sacramentTimesModule, div.massTimesModule, div.confessionTimesModule, div.adorationTimesModule"):
+        if mod.find_parent("div", class_=re.compile(r"sacramentTimesModule|massTimesModule|confessionTimesModule|adorationTimesModule")):
+            continue
         for ul in mod.select("ul.sacramentTimes"):
             ucls = ul.get("class") or []
             kind = "confession" if "confessionTime" in ucls else "adoration" if "adorationTime" in ucls else "mass"
@@ -116,6 +135,7 @@ def widget_rows(p, own: set[str], names: list[str] | None = None) -> tuple[list[
                         lang = LANG_CLS.get(lc or "", C.norm_space(lsp.get_text(" ")) or None)
                     nsp = st.find("span", class_="notes")
                     notes = C.norm_space(nsp.get_text(" ")) if nsp else ""
+                    notes, exc = C.split_except(notes)    # "(except Holy Saturday)": a note on the row, never a church name
                     raw = C.norm_space(f"{daytxt}: {C.norm_space(st.find('span', class_='startTime').get_text(' '))}"
                                        f"{' - ' + C.norm_space(st.find('span', class_='endTime').get_text(' ')) if end else ''}"
                                        f" {lang or ''} {notes}")
@@ -126,7 +146,9 @@ def widget_rows(p, own: set[str], names: list[str] | None = None) -> tuple[list[
                     if kind == "mass" and re.search(r"\bexposition\b|\badoration\b", notes, re.I) and not re.search(r"\bmass\b", notes, re.I):
                         k = "adoration"
                     loc = re.sub(r"^[\s\-–(]+|[)\s]+$", "", notes)
-                    if loc and C.other_place(loc, own) and not re.search(r"\bmass\b|\bmisa\b", loc, re.I) or (
+                    # a widget lists the parish's own Masses: a note naming a building without a dedication ("at Oak Street
+                    # Church", "Pierson Street Church", "Parish Center") is one of its own worship sites, not another parish
+                    if loc and C.other_place(loc, own) and DEDIC_RX.search(loc) and not re.search(r"\bmass\b|\bmisa\b", loc, re.I) or (
                             loc and own and re.match(r"^[-–]\s*st\.?\s", notes, re.I) and not (C.name_words(loc) & own)):
                         drop("other_location")
                         continue
@@ -138,10 +160,10 @@ def widget_rows(p, own: set[str], names: list[str] | None = None) -> tuple[list[
                     row_days = days
                     if nn and not nth:
                         row_days = nn[0].days if nn[0].days[0] in days or not days else days
-                    seas = C.SEASON_RX.search(notes) or C.SEASON_RX.search(cat)
+                    seas = C.season_in(notes) or C.season_in(cat)
                     tstr = start if (k == "mass" or not end) else f"{start}-{end}"
                     if holy:
-                        rows.append(_row("other", "Holy days", tstr, lang, raw, p, "high", kind_parsed=k))
+                        rows.append(_row("other", "Holy days", tstr, lang, raw, p, "high", kind_parsed=k, note=exc))
                         continue
                     if not row_days:
                         drop("no_day")
@@ -149,20 +171,21 @@ def widget_rows(p, own: set[str], names: list[str] | None = None) -> tuple[list[
                     for d in row_days:
                         day = C.day_text(d, row_nth)
                         if seas:
-                            q = seas.group("s")
-                            day += f" ({'during the school year' if re.search('school', q, re.I) else C.fold(q)})"
-                        r = _row(k, day, tstr, lang, raw, p, "high")
+                            day += f" ({seas})"
+                        r = _row(k, day, tstr, lang, raw, p, "high", note=exc)
                         if len(row_days) > 1:
                             r["day_expanded_from"] = daytxt[:40]
                         rows.append(r)
     return rows, dropped
 
 
-def _row(kind, day, time, lang, raw, p, conf, kind_parsed=None) -> dict:
+def _row(kind, day, time, lang, raw, p, conf, kind_parsed=None, note=None) -> dict:
     r = {"kind": kind, "day": day, "time": time, "language": lang, "raw": raw[:200], "source_url": p.url, "fetched_at": p.fetched_at,
          "needs_review": False, "review_reason": None, "confidence": conf, "template": NAME}
     if kind_parsed and kind_parsed != kind:
         r["kind_parsed"] = kind_parsed
+    if note:
+        r["note"] = note[:120]
     return r
 
 
@@ -182,7 +205,7 @@ def parse_full(pages, names=None):
     have = {r["kind"] for r in wrows if r["kind"] in ("mass", "confession", "adoration")}
     # free text in the content modules, without the widgets, for kinds the widgets do not give
     grows, gd = generic_strict.parse_full(pages, names, NAME + "+generic_strict", ["#core", "#content1", "ul.region"],
-                                          ["div.sacramentTimesModule", "#content2", ".sideNavModule", "#quickLinks", "#siteName"])
+                                          ["div.sacramentTimesModule", "div.massTimesModule", "div.confessionTimesModule", "div.adorationTimesModule", "#content2", ".sideNavModule", "#quickLinks", "#siteName"])
     for k, v in gd.items():
         dropped["text:" + k] = dropped.get("text:" + k, 0) + v
     rows = C.dedupe(wrows + [r for r in grows if r["kind"] not in have])

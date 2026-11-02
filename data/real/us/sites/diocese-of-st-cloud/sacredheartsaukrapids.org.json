@@ -63,6 +63,12 @@
    "url": "https://www.sacredheartsaukrapids.org/bulletins",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.sacredheartsaukrapids.org/reconciliation",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -248,6 +254,62 @@
    "review_reason": null,
    "confidence": "high",
    "template": "wix"
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "15:00",
+   "language": null,
+   "raw": "Reconciliation Schedule: 3:00pm St. Francis Xavier, Sartell33",
+   "source_url": "https://www.sacredheartsaukrapids.org/reconciliation",
+   "fetched_at": "2026-11-02T04:42:02+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "15:30",
+   "language": null,
+   "raw": "Reconciliation Schedule: 3:30pm Sacred Heart, Sauk Rapids",
+   "source_url": "https://www.sacredheartsaukrapids.org/reconciliation",
+   "fetched_at": "2026-11-02T04:42:02+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "18:15",
+   "language": null,
+   "raw": "Reconciliation Schedule: 6:15pm St. Stephen, St. Stephen",
+   "source_url": "https://www.sacredheartsaukrapids.org/reconciliation",
+   "fetched_at": "2026-11-02T04:42:02+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "07:50",
+   "language": null,
+   "raw": "Reconciliation Schedule: 7:50am Annunciation, Mayhew Lake",
+   "source_url": "https://www.sacredheartsaukrapids.org/reconciliation",
+   "fetched_at": "2026-11-02T04:42:02+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "topup": true
   }
  ],
  "source_url": "http://www.sacredheartsaukrapids.org/",
@@ -286,5 +348,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:03+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 4,
+  "mode": "merge"
  }
 }

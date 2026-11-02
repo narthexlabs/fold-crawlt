@@ -81,6 +81,18 @@
    "url": "https://www.sfxparish.com/parish-info/contact-directions-email-phone/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.sfxparish.com/liturgy/eucharistic-adoration/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://www.sfxparish.com/liturgy/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -515,6 +527,22 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "Monday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Our Adoration starts on Mondays after the 9:00am Mass and continues until 2:45pm on Saturdays when we end with benediction.",
+   "source_url": "https://www.sfxparish.com/liturgy/eucharistic-adoration/",
+   "fetched_at": "2026-11-02T04:41:51+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "Our Adoration starts on Mondays after the 9:00am Mass and continues until 2:45pm on Saturdays when we end with benedicti",
+   "topup": true
   }
  ],
  "source_url": "https://www.sfxparish.com/",
@@ -556,6 +584,34 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "And by appointment! Please call the office if you desire to meet at another time with Fr. Ryan Healy for confession.",
+   "phrase": "by appointment",
+   "source_url": "https://www.sfxparish.com/sacraments/confession/",
+   "fetched_at": "2026-11-02T04:41:49+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:53+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "office@sfxparish.com",
   "phone": "(508) 995-7600",
@@ -568,8 +624,5 @@
   },
   "fetched_at": "2026-11-01T04:00:00+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

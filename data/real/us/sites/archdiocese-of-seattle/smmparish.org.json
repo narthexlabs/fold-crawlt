@@ -87,6 +87,12 @@
    "url": "https://www.smmparish.org/staff-contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.smmparish.org/adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -645,6 +651,114 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "squarespace"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "07:30",
+   "language": null,
+   "raw": "Masses: Monday, Tuesday, Thursday, Friday, & Saturday at 7:30am",
+   "source_url": "https://www.smmparish.org/liturgy-schedule",
+   "fetched_at": "2026-11-02T04:41:46+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace",
+   "day_parsed": "Saturday",
+   "day_bound_from_line": true,
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "07:30",
+   "language": null,
+   "raw": "Masses: Monday, Tuesday, Thursday, Friday, & Saturday at 7:30am",
+   "source_url": "https://www.smmparish.org/liturgy-schedule",
+   "fetched_at": "2026-11-02T04:41:46+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace",
+   "day_parsed": "Saturday",
+   "day_bound_from_line": true,
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "07:30",
+   "language": null,
+   "raw": "Masses: Monday, Tuesday, Thursday, Friday, & Saturday at 7:30am",
+   "source_url": "https://www.smmparish.org/liturgy-schedule",
+   "fetched_at": "2026-11-02T04:41:46+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace",
+   "day_parsed": "Saturday",
+   "day_bound_from_line": true,
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "07:30",
+   "language": null,
+   "raw": "Masses: Monday, Tuesday, Thursday, Friday, & Saturday at 7:30am",
+   "source_url": "https://www.smmparish.org/liturgy-schedule",
+   "fetched_at": "2026-11-02T04:41:46+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace",
+   "day_parsed": "Saturday",
+   "day_bound_from_line": true,
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "First Friday of the month (during the school year)",
+   "time": "07:30",
+   "language": null,
+   "raw": "First Friday Masses:: September- June: 7:30am & 7:00pm.",
+   "source_url": "https://www.smmparish.org/liturgy-schedule",
+   "fetched_at": "2026-11-02T04:41:46+00:00",
+   "needs_review": true,
+   "review_reason": "seasonal",
+   "confidence": "medium",
+   "template": "squarespace",
+   "season": "September- June",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "First Friday of the month (during the school year)",
+   "time": "19:00",
+   "language": null,
+   "raw": "First Friday Masses:: September- June: 7:30am & 7:00pm.",
+   "source_url": "https://www.smmparish.org/liturgy-schedule",
+   "fetched_at": "2026-11-02T04:41:46+00:00",
+   "needs_review": true,
+   "review_reason": "seasonal",
+   "confidence": "medium",
+   "template": "squarespace",
+   "season": "September- June",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "15:00-17:00",
+   "language": null,
+   "raw": "Adoration: Every Tuesday from 3pm to 5pm",
+   "source_url": "https://www.smmparish.org/adoration",
+   "fetched_at": "2026-11-02T04:41:48+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace",
+   "topup": true
   }
  ],
  "source_url": "http://www.smmparish.org/",
@@ -686,6 +800,27 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "social_shared_links_removed": [
+  "https://www.facebook.com/2008"
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:49+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 7,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(425) 353-1211",
@@ -697,11 +832,5 @@
   },
   "fetched_at": "2026-11-01T03:58:49+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
- },
- "social_shared_links_removed": [
-  "https://www.facebook.com/2008"
- ]
+ }
 }

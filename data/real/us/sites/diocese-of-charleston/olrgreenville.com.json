@@ -873,6 +873,62 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "Monday",
+   "time": "09:00-13:00",
+   "language": null,
+   "raw": "Adoration: 9:00 AM – 1:00 PM | Upper Church (During school term only)",
+   "source_url": "https://olr.church/eucharistic-adoration/",
+   "fetched_at": "2026-11-02T04:41:53+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "07:15-17:15",
+   "language": null,
+   "raw": "Adoration: 7:15 AM – 5:15 PM | Lower Church",
+   "source_url": "https://olr.church/eucharistic-adoration/",
+   "fetched_at": "2026-11-02T04:41:53+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "19:00-20:00",
+   "language": null,
+   "raw": "Adoration: 7 PM – 8 PM | Lower Church",
+   "source_url": "https://olr.church/eucharistic-adoration/",
+   "fetched_at": "2026-11-02T04:41:53+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "First Friday of the month",
+   "time": "11:00-17:00",
+   "language": null,
+   "raw": "Adoration: 11 AM – 5 PM | Upper Church",
+   "source_url": "https://olr.church/eucharistic-adoration/",
+   "fetched_at": "2026-11-02T04:41:53+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "https://www.olrgreenville.com/",
@@ -915,6 +971,33 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Or by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://olr.church/mass-confession-times/",
+   "fetched_at": "2026-11-02T04:41:51+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:53+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 4,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(864) 422-1648",
@@ -926,8 +1009,5 @@
   },
   "fetched_at": "2026-11-01T05:14:30+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

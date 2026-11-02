@@ -177,7 +177,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:35:13+00:00",
+    "fetched_at": "2026-11-02T04:45:40+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -194,7 +194,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:35:16+00:00",
+    "fetched_at": "2026-11-02T04:45:44+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -211,7 +211,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:35:18+00:00",
+    "fetched_at": "2026-11-02T04:45:45+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -228,7 +228,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:35:19+00:00",
+    "fetched_at": "2026-11-02T04:45:47+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -247,7 +247,7 @@
    "feed_key": "64e23a24843b",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:35:22+00:00",
+    "fetched_at": "2026-11-02T04:45:50+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -266,7 +266,7 @@
    "feed_key": "23537325aac5",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:35:25+00:00",
+    "fetched_at": "2026-11-02T04:45:53+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -286,19 +286,6 @@
   "source_url": "https://www.shepherdofsouls.org/"
  },
  "schedule_rows": [
-  {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "15:15-15:45",
-   "language": null,
-   "raw": "Individual Reconciliation:: Saturdays: St. Philip 3:15pm-3:45pm",
-   "source_url": "https://www.shepherdofsouls.org/first-reconciliation",
-   "fetched_at": "2026-11-01T22:15:25+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
   {
    "kind": "mass",
    "day": "Saturday",
@@ -350,13 +337,68 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:15",
+   "language": null,
+   "raw": "Weekend Reconciliation (Confession): Saturday: 3:15 PM at St. Philip,",
+   "source_url": "https://www.shepherdofsouls.org/",
+   "fetched_at": "2026-11-01T22:15:23+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Thursday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Individual Reconciliation:: Thursdays: St. John after 8:00am Mass",
+   "source_url": "https://www.shepherdofsouls.org/first-reconciliation",
+   "fetched_at": "2026-11-01T22:15:25+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "after",
+   "note": "Individual Reconciliation:: Thursdays: St. John after 8:00am Mass",
+   "relative_resolved": false
+  },
+  {
+   "kind": "confession",
+   "day": "Friday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Individual Reconciliation:: Fridays: Our Lady after 8:00am Mass",
+   "source_url": "https://www.shepherdofsouls.org/first-reconciliation",
+   "fetched_at": "2026-11-01T22:15:25+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "after",
+   "note": "Individual Reconciliation:: Fridays: Our Lady after 8:00am Mass",
+   "relative_resolved": false
   }
  ],
  "source_url": "https://www.shepherdofsouls.org/",
  "fetched_at": "2026-11-01T22:15:32+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:45+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -370,12 +412,10 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 5
  },
  "has_sunday": true,
- "schedule_dropped": {
-  "relative_time": 3
- },
  "groups_dropped": {
   "noise": 1,
   "unmatched": 1,
@@ -383,8 +423,8 @@
   "label_not_group": 2
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

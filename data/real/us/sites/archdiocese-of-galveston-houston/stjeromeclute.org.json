@@ -57,6 +57,18 @@
    "url": "https://stjeromeclute.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stjeromeclute.org/reconciliation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stjeromeclute.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -169,118 +181,6 @@
   "source_url": "https://stjeromeclute.org/"
  },
  "schedule_rows": [
-  {
-   "kind": "confession",
-   "day": "Wednesday",
-   "time": "15:00",
-   "language": null,
-   "raw": "Confession: 3:00 pm",
-   "source_url": "https://stjeromeclute.org/mass-times/",
-   "fetched_at": "2026-11-01T07:35:01+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress",
-   "day_expanded_from": "Wed & Thurs"
-  },
-  {
-   "kind": "confession",
-   "day": "Thursday",
-   "time": "15:00",
-   "language": null,
-   "raw": "Confession: 3:00 pm",
-   "source_url": "https://stjeromeclute.org/mass-times/",
-   "fetched_at": "2026-11-01T07:35:01+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress",
-   "day_expanded_from": "Wed & Thurs"
-  },
-  {
-   "kind": "confession",
-   "day": "Wednesday",
-   "time": "16:00",
-   "language": null,
-   "raw": "Confession: - 4:00 pm",
-   "source_url": "https://stjeromeclute.org/mass-times/",
-   "fetched_at": "2026-11-01T07:35:01+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress",
-   "day_expanded_from": "Wed & Thurs"
-  },
-  {
-   "kind": "confession",
-   "day": "Thursday",
-   "time": "16:00",
-   "language": null,
-   "raw": "Confession: - 4:00 pm",
-   "source_url": "https://stjeromeclute.org/mass-times/",
-   "fetched_at": "2026-11-01T07:35:01+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress",
-   "day_expanded_from": "Wed & Thurs"
-  },
-  {
-   "kind": "adoration",
-   "day": "Tuesday",
-   "time": "08:00",
-   "language": null,
-   "raw": "Adoration: 8:00 am",
-   "source_url": "https://stjeromeclute.org/mass-times/",
-   "fetched_at": "2026-11-01T07:35:01+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress",
-   "day_expanded_from": "Tues & Weds"
-  },
-  {
-   "kind": "adoration",
-   "day": "Wednesday",
-   "time": "08:00",
-   "language": null,
-   "raw": "Adoration: 8:00 am",
-   "source_url": "https://stjeromeclute.org/mass-times/",
-   "fetched_at": "2026-11-01T07:35:01+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress",
-   "day_expanded_from": "Tues & Weds"
-  },
-  {
-   "kind": "adoration",
-   "day": "Tuesday",
-   "time": "17:30",
-   "language": null,
-   "raw": "Adoration: - 5:30 pm",
-   "source_url": "https://stjeromeclute.org/mass-times/",
-   "fetched_at": "2026-11-01T07:35:01+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress",
-   "day_expanded_from": "Tues & Weds"
-  },
-  {
-   "kind": "adoration",
-   "day": "Wednesday",
-   "time": "17:30",
-   "language": null,
-   "raw": "Adoration: - 5:30 pm",
-   "source_url": "https://stjeromeclute.org/mass-times/",
-   "fetched_at": "2026-11-01T07:35:01+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress",
-   "day_expanded_from": "Tues & Weds"
-  },
   {
    "kind": "mass",
    "day": "Saturday",
@@ -401,13 +301,137 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Wednesday",
+   "time": "15:00",
+   "language": null,
+   "raw": "Confession: 3:00 pm",
+   "source_url": "https://stjeromeclute.org/mass-times/",
+   "fetched_at": "2026-11-01T07:35:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Wed & Thurs"
+  },
+  {
+   "kind": "confession",
+   "day": "Thursday",
+   "time": "15:00",
+   "language": null,
+   "raw": "Confession: 3:00 pm",
+   "source_url": "https://stjeromeclute.org/mass-times/",
+   "fetched_at": "2026-11-01T07:35:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Wed & Thurs"
+  },
+  {
+   "kind": "confession",
+   "day": "Wednesday",
+   "time": "16:00",
+   "language": null,
+   "raw": "Confession: - 4:00 pm",
+   "source_url": "https://stjeromeclute.org/mass-times/",
+   "fetched_at": "2026-11-01T07:35:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Wed & Thurs"
+  },
+  {
+   "kind": "confession",
+   "day": "Thursday",
+   "time": "16:00",
+   "language": null,
+   "raw": "Confession: - 4:00 pm",
+   "source_url": "https://stjeromeclute.org/mass-times/",
+   "fetched_at": "2026-11-01T07:35:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Wed & Thurs"
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Adoration: 8:00 am",
+   "source_url": "https://stjeromeclute.org/mass-times/",
+   "fetched_at": "2026-11-01T07:35:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Tues & Weds"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Adoration: 8:00 am",
+   "source_url": "https://stjeromeclute.org/mass-times/",
+   "fetched_at": "2026-11-01T07:35:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Tues & Weds"
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "17:30",
+   "language": null,
+   "raw": "Adoration: - 5:30 pm",
+   "source_url": "https://stjeromeclute.org/mass-times/",
+   "fetched_at": "2026-11-01T07:35:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Tues & Weds"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "17:30",
+   "language": null,
+   "raw": "Adoration: - 5:30 pm",
+   "source_url": "https://stjeromeclute.org/mass-times/",
+   "fetched_at": "2026-11-01T07:35:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Tues & Weds"
   }
  ],
  "source_url": "https://stjeromeclute.org/",
  "fetched_at": "2026-11-01T07:35:05+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:32+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -421,6 +445,7 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 14
  },
  "has_sunday": true,
@@ -433,8 +458,8 @@
   "unmatched": 2
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

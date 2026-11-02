@@ -63,6 +63,18 @@
    "url": "https://shcrosby.org/visit-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://shcrosby.org/liturgy-sacraments/reconciliation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://shcrosby.org/liturgy-sacraments/holy-hour/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -152,6 +164,34 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Tuesday",
+   "time": "18:00-19:00",
+   "language": null,
+   "raw": "Confession Times: Tuesday: 6:00 pm – 7:00 pm",
+   "source_url": "https://shcrosby.org/liturgy-sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:32+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:30-16:30",
+   "language": null,
+   "raw": "Confession Times: Saturday: 3:30 pm – 4:30 pm",
+   "source_url": "https://shcrosby.org/liturgy-sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:32+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "https://shcrosby.org/",
@@ -191,5 +231,21 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:34+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
  }
 }

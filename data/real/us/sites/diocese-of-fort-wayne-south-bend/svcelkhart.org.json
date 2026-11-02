@@ -75,6 +75,24 @@
    "url": "https://www.stvincentelkhart.org/liturgical-calendar",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stvincentelkhart.org/penance",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stvincentelkhart.org/adoration",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://www.stvincentelkhart.org/eucharistic-praise---worship",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -417,6 +435,62 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "Monday",
+   "time": "15:00-21:00",
+   "language": null,
+   "raw": "Adoration Times: Monday: 3 - 9 p.m.",
+   "source_url": "https://www.stvincentelkhart.org/adoration",
+   "fetched_at": "2026-11-02T04:41:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "18:00-21:00",
+   "language": null,
+   "raw": "Adoration Times: Wednesday: 6 - 9 p.m.",
+   "source_url": "https://www.stvincentelkhart.org/adoration",
+   "fetched_at": "2026-11-02T04:41:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "15:00-18:00",
+   "language": null,
+   "raw": "Adoration Times: Thursday: 3 - 6 p.m.",
+   "source_url": "https://www.stvincentelkhart.org/adoration",
+   "fetched_at": "2026-11-02T04:41:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "15:00-18:00",
+   "language": null,
+   "raw": "Adoration Times: Friday: 3 - 6 p.m.",
+   "source_url": "https://www.stvincentelkhart.org/adoration",
+   "fetched_at": "2026-11-02T04:41:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
   }
  ],
  "source_url": "https://svcelkhart.org/",
@@ -454,6 +528,25 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:42+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 4,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(574) 293-8231",
@@ -464,8 +557,5 @@
   },
   "fetched_at": "2026-11-01T03:59:16+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

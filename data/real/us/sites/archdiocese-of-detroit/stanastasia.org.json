@@ -84,6 +84,18 @@
    "url": "https://www.stanastasia.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stanastasia.org/worship/sacraments/reconciliation/",
+   "status": null,
+   "class": "timeout"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stanastasia.org/worship/chapel/adoration/",
+   "status": null,
+   "class": "timeout"
   }
  ],
  "cms_guess": {
@@ -520,6 +532,20 @@
    "day_bound_from_line": true
   },
   {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "19:00",
+   "language": null,
+   "raw": "Masses on holy days are usually at 9:30 AM and 7:00 PM.",
+   "source_url": "https://www.stanastasia.org/worship/mass-times/",
+   "fetched_at": "2026-11-01T22:15:39+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "kind_parsed": "mass"
+  },
+  {
    "kind": "confession",
    "day": "Tuesday",
    "time": "18:00",
@@ -535,9 +561,19 @@
  ],
  "source_url": "https://www.stanastasia.org/",
  "fetched_at": "2026-11-01T22:15:50+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:21+00:00",
+  "requests": 2,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -551,19 +587,26 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 15
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Confessions can be made by appointment by calling the Parish Office at .",
+   "phrase": "by appointment",
+   "source_url": "https://www.stanastasia.org/worship/mass-times/",
+   "fetched_at": "2026-11-01T22:15:39+00:00"
+  }
+ ],
  "has_sunday": true,
- "schedule_dropped": {
-  "other_location": 3
- },
  "groups_dropped": {
   "unmatched": 2,
   "noise": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

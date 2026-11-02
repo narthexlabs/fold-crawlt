@@ -21,33 +21,357 @@
   "Portland"
  ],
  "home_url": "https://www.stfrancispdx.org/",
- "final_url": "https://www.stfrancispdx.org/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "final_url": "https://stfrancispdx.org/",
+ "crawl_status": "wayback-2026-04-16",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
-   "url": "https://www.stfrancispdx.org/",
-   "status": 403,
-   "class": "challenge"
+   "url": "https://stfrancispdx.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stfrancispdx.org/mass-times",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stfrancispdx.org/liturgy-%26-sacraments",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://stfrancispdx.org/ministries",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://stfrancispdx.org/contact",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "godaddy",
+  "evidence": [
+   "content=\"starfield"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "generic-html:godaddy",
+ "groups": [
+  {
+   "id": "stfrancispdx.org:ocia",
+   "name": "Becoming Catholic - RCIA",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "ocia",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stfrancispdx.org/contact",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stfrancispdx.org/ministries",
+   "source_kind": "website",
+   "fetched_at": "2025-07-13T07:51:21+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-04-16"
+  },
+  {
+   "id": "stfrancispdx.org:svdp",
+   "name": "Saint Vincent de Paul",
+   "category": "service_mercy",
+   "category_label": "Service & mercy",
+   "subcategory": "st_vincent_de_paul",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://stfrancispdx.org/contact",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stfrancispdx.org/ministries",
+   "source_kind": "website",
+   "fetched_at": "2025-07-13T07:51:21+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-04-16"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
  "social": {},
  "bulletin": null,
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:30",
+   "language": null,
+   "raw": "Sunday Mass: Join us 9:30am or 7:00pm every Sunday",
+   "source_url": "https://stfrancispdx.org/mass-times",
+   "fetched_at": "2024-10-03T14:54:39+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-16: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "godaddy",
+   "source": "wayback-2026-04-16",
+   "archive_url": "https://web.archive.org/web/20241003145439/https://stfrancispdx.org/mass-times",
+   "capture_date": "2024-10-03"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "19:00",
+   "language": null,
+   "raw": "Sunday Mass: Join us 9:30am or 7:00pm every Sunday",
+   "source_url": "https://stfrancispdx.org/mass-times",
+   "fetched_at": "2024-10-03T14:54:39+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-16: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "godaddy",
+   "source": "wayback-2026-04-16",
+   "archive_url": "https://web.archive.org/web/20241003145439/https://stfrancispdx.org/mass-times",
+   "capture_date": "2024-10-03"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "12:05",
+   "language": null,
+   "raw": "Daily Mass: Tuesday - Saturday at 12:05pm .",
+   "source_url": "https://stfrancispdx.org/mass-times",
+   "fetched_at": "2024-10-03T14:54:39+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-16: read by a person before it is shown",
+   "confidence": "high",
+   "template": "godaddy",
+   "day_expanded_from": "Tuesday - Saturday",
+   "source": "wayback-2026-04-16",
+   "archive_url": "https://web.archive.org/web/20241003145439/https://stfrancispdx.org/mass-times",
+   "capture_date": "2024-10-03"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "12:05",
+   "language": null,
+   "raw": "Daily Mass: Tuesday - Saturday at 12:05pm .",
+   "source_url": "https://stfrancispdx.org/mass-times",
+   "fetched_at": "2024-10-03T14:54:39+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-16: read by a person before it is shown",
+   "confidence": "high",
+   "template": "godaddy",
+   "day_expanded_from": "Tuesday - Saturday",
+   "day_parsed": "Tuesday",
+   "day_bound_from_line": true,
+   "source": "wayback-2026-04-16",
+   "archive_url": "https://web.archive.org/web/20241003145439/https://stfrancispdx.org/mass-times",
+   "capture_date": "2024-10-03"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "12:05",
+   "language": null,
+   "raw": "Daily Mass: Tuesday - Saturday at 12:05pm .",
+   "source_url": "https://stfrancispdx.org/mass-times",
+   "fetched_at": "2024-10-03T14:54:39+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-16: read by a person before it is shown",
+   "confidence": "high",
+   "template": "godaddy",
+   "day_expanded_from": "Tuesday - Saturday",
+   "day_parsed": "Tuesday",
+   "day_bound_from_line": true,
+   "source": "wayback-2026-04-16",
+   "archive_url": "https://web.archive.org/web/20241003145439/https://stfrancispdx.org/mass-times",
+   "capture_date": "2024-10-03"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "12:05",
+   "language": null,
+   "raw": "Daily Mass: Tuesday - Saturday at 12:05pm .",
+   "source_url": "https://stfrancispdx.org/mass-times",
+   "fetched_at": "2024-10-03T14:54:39+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-16: read by a person before it is shown",
+   "confidence": "high",
+   "template": "godaddy",
+   "day_expanded_from": "Tuesday - Saturday",
+   "day_parsed": "Tuesday",
+   "day_bound_from_line": true,
+   "source": "wayback-2026-04-16",
+   "archive_url": "https://web.archive.org/web/20241003145439/https://stfrancispdx.org/mass-times",
+   "capture_date": "2024-10-03"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "12:05",
+   "language": null,
+   "raw": "Daily Mass: Tuesday - Saturday at 12:05pm .",
+   "source_url": "https://stfrancispdx.org/mass-times",
+   "fetched_at": "2024-10-03T14:54:39+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-16: read by a person before it is shown",
+   "confidence": "high",
+   "template": "godaddy",
+   "day_expanded_from": "Tuesday - Saturday",
+   "day_parsed": "Tuesday",
+   "day_bound_from_line": true,
+   "source": "wayback-2026-04-16",
+   "archive_url": "https://web.archive.org/web/20241003145439/https://stfrancispdx.org/mass-times",
+   "capture_date": "2024-10-03"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "11:00-11:45",
+   "language": null,
+   "raw": "Confessions are 11:00 to 11:45 AM Saturdays and 8:30-9:00 AM Sundays",
+   "source_url": "https://stfrancispdx.org/mass-times",
+   "fetched_at": "2024-10-03T14:54:39+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-16: read by a person before it is shown",
+   "confidence": "high",
+   "template": "godaddy",
+   "source": "wayback-2026-04-16",
+   "archive_url": "https://web.archive.org/web/20241003145439/https://stfrancispdx.org/mass-times",
+   "capture_date": "2024-10-03"
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "08:30-09:00",
+   "language": null,
+   "raw": "Confessions are 11:00 to 11:45 AM Saturdays and 8:30-9:00 AM Sundays",
+   "source_url": "https://stfrancispdx.org/mass-times",
+   "fetched_at": "2024-10-03T14:54:39+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-16: read by a person before it is shown",
+   "confidence": "high",
+   "template": "godaddy",
+   "source": "wayback-2026-04-16",
+   "archive_url": "https://web.archive.org/web/20241003145439/https://stfrancispdx.org/mass-times",
+   "capture_date": "2024-10-03"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "19:00",
+   "language": null,
+   "raw": "Join us after every Daily Mass for 30 minutes and every Friday Evening at 7:00pm",
+   "source_url": "https://stfrancispdx.org/mass-times",
+   "fetched_at": "2024-10-03T14:54:39+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-16: read by a person before it is shown",
+   "confidence": "high",
+   "template": "godaddy",
+   "source": "wayback-2026-04-16",
+   "archive_url": "https://web.archive.org/web/20241003145439/https://stfrancispdx.org/mass-times",
+   "capture_date": "2024-10-03"
+  }
+ ],
  "source_url": "https://www.stfrancispdx.org/",
- "fetched_at": "2026-11-01T17:27:14+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-02T04:22:09+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "godaddy",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": true
+   },
+   "score": "high"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 40
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "benediction_end": 2,
+  "other_location": 2
+ },
+ "groups_dropped": {
+  "unmatched": 2
+ },
+ "office_contact": {
+  "email": "info@stfrancispdx.org",
+  "phone": "(503) 232-5880",
+  "address": null,
+  "source_url": "https://stfrancispdx.org/contact",
+  "sources": {
+   "email": "https://stfrancispdx.org/contact",
+   "phone": "https://stfrancispdx.org/contact"
+  },
+  "fetched_at": "2025-09-17T23:16:55+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2026-04-16",
+  "capture_age_days": 200,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://stfrancispdx.org/",
+    "capture": "2026-04-16",
+    "archive_url": "https://web.archive.org/web/20260416162825/https://stfrancispdx.org/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://stfrancispdx.org/mass-times",
+    "capture": "2024-10-03",
+    "archive_url": "https://web.archive.org/web/20241003145439/https://stfrancispdx.org/mass-times"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://stfrancispdx.org/liturgy-%26-sacraments",
+    "capture": "2024-10-03",
+    "archive_url": "https://web.archive.org/web/20241003131824/https://stfrancispdx.org/liturgy-%26-sacraments"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://stfrancispdx.org/ministries",
+    "capture": "2025-07-13",
+    "archive_url": "https://web.archive.org/web/20250713075121/https://stfrancispdx.org/ministries"
+   },
+   {
+    "kind": "contact",
+    "original": "https://stfrancispdx.org/contact",
+    "capture": "2025-09-17",
+    "archive_url": "https://web.archive.org/web/20250917231655/https://stfrancispdx.org/contact"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review.",
+  "grade": {
+   "rule": "wayback-verified-2026-11-01",
+   "template": "godaddy",
+   "trusted_template": false,
+   "has_sunday": true,
+   "groups": 2,
+   "verified": false,
+   "capture_date": "2026-04-16",
+   "applied": false
+  }
  }
 }

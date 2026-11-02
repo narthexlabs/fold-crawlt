@@ -81,6 +81,18 @@
    "url": "https://staugustineparish.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://staugustineparish.org/reconciliation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://staugustineparish.org/holyhour/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -154,7 +166,22 @@
   "text": "Bulletin",
   "source_url": "https://staugustineparish.org/"
  },
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "12:00-13:00",
+   "language": null,
+   "raw": "Reconciliation, or Confession, is available Saturdays from 12-1pm or by appointment by calling the parish office at .",
+   "source_url": "https://staugustineparish.org/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:34+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
+  }
+ ],
  "source_url": "http://staugustineparish.org/",
  "fetched_at": "2026-11-01T05:09:37+00:00",
  "schedule_template": {
@@ -190,6 +217,36 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()",
+  "names_withheld": 0,
+  "contacts_removed": 1
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Reconciliation, or Confession, is available Saturdays from 12-1pm or by appointment by calling the parish office at .",
+   "phrase": "by appointment",
+   "source_url": "https://staugustineparish.org/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:34+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:37+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "info@staugustineparish.org",
   "phone": "(978) 475-0050",
@@ -202,8 +259,5 @@
   },
   "fetched_at": "2026-11-01T05:09:36+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

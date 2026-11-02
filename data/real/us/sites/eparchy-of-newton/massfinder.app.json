@@ -39,6 +39,18 @@
    "url": "https://massfinderapp.com/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://massfinderapp.com/alaska/anchorage/blessed-sacrament-monastery/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://massfinderapp.com/north-carolina/belmont/st-joseph-adoration-chapel/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -57,59 +69,77 @@
   ]
  },
  "bulletin": null,
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "19:30",
+   "language": null,
+   "raw": "Mass will take place today at 19:30.",
+   "source_url": "https://massfinderapp.com/north-carolina/belmont/st-joseph-adoration-chapel/",
+   "fetched_at": "2026-11-02T04:41:46+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "19:30",
+   "language": null,
+   "raw": "Monday Mass Times: 19:30",
+   "source_url": "https://massfinderapp.com/north-carolina/belmont/st-joseph-adoration-chapel/",
+   "fetched_at": "2026-11-02T04:41:46+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  }
+ ],
  "source_url": "https://massfinder.app/new-york/yonkers/christ-the-savior-melkite-catholic-church/",
  "fetched_at": "2026-11-01T17:27:10+00:00",
  "redirected_off_host": "massfinderapp.com",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:46+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
-    "has_sunday": false,
+    "has_sunday": true,
     "hours_ok": true,
     "counts_ok": true,
     "sunday_not_copied": true,
     "no_daily_on_sunday": true,
     "mostly_high": false
    },
-   "score": "low"
+   "score": "medium"
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 0
  },
- "has_sunday": false,
+ "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 10
+  "other_location": 18
  },
- "schedule_images": [
-  {
-   "url": "https://massfinderapp.com/wp-content/uploads/2025/07/Logo-MassFinder.png",
-   "alt": "Logo MassFinder",
-   "page": "https://massfinderapp.com/new-york/new-york/"
-  },
-  {
-   "url": "https://massfinderapp.com/wp-content/uploads/2024/02/st-george-academy-new-york-new-york-150x150.jpg",
-   "alt": "St George Academy",
-   "page": "https://massfinderapp.com/new-york/new-york/"
-  },
-  {
-   "url": "https://massfinderapp.com/wp-content/uploads/2024/02/church-of-our-lady-of-lourdes-new-york-new-york-150x150.jpg",
-   "alt": "Church of Our Lady of Lourdes",
-   "page": "https://massfinderapp.com/new-york/new-york/"
-  },
-  {
-   "url": "https://massfinderapp.com/wp-content/uploads/2024/02/holy-trinity-roman-catholic-church-new-york-new-york-150x150.jpg",
-   "alt": "Holy Trinity Roman Catholic Church",
-   "page": "https://massfinderapp.com/new-york/new-york/"
-  }
- ],
- "schedule_note": "schedule appears to be an image; times not read (needs_review)",
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

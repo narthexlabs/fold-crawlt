@@ -72,6 +72,18 @@
    "url": "https://www.mjfallriver.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.mjfallriver.org/confession",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.mjfallriver.org/eucharistic-adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -209,6 +221,62 @@
    "review_reason": null,
    "confidence": "low",
    "template": "squarespace"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "08:30-09:00",
+   "language": null,
+   "raw": "Confessions are available:: Saturday mornings at St. Joseph's 8:30am-9:00am",
+   "source_url": "https://www.mjfallriver.org/confession",
+   "fetched_at": "2026-11-02T04:41:43+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:00-15:45",
+   "language": null,
+   "raw": "Confessions are available:: Saturday afternoons at St. Michael's 3pm-3:45pm",
+   "source_url": "https://www.mjfallriver.org/confession",
+   "fetched_at": "2026-11-02T04:41:43+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Wednesday",
+   "time": "17:30-18:00",
+   "language": null,
+   "raw": "Confessions are available:: Wednesday nights at St. Joseph's 5:30pm-6:00pm (while CCD is in session.)",
+   "source_url": "https://www.mjfallriver.org/confession",
+   "fetched_at": "2026-11-02T04:41:43+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "18:30-19:30",
+   "language": null,
+   "raw": "Eucharistic Adoration is held every Tuesday evening from 6:30–7:30 PM at St.",
+   "source_url": "https://www.mjfallriver.org/eucharistic-adoration",
+   "fetched_at": "2026-11-02T04:41:44+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "squarespace",
+   "topup": true
   }
  ],
  "source_url": "https://www.mjfallriver.org/",
@@ -247,6 +315,25 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:45+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 4,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(508) 673-1123",
@@ -258,8 +345,5 @@
   },
   "fetched_at": "2026-11-01T03:59:38+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

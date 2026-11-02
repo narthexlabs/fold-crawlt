@@ -81,6 +81,18 @@
    "url": "https://www.mqpdanville.org/parish-information/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.mqpdanville.org/sacraments/penance/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.mqpdanville.org/event/adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -212,7 +224,7 @@
    "note": "All-in-One Event Calendar export (WordPress)",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:31:53+00:00",
+    "fetched_at": "2026-11-02T04:44:00+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -240,12 +252,77 @@
  "schedule_rows": [
   {
    "kind": "mass",
+   "day": "Tuesday",
+   "time": "17:30",
+   "language": null,
+   "raw": "No Mass: 5:30 p.m.",
+   "source_url": "https://www.mqpdanville.org/",
+   "fetched_at": "2026-11-01T20:25:02+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "08:30",
+   "language": null,
+   "raw": "No Mass: 8:30 a.m., Adoration at 9:00 a.m. until noon",
+   "source_url": "https://www.mqpdanville.org/",
+   "fetched_at": "2026-11-01T20:25:02+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "09:00",
+   "language": null,
+   "raw": "8:30 a.m., Adoration at 9:00 a.m. until noon",
+   "source_url": "https://www.mqpdanville.org/",
+   "fetched_at": "2026-11-01T20:25:02+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "17:30",
+   "language": null,
+   "raw": "No Mass: 5:30 p.m.",
+   "source_url": "https://www.mqpdanville.org/",
+   "fetched_at": "2026-11-01T20:25:02+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "08:30",
+   "language": null,
+   "raw": "No Mass: 8:30 a.m.",
+   "source_url": "https://www.mqpdanville.org/",
+   "fetched_at": "2026-11-01T20:25:02+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
    "day": "Saturday",
    "time": "17:00",
    "language": null,
-   "raw": "Mass Schedule: Saturday 5:00 p.m.",
-   "source_url": "https://www.mqpdanville.org/mass-schedule/",
-   "fetched_at": "2026-11-01T20:25:06+00:00",
+   "raw": "No Mass: 5:00 p.m.",
+   "source_url": "https://www.mqpdanville.org/",
+   "fetched_at": "2026-11-01T20:25:02+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -256,9 +333,9 @@
    "day": "Sunday",
    "time": "07:30",
    "language": null,
-   "raw": "Mass Schedule: Sunday 7:30 a.m. and 10:45 a.m.",
-   "source_url": "https://www.mqpdanville.org/mass-schedule/",
-   "fetched_at": "2026-11-01T20:25:06+00:00",
+   "raw": "No Mass: 7:30 a.m. and 10:45 a.m.",
+   "source_url": "https://www.mqpdanville.org/",
+   "fetched_at": "2026-11-01T20:25:02+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -269,80 +346,7 @@
    "day": "Sunday",
    "time": "10:45",
    "language": null,
-   "raw": "Mass Schedule: Sunday 7:30 a.m. and 10:45 a.m.",
-   "source_url": "https://www.mqpdanville.org/mass-schedule/",
-   "fetched_at": "2026-11-01T20:25:06+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress"
-  },
-  {
-   "kind": "mass",
-   "day": "Tuesday",
-   "time": "17:30",
-   "language": null,
-   "raw": "Mass Schedule: Tues & Thurs 5:30 p.m.",
-   "source_url": "https://www.mqpdanville.org/mass-schedule/",
-   "fetched_at": "2026-11-01T20:25:06+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress",
-   "day_expanded_from": "Tues & Thurs"
-  },
-  {
-   "kind": "mass",
-   "day": "Thursday",
-   "time": "17:30",
-   "language": null,
-   "raw": "Mass Schedule: Tues & Thurs 5:30 p.m.",
-   "source_url": "https://www.mqpdanville.org/mass-schedule/",
-   "fetched_at": "2026-11-01T20:25:06+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress",
-   "day_expanded_from": "Tues & Thurs",
-   "day_parsed": "Tuesday",
-   "day_bound_from_line": true
-  },
-  {
-   "kind": "mass",
-   "day": "Wednesday",
-   "time": "08:30",
-   "language": null,
-   "raw": "Mass Schedule: Wed & Fri 8:30 a.m.",
-   "source_url": "https://www.mqpdanville.org/mass-schedule/",
-   "fetched_at": "2026-11-01T20:25:06+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress",
-   "day_expanded_from": "Wed & Fri"
-  },
-  {
-   "kind": "mass",
-   "day": "Friday",
-   "time": "08:30",
-   "language": null,
-   "raw": "Mass Schedule: Wed & Fri 8:30 a.m.",
-   "source_url": "https://www.mqpdanville.org/mass-schedule/",
-   "fetched_at": "2026-11-01T20:25:06+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress",
-   "day_expanded_from": "Wed & Fri",
-   "day_parsed": "Wednesday",
-   "day_bound_from_line": true
-  },
-  {
-   "kind": "adoration",
-   "day": "Wednesday",
-   "time": "09:00",
-   "language": null,
-   "raw": "8:30 a.m., Adoration at 9:00 a.m. until noon",
+   "raw": "No Mass: 7:30 a.m. and 10:45 a.m.",
    "source_url": "https://www.mqpdanville.org/",
    "fetched_at": "2026-11-01T20:25:02+00:00",
    "needs_review": false,
@@ -366,9 +370,22 @@
  ],
  "source_url": "https://www.mqpdanville.org/",
  "fetched_at": "2026-11-01T20:25:15+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:37+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -382,12 +399,31 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 16
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Saturdays 3:45 p.m. to 4:30 p.m. or anytime by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://www.mqpdanville.org/",
+   "fetched_at": "2026-11-01T20:25:02+00:00"
+  }
+ ],
+ "schedule_none": [
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "text": "No Mass on Monday",
+   "source_url": "https://www.mqpdanville.org/worship/",
+   "fetched_at": "2026-11-01T20:25:04+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "relative_time": 1,
-  "skipped_section": 5
+  "skipped_section": 10
  },
  "groups_dropped": {
   "unmatched": 1,
@@ -395,8 +431,8 @@
   "sacrament_prep": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

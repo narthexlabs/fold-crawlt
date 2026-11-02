@@ -45,6 +45,18 @@
    "url": "https://stmichaelsmishawaka.org/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stmichaelsmishawaka.org/reconciliation/",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stmichaelsmishawaka.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -89,7 +101,7 @@
    "feed_key": "dec64efbef75",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:32:29+00:00",
+    "fetched_at": "2026-11-02T04:44:50+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -108,12 +120,12 @@
    "day": "Sunday",
    "time": "10:00",
    "language": null,
-   "raw": "Divine Liturgy: 10:00 a.m.",
-   "source_url": "https://stmichaelsmishawaka.org/worship-schedule/",
-   "fetched_at": "2026-11-01T22:15:24+00:00",
+   "raw": "Join us for Divine Liturgy Sundays at 10am!",
+   "source_url": "https://stmichaelsmishawaka.org/",
+   "fetched_at": "2026-11-01T22:15:22+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "medium",
+   "confidence": "high",
    "template": "wordpress"
   },
   {
@@ -132,9 +144,19 @@
  ],
  "source_url": "https://stmichaelsmishawaka.org/",
  "fetched_at": "2026-11-01T22:15:27+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:38+00:00",
+  "requests": 2,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -148,6 +170,7 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 6
  },
  "has_sunday": true,
@@ -158,8 +181,8 @@
   "unmatched": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

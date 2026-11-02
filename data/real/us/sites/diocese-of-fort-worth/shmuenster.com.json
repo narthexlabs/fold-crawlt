@@ -75,6 +75,12 @@
    "url": "https://shmuenster.com/church/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://shmuenster.com/church/prayer/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -1188,6 +1194,36 @@
    "confidence": "medium",
    "template": "wordpress",
    "day_expanded_from": "Wed & Sat"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "09:00-18:00",
+   "language": null,
+   "raw": "Adoration: Wed & Fri: 9 am – 6 pm in Chapel",
+   "source_url": "https://shmuenster.com/church/prayer/",
+   "fetched_at": "2026-11-02T04:41:39+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Wed & Fri",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "09:00-18:00",
+   "language": null,
+   "raw": "Adoration: Wed & Fri: 9 am – 6 pm in Chapel",
+   "source_url": "https://shmuenster.com/church/prayer/",
+   "fetched_at": "2026-11-02T04:41:39+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Wed & Fri",
+   "topup": true
   }
  ],
  "source_url": "https://shmuenster.com/church/sacred-heart-church/",
@@ -1234,5 +1270,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:39+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
  }
 }

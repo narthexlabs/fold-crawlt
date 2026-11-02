@@ -853,6 +853,48 @@
    "confidence": "medium",
    "template": "wordpress",
    "day_expanded_from": "Monday- Friday"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "19:00",
+   "language": "Spanish",
+   "raw": "MASS TIMES: 7:00 PM Spanish",
+   "source_url": "https://stpatrickslufkin.com/mass-reconciliation-times/",
+   "fetched_at": "2026-11-02T04:41:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:00",
+   "language": "Spanish",
+   "raw": "MASS TIMES: 11:00 AM Spanish",
+   "source_url": "https://stpatrickslufkin.com/mass-reconciliation-times/",
+   "fetched_at": "2026-11-02T04:41:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "17:00",
+   "language": "English",
+   "raw": "MASS TIMES: 5:00 PM English",
+   "source_url": "https://stpatrickslufkin.com/mass-reconciliation-times/",
+   "fetched_at": "2026-11-02T04:41:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "http://stpatrickslufkin.com/",
@@ -893,5 +935,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:43+00:00",
+  "requests": 3,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 3,
+  "mode": "merge"
  }
 }

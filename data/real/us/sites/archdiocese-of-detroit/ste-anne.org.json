@@ -75,6 +75,12 @@
    "url": "https://ste-anne.org/about-us/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://ste-anne.org/parish-life/sacraments/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -632,6 +638,20 @@
    "confidence": "low",
    "template": "wordpress",
    "kind_parsed": "mass"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:30",
+   "language": "Spanish",
+   "raw": "Weekend Mass Schedule at Most Holy Trinity Church, 1050 Port:  10:30 am Spanish Church ongoing",
+   "source_url": "https://ste-anne.org/mass-schedule/",
+   "fetched_at": "2026-11-02T04:41:47+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "http://www.ste-anne.org/",
@@ -671,5 +691,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:50+00:00",
+  "requests": 3,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

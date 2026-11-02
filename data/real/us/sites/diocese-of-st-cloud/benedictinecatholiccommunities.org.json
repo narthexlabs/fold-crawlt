@@ -81,6 +81,18 @@
    "url": "https://www.benedictinecatholiccommunities.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.benedictinecatholiccommunities.org/reconciliation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.benedictinecatholiccommunities.org/adoration-of-the-blessed-sacrament",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -243,6 +255,20 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "16:00",
+   "language": null,
+   "raw": "Reconciliation is available before Mass on Saturdays at 4:00 pm.",
+   "source_url": "https://www.benedictinecatholiccommunities.org/reconciliation",
+   "fetched_at": "2026-11-02T04:41:58+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "topup": true
   }
  ],
  "source_url": "http://www.benedictinecatholiccommunities.org/",
@@ -284,5 +310,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:59+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

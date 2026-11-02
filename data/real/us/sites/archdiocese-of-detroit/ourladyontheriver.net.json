@@ -69,6 +69,12 @@
    "url": "https://ourladyontheriver.net/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://ourladyontheriver.net/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -110,7 +116,7 @@
    "note": "The Events Calendar (WordPress) REST API",
    "last_fetch": {
     "status": 200,
-    "fetched_at": "2026-11-01T23:37:09+00:00",
+    "fetched_at": "2026-11-02T04:47:25+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -128,6 +134,94 @@
  "schedule_rows": [
   {
    "kind": "mass",
+   "day": "Sunday",
+   "time": "07:30",
+   "language": null,
+   "raw": "Mass Times: Sunday: 7:30AM & 9:30AM",
+   "source_url": "https://ourladyontheriver.net/",
+   "fetched_at": "2026-11-01T18:51:46+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:30",
+   "language": null,
+   "raw": "Mass Times: Sunday: 7:30AM & 9:30AM",
+   "source_url": "https://ourladyontheriver.net/",
+   "fetched_at": "2026-11-01T18:51:46+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Mass Times: Thursday-Friday: 9:00AM",
+   "source_url": "https://ourladyontheriver.net/",
+   "fetched_at": "2026-11-01T18:51:46+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Thursday-Friday"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Mass Times: Thursday-Friday: 9:00AM",
+   "source_url": "https://ourladyontheriver.net/",
+   "fetched_at": "2026-11-01T18:51:46+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Thursday-Friday",
+   "day_parsed": "Thursday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "confession",
+   "day": "Friday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Confessions: Fridays following 9:00AM Mass",
+   "source_url": "https://ourladyontheriver.net/",
+   "fetched_at": "2026-11-01T18:51:46+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "Confessions: Fridays following 9:00AM Mass",
+   "relative_resolved": true
+  },
+  {
+   "kind": "adoration",
+   "day": "First Friday of the month",
+   "time": "09:00",
+   "language": null,
+   "raw": "Adoration: 1st Fridays following 9:00AM Mass",
+   "source_url": "https://ourladyontheriver.net/",
+   "fetched_at": "2026-11-01T18:51:46+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "Adoration: 1st Fridays following 9:00AM Mass",
+   "relative_resolved": false
+  },
+  {
+   "kind": "mass",
    "day": "Saturday",
    "time": "15:00",
    "language": null,
@@ -138,77 +232,23 @@
    "review_reason": null,
    "confidence": "high",
    "template": "wordpress"
-  },
-  {
-   "kind": "mass",
-   "day": "Sunday",
-   "time": "07:30",
-   "language": null,
-   "raw": "Sunday: 7:30AM & 9:30AM",
-   "source_url": "https://ourladyontheriver.net/",
-   "fetched_at": "2026-11-01T18:51:46+00:00",
-   "needs_review": false,
-   "review_reason": "schedule_box",
-   "location": "Holy Cross Church"
-  },
-  {
-   "kind": "mass",
-   "day": "Sunday",
-   "time": "09:30",
-   "language": null,
-   "raw": "Sunday: 7:30AM & 9:30AM",
-   "source_url": "https://ourladyontheriver.net/",
-   "fetched_at": "2026-11-01T18:51:46+00:00",
-   "needs_review": false,
-   "review_reason": "schedule_box",
-   "location": "Holy Cross Church"
-  },
-  {
-   "kind": "mass",
-   "day": "Thursday",
-   "time": "09:00",
-   "language": null,
-   "raw": "Thursday-Friday: 9:00AM",
-   "source_url": "https://ourladyontheriver.net/",
-   "fetched_at": "2026-11-01T18:51:46+00:00",
-   "needs_review": false,
-   "review_reason": "schedule_box",
-   "day_expanded_from": "Thursday-Friday",
-   "location": "Holy Cross Church"
-  },
-  {
-   "kind": "mass",
-   "day": "Friday",
-   "time": "09:00",
-   "language": null,
-   "raw": "Thursday-Friday: 9:00AM",
-   "source_url": "https://ourladyontheriver.net/",
-   "fetched_at": "2026-11-01T18:51:46+00:00",
-   "needs_review": false,
-   "review_reason": "schedule_box",
-   "day_expanded_from": "Thursday-Friday",
-   "location": "Holy Cross Church",
-   "day_parsed": "Thursday",
-   "day_bound_from_line": true
-  },
-  {
-   "kind": "mass",
-   "day": "Tuesday",
-   "time": "17:00",
-   "language": null,
-   "raw": "Tuesdays 5:00PM",
-   "source_url": "https://ourladyontheriver.net/",
-   "fetched_at": "2026-11-01T18:51:46+00:00",
-   "needs_review": false,
-   "review_reason": "schedule_box",
-   "location": "St. Catherine Church"
   }
  ],
  "source_url": "http://www.ourladyontheriver.net/",
  "fetched_at": "2026-11-01T18:52:00+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:42+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -216,27 +256,27 @@
     "counts_ok": true,
     "sunday_not_copied": true,
     "no_daily_on_sunday": true,
-    "mostly_high": true
+    "mostly_high": false
    },
-   "score": "high"
+   "score": "medium"
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 6
  },
  "has_sunday": true,
  "schedule_dropped": {
   "other_location": 8,
-  "relative_time": 3,
-  "box_rows_added": 5
+  "relative_time": 1
  },
  "groups_dropped": {
   "noise": 1,
   "private_name_risk": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

@@ -69,6 +69,12 @@
    "url": "https://church.livoniastmichael.org/apps/events/?id=0",
    "status": 403,
    "class": "challenge"
+  },
+  {
+   "category": "confession",
+   "url": "https://church.livoniastmichael.org/apps/pages/index.jsp?uREC_ID=1751703&type=d&pREC_ID=1933504",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -441,6 +447,62 @@
  },
  "schedule_rows": [
   {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "08:30",
+   "language": null,
+   "raw": "All Souls Mass: Time: 8:30 AM – 9:30 AM",
+   "source_url": "https://church.livoniastmichael.org/",
+   "fetched_at": "2026-11-01T20:25:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "09:30",
+   "language": null,
+   "raw": "All Souls Mass: Time: 8:30 AM – 9:30 AM",
+   "source_url": "https://church.livoniastmichael.org/",
+   "fetched_at": "2026-11-01T20:25:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "19:00",
+   "language": null,
+   "raw": "All Souls Mass: Time: 7 PM – 8 PM",
+   "source_url": "https://church.livoniastmichael.org/",
+   "fetched_at": "2026-11-01T20:25:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "20:00",
+   "language": null,
+   "raw": "All Souls Mass: Time: 7 PM – 8 PM",
+   "source_url": "https://church.livoniastmichael.org/",
+   "fetched_at": "2026-11-01T20:25:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "kind_parsed": "mass"
+  },
+  {
    "kind": "mass",
    "day": "Saturday",
    "time": "17:00",
@@ -571,18 +633,31 @@
    "day_bound_from_line": true
   },
   {
-   "kind": "other",
-   "day": "Holy days",
-   "time": "15:30",
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:30-16:30",
    "language": null,
-   "raw": "Sacrament of Penance: Saturday: 3:30 - 4:30 pm (except on Holy Saturday)",
+   "raw": "Sacrament of Penance: Saturday: 3:30 - 4:30 pm",
    "source_url": "https://church.livoniastmichael.org/apps/pages/index.jsp?uREC_ID=1750923&type=d&pREC_ID=1931850",
    "fetched_at": "2026-11-01T20:25:05+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict",
-   "kind_parsed": "confession"
+   "note": "except on Holy Saturday"
+  },
+  {
+   "kind": "devotion",
+   "day": "Monday",
+   "time": "19:00",
+   "language": null,
+   "raw": "A fifteen-decade rosary is said every Monday at 7:00 pm. One set of the mysteries of the Holy Rosary (Joyful, Luminous, Sorrowful, or Glorious) is recited on Monday through Friday after 8:30 am Mass.",
+   "source_url": "https://church.livoniastmichael.org/apps/pages/index.jsp?uREC_ID=1750923&type=d&pREC_ID=1931850",
+   "fetched_at": "2026-11-01T20:25:05+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict"
   },
   {
    "kind": "mass",
@@ -600,9 +675,21 @@
  ],
  "source_url": "https://church.livoniastmichael.org/",
  "fetched_at": "2026-11-01T20:25:35+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:32+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -616,14 +703,24 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
-  "generic_rows": 17
+  "trusted_kinds": [],
+  "generic_rows": 18
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Confessions will be heard every Saturday from 3:30 PM - 4:30 PM in the Church. Confessions may also be heard by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://church.livoniastmichael.org/apps/pages/index.jsp?uREC_ID=1751703&type=d&pREC_ID=1933504",
+   "fetched_at": "2026-11-02T04:41:31+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "relative_time": 3,
-  "range_not_a_mass": 1,
-  "not_a_service": 3,
-  "other_location": 5
+  "not_a_service": 2,
+  "no_kind": 4,
+  "relative_time": 2,
+  "other_location": 1
  },
  "groups_dropped": {
   "noise": 3,
@@ -631,8 +728,8 @@
   "unmatched": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

@@ -155,7 +155,7 @@
    "note": "Google Calendar public feed (embedded on page)",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:37:25+00:00",
+    "fetched_at": "2026-11-02T04:48:02+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -185,45 +185,6 @@
   "source_url": "https://www.sj.org/bulletin"
  },
  "schedule_rows": [
-  {
-   "kind": "confession",
-   "day": "Tuesday",
-   "time": "17:00-18:00",
-   "language": null,
-   "raw": "Reconciliation Times: Tuesdays: 5:00pm to 6:00pm",
-   "source_url": "https://www.sj.org/sacrament/reconciliation",
-   "fetched_at": "2026-11-01T22:15:27+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "squarespace"
-  },
-  {
-   "kind": "confession",
-   "day": "Thursday",
-   "time": "11:15-11:50",
-   "language": null,
-   "raw": "Reconciliation Times: Thursdays: 11:15am to 11:50am",
-   "source_url": "https://www.sj.org/sacrament/reconciliation",
-   "fetched_at": "2026-11-01T22:15:27+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "squarespace"
-  },
-  {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "15:30-16:00",
-   "language": null,
-   "raw": "Reconciliation Times: Saturdays: 3:30pm to 4:00pm",
-   "source_url": "https://www.sj.org/sacrament/reconciliation",
-   "fetched_at": "2026-11-01T22:15:27+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "squarespace"
-  },
   {
    "kind": "mass",
    "day": "Saturday",
@@ -277,6 +238,45 @@
    "template": "squarespace"
   },
   {
+   "kind": "confession",
+   "day": "Tuesday",
+   "time": "17:00-18:00",
+   "language": null,
+   "raw": "Confession Times: Tuesdays: 5:00pm to 6:00pm",
+   "source_url": "https://www.sj.org/",
+   "fetched_at": "2026-11-01T22:15:24+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace"
+  },
+  {
+   "kind": "confession",
+   "day": "Thursday",
+   "time": "11:15-11:50",
+   "language": null,
+   "raw": "Confession Times: Thursdays: 11:15am to 11:50am",
+   "source_url": "https://www.sj.org/",
+   "fetched_at": "2026-11-01T22:15:24+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:30-16:00",
+   "language": null,
+   "raw": "Confession Times: Saturdays: 3:30pm to 4:00pm",
+   "source_url": "https://www.sj.org/",
+   "fetched_at": "2026-11-01T22:15:24+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace"
+  },
+  {
    "kind": "adoration",
    "day": "Friday",
    "time": "16:00-17:00",
@@ -292,9 +292,19 @@
  ],
  "source_url": "https://www.sj.org/",
  "fetched_at": "2026-11-01T22:15:33+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:54+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "squarespace",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -308,6 +318,7 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 32
  },
  "has_sunday": true,
@@ -320,8 +331,8 @@
   "label_not_group": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

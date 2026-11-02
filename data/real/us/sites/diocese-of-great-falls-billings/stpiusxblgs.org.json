@@ -81,6 +81,12 @@
    "url": "https://www.stpiusxblgs.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stpiusxblgs.org/worship/sacraments/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -247,6 +253,20 @@
    "confidence": "high",
    "template": "wordpress",
    "day_expanded_from": "Weekdays"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:30-16:30",
+   "language": null,
+   "raw": "Reconciliation: The sacrament may be celebrated Saturday afternoons from 3:30 to 4:30 p.m.",
+   "source_url": "https://www.stpiusxblgs.org/worship/sacraments/",
+   "fetched_at": "2026-11-02T04:42:03+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "https://www.stpiusxblgs.org/about/calvary-cemetery/",
@@ -286,5 +306,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:05+00:00",
+  "requests": 3,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

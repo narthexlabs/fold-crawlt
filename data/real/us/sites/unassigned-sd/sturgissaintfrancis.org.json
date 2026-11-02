@@ -73,6 +73,12 @@
    "url": "https://www.sturgissaintfrancis.org/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.sturgissaintfrancis.org/sacraments",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -491,6 +497,38 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "refetch_attempt": {
+  "status": "ssl_error",
+  "at": "2026-11-01",
+  "env": "sandbox"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "ing Mass on Thursday & Sunday or by request",
+   "phrase": "by request",
+   "source_url": "https://www.sturgissaintfrancis.org/mass-schedule",
+   "fetched_at": "2026-11-02T04:41:57+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:57+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(605) 720-3579",
@@ -502,13 +540,5 @@
   },
   "fetched_at": "2026-11-01T07:19:50+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
- },
- "refetch_attempt": {
-  "status": "ssl_error",
-  "at": "2026-11-01",
-  "env": "sandbox"
  }
 }

@@ -81,6 +81,12 @@
    "url": "https://www.saint-andrew.net/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.saint-andrew.net/adoration-and-prayer",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -408,6 +414,20 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "Sunday",
+   "time": "19:00",
+   "language": null,
+   "raw": "Usual Adoration Hours: 7:00 PM Sundays until 11:00 PM Fridays",
+   "source_url": "https://www.saint-andrew.net/adoration-and-prayer",
+   "fetched_at": "2026-11-02T04:41:58+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "topup": true
   }
  ],
  "source_url": "http://www.saint-andrew.net/",
@@ -449,5 +469,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:00+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

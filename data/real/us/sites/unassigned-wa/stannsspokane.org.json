@@ -57,6 +57,18 @@
    "url": "https://stannsspokane.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stannsspokane.org/reconciliation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stannsspokane.org/adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -81,7 +93,11 @@
     "status": 200,
     "fetched_at": "2026-11-01T23:33:36+00:00",
     "events_in_window": 0,
-    "kept": 0
+    "kept": 0,
+    "carried_over": {
+     "reason": "re-read answered 403",
+     "re_read_at": "2026-11-02T04:43:58+00:00"
+    }
    }
   },
   {
@@ -97,7 +113,7 @@
    "feed_key": "ce05e3f4cfea",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:33:37+00:00",
+    "fetched_at": "2026-11-02T04:43:58+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -125,60 +141,101 @@
    "day": "Saturday",
    "time": "15:00",
    "language": null,
-   "raw": "Saturday: 3:00 PM (Fall) | 4:00 PM (Spring)",
+   "raw": "Mass Times:: Saturday: 3:00 PM (Fall) | 4:00 PM (Spring)",
    "source_url": "https://stannsspokane.org/",
    "fetched_at": "2026-11-01T20:25:02+00:00",
    "needs_review": false,
-   "review_reason": "schedule_box"
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
   },
   {
    "kind": "mass",
    "day": "Saturday",
    "time": "16:00",
    "language": null,
-   "raw": "Saturday: 3:00 PM (Fall) | 4:00 PM (Spring)",
+   "raw": "Mass Times:: Saturday: 3:00 PM (Fall) | 4:00 PM (Spring)",
    "source_url": "https://stannsspokane.org/",
    "fetched_at": "2026-11-01T20:25:02+00:00",
    "needs_review": false,
-   "review_reason": "schedule_box"
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
   },
   {
    "kind": "mass",
    "day": "Sunday",
    "time": "09:00",
    "language": null,
-   "raw": "Sunday: 9:00 AM",
+   "raw": "Mass Times:: Sunday: 9:00 AM",
    "source_url": "https://stannsspokane.org/",
    "fetched_at": "2026-11-01T20:25:02+00:00",
    "needs_review": false,
-   "review_reason": "schedule_box"
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "First Sunday of the month",
+   "time": "09:00",
+   "language": null,
+   "raw": "Swahili Mass (1st Sunday of the month): 9:00 AM",
+   "source_url": "https://stannsspokane.org/",
+   "fetched_at": "2026-11-01T20:25:02+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
   }
  ],
  "source_url": "https://stannsspokane.org/",
  "fetched_at": "2026-11-01T20:25:12+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:41+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
-    "has_sunday": false,
+    "has_sunday": true,
     "hours_ok": true,
     "counts_ok": true,
     "sunday_not_copied": true,
     "no_daily_on_sunday": true,
     "mostly_high": false
    },
-   "score": "low"
+   "score": "medium"
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 3
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Reconciliation is available by appointment. Please call the parish office at to schedule a time.",
+   "phrase": "by appointment",
+   "source_url": "https://stannsspokane.org/mass-times/",
+   "fetched_at": "2026-11-01T20:25:07+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "dated_line": 8,
-  "prose": 2,
-  "box_rows_added": 3
+  "prose": 1
  },
  "groups_dropped": {},
  "event_counts": {
@@ -189,7 +246,10 @@
   "kept_after_privacy": 0,
   "stored": 0,
   "liturgy_and_confession_instances_total": 0,
-  "excluded_by_reason": {}
+  "excluded_by_reason": {},
+  "carried_over_feeds": [
+   "stannsspokane.org:tribe_rest:8800bb2b"
+  ]
  },
  "office_contact": {
   "email": "info@stannsspokane.org",

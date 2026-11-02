@@ -70,11 +70,12 @@ jobs:
           key: raw-sites-${{ strategy.job-index }}-${{ github.run_id }}
           restore-keys: raw-sites-${{ strategy.job-index }}-
       - run: sudo pip3 install -q --break-system-packages requests beautifulsoup4 lxml   # system site: visible to python3 -I
-      - name: Parish-website crawl chunk (128 hosts in parallel, one request at a time per host)
+      - name: Parish-website crawl chunk, then the confession / adoration / liturgy page top-up (128 hosts in parallel, one request at a time per host)
         if: ${{ github.event.inputs.job != 'reparse' }}
         env:
           WORKERS: '128'
           STATES: ${{ matrix.states }}
+          TOPUP_MINUTES: '25'      # taken out of the chunk's minutes (scripts/us/sites_chunk.sh); '0' turns the top-up off
           SKIP_PROBE: ${{ strategy.job-index == 0 && '0' || '1' }}
         run: bash scripts/us/sites_chunk.sh "$MINUTES"
       - name: Re-parse this group's cached sites with the current parser (same runner, same cache; once per parser version, resumable)

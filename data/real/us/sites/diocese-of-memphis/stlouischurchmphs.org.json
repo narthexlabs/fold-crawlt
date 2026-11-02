@@ -73,6 +73,18 @@
    "url": "https://www.stlouischurchmphs.org/page1",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stlouischurchmphs.org/reconciliation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stlouischurchmphs.org/perpetual-eucharistic-adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -630,6 +642,20 @@
    "confidence": "medium",
    "template": "generic_strict",
    "day_expanded_from": "Monday-Friday"
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "17:30-17:50",
+   "language": null,
+   "raw": "Confession Times: Sunday 5:30 to 5:50 PM",
+   "source_url": "https://www.stlouischurchmphs.org/reconciliation",
+   "fetched_at": "2026-11-02T04:41:48+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
   }
  ],
  "source_url": "http://stlouischurchmphs.org/",
@@ -668,5 +694,21 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:52+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }
