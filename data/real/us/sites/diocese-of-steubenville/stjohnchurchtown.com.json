@@ -235,45 +235,6 @@
  },
  "schedule_rows": [
   {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "17:00-17:45",
-   "language": null,
-   "raw": "Confession: Saturday: 5 -5:45 p.m.",
-   "source_url": "https://www.stjohnchurchtown.com/sacraments-1",
-   "fetched_at": "2026-11-01T22:15:36+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wix"
-  },
-  {
-   "kind": "confession",
-   "day": "Sunday",
-   "time": "06:45-07:15",
-   "language": null,
-   "raw": "Confession: Sunday: 6:45-7:15 a.m. & 10-10:45 a.m.",
-   "source_url": "https://www.stjohnchurchtown.com/sacraments-1",
-   "fetched_at": "2026-11-01T22:15:36+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wix"
-  },
-  {
-   "kind": "confession",
-   "day": "Sunday",
-   "time": "10:00-10:45",
-   "language": null,
-   "raw": "Confession: Sunday: 6:45-7:15 a.m. & 10-10:45 a.m.",
-   "source_url": "https://www.stjohnchurchtown.com/sacraments-1",
-   "fetched_at": "2026-11-01T22:15:36+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wix"
-  },
-  {
    "kind": "mass",
    "day": "Saturday",
    "time": "18:00",
@@ -367,13 +328,62 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wix"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "17:00-17:45",
+   "language": null,
+   "raw": "Confessions: Saturday: 5 -5:45 p.m.",
+   "source_url": "https://www.stjohnchurchtown.com/",
+   "fetched_at": "2026-11-01T22:15:31+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix"
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "06:45-07:15",
+   "language": null,
+   "raw": "Confessions: Sunday: 6:45-7:15 a.m. & 10-10:45 a.m.",
+   "source_url": "https://www.stjohnchurchtown.com/",
+   "fetched_at": "2026-11-01T22:15:31+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix"
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "10:00-10:45",
+   "language": null,
+   "raw": "Confessions: Sunday: 6:45-7:15 a.m. & 10-10:45 a.m.",
+   "source_url": "https://www.stjohnchurchtown.com/",
+   "fetched_at": "2026-11-01T22:15:31+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix"
   }
  ],
  "source_url": "https://www.stjohnchurchtown.com/",
  "fetched_at": "2026-11-01T22:15:42+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:52:47+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "wix",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -387,6 +397,7 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 7
  },
  "has_sunday": true,
@@ -397,8 +408,8 @@
   "noise": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
