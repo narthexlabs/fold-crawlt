@@ -57,6 +57,12 @@
    "url": "https://sainti.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://sainti.org/reconciliation/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -355,6 +361,96 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "Saturday",
+   "time": "09:15",
+   "language": null,
+   "raw": "Adoration is Offered:: (before the 9:15am Mass)",
+   "source_url": "https://sainti.org/our-parish/adoration-confession/",
+   "fetched_at": "2026-11-02T04:52:51+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "before",
+   "note": "Adoration is Offered:: (before the 9:15am Mass)",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Tuesday",
+   "time": "07:00",
+   "language": null,
+   "raw": "Confession is offered:: After the 7am Mass, Tuesday – Friday",
+   "source_url": "https://sainti.org/our-parish/adoration-confession/",
+   "fetched_at": "2026-11-02T04:52:51+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "Confession is offered:: After the 7am Mass, Tuesday – Friday",
+   "day_expanded_from": "Tuesday – Friday",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Wednesday",
+   "time": "07:00",
+   "language": null,
+   "raw": "Confession is offered:: After the 7am Mass, Tuesday – Friday",
+   "source_url": "https://sainti.org/our-parish/adoration-confession/",
+   "fetched_at": "2026-11-02T04:52:51+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "Confession is offered:: After the 7am Mass, Tuesday – Friday",
+   "day_expanded_from": "Tuesday – Friday",
+   "day_parsed": "Tuesday",
+   "day_bound_from_line": true,
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Thursday",
+   "time": "07:00",
+   "language": null,
+   "raw": "Confession is offered:: After the 7am Mass, Tuesday – Friday",
+   "source_url": "https://sainti.org/our-parish/adoration-confession/",
+   "fetched_at": "2026-11-02T04:52:51+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "Confession is offered:: After the 7am Mass, Tuesday – Friday",
+   "day_expanded_from": "Tuesday – Friday",
+   "day_parsed": "Tuesday",
+   "day_bound_from_line": true,
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Friday",
+   "time": "07:00",
+   "language": null,
+   "raw": "Confession is offered:: After the 7am Mass, Tuesday – Friday",
+   "source_url": "https://sainti.org/our-parish/adoration-confession/",
+   "fetched_at": "2026-11-02T04:52:51+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "Confession is offered:: After the 7am Mass, Tuesday – Friday",
+   "day_expanded_from": "Tuesday – Friday",
+   "day_parsed": "Tuesday",
+   "day_bound_from_line": true,
+   "topup": true
   }
  ],
  "source_url": "https://sainti.org/",
@@ -393,5 +489,29 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "adoration",
+   "text": "Anytime by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://sainti.org/our-parish/adoration-confession/",
+   "fetched_at": "2026-11-02T04:52:51+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:52:51+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 5,
+  "mode": "merge"
  }
 }
