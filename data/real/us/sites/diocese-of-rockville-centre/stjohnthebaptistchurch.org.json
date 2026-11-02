@@ -85,6 +85,12 @@
    "url": "https://sjbwr.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://sjbwr.org/reconciliation/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -263,6 +269,20 @@
    "review_reason": null,
    "confidence": "high",
    "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "16:15-17:00",
+   "language": null,
+   "raw": "Confession: Saturdays from 4:15pm to 5:00pm",
+   "source_url": "https://sjbwr.org/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:49+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "http://www.stjohnthebaptistchurch.org/",
@@ -302,6 +322,24 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:51+00:00",
+  "requests": 3,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "office@sjbwr.org",
   "phone": "(631) 929-4339",
@@ -314,8 +352,5 @@
   },
   "fetched_at": "2026-11-01T05:12:10+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }
