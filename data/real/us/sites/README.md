@@ -273,7 +273,6 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 
 ## Chunk log
 
-- 2026-11-01T17:52:14+00:00: fetched {'ok': 1, 'done': 1, 'halted_egress': 0}; parsed 1 dioceses
 - 2026-11-01T17:53:22+00:00: fetched {'ok': 11, 'done': 11, 'challenge': 1, 'dns': 1, 'cut': 2, 'halted_egress': 0}; parsed 5 dioceses
 - 2026-11-01T18:03:07+00:00: fetched {'ok': 1, 'done': 1, 'halted_egress': 0}; parsed 1 dioceses
 - 2026-11-01T18:51:40+00:00: fetched {'robots_disallowed': 4, 'done': 262, 'dns': 77, 'conn_error': 3, 'ssl_error': 24, 'challenge': 30, 'not_found': 5, 'ok': 92, 'parked': 8, 'http_5xx': 5, 'blocked_429': 1, 'blocked_403': 1, 'error:TooManyRedirects': 1, 'timeout': 13, 'cut': 2, 'halted_egress': 0}; parsed 6 dioceses
@@ -287,4 +286,5 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-02T02:46:49+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-02T02:46:51+00:00: fetched {'ok': 1, 'done': 1, 'halted_egress': 0}; parsed 1 dioceses
 - 2026-11-02T02:48:34+00:00: fetched {}; parsed 0 dioceses
-- 2026-11-02T03:46:33+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-02T03:46:35+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-02T03:46:50+00:00: fetched {}; parsed 0 dioceses
