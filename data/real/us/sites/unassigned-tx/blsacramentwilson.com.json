@@ -19,7 +19,7 @@
  "home_url": "https://www.blsacramentwilson.com/",
  "final_url": "https://www.blsacramentwilson.com/",
  "crawl_status": "ok",
- "crawl_env": "sandbox",
+ "crawl_env": "runner-rendered",
  "robots_note": "ok",
  "pages": [
   {
@@ -47,49 +47,56 @@
    "day": "Thursday",
    "time": "08:00",
    "language": null,
-   "raw": "Thursday 8:00 AM",
+   "raw": "Mass Times: Thursday 8:00 AM",
    "source_url": "https://www.blsacramentwilson.com/",
-   "fetched_at": "2026-11-01T22:15:22+00:00",
+   "fetched_at": "2026-11-02T07:17:03+00:00",
    "needs_review": false,
-   "review_reason": "schedule_box"
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix"
   },
   {
    "kind": "mass",
    "day": "Sunday",
    "time": "11:15",
    "language": null,
-   "raw": "Sunday 11:15 AM",
+   "raw": "Mass Times: Sunday 11:15 AM",
    "source_url": "https://www.blsacramentwilson.com/",
-   "fetched_at": "2026-11-01T22:15:22+00:00",
+   "fetched_at": "2026-11-02T07:17:03+00:00",
    "needs_review": false,
-   "review_reason": "schedule_box"
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix"
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "07:00",
+   "language": null,
+   "raw": "Holy Hour (Adoration): Thursday 7:00 AM",
+   "source_url": "https://www.blsacramentwilson.com/",
+   "fetched_at": "2026-11-02T07:17:03+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix"
   }
  ],
  "source_url": "https://www.blsacramentwilson.com/",
- "fetched_at": "2026-11-01T22:15:23+00:00",
- "topup": {
-  "kinds": [
-   "adoration",
-   "confession",
-   "liturgy"
-  ],
-  "at": "2026-11-02T04:41:32+00:00",
-  "requests": 0,
-  "found": []
- },
+ "fetched_at": "2026-11-02T07:17:03+00:00",
  "schedule_template": {
   "template": "wix",
   "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
-    "has_sunday": false,
+    "has_sunday": true,
     "hours_ok": true,
     "counts_ok": true,
     "sunday_not_copied": true,
     "no_daily_on_sunday": true,
     "mostly_high": false
    },
-   "score": "low"
+   "score": "medium"
   },
   "passed_bar": false,
   "trusted_candidate": false,
@@ -102,13 +109,10 @@
    "text": "30 minutes before Mass or by appointment",
    "phrase": "30 minutes before Mass",
    "source_url": "https://www.blsacramentwilson.com/",
-   "fetched_at": "2026-11-01T22:15:22+00:00"
+   "fetched_at": "2026-11-02T07:17:03+00:00"
   }
  ],
  "has_sunday": true,
- "schedule_dropped": {
-  "box_rows_added": 2
- },
  "groups_dropped": {},
  "event_counts": {
   "window_start": "2026-11-02",
@@ -129,10 +133,11 @@
    "email": "https://www.blsacramentwilson.com/",
    "address": "https://www.blsacramentwilson.com/"
   },
-  "fetched_at": "2026-11-01T22:15:22+00:00",
+  "fetched_at": "2026-11-02T07:17:03+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
- }
+ },
+ "fetch_mode": "rendered"
 }
