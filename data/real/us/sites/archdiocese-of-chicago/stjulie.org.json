@@ -77,6 +77,18 @@
    "url": "https://www.stjulie.org/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stjulie.org/sacrament-of-reconciliation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stjulie.org/adoration-thursdays-and-fridays",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -481,7 +493,7 @@
    "feed_key": "fc019f09517c",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:34:50+00:00",
+    "fetched_at": "2026-11-02T05:08:25+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -511,6 +523,58 @@
   "source_url": "https://www.stjulie.org/"
  },
  "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "07:30",
+   "language": null,
+   "raw": "Sunday Masses: 7:30 am: Fr. Martin Luboyera",
+   "source_url": "https://www.stjulie.org/",
+   "fetched_at": "2026-11-01T07:27:56+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:30",
+   "language": null,
+   "raw": "Sunday Masses: 9:30 am: Fr. Tirso Villaverde",
+   "source_url": "https://www.stjulie.org/",
+   "fetched_at": "2026-11-01T07:27:56+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:30",
+   "language": null,
+   "raw": "Sunday Masses: 11:30 am: Fr. Martin Luboyera",
+   "source_url": "https://www.stjulie.org/",
+   "fetched_at": "2026-11-01T07:27:56+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "18:00",
+   "language": null,
+   "raw": "Sunday Masses: 6:00 pm: Fr. Tirso Villaverde",
+   "source_url": "https://www.stjulie.org/",
+   "fetched_at": "2026-11-01T07:27:56+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
   {
    "kind": "mass",
    "day": "Monday",
@@ -597,58 +661,6 @@
   {
    "kind": "mass",
    "day": "Sunday",
-   "time": "07:30",
-   "language": null,
-   "raw": "Weekend Masses: 7:30 AM, 9:30 AM, 11:30 AM, & 6:00 PM",
-   "source_url": "https://www.stjulie.org/mass-schedule",
-   "fetched_at": "2026-11-01T07:27:58+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
-  {
-   "kind": "mass",
-   "day": "Sunday",
-   "time": "09:30",
-   "language": null,
-   "raw": "Weekend Masses: 7:30 AM, 9:30 AM, 11:30 AM, & 6:00 PM",
-   "source_url": "https://www.stjulie.org/mass-schedule",
-   "fetched_at": "2026-11-01T07:27:58+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
-  {
-   "kind": "mass",
-   "day": "Sunday",
-   "time": "11:30",
-   "language": null,
-   "raw": "Weekend Masses: 7:30 AM, 9:30 AM, 11:30 AM, & 6:00 PM",
-   "source_url": "https://www.stjulie.org/mass-schedule",
-   "fetched_at": "2026-11-01T07:27:58+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
-  {
-   "kind": "mass",
-   "day": "Sunday",
-   "time": "18:00",
-   "language": null,
-   "raw": "Weekend Masses: 7:30 AM, 9:30 AM, 11:30 AM, & 6:00 PM",
-   "source_url": "https://www.stjulie.org/mass-schedule",
-   "fetched_at": "2026-11-01T07:27:58+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
-  {
-   "kind": "mass",
-   "day": "Sunday",
    "time": "16:00",
    "language": null,
    "raw": "Sunday evening Mass at 4:00 PM with an interpreter present.",
@@ -658,13 +670,81 @@
    "review_reason": null,
    "confidence": "high",
    "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "First Friday of the month",
+   "time": "08:00",
+   "language": null,
+   "raw": "Adoration is also offered on the First Fridays of the month.: Immediately after 8:00AM Mass: Rosary",
+   "source_url": "https://www.stjulie.org/adoration-thursdays-and-fridays",
+   "fetched_at": "2026-11-02T04:41:41+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "after",
+   "note": "Adoration is also offered on the First Fridays of the month.: Immediately after 8:00AM Mass: Rosary",
+   "relative_resolved": false
+  },
+  {
+   "kind": "adoration",
+   "day": "First Friday of the month",
+   "time": "12:00",
+   "language": null,
+   "raw": "Adoration is also offered on the First Fridays of the month.: Noon: Midday Prayer",
+   "source_url": "https://www.stjulie.org/adoration-thursdays-and-fridays",
+   "fetched_at": "2026-11-02T04:41:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "devotion",
+   "day": "First Friday of the month",
+   "time": "15:00",
+   "language": null,
+   "raw": "3:00PM: Divine Mercy Chaplet",
+   "source_url": "https://www.stjulie.org/adoration-thursdays-and-fridays",
+   "fetched_at": "2026-11-02T04:41:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "devotion",
+   "day": "First Friday of the month",
+   "time": "17:00",
+   "language": null,
+   "raw": "5:00PM: Evening Prayer and Benediction",
+   "source_url": "https://www.stjulie.org/adoration-thursdays-and-fridays",
+   "fetched_at": "2026-11-02T04:41:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
   }
  ],
  "source_url": "https://stjulie.org/",
  "fetched_at": "2026-11-01T07:28:08+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:42+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -678,21 +758,23 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
-  "generic_rows": 9
+  "trusted_kinds": [],
+  "generic_rows": 10
  },
  "has_sunday": true,
  "schedule_dropped": {
   "no_day": 1,
-  "relative_time": 1,
-  "other_location": 1
+  "relative_time": 2,
+  "other_location": 2,
+  "prose": 1
  },
  "groups_dropped": {
   "noise": 2,
   "private_name_risk": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

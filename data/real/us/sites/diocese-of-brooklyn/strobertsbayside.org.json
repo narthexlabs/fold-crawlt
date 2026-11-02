@@ -436,6 +436,22 @@
    "review_reason": null,
    "confidence": "high",
    "template": "squarespace"
+  },
+  {
+   "kind": "adoration",
+   "day": "Saturday (lent)",
+   "time": "09:00",
+   "language": null,
+   "raw": "Holy hour every Saturday after the 9:00 a.m. Mass",
+   "source_url": "https://www.strobertsbayside.org/masstimes",
+   "fetched_at": "2026-11-02T04:41:39+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "squarespace",
+   "relative": "after",
+   "note": "Holy hour every Saturday after the 9:00 a.m. Mass",
+   "topup": true
   }
  ],
  "source_url": "https://www.strobertsbayside.org/",
@@ -477,5 +493,28 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Upon request, Communion will be brought by a Minister of Holy Communion",
+   "phrase": "Upon request",
+   "source_url": "https://www.strobertsbayside.org/masstimes",
+   "fetched_at": "2026-11-02T04:41:39+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:39+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

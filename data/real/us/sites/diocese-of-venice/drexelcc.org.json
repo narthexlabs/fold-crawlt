@@ -63,6 +63,12 @@
    "url": "https://drexelcc.org/sunday-bulletins/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://drexelcc.org/sacraments/reconciliation/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -485,6 +491,50 @@
    "review_reason": null,
    "confidence": "high",
    "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Reconciliation fosters spiritual growth, humility, and a dee: After 9:00 am Morning Mass",
+   "source_url": "https://drexelcc.org/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:42:21+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "Reconciliation fosters spiritual growth, humility, and a dee: After 9:00 am Morning Mass",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:00-16:00",
+   "language": null,
+   "raw": "Reconciliation fosters spiritual growth, humility, and a dee: 3:00pm to 4:00 pm",
+   "source_url": "https://drexelcc.org/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:42:21+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "First Friday of the month",
+   "time": "18:00-19:00",
+   "language": null,
+   "raw": "Reconciliation fosters spiritual growth, humility, and a dee: 6:00 pm to 7:00 pm",
+   "source_url": "https://drexelcc.org/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:42:21+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "https://drexelcc.org/",
@@ -529,5 +579,28 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "By Appointment",
+   "phrase": "By Appointment",
+   "source_url": "https://drexelcc.org/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:42:21+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:41+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ],
+  "rows_added": 3,
+  "mode": "merge"
  }
 }

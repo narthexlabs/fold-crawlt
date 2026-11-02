@@ -37,6 +37,12 @@
    "url": "https://www.sthenrychurch.net/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.sthenrychurch.net/sacraments-of-the-church/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -334,6 +340,33 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Other times by appointment, .",
+   "phrase": "by appointment",
+   "source_url": "https://www.sthenrychurch.net/liturgy-schedule/",
+   "fetched_at": "2026-11-02T04:48:10+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:48:16+00:00",
+  "requests": 3,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(859) 647-6440",
@@ -345,8 +378,5 @@
   },
   "fetched_at": "2026-11-01T03:59:52+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

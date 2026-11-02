@@ -67,6 +67,12 @@
    "url": "https://stolafut.org/ocia-calendar",
    "status": null,
    "class": "conn_error"
+  },
+  {
+   "category": "confession",
+   "url": "https://stolafut.org/reconciliation",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -494,6 +500,32 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Reconciliation may be received Saturdays from 4:15 p.m. to 5:00 p.m. or by appointment. Please contact Father Andrzej in the parish office to schedule an appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://stolafut.org/reconciliation",
+   "fetched_at": "2026-11-02T04:42:10+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:10+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(801) 295-3621",
@@ -504,8 +536,5 @@
   },
   "fetched_at": "2026-11-01T07:19:43+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

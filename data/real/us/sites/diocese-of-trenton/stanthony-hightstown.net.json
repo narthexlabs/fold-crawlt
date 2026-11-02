@@ -75,6 +75,18 @@
    "url": "https://stanthony-hightstown.net/events-2/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stanthony-hightstown.net/reconciliation/",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stanthony-hightstown.net/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -546,6 +558,76 @@
  },
  "schedule_rows": [
   {
+   "kind": "devotion",
+   "day": "Monday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Monday – Friday 8am (before 9am Mass)",
+   "source_url": "https://stanthony-hightstown.net/rosary-and-prayer-schedule/",
+   "fetched_at": "2026-11-01T17:21:30+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Monday – Friday"
+  },
+  {
+   "kind": "devotion",
+   "day": "Tuesday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Monday – Friday 8am (before 9am Mass)",
+   "source_url": "https://stanthony-hightstown.net/rosary-and-prayer-schedule/",
+   "fetched_at": "2026-11-01T17:21:30+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Monday – Friday"
+  },
+  {
+   "kind": "devotion",
+   "day": "Wednesday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Monday – Friday 8am (before 9am Mass)",
+   "source_url": "https://stanthony-hightstown.net/rosary-and-prayer-schedule/",
+   "fetched_at": "2026-11-01T17:21:30+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Monday – Friday"
+  },
+  {
+   "kind": "devotion",
+   "day": "Thursday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Monday – Friday 8am (before 9am Mass)",
+   "source_url": "https://stanthony-hightstown.net/rosary-and-prayer-schedule/",
+   "fetched_at": "2026-11-01T17:21:30+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Monday – Friday"
+  },
+  {
+   "kind": "devotion",
+   "day": "Friday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Monday – Friday 8am (before 9am Mass)",
+   "source_url": "https://stanthony-hightstown.net/rosary-and-prayer-schedule/",
+   "fetched_at": "2026-11-01T17:21:30+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Monday – Friday"
+  },
+  {
    "kind": "mass",
    "day": "Saturday",
    "time": "16:00",
@@ -581,9 +663,19 @@
  ],
  "source_url": "http://www.stanthony-hightstown.net/",
  "fetched_at": "2026-11-01T17:21:38+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:47:56+00:00",
+  "requests": 2,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -597,12 +689,12 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 11
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 3,
-  "not_a_service": 1,
+  "no_day": 3,
   "relative_time": 4,
   "box_rows_added": 3
  },
@@ -612,8 +704,8 @@
   "sacrament_prep": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

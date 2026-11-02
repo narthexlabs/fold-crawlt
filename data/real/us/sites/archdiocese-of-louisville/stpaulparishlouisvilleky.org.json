@@ -84,6 +84,12 @@
    "url": "https://www.stpaulparishlouisvilleky.org/about-st-paul/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://www.stpaulparishlouisvilleky.org/parish-life/worship",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -551,6 +557,33 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Anytime by Appointment",
+   "phrase": "by Appointment",
+   "source_url": "https://www.stpaulparishlouisvilleky.org/about-st-paul/mass-confession-times",
+   "fetched_at": "2026-11-02T04:47:58+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:47:59+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(502) 935-1223",
@@ -562,8 +595,5 @@
   },
   "fetched_at": "2026-11-01T08:35:07+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

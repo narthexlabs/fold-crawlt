@@ -39,6 +39,18 @@
    "url": "https://nccchurches.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://nccchurches.org/reconciliation/",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://nccchurches.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -64,6 +76,20 @@
   "source_url": "https://nccchurches.org/weekly-bulletins/"
  },
  "schedule_rows": [
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "16:00",
+   "language": null,
+   "raw": "Mass Schedules: 4:00 pm Saturday",
+   "source_url": "https://nccchurches.org/",
+   "fetched_at": "2026-11-01T20:25:02+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "kind_parsed": "mass"
+  },
   {
    "kind": "confession",
    "day": "Saturday",
@@ -143,9 +169,19 @@
  ],
  "source_url": "https://nccchurches.org/",
  "fetched_at": "2026-11-01T20:25:08+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:52:28+00:00",
+  "requests": 2,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -159,17 +195,27 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 4
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Other Confession Times – Any time by request",
+   "phrase": "by request",
+   "source_url": "https://nccchurches.org/",
+   "fetched_at": "2026-11-01T20:25:02+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 7,
+  "other_location": 6,
   "weekend_rescue_added": 1
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

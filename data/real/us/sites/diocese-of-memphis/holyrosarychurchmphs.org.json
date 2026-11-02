@@ -67,6 +67,18 @@
    "url": "https://holyrosarychurchmphs.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://holyrosarychurchmphs.org/reconciliation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://holyrosarychurchmphs.org/parish-news/eucharistic-adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -770,5 +782,37 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Sundays twenty minutes before each Mass in the church confessionals. (Anonymously only.)",
+   "phrase": "twenty minutes before each Mass",
+   "source_url": "https://holyrosarychurchmphs.org/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:49+00:00"
+  },
+  {
+   "kind": "confession",
+   "text": "* 20 min before each Mass",
+   "phrase": "20 min before each Mass",
+   "source_url": "https://holyrosarychurchmphs.org/mass-times/",
+   "fetched_at": "2026-11-02T04:41:53+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:54+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
  }
 }

@@ -348,6 +348,22 @@
    "day_expanded_from": "Monday–Saturday"
   },
   {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "08:30",
+   "language": null,
+   "raw": "Eucharistic Adoration: Friday: Following 8:30 AM Mass",
+   "source_url": "https://www.ctklv.org/",
+   "fetched_at": "2026-11-01T07:20:01+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "after",
+   "note": "Eucharistic Adoration: Friday: Following 8:30 AM Mass",
+   "relative_resolved": true
+  },
+  {
    "kind": "confession",
    "day": "Saturday",
    "time": "09:00-10:00",
@@ -363,9 +379,19 @@
  ],
  "source_url": "https://www.ctklv.org/",
  "fetched_at": "2026-11-01T07:20:28+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:48+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -379,20 +405,18 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 8
  },
  "has_sunday": true,
- "schedule_dropped": {
-  "relative_time": 1
- },
  "groups_dropped": {
   "label_not_group": 1,
   "sentence": 1,
   "noise": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

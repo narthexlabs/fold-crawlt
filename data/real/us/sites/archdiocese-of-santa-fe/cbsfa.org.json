@@ -73,6 +73,12 @@
    "url": "https://www.cbsfa.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.cbsfa.org/penance",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -270,6 +276,38 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Tuesday",
+   "time": "17:15",
+   "language": null,
+   "raw": "Confession: Tuesday/Thursday, 5:15 p.m.",
+   "source_url": "https://www.cbsfa.org/penance",
+   "fetched_at": "2026-11-02T04:41:50+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Tuesday/Thursday",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Thursday",
+   "time": "17:15",
+   "language": null,
+   "raw": "Confession: Tuesday/Thursday, 5:15 p.m.",
+   "source_url": "https://www.cbsfa.org/penance",
+   "fetched_at": "2026-11-02T04:41:50+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Tuesday/Thursday",
+   "day_parsed": "Tuesday",
+   "day_bound_from_line": true,
+   "topup": true
   }
  ],
  "source_url": "http://www.cbsfa.org/",
@@ -307,5 +345,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:52+00:00",
+  "requests": 3,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
  }
 }

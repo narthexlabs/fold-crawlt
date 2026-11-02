@@ -36,6 +36,30 @@
    "url": "https://sjcparish.org/mass-times",
    "status": null,
    "class": "conn_error"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://sjcparish.org/usher-schedules",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://sjcparish.org/parish-life",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://sjcparish.org/ministries",
+   "status": null,
+   "class": "conn_error"
+  },
+  {
+   "category": "ministries",
+   "url": "https://sjcparish.org/youth-group",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -185,25 +209,6 @@
    "category": "youth",
    "category_label": "Youth",
    "subcategory": "cyo_sports",
-   "audience": "youth",
-   "language": "en",
-   "language_assumed": true,
-   "meets": null,
-   "description": null,
-   "contact_url": "https://www.sjcparish.org/",
-   "contact_role": "parish office (see contact page)",
-   "source_url": "https://www.sjcparish.org/",
-   "source_kind": "website",
-   "fetched_at": "2026-01-19T22:14:42+00:00",
-   "confidence": "medium",
-   "source": "wayback-2026-01-19"
-  },
-  {
-   "id": "sjcparish.org:youth_ministry",
-   "name": "Youth Group",
-   "category": "youth",
-   "category_label": "Youth",
-   "subcategory": "youth_ministry",
    "audience": "youth",
    "language": "en",
    "language_assumed": true,
@@ -544,6 +549,18 @@
     "label": "Online Mass, Rosary & Resources",
     "platform": "www.sjcparish.org",
     "kind": "link"
+   },
+   {
+    "url": "https://sjcparish.org/mass-online",
+    "label": "Watch Mass & Podcast",
+    "platform": "sjcparish.org",
+    "kind": "link"
+   },
+   {
+    "url": "https://sjcparish.org/spiritual-resources",
+    "label": "Online Mass, Rosary & Resources",
+    "platform": "sjcparish.org",
+    "kind": "link"
    }
   ]
  },
@@ -554,9 +571,24 @@
   "text": "Weekly Bulletin",
   "source_url": "https://www.sjcparish.org/"
  },
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Sunday 8 a.m.",
+   "source_url": "https://sjcparish.org/usher-schedules",
+   "fetched_at": "2025-10-11T00:17:49+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-01-19: read by a person before it is shown",
+   "source": "wayback-2026-01-19",
+   "archive_url": "https://web.archive.org/web/20251011001749/https://sjcparish.org/usher-schedules",
+   "capture_date": "2025-10-11"
+  }
+ ],
  "source_url": "https://sjcparish.org/",
- "fetched_at": "2026-11-02T04:27:20+00:00",
+ "fetched_at": "2026-11-02T04:56:45+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
  },
@@ -578,7 +610,7 @@
   "trusted_candidate": false,
   "generic_rows": 0
  },
- "has_sunday": false,
+ "has_sunday": true,
  "schedule_images": [
   {
    "url": "https://files.ecatholic.com/5277/pictures/2022/10/InclusionMass1.jpeg?t=1665780916000",
@@ -606,13 +638,31 @@
  "wayback": {
   "capture_date": "2026-01-19",
   "capture_age_days": 287,
-  "prior_status": "challenge",
+  "prior_status": "wayback-2026-01-19",
   "captures": [
    {
     "kind": "home",
     "original": "https://www.sjcparish.org/",
     "capture": "2026-01-19",
     "archive_url": "https://web.archive.org/web/20260119221442/https://www.sjcparish.org/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://sjcparish.org/usher-schedules",
+    "capture": "2025-10-11",
+    "archive_url": "https://web.archive.org/web/20251011001749/https://sjcparish.org/usher-schedules"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://sjcparish.org/parish-life",
+    "capture": "2025-10-14",
+    "archive_url": "https://web.archive.org/web/20251014031413/https://sjcparish.org/parish-life"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://sjcparish.org/youth-group",
+    "capture": "2024-07-04",
+    "archive_url": "https://web.archive.org/web/20240704074835/https://sjcparish.org/youth-group"
    }
   ],
   "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review.",
@@ -620,11 +670,14 @@
    "rule": "wayback-verified-2026-11-01",
    "template": "ecatholic",
    "trusted_template": false,
-   "has_sunday": false,
-   "groups": 25,
+   "has_sunday": true,
+   "groups": 24,
    "verified": false,
    "capture_date": "2026-01-19",
    "applied": false
   }
+ },
+ "schedule_dropped": {
+  "weekend_rescue_added": 1
  }
 }

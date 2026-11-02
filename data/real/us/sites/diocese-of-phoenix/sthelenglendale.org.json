@@ -116,12 +116,39 @@
   "text": "Bulletins",
   "source_url": "https://www.sthelenglendale.org/"
  },
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "07:30",
+   "language": null,
+   "raw": "Confession Times: Saturday morning after 7:30am Mass, or by appointment",
+   "source_url": "https://www.sthelenglendale.org/sacraments",
+   "fetched_at": "2026-11-01T17:27:58+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "after",
+   "note": "Confession Times: Saturday morning after 7:30am Mass, or by appointment",
+   "relative_resolved": false
+  }
+ ],
  "source_url": "https://www.sthelenglendale.org/",
  "fetched_at": "2026-11-01T17:28:04+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:43+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -135,43 +162,30 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 0
  },
- "has_sunday": false,
- "schedule_dropped": {
-  "no_day": 1,
-  "relative_time": 1,
-  "no_kind": 1
- },
- "schedule_images": [
+ "schedule_notes": [
   {
-   "url": "https://irp.cdn-website.com/a0df5e53/dms3rep/multi/opt/confession+banner-1920w.jpg?jxl&v=jxl",
-   "alt": "",
-   "page": "https://www.sthelenglendale.org/sacraments"
-  },
-  {
-   "url": "https://irp.cdn-website.com/a0df5e53/dms3rep/multi/opt/202601_MASS-521138e6-640h.jpg?jxl&v=jxl",
-   "alt": "",
-   "page": "https://www.sthelenglendale.org/"
-  },
-  {
-   "url": "https://irp.cdn-website.com/a0df5e53/dms3rep/multi/opt/st+helen+confession-640h.png?jxl&v=jxl",
-   "alt": "",
-   "page": "https://www.sthelenglendale.org/"
-  },
-  {
-   "url": "https://irp.cdn-website.com/a0df5e53/dms3rep/multi/opt/202601_MASS-521138e6-640h.jpg?jxl&v=jxl",
-   "alt": "",
-   "page": "https://www.sthelenglendale.org/"
+   "kind": "confession",
+   "text": ": Saturday morning after 7:30am Mass, or by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://www.sthelenglendale.org/sacraments",
+   "fetched_at": "2026-11-01T17:27:58+00:00"
   }
  ],
- "schedule_note": "schedule appears to be an image; times not read (needs_review)",
+ "has_sunday": false,
+ "schedule_partial": true,
+ "schedule_dropped": {
+  "no_day": 1,
+  "no_kind": 1
+ },
  "groups_dropped": {
   "sacrament_prep": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

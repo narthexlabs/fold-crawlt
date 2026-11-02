@@ -3,16 +3,19 @@
  "diocese": "diocese-of-erie",
  "matched_church_ids": [
   "brave:PA|george erie|",
-  "gc-24507"
+  "gc-24507",
+  "saint-george-erie-pa"
  ],
  "matched": {
   "directory": [],
   "discovermass": [
+   "saint-george-erie-pa",
    "brave:PA|george erie|",
    "gc-24507"
   ]
  },
  "names": [
+  "Saint George Church",
   "St George",
   "St. George"
  ],
@@ -84,6 +87,18 @@
    "url": "https://stgeorgeerie.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stgeorgeerie.org/sacraments/reconciliation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stgeorgeerie.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -147,25 +162,12 @@
  "schedule_rows": [
   {
    "kind": "mass",
-   "day": "Sunday",
-   "time": "09:30",
-   "language": null,
-   "raw": "Saint George Church livestreams the 9:30 AM Sunday Mass on our parish YouTube Channel.",
-   "source_url": "https://stgeorgeerie.org/about/mass-times/",
-   "fetched_at": "2026-11-01T20:25:32+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "low",
-   "template": "wordpress"
-  },
-  {
-   "kind": "mass",
    "day": "Saturday",
    "time": "16:30",
    "language": null,
-   "raw": "4:30PM (Vigil)",
-   "source_url": "https://stgeorgeerie.org/about/mass-times/",
-   "fetched_at": "2026-11-01T20:25:32+00:00",
+   "raw": "8:00 AM & 4:30 PM (Vigil)",
+   "source_url": "https://stgeorgeerie.org/",
+   "fetched_at": "2026-11-01T20:25:30+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "high",
@@ -176,12 +178,25 @@
    "day": "Sunday",
    "time": "07:30",
    "language": null,
-   "raw": "Weekend Masses: 7:30AM, 9:30AM, and 11:30AM",
-   "source_url": "https://stgeorgeerie.org/about/mass-times/",
-   "fetched_at": "2026-11-01T20:25:32+00:00",
+   "raw": "Mass: 7:30 AM, 9:30 AM, & 11:30 AM",
+   "source_url": "https://stgeorgeerie.org/",
+   "fetched_at": "2026-11-01T20:25:30+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "medium",
+   "confidence": "low",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:30",
+   "language": null,
+   "raw": "Mass: 7:30 AM, 9:30 AM, & 11:30 AM",
+   "source_url": "https://stgeorgeerie.org/",
+   "fetched_at": "2026-11-01T20:25:30+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
    "template": "wordpress"
   },
   {
@@ -189,12 +204,12 @@
    "day": "Sunday",
    "time": "11:30",
    "language": null,
-   "raw": "Weekend Masses: 7:30AM, 9:30AM, and 11:30AM",
-   "source_url": "https://stgeorgeerie.org/about/mass-times/",
-   "fetched_at": "2026-11-01T20:25:32+00:00",
+   "raw": "Mass: 7:30 AM, 9:30 AM, & 11:30 AM",
+   "source_url": "https://stgeorgeerie.org/",
+   "fetched_at": "2026-11-01T20:25:30+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "medium",
+   "confidence": "low",
    "template": "wordpress"
   },
   {
@@ -208,6 +223,19 @@
    "needs_review": false,
    "review_reason": null,
    "confidence": "high",
+   "template": "wordpress"
+  },
+  {
+   "kind": "devotion",
+   "day": "Saturday",
+   "time": "16:00",
+   "language": null,
+   "raw": "4:00PM",
+   "source_url": "https://stgeorgeerie.org/about/mass-times/",
+   "fetched_at": "2026-11-01T20:25:32+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
    "template": "wordpress"
   },
   {
@@ -361,13 +389,38 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "16:00",
+   "language": null,
+   "raw": "Saturdays after 8:00a.m. Mass and from 3:00pm – 4:00pm",
+   "source_url": "https://stgeorgeerie.org/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:43:12+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
   }
  ],
  "source_url": "https://stgeorgeerie.org/",
  "fetched_at": "2026-11-01T20:25:43+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:15+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -381,21 +434,30 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 16
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Saturdays: After 8:00AM Mass or at 3:00PM. All other time by appointment only.",
+   "phrase": "by appointment",
+   "source_url": "https://stgeorgeerie.org/about/mass-times/",
+   "fetched_at": "2026-11-01T20:25:32+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "no_kind": 2,
-  "relative_time": 2,
-  "not_a_service": 1
+  "relative_time": 3
  },
  "groups_dropped": {
   "label_not_group": 1,
   "unmatched": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

@@ -57,6 +57,12 @@
    "url": "https://www.sjanj.net/events/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.sjanj.net/pea/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -320,6 +326,20 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Third Sunday of the month (during the school year)",
+   "time": "10:00",
+   "language": null,
+   "raw": "10:00 AM Mass",
+   "source_url": "https://www.sjanj.net/liturgies/",
+   "fetched_at": "2026-11-02T04:47:50+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "http://www.sjanj.net/",
@@ -362,5 +382,30 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "By Appointment",
+   "phrase": "By Appointment",
+   "source_url": "https://www.sjanj.net/sacraments/",
+   "fetched_at": "2026-11-02T04:47:48+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:47:51+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

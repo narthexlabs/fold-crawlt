@@ -79,6 +79,18 @@
    "url": "https://stmaryparish.net/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stmaryparish.net/reconciliation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stmaryparish.net/eucharistic-adoration-copy/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -1946,6 +1958,20 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "godaddy"
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Perpetual Adoration Schedule (St. Anthony): Tuesday | 9 am - Friday | 5 pm in the St. Joseph Chapel",
+   "source_url": "https://stmaryparish.net/eucharistic-adoration-copy/",
+   "fetched_at": "2026-11-02T04:41:46+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "godaddy",
+   "topup": true
   }
  ],
  "source_url": "http://www.stanthony-parish.org/",
@@ -1992,5 +2018,29 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "St. Anthony and St. Mary parishes offer the Sacrament of Reconciliation regularly on the days and times listed below or by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://stmaryparish.net/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:43+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:46+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

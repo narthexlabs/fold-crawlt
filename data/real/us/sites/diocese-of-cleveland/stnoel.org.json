@@ -341,6 +341,38 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "08:30",
+   "language": null,
+   "raw": "Daily Masses ·: Monday–Wednesday, Friday · 8:30 am",
+   "source_url": "https://www.stnoel.org/liturgy",
+   "fetched_at": "2026-11-02T04:52:39+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_parsed": "Friday",
+   "day_bound_from_line": true,
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "08:30",
+   "language": null,
+   "raw": "Daily Masses ·: Monday–Wednesday, Friday · 8:30 am",
+   "source_url": "https://www.stnoel.org/liturgy",
+   "fetched_at": "2026-11-02T04:52:39+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_parsed": "Friday",
+   "day_bound_from_line": true,
+   "topup": true
   }
  ],
  "source_url": "http://www.stnoel.org/",
@@ -385,5 +417,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:52:39+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
  }
 }

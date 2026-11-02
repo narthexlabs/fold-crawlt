@@ -21,32 +21,127 @@
  ],
  "home_url": "https://stgensparish.com/",
  "final_url": "https://stgensparish.com/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "crawl_status": "wayback-2025-08-12",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
    "url": "https://stgensparish.com/",
-   "status": 403,
-   "class": "challenge"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stgensparish.com/our-faith/schedules/",
+   "status": null,
+   "class": "timeout"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "wordpress",
+  "evidence": [
+   "wp-content"
+  ]
  },
- "template": "none",
+ "template": "wordpress-html",
  "groups": [],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "youtube": [
+   "https://www.youtube.com/channel/UC1JfmyLNbGqiuKx-CtYRMsQ"
+  ],
+  "flocknote": [
+   "https://stgenevieveparish.flocknote.com"
+  ]
+ },
+ "bulletin": {
+  "url": "http://www.jppc.net/onlinebulletins/119template.pdf",
+  "date": null,
+  "kind": "pdf",
+  "text": "Sunday Bulletin",
+  "source_url": "https://stgensparish.com/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:30",
+   "language": null,
+   "raw": "We are streaming the 10:30am Mass every Sunday.",
+   "source_url": "https://stgensparish.com/",
+   "fetched_at": "2025-08-12T09:39:37+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-08-12: read by a person before it is shown",
+   "confidence": "high",
+   "template": "wordpress",
+   "source": "wayback-2025-08-12",
+   "archive_url": "https://web.archive.org/web/20250812093937/https://stgensparish.com/",
+   "capture_date": "2025-08-12"
+  }
+ ],
  "source_url": "https://stgensparish.com/",
- "fetched_at": "2026-11-01T20:25:20+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-02T04:45:31+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": true
+   },
+   "score": "high"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "dated_block": 4
+ },
+ "groups_dropped": {},
+ "office_contact": {
+  "email": null,
+  "phone": "(215) 836-2828",
+  "address": null,
+  "source_url": "https://stgensparish.com/",
+  "sources": {
+   "phone": "https://stgensparish.com/"
+  },
+  "fetched_at": "2025-08-12T09:39:37+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2025-08-12",
+  "capture_age_days": 447,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://stgensparish.com/",
+    "capture": "2025-08-12",
+    "archive_url": "https://web.archive.org/web/20250812093937/https://stgensparish.com/"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review.",
+  "grade": {
+   "rule": "wayback-verified-2026-11-01",
+   "template": "wordpress",
+   "trusted_template": false,
+   "has_sunday": true,
+   "groups": 0,
+   "verified": false,
+   "capture_date": "2025-08-12",
+   "applied": false
+  }
  }
 }

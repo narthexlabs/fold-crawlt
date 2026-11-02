@@ -67,6 +67,12 @@
    "url": "https://stigchurch.org/contact-maps/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stigchurch.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -143,33 +149,6 @@
   "source_url": "https://stigchurch.org/bulletins/"
  },
  "schedule_rows": [
-  {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "15:30",
-   "language": null,
-   "raw": "St. Ignatius Loyola Parish, 3:30 pm Saturday in the Reconciliation Room",
-   "source_url": "https://stigchurch.org/sacraments/",
-   "fetched_at": "2026-11-01T17:21:24+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress"
-  },
-  {
-   "kind": "other",
-   "day": "Holy days",
-   "time": "11:30",
-   "language": null,
-   "raw": "Immaculate Conception Parish, 11:30 am Saturday in the Reconciliation Room",
-   "source_url": "https://stigchurch.org/sacraments/",
-   "fetched_at": "2026-11-01T17:21:24+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress",
-   "kind_parsed": "confession"
-  },
   {
    "kind": "mass",
    "day": "Saturday",
@@ -277,13 +256,63 @@
    "review_reason": null,
    "confidence": "high",
    "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:30",
+   "language": null,
+   "raw": "Reconciliation:: Saturday 3:30 PM",
+   "source_url": "https://stigchurch.org/",
+   "fetched_at": "2026-11-01T17:21:23+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "11:30",
+   "language": null,
+   "raw": "Reconciliation:: Saturday 11:30 AM",
+   "source_url": "https://stigchurch.org/",
+   "fetched_at": "2026-11-01T17:21:23+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "11:30",
+   "language": null,
+   "raw": "Immaculate Conception Parish, 11:30 am Saturday in the Reconciliation Room",
+   "source_url": "https://stigchurch.org/sacraments/",
+   "fetched_at": "2026-11-01T17:21:24+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "kind_parsed": "confession"
   }
  ],
  "source_url": "http://www.stigchurch.org/",
  "fetched_at": "2026-11-01T17:21:30+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:49+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -297,15 +326,25 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 16
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "By appointment — call the parish office",
+   "phrase": "By appointment",
+   "source_url": "https://stigchurch.org/sacraments/",
+   "fetched_at": "2026-11-01T17:21:24+00:00"
+  }
+ ],
  "has_sunday": true,
  "groups_dropped": {
   "unmatched": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

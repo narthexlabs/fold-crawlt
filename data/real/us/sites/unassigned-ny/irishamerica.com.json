@@ -51,6 +51,18 @@
    "url": "https://www.irishamerica.com/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.irishamerica.com/reconciliation/",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.irishamerica.com/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -73,7 +85,7 @@
    "note": "The Events Calendar (WordPress) REST API",
    "last_fetch": {
     "status": 200,
-    "fetched_at": "2026-11-01T23:34:09+00:00",
+    "fetched_at": "2026-11-02T04:57:30+00:00",
     "events_in_window": 1,
     "kept": 1
    }
@@ -91,7 +103,7 @@
    "recurring": false,
    "source_url": "https://www.irishamerica.com/event/2025-business-100-awards-dinner/",
    "feed_id": "irishamerica.com:tribe_rest:0944ca32",
-   "fetched_at": "2026-11-01T23:34:09+00:00"
+   "fetched_at": "2026-11-02T04:57:30+00:00"
   }
  ],
  "social": {
@@ -112,9 +124,19 @@
  "schedule_rows": [],
  "source_url": "https://www.irishamerica.com/",
  "fetched_at": "2026-11-01T20:25:16+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:43+00:00",
+  "requests": 2,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -128,13 +150,14 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 0
  },
  "has_sunday": false,
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 1,
   "kept_after_privacy": 1,

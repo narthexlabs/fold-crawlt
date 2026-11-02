@@ -69,6 +69,18 @@
    "url": "https://stmark-parish.org/about/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stmark-parish.org/sacraments/reconciliation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://stmark-parish.org/worship-aid/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -137,7 +149,22 @@
   "text": "Bulletins",
   "source_url": "https://stmark-parish.org/"
  },
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "confession",
+   "day": "First and Third Saturday of the month",
+   "time": "16:00",
+   "language": null,
+   "raw": "Confession is offered on the 1st and 3rd Saturday of the month at 4 p.m. or by appointment.",
+   "source_url": "https://stmark-parish.org/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:49+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
+  }
+ ],
  "source_url": "https://www.stmark-parish.org/",
  "fetched_at": "2026-11-01T02:02:36+00:00",
  "schedule_template": {
@@ -178,5 +205,29 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "is offered on the 1st and 3rd Saturday of the month at 4 p.m. or by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://stmark-parish.org/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:49+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:52+00:00",
+  "requests": 3,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

@@ -342,6 +342,32 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Saturday 4:00 pm to 5:00 pm or other times by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://www.icbvm.org/mass-schedules.html",
+   "fetched_at": "2026-11-02T04:43:16+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:16+00:00",
+  "requests": 1,
+  "found": [
+   "liturgy"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(610) 582-2411",
@@ -353,8 +379,5 @@
   },
   "fetched_at": "2026-11-01T03:59:21+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

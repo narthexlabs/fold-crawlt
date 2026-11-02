@@ -82,6 +82,24 @@
    "url": "https://www.stmaryeugene.com/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stmaryeugene.com/reconciliation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stmaryeugene.com/adoration",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://www.stmaryeugene.com/liturgical",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -321,7 +339,7 @@
    "note": "Google Calendar public feed (embedded on page)",
    "last_fetch": {
     "status": 404,
-    "fetched_at": "2026-11-01T23:35:38+00:00",
+    "fetched_at": "2026-11-02T05:11:22+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -339,7 +357,7 @@
    "feed_key": "1ec0be0a84e6",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:35:40+00:00",
+    "fetched_at": "2026-11-02T05:11:24+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -696,9 +714,23 @@
  ],
  "source_url": "https://www.stmaryeugene.com/",
  "fetched_at": "2026-11-01T17:27:26+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:42+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -712,20 +744,31 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
-  "generic_rows": 13
+  "trusted_kinds": [],
+  "generic_rows": 18
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Reconciliation is also available by appointment by calling the Parish Office.",
+   "phrase": "by appointment",
+   "source_url": "https://www.stmaryeugene.com/reconciliation",
+   "fetched_at": "2026-11-02T04:41:40+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "no_day": 1,
-  "not_a_service": 1
+  "not_a_service": 1,
+  "other_location": 1
  },
  "groups_dropped": {
   "unmatched": 1,
   "private_name_risk": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

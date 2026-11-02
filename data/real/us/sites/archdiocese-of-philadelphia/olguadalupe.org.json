@@ -395,48 +395,29 @@
    "source_url": "https://www.olguadalupe.org/",
    "fetched_at": "2026-11-01T09:04:58+00:00",
    "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "wix"
-  },
-  {
-   "kind": "mass",
-   "day": "Sunday",
-   "time": "09:00",
-   "language": null,
-   "raw": "Weekly Mass Times:: Sunday - 9:00 (livestreamed) & 11:00 a.m.",
-   "source_url": "https://www.olguadalupe.org/",
-   "fetched_at": "2026-11-01T09:04:58+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wix"
+   "review_reason": "schedule_box"
   },
   {
    "kind": "mass",
    "day": "Sunday",
    "time": "11:00",
    "language": null,
-   "raw": "Weekly Mass Times:: Sunday - 9:00 (livestreamed) & 11:00 a.m.",
+   "raw": "Sunday - 9:00 (livestreamed) & 11:00 a.m.",
    "source_url": "https://www.olguadalupe.org/",
    "fetched_at": "2026-11-01T09:04:58+00:00",
    "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wix"
+   "review_reason": "schedule_box"
   },
   {
    "kind": "mass",
    "day": "Tuesday",
    "time": "08:00",
    "language": null,
-   "raw": "Weekly Mass Times:: Tuesday through Saturday 8:00 a.m.",
+   "raw": "Tuesday through Saturday 8:00 a.m.",
    "source_url": "https://www.olguadalupe.org/",
    "fetched_at": "2026-11-01T09:04:58+00:00",
    "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wix",
+   "review_reason": "schedule_box",
    "day_expanded_from": "Tuesday through Saturday"
   },
   {
@@ -444,13 +425,11 @@
    "day": "Wednesday",
    "time": "08:00",
    "language": null,
-   "raw": "Weekly Mass Times:: Tuesday through Saturday 8:00 a.m.",
+   "raw": "Tuesday through Saturday 8:00 a.m.",
    "source_url": "https://www.olguadalupe.org/",
    "fetched_at": "2026-11-01T09:04:58+00:00",
    "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wix",
+   "review_reason": "schedule_box",
    "day_expanded_from": "Tuesday through Saturday",
    "day_parsed": "Tuesday",
    "day_bound_from_line": true
@@ -460,13 +439,11 @@
    "day": "Thursday",
    "time": "08:00",
    "language": null,
-   "raw": "Weekly Mass Times:: Tuesday through Saturday 8:00 a.m.",
+   "raw": "Tuesday through Saturday 8:00 a.m.",
    "source_url": "https://www.olguadalupe.org/",
    "fetched_at": "2026-11-01T09:04:58+00:00",
    "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wix",
+   "review_reason": "schedule_box",
    "day_expanded_from": "Tuesday through Saturday",
    "day_parsed": "Tuesday",
    "day_bound_from_line": true
@@ -476,13 +453,11 @@
    "day": "Friday",
    "time": "08:00",
    "language": null,
-   "raw": "Weekly Mass Times:: Tuesday through Saturday 8:00 a.m.",
+   "raw": "Tuesday through Saturday 8:00 a.m.",
    "source_url": "https://www.olguadalupe.org/",
    "fetched_at": "2026-11-01T09:04:58+00:00",
    "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wix",
+   "review_reason": "schedule_box",
    "day_expanded_from": "Tuesday through Saturday",
    "day_parsed": "Tuesday",
    "day_bound_from_line": true
@@ -492,13 +467,11 @@
    "day": "Saturday",
    "time": "08:00",
    "language": null,
-   "raw": "Weekly Mass Times:: Tuesday through Saturday 8:00 a.m.",
+   "raw": "Tuesday through Saturday 8:00 a.m.",
    "source_url": "https://www.olguadalupe.org/",
    "fetched_at": "2026-11-01T09:04:58+00:00",
    "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wix",
+   "review_reason": "schedule_box",
    "day_expanded_from": "Tuesday through Saturday",
    "day_parsed": "Tuesday",
    "day_bound_from_line": true
@@ -506,28 +479,41 @@
  ],
  "source_url": "https://www.olguadalupe.org/",
  "fetched_at": "2026-11-01T09:05:20+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:06+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "wix",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
-    "has_sunday": true,
+    "has_sunday": false,
     "hours_ok": true,
     "counts_ok": true,
     "sunday_not_copied": true,
     "no_daily_on_sunday": true,
     "mostly_high": false
    },
-   "score": "medium"
+   "score": "low"
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 21
  },
  "has_sunday": true,
  "schedule_dropped": {
+  "other_location": 4,
   "skipped_section": 2,
-  "relative_time": 1
+  "relative_time": 1,
+  "box_rows_added": 7
  },
  "groups_dropped": {},
  "event_counts": {

@@ -341,6 +341,22 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "First Friday of the month",
+   "time": "08:00",
+   "language": null,
+   "raw": "St. Ann offers Eucharistic Adoration twice a month.: St. Ann Catholic Church-First Fridays following the 8:00 a.m. Mass.",
+   "source_url": "https://stannchurch-stl.org/eucharistic-adoration/",
+   "fetched_at": "2026-11-02T04:41:55+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "St. Ann offers Eucharistic Adoration twice a month.: St. Ann Catholic Church-First Fridays following the 8:00 a.m. Mass.",
+   "topup": true
   }
  ],
  "source_url": "http://www.stannchurch-stl.org/",
@@ -383,5 +399,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:14+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

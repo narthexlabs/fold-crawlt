@@ -88,6 +88,19 @@
   {
    "kind": "mass",
    "day": "Sunday",
+   "time": "11:00",
+   "language": null,
+   "raw": "11:00 a.m. — Mass",
+   "source_url": "https://www.saintpeters.org/",
+   "fetched_at": "2026-11-01T22:15:23+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
    "time": "13:00",
    "language": null,
    "raw": "1:00 p.m. - Mass",
@@ -114,9 +127,19 @@
  ],
  "source_url": "https://www.saintpeters.org/",
  "fetched_at": "2026-11-01T22:15:27+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:41+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "squarespace",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -130,19 +153,17 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 2
  },
  "has_sunday": true,
- "schedule_dropped": {
-  "no_kind": 1
- },
  "groups_dropped": {
   "noise": 2,
   "unmatched": 2
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

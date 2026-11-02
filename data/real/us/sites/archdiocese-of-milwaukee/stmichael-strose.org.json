@@ -72,6 +72,18 @@
    "url": "https://www.stmichael-strose.org/parish-news",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stmichael-strose.org/reconciliation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stmichael-strose.org/adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -296,7 +308,31 @@
   "excluded_by_reason": {}
  },
  "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()",
-  "intentions_withheld": 1
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Confession is available 30 minutes before every Mass and during our times of Adoration. The confessional at St. Michael's is located in the right side sacristy. The confessional is on the right side n",
+   "phrase": "30 minutes before every Mass",
+   "source_url": "https://www.stmichael-strose.org/reconciliation",
+   "fetched_at": "2026-11-02T04:41:47+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:59+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
  }
 }

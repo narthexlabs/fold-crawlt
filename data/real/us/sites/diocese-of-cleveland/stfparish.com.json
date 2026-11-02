@@ -63,6 +63,24 @@
    "url": "https://stfparish.com/our-message/bulletins/",
    "status": 403,
    "class": "blocked_403"
+  },
+  {
+   "category": "confession",
+   "url": "https://stfparish.com/sacraments-liturgy/sacraments/reconciliation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stfparish.com/adoration/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://stfparish.com/sacraments-liturgy/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -2737,5 +2755,30 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Go to Confession. Make sure to check the parish calendar for times of Confession. The Sacrament of Confession is also available by appointment with a priest, call .",
+   "phrase": "by appointment",
+   "source_url": "https://stfparish.com/sacraments-liturgy/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:52:38+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:52:43+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
  }
 }

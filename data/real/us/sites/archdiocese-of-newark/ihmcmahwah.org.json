@@ -81,12 +81,6 @@
    "url": "https://ihmcmahwah.org/contact-us",
    "status": 200,
    "class": "ok"
-  },
-  {
-   "category": "adoration",
-   "url": "https://ihmcmahwah.org/events/exposition-of-the-blessed-sacrament-1/20260508",
-   "status": 404,
-   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -628,13 +622,13 @@
   }
  ],
  "source_url": "https://ihmcmahwah.org/",
- "fetched_at": "2026-11-02T05:10:11+00:00",
+ "fetched_at": "2026-11-02T03:39:23+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
  },
  "schedule_template": {
   "template": "ecatholic",
-  "version": "ca-sites/3",
+  "version": "ca-sites/2",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -646,25 +640,10 @@
    },
    "score": "high"
   },
-  "passed_bar": true,
-  "trusted_candidate": true,
-  "trusted_kinds": [
-   "weekend",
-   "weekday",
-   "confession",
-   "adoration"
-  ],
+  "passed_bar": false,
+  "trusted_candidate": false,
   "generic_rows": 3
  },
- "schedule_notes": [
-  {
-   "kind": "confession",
-   "text": "After all daily Masses and Saturday, 4pm to 4:45pm, or by appointment.",
-   "phrase": "After all daily Masses",
-   "source_url": "https://ihmcmahwah.org/reconciliation",
-   "fetched_at": "2023-02-03T04:41:44+00:00"
-  }
- ],
  "has_sunday": true,
  "schedule_dropped": {
   "text:dated_line": 2
@@ -755,10 +734,10 @@
   "grade": {
    "rule": "wayback-verified-2026-11-01",
    "template": "ecatholic",
-   "trusted_template": true,
+   "trusted_template": false,
    "has_sunday": true,
    "groups": 10,
-   "verified": true,
+   "verified": false,
    "capture_date": "2026-05-07",
    "applied": false
   }

@@ -67,6 +67,12 @@
    "url": "https://www.lourdesdenver.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.lourdesdenver.org/reconciliation",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -496,6 +502,34 @@
    "confidence": "medium",
    "template": "wix",
    "day_expanded_from": "Tuesday–Friday"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "08:00-10:00",
+   "language": null,
+   "raw": "Confession Times: Saturday: 8–10 AM",
+   "source_url": "https://www.lourdesdenver.org/reconciliation",
+   "fetched_at": "2026-11-02T04:41:58+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "17:00-17:45",
+   "language": null,
+   "raw": "Confession Times: Sunday: 5-5:45 PM",
+   "source_url": "https://www.lourdesdenver.org/reconciliation",
+   "fetched_at": "2026-11-02T04:41:58+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "topup": true
   }
  ],
  "source_url": "https://lourdesdenver.org/",
@@ -537,6 +571,23 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:58+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "admin@lourdesdenver.org",
   "phone": "(303) 722-6861",
@@ -549,8 +600,5 @@
   },
   "fetched_at": "2026-11-01T05:11:12+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

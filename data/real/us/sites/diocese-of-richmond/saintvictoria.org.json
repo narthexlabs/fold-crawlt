@@ -186,6 +186,22 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "11:00",
+   "language": null,
+   "raw": "Reconciliation is offered on Sunday after 11:00 am Mass, Monday before 10:00 am Mass or by appointment.",
+   "source_url": "https://saintvictoria.org/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:48+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "Reconciliation is offered on Sunday after 11:00 am Mass, Monday before 10:00 am Mass or by appointment.",
+   "topup": true
   }
  ],
  "source_url": "http://www.saintvictoria.org/",
@@ -227,5 +243,28 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "is offered on Sunday after 11:00 am Mass, Monday before 10:00 am Mass or by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://saintvictoria.org/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:48+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:50+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

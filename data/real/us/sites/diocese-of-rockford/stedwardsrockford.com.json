@@ -69,6 +69,12 @@
    "url": "https://stedwardsrockford.com/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stedwardsrockford.com/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -92,7 +98,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:41:33+00:00",
+    "fetched_at": "2026-11-02T05:16:13+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -108,32 +114,6 @@
   "source_url": "https://stedwardsrockford.com/"
  },
  "schedule_rows": [
-  {
-   "kind": "confession",
-   "day": "Wednesday",
-   "time": "18:00-18:50",
-   "language": "Spanish/English",
-   "raw": "Confession Times:: Wednesdays: 6:00-6:50 PM Spanish & English",
-   "source_url": "https://stedwardsrockford.com/our-faith/sacraments/reconciliation/",
-   "fetched_at": "2026-11-01T20:25:20+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress"
-  },
-  {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "15:30-16:15",
-   "language": "English",
-   "raw": "Confession Times:: Saturdays: 3:30-4:15 PM English",
-   "source_url": "https://stedwardsrockford.com/our-faith/sacraments/reconciliation/",
-   "fetched_at": "2026-11-01T20:25:20+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress"
-  },
   {
    "kind": "mass",
    "day": "Saturday",
@@ -224,13 +204,49 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Wednesday",
+   "time": "18:00-18:50",
+   "language": "Spanish/English",
+   "raw": "Confession Times:: Wednesdays: 6:00-6:50 PM Spanish & English",
+   "source_url": "https://stedwardsrockford.com/our-faith/sacraments/reconciliation/",
+   "fetched_at": "2026-11-01T20:25:20+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:30-16:15",
+   "language": "English",
+   "raw": "Confession Times:: Saturdays: 3:30-4:15 PM English",
+   "source_url": "https://stedwardsrockford.com/our-faith/sacraments/reconciliation/",
+   "fetched_at": "2026-11-01T20:25:20+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
   }
  ],
  "source_url": "https://stedwardsrockford.com/",
  "fetched_at": "2026-11-01T20:25:47+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:04+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -244,6 +260,7 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 9
  },
  "has_sunday": true,
@@ -252,8 +269,8 @@
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

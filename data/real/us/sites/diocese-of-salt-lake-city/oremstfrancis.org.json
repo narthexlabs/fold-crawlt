@@ -651,6 +651,40 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "By Appointment:",
+   "phrase": "By Appointment",
+   "source_url": "https://www.oremstfrancis.org/reconciliation/-confession",
+   "fetched_at": "2026-11-02T04:42:10+00:00"
+  },
+  {
+   "kind": "confession",
+   "text": "Available upon request calling the office",
+   "phrase": "upon request",
+   "source_url": "https://www.oremstfrancis.org/reconciliation/-confession",
+   "fetched_at": "2026-11-02T04:42:10+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:11+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "parish@oremstfrancis.org",
   "phone": "(801) 221-0750",
@@ -662,8 +696,5 @@
   },
   "fetched_at": "2026-11-01T07:19:43+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

@@ -60,6 +60,18 @@
    "url": "https://cathedralic.com/contact-cathedral-music/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://cathedralic.com/sacraments/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://cathedralic.com/adoration-at-the-cathedral/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -131,6 +143,104 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "07:00-19:00",
+   "language": null,
+   "raw": "Our initial weekly adoration hours will be:: Thursdays 7 am – 7 pm",
+   "source_url": "https://cathedralic.com/adoration-at-the-cathedral/",
+   "fetched_at": "2026-11-02T04:41:52+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "07:00-21:00",
+   "language": null,
+   "raw": "Our initial weekly adoration hours will be:: Fridays 7 am – 9 pm",
+   "source_url": "https://cathedralic.com/adoration-at-the-cathedral/",
+   "fetched_at": "2026-11-02T04:41:52+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Saturday",
+   "time": "07:00",
+   "language": null,
+   "raw": "Our initial weekly adoration hours will be:: Saturdays 7 am – noon",
+   "source_url": "https://cathedralic.com/adoration-at-the-cathedral/",
+   "fetched_at": "2026-11-02T04:41:52+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Saturday",
+   "time": "12:00",
+   "language": null,
+   "raw": "Our initial weekly adoration hours will be:: Saturdays 7 am – noon",
+   "source_url": "https://cathedralic.com/adoration-at-the-cathedral/",
+   "fetched_at": "2026-11-02T04:41:52+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Sunday",
+   "time": "07:00-11:00",
+   "language": null,
+   "raw": "Our initial weekly adoration hours will be:: Sundays 7 am – 11 am & noon – 5 pm",
+   "source_url": "https://cathedralic.com/adoration-at-the-cathedral/",
+   "fetched_at": "2026-11-02T04:41:52+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Sunday",
+   "time": "12:00",
+   "language": null,
+   "raw": "Our initial weekly adoration hours will be:: Sundays 7 am – 11 am & noon – 5 pm",
+   "source_url": "https://cathedralic.com/adoration-at-the-cathedral/",
+   "fetched_at": "2026-11-02T04:41:52+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Sunday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Our initial weekly adoration hours will be:: Sundays 7 am – 11 am & noon – 5 pm",
+   "source_url": "https://cathedralic.com/adoration-at-the-cathedral/",
+   "fetched_at": "2026-11-02T04:41:52+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "http://www.cathedralic.com/",
@@ -169,5 +279,30 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Adoration of the Blessed Sacrament begins one hour before Mass and Confession and the Rosary begin 30 minutes before Mass begins.",
+   "phrase": "30 minutes before Mass",
+   "source_url": "https://cathedralic.com/mass-schedule/",
+   "fetched_at": "2026-11-02T04:41:54+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:54+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 7,
+  "mode": "merge"
  }
 }

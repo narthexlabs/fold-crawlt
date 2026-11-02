@@ -379,7 +379,7 @@
    "note": "CCB public calendar iCal",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:30:59+00:00",
+    "fetched_at": "2026-11-02T05:04:05+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -432,6 +432,22 @@
    "template": "squarespace"
   },
   {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "18:00",
+   "language": null,
+   "raw": "Eucharistic Adoration: Adoremus - monthly following 6 p.m. Mass",
+   "source_url": "https://www.clement.org/worship-and-pray",
+   "fetched_at": "2026-11-01T07:27:56+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "squarespace",
+   "relative": "after",
+   "note": "Eucharistic Adoration: Adoremus - monthly following 6 p.m. Mass",
+   "relative_resolved": false
+  },
+  {
    "kind": "mass",
    "day": "Tuesday",
    "time": "09:00",
@@ -472,6 +488,19 @@
   },
   {
    "kind": "mass",
+   "day": "Tuesday",
+   "time": "06:30",
+   "language": null,
+   "raw": "Mass: Tuesdays, 6:30 a.m., in the Chapel",
+   "source_url": "https://www.clement.org/resources/sacraments-prayergroups",
+   "fetched_at": "2026-11-01T07:27:58+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "squarespace"
+  },
+  {
+   "kind": "mass",
    "day": "Friday",
    "time": "08:30",
    "language": null,
@@ -497,9 +526,19 @@
  ],
  "source_url": "https://www.clement.org/",
  "fetched_at": "2026-11-01T07:28:08+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:34+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "squarespace",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -513,17 +552,18 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 26
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "dated_block": 8,
+  "no_day": 3,
+  "dated_block": 9,
   "other_location": 17,
   "dated_line": 3,
-  "not_a_service": 2,
   "benediction_end": 2,
-  "relative_time": 5,
-  "prose": 19,
+  "relative_time": 3,
+  "prose": 4,
   "box_rows_added": 1
  },
  "groups_dropped": {
@@ -533,8 +573,8 @@
   "schedule": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

@@ -76,6 +76,18 @@
    "url": "https://www.stpatsbisbee.com/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stpatsbisbee.com/penance",
+   "status": null,
+   "class": "ssl_error"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stpatsbisbee.com/eucaristic-adoration",
+   "status": null,
+   "class": "ssl_error"
   }
  ],
  "cms_guess": {
@@ -335,7 +347,7 @@
    "feed_key": "99ccb2211975",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:40:17+00:00",
+    "fetched_at": "2026-11-02T05:08:23+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -471,9 +483,19 @@
  ],
  "source_url": "https://www.stpatsbisbee.com/",
  "fetched_at": "2026-11-01T17:28:27+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:50+00:00",
+  "requests": 2,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -487,16 +509,33 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 8
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "St. Patrick Confession: 30 minutes before Mass",
+   "phrase": "30 minutes before Mass",
+   "source_url": "https://www.stpatsbisbee.com/",
+   "fetched_at": "2026-11-01T17:28:20+00:00"
+  },
+  {
+   "kind": "confession",
+   "text": "or by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://www.stpatsbisbee.com/",
+   "fetched_at": "2026-11-01T17:28:20+00:00"
+  }
+ ],
  "has_sunday": true,
  "groups_dropped": {
   "noise": 3,
   "unmatched": 2
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

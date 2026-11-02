@@ -84,6 +84,18 @@
    "url": "https://www.standrewdh.org/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.standrewdh.org/reconciliation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.standrewdh.org/adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -501,6 +513,22 @@
    "template": "wix"
   },
   {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "07:30",
+   "language": null,
+   "raw": "Reconciliation Times: Sundays: After 7:30am Mass",
+   "source_url": "https://www.standrewdh.org/mass-times-1",
+   "fetched_at": "2026-11-01T20:25:17+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wix",
+   "relative": "after",
+   "note": "Reconciliation Times: Sundays: After 7:30am Mass",
+   "relative_resolved": true
+  },
+  {
    "kind": "other",
    "day": "Holy days",
    "time": "18:30",
@@ -541,13 +569,93 @@
    "confidence": "medium",
    "template": "wix",
    "kind_parsed": "mass"
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday (during the school year)",
+   "time": "06:30",
+   "language": null,
+   "raw": "Tuesdays for Adoration (Sept-June): Following the 6:30am Mass",
+   "source_url": "https://www.standrewdh.org/mass-times-1",
+   "fetched_at": "2026-11-01T20:25:17+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time,seasonal",
+   "confidence": "low",
+   "template": "wix",
+   "relative": "after",
+   "note": "Tuesdays for Adoration (Sept-June): Following the 6:30am Mass",
+   "season": "Sept-June",
+   "relative_resolved": false
+  },
+  {
+   "kind": "adoration",
+   "day": "Saturday (during the school year)",
+   "time": "17:00",
+   "language": null,
+   "raw": "Tuesdays for Adoration (Sept-June): Saturdays closing after the 5:00pm Vigil Mass",
+   "source_url": "https://www.standrewdh.org/mass-times-1",
+   "fetched_at": "2026-11-01T20:25:17+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time,seasonal",
+   "confidence": "low",
+   "template": "wix",
+   "relative": "after",
+   "note": "Tuesdays for Adoration (Sept-June): Saturdays closing after the 5:00pm Vigil Mass",
+   "season": "Sept-June",
+   "relative_resolved": false
+  },
+  {
+   "kind": "adoration",
+   "day": "Sunday (during the school year)",
+   "time": "12:30",
+   "language": null,
+   "raw": "Tuesdays for Adoration (Sept-June): Sundays closing after the 12:30pm Mass",
+   "source_url": "https://www.standrewdh.org/mass-times-1",
+   "fetched_at": "2026-11-01T20:25:17+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time,seasonal",
+   "confidence": "low",
+   "template": "wix",
+   "relative": "after",
+   "note": "Tuesdays for Adoration (Sept-June): Sundays closing after the 12:30pm Mass",
+   "season": "Sept-June",
+   "relative_resolved": false
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "06:30",
+   "language": null,
+   "raw": "Adoration of the Blessed Sacrament: Each Tuesday, after the 6:30am Mass, the",
+   "source_url": "https://www.standrewdh.org/adoration",
+   "fetched_at": "2026-11-02T04:43:09+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wix",
+   "relative": "after",
+   "note": "Adoration of the Blessed Sacrament: Each Tuesday, after the 6:30am Mass, the",
+   "relative_resolved": true
   }
  ],
  "source_url": "https://standrewdh.org/",
  "fetched_at": "2026-11-01T20:25:28+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:09+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wix",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -561,15 +669,25 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 15
+  "trusted_kinds": [],
+  "generic_rows": 16
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "By appointment by calling the Parish Office at",
+   "phrase": "By appointment",
+   "source_url": "https://www.standrewdh.org/reconciliation",
+   "fetched_at": "2026-11-02T04:43:08+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "relative_time": 8,
   "not_a_service": 1,
   "benediction_end": 1,
   "skipped_section": 2,
-  "range_not_a_mass": 3
+  "range_not_a_mass": 3,
+  "other_location": 4
  },
  "groups_dropped": {
   "noise": 2,

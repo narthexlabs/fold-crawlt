@@ -45,6 +45,24 @@
    "url": "https://holyghostbyzantine.com/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://holyghostbyzantine.com/liturgy-information/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://holyghostbyzantine.com/reconciliation/",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://holyghostbyzantine.com/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -86,9 +104,21 @@
  ],
  "source_url": "https://holyghostbyzantine.com/",
  "fetched_at": "2026-11-01T20:25:07+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:05+00:00",
+  "requests": 3,
+  "found": [
+   "liturgy"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -102,13 +132,23 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 0
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "or by appointment:",
+   "phrase": "by appointment",
+   "source_url": "https://holyghostbyzantine.com/liturgy-information/",
+   "fetched_at": "2026-11-01T20:25:04+00:00"
+  }
+ ],
  "has_sunday": true,
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

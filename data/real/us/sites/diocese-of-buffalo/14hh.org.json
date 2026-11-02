@@ -75,6 +75,18 @@
    "url": "https://14hh.org/parish-about-us/contact-information/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://14hh.org/parish-about-us/eucharistic-chapel/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://14hh.org/reconciliation/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -119,7 +131,7 @@
    "feed_key": "c17b4081744d",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:35:35+00:00",
+    "fetched_at": "2026-11-02T04:55:04+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -136,7 +148,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:35:37+00:00",
+    "fetched_at": "2026-11-02T04:55:06+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -153,7 +165,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:35:38+00:00",
+    "fetched_at": "2026-11-02T04:55:07+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -170,7 +182,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:35:39+00:00",
+    "fetched_at": "2026-11-02T04:55:08+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -187,7 +199,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:35:40+00:00",
+    "fetched_at": "2026-11-02T04:55:09+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -204,7 +216,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:35:42+00:00",
+    "fetched_at": "2026-11-02T04:55:11+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -221,7 +233,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:35:43+00:00",
+    "fetched_at": "2026-11-02T04:55:12+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -336,9 +348,21 @@
  ],
  "source_url": "https://14hh.org/",
  "fetched_at": "2026-11-01T18:53:13+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:58+00:00",
+  "requests": 2,
+  "found": [
+   "adoration"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -352,8 +376,18 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 6
  },
+ "schedule_notes": [
+  {
+   "kind": "adoration",
+   "text": "By appointment",
+   "phrase": "By appointment",
+   "source_url": "https://14hh.org/parish-about-us/eucharistic-chapel/",
+   "fetched_at": "2026-11-02T04:41:37+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "relative_time": 1,
@@ -365,8 +399,8 @@
   "noise": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

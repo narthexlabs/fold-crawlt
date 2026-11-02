@@ -57,6 +57,18 @@
    "url": "https://aarch.org/about/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://aarch.org/reconciliation/",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://aarch.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -79,7 +91,7 @@
    "note": "The Events Calendar (WordPress) REST API",
    "last_fetch": {
     "status": 200,
-    "fetched_at": "2026-11-01T23:33:07+00:00",
+    "fetched_at": "2026-11-02T04:56:55+00:00",
     "events_in_window": 1,
     "kept": 1
    }
@@ -97,7 +109,7 @@
    "recurring": false,
    "source_url": "https://aarch.org/event/winter-weekend-jan-2027/",
    "feed_id": "aarch.org:tribe_rest:b9198027",
-   "fetched_at": "2026-11-01T23:33:07+00:00"
+   "fetched_at": "2026-11-02T04:56:55+00:00"
   }
  ],
  "social": {
@@ -115,9 +127,19 @@
  "schedule_rows": [],
  "source_url": "https://aarch.org/",
  "fetched_at": "2026-11-01T22:15:31+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:42+00:00",
+  "requests": 2,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -131,6 +153,7 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 0
  },
  "has_sunday": false,
@@ -139,8 +162,8 @@
   "noise": 2
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 1,
   "kept_after_privacy": 1,

@@ -39,6 +39,18 @@
    "url": "https://ctk.ptdiocese.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://ctk.ptdiocese.org/reconciliation/",
+   "status": null,
+   "class": "timeout"
+  },
+  {
+   "category": "adoration",
+   "url": "https://ctk.ptdiocese.org/adoration/",
+   "status": 504,
+   "class": "http_5xx"
   }
  ],
  "cms_guess": {
@@ -107,11 +119,24 @@
    "template": "wordpress"
   },
   {
-   "kind": "mass",
+   "kind": "devotion",
+   "day": "Sunday",
+   "time": "11:30",
+   "language": null,
+   "raw": "11:30 AM CT, prior to mass",
+   "source_url": "https://ctk.ptdiocese.org/",
+   "fetched_at": "2026-11-01T22:15:39+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "devotion",
    "day": "Friday",
    "time": "11:30",
    "language": null,
-   "raw": "Weekday Mass: • 11:30am – The Holy Rosary",
+   "raw": "• 11:30am – The Holy Rosary",
    "source_url": "https://ctk.ptdiocese.org/",
    "fetched_at": "2026-11-01T22:15:39+00:00",
    "needs_review": false,
@@ -148,9 +173,19 @@
  ],
  "source_url": "https://ctk.ptdiocese.org/",
  "fetched_at": "2026-11-01T22:16:18+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:29+00:00",
+  "requests": 2,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -158,23 +193,32 @@
     "counts_ok": true,
     "sunday_not_copied": true,
     "no_daily_on_sunday": true,
-    "mostly_high": false
+    "mostly_high": true
    },
-   "score": "medium"
+   "score": "high"
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 11
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Available by Appointment",
+   "phrase": "by Appointment",
+   "source_url": "https://ctk.ptdiocese.org/",
+   "fetched_at": "2026-11-01T22:15:39+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "no_day": 1,
-  "not_a_service": 1
+  "no_day": 1
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

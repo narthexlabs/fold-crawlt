@@ -66,6 +66,12 @@
    "url": "https://saintgeorgecatholics.com/calendar/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://saintgeorgecatholics.com/sacrament-of-reconcilation/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -571,6 +577,33 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Or by appointment—please call the office.",
+   "phrase": "by appointment",
+   "source_url": "https://saintgeorgecatholics.com/sacrament-of-reconcilation/",
+   "fetched_at": "2026-11-02T04:42:10+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:11+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "office@sgcatholics.com",
   "phone": "(435) 673-2604",
@@ -583,8 +616,5 @@
   },
   "fetched_at": "2026-11-01T07:19:43+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

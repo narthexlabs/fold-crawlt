@@ -69,6 +69,18 @@
    "url": "https://www.sjmp.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.sjmp.org/sacraments/reconciliation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.sjmp.org",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -234,22 +246,76 @@
    "day": "Saturday",
    "time": "16:00",
    "language": null,
-   "raw": "Mass: Saturday: 4:00 PM",
-   "source_url": "https://www.sjmp.org/our-parish/mass-schedule/",
-   "fetched_at": "2026-11-01T18:51:44+00:00",
+   "raw": "Mass Schedule: 4:00 PM OLV Campus & 4:00 PM SJM Campus",
+   "source_url": "https://www.sjmp.org/",
+   "fetched_at": "2026-11-01T18:51:42+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "low",
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:00-15:45",
+   "language": null,
+   "raw": "Sacrament of Reconciliation: 3:00 PM – 3:45 PM SJM Campus (Church)",
+   "source_url": "https://www.sjmp.org/",
+   "fetched_at": "2026-11-01T18:51:42+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "08:00",
+   "language": null,
+   "raw": "8:00 AM on Federal Holidays, Daily Mass is celebrated at 9:00 AM & 8:00 AM SJM Campus (Rectory at 251 South Morley Street)",
+   "source_url": "https://www.sjmp.org/",
+   "fetched_at": "2026-11-01T18:51:42+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "09:00",
+   "language": null,
+   "raw": "8:00 AM on Federal Holidays, Daily Mass is celebrated at 9:00 AM & 8:00 AM SJM Campus (Rectory at 251 South Morley Street)",
+   "source_url": "https://www.sjmp.org/",
+   "fetched_at": "2026-11-01T18:51:42+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "19:00",
+   "language": null,
+   "raw": "Mass Schedule: 7:00 PM OLV Campus",
+   "source_url": "https://www.sjmp.org/",
+   "fetched_at": "2026-11-01T18:51:42+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
    "template": "wordpress"
   },
   {
    "kind": "mass",
-   "day": "Sunday",
-   "time": "08:30",
+   "day": "Friday",
+   "time": "08:00",
    "language": null,
-   "raw": "Mass: Sunday: 8:30 AM & 11:00 AM",
-   "source_url": "https://www.sjmp.org/our-parish/mass-schedule/",
-   "fetched_at": "2026-11-01T18:51:44+00:00",
+   "raw": "Mass Schedule: 8:00 AM OLV Campus Communion Service",
+   "source_url": "https://www.sjmp.org/",
+   "fetched_at": "2026-11-01T18:51:42+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -258,7 +324,7 @@
   {
    "kind": "mass",
    "day": "Sunday",
-   "time": "11:00",
+   "time": "08:30",
    "language": null,
    "raw": "Mass: Sunday: 8:30 AM & 11:00 AM",
    "source_url": "https://www.sjmp.org/our-parish/mass-schedule/",
@@ -329,54 +395,26 @@
    "day_expanded_from": "Monday – Thursday",
    "day_parsed": "Monday",
    "day_bound_from_line": true
-  },
-  {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "15:00-15:45",
-   "language": null,
-   "raw": "Sacrament of Reconciliation: Saturdays 3:00 PM – 3:45 PM (Church)",
-   "source_url": "https://www.sjmp.org/our-parish/mass-schedule/",
-   "fetched_at": "2026-11-01T18:51:44+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "wordpress"
-  },
-  {
-   "kind": "other",
-   "day": "Holy days",
-   "time": "08:00",
-   "language": null,
-   "raw": "8:00 AM on Federal Holidays, Daily Mass is celebrated at 9:00 AM & 8:00 AM SJM Campus (Rectory at 251 South Morley Street)",
-   "source_url": "https://www.sjmp.org/",
-   "fetched_at": "2026-11-01T18:51:42+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress",
-   "kind_parsed": "mass"
-  },
-  {
-   "kind": "other",
-   "day": "Holy days",
-   "time": "09:00",
-   "language": null,
-   "raw": "8:00 AM on Federal Holidays, Daily Mass is celebrated at 9:00 AM & 8:00 AM SJM Campus (Rectory at 251 South Morley Street)",
-   "source_url": "https://www.sjmp.org/",
-   "fetched_at": "2026-11-01T18:51:42+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "wordpress",
-   "kind_parsed": "mass"
   }
  ],
  "source_url": "http://www.sjmp.org/",
  "fetched_at": "2026-11-01T18:51:51+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:37+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -390,18 +428,30 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 11
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "The Sacrament of Reconciliation is offered every Saturday from 3:00 PM – 3:45 PM in church or privately by appointment. The parish also periodically offers a Reconciliation service during Lent.",
+   "phrase": "by appointment",
+   "source_url": "https://www.sjmp.org/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:33+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 1
+  "other_location": 2,
+  "no_day": 1,
+  "prose": 6
  },
  "groups_dropped": {
   "noise": 4
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

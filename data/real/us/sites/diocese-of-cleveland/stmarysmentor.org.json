@@ -63,6 +63,18 @@
    "url": "https://www.stmarysmentor.org/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stmarysmentor.org/sacrament-of-reconciliation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://www.stmarysmentor.org/liturgy---prayer",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -274,6 +286,23 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "08:15",
+   "language": null,
+   "raw": "Daily Liturgy 8:15 am (Mon., Tues., Fri.)",
+   "source_url": "https://www.stmarysmentor.org/liturgy---prayer",
+   "fetched_at": "2026-11-02T04:52:39+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "day_expanded_from": "Daily",
+   "day_parsed": "Wednesday",
+   "day_bound_from_line": true,
+   "topup": true
   }
  ],
  "source_url": "http://www.stmarysmentor.org/",
@@ -312,5 +341,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:52:39+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

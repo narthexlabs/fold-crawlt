@@ -874,6 +874,48 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wix"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "18:05-18:25",
+   "language": null,
+   "raw": "[St. Mary - Mission-Eagle] Confession: 6:05 p.m. – 6:25 p.m.",
+   "source_url": "https://www.catholicparishesofthevalley.org/reconciliation",
+   "fetched_at": "2026-11-02T04:41:59+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Monday",
+   "time": "17:30-18:00",
+   "language": null,
+   "raw": "[St. Mary - Mission-Eagle] Confession: 5:30 p.m. – 6:00 p.m.",
+   "source_url": "https://www.catholicparishesofthevalley.org/reconciliation",
+   "fetched_at": "2026-11-02T04:41:59+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Thursday",
+   "time": "17:30-18:00",
+   "language": null,
+   "raw": "[St. Mary - Mission-Eagle] Confession: 5:30 p.m. – 6:00 p.m.",
+   "source_url": "https://www.catholicparishesofthevalley.org/reconciliation",
+   "fetched_at": "2026-11-02T04:41:59+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "topup": true
   }
  ],
  "source_url": "https://catholicparishesofthevalley.org/",
@@ -918,6 +960,39 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Beaver Creek – by request After Mass",
+   "phrase": "by request",
+   "source_url": "https://www.catholicparishesofthevalley.org/reconciliation",
+   "fetched_at": "2026-11-02T04:41:59+00:00"
+  },
+  {
+   "kind": "confession",
+   "text": "Confessions are also available by appointment by calling the main parish number:",
+   "phrase": "by appointment",
+   "source_url": "https://www.catholicparishesofthevalley.org/reconciliation",
+   "fetched_at": "2026-11-02T04:41:59+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:00+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ],
+  "rows_added": 3,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(970) 926-2821",
@@ -929,8 +1004,5 @@
   },
   "fetched_at": "2026-11-01T05:11:05+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

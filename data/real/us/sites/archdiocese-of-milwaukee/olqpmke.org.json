@@ -63,6 +63,18 @@
    "url": "https://www.setoncatholicschools.com/our-lady-queen-of-peace/contact-us-2/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.setoncatholicschools.com/reconciliation/",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.setoncatholicschools.com/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -88,7 +100,7 @@
    "feed_key": "3273ed229ba3",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-02T01:58:50+00:00",
+    "fetched_at": "2026-11-02T04:59:01+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -105,7 +117,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-02T01:58:52+00:00",
+    "fetched_at": "2026-11-02T04:59:03+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -125,9 +137,19 @@
  "source_url": "http://www.olqpmke.org/",
  "fetched_at": "2026-11-02T01:56:15+00:00",
  "redirected_off_host": "setoncatholicschools.com",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:39+00:00",
+  "requests": 2,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -141,6 +163,7 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 0
  },
  "has_sunday": false,

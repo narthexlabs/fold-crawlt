@@ -292,7 +292,7 @@
    "feed_key": "1b42a65a10a5",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:42:15+00:00",
+    "fetched_at": "2026-11-02T05:17:02+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -324,13 +324,36 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "devotion",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Rosary: Sunday 9:00 AM",
+   "source_url": "https://www.holyspirit300.com/",
+   "fetched_at": "2026-11-01T18:51:48+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict"
   }
  ],
  "source_url": "https://www.holyspirit300.com/",
  "fetched_at": "2026-11-01T18:51:55+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:59+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -344,18 +367,28 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 5
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "By Appointment Only",
+   "phrase": "By Appointment",
+   "source_url": "https://www.holyspirit300.com/",
+   "fetched_at": "2026-11-01T18:51:48+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "not_a_service": 2
+  "not_a_service": 1
  },
  "groups_dropped": {
   "noise": 5
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

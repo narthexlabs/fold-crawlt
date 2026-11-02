@@ -69,6 +69,18 @@
    "url": "https://www.saintjulies.org/parish-information/contact-info/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.saintjulies.org/liturgy/eucharistic-adoration/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://www.saintjulies.org/liturgy/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -468,6 +480,20 @@
    "confidence": "high",
    "template": "wordpress",
    "day_expanded_from": "Monday, Tuesday and Wednesday"
+  },
+  {
+   "kind": "adoration",
+   "day": "Saturday",
+   "time": "10:00-15:00",
+   "language": null,
+   "raw": "YOU ARE WELCOME TO JOIN US IN EUCHARISTIC ADORATION EVERY MONDAY, TUESDAY & WEDNESDAY BETWEEN 10:00 AM AND 6:00 PM AND SATURDAY BETWEEN 10:00 AM AND 3:00 PM IN THE PARISH CHURCH",
+   "source_url": "https://www.saintjulies.org/liturgy/eucharistic-adoration/",
+   "fetched_at": "2026-11-02T04:42:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "https://www.saintjulies.org/",
@@ -507,6 +533,34 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "St. Julie Billiart Parish offers many times for Confession, however Father Valliere is available to hear your confession by appointment if you are unable to come at the established times. At present, ",
+   "phrase": "by appointment",
+   "source_url": "https://www.saintjulies.org/sacraments/confession-reconciliation/",
+   "fetched_at": "2026-11-02T04:42:11+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:11+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(508) 993-2351",
@@ -518,8 +572,5 @@
   },
   "fetched_at": "2026-11-01T05:05:04+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

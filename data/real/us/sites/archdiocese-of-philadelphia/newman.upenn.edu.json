@@ -81,6 +81,12 @@
    "url": "https://newman.upenn.edu/bulletin",
    "status": 404,
    "class": "not_found"
+  },
+  {
+   "category": "confession",
+   "url": "https://newman.upenn.edu/reconciliation",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -195,7 +201,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-02T01:57:52+00:00",
+    "fetched_at": "2026-11-02T04:58:00+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -214,7 +220,7 @@
  "schedule_rows": [
   {
    "kind": "adoration",
-   "day": "Tuesday",
+   "day": "Tuesday (during the school year)",
    "time": "09:00-10:00",
    "language": null,
    "raw": "Eucharistic Adoration: Tuesday-Thursday: 9:00-10:00am",
@@ -228,7 +234,7 @@
   },
   {
    "kind": "adoration",
-   "day": "Wednesday",
+   "day": "Wednesday (during the school year)",
    "time": "09:00-10:00",
    "language": null,
    "raw": "Eucharistic Adoration: Tuesday-Thursday: 9:00-10:00am",
@@ -242,7 +248,7 @@
   },
   {
    "kind": "adoration",
-   "day": "Thursday",
+   "day": "Thursday (during the school year)",
    "time": "09:00-10:00",
    "language": null,
    "raw": "Eucharistic Adoration: Tuesday-Thursday: 9:00-10:00am",
@@ -256,7 +262,7 @@
   },
   {
    "kind": "adoration",
-   "day": "Wednesday",
+   "day": "Wednesday (during the school year)",
    "time": "08:00-12:00",
    "language": null,
    "raw": "Eucharistic Adoration: Wednesday: 8-12pm, 6-10pm",
@@ -269,7 +275,7 @@
   },
   {
    "kind": "adoration",
-   "day": "Wednesday",
+   "day": "Wednesday (during the school year)",
    "time": "18:00-22:00",
    "language": null,
    "raw": "Eucharistic Adoration: Wednesday: 8-12pm, 6-10pm",
@@ -282,7 +288,7 @@
   },
   {
    "kind": "adoration",
-   "day": "Thursday",
+   "day": "Thursday (during the school year)",
    "time": "19:00-20:00",
    "language": null,
    "raw": "Eucharistic Adoration: Thursday: 7:00-8:00pm (main church)",
@@ -329,9 +335,19 @@
  ],
  "source_url": "http://www.newman.upenn.edu/",
  "fetched_at": "2026-11-02T01:56:16+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:06+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "squarespace",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -345,6 +361,7 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 17
  },
  "has_sunday": true,

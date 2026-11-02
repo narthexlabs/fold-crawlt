@@ -75,6 +75,12 @@
    "url": "https://www.ourladyofthefalls.org/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.ourladyofthefalls.org/eucharistic-adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -806,14 +812,52 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wix"
+  },
+  {
+   "kind": "adoration",
+   "day": "Sunday",
+   "time": "07:00",
+   "language": null,
+   "raw": "The Goldsmith Eucharistic Adoration Chapel: Hours: Sunday 7am through Friday at 3pm",
+   "source_url": "https://www.ourladyofthefalls.org/eucharistic-adoration",
+   "fetched_at": "2026-11-02T04:41:58+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix"
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "15:00",
+   "language": null,
+   "raw": "The Goldsmith Eucharistic Adoration Chapel: Hours: Sunday 7am through Friday at 3pm",
+   "source_url": "https://www.ourladyofthefalls.org/eucharistic-adoration",
+   "fetched_at": "2026-11-02T04:41:58+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix"
   }
  ],
  "source_url": "http://www.thechurchofnotredame.org/",
  "fetched_at": "2026-11-01T22:15:44+00:00",
  "redirected_off_host": "ourladyofthefalls.org",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:59+00:00",
+  "requests": 1,
+  "found": [
+   "adoration"
+  ]
+ },
  "schedule_template": {
   "template": "wix",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -827,15 +871,22 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 1
+  "trusted_kinds": [],
+  "generic_rows": 9
  },
  "has_sunday": true,
+ "schedule_dropped": {
+  "no_day": 1,
+  "other_location": 2,
+  "relative_time": 1,
+  "benediction_end": 1
+ },
  "groups_dropped": {
   "label_not_group": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

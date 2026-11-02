@@ -78,6 +78,12 @@
    "url": "https://stalfredtaylor.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stalfredtaylor.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -210,6 +216,45 @@
  "schedule_rows": [
   {
    "kind": "mass",
+   "day": "Friday",
+   "time": "08:30",
+   "language": null,
+   "raw": "FRIDAY MASS: 8:30am",
+   "source_url": "https://stalfredtaylor.org/",
+   "fetched_at": "2026-11-01T22:15:35+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "godaddy"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:30",
+   "language": "English",
+   "raw": "9:30AM (English Mass)",
+   "source_url": "https://stalfredtaylor.org/",
+   "fetched_at": "2026-11-01T22:15:35+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "godaddy"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "12:30",
+   "language": "Spanish",
+   "raw": "12:30PM (Spanish Mass)",
+   "source_url": "https://stalfredtaylor.org/",
+   "fetched_at": "2026-11-01T22:15:35+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "godaddy"
+  },
+  {
+   "kind": "mass",
    "day": "Monday",
    "time": "12:30",
    "language": null,
@@ -233,58 +278,55 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "godaddy"
-  },
-  {
-   "kind": "mass",
-   "day": "Sunday",
-   "time": "09:30",
-   "language": null,
-   "raw": "SUNDAY MASS 9:30AM (English Mass)",
-   "source_url": "https://stalfredtaylor.org/",
-   "fetched_at": "2026-11-01T22:15:35+00:00",
-   "needs_review": true,
-   "review_reason": "weekend_rescue"
-  },
-  {
-   "kind": "mass",
-   "day": "Sunday",
-   "time": "12:30",
-   "language": null,
-   "raw": "SUNDAY MASS 12:30PM (Spanish Mass)",
-   "source_url": "https://stalfredtaylor.org/",
-   "fetched_at": "2026-11-01T22:15:35+00:00",
-   "needs_review": true,
-   "review_reason": "weekend_rescue"
   }
  ],
  "source_url": "https://stalfredtaylor.org/",
  "fetched_at": "2026-11-01T22:15:47+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:41+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "godaddy",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
-    "has_sunday": false,
+    "has_sunday": true,
     "hours_ok": true,
     "counts_ok": true,
     "sunday_not_copied": true,
     "no_daily_on_sunday": true,
     "mostly_high": false
    },
-   "score": "low"
+   "score": "medium"
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 7
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "3:00PM AT ST. FRANCES CABRINI AND UPON REQUEST",
+   "phrase": "UPON REQUEST",
+   "source_url": "https://stalfredtaylor.org/",
+   "fetched_at": "2026-11-01T22:15:35+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "other_location": 1,
   "skipped_section": 1,
   "dated_line": 1,
   "dated_block": 1,
-  "not_a_service": 8,
-  "weekend_rescue_added": 2
+  "not_a_service": 8
  },
  "groups_dropped": {
   "unmatched": 1,
@@ -292,8 +334,8 @@
   "noise": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

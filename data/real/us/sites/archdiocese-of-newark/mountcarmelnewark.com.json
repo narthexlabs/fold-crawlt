@@ -81,6 +81,18 @@
    "url": "https://mountcarmelnewark.com/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://mountcarmelnewark.com/first-friday-adoration",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://mountcarmelnewark.com/liturgy",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -273,7 +285,7 @@
    "day": "Sunday",
    "time": "10:00",
    "language": "Italian",
-   "raw": "Sunday: 10:00 AM Italian From September to May",
+   "raw": "Sunday 10:00 AM [Mass intention withheld]",
    "source_url": "https://mountcarmelnewark.com/",
    "fetched_at": "2026-11-01T01:57:45+00:00",
    "needs_review": false,
@@ -370,6 +382,32 @@
   "excluded_by_reason": {}
  },
  "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
+  "screened_by": "ingest/public/privacy.py screen()",
+  "intentions_withheld": 1
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "By appointment also.",
+   "phrase": "By appointment",
+   "source_url": "https://mountcarmelnewark.com/confession-times",
+   "fetched_at": "2026-11-02T04:47:55+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:48:15+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
  }
 }

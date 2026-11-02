@@ -90,18 +90,6 @@
    "url": "https://www.saintmarg.org/contact-us",
    "status": 200,
    "class": "ok"
-  },
-  {
-   "category": "adoration",
-   "url": "https://saintmarg.org/adoration",
-   "status": 200,
-   "class": "ok"
-  },
-  {
-   "category": "liturgy",
-   "url": "https://saintmarg.org/liturgy",
-   "status": 200,
-   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -588,89 +576,6 @@
    "capture_date": "2025-10-06"
   },
   {
-   "kind": "adoration",
-   "day": "Tuesday",
-   "time": "07:30-08:30",
-   "language": null,
-   "raw": "Tuesday: 7:30 AM - 8:30 AM",
-   "source_url": "https://saintmarg.org/adoration",
-   "fetched_at": "2025-10-06T13:27:36+00:00",
-   "needs_review": true,
-   "review_reason": "wayback capture 2025-12-08: read by a person before it is shown",
-   "confidence": "high",
-   "template": "ecatholic",
-   "source": "wayback-2025-12-08",
-   "archive_url": "https://web.archive.org/web/20251006132736/https://saintmarg.org/adoration",
-   "capture_date": "2025-10-06"
-  },
-  {
-   "kind": "adoration",
-   "day": "First Friday of the month",
-   "time": "07:30-08:00",
-   "language": null,
-   "raw": "1st Friday: 7:30 AM - 8:00 AM",
-   "source_url": "https://saintmarg.org/adoration",
-   "fetched_at": "2025-10-06T13:27:36+00:00",
-   "needs_review": true,
-   "review_reason": "wayback capture 2025-12-08: read by a person before it is shown",
-   "confidence": "high",
-   "template": "ecatholic",
-   "source": "wayback-2025-12-08",
-   "archive_url": "https://web.archive.org/web/20251006132736/https://saintmarg.org/adoration",
-   "capture_date": "2025-10-06"
-  },
-  {
-   "kind": "other",
-   "day": "Holy days",
-   "time": "07:00",
-   "language": null,
-   "raw": "Mass on Holy Days of Obligation will be at 7 AM, 12:05 PM, and 7 PM. There will be no Vigil.",
-   "source_url": "https://saintmarg.org/mass-times",
-   "fetched_at": "2025-10-06T14:19:38+00:00",
-   "needs_review": true,
-   "review_reason": "wayback capture 2025-12-08: read by a person before it is shown",
-   "confidence": "high",
-   "template": "ecatholic+generic_strict",
-   "kind_parsed": "mass",
-   "source": "wayback-2025-12-08",
-   "archive_url": "https://web.archive.org/web/20251006141938/https://saintmarg.org/mass-times",
-   "capture_date": "2025-10-06"
-  },
-  {
-   "kind": "other",
-   "day": "Holy days",
-   "time": "12:05",
-   "language": null,
-   "raw": "Mass on Holy Days of Obligation will be at 7 AM, 12:05 PM, and 7 PM. There will be no Vigil.",
-   "source_url": "https://saintmarg.org/mass-times",
-   "fetched_at": "2025-10-06T14:19:38+00:00",
-   "needs_review": true,
-   "review_reason": "wayback capture 2025-12-08: read by a person before it is shown",
-   "confidence": "high",
-   "template": "ecatholic+generic_strict",
-   "kind_parsed": "mass",
-   "source": "wayback-2025-12-08",
-   "archive_url": "https://web.archive.org/web/20251006141938/https://saintmarg.org/mass-times",
-   "capture_date": "2025-10-06"
-  },
-  {
-   "kind": "other",
-   "day": "Holy days",
-   "time": "19:00",
-   "language": null,
-   "raw": "Mass on Holy Days of Obligation will be at 7 AM, 12:05 PM, and 7 PM. There will be no Vigil.",
-   "source_url": "https://saintmarg.org/mass-times",
-   "fetched_at": "2025-10-06T14:19:38+00:00",
-   "needs_review": true,
-   "review_reason": "wayback capture 2025-12-08: read by a person before it is shown",
-   "confidence": "high",
-   "template": "ecatholic+generic_strict",
-   "kind_parsed": "mass",
-   "source": "wayback-2025-12-08",
-   "archive_url": "https://web.archive.org/web/20251006141938/https://saintmarg.org/mass-times",
-   "capture_date": "2025-10-06"
-  },
-  {
    "kind": "other",
    "day": "Holy days",
    "time": "09:00",
@@ -689,13 +594,13 @@
   }
  ],
  "source_url": "https://saintmarg.org/",
- "fetched_at": "2026-11-02T05:35:14+00:00",
+ "fetched_at": "2026-11-02T04:24:59+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
  },
  "schedule_template": {
   "template": "ecatholic",
-  "version": "ca-sites/3",
+  "version": "ca-sites/2",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -707,21 +612,15 @@
    },
    "score": "high"
   },
-  "passed_bar": true,
-  "trusted_candidate": true,
-  "trusted_kinds": [
-   "weekend",
-   "weekday",
-   "confession",
-   "adoration"
-  ],
+  "passed_bar": false,
+  "trusted_candidate": false,
   "generic_rows": 10
  },
  "has_sunday": true,
  "schedule_dropped": {
   "text:dated_line": 1,
-  "text:dated_block": 1,
-  "text:skipped_section": 1
+  "text:no_day": 1,
+  "text:other_location": 3
  },
  "groups_dropped": {
   "label_not_group": 2,
@@ -810,28 +709,16 @@
     "original": "https://www.saintmarg.org/contact-us",
     "capture": "2025-12-08",
     "archive_url": "https://web.archive.org/web/20251208062139/https://www.saintmarg.org/contact-us"
-   },
-   {
-    "kind": "adoration",
-    "original": "https://saintmarg.org/adoration",
-    "capture": "2025-10-06",
-    "archive_url": "https://web.archive.org/web/20251006132736/https://saintmarg.org/adoration"
-   },
-   {
-    "kind": "liturgy",
-    "original": "https://saintmarg.org/liturgy",
-    "capture": "2025-10-06",
-    "archive_url": "https://web.archive.org/web/20251006133828/https://saintmarg.org/liturgy"
    }
   ],
   "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review.",
   "grade": {
    "rule": "wayback-verified-2026-11-01",
    "template": "ecatholic",
-   "trusted_template": true,
+   "trusted_template": false,
    "has_sunday": true,
    "groups": 8,
-   "verified": true,
+   "verified": false,
    "capture_date": "2025-12-08",
    "applied": false
   }

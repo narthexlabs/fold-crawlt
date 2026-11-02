@@ -113,19 +113,6 @@
    "day_bound_from_line": true
   },
   {
-   "kind": "mass",
-   "day": "Sunday",
-   "time": "08:30",
-   "language": null,
-   "raw": "Mass Times: 8:30 a.m.",
-   "source_url": "https://stjohngirard.org/",
-   "fetched_at": "2026-11-01T20:25:23+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
-  {
    "kind": "confession",
    "day": "Saturday",
    "time": "15:30-16:00",
@@ -155,34 +142,56 @@
  ],
  "source_url": "https://stjohngirard.org/",
  "fetched_at": "2026-11-01T20:25:25+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:03+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
-    "has_sunday": true,
+    "has_sunday": false,
     "hours_ok": true,
     "counts_ok": true,
     "sunday_not_copied": true,
     "no_daily_on_sunday": true,
     "mostly_high": false
    },
-   "score": "medium"
+   "score": "low"
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 4
  },
- "has_sunday": true,
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Saturday from 3:30-4:00 p.m. at the church of the Sat. liturgy or by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://stjohngirard.org/",
+   "fetched_at": "2026-11-01T20:25:23+00:00"
+  }
+ ],
+ "has_sunday": false,
+ "schedule_partial": true,
  "schedule_dropped": {
-  "dated_line": 1
+  "dated_line": 1,
+  "dated_block": 1
  },
  "groups_dropped": {
   "label_not_group": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

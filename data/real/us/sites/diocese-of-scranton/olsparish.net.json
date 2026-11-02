@@ -69,6 +69,12 @@
    "url": "https://www.abingtoncatholic.org/team",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.abingtoncatholic.org/sacraments",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -505,6 +511,33 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "The Sacrament of Reconciliation is offered every Saturday afternoon at 3:15 PM at St. Benedict’s and 4:00 PM at St. Gregory’s, or by appointment through the parish office.",
+   "phrase": "by appointment",
+   "source_url": "https://www.abingtoncatholic.org/sacraments",
+   "fetched_at": "2026-11-02T04:43:14+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:16+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "info@abingtoncatholic.org",
   "phone": "(570) 587-4808",
@@ -517,8 +550,5 @@
   },
   "fetched_at": "2026-11-01T03:59:08+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

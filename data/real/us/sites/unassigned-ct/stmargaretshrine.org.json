@@ -69,6 +69,18 @@
    "url": "https://stmargaretshrine.org/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stmargaretshrine.org/adoration-of-the-blessed-sacrament",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://stmargaretshrine.org/faith",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -91,7 +103,7 @@
    "note": "iCal link on page",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:37:33+00:00",
+    "fetched_at": "2026-11-02T05:13:22+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -353,13 +365,95 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "ecatholic+generic_strict"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "08:15",
+   "language": null,
+   "raw": "Sunday Mass: 8:15 a.m., 12:15 p.m., 7 p.m.",
+   "source_url": "https://stmargaretshrine.org/mass-times",
+   "fetched_at": "2026-11-01T22:15:34+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "12:15",
+   "language": null,
+   "raw": "Sunday Mass: 8:15 a.m., 12:15 p.m., 7 p.m.",
+   "source_url": "https://stmargaretshrine.org/mass-times",
+   "fetched_at": "2026-11-01T22:15:34+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "19:00",
+   "language": null,
+   "raw": "Sunday Mass: 8:15 a.m., 12:15 p.m., 7 p.m.",
+   "source_url": "https://stmargaretshrine.org/mass-times",
+   "fetched_at": "2026-11-01T22:15:34+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "mass",
+   "day": "Last Friday of the month (summer, apr-nov)",
+   "time": "18:00",
+   "language": null,
+   "raw": "St. Pio of Pietrelcina Mass: April to November | 6:00 p.m.",
+   "source_url": "https://stmargaretshrine.org/mass-times",
+   "fetched_at": "2026-11-01T22:15:34+00:00",
+   "needs_review": true,
+   "review_reason": "seasonal",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "season": "April to November"
+  },
+  {
+   "kind": "mass",
+   "day": "Last Friday of the month",
+   "time": "17:30",
+   "language": null,
+   "raw": "Rosary before Mass at 5:30 p.m.",
+   "source_url": "https://stmargaretshrine.org/mass-times",
+   "fetched_at": "2026-11-01T22:15:34+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict"
   }
  ],
  "source_url": "https://stmargaretshrine.org/",
  "fetched_at": "2026-11-01T22:16:54+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:59+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "liturgy"
+  ]
+ },
  "schedule_template": {
   "template": "ecatholic",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -371,18 +465,28 @@
    },
    "score": "medium"
   },
-  "passed_bar": false,
+  "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 17
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Reconciliation is also available by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://stmargaretshrine.org/",
+   "fetched_at": "2026-11-01T22:15:25+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "text:other_location": 8
+  "prose": 1
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

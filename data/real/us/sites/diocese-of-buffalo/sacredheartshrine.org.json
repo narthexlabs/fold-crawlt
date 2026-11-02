@@ -87,22 +87,18 @@
    "source_url": "https://www.sacredheartshrine.org/",
    "fetched_at": "2026-11-01T07:27:51+00:00",
    "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "generic_strict"
+   "review_reason": "schedule_box"
   },
   {
    "kind": "mass",
    "day": "Sunday",
    "time": "09:00",
    "language": null,
-   "raw": "Weekend Masses: Sunday: 9:00 AM",
+   "raw": "Sunday: 9:00 AM",
    "source_url": "https://www.sacredheartshrine.org/",
    "fetched_at": "2026-11-01T07:27:51+00:00",
    "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
+   "review_reason": "schedule_box"
   },
   {
    "kind": "mass",
@@ -113,9 +109,7 @@
    "source_url": "https://www.sacredheartshrine.org/",
    "fetched_at": "2026-11-01T07:27:51+00:00",
    "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "generic_strict",
+   "review_reason": "schedule_box",
    "day_expanded_from": "Monday-Friday"
   },
   {
@@ -127,9 +121,7 @@
    "source_url": "https://www.sacredheartshrine.org/",
    "fetched_at": "2026-11-01T07:27:51+00:00",
    "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "generic_strict",
+   "review_reason": "schedule_box",
    "day_expanded_from": "Monday-Friday",
    "day_parsed": "Monday",
    "day_bound_from_line": true
@@ -143,9 +135,7 @@
    "source_url": "https://www.sacredheartshrine.org/",
    "fetched_at": "2026-11-01T07:27:51+00:00",
    "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "generic_strict",
+   "review_reason": "schedule_box",
    "day_expanded_from": "Monday-Friday",
    "day_parsed": "Monday",
    "day_bound_from_line": true
@@ -159,9 +149,7 @@
    "source_url": "https://www.sacredheartshrine.org/",
    "fetched_at": "2026-11-01T07:27:51+00:00",
    "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "generic_strict",
+   "review_reason": "schedule_box",
    "day_expanded_from": "Monday-Friday",
    "day_parsed": "Monday",
    "day_bound_from_line": true
@@ -175,55 +163,86 @@
    "source_url": "https://www.sacredheartshrine.org/",
    "fetched_at": "2026-11-01T07:27:51+00:00",
    "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "generic_strict",
+   "review_reason": "schedule_box",
    "day_expanded_from": "Monday-Friday",
    "day_parsed": "Monday",
    "day_bound_from_line": true
   },
   {
    "kind": "confession",
-   "day": "Saturday",
-   "time": "15:00-15:45",
+   "day": "Monday",
+   "time": "09:00",
    "language": null,
-   "raw": "Confession/Reconciliation:: Saturdays: 3:00 - 3:45 PM",
+   "raw": "9 AM - 12 PM & 1 PM - 3 PM",
    "source_url": "https://www.sacredheartshrine.org/",
    "fetched_at": "2026-11-01T07:27:51+00:00",
    "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "confession",
+   "day": "Monday",
+   "time": "13:00",
+   "language": null,
+   "raw": "9 AM - 12 PM & 1 PM - 3 PM",
+   "source_url": "https://www.sacredheartshrine.org/",
+   "fetched_at": "2026-11-01T07:27:51+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "confession",
+   "day": "Monday",
+   "time": "15:00",
+   "language": null,
+   "raw": "9 AM - 12 PM & 1 PM - 3 PM",
+   "source_url": "https://www.sacredheartshrine.org/",
+   "fetched_at": "2026-11-01T07:27:51+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
   }
  ],
  "source_url": "https://sacredheartshrine.org/",
  "fetched_at": "2026-11-01T07:27:55+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:38+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
-    "has_sunday": true,
+    "has_sunday": false,
     "hours_ok": true,
     "counts_ok": true,
     "sunday_not_copied": true,
     "no_daily_on_sunday": true,
-    "mostly_high": true
+    "mostly_high": false
    },
-   "score": "high"
+   "score": "low"
   },
   "passed_bar": true,
-  "trusted_candidate": true,
+  "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 7
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "skipped_section": 2
+  "other_location": 4,
+  "skipped_section": 2,
+  "box_rows_added": 10
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

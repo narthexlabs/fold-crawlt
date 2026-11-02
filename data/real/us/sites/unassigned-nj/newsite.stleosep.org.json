@@ -63,6 +63,18 @@
    "url": "https://newsite.stleosep.org/blog-2/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://newsite.stleosep.org/reconciliation/",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://newsite.stleosep.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -323,7 +335,7 @@
    "feed_key": "72fbec702c36",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:31:01+00:00",
+    "fetched_at": "2026-11-02T04:57:32+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -409,9 +421,19 @@
  ],
  "source_url": "https://newsite.stleosep.org/",
  "fetched_at": "2026-11-01T22:16:38+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:47:49+00:00",
+  "requests": 2,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -425,8 +447,18 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 1
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Saturdays at 4:00pm or by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://newsite.stleosep.org/first-reconciliation/",
+   "fetched_at": "2026-11-01T22:16:32+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "no_kind": 1,
@@ -436,8 +468,8 @@
   "noise": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

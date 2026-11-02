@@ -69,6 +69,12 @@
    "url": "https://stmarysmetamora.com/church/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stmarysmetamora.com/church/sacraments/reconciliation/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -259,6 +265,57 @@
    "confidence": "high",
    "template": "wordpress",
    "day_expanded_from": "Friday, Saturday"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "15:00",
+   "language": null,
+   "raw": "Confession times: 20 minutes before Mass on Sunday, Tuesday, Wednesday, and Friday, Saturday from 3:00 p.m. – 3:45 p.m., or by appointment",
+   "source_url": "https://stmarysmetamora.com/church/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "Friday, Saturday",
+   "day_parsed": "Friday",
+   "day_bound_from_line": true,
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "15:00",
+   "language": null,
+   "raw": "Confession times: 20 minutes before Mass on Sunday, Tuesday, Wednesday, and Friday, Saturday from 3:00 p.m. – 3:45 p.m., or by appointment",
+   "source_url": "https://stmarysmetamora.com/church/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "Friday, Saturday",
+   "day_parsed": "Friday",
+   "day_bound_from_line": true,
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "15:00",
+   "language": null,
+   "raw": "Confession times: 20 minutes before Mass on Sunday, Tuesday, Wednesday, and Friday, Saturday from 3:00 p.m. – 3:45 p.m., or by appointment",
+   "source_url": "https://stmarysmetamora.com/church/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "Friday, Saturday",
+   "day_parsed": "Friday",
+   "day_bound_from_line": true,
+   "topup": true
   }
  ],
  "source_url": "https://stmarysmetamora.com/church/",
@@ -302,5 +359,28 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Confession times: 20 minutes before Mass on Sunday, Tuesday, Wednesday, and Friday, Saturday from 3:00 p.m. – 3:45 p.m., or by appointment",
+   "phrase": "20 minutes before Mass",
+   "source_url": "https://stmarysmetamora.com/church/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:54+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:56+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ],
+  "rows_added": 3,
+  "mode": "merge"
  }
 }

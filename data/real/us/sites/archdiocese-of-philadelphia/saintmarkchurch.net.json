@@ -60,6 +60,12 @@
    "url": "https://saintmarkchurch.net/helpful-links/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://saintmarkchurch.net/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -230,6 +236,48 @@
  },
  "schedule_rows": [
   {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Join us for Adoration of the Blessed Sacrament and Benedicti: every Thursdays after 8:00 AM mass.",
+   "source_url": "https://saintmarkchurch.net/",
+   "fetched_at": "2026-11-01T20:25:17+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "Join us for Adoration of the Blessed Sacrament and Benedicti: every Thursdays after 8:00 AM mass.",
+   "relative_resolved": false
+  },
+  {
+   "kind": "confession",
+   "day": "Thursday",
+   "time": "08:30-09:00",
+   "language": null,
+   "raw": "Father Cesar will also be available for confessions from 8:30-9:00 AM.",
+   "source_url": "https://saintmarkchurch.net/",
+   "fetched_at": "2026-11-01T20:25:17+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "19:00",
+   "language": null,
+   "raw": "Due to the lack of attendance, our Tuesday evening, 7:00 PM mass at St.",
+   "source_url": "https://saintmarkchurch.net/",
+   "fetched_at": "2026-11-01T20:25:17+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  },
+  {
    "kind": "confession",
    "day": "Saturday",
    "time": "15:30-16:30",
@@ -315,9 +363,19 @@
  ],
  "source_url": "https://saintmarkchurch.net/",
  "fetched_at": "2026-11-01T20:25:31+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:07+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -325,20 +383,20 @@
     "counts_ok": true,
     "sunday_not_copied": true,
     "no_daily_on_sunday": true,
-    "mostly_high": true
+    "mostly_high": false
    },
    "score": "low"
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 18
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "relative_time": 3,
   "dated_line": 3,
-  "no_day": 1,
-  "other_location": 1,
+  "dated_block": 2,
+  "relative_time": 2,
   "not_a_service": 1,
   "box_rows_added": 4
  },

@@ -87,6 +87,18 @@
    "url": "https://www.shcbloomfield.org/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.shcbloomfield.org/recon",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.shcbloomfield.org/adoration-of-the-blessed-sacrament",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -428,6 +440,22 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "First Sunday of the month",
+   "time": "10:30",
+   "language": null,
+   "raw": "Sacred Heart offers Eucharistic Adoration:: every month on the first Sunday of the month, after the 10:30am mass.",
+   "source_url": "https://www.shcbloomfield.org/adoration-of-the-blessed-sacrament",
+   "fetched_at": "2026-11-02T04:47:50+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "after",
+   "note": "Sacred Heart offers Eucharistic Adoration:: every month on the first Sunday of the month, after the 10:30am mass.",
+   "topup": true
   }
  ],
  "source_url": "https://www.shcbloomfield.org/",
@@ -466,5 +494,21 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:47:51+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

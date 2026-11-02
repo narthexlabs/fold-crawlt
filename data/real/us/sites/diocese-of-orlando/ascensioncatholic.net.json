@@ -63,6 +63,12 @@
    "url": "https://www.ascensioncatholic.net/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.ascensioncatholic.net/perpetual-adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -329,6 +335,76 @@
    "review_reason": null,
    "confidence": "high",
    "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Mass: Sunday: 12am, 3am, 4am, 5pm",
+   "source_url": "https://www.ascensioncatholic.net/perpetual-adoration",
+   "fetched_at": "2026-11-02T04:41:42+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "05:00",
+   "language": null,
+   "raw": "Mass: Monday: 12am, 3am, 4am, 5am",
+   "source_url": "https://www.ascensioncatholic.net/perpetual-adoration",
+   "fetched_at": "2026-11-02T04:41:42+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Mass: Wednesday: 9am",
+   "source_url": "https://www.ascensioncatholic.net/perpetual-adoration",
+   "fetched_at": "2026-11-02T04:41:42+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "14:00",
+   "language": null,
+   "raw": "Mass: Friday: 12am, 1am, 3am, 2pm",
+   "source_url": "https://www.ascensioncatholic.net/perpetual-adoration",
+   "fetched_at": "2026-11-02T04:41:42+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "13:00",
+   "language": null,
+   "raw": "Mass: Saturday: 1pm",
+   "source_url": "https://www.ascensioncatholic.net/perpetual-adoration",
+   "fetched_at": "2026-11-02T04:41:42+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
   }
  ],
  "source_url": "https://www.ascensioncatholic.net/",
@@ -370,5 +446,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:42+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 5,
+  "mode": "merge"
  }
 }

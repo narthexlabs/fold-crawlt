@@ -69,6 +69,12 @@
    "url": "https://stjosephsomerspoint.org/calendar/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stjosephsomerspoint.org/events/sacrament-of-reconciliation/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -165,7 +171,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-02T03:50:12+00:00",
+    "fetched_at": "2026-11-02T05:00:29+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -184,7 +190,7 @@
    "feed_key": "5867cf10c439",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-02T03:50:18+00:00",
+    "fetched_at": "2026-11-02T05:00:34+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -206,8 +212,8 @@
    "time": "16:30",
    "language": "English",
    "raw": "Mass Times: 4:30pm (english)",
-   "source_url": "https://stjosephsomerspoint.org/mass-times/",
-   "fetched_at": "2026-11-02T03:47:11+00:00",
+   "source_url": "https://stjosephsomerspoint.org/",
+   "fetched_at": "2026-11-02T03:47:08+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -219,8 +225,8 @@
    "time": "19:00",
    "language": "Spanish",
    "raw": "Mass Times: 7:00pm (español)",
-   "source_url": "https://stjosephsomerspoint.org/mass-times/",
-   "fetched_at": "2026-11-02T03:47:11+00:00",
+   "source_url": "https://stjosephsomerspoint.org/",
+   "fetched_at": "2026-11-02T03:47:08+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -255,9 +261,21 @@
  ],
  "source_url": "http://www.stjosephsomerspoint.org/",
  "fetched_at": "2026-11-02T03:47:17+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:47:55+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -271,14 +289,24 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 10
+  "trusted_kinds": [],
+  "generic_rows": 11
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "By Appointment – Call",
+   "phrase": "By Appointment",
+   "source_url": "https://stjosephsomerspoint.org/mass-times/",
+   "fetched_at": "2026-11-02T03:47:11+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "skipped_section": 12,
   "other_location": 5,
   "dated_line": 1,
-  "not_a_service": 1,
+  "dated_block": 2,
   "no_day": 1
  },
  "groups_dropped": {

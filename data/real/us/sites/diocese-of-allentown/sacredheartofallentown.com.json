@@ -73,6 +73,12 @@
    "url": "https://www.sacredheartofallentown.com/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.sacredheartofallentown.com/adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -347,6 +353,20 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "First Friday of the month",
+   "time": "12:30-18:30",
+   "language": null,
+   "raw": "Hours open for Adoration: / Horarios Disponibles:: First Friday (Primer viernes )12:30pm – 6:30pm",
+   "source_url": "https://www.sacredheartofallentown.com/adoration/",
+   "fetched_at": "2026-11-02T04:44:14+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "https://www.sacredheartofallentown.com/",
@@ -380,6 +400,25 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:44:44+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(610) 871-5200",
@@ -391,8 +430,5 @@
   },
   "fetched_at": "2026-11-01T05:05:28+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

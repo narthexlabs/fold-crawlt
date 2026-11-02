@@ -67,6 +67,12 @@
    "url": "https://stcabriniomaha.org/from-the-pastor/livestream-masses/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stcabriniomaha.org",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -351,6 +357,41 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Reconciliation Services are held seasonally in Advent and Lent and the sacrament is also available by appointment with a priest by calling the parish office at .",
+   "phrase": "by appointment",
+   "source_url": "https://stcabriniomaha.org/care-and-support/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:58+00:00"
+  },
+  {
+   "kind": "adoration",
+   "text": "By Appointment and",
+   "phrase": "By Appointment",
+   "source_url": "https://stcabriniomaha.org",
+   "fetched_at": "2026-11-02T04:42:01+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:01+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(402) 934-7706",
@@ -362,8 +403,5 @@
   },
   "fetched_at": "2026-11-01T05:12:49+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

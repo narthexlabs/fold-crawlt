@@ -78,6 +78,12 @@
    "url": "https://www.stsebracine.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stsebracine.org/adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -342,9 +348,21 @@
  ],
  "source_url": "https://www.stsebracine.org/",
  "fetched_at": "2026-11-01T22:15:41+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:43+00:00",
+  "requests": 1,
+  "found": [
+   "adoration"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -358,8 +376,39 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 8
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "North Overflow Room or by appt .",
+   "phrase": "by appt",
+   "source_url": "https://www.stsebracine.org/",
+   "fetched_at": "2026-11-01T22:15:29+00:00"
+  },
+  {
+   "kind": "confession",
+   "text": "Confessions - St. Sebastian's 3:30pm-4:15pm before every Saturday Mass in the Scrip room or by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://www.stsebracine.org/confession/",
+   "fetched_at": "2026-11-01T22:15:33+00:00"
+  },
+  {
+   "kind": "adoration",
+   "text": "Evenings by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://www.stsebracine.org/adoration/",
+   "fetched_at": "2026-11-02T04:41:42+00:00"
+  },
+  {
+   "kind": "adoration",
+   "text": "Sat, 3pm or by appt .",
+   "phrase": "by appt",
+   "source_url": "https://www.stsebracine.org/adoration/",
+   "fetched_at": "2026-11-02T04:41:42+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "box_rows_added": 10

@@ -182,6 +182,36 @@
    "day_bound_from_line": true
   },
   {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "19:00",
+   "language": null,
+   "raw": "[St. Francis Xavier] Vigil (evening before) 7:00pm at St. Francis",
+   "source_url": "https://www.stgabriel-stfrancis.org/",
+   "fetched_at": "2026-11-01T22:15:32+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "squarespace",
+   "kind_parsed": "mass",
+   "location": "St. Francis Xavier"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "09:00",
+   "language": null,
+   "raw": "[St. Gabriel] Weekday Mass Schedule: Holy Day 9:00am at St. Gabriel",
+   "source_url": "https://www.stgabriel-stfrancis.org/",
+   "fetched_at": "2026-11-01T22:15:32+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace",
+   "kind_parsed": "mass",
+   "location": "St. Gabriel"
+  },
+  {
    "kind": "confession",
    "day": "Saturday",
    "time": "14:00-14:45",
@@ -212,9 +242,19 @@
  ],
  "source_url": "http://stgabriel-stfrancis.org/",
  "fetched_at": "2026-11-01T22:15:36+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:52:47+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "squarespace",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -228,17 +268,18 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 6
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 4,
+  "other_location": 2,
   "notice_not_schedule": 1
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

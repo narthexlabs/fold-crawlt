@@ -75,6 +75,12 @@
    "url": "https://www.holychildhoodparish.org/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.holychildhoodparish.org/adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -551,6 +557,93 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "squarespace"
+  },
+  {
+   "kind": "adoration",
+   "day": "Saturday",
+   "time": "08:15",
+   "language": null,
+   "raw": "Eucharistic Adoration of the Blessed Sacrament: Saturdays from 8:15am - 9:45am (after mass)",
+   "source_url": "https://www.holychildhoodparish.org/adoration",
+   "fetched_at": "2026-11-02T04:41:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Saturday",
+   "time": "09:45",
+   "language": null,
+   "raw": "Eucharistic Adoration of the Blessed Sacrament: Saturdays from 8:15am - 9:45am (after mass)",
+   "source_url": "https://www.holychildhoodparish.org/adoration",
+   "fetched_at": "2026-11-02T04:41:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Saturday",
+   "time": "14:30-16:00",
+   "language": null,
+   "raw": "Adoration is also available at Maternity of Mary: Saturday from 2:30pm - 4:00pm",
+   "source_url": "https://www.holychildhoodparish.org/adoration",
+   "fetched_at": "2026-11-02T04:41:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "19:00-20:00",
+   "language": null,
+   "raw": "A priest is also available for confession during Adoration on Saturdays and Sundays and Thursday from 7:00pm to 8:00pm",
+   "source_url": "https://www.holychildhoodparish.org/adoration",
+   "fetched_at": "2026-11-02T04:41:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "squarespace",
+   "day_expanded_from": "Saturdays and Sundays and Thursday",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Saturday",
+   "time": "19:00-20:00",
+   "language": null,
+   "raw": "A priest is also available for confession during Adoration on Saturdays and Sundays and Thursday from 7:00pm to 8:00pm",
+   "source_url": "https://www.holychildhoodparish.org/adoration",
+   "fetched_at": "2026-11-02T04:41:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "squarespace",
+   "day_expanded_from": "Saturdays and Sundays and Thursday",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Sunday",
+   "time": "19:00-20:00",
+   "language": null,
+   "raw": "A priest is also available for confession during Adoration on Saturdays and Sundays and Thursday from 7:00pm to 8:00pm",
+   "source_url": "https://www.holychildhoodparish.org/adoration",
+   "fetched_at": "2026-11-02T04:41:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "squarespace",
+   "day_expanded_from": "Saturdays and Sundays and Thursday",
+   "topup": true
   }
  ],
  "source_url": "https://www.holychildhoodparish.org/",
@@ -589,6 +682,27 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "social_shared_links_removed": [
+  "https://www.facebook.com/2008"
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:42+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 6,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "contact@holychildhoodparish.org",
   "phone": "(651) 489-8825",
@@ -601,11 +715,5 @@
   },
   "fetched_at": "2026-11-01T03:58:19+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
- },
- "social_shared_links_removed": [
-  "https://www.facebook.com/2008"
- ]
+ }
 }

@@ -2,18 +2,22 @@
  "domain": "stmarysnc.com",
  "diocese": "unassigned-pa",
  "matched_church_ids": [
-  "brave:PA|immaculate conception northern cambria|"
+  "brave:PA|immaculate conception northern cambria|",
+  "immaculate-conception-barnesboro-pa"
  ],
  "matched": {
   "directory": [],
   "discovermass": [
+   "immaculate-conception-barnesboro-pa",
    "brave:PA|immaculate conception northern cambria|"
   ]
  },
  "names": [
+  "Immaculate Conception",
   "Immaculate Conception Northern"
  ],
  "cities": [
+  "Northern Cambria",
   "Cambria"
  ],
  "home_url": "https://stmarysnc.com/",
@@ -39,6 +43,18 @@
    "url": "https://stmarysnc.com/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stmarysnc.com/reconciliation/",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stmarysnc.com/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -124,9 +140,19 @@
  ],
  "source_url": "https://stmarysnc.com/",
  "fetched_at": "2026-11-01T20:25:34+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:05+00:00",
+  "requests": 2,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -140,16 +166,26 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 4
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Before and after each Liturgy or by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://stmarysnc.com/",
+   "fetched_at": "2026-11-01T20:25:30+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "weekend_rescue_added": 4
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

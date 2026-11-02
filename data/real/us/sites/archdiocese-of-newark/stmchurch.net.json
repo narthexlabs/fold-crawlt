@@ -63,6 +63,12 @@
    "url": "https://www.stmchurch.net/contact-ccd.html",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://www.stmchurch.net/liturgy.html",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -397,5 +403,29 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "*Confessions can also be heard by appointment with our parish priests.",
+   "phrase": "by appointment",
+   "source_url": "https://www.stmchurch.net/saturday-adoration--confessions.html",
+   "fetched_at": "2026-11-02T04:47:48+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:47:49+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
  }
 }

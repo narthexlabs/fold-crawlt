@@ -64,6 +64,18 @@
    "url": "https://www.stbenedictchurch.net/bulletin--calendar.html",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stbenedictchurch.net/reconciliation-times.html",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stbenedictchurch.net/adoration-of-the-blessed-sacrament.html",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -483,13 +495,92 @@
    "confidence": "medium",
    "template": "weebly",
    "kind_parsed": "mass"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "16:15-17:00",
+   "language": null,
+   "raw": "Sacrament of Reconciliation: 4:15 p.m. to 5:00 p.m.",
+   "source_url": "https://www.stbenedictchurch.net/reconciliation-times.html",
+   "fetched_at": "2026-11-02T04:47:56+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "12:30-20:00",
+   "language": null,
+   "raw": "Adoration of the Blessed Sacrament: Wednesdays 12:30 pm to 8:00 pm",
+   "source_url": "https://www.stbenedictchurch.net/adoration-of-the-blessed-sacrament.html",
+   "fetched_at": "2026-11-02T04:47:57+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly"
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "12:40-13:40",
+   "language": null,
+   "raw": "Adoration of the Blessed Sacrament: Fridays 12:40 pm to 1:40 pm",
+   "source_url": "https://www.stbenedictchurch.net/adoration-of-the-blessed-sacrament.html",
+   "fetched_at": "2026-11-02T04:47:57+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly"
+  },
+  {
+   "kind": "adoration",
+   "day": "First Saturday of the month",
+   "time": "08:30-09:30",
+   "language": null,
+   "raw": "Adoration of the Blessed Sacrament: First Saturday of the month 8:30 am to 9:30 am",
+   "source_url": "https://www.stbenedictchurch.net/adoration-of-the-blessed-sacrament.html",
+   "fetched_at": "2026-11-02T04:47:57+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly"
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "18:00-19:00",
+   "language": null,
+   "raw": "Adoration of the Blessed Sacrament: Fourth Friday of the month 6:00 pm to 7:00 pm",
+   "source_url": "https://www.stbenedictchurch.net/adoration-of-the-blessed-sacrament.html",
+   "fetched_at": "2026-11-02T04:47:57+00:00",
+   "needs_review": true,
+   "review_reason": "nth_of_month",
+   "confidence": "medium",
+   "template": "weebly",
+   "nth": "fourth"
   }
  ],
  "source_url": "http://www.stbenedictchurch.net/",
  "fetched_at": "2026-11-01T08:35:03+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:47:57+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "weebly",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -503,8 +594,18 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 12
+  "trusted_kinds": [],
+  "generic_rows": 17
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "or by appointment; call the Parish Office at .",
+   "phrase": "by appointment",
+   "source_url": "https://www.stbenedictchurch.net/reconciliation-times.html",
+   "fetched_at": "2026-11-02T04:47:56+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "skipped_section": 1
@@ -514,8 +615,8 @@
   "unmatched": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

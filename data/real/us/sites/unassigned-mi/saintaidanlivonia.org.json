@@ -61,6 +61,12 @@
    "url": "https://www.saintaidanlivonia.org/contact.html",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.saintaidanlivonia.org/reconciliation--holy-communion.html",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -174,7 +180,7 @@
    "note": "Microsoft 365 published calendar",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:34:13+00:00",
+    "fetched_at": "2026-11-02T04:52:18+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -193,7 +199,7 @@
    "feed_key": "03502c0a5fd5",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:34:18+00:00",
+    "fetched_at": "2026-11-02T04:52:23+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -373,13 +379,107 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "weebly"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "06:30",
+   "language": null,
+   "raw": "Reconciliation: 6:30 & 8 AM, 6 PM",
+   "source_url": "https://www.saintaidanlivonia.org/schedule.html",
+   "fetched_at": "2026-11-01T22:15:28+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly",
+   "kind_parsed": "confession"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "08:00",
+   "language": null,
+   "raw": "Reconciliation: 6:30 & 8 AM, 6 PM",
+   "source_url": "https://www.saintaidanlivonia.org/schedule.html",
+   "fetched_at": "2026-11-01T22:15:28+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly",
+   "kind_parsed": "confession"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "18:00",
+   "language": null,
+   "raw": "Reconciliation: 6:30 & 8 AM, 6 PM",
+   "source_url": "https://www.saintaidanlivonia.org/schedule.html",
+   "fetched_at": "2026-11-01T22:15:28+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly",
+   "kind_parsed": "confession"
+  },
+  {
+   "kind": "adoration",
+   "day": "First Saturday of the month",
+   "time": "08:30",
+   "language": null,
+   "raw": "Eucharistic Adoration (learn more): First Saturday of the Month: 8:30 AM",
+   "source_url": "https://www.saintaidanlivonia.org/schedule.html",
+   "fetched_at": "2026-11-01T22:15:28+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly"
+  },
+  {
+   "kind": "devotion",
+   "day": "Friday (lent)",
+   "time": "19:15",
+   "language": null,
+   "raw": "Fridays during Lent: 7:15 PM",
+   "source_url": "https://www.saintaidanlivonia.org/schedule.html",
+   "fetched_at": "2026-11-01T22:15:28+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "12:00",
+   "language": null,
+   "raw": "Good Friday: Noon",
+   "source_url": "https://www.saintaidanlivonia.org/schedule.html",
+   "fetched_at": "2026-11-01T22:15:28+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly",
+   "kind_parsed": "devotion"
   }
  ],
  "source_url": "https://www.saintaidanlivonia.org/",
  "fetched_at": "2026-11-01T22:15:38+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:33+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "weebly",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -393,11 +493,12 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 6
+  "trusted_kinds": [],
+  "generic_rows": 8
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 10,
+  "other_location": 7,
   "skipped_section": 3,
   "not_a_service": 1,
   "relative_time": 1
@@ -408,8 +509,8 @@
   "unmatched": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

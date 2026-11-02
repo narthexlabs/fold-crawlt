@@ -63,6 +63,12 @@
    "url": "http://www.aquinaszanesville.org/contact-us--directions/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "http://www.aquinaszanesville.org/adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -453,6 +459,20 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "ecatholic+generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "12:30-19:00",
+   "language": null,
+   "raw": "Eucharistic Adoration - Every Wednesday 12:30 pm-7:00 pm",
+   "source_url": "http://www.aquinaszanesville.org/adoration/",
+   "fetched_at": "2026-11-02T04:52:58+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "ecatholic+generic_strict",
+   "topup": true
   }
  ],
  "source_url": "http://www.aquinaszanesville.org/",
@@ -492,6 +512,24 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:52:58+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "parish@aquinaszanesville.org",
   "phone": "(740) 453-3301",
@@ -503,8 +541,5 @@
   },
   "fetched_at": "2026-11-01T05:13:11+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

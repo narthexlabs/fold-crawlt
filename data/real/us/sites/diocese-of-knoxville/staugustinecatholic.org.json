@@ -84,6 +84,18 @@
    "url": "https://www.staugustinecatholic.org/bulletin",
    "status": 404,
    "class": "not_found"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.staugustinecatholic.org/reconciliation-confession.html",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.staugustinecatholic.org/adoration.html",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -980,6 +992,34 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "*Or By Appointment",
+   "phrase": "By Appointment",
+   "source_url": "https://www.staugustinecatholic.org/reconciliation-confession.html",
+   "fetched_at": "2026-11-02T04:41:55+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:59+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "parishoffice@staugustinecatholic.org",
   "phone": "(423) 886-3424",
@@ -991,8 +1031,5 @@
   },
   "fetched_at": "2026-11-01T17:21:37+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

@@ -75,6 +75,12 @@
    "url": "https://www.clare.church/cdn-cgi/l/email-protection",
    "status": 404,
    "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.clare.church/adoration.html",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -631,6 +637,34 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "weebly"
+  },
+  {
+   "kind": "mass",
+   "day": "First Wednesday of the month",
+   "time": "08:30",
+   "language": null,
+   "raw": "Spend time in the peaceful presence of Jesus in the Eucharis: 8:30 a.m. – 5:30 p.m.",
+   "source_url": "https://www.clare.church/adoration.html",
+   "fetched_at": "2026-11-02T04:41:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "First Wednesday of the month",
+   "time": "17:30",
+   "language": null,
+   "raw": "Spend time in the peaceful presence of Jesus in the Eucharis: 8:30 a.m. – 5:30 p.m.",
+   "source_url": "https://www.clare.church/adoration.html",
+   "fetched_at": "2026-11-02T04:41:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly",
+   "topup": true
   }
  ],
  "source_url": "https://clare.church/",
@@ -671,6 +705,25 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:56+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "info@clare.church",
   "phone": null,
@@ -682,8 +735,5 @@
   },
   "fetched_at": "2026-11-01T05:14:11+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

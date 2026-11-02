@@ -69,6 +69,12 @@
    "url": "https://stfrancisofassisiastoria.org/important-information/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stfrancisofassisiastoria.org/worship/sacraments/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -336,6 +342,34 @@
    "confidence": "medium",
    "template": "wordpress",
    "day_expanded_from": "Monday – Saturday"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "16:00-16:30",
+   "language": null,
+   "raw": "Confession Schedule: Saturdays: 4:00-4:30pm or by special appointment.",
+   "source_url": "https://stfrancisofassisiastoria.org/worship/sacraments/",
+   "fetched_at": "2026-11-02T04:41:38+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "First Saturday of the month",
+   "time": "09:00",
+   "language": null,
+   "raw": "A Healing Mass is celebrated the first Saturday of every month at 9:00 am.",
+   "source_url": "https://stfrancisofassisiastoria.org/worship/mass-schedule/",
+   "fetched_at": "2026-11-02T04:41:40+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "https://stfrancisofassisiastoria.org/",
@@ -381,5 +415,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:41+00:00",
+  "requests": 3,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
  }
 }

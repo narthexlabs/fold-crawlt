@@ -95,6 +95,12 @@
    "url": "https://www.christourhopecluster.com/contact-information.html",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.christourhopecluster.com/reconciliation.html",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -297,6 +303,40 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "At Christ Our Hope, Reconciliation is always available by appointment with Fr. Radloff, and is offered each week before the 4:00 pm Saturday afternoon Mass and the 8:30 am Sunday morning Mass.",
+   "phrase": "by appointment",
+   "source_url": "https://www.christourhopecluster.com/reconciliation.html",
+   "fetched_at": "2026-11-02T04:41:43+00:00"
+  },
+  {
+   "kind": "confession",
+   "text": "Examinations of Conscience are also available at the entrance of each of the church buildings or by request through contact with the parish office.",
+   "phrase": "by request",
+   "source_url": "https://www.christourhopecluster.com/reconciliation.html",
+   "fetched_at": "2026-11-02T04:41:43+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:45+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(563) 569-8259",
@@ -308,8 +348,5 @@
   },
   "fetched_at": "2026-11-01T05:15:38+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

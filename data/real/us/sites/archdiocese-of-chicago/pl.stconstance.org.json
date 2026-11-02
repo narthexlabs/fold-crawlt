@@ -63,6 +63,12 @@
    "url": "https://maryundoerofknots.org/bulletin/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://maryundoerofknots.org/faith-formation-srb-campus-old/reconciliation-communion-preparation/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -326,6 +332,22 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "08:30",
+   "language": null,
+   "raw": "Eucharistic Adoration: SRB – Wednesday after 8:30 am Mass until 1:00pm",
+   "source_url": "https://maryundoerofknots.org/liturgical-life/",
+   "fetched_at": "2026-11-02T04:41:41+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "Eucharistic Adoration: SRB – Wednesday after 8:30 am Mass until 1:00pm",
+   "topup": true
   }
  ],
  "source_url": "http://pl.stconstance.org/",
@@ -371,5 +393,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:44+00:00",
+  "requests": 3,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

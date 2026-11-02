@@ -55,6 +55,12 @@
    "url": "https://saintanthony.com/news/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://saintanthony.com/reconciliation/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -314,6 +320,33 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Confession is offered at St. Anthony’s every Saturday from 4 pm to 4:45 pm or by appointment. We also offer Reconciliation Services during Lent and Advent.",
+   "phrase": "by appointment",
+   "source_url": "https://saintanthony.com/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:53+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:56+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(843) 662-5674",
@@ -325,8 +358,5 @@
   },
   "fetched_at": "2026-11-01T05:14:27+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

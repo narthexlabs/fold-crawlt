@@ -69,6 +69,12 @@
    "url": "https://www.sjpii.org/ministry-contacts",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://www.sjpii.org/st--bridget-cemetery-fee-schedule",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -329,7 +335,7 @@
    "feed_key": "c7b6441fb006",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:37:13+00:00",
+    "fetched_at": "2026-11-02T05:13:01+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -347,23 +353,10 @@
  "schedule_rows": [
   {
    "kind": "mass",
-   "day": "Saturday",
-   "time": "18:30",
+   "day": "Friday",
+   "time": "08:00",
    "language": null,
-   "raw": "Mass: Saturday: 6:30 PM or by appointment",
-   "source_url": "https://www.sjpii.org/confession",
-   "fetched_at": "2026-11-01T20:25:04+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "low",
-   "template": "generic_strict"
-  },
-  {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "15:00",
-   "language": null,
-   "raw": "Confession: Saturday | 3:00pm",
+   "raw": "Weekday Masses: Friday | 8:00am",
    "source_url": "https://www.sjpii.org/",
    "fetched_at": "2026-11-01T20:25:03+00:00",
    "needs_review": false,
@@ -382,6 +375,19 @@
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "18:30",
+   "language": null,
+   "raw": "Mass: Saturday: 6:30 PM or by appointment",
+   "source_url": "https://www.sjpii.org/confession",
+   "fetched_at": "2026-11-01T20:25:04+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
    "template": "generic_strict"
   },
   {
@@ -431,6 +437,17 @@
    "day_bound_from_line": true
   },
   {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:00",
+   "language": null,
+   "raw": "Saturday | 3:00pm",
+   "source_url": "https://www.sjpii.org/",
+   "fetched_at": "2026-11-01T20:25:03+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
    "kind": "mass",
    "day": "Saturday",
    "time": "17:30",
@@ -462,24 +479,25 @@
    "fetched_at": "2026-11-01T20:25:03+00:00",
    "needs_review": false,
    "review_reason": "schedule_box"
-  },
-  {
-   "kind": "mass",
-   "day": "Friday",
-   "time": "08:00",
-   "language": null,
-   "raw": "Friday | 8:00am",
-   "source_url": "https://www.sjpii.org/",
-   "fetched_at": "2026-11-01T20:25:03+00:00",
-   "needs_review": false,
-   "review_reason": "schedule_box"
   }
  ],
  "source_url": "https://www.sjpii.org/",
  "fetched_at": "2026-11-01T20:25:10+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:48+00:00",
+  "requests": 1,
+  "found": [
+   "liturgy"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -493,12 +511,13 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 9
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 1,
-  "skipped_section": 6,
+  "other_location": 3,
+  "skipped_section": 8,
   "box_rows_added": 8
  },
  "groups_dropped": {
@@ -506,8 +525,8 @@
   "unmatched": 2
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

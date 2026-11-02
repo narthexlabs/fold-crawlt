@@ -48,6 +48,18 @@
    "url": "https://stisidores.org/get-involved/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stisidores.org/sacraments/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stisidores.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -481,6 +493,19 @@
    "day_expanded_from": "Tuesday and Friday"
   },
   {
+   "kind": "devotion",
+   "day": "Friday",
+   "time": "15:00",
+   "language": null,
+   "raw": "Friday afternoons include Divine Mercy Chaplet at 3:00 P.M.,",
+   "source_url": "https://stisidores.org/mass-schedule/",
+   "fetched_at": "2026-11-01T20:25:49+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  },
+  {
    "kind": "adoration",
    "day": "Friday",
    "time": "15:00-16:15",
@@ -613,9 +638,21 @@
  ],
  "source_url": "https://stisidores.org/",
  "fetched_at": "2026-11-01T20:26:02+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:14+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -629,14 +666,14 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 13
+  "trusted_kinds": [],
+  "generic_rows": 17
  },
  "has_sunday": true,
  "schedule_dropped": {
   "no_day": 4,
   "other_location": 1,
-  "range_not_a_mass": 1,
-  "not_a_service": 1
+  "range_not_a_mass": 1
  },
  "groups_dropped": {
   "unmatched": 2,

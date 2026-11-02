@@ -69,6 +69,12 @@
    "url": "https://www.staugie.net/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.staugie.net/home/sacraments/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -237,13 +243,51 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Wednesday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Reconciliation: Wednesday at 5:00 p.m.",
+   "source_url": "https://www.staugie.net/home/sacraments/",
+   "fetched_at": "2026-11-02T04:52:27+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:30",
+   "language": null,
+   "raw": "Reconciliation: Saturday at 3:30 p.m. in the church",
+   "source_url": "https://www.staugie.net/home/sacraments/",
+   "fetched_at": "2026-11-02T04:52:27+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
   }
  ],
  "source_url": "https://www.staugie.net/",
  "fetched_at": "2026-11-01T22:15:34+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:52:27+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -257,8 +301,18 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 6
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "will be administered by request.",
+   "phrase": "by request",
+   "source_url": "https://www.staugie.net/home/sacraments/",
+   "fetched_at": "2026-11-02T04:52:27+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "range_not_a_mass": 1
@@ -268,8 +322,8 @@
   "unmatched": 2
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

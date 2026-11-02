@@ -470,7 +470,37 @@
   "excluded_by_reason": {}
  },
  "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()",
-  "intentions_withheld": 5
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "By appointment only",
+   "phrase": "By appointment",
+   "source_url": "https://stpatlic.org/worship/sacraments/",
+   "fetched_at": "2026-11-02T04:41:38+00:00"
+  },
+  {
+   "kind": "confession",
+   "text": "Solo con cita previa",
+   "phrase": "con cita",
+   "source_url": "https://stpatlic.org/worship/sacraments/",
+   "fetched_at": "2026-11-02T04:41:38+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:41+00:00",
+  "requests": 3,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
  }
 }

@@ -73,6 +73,12 @@
    "url": "https://www.saintcatherine.us/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.saintcatherine.us/sacraments/reconciliation/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -374,6 +380,32 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Reconciliation is available 30 minutes before Sunday masses, after Saturday morning Mass, or by appointment. Please contact the parish for more details.",
+   "phrase": "30 minutes before Sunday masses",
+   "source_url": "https://www.saintcatherine.us/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:51+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:53+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(303) 455-9090",
@@ -385,8 +417,5 @@
   },
   "fetched_at": "2026-11-01T05:11:28+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

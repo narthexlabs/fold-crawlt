@@ -57,6 +57,18 @@
    "url": "https://www.stpeterskenosha.com/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stpeterskenosha.com/sacraments/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://www.stpeterskenosha.com/prayer-and-worship/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -470,6 +482,20 @@
    "confidence": "high",
    "template": "wordpress",
    "day_expanded_from": "Monday - Saturday"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:00-16:00",
+   "language": null,
+   "raw": "Reconciliation: Saturdays 3-4 pm or by appointment.",
+   "source_url": "https://www.stpeterskenosha.com/sacraments/",
+   "fetched_at": "2026-11-02T04:41:46+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "http://www.stpeterskenosha.com/",
@@ -511,5 +537,29 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Saturdays 3-4 pm or by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://www.stpeterskenosha.com/sacraments/",
+   "fetched_at": "2026-11-02T04:41:46+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:51+00:00",
+  "requests": 3,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

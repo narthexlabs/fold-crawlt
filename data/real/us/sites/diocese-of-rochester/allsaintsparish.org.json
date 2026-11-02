@@ -94,6 +94,18 @@
    "url": "https://allsaintsparish.org/contact-us-with-subject/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://allsaintsparish.org/sacrament-of-reconciliation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://allsaintsparish.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -300,7 +312,7 @@
    "feed_key": "a40b96120796",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:41:17+00:00",
+    "fetched_at": "2026-11-02T05:00:25+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -317,7 +329,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:41:18+00:00",
+    "fetched_at": "2026-11-02T05:00:26+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -334,7 +346,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:41:20+00:00",
+    "fetched_at": "2026-11-02T05:00:28+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -351,7 +363,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:41:21+00:00",
+    "fetched_at": "2026-11-02T05:00:29+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -368,7 +380,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:41:25+00:00",
+    "fetched_at": "2026-11-02T05:00:33+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -385,7 +397,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:41:26+00:00",
+    "fetched_at": "2026-11-02T05:00:34+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -402,7 +414,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:41:27+00:00",
+    "fetched_at": "2026-11-02T05:00:36+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -419,7 +431,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:41:33+00:00",
+    "fetched_at": "2026-11-02T05:00:42+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -507,9 +519,21 @@
  ],
  "source_url": "https://allsaintsparish.org/",
  "fetched_at": "2026-11-01T17:22:19+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:52+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -523,6 +547,7 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 6
  },
  "has_sunday": true,
@@ -536,8 +561,8 @@
   "unmatched": 3
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

@@ -75,6 +75,18 @@
    "url": "https://pbocchurch.com/live-streaming-events/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://pbocchurch.com/sacraments/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://pbocchurch.com/eucharistic-adoration-chapel/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -625,6 +637,20 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "16:00",
+   "language": null,
+   "raw": "Reconciliation: Saturdays at 4:00 PM or by appointment.",
+   "source_url": "https://pbocchurch.com/sacraments/",
+   "fetched_at": "2026-11-02T04:42:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "https://www.pbocchurch.com/",
@@ -662,6 +688,34 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Saturdays at 4:00 PM or by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://pbocchurch.com/sacraments/",
+   "fetched_at": "2026-11-02T04:42:01+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:03+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "info@pbocchurch.com",
   "phone": "(843) 237-3428",
@@ -674,8 +728,5 @@
   },
   "fetched_at": "2026-11-01T05:14:25+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

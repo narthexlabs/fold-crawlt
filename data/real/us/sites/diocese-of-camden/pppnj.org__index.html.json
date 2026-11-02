@@ -63,6 +63,12 @@
    "url": "https://www.pppnj.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.pppnj.org/reconciliation",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -87,7 +93,7 @@
    "feed_key": "d7addeda2892",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-02T03:50:06+00:00",
+    "fetched_at": "2026-11-02T05:00:17+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -118,6 +124,19 @@
    "needs_review": false,
    "review_reason": null,
    "confidence": "low",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "devotion",
+   "day": "Last Wednesday of the month",
+   "time": "19:00",
+   "language": null,
+   "raw": "7:00 PM",
+   "source_url": "https://www.pppnj.org/mass-times",
+   "fetched_at": "2026-11-02T03:47:05+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
    "template": "generic_strict"
   },
   {
@@ -354,9 +373,21 @@
  ],
  "source_url": "http://www.pppnj.org/index.html",
  "fetched_at": "2026-11-02T03:47:10+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:47:54+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -370,13 +401,15 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 28
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 5,
-  "not_a_service": 4,
-  "dated_block": 5,
+  "other_location": 4,
+  "not_a_service": 2,
+  "dated_block": 6,
+  "no_day": 2,
   "range_not_a_mass": 1,
   "no_kind": 1,
   "box_rows_added": 2

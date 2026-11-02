@@ -63,6 +63,12 @@
    "url": "https://www.stjamesportrichey.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stjamesportrichey.org/reconciliation",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -300,6 +306,20 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Wednesday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Times for Reconciliation currently are as follows:: Wednesday - 9:00 AM",
+   "source_url": "https://www.stjamesportrichey.org/reconciliation",
+   "fetched_at": "2026-11-02T04:41:55+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
   }
  ],
  "source_url": "http://www.stjamesportrichey.org/",
@@ -339,6 +359,23 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:55+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(727) 869-3130",
@@ -350,8 +387,5 @@
   },
   "fetched_at": "2026-11-01T05:13:58+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

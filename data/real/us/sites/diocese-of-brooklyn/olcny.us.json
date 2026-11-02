@@ -33,6 +33,12 @@
    "url": "https://olcny.us/grupy_duszpasterskie/ministranci,11",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://olcny.us/sakramenty",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -57,7 +63,83 @@
   ]
  },
  "bulletin": null,
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "adoration",
+   "day": "Monday",
+   "time": "15:00-18:30",
+   "language": null,
+   "raw": "EUCHARISTIC ADORATION:: Monday to Friday from 3:00 PM to 6:30 PM",
+   "source_url": "https://olcny.us/sakramenty",
+   "fetched_at": "2026-11-02T04:41:35+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday to Friday",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "15:00-18:30",
+   "language": null,
+   "raw": "EUCHARISTIC ADORATION:: Monday to Friday from 3:00 PM to 6:30 PM",
+   "source_url": "https://olcny.us/sakramenty",
+   "fetched_at": "2026-11-02T04:41:35+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday to Friday",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "15:00-18:30",
+   "language": null,
+   "raw": "EUCHARISTIC ADORATION:: Monday to Friday from 3:00 PM to 6:30 PM",
+   "source_url": "https://olcny.us/sakramenty",
+   "fetched_at": "2026-11-02T04:41:35+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday to Friday",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "15:00-18:30",
+   "language": null,
+   "raw": "EUCHARISTIC ADORATION:: Monday to Friday from 3:00 PM to 6:30 PM",
+   "source_url": "https://olcny.us/sakramenty",
+   "fetched_at": "2026-11-02T04:41:35+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday to Friday",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "15:00-18:30",
+   "language": null,
+   "raw": "EUCHARISTIC ADORATION:: Monday to Friday from 3:00 PM to 6:30 PM",
+   "source_url": "https://olcny.us/sakramenty",
+   "fetched_at": "2026-11-02T04:41:35+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday to Friday",
+   "topup": true
+  }
+ ],
  "source_url": "https://olcny.us/",
  "fetched_at": "2026-11-01T01:58:56+00:00",
  "schedule_template": {
@@ -93,5 +175,19 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:35+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ],
+  "rows_added": 5,
+  "mode": "merge"
  }
 }

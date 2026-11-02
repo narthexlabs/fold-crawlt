@@ -47,6 +47,12 @@
    "url": "https://sacredheartmanoa.org/bulletin-archive/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://sacredheartmanoa.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -189,9 +195,19 @@
  ],
  "source_url": "https://sacredheartmanoa.org/",
  "fetched_at": "2026-11-01T20:25:35+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:07+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -205,8 +221,18 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 0
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "available by appointment at any time. Please call the Parish Center to arrange a day/time.",
+   "phrase": "by appointment",
+   "source_url": "https://sacredheartmanoa.org/sacraments/reconciliation/",
+   "fetched_at": "2026-11-01T20:25:30+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "box_rows_added": 7

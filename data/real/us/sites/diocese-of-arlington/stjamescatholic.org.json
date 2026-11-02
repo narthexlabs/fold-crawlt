@@ -91,6 +91,18 @@
    "url": "https://stjamescatholic.org/home-2/rectory-office/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stjamescatholic.org/worship/eucharistic-adoration/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://stjamescatholic.org/worship/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -313,19 +325,6 @@
  "schedule_rows": [
   {
    "kind": "mass",
-   "day": "Sunday",
-   "time": "14:30",
-   "language": "Spanish",
-   "raw": "The Sunday 10:30am (English) and 2:30pm (Spanish) Masses are livestreamed weekly on our website and Facebook page.",
-   "source_url": "https://stjamescatholic.org/worship/mass-confessions/",
-   "fetched_at": "2026-11-01T18:51:39+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "wordpress"
-  },
-  {
-   "kind": "mass",
    "day": "Saturday",
    "time": "17:00",
    "language": null,
@@ -387,6 +386,19 @@
    "needs_review": false,
    "review_reason": null,
    "confidence": "low",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "14:30",
+   "language": "Spanish",
+   "raw": "Mass Schedule: 2:30pm (En Español) (Livestream)",
+   "source_url": "https://stjamescatholic.org/worship/mass-confessions/",
+   "fetched_at": "2026-11-01T18:51:39+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
    "template": "wordpress"
   },
   {
@@ -615,20 +627,6 @@
   {
    "kind": "other",
    "day": "Holy days",
-   "time": "12:00",
-   "language": null,
-   "raw": "Most holidays will follow the scheduled listed with no noon Mass. When noon Mass is offered, we will post it here prior to the holiday. Veteran’s Day, November 11th, we will offer a Noon Mass as well.",
-   "source_url": "https://stjamescatholic.org/worship/mass-confessions/",
-   "fetched_at": "2026-11-01T18:51:39+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "wordpress",
-   "kind_parsed": "mass"
-  },
-  {
-   "kind": "other",
-   "day": "Holy days",
    "time": "06:30",
    "language": null,
    "raw": "Mass Schedule: 6:30am",
@@ -660,6 +658,58 @@
    "time": "08:30",
    "language": null,
    "raw": "Mass Schedule: 8:30am",
+   "source_url": "https://stjamescatholic.org/worship/mass-confessions/",
+   "fetched_at": "2026-11-01T18:51:39+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "06:30",
+   "language": null,
+   "raw": "No Vigil: 6:30am",
+   "source_url": "https://stjamescatholic.org/worship/mass-confessions/",
+   "fetched_at": "2026-11-01T18:51:39+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "12:00",
+   "language": null,
+   "raw": "No Vigil: Noon",
+   "source_url": "https://stjamescatholic.org/worship/mass-confessions/",
+   "fetched_at": "2026-11-01T18:51:39+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "19:00",
+   "language": null,
+   "raw": "No Vigil: 7:00pm",
+   "source_url": "https://stjamescatholic.org/worship/mass-confessions/",
+   "fetched_at": "2026-11-01T18:51:39+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "20:30",
+   "language": "Spanish",
+   "raw": "No Vigil: 8:30pm (Spanish)",
    "source_url": "https://stjamescatholic.org/worship/mass-confessions/",
    "fetched_at": "2026-11-01T18:51:39+00:00",
    "needs_review": false,
@@ -778,6 +828,20 @@
   {
    "kind": "other",
    "day": "Holy days",
+   "time": "12:00",
+   "language": null,
+   "raw": "Three of the Masses (5:00pm on Saturday, 9:00am and Noon) are celebrated with organ music and a cantor.",
+   "source_url": "https://stjamescatholic.org/worship/liturgical-ministries/",
+   "fetched_at": "2026-11-01T18:51:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
    "time": "10:30",
    "language": null,
    "raw": "Our adult choir sings at the 10:30am Mass.",
@@ -815,13 +879,80 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "First Friday of the month",
+   "time": "10:00",
+   "language": null,
+   "raw": "First Friday Exposition and Benediction: 10:00am-11:45am (ends before the Noon Mass)",
+   "source_url": "https://stjamescatholic.org/worship/eucharistic-adoration/",
+   "fetched_at": "2026-11-02T04:41:59+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "First Friday of the month",
+   "time": "11:45",
+   "language": null,
+   "raw": "First Friday Exposition and Benediction: 10:00am-11:45am (ends before the Noon Mass)",
+   "source_url": "https://stjamescatholic.org/worship/eucharistic-adoration/",
+   "fetched_at": "2026-11-02T04:41:59+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "First Friday of the month",
+   "time": "19:30",
+   "language": null,
+   "raw": "First Friday All-Night Adoration: Begins 7:30pm the first Friday night before through 8:30am on Saturday of each month",
+   "source_url": "https://stjamescatholic.org/worship/eucharistic-adoration/",
+   "fetched_at": "2026-11-02T04:41:59+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "08:30",
+   "language": null,
+   "raw": "First Friday All-Night Adoration: Begins 7:30pm the first Friday night before through 8:30am on Saturday of each month",
+   "source_url": "https://stjamescatholic.org/worship/eucharistic-adoration/",
+   "fetched_at": "2026-11-02T04:41:59+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_parsed": "Saturday",
+   "day_bound_from_line": true
   }
  ],
  "source_url": "https://stjamescatholic.org/",
  "fetched_at": "2026-11-01T18:51:49+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:00+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "liturgy"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -835,16 +966,17 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 26
+  "trusted_kinds": [],
+  "generic_rows": 31
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 12,
-  "relative_time": 2,
+  "relative_time": 4,
   "skipped_section": 3,
   "not_a_service": 5,
   "no_day": 1,
-  "prose": 1
+  "other_location": 3,
+  "prose": 5
  },
  "groups_dropped": {
   "unmatched": 2,
@@ -854,8 +986,8 @@
   "fragment": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

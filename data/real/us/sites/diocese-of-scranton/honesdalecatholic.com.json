@@ -76,6 +76,12 @@
    "url": "https://honesdalecatholic.com/live/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://honesdalecatholic.com/eucharistic-chapel/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -385,13 +391,81 @@
    "review_reason": null,
    "confidence": "high",
    "template": "wordpress"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "19:00",
+   "language": null,
+   "raw": "Mass: Holy Thursday, 7:00 pm",
+   "source_url": "https://honesdalecatholic.com/live-schedule/",
+   "fetched_at": "2026-11-02T03:46:38+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "12:00",
+   "language": null,
+   "raw": "Mass: Celebration of the Lord’s Passion Good Friday, 12:00 pm",
+   "source_url": "https://honesdalecatholic.com/live-schedule/",
+   "fetched_at": "2026-11-02T03:46:38+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "wordpress",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "20:00",
+   "language": null,
+   "raw": "Mass: Holy Saturday, 8:00 pm",
+   "source_url": "https://honesdalecatholic.com/live-schedule/",
+   "fetched_at": "2026-11-02T03:46:38+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "10:30",
+   "language": null,
+   "raw": "Mass: Easter Sunday, 10:30 am",
+   "source_url": "https://honesdalecatholic.com/live-schedule/",
+   "fetched_at": "2026-11-02T03:46:38+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "wordpress",
+   "kind_parsed": "mass"
   }
  ],
  "source_url": "https://honesdalecatholic.com/",
  "fetched_at": "2026-11-02T03:46:50+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:08+00:00",
+  "requests": 1,
+  "found": [
+   "adoration"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -405,11 +479,21 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 23
+  "trusted_kinds": [],
+  "generic_rows": 28
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Daily: 15 minutes prior to Masses",
+   "phrase": "15 minutes prior to Masses",
+   "source_url": "https://honesdalecatholic.com/reconciliation-confession-penance/",
+   "fetched_at": "2026-11-02T03:46:36+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 6
+  "other_location": 1
  },
  "groups_dropped": {},
  "event_counts": {

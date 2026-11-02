@@ -75,6 +75,12 @@
    "url": "https://www.holycrossnc.com/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.holycrossnc.com/sacraments",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -347,6 +353,40 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "30 min. prior to each Mass",
+   "phrase": "30 min. prior to each Mass",
+   "source_url": "https://www.holycrossnc.com/sacraments",
+   "fetched_at": "2026-11-02T04:41:37+00:00"
+  },
+  {
+   "kind": "confession",
+   "text": "By appointment:",
+   "phrase": "By appointment",
+   "source_url": "https://www.holycrossnc.com/sacraments",
+   "fetched_at": "2026-11-02T04:41:37+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:38+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(336) 996-5109",
@@ -358,8 +398,5 @@
   },
   "fetched_at": "2026-11-01T03:59:09+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

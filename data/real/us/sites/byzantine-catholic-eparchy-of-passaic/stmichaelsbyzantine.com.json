@@ -3,20 +3,26 @@
  "diocese": "byzantine-catholic-eparchy-of-passaic",
  "matched_church_ids": [
   "byzantine-catholic-eparchy-of-passaic:St. Michael ( www )",
-  "byzantine-catholic-eparchy-of-passaic:St. Nicholas ( www )"
+  "byzantine-catholic-eparchy-of-passaic:St. Nicholas ( www )",
+  "st-michael-byzantine-pittston-pa"
  ],
  "matched": {
   "directory": [
    "byzantine-catholic-eparchy-of-passaic:St. Michael ( www )",
    "byzantine-catholic-eparchy-of-passaic:St. Nicholas ( www )"
   ],
-  "discovermass": []
+  "discovermass": [
+   "st-michael-byzantine-pittston-pa"
+  ]
  },
  "names": [
   "St. Michael ( www )",
-  "St. Nicholas ( www )"
+  "St. Nicholas ( www )",
+  "St. Michael (Byzantine)"
  ],
- "cities": [],
+ "cities": [
+  "Pittston"
+ ],
  "home_url": "https://stmichaelsbyzantine.com/",
  "final_url": "https://stmichaelsbyzantine.com/",
  "crawl_status": "ok",
@@ -74,6 +80,24 @@
   {
    "category": "bulletin",
    "url": "https://stmichaelsbyzantine.com/bulletin",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://stmichaelsbyzantine.com/our-traditions/liturgy-presanctified/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stmichaelsbyzantine.com/reconciliation",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stmichaelsbyzantine.com/adoration",
    "status": 404,
    "class": "not_found"
   }
@@ -138,9 +162,9 @@
    "day": "Saturday",
    "time": "17:00",
    "language": null,
-   "raw": "Divine Liturgy Schedule at St.Michael’s – Pittston: Saturdays: 5:00pm",
-   "source_url": "https://stmichaelsbyzantine.com/liturgy-schedule-and-holy-days/",
-   "fetched_at": "2026-11-01T17:21:35+00:00",
+   "raw": "Divine Liturgy in Pittston:: Saturdays 5:00 pm",
+   "source_url": "https://stmichaelsbyzantine.com/",
+   "fetched_at": "2026-11-01T17:21:32+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -151,12 +175,51 @@
    "day": "Sunday",
    "time": "08:30",
    "language": null,
-   "raw": "Divine Liturgy Schedule at St.Michael’s – Pittston: Sundays: 8:30am",
-   "source_url": "https://stmichaelsbyzantine.com/liturgy-schedule-and-holy-days/",
-   "fetched_at": "2026-11-01T17:21:35+00:00",
+   "raw": "Divine Liturgy in Pittston:: Sundays 8:30 am",
+   "source_url": "https://stmichaelsbyzantine.com/",
+   "fetched_at": "2026-11-01T17:21:32+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Weekday Liturgy on Fridays, 9:00 am",
+   "source_url": "https://stmichaelsbyzantine.com/",
+   "fetched_at": "2026-11-01T17:21:32+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:00",
+   "language": null,
+   "raw": "Divine Liturgy in Swoyersville:: Sunday 11:00 am",
+   "source_url": "https://stmichaelsbyzantine.com/",
+   "fetched_at": "2026-11-01T17:21:32+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "18:00",
+   "language": null,
+   "raw": "Weekday Liturgy on Thursdays, 6 pm",
+   "source_url": "https://stmichaelsbyzantine.com/",
+   "fetched_at": "2026-11-01T17:21:32+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
    "template": "wordpress"
   },
   {
@@ -186,20 +249,6 @@
    "template": "wordpress"
   },
   {
-   "kind": "mass",
-   "day": "Sunday",
-   "time": "11:00",
-   "language": null,
-   "raw": "[St. Nicholas ( www )] Divine Liturgy Schedule at St. Nicholas – Swoyersville (Sist: Sundays: 11:00 am",
-   "source_url": "https://stmichaelsbyzantine.com/liturgy-schedule-and-holy-days/",
-   "fetched_at": "2026-11-01T17:21:35+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress",
-   "location": "St. Nicholas ( www )"
-  },
-  {
    "kind": "confession",
    "day": "Sunday",
    "time": "10:30-10:45",
@@ -216,9 +265,21 @@
  ],
  "source_url": "https://stmichaelsbyzantine.com/",
  "fetched_at": "2026-11-01T17:21:42+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:48:02+00:00",
+  "requests": 3,
+  "found": [
+   "liturgy"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -232,6 +293,7 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 8
  },
  "has_sunday": true,
@@ -244,8 +306,8 @@
   "sentence": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

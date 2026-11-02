@@ -81,6 +81,12 @@
    "url": "https://st-isaac.org/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://st-isaac.org/eucharistic-adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -766,6 +772,20 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "Sunday",
+   "time": "17:30",
+   "language": null,
+   "raw": "Adoration Hours: Thursday 9:00 a.m. through Sunday 5:30 p.m.",
+   "source_url": "https://st-isaac.org/eucharistic-adoration/",
+   "fetched_at": "2026-11-02T04:41:45+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "http://www.st-isaac.org/",
@@ -807,5 +827,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:45+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

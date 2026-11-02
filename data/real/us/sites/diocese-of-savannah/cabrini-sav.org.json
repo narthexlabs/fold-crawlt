@@ -67,6 +67,12 @@
    "url": "https://cabrini-sav.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://cabrini-sav.org/sacraments/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -228,7 +234,22 @@
   "text": "Baptism of the Lord",
   "source_url": "https://cabrini-sav.org/about-us/weekly-bulletin/"
  },
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "14:30-15:30",
+   "language": null,
+   "raw": "The sacrament of Reconciliation is offered Saturdays from 2:30 PM – 3:30 PM or anytime by appointment.",
+   "source_url": "https://cabrini-sav.org/sacraments/",
+   "fetched_at": "2026-11-02T04:42:10+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
+  }
+ ],
  "source_url": "https://cabrini-sav.org/",
  "fetched_at": "2026-11-01T02:08:51+00:00",
  "schedule_template": {
@@ -273,5 +294,19 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:11+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

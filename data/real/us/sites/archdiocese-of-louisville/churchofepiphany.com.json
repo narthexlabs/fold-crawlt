@@ -87,6 +87,12 @@
    "url": "https://epiphanycatholicchurch.org/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://epiphanycatholicchurch.org/sacraments/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -654,6 +660,20 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "Monday",
+   "time": "18:00-19:00",
+   "language": null,
+   "raw": "Eucharistic Adoration & Benediction: Join us!: Mondays from 6-7 pm, after 5:30 Mass",
+   "source_url": "https://epiphanycatholicchurch.org/sacraments/",
+   "fetched_at": "2026-11-02T04:48:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "http://www.churchofepiphany.com/",
@@ -698,6 +718,24 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:48:04+00:00",
+  "requests": 3,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "office@epiphanycatholicchurch.org",
   "phone": "(502) 245-9733",
@@ -710,8 +748,5 @@
   },
   "fetched_at": "2026-11-01T17:22:12+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

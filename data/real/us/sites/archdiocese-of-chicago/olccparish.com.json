@@ -569,6 +569,21 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday (during the school year)",
+   "time": "09:00",
+   "language": "English",
+   "raw": "Mass schedule: 9:00 AM (English) OLC September-May",
+   "source_url": "https://olccparish.com/mass-schedule-and-confessions",
+   "fetched_at": "2026-11-02T04:41:40+00:00",
+   "needs_review": true,
+   "review_reason": "seasonal",
+   "confidence": "medium",
+   "template": "wordpress",
+   "season": "September-May",
+   "topup": true
   }
  ],
  "source_url": "https://olccparish.com/",
@@ -608,5 +623,19 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:41+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

@@ -71,6 +71,12 @@
    "url": "https://www.cantius.org/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.cantius.org/sacraments",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -907,6 +913,106 @@
    "confidence": "high",
    "template": "wix",
    "kind_parsed": "mass"
+  },
+  {
+   "kind": "mass",
+   "day": "First Sunday of the month",
+   "time": "07:30",
+   "language": "Latin",
+   "raw": "7:30am - Low Mass (1962, Latin) *1st Sundays 2002 Missal",
+   "source_url": "https://www.cantius.org/full-liturgy-schedule",
+   "fetched_at": "2026-11-02T04:41:40+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": "English",
+   "raw": "9:00am - Sung Mass (2002, English)",
+   "source_url": "https://www.cantius.org/full-liturgy-schedule",
+   "fetched_at": "2026-11-02T04:41:40+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:00",
+   "language": "Latin",
+   "raw": "11:00am - Sung Mass (2002, Latin)",
+   "source_url": "https://www.cantius.org/full-liturgy-schedule",
+   "fetched_at": "2026-11-02T04:41:40+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "First Sunday of the month",
+   "time": "12:30",
+   "language": "Latin",
+   "raw": "12:30pm - High Mass (1962, Latin) *1st Sundays 2002 Missal",
+   "source_url": "https://www.cantius.org/full-liturgy-schedule",
+   "fetched_at": "2026-11-02T04:41:40+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Sunday",
+   "time": "12:30",
+   "language": null,
+   "raw": "Exposition of the Blessed Sacrament Immediately following the 12:30pm Mass",
+   "source_url": "https://www.cantius.org/full-liturgy-schedule",
+   "fetched_at": "2026-11-02T04:41:40+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wix",
+   "relative": "after",
+   "note": "Exposition of the Blessed Sacrament Immediately following the 12:30pm Mass",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "17:00",
+   "language": "English",
+   "raw": "5:00 pm Sung Mass (English)",
+   "source_url": "https://www.cantius.org/full-liturgy-schedule",
+   "fetched_at": "2026-11-02T04:41:40+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": "English",
+   "raw": "5:00 pm Anticipated Mass (English)",
+   "source_url": "https://www.cantius.org/full-liturgy-schedule",
+   "fetched_at": "2026-11-02T04:41:40+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wix",
+   "topup": true
   }
  ],
  "source_url": "http://cantius.org/",
@@ -949,5 +1055,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:41+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 7,
+  "mode": "merge"
  }
 }

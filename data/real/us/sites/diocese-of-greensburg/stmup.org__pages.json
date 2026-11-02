@@ -81,6 +81,12 @@
    "url": "https://www.stmup.org/about/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stmup.org/adoration/",
+   "status": null,
+   "class": "timeout"
   }
  ],
  "cms_guess": {
@@ -486,19 +492,6 @@
  },
  "schedule_rows": [
   {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "17:00-17:45",
-   "language": null,
-   "raw": "The Sacrament of Reconciliation is celebrated on Saturday’s from 5:00 – 5:45pm prior to the 6:00pm Mass.",
-   "source_url": "https://www.stmup.org/sacraments/reconciliation/",
-   "fetched_at": "2026-11-02T00:05:58+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "wordpress"
-  },
-  {
    "kind": "mass",
    "day": "Monday",
    "time": "12:10",
@@ -644,13 +637,36 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "17:00-17:45",
+   "language": null,
+   "raw": "Confession: Saturday: 5:00 – 5:45pm",
+   "source_url": "https://www.stmup.org/",
+   "fetched_at": "2026-11-02T00:05:48+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
   }
  ],
  "source_url": "http://www.stmup.org/Pages/default.aspx",
  "fetched_at": "2026-11-02T00:07:28+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:51+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -664,8 +680,18 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 15
  },
+ "schedule_none": [
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "text": "No Mass on Monday",
+   "source_url": "https://www.stmup.org/",
+   "fetched_at": "2026-11-02T00:05:48+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "no_day": 17,

@@ -89,6 +89,18 @@
    "url": "https://www.allsoulscatholicparish.org/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.allsoulscatholicparish.org/sacraments/penance/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.allsoulscatholicparish.org/worship/adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -313,7 +325,7 @@
    "feed_key": "4041dbdd4c8a",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:30:40+00:00",
+    "fetched_at": "2026-11-02T05:03:44+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -491,13 +503,68 @@
    "confidence": "high",
    "template": "wordpress",
    "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "15:00",
+   "language": null,
+   "raw": "All Souls Catholic Parish Weekly Reconciliation Schedule: Saturdays at 3:00 p.m.",
+   "source_url": "https://www.allsoulscatholicparish.org/sacraments/penance/",
+   "fetched_at": "2026-11-02T04:41:35+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "kind_parsed": "confession"
+  },
+  {
+   "kind": "adoration",
+   "day": "Monday",
+   "time": "09:00-18:00",
+   "language": null,
+   "raw": "[St. Ann] Eucharistic Adoration takes place in the St. Ann Chapel:: Monday: 9:00 a.m. – 6:00 p.m.",
+   "source_url": "https://www.allsoulscatholicparish.org/worship/adoration/",
+   "fetched_at": "2026-11-02T04:41:36+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "location": "St. Ann"
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "09:00-18:00",
+   "language": null,
+   "raw": "[St. Ann] Eucharistic Adoration takes place in the St. Ann Chapel:: Thursday: 9:00 a.m. – 6:00 p.m.",
+   "source_url": "https://www.allsoulscatholicparish.org/worship/adoration/",
+   "fetched_at": "2026-11-02T04:41:36+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "location": "St. Ann"
   }
  ],
  "source_url": "https://www.allsoulscatholicparish.org/",
  "fetched_at": "2026-11-01T07:28:18+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:37+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -511,18 +578,38 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 14
+  "trusted_kinds": [],
+  "generic_rows": 16
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Saturdays at 3:00 p.m. and Weekdays by Appointment",
+   "phrase": "by Appointment",
+   "source_url": "https://www.allsoulscatholicparish.org/about/mass-times/",
+   "fetched_at": "2026-11-01T07:27:54+00:00"
+  }
+ ],
+ "schedule_none": [
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "text": "(There is no Mass on Mondays, but there is a prayer service and Rosary)",
+   "source_url": "https://www.allsoulscatholicparish.org/about/mass-times/",
+   "fetched_at": "2026-11-01T07:27:54+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 12,
-  "dated_block": 3,
-  "no_kind": 3
+  "dated_line": 3,
+  "dated_block": 12,
+  "no_kind": 3,
+  "no_day": 4
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

@@ -72,6 +72,12 @@
    "url": "https://www.stmutah.org/staff",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stmutah.org/adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -297,6 +303,80 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "09:45-11:00",
+   "language": null,
+   "raw": "Adoration of the Blessed Sacrament: Tuesday-Friday. 9:45 - 11:00 am",
+   "source_url": "https://www.stmutah.org/adoration",
+   "fetched_at": "2026-11-02T04:42:12+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Tuesday-Friday.",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "09:45-11:00",
+   "language": null,
+   "raw": "Adoration of the Blessed Sacrament: Tuesday-Friday. 9:45 - 11:00 am",
+   "source_url": "https://www.stmutah.org/adoration",
+   "fetched_at": "2026-11-02T04:42:12+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Tuesday-Friday.",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "09:45-11:00",
+   "language": null,
+   "raw": "Adoration of the Blessed Sacrament: Tuesday-Friday. 9:45 - 11:00 am",
+   "source_url": "https://www.stmutah.org/adoration",
+   "fetched_at": "2026-11-02T04:42:12+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Tuesday-Friday.",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "09:45-11:00",
+   "language": null,
+   "raw": "Adoration of the Blessed Sacrament: Tuesday-Friday. 9:45 - 11:00 am",
+   "source_url": "https://www.stmutah.org/adoration",
+   "fetched_at": "2026-11-02T04:42:12+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Tuesday-Friday.",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Saturday",
+   "time": "09:00-10:00",
+   "language": null,
+   "raw": "Adoration of the Blessed Sacrament: Saturday, 9:00 - 10:00 am",
+   "source_url": "https://www.stmutah.org/adoration",
+   "fetched_at": "2026-11-02T04:42:12+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
   }
  ],
  "source_url": "https://www.stmutah.org/",
@@ -340,6 +420,33 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "4:00 pm Saturday or by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://www.stmutah.org/service-times#confessions",
+   "fetched_at": "2026-11-02T04:42:11+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:12+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 5,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "parish@stmutah.org",
   "phone": "(801) 942-5285",
@@ -352,8 +459,5 @@
   },
   "fetched_at": "2026-11-01T07:19:50+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

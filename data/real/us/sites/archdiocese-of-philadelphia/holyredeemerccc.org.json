@@ -3,16 +3,19 @@
  "diocese": "archdiocese-of-philadelphia",
  "matched_church_ids": [
   "brave:PA|redeemer philadelphia|",
-  "gc-19125"
+  "gc-19125",
+  "holy-redeemerchinese-philadelphia-pa"
  ],
  "matched": {
   "directory": [],
   "discovermass": [
+   "holy-redeemerchinese-philadelphia-pa",
    "brave:PA|redeemer philadelphia|",
    "gc-19125"
   ]
  },
  "names": [
+  "Holy Redeemer[Chinese]",
   "Holy Redeemer"
  ],
  "cities": [
@@ -33,6 +36,18 @@
   {
    "category": "contact",
    "url": "https://holyredeemerccc.org/contact/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://holyredeemerccc.org/reconciliation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://holyredeemerccc.org/adoration/",
    "status": 200,
    "class": "ok"
   }
@@ -115,7 +130,7 @@
    "feed_key": "766cf6e4c3f2",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-02T01:57:40+00:00",
+    "fetched_at": "2026-11-02T04:57:49+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -137,9 +152,22 @@
  "schedule_rows": [],
  "source_url": "https://holyredeemerccc.org/",
  "fetched_at": "2026-11-01T20:25:06+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:07+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -153,6 +181,7 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 0
  },
  "has_sunday": false,

@@ -57,6 +57,12 @@
    "url": "https://stjosephdalton.org/youth-group/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stjosephdalton.org/about-us/adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -483,6 +489,20 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "First Friday of the month",
+   "time": "09:30-19:30",
+   "language": null,
+   "raw": "On the First Friday of each month, Adoration is offered the whole day, from 9:30 a.m. to 7:30 p.m.",
+   "source_url": "https://stjosephdalton.org/about-us/adoration/",
+   "fetched_at": "2026-11-02T04:41:56+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "https://www.sjccdalton.com/",
@@ -525,5 +545,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:56+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

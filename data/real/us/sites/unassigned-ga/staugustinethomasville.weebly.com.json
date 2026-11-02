@@ -409,6 +409,20 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "weebly"
+  },
+  {
+   "kind": "adoration",
+   "day": "First Friday of the month",
+   "time": "09:00-18:00",
+   "language": null,
+   "raw": "ADORATION: First Friday of the Month - 9:00 am - 6:00 pm",
+   "source_url": "https://staugustinethomasville.weebly.com/mass-schedule.html",
+   "fetched_at": "2026-11-02T04:42:08+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly",
+   "topup": true
   }
  ],
  "source_url": "https://staugustinethomasville.weebly.com/",
@@ -450,6 +464,24 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:08+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(229) 226-3624",
@@ -460,8 +492,5 @@
   },
   "fetched_at": "2026-11-01T07:20:09+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

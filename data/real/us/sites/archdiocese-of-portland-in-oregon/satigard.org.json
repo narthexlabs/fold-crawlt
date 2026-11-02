@@ -73,6 +73,12 @@
    "url": "https://www.satigard.org/livestream",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.satigard.org/reconciliation",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -188,6 +194,32 @@
   "source_url": "https://www.satigard.org/"
  },
  "schedule_rows": [
+  {
+   "kind": "confession",
+   "day": "Tuesday",
+   "time": "11:15-12:45",
+   "language": null,
+   "raw": "SACRAMENT OF RECONCILIATION: Tuesdays: 11:15 am - 12:45 pm (Church)",
+   "source_url": "https://www.satigard.org/reconciliation",
+   "fetched_at": "2026-11-02T04:41:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "07:30-09:00",
+   "language": null,
+   "raw": "SACRAMENT OF RECONCILIATION: Saturdays: 7:30 am - 9:00 am (Church)",
+   "source_url": "https://www.satigard.org/reconciliation",
+   "fetched_at": "2026-11-02T04:41:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix"
+  },
   {
    "kind": "mass",
    "day": "Saturday",
@@ -418,9 +450,21 @@
  ],
  "source_url": "https://www.satigard.org/",
  "fetched_at": "2026-11-01T17:27:39+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:41+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wix",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -434,18 +478,17 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 26
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "no_day": 3,
-  "dated_block": 2,
   "box_rows_added": 19
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

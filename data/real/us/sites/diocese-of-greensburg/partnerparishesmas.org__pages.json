@@ -75,6 +75,18 @@
    "url": "https://www.partnerparishesmas.org/about/parish-calendar/?vcal=1531",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.partnerparishesmas.org/sacraments/reconciliation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.partnerparishesmas.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -414,9 +426,21 @@
  ],
  "source_url": "http://www.partnerparishesmas.org/Pages/default.aspx",
  "fetched_at": "2026-11-02T00:07:18+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:57+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -430,11 +454,20 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 4
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Reconciliation is available 45 minutes before the start of each weekend Mass, or by appointment with the priest.",
+   "phrase": "by appointment",
+   "source_url": "https://www.partnerparishesmas.org/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:43:29+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "no_kind": 2,
   "box_rows_added": 2
  },
  "groups_dropped": {

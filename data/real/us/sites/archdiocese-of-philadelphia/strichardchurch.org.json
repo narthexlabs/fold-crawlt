@@ -75,6 +75,12 @@
    "url": "https://strichardchurch.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://strichardchurch.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -315,7 +321,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-02T02:01:00+00:00",
+    "fetched_at": "2026-11-02T05:00:25+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -365,19 +371,6 @@
    "time": "08:00",
    "language": null,
    "raw": "Weekend Mass Schedule:: Sunday 8:00 AM at St. Richard",
-   "source_url": "https://strichardchurch.org/mass-confession-schedule/",
-   "fetched_at": "2026-11-02T01:56:11+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress"
-  },
-  {
-   "kind": "mass",
-   "day": "Sunday",
-   "time": "10:00",
-   "language": null,
-   "raw": "Weekend Mass Schedule:: Sunday 10:00 AM at Holy Spirit",
    "source_url": "https://strichardchurch.org/mass-confession-schedule/",
    "fetched_at": "2026-11-02T01:56:11+00:00",
    "needs_review": false,
@@ -504,13 +497,39 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "08:30",
+   "language": null,
+   "raw": "Exposition of the Blessed Sacrament is held every Tuesday following the 8:30 am Mass, with prayers for vocations and Benediction",
+   "source_url": "https://strichardchurch.org/mass-confession-schedule/",
+   "fetched_at": "2026-11-02T01:56:11+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "Exposition of the Blessed Sacrament is held every Tuesday following the 8:30 am Mass, with prayers for vocations and Ben",
+   "relative_resolved": true
   }
  ],
  "source_url": "https://strichardchurch.org/",
  "fetched_at": "2026-11-02T01:56:27+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:10+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -524,11 +543,13 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 36
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "relative_time": 4,
+  "other_location": 3,
+  "relative_time": 3,
   "no_kind": 2,
   "not_a_mass": 1
  },

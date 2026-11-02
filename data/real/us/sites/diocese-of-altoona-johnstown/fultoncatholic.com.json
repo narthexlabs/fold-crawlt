@@ -109,13 +109,39 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "weebly"
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "12:00",
+   "language": null,
+   "raw": "Reconciliation(Confession): Sunday after Noon Mass or anytime by appointment",
+   "source_url": "https://www.fultoncatholic.com/",
+   "fetched_at": "2026-11-01T20:25:01+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "weebly",
+   "relative": "after",
+   "note": "Reconciliation(Confession): Sunday after Noon Mass or anytime by appointment",
+   "relative_resolved": true
   }
  ],
  "source_url": "http://www.fultoncatholic.com/",
  "fetched_at": "2026-11-01T20:25:05+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:21+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "weebly",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -129,12 +155,19 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 3
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Sunday after Noon Mass or anytime by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://www.fultoncatholic.com/",
+   "fetched_at": "2026-11-01T20:25:01+00:00"
+  }
+ ],
  "has_sunday": true,
- "schedule_dropped": {
-  "relative_time": 1
- },
  "groups_dropped": {},
  "event_counts": {
   "window_start": "2026-11-02",

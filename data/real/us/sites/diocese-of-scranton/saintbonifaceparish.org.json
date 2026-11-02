@@ -76,6 +76,12 @@
    "url": "https://www.saintbonifaceparish.org/ministries",
    "status": 404,
    "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.saintbonifaceparish.org/adoration",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -98,7 +104,7 @@
    "note": "Google Calendar public feed (website-builder widget)",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-02T03:48:18+00:00",
+    "fetched_at": "2026-11-02T05:00:38+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -267,13 +273,87 @@
    "confidence": "medium",
    "template": "generic_strict",
    "location": "Sacred Heart Church"
+  },
+  {
+   "kind": "confession",
+   "day": "Tuesday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Confessions are heard 30 minutes prior to the start of each : Tuesday before the 8:00am Mass at St. Boniface",
+   "source_url": "https://www.saintbonifaceparish.org/sacraments",
+   "fetched_at": "2026-11-02T03:46:34+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "before",
+   "note": "Confessions are heard 30 minutes prior to the start of each : Tuesday before the 8:00am Mass at St. Boniface",
+   "relative_resolved": true
+  },
+  {
+   "kind": "confession",
+   "day": "Wednesday",
+   "time": "17:30",
+   "language": null,
+   "raw": "Confessions are heard 30 minutes prior to the start of each : Wednesday before the 5:30pm Mass at St. Boniface",
+   "source_url": "https://www.saintbonifaceparish.org/sacraments",
+   "fetched_at": "2026-11-02T03:46:34+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "before",
+   "note": "Confessions are heard 30 minutes prior to the start of each : Wednesday before the 5:30pm Mass at St. Boniface",
+   "relative_resolved": true
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Confessions are heard 30 minutes prior to the start of each : Saturday before the 8:00 am Mass in the Grotto",
+   "source_url": "https://www.saintbonifaceparish.org/sacraments",
+   "fetched_at": "2026-11-02T03:46:34+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "before",
+   "note": "Confessions are heard 30 minutes prior to the start of each : Saturday before the 8:00 am Mass in the Grotto",
+   "relative_resolved": true
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": null,
+   "raw": "Confessions are heard 30 minutes prior to the start of each : Sunday before the 10:00am Mass at St. Boniface",
+   "source_url": "https://www.saintbonifaceparish.org/sacraments",
+   "fetched_at": "2026-11-02T03:46:34+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "before",
+   "note": "Confessions are heard 30 minutes prior to the start of each : Sunday before the 10:00am Mass at St. Boniface",
+   "relative_resolved": true
   }
  ],
  "source_url": "https://www.saintbonifaceparish.org/",
  "fetched_at": "2026-11-02T03:46:40+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:09+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -287,13 +367,22 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 31
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "30 minutes prior to every Mass or by appointment",
+   "phrase": "30 minutes prior to every Mass",
+   "source_url": "https://www.saintbonifaceparish.org/",
+   "fetched_at": "2026-11-02T03:46:33+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 3,
-  "relative_time": 8,
-  "prose": 2
+  "other_location": 5,
+  "prose": 4
  },
  "groups_dropped": {},
  "event_counts": {

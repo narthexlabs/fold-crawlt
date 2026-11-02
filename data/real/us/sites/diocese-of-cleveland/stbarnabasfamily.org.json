@@ -81,6 +81,24 @@
    "url": "https://www.stbarnabasfamily.org/welcome/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stbarnabasfamily.org/prayer-liturgy/confession-times.cfm",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stbarnabasfamily.org/prayer-liturgy/adoration-schedule.cfm",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://www.stbarnabasfamily.org/prayer-liturgy/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -336,6 +354,20 @@
    "confidence": "high",
    "template": "generic_strict",
    "day_expanded_from": "Monday through Friday"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:30-16:15",
+   "language": null,
+   "raw": "CONFESSION TIMES OFFERED:: Saturday afternoons from 3:30 – 4:15 p.m. (in the gym) or by appointment.",
+   "source_url": "https://www.stbarnabasfamily.org/prayer-liturgy/confession-times.cfm",
+   "fetched_at": "2026-11-02T04:52:36+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
   }
  ],
  "source_url": "http://www.stbarnabasfamily.org/",
@@ -377,5 +409,30 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Saturday afternoons from 3:30 – 4:15 p.m. (in the gym) or by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://www.stbarnabasfamily.org/prayer-liturgy/confession-times.cfm",
+   "fetched_at": "2026-11-02T04:52:36+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:52:39+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

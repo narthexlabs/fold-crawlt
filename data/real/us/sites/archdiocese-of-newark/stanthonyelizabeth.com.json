@@ -87,18 +87,6 @@
    "url": "https://stanthonyelizabeth.com/contact-us",
    "status": 200,
    "class": "ok"
-  },
-  {
-   "category": "confession",
-   "url": "https://stanthonyelizabeth.com/reconciliation-times",
-   "status": 200,
-   "class": "ok"
-  },
-  {
-   "category": "adoration",
-   "url": "https://stanthonyelizabeth.com/adoration",
-   "status": 404,
-   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -520,48 +508,16 @@
    "source": "wayback-2026-05-07",
    "archive_url": "https://web.archive.org/web/20250325185807/https://stanthonyelizabeth.com/mass-times",
    "capture_date": "2025-03-25"
-  },
-  {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "09:00",
-   "language": null,
-   "raw": "Reconciliation: Saturday 9:00AM & 4:00 PM.",
-   "source_url": "https://stanthonyelizabeth.com/reconciliation-times",
-   "fetched_at": "2025-06-24T09:35:59+00:00",
-   "needs_review": true,
-   "review_reason": "wayback capture 2026-05-07: read by a person before it is shown",
-   "confidence": "medium",
-   "template": "ecatholic+generic_strict",
-   "source": "wayback-2026-05-07",
-   "archive_url": "https://web.archive.org/web/20250624093559/https://stanthonyelizabeth.com/reconciliation-times",
-   "capture_date": "2025-06-24"
-  },
-  {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "16:00",
-   "language": null,
-   "raw": "Reconciliation: Saturday 9:00AM & 4:00 PM.",
-   "source_url": "https://stanthonyelizabeth.com/reconciliation-times",
-   "fetched_at": "2025-06-24T09:35:59+00:00",
-   "needs_review": true,
-   "review_reason": "wayback capture 2026-05-07: read by a person before it is shown",
-   "confidence": "medium",
-   "template": "ecatholic+generic_strict",
-   "source": "wayback-2026-05-07",
-   "archive_url": "https://web.archive.org/web/20250624093559/https://stanthonyelizabeth.com/reconciliation-times",
-   "capture_date": "2025-06-24"
   }
  ],
  "source_url": "https://stanthonyelizabeth.com/",
- "fetched_at": "2026-11-02T05:13:19+00:00",
+ "fetched_at": "2026-11-02T03:45:45+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
  },
  "schedule_template": {
   "template": "ecatholic",
-  "version": "ca-sites/3",
+  "version": "ca-sites/2",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -573,20 +529,13 @@
    },
    "score": "high"
   },
-  "passed_bar": true,
-  "trusted_candidate": true,
-  "trusted_kinds": [
-   "weekend",
-   "weekday",
-   "confession",
-   "adoration"
-  ],
-  "generic_rows": 9
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 7
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "text:skipped_section": 0,
-  "text:no_day": 2
+  "text:skipped_section": 0
  },
  "groups_dropped": {},
  "office_contact": {
@@ -659,22 +608,16 @@
     "original": "https://stanthonyelizabeth.com/contact-us",
     "capture": "2026-05-07",
     "archive_url": "https://web.archive.org/web/20260507231557/https://stanthonyelizabeth.com/contact-us"
-   },
-   {
-    "kind": "confession",
-    "original": "https://stanthonyelizabeth.com/reconciliation-times",
-    "capture": "2025-06-24",
-    "archive_url": "https://web.archive.org/web/20250624093559/https://stanthonyelizabeth.com/reconciliation-times"
    }
   ],
   "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review.",
   "grade": {
    "rule": "wayback-verified-2026-11-01",
    "template": "ecatholic",
-   "trusted_template": true,
+   "trusted_template": false,
    "has_sunday": true,
    "groups": 9,
-   "verified": true,
+   "verified": false,
    "capture_date": "2026-05-07",
    "applied": false
   }

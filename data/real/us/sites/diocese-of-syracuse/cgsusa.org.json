@@ -77,6 +77,12 @@
    "url": "https://cgsusa.org/connect/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://cgsusa.org/connect/member-login/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -190,7 +196,7 @@
    "note": "The Events Calendar (WordPress) REST API",
    "last_fetch": {
     "status": 200,
-    "fetched_at": "2026-11-01T23:39:32+00:00",
+    "fetched_at": "2026-11-02T04:59:07+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -224,9 +230,21 @@
  "schedule_rows": [],
  "source_url": "https://www.cgsusa.org/",
  "fetched_at": "2026-11-01T20:25:43+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:54+00:00",
+  "requests": 1,
+  "found": [
+   "adoration"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -240,6 +258,7 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 0
  },
  "has_sunday": false,
@@ -250,8 +269,8 @@
   "fragment": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

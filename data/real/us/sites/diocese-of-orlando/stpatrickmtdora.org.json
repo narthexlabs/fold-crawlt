@@ -348,6 +348,22 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Friday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Reconciliation: Fridays following 9:00 am Mass",
+   "source_url": "https://stpatrickmtdora.org/mass-times/",
+   "fetched_at": "2026-11-02T04:41:56+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "Reconciliation: Fridays following 9:00 am Mass",
+   "topup": true
   }
  ],
  "source_url": "http://stpatrickmtdora.org/",
@@ -390,5 +406,28 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Saturdays - 3:00 - 3:45 PM or by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://stpatrickmtdora.org/mass-times/",
+   "fetched_at": "2026-11-02T04:41:56+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:56+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

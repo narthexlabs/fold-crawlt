@@ -61,6 +61,12 @@
    "url": "https://www.stpatrickanadarko.org/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stpatrickanadarko.org/adoration-times",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -102,7 +108,7 @@
    "note": "iCal link on page",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:34:34+00:00",
+    "fetched_at": "2026-11-02T05:02:06+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -123,6 +129,45 @@
   "source_url": "https://www.stpatrickanadarko.org/bulletin"
  },
  "schedule_rows": [
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:00-16:00",
+   "language": null,
+   "raw": "Confessions: SATURDAY | 3:00pm - 4:00pm at St. Patrick in Anadarko",
+   "source_url": "https://www.stpatrickanadarko.org/",
+   "fetched_at": "2026-11-01T07:19:44+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "17:00-17:20",
+   "language": null,
+   "raw": "Confessions: SATURDAY | 5:00pm - 5:20pm at St. Richard in Carnegie",
+   "source_url": "https://www.stpatrickanadarko.org/",
+   "fetched_at": "2026-11-01T07:19:44+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "07:30-07:50",
+   "language": null,
+   "raw": "Confessions: SUNDAY | 7:30am - 7:50am at Our Lady of the Rosary in Binger",
+   "source_url": "https://www.stpatrickanadarko.org/",
+   "fetched_at": "2026-11-01T07:19:44+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict"
+  },
   {
    "kind": "mass",
    "day": "Saturday",
@@ -215,39 +260,13 @@
    "template": "ecatholic+generic_strict"
   },
   {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "15:00-16:00",
-   "language": null,
-   "raw": "Confessions: SATURDAY | 3:00pm - 4:00pm at St. Patrick in Anadarko",
-   "source_url": "https://www.stpatrickanadarko.org/",
-   "fetched_at": "2026-11-01T07:19:44+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "ecatholic+generic_strict"
-  },
-  {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "17:00-17:20",
-   "language": null,
-   "raw": "Confessions: SATURDAY | 5:00pm - 5:20pm at St. Richard in Carnegie",
-   "source_url": "https://www.stpatrickanadarko.org/",
-   "fetched_at": "2026-11-01T07:19:44+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "ecatholic+generic_strict"
-  },
-  {
-   "kind": "confession",
+   "kind": "devotion",
    "day": "Sunday",
    "time": "07:30-07:50",
    "language": null,
-   "raw": "Confessions: SUNDAY | 7:30am - 7:50am at Our Lady of the Rosary in Binger",
-   "source_url": "https://www.stpatrickanadarko.org/",
-   "fetched_at": "2026-11-01T07:19:44+00:00",
+   "raw": "Sunday | 7:30am - 7:50am",
+   "source_url": "https://www.stpatrickanadarko.org/confession-times",
+   "fetched_at": "2026-11-01T07:20:04+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -256,9 +275,21 @@
  ],
  "source_url": "https://www.stpatrickanadarko.org/",
  "fetched_at": "2026-11-01T07:20:54+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:47:56+00:00",
+  "requests": 1,
+  "found": [
+   "adoration"
+  ]
+ },
  "schedule_template": {
   "template": "ecatholic",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -270,19 +301,19 @@
    },
    "score": "medium"
   },
-  "passed_bar": false,
+  "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 7
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "text:other_location": 2,
-  "text:not_a_service": 1
+  "text:other_location": 2
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

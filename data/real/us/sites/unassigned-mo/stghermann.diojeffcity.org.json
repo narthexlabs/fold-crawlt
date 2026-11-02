@@ -81,6 +81,18 @@
    "url": "https://stghermann.diojeffcity.org/about-us/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://stghermann.diojeffcity.org/our-faith/worship-and-prayer/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stghermann.diojeffcity.org/adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -248,7 +260,7 @@
    "note": "The Events Calendar (WordPress) REST API",
    "last_fetch": {
     "status": 200,
-    "fetched_at": "2026-11-01T23:32:43+00:00",
+    "fetched_at": "2026-11-02T05:08:18+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -390,13 +402,65 @@
    "review_reason": null,
    "confidence": "high",
    "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "First Friday of the month",
+   "time": "08:30-14:20",
+   "language": null,
+   "raw": "First Friday Adoration: 8:30 AM - 2:20 PM on the first Friday of every month.",
+   "source_url": "https://stghermann.diojeffcity.org/adoration/",
+   "fetched_at": "2026-11-02T04:41:36+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "Second and Fourth Wednesday of the month",
+   "time": "15:00-19:00",
+   "language": null,
+   "raw": "First Friday Adoration: 3:00 PM - 7:00 PM",
+   "source_url": "https://stghermann.diojeffcity.org/adoration/",
+   "fetched_at": "2026-11-02T04:41:36+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "devotion",
+   "day": "Monday",
+   "time": "19:00",
+   "language": null,
+   "raw": "Come and join us on Monday nights, 7:00 p.m., to pray the Most Holy Rosary at St. George Church",
+   "source_url": "https://stghermann.diojeffcity.org/our-faith/worship-and-prayer/",
+   "fetched_at": "2026-11-02T04:41:35+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
   }
  ],
  "source_url": "https://stghermann.diojeffcity.org/",
  "fetched_at": "2026-11-01T17:27:22+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:37+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "liturgy"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -410,12 +474,22 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 5
+  "trusted_kinds": [],
+  "generic_rows": 7
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "upon request",
+   "phrase": "upon request",
+   "source_url": "https://stghermann.diojeffcity.org/sacraments/reconciliation/",
+   "fetched_at": "2026-11-01T17:27:05+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "not_a_service": 2,
-  "other_location": 8,
+  "not_a_service": 3,
+  "other_location": 12,
   "no_day": 1,
   "no_kind": 1
  },
@@ -424,8 +498,8 @@
   "unmatched": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

@@ -57,6 +57,12 @@
    "url": "https://www.stmarydelano.org/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stmarydelano.org/liturgy-sacraments/reconciliation/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -259,6 +265,20 @@
    "review_reason": null,
    "confidence": "high",
    "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "18:00",
+   "language": null,
+   "raw": "Adoration: Wednesdays: 9:00 AM – 6:00 PM",
+   "source_url": "https://www.stmarydelano.org/our-parish/parish-schedules/",
+   "fetched_at": "2026-11-02T04:41:40+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "https://www.stmarydelano.org/",
@@ -298,6 +318,33 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "The Sacrament of Reconciliation is offered 30min prior to all Masses, and by appointment.",
+   "phrase": "30min prior to all Masses",
+   "source_url": "https://www.stmarydelano.org/liturgy-sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:38+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:42+00:00",
+  "requests": 3,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(952) 955-1139",
@@ -309,8 +356,5 @@
   },
   "fetched_at": "2026-11-01T03:58:17+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

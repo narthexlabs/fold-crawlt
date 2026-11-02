@@ -147,7 +147,7 @@
    "display_tz": "America/Detroit",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:38:02+00:00",
+    "fetched_at": "2026-11-02T05:08:56+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -164,7 +164,7 @@
    "display_tz": "America/Detroit",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:38:04+00:00",
+    "fetched_at": "2026-11-02T05:08:57+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -181,7 +181,7 @@
    "display_tz": "America/Detroit",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:38:05+00:00",
+    "fetched_at": "2026-11-02T05:08:58+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -198,7 +198,7 @@
    "display_tz": "America/Detroit",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:38:06+00:00",
+    "fetched_at": "2026-11-02T05:08:59+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -215,7 +215,7 @@
    "display_tz": "America/Detroit",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:38:07+00:00",
+    "fetched_at": "2026-11-02T05:09:00+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -234,7 +234,7 @@
    "feed_key": "dec591ffaa7d",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:38:09+00:00",
+    "fetched_at": "2026-11-02T05:09:02+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -558,7 +558,7 @@
   },
   {
    "kind": "mass",
-   "day": "First Friday of the month (during the school year)",
+   "day": "First Friday of the month",
    "time": "08:30",
    "language": "Spanish",
    "raw": "MASS ONLY SCHOOL YEAR: 8:30am St. Peter",
@@ -571,7 +571,7 @@
   },
   {
    "kind": "mass",
-   "day": "First Friday of the month (during the school year)",
+   "day": "First Friday of the month",
    "time": "09:00",
    "language": "Spanish",
    "raw": "MASS ONLY SCHOOL YEAR: 9:00am St. Christopher*",
@@ -584,7 +584,7 @@
   },
   {
    "kind": "mass",
-   "day": "First Friday of the month (during the school year)",
+   "day": "First Friday of the month",
    "time": "18:30",
    "language": "Spanish",
    "raw": "MASS ONLY SCHOOL YEAR: 6:30pm St. Peter",
@@ -597,7 +597,7 @@
   },
   {
    "kind": "mass",
-   "day": "Saturday (during the school year)",
+   "day": "Saturday",
    "time": "08:30",
    "language": "Spanish",
    "raw": "MASS ONLY SCHOOL YEAR: 8:30am St. Peter",
@@ -620,6 +620,22 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Tuesday",
+   "time": "06:30",
+   "language": "Spanish",
+   "raw": "Reconciliation: after 6:30am Mass St. Peter",
+   "source_url": "https://www.sgfp.org/mass-schedule",
+   "fetched_at": "2026-11-01T20:25:04+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "after",
+   "note": "Reconciliation: after 6:30am Mass St. Peter",
+   "relative_resolved": true
   },
   {
    "kind": "confession",
@@ -689,6 +705,22 @@
   {
    "kind": "confession",
    "day": "Friday",
+   "time": "09:00",
+   "language": "Spanish",
+   "raw": "Reconciliation: after 9:00am Mass at St. Christopher",
+   "source_url": "https://www.sgfp.org/mass-schedule",
+   "fetched_at": "2026-11-01T20:25:04+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "after",
+   "note": "Reconciliation: after 9:00am Mass at St. Christopher",
+   "relative_resolved": false
+  },
+  {
+   "kind": "confession",
+   "day": "Friday",
    "time": "17:30-18:15",
    "language": "Spanish",
    "raw": "Reconciliation: 5:30 to 6:15pm St. Peter",
@@ -698,6 +730,22 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "08:30",
+   "language": "Spanish",
+   "raw": "Reconciliation: after 8:30am Mass St. Peter",
+   "source_url": "https://www.sgfp.org/mass-schedule",
+   "fetched_at": "2026-11-01T20:25:04+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "after",
+   "note": "Reconciliation: after 8:30am Mass St. Peter",
+   "relative_resolved": true
   },
   {
    "kind": "confession",
@@ -841,13 +889,140 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "devotion",
+   "day": "Monday",
+   "time": "07:55",
+   "language": "Spanish",
+   "raw": "7:55am before 8:30am Mass (SP)",
+   "source_url": "https://www.sgfp.org/mass-schedule",
+   "fetched_at": "2026-11-01T20:25:04+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "devotion",
+   "day": "Monday",
+   "time": "12:00",
+   "language": "Spanish",
+   "raw": "12:00noon Patriotic Rosary (SBJ)",
+   "source_url": "https://www.sgfp.org/mass-schedule",
+   "fetched_at": "2026-11-01T20:25:04+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "devotion",
+   "day": "Monday",
+   "time": "19:00",
+   "language": "Spanish",
+   "raw": "7:00pm (SC)",
+   "source_url": "https://www.sgfp.org/mass-schedule",
+   "fetched_at": "2026-11-01T20:25:04+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "devotion",
+   "day": "Wednesday",
+   "time": "08:05",
+   "language": "Spanish",
+   "raw": "8:05am before 8:30am Mass (SJB)",
+   "source_url": "https://www.sgfp.org/mass-schedule",
+   "fetched_at": "2026-11-01T20:25:04+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "devotion",
+   "day": "Wednesday",
+   "time": "10:00",
+   "language": "Spanish",
+   "raw": "10:00am Fatima Rosary (SP)",
+   "source_url": "https://www.sgfp.org/mass-schedule",
+   "fetched_at": "2026-11-01T20:25:04+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "devotion",
+   "day": "Thursday",
+   "time": "08:05",
+   "language": "Spanish",
+   "raw": "8:05am before 8:30am Mass (SJB)",
+   "source_url": "https://www.sgfp.org/mass-schedule",
+   "fetched_at": "2026-11-01T20:25:04+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "devotion",
+   "day": "Thursday",
+   "time": "17:30",
+   "language": "Spanish",
+   "raw": "5:30pm before 6:00pm Mass (SP)",
+   "source_url": "https://www.sgfp.org/mass-schedule",
+   "fetched_at": "2026-11-01T20:25:04+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "devotion",
+   "day": "Friday",
+   "time": "09:30",
+   "language": "Spanish",
+   "raw": "9:30am after 8:30am Mass (SP)",
+   "source_url": "https://www.sgfp.org/mass-schedule",
+   "fetched_at": "2026-11-01T20:25:04+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "devotion",
+   "day": "Saturday",
+   "time": "07:55",
+   "language": "Spanish",
+   "raw": "7:55am before 8:30am Mass (SP)",
+   "source_url": "https://www.sgfp.org/mass-schedule",
+   "fetched_at": "2026-11-01T20:25:04+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
   }
  ],
  "source_url": "https://www.sgfp.org/",
  "fetched_at": "2026-11-01T20:25:09+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:52:25+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -861,21 +1036,21 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 5
  },
  "has_sunday": true,
  "schedule_dropped": {
   "no_day": 1,
-  "relative_time": 18,
-  "not_a_service": 10,
+  "relative_time": 15,
   "not_a_mass": 5
  },
  "groups_dropped": {
   "fragment": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

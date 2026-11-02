@@ -375,7 +375,7 @@
    "note": "iCal link on page",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-02T01:59:38+00:00",
+    "fetched_at": "2026-11-02T04:59:24+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -391,7 +391,7 @@
    "note": "iCal link on page",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-02T01:59:38+00:00",
+    "fetched_at": "2026-11-02T04:59:24+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -421,19 +421,6 @@
   "source_url": "https://www.spnparish.org/pages/parish-bulletins"
  },
  "schedule_rows": [
-  {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "15:00-15:45",
-   "language": null,
-   "raw": "Confession Schedule: Saturday from 3:00 PM – 3:45 PM* The scheduled confession times...",
-   "source_url": "https://www.spnparish.org/collections/sacraments",
-   "fetched_at": "2026-11-01T20:25:16+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "generic_strict"
-  },
   {
    "kind": "mass",
    "day": "Saturday",
@@ -563,13 +550,36 @@
    "review_reason": null,
    "confidence": "high",
    "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:00-15:45",
+   "language": null,
+   "raw": "Confessions: Saturday 3:00 PM - 3:45 PM",
+   "source_url": "https://www.spnparish.org/",
+   "fetched_at": "2026-11-01T20:25:14+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict"
   }
  ],
  "source_url": "https://spnparish.org/",
  "fetched_at": "2026-11-01T20:25:28+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:06+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -583,8 +593,23 @@
   },
   "passed_bar": true,
   "trusted_candidate": true,
+  "trusted_kinds": [
+   "weekend",
+   "weekday",
+   "confession",
+   "adoration"
+  ],
   "generic_rows": 15
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "or by appt (call the rectory)",
+   "phrase": "by appt",
+   "source_url": "https://www.spnparish.org/",
+   "fetched_at": "2026-11-01T20:25:14+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "other_location": 4,

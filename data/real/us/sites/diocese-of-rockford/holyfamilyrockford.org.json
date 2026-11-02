@@ -296,6 +296,22 @@
   },
   {
    "kind": "confession",
+   "day": "Thursday",
+   "time": "06:30",
+   "language": null,
+   "raw": "Confession: After 6:30 AM Mass",
+   "source_url": "https://holyfamilyrockford.org/mass-and-confession-times/",
+   "fetched_at": "2026-11-01T20:25:08+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "Confession: After 6:30 AM Mass",
+   "relative_resolved": false
+  },
+  {
+   "kind": "confession",
    "day": "Saturday",
    "time": "09:00-10:00",
    "language": null,
@@ -310,9 +326,19 @@
  ],
  "source_url": "https://holyfamilyrockford.org/",
  "fetched_at": "2026-11-01T20:25:18+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:57+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -326,21 +352,22 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 31
  },
  "has_sunday": true,
  "schedule_dropped": {
   "skipped_section": 10,
-  "other_location": 12,
-  "relative_time": 1,
-  "no_day": 1
+  "dated_block": 4,
+  "no_kind": 2,
+  "no_day": 7
  },
  "groups_dropped": {
   "sacrament_prep": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

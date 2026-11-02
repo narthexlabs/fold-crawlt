@@ -2,21 +2,21 @@
  "domain": "sspeterandpaulucc.org",
  "diocese": "unassigned-pa",
  "matched_church_ids": [
-  "brave:PA|peter and paul plymouth|"
+  "ss-peter-and-paul-ukrainian-rite-plymouth-pa"
  ],
  "matched": {
   "directory": [],
   "discovermass": [
-   "brave:PA|peter and paul plymouth|"
+   "ss-peter-and-paul-ukrainian-rite-plymouth-pa"
   ]
  },
  "names": [
-  "Sts Peter And Paul"
+  "Ss. Peter and Paul Ukrainian Rite"
  ],
  "cities": [
   "Plymouth"
  ],
- "home_url": "https://sspeterandpaulucc.org/",
+ "home_url": "http://sspeterandpaulucc.org/",
  "final_url": "https://sspeterandpaulucc.org/",
  "crawl_status": "ok",
  "crawl_env": "sandbox",
@@ -39,6 +39,18 @@
    "url": "https://sspeterandpaulucc.org/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://sspeterandpaulucc.org/reconciliation/",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://sspeterandpaulucc.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -54,6 +66,19 @@
  "social": {},
  "bulletin": null,
  "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "07:30",
+   "language": null,
+   "raw": "Liturgy on Sunday will be at St. Peter & Paul Church at 7:30 AM only.",
+   "source_url": "https://sspeterandpaulucc.org/",
+   "fetched_at": "2026-11-01T20:25:13+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  },
   {
    "kind": "mass",
    "day": "Saturday",
@@ -81,11 +106,21 @@
    "template": "wordpress"
   }
  ],
- "source_url": "https://sspeterandpaulucc.org/",
+ "source_url": "http://sspeterandpaulucc.org/",
  "fetched_at": "2026-11-01T20:25:17+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:04+00:00",
+  "requests": 2,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -99,6 +134,7 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 6
  },
  "has_sunday": true,
@@ -109,8 +145,8 @@
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

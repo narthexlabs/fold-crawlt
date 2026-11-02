@@ -75,6 +75,12 @@
    "url": "https://www.oldsaintmary.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.oldsaintmary.org/sacraments/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -466,6 +472,78 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:15-15:45",
+   "language": null,
+   "raw": "Reconciliation (Penance or Confession): 3:15-3:45 pm, St. Casimir Church, 2600 N Bremen St",
+   "source_url": "https://www.oldsaintmary.org/sacraments/",
+   "fetched_at": "2026-11-02T04:41:39+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:30-16:15",
+   "language": null,
+   "raw": "Reconciliation (Penance or Confession): 3:30-4:15 pm, Holy Rosary Church, 2011 N Oakland Ave",
+   "source_url": "https://www.oldsaintmary.org/sacraments/",
+   "fetched_at": "2026-11-02T04:41:39+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "08:30-09:15",
+   "language": null,
+   "raw": "Reconciliation (Penance or Confession): 8:30-9:15 am, Ss. Peter & Paul Church, 2490 N Cramer St",
+   "source_url": "https://www.oldsaintmary.org/sacraments/",
+   "fetched_at": "2026-11-02T04:41:39+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "09:15-09:45",
+   "language": null,
+   "raw": "Reconciliation (Penance or Confession): 9:15-9:45 am, St. Casimir Church, 2600 N Bremen St",
+   "source_url": "https://www.oldsaintmary.org/sacraments/",
+   "fetched_at": "2026-11-02T04:41:39+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "First Friday of the month",
+   "time": "07:00",
+   "language": null,
+   "raw": "Confession: First Friday after 7:00 am Mass at Old St. Mary",
+   "source_url": "https://www.oldsaintmary.org/mass-times/",
+   "fetched_at": "2026-11-02T04:41:41+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "Confession: First Friday after 7:00 am Mass at Old St. Mary",
+   "topup": true
   }
  ],
  "source_url": "https://www.oldsaintmary.org/",
@@ -512,5 +590,20 @@
  "social_shared_links_removed": [
   "https://www.facebook.com/stfrancismilwaukee",
   "https://www.youtube.com/channel/UCrw_JySXFU94eYPgE_ILokQ"
- ]
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:43+00:00",
+  "requests": 3,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 5,
+  "mode": "merge"
+ }
 }

@@ -72,6 +72,12 @@
    "url": "https://stroseoflimacatholic.net/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stroseoflimacatholic.net/adoration-of-the-blessed-sacrament/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -232,6 +238,38 @@
    "fetched_at": "2026-11-01T07:19:43+00:00",
    "needs_review": false,
    "review_reason": "schedule_box"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "09:00",
+   "language": null,
+   "raw": "We invite you to join us for Eucharistic Adoration at the fo: ● Wednesdays: After the 9:00 AM Mass until 12:00 PM",
+   "source_url": "https://stroseoflimacatholic.net/adoration-of-the-blessed-sacrament/",
+   "fetched_at": "2026-11-02T04:42:13+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "We invite you to join us for Eucharistic Adoration at the fo: ● Wednesdays: After the 9:00 AM Mass until 12:00 PM",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "09:00",
+   "language": null,
+   "raw": "We invite you to join us for Eucharistic Adoration at the fo: ● Fridays: After the 9:00 AM Mass until 7:00 PM, before the Spanish Mass",
+   "source_url": "https://stroseoflimacatholic.net/adoration-of-the-blessed-sacrament/",
+   "fetched_at": "2026-11-02T04:42:13+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "We invite you to join us for Eucharistic Adoration at the fo: ● Fridays: After the 9:00 AM Mass until 7:00 PM, before th",
+   "topup": true
   }
  ],
  "source_url": "https://stroseoflimacatholic.net/",
@@ -272,6 +310,25 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:13+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "church@stroseut.org",
   "phone": "(801) 544-4269",
@@ -284,8 +341,5 @@
   },
   "fetched_at": "2026-11-01T07:19:50+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

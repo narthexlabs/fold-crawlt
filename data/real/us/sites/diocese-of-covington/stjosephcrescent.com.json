@@ -447,6 +447,22 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wix"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Scheduled Confessions: Saturday mornings after 9:00 am Mass",
+   "source_url": "https://www.stjosephcrescent.com/reconciliation",
+   "fetched_at": "2026-11-02T04:48:03+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wix",
+   "relative": "after",
+   "note": "Scheduled Confessions: Saturday mornings after 9:00 am Mass",
+   "topup": true
   }
  ],
  "source_url": "http://www.stjosephcrescent.com/",
@@ -486,6 +502,23 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:48:03+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(859) 341-6609",
@@ -497,8 +530,5 @@
   },
   "fetched_at": "2026-11-01T04:00:08+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

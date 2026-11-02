@@ -346,9 +346,9 @@
    "day": "Saturday",
    "time": "17:00",
    "language": null,
-   "raw": "Weekend Masses: ENGLISH: Saturday at 5:00pm & Sunday at 7:15am, 10:00am",
-   "source_url": "https://www.stov.org/worship.html",
-   "fetched_at": "2026-11-01T07:28:01+00:00",
+   "raw": "WEEKEND MASS TIMES: ENGLISH: Saturday 5:00pm & Sunday 7:15am, 10:00am",
+   "source_url": "https://www.stov.org/",
+   "fetched_at": "2026-11-01T07:27:58+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -359,9 +359,9 @@
    "day": "Sunday",
    "time": "07:15",
    "language": null,
-   "raw": "Weekend Masses: ENGLISH: Saturday at 5:00pm & Sunday at 7:15am, 10:00am",
-   "source_url": "https://www.stov.org/worship.html",
-   "fetched_at": "2026-11-01T07:28:01+00:00",
+   "raw": "WEEKEND MASS TIMES: ENGLISH: Saturday 5:00pm & Sunday 7:15am, 10:00am",
+   "source_url": "https://www.stov.org/",
+   "fetched_at": "2026-11-01T07:27:58+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -372,9 +372,9 @@
    "day": "Sunday",
    "time": "10:00",
    "language": null,
-   "raw": "Weekend Masses: ENGLISH: Saturday at 5:00pm & Sunday at 7:15am, 10:00am",
-   "source_url": "https://www.stov.org/worship.html",
-   "fetched_at": "2026-11-01T07:28:01+00:00",
+   "raw": "WEEKEND MASS TIMES: ENGLISH: Saturday 5:00pm & Sunday 7:15am, 10:00am",
+   "source_url": "https://www.stov.org/",
+   "fetched_at": "2026-11-01T07:27:58+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -385,9 +385,9 @@
    "day": "Sunday",
    "time": "08:30",
    "language": null,
-   "raw": "Weekend Masses: POLISH: Sunday at 8:30am & 11:30am",
-   "source_url": "https://www.stov.org/worship.html",
-   "fetched_at": "2026-11-01T07:28:01+00:00",
+   "raw": "WEEKEND MASS TIMES: POLISH: Sunday 8:30am & 11:30am",
+   "source_url": "https://www.stov.org/",
+   "fetched_at": "2026-11-01T07:27:58+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -398,9 +398,9 @@
    "day": "Sunday",
    "time": "11:30",
    "language": null,
-   "raw": "Weekend Masses: POLISH: Sunday at 8:30am & 11:30am",
-   "source_url": "https://www.stov.org/worship.html",
-   "fetched_at": "2026-11-01T07:28:01+00:00",
+   "raw": "WEEKEND MASS TIMES: POLISH: Sunday 8:30am & 11:30am",
+   "source_url": "https://www.stov.org/",
+   "fetched_at": "2026-11-01T07:27:58+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -515,6 +515,22 @@
   },
   {
    "kind": "confession",
+   "day": "Saturday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Sacrament of Reconciliation: Saturdays after 8:00am Mass or by appointment",
+   "source_url": "https://www.stov.org/worship.html",
+   "fetched_at": "2026-11-01T07:28:01+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "weebly",
+   "relative": "after",
+   "note": "Sacrament of Reconciliation: Saturdays after 8:00am Mass or by appointment",
+   "relative_resolved": true
+  },
+  {
+   "kind": "confession",
    "day": "First Friday of the month",
    "time": "17:30",
    "language": null,
@@ -525,6 +541,22 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "weebly"
+  },
+  {
+   "kind": "adoration",
+   "day": "First Friday of the month",
+   "time": "08:00",
+   "language": null,
+   "raw": "1st Friday Adoration starts after 8:00am Mass until 6:00pm",
+   "source_url": "https://www.stov.org/worship.html",
+   "fetched_at": "2026-11-01T07:28:01+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "weebly",
+   "relative": "after",
+   "note": "1st Friday Adoration starts after 8:00am Mass until 6:00pm",
+   "relative_resolved": false
   },
   {
    "kind": "mass",
@@ -542,9 +574,19 @@
  ],
  "source_url": "https://www.stov.org/",
  "fetched_at": "2026-11-01T07:28:17+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:39+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "weebly",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -558,11 +600,21 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 13
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Saturdays after 8:00am Mass or by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://www.stov.org/worship.html",
+   "fetched_at": "2026-11-01T07:28:01+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "relative_time": 3,
+  "relative_time": 1,
   "not_a_service": 5,
   "dated_line": 2,
   "not_a_mass": 6
@@ -572,8 +624,8 @@
   "unmatched": 3
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

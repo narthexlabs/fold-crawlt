@@ -72,6 +72,12 @@
    "url": "https://sainthelena-centersquare.net/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://sainthelena-centersquare.net/adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -411,6 +417,20 @@
    "template": "wordpress"
   },
   {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "19:00",
+   "language": null,
+   "raw": "Vigil: 7:00 PM in Saint Helena Church",
+   "source_url": "https://sainthelena-centersquare.net/mass-schedule-2/",
+   "fetched_at": "2026-11-01T20:25:26+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "kind_parsed": "mass"
+  },
+  {
    "kind": "confession",
    "day": "Saturday",
    "time": "15:00",
@@ -422,13 +442,131 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "Monday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Eucharistic adoration: Monday – Friday: Following 9:00 AM Mass until 7:30 PM in St. Theresa Chapel",
+   "source_url": "https://sainthelena-centersquare.net/mass-schedule-2/",
+   "fetched_at": "2026-11-01T20:25:26+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "Eucharistic adoration: Monday – Friday: Following 9:00 AM Mass until 7:30 PM in St. Theresa Chapel",
+   "day_expanded_from": "Monday – Friday",
+   "relative_resolved": false
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Eucharistic adoration: Monday – Friday: Following 9:00 AM Mass until 7:30 PM in St. Theresa Chapel",
+   "source_url": "https://sainthelena-centersquare.net/mass-schedule-2/",
+   "fetched_at": "2026-11-01T20:25:26+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "Eucharistic adoration: Monday – Friday: Following 9:00 AM Mass until 7:30 PM in St. Theresa Chapel",
+   "day_expanded_from": "Monday – Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "relative_resolved": false
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Eucharistic adoration: Monday – Friday: Following 9:00 AM Mass until 7:30 PM in St. Theresa Chapel",
+   "source_url": "https://sainthelena-centersquare.net/mass-schedule-2/",
+   "fetched_at": "2026-11-01T20:25:26+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "Eucharistic adoration: Monday – Friday: Following 9:00 AM Mass until 7:30 PM in St. Theresa Chapel",
+   "day_expanded_from": "Monday – Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "relative_resolved": false
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Eucharistic adoration: Monday – Friday: Following 9:00 AM Mass until 7:30 PM in St. Theresa Chapel",
+   "source_url": "https://sainthelena-centersquare.net/mass-schedule-2/",
+   "fetched_at": "2026-11-01T20:25:26+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "Eucharistic adoration: Monday – Friday: Following 9:00 AM Mass until 7:30 PM in St. Theresa Chapel",
+   "day_expanded_from": "Monday – Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "relative_resolved": false
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Eucharistic adoration: Monday – Friday: Following 9:00 AM Mass until 7:30 PM in St. Theresa Chapel",
+   "source_url": "https://sainthelena-centersquare.net/mass-schedule-2/",
+   "fetched_at": "2026-11-01T20:25:26+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "Eucharistic adoration: Monday – Friday: Following 9:00 AM Mass until 7:30 PM in St. Theresa Chapel",
+   "day_expanded_from": "Monday – Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "relative_resolved": false
+  },
+  {
+   "kind": "devotion",
+   "day": "Wednesday",
+   "time": "23:30",
+   "language": null,
+   "raw": "Wednesday: 11:30 PM in the Grotto",
+   "source_url": "https://sainthelena-centersquare.net/mass-schedule-2/",
+   "fetched_at": "2026-11-01T20:25:26+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
   }
  ],
  "source_url": "https://sainthelena-centersquare.net/",
  "fetched_at": "2026-11-01T20:25:48+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:07+00:00",
+  "requests": 1,
+  "found": [
+   "adoration"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -442,13 +580,23 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 39
+  "trusted_kinds": [],
+  "generic_rows": 44
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Confessions are scheduled every Saturday, @ 3PM., in the Church. Or, by appointment: Call the Parish Office",
+   "phrase": "by appointment",
+   "source_url": "https://sainthelena-centersquare.net/confession-2/",
+   "fetched_at": "2026-11-01T20:25:27+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "other_location": 12,
   "relative_time": 2,
-  "not_a_service": 4,
+  "no_kind": 2,
   "no_day": 1,
   "range_not_a_mass": 1
  },

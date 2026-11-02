@@ -255,7 +255,7 @@
    "fetched_at": "2026-11-01T22:15:35+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "medium",
+   "confidence": "high",
    "template": "generic_strict"
   },
   {
@@ -385,39 +385,23 @@
    "review_reason": null,
    "confidence": "high",
    "template": "generic_strict"
-  },
-  {
-   "kind": "adoration",
-   "day": "Wednesday",
-   "time": "13:00-20:00",
-   "language": null,
-   "raw": "1-8pm Adoration in the Small Chapel",
-   "source_url": "https://www.fit.edu/spiritual-life/catholic-campus-ministry/",
-   "fetched_at": "2026-11-01T22:15:34+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
-  {
-   "kind": "adoration",
-   "day": "Thursday",
-   "time": "19:00",
-   "language": null,
-   "raw": "7:00PM Holy Hour",
-   "source_url": "https://www.fit.edu/spiritual-life/catholic-campus-ministry/",
-   "fetched_at": "2026-11-01T22:15:34+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
   }
  ],
  "source_url": "https://www.fit.edu/spiritual-life/catholic-campus-ministry/",
  "fetched_at": "2026-11-01T22:15:43+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:38+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -431,23 +415,27 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 20
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Reconciliation available by appointment. Call the church office",
+   "phrase": "by appointment",
+   "source_url": "https://www.fit.edu/spiritual-life/catholic-campus-ministry/",
+   "fetched_at": "2026-11-01T22:15:34+00:00"
+  }
+ ],
  "has_sunday": true,
- "schedule_dropped": {
-  "dated_line": 1,
-  "no_day": 1,
-  "not_a_service": 1,
-  "no_kind": 3
- },
  "groups_dropped": {
   "noise": 1,
   "sacrament_prep": 1,
   "label_not_group": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

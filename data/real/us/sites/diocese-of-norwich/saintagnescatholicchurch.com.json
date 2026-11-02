@@ -4,6 +4,8 @@
  "matched_church_ids": [
   "diocese-of-norwich:Saint Agnes Church",
   "diocese-of-norwich:Saint Francis Chapel",
+  "gc-22270",
+  "gc-22271",
   "osm-way-1049761432"
  ],
  "matched": {
@@ -12,12 +14,16 @@
    "diocese-of-norwich:Saint Francis Chapel"
   ],
   "discovermass": [
+   "gc-22270",
+   "gc-22271",
    "osm-way-1049761432"
   ]
  },
  "names": [
   "Saint Agnes Church",
   "Saint Francis Chapel",
+  "St. Agnes",
+  "St. Francis",
   "Saint Agnes Catholic Church"
  ],
  "cities": [
@@ -33,6 +39,24 @@
   {
    "category": "home",
    "url": "https://www.saintagnescatholicchurch.com/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.saintagnescatholicchurch.com/?page_id=2374",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.saintagnescatholicchurch.com/?page_id=2511",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://www.saintagnescatholicchurch.com/?page_id=3669",
    "status": 200,
    "class": "ok"
   }
@@ -208,6 +232,19 @@
   {
    "kind": "mass",
    "day": "Saturday",
+   "time": "15:00",
+   "language": null,
+   "raw": "Agnes, confession is heard one hour before the Saturday Vigil Mass starting at 3:00 p.m or by appointment.",
+   "source_url": "https://www.saintagnescatholicchurch.com/?page_id=2374",
+   "fetched_at": "2026-11-02T04:41:59+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
    "time": "16:00",
    "language": null,
    "raw": "Saturday Vigil (Church): 4:00 PM",
@@ -309,24 +346,48 @@
  ],
  "source_url": "https://www.saintagnescatholicchurch.com/",
  "fetched_at": "2026-11-01T17:27:36+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:04+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
-    "has_sunday": false,
+    "has_sunday": true,
     "hours_ok": true,
     "counts_ok": true,
     "sunday_not_copied": true,
     "no_daily_on_sunday": true,
-    "mostly_high": false
+    "mostly_high": true
    },
-   "score": "low"
+   "score": "high"
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 9
+  "trusted_kinds": [],
+  "generic_rows": 10
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Other times by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://www.saintagnescatholicchurch.com/",
+   "fetched_at": "2026-11-01T17:27:33+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "box_rows_added": 9
@@ -337,8 +398,8 @@
   "unmatched": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

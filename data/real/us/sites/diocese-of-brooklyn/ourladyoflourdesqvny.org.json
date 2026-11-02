@@ -63,6 +63,12 @@
    "url": "http://www.ourladyoflourdesqvny.org/contact-us/",
    "status": null,
    "class": "dns"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.ourladyoflourdesqvny.org/sacrament-schedule/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -87,7 +93,52 @@
   "text": "",
   "source_url": "https://www.ourladyoflourdesqvny.org/"
  },
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:30-16:30",
+   "language": null,
+   "raw": "SACRAMENT OF RECONCILIATION (CONFESSION): 3:30 to 4:30 PM – Saturday",
+   "source_url": "https://www.ourladyoflourdesqvny.org/sacrament-schedule/",
+   "fetched_at": "2026-11-02T04:41:34+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Tuesday",
+   "time": "08:30-08:55",
+   "language": null,
+   "raw": "SACRAMENT OF RECONCILIATION (CONFESSION): 8:30 to 8:55 AM – Tuesday and Thursday",
+   "source_url": "https://www.ourladyoflourdesqvny.org/sacrament-schedule/",
+   "fetched_at": "2026-11-02T04:41:34+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Tuesday and Thursday",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Thursday",
+   "time": "08:30-08:55",
+   "language": null,
+   "raw": "SACRAMENT OF RECONCILIATION (CONFESSION): 8:30 to 8:55 AM – Tuesday and Thursday",
+   "source_url": "https://www.ourladyoflourdesqvny.org/sacrament-schedule/",
+   "fetched_at": "2026-11-02T04:41:34+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Tuesday and Thursday",
+   "topup": true
+  }
+ ],
  "source_url": "http://www.ourladyoflourdesqvny.org/",
  "fetched_at": "2026-11-01T01:59:06+00:00",
  "schedule_template": {
@@ -121,5 +172,19 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:35+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ],
+  "rows_added": 3,
+  "mode": "merge"
  }
 }

@@ -547,24 +547,74 @@
    "day_expanded_from": "Daily"
   },
   {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "08:30-09:00",
+   "kind": "other",
+   "day": "Holy days",
+   "time": "08:00",
    "language": null,
-   "raw": "The Sacrament of Reconciliation is scheduled weekly on Saturday mornings from 8:30 - 9:00 am.",
-   "source_url": "https://www.saintjohnvianneyhawaii.org/reconciliation.html",
-   "fetched_at": "2026-11-01T17:28:04+00:00",
+   "raw": "Every first Saturday of the month during daily Mass at 8 a.m. and by appointment by calling the Parish Office.",
+   "source_url": "https://www.saintjohnvianneyhawaii.org/worship-schedule.html",
+   "fetched_at": "2026-11-01T17:28:03+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "high",
+   "template": "weebly",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "adoration",
+   "day": "First Saturday of the month",
+   "time": "08:30",
+   "language": null,
+   "raw": "Adoration of the Blessed Sacrament: Every first Saturday of the month at 8:30 a.m. following daily Mass at 8 a.m.",
+   "source_url": "https://www.saintjohnvianneyhawaii.org/worship-schedule.html",
+   "fetched_at": "2026-11-01T17:28:03+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly"
+  },
+  {
+   "kind": "adoration",
+   "day": "Third Wednesday of the month",
+   "time": "19:00",
+   "language": null,
+   "raw": "Adoration of the Blessed Sacrament: Every third Wednesday of the month at 7 p.m.",
+   "source_url": "https://www.saintjohnvianneyhawaii.org/worship-schedule.html",
+   "fetched_at": "2026-11-01T17:28:03+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "08:30-09:30",
+   "language": null,
+   "raw": "Saturday 8:30 - 9:30 a.m. in the Church's Confessional Room and by appointment by calling the Parish Office.",
+   "source_url": "https://www.saintjohnvianneyhawaii.org/worship-schedule.html",
+   "fetched_at": "2026-11-01T17:28:03+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
    "template": "weebly"
   }
  ],
  "source_url": "https://www.saintjohnvianneyhawaii.org/",
  "fetched_at": "2026-11-01T17:28:10+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:46+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "weebly",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -572,18 +622,28 @@
     "counts_ok": true,
     "sunday_not_copied": true,
     "no_daily_on_sunday": true,
-    "mostly_high": true
+    "mostly_high": false
    },
-   "score": "high"
+   "score": "medium"
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 8
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Saturday 8:30 - 9:30 a.m. in the Church's Confessional Room and by appointment by calling the Parish Office.",
+   "phrase": "by appointment",
+   "source_url": "https://www.saintjohnvianneyhawaii.org/worship-schedule.html",
+   "fetched_at": "2026-11-01T17:28:03+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "not_a_service": 2,
-  "other_location": 6
+  "prose": 5
  },
  "groups_dropped": {
   "noise": 6,
@@ -593,8 +653,8 @@
   "fragment": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

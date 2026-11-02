@@ -85,6 +85,18 @@
    "url": "https://stpatrickkennettsquare.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stpatrickkennettsquare.org/reconciliation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stpatrickkennettsquare.org/adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -201,7 +213,7 @@
    "feed_key": "5f41625cde62",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-02T00:09:59+00:00",
+    "fetched_at": "2026-11-02T05:00:21+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -231,13 +243,26 @@
   ]
  },
  "bulletin": {
-  "url": "https://stpats.flocknote.com/",
+  "url": "http://www.usccb.org/prayer-and-worship/sacraments-and-sacramentals/penance/upload/Bulletin-Insert-Penance-ENG.pdf",
   "date": null,
-  "kind": "page",
-  "text": "",
-  "source_url": "https://stpatrickkennettsquare.org/"
+  "kind": "pdf",
+  "text": "here",
+  "source_url": "https://stpatrickkennettsquare.org/reconciliation/"
  },
  "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": null,
+   "raw": "View our Sunday Mass from St. Patrick Church to your home.: Join us Sunday at 9:00 AM.",
+   "source_url": "https://stpatrickkennettsquare.org/",
+   "fetched_at": "2026-11-01T20:25:38+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
   {
    "kind": "mass",
    "day": "Saturday (summer)",
@@ -387,6 +412,84 @@
    "kind_parsed": "mass"
   },
   {
+   "kind": "confession",
+   "day": "Wednesday",
+   "time": "18:00-18:45",
+   "language": null,
+   "raw": "CONFESSION SCHEDULE:: Wednesdays from 6:00 PM – 6:45 PM",
+   "source_url": "https://stpatrickkennettsquare.org/reconciliation/",
+   "fetched_at": "2026-11-02T04:43:10+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:30-16:30",
+   "language": null,
+   "raw": "CONFESSION SCHEDULE:: Saturdays from 3:30 PM – 4:30 PM",
+   "source_url": "https://stpatrickkennettsquare.org/reconciliation/",
+   "fetched_at": "2026-11-02T04:43:10+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "Monday",
+   "time": "08:00-19:00",
+   "language": null,
+   "raw": "Adoration of the Blessed Sacrament is offered:: Monday from 8:00 AM – 7:00 PM",
+   "source_url": "https://stpatrickkennettsquare.org/adoration/",
+   "fetched_at": "2026-11-02T04:43:13+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "devotion",
+   "day": "Monday",
+   "time": "19:00",
+   "language": null,
+   "raw": "(Rosary begins at 7:00 PM followed by Benediction)",
+   "source_url": "https://stpatrickkennettsquare.org/adoration/",
+   "fetched_at": "2026-11-02T04:43:13+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "First Friday of the month",
+   "time": "19:00-20:00",
+   "language": null,
+   "raw": "Adoration of the Blessed Sacrament is offered:: from 7:00 PM – 8:00 PM.",
+   "source_url": "https://stpatrickkennettsquare.org/adoration/",
+   "fetched_at": "2026-11-02T04:43:13+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "devotion",
+   "day": "First Friday of the month",
+   "time": "19:00",
+   "language": null,
+   "raw": "Rosary begins at 7:00 PM followed by Benediction.",
+   "source_url": "https://stpatrickkennettsquare.org/adoration/",
+   "fetched_at": "2026-11-02T04:43:13+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
    "kind": "mass",
    "day": "Monday",
    "time": "07:30",
@@ -477,17 +580,6 @@
   {
    "kind": "mass",
    "day": "Sunday",
-   "time": "09:00",
-   "language": null,
-   "raw": "9:00 AM Sunday (Livestream available)",
-   "source_url": "https://stpatrickkennettsquare.org/",
-   "fetched_at": "2026-11-01T20:25:38+00:00",
-   "needs_review": false,
-   "review_reason": "schedule_box"
-  },
-  {
-   "kind": "mass",
-   "day": "Sunday",
    "time": "11:00",
    "language": null,
    "raw": "11:00 AM Sunday",
@@ -564,9 +656,22 @@
  ],
  "source_url": "https://stpatrickkennettsquare.org/",
  "fetched_at": "2026-11-01T20:25:57+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:14+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -580,14 +685,31 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 10
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "By appointment",
+   "phrase": "By appointment",
+   "source_url": "https://stpatrickkennettsquare.org/reconciliation/",
+   "fetched_at": "2026-11-02T04:43:10+00:00"
+  },
+  {
+   "kind": "adoration",
+   "text": "Evenings & Weekends by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://stpatrickkennettsquare.org/adoration/",
+   "fetched_at": "2026-11-02T04:43:13+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "not_a_service": 1,
   "other_location": 1,
   "prose": 2,
-  "box_rows_added": 15
+  "box_rows_added": 14
  },
  "groups_dropped": {
   "label_not_group": 3,

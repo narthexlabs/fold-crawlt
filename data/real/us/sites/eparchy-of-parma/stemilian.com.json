@@ -85,19 +85,6 @@
  },
  "schedule_rows": [
   {
-   "kind": "confession",
-   "day": "First Saturday of the month",
-   "time": "15:00",
-   "language": null,
-   "raw": "The Mystery of Reconciliation (Confession) is available on the first Saturday of the month at 3:00 PM or upon request.",
-   "source_url": "https://stemilian.com/WorshipAndOutreach",
-   "fetched_at": "2026-11-01T22:15:34+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "generic_strict"
-  },
-  {
    "kind": "mass",
    "day": "Monday",
    "time": "18:00",
@@ -161,13 +148,134 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "18:00",
+   "language": null,
+   "raw": "Divine Liturgy at 6:00pm",
+   "source_url": "https://stemilian.com/",
+   "fetched_at": "2026-11-01T22:15:32+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "devotion",
+   "day": "Monday",
+   "time": "06:51",
+   "language": null,
+   "raw": "John 6:51",
+   "source_url": "https://stemilian.com/WorshipAndOutreach",
+   "fetched_at": "2026-11-01T22:15:34+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "generic_strict",
+   "day_expanded_from": "daily"
+  },
+  {
+   "kind": "devotion",
+   "day": "Tuesday",
+   "time": "06:51",
+   "language": null,
+   "raw": "John 6:51",
+   "source_url": "https://stemilian.com/WorshipAndOutreach",
+   "fetched_at": "2026-11-01T22:15:34+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "generic_strict",
+   "day_expanded_from": "daily"
+  },
+  {
+   "kind": "devotion",
+   "day": "Wednesday",
+   "time": "06:51",
+   "language": null,
+   "raw": "John 6:51",
+   "source_url": "https://stemilian.com/WorshipAndOutreach",
+   "fetched_at": "2026-11-01T22:15:34+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "generic_strict",
+   "day_expanded_from": "daily"
+  },
+  {
+   "kind": "devotion",
+   "day": "Thursday",
+   "time": "06:51",
+   "language": null,
+   "raw": "John 6:51",
+   "source_url": "https://stemilian.com/WorshipAndOutreach",
+   "fetched_at": "2026-11-01T22:15:34+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "generic_strict",
+   "day_expanded_from": "daily"
+  },
+  {
+   "kind": "devotion",
+   "day": "Friday",
+   "time": "06:51",
+   "language": null,
+   "raw": "John 6:51",
+   "source_url": "https://stemilian.com/WorshipAndOutreach",
+   "fetched_at": "2026-11-01T22:15:34+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "generic_strict",
+   "day_expanded_from": "daily"
+  },
+  {
+   "kind": "devotion",
+   "day": "Saturday",
+   "time": "06:51",
+   "language": null,
+   "raw": "John 6:51",
+   "source_url": "https://stemilian.com/WorshipAndOutreach",
+   "fetched_at": "2026-11-01T22:15:34+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "generic_strict",
+   "day_expanded_from": "daily"
+  },
+  {
+   "kind": "confession",
+   "day": "First Saturday of the month",
+   "time": "15:00",
+   "language": null,
+   "raw": "The Mystery of Reconciliation (Confession) is available on the first Saturday of the month at 3:00 PM or upon request.",
+   "source_url": "https://stemilian.com/WorshipAndOutreach",
+   "fetched_at": "2026-11-01T22:15:34+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict"
   }
  ],
  "source_url": "https://stemilian.com/",
  "fetched_at": "2026-11-01T22:15:37+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:52:47+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -181,19 +289,29 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 6
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "The Mystery of Reconciliation (Confession) is available on the first Saturday of the month at 3:00 PM or upon request.",
+   "phrase": "upon request",
+   "source_url": "https://stemilian.com/WorshipAndOutreach",
+   "fetched_at": "2026-11-01T22:15:34+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 4,
+  "other_location": 2,
   "not_a_service": 1
  },
  "groups_dropped": {
   "unmatched": 5
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

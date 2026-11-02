@@ -45,6 +45,12 @@
    "url": "https://stroccounioncity.org/societies/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stroccounioncity.org/sacraments/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -170,6 +176,20 @@
    "confidence": "high",
    "template": "wordpress",
    "day_expanded_from": "Monday through Friday"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "15:30",
+   "language": null,
+   "raw": "Monday through Friday after 9:00 am Mass, Saturday from 3:30pm to 4:00pm or by appointment",
+   "source_url": "https://stroccounioncity.org/sacraments/",
+   "fetched_at": "2026-11-02T04:47:49+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "https://stroccounioncity.org/",
@@ -208,5 +228,29 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Monday through Friday after 9:00 am Mass, Saturday from 3:30pm to 4:00pm or by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://stroccounioncity.org/sacraments/",
+   "fetched_at": "2026-11-02T04:47:49+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:47:51+00:00",
+  "requests": 3,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

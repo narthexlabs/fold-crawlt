@@ -81,6 +81,12 @@
    "url": "https://www.annolp.org/connect-with-us.html",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.annolp.org/sacraments.html",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -267,7 +273,7 @@
    "feed_key": "31ecddecbddc",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:31:33+00:00",
+    "fetched_at": "2026-11-02T05:07:00+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -284,7 +290,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:31:34+00:00",
+    "fetched_at": "2026-11-02T05:07:02+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -301,7 +307,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:31:35+00:00",
+    "fetched_at": "2026-11-02T05:07:03+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -343,6 +349,64 @@
   "source_url": "https://www.annolp.org/mass.html"
  },
  "schedule_rows": [
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "16:00-16:30",
+   "language": null,
+   "raw": "Confessional Times: 4:00 pm - 4:30 pm (Saturday)",
+   "source_url": "https://www.annolp.org/",
+   "fetched_at": "2026-11-01T17:26:58+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:30-16:00",
+   "language": null,
+   "raw": "Confessional Times: 3:30 pm - 4:00 pm (Saturday)",
+   "source_url": "https://www.annolp.org/",
+   "fetched_at": "2026-11-01T17:26:58+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Eucharistic Adoration is every Tuesday following 8 am Mass until 4 pm.",
+   "source_url": "https://www.annolp.org/eucharistic-adoration.html",
+   "fetched_at": "2026-11-01T17:27:00+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "after",
+   "note": "Eucharistic Adoration is every Tuesday following 8 am Mass until 4 pm.",
+   "relative_resolved": false
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "07:30",
+   "language": null,
+   "raw": "Eucharistic Adoration is the 4h Tuesday of every month following 7:30am Mass until 2:30pm.",
+   "source_url": "https://www.annolp.org/eucharistic-adoration.html",
+   "fetched_at": "2026-11-01T17:27:00+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "after",
+   "note": "Eucharistic Adoration is the 4h Tuesday of every month following 7:30am Mass until 2:30pm.",
+   "relative_resolved": true
+  },
   {
    "kind": "adoration",
    "day": "Monday",
@@ -431,19 +495,6 @@
    "time": "10:00",
    "language": null,
    "raw": "Eucharistic Adoration: 10:00 am",
-   "source_url": "https://www.annolp.org/eucharistic-adoration.html",
-   "fetched_at": "2026-11-01T17:27:00+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
-  {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "16:00-16:30",
-   "language": null,
-   "raw": "Confessional Times: 4:00 pm - 4:30 pm (Saturday)",
    "source_url": "https://www.annolp.org/eucharistic-adoration.html",
    "fetched_at": "2026-11-01T17:27:00+00:00",
    "needs_review": false,
@@ -566,19 +617,6 @@
    "template": "generic_strict"
   },
   {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "15:30-16:00",
-   "language": null,
-   "raw": "Confessional Times: 3:30 pm - 4:00 pm (Saturday)",
-   "source_url": "https://www.annolp.org/eucharistic-adoration.html",
-   "fetched_at": "2026-11-01T17:27:00+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
-  {
    "kind": "mass",
    "day": "Monday",
    "time": "08:30",
@@ -672,14 +710,40 @@
    "review_reason": null,
    "confidence": "low",
    "template": "generic_strict"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "08:30",
+   "language": null,
+   "raw": "Annunciation Civil Holiday Mass: 8:30 am (Subject to change)",
+   "source_url": "https://www.annolp.org/sacraments.html",
+   "fetched_at": "2026-11-02T04:41:33+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "kind_parsed": "mass"
   }
  ],
  "source_url": "https://www.olpstl.org/",
  "fetched_at": "2026-11-01T17:27:17+00:00",
  "redirected_off_host": "annolp.org",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:33+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -693,17 +757,28 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
-  "generic_rows": 20
+  "trusted_kinds": [],
+  "generic_rows": 23
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Note: Special hearing devices for the hearing impaired are available from an usher upon request.",
+   "phrase": "upon request",
+   "source_url": "https://www.annolp.org/sacraments.html",
+   "fetched_at": "2026-11-02T04:41:33+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "relative_time": 4,
-  "no_day": 6
+  "relative_time": 2,
+  "no_day": 6,
+  "other_location": 2
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

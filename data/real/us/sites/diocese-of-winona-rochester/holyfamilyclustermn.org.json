@@ -87,6 +87,12 @@
    "url": "https://hfcp.church/events",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://hfcp.church/sacraments",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -147,7 +153,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:37:09+00:00",
+    "fetched_at": "2026-11-02T04:55:07+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -164,7 +170,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": 404,
-    "fetched_at": "2026-11-01T23:37:10+00:00",
+    "fetched_at": "2026-11-02T04:55:08+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -181,7 +187,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:37:11+00:00",
+    "fetched_at": "2026-11-02T04:55:09+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -198,7 +204,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:37:12+00:00",
+    "fetched_at": "2026-11-02T04:55:11+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -224,47 +230,74 @@
    "day": "Sunday",
    "time": "08:00",
    "language": null,
-   "raw": "St. Mary at 8 AM Sunday on",
+   "raw": "Mass is livestreamed from: St. Mary at 8 AM Sunday on",
    "source_url": "https://hfcp.church/",
    "fetched_at": "2026-11-01T20:25:04+00:00",
-   "needs_review": true,
-   "review_reason": "weekend_rescue"
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "09:00",
+   "language": null,
+   "raw": "[St. Columban] PRIVATE MASS - FATHER’S DAY OFF: 9 AM AT ST. COLUMBAN—PRESTON",
+   "source_url": "https://hfcp.church/mass",
+   "fetched_at": "2026-11-01T20:25:07+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace",
+   "location": "St. Columban"
   }
  ],
  "source_url": "https://www.holyfamilyclustermn.org/",
  "fetched_at": "2026-11-01T20:25:19+00:00",
  "redirected_off_host": "hfcp.church",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:57+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "squarespace",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
-    "has_sunday": false,
+    "has_sunday": true,
     "hours_ok": true,
     "counts_ok": true,
     "sunday_not_copied": true,
     "no_daily_on_sunday": true,
     "mostly_high": false
    },
-   "score": "low"
+   "score": "medium"
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 12
  },
  "has_sunday": true,
  "schedule_dropped": {
   "no_kind": 1,
   "dated_block": 1,
-  "other_location": 4,
-  "no_day": 1,
-  "prose": 2,
-  "weekend_rescue_added": 1
+  "no_day": 3,
+  "prose": 3
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

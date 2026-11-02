@@ -81,6 +81,18 @@
    "url": "https://www.holyfamilystow.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.holyfamilystow.org/sacraments",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://www.holyfamilystow.org/liturgical-formation",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -463,5 +475,29 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "The Sacrament of Reconciliation is available on Wednesdays and Saturdays or anytime by appointment. Though we strive to live as faithful disciples, we all fall short and God’s mercy is always ready to",
+   "phrase": "by appointment",
+   "source_url": "https://www.holyfamilystow.org/sacraments",
+   "fetched_at": "2026-11-02T04:52:34+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:52:36+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
  }
 }

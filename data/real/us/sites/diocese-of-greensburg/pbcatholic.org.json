@@ -69,6 +69,18 @@
    "url": "https://www.pbcatholic.org/about/contact-us/",
    "status": null,
    "class": "timeout"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.pbcatholic.org/sacraments/reconciliation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.pbcatholic.org/adoration/",
+   "status": null,
+   "class": "timeout"
   }
  ],
  "cms_guess": {
@@ -311,12 +323,38 @@
   "text": "Read Our Weekly Bulletin",
   "source_url": "https://www.pbcatholic.org/"
  },
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:00",
+   "language": null,
+   "raw": "Reconciliation Times: St. Bruno Parish Saturdays: 3:00 p.m.",
+   "source_url": "https://www.pbcatholic.org/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:43:20+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  }
+ ],
  "source_url": "https://www.pbcatholic.org/",
  "fetched_at": "2026-11-01T20:26:56+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:49+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -330,25 +368,14 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 0
+  "trusted_kinds": [],
+  "generic_rows": 1
  },
  "has_sunday": false,
+ "schedule_partial": true,
  "schedule_dropped": {
   "skipped_section": 2
  },
- "schedule_images": [
-  {
-   "url": "https://www.pbcatholic.org/wp-content/uploads/2026/02/St-Bruno-Mass-Times-etc-Feb-2026.png",
-   "alt": "",
-   "page": "https://www.pbcatholic.org/"
-  },
-  {
-   "url": "https://www.pbcatholic.org/wp-content/uploads/2026/02/St.-Paul-Mass-Times-Feb-2026.png",
-   "alt": "",
-   "page": "https://www.pbcatholic.org/"
-  }
- ],
- "schedule_note": "schedule appears to be an image; times not read (needs_review)",
  "groups_dropped": {
   "noise": 1
  },

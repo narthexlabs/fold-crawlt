@@ -69,6 +69,12 @@
    "url": "https://saintjosephpalisades.com/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://saintjosephpalisades.com/immaculate-heart-of-mary-chapel/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -530,6 +536,20 @@
    "review_reason": null,
    "confidence": "low",
    "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": "English",
+   "raw": "Mass Schedule: 10:00 am English",
+   "source_url": "https://saintjosephpalisades.com/immaculate-heart-of-mary-chapel/",
+   "fetched_at": "2026-11-02T04:47:55+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "https://saintjosephpalisades.com/",
@@ -572,5 +592,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:47:55+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

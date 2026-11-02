@@ -63,6 +63,12 @@
    "url": "https://spcgueydan.org/contact-us-3/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://spcgueydan.org/adoration-2/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -250,9 +256,21 @@
  ],
  "source_url": "https://spcgueydan.org/",
  "fetched_at": "2026-11-01T20:25:07+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:38+00:00",
+  "requests": 1,
+  "found": [
+   "adoration"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -266,8 +284,18 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 6
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Confessions are heard thirty minutes before all Masses (including Sundays) and from 3:00 to 3:45 p.m. on Saturday. Priest may also be contacted for individual appointments outside of scheduled times.",
+   "phrase": "thirty minutes before all Masses",
+   "source_url": "https://spcgueydan.org/mass-schedule/",
+   "fetched_at": "2026-11-01T20:25:01+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "prose": 1
@@ -277,8 +305,8 @@
   "noise": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

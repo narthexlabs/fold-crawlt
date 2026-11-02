@@ -174,6 +174,62 @@
  },
  "schedule_rows": [
   {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "09:00",
+   "language": null,
+   "raw": "9:00AM Mass",
+   "source_url": "https://www.stjohnromancatholic.org/sjrc/",
+   "fetched_at": "2026-11-01T17:21:23+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "11:00",
+   "language": null,
+   "raw": "11:00AM Mass",
+   "source_url": "https://www.stjohnromancatholic.org/sjrc/",
+   "fetched_at": "2026-11-01T17:21:23+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "12:30",
+   "language": "Latin",
+   "raw": "12:30PM Traditional Latin Mass",
+   "source_url": "https://www.stjohnromancatholic.org/sjrc/",
+   "fetched_at": "2026-11-01T17:21:23+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "08:00",
+   "language": null,
+   "raw": "8:00AM Mass",
+   "source_url": "https://www.stjohnromancatholic.org/sjrc/",
+   "fetched_at": "2026-11-01T17:21:23+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "kind_parsed": "mass"
+  },
+  {
    "kind": "mass",
    "day": "Monday",
    "time": "19:00",
@@ -328,69 +384,23 @@
    "review_reason": null,
    "confidence": "high",
    "template": "generic_strict"
-  },
-  {
-   "kind": "other",
-   "day": "Holy days",
-   "time": "09:00",
-   "language": null,
-   "raw": "9:00AM Mass",
-   "source_url": "https://www.stjohnromancatholic.org/sjrc/",
-   "fetched_at": "2026-11-01T17:21:23+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "generic_strict",
-   "kind_parsed": "mass"
-  },
-  {
-   "kind": "other",
-   "day": "Holy days",
-   "time": "11:00",
-   "language": null,
-   "raw": "11:00AM Mass",
-   "source_url": "https://www.stjohnromancatholic.org/sjrc/",
-   "fetched_at": "2026-11-01T17:21:23+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "generic_strict",
-   "kind_parsed": "mass"
-  },
-  {
-   "kind": "other",
-   "day": "Holy days",
-   "time": "12:30",
-   "language": "Latin",
-   "raw": "12:30PM Traditional Latin Mass",
-   "source_url": "https://www.stjohnromancatholic.org/sjrc/",
-   "fetched_at": "2026-11-01T17:21:23+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "generic_strict",
-   "kind_parsed": "mass"
-  },
-  {
-   "kind": "other",
-   "day": "Holy days",
-   "time": "08:00",
-   "language": null,
-   "raw": "8:00AM Mass",
-   "source_url": "https://www.stjohnromancatholic.org/sjrc/",
-   "fetched_at": "2026-11-01T17:21:23+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "generic_strict",
-   "kind_parsed": "mass"
   }
  ],
  "source_url": "http://www.stjohnromancatholic.org/sjrc/",
  "fetched_at": "2026-11-01T17:21:31+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:47:54+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -404,8 +414,18 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 24
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "The Sacrament of Confession is available every Saturday at 4:30pm in the Church, or by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://www.stjohnromancatholic.org/sjrc/Sacraments/",
+   "fetched_at": "2026-11-01T17:21:25+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "dated_block": 12,
@@ -415,8 +435,8 @@
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

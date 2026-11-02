@@ -87,18 +87,6 @@
    "url": "https://urolm.org/contact-us",
    "status": 200,
    "class": "ok"
-  },
-  {
-   "category": "adoration",
-   "url": "https://urolm.org/adoration-eucharist",
-   "status": 200,
-   "class": "ok"
-  },
-  {
-   "category": "liturgy",
-   "url": "https://www.urolm.org/liturgysacraments",
-   "status": 200,
-   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -956,48 +944,16 @@
    "source": "wayback-2026-08-01",
    "archive_url": "https://web.archive.org/web/20260801081653/https://urolm.org/",
    "capture_date": "2026-08-01"
-  },
-  {
-   "kind": "adoration",
-   "day": "First Friday of the month",
-   "time": "19:00",
-   "language": null,
-   "raw": "Adoration will begin with Exposition of the Sacrament at 7:00 PM and continue through 10:00 PM with Benediction at that hour.",
-   "source_url": "https://urolm.org/adoration-eucharist",
-   "fetched_at": "2023-02-08T14:35:30+00:00",
-   "needs_review": true,
-   "review_reason": "wayback capture 2026-08-01: read by a person before it is shown",
-   "confidence": "medium",
-   "template": "ecatholic+generic_strict",
-   "source": "wayback-2026-08-01",
-   "archive_url": "https://web.archive.org/web/20230208143530/https://urolm.org/adoration-eucharist",
-   "capture_date": "2023-02-08"
-  },
-  {
-   "kind": "adoration",
-   "day": "First Friday of the month",
-   "time": "22:00",
-   "language": null,
-   "raw": "Adoration will begin with Exposition of the Sacrament at 7:00 PM and continue through 10:00 PM with Benediction at that hour.",
-   "source_url": "https://urolm.org/adoration-eucharist",
-   "fetched_at": "2023-02-08T14:35:30+00:00",
-   "needs_review": true,
-   "review_reason": "wayback capture 2026-08-01: read by a person before it is shown",
-   "confidence": "medium",
-   "template": "ecatholic+generic_strict",
-   "source": "wayback-2026-08-01",
-   "archive_url": "https://web.archive.org/web/20230208143530/https://urolm.org/adoration-eucharist",
-   "capture_date": "2023-02-08"
   }
  ],
  "source_url": "https://www.urolm.org/",
- "fetched_at": "2026-11-02T05:20:31+00:00",
+ "fetched_at": "2026-11-02T03:56:57+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
  },
  "schedule_template": {
   "template": "ecatholic",
-  "version": "ca-sites/3",
+  "version": "ca-sites/2",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -1009,15 +965,9 @@
    },
    "score": "high"
   },
-  "passed_bar": true,
-  "trusted_candidate": true,
-  "trusted_kinds": [
-   "weekend",
-   "weekday",
-   "confession",
-   "adoration"
-  ],
-  "generic_rows": 9
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 7
  },
  "has_sunday": true,
  "schedule_dropped": {
@@ -1105,28 +1055,16 @@
     "original": "https://urolm.org/contact-us",
     "capture": "2026-05-07",
     "archive_url": "https://web.archive.org/web/20260507231947/https://urolm.org/contact-us"
-   },
-   {
-    "kind": "adoration",
-    "original": "https://urolm.org/adoration-eucharist",
-    "capture": "2023-02-08",
-    "archive_url": "https://web.archive.org/web/20230208143530/https://urolm.org/adoration-eucharist"
-   },
-   {
-    "kind": "liturgy",
-    "original": "https://www.urolm.org/liturgysacraments",
-    "capture": "2025-04-26",
-    "archive_url": "https://web.archive.org/web/20250426174403/https://www.urolm.org/liturgysacraments"
    }
   ],
   "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review.",
   "grade": {
    "rule": "wayback-verified-2026-11-01",
    "template": "ecatholic",
-   "trusted_template": true,
+   "trusted_template": false,
    "has_sunday": true,
    "groups": 23,
-   "verified": true,
+   "verified": false,
    "capture_date": "2026-08-01",
    "applied": false
   }

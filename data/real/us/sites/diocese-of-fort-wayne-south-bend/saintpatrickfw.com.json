@@ -169,6 +169,76 @@
    "review_reason": null,
    "confidence": "low",
    "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Thursday",
+   "time": "16:00-16:20",
+   "language": "English",
+   "raw": "Confession: 4:00 PM – 4:20 PM (English)",
+   "source_url": "https://saintpatrickfw.com/confessions/",
+   "fetched_at": "2026-11-02T04:41:40+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Thursday",
+   "time": "08:30-08:50",
+   "language": "English",
+   "raw": "Confession: 8:30 AM – 8:50 AM (English)",
+   "source_url": "https://saintpatrickfw.com/confessions/",
+   "fetched_at": "2026-11-02T04:41:40+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Thursday",
+   "time": "19:00-20:00",
+   "language": "Spanish",
+   "raw": "Confession: 7:00 PM – 8:00 PM (Spanish)",
+   "source_url": "https://saintpatrickfw.com/confessions/",
+   "fetched_at": "2026-11-02T04:41:40+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "First Sunday of the month",
+   "time": "10:00",
+   "language": "Vietnamese",
+   "raw": "Adoration: 1st Sunday of the month 10:00 AM (Vietnamese)",
+   "source_url": "https://saintpatrickfw.com/adorationholy-hour/",
+   "fetched_at": "2026-11-02T04:41:43+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "19:00-20:00",
+   "language": "Spanish",
+   "raw": "Adoration: 7:00 PM – 8:00 PM (Spanish)",
+   "source_url": "https://saintpatrickfw.com/adorationholy-hour/",
+   "fetched_at": "2026-11-02T04:41:43+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "https://saintpatrickfw.com/",
@@ -205,6 +275,24 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:44+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 5,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(260) 744-1450",
@@ -215,8 +303,5 @@
   },
   "fetched_at": "2026-11-01T03:59:25+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

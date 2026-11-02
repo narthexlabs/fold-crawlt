@@ -87,6 +87,12 @@
    "url": "https://saintjohnsunbury.org/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://saintjohnsunbury.org/adoration-chapel",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -383,6 +389,20 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "01:00",
+   "language": null,
+   "raw": "St. John Neumann offers Adoration of the Blessed Sacrament i: Friday Midnight-1AM",
+   "source_url": "https://saintjohnsunbury.org/adoration-chapel",
+   "fetched_at": "2026-11-02T04:52:44+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
   }
  ],
  "source_url": "http://www.saintjohnsunbury.org/",
@@ -416,6 +436,25 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:52:46+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(740) 965-1358",
@@ -426,8 +465,5 @@
   },
   "fetched_at": "2026-11-01T05:12:26+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

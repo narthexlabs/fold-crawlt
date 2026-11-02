@@ -81,6 +81,18 @@
    "url": "https://syromalabarphila.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://syromalabarphila.org/reconciliation/",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://syromalabarphila.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -283,6 +295,19 @@
  "bulletin": null,
  "schedule_rows": [
   {
+   "kind": "adoration",
+   "day": "First Friday of the month",
+   "time": "18:30",
+   "language": null,
+   "raw": "Adoration (1st Friday): 6:30 PM",
+   "source_url": "https://syromalabarphila.org/",
+   "fetched_at": "2026-11-01T20:25:36+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
    "kind": "mass",
    "day": "Sunday",
    "time": "08:30",
@@ -377,6 +402,19 @@
    "confidence": "low",
    "template": "wordpress",
    "day_expanded_from": "MONDAY – FRIDAY"
+  },
+  {
+   "kind": "devotion",
+   "day": "Saturday",
+   "time": "09:00",
+   "language": null,
+   "raw": "9:00 AM [Mass intention withheld]",
+   "source_url": "https://syromalabarphila.org/schedule/",
+   "fetched_at": "2026-11-01T20:25:38+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
   },
   {
    "kind": "mass",
@@ -706,9 +744,19 @@
  ],
  "source_url": "https://syromalabarphila.org/",
  "fetched_at": "2026-11-01T20:25:47+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:10+00:00",
+  "requests": 2,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -722,13 +770,13 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 14
  },
  "has_sunday": true,
  "schedule_dropped": {
   "other_location": 8,
-  "no_day": 3,
-  "not_a_service": 1
+  "no_day": 3
  },
  "groups_dropped": {
   "unmatched": 1,
@@ -759,6 +807,6 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()",
-  "intentions_withheld": 27
+  "intentions_withheld": 28
  }
 }

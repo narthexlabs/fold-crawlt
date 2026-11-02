@@ -69,6 +69,12 @@
    "url": "https://www.stpatrickholden.org/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stpatrickholden.org/adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -240,6 +246,34 @@
    "review_reason": null,
    "confidence": "high",
    "template": "wix"
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "11:00-11:45",
+   "language": null,
+   "raw": "Eucharistic Adoration is offered at St. Patrick's every Friday from 11am to 11:45 prior to the Noon Mass.",
+   "source_url": "https://www.stpatrickholden.org/adoration",
+   "fetched_at": "2026-11-02T04:41:59+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wix",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "16:00",
+   "language": null,
+   "raw": "Every 3rd weekend we have overnight Adoration starting immediately after Saturday Mass through Sunday morning immediately prior to Sunday Mass. 4pm-10am.",
+   "source_url": "https://www.stpatrickholden.org/adoration",
+   "fetched_at": "2026-11-02T04:41:59+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wix",
+   "topup": true
   }
  ],
  "source_url": "https://www.stpatrickholden.org/",
@@ -277,6 +311,34 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "The Sacrament of Confession is available at 11-11:45am every Friday, 2-2:45pm every Saturday, and immediately following Mass the 2nd Sunday of the Month, or by appointment. If you'd like to schedule a",
+   "phrase": "by appointment",
+   "source_url": "https://www.stpatrickholden.org/confession",
+   "fetched_at": "2026-11-02T04:41:57+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:01+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "info@stpatrickholden.org",
   "phone": "(816) 540-4563",
@@ -289,8 +351,5 @@
   },
   "fetched_at": "2026-11-01T05:16:36+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

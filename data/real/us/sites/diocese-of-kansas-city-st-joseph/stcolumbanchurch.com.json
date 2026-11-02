@@ -57,6 +57,12 @@
    "url": "https://www.stcolumbanchurch.com/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stcolumbanchurch.com/sacraments",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -262,6 +268,22 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wix"
+  },
+  {
+   "kind": "adoration",
+   "day": "First Friday of the month",
+   "time": "08:15",
+   "language": null,
+   "raw": "FIRST FRIDAY ADORATION - Every First Friday of the month, we offer Eucharistic Adoration following the 8:15 a.m.",
+   "source_url": "https://www.stcolumbanchurch.com/mass-schedule",
+   "fetched_at": "2026-11-02T04:41:57+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wix",
+   "relative": "after",
+   "note": "FIRST FRIDAY ADORATION - Every First Friday of the month, we offer Eucharistic Adoration following the 8:15 a.m.",
+   "topup": true
   }
  ],
  "source_url": "https://www.stcolumbanchurch.com/",
@@ -298,6 +320,33 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "The sacrament of confession is offered 30 minutes before each Mass or any time by appointment (contact the Rectory).",
+   "phrase": "30 minutes before each Mass",
+   "source_url": "https://www.stcolumbanchurch.com/sacraments",
+   "fetched_at": "2026-11-02T04:41:56+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:58+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "stcolumbanchurch@gmail.com",
   "phone": "(660) 646-0190",
@@ -310,8 +359,5 @@
   },
   "fetched_at": "2026-11-01T05:16:27+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

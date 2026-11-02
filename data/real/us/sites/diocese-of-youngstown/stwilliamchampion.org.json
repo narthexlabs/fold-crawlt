@@ -51,6 +51,24 @@
    "url": "https://stwilliamchampion.org/fathers-ferverinos/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stwilliamchampion.org/?page_id=3791",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stwilliamchampion.org/?page_id=3124",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://stwilliamchampion.org/?page_id=186",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -150,6 +168,34 @@
    "confidence": "high",
    "template": "godaddy",
    "day_expanded_from": "Monday, Tuesday & Thursday"
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "09:00-10:00",
+   "language": null,
+   "raw": "Come Worship the Lord in Eucharistic Adoration: Tuesday: 9:00 – 10:00 a.m. at St. William",
+   "source_url": "https://stwilliamchampion.org/?page_id=3124",
+   "fetched_at": "2026-11-02T04:52:49+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "godaddy",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "17:00-17:45",
+   "language": null,
+   "raw": "Come Worship the Lord in Eucharistic Adoration: Thursday: 5:00 – 5:45 p.m. at St. Thomas",
+   "source_url": "https://stwilliamchampion.org/?page_id=3124",
+   "fetched_at": "2026-11-02T04:52:49+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "godaddy",
+   "topup": true
   }
  ],
  "source_url": "http://www.stwilliamchampion.org/",
@@ -188,5 +234,21 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:52:51+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
  }
 }

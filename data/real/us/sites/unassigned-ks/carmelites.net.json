@@ -49,6 +49,18 @@
    "url": "https://carmelites.net/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://carmelites.net/reconciliation/",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://carmelites.net/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -90,26 +102,13 @@
    "note": "The Events Calendar (WordPress) REST API",
    "last_fetch": {
     "status": 200,
-    "fetched_at": "2026-11-01T23:33:50+00:00",
-    "events_in_window": 2,
-    "kept": 2
+    "fetched_at": "2026-11-02T05:00:45+00:00",
+    "events_in_window": 1,
+    "kept": 1
    }
   }
  ],
  "events": [
-  {
-   "id": "3e678b9ec0ffe1c5",
-   "title": "National Vocations Awareness Week",
-   "start": "2026-10-31",
-   "end": "2026-11-07",
-   "all_day": true,
-   "location": "PCM Parishes, Retreat Centers, Schools & Social Media",
-   "category": "other",
-   "recurring": false,
-   "source_url": "https://carmelites.net/event/national-vocations-awareness-week/",
-   "feed_id": "carmelites.net:tribe_rest:f6196329",
-   "fetched_at": "2026-11-01T23:33:50+00:00"
-  },
   {
    "id": "8a46ec9572b1fba4",
    "title": "Women Doctors of the Church",
@@ -121,7 +120,7 @@
    "recurring": false,
    "source_url": "https://carmelites.net/event/women-doctors-of-the-church/",
    "feed_id": "carmelites.net:tribe_rest:f6196329",
-   "fetched_at": "2026-11-01T23:33:50+00:00"
+   "fetched_at": "2026-11-02T05:00:45+00:00"
   }
  ],
  "social": {
@@ -139,9 +138,19 @@
  "schedule_rows": [],
  "source_url": "https://carmelites.net/",
  "fetched_at": "2026-11-01T17:27:39+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:44+00:00",
+  "requests": 2,
+  "found": []
+ },
  "schedule_template": {
   "template": "godaddy",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -155,6 +164,7 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 0
  },
  "has_sunday": false,
@@ -165,12 +175,12 @@
   "label_not_group": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
-  "in_window": 2,
-  "kept_after_privacy": 2,
-  "stored": 2,
+  "in_window": 1,
+  "kept_after_privacy": 1,
+  "stored": 1,
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },

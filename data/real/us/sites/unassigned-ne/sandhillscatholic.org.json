@@ -75,6 +75,18 @@
    "url": "https://sandhillscatholic.org/bulletin",
    "status": 404,
    "class": "not_found"
+  },
+  {
+   "category": "confession",
+   "url": "https://sandhillscatholic.org/sacraments",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://sandhillscatholic.org/adoration",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -207,27 +219,14 @@
   {
    "kind": "mass",
    "day": "Saturday",
-   "time": "18:00",
+   "time": "06:00",
    "language": null,
-   "raw": "Saturday Vigil Mass:: 6:00pm Mountain Time",
-   "source_url": "https://sandhillscatholic.org/mass-times-%26-locations",
-   "fetched_at": "2026-11-01T17:26:58+00:00",
+   "raw": "Saturday Vigil: 6:00pmMT in Hyannis",
+   "source_url": "https://sandhillscatholic.org/",
+   "fetched_at": "2026-11-01T17:26:56+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "medium",
-   "template": "godaddy"
-  },
-  {
-   "kind": "mass",
-   "day": "Sunday",
-   "time": "08:00",
-   "language": null,
-   "raw": "Sunday Mass:: 8:00am Mountain Time",
-   "source_url": "https://sandhillscatholic.org/mass-times-%26-locations",
-   "fetched_at": "2026-11-01T17:26:58+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
+   "confidence": "low",
    "template": "godaddy"
   },
   {
@@ -235,12 +234,12 @@
    "day": "Sunday",
    "time": "09:00",
    "language": null,
-   "raw": "Sunday Mass:: 9:00am Central Time",
-   "source_url": "https://sandhillscatholic.org/mass-times-%26-locations",
-   "fetched_at": "2026-11-01T17:26:58+00:00",
+   "raw": "Sunday Mass: 9:00amCT in Thedford",
+   "source_url": "https://sandhillscatholic.org/",
+   "fetched_at": "2026-11-01T17:26:56+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "medium",
+   "confidence": "low",
    "template": "godaddy"
   },
   {
@@ -248,7 +247,20 @@
    "day": "Sunday",
    "time": "10:30",
    "language": null,
-   "raw": "Sunday Mass:: 10:30am Mountain Time",
+   "raw": "Sunday Mass: 10:30amMT in Mullen",
+   "source_url": "https://sandhillscatholic.org/",
+   "fetched_at": "2026-11-01T17:26:56+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "godaddy"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "18:00",
+   "language": null,
+   "raw": "Saturday Vigil Mass:: 6:00pm Mountain Time",
    "source_url": "https://sandhillscatholic.org/mass-times-%26-locations",
    "fetched_at": "2026-11-01T17:26:58+00:00",
    "needs_review": false,
@@ -401,9 +413,21 @@
  ],
  "source_url": "https://sandhillscatholic.org/",
  "fetched_at": "2026-11-01T17:27:06+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:34+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "godaddy",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -417,11 +441,29 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 10
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Confessions are heard 40/30 minutes prior to the weekend Masses.",
+   "phrase": "30 minutes prior to the weekend Masses",
+   "source_url": "https://sandhillscatholic.org/mass-times-%26-locations",
+   "fetched_at": "2026-11-01T17:26:58+00:00"
+  },
+  {
+   "kind": "confession",
+   "text": "The Sacrament of Penance is offered 30mins before Masses, or by contacting the Parish Priest for an appointment.",
+   "phrase": "30mins before Masses",
+   "source_url": "https://sandhillscatholic.org/sacraments",
+   "fetched_at": "2026-11-02T04:41:33+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "no_day": 2,
+  "other_location": 3,
+  "no_day": 5,
   "skipped_section": 1,
   "no_kind": 2
  },
@@ -431,8 +473,8 @@
   "unmatched": 3
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

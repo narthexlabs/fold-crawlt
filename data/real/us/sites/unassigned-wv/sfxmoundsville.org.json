@@ -61,6 +61,12 @@
    "url": "https://sfxmoundsville.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://sfxmoundsville.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -90,29 +96,16 @@
  },
  "schedule_rows": [
   {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "15:30",
-   "language": null,
-   "raw": "Reconciliation (Confessions): Saturday 3:30 p.m. – or upon request.",
-   "source_url": "https://sfxmoundsville.org/sacraments/",
-   "fetched_at": "2026-11-01T17:28:02+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "wordpress"
-  },
-  {
    "kind": "mass",
    "day": "Saturday",
    "time": "16:00",
    "language": null,
-   "raw": "Mass: Weekends: Saturday 4:00 p.m.",
-   "source_url": "https://sfxmoundsville.org/mass-schedule/",
-   "fetched_at": "2026-11-01T17:28:04+00:00",
+   "raw": "Mass Schedule: Saturday 4:00 p.m.",
+   "source_url": "https://sfxmoundsville.org/",
+   "fetched_at": "2026-11-01T17:27:55+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "low",
+   "confidence": "medium",
    "template": "wordpress"
   },
   {
@@ -120,9 +113,9 @@
    "day": "Sunday",
    "time": "08:00",
    "language": null,
-   "raw": "Mass: Sunday 8:00 a.m., 10 a.m.",
-   "source_url": "https://sfxmoundsville.org/mass-schedule/",
-   "fetched_at": "2026-11-01T17:28:04+00:00",
+   "raw": "Mass Schedule: Sunday 8:00 a.m., 10 a.m.",
+   "source_url": "https://sfxmoundsville.org/",
+   "fetched_at": "2026-11-01T17:27:55+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -133,9 +126,126 @@
    "day": "Sunday",
    "time": "10:00",
    "language": null,
-   "raw": "Mass: Sunday 8:00 a.m., 10 a.m.",
-   "source_url": "https://sfxmoundsville.org/mass-schedule/",
-   "fetched_at": "2026-11-01T17:28:04+00:00",
+   "raw": "Mass Schedule: Sunday 8:00 a.m., 10 a.m.",
+   "source_url": "https://sfxmoundsville.org/",
+   "fetched_at": "2026-11-01T17:27:55+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Mass Schedule: Tuesday – Friday 8:00 a.m. (Monday: Communion Service 8 a.m.)",
+   "source_url": "https://sfxmoundsville.org/",
+   "fetched_at": "2026-11-01T17:27:55+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Tuesday – Friday",
+   "day_parsed": "Tuesday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Mass Schedule: Tuesday – Friday 8:00 a.m. (Monday: Communion Service 8 a.m.)",
+   "source_url": "https://sfxmoundsville.org/",
+   "fetched_at": "2026-11-01T17:27:55+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Tuesday – Friday"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Mass Schedule: Tuesday – Friday 8:00 a.m. (Monday: Communion Service 8 a.m.)",
+   "source_url": "https://sfxmoundsville.org/",
+   "fetched_at": "2026-11-01T17:27:55+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Tuesday – Friday",
+   "day_parsed": "Tuesday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Mass Schedule: Tuesday – Friday 8:00 a.m. (Monday: Communion Service 8 a.m.)",
+   "source_url": "https://sfxmoundsville.org/",
+   "fetched_at": "2026-11-01T17:27:55+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Tuesday – Friday",
+   "day_parsed": "Tuesday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Mass Schedule: Tuesday – Friday 8:00 a.m. (Monday: Communion Service 8 a.m.)",
+   "source_url": "https://sfxmoundsville.org/",
+   "fetched_at": "2026-11-01T17:27:55+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Tuesday – Friday",
+   "day_parsed": "Tuesday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:30",
+   "language": null,
+   "raw": "Confessions: Saturdays at 3:30 p.m. and by appointment.",
+   "source_url": "https://sfxmoundsville.org/",
+   "fetched_at": "2026-11-01T17:27:55+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "18:00",
+   "language": null,
+   "raw": "The Diocese also broadcasts live Saturday 6 p.m. Masses from the Cathedral of St. Joseph. Rebroadcasts are 11 a.m. Sundays.",
+   "source_url": "https://sfxmoundsville.org/",
+   "fetched_at": "2026-11-01T17:27:55+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "11:00",
+   "language": null,
+   "raw": "The Diocese also broadcasts live Saturday 6 p.m. Masses from the Cathedral of St. Joseph. Rebroadcasts are 11 a.m. Sundays.",
+   "source_url": "https://sfxmoundsville.org/",
+   "fetched_at": "2026-11-01T17:27:55+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -144,9 +254,19 @@
  ],
  "source_url": "https://sfxmoundsville.org/",
  "fetched_at": "2026-11-01T17:28:30+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:51+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -160,8 +280,25 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 6
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Saturdays at 3:30 p.m. and by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://sfxmoundsville.org/",
+   "fetched_at": "2026-11-01T17:27:55+00:00"
+  },
+  {
+   "kind": "confession",
+   "text": "Saturday 3:30 p.m. – or upon request.",
+   "phrase": "upon request",
+   "source_url": "https://sfxmoundsville.org/sacraments/",
+   "fetched_at": "2026-11-01T17:28:02+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "not_a_service": 2,
@@ -170,8 +307,8 @@
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

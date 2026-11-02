@@ -66,6 +66,18 @@
    "url": "https://wiucatholic.org/events/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://wiucatholic.org/reconciliation/",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://wiucatholic.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -180,7 +192,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:41:00+00:00",
+    "fetched_at": "2026-11-02T05:12:36+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -197,6 +209,79 @@
  },
  "bulletin": null,
  "schedule_rows": [
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "12:00",
+   "language": null,
+   "raw": "Sundays: Mass starts at 12:00pm. Confession available 30 minutes prior to Mass.",
+   "source_url": "https://wiucatholic.org/",
+   "fetched_at": "2026-11-01T20:25:10+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Tuesdays and Thursdays: Mass is at 5:00pm. Adoration at 4:00pm.",
+   "source_url": "https://wiucatholic.org/",
+   "fetched_at": "2026-11-01T20:25:10+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "Tuesdays and Thursdays"
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Tuesdays and Thursdays: Mass is at 5:00pm. Adoration at 4:00pm.",
+   "source_url": "https://wiucatholic.org/",
+   "fetched_at": "2026-11-01T20:25:10+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "Tuesdays and Thursdays",
+   "day_parsed": "Tuesday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "16:00",
+   "language": null,
+   "raw": "Tuesdays and Thursdays: Mass is at 5:00pm. Adoration at 4:00pm.",
+   "source_url": "https://wiucatholic.org/",
+   "fetched_at": "2026-11-01T20:25:10+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "Tuesdays and Thursdays"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "16:00",
+   "language": null,
+   "raw": "Tuesdays and Thursdays: Mass is at 5:00pm. Adoration at 4:00pm.",
+   "source_url": "https://wiucatholic.org/",
+   "fetched_at": "2026-11-01T20:25:10+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "Tuesdays and Thursdays",
+   "day_parsed": "Tuesday",
+   "day_bound_from_line": true
+  },
   {
    "kind": "mass",
    "day": "Sunday",
@@ -235,43 +320,23 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
-  },
-  {
-   "kind": "adoration",
-   "day": "Tuesday",
-   "time": "17:00",
-   "language": null,
-   "raw": "Tuesdays and Thursdays: Mass is at 5:00pm. Adoration at 4:00pm.",
-   "source_url": "https://wiucatholic.org/",
-   "fetched_at": "2026-11-01T20:25:10+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "wordpress",
-   "day_expanded_from": "Tuesdays and Thursdays"
-  },
-  {
-   "kind": "adoration",
-   "day": "Thursday",
-   "time": "17:00",
-   "language": null,
-   "raw": "Tuesdays and Thursdays: Mass is at 5:00pm. Adoration at 4:00pm.",
-   "source_url": "https://wiucatholic.org/",
-   "fetched_at": "2026-11-01T20:25:10+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "wordpress",
-   "day_expanded_from": "Tuesdays and Thursdays",
-   "day_parsed": "Tuesday",
-   "day_bound_from_line": true
   }
  ],
  "source_url": "http://wiucatholic.org/",
  "fetched_at": "2026-11-01T20:25:31+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:54+00:00",
+  "requests": 2,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -279,14 +344,31 @@
     "counts_ok": true,
     "sunday_not_copied": true,
     "no_daily_on_sunday": true,
-    "mostly_high": false
+    "mostly_high": true
    },
-   "score": "medium"
+   "score": "high"
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 21
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Mass starts at 12:00pm. Confession available 30 minutes prior to Mass.",
+   "phrase": "30 minutes prior to Mass",
+   "source_url": "https://wiucatholic.org/",
+   "fetched_at": "2026-11-01T20:25:10+00:00"
+  },
+  {
+   "kind": "confession",
+   "text": "Confessions are available 30 minutes before Mass.",
+   "phrase": "30 minutes before Mass",
+   "source_url": "https://wiucatholic.org/mass-times/",
+   "fetched_at": "2026-11-01T20:25:21+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "other_location": 14
@@ -296,8 +378,8 @@
   "noise": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

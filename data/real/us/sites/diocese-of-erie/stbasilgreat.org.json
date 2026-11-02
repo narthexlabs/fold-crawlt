@@ -144,6 +144,20 @@
    "day_bound_from_line": true
   },
   {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "18:00",
+   "language": null,
+   "raw": "Vigil: 6 p.m.",
+   "source_url": "https://www.stbasilgreat.org/",
+   "fetched_at": "2026-11-01T20:25:18+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "kind_parsed": "mass"
+  },
+  {
    "kind": "confession",
    "day": "Saturday",
    "time": "15:00-15:45",
@@ -161,33 +175,60 @@
    "day": "Sunday",
    "time": "11:00",
    "language": null,
-   "raw": "Weekend Mass: Sun.: 11 a.m.",
+   "raw": "[Holy Trinity] Weekend Mass: Sun.: 11 a.m.",
    "source_url": "https://www.stbasilgreat.org/",
    "fetched_at": "2026-11-01T20:25:18+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
-   "template": "generic_strict"
+   "template": "generic_strict",
+   "location": "Holy Trinity"
   },
   {
    "kind": "mass",
    "day": "Tuesday",
    "time": "08:00",
    "language": null,
-   "raw": "Weekend Mass: Tues. 8 a.m.",
+   "raw": "[Holy Trinity] Weekend Mass: Tues. 8 a.m.",
    "source_url": "https://www.stbasilgreat.org/",
    "fetched_at": "2026-11-01T20:25:18+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
-   "template": "generic_strict"
+   "template": "generic_strict",
+   "location": "Holy Trinity"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "08:00",
+   "language": null,
+   "raw": "[Holy Trinity] Weekend Mass: 8 a.m.",
+   "source_url": "https://www.stbasilgreat.org/",
+   "fetched_at": "2026-11-01T20:25:18+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "kind_parsed": "mass",
+   "location": "Holy Trinity"
   }
  ],
  "source_url": "https://stbasilgreat.org/",
  "fetched_at": "2026-11-01T20:25:19+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:11+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -201,11 +242,12 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 7
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 3
+  "other_location": 1
  },
  "groups_dropped": {},
  "event_counts": {

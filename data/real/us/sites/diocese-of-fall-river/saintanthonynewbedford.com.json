@@ -254,7 +254,7 @@
    "kind": "mass",
    "day": "Sunday",
    "time": "06:30",
-   "language": null,
+   "language": "English",
    "raw": "WEEKEND MASS: 6:30am and 9:30am (English)",
    "source_url": "https://www.saintanthonynb.org/",
    "fetched_at": "2026-11-01T22:15:22+00:00",
@@ -280,7 +280,7 @@
    "kind": "mass",
    "day": "Sunday",
    "time": "08:00",
-   "language": null,
+   "language": "Spanish",
    "raw": "WEEKEND MASS: 8:00am and 11:00am (Spanish)",
    "source_url": "https://www.saintanthonynb.org/",
    "fetched_at": "2026-11-01T22:15:22+00:00",
@@ -389,118 +389,24 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
-  },
-  {
-   "kind": "confession",
-   "day": "Tuesday",
-   "time": "18:30-19:15",
-   "language": "English",
-   "raw": "CONFESSIONS (English and Spanish): Tuesday: 6:30-7:15pm (Chapel)",
-   "source_url": "https://www.saintanthonynb.org/",
-   "fetched_at": "2026-11-01T22:15:22+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
-  {
-   "kind": "confession",
-   "day": "Thursday",
-   "time": "18:30-19:15",
-   "language": "English",
-   "raw": "CONFESSIONS (English and Spanish): Thursday: 6:30-7:15pm (Church)",
-   "source_url": "https://www.saintanthonynb.org/",
-   "fetched_at": "2026-11-01T22:15:22+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
-  {
-   "kind": "confession",
-   "day": "Friday",
-   "time": "16:15-17:00",
-   "language": "English",
-   "raw": "CONFESSIONS (English and Spanish): Friday: 4:15-5:00pm (Chapel)",
-   "source_url": "https://www.saintanthonynb.org/",
-   "fetched_at": "2026-11-01T22:15:22+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
-  {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "11:00-11:45",
-   "language": "English",
-   "raw": "CONFESSIONS (English and Spanish): Saturday: 11:00am-11:45am and 3:00pm to 3:45pm (Church)",
-   "source_url": "https://www.saintanthonynb.org/",
-   "fetched_at": "2026-11-01T22:15:22+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
-  {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "15:00-15:45",
-   "language": "English",
-   "raw": "CONFESSIONS (English and Spanish): Saturday: 11:00am-11:45am and 3:00pm to 3:45pm (Church)",
-   "source_url": "https://www.saintanthonynb.org/",
-   "fetched_at": "2026-11-01T22:15:22+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
-  {
-   "kind": "adoration",
-   "day": "Tuesday",
-   "time": "18:30-19:30",
-   "language": null,
-   "raw": "EUCHARISTIC ADORATION: Tuesday: 6:30-7:30pm (Chapel)",
-   "source_url": "https://www.saintanthonynb.org/",
-   "fetched_at": "2026-11-01T22:15:22+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
-  {
-   "kind": "adoration",
-   "day": "Thursday",
-   "time": "18:30-19:30",
-   "language": null,
-   "raw": "EUCHARISTIC ADORATION: Thursday: 6:30-7:30pm (Church)",
-   "source_url": "https://www.saintanthonynb.org/",
-   "fetched_at": "2026-11-01T22:15:22+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
-  {
-   "kind": "adoration",
-   "day": "Friday",
-   "time": "16:15-17:15",
-   "language": null,
-   "raw": "EUCHARISTIC ADORATION: Friday: 4:15-5:15 pm (Chapel)",
-   "source_url": "https://www.saintanthonynb.org/",
-   "fetched_at": "2026-11-01T22:15:22+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
   }
  ],
  "source_url": "http://www.saintanthonynewbedford.com/",
  "fetched_at": "2026-11-01T22:15:27+00:00",
  "redirected_off_host": "saintanthonynb.org",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:40+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -514,18 +420,29 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 12
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Confessions can also be heard by appointment. To schedule, please call the rectory at",
+   "phrase": "by appointment",
+   "source_url": "https://www.saintanthonynb.org/",
+   "fetched_at": "2026-11-01T22:15:22+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
+  "other_location": 8,
   "skipped_section": 3
  },
  "groups_dropped": {
   "sacrament_prep": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

@@ -79,6 +79,12 @@
    "url": "https://www.stspeterandpaulstl.org/contactus",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stspeterandpaulstl.org/adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -309,6 +315,22 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wix"
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "09:30",
+   "language": null,
+   "raw": "Sts. Peter and Paul Reconciliation Times: Sundays following the 9:30am Mass",
+   "source_url": "https://www.stspeterandpaulstl.org/reconciliation",
+   "fetched_at": "2026-11-02T04:41:50+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wix",
+   "relative": "after",
+   "note": "Sts. Peter and Paul Reconciliation Times: Sundays following the 9:30am Mass",
+   "topup": true
   }
  ],
  "source_url": "http://www.stspeterandpaulstl.org/",
@@ -353,5 +375,29 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://www.stspeterandpaulstl.org/reconciliation",
+   "fetched_at": "2026-11-02T04:41:50+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:53+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

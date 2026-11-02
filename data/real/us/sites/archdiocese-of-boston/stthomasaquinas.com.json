@@ -78,6 +78,18 @@
    "url": "https://www.stthomasaquinas.com/contactc7867df3",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stthomasaquinas.com/reconciliation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stthomasaquinas.com/copy-of-test8e3f4eaf",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -626,6 +638,20 @@
    "review_reason": null,
    "confidence": "low",
    "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "12:00-13:00",
+   "language": null,
+   "raw": "Confessions are heard: Saturdays 12:00 -1:00 PM (Lower Church)",
+   "source_url": "https://www.stthomasaquinas.com/reconciliation",
+   "fetched_at": "2026-11-02T04:41:33+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
   }
  ],
  "source_url": "http://stthomasaquinas.com/",
@@ -664,6 +690,33 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://www.stthomasaquinas.com/reconciliation",
+   "fetched_at": "2026-11-02T04:41:33+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:34+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(508) 697-9528",
@@ -675,8 +728,5 @@
   },
   "fetched_at": "2026-11-01T05:09:59+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

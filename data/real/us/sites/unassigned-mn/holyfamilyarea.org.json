@@ -75,6 +75,18 @@
    "url": "https://www.holyfamilyarea.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.holyfamilyarea.org/reconciliaition",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.holyfamilyarea.org/eucharistic-adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -118,7 +130,7 @@
    "feed_key": "85a2a69a46b6",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:34:47+00:00",
+    "fetched_at": "2026-11-02T04:52:48+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -141,32 +153,6 @@
   {
    "kind": "mass",
    "day": "Saturday",
-   "time": "19:00",
-   "language": "Spanish",
-   "raw": "Mass Schedule: Saturday | 7:00pm (Spanish)",
-   "source_url": "https://www.holyfamilyarea.org/",
-   "fetched_at": "2026-11-01T22:15:23+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
-  {
-   "kind": "mass",
-   "day": "Sunday",
-   "time": "10:30",
-   "language": "English",
-   "raw": "Mass Schedule: Sunday | 10:30am (English)",
-   "source_url": "https://www.holyfamilyarea.org/",
-   "fetched_at": "2026-11-01T22:15:23+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
-  {
-   "kind": "mass",
-   "day": "Saturday",
    "time": "17:00",
    "language": null,
    "raw": "Mass Schedule: Saturday | 5:00pm",
@@ -179,36 +165,67 @@
   },
   {
    "kind": "mass",
-   "day": "Sunday",
-   "time": "08:30",
-   "language": null,
-   "raw": "Mass Schedule: Sunday | 8:30 AM",
+   "day": "Saturday",
+   "time": "19:00",
+   "language": "Spanish",
+   "raw": "Saturday | 7:00pm (Spanish)",
    "source_url": "https://www.holyfamilyarea.org/",
    "fetched_at": "2026-11-01T22:15:23+00:00",
    "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:30",
+   "language": "English",
+   "raw": "Sunday | 10:30am (English)",
+   "source_url": "https://www.holyfamilyarea.org/",
+   "fetched_at": "2026-11-01T22:15:23+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:30",
+   "language": null,
+   "raw": "Sunday | 8:30 AM",
+   "source_url": "https://www.holyfamilyarea.org/",
+   "fetched_at": "2026-11-01T22:15:23+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
   },
   {
    "kind": "confession",
    "day": "Sunday",
    "time": "08:00",
    "language": null,
-   "raw": "Confession Schedule: Sunday | 8:00 AM",
+   "raw": "Sunday | 8:00 AM﻿",
    "source_url": "https://www.holyfamilyarea.org/",
    "fetched_at": "2026-11-01T22:15:23+00:00",
    "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
+   "review_reason": "schedule_box"
   }
  ],
  "source_url": "https://www.holyfamilyarea.org/",
  "fetched_at": "2026-11-01T22:15:31+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:48+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -222,19 +239,32 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 5
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "30 Minutes before each Daily Mass",
+   "phrase": "30 Minutes before each Daily Mass",
+   "source_url": "https://www.holyfamilyarea.org/",
+   "fetched_at": "2026-11-01T22:15:23+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "skipped_section": 2
+  "other_location": 6,
+  "skipped_section": 3,
+  "notice_not_schedule": 1,
+  "box_rows_added": 4
  },
  "groups_dropped": {
   "unmatched": 2,
   "noise": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

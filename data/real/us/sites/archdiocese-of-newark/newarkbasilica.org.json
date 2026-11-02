@@ -63,6 +63,18 @@
    "url": "https://www.newarkbasilica.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.newarkbasilica.org/sacraments",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://www.youtube.com/@SacredHeartCathedralBasilica/streams",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -424,9 +436,7 @@
   "excluded_by_reason": {}
  },
  "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()",
-  "names_withheld": 0,
-  "contacts_removed": 1
+  "screened_by": "ingest/public/privacy.py screen()"
  },
  "social_shared_links_removed": [
   "https://www.facebook.com/2008"
@@ -437,5 +447,20 @@
   "groups": 0,
   "mass_rows": 16,
   "at": "2026-11-01"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:47:55+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
  }
 }

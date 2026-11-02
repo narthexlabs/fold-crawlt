@@ -81,6 +81,12 @@
    "url": "https://www.saintanne.org/about/find-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.saintanne.org/news-events/664-first-saturday-adoration-and-devotions",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -602,6 +608,48 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "First Saturday of the month",
+   "time": "16:00-17:00",
+   "language": null,
+   "raw": "Reconciliation (Please note, Reconciliation does not have to be done the same day): 4:00 p.m. - 5:00 p.m.",
+   "source_url": "https://www.saintanne.org/news-events/664-first-saturday-adoration-and-devotions",
+   "fetched_at": "2026-11-02T04:41:33+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "First Saturday of the month",
+   "time": "17:15",
+   "language": null,
+   "raw": "Mass: 5:15 p.m.",
+   "source_url": "https://www.saintanne.org/news-events/664-first-saturday-adoration-and-devotions",
+   "fetched_at": "2026-11-02T04:41:33+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "First Saturday of the month",
+   "time": "16:30-16:50",
+   "language": null,
+   "raw": "Primer sábado de adoración y devociones: Cinco Rosarios de Reparación del Primer Sábado: 4:30 - 4:50 pm",
+   "source_url": "https://www.saintanne.org/news-events/664-first-saturday-adoration-and-devotions",
+   "fetched_at": "2026-11-02T04:41:33+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
   }
  ],
  "source_url": "https://www.saintanne.org/",
@@ -642,8 +690,21 @@
   "excluded_by_reason": {}
  },
  "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()",
-  "names_withheld": 0,
-  "contacts_removed": 1
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:34+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 3,
+  "mode": "merge"
  }
 }

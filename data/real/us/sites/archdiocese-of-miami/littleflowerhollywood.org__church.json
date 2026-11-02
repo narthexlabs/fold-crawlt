@@ -69,6 +69,12 @@
    "url": "https://littleflowerhollywood.org/church/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://littleflowerhollywood.org/adoration/",
+   "status": null,
+   "class": "timeout"
   }
  ],
  "cms_guess": {
@@ -191,6 +197,58 @@
   "source_url": "https://littleflowerhollywood.org/church/"
  },
  "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:00",
+   "language": "English",
+   "raw": "Sunday Masses: 7:30 am, 9:00 am, 11:00am (English)",
+   "source_url": "https://littleflowerhollywood.org/church/",
+   "fetched_at": "2026-11-01T22:15:28+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "13:00",
+   "language": "Spanish",
+   "raw": "Sunday Masses: 1:00pm (Spanish)",
+   "source_url": "https://littleflowerhollywood.org/church/",
+   "fetched_at": "2026-11-01T22:15:28+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Thursday",
+   "time": "09:00-10:00",
+   "language": null,
+   "raw": "Confessions: Thursday at 9:00-10:00 am",
+   "source_url": "https://littleflowerhollywood.org/church/",
+   "fetched_at": "2026-11-01T22:15:28+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "09:00-10:30",
+   "language": null,
+   "raw": "Confessions: Saturday at 9:00-10:30 am",
+   "source_url": "https://littleflowerhollywood.org/church/",
+   "fetched_at": "2026-11-01T22:15:28+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
   {
    "kind": "mass",
    "day": "Monday",
@@ -317,56 +375,23 @@
    "template": "wordpress",
    "day_parsed": "Sunday",
    "day_bound_from_line": true
-  },
-  {
-   "kind": "mass",
-   "day": "Saturday",
-   "time": "11:00",
-   "language": "English",
-   "raw": "Saturday Vigil / Sábado: 11:00 am in English",
-   "source_url": "https://littleflowerhollywood.org/church/about/holy-mass/",
-   "fetched_at": "2026-11-01T22:15:29+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress",
-   "day_parsed": "Sunday",
-   "day_bound_from_line": true
-  },
-  {
-   "kind": "mass",
-   "day": "Saturday",
-   "time": "13:00",
-   "language": "Spanish",
-   "raw": "Saturday Vigil / Sábado: 1:00 pm en español",
-   "source_url": "https://littleflowerhollywood.org/church/about/holy-mass/",
-   "fetched_at": "2026-11-01T22:15:29+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress",
-   "day_parsed": "Sunday",
-   "day_bound_from_line": true
-  },
-  {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "09:00-10:30",
-   "language": null,
-   "raw": "Confessions are heard in church every Saturday morning at 9:00-10:30 am or by appointment.",
-   "source_url": "https://littleflowerhollywood.org/church/sacraments/",
-   "fetched_at": "2026-11-01T22:15:32+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "wordpress"
   }
  ],
  "source_url": "https://littleflowerhollywood.org/church/",
  "fetched_at": "2026-11-01T22:15:42+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:55+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -380,8 +405,18 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 30
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Confessions are heard in church every Saturday morning at 9:00-10:30 am or by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://littleflowerhollywood.org/church/sacraments/",
+   "fetched_at": "2026-11-01T22:15:32+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "dated_line": 9
@@ -391,8 +426,8 @@
   "unmatched": 5
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

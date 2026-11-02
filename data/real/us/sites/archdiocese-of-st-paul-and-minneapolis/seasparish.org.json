@@ -63,6 +63,12 @@
    "url": "https://www.seasparish.org/events",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.seasparish.org/adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -472,6 +478,36 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "social_shared_links_removed": [
+  "https://www.facebook.com/2008"
+ ],
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "We have Masses to meet all schedules; mornings, evenings, weekdays and weekends, and we have low-gluten hosts upon request in the sacristy before each Mass.",
+   "phrase": "upon request",
+   "source_url": "https://www.seasparish.org/mass-and-confession",
+   "fetched_at": "2026-11-02T04:41:36+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:40+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "info@seasparish.org",
   "phone": "(651) 437-4254",
@@ -483,11 +519,5 @@
   },
   "fetched_at": "2026-11-01T03:58:02+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
- },
- "social_shared_links_removed": [
-  "https://www.facebook.com/2008"
- ]
+ }
 }

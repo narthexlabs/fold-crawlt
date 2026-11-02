@@ -73,18 +73,6 @@
    "url": "https://stjosephatkinson.org/contact-us",
    "status": 200,
    "class": "ok"
-  },
-  {
-   "category": "confession",
-   "url": "https://stjosephatkinson.org/reconciliation",
-   "status": 404,
-   "class": "not_found"
-  },
-  {
-   "category": "adoration",
-   "url": "https://stjosephatkinson.org/adoration",
-   "status": 404,
-   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -248,13 +236,13 @@
   }
  ],
  "source_url": "https://stjosephatkinson.org/",
- "fetched_at": "2026-11-02T05:28:12+00:00",
+ "fetched_at": "2026-11-02T04:07:58+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
  },
  "schedule_template": {
   "template": "ecatholic",
-  "version": "ca-sites/3",
+  "version": "ca-sites/2",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -266,14 +254,8 @@
    },
    "score": "high"
   },
-  "passed_bar": true,
-  "trusted_candidate": true,
-  "trusted_kinds": [
-   "weekend",
-   "weekday",
-   "confession",
-   "adoration"
-  ],
+  "passed_bar": false,
+  "trusted_candidate": false,
   "generic_rows": 0
  },
  "has_sunday": true,
@@ -348,10 +330,10 @@
   "grade": {
    "rule": "wayback-verified-2026-11-01",
    "template": "ecatholic",
-   "trusted_template": true,
+   "trusted_template": false,
    "has_sunday": true,
    "groups": 2,
-   "verified": true,
+   "verified": false,
    "capture_date": "2025-04-08",
    "applied": false
   }

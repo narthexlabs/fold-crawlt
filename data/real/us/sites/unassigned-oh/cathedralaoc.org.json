@@ -69,6 +69,18 @@
    "url": "https://cathedralaoc.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://cathedralaoc.org/eucharistic-adoration/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://cathedralaoc.org/tour-schedule-2026/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -145,8 +157,8 @@
    "time": "16:00",
    "language": null,
    "raw": "Sunday Mass (choir) Live Stream: 4:00 pm - 5:00 pm",
-   "source_url": "https://cathedralaoc.org/mass-and-sacraments/",
-   "fetched_at": "2026-11-01T22:15:33+00:00",
+   "source_url": "https://cathedralaoc.org/",
+   "fetched_at": "2026-11-01T22:15:26+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -158,8 +170,8 @@
    "time": "17:00",
    "language": null,
    "raw": "Sunday Mass (choir) Live Stream: 4:00 pm - 5:00 pm",
-   "source_url": "https://cathedralaoc.org/mass-and-sacraments/",
-   "fetched_at": "2026-11-01T22:15:33+00:00",
+   "source_url": "https://cathedralaoc.org/",
+   "fetched_at": "2026-11-01T22:15:26+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -171,8 +183,8 @@
    "time": "19:30",
    "language": null,
    "raw": "Sunday Mass: 7:30 pm",
-   "source_url": "https://cathedralaoc.org/mass-and-sacraments/",
-   "fetched_at": "2026-11-01T22:15:33+00:00",
+   "source_url": "https://cathedralaoc.org/",
+   "fetched_at": "2026-11-01T22:15:26+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -845,13 +857,39 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "14:37",
+   "language": null,
+   "raw": "Eucharistic Exposition / Adoration: Mark 14:37",
+   "source_url": "https://cathedralaoc.org/eucharistic-adoration/",
+   "fetched_at": "2026-11-02T04:52:25+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "wordpress"
   }
  ],
  "source_url": "https://cathedralaoc.org/",
  "fetched_at": "2026-11-01T22:15:48+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:52:30+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "liturgy"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -865,18 +903,22 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 18
+  "trusted_kinds": [],
+  "generic_rows": 70
  },
  "has_sunday": true,
  "schedule_dropped": {
   "dated_block": 45,
   "no_day": 63,
-  "prose": 12
+  "relative_time": 1,
+  "benediction_end": 1,
+  "other_location": 14,
+  "prose": 13
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

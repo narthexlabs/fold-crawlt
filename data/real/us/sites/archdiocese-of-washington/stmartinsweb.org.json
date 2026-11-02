@@ -408,6 +408,23 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wix"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "09:00",
+   "language": "Spanish",
+   "raw": "This sacrament is offered after Monday – Friday 6:30AM and 9:00AM Masses and after the Tuesday and Friday Spanish 7:00PM Masses. Also on Saturdays after 9:00AM Mass and from 3:30 – 4:45PM.",
+   "source_url": "https://www.stmartinsweb.org/sacraments-1",
+   "fetched_at": "2026-11-02T04:41:38+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wix",
+   "day_expanded_from": "Monday – Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "topup": true
   }
  ],
  "source_url": "http://www.stmartinsweb.org/",
@@ -450,5 +467,19 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:38+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

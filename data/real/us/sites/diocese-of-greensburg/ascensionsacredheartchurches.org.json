@@ -75,6 +75,12 @@
    "url": "https://www.ascensionsacredheartchurches.org/latest-events/",
    "status": null,
    "class": "timeout"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.ascensionsacredheartchurches.org/adoration",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -319,16 +325,139 @@
  "schedule_rows": [
   {
    "kind": "mass",
-   "day": "Sunday",
-   "time": "18:00",
-   "language": "Spanish",
-   "raw": "La Santa Misa en Español: 6:00 p.m.",
-   "source_url": "https://www.ascensionsacredheartchurches.org/la-santa-misa-en-espanol/",
-   "fetched_at": "2026-11-01T20:25:12+00:00",
+   "day": "Monday",
+   "time": "08:00",
+   "language": null,
+   "raw": "[Sacred Heart] Mass Schedule: Monday & Friday: 8:00 AM",
+   "source_url": "https://www.ascensionsacredheartchurches.org/",
+   "fetched_at": "2026-11-01T20:25:02+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
-   "template": "wordpress"
+   "template": "wordpress",
+   "day_expanded_from": "Monday & Friday",
+   "location": "Sacred Heart"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "08:00",
+   "language": null,
+   "raw": "[Sacred Heart] Mass Schedule: Monday & Friday: 8:00 AM",
+   "source_url": "https://www.ascensionsacredheartchurches.org/",
+   "fetched_at": "2026-11-01T20:25:02+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Monday & Friday",
+   "location": "Sacred Heart",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday (winter, oct-mar)",
+   "time": "16:30",
+   "language": null,
+   "raw": "[Sacred Heart] Mass Schedule: Saturday: 4:30 PM (Oct to Mar)",
+   "source_url": "https://www.ascensionsacredheartchurches.org/",
+   "fetched_at": "2026-11-01T20:25:02+00:00",
+   "needs_review": true,
+   "review_reason": "seasonal",
+   "confidence": "medium",
+   "template": "wordpress",
+   "location": "Sacred Heart",
+   "season": "Oct to Mar"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:30",
+   "language": null,
+   "raw": "[Sacred Heart] Mass Schedule: Sunday: 10:30 AM",
+   "source_url": "https://www.ascensionsacredheartchurches.org/",
+   "fetched_at": "2026-11-01T20:25:02+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "location": "Sacred Heart"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "08:00",
+   "language": null,
+   "raw": "[Sacred Heart] Mass Schedule: Wednesday & Thursday: 8:00 AM",
+   "source_url": "https://www.ascensionsacredheartchurches.org/",
+   "fetched_at": "2026-11-01T20:25:02+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Wednesday & Thursday",
+   "location": "Sacred Heart"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "08:00",
+   "language": null,
+   "raw": "[Sacred Heart] Mass Schedule: Wednesday & Thursday: 8:00 AM",
+   "source_url": "https://www.ascensionsacredheartchurches.org/",
+   "fetched_at": "2026-11-01T20:25:02+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Wednesday & Thursday",
+   "location": "Sacred Heart",
+   "day_parsed": "Wednesday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday (summer, apr-sep)",
+   "time": "16:30",
+   "language": null,
+   "raw": "[Sacred Heart] Mass Schedule: Saturday: 4:30 PM (April to Sept)",
+   "source_url": "https://www.ascensionsacredheartchurches.org/",
+   "fetched_at": "2026-11-01T20:25:02+00:00",
+   "needs_review": true,
+   "review_reason": "seasonal",
+   "confidence": "medium",
+   "template": "wordpress",
+   "location": "Sacred Heart",
+   "season": "April to Sept"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:30",
+   "language": null,
+   "raw": "[Sacred Heart] Mass Schedule: Sunday: 8:30 AM",
+   "source_url": "https://www.ascensionsacredheartchurches.org/",
+   "fetched_at": "2026-11-01T20:25:02+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "location": "Sacred Heart"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "18:00",
+   "language": "Spanish",
+   "raw": "[Sacred Heart] Sunday: 6:00 PM (Spanish Mass)",
+   "source_url": "https://www.ascensionsacredheartchurches.org/",
+   "fetched_at": "2026-11-01T20:25:02+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "location": "Sacred Heart"
   },
   {
    "kind": "confession",
@@ -357,82 +486,37 @@
    "template": "wordpress"
   },
   {
-   "kind": "mass",
-   "day": "Monday",
-   "time": "08:00",
-   "language": null,
-   "raw": "Monday & Friday: 8:00 AM",
-   "source_url": "https://www.ascensionsacredheartchurches.org/",
-   "fetched_at": "2026-11-01T20:25:02+00:00",
-   "needs_review": false,
-   "review_reason": "schedule_box"
-  },
-  {
-   "kind": "mass",
-   "day": "Friday",
-   "time": "08:00",
-   "language": null,
-   "raw": "Monday & Friday: 8:00 AM",
-   "source_url": "https://www.ascensionsacredheartchurches.org/",
-   "fetched_at": "2026-11-01T20:25:02+00:00",
-   "needs_review": false,
-   "review_reason": "schedule_box",
-   "day_parsed": "Monday",
-   "day_bound_from_line": true
-  },
-  {
-   "kind": "mass",
-   "day": "Saturday",
-   "time": "16:30",
-   "language": null,
-   "raw": "Saturday: 4:30 PM (Oct to Mar)",
-   "source_url": "https://www.ascensionsacredheartchurches.org/",
-   "fetched_at": "2026-11-01T20:25:02+00:00",
-   "needs_review": true,
-   "review_reason": "schedule_box,seasonal",
-   "season": "Oct to Mar"
-  },
-  {
-   "kind": "mass",
+   "kind": "confession",
    "day": "Sunday",
-   "time": "10:30",
-   "language": null,
-   "raw": "Sunday: 10:30 AM",
-   "source_url": "https://www.ascensionsacredheartchurches.org/",
-   "fetched_at": "2026-11-01T20:25:02+00:00",
-   "needs_review": false,
-   "review_reason": "schedule_box"
-  },
-  {
-   "kind": "mass",
-   "day": "Wednesday",
-   "time": "08:00",
-   "language": null,
-   "raw": "Wednesday & Thursday: 8:00 AM",
-   "source_url": "https://www.ascensionsacredheartchurches.org/",
-   "fetched_at": "2026-11-01T20:25:02+00:00",
-   "needs_review": false,
-   "review_reason": "schedule_box"
-  },
-  {
-   "kind": "mass",
-   "day": "Thursday",
-   "time": "08:00",
-   "language": null,
-   "raw": "Wednesday & Thursday: 8:00 AM",
-   "source_url": "https://www.ascensionsacredheartchurches.org/",
-   "fetched_at": "2026-11-01T20:25:02+00:00",
-   "needs_review": false,
-   "review_reason": "schedule_box",
-   "day_parsed": "Wednesday",
-   "day_bound_from_line": true
+   "time": "18:00",
+   "language": "Spanish",
+   "raw": "Confesión y Reconcilación: Domingos Después de 6:00 p.m. Mass. Iglesia La Ascensión",
+   "source_url": "https://www.ascensionsacredheartchurches.org/la-santa-misa-en-espanol/",
+   "fetched_at": "2026-11-01T20:25:12+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "Confesión y Reconcilación: Domingos Después de 6:00 p.m. Mass. Iglesia La Ascensión",
+   "relative_resolved": true
   }
  ],
  "source_url": "https://www.ascensionsacredheartchurches.org/",
  "fetched_at": "2026-11-01T20:27:09+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:20+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -446,13 +530,12 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 5
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 1,
-  "relative_time": 1,
-  "box_rows_added": 6
+  "other_location": 1
  },
  "groups_dropped": {
   "noise": 1,

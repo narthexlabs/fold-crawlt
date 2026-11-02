@@ -81,6 +81,12 @@
    "url": "https://stanthonyhillsdale.com/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stanthonyhillsdale.com/getinvolved/adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -328,9 +334,21 @@
  "schedule_rows": [],
  "source_url": "https://stanthonyhillsdale.com/",
  "fetched_at": "2026-11-01T22:15:45+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:33+00:00",
+  "requests": 1,
+  "found": [
+   "adoration"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -344,11 +362,13 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 18
  },
  "has_sunday": false,
  "schedule_dropped": {
-  "no_day": 1
+  "no_day": 1,
+  "other_location": 2
  },
  "groups_dropped": {
   "label_not_group": 1,
@@ -356,8 +376,8 @@
   "unmatched": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

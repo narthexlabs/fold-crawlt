@@ -81,6 +81,12 @@
    "url": "https://www.saintmonicachurch.net/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://www.saintmonicachurch.net/mass-schedule",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -325,6 +331,20 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "Saturday",
+   "time": "15:15",
+   "language": null,
+   "raw": "Eucharistic Adoration immediately following Mass on Monday: 3:15pm",
+   "source_url": "https://www.saintmonicachurch.net/mass-schedule",
+   "fetched_at": "2026-11-02T04:52:35+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
   }
  ],
  "source_url": "http://www.saintmonicachurch.net/",
@@ -360,5 +380,19 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:52:36+00:00",
+  "requests": 1,
+  "found": [
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

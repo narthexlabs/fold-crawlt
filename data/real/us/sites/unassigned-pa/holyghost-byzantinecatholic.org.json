@@ -2,11 +2,15 @@
  "domain": "holyghost-byzantinecatholic.org",
  "diocese": "unassigned-pa",
  "matched_church_ids": [
-  "brave:PA|ghost pittsburgh|"
+  "brave:PA|ghost pittsburgh|",
+  "holy-ghost-mc-kees-rocks-pa",
+  "holy-ghost-pittsburgh-pa"
  ],
  "matched": {
   "directory": [],
   "discovermass": [
+   "holy-ghost-pittsburgh-pa",
+   "holy-ghost-mc-kees-rocks-pa",
    "brave:PA|ghost pittsburgh|"
   ]
  },
@@ -14,7 +18,8 @@
   "Holy Ghost"
  ],
  "cities": [
-  "Pittsburgh"
+  "Pittsburgh",
+  "McKees Rocks"
  ],
  "home_url": "https://www.holyghost-byzantinecatholic.org/",
  "final_url": "https://www.holyghost-byzantinecatholic.org/",
@@ -63,6 +68,18 @@
    "url": "https://www.holyghost-byzantinecatholic.org/ministries",
    "status": 404,
    "class": "not_found"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.holyghost-byzantinecatholic.org/reconciliation",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.holyghost-byzantinecatholic.org/adoration",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -88,6 +105,48 @@
   "source_url": "https://www.holyghost-byzantinecatholic.org/"
  },
  "schedule_rows": [
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "19:00",
+   "language": null,
+   "raw": "Evening Prior – McKees Rocks – Great Vespers with Divine Liturgy @ 7:00 p.m.",
+   "source_url": "https://www.holyghost-byzantinecatholic.org/",
+   "fetched_at": "2026-11-01T20:25:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "18:00",
+   "language": null,
+   "raw": "LITURGY SCHEDULE: Friday — Northside Pittsburgh @ 6:00 p.m.",
+   "source_url": "https://www.holyghost-byzantinecatholic.org/",
+   "fetched_at": "2026-11-01T20:25:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "09:00",
+   "language": null,
+   "raw": "LITURGY SCHEDULE: Saturday – McKees Rocks @ 9:00 a.m.",
+   "source_url": "https://www.holyghost-byzantinecatholic.org/",
+   "fetched_at": "2026-11-01T20:25:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "kind_parsed": "mass"
+  },
   {
    "kind": "mass",
    "day": "Monday",
@@ -247,9 +306,19 @@
  ],
  "source_url": "https://www.holyghost-byzantinecatholic.org/",
  "fetched_at": "2026-11-01T20:25:10+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:04+00:00",
+  "requests": 2,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -263,16 +332,17 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 10
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 9
+  "other_location": 4
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

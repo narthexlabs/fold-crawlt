@@ -74,6 +74,12 @@
    "url": "https://accatholic.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://accatholic.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -822,9 +828,19 @@
  ],
  "source_url": "https://accatholic.org/",
  "fetched_at": "2026-11-01T20:25:10+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:47:54+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -838,8 +854,25 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 48
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "A priest will be available for confessions before all evening Masses Monday thru Saturday. Please do not come for confession any later than 10 min before Mass or any earlier than 30 min before Mass.",
+   "phrase": "10 min before Mass",
+   "source_url": "https://accatholic.org/mass-and-confession-schedule/",
+   "fetched_at": "2026-11-01T20:25:05+00:00"
+  },
+  {
+   "kind": "confession",
+   "text": "Confessions are also available by Appointment at the Parish Office.",
+   "phrase": "by Appointment",
+   "source_url": "https://accatholic.org/mass-and-confession-schedule/",
+   "fetched_at": "2026-11-01T20:25:05+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "no_kind": 1,

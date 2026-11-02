@@ -430,6 +430,36 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "godaddy"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "07:00",
+   "language": null,
+   "raw": "Mass Times: 7:00 am, 4:00 pm (Sunday Anticipatory)",
+   "source_url": "https://stxchurch.org/mass-and-confession-times/",
+   "fetched_at": "2026-11-02T04:52:51+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "godaddy",
+   "day_parsed": "Sunday",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "16:00",
+   "language": null,
+   "raw": "Mass Times: 7:00 am, 4:00 pm (Sunday Anticipatory)",
+   "source_url": "https://stxchurch.org/mass-and-confession-times/",
+   "fetched_at": "2026-11-02T04:52:51+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "godaddy",
+   "day_parsed": "Sunday",
+   "topup": true
   }
  ],
  "source_url": "http://www.stxchurch.org/",
@@ -474,5 +504,19 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:52:52+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
  }
 }

@@ -78,6 +78,18 @@
    "url": "https://epiphanyofthelord.org/calendar/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://epiphanyofthelord.org/sacraments/reconciliation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://epiphanyofthelord.org/mass-times/eucharistic-adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -355,6 +367,34 @@
    "review_reason": null,
    "confidence": "high",
    "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Wednesday",
+   "time": "17:00-17:45",
+   "language": null,
+   "raw": "At Epiphany of the Lord Parish, the Sacrament of Reconciliat: 5:00-5:45 pm Prior to Wednesday Evening Mass at our White St. campus",
+   "source_url": "https://epiphanyofthelord.org/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:52:50+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "15:00",
+   "language": null,
+   "raw": "Wednesday from 3 -4:50pm. Mass will begin at 5pm at our St. Thomas Aquinas Church campus.",
+   "source_url": "https://epiphanyofthelord.org/mass-times/eucharistic-adoration/",
+   "fetched_at": "2026-11-02T04:52:51+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "http://www.epiphanyofthelord.org/",
@@ -397,5 +437,30 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "By Appointment is always welcome: You may also call the Parish Office at",
+   "phrase": "By Appointment",
+   "source_url": "https://epiphanyofthelord.org/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:52:50+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:52:52+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
  }
 }

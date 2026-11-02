@@ -75,6 +75,12 @@
    "url": "https://olsnows.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://olsnows.org/sacraments/reconciliation/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -411,6 +417,20 @@
    "review_reason": null,
    "confidence": "high",
    "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "13:00",
+   "language": null,
+   "raw": "The Sacrament of Reconciliation takes place on Saturdays at 1:00 P.M. and on request.",
+   "source_url": "https://olsnows.org/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:37+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "https://olsnows.org/",
@@ -450,5 +470,29 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "and on request.",
+   "phrase": "on request",
+   "source_url": "https://olsnows.org/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:37+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:39+00:00",
+  "requests": 3,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

@@ -333,6 +333,20 @@
    "template": "wix"
   },
   {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "18:00",
+   "language": null,
+   "raw": "Mass 6:00 PM",
+   "source_url": "https://www.holycrosssparks.com/",
+   "fetched_at": "2026-11-01T07:20:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wix",
+   "kind_parsed": "mass"
+  },
+  {
    "kind": "adoration",
    "day": "Monday",
    "time": "11:00-12:00",
@@ -444,9 +458,19 @@
  ],
  "source_url": "https://www.holycrosssparks.com/",
  "fetched_at": "2026-11-01T07:20:09+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:47+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "wix",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -460,19 +484,19 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 14
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "not_a_service": 1,
-  "other_location": 1
+  "no_day": 1
  },
  "groups_dropped": {
   "label_not_group": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

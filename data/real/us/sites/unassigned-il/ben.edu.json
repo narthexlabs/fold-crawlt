@@ -75,6 +75,18 @@
    "url": "https://ben.edu/cdn-cgi/l/email-protection",
    "status": 404,
    "class": "not_found"
+  },
+  {
+   "category": "confession",
+   "url": "https://ben.edu/reconciliation/",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://ben.edu/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -134,7 +146,7 @@
    "note": "The Events Calendar (WordPress) REST API",
    "last_fetch": {
     "status": 200,
-    "fetched_at": "2026-11-01T23:42:44+00:00",
+    "fetched_at": "2026-11-02T05:17:35+00:00",
     "events_in_window": 4,
     "kept": 2,
     "excluded": {
@@ -156,7 +168,7 @@
    "recurring": false,
    "source_url": "https://ben.edu/event/gold-mass-and-lecture/",
    "feed_id": "ben.edu:tribe_rest:b982eed4",
-   "fetched_at": "2026-11-01T23:42:44+00:00"
+   "fetched_at": "2026-11-02T05:17:35+00:00"
   },
   {
    "id": "3d5c0f7a3b71b8e6",
@@ -169,7 +181,7 @@
    "recurring": false,
    "source_url": "https://ben.edu/event/winter-visit-day/",
    "feed_id": "ben.edu:tribe_rest:b982eed4",
-   "fetched_at": "2026-11-01T23:42:44+00:00"
+   "fetched_at": "2026-11-02T05:17:35+00:00"
   }
  ],
  "social": {
@@ -293,9 +305,19 @@
  ],
  "source_url": "https://ben.edu/campus-ministry/lisle-campus-ministry/",
  "fetched_at": "2026-11-01T20:25:19+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:07+00:00",
+  "requests": 2,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -309,6 +331,7 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 11
  },
  "has_sunday": true,
@@ -322,8 +345,8 @@
   "unmatched": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 4,
   "kept_after_privacy": 2,

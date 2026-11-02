@@ -81,6 +81,18 @@
    "url": "https://www.faysouth.org/about/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.faysouth.org/about/reconciliation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.faysouth.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -202,14 +214,7 @@
  ],
  "calendar_feeds": [],
  "events": [],
- "social": {
-  "facebook": [
-   "https://www.facebook.com/romancatholicchurchesofuniontown"
-  ],
-  "youtube": [
-   "https://www.youtube.com/c/RomanCatholicChurchesofUniontown"
-  ]
- },
+ "social": {},
  "bulletin": {
   "url": "https://www.parishesonline.com/organization/the-roman-catholic-churches-of-southern-fayette",
   "date": null,
@@ -220,9 +225,21 @@
  "schedule_rows": [],
  "source_url": "https://www.faysouth.org/st-hubert/",
  "fetched_at": "2026-11-02T00:59:05+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:54+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -236,9 +253,13 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 8
  },
  "has_sunday": false,
+ "schedule_dropped": {
+  "skipped_section": 4
+ },
  "groups_dropped": {
   "noise": 2,
   "unmatched": 1
@@ -267,5 +288,9 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
- }
+ },
+ "social_shared_links_removed": [
+  "https://www.facebook.com/romancatholicchurchesofuniontown",
+  "https://www.youtube.com/c/RomanCatholicChurchesofUniontown"
+ ]
 }

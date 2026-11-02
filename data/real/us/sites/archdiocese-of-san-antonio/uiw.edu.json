@@ -311,16 +311,17 @@
   },
   {
    "kind": "mass",
-   "day": "First Wednesday of the month",
+   "day": "First Wednesday of the month (winter, oct-may)",
    "time": "12:00",
    "language": null,
-   "raw": "Mass: First Wednesdays, Oct.-May (except Jan. & March), Noon",
+   "raw": "Mass: First Wednesdays, Oct.-May , Noon",
    "source_url": "https://www.uiw.edu/ministry/prayer-worship/mass-times.html",
    "fetched_at": "2026-11-01T08:04:58+00:00",
    "needs_review": true,
    "review_reason": "seasonal",
    "confidence": "low",
    "template": "generic_strict",
+   "note": "except Jan. & March",
    "season": "Oct.-May"
   },
   {
@@ -339,9 +340,19 @@
  ],
  "source_url": "http://www.uiw.edu/ministry",
  "fetched_at": "2026-11-01T08:05:09+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:31+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -355,8 +366,18 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 6
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Reconciliation by Appointment",
+   "phrase": "by Appointment",
+   "source_url": "https://www.uiw.edu/ministry/prayer-worship/mass-times.html",
+   "fetched_at": "2026-11-01T08:04:58+00:00"
+  }
+ ],
  "has_sunday": true,
  "groups_dropped": {
   "unmatched": 3,
@@ -364,8 +385,8 @@
   "noise": 2
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

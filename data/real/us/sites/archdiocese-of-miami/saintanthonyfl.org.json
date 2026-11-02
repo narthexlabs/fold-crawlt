@@ -2,16 +2,19 @@
  "domain": "saintanthonyfl.org",
  "diocese": "archdiocese-of-miami",
  "matched_church_ids": [
+  "gc-23118",
   "saint-anthony-fort-lauderdale-fl"
  ],
  "matched": {
   "directory": [],
   "discovermass": [
-   "saint-anthony-fort-lauderdale-fl"
+   "saint-anthony-fort-lauderdale-fl",
+   "gc-23118"
   ]
  },
  "names": [
-  "Saint Anthony"
+  "Saint Anthony",
+  "St. Anthony"
  ],
  "cities": [
   "Fort Lauderdale"
@@ -63,6 +66,12 @@
    "url": "https://saintanthonyfl.org/about-us-2/bulletin/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://saintanthonyfl.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -555,7 +564,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:36:39+00:00",
+    "fetched_at": "2026-11-02T04:57:24+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -919,9 +928,19 @@
  ],
  "source_url": "https://saintanthonyfl.org/",
  "fetched_at": "2026-11-01T22:15:39+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:36+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -935,11 +954,11 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 22
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "dated_line": 1,
   "not_a_service": 3
  },
  "groups_dropped": {
@@ -948,8 +967,8 @@
   "private_name_risk": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

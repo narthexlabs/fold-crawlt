@@ -57,6 +57,12 @@
    "url": "https://www.ourladyoftheseas.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.ourladyoftheseas.org/new-page-1",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -255,9 +261,7 @@
   "excluded_by_reason": {}
  },
  "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()",
-  "names_withheld": 0,
-  "contacts_removed": 1
+  "screened_by": "ingest/public/privacy.py screen()"
  },
  "render_attempt": {
   "status": "ok",
@@ -265,5 +269,20 @@
   "groups": 0,
   "mass_rows": 4,
   "at": "2026-11-01"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:42+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "liturgy"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
  }
 }

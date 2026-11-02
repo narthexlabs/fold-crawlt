@@ -73,6 +73,18 @@
    "url": "https://sjnparish.org/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://sjnparish.org/sacraments/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://sjnparish.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -391,11 +403,38 @@
    "template": "wordpress"
   },
   {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "17:15",
+   "language": null,
+   "raw": "Vigil: 5:15 pm",
+   "source_url": "https://sjnparish.org/mass/",
+   "fetched_at": "2026-11-01T20:25:15+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "kind_parsed": "mass"
+  },
+  {
    "kind": "confession",
    "day": "Tuesday",
    "time": "18:00",
    "language": null,
    "raw": "Sacrament of Reconciliation: Tuesday: 6:00 pm or by appointment.",
+   "source_url": "https://sjnparish.org/mass/",
+   "fetched_at": "2026-11-01T20:25:15+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "devotion",
+   "day": "Monday",
+   "time": "19:00",
+   "language": null,
+   "raw": "Mondays: 7:00 pm",
    "source_url": "https://sjnparish.org/mass/",
    "fetched_at": "2026-11-01T20:25:15+00:00",
    "needs_review": false,
@@ -419,9 +458,21 @@
  ],
  "source_url": "https://sjnparish.org/",
  "fetched_at": "2026-11-01T20:25:26+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:09+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -435,13 +486,22 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 16
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "6:00 pm or by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://sjnparish.org/mass/",
+   "fetched_at": "2026-11-01T20:25:15+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "dated_line": 2,
-  "other_location": 6,
-  "not_a_service": 1,
+  "other_location": 5,
   "relative_time": 2,
   "notice_not_schedule": 1
  },

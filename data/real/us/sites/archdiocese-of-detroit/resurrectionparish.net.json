@@ -75,6 +75,12 @@
    "url": "https://www.resurrectionparish.net/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.resurrectionparish.net/holy-hour",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -260,7 +266,7 @@
    "note": "Google Calendar public feed (website-builder widget)",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:37:11+00:00",
+    "fetched_at": "2026-11-02T04:54:44+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -280,19 +286,6 @@
   "source_url": "https://www.resurrectionparish.net/"
  },
  "schedule_rows": [
-  {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "14:45",
-   "language": null,
-   "raw": "You may receive the Sacrament of Reconciliation at Resurrect: Saturdays: Begining at 2:45 pm",
-   "source_url": "https://www.resurrectionparish.net/sacraments",
-   "fetched_at": "2026-11-01T18:51:45+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
   {
    "kind": "mass",
    "day": "Saturday",
@@ -411,13 +404,83 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "14:45-15:30",
+   "language": null,
+   "raw": "Confession Times: Saturday: 2:45 PM to 3:30 PM",
+   "source_url": "https://www.resurrectionparish.net/",
+   "fetched_at": "2026-11-01T18:51:44+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Wednesday",
+   "time": "07:15-08:00",
+   "language": null,
+   "raw": "Confession Times: Wednesday: 7:15 AM to 8:00 AM",
+   "source_url": "https://www.resurrectionparish.net/",
+   "fetched_at": "2026-11-01T18:51:44+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Wednesday",
+   "time": "06:45",
+   "language": null,
+   "raw": "You may receive the Sacrament of Reconciliation at Resurrect: Wednesdays: After 6:45 am Mass",
+   "source_url": "https://www.resurrectionparish.net/sacraments",
+   "fetched_at": "2026-11-01T18:51:45+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "after",
+   "note": "You may receive the Sacrament of Reconciliation at Resurrect: Wednesdays: After 6:45 am Mass",
+   "relative_resolved": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Monday",
+   "time": "06:30",
+   "language": null,
+   "raw": "Join us for Eucharistic Adoration on Mondays after 6:30 am Mass or attend our monthly Holy Hours",
+   "source_url": "https://www.resurrectionparish.net/holy-hour",
+   "fetched_at": "2026-11-02T04:41:40+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "after",
+   "note": "Join us for Eucharistic Adoration on Mondays after 6:30 am Mass or attend our monthly Holy Hours",
+   "relative_resolved": false
   }
  ],
  "source_url": "http://www.resurrectionparish.net/",
  "fetched_at": "2026-11-01T18:51:51+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:40+00:00",
+  "requests": 1,
+  "found": [
+   "adoration"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -431,12 +494,12 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 26
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "no_day": 1,
-  "relative_time": 1
+  "no_day": 1
  },
  "groups_dropped": {
   "unmatched": 6,
@@ -444,8 +507,8 @@
   "label_not_group": 2
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

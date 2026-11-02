@@ -177,6 +177,22 @@
    "template": "generic_strict"
   },
   {
+   "kind": "confession",
+   "day": "Wednesday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Confessions:: Wednesday: After 5 p.m. Mass",
+   "source_url": "https://stanthony.latinmassarlington.org/",
+   "fetched_at": "2026-11-01T22:15:43+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "after",
+   "note": "Confessions:: Wednesday: After 5 p.m. Mass",
+   "relative_resolved": true
+  },
+  {
    "kind": "mass",
    "day": "Saturday",
    "time": "18:30",
@@ -188,13 +204,39 @@
    "review_reason": null,
    "confidence": "high",
    "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Eucharistic Adoration :: Friday: After 9 a.m. Mass",
+   "source_url": "https://stanthony.latinmassarlington.org/",
+   "fetched_at": "2026-11-01T22:15:43+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "after",
+   "note": "Eucharistic Adoration :: Friday: After 9 a.m. Mass",
+   "relative_resolved": true
   }
  ],
  "source_url": "https://stanthony.latinmassarlington.org/",
  "fetched_at": "2026-11-01T22:15:44+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:11+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -208,17 +250,18 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 2
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "relative_time": 3,
+  "relative_time": 1,
   "benediction_end": 2
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

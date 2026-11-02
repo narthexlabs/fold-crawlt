@@ -78,6 +78,12 @@
    "url": "https://www.stmarykittanning.org/about/",
    "status": null,
    "class": "timeout"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stmarykittanning.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -194,19 +200,6 @@
   "source_url": "https://www.stmarykittanning.org/"
  },
  "schedule_rows": [
-  {
-   "kind": "confession",
-   "day": "Wednesday",
-   "time": "17:15-17:45",
-   "language": null,
-   "raw": "At this time, the sacrament of reconciliation is celebrated in our parish on Wednesdays from 5:15 p.m. to 5:45 p.m.",
-   "source_url": "https://www.stmarykittanning.org/sacraments/reconciliation/",
-   "fetched_at": "2026-11-01T20:25:45+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "wordpress"
-  },
   {
    "kind": "mass",
    "day": "Monday",
@@ -331,13 +324,36 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Wednesday",
+   "time": "17:15-17:45",
+   "language": null,
+   "raw": "At this time, the sacrament of reconciliation is celebrated in our parish on Wednesdays from 5:15 p.m. to 5:45 p.m.",
+   "source_url": "https://www.stmarykittanning.org/sacraments/reconciliation/",
+   "fetched_at": "2026-11-01T20:25:45+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
   }
  ],
  "source_url": "https://www.stmarykittanning.org/",
  "fetched_at": "2026-11-01T20:27:53+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:41+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -351,6 +367,7 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 7
  },
  "has_sunday": true,

@@ -3,13 +3,15 @@
  "diocese": "diocese-of-orlando",
  "matched_church_ids": [
   "brave:FL|john neumann lakeland|",
+  "gc-23292",
   "st-john-neumann-lakeland-fl"
  ],
  "matched": {
   "directory": [],
   "discovermass": [
    "st-john-neumann-lakeland-fl",
-   "brave:FL|john neumann lakeland|"
+   "brave:FL|john neumann lakeland|",
+   "gc-23292"
   ]
  },
  "names": [
@@ -314,7 +316,7 @@
    "feed_key": "85a2a69a46b6",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-02T00:06:22+00:00",
+    "fetched_at": "2026-11-02T04:59:21+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -337,19 +339,6 @@
   "source_url": "https://www.sjncc.org/"
  },
  "schedule_rows": [
-  {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "15:00",
-   "language": null,
-   "raw": "Confessions are heard each Saturday at 3:00pm or by individual appointment with the priest.",
-   "source_url": "https://www.sjncc.org/reconciliation",
-   "fetched_at": "2026-11-01T22:15:26+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "generic_strict"
-  },
   {
    "kind": "mass",
    "day": "Saturday",
@@ -517,13 +506,49 @@
    "confidence": "medium",
    "template": "generic_strict",
    "day_expanded_from": "Wednesdays & Thursdays"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:00-15:30",
+   "language": "English",
+   "raw": "Confession: Saturdays from 3:00–3:30p.m., after daily Mass, or by scheduling an appointment",
+   "source_url": "https://www.sjncc.org/",
+   "fetched_at": "2026-11-01T22:15:24+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:30",
+   "language": "English",
+   "raw": "Confession: Español: Sábados de 3:00p.m. a 3:30p.m., después de la misa diaria, o con cita previa.",
+   "source_url": "https://www.sjncc.org/",
+   "fetched_at": "2026-11-01T22:15:24+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
   }
  ],
  "source_url": "https://www.sjncc.org/",
  "fetched_at": "2026-11-01T22:15:37+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:39+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -537,6 +562,7 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 13
  },
  "has_sunday": true,

@@ -69,6 +69,12 @@
    "url": "https://olgcsb.org/olgc/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://olgcsb.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -190,6 +196,90 @@
  "schedule_rows": [
   {
    "kind": "mass",
+   "day": "Monday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Daily Mass: 9:00 a.m.",
+   "source_url": "https://olgcsb.org/olgc/",
+   "fetched_at": "2026-11-02T00:05:49+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Monday, Tuesday"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Daily Mass: 9:00 a.m.",
+   "source_url": "https://olgcsb.org/olgc/",
+   "fetched_at": "2026-11-02T00:05:49+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Monday, Tuesday"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:15-15:45",
+   "language": null,
+   "raw": "Confession: Saturday 3:15 – 3:45 p.m.",
+   "source_url": "https://olgcsb.org/olgc/",
+   "fetched_at": "2026-11-02T00:05:49+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "18:35",
+   "language": null,
+   "raw": "Following Mass on Monday and Tuesday: Thursday 6:35 p.m.",
+   "source_url": "https://olgcsb.org/olgc/",
+   "fetched_at": "2026-11-02T00:05:49+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_parsed": "Thursday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "18:35",
+   "language": null,
+   "raw": "Following Mass on Monday and Tuesday: Thursday 6:35 p.m.",
+   "source_url": "https://olgcsb.org/olgc/",
+   "fetched_at": "2026-11-02T00:05:49+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_parsed": "Thursday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "18:35",
+   "language": null,
+   "raw": "Following Mass on Monday and Tuesday: Thursday 6:35 p.m.",
+   "source_url": "https://olgcsb.org/olgc/",
+   "fetched_at": "2026-11-02T00:05:49+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
    "day": "Saturday",
    "time": "16:00",
    "language": null,
@@ -213,36 +303,6 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
-  },
-  {
-   "kind": "mass",
-   "day": "Monday",
-   "time": "09:00",
-   "language": null,
-   "raw": "Mass: Monday, Tuesday, and Friday 9 AM",
-   "source_url": "https://olgcsb.org/olgc/mass-schedule/",
-   "fetched_at": "2026-11-02T00:05:50+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress",
-   "day_parsed": "Friday",
-   "day_bound_from_line": true
-  },
-  {
-   "kind": "mass",
-   "day": "Tuesday",
-   "time": "09:00",
-   "language": null,
-   "raw": "Mass: Monday, Tuesday, and Friday 9 AM",
-   "source_url": "https://olgcsb.org/olgc/mass-schedule/",
-   "fetched_at": "2026-11-02T00:05:50+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress",
-   "day_parsed": "Friday",
-   "day_bound_from_line": true
   },
   {
    "kind": "mass",
@@ -271,11 +331,11 @@
    "template": "wordpress"
   },
   {
-   "kind": "confession",
+   "kind": "devotion",
    "day": "Saturday",
-   "time": "15:15-15:45",
+   "time": "15:35",
    "language": null,
-   "raw": "Penance: Saturday at 3:15-3:45 PM",
+   "raw": "Saturday at 3:35 PM",
    "source_url": "https://olgcsb.org/olgc/mass-schedule/",
    "fetched_at": "2026-11-02T00:05:50+00:00",
    "needs_review": false,
@@ -284,24 +344,24 @@
    "template": "wordpress"
   },
   {
-   "kind": "mass",
-   "day": "Saturday",
-   "time": "18:00",
+   "kind": "devotion",
+   "day": "Sunday",
+   "time": "08:35",
    "language": null,
-   "raw": "Saturday (Sunday vigil) at 6 PM",
+   "raw": "Sunday at 8:35 AM",
    "source_url": "https://olgcsb.org/olgc/mass-schedule/",
    "fetched_at": "2026-11-02T00:05:50+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "high",
+   "confidence": "medium",
    "template": "wordpress"
   },
   {
-   "kind": "mass",
-   "day": "Sunday",
-   "time": "11:00",
+   "kind": "devotion",
+   "day": "Friday",
+   "time": "09:25",
    "language": null,
-   "raw": "Mass: Sunday at 11 AM",
+   "raw": "Friday at 9:25 AM",
    "source_url": "https://olgcsb.org/olgc/mass-schedule/",
    "fetched_at": "2026-11-02T00:05:50+00:00",
    "needs_review": false,
@@ -312,9 +372,19 @@
  ],
  "source_url": "https://olgcsb.org/olgc/",
  "fetched_at": "2026-11-02T00:05:57+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:17+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -328,11 +398,21 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 7
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "By appointment only",
+   "phrase": "By appointment",
+   "source_url": "https://olgcsb.org/olgc/mass-schedule/",
+   "fetched_at": "2026-11-02T00:05:50+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "not_a_service": 5,
+  "other_location": 4,
   "range_not_a_mass": 1
  },
  "groups_dropped": {

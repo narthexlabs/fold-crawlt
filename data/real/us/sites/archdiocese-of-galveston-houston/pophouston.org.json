@@ -93,6 +93,12 @@
    "url": "https://parishesonline.com/organization/prince-of-peace-catholic-community-77070",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.pophouston.org/groups/adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -389,13 +395,94 @@
    "confidence": "medium",
    "template": "wordpress",
    "day_expanded_from": "MONDAY-FRIDAY"
+  },
+  {
+   "kind": "adoration",
+   "day": "Monday",
+   "time": "10:00-18:30",
+   "language": null,
+   "raw": "Anyone can drop by or sign up for a weekly holy hour in the : 10 am-6:30 pm",
+   "source_url": "https://www.pophouston.org/groups/adoration/",
+   "fetched_at": "2026-11-02T04:41:31+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Monday-Thursday"
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "10:00-18:30",
+   "language": null,
+   "raw": "Anyone can drop by or sign up for a weekly holy hour in the : 10 am-6:30 pm",
+   "source_url": "https://www.pophouston.org/groups/adoration/",
+   "fetched_at": "2026-11-02T04:41:31+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Monday-Thursday"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "10:00-18:30",
+   "language": null,
+   "raw": "Anyone can drop by or sign up for a weekly holy hour in the : 10 am-6:30 pm",
+   "source_url": "https://www.pophouston.org/groups/adoration/",
+   "fetched_at": "2026-11-02T04:41:31+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Monday-Thursday"
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "10:00-18:30",
+   "language": null,
+   "raw": "Anyone can drop by or sign up for a weekly holy hour in the : 10 am-6:30 pm",
+   "source_url": "https://www.pophouston.org/groups/adoration/",
+   "fetched_at": "2026-11-02T04:41:31+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Monday-Thursday"
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "10:00-16:00",
+   "language": null,
+   "raw": "Anyone can drop by or sign up for a weekly holy hour in the : 10 am-4 pm",
+   "source_url": "https://www.pophouston.org/groups/adoration/",
+   "fetched_at": "2026-11-02T04:41:31+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
   }
  ],
  "source_url": "https://www.pophouston.org/",
  "fetched_at": "2026-11-01T07:34:59+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:31+00:00",
+  "requests": 1,
+  "found": [
+   "adoration"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -409,6 +496,7 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 27
  },
  "has_sunday": false,
@@ -424,8 +512,8 @@
   "label_not_group": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

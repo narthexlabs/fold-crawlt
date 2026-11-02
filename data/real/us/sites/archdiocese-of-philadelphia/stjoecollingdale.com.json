@@ -79,7 +79,7 @@
    "feed_key": "ae6a1687e04e",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-02T02:00:07+00:00",
+    "fetched_at": "2026-11-02T04:59:44+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -234,78 +234,45 @@
   },
   {
    "kind": "mass",
-   "day": "Monday",
+   "day": "Sunday",
    "time": "18:00",
    "language": null,
-   "raw": "Weekend Mass -: 6:00pm (except June thru August)",
+   "raw": "Weekend Mass -: 6:00pm",
    "source_url": "https://www.stjoecollingdale.com/",
    "fetched_at": "2026-11-01T20:25:22+00:00",
-   "needs_review": true,
-   "review_reason": "seasonal",
-   "confidence": "medium",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
    "template": "squarespace",
-   "day_expanded_from": "Weekend",
-   "season": "June thru August"
+   "note": "except June thru August"
   },
   {
-   "kind": "mass",
-   "day": "Tuesday",
-   "time": "18:00",
+   "kind": "other",
+   "day": "Holy days",
+   "time": "08:00",
    "language": null,
-   "raw": "Weekend Mass -: 6:00pm (except June thru August)",
+   "raw": "Weekend Mass -: 8:00am; 4:30pm;",
    "source_url": "https://www.stjoecollingdale.com/",
    "fetched_at": "2026-11-01T20:25:22+00:00",
-   "needs_review": true,
-   "review_reason": "seasonal",
+   "needs_review": false,
+   "review_reason": null,
    "confidence": "medium",
    "template": "squarespace",
-   "day_expanded_from": "Weekend",
-   "season": "June thru August"
+   "kind_parsed": "mass"
   },
   {
-   "kind": "mass",
-   "day": "Wednesday",
-   "time": "18:00",
+   "kind": "other",
+   "day": "Holy days",
+   "time": "16:30",
    "language": null,
-   "raw": "Weekend Mass -: 6:00pm (except June thru August)",
+   "raw": "Weekend Mass -: 8:00am; 4:30pm;",
    "source_url": "https://www.stjoecollingdale.com/",
    "fetched_at": "2026-11-01T20:25:22+00:00",
-   "needs_review": true,
-   "review_reason": "seasonal",
+   "needs_review": false,
+   "review_reason": null,
    "confidence": "medium",
    "template": "squarespace",
-   "day_expanded_from": "Weekend",
-   "season": "June thru August"
-  },
-  {
-   "kind": "mass",
-   "day": "Thursday",
-   "time": "18:00",
-   "language": null,
-   "raw": "Weekend Mass -: 6:00pm (except June thru August)",
-   "source_url": "https://www.stjoecollingdale.com/",
-   "fetched_at": "2026-11-01T20:25:22+00:00",
-   "needs_review": true,
-   "review_reason": "seasonal",
-   "confidence": "medium",
-   "template": "squarespace",
-   "day_expanded_from": "Weekend",
-   "season": "June thru August"
-  },
-  {
-   "kind": "mass",
-   "day": "Friday",
-   "time": "18:00",
-   "language": null,
-   "raw": "Weekend Mass -: 6:00pm (except June thru August)",
-   "source_url": "https://www.stjoecollingdale.com/",
-   "fetched_at": "2026-11-01T20:25:22+00:00",
-   "needs_review": true,
-   "review_reason": "seasonal",
-   "confidence": "medium",
-   "template": "squarespace",
-   "day_expanded_from": "Weekend",
-   "season": "June thru August"
+   "kind_parsed": "mass"
   },
   {
    "kind": "confession",
@@ -323,9 +290,19 @@
  ],
  "source_url": "https://www.stjoecollingdale.com/",
  "fetched_at": "2026-11-01T20:25:26+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:07+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "squarespace",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -339,11 +316,12 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 13
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 5
+  "other_location": 3
  },
  "groups_dropped": {},
  "event_counts": {

@@ -69,6 +69,22 @@
  },
  "schedule_rows": [
   {
+   "kind": "confession",
+   "day": "Wednesday (summer)",
+   "time": "18:00",
+   "language": null,
+   "raw": "Also, remember, Confession occurs on Wednesday nights shortly after 6:00 PM as well.",
+   "source_url": "https://stmarkemporium.org/",
+   "fetched_at": "2026-11-02T03:46:34+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "after",
+   "note": "Also, remember, Confession occurs on Wednesday nights shortly after 6:00 PM as well.",
+   "relative_resolved": false
+  },
+  {
    "kind": "mass",
    "day": "Saturday",
    "time": "17:30",
@@ -93,9 +109,19 @@
  ],
  "source_url": "http://stmarkemporium.org/Mission.html",
  "fetched_at": "2026-11-02T03:46:36+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:12+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -109,11 +135,11 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 5
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "relative_time": 1,
   "skipped_section": 1,
   "weekend_rescue_added": 2
  },

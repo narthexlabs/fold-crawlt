@@ -87,6 +87,12 @@
    "url": "https://stjulianawpb.com/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stjulianawpb.com/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -373,6 +379,19 @@
    "template": "godaddy"
   },
   {
+   "kind": "devotion",
+   "day": "First Sunday of the month",
+   "time": "14:30",
+   "language": null,
+   "raw": "First Sundays: at 2:30 p.m.",
+   "source_url": "https://stjulianawpb.com/mass-times/",
+   "fetched_at": "2026-11-01T22:15:25+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "godaddy"
+  },
+  {
    "kind": "mass",
    "day": "Monday",
    "time": "06:30",
@@ -570,9 +589,19 @@
  ],
  "source_url": "https://stjulianawpb.com/",
  "fetched_at": "2026-11-01T22:15:45+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:51+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "godaddy",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -586,11 +615,11 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 17
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "not_a_service": 1,
   "no_day": 1
  },
  "groups_dropped": {
@@ -598,8 +627,8 @@
   "unmatched": 2
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

@@ -81,6 +81,12 @@
    "url": "https://www.immaculateconceptionkingston.com/contacts",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.immaculateconceptionkingston.com/the-sacraments",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -181,7 +187,94 @@
   "text": "Weekly Bulletins",
   "source_url": "https://www.immaculateconceptionkingston.com/"
  },
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:30",
+   "language": null,
+   "raw": "Confessions are on Saturday at 3:30 P.M. or upon request.",
+   "source_url": "https://www.immaculateconceptionkingston.com/the-sacraments",
+   "fetched_at": "2026-11-02T04:41:32+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wix",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "16:30",
+   "language": null,
+   "raw": "Saturday Mass of Anticipation: 4:30 P.M.",
+   "source_url": "https://www.immaculateconceptionkingston.com/the-sacraments",
+   "fetched_at": "2026-11-02T04:41:32+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wix",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "THE SACRAMENT OF THE EUCHARIST:: Sunday 8:00, 9:30 (Polish - 1st Sunday of the Month),",
+   "source_url": "https://www.immaculateconceptionkingston.com/the-sacraments",
+   "fetched_at": "2026-11-02T04:41:32+00:00",
+   "needs_review": true,
+   "review_reason": "nth_of_month",
+   "confidence": "low",
+   "template": "wix",
+   "nth": "1st",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:30",
+   "language": "Polish",
+   "raw": "THE SACRAMENT OF THE EUCHARIST:: Sunday 8:00, 9:30 (Polish - 1st Sunday of the Month),",
+   "source_url": "https://www.immaculateconceptionkingston.com/the-sacraments",
+   "fetched_at": "2026-11-02T04:41:32+00:00",
+   "needs_review": true,
+   "review_reason": "nth_of_month",
+   "confidence": "low",
+   "template": "wix",
+   "nth": "1st",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:00",
+   "language": null,
+   "raw": "THE SACRAMENT OF THE EUCHARIST:: 11:00 A.M. and 6:00 P.M.",
+   "source_url": "https://www.immaculateconceptionkingston.com/the-sacraments",
+   "fetched_at": "2026-11-02T04:41:32+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "18:00",
+   "language": null,
+   "raw": "THE SACRAMENT OF THE EUCHARIST:: 11:00 A.M. and 6:00 P.M.",
+   "source_url": "https://www.immaculateconceptionkingston.com/the-sacraments",
+   "fetched_at": "2026-11-02T04:41:32+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "topup": true
+  }
+ ],
  "source_url": "https://www.immaculateconceptionkingston.com/",
  "fetched_at": "2026-11-01T01:57:09+00:00",
  "schedule_template": {
@@ -220,5 +313,29 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Confessions are on Saturday at 3:30 P.M. or upon request.",
+   "phrase": "upon request",
+   "source_url": "https://www.immaculateconceptionkingston.com/the-sacraments",
+   "fetched_at": "2026-11-02T04:41:32+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:34+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 6,
+  "mode": "merge"
  }
 }

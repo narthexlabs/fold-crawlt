@@ -75,6 +75,12 @@
    "url": "https://goodshepherdsouthhill.org/welcome/contact-directions/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://goodshepherdsouthhill.org/sacraments/reconciliation/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -301,6 +307,34 @@
    "review_reason": null,
    "confidence": "high",
    "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "18:30-19:00",
+   "language": null,
+   "raw": "Confession is offered on Saturday 6:30pm-7:00pm Sunday 7:20am-7:50am or by appointment.",
+   "source_url": "https://goodshepherdsouthhill.org/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:46+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "07:20-07:50",
+   "language": null,
+   "raw": "Confession is offered on Saturday 6:30pm-7:00pm Sunday 7:20am-7:50am or by appointment.",
+   "source_url": "https://goodshepherdsouthhill.org/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:46+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "https://goodshepherdsouthhill.org/",
@@ -344,5 +378,28 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "is offered on Saturday 6:30pm-7:00pm Sunday 7:20am-7:50am or by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://goodshepherdsouthhill.org/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:46+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:47+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
  }
 }

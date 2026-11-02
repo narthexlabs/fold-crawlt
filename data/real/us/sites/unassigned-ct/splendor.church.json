@@ -39,6 +39,18 @@
    "url": "https://splendor.church/nearby-confession",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://splendor.church/nearby-adoration",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://splendor.church/help/find-churches-schedules",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -72,9 +84,22 @@
  ],
  "source_url": "https://splendor.church/",
  "fetched_at": "2026-11-01T20:25:05+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:49+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "liturgy"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -88,13 +113,32 @@
   },
   "passed_bar": true,
   "trusted_candidate": true,
-  "generic_rows": 0
+  "trusted_kinds": [
+   "weekend",
+   "weekday",
+   "confession",
+   "adoration"
+  ],
+  "generic_rows": 4
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Yes — most parishes offer walk-in confession during scheduled times. Some also offer confession by appointment outside regular hours.",
+   "phrase": "by appointment",
+   "source_url": "https://splendor.church/nearby-confession",
+   "fetched_at": "2026-11-01T20:25:05+00:00"
+  }
+ ],
  "has_sunday": true,
+ "schedule_dropped": {
+  "no_day": 4,
+  "prose": 1
+ },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

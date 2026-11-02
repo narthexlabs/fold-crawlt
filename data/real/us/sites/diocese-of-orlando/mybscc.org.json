@@ -75,6 +75,18 @@
    "url": "https://www.mybscc.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.mybscc.org/reconciliation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.mybscc.org/eucharistic-adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -325,6 +337,76 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "First Sunday of the month",
+   "time": "18:00-19:00",
+   "language": null,
+   "raw": "Eucharistic Adoration: 1st Sundays from 6pm - 7pm in Our Lady's Chapel",
+   "source_url": "https://www.mybscc.org/eucharistic-adoration",
+   "fetched_at": "2026-11-02T04:41:43+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "18:00-19:00",
+   "language": null,
+   "raw": "Eucharistic Adoration: Thursdays from 6pm - 7pm in the Main Church",
+   "source_url": "https://www.mybscc.org/eucharistic-adoration",
+   "fetched_at": "2026-11-02T04:41:43+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "First Friday of the month",
+   "time": "09:30-19:00",
+   "language": null,
+   "raw": "Eucharistic Adoration: 1st Fridays from 9:30am - 7pm in Our Lady's Chapel",
+   "source_url": "https://www.mybscc.org/eucharistic-adoration",
+   "fetched_at": "2026-11-02T04:41:43+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "09:30",
+   "language": null,
+   "raw": "Eucharistic Adoration: Other Fridays from 9:30am - Noon in Our Lady's Chapel",
+   "source_url": "https://www.mybscc.org/eucharistic-adoration",
+   "fetched_at": "2026-11-02T04:41:43+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "12:00",
+   "language": null,
+   "raw": "Eucharistic Adoration: Other Fridays from 9:30am - Noon in Our Lady's Chapel",
+   "source_url": "https://www.mybscc.org/eucharistic-adoration",
+   "fetched_at": "2026-11-02T04:41:43+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
   }
  ],
  "source_url": "http://www.mybscc.org/",
@@ -366,5 +448,21 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:44+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 5,
+  "mode": "merge"
  }
 }

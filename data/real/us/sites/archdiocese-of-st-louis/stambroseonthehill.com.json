@@ -85,6 +85,18 @@
    "url": "https://www.stambroseonthehill.com/about/contact-us.cfm",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stambroseonthehill.com/sacraments/reconciliation.cfm",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stambroseonthehill.com/worship/eucharistic-adoration.cfm",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -635,6 +647,44 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Wednesday",
+   "time": "17:30",
+   "language": null,
+   "raw": "Reconciliation is offered:: M,T,W,Th: after 5:30 p.m. Mass",
+   "source_url": "https://www.stambroseonthehill.com/sacraments/reconciliation.cfm",
+   "fetched_at": "2026-11-02T04:41:46+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "after",
+   "note": "Reconciliation is offered:: M,T,W,Th: after 5:30 p.m. Mass",
+   "day_expanded_from": "M,T,W,Th",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Thursday",
+   "time": "17:30",
+   "language": null,
+   "raw": "Reconciliation is offered:: M,T,W,Th: after 5:30 p.m. Mass",
+   "source_url": "https://www.stambroseonthehill.com/sacraments/reconciliation.cfm",
+   "fetched_at": "2026-11-02T04:41:46+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "after",
+   "note": "Reconciliation is offered:: M,T,W,Th: after 5:30 p.m. Mass",
+   "day_expanded_from": "M,T,W,Th",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "topup": true
   }
  ],
  "source_url": "http://www.stambroseonthehill.com/",
@@ -677,5 +727,21 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:48+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
  }
 }

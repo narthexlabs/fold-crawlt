@@ -69,6 +69,18 @@
    "url": "https://stmarysmetamora.com/church/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stmarysmetamora.com/church/sacraments/reconciliation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stmarysmetamora.com/adoration/",
+   "status": 500,
+   "class": "http_5xx"
   }
  ],
  "cms_guess": {
@@ -281,7 +293,7 @@
    "time": "16:00",
    "language": null,
    "raw": "Weekend Mass: 4:00pm",
-   "source_url": "https://stmarysmetamora.com/church/about-us/mass-times/",
+   "source_url": "https://stmarysmetamora.com/church/",
    "fetched_at": "2026-11-01T18:51:51+00:00",
    "needs_review": false,
    "review_reason": null,
@@ -294,7 +306,7 @@
    "time": "07:30",
    "language": null,
    "raw": "Weekend Mass: 7:30am, 9:30am",
-   "source_url": "https://stmarysmetamora.com/church/about-us/mass-times/",
+   "source_url": "https://stmarysmetamora.com/church/",
    "fetched_at": "2026-11-01T18:51:51+00:00",
    "needs_review": false,
    "review_reason": null,
@@ -307,7 +319,7 @@
    "time": "09:30",
    "language": null,
    "raw": "Weekend Mass: 7:30am, 9:30am",
-   "source_url": "https://stmarysmetamora.com/church/about-us/mass-times/",
+   "source_url": "https://stmarysmetamora.com/church/",
    "fetched_at": "2026-11-01T18:51:51+00:00",
    "needs_review": false,
    "review_reason": null,
@@ -320,7 +332,7 @@
    "time": "08:00",
    "language": null,
    "raw": "Weekday Mass: 8:00am (8:15am on Thursday during school year)",
-   "source_url": "https://stmarysmetamora.com/church/about-us/mass-times/",
+   "source_url": "https://stmarysmetamora.com/church/",
    "fetched_at": "2026-11-01T18:51:51+00:00",
    "needs_review": false,
    "review_reason": null,
@@ -333,7 +345,7 @@
    "time": "08:15",
    "language": null,
    "raw": "Weekday Mass: 8:00am (8:15am on Thursday during school year)",
-   "source_url": "https://stmarysmetamora.com/church/about-us/mass-times/",
+   "source_url": "https://stmarysmetamora.com/church/",
    "fetched_at": "2026-11-01T18:51:51+00:00",
    "needs_review": false,
    "review_reason": null,
@@ -421,9 +433,21 @@
  ],
  "source_url": "https://stmarysmetamora.com/church/",
  "fetched_at": "2026-11-01T18:51:58+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:53+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -437,8 +461,18 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 14
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Confession times: 20 minutes before Mass on Sunday, Tuesday, Wednesday, and Friday, Saturday from 3:00 p.m. – 3:45 p.m., or by appointment",
+   "phrase": "20 minutes before Mass",
+   "source_url": "https://stmarysmetamora.com/church/sacraments/",
+   "fetched_at": "2026-11-01T18:51:53+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "dated_line": 2,
@@ -450,8 +484,8 @@
   "unmatched": 3
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

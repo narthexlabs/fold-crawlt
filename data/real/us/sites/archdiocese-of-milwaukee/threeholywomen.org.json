@@ -87,6 +87,18 @@
    "url": "https://www.threeholywomenparish.org/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.threeholywomenparish.org/sacraments/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.threeholywomenparish.org/events/eucharistic-adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -433,9 +445,22 @@
  "source_url": "http://www.threeholywomen.org/",
  "fetched_at": "2026-11-02T01:56:18+00:00",
  "redirected_off_host": "threeholywomenparish.org",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:44+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -449,13 +474,23 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 33
+  "trusted_kinds": [],
+  "generic_rows": 36
  },
+ "schedule_notes": [
+  {
+   "kind": "adoration",
+   "text": "after all Masses",
+   "phrase": "after all Masses",
+   "source_url": "https://www.threeholywomenparish.org/events/eucharistic-adoration/",
+   "fetched_at": "2026-11-02T04:41:44+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "dated_block": 1,
-  "other_location": 17,
-  "relative_time": 1
+  "other_location": 26,
+  "no_day": 2
  },
  "groups_dropped": {
   "noise": 1,

@@ -108,9 +108,19 @@
  ],
  "source_url": "http://www.sttheresecmri.org/",
  "fetched_at": "2026-11-01T20:25:08+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:52:28+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "wix",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -124,16 +134,27 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 21
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Confessions are typically heard 30-45 minutes before Sunday and Holyday Masses and 15-30 minutes before weekday Masses.",
+   "phrase": "30 minutes before weekday Masses",
+   "source_url": "https://www.sttheresecmri.org/mass-schedule",
+   "fetched_at": "2026-11-01T20:25:05+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "skipped_section": 6
+  "skipped_section": 6,
+  "prose": 1
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

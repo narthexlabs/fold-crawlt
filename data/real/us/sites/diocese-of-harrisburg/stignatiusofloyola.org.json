@@ -106,9 +106,9 @@
    "day": "Saturday",
    "time": "17:00",
    "language": null,
-   "raw": "Saturday Evening Vigil Mass: 5:00 pm",
-   "source_url": "https://www.stignatiusofloyola.org/mass-schedule",
-   "fetched_at": "2026-11-01T20:25:22+00:00",
+   "raw": "Celebration of the Holy Eucharist: Saturday Evening 5:00 pm",
+   "source_url": "https://www.stignatiusofloyola.org/",
+   "fetched_at": "2026-11-01T20:25:21+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -119,9 +119,9 @@
    "day": "Sunday",
    "time": "08:00",
    "language": null,
-   "raw": "Sunday Mass: 8:00 am",
-   "source_url": "https://www.stignatiusofloyola.org/mass-schedule",
-   "fetched_at": "2026-11-01T20:25:22+00:00",
+   "raw": "Celebration of the Holy Eucharist: Sunday Morning 8:00 am & 10:30 am",
+   "source_url": "https://www.stignatiusofloyola.org/",
+   "fetched_at": "2026-11-01T20:25:21+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -132,9 +132,9 @@
    "day": "Sunday",
    "time": "10:30",
    "language": null,
-   "raw": "Sunday Mass: 10:30 am",
-   "source_url": "https://www.stignatiusofloyola.org/mass-schedule",
-   "fetched_at": "2026-11-01T20:25:22+00:00",
+   "raw": "Celebration of the Holy Eucharist: Sunday Morning 8:00 am & 10:30 am",
+   "source_url": "https://www.stignatiusofloyola.org/",
+   "fetched_at": "2026-11-01T20:25:21+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -145,55 +145,46 @@
    "day": "Monday",
    "time": "10:00",
    "language": null,
-   "raw": "Daily Mass: 10:00 am",
-   "source_url": "https://www.stignatiusofloyola.org/mass-schedule",
-   "fetched_at": "2026-11-01T20:25:22+00:00",
+   "raw": "Daily Mass: Monday, Tuesday & Friday 10:00 am",
+   "source_url": "https://www.stignatiusofloyola.org/",
+   "fetched_at": "2026-11-01T20:25:21+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "wix",
-   "day_expanded_from": "Monday, Tuesday and Friday"
+   "day_expanded_from": "Monday, Tuesday & Friday"
   },
   {
    "kind": "mass",
    "day": "Tuesday",
    "time": "10:00",
    "language": null,
-   "raw": "Daily Mass: 10:00 am",
-   "source_url": "https://www.stignatiusofloyola.org/mass-schedule",
-   "fetched_at": "2026-11-01T20:25:22+00:00",
+   "raw": "Daily Mass: Monday, Tuesday & Friday 10:00 am",
+   "source_url": "https://www.stignatiusofloyola.org/",
+   "fetched_at": "2026-11-01T20:25:21+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "wix",
-   "day_expanded_from": "Monday, Tuesday and Friday"
+   "day_expanded_from": "Monday, Tuesday & Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
   },
   {
    "kind": "mass",
    "day": "Friday",
    "time": "10:00",
    "language": null,
-   "raw": "Daily Mass: 10:00 am",
-   "source_url": "https://www.stignatiusofloyola.org/mass-schedule",
-   "fetched_at": "2026-11-01T20:25:22+00:00",
+   "raw": "Daily Mass: Monday, Tuesday & Friday 10:00 am",
+   "source_url": "https://www.stignatiusofloyola.org/",
+   "fetched_at": "2026-11-01T20:25:21+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "wix",
-   "day_expanded_from": "Monday, Tuesday and Friday"
-  },
-  {
-   "kind": "mass",
-   "day": "Thursday",
-   "time": "17:00",
-   "language": null,
-   "raw": "NO Mass: 5:00 pm",
-   "source_url": "https://www.stignatiusofloyola.org/mass-schedule",
-   "fetched_at": "2026-11-01T20:25:22+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wix"
+   "day_expanded_from": "Monday, Tuesday & Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
   },
   {
    "kind": "confession",
@@ -207,13 +198,36 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wix"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "17:00",
+   "language": null,
+   "raw": "NO Mass: 5:00 pm",
+   "source_url": "https://www.stignatiusofloyola.org/mass-schedule",
+   "fetched_at": "2026-11-01T20:25:22+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix"
   }
  ],
  "source_url": "https://www.stignatiusofloyola.org/",
  "fetched_at": "2026-11-01T20:25:28+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:16+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "wix",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -227,8 +241,18 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 9
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "It is also Celebrated anytime by appointment, please contact Fr. Howard",
+   "phrase": "by appointment",
+   "source_url": "https://www.stignatiusofloyola.org/reconciliation",
+   "fetched_at": "2026-11-01T20:25:24+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "skipped_section": 1,

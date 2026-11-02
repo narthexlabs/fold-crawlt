@@ -75,6 +75,12 @@
    "url": "https://saintclare.net/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://saintclare.net/eucharistic-adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -518,6 +524,122 @@
    "review_reason": null,
    "confidence": "high",
    "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Wednesday",
+   "time": "12:00",
+   "language": null,
+   "raw": "Individual Confessions in Church Confessional: Wednesdays Noon to 1 p.m.",
+   "source_url": "https://saintclare.net/eucharistic-adoration",
+   "fetched_at": "2026-11-02T04:52:39+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Wednesday",
+   "time": "13:00",
+   "language": null,
+   "raw": "Individual Confessions in Church Confessional: Wednesdays Noon to 1 p.m.",
+   "source_url": "https://saintclare.net/eucharistic-adoration",
+   "fetched_at": "2026-11-02T04:52:39+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "16:30",
+   "language": null,
+   "raw": "Saturday Vigil: 4:30 p.m.",
+   "source_url": "https://saintclare.net/mass-schedule",
+   "fetched_at": "2026-11-02T04:52:40+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "mass schedule:: Sunday: 8:00 a.m., 10:00 a.m., and 12:00 Noon",
+   "source_url": "https://saintclare.net/mass-schedule",
+   "fetched_at": "2026-11-02T04:52:40+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": null,
+   "raw": "mass schedule:: Sunday: 8:00 a.m., 10:00 a.m., and 12:00 Noon",
+   "source_url": "https://saintclare.net/mass-schedule",
+   "fetched_at": "2026-11-02T04:52:40+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "12:00",
+   "language": null,
+   "raw": "mass schedule:: Sunday: 8:00 a.m., 10:00 a.m., and 12:00 Noon",
+   "source_url": "https://saintclare.net/mass-schedule",
+   "fetched_at": "2026-11-02T04:52:40+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "08:30",
+   "language": null,
+   "raw": "mass schedule:: Tuesdays and Wednesdays Only: 8:30 a.m.",
+   "source_url": "https://saintclare.net/mass-schedule",
+   "fetched_at": "2026-11-02T04:52:40+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Tuesdays and Wednesdays",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "08:30",
+   "language": null,
+   "raw": "mass schedule:: Tuesdays and Wednesdays Only: 8:30 a.m.",
+   "source_url": "https://saintclare.net/mass-schedule",
+   "fetched_at": "2026-11-02T04:52:40+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Tuesdays and Wednesdays",
+   "day_parsed": "Tuesday",
+   "day_bound_from_line": true,
+   "topup": true
   }
  ],
  "source_url": "http://www.saintclare.net/",
@@ -563,5 +685,30 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Confessions: Saturday, 3:00 p.m to 4:00 p.m., or by appointment or in the Church during Adoration on Wednesdays Noon to 1 p.m.",
+   "phrase": "by appointment",
+   "source_url": "https://saintclare.net/mass-schedule",
+   "fetched_at": "2026-11-02T04:52:40+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:52:40+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 8,
+  "mode": "merge"
  }
 }

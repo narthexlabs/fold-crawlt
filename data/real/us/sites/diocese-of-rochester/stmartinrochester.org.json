@@ -83,6 +83,12 @@
    "url": "https://www.stmartinrochester.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stmartinrochester.org/penance5a543152",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -306,7 +312,7 @@
    "feed_key": "e8440b53cce6",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:42:50+00:00",
+    "fetched_at": "2026-11-02T05:01:36+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -326,13 +332,29 @@
   ]
  },
  "bulletin": {
-  "url": "https://www.stmartinrochester.org/bulletin",
+  "url": "https://www.usccb.org/resources/Bulletin-Insert-Penance-ENG.pdf",
   "date": null,
-  "kind": "page",
-  "text": "Bulletin",
-  "source_url": "https://www.stmartinrochester.org/"
+  "kind": "pdf",
+  "text": "",
+  "source_url": "https://www.stmartinrochester.org/penance5a543152"
  },
  "schedule_rows": [
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "11:00",
+   "language": null,
+   "raw": "Reconciliation Times: Sundays at St. Vincent Church, after the 11 am Mass",
+   "source_url": "https://www.stmartinrochester.org/",
+   "fetched_at": "2026-11-01T17:21:51+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "after",
+   "note": "Reconciliation Times: Sundays at St. Vincent Church, after the 11 am Mass",
+   "relative_resolved": true
+  },
   {
    "kind": "mass",
    "day": "Saturday",
@@ -369,9 +391,21 @@
  ],
  "source_url": "https://www.stmartinrochester.org/",
  "fetched_at": "2026-11-01T17:22:01+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:52+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -385,12 +419,22 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 28
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Reconciliation is also available by appointment with Fr. Carlos. Please call the office to schedule with him.",
+   "phrase": "by appointment",
+   "source_url": "https://www.stmartinrochester.org/",
+   "fetched_at": "2026-11-01T17:21:51+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 8,
-  "relative_time": 3,
+  "other_location": 11,
+  "relative_time": 2,
   "box_rows_added": 3
  },
  "groups_dropped": {
@@ -401,8 +445,8 @@
   "sacrament_prep": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

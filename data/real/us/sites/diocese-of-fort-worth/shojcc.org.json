@@ -63,6 +63,12 @@
    "url": "https://www.shojcc.org/calendar.html",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.shojcc.org/reconciliation.html",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -278,6 +284,34 @@
    "review_reason": null,
    "confidence": "low",
    "template": "weebly"
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "16:30",
+   "language": null,
+   "raw": "Reconciliation: 4:30 PM prior to evening Mass (or by appointment)",
+   "source_url": "https://www.shojcc.org/reconciliation.html",
+   "fetched_at": "2026-11-02T04:41:38+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Reconciliation: 8:00 AM prior to morning Mass (or by appointment)",
+   "source_url": "https://www.shojcc.org/reconciliation.html",
+   "fetched_at": "2026-11-02T04:41:38+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly",
+   "topup": true
   }
  ],
  "source_url": "https://www.shojcc.org/",
@@ -320,5 +354,29 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "4:30 PM prior to evening Mass (or by appointment)",
+   "phrase": "by appointment",
+   "source_url": "https://www.shojcc.org/reconciliation.html",
+   "fetched_at": "2026-11-02T04:41:38+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:39+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
  }
 }

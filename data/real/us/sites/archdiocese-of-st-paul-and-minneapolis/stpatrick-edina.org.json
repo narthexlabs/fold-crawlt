@@ -560,6 +560,22 @@
    "confidence": "medium",
    "template": "wix",
    "kind_parsed": "mass"
+  },
+  {
+   "kind": "adoration",
+   "day": "First Friday of the month",
+   "time": "08:00",
+   "language": null,
+   "raw": "Adoration- First Fridays of the month after the 8:00am daily Mass until 9:30am",
+   "source_url": "https://www.stpatrick-edina.org/mass-confession-times",
+   "fetched_at": "2026-11-02T04:41:42+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wix",
+   "relative": "after",
+   "note": "Adoration- First Fridays of the month after the 8:00am daily Mass until 9:30am",
+   "topup": true
   }
  ],
  "source_url": "http://www.stpatrick-edina.org/",
@@ -600,6 +616,23 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:43+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "contact@stpatrick-edina.org",
   "phone": "(952) 941-3164",
@@ -612,8 +645,5 @@
   },
   "fetched_at": "2026-11-01T03:58:27+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

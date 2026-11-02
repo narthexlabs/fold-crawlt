@@ -66,6 +66,12 @@
    "url": "https://www.cathedralofallsaints.org/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.cathedralofallsaints.org/st-albans-chapel-today",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -144,11 +150,24 @@
   "excluded_by_reason": {}
  },
  "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()",
-  "contacts_removed": 0,
-  "names_withheld": 1
+  "screened_by": "ingest/public/privacy.py screen()"
  },
  "social_shared_links_removed": [
   "https://www.facebook.com/2008"
- ]
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:46+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "liturgy"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
+ }
 }

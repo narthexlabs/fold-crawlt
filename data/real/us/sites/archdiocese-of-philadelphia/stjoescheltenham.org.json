@@ -72,6 +72,18 @@
    "url": "https://stjoescheltenham.org/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stjoescheltenham.org/penance/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stjoescheltenham.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -399,9 +411,21 @@
  ],
  "source_url": "https://stjoescheltenham.org/",
  "fetched_at": "2026-11-01T20:25:32+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:09+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -415,14 +439,24 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 30
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Confessions are heard Saturday from 4pm to 4:45pm at Presentation B.V.M. Church as well as other times as announced and anytime upon request.",
+   "phrase": "upon request",
+   "source_url": "https://stjoescheltenham.org/mass/",
+   "fetched_at": "2026-11-01T20:25:25+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "relative_time": 1,
   "dated_block": 5,
-  "other_location": 16,
-  "dated_line": 7,
+  "other_location": 10,
+  "dated_line": 5,
   "weekend_rescue_added": 4
  },
  "groups_dropped": {

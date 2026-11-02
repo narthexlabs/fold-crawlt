@@ -87,6 +87,18 @@
    "url": "https://www.quparish.com/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://www.quparish.com/rcia-schedule/",
+   "status": null,
+   "class": "timeout"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.quparish.com/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -331,13 +343,36 @@
    "day_expanded_from": "Monday through Saturday",
    "day_parsed": "Monday",
    "day_bound_from_line": true
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "14:45-15:45",
+   "language": null,
+   "raw": "The Sacrament of Reconciliation:: Saturdays: 2:45pm - 3:45 pm",
+   "source_url": "https://www.quparish.com/location/",
+   "fetched_at": "2026-11-01T20:25:28+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
   }
  ],
  "source_url": "https://www.quparish.com/",
  "fetched_at": "2026-11-01T20:27:00+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:36+00:00",
+  "requests": 2,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -351,11 +386,21 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 17
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Below is a list of regular Reconciliation times at Catholic Churches in Lower Bucks County (all parishes offer Reconciliation times by appointment also):",
+   "phrase": "by appointment",
+   "source_url": "https://www.quparish.com/sacrament-of-reconciliation/",
+   "fetched_at": "2026-11-01T20:25:38+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 2
+  "not_a_service": 1
  },
  "groups_dropped": {
   "noise": 4,

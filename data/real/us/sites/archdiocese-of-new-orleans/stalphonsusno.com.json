@@ -79,6 +79,18 @@
    "url": "https://stalphonsusno.com/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stalphonsusno.com/sacraments/penance/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stalphonsusno.com/st-marys-chapel/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -177,7 +189,7 @@
    "feed_key": "39be1b7f2b6b",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:33:26+00:00",
+    "fetched_at": "2026-11-02T04:58:52+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -194,7 +206,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:33:28+00:00",
+    "fetched_at": "2026-11-02T04:58:53+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -211,7 +223,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:33:29+00:00",
+    "fetched_at": "2026-11-02T04:58:55+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -228,7 +240,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:33:30+00:00",
+    "fetched_at": "2026-11-02T04:58:56+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -245,7 +257,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:33:31+00:00",
+    "fetched_at": "2026-11-02T04:58:57+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -262,7 +274,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:33:33+00:00",
+    "fetched_at": "2026-11-02T04:58:58+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -279,7 +291,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:33:34+00:00",
+    "fetched_at": "2026-11-02T04:59:00+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -296,7 +308,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:33:35+00:00",
+    "fetched_at": "2026-11-02T04:59:01+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -436,13 +448,53 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "07:30",
+   "language": null,
+   "raw": "Holy Day Vigil 6:oo p.m. at St. Mary’s Assumption Church\n923: Holy days 7:30 a.m.",
+   "source_url": "https://stalphonsusno.com/mass-schedule/",
+   "fetched_at": "2026-11-01T17:27:34+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:15-16:00",
+   "language": null,
+   "raw": "Confession: Saturday: 3:15 – 4:00 p.m.",
+   "source_url": "https://stalphonsusno.com/mass-schedule/",
+   "fetched_at": "2026-11-01T17:27:34+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
   }
  ],
  "source_url": "https://stalphonsusno.com/",
  "fetched_at": "2026-11-01T17:27:43+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:37+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -456,18 +508,28 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 16
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "at St. Mary’s Assumption Church (before the Vigil Mass) or Confession can be made by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://stalphonsusno.com/mass-schedule/",
+   "fetched_at": "2026-11-01T17:27:34+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 5
+  "other_location": 3
  },
  "groups_dropped": {
   "noise": 2
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

@@ -43,6 +43,12 @@
    "url": "https://www.seaswichita.com/parish-life/liturgy",
    "status": 429,
    "class": "blocked_429"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.seaswichita.com/sacraments/reconciliation",
+   "status": null,
+   "class": "timeout"
   }
  ],
  "cms_guess": {
@@ -531,9 +537,19 @@
  ],
  "source_url": "https://www.seaswichita.com/",
  "fetched_at": "2026-11-01T17:28:19+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:07+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -547,6 +563,7 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 27
  },
  "has_sunday": true,
@@ -559,8 +576,8 @@
   "noise": 2
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

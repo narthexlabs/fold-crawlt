@@ -85,6 +85,12 @@
    "url": "https://stbart-stjoe.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stbart-stjoe.org/reconciliation/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -406,6 +412,132 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Tuesday",
+   "time": "16:30-17:15",
+   "language": null,
+   "raw": "[Saint Bartholomew Parish, Newaygo] Weekly Reconciliation Schedule: Tuesdays 4:30 PM to 5:15 PM",
+   "source_url": "https://stbart-stjoe.org/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:44+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:00-15:30",
+   "language": null,
+   "raw": "[Saint Bartholomew Parish, Newaygo] Weekly Reconciliation Schedule: Saturdays 3:00 PM to 3:30 PM",
+   "source_url": "https://stbart-stjoe.org/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:44+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "First Friday of the month",
+   "time": "20:00-21:00",
+   "language": null,
+   "raw": "[Saint Bartholomew Parish, Newaygo] Weekly Reconciliation Schedule: First Friday of the Month 8:00 PM to 9:00 PM",
+   "source_url": "https://stbart-stjoe.org/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:44+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Friday",
+   "time": "08:30-09:30",
+   "language": null,
+   "raw": "[Saint Joseph Parish, White Cloud] Weekly Reconciliation Schedule: Fridays 8:30 AM to 9:30 AM",
+   "source_url": "https://stbart-stjoe.org/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:44+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "First Thursday of the month",
+   "time": "17:00-19:00",
+   "language": null,
+   "raw": "[Saint Joseph Parish, White Cloud] Weekly Reconciliation Schedule: First Thursday of the Month 5:00 PM to 7:00 PM",
+   "source_url": "https://stbart-stjoe.org/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:44+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "15:00-17:15",
+   "language": null,
+   "raw": "Adoration: Every Tuesday 3:00 PM to 5:15 PM Every Friday 8:30 AM to 9:30 AM",
+   "source_url": "https://stbart-stjoe.org/adoration/",
+   "fetched_at": "2026-11-02T04:41:45+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "08:30-09:30",
+   "language": null,
+   "raw": "Adoration: Every Tuesday 3:00 PM to 5:15 PM Every Friday 8:30 AM to 9:30 AM",
+   "source_url": "https://stbart-stjoe.org/adoration/",
+   "fetched_at": "2026-11-02T04:41:45+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "First Friday of the month",
+   "time": "20:00-21:00",
+   "language": null,
+   "raw": "Adoration: First Friday of the Month 8:00 PM to 9:00 PM First Thursday of the Month 5:00 PM to 7:00 PM",
+   "source_url": "https://stbart-stjoe.org/adoration/",
+   "fetched_at": "2026-11-02T04:41:45+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "First Thursday of the month",
+   "time": "17:00-19:00",
+   "language": null,
+   "raw": "Adoration: First Friday of the Month 8:00 PM to 9:00 PM First Thursday of the Month 5:00 PM to 7:00 PM",
+   "source_url": "https://stbart-stjoe.org/adoration/",
+   "fetched_at": "2026-11-02T04:41:45+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "https://stbart-stjoe.org/",
@@ -447,5 +579,21 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:46+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 9,
+  "mode": "merge"
  }
 }

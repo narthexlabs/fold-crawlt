@@ -81,6 +81,12 @@
    "url": "https://www.pittsfordmendoncatholic.org/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.pittsfordmendoncatholic.org/re",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -214,7 +220,7 @@
    "feed_key": "8105794ebd43",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:42:20+00:00",
+    "fetched_at": "2026-11-02T05:01:14+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -294,13 +300,38 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:30",
+   "language": null,
+   "raw": "Reconciliation is celebrated weekly on Saturday, 3:30 pm, before Mass at the Church of the Transfiguration or by appointment (contact Fr. Rob at either Parish office).",
+   "source_url": "https://www.pittsfordmendoncatholic.org/re",
+   "fetched_at": "2026-11-02T04:41:51+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict"
   }
  ],
  "source_url": "https://www.pittsfordmendoncatholic.org/",
  "fetched_at": "2026-11-01T17:22:01+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:51+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -314,8 +345,18 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 7
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Reconciliation is celebrated weekly on Saturday, 3:30 pm, before Mass at the Church of the Transfiguration or by appointment (contact Fr. Rob at either Parish office).",
+   "phrase": "by appointment",
+   "source_url": "https://www.pittsfordmendoncatholic.org/re",
+   "fetched_at": "2026-11-02T04:41:51+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "other_location": 4
@@ -327,8 +368,8 @@
   "sacrament_prep": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

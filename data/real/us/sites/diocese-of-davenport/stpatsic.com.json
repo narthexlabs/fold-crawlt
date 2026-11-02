@@ -75,6 +75,12 @@
    "url": "https://stpatsic.com/the-parish/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stpatsic.com/pray/adoration-schedule",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -539,6 +545,36 @@
    "review_reason": null,
    "confidence": "low",
    "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "19:00-19:30",
+   "language": null,
+   "raw": "We also have Exposition of the Blessed Sacrament on the foll: Thursdays, 7:00 - 7:30 p.m., in the Main Church",
+   "source_url": "https://stpatsic.com/pray/adoration-schedule",
+   "fetched_at": "2026-11-02T04:42:01+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "First Friday of the month",
+   "time": "08:30",
+   "language": null,
+   "raw": "We also have Exposition of the Blessed Sacrament on the foll: First Fridays, following 8:30 a.m. Mass, in the Main Church",
+   "source_url": "https://stpatsic.com/pray/adoration-schedule",
+   "fetched_at": "2026-11-02T04:42:01+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "after",
+   "note": "We also have Exposition of the Blessed Sacrament on the foll: First Fridays, following 8:30 a.m. Mass, in the Main Churc",
+   "topup": true
   }
  ],
  "source_url": "http://www.stpatsic.com/",
@@ -579,5 +615,37 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Or by appointment – please call",
+   "phrase": "by appointment",
+   "source_url": "https://stpatsic.com/pray/confession-schedule",
+   "fetched_at": "2026-11-02T04:42:00+00:00"
+  },
+  {
+   "kind": "confession",
+   "text": "O por cita – llame a",
+   "phrase": "por cita",
+   "source_url": "https://stpatsic.com/pray/confession-schedule",
+   "fetched_at": "2026-11-02T04:42:00+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:02+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
  }
 }
