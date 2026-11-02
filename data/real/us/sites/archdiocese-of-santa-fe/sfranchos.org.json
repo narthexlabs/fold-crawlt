@@ -18,32 +18,330 @@
  ],
  "home_url": "https://www.sfranchos.org/",
  "final_url": "https://www.sfranchos.org/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "crawl_status": "wayback-2026-09-04",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
    "url": "https://www.sfranchos.org/",
-   "status": 403,
-   "class": "challenge"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.sfranchos.org/confession",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://sfranchos.org/sacraments",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.sfranchos.org/community-and-ministry",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "calendar",
+   "url": "https://sfranchos.org/calendar-of-events",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.sfranchos.org/weekly-announcements",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "contact",
+   "url": "https://sfranchos.org/contact-us",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://sfranchos.org/bulletins",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "sfranchos.org:adult_confirmation",
+   "name": "Adult Confirmation",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "adult_confirmation",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://sfranchos.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.sfranchos.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-09-04T10:30:55+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-09-04"
+  },
+  {
+   "id": "sfranchos.org:ocia",
+   "name": "Order of Christian Initiation",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "ocia",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://sfranchos.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.sfranchos.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-09-04T10:30:55+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-09-04"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/sfranchos"
+  ]
+ },
+ "bulletin": {
+  "url": "https://www.parishesonline.com/organization/san-francisco-de-asis-church",
+  "date": null,
+  "kind": "lpi",
+  "text": "Bulletins",
+  "source_url": "https://www.sfranchos.org/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": "Bilingual",
+   "raw": "Sunday: 8:00 AM Bilingual",
+   "source_url": "https://www.sfranchos.org/",
+   "fetched_at": "2026-09-04T10:30:55+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-09-04: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-09-04",
+   "archive_url": "https://web.archive.org/web/20260904103055/https://www.sfranchos.org/",
+   "capture_date": "2026-09-04"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": "English",
+   "raw": "Sunday: 10:00 AM English",
+   "source_url": "https://www.sfranchos.org/",
+   "fetched_at": "2026-09-04T10:30:55+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-09-04: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-09-04",
+   "archive_url": "https://web.archive.org/web/20260904103055/https://www.sfranchos.org/",
+   "capture_date": "2026-09-04"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "07:00",
+   "language": "English",
+   "raw": "Monday, Tuesday, Wednesday, Friday: 7:00 AM English",
+   "source_url": "https://www.sfranchos.org/",
+   "fetched_at": "2026-09-04T10:30:55+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-09-04: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Monday, Tuesday, Wednesday, Friday",
+   "source": "wayback-2026-09-04",
+   "archive_url": "https://web.archive.org/web/20260904103055/https://www.sfranchos.org/",
+   "capture_date": "2026-09-04"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "07:00",
+   "language": "English",
+   "raw": "Monday, Tuesday, Wednesday, Friday: 7:00 AM English",
+   "source_url": "https://www.sfranchos.org/",
+   "fetched_at": "2026-09-04T10:30:55+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-09-04: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Monday, Tuesday, Wednesday, Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "source": "wayback-2026-09-04",
+   "archive_url": "https://web.archive.org/web/20260904103055/https://www.sfranchos.org/",
+   "capture_date": "2026-09-04"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "07:00",
+   "language": "English",
+   "raw": "Monday, Tuesday, Wednesday, Friday: 7:00 AM English",
+   "source_url": "https://www.sfranchos.org/",
+   "fetched_at": "2026-09-04T10:30:55+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-09-04: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Monday, Tuesday, Wednesday, Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "source": "wayback-2026-09-04",
+   "archive_url": "https://web.archive.org/web/20260904103055/https://www.sfranchos.org/",
+   "capture_date": "2026-09-04"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "07:00",
+   "language": "English",
+   "raw": "Monday, Tuesday, Wednesday, Friday: 7:00 AM English",
+   "source_url": "https://www.sfranchos.org/",
+   "fetched_at": "2026-09-04T10:30:55+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-09-04: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "day_expanded_from": "Monday, Tuesday, Wednesday, Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "source": "wayback-2026-09-04",
+   "archive_url": "https://web.archive.org/web/20260904103055/https://www.sfranchos.org/",
+   "capture_date": "2026-09-04"
+  },
+  {
+   "kind": "confession",
+   "day": "Friday",
+   "time": "07:30",
+   "language": null,
+   "raw": "Friday: 7:30 AM Until Last Person",
+   "source_url": "https://www.sfranchos.org/",
+   "fetched_at": "2026-09-04T10:30:55+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-09-04: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-09-04",
+   "archive_url": "https://web.archive.org/web/20260904103055/https://www.sfranchos.org/",
+   "capture_date": "2026-09-04"
+  }
+ ],
  "source_url": "https://www.sfranchos.org/",
- "fetched_at": "2026-11-01T03:05:04+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-02T05:42:36+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": true
+   },
+   "score": "high"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "other_location": 1
+ },
+ "groups_dropped": {},
+ "office_contact": {
+  "email": null,
+  "phone": "(575) 758-2754",
+  "address": "4 San Francisco Rd #72, Ranchos de Taos, NM 87557",
+  "source_url": "https://sfranchos.org/contact-us",
+  "sources": {
+   "phone": "https://sfranchos.org/contact-us",
+   "address": "https://sfranchos.org/contact-us"
+  },
+  "fetched_at": "2025-06-17T00:34:13+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2026-09-04",
+  "capture_age_days": 59,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://www.sfranchos.org/",
+    "capture": "2026-09-04",
+    "archive_url": "https://web.archive.org/web/20260904103055/https://www.sfranchos.org/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://sfranchos.org/sacraments",
+    "capture": "2025-06-17",
+    "archive_url": "https://web.archive.org/web/20250617011108/https://sfranchos.org/sacraments"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://sfranchos.org/calendar-of-events",
+    "capture": "2025-04-18",
+    "archive_url": "https://web.archive.org/web/20250418024811/https://sfranchos.org/calendar-of-events"
+   },
+   {
+    "kind": "contact",
+    "original": "https://sfranchos.org/contact-us",
+    "capture": "2025-06-17",
+    "archive_url": "https://web.archive.org/web/20250617003413/https://sfranchos.org/contact-us"
+   },
+   {
+    "kind": "bulletin",
+    "original": "https://sfranchos.org/bulletins",
+    "capture": "2025-04-18",
+    "archive_url": "https://web.archive.org/web/20250418041037/https://sfranchos.org/bulletins"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review.",
+  "grade": {
+   "rule": "wayback-verified-2026-11-01",
+   "template": "ecatholic",
+   "trusted_template": false,
+   "has_sunday": true,
+   "groups": 2,
+   "verified": false,
+   "capture_date": "2026-09-04",
+   "applied": false
+  }
  }
 }

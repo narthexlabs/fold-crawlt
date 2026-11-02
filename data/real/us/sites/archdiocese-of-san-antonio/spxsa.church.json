@@ -18,32 +18,135 @@
  ],
  "home_url": "https://www.spxsa.church/",
  "final_url": "https://www.spxsa.church/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "crawl_status": "wayback-2026-05-14",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
    "url": "https://www.spxsa.church/",
-   "status": 403,
-   "class": "challenge"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://spxsa.church/first-reconciliation-and-first-communion",
+   "status": null,
+   "class": "timeout"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
+ "template": "ecatholic-fastpath",
  "groups": [],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/SPXSA"
+  ],
+  "instagram": [
+   "https://www.instagram.com/spxsa_/"
+  ],
+  "youtube": [
+   "https://www.youtube.com/channel/UC4lFImiWm-vpWaEcwfotXSA"
+  ],
+  "x": [
+   "https://x.com/spxsa_"
+  ],
+  "livestream": [
+   {
+    "url": "https://www.spxsa.church/live-stream",
+    "label": "Livestream",
+    "platform": "www.spxsa.church",
+    "kind": "link"
+   },
+   {
+    "url": "https://www.spxsa.church/proyecciones",
+    "label": "Proyecciones y Livestream",
+    "platform": "www.spxsa.church",
+    "kind": "link"
+   }
+  ]
+ },
+ "bulletin": {
+  "url": "https://www.spxsa.church/sunday-bulletins",
+  "date": null,
+  "kind": "page",
+  "text": "Sunday Bulletins",
+  "source_url": "https://www.spxsa.church/"
+ },
  "schedule_rows": [],
  "source_url": "https://www.spxsa.church/",
- "fetched_at": "2026-11-01T08:04:54+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-02T05:34:03+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "has_sunday": false,
+ "schedule_images": [
+  {
+   "url": "https://files.ecatholic.com/2137/pictures/2025/3/istockphoto-149109020-612x612.jpg?t=1741123378000",
+   "alt": "Sunday Bulletin",
+   "page": "https://www.spxsa.church/"
+  }
+ ],
+ "schedule_note": "schedule appears to be an image; times not read (needs_review)",
+ "groups_dropped": {},
+ "office_contact": {
+  "email": null,
+  "phone": "(210) 824-0139",
+  "address": null,
+  "source_url": "https://www.spxsa.church/",
+  "sources": {
+   "phone": "https://www.spxsa.church/"
+  },
+  "fetched_at": "2026-05-14T19:59:54+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2026-05-14",
+  "capture_age_days": 172,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://www.spxsa.church/",
+    "capture": "2026-05-14",
+    "archive_url": "https://web.archive.org/web/20260514195954/https://www.spxsa.church/"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review.",
+  "grade": {
+   "rule": "wayback-verified-2026-11-01",
+   "template": "ecatholic",
+   "trusted_template": false,
+   "has_sunday": false,
+   "groups": 0,
+   "verified": false,
+   "capture_date": "2026-05-14",
+   "applied": false
+  }
  }
 }
