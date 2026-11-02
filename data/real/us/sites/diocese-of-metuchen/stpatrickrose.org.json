@@ -3,24 +3,30 @@
  "diocese": "diocese-of-metuchen",
  "matched_church_ids": [
   "diocese-of-metuchen:St. Patrick",
-  "diocese-of-metuchen:St. Rose of Lima"
+  "diocese-of-metuchen:St. Rose of Lima",
+  "st-patrick-belvidere-nj",
+  "st-rose-of-lima-oxford-nj"
  ],
  "matched": {
   "directory": [
    "diocese-of-metuchen:St. Patrick",
    "diocese-of-metuchen:St. Rose of Lima"
   ],
-  "discovermass": []
+  "discovermass": [
+   "st-patrick-belvidere-nj",
+   "st-rose-of-lima-oxford-nj"
+  ]
  },
  "names": [
   "St. Patrick",
-  "St. Rose of Lima"
+  "St. Rose of Lima",
+  "St. Rose of Lima Church"
  ],
  "cities": [
   "Belvidere",
   "Oxford"
  ],
- "home_url": "http://www.stpatrickrose.org/",
+ "home_url": "https://www.stpatrickrose.org/",
  "final_url": "https://www.stpatrickrose.org/",
  "crawl_status": "ok",
  "crawl_env": "sandbox",
@@ -83,6 +89,18 @@
   {
    "category": "contact",
    "url": "https://www.stpatrickrose.org/contact",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stpatrickrose.org/confession-reconcilliation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stpatrickrose.org/eucharistic-adoration",
    "status": 200,
    "class": "ok"
   }
@@ -257,14 +275,13 @@
    "day": "Sunday",
    "time": "09:30",
    "language": null,
-   "raw": "[St. Rose of Lima] Mass Times: Sunday - 9:30 am at St. Rose of Lima",
+   "raw": "Mass Times: Sunday - 9:30 am at St. Rose of Lima",
    "source_url": "https://www.stpatrickrose.org/",
    "fetched_at": "2026-11-01T17:21:27+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
-   "template": "generic_strict",
-   "location": "St. Rose of Lima"
+   "template": "generic_strict"
   },
   {
    "kind": "mass",
@@ -363,13 +380,40 @@
    "confidence": "medium",
    "template": "generic_strict",
    "day_expanded_from": "Monday through Saturday"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:00-15:30",
+   "language": null,
+   "raw": "[St. Patrick] St. Patrick offers the Sacrament of Reconciliation: Saturdays from 3:00 PM - 3:30 PM",
+   "source_url": "https://www.stpatrickrose.org/confession-reconcilliation",
+   "fetched_at": "2026-11-02T04:47:52+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "location": "St. Patrick"
   }
  ],
- "source_url": "http://www.stpatrickrose.org/",
+ "source_url": "https://www.stpatrickrose.org/",
  "fetched_at": "2026-11-01T17:22:56+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:48:02+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -383,12 +427,15 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
-  "generic_rows": 20
+  "trusted_kinds": [],
+  "generic_rows": 21
  },
  "has_sunday": true,
  "schedule_dropped": {
   "skipped_section": 5,
-  "other_location": 14
+  "other_location": 14,
+  "no_day": 2,
+  "relative_time": 1
  },
  "groups_dropped": {
   "unmatched": 4,
@@ -396,8 +443,8 @@
   "label_not_group": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
