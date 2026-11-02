@@ -285,6 +285,6 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-01T23:33:52+00:00: fetched {'ok': 4, 'done': 4, 'halted_egress': 0}; parsed 1 dioceses
 - 2026-11-02T00:05:44+00:00: fetched {'robots_disallowed': 1, 'done': 59, 'dns': 4, 'conn_error': 1, 'ssl_error': 3, 'challenge': 7, 'not_found': 1, 'ok': 44, 'cut': 2, 'halted_egress': 0}; parsed 8 dioceses
 - 2026-11-02T00:57:03+00:00: fetched {'ok': 2, 'done': 2, 'halted_egress': 0}; parsed 1 dioceses
-- 2026-11-02T01:56:02+00:00: fetched {'dns': 11, 'done': 24, 'ssl_error': 5, 'parked': 1, 'not_found': 1, 'challenge': 1, 'ok': 5, 'halted_egress': 0}; parsed 2 dioceses
+- 2026-11-02T01:56:02+00:00: fetched {'dns': 23, 'done': 52, 'challenge': 11, 'ssl_error': 2, 'not_found': 1, 'ok': 13, 'timeout': 2, 'halted_egress': 0}; parsed 2 dioceses
 - 2026-11-02T01:56:40+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-02T01:57:12+00:00: fetched {'dns': 11, 'done': 18, 'conn_error': 2, 'challenge': 1, 'ok': 4, 'halted_egress': 0}; parsed 1 dioceses
