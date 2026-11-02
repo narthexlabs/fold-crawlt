@@ -230,7 +230,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | unassigned-ak | 21 | 28 | 11 | 7 | 2 | 5 | 3 |
 | diocese-of-shreveport | 20 | 20 | 8 | 9 | 0 | 3 | 0 |
 | eparchy-of-parma | 20 | 20 | 16 | 2 | 0 | 2 | 0 |
-| archdiocese-of-cincinnati | 20 | 18 | 12 | 1 | 1 | 1 | 0 |
+| archdiocese-of-cincinnati | 20 | 20 | 14 | 1 | 1 | 1 | 0 |
 | unassigned-ri | 20 | 45 | 14 | 22 | 0 | 9 | 0 |
 | diocese-of-alexandria | 19 | 19 | 9 | 6 | 0 | 4 | 0 |
 | diocese-of-helena | 19 | 19 | 14 | 4 | 0 | 1 | 0 |
@@ -287,4 +287,4 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-02T23:25:43+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-02T23:25:51+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-02T23:25:58+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
-- 2026-11-02T23:26:40+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-02T23:26:27+00:00: fetched {'ok': 2, 'done': 2, 'halted_egress': 0}; parsed 1 dioceses
