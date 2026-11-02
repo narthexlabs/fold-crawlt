@@ -273,6 +273,8 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 
 ## Chunk log
 
+- 2026-11-01T20:24:57+00:00: fetched {'dns': 31, 'done': 543, 'conn_error': 8, 'ssl_error': 16, 'robots_disallowed': 2, 'ok': 388, 'challenge': 85, 'blocked_403': 3, 'http_5xx': 6, 'not_found': 4, 'timeout': 8, 'parked': 1, 'cut': 9, 'halted_egress': 0}; parsed 1 dioceses
+- 2026-11-01T22:15:20+00:00: fetched {'dns': 12, 'done': 261, 'not_found': 12, 'robots_disallowed': 2, 'ssl_error': 8, 'challenge': 26, 'blocked_403': 2, 'conn_error': 1, 'ok': 189, 'parked': 2, 'timeout': 10, 'cut': 3, 'halted_egress': 0}; parsed 9 dioceses
 - 2026-11-01T23:30:07+00:00: fetched {'ok': 6, 'done': 4, 'cut': 2, 'halted_egress': 0}; parsed 2 dioceses
 - 2026-11-01T23:33:52+00:00: fetched {'ok': 4, 'done': 4, 'halted_egress': 0}; parsed 1 dioceses
 - 2026-11-02T00:05:44+00:00: fetched {'robots_disallowed': 1, 'done': 59, 'dns': 4, 'conn_error': 1, 'ssl_error': 3, 'challenge': 7, 'not_found': 1, 'ok': 44, 'cut': 2, 'halted_egress': 0}; parsed 8 dioceses
@@ -284,7 +286,5 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-02T03:46:33+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-02T03:46:50+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-02T03:47:01+00:00: fetched {'challenge': 7, 'done': 32, 'dns': 1, 'not_found': 4, 'ssl_error': 1, 'ok': 19, 'timeout': 1, 'cut': 1, 'halted_egress': 0}; parsed 4 dioceses
-- 2026-11-02T04:41:24+00:00: fetched {}; parsed 0 dioceses
-- 2026-11-02T05:04:56+00:00: top-up ('confession', 'adoration', 'liturgy'): {'sites': 692, 'requests': 848, 'found_adoration': 149, 'found_confession': 279, 'found_liturgy': 94}; 0 sites left
-- 2026-11-02T04:52:14+00:00: fetched {}; parsed 0 dioceses
-- 2026-11-02T05:04:59+00:00: top-up ('confession', 'adoration', 'liturgy'): {'sites': 598, 'requests': 693, 'found_adoration': 103, 'found_confession': 195, 'found_liturgy': 117}; 0 sites left
+- 2026-11-02T04:41:26+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-02T05:03:23+00:00: top-up ('confession', 'adoration', 'liturgy'): {'sites': 861, 'requests': 945, 'found_adoration': 148, 'found_confession': 323, 'found_liturgy': 119}; 0 sites left
