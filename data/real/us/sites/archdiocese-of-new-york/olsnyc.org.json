@@ -18,32 +18,473 @@
  ],
  "home_url": "https://olsnyc.org/",
  "final_url": "https://olsnyc.org/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "crawl_status": "wayback-2026-06-04",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
    "url": "https://olsnyc.org/",
-   "status": 403,
-   "class": "challenge"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://olsnyc.org/mass-times",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://olsnyc.org/liturgy-sacraments",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://olsnyc.org/bereavement-liranzo-group",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "ministries",
+   "url": "https://olsnyc.org/ministries",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://olsnyc.org/committees",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://olsnyc.org/events",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://olsnyc.org/calendar",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://olsnyc.org/contact-us",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://olsnyc.org/bulletins",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "olsnyc.org:food",
+   "name": "Food Pantry",
+   "category": "service_mercy",
+   "category_label": "Service & mercy",
+   "subcategory": "food_ministry",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://olsnyc.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://olsnyc.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-06-04T00:08:26+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-06-04"
+  },
+  {
+   "id": "olsnyc.org:servers",
+   "name": "Altar Servers",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "altar_servers",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://olsnyc.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://olsnyc.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-06-04T00:08:26+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-06-04"
+  },
+  {
+   "id": "olsnyc.org:emhc",
+   "name": "Eucharistic Ministers",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "emhc",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://olsnyc.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://olsnyc.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-06-04T00:08:26+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-06-04"
+  },
+  {
+   "id": "olsnyc.org:lectors",
+   "name": "Lectors",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "lectors",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://olsnyc.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://olsnyc.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-06-04T00:08:26+00:00",
+   "confidence": "low",
+   "source": "wayback-2026-06-04"
+  },
+  {
+   "id": "olsnyc.org:choir",
+   "name": "Music Ministry / Choir",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "choir_music",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://olsnyc.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://olsnyc.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-06-04T00:08:26+00:00",
+   "confidence": "low",
+   "source": "wayback-2026-06-04"
+  },
+  {
+   "id": "olsnyc.org:ushers",
+   "name": "Ushers & Greeters",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "ushers_greeters",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://olsnyc.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://olsnyc.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-06-04T00:08:26+00:00",
+   "confidence": "low",
+   "source": "wayback-2026-06-04"
+  },
+  {
+   "id": "olsnyc.org:bereavement|liranzo",
+   "name": "Bereavement Liranzo Group",
+   "category": "grief_support",
+   "category_label": "Grief & support",
+   "subcategory": "bereavement",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://olsnyc.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://olsnyc.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-06-04T00:08:26+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-06-04"
+  },
+  {
+   "id": "olsnyc.org:wwme",
+   "name": "Marriage Encounter",
+   "category": "marriage_family",
+   "category_label": "Marriage & family",
+   "subcategory": "marriage_encounter",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://olsnyc.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://olsnyc.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-06-04T00:08:26+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-06-04"
+  },
+  {
+   "id": "olsnyc.org:charismatic",
+   "name": "Charismatics",
+   "category": "movements",
+   "category_label": "Movements",
+   "subcategory": "charismatic_renewal",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://olsnyc.org/contact-us",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://olsnyc.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-06-04T00:08:26+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-06-04"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/Our.Lady.of.Sorrows.Church",
+   "https://www.facebook.com/oloschurchnyc"
+  ],
+  "x": [
+   "https://x.com/olsnyc"
+  ],
+  "flocknote": [
+   "https://olschurch.flocknote.com"
+  ]
+ },
+ "bulletin": {
+  "url": "https://files.ecatholic.com/10714/bulletins/20150222.pdf",
+  "date": "2015-02-22",
+  "kind": "ecatholic_pdf",
+  "text": "February 22 , 2015",
+  "source_url": "https://olsnyc.org/bulletins"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "18:30",
+   "language": "Spanish",
+   "raw": "Saturday: 6:30 PM Spanish",
+   "source_url": "https://olsnyc.org/",
+   "fetched_at": "2026-06-04T00:08:26+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-06-04: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-06-04",
+   "archive_url": "https://web.archive.org/web/20260604000826/https://olsnyc.org/",
+   "capture_date": "2026-06-04"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": "Spanish",
+   "raw": "Sunday: 10:00 AM Spanish",
+   "source_url": "https://olsnyc.org/",
+   "fetched_at": "2026-06-04T00:08:26+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-06-04: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-06-04",
+   "archive_url": "https://web.archive.org/web/20260604000826/https://olsnyc.org/",
+   "capture_date": "2026-06-04"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "12:00",
+   "language": "English",
+   "raw": "Sunday: 12:00 PM English",
+   "source_url": "https://olsnyc.org/",
+   "fetched_at": "2026-06-04T00:08:26+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-06-04: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-06-04",
+   "archive_url": "https://web.archive.org/web/20260604000826/https://olsnyc.org/",
+   "capture_date": "2026-06-04"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "13:30",
+   "language": "Spanish",
+   "raw": "Sunday: 1:30 PM Spanish",
+   "source_url": "https://olsnyc.org/",
+   "fetched_at": "2026-06-04T00:08:26+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-06-04: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-06-04",
+   "archive_url": "https://web.archive.org/web/20260604000826/https://olsnyc.org/",
+   "capture_date": "2026-06-04"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "18:30",
+   "language": "Spanish",
+   "raw": "Tuesday: 6:30 PM Spanish",
+   "source_url": "https://olsnyc.org/",
+   "fetched_at": "2026-06-04T00:08:26+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-06-04: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-06-04",
+   "archive_url": "https://web.archive.org/web/20260604000826/https://olsnyc.org/",
+   "capture_date": "2026-06-04"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "18:30",
+   "language": "Spanish",
+   "raw": "Thursday: 6:30 PM Spanish",
+   "source_url": "https://olsnyc.org/",
+   "fetched_at": "2026-06-04T00:08:26+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-06-04: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic",
+   "source": "wayback-2026-06-04",
+   "archive_url": "https://web.archive.org/web/20260604000826/https://olsnyc.org/",
+   "capture_date": "2026-06-04"
+  }
+ ],
  "source_url": "https://olsnyc.org/",
- "fetched_at": "2026-11-01T01:56:59+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-02T02:29:12+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": true
+   },
+   "score": "high"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 4
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "other_location": 5
+ },
+ "groups_dropped": {
+  "noise": 1,
+  "unmatched": 1
+ },
+ "office_contact": {
+  "email": "oloschurch@yahoo.com",
+  "phone": null,
+  "address": "213 Stanton Street, New York, NY 10002",
+  "source_url": "https://olsnyc.org/contact-us",
+  "sources": {
+   "email": "https://olsnyc.org/contact-us",
+   "address": "https://olsnyc.org/contact-us"
+  },
+  "fetched_at": "2026-03-03T15:38:30+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2026-06-04",
+  "capture_age_days": 151,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://olsnyc.org/",
+    "capture": "2026-06-04",
+    "archive_url": "https://web.archive.org/web/20260604000826/https://olsnyc.org/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://olsnyc.org/mass-times",
+    "capture": "2024-04-12",
+    "archive_url": "https://web.archive.org/web/20240412231221/https://olsnyc.org/mass-times"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://olsnyc.org/liturgy-sacraments",
+    "capture": "2025-10-11",
+    "archive_url": "https://web.archive.org/web/20251011232652/https://olsnyc.org/liturgy-sacraments"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://olsnyc.org/ministries",
+    "capture": "2025-04-26",
+    "archive_url": "https://web.archive.org/web/20250426231740/https://olsnyc.org/ministries"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://olsnyc.org/committees",
+    "capture": "2025-04-26",
+    "archive_url": "https://web.archive.org/web/20250426233707/https://olsnyc.org/committees"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://olsnyc.org/events",
+    "capture": "2025-04-27",
+    "archive_url": "https://web.archive.org/web/20250427005030/https://olsnyc.org/events"
+   },
+   {
+    "kind": "calendar",
+    "original": "https://olsnyc.org/calendar",
+    "capture": "2025-06-13",
+    "archive_url": "https://web.archive.org/web/20250613070721/https://olsnyc.org/calendar"
+   },
+   {
+    "kind": "contact",
+    "original": "https://olsnyc.org/contact-us",
+    "capture": "2026-03-03",
+    "archive_url": "https://web.archive.org/web/20260303153830/https://olsnyc.org/contact-us"
+   },
+   {
+    "kind": "bulletin",
+    "original": "https://olsnyc.org/bulletins",
+    "capture": "2025-05-14",
+    "archive_url": "https://web.archive.org/web/20250514113928/https://olsnyc.org/bulletins"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }
