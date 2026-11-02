@@ -23,6 +23,17 @@ Verdicts: `verified` = the channel's About links to the parish website, or its d
 site's name; or the parish name plus the city or a link from the parish's own site. `probable` = the name matches with
 nothing else. Only these two are read. `audit.json` lists the rest with the reason.
 
+## Status (first run, 2026-11-02 08:10Z, GitHub runner, 664 YouTube requests, no consent / bot page)
+- 1,214 parishes indexed in the 11 dioceses; 298 with a YouTube link; 491 candidate links (467 distinct).
+- Catalogued: 323 parish / school channels (304 verified, 19 probable) + 9 diocese channels; 24 unverified, 17 borrowed,
+  18 links that led to no channel (audit.json). 185 channels posted in the last 45 days; 176 streamed in the last 30.
+- 13,653 items seen on the tabs → 7,618 videos kept (3,971 flagged routine Mass), 383 quarantined by the privacy screen
+  (291 private names, 61 funerals / memorials of lay people, 20 weddings / baptisms / quinceañeras, 8 parishioners named,
+  2 students, 1 Mass intention), 461 HEURISTIC candidates on the per-diocese lists.
+- Known issue fixed for the next run: 4 parish channels were read as diocese channels (their About links the diocesan site);
+  a channel titled as a church / parish / patron is now never the diocese's. audit.json titles that name a private person
+  are redacted (the first commit in fold-crawlt had 4 such titles; git history there still holds them).
+
 ## Files
 | file | what |
 |---|---|
