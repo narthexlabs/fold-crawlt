@@ -661,22 +661,12 @@
    ]
   },
   {
-   "started_at": "2026-11-02T01:56:07+00:00",
-   "ended_at": "2026-11-02T01:57:54+00:00",
-   "result": "fetched {'robots_disallowed': 1, 'done': 26, 'dns': 13, 'ssl_error': 1, 'not_found': 4, 'conn_error': 1, 'ok': 5, 'timeout': 1, 'halted_egress': 0}; parsed 2 dioceses",
+   "started_at": "2026-11-02T01:56:05+00:00",
+   "ended_at": "2026-11-02T01:58:02+00:00",
+   "result": "fetched {'robots_disallowed': 2, 'done': 91, 'dns': 49, 'conn_error': 3, 'ssl_error': 11, 'not_found': 5, 'challenge': 3, 'ok': 12, 'parked': 1, 'http_5xx': 2, 'blocked_403': 1, 'timeout': 2, 'halted_egress': 0}; parsed 2 dioceses",
    "touched": [
-    "diocese-of-peoria",
-    "unassigned-il"
-   ]
-  },
-  {
-   "started_at": "2026-11-02T01:56:47+00:00",
-   "ended_at": "2026-11-02T01:57:56+00:00",
-   "result": "fetched {'robots_disallowed': 1, 'done': 88, 'dns': 49, 'conn_error': 5, 'challenge': 4, 'ssl_error': 4, 'not_found': 1, 'parked': 7, 'blocked_403': 1, 'ok': 13, 'http_5xx': 1, 'timeout': 2, 'halted_egress': 0}; parsed 3 dioceses",
-   "touched": [
-    "archdiocese-of-new-york",
-    "diocese-of-ogdensburg",
-    "eparchy-of-st-maron-of-brooklyn"
+    "archdiocese-of-newark",
+    "diocese-of-owensboro"
    ]
   },
   {
@@ -727,24 +717,23 @@
   },
   "archdiocese-of-new-york": {
    "sites_in_list": 457,
-   "records": 459,
-   "finished": true,
-   "ok": 94,
+   "records": 393,
+   "finished": false,
+   "ok": 87,
    "by_status": {
-    "challenge": 237,
-    "ok": 94,
-    "dns": 59,
+    "challenge": 231,
+    "ok": 87,
     "wayback": 22,
-    "conn_error": 12,
-    "ssl_error": 11,
-    "parked": 6,
-    "not_found": 5,
+    "dns": 22,
+    "ssl_error": 9,
+    "conn_error": 7,
     "unreachable_via_proxy": 5,
-    "blocked_403": 2,
-    "http_5xx": 2,
-    "timeout": 2,
+    "not_found": 4,
+    "parked": 2,
     "http_202": 1,
-    "robots_disallowed": 1
+    "blocked_403": 1,
+    "http_5xx": 1,
+    "timeout": 1
    }
   },
   "unassigned-oh": {
@@ -788,16 +777,20 @@
   },
   "archdiocese-of-newark": {
    "sites_in_list": 276,
-   "records": 202,
-   "finished": false,
-   "ok": 138,
+   "records": 279,
+   "finished": true,
+   "ok": 149,
    "by_status": {
-    "ok": 138,
-    "challenge": 46,
-    "conn_error": 6,
-    "ssl_error": 6,
-    "not_found": 3,
-    "dns": 1,
+    "ok": 149,
+    "challenge": 47,
+    "dns": 42,
+    "ssl_error": 15,
+    "conn_error": 9,
+    "not_found": 8,
+    "timeout": 2,
+    "robots_disallowed": 2,
+    "http_5xx": 2,
+    "parked": 1,
     "blocked_429": 1,
     "unreachable_via_proxy": 1
    }
@@ -1420,18 +1413,15 @@
   },
   "diocese-of-peoria": {
    "sites_in_list": 137,
-   "records": 140,
-   "finished": true,
-   "ok": 98,
+   "records": 109,
+   "finished": false,
+   "ok": 91,
    "by_status": {
-    "ok": 98,
-    "dns": 21,
+    "ok": 91,
     "challenge": 8,
-    "not_found": 5,
-    "ssl_error": 3,
-    "robots_disallowed": 2,
-    "timeout": 2,
-    "conn_error": 1
+    "dns": 7,
+    "ssl_error": 2,
+    "robots_disallowed": 1
    }
   },
   "diocese-of-syracuse": {
@@ -1995,22 +1985,20 @@
   },
   "diocese-of-ogdensburg": {
    "sites_in_list": 94,
-   "records": 93,
+   "records": 71,
    "finished": false,
-   "ok": 30,
+   "ok": 26,
    "by_status": {
-    "ok": 30,
+    "ok": 26,
     "challenge": 22,
-    "dns": 16,
-    "ssl_error": 10,
-    "parked": 4,
+    "ssl_error": 8,
+    "dns": 5,
     "unreachable_via_proxy": 3,
     "not_found": 2,
     "social_only": 2,
     "http_5xx": 1,
-    "timeout": 1,
     "blocked_403": 1,
-    "conn_error": 1,
+    "parked": 1,
     "http_300": 1
    }
   },
@@ -2497,11 +2485,11 @@
   },
   "unassigned-il": {
    "sites_in_list": 75,
-   "records": 144,
+   "records": 143,
    "finished": true,
-   "ok": 101,
+   "ok": 100,
    "by_status": {
-    "ok": 101,
+    "ok": 100,
     "challenge": 17,
     "dns": 10,
     "ssl_error": 6,
@@ -2757,15 +2745,17 @@
   },
   "diocese-of-owensboro": {
    "sites_in_list": 65,
-   "records": 48,
-   "finished": false,
-   "ok": 31,
+   "records": 65,
+   "finished": true,
+   "ok": 34,
    "by_status": {
-    "ok": 31,
-    "challenge": 10,
+    "ok": 34,
+    "challenge": 12,
+    "dns": 8,
+    "ssl_error": 5,
     "conn_error": 3,
-    "ssl_error": 2,
-    "unreachable_via_proxy": 2
+    "unreachable_via_proxy": 2,
+    "blocked_403": 1
    }
   },
   "diocese-of-st-augustine": {
@@ -3966,16 +3956,15 @@
   },
   "eparchy-of-st-maron-of-brooklyn": {
    "sites_in_list": 15,
-   "records": 15,
-   "finished": true,
-   "ok": 10,
+   "records": 9,
+   "finished": false,
+   "ok": 5,
    "by_status": {
-    "ok": 10,
+    "ok": 5,
     "robots_disallowed": 1,
     "social_only": 1,
     "conn_error": 1,
-    "ssl_error": 1,
-    "dns": 1
+    "ssl_error": 1
    }
   },
   "diocese-of-jackson": {
@@ -4012,7 +4001,7 @@
   },
   "diocese-of-lubbock": {
    "sites_in_list": 12,
-   "records": 13,
+   "records": 12,
    "finished": true,
    "ok": 4,
    "by_status": {
@@ -4276,9 +4265,9 @@
  },
  "totals": {
   "sites_in_list": 19937,
-  "records": 20372,
-  "ok": 10844
+  "records": 20233,
+  "ok": 10807
  },
  "us_parish_pages_discovermass": 20147,
- "updated_at": "2026-11-02T01:58:22+00:00"
+ "updated_at": "2026-11-02T01:58:04+00:00"
 }
