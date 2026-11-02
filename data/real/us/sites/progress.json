@@ -662,11 +662,17 @@
   },
   {
    "started_at": "2026-11-02T01:56:04+00:00",
-   "ended_at": "2026-11-02T01:59:14+00:00",
-   "result": "fetched {'robots_disallowed': 1, 'done': 54, 'dns': 26, 'ssl_error': 6, 'challenge': 1, 'http_5xx': 1, 'parked': 1, 'ok': 13, 'not_found': 2, 'not_html': 1, 'timeout': 3, 'cut': 1, 'halted_egress': 0}; parsed 2 dioceses",
+   "ended_at": "2026-11-02T01:56:07+00:00",
+   "result": "fetched {}; parsed 0 dioceses",
+   "touched": []
+  },
+  {
+   "started_at": "2026-11-02T01:56:23+00:00",
+   "ended_at": "2026-11-02T01:59:30+00:00",
+   "result": "fetched {'dns': 7, 'done': 16, 'ssl_error': 4, 'challenge': 2, 'parked': 1, 'ok': 3, 'cut': 1, 'halted_egress': 0}; parsed 2 dioceses",
    "touched": [
-    "archdiocese-of-milwaukee",
-    "diocese-of-pueblo"
+    "diocese-of-manchester",
+    "diocese-of-worcester"
    ]
   }
  ],
@@ -2353,14 +2359,17 @@
   },
   "diocese-of-manchester": {
    "sites_in_list": 79,
-   "records": 10,
+   "records": 78,
    "finished": false,
-   "ok": 4,
+   "ok": 27,
    "by_status": {
-    "ok": 4,
-    "challenge": 4,
+    "challenge": 32,
+    "ok": 27,
+    "dns": 11,
+    "ssl_error": 5,
     "robots_disallowed": 1,
-    "ssl_error": 1
+    "social_only": 1,
+    "parked": 1
    }
   },
   "diocese-of-madison": {
@@ -2729,14 +2738,14 @@
   },
   "diocese-of-worcester": {
    "sites_in_list": 66,
-   "records": 66,
+   "records": 67,
    "finished": true,
    "ok": 11,
    "by_status": {
     "challenge": 30,
     "dns": 16,
     "ok": 11,
-    "ssl_error": 4,
+    "ssl_error": 5,
     "timeout": 2,
     "unreachable_via_proxy": 2,
     "conn_error": 1
@@ -4281,9 +4290,9 @@
  },
  "totals": {
   "sites_in_list": 19937,
-  "records": 20631,
-  "ok": 10913
+  "records": 20208,
+  "ok": 10816
  },
  "us_parish_pages_discovermass": 20147,
- "updated_at": "2026-11-02T01:59:23+00:00"
+ "updated_at": "2026-11-02T01:59:32+00:00"
 }
