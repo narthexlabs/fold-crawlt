@@ -225,6 +225,22 @@ def main() -> None:
                 add("unattributed", None, doc.get("diocese") if isinstance(doc, dict) else None, l,
                     {"source": "wayback", "ref": f"california/wayback/{f.name}"})
 
+    # ---- the diocese pass (ingest/us/media/diocese_pages.py): each diocese's home page and its cathedral's site
+    dp_f = ROOT / "data" / "real" / "us" / "media" / "_inputs" / "diocese_pages.json"
+    dp_n = 0
+    if dp_f.exists():
+        for t in json.loads(dp_f.read_text())["targets"]:
+            cs = t.get("ca_slug")
+            if not cs or cs == "oakland" or not t.get("yt_links"):
+                continue
+            for l in t["yt_links"]:
+                link = {"type": l["type"], "key": l["key"], "url": l["url"], "live_hint": l.get("live_hint")}
+                if t["kind"] == "cathedral" and t.get("ca_parish_id"):
+                    add("parish", t["ca_parish_id"], cs, link, {"source": "site_html", "ref": l.get("found_on"), "domain": reg_domain(t["url"])})
+                else:
+                    add("diocese", cs, cs, link, {"source": "diocese_page" if t["kind"] == "diocese_home" else "cathedral_page", "ref": l.get("found_on")})
+                dp_n += 1
+
     # ---- tag the clean-up status
     out = []
     for c in cands.values():
@@ -239,9 +255,20 @@ def main() -> None:
         "by_owner_type": dict(collections.Counter(c["owner_type"] for c in out)),
         "cleanup_dropped_calls": dropped_calls, "cleanup_dropped_unique_parish_link": len(dropped), "cleanup_kept": len(kept),
         "html_sites_scanned": html_sites, "html_youtube_links_found": html_links,
-        "wayback_files": len(wb_files), "wayback_links": wb_n, "merge_social_stats": idx.get("social_stats"),
+        "wayback_files": len(wb_files), "wayback_links": wb_n, "diocese_pass_links": dp_n, "merge_social_stats": idx.get("social_stats"),
     }
     (RAW / "candidates.json").write_text(json.dumps({"summary": summary, "candidates": out}, ensure_ascii=False, indent=1) + "\n")
+    # inputs for the GitHub runner job `media` (which has no California site data): candidates + a trimmed parish index
+    inp = CA / "media" / "_inputs"
+    inp.mkdir(parents=True, exist_ok=True)
+    (inp / "candidates.json").write_text(json.dumps({"summary": summary, "candidates": out}, ensure_ascii=False, separators=(",", ":")))
+    keep = ("id", "diocese", "name", "city", "website", "kind", "type", "status")
+    trimmed = [{**{k: p.get(k) for k in keep}, "sites": [{k: x.get(k) for k in ("domain", "school", "diocesan_host")} for x in p.get("sites") or []]}
+               for p in parishes]
+    (inp / "parish_index.json").write_text(json.dumps({
+        "built_at": idx["built_at"], "note": "Trimmed copy of data/raw/california/youtube/parish_index.json (media_collect.py): only the fields "
+        "media_resolve.py verify and media_report.py read. Institutional facts only (parish name, city, website).",
+        "parishes": trimmed, "cleanup_evaluations": [], "social_stats": idx.get("social_stats")}, ensure_ascii=False, separators=(",", ":")))
     print(json.dumps(summary, indent=1))
 
 

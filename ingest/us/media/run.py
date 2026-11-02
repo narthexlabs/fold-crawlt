@@ -35,6 +35,7 @@ import re
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
+from urllib.parse import urlparse
 
 ROOT = Path(__file__).resolve().parents[3]
 os.environ.setdefault("MEDIA_RAW", str(ROOT / "data" / "raw" / "us" / "youtube"))
@@ -49,6 +50,7 @@ SITES = US / "sites"
 GEMINI = US / "gemini" / "url_context"
 CANDS, INDEX, RESOLVED, VERIFIED = RAW / "candidates.json", RAW / "parish_index.json", RAW / "resolved.json", RAW / "verified.json"
 ITEMS = RAW / "items"
+DIOCESE_PAGES = OUT / "_inputs" / "diocese_pages.json"
 GEN = "ingest/us/media/run.py"
 
 UPLOADS, STREAMS_MAX, STREAM_DAYS = 25, 15, 30
@@ -133,6 +135,28 @@ def collect() -> None:
                     links[dom].append(x)
                     gem += 1
     cands: dict[tuple, dict] = {}
+    # ---- the diocese pass (ingest/us/media/diocese_pages.py): diocese home pages and cathedral sites
+    dp_n = 0
+    if DIOCESE_PAGES.exists():
+        for t in json.loads(DIOCESE_PAGES.read_text())["targets"]:
+            if t.get("ca_slug") or skip_dir(t["diocese"]) or not t.get("yt_links"):
+                continue
+            dom = re.sub(r"^www\.", "", (urlparse(t.get("final_url") or t["url"]).hostname or "").lower())
+            if t["kind"] == "cathedral" and (dom in rows or re.sub(r"^www\.", "", (urlparse(t["url"]).hostname or "").lower()) in rows):
+                dom = dom if dom in rows else re.sub(r"^www\.", "", (urlparse(t["url"]).hostname or "").lower())
+                otype, oid, src = "parish", dom, "site_html"
+            else:
+                otype, oid, src = "diocese", t["diocese"], "diocese_page" if t["kind"] == "diocese_home" else "cathedral_page"
+            for l in t["yt_links"]:
+                k = (oid, l["type"], l["key"])
+                c = cands.setdefault(k, {"owner_type": otype, "owner_id": oid, "diocese": t["diocese"], "state": DIO[t["diocese"]].get("see_state"),
+                                         "link_type": l["type"], "key": l["key"], "url": l["url"], "live_hint": False, "sources": [],
+                                         "site_is_school": False, "cleanup": None})
+                c["live_hint"] = c["live_hint"] or bool(l.get("live_hint"))
+                srec = {"source": src, "ref": l.get("found_on"), "domain": dom}
+                if srec not in c["sources"]:
+                    c["sources"].append(srec)
+                dp_n += 1
     for dom, ls in links.items():
         r = rows.get(dom)
         if not r:
@@ -149,7 +173,9 @@ def collect() -> None:
     out = sorted(cands.values(), key=lambda c: (c["diocese"], c["owner_id"], c["link_type"], c["key"]))
     summary = {"built_at": mc.now_iso(), "site_files_read": files, "parishes_indexed": len(rows), "candidates": len(out),
                "unique_links": len({(c["link_type"], c["key"]) for c in out}),
-               "parishes_with_a_link": len({c["owner_id"] for c in out}), "gemini_links": gem,
+               "parishes_with_a_link": len({c["owner_id"] for c in out if c["owner_type"] == "parish"}), "gemini_links": gem,
+               "diocese_pass_links": dp_n, "diocese_pass_candidates": sum(1 for c in out if any(x["source"] in ("diocese_page", "cathedral_page") or
+                                                                                               (x["source"] == "site_html") for x in c["sources"])),
                "by_link_type": dict(collections.Counter(c["link_type"] for c in out)),
                "skipped": "California (ca-*, unassigned-ca and the 12 California sees): see data/real/california/media/"}
     CANDS.write_text(json.dumps({"summary": summary, "candidates": out}, ensure_ascii=False) + "\n")
@@ -217,7 +243,8 @@ def verify() -> None:
         base = {"channel_id": cid, "title": ch.get("title"), "handle": ch.get("handle"),
                 "url": f"https://www.youtube.com/{ch['handle']}" if ch.get("handle") else f"https://www.youtube.com/channel/{cid}",
                 "linked_as": sorted({l["url"] for l in links})[:6], "linked_by": linking[:20], "dioceses_linking": link_dioceses,
-                "evidence": [{"type": "org_website_link" if s["source"] == "site_json" else s["source"], "found_on_owner": l["owner_id"],
+                "evidence": [{"type": {"site_json": "org_website_link", "site_html": "org_website_page", "diocese_page": "diocese_website_link",
+                                       "cathedral_page": "cathedral_website_link"}.get(s["source"], s["source"]), "found_on_owner": l["owner_id"],
                               "url": s.get("ref"), "link": l["url"]} for l in links for s in l["sources"][:1]][:6],
                 "fetched_at": ch.get("fetched_at")}
         if any(mc.is_template_handle(l["key"]) for l in links) or mc.is_template_handle(ch.get("handle") or "x"):
@@ -300,7 +327,7 @@ def verify() -> None:
                              "owner_type": "school" if is_school else "parish", "also_linked_by": [x for x in linking if x != p["id"]][:20]})
             stats[f"parish_{top['verdict']}"] += 1
             for other in linking:
-                if other != p["id"] and not any(r["parish_id"] == other and r["verdict"] in ("verified", "probable") for r in results):
+                if other in P.by_id and other != p["id"] and not any(r["parish_id"] == other and r["verdict"] in ("verified", "probable") for r in results):
                     borrowed.append({**base, "status": "borrowed", "reason": f"belongs to {top['_name']} ({top['_city']}), not to the parish that links it",
                                      "linked_by": [other], "belongs_to": p["id"]})
                     stats["borrowed_other_parish"] += 1

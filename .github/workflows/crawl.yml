@@ -362,15 +362,24 @@ jobs:
         with: { fetch-depth: 1 }
       - run: git config user.name "Matthew" && git config user.email "mcolt4@gmail.com"
       - run: sudo pip3 install -q --break-system-packages requests   # system site: visible to python3 -I
-      - uses: actions/cache@v4
+      # restore and save are separate so the YouTube page cache is kept even when the save step fails (it fails loudly
+      # when a commit does not reach origin/main)
+      - uses: actions/cache/restore@v4
         with:
           path: |
             data/raw/california/youtube
             data/raw/us/youtube
           key: raw-youtube-${{ github.run_id }}
           restore-keys: raw-youtube-
-      - name: YouTube catalog chunk (California, then national), commit, push
+      - name: YouTube catalog chunk (California, then national), commit, push, confirm on origin/main
         run: bash scripts/us/media_chunk.sh "$MINUTES"
+      - uses: actions/cache/save@v4
+        if: always()
+        with:
+          path: |
+            data/raw/california/youtube
+            data/raw/us/youtube
+          key: raw-youtube-${{ github.run_id }}
 
   bulletins:
     if: ${{ github.event_name == 'schedule' || github.event.inputs.job == 'all' || github.event.inputs.job == 'bulletins' }}
