@@ -17,33 +17,174 @@
   "New Orleans"
  ],
  "home_url": "http://www.stdominicnola.org/",
- "final_url": "https://www.stdominicnola.org/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "final_url": "https://stdominicnola.org/",
+ "crawl_status": "wayback-2025-12-26",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
-   "url": "https://www.stdominicnola.org/",
-   "status": 403,
-   "class": "challenge"
+   "url": "https://stdominicnola.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stdominicnola.org/events/pk-christmas-schedule",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stdominicnola.org/events/pk-christmas-schedule-1",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "ministries",
+   "url": "https://stdominicnola.org/athletics-clubs",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "ministries",
+   "url": "https://stdominicnola.org/mothers-club",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://stdominicnola.org/mens-club",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://stdominicnola.org/calendar",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "calendar",
+   "url": "https://stdominicnola.org/events/levy-event",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "contact",
+   "url": "https://stdominicnola.org/contact-us",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://stdominicnola.org/bulletins",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://stdominicnola.org/bulletin",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
+ "template": "ecatholic-fastpath",
  "groups": [],
  "calendar_feeds": [],
  "events": [],
- "social": {},
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/people/Saint-Dominic-School-New-Orleans/61550061805395"
+  ],
+  "instagram": [
+   "https://www.instagram.com/saintdominicnola/"
+  ]
+ },
  "bulletin": null,
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "09:10",
+   "language": null,
+   "raw": "Bless Your Baby Jesus at Mass: 9:10 PK Christmas Schedule",
+   "source_url": "https://stdominicnola.org/",
+   "fetched_at": "2025-12-26T20:28:42+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2025-12-26: read by a person before it is shown",
+   "confidence": "low",
+   "template": "ecatholic+generic_strict",
+   "kind_parsed": "mass",
+   "source": "wayback-2025-12-26",
+   "archive_url": "https://web.archive.org/web/20251226202842/https://stdominicnola.org/",
+   "capture_date": "2025-12-26"
+  }
+ ],
  "source_url": "http://www.stdominicnola.org/",
- "fetched_at": "2026-11-01T17:27:34+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-02T01:10:15+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 1
+ },
+ "has_sunday": false,
+ "schedule_partial": true,
+ "schedule_dropped": {
+  "text:dated_line": 11,
+  "text:no_day": 3,
+  "text:skipped_section": 5,
+  "text:not_a_service": 5
+ },
+ "groups_dropped": {
+  "noise": 4
+ },
+ "wayback": {
+  "capture_date": "2025-12-26",
+  "capture_age_days": 311,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://stdominicnola.org/",
+    "capture": "2025-12-26",
+    "archive_url": "https://web.archive.org/web/20251226202842/https://stdominicnola.org/"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://stdominicnola.org/mothers-club",
+    "capture": "2025-12-26",
+    "archive_url": "https://web.archive.org/web/20251226012914/https://stdominicnola.org/mothers-club"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://stdominicnola.org/mens-club",
+    "capture": "2025-04-19",
+    "archive_url": "https://web.archive.org/web/20250419214750/https://stdominicnola.org/mens-club"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }
