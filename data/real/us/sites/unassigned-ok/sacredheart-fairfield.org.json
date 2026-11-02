@@ -168,7 +168,7 @@
    "note": "Google Calendar public feed (website-builder widget)",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:34:16+00:00",
+    "fetched_at": "2026-11-02T04:54:10+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -192,32 +192,6 @@
   "source_url": "https://www.sacredheart-fairfield.org/"
  },
  "schedule_rows": [
-  {
-   "kind": "confession",
-   "day": "Tuesday",
-   "time": "18:30",
-   "language": null,
-   "raw": "Confession Times:: 6:30 p.m. at St. Ann Church",
-   "source_url": "https://www.sacredheart-fairfield.org/reconciliation",
-   "fetched_at": "2026-11-01T07:19:56+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
-  {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "08:30",
-   "language": null,
-   "raw": "Confession Times:: 8:30 a.m. at Sacred Heart Church",
-   "source_url": "https://www.sacredheart-fairfield.org/reconciliation",
-   "fetched_at": "2026-11-01T07:19:56+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
   {
    "kind": "mass",
    "day": "Saturday",
@@ -317,6 +291,19 @@
    "time": "08:15",
    "language": null,
    "raw": "No Mass on Wednesdays: Friday: 8:15am",
+   "source_url": "https://www.sacredheart-fairfield.org/",
+   "fetched_at": "2026-11-01T07:19:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "08:30-09:30",
+   "language": null,
+   "raw": "Confession Times: Saturday: 8:30am - 9:30am",
    "source_url": "https://www.sacredheart-fairfield.org/",
    "fetched_at": "2026-11-01T07:19:54+00:00",
    "needs_review": false,
@@ -431,13 +418,36 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Tuesday",
+   "time": "18:30-19:00",
+   "language": null,
+   "raw": "Confession Times: Tuesday: 6:30pm - 7:00pm",
+   "source_url": "https://www.sacredheart-fairfield.org/",
+   "fetched_at": "2026-11-01T07:19:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
   }
  ],
  "source_url": "https://www.sacredheart-fairfield.org/",
  "fetched_at": "2026-11-01T07:20:02+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:47:54+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -451,15 +461,35 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 25
  },
+ "schedule_none": [
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "text": "No Mass on Wednesdays",
+   "source_url": "https://www.sacredheart-fairfield.org/",
+   "fetched_at": "2026-11-01T07:19:54+00:00"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "text": "No Mass on Mondays",
+   "source_url": "https://www.sacredheart-fairfield.org/",
+   "fetched_at": "2026-11-01T07:19:54+00:00"
+  }
+ ],
  "has_sunday": true,
+ "schedule_dropped": {
+  "other_location": 1
+ },
  "groups_dropped": {
   "label_not_group": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

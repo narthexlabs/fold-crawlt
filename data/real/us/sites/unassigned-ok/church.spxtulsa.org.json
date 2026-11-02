@@ -61,6 +61,12 @@
    "url": "https://church.spxtulsa.org/apps/events/?id=0",
    "status": 403,
    "class": "challenge"
+  },
+  {
+   "category": "confession",
+   "url": "https://church.spxtulsa.org/apps/pages/index.jsp?uREC_ID=627669&type=d&pREC_ID=1099254",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -205,11 +211,11 @@
   {
    "kind": "mass",
    "day": "Saturday",
-   "time": "17:00",
-   "language": "English",
-   "raw": "Join us to celebrate the Eucharist:: Saturday: 5:00pm (English), 7:00pm (Español)",
-   "source_url": "https://church.spxtulsa.org/apps/pages/mass",
-   "fetched_at": "2026-11-01T07:19:47+00:00",
+   "time": "19:00",
+   "language": "Spanish",
+   "raw": "Mass Times: Saturday: 5pm, 7pm (Español)",
+   "source_url": "https://church.spxtulsa.org/",
+   "fetched_at": "2026-11-01T07:19:43+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -217,9 +223,49 @@
   },
   {
    "kind": "mass",
-   "day": "Saturday",
+   "day": "Sunday",
+   "time": "12:30",
+   "language": "Spanish",
+   "raw": "Mass Times: Sunday: 8am, 10:30am, 12:30pm (Español)",
+   "source_url": "https://church.spxtulsa.org/",
+   "fetched_at": "2026-11-01T07:19:43+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
    "time": "19:00",
    "language": "Spanish",
+   "raw": "Mass Times: Thursday: 7pm (Español)",
+   "source_url": "https://church.spxtulsa.org/",
+   "fetched_at": "2026-11-01T07:19:43+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "16:00",
+   "language": null,
+   "raw": "Reconciliation on Saturdays at 4pm or by appointment.",
+   "source_url": "https://church.spxtulsa.org/",
+   "fetched_at": "2026-11-01T07:19:43+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "kind_parsed": "confession"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": "English",
    "raw": "Join us to celebrate the Eucharist:: Saturday: 5:00pm (English), 7:00pm (Español)",
    "source_url": "https://church.spxtulsa.org/apps/pages/mass",
    "fetched_at": "2026-11-01T07:19:47+00:00",
@@ -246,19 +292,6 @@
    "day": "Sunday",
    "time": "10:30",
    "language": "English",
-   "raw": "Join us to celebrate the Eucharist:: Sunday: 8:00am (English), 10:30am (English), 12:30pm (Español)",
-   "source_url": "https://church.spxtulsa.org/apps/pages/mass",
-   "fetched_at": "2026-11-01T07:19:47+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
-  {
-   "kind": "mass",
-   "day": "Sunday",
-   "time": "12:30",
-   "language": "Spanish",
    "raw": "Join us to celebrate the Eucharist:: Sunday: 8:00am (English), 10:30am (English), 12:30pm (Español)",
    "source_url": "https://church.spxtulsa.org/apps/pages/mass",
    "fetched_at": "2026-11-01T07:19:47+00:00",
@@ -343,24 +376,121 @@
    "template": "generic_strict"
   },
   {
-   "kind": "mass",
-   "day": "Thursday",
-   "time": "19:00",
-   "language": "Spanish",
-   "raw": "Join us to celebrate the Eucharist:: Thursday: 7:00pm (Español)",
+   "kind": "other",
+   "day": "Holy days",
+   "time": "18:30",
+   "language": null,
+   "raw": "Reconciliation Saturdays at 4:00pm, and 6:30pm, Sundays at 7:30am, 10:00am and 12:00pm, Wednesday at 5:00pm Thursday at 6:00pm (Español) or by appointment.",
    "source_url": "https://church.spxtulsa.org/apps/pages/mass",
    "fetched_at": "2026-11-01T07:19:47+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
+   "confidence": "high",
+   "template": "generic_strict",
+   "kind_parsed": "confession"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "07:30",
+   "language": null,
+   "raw": "Reconciliation Saturdays at 4:00pm, and 6:30pm, Sundays at 7:30am, 10:00am and 12:00pm, Wednesday at 5:00pm Thursday at 6:00pm (Español) or by appointment.",
+   "source_url": "https://church.spxtulsa.org/apps/pages/mass",
+   "fetched_at": "2026-11-01T07:19:47+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "kind_parsed": "confession"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "10:00",
+   "language": null,
+   "raw": "Reconciliation Saturdays at 4:00pm, and 6:30pm, Sundays at 7:30am, 10:00am and 12:00pm, Wednesday at 5:00pm Thursday at 6:00pm (Español) or by appointment.",
+   "source_url": "https://church.spxtulsa.org/apps/pages/mass",
+   "fetched_at": "2026-11-01T07:19:47+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "kind_parsed": "confession"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "12:00",
+   "language": null,
+   "raw": "Reconciliation Saturdays at 4:00pm, and 6:30pm, Sundays at 7:30am, 10:00am and 12:00pm, Wednesday at 5:00pm Thursday at 6:00pm (Español) or by appointment.",
+   "source_url": "https://church.spxtulsa.org/apps/pages/mass",
+   "fetched_at": "2026-11-01T07:19:47+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "kind_parsed": "confession"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "18:00",
+   "language": "Spanish",
+   "raw": "Reconciliation Saturdays at 4:00pm, and 6:30pm, Sundays at 7:30am, 10:00am and 12:00pm, Wednesday at 5:00pm Thursday at 6:00pm (Español) or by appointment.",
+   "source_url": "https://church.spxtulsa.org/apps/pages/mass",
+   "fetched_at": "2026-11-01T07:19:47+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "kind_parsed": "confession"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "09:00",
+   "language": null,
+   "raw": "First Friday Adoration 24 hours from 9:00am – Saturday 9:00am.",
+   "source_url": "https://church.spxtulsa.org/apps/pages/mass",
+   "fetched_at": "2026-11-01T07:19:47+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "kind_parsed": "adoration"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "17:00",
+   "language": "English",
+   "raw": "Adoration also Wednesdays 5:00pm - 6:00pm before the English Mass, and Thursdays 6:00pm - 7:00pm before the Spanish Mass.",
+   "source_url": "https://church.spxtulsa.org/apps/pages/mass",
+   "fetched_at": "2026-11-01T07:19:47+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "kind_parsed": "adoration"
   }
  ],
  "source_url": "https://church.spxtulsa.org/",
  "fetched_at": "2026-11-01T07:20:12+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:47:55+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -374,18 +504,28 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 28
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Reconciliation on Saturdays at 4pm or by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://church.spxtulsa.org/",
+   "fetched_at": "2026-11-01T07:19:43+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 13
+  "prose": 7
  },
  "groups_dropped": {
   "unmatched": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
