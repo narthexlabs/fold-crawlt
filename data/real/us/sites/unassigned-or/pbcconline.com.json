@@ -67,6 +67,12 @@
    "url": "https://www.pbcconline.com/parish-calendar",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.pbcconline.com/reconciliation",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -364,7 +370,7 @@
    "kind": "mass",
    "day": "Sunday",
    "time": "12:30",
-   "language": null,
+   "language": "Spanish",
    "raw": "Sunday Mass: 9:30 AM, 12:30 PM & 2:30 PM (Spanish)",
    "source_url": "https://www.pbcconline.com/",
    "fetched_at": "2026-11-01T17:27:30+00:00",
@@ -387,6 +393,20 @@
    "template": "wix"
   },
   {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "19:00",
+   "language": "Spanish",
+   "raw": "7 PM Vigil Mass the night before (Spanish)",
+   "source_url": "https://www.pbcconline.com/",
+   "fetched_at": "2026-11-01T17:27:30+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wix",
+   "kind_parsed": "mass"
+  },
+  {
    "kind": "adoration",
    "day": "Thursday",
    "time": "09:00-21:00",
@@ -398,27 +418,25 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wix"
-  },
-  {
-   "kind": "other",
-   "day": "Holy days",
-   "time": "19:00",
-   "language": "Spanish",
-   "raw": "7 PM Misa Vigilia noche anterior (español)",
-   "source_url": "https://www.pbcconline.com/",
-   "fetched_at": "2026-11-01T17:27:30+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "wix",
-   "kind_parsed": "mass"
   }
  ],
  "source_url": "https://www.pbcconline.com/",
  "fetched_at": "2026-11-01T17:27:45+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:59+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wix",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -432,20 +450,30 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 19
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Or by request",
+   "phrase": "by request",
+   "source_url": "https://www.pbcconline.com/reconciliation",
+   "fetched_at": "2026-11-02T04:41:59+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 4,
-  "no_kind": 3
+  "no_kind": 7,
+  "other_location": 2
  },
  "groups_dropped": {
   "noise": 6,
   "label_not_group": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
