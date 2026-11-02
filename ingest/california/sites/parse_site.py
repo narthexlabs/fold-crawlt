@@ -1486,6 +1486,171 @@ def group_qualifier(name: str, gkey: str, site_key: str = "") -> str | None:
     return "+".join(sorted(set(toks))) or None
 
 
+# ------------------------------------------------------------------------------------------------ group meeting day / time / place
+# Matthew, 2026-11-02 09:04 (research 17: 491 group descriptions already carried a meeting day and time the parser did not lift):
+# read the meeting day, time, frequency and place from the group's own listing line(s) and description. Conservative: a time
+# tied to a Mass ("sings at the 10:00 am Sunday Mass", "during the 11 AM Mass") is not a meeting; a text with a calendar date
+# ("October 3", one-off or seasonal sessions) gives no day; a place must be a room / hall / building named after "in" (or after
+# "at" in a sentence that says the group meets there); a private home is never a place; the place passes privacy.redact
+# unchanged or is dropped.
+_M_DAY = r"(monday|tuesday|wednesday|thursday|friday|saturday|sunday)"
+_M_ORD = r"(?:1st|2nd|3rd|4th|5th|first|second|third|fourth|fifth|last)"
+_M_DAY_ES = {"lunes": "Monday", "martes": "Tuesday", "miercoles": "Wednesday", "jueves": "Thursday", "viernes": "Friday",
+             "sabado": "Saturday", "sabados": "Saturday", "domingo": "Sunday", "domingos": "Sunday"}
+_M_ORD_ES = {"primer": "1st", "primero": "1st", "segundo": "2nd", "tercer": "3rd", "tercero": "3rd", "cuarto": "4th", "ultimo": "last"}
+_M_NOT_DAY = re.compile(_M_DAY + r"(?:'s|’s|s)?\s+(?:vigil\s+)?(?:mass|masses|liturgy|liturgies|gospel|readings?|school|bulletin|"
+                        r"collection|homily|obligation|service|worship)\b", re.I)
+_M_DAY_RXS = [
+    re.compile(rf"\b(?:the\s+|on\s+the\s+)?({_M_ORD}(?:\s*(?:,|and|&|/)\s*{_M_ORD})*)\s+{_M_DAY}s?\b(?:\s+(?:of\s+)?(?:the|each|every)\s+month)?", re.I),
+    re.compile(rf"\b(?:every|each)\s+(other\s+)?{_M_DAY}\b", re.I),
+    re.compile(rf"\b{_M_DAY}s?(?:\s*(?:,|&|and|or|/)\s*{_M_DAY}s?)*\s+(?:morning|afternoon|evening|night)s?\b", re.I),
+    re.compile(rf"\b{_M_DAY}s(?:\s*(?:,|&|and|or|/)\s*{_M_DAY}s?)*\b", re.I),
+    re.compile(rf"\b(?:on|meets|meet|meeting)\s+{_M_DAY}(?:\s*(?:,|&|and|or|/)\s*{_M_DAY})*\b", re.I),
+    re.compile(rf"\b{_M_DAY}(?:'s|’s)(?!\s+(?:gospel|readings?|mass))", re.I),
+]
+_M_TIME = re.compile(r"\b(\d{1,2})(?::(\d{2}))?\s*(?:(?:-|–|—|to|until)\s*\d{1,2}(?::\d{2})?\s*)?(a\.?\s?m\.?|p\.?\s?m\.?|noon)(?![a-z])|\bnoon\b", re.I)
+_M_TIME_MASS = re.compile(r"(?:\d(?::\d\d)?\s*(?:a\.?\s?m\.?|p\.?\s?m\.?)|noon)\s*(?:on\s+)?(?:(?:sunday|saturday|daily|weekday|vigil|"
+                          r"spanish|english|latin|evening|morning)\s+)*(?:mass|masses|liturgy|service)\b", re.I)
+_M_DATE = re.compile(r"\b(january|february|march|april|may|june|july|august|september|october|november|december|jan|feb|mar|apr|"
+                     r"jun|jul|aug|sept?|oct|nov|dec)\.?\s+\d{1,2}(?!\d)|\b\d{1,2}/\d{1,2}(?:/\d{2,4})?\b", re.I)
+_M_FREQ = [(re.compile(r"\bevery other week|\bbi-?weekly\b|\btwice a month\b|\b(1st|first)\s+and\s+(3rd|third)\b|\b(2nd|second)\s+and\s+"
+                       r"(4th|fourth)\b|\bevery other\b", re.I), "twice a month"),
+           (re.compile(rf"\bmonthly\b|\bonce a month\b|\b(?:of\s+)?(?:the|each|every)\s+month\b|\b{_M_ORD}\s+{_M_DAY}", re.I), "monthly"),
+           (re.compile(rf"\bweekly\b|\bonce a week\b|\bevery\s+{_M_DAY}|\beach\s+{_M_DAY}|\b{_M_DAY}s\b|\bevery week\b", re.I), "weekly")]
+_M_PLACE_HEAD = (r"(?:church\s+basement|parish\s+hall|church\s+hall|fellowship\s+hall|social\s+hall|hall|room|rm\.?|center|centre|building|bldg\.?|library|"
+                 r"chapel|capilla|lounge|cafeteria|gym(?:nasium)?|basement|annex|auditorium|classroom|parlou?r|loft|rectory|convent|"
+                 r"pavilion|courtyard|narthex|church|parish\s+house|ministry\s+house|youth\s+house|retreat\s+house|parish\s+office|"
+                 r"sal[oó]n(?:\s+parroquial)?|school|cafe|caf[eé])")
+_M_PLACE = re.compile(rf"\b(?i:(in|at|en))\s+(?:(?i:the|our|el|la)\s+)?((?:(?:[A-Z][\w.'’&-]*|\d{{3,4}})\s+){{0,4}}(?i:{_M_PLACE_HEAD})"
+                      rf"(?:\s+(?:#\s?)?\d+[A-Z]?|\s+[A-Z]\b)?(?:\s+(?:of|at|in)\s+(?:the\s+)?[A-Z][\w.'’-]*(?:\s+[A-Z][\w.'’-]*){{0,3}})?)(?![\w])")
+_M_ROOM = re.compile(r"\b(?:room|rm\.?)\s*#?\s?\d+[A-Z]?\b", re.I)
+_M_MEET_VERB = re.compile(r"\b(meet|meets|meeting|gather|gathers|held|hosted|rehears|practic|sessions?|class(?:es)?|stud(?:y|ies)|join us|"
+                          r"we\s+meet|reun|located|takes place)", re.I)
+_M_PRIVATE = re.compile(r"\b(home|homes|house of|residence|apartment|someone'?s|members'? houses?)\b", re.I)
+_M_INSTITUTION_HOUSE = re.compile(r"\b(parish|retreat|youth|ministry|guest|pastoral|formation|community|mission|faith)\s+house\b", re.I)
+
+
+def _m_time24(m) -> str | None:
+    if not m or not m.group(0):
+        return None
+    if m.group(0).lower() == "noon" or (m.group(3) or "").lower().startswith("noon"):
+        return "12:00"
+    h, mi, ap = int(m.group(1)), int(m.group(2) or 0), (m.group(3) or "").lower().replace(".", "").replace(" ", "")
+    if h > 12 or mi > 59:
+        return None
+    if ap.startswith("p") and h != 12:
+        h += 12
+    if ap.startswith("a") and h == 12:
+        h = 0
+    return f"{h:02d}:{mi:02d}"
+
+
+def _m_day(t: str) -> str | None:
+    tf = bg.fold(t) if hasattr(bg, "fold") else t
+    m = re.search(r"\b(?:todos\s+los|cada|los)\s+(lunes|martes|miercoles|jueves|viernes|sabados?|domingos?)\b", tf, re.I)
+    if m:
+        return _M_DAY_ES[m.group(1).lower()] + "s"
+    m = re.search(r"\b(primer|primero|segundo|tercer|tercero|cuarto|ultimo)\s+(lunes|martes|miercoles|jueves|viernes|sabado|domingo)"
+                  r"(?:\s+de(?:l| cada)\s+mes)?", tf, re.I)
+    if m:
+        return f"{_M_ORD_ES[m.group(1).lower()]} {_M_DAY_ES[m.group(2).lower()]} of the month"
+    for rx in _M_DAY_RXS:
+        for m in rx.finditer(t):
+            if _M_NOT_DAY.match(t[m.start():].lstrip(" ,") if not re.match(r"(?:every|each|on|meets?|meeting|the)\b", t[m.start():], re.I)
+                                else re.sub(r"^(?:every|each|on|meets?|meeting|the)\s+(?:other\s+)?", "", t[m.start():], flags=re.I)):
+                continue
+            d = re.sub(r"^(?:on|meets|meet|meeting)\s+", "", m.group(0).strip(), flags=re.I)
+            d = re.sub(r"^(?:the|on the)\s+", "", d, flags=re.I).replace("’s", "s").replace("'s", "s")
+            return d[:1].upper() + d[1:]
+    return None
+
+
+def _m_place(t: str) -> str | None:
+    for m in _M_PLACE.finditer(t):
+        prep, pl = m.group(1).lower(), m.group(2).strip(" .,;:")
+        sent = t[max(0, t.rfind(".", 0, m.start()) + 1): m.start()]
+        if prep == "at" and not _M_MEET_VERB.search(sent):
+            continue                  # "Altar servers at St. Albert Newman Center ..." names the parish, not a meeting place
+        if re.match(r"(?:\w+\s+)?(?:mass|masses)\b", pl, re.I) or re.search(r"\b(?:mass|masses)\b", pl, re.I):
+            continue
+        if re.fullmatch(r"(?:the\s+)?(?:church|school|center|centre|hall|room|building)", pl, re.I) and prep != "in":
+            continue
+        if _M_PRIVATE.search(pl) and not _M_INSTITUTION_HOUSE.search(pl):
+            continue
+        if re.search(r"\b(?:st\.?|saint|our lady|holy|sacred|blessed)\b.*\b(?:church|parish|newman center)$", pl, re.I) and prep == "at":
+            continue                  # "at St. Mary Church": the parish itself
+        if len(pl.split()) > 9:
+            continue
+        nv, n = redact(pl)
+        if n or nv != pl:
+            continue                  # a name or contact inside: dropped (privacy)
+        return pl[:1].upper() + pl[1:]
+    m = _M_ROOM.search(t)
+    return m.group(0).strip().title() if m else None
+
+
+def group_meeting(texts) -> dict | None:
+    """[(text, from)] -> {day, time, time_24, frequency, place, meets, from} or None. `meets` is the short line shown before
+    ("Tuesday evenings, 7pm"); fields not found are None."""
+    out = {"day": None, "time": None, "time_24": None, "frequency": None, "place": None, "from": []}
+    for t, src in texts:
+        if not isinstance(t, str) or not t.strip():
+            continue
+        t = re.sub(r"\s+", " ", bg.fix_mojibake(t) if hasattr(bg, "fix_mojibake") else t)
+        got = False
+        dated = bool(_M_DATE.search(t))
+        if not out["day"] and not dated:
+            d = _m_day(t)
+            if d:
+                out["day"], got = d, True
+        if not out["time"]:
+            masked = _M_TIME_MASS.sub(" ", t)
+            masked = re.sub(r"\b(?:during|after|before|following)\s+(?:the\s+)?(?:\d[\w:. ]{0,12}\s+)?(?:\w+\s+){0,2}mass(?:es)?\b", " ",
+                            masked, flags=re.I)
+            tm = _M_TIME.search(masked)
+            if tm and (out["day"] or _M_MEET_VERB.search(t) or re.search(r"\b(morning|afternoon|evening|night)s?\b", t, re.I)):
+                out["time"] = re.sub(r"[\s.]+", "", tm.group(0)).lower()
+                out["time_24"] = _m_time24(tm)
+                got = True
+        if not out["frequency"] and not dated:
+            for rx, f in _M_FREQ:
+                if rx.search(t):
+                    out["frequency"], got = f, True
+                    break
+        if not out["place"]:
+            pl = _m_place(t)
+            if pl:
+                out["place"], got = pl, True
+        if got and src not in out["from"]:
+            out["from"].append(src)
+    if not (out["day"] or out["time"] or out["place"]):
+        return None
+    if out["time"] and not out["day"] and not out["frequency"]:
+        out["time"] = out["time_24"] = None           # a bare time with no day is not a meeting time
+        if not out["place"]:
+            return None
+    parts = [x for x in (out["day"], out["time"]) if x]
+    out["meets"] = ", ".join(parts) if out["day"] else None
+    return out
+
+
+def lift_group_meeting(g: dict) -> dict | None:
+    """The same reading over a group record already on file (name, meets, description): for reports and offline backfills."""
+    return group_meeting([(g.get("meets"), "meets"), (g.get("description"), "description"), (g.get("name"), "name")])
+
+
+def _item_lines(item: str, lines: list[str]) -> list[str]:
+    """The listing line that carries the group name, and the next line when it is not another listing."""
+    nn = bg.norm(item)
+    if len(nn) < 4:
+        return []
+    for i, ln in enumerate(lines):
+        if nn in bg.norm(ln):
+            nxt = lines[i + 1] if i + 1 < len(lines) else ""
+            return [ln] + ([nxt] if nxt and not bg.starts_new_item(nxt) else [])
+    return []
+
+
 def groups_for(pages: list[Page], key: str, contact_url: str | None, today: str) -> tuple[list[dict], dict]:
     mp = [p for p in pages if p.kind == "ministries" or (p.kind in ("mass_times", "calendar") and MIN_PAGE_PATH.search(urlparse(p.url).path))]
     items: list[tuple[str, Page]] = []
@@ -1552,6 +1717,10 @@ def groups_for(pages: list[Page], key: str, contact_url: str | None, today: str)
         meets, desc = bg.context(item, p.lines)
         if not desc and desc_inline and not bg.desc_risk(desc_inline) and not re.search(r"@|\d{3}[-.) ]\d{3}", desc_inline):
             desc = bg.clip_words(desc_inline, 40)
+        meeting = group_meeting([(ln, "listing line") for ln in _item_lines(item, p.lines)] + [(desc_inline, "listing line"),
+                                                                                               (desc, "description")])
+        if meeting and meeting.get("meets") and not (meets and re.search(r"\d", meets) and re.search(bg.DAYS, meets, re.I)):
+            meets = meeting["meets"] if not meets or (meeting.get("time") and not re.search(r"\d", meets)) else meets
         nm = bg.smart_title(name).strip(" .,:;")
         if disp and (strength == "generic" or len(nm.split()) > 6 or re.match(r"^(\d|every|each|first|1st)", nm, re.I)
                      or re.search(rf"\b({bg.DAYS})s?\b", nm, re.I)):
@@ -1566,9 +1735,9 @@ def groups_for(pages: list[Page], key: str, contact_url: str | None, today: str)
         if rq:                                # a distinct named group of the same kind ("Children's Choir" vs "Adult Choir")
             gkey = f"{gkey}|{rq}"
         o = {"name": nm, "category": cat, "subcategory": sub, "audience": aud, "lang": lang, "meets": meets, "description": desc,
-             "strength": strength, "source_url": p.url, "fetched_at": p.fetched_at, "key": gkey}
+             "meeting": meeting, "strength": strength, "source_url": p.url, "fetched_at": p.fetched_at, "key": gkey}
         prev = obs.get(gkey)
-        score = (o["strength"] == "specific") * 2 + bool(meets) + bool(desc)
+        score = (o["strength"] == "specific") * 2 + bool(meets) + bool(desc) + bool(meeting and (meeting.get("time") or meeting.get("place")))
         if prev is None or score > prev["_score"]:
             o["_score"] = score
             obs[gkey] = o
@@ -1587,7 +1756,7 @@ def groups_for(pages: list[Page], key: str, contact_url: str | None, today: str)
         groups.append({
             "id": f"{key}:{gkey}", "name": o["name"], "category": o["category"], "category_label": bg.CATEGORIES[o["category"]],
             "subcategory": o["subcategory"], "audience": o["audience"], "language": lang or "en", "language_assumed": assumed,
-            "meets": o["meets"], "description": o["description"], "contact_url": contact_url,
+            "meets": o["meets"], "description": o["description"], "meeting": o.get("meeting"), "contact_url": contact_url,
             "contact_role": "parish office (see contact page)", "source_url": o["source_url"], "source_kind": "website",
             "fetched_at": o["fetched_at"], "confidence": "medium" if o["strength"] == "specific" else "low"})
     groups.sort(key=lambda g: (list(bg.CATEGORIES).index(g["category"]), g["name"]))
@@ -1742,6 +1911,7 @@ def office_contact(pages: list[Page], key: str) -> dict | None:
 # ------------------------------------------------------------------------------------------------ whole site
 LOCAL_RULES = [
     ("groups[].name", "text"), ("groups[].description", "raw"), ("groups[].meets", "text"),
+    ("groups[].meeting.place", "text"), ("groups[].meeting.meets", "text"),
     ("schedule_rows[].raw", "schedule"), ("bulletin.text", "text"),
     ("social.livestream[].label", "text"), ("schedule_images[].alt", "text"),
     ("events[].title", "text"), ("events[].location", "text"),
