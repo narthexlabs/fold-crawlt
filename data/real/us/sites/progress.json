@@ -662,18 +662,12 @@
   },
   {
    "started_at": "2026-11-02T01:56:02+00:00",
-   "ended_at": "2026-11-02T01:56:37+00:00",
-   "result": "fetched {'dns': 11, 'done': 24, 'ssl_error': 5, 'parked': 1, 'not_found': 1, 'challenge': 1, 'ok': 5, 'halted_egress': 0}; parsed 2 dioceses",
+   "ended_at": "2026-11-02T01:57:08+00:00",
+   "result": "fetched {'dns': 23, 'done': 52, 'challenge': 11, 'ssl_error': 2, 'not_found': 1, 'ok': 13, 'timeout': 2, 'halted_egress': 0}; parsed 2 dioceses",
    "touched": [
-    "unassigned-mn",
-    "diocese-of-new-ulm"
+    "diocese-of-memphis",
+    "diocese-of-nashville"
    ]
-  },
-  {
-   "started_at": "2026-11-02T01:56:40+00:00",
-   "ended_at": "2026-11-02T01:56:42+00:00",
-   "result": "fetched {}; parsed 0 dioceses",
-   "touched": []
   }
  ],
  "dioceses": {
@@ -1672,13 +1666,13 @@
   },
   "unassigned-mn": {
    "sites_in_list": 116,
-   "records": 154,
+   "records": 153,
    "finished": true,
    "ok": 95,
    "by_status": {
     "ok": 95,
     "challenge": 32,
-    "dns": 10,
+    "dns": 9,
     "ssl_error": 8,
     "conn_error": 3,
     "robots_disallowed": 2,
@@ -2726,16 +2720,17 @@
   },
   "diocese-of-memphis": {
    "sites_in_list": 65,
-   "records": 52,
-   "finished": false,
+   "records": 65,
+   "finished": true,
    "ok": 39,
    "by_status": {
     "ok": 39,
+    "dns": 14,
     "unreachable_via_proxy": 4,
     "conn_error": 3,
     "challenge": 3,
-    "dns": 2,
-    "not_found": 1
+    "not_found": 1,
+    "timeout": 1
    }
   },
   "diocese-of-owensboro": {
@@ -3315,26 +3310,27 @@
   },
   "diocese-of-nashville": {
    "sites_in_list": 40,
-   "records": 1,
-   "finished": false,
-   "ok": 0,
+   "records": 40,
+   "finished": true,
+   "ok": 13,
    "by_status": {
-    "ssl_error": 1
+    "ok": 13,
+    "challenge": 11,
+    "dns": 11,
+    "ssl_error": 3,
+    "timeout": 1,
+    "not_found": 1
    }
   },
   "diocese-of-new-ulm": {
    "sites_in_list": 39,
-   "records": 41,
-   "finished": true,
-   "ok": 15,
+   "records": 7,
+   "finished": false,
+   "ok": 5,
    "by_status": {
-    "ok": 15,
-    "dns": 12,
-    "ssl_error": 6,
-    "challenge": 4,
-    "not_found": 2,
-    "conn_error": 1,
-    "parked": 1
+    "ok": 5,
+    "challenge": 1,
+    "not_found": 1
    }
   },
   "diocese-of-monterey": {
@@ -3989,7 +3985,7 @@
   },
   "diocese-of-lubbock": {
    "sites_in_list": 12,
-   "records": 13,
+   "records": 12,
    "finished": true,
    "ok": 4,
    "by_status": {
@@ -4253,9 +4249,9 @@
  },
  "totals": {
   "sites_in_list": 19937,
-  "records": 20175,
-  "ok": 10803
+  "records": 20191,
+  "ok": 10806
  },
  "us_parish_pages_discovermass": 20147,
- "updated_at": "2026-11-02T01:56:45+00:00"
+ "updated_at": "2026-11-02T01:57:09+00:00"
 }
