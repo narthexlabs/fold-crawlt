@@ -75,6 +75,12 @@
    "url": "https://www.aloysius.org/livestream",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.aloysius.org/adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -338,6 +344,50 @@
    "confidence": "medium",
    "template": "wix",
    "day_expanded_from": "Tue, Thu, Fri"
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Exposition of the Blessed Sacrament at St. Aloysius occurs:: Every Friday immediately following the 8:00 AM Mass",
+   "source_url": "https://www.aloysius.org/adoration",
+   "fetched_at": "2026-11-02T04:41:53+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wix",
+   "relative": "after",
+   "note": "Exposition of the Blessed Sacrament at St. Aloysius occurs:: Every Friday immediately following the 8:00 AM Mass",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "First Wednesday of the month",
+   "time": "06:30-07:00",
+   "language": null,
+   "raw": "Exposition of the Blessed Sacrament at St. Aloysius occurs:: 1st Wednesday of each month from 6:30-7:00 AM inside the church (following 6:00 AM Mass)",
+   "source_url": "https://www.aloysius.org/adoration",
+   "fetched_at": "2026-11-02T04:41:53+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Third Saturday of the month",
+   "time": "08:30-15:00",
+   "language": null,
+   "raw": "Exposition of the Blessed Sacrament at St. Aloysius occurs:: 3rd Saturday of each month from 8:30 AM- 3:00 PM inside the church following Communion Service at 8:00 AM)",
+   "source_url": "https://www.aloysius.org/adoration",
+   "fetched_at": "2026-11-02T04:41:53+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "topup": true
   }
  ],
  "source_url": "http://www.aloysius.org/",
@@ -379,5 +429,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:53+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 3,
+  "mode": "merge"
  }
 }
