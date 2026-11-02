@@ -87,6 +87,12 @@
    "url": "https://icspcatholic.com/request-forms/contact-us-form/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://icspcatholic.com/adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -208,6 +214,46 @@
   "source_url": "https://icspcatholic.com/"
  },
  "schedule_rows": [
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "09:00",
+   "language": null,
+   "raw": "First Fridays Eucharistic Adoration 9:00 am to 3:00 pm at Immaculate Conception Church",
+   "source_url": "https://icspcatholic.com/",
+   "fetched_at": "2026-11-01T22:15:29+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "kind_parsed": "adoration"
+  },
+  {
+   "kind": "adoration",
+   "day": "Third Thursday of the month",
+   "time": "09:00",
+   "language": null,
+   "raw": "Third Thursdays Eucharistic Adoration 9:00 am on Thursday to 9:00 am on Friday at St. Patrick Church",
+   "source_url": "https://icspcatholic.com/",
+   "fetched_at": "2026-11-01T22:15:29+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Third Thursdays Eucharistic Adoration 9:00 am on Thursday to 9:00 am on Friday at St. Patrick Church",
+   "source_url": "https://icspcatholic.com/",
+   "fetched_at": "2026-11-01T22:15:29+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  },
   {
    "kind": "mass",
    "day": "Sunday",
@@ -337,53 +383,25 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
-  },
-  {
-   "kind": "other",
-   "day": "Holy days",
-   "time": "09:00",
-   "language": null,
-   "raw": "First Fridays Eucharistic Adoration 9:00 am to 3:00 pm at Immaculate Conception Church",
-   "source_url": "https://icspcatholic.com/",
-   "fetched_at": "2026-11-01T22:15:29+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "wordpress",
-   "kind_parsed": "adoration"
-  },
-  {
-   "kind": "adoration",
-   "day": "Third Thursday of the month",
-   "time": "09:00",
-   "language": null,
-   "raw": "Third Thursdays Eucharistic Adoration 9:00 am on Thursday to 9:00 am on Friday at St. Patrick Church",
-   "source_url": "https://icspcatholic.com/",
-   "fetched_at": "2026-11-01T22:15:29+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "wordpress"
-  },
-  {
-   "kind": "adoration",
-   "day": "Thursday",
-   "time": "09:00",
-   "language": null,
-   "raw": "Third Thursdays Eucharistic Adoration 9:00 am on Thursday to 9:00 am on Friday at St. Patrick Church",
-   "source_url": "https://icspcatholic.com/",
-   "fetched_at": "2026-11-01T22:15:29+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "wordpress"
   }
  ],
  "source_url": "https://icspcatholic.com/",
  "fetched_at": "2026-11-01T22:15:45+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:36+00:00",
+  "requests": 1,
+  "found": [
+   "adoration"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -397,20 +415,31 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 9
+  "trusted_kinds": [],
+  "generic_rows": 11
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "The sacrament of Reconciliation is available Saturdays 4:00–4:45 pm at IC Church or by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://icspcatholic.com/sacraments/reconciliation/",
+   "fetched_at": "2026-11-01T22:15:37+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "skipped_section": 74,
-  "dated_block": 219,
+  "skipped_section": 77,
+  "other_location": 128,
+  "dated_block": 222,
   "not_a_service": 4,
   "relative_time": 4,
-  "other_location": 127
+  "no_day": 1
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

@@ -75,19 +75,6 @@
  },
  "schedule_rows": [
   {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "15:00",
-   "language": null,
-   "raw": "Reconciliation: 3:00 PM on Saturday, or by appointment with the priest.",
-   "source_url": "https://www.stjosephwautoma.com/sacraments",
-   "fetched_at": "2026-11-01T22:15:29+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
-  {
    "kind": "mass",
    "day": "Saturday",
    "time": "16:00",
@@ -166,7 +153,7 @@
    "kind": "mass",
    "day": "Sunday",
    "time": "07:30",
-   "language": null,
+   "language": "English",
    "raw": "Mass Times:: 7:30 & 9:00 AM (English)",
    "source_url": "https://www.stjosephwautoma.com/",
    "fetched_at": "2026-11-01T22:15:27+00:00",
@@ -200,13 +187,36 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:00",
+   "language": null,
+   "raw": "Reconciliation: 3:00 PM on Saturday, or by appointment with the priest.",
+   "source_url": "https://www.stjosephwautoma.com/sacraments",
+   "fetched_at": "2026-11-01T22:15:29+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
   }
  ],
  "source_url": "https://www.stjosephwautoma.com/",
  "fetched_at": "2026-11-01T22:15:35+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:34+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -220,16 +230,26 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 7
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "3:00 PM on Saturday, or by appointment with the priest.",
+   "phrase": "by appointment",
+   "source_url": "https://www.stjosephwautoma.com/sacraments",
+   "fetched_at": "2026-11-01T22:15:29+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "skipped_section": 2
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

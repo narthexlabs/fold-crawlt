@@ -238,7 +238,7 @@
    "feed_key": "cb2aa3a339a5",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:32:22+00:00",
+    "fetched_at": "2026-11-02T04:46:56+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -288,19 +288,6 @@
    "template": "generic_strict"
   },
   {
-   "kind": "mass",
-   "day": "Sunday",
-   "time": "10:00",
-   "language": null,
-   "raw": "Mass Times: Sunday: 10:00 AM",
-   "source_url": "https://www.stmattocparish.org/",
-   "fetched_at": "2026-11-01T22:15:27+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
-  {
    "kind": "adoration",
    "day": "Thursday",
    "time": "08:15-19:00",
@@ -312,13 +299,90 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "07:45",
+   "language": null,
+   "raw": "Tuesdays 7:45am",
+   "source_url": "https://www.stmattocparish.org/",
+   "fetched_at": "2026-11-01T22:15:27+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "07:45",
+   "language": null,
+   "raw": "Thursdays 7:45am",
+   "source_url": "https://www.stmattocparish.org/",
+   "fetched_at": "2026-11-01T22:15:27+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "07:45",
+   "language": null,
+   "raw": "Fridays: 7:45am or 9:00am: see calendar page",
+   "source_url": "https://www.stmattocparish.org/",
+   "fetched_at": "2026-11-01T22:15:27+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Fridays: 7:45am or 9:00am: see calendar page",
+   "source_url": "https://www.stmattocparish.org/",
+   "fetched_at": "2026-11-01T22:15:27+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "18:30",
+   "language": null,
+   "raw": "First Fridays, 6:30pm",
+   "source_url": "https://www.stmattocparish.org/",
+   "fetched_at": "2026-11-01T22:15:27+00:00",
+   "needs_review": true,
+   "review_reason": "schedule_box,nth_of_month",
+   "nth": "first"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": null,
+   "raw": "Sunday: 10:00 AM",
+   "source_url": "https://www.stmattocparish.org/",
+   "fetched_at": "2026-11-01T22:15:27+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
   }
  ],
  "source_url": "https://www.stmattocparish.org/",
  "fetched_at": "2026-11-01T22:15:37+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:34+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -332,13 +396,15 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 22
  },
  "has_sunday": true,
  "schedule_dropped": {
   "dated_line": 2,
-  "other_location": 9,
-  "skipped_section": 3
+  "other_location": 11,
+  "skipped_section": 3,
+  "box_rows_added": 6
  },
  "groups_dropped": {
   "noise": 4,
@@ -346,8 +412,8 @@
   "sacrament_prep": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

@@ -116,6 +116,19 @@
  "schedule_rows": [
   {
    "kind": "mass",
+   "day": "Sunday",
+   "time": "18:00",
+   "language": null,
+   "raw": "Student Mass: Sundays @ 6 PM",
+   "source_url": "https://stoutcatholic.org/",
+   "fetched_at": "2026-11-01T22:15:28+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
    "day": "Sunday (during the school year)",
    "time": "18:00",
    "language": null,
@@ -126,24 +139,23 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
-  },
-  {
-   "kind": "mass",
-   "day": "Sunday",
-   "time": "18:00",
-   "language": null,
-   "raw": "Sundays @ 6 PM",
-   "source_url": "https://stoutcatholic.org/",
-   "fetched_at": "2026-11-01T22:15:28+00:00",
-   "needs_review": true,
-   "review_reason": "weekend_rescue"
   }
  ],
  "source_url": "https://stoutcatholic.org/",
  "fetched_at": "2026-11-01T22:15:39+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:34+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -157,23 +169,22 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 41
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "no_day": 2,
-  "relative_time": 1,
+  "no_day": 3,
   "other_location": 4,
   "no_kind": 2,
-  "prose": 1,
-  "weekend_rescue_added": 1
+  "prose": 1
  },
  "groups_dropped": {
   "noise": 4
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

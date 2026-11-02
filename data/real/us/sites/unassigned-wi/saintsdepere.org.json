@@ -75,6 +75,12 @@
    "url": "https://www.saintsdepere.org/bulletin",
    "status": 404,
    "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.saintsdepere.org/adoration",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -296,7 +302,7 @@
    "note": "iCal link on page",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:31:56+00:00",
+    "fetched_at": "2026-11-02T04:46:17+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -319,32 +325,6 @@
   "source_url": "https://www.saintsdepere.org/"
  },
  "schedule_rows": [
-  {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "15:00-15:45",
-   "language": null,
-   "raw": "Individual confessions are scheduled on Saturdays from 3:00-3:45pm at St.",
-   "source_url": "https://www.saintsdepere.org/sacraments",
-   "fetched_at": "2026-11-01T22:15:30+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "squarespace"
-  },
-  {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "15:30-16:15",
-   "language": null,
-   "raw": "RECONCILIATION: Francis Xavier and 3:30-4:15pm at St.",
-   "source_url": "https://www.saintsdepere.org/sacraments",
-   "fetched_at": "2026-11-01T22:15:30+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "low",
-   "template": "squarespace"
-  },
   {
    "kind": "mass",
    "day": "Saturday",
@@ -383,13 +363,49 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "squarespace"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:30",
+   "language": null,
+   "raw": "Confessions: Saturdays 3:30p.m.",
+   "source_url": "https://www.saintsdepere.org/",
+   "fetched_at": "2026-11-01T22:15:26+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:00-15:45",
+   "language": null,
+   "raw": "Individual confessions are scheduled on Saturdays from 3:00-3:45pm at St.",
+   "source_url": "https://www.saintsdepere.org/sacraments",
+   "fetched_at": "2026-11-01T22:15:30+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "squarespace"
   }
  ],
  "source_url": "https://www.saintsdepere.org/",
  "fetched_at": "2026-11-01T22:15:39+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:35+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "squarespace",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -403,6 +419,7 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 18
  },
  "has_sunday": true,
@@ -415,8 +432,8 @@
   "sacrament_prep": 2
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
