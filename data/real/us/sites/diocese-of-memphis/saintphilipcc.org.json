@@ -73,6 +73,12 @@
    "url": "https://www.saintphilipcc.org/contact.html",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.saintphilipcc.org/reconciliation.html",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -493,6 +499,34 @@
    "confidence": "high",
    "template": "weebly",
    "day_expanded_from": "every day"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:00-15:45",
+   "language": null,
+   "raw": "We offer the Sacrament of Reconciliation two times every wee: Saturday: 3:00 PM - 3:45 PM",
+   "source_url": "https://www.saintphilipcc.org/reconciliation.html",
+   "fetched_at": "2026-11-02T04:41:49+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "09:30-10:15",
+   "language": null,
+   "raw": "We offer the Sacrament of Reconciliation two times every wee: Sunday: 9:30 AM - 10:15 AM",
+   "source_url": "https://www.saintphilipcc.org/reconciliation.html",
+   "fetched_at": "2026-11-02T04:41:49+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly",
+   "topup": true
   }
  ],
  "source_url": "http://saintphilipcc.org/",
@@ -535,5 +569,29 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "By appointment.",
+   "phrase": "By appointment",
+   "source_url": "https://www.saintphilipcc.org/reconciliation.html",
+   "fetched_at": "2026-11-02T04:41:49+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:52+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
  }
 }
