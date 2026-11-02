@@ -18,32 +18,131 @@
  ],
  "home_url": "http://www.st-anne.net/parish/",
  "final_url": "https://www.st-anne.net/parish/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "crawl_status": "wayback-2025-04-24",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
    "url": "https://www.st-anne.net/parish/",
-   "status": 403,
-   "class": "challenge"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://st-anne.net/contact-us",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.st-anne.net/mass-times",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.st-anne.net/mass-schedule",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.st-anne.net/ministries",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://st-anne.net/bulletins",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
+ "template": "ecatholic-fastpath",
  "groups": [],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/stannewarren"
+  ]
+ },
+ "bulletin": {
+  "url": "https://st-anne.net/bulletins",
+  "date": null,
+  "kind": "page",
+  "text": "|||",
+  "source_url": "https://st-anne.net/bulletins"
+ },
  "schedule_rows": [],
  "source_url": "http://www.st-anne.net/parish/",
- "fetched_at": "2026-11-01T22:15:34+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-01T23:30:44+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 0
+ },
+ "has_sunday": false,
+ "groups_dropped": {},
+ "office_contact": {
+  "email": "mainoffice@st-anne.net",
+  "phone": "(586) 264-2911",
+  "address": null,
+  "source_url": "https://st-anne.net/contact-us",
+  "sources": {
+   "email": "https://st-anne.net/contact-us",
+   "phone": "https://st-anne.net/contact-us"
+  },
+  "fetched_at": "2025-03-24T12:17:17+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "wayback": {
+  "capture_date": "2025-04-24",
+  "capture_age_days": 556,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://www.st-anne.net/parish/",
+    "capture": "2025-04-24",
+    "archive_url": "https://web.archive.org/web/20250424143556/https://www.st-anne.net/parish/"
+   },
+   {
+    "kind": "contact",
+    "original": "https://st-anne.net/contact-us",
+    "capture": "2025-03-24",
+    "archive_url": "https://web.archive.org/web/20250324121717/https://st-anne.net/contact-us"
+   },
+   {
+    "kind": "bulletin",
+    "original": "https://st-anne.net/bulletins",
+    "capture": "2025-03-24",
+    "archive_url": "https://web.archive.org/web/20250324140517/https://st-anne.net/bulletins"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }
