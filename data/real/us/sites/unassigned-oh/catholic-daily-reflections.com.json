@@ -63,6 +63,18 @@
    "url": "https://catholic-daily-reflections.com/bulletin",
    "status": 404,
    "class": "not_found"
+  },
+  {
+   "category": "confession",
+   "url": "https://catholic-daily-reflections.com/reconciliation",
+   "status": 502,
+   "class": "http_5xx"
+  },
+  {
+   "category": "adoration",
+   "url": "https://catholic-daily-reflections.com/adoration",
+   "status": null,
+   "class": "timeout"
   }
  ],
  "cms_guess": {
@@ -86,7 +98,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:35:20+00:00",
+    "fetched_at": "2026-11-02T04:54:29+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -103,7 +115,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:35:22+00:00",
+    "fetched_at": "2026-11-02T04:54:30+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -120,7 +132,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:35:23+00:00",
+    "fetched_at": "2026-11-02T04:54:32+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -137,7 +149,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:35:25+00:00",
+    "fetched_at": "2026-11-02T04:54:34+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -162,9 +174,19 @@
  "schedule_rows": [],
  "source_url": "https://catholic-daily-reflections.com/",
  "fetched_at": "2026-11-01T22:15:47+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:52:46+00:00",
+  "requests": 2,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -178,13 +200,14 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 0
  },
  "has_sunday": false,
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

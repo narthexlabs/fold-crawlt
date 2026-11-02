@@ -81,6 +81,18 @@
    "url": "https://www.staugie.com/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.staugie.com/reconciliation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.staugie.com/adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -266,7 +278,7 @@
    "note": "Google Calendar public feed (website-builder widget)",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:38:29+00:00",
+    "fetched_at": "2026-11-02T04:58:55+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -451,13 +463,39 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "Monday",
+   "time": "09:00-21:00",
+   "language": null,
+   "raw": "Augustine has the Exposition of the Blessed Sacrament every Monday from 9 am to 9pm.",
+   "source_url": "https://www.staugie.com/adoration",
+   "fetched_at": "2026-11-02T04:52:29+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict"
   }
  ],
  "source_url": "https://www.staugie.com/",
  "fetched_at": "2026-11-01T20:25:11+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:52:29+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -471,18 +509,20 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
-  "generic_rows": 28
+  "trusted_kinds": [],
+  "generic_rows": 29
  },
  "has_sunday": true,
  "schedule_dropped": {
   "not_a_service": 4,
   "negated": 2,
+  "other_location": 1,
   "notice_not_schedule": 2
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

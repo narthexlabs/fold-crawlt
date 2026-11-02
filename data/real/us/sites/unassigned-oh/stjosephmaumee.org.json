@@ -929,7 +929,7 @@
    "day": "Holy days",
    "time": "18:00",
    "language": null,
-   "raw": "Join us for 6:00 PM Mass, then head down to the Community Center for our first Life Teen Night of the school year.",
+   "raw": "📍 6:00 PM Mass at St. Joe’s",
    "source_url": "https://www.stjosephmaumee.org/",
    "fetched_at": "2026-11-01T22:15:25+00:00",
    "needs_review": false,
@@ -951,13 +951,37 @@
    "confidence": "medium",
    "template": "generic_strict",
    "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "21:00",
+   "language": null,
+   "raw": "9:00 p.m. Thursday [Mass intention withheld]",
+   "source_url": "https://www.stjosephmaumee.org/",
+   "fetched_at": "2026-11-01T22:15:25+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "kind_parsed": "adoration"
   }
  ],
  "source_url": "https://www.stjosephmaumee.org/",
  "fetched_at": "2026-11-01T22:15:35+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:52:28+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -971,24 +995,26 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 12
  },
  "has_sunday": true,
  "schedule_dropped": {
   "relative_time": 1,
   "skipped_section": 10,
-  "other_location": 13,
-  "dated_block": 1,
+  "other_location": 9,
+  "dated_block": 2,
   "no_day": 9,
-  "dated_line": 3
+  "dated_line": 4,
+  "prose": 1
  },
  "groups_dropped": {
   "label_not_group": 2,
   "unmatched": 2
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
@@ -1009,6 +1035,7 @@
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
  },
  "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
+  "screened_by": "ingest/public/privacy.py screen()",
+  "intentions_withheld": 1
  }
 }

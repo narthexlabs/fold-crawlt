@@ -63,6 +63,18 @@
    "url": "https://stpatrickprovidence.com/index.php/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stpatrickprovidence.com/reconciliation/",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stpatrickprovidence.com/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -140,7 +152,7 @@
    "note": "All-in-One Event Calendar export (WordPress)",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:39:52+00:00",
+    "fetched_at": "2026-11-02T05:00:51+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -196,6 +208,71 @@
    "template": "wordpress"
   },
   {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Mass Times: Sunday: 9 a.m. @ Brother Parish: St. Louis, Custar",
+   "source_url": "https://stpatrickprovidence.com/",
+   "fetched_at": "2026-11-01T22:15:26+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Mass Times: Mon. 9:00 a.m. St. Louis",
+   "source_url": "https://stpatrickprovidence.com/",
+   "fetched_at": "2026-11-01T22:15:26+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "09:15",
+   "language": null,
+   "raw": "Mass Times: Wed. 9:15 a.m. St. Louis",
+   "source_url": "https://stpatrickprovidence.com/",
+   "fetched_at": "2026-11-01T22:15:26+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "08:30",
+   "language": null,
+   "raw": "Mass Times: Thurs. 8:30 a.m. St. Patrick’s",
+   "source_url": "https://stpatrickprovidence.com/",
+   "fetched_at": "2026-11-01T22:15:26+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "08:30",
+   "language": null,
+   "raw": "Mass Times: Fri. 8:30 a.m. St. Patrick’s",
+   "source_url": "https://stpatrickprovidence.com/",
+   "fetched_at": "2026-11-01T22:15:26+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
    "kind": "confession",
    "day": "Saturday",
    "time": "15:00-16:00",
@@ -209,11 +286,24 @@
    "template": "wordpress"
   },
   {
-   "kind": "mass",
+   "kind": "confession",
    "day": "Last Thursday of the month",
    "time": "11:30",
    "language": null,
-   "raw": "Mass: Patrick's Parish Monthly Luncheon is the last Thursday of every month @ 11:30 a.m.",
+   "raw": "Sacrament of Penance:: Patrick's Parish Monthly Luncheon is the last Thursday of every month @ 11:30 a.m.",
+   "source_url": "https://stpatrickprovidence.com/",
+   "fetched_at": "2026-11-01T22:15:26+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Third Monday of the month",
+   "time": "19:00-20:30",
+   "language": null,
+   "raw": "Sacrament of Penance:: Our meetings are from 7-8:30 p.m. and will be every 3rd Monday of the month.",
    "source_url": "https://stpatrickprovidence.com/",
    "fetched_at": "2026-11-01T22:15:26+00:00",
    "needs_review": false,
@@ -224,9 +314,19 @@
  ],
  "source_url": "https://stpatrickprovidence.com/",
  "fetched_at": "2026-11-01T22:15:37+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:52:31+00:00",
+  "requests": 2,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -240,21 +340,20 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 2
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 5,
-  "dated_line": 1,
-  "relative_time": 3,
-  "range_not_a_mass": 1,
+  "relative_time": 2,
+  "not_a_service": 1,
   "skipped_section": 17,
-  "prose": 2
+  "prose": 1
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

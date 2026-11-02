@@ -107,6 +107,19 @@
    "template": "godaddy"
   },
   {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:30",
+   "language": null,
+   "raw": "Sacrament of Reconciliation:: Saturday 3:30 pm prior to 4:30 pm Mass",
+   "source_url": "https://sacredheartbethlehem.org/mass-schedule",
+   "fetched_at": "2026-11-01T22:15:22+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "godaddy"
+  },
+  {
    "kind": "mass",
    "day": "Thursday",
    "time": "18:30",
@@ -157,13 +170,36 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "godaddy"
+  },
+  {
+   "kind": "confession",
+   "day": "Thursday",
+   "time": "17:30",
+   "language": null,
+   "raw": "Sacrament of Reconciliation: Thursday 5:30 pm prior to 6:30 pm Mass",
+   "source_url": "https://sacredheartbethlehem.org/mass-schedule",
+   "fetched_at": "2026-11-01T22:15:22+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "godaddy"
   }
  ],
  "source_url": "https://sacredheartbethlehem.org/",
  "fetched_at": "2026-11-01T22:15:26+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:52:24+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "godaddy",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -177,16 +213,26 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 8
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "& anytime by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://sacredheartbethlehem.org/mass-schedule",
+   "fetched_at": "2026-11-01T22:15:22+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 4
+  "relative_time": 2
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
