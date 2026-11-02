@@ -149,8 +149,8 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | archdiocese-of-oklahoma-city | 66 | 66 | 28 | 20 | 6 | 12 | 0 |
 | unassigned-ga | 66 | 80 | 56 | 8 | 3 | 13 | 0 |
 | diocese-of-worcester | 66 | 67 | 11 | 30 | 0 | 26 | 0 |
-| diocese-of-memphis | 65 | 52 | 39 | 3 | 0 | 10 | 0 |
-| diocese-of-owensboro | 65 | 48 | 31 | 10 | 0 | 7 | 0 |
+| diocese-of-memphis | 65 | 65 | 39 | 3 | 0 | 23 | 0 |
+| diocese-of-owensboro | 65 | 65 | 34 | 12 | 1 | 18 | 0 |
 | diocese-of-st-augustine | 65 | 71 | 45 | 15 | 0 | 11 | 0 |
 | diocese-of-pensacola-tallahassee | 64 | 64 | 34 | 16 | 1 | 12 | 1 |
 | diocese-of-boise | 63 | 65 | 33 | 17 | 0 | 15 | 0 |
