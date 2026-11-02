@@ -24,32 +24,566 @@
  ],
  "home_url": "https://vol.org/",
  "final_url": "https://vol.org/",
- "crawl_status": "challenge",
- "crawl_env": "sandbox",
- "robots_note": "challenge",
+ "crawl_status": "wayback-2026-04-22",
+ "crawl_env": "wayback",
+ "robots_note": null,
  "pages": [
   {
    "category": "home",
    "url": "https://vol.org/",
-   "status": 403,
-   "class": "challenge"
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://vol.org/mass-times",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://vol.org/liturgy-sacraments",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://vol.org/faith-formation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://vol.org/ministries",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://vol.org/administrative-ministries",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://vol.org/bulletins-1",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
-  "cms": "unknown",
-  "evidence": []
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
  },
- "template": "none",
- "groups": [],
+ "template": "ecatholic-fastpath",
+ "groups": [
+  {
+   "id": "vol.org:youth_ministry",
+   "name": "Youth Ministry",
+   "category": "youth",
+   "category_label": "Youth",
+   "subcategory": "youth_ministry",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://vol.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://vol.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-04-22T17:19:42+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-04-22"
+  },
+  {
+   "id": "vol.org:servers",
+   "name": "Altar Servers",
+   "category": "liturgical",
+   "category_label": "Liturgical ministries",
+   "subcategory": "altar_servers",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://vol.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://vol.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-04-22T17:19:42+00:00",
+   "confidence": "medium",
+   "source": "wayback-2026-04-22"
+  },
+  {
+   "id": "vol.org:other_visitation_prayer_apostolate",
+   "name": "Visitation Prayer Apostolate",
+   "category": "other",
+   "category_label": "Other",
+   "subcategory": "unclassified",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "contact_url": "https://vol.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://vol.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-04-22T17:19:42+00:00",
+   "confidence": "low",
+   "source": "wayback-2026-04-22"
+  }
+ ],
  "calendar_feeds": [],
  "events": [],
- "social": {},
- "bulletin": null,
- "schedule_rows": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/visitationofourlady"
+  ],
+  "instagram": [
+   "https://www.instagram.com/volparish/"
+  ],
+  "youtube": [
+   "https://www.youtube.com/channel/UC4QZFzhG991A6URsxI3nScg"
+  ]
+ },
+ "bulletin": {
+  "url": "https://discovermass.com/church/visitation-of-our-lady-marrero-la/",
+  "date": null,
+  "kind": "discovermass",
+  "text": "Weekly Bulletins",
+  "source_url": "https://vol.org/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Saturday Vigil: 5:00 p.m.",
+   "source_url": "https://vol.org/mass-times",
+   "fetched_at": "2025-03-16T11:52:13+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-22: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-04-22",
+   "archive_url": "https://web.archive.org/web/20250316115213/https://vol.org/mass-times",
+   "capture_date": "2025-03-16"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Saturday Vigil: 8:00 a.m., 10:00 a.m.,",
+   "source_url": "https://vol.org/mass-times",
+   "fetched_at": "2025-03-16T11:52:13+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-22: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-04-22",
+   "archive_url": "https://web.archive.org/web/20250316115213/https://vol.org/mass-times",
+   "capture_date": "2025-03-16"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": null,
+   "raw": "Saturday Vigil: 8:00 a.m., 10:00 a.m.,",
+   "source_url": "https://vol.org/mass-times",
+   "fetched_at": "2025-03-16T11:52:13+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-22: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-04-22",
+   "archive_url": "https://web.archive.org/web/20250316115213/https://vol.org/mass-times",
+   "capture_date": "2025-03-16"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "12:00",
+   "language": null,
+   "raw": "Saturday Vigil: 12 noon. and 6:00 p.m.",
+   "source_url": "https://vol.org/mass-times",
+   "fetched_at": "2025-03-16T11:52:13+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-22: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-04-22",
+   "archive_url": "https://web.archive.org/web/20250316115213/https://vol.org/mass-times",
+   "capture_date": "2025-03-16"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "18:00",
+   "language": null,
+   "raw": "Saturday Vigil: 12 noon. and 6:00 p.m.",
+   "source_url": "https://vol.org/mass-times",
+   "fetched_at": "2025-03-16T11:52:13+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-22: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-04-22",
+   "archive_url": "https://web.archive.org/web/20250316115213/https://vol.org/mass-times",
+   "capture_date": "2025-03-16"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "07:00",
+   "language": null,
+   "raw": "Saturday Vigil: 7:00 a.m. & 8:30 a.m.",
+   "source_url": "https://vol.org/mass-times",
+   "fetched_at": "2025-03-16T11:52:13+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-22: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "day_expanded_from": "Monday-Friday",
+   "source": "wayback-2026-04-22",
+   "archive_url": "https://web.archive.org/web/20250316115213/https://vol.org/mass-times",
+   "capture_date": "2025-03-16"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "07:00",
+   "language": null,
+   "raw": "Saturday Vigil: 7:00 a.m. & 8:30 a.m.",
+   "source_url": "https://vol.org/mass-times",
+   "fetched_at": "2025-03-16T11:52:13+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-22: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "day_expanded_from": "Monday-Friday",
+   "source": "wayback-2026-04-22",
+   "archive_url": "https://web.archive.org/web/20250316115213/https://vol.org/mass-times",
+   "capture_date": "2025-03-16"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "07:00",
+   "language": null,
+   "raw": "Saturday Vigil: 7:00 a.m. & 8:30 a.m.",
+   "source_url": "https://vol.org/mass-times",
+   "fetched_at": "2025-03-16T11:52:13+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-22: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "day_expanded_from": "Monday-Friday",
+   "source": "wayback-2026-04-22",
+   "archive_url": "https://web.archive.org/web/20250316115213/https://vol.org/mass-times",
+   "capture_date": "2025-03-16"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "07:00",
+   "language": null,
+   "raw": "Saturday Vigil: 7:00 a.m. & 8:30 a.m.",
+   "source_url": "https://vol.org/mass-times",
+   "fetched_at": "2025-03-16T11:52:13+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-22: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "day_expanded_from": "Monday-Friday",
+   "source": "wayback-2026-04-22",
+   "archive_url": "https://web.archive.org/web/20250316115213/https://vol.org/mass-times",
+   "capture_date": "2025-03-16"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "07:00",
+   "language": null,
+   "raw": "Saturday Vigil: 7:00 a.m. & 8:30 a.m.",
+   "source_url": "https://vol.org/mass-times",
+   "fetched_at": "2025-03-16T11:52:13+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-22: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "day_expanded_from": "Monday-Friday",
+   "source": "wayback-2026-04-22",
+   "archive_url": "https://web.archive.org/web/20250316115213/https://vol.org/mass-times",
+   "capture_date": "2025-03-16"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "08:30",
+   "language": null,
+   "raw": "Saturday Vigil: 7:00 a.m. & 8:30 a.m.",
+   "source_url": "https://vol.org/mass-times",
+   "fetched_at": "2025-03-16T11:52:13+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-22: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "day_expanded_from": "Monday-Friday",
+   "source": "wayback-2026-04-22",
+   "archive_url": "https://web.archive.org/web/20250316115213/https://vol.org/mass-times",
+   "capture_date": "2025-03-16"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "08:30",
+   "language": null,
+   "raw": "Saturday Vigil: 7:00 a.m. & 8:30 a.m.",
+   "source_url": "https://vol.org/mass-times",
+   "fetched_at": "2025-03-16T11:52:13+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-22: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "day_expanded_from": "Monday-Friday",
+   "source": "wayback-2026-04-22",
+   "archive_url": "https://web.archive.org/web/20250316115213/https://vol.org/mass-times",
+   "capture_date": "2025-03-16"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "08:30",
+   "language": null,
+   "raw": "Saturday Vigil: 7:00 a.m. & 8:30 a.m.",
+   "source_url": "https://vol.org/mass-times",
+   "fetched_at": "2025-03-16T11:52:13+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-22: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "day_expanded_from": "Monday-Friday",
+   "source": "wayback-2026-04-22",
+   "archive_url": "https://web.archive.org/web/20250316115213/https://vol.org/mass-times",
+   "capture_date": "2025-03-16"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "08:30",
+   "language": null,
+   "raw": "Saturday Vigil: 7:00 a.m. & 8:30 a.m.",
+   "source_url": "https://vol.org/mass-times",
+   "fetched_at": "2025-03-16T11:52:13+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-22: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "day_expanded_from": "Monday-Friday",
+   "source": "wayback-2026-04-22",
+   "archive_url": "https://web.archive.org/web/20250316115213/https://vol.org/mass-times",
+   "capture_date": "2025-03-16"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "08:30",
+   "language": null,
+   "raw": "Saturday Vigil: 7:00 a.m. & 8:30 a.m.",
+   "source_url": "https://vol.org/mass-times",
+   "fetched_at": "2025-03-16T11:52:13+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-22: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "day_expanded_from": "Monday-Friday",
+   "source": "wayback-2026-04-22",
+   "archive_url": "https://web.archive.org/web/20250316115213/https://vol.org/mass-times",
+   "capture_date": "2025-03-16"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "16:00-17:00",
+   "language": null,
+   "raw": "Reconciliation/Confessions: 4-5pm on Saturdays",
+   "source_url": "https://vol.org/mass-times",
+   "fetched_at": "2025-03-16T11:52:13+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-22: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-04-22",
+   "archive_url": "https://web.archive.org/web/20250316115213/https://vol.org/mass-times",
+   "capture_date": "2025-03-16"
+  },
+  {
+   "kind": "adoration",
+   "day": "Second Thursday of the month",
+   "time": "19:00-20:00",
+   "language": null,
+   "raw": "Eucharistic Adoration is held in the Church on the 2nd Thursday from 7-8pm",
+   "source_url": "https://vol.org/mass-times",
+   "fetched_at": "2025-03-16T11:52:13+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-22: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-04-22",
+   "archive_url": "https://web.archive.org/web/20250316115213/https://vol.org/mass-times",
+   "capture_date": "2025-03-16"
+  },
+  {
+   "kind": "adoration",
+   "day": "Fourth Thursday of the month",
+   "time": "09:00-15:00",
+   "language": null,
+   "raw": "Adoration of the Blessed Sacrament: and on the 4th Thursday from 9am-3pm.",
+   "source_url": "https://vol.org/mass-times",
+   "fetched_at": "2025-03-16T11:52:13+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-22: read by a person before it is shown",
+   "confidence": "medium",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-04-22",
+   "archive_url": "https://web.archive.org/web/20250316115213/https://vol.org/mass-times",
+   "capture_date": "2025-03-16"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "16:30",
+   "language": null,
+   "raw": "The Rosary is said after 8:30am daily masses and at 4:30pm on Saturdays before the Vigil Mass.",
+   "source_url": "https://vol.org/mass-times",
+   "fetched_at": "2025-03-16T11:52:13+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-22: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-04-22",
+   "archive_url": "https://web.archive.org/web/20250316115213/https://vol.org/mass-times",
+   "capture_date": "2025-03-16"
+  },
+  {
+   "kind": "mass",
+   "day": "First Saturday of the month",
+   "time": "08:30",
+   "language": null,
+   "raw": "First Saturday masses are at 8:30am, followed by the Litany of Loreto and",
+   "source_url": "https://vol.org/mass-times",
+   "fetched_at": "2025-03-16T11:52:13+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-22: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-04-22",
+   "archive_url": "https://web.archive.org/web/20250316115213/https://vol.org/mass-times",
+   "capture_date": "2025-03-16"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday (lent)",
+   "time": "18:00",
+   "language": null,
+   "raw": "On Fridays during Lent we offer Mass at 6pm immediately followed by Stations of the Cross.",
+   "source_url": "https://vol.org/mass-times",
+   "fetched_at": "2025-03-16T11:52:13+00:00",
+   "needs_review": true,
+   "review_reason": "wayback capture 2026-04-22: read by a person before it is shown",
+   "confidence": "high",
+   "template": "ecatholic+generic_strict",
+   "source": "wayback-2026-04-22",
+   "archive_url": "https://web.archive.org/web/20250316115213/https://vol.org/mass-times",
+   "capture_date": "2025-03-16"
+  }
+ ],
  "source_url": "https://vol.org/",
- "fetched_at": "2026-11-01T17:27:35+00:00",
- "laptop_pending": true,
+ "fetched_at": "2026-11-02T01:30:53+00:00",
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_template": {
+  "template": "ecatholic",
+  "version": "ca-sites/2",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "generic_rows": 18
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "text:skipped_section": 1,
+  "text:relative_time": 1
+ },
+ "groups_dropped": {
+  "noise": 1
+ },
+ "wayback": {
+  "capture_date": "2026-04-22",
+  "capture_age_days": 194,
+  "prior_status": "challenge",
+  "captures": [
+   {
+    "kind": "home",
+    "original": "https://vol.org/",
+    "capture": "2026-04-22",
+    "archive_url": "https://web.archive.org/web/20260422171942/https://vol.org/"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://vol.org/mass-times",
+    "capture": "2025-03-16",
+    "archive_url": "https://web.archive.org/web/20250316115213/https://vol.org/mass-times"
+   },
+   {
+    "kind": "mass_times",
+    "original": "https://vol.org/liturgy-sacraments",
+    "capture": "2025-10-09",
+    "archive_url": "https://web.archive.org/web/20251009051503/https://vol.org/liturgy-sacraments"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://vol.org/faith-formation",
+    "capture": "2024-06-17",
+    "archive_url": "https://web.archive.org/web/20240617200650/https://vol.org/faith-formation"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://vol.org/ministries",
+    "capture": "2024-06-17",
+    "archive_url": "https://web.archive.org/web/20240617193602/https://vol.org/ministries"
+   },
+   {
+    "kind": "ministries",
+    "original": "https://vol.org/administrative-ministries",
+    "capture": "2025-02-18",
+    "archive_url": "https://web.archive.org/web/20250218095218/https://vol.org/administrative-ministries"
+   },
+   {
+    "kind": "bulletin",
+    "original": "https://vol.org/bulletins-1",
+    "capture": "2025-03-16",
+    "archive_url": "https://web.archive.org/web/20250316120645/https://vol.org/bulletins-1"
+   }
+  ],
+  "note": "Read from archived copies (Wayback Machine) because the live site could not be read. Groups, social and bulletin links are as of the capture; schedule rows are needs_review."
  }
 }
