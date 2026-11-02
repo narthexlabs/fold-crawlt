@@ -81,6 +81,12 @@
    "url": "https://www.beverlycatholic.com/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.beverlycatholic.com/penance",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -358,7 +364,7 @@
    "feed_key": "85a2a69a46b6",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:31:12+00:00",
+    "fetched_at": "2026-11-02T04:43:57+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -397,9 +403,9 @@
    "day": "Saturday",
    "time": "16:00",
    "language": null,
-   "raw": "4:00 p.m. Saturday Mass at St. John’s",
-   "source_url": "https://www.beverlycatholic.com/mass-times",
-   "fetched_at": "2026-11-01T17:27:04+00:00",
+   "raw": "Saturday Vigil:: 4:00 p.m., St. John the Evangelist",
+   "source_url": "https://www.beverlycatholic.com/",
+   "fetched_at": "2026-11-01T17:27:02+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -410,9 +416,9 @@
    "day": "Saturday",
    "time": "17:30",
    "language": null,
-   "raw": "Weekend Mass Schedule: 5:30 p.m. Saturday at St. Margaret’s",
-   "source_url": "https://www.beverlycatholic.com/mass-times",
-   "fetched_at": "2026-11-01T17:27:04+00:00",
+   "raw": "Saturday Vigil:: 5:30 p.m., St. Margaret",
+   "source_url": "https://www.beverlycatholic.com/",
+   "fetched_at": "2026-11-01T17:27:02+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -423,9 +429,9 @@
    "day": "Sunday",
    "time": "07:30",
    "language": null,
-   "raw": "Weekend Mass Schedule: 7:30 a.m. Sunday at St. Mary’s",
-   "source_url": "https://www.beverlycatholic.com/mass-times",
-   "fetched_at": "2026-11-01T17:27:04+00:00",
+   "raw": "Saturday Vigil:: 7:30 a.m., St. Mary Star of the Sea",
+   "source_url": "https://www.beverlycatholic.com/",
+   "fetched_at": "2026-11-01T17:27:02+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -436,9 +442,9 @@
    "day": "Sunday",
    "time": "09:00",
    "language": null,
-   "raw": "Weekend Mass Schedule: 9:00 a.m. Sunday at St. Margaret’s",
-   "source_url": "https://www.beverlycatholic.com/mass-times",
-   "fetched_at": "2026-11-01T17:27:04+00:00",
+   "raw": "Saturday Vigil:: 9:00 a.m., St. Margaret (note the earlier start time)",
+   "source_url": "https://www.beverlycatholic.com/",
+   "fetched_at": "2026-11-01T17:27:02+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -449,9 +455,9 @@
    "day": "Sunday",
    "time": "10:15",
    "language": null,
-   "raw": "Weekend Mass Schedule: 10:15 a.m. Sunday at St. Mary’s",
-   "source_url": "https://www.beverlycatholic.com/mass-times",
-   "fetched_at": "2026-11-01T17:27:04+00:00",
+   "raw": "Saturday Vigil:: 10:15 a.m., St. Mary Star of the Sea",
+   "source_url": "https://www.beverlycatholic.com/",
+   "fetched_at": "2026-11-01T17:27:02+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -459,80 +465,94 @@
   },
   {
    "kind": "mass",
-   "day": "Monday",
+   "day": "Sunday",
    "time": "12:00",
    "language": null,
-   "raw": "Weekend Mass Schedule: 12:00 noon at St. John’s",
-   "source_url": "https://www.beverlycatholic.com/mass-times",
-   "fetched_at": "2026-11-01T17:27:04+00:00",
+   "raw": "Saturday Vigil:: 12:00 noon, St. John the Evangelist",
+   "source_url": "https://www.beverlycatholic.com/",
+   "fetched_at": "2026-11-01T17:27:02+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "low",
-   "template": "generic_strict",
-   "day_expanded_from": "Weekend"
+   "template": "generic_strict"
   },
   {
    "kind": "mass",
-   "day": "Tuesday",
-   "time": "12:00",
+   "day": "Monday",
+   "time": "09:00",
    "language": null,
-   "raw": "Weekend Mass Schedule: 12:00 noon at St. John’s",
-   "source_url": "https://www.beverlycatholic.com/mass-times",
-   "fetched_at": "2026-11-01T17:27:04+00:00",
+   "raw": "Daily Mass:: 9:00 a.m. Monday, Wednesday, Friday",
+   "source_url": "https://www.beverlycatholic.com/",
+   "fetched_at": "2026-11-01T17:27:02+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "low",
+   "confidence": "medium",
    "template": "generic_strict",
-   "day_expanded_from": "Weekend"
+   "day_expanded_from": "Monday, Wednesday, Friday"
   },
   {
    "kind": "mass",
    "day": "Wednesday",
-   "time": "12:00",
+   "time": "09:00",
    "language": null,
-   "raw": "Weekend Mass Schedule: 12:00 noon at St. John’s",
-   "source_url": "https://www.beverlycatholic.com/mass-times",
-   "fetched_at": "2026-11-01T17:27:04+00:00",
+   "raw": "Daily Mass:: 9:00 a.m. Monday, Wednesday, Friday",
+   "source_url": "https://www.beverlycatholic.com/",
+   "fetched_at": "2026-11-01T17:27:02+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "low",
+   "confidence": "medium",
    "template": "generic_strict",
-   "day_expanded_from": "Weekend"
-  },
-  {
-   "kind": "mass",
-   "day": "Thursday",
-   "time": "12:00",
-   "language": null,
-   "raw": "Weekend Mass Schedule: 12:00 noon at St. John’s",
-   "source_url": "https://www.beverlycatholic.com/mass-times",
-   "fetched_at": "2026-11-01T17:27:04+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "low",
-   "template": "generic_strict",
-   "day_expanded_from": "Weekend"
+   "day_expanded_from": "Monday, Wednesday, Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
   },
   {
    "kind": "mass",
    "day": "Friday",
-   "time": "12:00",
+   "time": "09:00",
    "language": null,
-   "raw": "Weekend Mass Schedule: 12:00 noon at St. John’s",
-   "source_url": "https://www.beverlycatholic.com/mass-times",
-   "fetched_at": "2026-11-01T17:27:04+00:00",
+   "raw": "Daily Mass:: 9:00 a.m. Monday, Wednesday, Friday",
+   "source_url": "https://www.beverlycatholic.com/",
+   "fetched_at": "2026-11-01T17:27:02+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "low",
+   "confidence": "medium",
    "template": "generic_strict",
-   "day_expanded_from": "Weekend"
+   "day_expanded_from": "Monday, Wednesday, Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "09:00-10:00",
+   "language": null,
+   "raw": "9 a.m. to 10 a.m. in the confessional",
+   "source_url": "https://www.beverlycatholic.com/",
+   "fetched_at": "2026-11-01T17:27:02+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
   }
  ],
  "source_url": "https://www.beverlycatholic.com/",
  "fetched_at": "2026-11-01T17:27:11+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:38+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -546,20 +566,20 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 17
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 1,
-  "prose": 1
+  "other_location": 1
  },
  "groups_dropped": {
   "sentence": 1,
   "label_not_group": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
