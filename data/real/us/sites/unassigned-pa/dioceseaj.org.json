@@ -78,6 +78,24 @@
    "url": "https://www.dioceseaj.org/statement-on-faithful-citizenship/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://www.dioceseaj.org/liturgy-office/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.dioceseaj.org/reconciliation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.dioceseaj.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -137,7 +155,7 @@
    "note": "The Events Calendar (WordPress) REST API",
    "last_fetch": {
     "status": 200,
-    "fetched_at": "2026-11-01T23:33:26+00:00",
+    "fetched_at": "2026-11-02T04:46:13+00:00",
     "events_in_window": 7,
     "kept": 6,
     "excluded": {
@@ -158,7 +176,7 @@
    "recurring": false,
    "source_url": "https://www.dioceseaj.org/event/veterans-day-offices-closed/",
    "feed_id": "dioceseaj.org:tribe_rest:d448de6f",
-   "fetched_at": "2026-11-01T23:33:26+00:00"
+   "fetched_at": "2026-11-02T04:46:13+00:00"
   },
   {
    "id": "62bc4e9f34e670b5",
@@ -171,7 +189,7 @@
    "recurring": false,
    "source_url": "https://www.dioceseaj.org/event/thanksgiving-holiday-offices-closed/",
    "feed_id": "dioceseaj.org:tribe_rest:d448de6f",
-   "fetched_at": "2026-11-01T23:33:26+00:00"
+   "fetched_at": "2026-11-02T04:46:13+00:00"
   },
   {
    "id": "b0c70ff7a03eeb06",
@@ -184,7 +202,7 @@
    "recurring": false,
    "source_url": "https://www.dioceseaj.org/event/immaculate-conception-of-the-blessed-virgin-mary-offices-closed/",
    "feed_id": "dioceseaj.org:tribe_rest:d448de6f",
-   "fetched_at": "2026-11-01T23:33:26+00:00"
+   "fetched_at": "2026-11-02T04:46:13+00:00"
   },
   {
    "id": "b8b973aaadbd3c8e",
@@ -197,7 +215,7 @@
    "recurring": false,
    "source_url": "https://www.dioceseaj.org/event/christmas-holiday-offices-closed/",
    "feed_id": "dioceseaj.org:tribe_rest:d448de6f",
-   "fetched_at": "2026-11-01T23:33:26+00:00"
+   "fetched_at": "2026-11-02T04:46:13+00:00"
   },
   {
    "id": "38640386a0bdcf2a",
@@ -210,7 +228,7 @@
    "recurring": false,
    "source_url": "https://www.dioceseaj.org/event/new-year-holiday-offices-closed/",
    "feed_id": "dioceseaj.org:tribe_rest:d448de6f",
-   "fetched_at": "2026-11-01T23:33:26+00:00"
+   "fetched_at": "2026-11-02T04:46:13+00:00"
   },
   {
    "id": "f7209d224af6d00d",
@@ -223,7 +241,7 @@
    "recurring": false,
    "source_url": "https://www.dioceseaj.org/event/new-year-holiday-offices-closed-2/",
    "feed_id": "dioceseaj.org:tribe_rest:d448de6f",
-   "fetched_at": "2026-11-01T23:33:26+00:00"
+   "fetched_at": "2026-11-02T04:46:13+00:00"
   }
  ],
  "social": {
@@ -829,6 +847,22 @@
    "template": "wordpress"
   },
   {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Adoration: Friday: After 8:00 AM Mass",
+   "source_url": "https://www.dioceseaj.org/parishes/",
+   "fetched_at": "2026-11-01T20:25:07+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "Adoration: Friday: After 8:00 AM Mass",
+   "relative_resolved": true
+  },
+  {
    "kind": "mass",
    "day": "Sunday",
    "time": "07:45",
@@ -961,9 +995,22 @@
  ],
  "source_url": "https://www.dioceseaj.org/",
  "fetched_at": "2026-11-01T20:25:25+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:04+00:00",
+  "requests": 3,
+  "found": [
+   "confession",
+   "liturgy"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -977,20 +1024,29 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 29
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "First Friday evenings from 6:00 – 7:00 PM / Also after any Mass or by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://www.dioceseaj.org/parishes/",
+   "fetched_at": "2026-11-01T20:25:07+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 13,
-  "relative_time": 1
+  "other_location": 13
  },
  "groups_dropped": {
   "unmatched": 1,
   "noise": 2
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 7,
   "kept_after_privacy": 6,
