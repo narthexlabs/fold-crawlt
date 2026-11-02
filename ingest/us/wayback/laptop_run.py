@@ -155,6 +155,7 @@ def cmd_run(budget: float) -> int:
             if time.time() > t0 + budget - 20:
                 break
             rec.setdefault("started", now_iso())
+            rec.update(key=t["key"], diocese=t["diocese"], home_url=t["home_url"], prior_status=t.get("prior_status"))
             p["sites"][t["sid"]] = rec
             try:
                 fin = one(arch, t, rec)
@@ -204,14 +205,14 @@ def cmd_zip(minimum: int) -> int:
     path = OUT / f"batch_{n:02d}.zip"
     with zipfile.ZipFile(path, "w", zipfile.ZIP_STORED) as z:
         for sid in ready:
-            t = targets[sid]
+            t = targets.get(sid) or p["sites"][sid]
             k = t["key"].replace("/", "__")
             d = RAW / t["diocese"]
             for f in [d / (k + "__cdx.json")] + (sorted((d / k).rglob("*")) if (d / k).exists() else []):
                 if f.is_file():
                     z.write(f, str(f.relative_to(RAW)))
         z.writestr("laptop_progress.json", json.dumps(
-            {"batch": n, "zipped_at": now_iso(), "sites": {sid: dict(p["sites"][sid], **targets[sid]) for sid in ready}},
+            {"batch": n, "zipped_at": now_iso(), "sites": {sid: dict(p["sites"][sid], **(targets.get(sid) or {})) for sid in ready}},
             indent=0, ensure_ascii=False))
     p["zipped"] = sorted(zipped | set(ready))
     p["batches"] = n
