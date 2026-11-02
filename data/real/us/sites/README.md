@@ -36,7 +36,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | unassigned-pa | 298 | 626 | 433 | 88 | 7 | 80 | 18 |
 | archdiocese-of-philadelphia | 255 | 255 | 171 | 15 | 0 | 24 | 2 |
 | unassigned-mi | 254 | 260 | 162 | 66 | 4 | 28 | 0 |
-| diocese-of-brooklyn | 242 | 242 | 180 | 14 | 2 | 41 | 5 |
+| diocese-of-brooklyn | 242 | 241 | 179 | 14 | 2 | 41 | 5 |
 | unassigned-nm | 231 | 263 | 163 | 50 | 4 | 46 | 0 |
 | unassigned-wi | 217 | 265 | 164 | 46 | 6 | 49 | 0 |
 | diocese-of-cleveland | 214 | 250 | 145 | 49 | 1 | 55 | 0 |
@@ -224,7 +224,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | holy-protection-of-mary-byzantine-catholic-eparchy-of-phoenix | 26 | 26 | 20 | 0 | 0 | 6 | 0 |
 | diocese-of-stockton | 23 | 11 | 0 | 7 | 0 | 4 | 0 |
 | diocese-of-steubenville | 22 | 22 | 14 | 5 | 0 | 3 | 0 |
-| eparchy-of-st-maron-of-brooklyn | 22 | 22 | 17 | 0 | 1 | 3 | 1 |
+| eparchy-of-st-maron-of-brooklyn | 22 | 16 | 11 | 0 | 1 | 3 | 1 |
 | diocese-of-marquette | 22 | 23 | 9 | 2 | 0 | 11 | 1 |
 | diocese-of-cheyenne | 22 | 22 | 8 | 7 | 0 | 7 | 0 |
 | unassigned-ak | 21 | 28 | 11 | 7 | 2 | 5 | 3 |
@@ -287,4 +287,4 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-02T15:37:30+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-02T15:37:54+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-02T15:38:01+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
-- 2026-11-02T23:24:54+00:00: fetched {'ok': 3, 'done': 3, 'halted_egress': 0}; parsed 2 dioceses
+- 2026-11-02T23:25:13+00:00: fetched {}; parsed 0 dioceses
