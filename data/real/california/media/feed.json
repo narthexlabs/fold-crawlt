@@ -1,0 +1,55 @@
+{
+ "generated_at": "2026-11-02T08:10:53+00:00",
+ "generated_by": "ingest/california/media_feed.py",
+ "window": {
+  "uploads_per_channel": 25,
+  "past_streams_days": 30,
+  "past_streams_max": 15,
+  "routine_keep_days_note": "unlike Oakland's feed, routine Mass items are kept and flagged prefilter=routine_liturgy"
+ },
+ "ranked_by": null,
+ "ranking_file": "ranked_heuristic.json",
+ "count": 7618,
+ "counts_by_kind": {
+  "video": 7618
+ },
+ "counts_by_source": {
+  "YouTube: public channel /videos and /streams tabs": 7618
+ },
+ "orgs_with_items": 311,
+ "counts_by_diocese": {
+  "san-francisco": 741,
+  "monterey": 292,
+  "san-diego": 917,
+  "sacramento": 694,
+  "san-jose": 584,
+  "los-angeles": 1671,
+  "orange": 1098,
+  "san-bernardino": 845,
+  "santa-rosa": 211,
+  "stockton": 324,
+  "fresno": 241
+ },
+ "livestream_items": 1851,
+ "live_now": 5,
+ "upcoming": 202,
+ "pipeline_counts": {
+  "stream_older_than_30_days_or_over_cap": 4991,
+  "routine_liturgy_flagged": 3971,
+  "items_seen_in_tabs": 13653,
+  "privacy_private_death_or_memorial": 61,
+  "privacy_names_private_person": 291,
+  "privacy_parishioner_named": 8,
+  "privacy_wedding_baptism_quince": 20,
+  "privacy_student_or_alumni": 2,
+  "privacy_mass_intention": 1
+ },
+ "notes": [
+  "Each item is a public YouTube video of a channel whose ownership was checked (channels.json: verified or probable).",
+  "published_at is approximate: YouTube shows '3 days ago', so date_precision is 'approx'. Exact dates need YOUTUBE_API_KEY.",
+  "is_live: streaming now; is_upcoming: a scheduled stream (published_at is the scheduled day); livestream: from the /streams tab.",
+  "Titles passed ingest/public/media/media_privacy.py; the ones dropped are in quarantine.json with a redacted title and the reason.",
+  "Not ranked here. ranked_heuristic.json holds the HEURISTIC candidate lists."
+ ],
+ "items_files": "feed/<diocese>.json (one file per diocese, to keep files small)"
+}
