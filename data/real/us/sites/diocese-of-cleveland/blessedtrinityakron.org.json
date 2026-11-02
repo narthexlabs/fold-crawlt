@@ -75,6 +75,18 @@
    "url": "https://www.blessedtrinityakron.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.blessedtrinityakron.org/worship/reconciliation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.blessedtrinityakron.org/worship/eucharist-adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -341,6 +353,51 @@
    "confidence": "medium",
    "template": "wordpress",
    "kind_parsed": "mass"
+  },
+  {
+   "kind": "confession",
+   "day": "Monday",
+   "time": "18:00-19:00",
+   "language": null,
+   "raw": "The opportunity for the Sacrament of Reconciliation (Confession) is available on Monday, Wednesday and Friday from 6:00 pm – 7:00 pm during Eucharistic Adoration.",
+   "source_url": "https://www.blessedtrinityakron.org/worship/reconciliation/",
+   "fetched_at": "2026-11-02T04:52:33+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "Monday, Wednesday and Friday",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Wednesday",
+   "time": "18:00-19:00",
+   "language": null,
+   "raw": "The opportunity for the Sacrament of Reconciliation (Confession) is available on Monday, Wednesday and Friday from 6:00 pm – 7:00 pm during Eucharistic Adoration.",
+   "source_url": "https://www.blessedtrinityakron.org/worship/reconciliation/",
+   "fetched_at": "2026-11-02T04:52:33+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "Monday, Wednesday and Friday",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Friday",
+   "time": "18:00-19:00",
+   "language": null,
+   "raw": "The opportunity for the Sacrament of Reconciliation (Confession) is available on Monday, Wednesday and Friday from 6:00 pm – 7:00 pm during Eucharistic Adoration.",
+   "source_url": "https://www.blessedtrinityakron.org/worship/reconciliation/",
+   "fetched_at": "2026-11-02T04:52:33+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "Monday, Wednesday and Friday",
+   "topup": true
   }
  ],
  "source_url": "http://www.blessedtrinityakron.org/",
@@ -379,5 +436,21 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:52:37+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 3,
+  "mode": "merge"
  }
 }

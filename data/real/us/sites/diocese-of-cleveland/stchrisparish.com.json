@@ -87,6 +87,18 @@
    "url": "https://stchrisparish.com/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stchrisparish.com/sacraments/reconciliation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stchrisparish.com/adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -446,5 +458,29 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "The Sacrament of Reconciliation is celebrated on Saturday afternoon at 4 o’clock in the Church and anytime upon request.",
+   "phrase": "upon request",
+   "source_url": "https://stchrisparish.com/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:52:40+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:52:43+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
  }
 }

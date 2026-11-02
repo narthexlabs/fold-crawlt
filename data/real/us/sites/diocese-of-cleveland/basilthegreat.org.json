@@ -81,6 +81,18 @@
    "url": "https://basilthegreat.org/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://basilthegreat.org/holycommunion/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://basilthegreat.org/liturgical/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -4038,6 +4050,34 @@
    "confidence": "low",
    "template": "wordpress",
    "day_expanded_from": "Weekdays"
+  },
+  {
+   "kind": "adoration",
+   "day": "Monday",
+   "time": "08:30-21:00",
+   "language": null,
+   "raw": "St. Basil the Great has a beautiful Eucharistic Adoration Ch: Monday 8:30am – 9pm",
+   "source_url": "https://basilthegreat.org/holycommunion/",
+   "fetched_at": "2026-11-02T04:52:40+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "08:30-21:00",
+   "language": null,
+   "raw": "St. Basil the Great has a beautiful Eucharistic Adoration Ch: Wednesday 8:30am – 9pm",
+   "source_url": "https://basilthegreat.org/holycommunion/",
+   "fetched_at": "2026-11-02T04:52:40+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "http://www.basilthegreat.org/",
@@ -4087,5 +4127,21 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:52:43+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
  }
 }

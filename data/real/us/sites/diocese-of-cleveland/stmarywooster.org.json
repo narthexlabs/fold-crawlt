@@ -75,6 +75,12 @@
    "url": "https://www.stmarywooster.org/contact-usf21a9d1e",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stmarywooster.org/reconciliation",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -545,6 +551,82 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday (summer, jun-aug)",
+   "time": "10:00",
+   "language": null,
+   "raw": "Sunday Masses: (10:00 am June – August), and 5:00 pm",
+   "source_url": "https://www.stmarywooster.org/mass-schedule",
+   "fetched_at": "2026-11-02T04:52:39+00:00",
+   "needs_review": true,
+   "review_reason": "seasonal",
+   "confidence": "medium",
+   "template": "generic_strict",
+   "season": "June – August",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday (summer, jun-aug)",
+   "time": "17:00",
+   "language": null,
+   "raw": "Sunday Masses: (10:00 am June – August), and 5:00 pm",
+   "source_url": "https://www.stmarywooster.org/mass-schedule",
+   "fetched_at": "2026-11-02T04:52:39+00:00",
+   "needs_review": true,
+   "review_reason": "seasonal",
+   "confidence": "medium",
+   "template": "generic_strict",
+   "season": "June – August",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday (summer, jun-aug)",
+   "time": "13:00",
+   "language": "Spanish",
+   "raw": "Sunday Mass en Español: Sunday: 1:00 pm (Noon in June – August) @ St. Agnes in Orrville",
+   "source_url": "https://www.stmarywooster.org/mass-schedule",
+   "fetched_at": "2026-11-02T04:52:39+00:00",
+   "needs_review": true,
+   "review_reason": "seasonal",
+   "confidence": "medium",
+   "template": "generic_strict",
+   "season": "June – August",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday (summer, jun-aug)",
+   "time": "12:00",
+   "language": "Spanish",
+   "raw": "Sunday Mass en Español: Sunday: 1:00 pm (Noon in June – August) @ St. Agnes in Orrville",
+   "source_url": "https://www.stmarywooster.org/mass-schedule",
+   "fetched_at": "2026-11-02T04:52:39+00:00",
+   "needs_review": true,
+   "review_reason": "seasonal",
+   "confidence": "medium",
+   "template": "generic_strict",
+   "season": "June – August",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Reconciliation: Sunday: after 8 am Mass",
+   "source_url": "https://www.stmarywooster.org/mass-schedule",
+   "fetched_at": "2026-11-02T04:52:39+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "after",
+   "note": "Reconciliation: Sunday: after 8 am Mass",
+   "topup": true
   }
  ],
  "source_url": "https://www.stmarywooster.org/",
@@ -590,5 +672,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:52:40+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 5,
+  "mode": "merge"
  }
 }

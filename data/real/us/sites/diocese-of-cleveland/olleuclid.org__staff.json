@@ -81,6 +81,24 @@
    "url": "https://olleuclid.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://olleuclid.org/reconciliation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://olleuclid.org/schedules/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://olleuclid.org/adoration",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -382,6 +400,20 @@
    "template": "godaddy"
   },
   {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "17:00",
+   "language": null,
+   "raw": "Vigil (day before): 5 pm",
+   "source_url": "https://olleuclid.org/mass-times/",
+   "fetched_at": "2026-11-01T18:51:44+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "godaddy",
+   "kind_parsed": "mass"
+  },
+  {
    "kind": "confession",
    "day": "Saturday",
    "time": "15:00-15:30",
@@ -397,9 +429,22 @@
  ],
  "source_url": "https://olleuclid.org/staff/",
  "fetched_at": "2026-11-01T18:51:52+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:52:36+00:00",
+  "requests": 3,
+  "found": [
+   "confession",
+   "liturgy"
+  ]
+ },
  "schedule_template": {
   "template": "godaddy",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -413,17 +458,27 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 24
+  "trusted_kinds": [],
+  "generic_rows": 25
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Every Saturday from 3 - 3:30pm in the Church Reconciliation room near the side chapel and by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://olleuclid.org/mass-times/",
+   "fetched_at": "2026-11-01T18:51:44+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 3,
+  "other_location": 2,
   "notice_not_schedule": 4
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

@@ -57,6 +57,12 @@
    "url": "https://www.stsebastian.org/church/prayer-groups",
    "status": 403,
    "class": "blocked_403"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stsebastian.org/church/adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -529,6 +535,20 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "08:30",
+   "language": null,
+   "raw": "Exposition of the Blessed Sacrament takes place Tuesdays immediately following the morning Mass (typically around 8:30 am) and lasts until 7:40 pm.",
+   "source_url": "https://www.stsebastian.org/church/adoration",
+   "fetched_at": "2026-11-02T04:52:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "topup": true
   }
  ],
  "source_url": "http://www.stsebastian.org/",
@@ -571,5 +591,30 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "And by appointment, please call the rectory office at .",
+   "phrase": "by appointment",
+   "source_url": "https://www.stsebastian.org/church/confession-schedule",
+   "fetched_at": "2026-11-02T04:52:45+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:53:04+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }
