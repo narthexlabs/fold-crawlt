@@ -273,6 +273,9 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 
 ## Chunk log
 
+- 2026-11-01T17:42:30+00:00: fetched {'robots_disallowed': 1, 'done': 46, 'dns': 3, 'challenge': 14, 'ssl_error': 2, 'blocked_403': 2, 'not_found': 2, 'ok': 21, 'timeout': 1, 'halted_egress': 0}; parsed 3 dioceses
+- 2026-11-01T17:52:14+00:00: fetched {'ok': 1, 'done': 1, 'halted_egress': 0}; parsed 1 dioceses
+- 2026-11-01T17:53:22+00:00: fetched {'ok': 11, 'done': 11, 'challenge': 1, 'dns': 1, 'cut': 2, 'halted_egress': 0}; parsed 5 dioceses
 - 2026-11-01T18:03:07+00:00: fetched {'ok': 1, 'done': 1, 'halted_egress': 0}; parsed 1 dioceses
 - 2026-11-01T18:51:40+00:00: fetched {'robots_disallowed': 4, 'done': 262, 'dns': 77, 'conn_error': 3, 'ssl_error': 24, 'challenge': 30, 'not_found': 5, 'ok': 92, 'parked': 8, 'http_5xx': 5, 'blocked_429': 1, 'blocked_403': 1, 'error:TooManyRedirects': 1, 'timeout': 13, 'cut': 2, 'halted_egress': 0}; parsed 6 dioceses
 - 2026-11-01T20:24:57+00:00: fetched {'dns': 31, 'done': 543, 'conn_error': 8, 'ssl_error': 16, 'robots_disallowed': 2, 'ok': 388, 'challenge': 85, 'blocked_403': 3, 'http_5xx': 6, 'not_found': 4, 'timeout': 8, 'parked': 1, 'cut': 9, 'halted_egress': 0}; parsed 1 dioceses
@@ -284,7 +287,4 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-02T01:56:02+00:00: fetched {'dns': 12, 'done': 92, 'ssl_error': 5, 'not_found': 1, 'challenge': 13, 'http_5xx': 1, 'ok': 56, 'http_4xx': 1, 'blocked_403': 1, 'timeout': 2, 'halted_egress': 0}; parsed 4 dioceses
 - 2026-11-02T02:46:49+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-02T02:46:51+00:00: fetched {'ok': 1, 'done': 1, 'halted_egress': 0}; parsed 1 dioceses
-- 2026-11-02T02:48:35+00:00: fetched {}; parsed 0 dioceses
-- 2026-11-02T02:48:59+00:00: fetched {}; parsed 0 dioceses
-- 2026-11-02T02:48:54+00:00: fetched {}; parsed 0 dioceses
-- 2026-11-02T02:48:56+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-02T02:48:32+00:00: fetched {}; parsed 0 dioceses
