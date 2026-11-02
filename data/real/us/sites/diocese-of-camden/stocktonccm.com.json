@@ -105,7 +105,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-02T03:50:20+00:00",
+    "fetched_at": "2026-11-02T04:52:56+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -119,6 +119,32 @@
  },
  "bulletin": null,
  "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "18:00",
+   "language": null,
+   "raw": "Sunday Mass 6pm at Campus Ministry Center",
+   "source_url": "https://www.stocktonccm.com/",
+   "fetched_at": "2026-11-02T03:47:04+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "weebly"
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "17:30",
+   "language": null,
+   "raw": "Confessions: Sundays beginning at 5:30pm",
+   "source_url": "https://www.stocktonccm.com/",
+   "fetched_at": "2026-11-02T03:47:04+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "weebly"
+  },
   {
    "kind": "mass",
    "day": "Sunday",
@@ -144,26 +170,23 @@
    "review_reason": null,
    "confidence": "high",
    "template": "weebly"
-  },
-  {
-   "kind": "confession",
-   "day": "Sunday",
-   "time": "17:30",
-   "language": null,
-   "raw": "Confessions: Sundays beginning at 5:30pm",
-   "source_url": "https://www.stocktonccm.com/",
-   "fetched_at": "2026-11-02T03:47:04+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "weebly"
   }
  ],
  "source_url": "http://www.stocktonccm.com/",
  "fetched_at": "2026-11-02T03:47:07+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:47:53+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "weebly",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -177,12 +200,10 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 6
  },
  "has_sunday": true,
- "schedule_dropped": {
-  "prose": 1
- },
  "groups_dropped": {},
  "event_counts": {
   "window_start": "2026-11-02",

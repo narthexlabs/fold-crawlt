@@ -2,21 +2,25 @@
  "domain": "incarnation-church.org",
  "diocese": "diocese-of-camden",
  "matched_church_ids": [
-  "diocese-of-camden:Church of the Incarnation"
+  "diocese-of-camden:Church of the Incarnation",
+  "incarnation-mantua-nj"
  ],
  "matched": {
   "directory": [
    "diocese-of-camden:Church of the Incarnation"
   ],
-  "discovermass": []
+  "discovermass": [
+   "incarnation-mantua-nj"
+  ]
  },
  "names": [
-  "Church of the Incarnation"
+  "Church of the Incarnation",
+  "Incarnation"
  ],
  "cities": [
   "Mantua"
  ],
- "home_url": "http://www.incarnation-church.org/",
+ "home_url": "https://www.incarnation-church.org/",
  "final_url": "https://www.incarnation-church.org/",
  "crawl_status": "ok",
  "crawl_env": "sandbox",
@@ -73,6 +77,12 @@
   {
    "category": "contact",
    "url": "https://www.incarnation-church.org/contact",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.incarnation-church.org/penance",
    "status": 200,
    "class": "ok"
   }
@@ -827,6 +837,81 @@
    "template": "generic_strict"
   },
   {
+   "kind": "mass",
+   "day": "Monday (during the school year)",
+   "time": "07:00",
+   "language": null,
+   "raw": "Daily Mass:: *7:00am only September through May",
+   "source_url": "https://www.incarnation-church.org/",
+   "fetched_at": "2026-11-01T07:27:52+00:00",
+   "needs_review": true,
+   "review_reason": "seasonal",
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Daily",
+   "season": "September through May"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday (during the school year)",
+   "time": "07:00",
+   "language": null,
+   "raw": "Daily Mass:: *7:00am only September through May",
+   "source_url": "https://www.incarnation-church.org/",
+   "fetched_at": "2026-11-01T07:27:52+00:00",
+   "needs_review": true,
+   "review_reason": "seasonal",
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Daily",
+   "season": "September through May"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday (during the school year)",
+   "time": "07:00",
+   "language": null,
+   "raw": "Daily Mass:: *7:00am only September through May",
+   "source_url": "https://www.incarnation-church.org/",
+   "fetched_at": "2026-11-01T07:27:52+00:00",
+   "needs_review": true,
+   "review_reason": "seasonal",
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Daily",
+   "season": "September through May"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday (during the school year)",
+   "time": "07:00",
+   "language": null,
+   "raw": "Daily Mass:: *7:00am only September through May",
+   "source_url": "https://www.incarnation-church.org/",
+   "fetched_at": "2026-11-01T07:27:52+00:00",
+   "needs_review": true,
+   "review_reason": "seasonal",
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Daily",
+   "season": "September through May"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday (during the school year)",
+   "time": "07:00",
+   "language": null,
+   "raw": "Daily Mass:: *7:00am only September through May",
+   "source_url": "https://www.incarnation-church.org/",
+   "fetched_at": "2026-11-01T07:27:52+00:00",
+   "needs_review": true,
+   "review_reason": "seasonal",
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Daily",
+   "season": "September through May"
+  },
+  {
    "kind": "confession",
    "day": "Saturday",
    "time": "16:00-16:30",
@@ -838,13 +923,119 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Confessions are heard on Saturdays from 4:00pm to 4:30pm in the church and after Morning Masses - Monday through Saturday at 9:00am (approx.) in church.",
+   "source_url": "https://www.incarnation-church.org/penance",
+   "fetched_at": "2026-11-02T04:47:53+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday through Saturday"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Confessions are heard on Saturdays from 4:00pm to 4:30pm in the church and after Morning Masses - Monday through Saturday at 9:00am (approx.) in church.",
+   "source_url": "https://www.incarnation-church.org/penance",
+   "fetched_at": "2026-11-02T04:47:53+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday through Saturday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Confessions are heard on Saturdays from 4:00pm to 4:30pm in the church and after Morning Masses - Monday through Saturday at 9:00am (approx.) in church.",
+   "source_url": "https://www.incarnation-church.org/penance",
+   "fetched_at": "2026-11-02T04:47:53+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday through Saturday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Confessions are heard on Saturdays from 4:00pm to 4:30pm in the church and after Morning Masses - Monday through Saturday at 9:00am (approx.) in church.",
+   "source_url": "https://www.incarnation-church.org/penance",
+   "fetched_at": "2026-11-02T04:47:53+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday through Saturday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Confessions are heard on Saturdays from 4:00pm to 4:30pm in the church and after Morning Masses - Monday through Saturday at 9:00am (approx.) in church.",
+   "source_url": "https://www.incarnation-church.org/penance",
+   "fetched_at": "2026-11-02T04:47:53+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday through Saturday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Confessions are heard on Saturdays from 4:00pm to 4:30pm in the church and after Morning Masses - Monday through Saturday at 9:00am (approx.) in church.",
+   "source_url": "https://www.incarnation-church.org/penance",
+   "fetched_at": "2026-11-02T04:47:53+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday through Saturday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true
   }
  ],
- "source_url": "http://www.incarnation-church.org/",
+ "source_url": "https://www.incarnation-church.org/",
  "fetched_at": "2026-11-01T07:28:00+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:47:53+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -858,20 +1049,21 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
-  "generic_rows": 21
+  "trusted_kinds": [],
+  "generic_rows": 22
  },
  "has_sunday": true,
  "schedule_dropped": {
   "range_not_a_mass": 2,
   "skipped_section": 1,
-  "other_location": 7
+  "other_location": 8
  },
  "groups_dropped": {
   "schedule": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
