@@ -281,26 +281,64 @@ jobs:
         run: python3 -u ingest/us/wayback/run.py --minutes "$MINUTES" --git
 
   movements:
-    # Dispatch only (job=movements). Lane D: Knights of Columbus "Find a Council" JSON endpoint, queried by the ZIP codes of
-    # our parishes (data/real/us/movements/parish_index.json), one request at a time >= 1.05 s apart, robots.txt honoured;
-    # councils matched to parishes by name + city (ingest/us/movements/match.py). Resumable: kofc_progress.json.
+    # Dispatch only (job=movements). National movement directories, ONE matrix leg per host (one crawler per host), each
+    # leg commits only its own source file; movements-match then attaches records to parishes (match.py -> by_parish.json).
+    #   kofc          www.kofc.org "Find a Council" by council number (resumable: kofc_progress.json["numbers"]), >= 1.05 s apart
+    #   paradisus_dei programs.paradisusdei.org finder JSON (That Man Is You! and other programs), 3 requests
+    #   ofs           www.secularfranciscansusa.org map of local fraternities (data embedded in the page), 1 request
+    #   aoh           aoh.com AOH Divisions Directory, 1 request (officer contacts never stored)
+    # robots.txt honoured by every script (ingest/us/common_fetch.Polite), honest FindTheChurch user agent.
     if: ${{ github.event.inputs.job == 'movements' }}
     runs-on: ubuntu-latest
     timeout-minutes: 120
-    concurrency: { group: crawl-movements, cancel-in-progress: false }
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - { src: kofc, cmd: 'ingest/us/movements/kofc.py --mode numbers --minutes "$MINUTES"', out: 'kofc.json kofc_progress.json' }
+          - { src: paradisus_dei, cmd: 'ingest/us/movements/paradisus_dei.py', out: 'paradisus_dei.json' }
+          - { src: ofs, cmd: 'ingest/us/movements/secular_franciscans.py', out: 'secular_franciscans.json' }
+          - { src: aoh, cmd: 'ingest/us/movements/aoh.py', out: 'aoh.json' }
+    concurrency:
+      group: ${{ matrix.src == 'kofc' && 'crawl-movements' || format('crawl-movements-{0}', matrix.src) }}
+      cancel-in-progress: false
     steps:
       - uses: actions/checkout@v4
         with: { fetch-depth: 1 }
       - run: git config user.name "Matthew" && git config user.email "mcolt4@gmail.com"
-      - name: Knights of Columbus councils near our parishes -> match -> by_parish.json
+      - name: ${{ matrix.src }} directory -> data/real/us/movements/
         run: |
           set -u
           TRAILER=$'\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01SXKUYETifPNNjUVPkZ7qG5'
-          timeout $(( MINUTES * 60 + 300 )) python3 -I -u ingest/us/movements/kofc.py --mode numbers --minutes "$MINUTES" || true
+          timeout $(( MINUTES * 60 + 300 )) python3 -I -u ${{ matrix.cmd }} || true
+          for f in ${{ matrix.out }}; do [ -f "data/real/us/movements/$f" ] && git add "data/real/us/movements/$f"; done
+          git commit -q -m "Movements: ${{ matrix.src }} directory (Actions $(date -u +%FT%H:%MZ))$TRAILER" || true
+          for i in 1 2 3 4 5; do
+            git pull --rebase -X theirs --autostash -q origin main || { git rebase --abort 2>/dev/null || true; }
+            git push -q origin HEAD:main && break
+            sleep $((RANDOM % 20 + 5))
+          done
+
+  movements-match:
+    # After every movements leg: attach all directory records to our parishes (ingest/us/movements/match.py) on the latest main.
+    needs: movements
+    if: ${{ always() && github.event.inputs.job == 'movements' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    concurrency: { group: crawl-movements-match, cancel-in-progress: false }
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 1 }
+      - run: git config user.name "Matthew" && git config user.email "mcolt4@gmail.com"
+      - name: match -> by_parish.json
+        run: |
+          set -u
+          TRAILER=$'\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01SXKUYETifPNNjUVPkZ7qG5'
+          git pull --rebase -X theirs --autostash -q origin main || { git rebase --abort 2>/dev/null || true; }
           python3 -I ingest/us/movements/match.py
           git add data/real/us/movements/
-          git commit -q -m "Movements: Knights of Columbus councils (Actions $(date -u +%FT%H:%MZ))$TRAILER" || true
-          for i in 1 2 3 4; do
+          git commit -q -m "Movements: match directories to parishes (Actions $(date -u +%FT%H:%MZ))$TRAILER" || true
+          for i in 1 2 3 4 5; do
             git pull --rebase -X theirs --autostash -q origin main || { git rebase --abort 2>/dev/null || true; }
             git push -q origin HEAD:main && break
             sleep $((RANDOM % 20 + 5))

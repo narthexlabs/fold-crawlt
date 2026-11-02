@@ -129,3 +129,139 @@ def match(name: str, city: str | None, state: str | None, ix: dict) -> tuple[dic
     if len(fuzzy) > 1:
         return None, "unmatched", f"ambiguous: {len(fuzzy)} fuzzy candidates in the city"
     return None, "unmatched", "no parish of that name in the city"
+
+
+# ---- 2026-11-02: one matcher for every directory (councils, fraternities, program parishes, divisions) ----------------
+CHURCHY = re.compile(r"\b(st|saint|santa|san|church|parish|our lady|holy|cathedral|basilica|chapel|sacred|christ|immaculate|"
+                     r"blessed|mary|shrine|nuestra|sagrado|corpus|trinity|nativity|assumption|resurrection|annunciation|"
+                     r"visitation|transfiguration|epiphany|ascension|incarnation|catholic)\b", re.I)
+
+
+def norm_name2(n: str | None, city: str | None = None) -> str:
+    """norm_name plus possessives: "St. Mary's" / "ST MARYS" -> "st mary" (applied to both sides, so it stays symmetric)."""
+    s = re.sub(r"(\w)['’]s\b", r"\1s", n or "")
+    core = norm_name(s, city)
+    return re.sub(r"\b(st [a-z]{3,}?)s\b", r"\1", core)
+
+
+def km(a_lat, a_lng, b_lat, b_lng) -> float:
+    import math
+    p = math.pi / 180
+    x = (b_lng - a_lng) * p * math.cos((a_lat + b_lat) * p / 2)
+    y = (b_lat - a_lat) * p
+    return 6371.0 * math.hypot(x, y)
+
+
+def norm_street(s: str | None) -> str | None:
+    """'1323 Quincy St NE' -> '1323 quincy'; None without a house number."""
+    m = re.match(r"\s*(\d+[a-z]?)\s+(?:(?:n|s|e|w|north|south|east|west)\.?\s+)?([a-z0-9]+)", ascii_(s or "").lower())
+    return f"{m.group(1)} {m.group(2)}" if m else None
+
+
+class Matcher:
+    """Attach a directory record to one of our parishes. Order: same name in the same city/ZIP (exact), then distinctive
+    words / near-identical / one name a prefix of the other, unique (fuzzy), then the same street address (exact), then the
+    same spot (<= 0.1 km) when the meeting place is a church (fuzzy). Ambiguity is never guessed; unmatched stays in the
+    source file."""
+
+    def __init__(self, parishes: list[dict]):
+        self.ps = parishes
+        self.city: dict = {}
+        self.zip: dict = {}
+        self.grid: dict = {}
+        self.cities_by_state: dict = {}
+        for p in parishes:
+            st = p.get("state") or ""
+            nc = norm_city(p.get("city"))
+            self.city.setdefault((st, nc), []).append(p)
+            if nc:
+                self.cities_by_state.setdefault(st, set()).add(nc)
+            if p.get("zip"):
+                self.zip.setdefault(p["zip"], []).append(p)
+            if p.get("lat") is not None:
+                self.grid.setdefault((round(p["lat"], 1), round(p["lng"], 1)), []).append(p)
+            p["_core"] = norm_name2(p.get("name"), p.get("city"))
+            p["_street"] = norm_street(p.get("street"))
+
+    def city_in(self, text: str, state: str) -> str | None:
+        """the longest of our city names (in that state) that the address text ends with, e.g. '... Washington DC 20017'."""
+        t = norm_city(re.sub(r"\b\d{5}(?:-\d{4})?\b", " ", text or ""))
+        t = re.sub(rf"\b{(state or '').lower()}\b\s*$", "", t).strip()
+        best = None
+        for nc in self.cities_by_state.get(state or "", ()):
+            if (t == nc or t.endswith(" " + nc)) and (best is None or len(nc) > len(best)):
+                best = nc
+        return best
+
+    def near(self, lat, lng, r_km: float) -> list[tuple[float, dict]]:
+        out = []
+        for dy in (-0.1, 0, 0.1):
+            for dx in (-0.1, 0, 0.1):
+                for p in self.grid.get((round(lat + dy, 1), round(lng + dx, 1)), []):
+                    d = km(lat, lng, p["lat"], p["lng"])
+                    if d <= r_km:
+                        out.append((d, p))
+        return sorted(out, key=lambda x: x[0])
+
+    def match(self, name: str | None, state: str | None, city: str | None = None, alt_cities=(), zip_: str | None = None,
+              lat=None, lng=None, street: str | None = None) -> tuple[dict | None, str, str]:
+        st = state or ""
+        cands: dict = {}
+        for cty in [city, *alt_cities]:
+            for p in self.city.get((st, norm_city(cty)), []) if cty else []:
+                cands[p["id"]] = p
+        z = (zip_ or "")[:5]
+        for p in self.zip.get(z, []) if z else []:
+            cands[p["id"]] = p
+        if lat is not None and lng is not None:
+            for _, p in self.near(float(lat), float(lng), 3.0):
+                if (p.get("state") or "") == st or not st:
+                    cands[p["id"]] = p
+        if not cands:
+            return None, "unmatched", "no parish of ours in that city / ZIP / within 3 km"
+        core = norm_name2(name, city)
+        pool = list(cands.values())
+        if core:
+            exact = [p for p in pool if p["_core"] == core]
+            if len(exact) == 1:
+                return exact[0], "exact", "same city or ZIP, same name"
+            if len(exact) > 1:
+                pick = self._nearest(exact, lat, lng)
+                if pick:
+                    return pick, "fuzzy", f"{len(exact)} parishes of that name nearby; the nearest is under 1 km"
+                return None, "unmatched", f"ambiguous: {len(exact)} parishes of that name in the city / ZIP"
+            stt = strong_tokens(core)
+            fz = []
+            for p in pool:
+                pc = p["_core"]
+                ps = strong_tokens(pc)
+                r = difflib.SequenceMatcher(None, core, pc).ratio()
+                prefix = (len(core) >= 6 and len(pc) >= 6 and (pc.startswith(core + " ") or core.startswith(pc + " "))
+                          and core.startswith("st") == pc.startswith("st"))
+                if (stt and ps and stt == ps and core.startswith("st") == pc.startswith("st")) or r >= 0.9 or prefix:
+                    fz.append(p)
+            if len(fz) == 1:
+                return fz[0], "fuzzy", "same city or ZIP, distinctive words equal / near-identical / one name extends the other"
+            if len(fz) > 1:
+                pick = self._nearest(fz, lat, lng)
+                if pick:
+                    return pick, "fuzzy", f"{len(fz)} similar names nearby; the nearest is under 1 km"
+        ns = norm_street(street)
+        if ns:
+            same = [p for p in pool if p["_street"] == ns]
+            if len(same) == 1:
+                return same[0], "exact", "same street address"
+        if lat is not None and lng is not None and (not name or CHURCHY.search(ascii_(name))):
+            nb = self.near(float(lat), float(lng), 0.1)
+            if len(nb) == 1 or (len(nb) > 1 and nb[1][0] > 3 * max(nb[0][0], 0.01)):
+                return nb[0][1], "fuzzy", f"meets at a church {nb[0][0] * 1000:.0f} m from this parish's map pin"
+        return None, "unmatched", "no parish of that name / address in the city or ZIP"
+
+    @staticmethod
+    def _nearest(ps: list[dict], lat, lng) -> dict | None:
+        if lat is None or lng is None:
+            return None
+        d = sorted(((km(float(lat), float(lng), p["lat"], p["lng"]), p) for p in ps if p.get("lat") is not None), key=lambda x: x[0])
+        if d and d[0][0] <= 1.0 and (len(d) == 1 or d[1][0] > 2 * d[0][0]):
+            return d[0][1]
+        return None
