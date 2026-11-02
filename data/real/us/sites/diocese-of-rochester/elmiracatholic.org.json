@@ -67,6 +67,18 @@
    "url": "https://www.elmiracatholic.org/CALENDAR/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.elmiracatholic.org/reconciliation/",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.elmiracatholic.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -183,7 +195,7 @@
    "feed_key": "8cbf337d3a37",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:41:43+00:00",
+    "fetched_at": "2026-11-02T04:51:58+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -208,16 +220,45 @@
  "schedule_rows": [
   {
    "kind": "mass",
-   "day": "Saturday",
-   "time": "16:00",
+   "day": "Sunday",
+   "time": "07:30",
    "language": null,
-   "raw": "Weekend Mass Times: Saturday 4:00 PM",
+   "raw": "[St. Mary] Weekend Mass Times: Sunday 7:30 AM",
    "source_url": "https://www.elmiracatholic.org/",
    "fetched_at": "2026-11-01T17:21:45+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
-   "template": "wordpress"
+   "template": "wordpress",
+   "location": "St. Mary"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": null,
+   "raw": "[St. Patrick/Blessed Sacrament] Weekend Mass Times: Sunday 9:00 AM",
+   "source_url": "https://www.elmiracatholic.org/",
+   "fetched_at": "2026-11-01T17:21:45+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "location": "St. Patrick/Blessed Sacrament"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:30",
+   "language": null,
+   "raw": "[St. Mary] Weekend Mass Times: Sunday 10:30 AM",
+   "source_url": "https://www.elmiracatholic.org/",
+   "fetched_at": "2026-11-01T17:21:45+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "location": "St. Mary"
   },
   {
    "kind": "mass",
@@ -234,109 +275,104 @@
   },
   {
    "kind": "mass",
-   "day": "Sunday",
-   "time": "07:30",
-   "language": null,
-   "raw": "Sunday 7:30 AM",
-   "source_url": "https://www.elmiracatholic.org/",
-   "fetched_at": "2026-11-01T17:21:45+00:00",
-   "needs_review": false,
-   "review_reason": "schedule_box"
-  },
-  {
-   "kind": "mass",
-   "day": "Sunday",
-   "time": "09:00",
-   "language": null,
-   "raw": "Sunday 9:00 AM",
-   "source_url": "https://www.elmiracatholic.org/",
-   "fetched_at": "2026-11-01T17:21:45+00:00",
-   "needs_review": false,
-   "review_reason": "schedule_box"
-  },
-  {
-   "kind": "mass",
-   "day": "Sunday",
-   "time": "10:30",
-   "language": null,
-   "raw": "Sunday 10:30 AM",
-   "source_url": "https://www.elmiracatholic.org/",
-   "fetched_at": "2026-11-01T17:21:45+00:00",
-   "needs_review": false,
-   "review_reason": "schedule_box"
-  },
-  {
-   "kind": "mass",
    "day": "Monday",
    "time": "12:05",
    "language": null,
-   "raw": "Monday 12:05 PM St. Mary’s Church",
+   "raw": "[St. Mary] Week Day Mass Times: Monday 12:05 PM St. Mary’s Church",
    "source_url": "https://www.elmiracatholic.org/",
    "fetched_at": "2026-11-01T17:21:45+00:00",
    "needs_review": false,
-   "review_reason": "schedule_box"
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "location": "St. Mary"
   },
   {
    "kind": "mass",
    "day": "Tuesday",
    "time": "08:00",
    "language": null,
-   "raw": "Tuesday 8:00 AM",
+   "raw": "[St. Patrick/Blessed Sacrament] Week Day Mass Times: Tuesday 8:00 AM",
    "source_url": "https://www.elmiracatholic.org/",
    "fetched_at": "2026-11-01T17:21:45+00:00",
    "needs_review": false,
-   "review_reason": "schedule_box"
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "location": "St. Patrick/Blessed Sacrament"
   },
   {
    "kind": "mass",
    "day": "Wednesday",
    "time": "08:00",
    "language": null,
-   "raw": "Wednesday 8:00 AM",
+   "raw": "[St. Patrick/Blessed Sacrament] Week Day Mass Times: Wednesday 8:00 AM",
    "source_url": "https://www.elmiracatholic.org/",
    "fetched_at": "2026-11-01T17:21:45+00:00",
    "needs_review": false,
-   "review_reason": "schedule_box"
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "location": "St. Patrick/Blessed Sacrament"
   },
   {
    "kind": "mass",
    "day": "Thursday",
    "time": "17:30",
    "language": null,
-   "raw": "Thursday 5:30 PM",
+   "raw": "[St. Patrick/Blessed Sacrament] Week Day Mass Times: Thursday 5:30 PM",
    "source_url": "https://www.elmiracatholic.org/",
    "fetched_at": "2026-11-01T17:21:45+00:00",
    "needs_review": false,
-   "review_reason": "schedule_box"
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "location": "St. Patrick/Blessed Sacrament"
   },
   {
    "kind": "mass",
    "day": "Friday",
    "time": "12:05",
    "language": null,
-   "raw": "Friday 12:05 PM",
+   "raw": "[St. Mary] Week Day Mass Times: Friday 12:05 PM",
    "source_url": "https://www.elmiracatholic.org/",
    "fetched_at": "2026-11-01T17:21:45+00:00",
    "needs_review": false,
-   "review_reason": "schedule_box"
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "location": "St. Mary"
   },
   {
    "kind": "mass",
    "day": "Saturday",
    "time": "09:00",
    "language": null,
-   "raw": "Saturday 9:00 AM",
+   "raw": "[St. Mary] Week Day Mass Times: Saturday 9:00 AM",
    "source_url": "https://www.elmiracatholic.org/",
    "fetched_at": "2026-11-01T17:21:45+00:00",
    "needs_review": false,
-   "review_reason": "schedule_box"
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "location": "St. Mary"
   }
  ],
  "source_url": "http://www.elmiracatholic.org/",
  "fetched_at": "2026-11-01T17:22:44+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:01+00:00",
+  "requests": 2,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -350,12 +386,12 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 9
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 9,
-  "box_rows_added": 9
+  "other_location": 1
  },
  "groups_dropped": {
   "sacrament_prep": 2,
@@ -364,8 +400,8 @@
   "label_not_group": 2
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
