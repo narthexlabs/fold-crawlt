@@ -204,6 +204,22 @@
    "review_reason": null,
    "confidence": "high",
    "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "First Friday of the month",
+   "time": "09:00",
+   "language": null,
+   "raw": "Eucharistic Adoration is offered for vocations after the 9am Mass on the first Friday of every month.",
+   "source_url": "https://www.stmarysclayton.org/worship",
+   "fetched_at": "2026-11-02T04:41:54+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "after",
+   "note": "Eucharistic Adoration is offered for vocations after the 9am Mass on the first Friday of every month.",
+   "topup": true
   }
  ],
  "source_url": "http://www.stmarysclayton.org/",
@@ -243,5 +259,29 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "For confession by appointment, call the pastor.",
+   "phrase": "by appointment",
+   "source_url": "https://www.stmarysclayton.org/sacraments",
+   "fetched_at": "2026-11-02T04:41:53+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:54+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

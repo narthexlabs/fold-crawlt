@@ -316,6 +316,22 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wix"
+  },
+  {
+   "kind": "adoration",
+   "day": "Third Tuesday of the month",
+   "time": "09:00",
+   "language": null,
+   "raw": "Adoration of the Blessed Sacrament:: Third Tuesday of the Month at St. Alexander's, beginning right after the 9am Mass until 3pm",
+   "source_url": "https://www.rccalexanderaugustinejames.org/sacraments-and-prayer-schedule",
+   "fetched_at": "2026-11-02T04:41:52+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wix",
+   "relative": "after",
+   "note": "Adoration of the Blessed Sacrament:: Third Tuesday of the Month at St. Alexander's, beginning right after the 9am Mass u",
+   "topup": true
   }
  ],
  "source_url": "https://www.rccalexanderaugustinejames.org/",
@@ -358,5 +374,19 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:52+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

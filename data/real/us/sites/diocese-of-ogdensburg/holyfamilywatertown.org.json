@@ -2,12 +2,14 @@
  "domain": "holyfamilywatertown.org",
  "diocese": "diocese-of-ogdensburg",
  "matched_church_ids": [
+  "gc-18343",
   "holy-family-watertown-ny"
  ],
  "matched": {
   "directory": [],
   "discovermass": [
-   "holy-family-watertown-ny"
+   "holy-family-watertown-ny",
+   "gc-18343"
   ]
  },
  "names": [
@@ -73,6 +75,18 @@
   {
    "category": "bulletin",
    "url": "https://www.holyfamilywatertown.org/bulletin",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.holyfamilywatertown.org/reconciliation.html",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.holyfamilywatertown.org/adoration",
    "status": 404,
    "class": "not_found"
   }
@@ -519,13 +533,39 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "weebly"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "16:00",
+   "language": null,
+   "raw": "The Sacrament of Reconciliation, also called Penance or Confession, is offered at Holy Family Church every Saturday afternoon from 4 p.m. to 5 p.m. and at special Penance services before Easter and Ch",
+   "source_url": "https://www.holyfamilywatertown.org/reconciliation.html",
+   "fetched_at": "2026-11-02T04:41:51+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "weebly",
+   "kind_parsed": "confession"
   }
  ],
  "source_url": "http://www.holyfamilywatertown.org/",
  "fetched_at": "2026-11-01T18:51:50+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:51+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "weebly",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -539,7 +579,8 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 4
+  "trusted_kinds": [],
+  "generic_rows": 5
  },
  "has_sunday": true,
  "schedule_dropped": {
@@ -551,8 +592,8 @@
   "sentence": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,
