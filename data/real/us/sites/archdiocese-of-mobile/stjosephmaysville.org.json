@@ -60,6 +60,12 @@
    "url": "https://www.stjosephmaysville.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stjosephmaysville.org/adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -317,6 +323,34 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Confessions are heard every Sunday from 8:45 – 9:15 AM before the 9:30 AM Mass, or by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://www.stjosephmaysville.org/mass-schedule",
+   "fetched_at": "2026-11-02T04:42:10+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:11+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(251) 473-3761",
@@ -328,8 +362,5 @@
   },
   "fetched_at": "2026-11-01T08:35:08+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

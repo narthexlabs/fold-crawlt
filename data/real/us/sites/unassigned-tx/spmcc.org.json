@@ -51,6 +51,18 @@
    "url": "https://spmcc.org/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://spmcc.org/reconciliation/",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://spmcc.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -92,7 +104,7 @@
    "note": "The Events Calendar (WordPress) REST API",
    "last_fetch": {
     "status": 200,
-    "fetched_at": "2026-11-01T23:34:06+00:00",
+    "fetched_at": "2026-11-02T04:50:02+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -122,6 +134,19 @@
   {
    "kind": "mass",
    "day": "Sunday",
+   "time": "10:00",
+   "language": null,
+   "raw": "Mass Times: 10:00 AM : Morning Prayers",
+   "source_url": "https://spmcc.org/",
+   "fetched_at": "2026-11-01T22:15:22+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
    "time": "10:30",
    "language": "English",
    "raw": "10.30 AM : Holy Mass (Every Other week Mass in English)",
@@ -131,6 +156,76 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "09:00",
+   "language": null,
+   "raw": "9:00 AM : Holy Mass",
+   "source_url": "https://spmcc.org/",
+   "fetched_at": "2026-11-01T22:15:22+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Week days"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "09:00",
+   "language": null,
+   "raw": "9:00 AM : Holy Mass",
+   "source_url": "https://spmcc.org/",
+   "fetched_at": "2026-11-01T22:15:22+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Week days"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "09:00",
+   "language": null,
+   "raw": "9:00 AM : Holy Mass",
+   "source_url": "https://spmcc.org/",
+   "fetched_at": "2026-11-01T22:15:22+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Week days"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "09:00",
+   "language": null,
+   "raw": "9:00 AM : Holy Mass",
+   "source_url": "https://spmcc.org/",
+   "fetched_at": "2026-11-01T22:15:22+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Week days"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "09:00",
+   "language": null,
+   "raw": "9:00 AM : Holy Mass",
+   "source_url": "https://spmcc.org/",
+   "fetched_at": "2026-11-01T22:15:22+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Week days"
   },
   {
    "kind": "adoration",
@@ -148,9 +243,19 @@
  ],
  "source_url": "https://spmcc.org/",
  "fetched_at": "2026-11-01T22:15:29+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:43+00:00",
+  "requests": 2,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -164,19 +269,16 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 4
  },
  "has_sunday": true,
- "schedule_dropped": {
-  "not_a_service": 1,
-  "no_kind": 1
- },
  "groups_dropped": {
   "noise": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

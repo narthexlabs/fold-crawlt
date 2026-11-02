@@ -81,6 +81,12 @@
    "url": "https://www.sacredheartpinellaspark.com/about-us/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.sacredheartpinellaspark.com/worship-and-sacraments/adoration-of-the-holy-eucharist/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -222,6 +228,62 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "17:00-18:00",
+   "language": null,
+   "raw": "Adoration of the Holy Eucharist: Wednesdays: 5:00pm to 6:00pm with Mass at 6:15pm",
+   "source_url": "https://www.sacredheartpinellaspark.com/worship-and-sacraments/adoration-of-the-holy-eucharist/",
+   "fetched_at": "2026-11-02T04:41:57+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "18:15",
+   "language": null,
+   "raw": "Wednesdays: 5:00pm to 6:00pm with Mass at 6:15pm",
+   "source_url": "https://www.sacredheartpinellaspark.com/worship-and-sacraments/adoration-of-the-holy-eucharist/",
+   "fetched_at": "2026-11-02T04:41:57+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "First Friday of the month",
+   "time": "08:30-09:30",
+   "language": null,
+   "raw": "First Fridays of each month: after 8am Mass, Holy Hour 8:30am - 9:30am and 6:15pm - 7:15pm",
+   "source_url": "https://www.sacredheartpinellaspark.com/worship-and-sacraments/adoration-of-the-holy-eucharist/",
+   "fetched_at": "2026-11-02T04:41:57+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "First Friday of the month",
+   "time": "18:15-19:15",
+   "language": null,
+   "raw": "First Fridays of each month: after 8am Mass, Holy Hour 8:30am - 9:30am and 6:15pm - 7:15pm",
+   "source_url": "https://www.sacredheartpinellaspark.com/worship-and-sacraments/adoration-of-the-holy-eucharist/",
+   "fetched_at": "2026-11-02T04:41:57+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "https://www.sacredheartpinellaspark.com/",
@@ -262,6 +324,25 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:58+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 4,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(727) 541-4447",
@@ -273,8 +354,5 @@
   },
   "fetched_at": "2026-11-01T05:13:59+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

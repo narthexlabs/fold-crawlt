@@ -65,12 +65,36 @@
   "text": "Thank the advertisers who support our bulletin, they are much appreciated Please",
   "source_url": "https://www.herlittleway.org/"
  },
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "devotion",
+   "day": "Wednesday",
+   "time": "06:45",
+   "language": null,
+   "raw": "We will pray the Rosary Wednesdays at approximately 6:45 when there is Faith Formation. Join us! Reconciliation Tuesdays",
+   "source_url": "https://www.herlittleway.org/",
+   "fetched_at": "2026-11-01T20:25:10+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "generic_strict"
+  }
+ ],
  "source_url": "https://www.herlittleway.org/",
  "fetched_at": "2026-11-01T20:25:11+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:55+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -84,27 +108,29 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 5
  },
- "has_sunday": false,
- "schedule_dropped": {
-  "dated_line": 2,
-  "not_a_service": 1,
-  "relative_time": 1,
-  "skipped_section": 3
- },
- "schedule_images": [
+ "schedule_notes": [
   {
-   "url": "https://www.herlittleway.org/bulletin/1025/pic_RTR.jpg",
-   "alt": "",
-   "page": "https://www.herlittleway.org/"
+   "kind": "confession",
+   "text": "Anytime by appointment in any of the three parishes.",
+   "phrase": "by appointment",
+   "source_url": "https://www.herlittleway.org/",
+   "fetched_at": "2026-11-01T20:25:10+00:00"
   }
  ],
- "schedule_note": "schedule appears to be an image; times not read (needs_review)",
+ "has_sunday": false,
+ "schedule_partial": true,
+ "schedule_dropped": {
+  "dated_line": 2,
+  "skipped_section": 3,
+  "prose": 1
+ },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

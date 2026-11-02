@@ -59,6 +59,18 @@
    "url": "https://sacredheart-cliftonheights.net/masses-holy-week-live-stream/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://sacredheart-cliftonheights.net/sacraments/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://sacredheart-cliftonheights.net/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -379,6 +391,34 @@
    "day_bound_from_line": true
   },
   {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "16:00",
+   "language": null,
+   "raw": "St. Charles (Vigil) 4:00PM, 8:30AM",
+   "source_url": "https://sacredheart-cliftonheights.net/mass-schedule/",
+   "fetched_at": "2026-11-01T20:25:09+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "08:30",
+   "language": null,
+   "raw": "St. Charles (Vigil) 4:00PM, 8:30AM",
+   "source_url": "https://sacredheart-cliftonheights.net/mass-schedule/",
+   "fetched_at": "2026-11-01T20:25:09+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "kind_parsed": "mass"
+  },
+  {
    "kind": "confession",
    "day": "Saturday",
    "time": "15:00-15:45",
@@ -420,9 +460,21 @@
  ],
  "source_url": "https://sacredheart-cliftonheights.net/",
  "fetched_at": "2026-11-01T20:25:34+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:10+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -436,11 +488,13 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 12
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 7
+  "no_kind": 3,
+  "other_location": 2
  },
  "groups_dropped": {},
  "event_counts": {

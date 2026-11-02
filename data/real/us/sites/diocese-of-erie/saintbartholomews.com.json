@@ -81,6 +81,18 @@
    "url": "https://www.saintbartholomews.com/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.saintbartholomews.com/reconciliation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.saintbartholomews.com/adoration",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -266,7 +278,7 @@
    "note": "Google Calendar public feed (website-builder widget)",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-02T00:08:40+00:00",
+    "fetched_at": "2026-11-02T04:52:03+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -291,9 +303,9 @@
    "day": "Saturday",
    "time": "17:30",
    "language": null,
-   "raw": "Weekend Masses: Saturday | 5:30 pm",
-   "source_url": "https://www.saintbartholomews.com/mass-schedule",
-   "fetched_at": "2026-11-01T20:25:09+00:00",
+   "raw": "Weekend Mass: Saturday | 5:30 pm",
+   "source_url": "https://www.saintbartholomews.com/",
+   "fetched_at": "2026-11-01T20:25:08+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -304,9 +316,9 @@
    "day": "Sunday",
    "time": "08:30",
    "language": null,
-   "raw": "Weekend Masses: Sunday | 8:30 am",
-   "source_url": "https://www.saintbartholomews.com/mass-schedule",
-   "fetched_at": "2026-11-01T20:25:09+00:00",
+   "raw": "Weekend Mass: Sunday | 8:30 am",
+   "source_url": "https://www.saintbartholomews.com/",
+   "fetched_at": "2026-11-01T20:25:08+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -317,9 +329,9 @@
    "day": "Tuesday",
    "time": "17:30",
    "language": null,
-   "raw": "Weekday Masses: Tuesday | 5:30 pm",
-   "source_url": "https://www.saintbartholomews.com/mass-schedule",
-   "fetched_at": "2026-11-01T20:25:09+00:00",
+   "raw": "Weekday Mass: Tuesday | 5:30 pm",
+   "source_url": "https://www.saintbartholomews.com/",
+   "fetched_at": "2026-11-01T20:25:08+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -330,9 +342,9 @@
    "day": "Thursday",
    "time": "07:30",
    "language": null,
-   "raw": "Weekday Masses: Thursday | 7:30 am",
-   "source_url": "https://www.saintbartholomews.com/mass-schedule",
-   "fetched_at": "2026-11-01T20:25:09+00:00",
+   "raw": "Weekday Mass: Thursday | 7:30 am",
+   "source_url": "https://www.saintbartholomews.com/",
+   "fetched_at": "2026-11-01T20:25:08+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -343,9 +355,9 @@
    "day": "Tuesday",
    "time": "16:45-17:15",
    "language": null,
-   "raw": "Reconciliation: Tuesday | 4:45 pm–5:15 pm",
-   "source_url": "https://www.saintbartholomews.com/mass-schedule",
-   "fetched_at": "2026-11-01T20:25:09+00:00",
+   "raw": "Confession Times: Tuesday | 4:45 pm–5:15 pm",
+   "source_url": "https://www.saintbartholomews.com/",
+   "fetched_at": "2026-11-01T20:25:08+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -354,9 +366,21 @@
  ],
  "source_url": "https://www.saintbartholomews.com/",
  "fetched_at": "2026-11-01T20:25:16+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:13+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -370,9 +394,13 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 12
  },
  "has_sunday": true,
+ "schedule_dropped": {
+  "no_day": 1
+ },
  "groups_dropped": {
   "schedule": 1,
   "label_not_group": 1,

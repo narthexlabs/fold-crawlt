@@ -63,6 +63,24 @@
    "url": "https://ondemand.ewtn.com/Home/Series/ondemand/video/en/live-with-passion-with-father-cedric",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://ondemand.ewtn.com/Home/Series/ondemand/video/en/saint-john-vianney--confessor-of-souls",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://ondemand.ewtn.com/Home/Series/ondemand/video/en/archbishop-fulton-sheen-beatification-novena-of-holy-hours",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://ondemand.ewtn.com/Home/Series/ondemand/audio/en/liturgy-of-the-hours-for-lay-people",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -182,6 +200,25 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:10+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(800) 447-3986",
@@ -192,8 +229,5 @@
   },
   "fetched_at": "2026-11-01T09:04:55+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

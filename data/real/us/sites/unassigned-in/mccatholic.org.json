@@ -314,7 +314,7 @@
    "note": "Google Calendar public feed (website-builder widget)",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:31:47+00:00",
+    "fetched_at": "2026-11-02T04:50:08+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -345,32 +345,6 @@
   "source_url": "https://www.mccatholic.org/"
  },
  "schedule_rows": [
-  {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "07:45-08:15",
-   "language": null,
-   "raw": "Confession Times:: St. Mary | 7:45–8:15am",
-   "source_url": "https://www.mccatholic.org/sacraments",
-   "fetched_at": "2026-11-01T22:15:23+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
-  {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "14:45-15:45",
-   "language": null,
-   "raw": "Confession Times:: Notre Dame | 2:45–3:45pm",
-   "source_url": "https://www.mccatholic.org/sacraments",
-   "fetched_at": "2026-11-01T22:15:23+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
   {
    "kind": "mass",
    "day": "Thursday",
@@ -437,128 +411,80 @@
    "template": "generic_strict"
   },
   {
-   "kind": "mass",
-   "day": "Sunday",
-   "time": "12:00",
-   "language": null,
-   "raw": "Sunday Mass: 12:00 pm",
-   "source_url": "https://www.mccatholic.org/",
-   "fetched_at": "2026-11-01T22:15:22+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
-  {
-   "kind": "mass",
-   "day": "Sunday",
-   "time": "17:00",
-   "language": "Spanish",
-   "raw": "Sunday Mass: 5:00pm",
-   "source_url": "https://www.mccatholic.org/",
-   "fetched_at": "2026-11-01T22:15:22+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
-  {
-   "kind": "mass",
-   "day": "Monday",
-   "time": "07:30",
-   "language": null,
-   "raw": "Weekday Masses: Monday - Friday | 7:30am",
-   "source_url": "https://www.mccatholic.org/",
-   "fetched_at": "2026-11-01T22:15:22+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict",
-   "day_expanded_from": "Monday - Friday"
-  },
-  {
-   "kind": "mass",
-   "day": "Tuesday",
-   "time": "07:30",
-   "language": null,
-   "raw": "Weekday Masses: Monday - Friday | 7:30am",
-   "source_url": "https://www.mccatholic.org/",
-   "fetched_at": "2026-11-01T22:15:22+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict",
-   "day_expanded_from": "Monday - Friday",
-   "day_parsed": "Monday",
-   "day_bound_from_line": true
-  },
-  {
-   "kind": "mass",
-   "day": "Wednesday",
-   "time": "07:30",
-   "language": null,
-   "raw": "Weekday Masses: Monday - Friday | 7:30am",
-   "source_url": "https://www.mccatholic.org/",
-   "fetched_at": "2026-11-01T22:15:22+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict",
-   "day_expanded_from": "Monday - Friday",
-   "day_parsed": "Monday",
-   "day_bound_from_line": true
-  },
-  {
-   "kind": "mass",
-   "day": "Thursday",
-   "time": "07:30",
-   "language": null,
-   "raw": "Weekday Masses: Monday - Friday | 7:30am",
-   "source_url": "https://www.mccatholic.org/",
-   "fetched_at": "2026-11-01T22:15:22+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict",
-   "day_expanded_from": "Monday - Friday",
-   "day_parsed": "Monday",
-   "day_bound_from_line": true
-  },
-  {
-   "kind": "mass",
-   "day": "Friday",
-   "time": "07:30",
-   "language": null,
-   "raw": "Weekday Masses: Monday - Friday | 7:30am",
-   "source_url": "https://www.mccatholic.org/",
-   "fetched_at": "2026-11-01T22:15:22+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict",
-   "day_expanded_from": "Monday - Friday",
-   "day_parsed": "Monday",
-   "day_bound_from_line": true
-  },
-  {
-   "kind": "mass",
+   "kind": "confession",
    "day": "Saturday",
-   "time": "08:30",
+   "time": "14:45-15:45",
    "language": null,
-   "raw": "Weekday Masses: Saturdays | 8:30am",
+   "raw": "Sacrament of Reconciliation: Saturday | 2:45–3:45pm",
    "source_url": "https://www.mccatholic.org/",
    "fetched_at": "2026-11-01T22:15:22+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Sacrament of Reconciliation: Sunday | after the 8:00 am Mass",
+   "source_url": "https://www.mccatholic.org/",
+   "fetched_at": "2026-11-01T22:15:22+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "after",
+   "note": "Sacrament of Reconciliation: Sunday | after the 8:00 am Mass",
+   "relative_resolved": true
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "07:45-08:15",
+   "language": null,
+   "raw": "Confession Times:: St. Mary | 7:45–8:15am",
+   "source_url": "https://www.mccatholic.org/sacraments",
+   "fetched_at": "2026-11-01T22:15:23+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "08:00",
+   "language": null,
+   "raw": "Confession Times:: Queen of All Saints | after the 8:00am Mass",
+   "source_url": "https://www.mccatholic.org/sacraments",
+   "fetched_at": "2026-11-01T22:15:23+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "kind_parsed": "confession",
+   "relative": "after",
+   "note": "Confession Times:: Queen of All Saints | after the 8:00am Mass",
+   "relative_resolved": false
   }
  ],
  "source_url": "https://www.mccatholic.org/",
  "fetched_at": "2026-11-01T22:15:30+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:34+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -572,20 +498,19 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 35
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "relative_time": 2,
-  "not_a_service": 1,
-  "other_location": 7
+  "other_location": 13
  },
  "groups_dropped": {
   "label_not_group": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

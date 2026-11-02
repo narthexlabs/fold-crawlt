@@ -81,6 +81,12 @@
    "url": "https://stmarys-wbl.org/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stmarys-wbl.org/mass-times-and-schedules/reconciliation/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -579,6 +585,20 @@
    "confidence": "high",
    "template": "wordpress",
    "kind_parsed": "mass"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Tuesdays at 4:30 PM and Saturdays at 9:00 AM in the Reconciliation Room in the church.",
+   "source_url": "https://stmarys-wbl.org/mass-times-and-schedules/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:39+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "http://www.stmarys-wbl.org/",
@@ -620,6 +640,24 @@
   "liturgy_and_confession_instances_total": 1,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:43+00:00",
+  "requests": 3,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "contactus@stmarys-wbl.org",
   "phone": "(651) 429-7771",
@@ -632,8 +670,5 @@
   },
   "fetched_at": "2026-11-01T03:58:30+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

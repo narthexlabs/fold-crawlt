@@ -3,16 +3,19 @@
  "diocese": "diocese-of-greensburg",
  "matched_church_ids": [
   "brave:PA|bernard clairvaux indiana|",
-  "gc-24123"
+  "gc-24123",
+  "st-bernard-indiana-pa"
  ],
  "matched": {
   "directory": [],
   "discovermass": [
+   "st-bernard-indiana-pa",
    "brave:PA|bernard clairvaux indiana|",
    "gc-24123"
   ]
  },
  "names": [
+  "St. Bernard",
   "St Bernard Of Clairvaux",
   "St. Bernard of Clairvaux"
  ],
@@ -72,6 +75,12 @@
    "url": "https://www.saintbernardparish.org/about/contact-us/",
    "status": null,
    "class": "timeout"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.saintbernardparish.org/adoration/",
+   "status": 502,
+   "class": "http_5xx"
   }
  ],
  "cms_guess": {
@@ -298,19 +307,6 @@
  },
  "schedule_rows": [
   {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "14:30-15:30",
-   "language": null,
-   "raw": "Reconciliation: The sacrament is generally celebrated at our parish on Saturdays from 2:30-3:30pm.",
-   "source_url": "https://www.saintbernardparish.org/sacraments/",
-   "fetched_at": "2026-11-01T20:25:20+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress"
-  },
-  {
    "kind": "mass",
    "day": "Monday",
    "time": "07:30",
@@ -465,13 +461,49 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "08:45-09:30",
+   "language": null,
+   "raw": "Confession: Saturday – 8:45am – 9:30am",
+   "source_url": "https://www.saintbernardparish.org/",
+   "fetched_at": "2026-11-01T20:25:08+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "14:30-15:30",
+   "language": null,
+   "raw": "Reconciliation: The sacrament is generally celebrated at our parish on Saturdays from 2:30-3:30pm.",
+   "source_url": "https://www.saintbernardparish.org/sacraments/",
+   "fetched_at": "2026-11-01T20:25:20+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
   }
  ],
  "source_url": "https://www.saintbernardparish.org/",
  "fetched_at": "2026-11-01T20:27:25+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:27+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -485,15 +517,25 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 7
  },
+ "schedule_none": [
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "text": "NO MASS ON FRIDAY",
+   "source_url": "https://www.saintbernardparish.org/",
+   "fetched_at": "2026-11-01T20:25:08+00:00"
+  }
+ ],
  "has_sunday": true,
  "groups_dropped": {
   "schedule": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

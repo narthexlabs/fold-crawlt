@@ -97,6 +97,12 @@
    "url": "https://stleoracine.church/bulletin",
    "status": 404,
    "class": "not_found"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://stleoracine.church/sacraments/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -629,6 +635,22 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Friday",
+   "time": "08:15",
+   "language": null,
+   "raw": "[St. Leo the Great - St. Lucy Church] Confession: Friday: After 8:15 AM Mass",
+   "source_url": "https://stleoracine.church/mass-confession-times/",
+   "fetched_at": "2026-11-02T04:41:45+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "[St. Leo the Great - St. Lucy Church] Confession: Friday: After 8:15 AM Mass",
+   "topup": true
   }
  ],
  "source_url": "https://stleoracine.church/",
@@ -670,5 +692,30 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "or by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://stleoracine.church/mass-confession-times/",
+   "fetched_at": "2026-11-02T04:41:45+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:50+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

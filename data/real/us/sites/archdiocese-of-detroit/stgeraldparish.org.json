@@ -79,6 +79,12 @@
    "url": "https://stgeraldparish.org/events/categories/events/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stgeraldparish.org/events/first-friday-adoration-4/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -300,7 +306,7 @@
    "note": "iCal link on page",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:37:46+00:00",
+    "fetched_at": "2026-11-02T04:55:17+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -322,30 +328,59 @@
  },
  "schedule_rows": [
   {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "09:15",
+   "language": null,
+   "raw": "Saturday Vigil: typically 9:15 am and 7:00 pm (verify in the bulletin or calendar)",
+   "source_url": "https://stgeraldparish.org/",
+   "fetched_at": "2026-11-01T18:51:45+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "19:00",
+   "language": null,
+   "raw": "Saturday Vigil: typically 9:15 am and 7:00 pm (verify in the bulletin or calendar)",
+   "source_url": "https://stgeraldparish.org/",
+   "fetched_at": "2026-11-01T18:51:45+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "kind_parsed": "mass"
+  },
+  {
    "kind": "confession",
    "day": "Saturday",
    "time": "15:30-16:30",
    "language": null,
-   "raw": "Confession is available on Saturdays from 3:30 pm- 4:30 pm.",
-   "source_url": "https://stgeraldparish.org/sacraments/",
-   "fetched_at": "2026-11-01T18:51:47+00:00",
+   "raw": "Rite of Reconciliation: 3:30 – 4:30 pm or by appointment",
+   "source_url": "https://stgeraldparish.org/",
+   "fetched_at": "2026-11-01T18:51:45+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "high",
+   "confidence": "medium",
    "template": "wordpress"
   },
   {
    "kind": "mass",
-   "day": "Sunday",
-   "time": "10:15",
+   "day": "First Friday of the month (during the school year)",
+   "time": "17:00",
    "language": null,
-   "raw": "Choir for the Sunday 10:15 Mass and special occasions",
-   "source_url": "https://stgeraldparish.org/ministries/liturgical-ministries/",
-   "fetched_at": "2026-11-01T18:51:50+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "low",
-   "template": "wordpress"
+   "raw": "First Fridays (September- May) begins after the 9:15 am Mass and concludes at 5:00 pm with Benediction,",
+   "source_url": "https://stgeraldparish.org/",
+   "fetched_at": "2026-11-01T18:51:45+00:00",
+   "needs_review": true,
+   "review_reason": "seasonal",
+   "confidence": "high",
+   "template": "wordpress",
+   "season": "September- May"
   },
   {
    "kind": "adoration",
@@ -359,13 +394,52 @@
    "review_reason": null,
    "confidence": "high",
    "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "First Saturday of the month (during the school year)",
+   "time": "09:15",
+   "language": null,
+   "raw": "Mass for Life: First Saturdays (September- May) 9:15 am",
+   "source_url": "https://stgeraldparish.org/",
+   "fetched_at": "2026-11-01T18:51:45+00:00",
+   "needs_review": true,
+   "review_reason": "seasonal",
+   "confidence": "medium",
+   "template": "wordpress",
+   "season": "September- May"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:15",
+   "language": null,
+   "raw": "Choir for the Sunday 10:15 Mass and special occasions",
+   "source_url": "https://stgeraldparish.org/ministries/liturgical-ministries/",
+   "fetched_at": "2026-11-01T18:51:50+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "wordpress"
   }
  ],
  "source_url": "https://stgeraldparish.org/",
  "fetched_at": "2026-11-01T18:51:55+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:41+00:00",
+  "requests": 1,
+  "found": [
+   "adoration"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -373,20 +447,30 @@
     "counts_ok": true,
     "sunday_not_copied": true,
     "no_daily_on_sunday": true,
-    "mostly_high": true
+    "mostly_high": false
    },
-   "score": "high"
+   "score": "medium"
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 12
+  "trusted_kinds": [],
+  "generic_rows": 13
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "3:30 – 4:30 pm or by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://stgeraldparish.org/",
+   "fetched_at": "2026-11-01T18:51:45+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 2,
+  "other_location": 7,
   "relative_time": 1,
-  "dated_block": 126,
-  "skipped_section": 12,
+  "dated_block": 127,
+  "skipped_section": 15,
   "dated_line": 4,
   "no_kind": 1,
   "no_day": 1
@@ -396,8 +480,8 @@
   "noise": 2
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

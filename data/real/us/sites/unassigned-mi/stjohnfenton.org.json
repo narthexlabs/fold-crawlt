@@ -69,6 +69,12 @@
    "url": "https://www.stjohnfenton.org/calendar.html",
    "status": null,
    "class": "robots_disallowed"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stjohnfenton.org/chapel.html",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -329,7 +335,7 @@
    "feed_key": "5d0d63974869",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:35:40+00:00",
+    "fetched_at": "2026-11-02T04:53:30+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -348,7 +354,7 @@
    "feed_key": "13ca3c3cdd38",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:35:41+00:00",
+    "fetched_at": "2026-11-02T04:53:31+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -369,9 +375,9 @@
    "day": "Monday",
    "time": "08:30",
    "language": null,
-   "raw": "Confessions are held at St. John on:: MONDAYS & WEDNESDAYS | 8:30AM (School Students First)",
-   "source_url": "https://www.stjohnfenton.org/reconciliation.html",
-   "fetched_at": "2026-11-01T22:15:30+00:00",
+   "raw": "Confessions: MONDAYS & WEDNESDAYS | 8:30AM (School Students First)",
+   "source_url": "https://www.stjohnfenton.org/",
+   "fetched_at": "2026-11-01T22:15:28+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -383,9 +389,9 @@
    "day": "Wednesday",
    "time": "08:30",
    "language": null,
-   "raw": "Confessions are held at St. John on:: MONDAYS & WEDNESDAYS | 8:30AM (School Students First)",
-   "source_url": "https://www.stjohnfenton.org/reconciliation.html",
-   "fetched_at": "2026-11-01T22:15:30+00:00",
+   "raw": "Confessions: MONDAYS & WEDNESDAYS | 8:30AM (School Students First)",
+   "source_url": "https://www.stjohnfenton.org/",
+   "fetched_at": "2026-11-01T22:15:28+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -396,12 +402,25 @@
   },
   {
    "kind": "confession",
+   "day": "Wednesday",
+   "time": "17:00-17:45",
+   "language": null,
+   "raw": "Confessions: WEDNESDAYS | 5:00PM - 5:45PM (CHAPEL)",
+   "source_url": "https://www.stjohnfenton.org/",
+   "fetched_at": "2026-11-01T22:15:28+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly"
+  },
+  {
+   "kind": "confession",
    "day": "Thursday",
    "time": "08:30",
    "language": null,
    "raw": "THURSDAYS & FRIDAYS | 8:30AM - Until all Confessions have been heard",
-   "source_url": "https://www.stjohnfenton.org/reconciliation.html",
-   "fetched_at": "2026-11-01T22:15:30+00:00",
+   "source_url": "https://www.stjohnfenton.org/",
+   "fetched_at": "2026-11-01T22:15:28+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -414,8 +433,8 @@
    "time": "08:30",
    "language": null,
    "raw": "THURSDAYS & FRIDAYS | 8:30AM - Until all Confessions have been heard",
-   "source_url": "https://www.stjohnfenton.org/reconciliation.html",
-   "fetched_at": "2026-11-01T22:15:30+00:00",
+   "source_url": "https://www.stjohnfenton.org/",
+   "fetched_at": "2026-11-01T22:15:28+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -429,9 +448,9 @@
    "day": "Saturday",
    "time": "15:00-16:00",
    "language": null,
-   "raw": "Confessions are held at St. John on:: SATURDAYS | 3:00PM - 4:00PM (CHURCH)",
-   "source_url": "https://www.stjohnfenton.org/reconciliation.html",
-   "fetched_at": "2026-11-01T22:15:30+00:00",
+   "raw": "Confessions: SATURDAYS | 3:00PM - 4:00PM (CHURCH)",
+   "source_url": "https://www.stjohnfenton.org/",
+   "fetched_at": "2026-11-01T22:15:28+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -453,9 +472,21 @@
  ],
  "source_url": "https://www.stjohnfenton.org/",
  "fetched_at": "2026-11-01T22:15:40+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:33+00:00",
+  "requests": 1,
+  "found": [
+   "adoration"
+  ]
+ },
  "schedule_template": {
   "template": "weebly",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -469,7 +500,8 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 10
+  "trusted_kinds": [],
+  "generic_rows": 15
  },
  "has_sunday": false,
  "schedule_partial": true,
@@ -484,8 +516,8 @@
   "fragment": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

@@ -3,23 +3,28 @@
  "diocese": "diocese-of-metuchen",
  "matched_church_ids": [
   "diocese-of-metuchen:St. Joseph",
-  "gc-18667"
+  "gc-18667",
+  "st-joseph-north-plainfield-nj",
+  "st-luke-north-plainfield-nj"
  ],
  "matched": {
   "directory": [
    "diocese-of-metuchen:St. Joseph"
   ],
   "discovermass": [
+   "st-joseph-north-plainfield-nj",
+   "st-luke-north-plainfield-nj",
    "gc-18667"
   ]
  },
  "names": [
-  "St. Joseph"
+  "St. Joseph",
+  "St. Luke"
  ],
  "cities": [
   "North Plainfield"
  ],
- "home_url": "http://www.sjnp.org/",
+ "home_url": "https://sjnp.org/",
  "final_url": "https://sjlnp.org/",
  "crawl_status": "ok",
  "crawl_env": "sandbox",
@@ -52,6 +57,12 @@
   {
    "category": "ministries",
    "url": "https://sjlnp.org/music-ministry/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://sjlnp.org/adoracion-y-la-bendicion/",
    "status": 200,
    "class": "ok"
   }
@@ -259,12 +270,24 @@
    "review_reason": "weekend_rescue"
   }
  ],
- "source_url": "http://www.sjnp.org/",
+ "source_url": "https://sjnp.org/",
  "fetched_at": "2026-11-01T17:21:36+00:00",
  "redirected_off_host": "sjlnp.org",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:47:53+00:00",
+  "requests": 1,
+  "found": [
+   "adoration"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -278,8 +301,18 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 30
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Reconciliation is offered here at St. Joseph on Saturdays from 11am-11:45am, or by appointment. Please contact any of our priests if you would like to make arrangements for another time. The Lord is w",
+   "phrase": "by appointment",
+   "source_url": "https://sjlnp.org/confession/",
+   "fetched_at": "2026-11-01T17:21:30+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "range_not_a_mass": 1,
@@ -289,8 +322,8 @@
   "noise": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

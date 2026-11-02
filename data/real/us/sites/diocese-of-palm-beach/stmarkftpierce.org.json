@@ -73,6 +73,12 @@
    "url": "https://stmarkftpierce.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stmarkftpierce.org/adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -362,6 +368,20 @@
    "review_reason": null,
    "confidence": "high",
    "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "18:00",
+   "language": "English",
+   "raw": "Vigil-Holy Days of Obligation:: 6:00 PM (English)",
+   "source_url": "https://stmarkftpierce.org/mass-times/",
+   "fetched_at": "2026-11-02T04:42:19+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "http://www.stmarkftpierce.org/",
@@ -406,5 +426,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:20+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

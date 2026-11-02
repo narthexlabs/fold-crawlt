@@ -69,6 +69,18 @@
    "url": "https://www.petertherock.org/contact.html",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.petertherock.org/sacraments.html",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.petertherock.org/adoration.html",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -814,6 +826,62 @@
    "review_reason": null,
    "confidence": "high",
    "template": "weebly"
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "07:00",
+   "language": null,
+   "raw": "Adoration: Tuesdays: 7am-noon",
+   "source_url": "https://www.petertherock.org/adoration.html",
+   "fetched_at": "2026-11-02T04:42:12+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "12:00",
+   "language": null,
+   "raw": "Adoration: Tuesdays: 7am-noon",
+   "source_url": "https://www.petertherock.org/adoration.html",
+   "fetched_at": "2026-11-02T04:42:12+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "17:00-21:00",
+   "language": null,
+   "raw": "Adoration: Thursdays: 5-9pm",
+   "source_url": "https://www.petertherock.org/adoration.html",
+   "fetched_at": "2026-11-02T04:42:12+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "09:00-15:00",
+   "language": null,
+   "raw": "Adoration: Fridays: 9am-3pm",
+   "source_url": "https://www.petertherock.org/adoration.html",
+   "fetched_at": "2026-11-02T04:42:12+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly",
+   "topup": true
   }
  ],
  "source_url": "http://www.petertherock.org/",
@@ -856,6 +924,25 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:12+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 4,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(719) 481-3511",
@@ -867,8 +954,5 @@
   },
   "fetched_at": "2026-11-01T04:00:14+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

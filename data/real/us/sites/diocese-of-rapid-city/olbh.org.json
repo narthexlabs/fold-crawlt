@@ -636,6 +636,22 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Adoration at Our Lady of the Black Hills takes place on Wednesdays following the 8 AM Mass.",
+   "source_url": "https://www.olbh.org/adoration",
+   "fetched_at": "2026-11-02T04:42:02+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "after",
+   "note": "Adoration at Our Lady of the Black Hills takes place on Wednesdays following the 8 AM Mass.",
+   "topup": true
   }
  ],
  "source_url": "https://www.olbh.org/",
@@ -679,6 +695,28 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "refetch_attempt": {
+  "status": "ssl_error",
+  "at": "2026-11-02",
+  "env": "sandbox"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:02+00:00",
+  "requests": 1,
+  "found": [
+   "adoration"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(605) 787-5168",
@@ -690,13 +728,5 @@
   },
   "fetched_at": "2026-11-01T07:19:50+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
- },
- "refetch_attempt": {
-  "status": "ssl_error",
-  "at": "2026-11-01",
-  "env": "sandbox"
  }
 }

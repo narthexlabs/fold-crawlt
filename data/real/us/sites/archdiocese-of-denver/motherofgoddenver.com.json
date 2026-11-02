@@ -61,6 +61,12 @@
    "url": "https://www.motherofgoddenver.com/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.motherofgoddenver.com/reconciliation",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -573,6 +579,32 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Reconciliation (Confessions) available by appointment Monday-Friday; Saturdays 3:30 – 3:50 p.m. and 5:30 -5:50 p.m.",
+   "phrase": "by appointment",
+   "source_url": "https://www.motherofgoddenver.com/reconciliation",
+   "fetched_at": "2026-11-02T04:41:59+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:59+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(303) 744-1715",
@@ -584,8 +616,5 @@
   },
   "fetched_at": "2026-11-01T05:11:13+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

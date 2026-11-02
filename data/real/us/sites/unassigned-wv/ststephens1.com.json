@@ -49,6 +49,18 @@
    "url": "https://ststephens1.com/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://ststephens1.com/reconciliation/",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://ststephens1.com/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -71,7 +83,7 @@
    "note": "All-in-One Event Calendar export (WordPress)",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:35:52+00:00",
+    "fetched_at": "2026-11-02T04:49:40+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -91,6 +103,45 @@
   "source_url": "https://ststephens1.com/"
  },
  "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:30",
+   "language": null,
+   "raw": "Mass Times: Sunday – 9:30 AM",
+   "source_url": "https://ststephens1.com/",
+   "fetched_at": "2026-11-01T17:27:58+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Mass Times: Wednesday – 9:00 AM",
+   "source_url": "https://ststephens1.com/",
+   "fetched_at": "2026-11-01T17:27:58+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Mass Times: Friday – 9:00 AM",
+   "source_url": "https://ststephens1.com/",
+   "fetched_at": "2026-11-01T17:27:58+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
   {
    "kind": "mass",
    "day": "Tuesday",
@@ -119,19 +170,6 @@
   },
   {
    "kind": "mass",
-   "day": "Friday",
-   "time": "09:00",
-   "language": null,
-   "raw": "MASS SCHEDULE: Friday – 9:00 AM",
-   "source_url": "https://ststephens1.com/mass-times-and-parish-services/",
-   "fetched_at": "2026-11-01T17:28:04+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress"
-  },
-  {
-   "kind": "mass",
    "day": "Saturday",
    "time": "09:00",
    "language": null,
@@ -142,26 +180,23 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
-  },
-  {
-   "kind": "mass",
-   "day": "Sunday",
-   "time": "09:30",
-   "language": null,
-   "raw": "MASS SCHEDULE: Sunday – 9:30 AM",
-   "source_url": "https://ststephens1.com/mass-times-and-parish-services/",
-   "fetched_at": "2026-11-01T17:28:04+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress"
   }
  ],
  "source_url": "https://ststephens1.com/",
  "fetched_at": "2026-11-01T17:28:21+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:52+00:00",
+  "requests": 2,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -175,13 +210,23 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 9
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "– After mass or by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://ststephens1.com/",
+   "fetched_at": "2026-11-01T17:27:58+00:00"
+  }
+ ],
  "has_sunday": true,
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

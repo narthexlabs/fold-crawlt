@@ -89,6 +89,12 @@
    "url": "https://www.icclarion.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.icclarion.org/Sacraments",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -385,9 +391,21 @@
  ],
  "source_url": "https://www.icclarion.org/",
  "fetched_at": "2026-11-01T20:26:41+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:12+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -401,7 +419,8 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
-  "generic_rows": 5
+  "trusted_kinds": [],
+  "generic_rows": 7
  },
  "has_sunday": true,
  "schedule_dropped": {

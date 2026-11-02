@@ -434,19 +434,6 @@
   {
    "kind": "mass",
    "day": "Saturday",
-   "time": "17:00",
-   "language": null,
-   "raw": "Saturday (Vigil/Anticipated Mass): 5:00 PM",
-   "source_url": "https://www.olphmorton.org/",
-   "fetched_at": "2026-11-01T20:25:04+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
-  {
-   "kind": "mass",
-   "day": "Saturday",
    "time": "08:00",
    "language": null,
    "raw": "Saturday (Vigil/Anticipated Mass): 8:00 AM",
@@ -670,9 +657,19 @@
  ],
  "source_url": "https://www.olphmorton.org/",
  "fetched_at": "2026-11-01T20:25:12+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:05+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -686,11 +683,31 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 27
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "The Sacrament of Reconciliation is celebrated every Saturday from 3:30 to 4:30 P.M. in the Church, or by appointment by calling the Rectory.",
+   "phrase": "by appointment",
+   "source_url": "https://www.olphmorton.org/reconciliation",
+   "fetched_at": "2026-11-01T20:25:05+00:00"
+  }
+ ],
+ "schedule_none": [
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "text": "(No Mass on Wednesdays)",
+   "source_url": "https://www.olphmorton.org/",
+   "fetched_at": "2026-11-01T20:25:04+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "dated_line": 2,
+  "dated_block": 1,
   "other_location": 2,
   "prose": 1
  },

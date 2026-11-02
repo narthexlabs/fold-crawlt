@@ -39,6 +39,12 @@
    "url": "https://holyfamilyhbpa.wordpress.com/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://holyfamilyhbpa.wordpress.com/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -60,6 +66,35 @@
  },
  "bulletin": null,
  "schedule_rows": [
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "08:30",
+   "language": null,
+   "raw": "Eucharistic Adoration will follow the 8:30 Mass every Friday.",
+   "source_url": "https://holyfamilyhbpa.wordpress.com/",
+   "fetched_at": "2026-11-01T20:25:02+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "Eucharistic Adoration will follow the 8:30 Mass every Friday.",
+   "relative_resolved": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "09:15-09:45",
+   "language": null,
+   "raw": "The Sacrament of Reconciliation will be provided during the Holy Hour from 9:15-9:45.",
+   "source_url": "https://holyfamilyhbpa.wordpress.com/",
+   "fetched_at": "2026-11-01T20:25:02+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "wordpress"
+  },
   {
    "kind": "mass",
    "day": "Sunday",
@@ -171,9 +206,19 @@
  ],
  "source_url": "https://holyfamilyhbpa.wordpress.com/",
  "fetched_at": "2026-11-01T20:25:07+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:03+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -187,17 +232,17 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 6
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "relative_time": 1,
   "skipped_section": 2
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

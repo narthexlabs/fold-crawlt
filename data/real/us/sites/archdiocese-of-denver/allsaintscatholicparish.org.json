@@ -159,7 +159,7 @@
    "language": "en",
    "language_assumed": true,
    "meets": null,
-   "description": "Young people of our parish are invited to assist at weekend masses and special liturgies. If you are interested in becoming an Altar Server or have a child that is interested, contact Joseph Nguyen for further information.",
+   "description": "Young people of our parish are invited to assist at weekend masses and special liturgies. If you are interested in becoming an Altar Server or have a child that is interested, contact [name withheld] for further information.",
    "contact_url": "https://www.allsaintscatholicparish.org/contact",
    "contact_role": "parish office (see contact page)",
    "source_url": "https://www.allsaintscatholicparish.org/ministries",
@@ -510,6 +510,26 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()",
+  "contacts_removed": 0,
+  "names_withheld": 1
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:58+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "secretary@allsaintscatholicparish.org",
   "phone": "(303) 922-3758",
@@ -522,9 +542,5 @@
   },
   "fetched_at": "2026-11-01T05:11:01+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()",
-  "intentions_withheld": 1
  }
 }

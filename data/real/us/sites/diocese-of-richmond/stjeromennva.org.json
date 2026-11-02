@@ -69,6 +69,12 @@
    "url": "https://stjeromennva.org/welcome/parish-calendar/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stjeromennva.org/faith-formation/adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -234,6 +240,111 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "19:00",
+   "language": null,
+   "raw": "We hold Adoration on the first Thursday each month beginning after daily Mass and lasting through 7:00 p.m.",
+   "source_url": "https://stjeromennva.org/faith-formation/adoration/",
+   "fetched_at": "2026-11-02T04:41:50+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "daily",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "19:00",
+   "language": null,
+   "raw": "We hold Adoration on the first Thursday each month beginning after daily Mass and lasting through 7:00 p.m.",
+   "source_url": "https://stjeromennva.org/faith-formation/adoration/",
+   "fetched_at": "2026-11-02T04:41:50+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "daily",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "19:00",
+   "language": null,
+   "raw": "We hold Adoration on the first Thursday each month beginning after daily Mass and lasting through 7:00 p.m.",
+   "source_url": "https://stjeromennva.org/faith-formation/adoration/",
+   "fetched_at": "2026-11-02T04:41:50+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "daily",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "19:00",
+   "language": null,
+   "raw": "We hold Adoration on the first Thursday each month beginning after daily Mass and lasting through 7:00 p.m.",
+   "source_url": "https://stjeromennva.org/faith-formation/adoration/",
+   "fetched_at": "2026-11-02T04:41:50+00:00",
+   "needs_review": true,
+   "review_reason": "nth_of_month",
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "daily",
+   "nth": "first",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "19:00",
+   "language": null,
+   "raw": "We hold Adoration on the first Thursday each month beginning after daily Mass and lasting through 7:00 p.m.",
+   "source_url": "https://stjeromennva.org/faith-formation/adoration/",
+   "fetched_at": "2026-11-02T04:41:50+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "daily",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "19:00",
+   "language": null,
+   "raw": "We hold Adoration on the first Thursday each month beginning after daily Mass and lasting through 7:00 p.m.",
+   "source_url": "https://stjeromennva.org/faith-formation/adoration/",
+   "fetched_at": "2026-11-02T04:41:50+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "daily",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Thursday",
+   "time": "16:30-17:30",
+   "language": null,
+   "raw": "During our Adoration Thursdays the sacrament of reconciliation is offered from 4:30 p.m. – 5:30 p.m.",
+   "source_url": "https://stjeromennva.org/faith-formation/adoration/",
+   "fetched_at": "2026-11-02T04:41:50+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "http://www.stjeromennva.org/",
@@ -271,8 +382,30 @@
   "excluded_by_reason": {}
  },
  "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()",
-  "names_withheld": 0,
-  "contacts_removed": 1
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "on Saturdays from 3:30 PM through 4:30 PM or by appointment. The parish office number is .",
+   "phrase": "by appointment",
+   "source_url": "https://stjeromennva.org/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:49+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:50+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 7,
+  "mode": "merge"
  }
 }

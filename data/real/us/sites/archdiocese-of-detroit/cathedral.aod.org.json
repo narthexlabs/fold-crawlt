@@ -78,6 +78,12 @@
    "url": "https://cathedral.aod.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://cathedral.aod.org/sacraments/reconciliation/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -304,6 +310,20 @@
    "review_reason": null,
    "confidence": "high",
    "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "First Sunday of the month",
+   "time": "10:00",
+   "language": null,
+   "raw": "The Sacrament of Reconciliation is offered on the first Sunday of every month before Mass from 10 AM till 10:45 AM.",
+   "source_url": "https://cathedral.aod.org/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:49+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "http://www.cathedral.aod.org/",
@@ -347,5 +367,19 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:59+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

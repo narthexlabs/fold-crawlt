@@ -84,6 +84,97 @@
  },
  "schedule_rows": [
   {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "09:00",
+   "language": null,
+   "raw": "new daily Mass schedule:: Monday - St. Bartholomew - 9 AM",
+   "source_url": "https://www.stbartsnorwich.com/",
+   "fetched_at": "2026-11-01T17:21:38+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "09:00",
+   "language": null,
+   "raw": "new daily Mass schedule:: Tuesday - St. Malachy - 9 AM",
+   "source_url": "https://www.stbartsnorwich.com/",
+   "fetched_at": "2026-11-01T17:21:38+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "09:00",
+   "language": null,
+   "raw": "new daily Mass schedule:: Wednesday - St. Theresa - 9 AM",
+   "source_url": "https://www.stbartsnorwich.com/",
+   "fetched_at": "2026-11-01T17:21:38+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "09:00",
+   "language": null,
+   "raw": "new daily Mass schedule:: Friday - St. Paul - 9 AM",
+   "source_url": "https://www.stbartsnorwich.com/",
+   "fetched_at": "2026-11-01T17:21:38+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Tuesday",
+   "time": "18:00-19:00",
+   "language": null,
+   "raw": "Opportunities for confession:: Tuesdays, 6—7 PM (with Adoration)",
+   "source_url": "https://www.stbartsnorwich.com/",
+   "fetched_at": "2026-11-01T17:21:38+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:00",
+   "language": null,
+   "raw": "St. Theresa’s: After these Masses:: Sundays at 11 AM;",
+   "source_url": "https://www.stbartsnorwich.com/",
+   "fetched_at": "2026-11-01T17:21:38+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "17:30",
+   "language": null,
+   "raw": "St. Theresa’s: After these Masses:: Mondays at 5:30 PM &",
+   "source_url": "https://www.stbartsnorwich.com/",
+   "fetched_at": "2026-11-01T17:21:38+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
    "kind": "confession",
    "day": "Saturday",
    "time": "15:15-15:45",
@@ -98,7 +189,7 @@
   },
   {
    "kind": "mass",
-   "day": "Saturday",
+   "day": "Saturday (winter, oct-mar)",
    "time": "16:00",
    "language": null,
    "raw": "Saturday (Vigil) - 4:00 PM (October - March)",
@@ -124,19 +215,6 @@
    "template": "generic_strict"
   },
   {
-   "kind": "mass",
-   "day": "Tuesday",
-   "time": "09:00",
-   "language": null,
-   "raw": "Weekday Mass:: Tuesday - 9:00 AM",
-   "source_url": "https://www.stbartsnorwich.com/mass-schedule.html",
-   "fetched_at": "2026-11-01T17:21:39+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
-  {
    "kind": "other",
    "day": "Holy days",
    "time": "17:30",
@@ -149,6 +227,20 @@
    "confidence": "high",
    "template": "generic_strict",
    "kind_parsed": "mass"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday (winter, oct-mar)",
+   "time": "15:15-15:45",
+   "language": null,
+   "raw": "Sacrament of Reconcilliation: Saturday 3:15 PM - 3:45 PM (October - March)",
+   "source_url": "https://www.stbartsnorwich.com/mass-schedule.html",
+   "fetched_at": "2026-11-01T17:21:39+00:00",
+   "needs_review": true,
+   "review_reason": "seasonal",
+   "confidence": "medium",
+   "template": "generic_strict",
+   "season": "October - March"
   },
   {
    "kind": "mass",
@@ -175,26 +267,23 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
-  },
-  {
-   "kind": "adoration",
-   "day": "Saturday",
-   "time": "09:30-16:00",
-   "language": null,
-   "raw": "Exposition of the Blessed Sacrament continues at St. Paul’s : 9:30 AM to 4:00 PM.",
-   "source_url": "https://www.stbartsnorwich.com/",
-   "fetched_at": "2026-11-01T17:21:38+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
   }
  ],
  "source_url": "https://www.stbartsnorwich.com/",
  "fetched_at": "2026-11-01T17:21:45+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:48+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -208,21 +297,23 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 16
  },
  "has_sunday": true,
  "schedule_dropped": {
   "dated_line": 2,
-  "dated_block": 2,
+  "dated_block": 3,
   "not_a_service": 1,
-  "other_location": 11,
   "implausible_hour": 1,
-  "skipped_section": 1
+  "skipped_section": 1,
+  "other_location": 6,
+  "range_not_a_mass": 1
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

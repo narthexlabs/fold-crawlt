@@ -356,6 +356,33 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Confessions are heard on Saturday afternoons from 3:30 p.m. to 4:30 p.m. or by appointment. A parish penance service is held during both Advent and Lent at announced times.",
+   "phrase": "by appointment",
+   "source_url": "https://www.stmmparish.org/index.php/sacraments/reconciliation",
+   "fetched_at": "2026-11-02T04:43:20+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:21+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "parishoffice@stmmparish.org",
   "phone": "(717) 233-3062",
@@ -368,8 +395,5 @@
   },
   "fetched_at": "2026-11-01T03:58:42+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

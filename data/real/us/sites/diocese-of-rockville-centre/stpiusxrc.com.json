@@ -73,6 +73,12 @@
    "url": "https://www.stpiusxrc.com/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stpiusxrc.com/sacraments",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -534,6 +540,39 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Saturday 3:00-3:45 p.m. or at any time by appointment – call the Parish Office at . Additional times are scheduled before Christmas and Easter.",
+   "phrase": "by appointment",
+   "source_url": "https://www.stpiusxrc.com/sacraments",
+   "fetched_at": "2026-11-02T04:41:49+00:00"
+  },
+  {
+   "kind": "confession",
+   "text": "Celebrated with Mass once a month — for those weakened by age, and chronic ailment, or in preparation for surgery. Also, privately upon request at any time.",
+   "phrase": "upon request",
+   "source_url": "https://www.stpiusxrc.com/sacraments",
+   "fetched_at": "2026-11-02T04:41:49+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:49+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(516) 938-3956",
@@ -545,8 +584,5 @@
   },
   "fetched_at": "2026-11-01T05:10:56+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

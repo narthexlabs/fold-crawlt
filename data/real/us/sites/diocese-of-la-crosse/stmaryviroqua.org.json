@@ -69,6 +69,12 @@
    "url": "https://stmaryviroqua.org/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stmaryviroqua.org/sacraments/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -293,6 +299,34 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Wednesday",
+   "time": "17:45-18:30",
+   "language": null,
+   "raw": "Confessions heard on Wednesday 5:45-6:30 PM, Saturdays 5:45-6:15 PM and Sundays 9:45-10:15 AM",
+   "source_url": "https://stmaryviroqua.org/sacraments/",
+   "fetched_at": "2026-11-02T04:41:59+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "09:45-10:15",
+   "language": null,
+   "raw": "Confessions heard on Wednesday 5:45-6:30 PM, Saturdays 5:45-6:15 PM and Sundays 9:45-10:15 AM",
+   "source_url": "https://stmaryviroqua.org/sacraments/",
+   "fetched_at": "2026-11-02T04:41:59+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "https://stmaryviroqua.org/",
@@ -330,6 +364,24 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:03+00:00",
+  "requests": 3,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "office@abvmviroqua.diolcparish.org",
   "phone": "(608) 637-7711",
@@ -342,8 +394,5 @@
   },
   "fetched_at": "2026-11-01T05:12:14+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

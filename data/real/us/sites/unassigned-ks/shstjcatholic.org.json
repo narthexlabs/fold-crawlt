@@ -95,43 +95,59 @@
  "schedule_rows": [
   {
    "kind": "mass",
-   "day": "Saturday",
+   "day": "Sunday",
    "time": "16:00",
    "language": null,
-   "raw": "Virtual Mass is live Saturday at 4 pm (sometimes Sunday at 10:30 am) or watch the recording later on",
+   "raw": "Weekend Mass: SH 4:00 pm",
    "source_url": "https://www.shstjcatholic.org/",
    "fetched_at": "2026-11-01T17:27:26+00:00",
-   "needs_review": true,
-   "review_reason": "weekend_rescue"
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Weekend Mass: StJ 8:00 am",
+   "source_url": "https://www.shstjcatholic.org/",
+   "fetched_at": "2026-11-01T17:27:26+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
   },
   {
    "kind": "mass",
    "day": "Sunday",
    "time": "10:30",
    "language": null,
-   "raw": "Virtual Mass is live Saturday at 4 pm (sometimes Sunday at 10:30 am) or watch the recording later on",
+   "raw": "Weekend Mass: SH 10:30 am",
    "source_url": "https://www.shstjcatholic.org/",
    "fetched_at": "2026-11-01T17:27:26+00:00",
-   "needs_review": true,
-   "review_reason": "weekend_rescue"
-  },
-  {
-   "kind": "mass",
-   "day": "Sunday",
-   "time": "16:00",
-   "language": null,
-   "raw": "Sunday SH 4:00 pm",
-   "source_url": "https://www.shstjcatholic.org/",
-   "fetched_at": "2026-11-01T17:27:26+00:00",
-   "needs_review": true,
-   "review_reason": "weekend_rescue"
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
   }
  ],
  "source_url": "https://www.shstjcatholic.org/",
  "fetched_at": "2026-11-01T17:27:32+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:38+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -139,26 +155,26 @@
     "counts_ok": true,
     "sunday_not_copied": true,
     "no_daily_on_sunday": true,
-    "mostly_high": true
+    "mostly_high": false
    },
-   "score": "high"
+   "score": "medium"
   },
   "passed_bar": true,
-  "trusted_candidate": true,
+  "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 7
  },
  "has_sunday": true,
  "schedule_dropped": {
   "dated_line": 2,
-  "prose": 2,
-  "weekend_rescue_added": 3
+  "prose": 1
  },
  "groups_dropped": {
   "noise": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

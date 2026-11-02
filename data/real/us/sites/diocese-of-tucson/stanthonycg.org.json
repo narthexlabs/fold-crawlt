@@ -66,6 +66,18 @@
    "url": "https://www.stanthonycg.org/bulletin-print-digital-ad-spaces-available/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stanthonycg.org/reconciliation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stanthonycg.org/catholic-youth-adoration-night/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -567,7 +579,7 @@
    "kind": "mass",
    "day": "Sunday",
    "time": "08:00",
-   "language": null,
+   "language": "English",
    "raw": "MASSES- 6:30AM, 8:00AM and 10:00AM (English), 12:00PM (Spanish), 2:00PM (Spanish)",
    "source_url": "https://www.stanthonycg.org/mass-times/",
    "fetched_at": "2026-11-01T17:28:26+00:00",
@@ -689,13 +701,39 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "18:00-19:00",
+   "language": null,
+   "raw": "Adoration: Every Friday in the Divine Mercy Chapel. 6:00PM – 7:00PM. All youth are invited! 13-17.",
+   "source_url": "https://www.stanthonycg.org/catholic-youth-adoration-night/",
+   "fetched_at": "2026-11-02T04:41:50+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
   }
  ],
  "source_url": "https://www.stanthonycg.org/",
  "fetched_at": "2026-11-01T17:28:42+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:51+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -709,8 +747,18 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 16
+  "trusted_kinds": [],
+  "generic_rows": 26
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Reconciliation is available on Saturdays @ 2:30 pm or by appointment with a priest here at the Parish community. Please call the parish office if you wish to set up a confessional appointment if the S",
+   "phrase": "by appointment",
+   "source_url": "https://www.stanthonycg.org/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:49+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "range_not_a_mass": 1,
@@ -722,8 +770,8 @@
   "sentence": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

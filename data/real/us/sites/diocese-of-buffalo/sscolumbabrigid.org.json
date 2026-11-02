@@ -165,8 +165,8 @@
    "time": "16:00",
    "language": null,
    "raw": "Weekend Mass Times: Saturday 4 p.m.",
-   "source_url": "https://www.sscolumbabrigid.org/mass-times",
-   "fetched_at": "2026-11-01T07:27:51+00:00",
+   "source_url": "https://www.sscolumbabrigid.org/",
+   "fetched_at": "2026-11-01T07:27:50+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -178,8 +178,8 @@
    "time": "09:00",
    "language": "Spanish",
    "raw": "Weekend Mass Times: Sunday 9 a.m. (Spanish)",
-   "source_url": "https://www.sscolumbabrigid.org/mass-times",
-   "fetched_at": "2026-11-01T07:27:51+00:00",
+   "source_url": "https://www.sscolumbabrigid.org/",
+   "fetched_at": "2026-11-01T07:27:50+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -190,9 +190,9 @@
    "day": "Sunday",
    "time": "11:00",
    "language": null,
-   "raw": "Weekend Mass Times: Sunday 11 a.m.",
-   "source_url": "https://www.sscolumbabrigid.org/mass-times",
-   "fetched_at": "2026-11-01T07:27:51+00:00",
+   "raw": "Weekend Mass Times: Sunday 11 a. m.",
+   "source_url": "https://www.sscolumbabrigid.org/",
+   "fetched_at": "2026-11-01T07:27:50+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -210,13 +210,51 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wix"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "20:00",
+   "language": null,
+   "raw": "Holy Saturday Mass - Saturday, April 4 at Blessed Trinity Church at 8 pm.",
+   "source_url": "https://www.sscolumbabrigid.org/mass-times",
+   "fetched_at": "2026-11-01T07:27:51+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wix",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "10:00",
+   "language": null,
+   "raw": "Easter Sunday Mass - Sunday, April 5 at 10 am",
+   "source_url": "https://www.sscolumbabrigid.org/mass-times",
+   "fetched_at": "2026-11-01T07:27:51+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wix",
+   "kind_parsed": "mass"
   }
  ],
  "source_url": "https://www.sscolumbabrigid.org/",
  "fetched_at": "2026-11-01T07:27:55+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:38+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "wix",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -230,17 +268,20 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 10
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 6,
+  "dated_line": 1,
+  "other_location": 2,
+  "not_a_service": 1,
   "skipped_section": 5
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

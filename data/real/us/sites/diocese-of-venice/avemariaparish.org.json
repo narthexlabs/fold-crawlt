@@ -75,6 +75,12 @@
    "url": "https://www.avemariaparish.org/sunday-mass-live-stream",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.avemariaparish.org/parish-holy-hours",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -655,6 +661,36 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wix"
+  },
+  {
+   "kind": "adoration",
+   "day": "Monday",
+   "time": "18:30",
+   "language": null,
+   "raw": "MONDAYS - Exposition of the Most Blessed Sacrament, beginning at 6:30 pm",
+   "source_url": "https://www.avemariaparish.org/parish-holy-hours",
+   "fetched_at": "2026-11-02T04:42:03+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wix",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Additionally, following Benediction every Friday during Holy: The crucifix must be returned to the sacristy on the following Friday or before the 5:00 PM Mass on Saturday.",
+   "source_url": "https://www.avemariaparish.org/parish-holy-hours",
+   "fetched_at": "2026-11-02T04:42:03+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wix",
+   "relative": "before",
+   "note": "Additionally, following Benediction every Friday during Holy: The crucifix must be returned to the sacristy on the follo",
+   "topup": true
   }
  ],
  "source_url": "https://www.avemariaparish.org/",
@@ -696,5 +732,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:03+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
  }
 }

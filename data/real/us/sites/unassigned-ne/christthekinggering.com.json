@@ -284,6 +284,107 @@
  },
  "schedule_rows": [
   {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Weekend Mass: Saturday - 5:00 pm Sunday - 10:30 am",
+   "source_url": "https://christthekinggering.com/",
+   "fetched_at": "2026-11-01T17:26:56+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:30",
+   "language": null,
+   "raw": "Weekend Mass: Saturday - 5:00 pm Sunday - 10:30 am",
+   "source_url": "https://christthekinggering.com/",
+   "fetched_at": "2026-11-01T17:26:56+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:00",
+   "language": null,
+   "raw": "Confession - Saturday 3:00 pm",
+   "source_url": "https://christthekinggering.com/",
+   "fetched_at": "2026-11-01T17:26:56+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Daily Mass: Tuesday through Friday - 5:00 pm",
+   "source_url": "https://christthekinggering.com/",
+   "fetched_at": "2026-11-01T17:26:56+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Tuesday through Friday"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Daily Mass: Tuesday through Friday - 5:00 pm",
+   "source_url": "https://christthekinggering.com/",
+   "fetched_at": "2026-11-01T17:26:56+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Tuesday through Friday",
+   "day_parsed": "Tuesday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Daily Mass: Tuesday through Friday - 5:00 pm",
+   "source_url": "https://christthekinggering.com/",
+   "fetched_at": "2026-11-01T17:26:56+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Tuesday through Friday",
+   "day_parsed": "Tuesday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Daily Mass: Tuesday through Friday - 5:00 pm",
+   "source_url": "https://christthekinggering.com/",
+   "fetched_at": "2026-11-01T17:26:56+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Tuesday through Friday",
+   "day_parsed": "Tuesday",
+   "day_bound_from_line": true
+  },
+  {
    "kind": "adoration",
    "day": "Friday",
    "time": "16:00",
@@ -385,48 +486,23 @@
    "day_expanded_from": "Daily",
    "day_parsed": "Monday",
    "day_bound_from_line": true
-  },
-  {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "15:00",
-   "language": null,
-   "raw": "Confession - Saturday 3:00 pm",
-   "source_url": "https://christthekinggering.com/",
-   "fetched_at": "2026-11-01T17:26:56+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "generic_strict"
-  },
-  {
-   "kind": "mass",
-   "day": "Saturday",
-   "time": "17:00",
-   "language": null,
-   "raw": "Saturday - 5:00 pm Sunday -",
-   "source_url": "https://christthekinggering.com/",
-   "fetched_at": "2026-11-01T17:26:56+00:00",
-   "needs_review": true,
-   "review_reason": "weekend_rescue"
-  },
-  {
-   "kind": "mass",
-   "day": "Sunday",
-   "time": "10:30",
-   "language": null,
-   "raw": "Saturday - 5:00 pm Sunday - 10:30 am",
-   "source_url": "https://christthekinggering.com/",
-   "fetched_at": "2026-11-01T17:26:56+00:00",
-   "needs_review": true,
-   "review_reason": "weekend_rescue"
   }
  ],
  "source_url": "https://christthekinggering.com/",
  "fetched_at": "2026-11-01T17:27:03+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:31+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -434,25 +510,34 @@
     "counts_ok": true,
     "sunday_not_copied": true,
     "no_daily_on_sunday": true,
-    "mostly_high": true
+    "mostly_high": false
    },
-   "score": "high"
+   "score": "medium"
   },
   "passed_bar": true,
-  "trusted_candidate": true,
+  "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 16
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "or by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://christthekinggering.com/",
+   "fetched_at": "2026-11-01T17:26:56+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "not_a_service": 1,
-  "weekend_rescue_added": 2
+  "prose": 1
  },
  "groups_dropped": {
   "unmatched": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

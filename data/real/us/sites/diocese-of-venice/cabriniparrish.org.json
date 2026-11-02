@@ -75,6 +75,12 @@
    "url": "https://www.cabriniparrish.org/event-details?id=2161",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.cabriniparrish.org/adorationa98037f8",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -338,6 +344,20 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "09:00-17:30",
+   "language": null,
+   "raw": "Adoration of the Blessed Sacrament Wednesday's from 9:00am to 5:30pm",
+   "source_url": "https://www.cabriniparrish.org/adorationa98037f8",
+   "fetched_at": "2026-11-02T04:42:02+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "topup": true
   }
  ],
  "source_url": "http://cabriniparrish.org/",
@@ -379,5 +399,29 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Other By Appointment",
+   "phrase": "By Appointment",
+   "source_url": "https://www.cabriniparrish.org/sacraments-2-0",
+   "fetched_at": "2026-11-02T04:42:02+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:03+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

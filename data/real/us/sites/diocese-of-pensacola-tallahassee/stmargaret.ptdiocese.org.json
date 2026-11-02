@@ -33,6 +33,18 @@
    "url": "https://stmargaret.ptdiocese.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stmargaret.ptdiocese.org/reconciliation/",
+   "status": 504,
+   "class": "http_5xx"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stmargaret.ptdiocese.org/adoration/",
+   "status": 504,
+   "class": "http_5xx"
   }
  ],
  "cms_guess": {
@@ -123,9 +135,19 @@
  ],
  "source_url": "https://stmargaret.ptdiocese.org/",
  "fetched_at": "2026-11-02T00:06:17+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:20+00:00",
+  "requests": 2,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -139,6 +161,7 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 3
  },
  "has_sunday": true,

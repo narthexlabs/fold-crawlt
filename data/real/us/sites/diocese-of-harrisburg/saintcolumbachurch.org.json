@@ -69,6 +69,12 @@
    "url": "https://saintcolumbachurch.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://saintcolumbachurch.org/reconciliation/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -518,6 +524,34 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "07:30",
+   "language": null,
+   "raw": "* Flame of Love Rosary/Adoration: 7:30 am",
+   "source_url": "https://saintcolumbachurch.org/mass-times/",
+   "fetched_at": "2026-11-02T04:43:20+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "06:30",
+   "language": null,
+   "raw": "* Flame of Love Rosary/Adoration: 6:30 am",
+   "source_url": "https://saintcolumbachurch.org/mass-times/",
+   "fetched_at": "2026-11-02T04:43:20+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "http://www.saintcolumbachurch.org/",
@@ -558,6 +592,24 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:20+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(570) 784-0801",
@@ -569,8 +621,5 @@
   },
   "fetched_at": "2026-11-01T03:58:54+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

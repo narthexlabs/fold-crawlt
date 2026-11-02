@@ -75,6 +75,18 @@
    "url": "https://www.churchofpresentation.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.churchofpresentation.org/reconciliation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.churchofpresentation.org/eucharistic-adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -196,6 +208,20 @@
    "review_reason": null,
    "confidence": "low",
    "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "16:00",
+   "language": null,
+   "raw": "Adoration: *In July & August, the closing time is 4pm.",
+   "source_url": "https://www.churchofpresentation.org/eucharistic-adoration/",
+   "fetched_at": "2026-11-02T04:47:48+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "https://www.churchofpresentation.org/",
@@ -237,5 +263,30 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": ", and at other times by appointment with either of our priests.",
+   "phrase": "by appointment",
+   "source_url": "https://www.churchofpresentation.org/reconciliation/",
+   "fetched_at": "2026-11-02T04:47:47+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:47:49+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

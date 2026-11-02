@@ -75,6 +75,12 @@
    "url": "https://www.littleflowerbh.org/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.littleflowerbh.org/adoration-blessed-sacrament",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -299,6 +305,22 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wix"
+  },
+  {
+   "kind": "adoration",
+   "day": "First Friday of the month",
+   "time": "09:00",
+   "language": null,
+   "raw": "Adoration of the Blessed Sacrament: Join us on the First Fridays after 9 am Mass until 10:30 am",
+   "source_url": "https://www.littleflowerbh.org/adoration-blessed-sacrament",
+   "fetched_at": "2026-11-02T04:47:50+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wix",
+   "relative": "after",
+   "note": "Adoration of the Blessed Sacrament: Join us on the First Fridays after 9 am Mass until 10:30 am",
+   "topup": true
   }
  ],
  "source_url": "https://www.littleflowerbh.org/",
@@ -342,5 +364,30 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "or by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://www.littleflowerbh.org/mass-confession-and-open-prayer",
+   "fetched_at": "2026-11-02T04:47:48+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:47:52+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

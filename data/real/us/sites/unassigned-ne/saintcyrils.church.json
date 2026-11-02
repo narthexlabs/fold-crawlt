@@ -61,6 +61,12 @@
    "url": "https://saintcyrils.church/discover/bulletins/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://saintcyrils.church/discover/liturgy/adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -783,13 +789,38 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Last Sunday of the month",
+   "time": "09:30",
+   "language": null,
+   "raw": "Ages 5 to 12. The group sings at the 9:30 am Holy Mass, the last Sunday and for special events.",
+   "source_url": "https://saintcyrils.church/ministries/worship-ministries/",
+   "fetched_at": "2026-11-01T17:27:00+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
   }
  ],
  "source_url": "https://saintcyrils.church/",
  "fetched_at": "2026-11-01T17:27:05+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:33+00:00",
+  "requests": 1,
+  "found": [
+   "adoration"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -803,21 +834,21 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 37
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "no_day": 8,
-  "other_location": 6,
-  "dated_block": 2,
-  "not_a_service": 3
+  "no_day": 10,
+  "dated_block": 8,
+  "relative_time": 1
  },
  "groups_dropped": {
   "unmatched": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

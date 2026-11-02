@@ -52,6 +52,18 @@
    "url": "https://stthomastheapostle.church/index.php",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stthomastheapostle.church/index.php",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stthomastheapostle.church/index.php",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -277,9 +289,22 @@
  ],
  "source_url": "https://stthomastheapostle.church/",
  "fetched_at": "2026-11-01T20:25:38+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:16+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -293,8 +318,18 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 4
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Saturday from 3:30-4 p.m. (where Saturday Mass is celebrated); or by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://stthomastheapostle.church/",
+   "fetched_at": "2026-11-01T20:25:35+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "prose": 1

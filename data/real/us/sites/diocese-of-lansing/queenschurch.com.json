@@ -78,6 +78,18 @@
    "url": "https://queenschurch.com/parishioner-contact-update/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://queenschurch.com/sacraments/reconciliation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://queenschurch.com/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -225,85 +237,16 @@
  },
  "schedule_rows": [
   {
-   "kind": "mass",
-   "day": "Monday",
-   "time": "09:00",
-   "language": null,
-   "raw": "Weekday Masses: 9:00 am",
-   "source_url": "https://queenschurch.com/mass-times/",
-   "fetched_at": "2026-11-01T22:15:48+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress",
-   "day_expanded_from": "Monday & Friday"
-  },
-  {
-   "kind": "mass",
-   "day": "Friday",
-   "time": "09:00",
-   "language": null,
-   "raw": "Weekday Masses: 9:00 am",
-   "source_url": "https://queenschurch.com/mass-times/",
-   "fetched_at": "2026-11-01T22:15:48+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress",
-   "day_expanded_from": "Monday & Friday"
-  },
-  {
-   "kind": "mass",
-   "day": "Tuesday",
-   "time": "06:45",
-   "language": null,
-   "raw": "Weekday Masses: 6:45 am",
-   "source_url": "https://queenschurch.com/mass-times/",
-   "fetched_at": "2026-11-01T22:15:48+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress",
-   "day_expanded_from": "Tuesday & Thursday"
-  },
-  {
-   "kind": "mass",
-   "day": "Thursday",
-   "time": "06:45",
-   "language": null,
-   "raw": "Weekday Masses: 6:45 am",
-   "source_url": "https://queenschurch.com/mass-times/",
-   "fetched_at": "2026-11-01T22:15:48+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress",
-   "day_expanded_from": "Tuesday & Thursday"
-  },
-  {
-   "kind": "mass",
-   "day": "Wednesday",
-   "time": "18:00",
-   "language": null,
-   "raw": "Weekday Masses: 6:00 pm",
-   "source_url": "https://queenschurch.com/mass-times/",
-   "fetched_at": "2026-11-01T22:15:48+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress"
-  },
-  {
-   "kind": "mass",
+   "kind": "confession",
    "day": "Saturday",
-   "time": "08:00",
+   "time": "15:30-16:45",
    "language": null,
-   "raw": "Weekday Masses: 8:00 am",
-   "source_url": "https://queenschurch.com/mass-times/",
-   "fetched_at": "2026-11-01T22:15:48+00:00",
+   "raw": "Confessions Saturday 3:30-4:45 p.m. (or by appointment)",
+   "source_url": "https://queenschurch.com/",
+   "fetched_at": "2026-11-01T22:15:47+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "medium",
+   "confidence": "high",
    "template": "wordpress"
   },
   {
@@ -311,12 +254,12 @@
    "day": "Saturday",
    "time": "17:00",
    "language": null,
-   "raw": "Saturday (Vigil): 5:00 pm",
-   "source_url": "https://queenschurch.com/mass-times/",
-   "fetched_at": "2026-11-01T22:15:48+00:00",
+   "raw": "Saturday Vigil Mass, 5 p.m.",
+   "source_url": "https://queenschurch.com/",
+   "fetched_at": "2026-11-01T22:15:47+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "medium",
+   "confidence": "high",
    "template": "wordpress"
   },
   {
@@ -324,9 +267,9 @@
    "day": "Sunday",
    "time": "07:30",
    "language": null,
-   "raw": "Saturday (Vigil): 7:30 am",
-   "source_url": "https://queenschurch.com/mass-times/",
-   "fetched_at": "2026-11-01T22:15:48+00:00",
+   "raw": "Mass Times: Sunday, 7:30, 9:00 & 11:00 a.m. (livestreamed)",
+   "source_url": "https://queenschurch.com/",
+   "fetched_at": "2026-11-01T22:15:47+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -337,9 +280,9 @@
    "day": "Sunday",
    "time": "09:00",
    "language": null,
-   "raw": "Saturday (Vigil): 9:00 am",
-   "source_url": "https://queenschurch.com/mass-times/",
-   "fetched_at": "2026-11-01T22:15:48+00:00",
+   "raw": "Mass Times: Sunday, 7:30, 9:00 & 11:00 a.m. (livestreamed)",
+   "source_url": "https://queenschurch.com/",
+   "fetched_at": "2026-11-01T22:15:47+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -350,22 +293,87 @@
    "day": "Sunday",
    "time": "11:00",
    "language": null,
-   "raw": "Saturday (Vigil): 11:00 am (livestreamed)",
-   "source_url": "https://queenschurch.com/mass-times/",
-   "fetched_at": "2026-11-01T22:15:48+00:00",
+   "raw": "Mass Times: Sunday, 7:30, 9:00 & 11:00 a.m. (livestreamed)",
+   "source_url": "https://queenschurch.com/",
+   "fetched_at": "2026-11-01T22:15:47+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
   },
   {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "15:30-17:00",
+   "kind": "mass",
+   "day": "Monday",
+   "time": "09:00",
    "language": null,
-   "raw": "Confessions: 3:30 pm - 5:00 pm (other times available by appointment)",
-   "source_url": "https://queenschurch.com/mass-times/",
-   "fetched_at": "2026-11-01T22:15:48+00:00",
+   "raw": "Mass Times: Monday, 9:00 a.m.",
+   "source_url": "https://queenschurch.com/",
+   "fetched_at": "2026-11-01T22:15:47+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "06:45",
+   "language": null,
+   "raw": "Mass Times: Tuesday, 6:45 a.m.",
+   "source_url": "https://queenschurch.com/",
+   "fetched_at": "2026-11-01T22:15:47+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "18:00",
+   "language": null,
+   "raw": "Mass Times: Wednesday, 6:00 p.m.",
+   "source_url": "https://queenschurch.com/",
+   "fetched_at": "2026-11-01T22:15:47+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "06:45",
+   "language": null,
+   "raw": "Mass Times: Thursday, 6:45 a.m.",
+   "source_url": "https://queenschurch.com/",
+   "fetched_at": "2026-11-01T22:15:47+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Mass Times: Friday, 9:00 a.m.",
+   "source_url": "https://queenschurch.com/",
+   "fetched_at": "2026-11-01T22:15:47+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Mass Times: Saturday, 8:00 a.m.",
+   "source_url": "https://queenschurch.com/",
+   "fetched_at": "2026-11-01T22:15:47+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -374,9 +382,21 @@
  ],
  "source_url": "https://queenschurch.com/",
  "fetched_at": "2026-11-01T22:15:57+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:49+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -390,13 +410,26 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 24
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Confessions Saturday 3:30-4:45 p.m. (or by appointment)",
+   "phrase": "by appointment",
+   "source_url": "https://queenschurch.com/",
+   "fetched_at": "2026-11-01T22:15:47+00:00"
+  }
+ ],
  "has_sunday": true,
+ "schedule_dropped": {
+  "no_day": 3
+ },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

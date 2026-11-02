@@ -57,6 +57,12 @@
    "url": "https://ourladyofpurgatory.org/parish-contact-information-address-map/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://ourladyofpurgatory.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -115,9 +121,19 @@
  ],
  "source_url": "https://www.ourladyofpurgatory.org/",
  "fetched_at": "2026-11-01T22:15:32+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:41+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -131,13 +147,23 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 2
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "In order to provide greater availability, the Mystery of Reconciliation is normally celebrated one half hour before Divine Liturgy and by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://ourladyofpurgatory.org/sacraments/",
+   "fetched_at": "2026-11-01T22:15:27+00:00"
+  }
+ ],
  "has_sunday": true,
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

@@ -33,7 +33,8 @@ import crawled_mass_schedule as cms_rows  # noqa: E402
 import parish_sites as ps  # noqa: E402
 from privacy import redact, screen, strip_contacts  # noqa: E402
 
-TEMPLATE_VERSION = "ca-sites/2"  # 2: schedules from the per-platform templates (Phase B, 2026-10-31)
+TEMPLATE_VERSION = "ca-sites/3"  # 2: schedules from the per-platform templates (Phase B, 2026-10-31); 3: confession /
+# adoration / liturgy pages, "(except ...)" notes, relative times kept for review, schedule_notes, calendar rows (2026-11-01)
 
 _orig_meets = bg.meets_from_text
 
@@ -823,8 +824,8 @@ def has_sunday(rows: list[dict]) -> bool:
     for r in rows:
         if r.get("kind") != "mass":
             continue
-        if r.get("day") == "Sunday":
-            return True
+        if r.get("day") == "Sunday" or re.fullmatch(r".+ Sunday of the month", r.get("day") or ""):
+            return True                   # alternating Sundays ("First and Third Sunday of the month") are Sunday Masses
         if r.get("day") == "Saturday" and ((r.get("time") or "") >= "14:00" or re.search(r"vigil|anticipat", r.get("raw") or "", re.I)):
             return True
     return False
@@ -1033,7 +1034,7 @@ def box_rows(pages: list[Page], key: str, home: str, today: str, names: list[str
 
 
 def weekend_masses(rows: list[dict]) -> int:
-    return sum(1 for r in rows if r.get("kind") == "mass" and (r.get("day") == "Sunday" or (
+    return sum(1 for r in rows if r.get("kind") == "mass" and (r.get("day") == "Sunday" or re.fullmatch(r".+ Sunday of the month", r.get("day") or "") or (
         r.get("day") == "Saturday" and ((r.get("time") or "") >= "14:00" or re.search(r"vigil|anticipat", r.get("raw") or "", re.I)))))
 
 
@@ -1770,6 +1771,8 @@ def parse_site(site_dir: Path, m: dict, info: dict, today: str) -> dict:
     }
     if m.get("redirected_off_host"):
         rec["redirected_off_host"] = m["redirected_off_host"]
+    if m.get("topup"):
+        rec["topup"] = m["topup"]          # fetch_site.Site.topup: the new page kinds were looked for (run_state.py topup)
     if not pages:
         rec["cms_guess"] = {"cms": "unknown", "evidence": []}
         return rec
@@ -1787,7 +1790,14 @@ def parse_site(site_dir: Path, m: dict, info: dict, today: str) -> dict:
     rows = row_hygiene(rows, sched_dropped)
     rows = merge_box_rows(rows, pages, key, home_url, today, info.get("names"), sched_dropped)
     rows = add_weekend_rescue(rows, pages, sched_dropped)
+    rows = resolve_relative(rows)
     rec["schedule_rows"] = rows
+    notes = schedule_notes(pages)
+    if notes:
+        rec["schedule_notes"] = notes
+    none = schedule_none(pages)
+    if none:
+        rec["schedule_none"] = none
     rec["has_sunday"] = has_sunday(rows)
     if rows and not rec["has_sunday"]:
         rec["schedule_partial"] = True
@@ -1805,6 +1815,145 @@ def parse_site(site_dir: Path, m: dict, info: dict, today: str) -> dict:
         rec["office_contact"] = oc
     rec["_pages"] = pages          # for events.py (feed discovery); removed before writing
     return rec
+
+
+# ------------------------------------------------------------------------------------------------ schedule notes
+# Confession / adoration offered without a weekly clock time: "by appointment", "30 minutes before each Mass", "call the
+# office". Not rows (no time to show or rank by): kept as rec["schedule_notes"], one per kind and phrase, with the page.
+NOTE_RX = re.compile(r"\bby appointment\b|\bby appt\.?|\bupon request\b|\bon request\b|\bby request\b|"
+                     r"\bcita previa\b|\bcon cita\b|\bpor cita\b|\b(?:\d{1,2}|fifteen|twenty|thirty|forty[- ]five)\s*(?:-\s*)?"
+                     r"min(?:ute)?s?\.?\s+(?:before|prior to|preceding|antes de)\s+(?:each|every|all|the|any|our|la|las|cada)?\s*"
+                     r"(?:weekend\s+|weekday\s+|daily\s+|sunday\s+|saturday\s+)?(?:masses|mass|misas?|liturgies|liturgy)\b|"
+                     r"\b(?:before|after) (?:each|every|all) (?:weekend |weekday |daily )?masses?\b|\bantes de (?:cada|todas las) misas?\b", re.I)
+
+
+def schedule_notes(pages: list[Page]) -> list[dict]:
+    out, seen = [], set()
+    for p in pages:
+        if p.kind not in ("home", "mass_times", "confession", "adoration", "liturgy"):
+            continue
+        lines = p.lines
+        for i, ln in enumerate(lines):
+            m = NOTE_RX.search(ln)
+            if not m or len(ln) > 240:
+                continue
+            ctx = " ".join(lines[max(0, i - 2):i + 1])
+            kind = "confession" if RX_CONF.search(ln) else "adoration" if RX_ADOR.search(ln) else \
+                "confession" if RX_CONF.search(ctx) else "adoration" if RX_ADOR.search(ctx) else None
+            if kind is None and p.kind in ("confession", "adoration"):
+                kind = p.kind
+            if kind is None or re.search(r"anoint|baptis|bautiz|wedding|marriage|matrimon|funeral|quincea|intention|blessing", ln, re.I):
+                continue
+            k = (kind, m.group(0).lower())
+            if k in seen:
+                continue
+            seen.add(k)
+            out.append({"kind": kind, "text": strip_contacts(re.sub(r"\s+", " ", ln).strip())[:200], "phrase": m.group(0),
+                        "source_url": p.url, "fetched_at": p.fetched_at})
+    return out[:6]
+
+
+# An explicit "none" ("No Mass on Mondays", "No daily Mass on Saturday", "No hay misa los lunes"): recorded as
+# rec["schedule_none"] so a day without rows reads as stated-none, not as not-collected. Dated or time-bearing lines
+# ("No 8:00 a.m. Mass on Monday, November 2") are one-off notices and are not kept.
+NONE_RX = re.compile(r"^[\W\d]*(?:there\s+(?:is|are)\s+)?no\s+(?:daily\s+|weekday\s+|morning\s+|evening\s+)?(mass(?:es)?|confessions?|adoration)\s+(?:on\s+|is\s+held\s+on\s+)?"
+                     r"((?:mon|tues?|wed(?:nes)?|thu(?:rs)?|fri|satur|sun)(?:day)?s?)\b|^[\W\d]*no\s+hay\s+(misa|confesiones)\s+(?:los|el)\s+"
+                     r"(lunes|martes|mi[eé]rcoles|jueves|viernes|s[aá]bados?|domingos?)\b", re.I)
+ES_DAY = {"lunes": 0, "martes": 1, "miercoles": 2, "miércoles": 2, "jueves": 3, "viernes": 4, "sabado": 5, "sábado": 5, "domingo": 6}
+
+
+def schedule_none(pages: list[Page]) -> list[dict]:
+    from templates import common as C
+    out, seen = [], set()
+    for p in pages:
+        if p.kind not in ("home", "mass_times", "confession", "adoration", "liturgy"):
+            continue
+        for ln in p.lines:
+            m = NONE_RX.search(ln)
+            if not m or len(ln) > 80 or C.times_in(ln) or C.DATE_RX.search(ln) or re.search(r"\bwhen\b|\bif\b|\bduring\b|\bsummer\b", ln, re.I):
+                continue
+            if m.group(1):
+                what, dtok = m.group(1).lower(), m.group(2).lower()
+                d = next((i for i, n in enumerate(DAYN) if n.lower().startswith(dtok[:3])), None)
+            else:
+                what, dtok = m.group(3).lower(), m.group(4).lower().rstrip("s")
+                d = ES_DAY.get(dtok)
+            kind = "mass" if what.startswith(("mass", "misa")) else "confession" if what.startswith("confes") else "adoration"
+            if d is None or (kind, d) in seen:
+                continue
+            seen.add((kind, d))
+            out.append({"kind": kind, "day": DAYN[d], "text": re.sub(r"\s+", " ", ln).strip()[:160], "source_url": p.url,
+                        "fetched_at": p.fetched_at})
+    return out
+
+
+# ------------------------------------------------------------------------------------------------ calendar rows
+# A weekly entry in the parish's own calendar feed (ICS RRULE expanded by the connector, Google / Events Calendar / CCB
+# instances) is a schedule source where no posted schedule lists it (2026-11-01, Matthew). Only weekly recurrences: the same
+# title, weekday and start time on at least three dates, each a week apart (one skipped week allowed), or two or more
+# instances a week apart that the feed itself marks recurring. One-offs stay events. Stored as rec["calendar_schedule_rows"];
+# merge.py labels them 'calendar-<date>', tier 7, below every posted schedule (lib/find.ts sourceTier).
+CAL_KIND = [("confession", re.compile(r"confess|reconcil|penance|confesi|spowied", re.I)),
+            ("adoration", re.compile(r"adorat|adoraci|exposition|holy hour|hora santa", re.I)),
+            ("mass", re.compile(r"\bmass(?:es)?\b|\bmisas?\b|\bdivine liturgy\b|\bmsza\b|th[aá]nh l[eễ]", re.I))]
+CAL_NOT = re.compile(r"rehears|practice|intention|funeral|wedding|memorial|first (?:holy )?communion|confirmation|anoint|"
+                     r"school|class|meeting|ministry|ministers?\b|server|lector|usher|sacristan|training|cancel|\bno\s+(?:mass|misa)|"
+                     r"retreat|prep|ocia|rcia|study|youth|novena|rosary|rosario|choir|coro\b|livestream|bingo|dinner|breakfast", re.I)
+
+
+def calendar_rows(events: list[dict]) -> list[dict]:
+    from collections import defaultdict
+    from datetime import datetime
+    groups: dict = defaultdict(list)
+    for e in events or []:
+        title = (e.get("title") or "").strip()
+        if e.get("all_day") or not e.get("start") or not title or CAL_NOT.search(title):
+            continue
+        kind = next((k for k, rx in CAL_KIND if rx.search(title)), None)
+        if kind is None:
+            continue
+        try:
+            st = datetime.fromisoformat(e["start"])
+            en = datetime.fromisoformat(e["end"]) if e.get("end") else None
+        except ValueError:
+            continue
+        end = en.strftime("%H:%M") if en and en.date() == st.date() and en > st else None
+        norm = re.sub(r"[^a-z0-9]+", " ", title.lower()).strip()
+        groups[(kind, norm, st.weekday(), st.strftime("%H:%M"), end)].append((st, e))
+    out = []
+    for (kind, _, wd, hhmm, end), xs in groups.items():
+        dates = sorted({st.date() for st, _ in xs})
+        gaps = [(b - a).days for a, b in zip(dates, dates[1:])]
+        weekly = (len(dates) >= 3 and all(g in (7, 14) for g in gaps) and sum(g == 7 for g in gaps) >= 2) or (
+            len(dates) >= 2 and all(g == 7 for g in gaps) and all(e.get("recurring") for _, e in xs))
+        if not weekly:
+            continue
+        e0 = xs[0][1]
+        title = e0.get("title") or ""
+        lang = "Spanish" if re.search(r"\bmisa|espa[nñ]ol|spanish|confesiones|hora santa", title, re.I) else None
+        tstr = f"{hhmm}-{end}" if kind != "mass" and end else hhmm
+        why = []
+        mins = int(hhmm[:2]) * 60 + int(hhmm[3:])
+        if not ((5 * 60 if kind == "mass" else 6 * 60) <= mins <= (21 * 60 + 30 if kind == "mass" else 22 * 60)):
+            why.append("implausible_hour")      # a feed in the wrong time zone, or an all-night adoration slot: a person decides
+        if sum(bool(rx.search(title)) for _, rx in CAL_KIND) > 1:
+            why.append("several_kinds")         # "Mass, Adoration and Confession": one entry, which time is which is not stated
+        out.append({"kind": kind, "day": DAYN[wd], "time": tstr, "language": lang,
+                    "raw": f"{title[:120]} (weekly in the parish calendar: {len(dates)} dates, {dates[0].isoformat()} to {dates[-1].isoformat()})",
+                    "source": "calendar", "source_url": e0.get("source_url"), "fetched_at": e0.get("fetched_at"),
+                    "needs_review": bool(why), "review_reason": ",".join(why) or None, "confidence": "medium", "weeks_seen": len(dates)})
+    out.sort(key=lambda r: (r["kind"], DAYN.index(r["day"]), r["time"]))
+    return out[:40]
+
+
+def resolve_relative(rows: list[dict]) -> list[dict]:
+    """A relative row ("Friday after the 8:30 Mass") whose Mass is in the same parse on that day: mark it resolved (the
+    reference is confirmed). It stays needs_review: its own start is not stated."""
+    masses = {(r.get("day"), (r.get("time") or "")[:5]) for r in rows if r.get("kind") == "mass" and not r.get("needs_review")}
+    for r in rows:
+        if r.get("relative"):
+            r["relative_resolved"] = (r.get("day"), (r.get("time") or "")[:5]) in masses
+    return rows
 
 
 def schedule_rows_templated(rec: dict, pages: list[Page], key: str, home: str, today: str, names: list[str] | None,
@@ -1828,6 +1977,7 @@ def schedule_rows_templated(rec: dict, pages: list[Page], key: str, home: str, t
     rec["schedule_template"] = {"template": res["template"], "version": TEMPLATE_VERSION, "parse_quality": q,
                                 "passed_bar": res["template"] in T.PASSED,
                                 "trusted_candidate": T.trusted(res["template"], q),
+                                "trusted_kinds": T.trusted_kinds(res["template"]) if T.trusted(res["template"], q) else [],
                                 "generic_rows": len(gen_rows)}
     return res["rows"], imgs
 

@@ -346,6 +346,36 @@
    "confidence": "medium",
    "template": "generic_strict",
    "kind_parsed": "adoration"
+  },
+  {
+   "kind": "adoration",
+   "day": "Monday",
+   "time": "19:00",
+   "language": null,
+   "raw": "Adoration of the Blessed Sacrament: Every Monday at 7:00 pm and on First Fridays at 5:30 pm - 9:00 pm.",
+   "source_url": "https://stannschurchstatenisland.org/index.php/sacraments/reception-of-the-sacraments",
+   "fetched_at": "2026-11-02T04:41:48+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "note": "except holidays",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "First Friday of the month",
+   "time": "17:30-21:00",
+   "language": null,
+   "raw": "Adoration of the Blessed Sacrament: Every Monday at 7:00 pm and on First Fridays at 5:30 pm - 9:00 pm.",
+   "source_url": "https://stannschurchstatenisland.org/index.php/sacraments/reception-of-the-sacraments",
+   "fetched_at": "2026-11-02T04:41:48+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "note": "except holidays",
+   "topup": true
   }
  ],
  "source_url": "https://stannschurchstatenisland.org/",
@@ -388,5 +418,28 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Saturday 3:15 - 3:50 pm and after the 4:00 pm Mass, also upon request at the Parish Office.",
+   "phrase": "upon request",
+   "source_url": "https://stannschurchstatenisland.org/index.php/sacraments/reception-of-the-sacraments",
+   "fetched_at": "2026-11-02T04:41:48+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:48+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
  }
 }

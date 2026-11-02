@@ -80,6 +80,18 @@
    "url": "https://www.sjcreading.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.sjcreading.org/sacraments/reconciliation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.sjcreading.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -194,7 +206,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-02T00:08:59+00:00",
+    "fetched_at": "2026-11-02T04:52:44+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -295,9 +307,21 @@
  ],
  "source_url": "https://www.sjcreading.org/",
  "fetched_at": "2026-11-01T20:25:22+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:16+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -311,8 +335,18 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 8
+  "trusted_kinds": [],
+  "generic_rows": 9
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Saturdays from 3:00pm – 3:45pm, and also by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://www.sjcreading.org/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:43:15+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "other_location": 5

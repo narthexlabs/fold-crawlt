@@ -67,6 +67,12 @@
    "url": "https://www.stleolafayette.com/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stleolafayette.com/adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -294,7 +300,7 @@
   },
   {
    "kind": "confession",
-   "day": "Saturday",
+   "day": "Saturday (summer, mar-oct)",
    "time": "16:00",
    "language": null,
    "raw": "CONFESSION TIMES: Saturday - 4 pm (Mar-Oct)",
@@ -308,7 +314,7 @@
   },
   {
    "kind": "confession",
-   "day": "Saturday",
+   "day": "Saturday (winter, nov-feb)",
    "time": "15:00",
    "language": null,
    "raw": "CONFESSION TIMES: 3 pm (Nov-Feb)",
@@ -332,13 +338,120 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "squarespace"
+  },
+  {
+   "kind": "adoration",
+   "day": "Sunday",
+   "time": "16:00-17:00",
+   "language": null,
+   "raw": "We follow Jesus by spending time with Him in adoration.: Sunday 4:00-5:00pm",
+   "source_url": "https://www.stleolafayette.com/adoration",
+   "fetched_at": "2026-11-02T04:41:45+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace"
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "17:00-17:30",
+   "language": null,
+   "raw": "We follow Jesus by spending time with Him in adoration.: Tuesday/Thursday 5:00-5:30pm",
+   "source_url": "https://www.stleolafayette.com/adoration",
+   "fetched_at": "2026-11-02T04:41:45+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace",
+   "day_expanded_from": "Tuesday/Thursday"
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "17:00-17:30",
+   "language": null,
+   "raw": "We follow Jesus by spending time with Him in adoration.: Tuesday/Thursday 5:00-5:30pm",
+   "source_url": "https://www.stleolafayette.com/adoration",
+   "fetched_at": "2026-11-02T04:41:45+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace",
+   "day_expanded_from": "Tuesday/Thursday"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "07:00-07:30",
+   "language": null,
+   "raw": "We follow Jesus by spending time with Him in adoration.: Wednesday/Friday 7:00-7:30am",
+   "source_url": "https://www.stleolafayette.com/adoration",
+   "fetched_at": "2026-11-02T04:41:45+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace",
+   "day_expanded_from": "Wednesday/Friday"
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "07:00-07:30",
+   "language": null,
+   "raw": "We follow Jesus by spending time with Him in adoration.: Wednesday/Friday 7:00-7:30am",
+   "source_url": "https://www.stleolafayette.com/adoration",
+   "fetched_at": "2026-11-02T04:41:45+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace",
+   "day_expanded_from": "Wednesday/Friday"
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "06:00",
+   "language": null,
+   "raw": "We are also able to adore Jesus in our adoration chapel from Tuesday 6:00am to Thursday 9pm.",
+   "source_url": "https://www.stleolafayette.com/adoration",
+   "fetched_at": "2026-11-02T04:41:45+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "squarespace"
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "21:00",
+   "language": null,
+   "raw": "We are also able to adore Jesus in our adoration chapel from Tuesday 6:00am to Thursday 9pm.",
+   "source_url": "https://www.stleolafayette.com/adoration",
+   "fetched_at": "2026-11-02T04:41:45+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "squarespace"
   }
  ],
  "source_url": "https://www.stleolafayette.com/",
  "fetched_at": "2026-11-01T17:28:15+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:45+00:00",
+  "requests": 1,
+  "found": [
+   "adoration"
+  ]
+ },
  "schedule_template": {
   "template": "squarespace",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -352,20 +465,22 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 3
+  "trusted_kinds": [],
+  "generic_rows": 5
  },
  "has_sunday": false,
  "schedule_partial": true,
  "schedule_dropped": {
-  "no_kind": 1
+  "no_kind": 1,
+  "no_day": 1
  },
  "groups_dropped": {
   "unmatched": 1,
   "noise": 2
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

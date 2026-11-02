@@ -57,6 +57,18 @@
    "url": "https://annunciationbvmchurch.org/st-nicholas-italian-festival/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://annunciationbvmchurch.org/reconciliation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://annunciationbvmchurch.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -140,9 +152,21 @@
  ],
  "source_url": "https://www.annunciationbvmchurch.org/",
  "fetched_at": "2026-11-02T01:56:14+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:07+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -156,10 +180,21 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 6
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Anytime by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://annunciationbvmchurch.org/reconciliation/",
+   "fetched_at": "2026-11-02T04:43:05+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
+  "no_day": 1,
   "weekend_rescue_added": 2
  },
  "groups_dropped": {

@@ -49,6 +49,12 @@
    "url": "https://ermita.org/news-events/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://ermita.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -99,9 +105,19 @@
  ],
  "source_url": "http://ermita.org/home/",
  "fetched_at": "2026-11-02T01:57:19+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:35+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "godaddy",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -115,6 +131,7 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 0
  },
  "has_sunday": true,

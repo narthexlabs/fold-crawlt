@@ -81,6 +81,12 @@
    "url": "https://sta2.org/church/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://sta2.org/church/eucharistic-adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -4244,6 +4250,22 @@
    "review_reason": null,
    "confidence": "high",
    "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "Saturday (during the school year)",
+   "time": "08:00",
+   "language": null,
+   "raw": "During the school year, Adoration begins after the 8 a.m. school Mass.",
+   "source_url": "https://sta2.org/church/mass-confession/",
+   "fetched_at": "2026-11-02T04:41:51+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "During the school year, Adoration begins after the 8 a.m. school Mass.",
+   "topup": true
   }
  ],
  "source_url": "https://sta2.org/church",
@@ -4294,5 +4316,21 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:53+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

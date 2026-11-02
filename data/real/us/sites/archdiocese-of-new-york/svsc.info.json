@@ -78,6 +78,18 @@
    "url": "https://www.svsc.info/events/young-adult-retreat-2026",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.svsc.info/reconciliation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.svsc.info/weekly-adoration-preaching",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -1022,6 +1034,34 @@
    "review_reason": null,
    "confidence": "low",
    "template": "squarespace"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "18:30-20:00",
+   "language": null,
+   "raw": "Holy Hour: 6:30 - 8 PM",
+   "source_url": "https://www.svsc.info/weekly-adoration-preaching",
+   "fetched_at": "2026-11-02T04:41:37+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "First Friday of the month",
+   "time": "18:30-20:00",
+   "language": null,
+   "raw": "Holy Hour: 6:30 - 8 PM",
+   "source_url": "https://www.svsc.info/weekly-adoration-preaching",
+   "fetched_at": "2026-11-02T04:41:37+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace",
+   "topup": true
   }
  ],
  "source_url": "https://www.svsc.info/",
@@ -1065,7 +1105,21 @@
   "excluded_by_reason": {}
  },
  "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()",
-  "intentions_withheld": 7
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:38+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
  }
 }

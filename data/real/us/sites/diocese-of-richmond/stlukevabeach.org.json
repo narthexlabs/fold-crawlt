@@ -75,6 +75,18 @@
    "url": "https://www.stlukevabeach.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stlukevabeach.org/sacraments/reconciliation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://www.stlukevabeach.org/worship/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -412,6 +424,20 @@
    "confidence": "medium",
    "template": "wordpress",
    "day_expanded_from": "Tuesday – Friday"
+  },
+  {
+   "kind": "confession",
+   "day": "Wednesday",
+   "time": "16:00-17:30",
+   "language": null,
+   "raw": "Confession is offered on by appointment by calling the office or Wednesday evenings at 4PM – 5:30 PM.",
+   "source_url": "https://www.stlukevabeach.org/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:50+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "http://www.stlukevabeach.org/",
@@ -454,5 +480,29 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Confession is offered on by appointment by calling the office or Wednesday evenings at 4PM – 5:30 PM.",
+   "phrase": "by appointment",
+   "source_url": "https://www.stlukevabeach.org/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:50+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:53+00:00",
+  "requests": 3,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

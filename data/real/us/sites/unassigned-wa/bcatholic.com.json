@@ -69,6 +69,18 @@
    "url": "https://www.bcatholic.com/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.bcatholic.com/reconciliation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.bcatholic.com/perpetual-adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -508,7 +520,107 @@
   "text": "Bulletin",
   "source_url": "https://www.bcatholic.com/"
  },
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "18:00",
+   "language": null,
+   "raw": "Mass: Sunday 1:00 AM, 2:00 AM, 4:00 AM, 6:00 PM",
+   "source_url": "https://www.bcatholic.com/perpetual-adoration",
+   "fetched_at": "2026-11-02T04:41:49+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "wix",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Mass: Monday 9:00 AM",
+   "source_url": "https://www.bcatholic.com/perpetual-adoration",
+   "fetched_at": "2026-11-02T04:41:49+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "05:00",
+   "language": null,
+   "raw": "Mass: Thursday 1:00 AM, 2:00 AM, 5:00 AM",
+   "source_url": "https://www.bcatholic.com/perpetual-adoration",
+   "fetched_at": "2026-11-02T04:41:49+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "11:00",
+   "language": null,
+   "raw": "Mass: Saturday 1:00 AM, 11:00 AM, 3:00 PM",
+   "source_url": "https://www.bcatholic.com/perpetual-adoration",
+   "fetched_at": "2026-11-02T04:41:49+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "15:00",
+   "language": null,
+   "raw": "Mass: Saturday 1:00 AM, 11:00 AM, 3:00 PM",
+   "source_url": "https://www.bcatholic.com/perpetual-adoration",
+   "fetched_at": "2026-11-02T04:41:49+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "11:45-15:20",
+   "language": null,
+   "raw": "Adoration is available in the sanctuary every Friday 11:45AM - 3:20PM and on First Fridays 11:45AM - 6:15PM, then after 6:30PM Mass through the night, ending with Benediction at 7:45AM.",
+   "source_url": "https://www.bcatholic.com/perpetual-adoration",
+   "fetched_at": "2026-11-02T04:41:49+00:00",
+   "needs_review": true,
+   "review_reason": "nth_of_month",
+   "confidence": "high",
+   "template": "wix",
+   "nth": "first",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "First Friday of the month",
+   "time": "11:45-18:15",
+   "language": null,
+   "raw": "Adoration is available in the sanctuary every Friday 11:45AM - 3:20PM and on First Fridays 11:45AM - 6:15PM, then after 6:30PM Mass through the night, ending with Benediction at 7:45AM.",
+   "source_url": "https://www.bcatholic.com/perpetual-adoration",
+   "fetched_at": "2026-11-02T04:41:49+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wix",
+   "topup": true
+  }
+ ],
  "source_url": "https://www.bcatholic.com/",
  "fetched_at": "2026-11-01T02:17:59+00:00",
  "schedule_template": {
@@ -563,5 +675,21 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:53+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 7,
+  "mode": "merge"
  }
 }

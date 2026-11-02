@@ -72,6 +72,12 @@
    "url": "https://www.asucatholic.org/bulletin",
    "status": 404,
    "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.asucatholic.org/holy-hour",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -114,7 +120,7 @@
    "display_tz": "America/Phoenix",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:36:06+00:00",
+    "fetched_at": "2026-11-02T04:49:58+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -133,7 +139,7 @@
    "feed_key": "afd3d1fea09d",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:36:08+00:00",
+    "fetched_at": "2026-11-02T04:50:00+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -150,7 +156,7 @@
    "display_tz": "America/Phoenix",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:36:09+00:00",
+    "fetched_at": "2026-11-02T04:50:02+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -169,7 +175,7 @@
    "feed_key": "9375f1f8698c",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:36:11+00:00",
+    "fetched_at": "2026-11-02T04:50:03+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -188,7 +194,7 @@
    "feed_key": "f6dc053872fb",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:36:12+00:00",
+    "fetched_at": "2026-11-02T04:50:04+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -205,7 +211,7 @@
    "display_tz": "America/Phoenix",
    "last_fetch": {
     "status": 404,
-    "fetched_at": "2026-11-01T23:36:13+00:00",
+    "fetched_at": "2026-11-02T04:50:06+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -224,7 +230,7 @@
    "feed_key": "2dcd33eb86c0",
    "last_fetch": {
     "status": 404,
-    "fetched_at": "2026-11-01T23:36:14+00:00",
+    "fetched_at": "2026-11-02T04:50:07+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -249,9 +255,21 @@
  "schedule_rows": [],
  "source_url": "http://www.asucatholic.org/",
  "fetched_at": "2026-11-01T17:28:00+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:43+00:00",
+  "requests": 1,
+  "found": [
+   "adoration"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -265,13 +283,17 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 1
  },
  "has_sunday": false,
+ "schedule_dropped": {
+  "dated_line": 6
+ },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

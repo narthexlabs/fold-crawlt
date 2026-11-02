@@ -3,17 +3,20 @@
  "diocese": "archdiocese-of-philadelphia",
  "matched_church_ids": [
   "brave:NJ|saviour|westmont",
-  "holy-saviour-parish-italian-norristown-pa"
+  "holy-saviour-parish-italian-norristown-pa",
+  "our-lady-of-mount-carmel-church-chapel-of-holy-saviour-parish-norristown-pa"
  ],
  "matched": {
   "directory": [],
   "discovermass": [
    "holy-saviour-parish-italian-norristown-pa",
+   "our-lady-of-mount-carmel-church-chapel-of-holy-saviour-parish-norristown-pa",
    "brave:NJ|saviour|westmont"
   ]
  },
  "names": [
   "Holy Saviour Parish [Italian]",
+  "Our Lady of Mount Carmel Church (Chapel of Holy Saviour Parish)",
   "Holy Saviour"
  ],
  "cities": [
@@ -55,6 +58,18 @@
    "url": "https://www.holysaviour.org/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.holysaviour.org/reconciliation/",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.holysaviour.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -266,9 +281,19 @@
  ],
  "source_url": "https://www.holysaviour.org/",
  "fetched_at": "2026-11-02T01:56:12+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:06+00:00",
+  "requests": 2,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -282,12 +307,13 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 11
  },
  "has_sunday": true,
  "schedule_dropped": {
   "skipped_section": 2,
-  "other_location": 4
+  "prose": 2
  },
  "groups_dropped": {},
  "event_counts": {

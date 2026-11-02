@@ -80,6 +80,12 @@
    "url": "https://www.shcdavenport.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.shcdavenport.org/adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -431,6 +437,76 @@
    "review_reason": null,
    "confidence": "low",
    "template": "squarespace"
+  },
+  {
+   "kind": "adoration",
+   "day": "Sunday",
+   "time": "15:00-22:00",
+   "language": null,
+   "raw": "EUCHARISTIC ADORATION: Sunday: 3:00 pm-10:00 pm",
+   "source_url": "https://www.shcdavenport.org/adoration",
+   "fetched_at": "2026-11-02T04:42:03+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Monday",
+   "time": "18:00-22:00",
+   "language": null,
+   "raw": "EUCHARISTIC ADORATION: Monday: 6:00 pm-10:00 pm",
+   "source_url": "https://www.shcdavenport.org/adoration",
+   "fetched_at": "2026-11-02T04:42:03+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "08:00-17:00",
+   "language": null,
+   "raw": "EUCHARISTIC ADORATION: Tuesday: 8:00 am-5:00 pm",
+   "source_url": "https://www.shcdavenport.org/adoration",
+   "fetched_at": "2026-11-02T04:42:03+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "18:00-22:00",
+   "language": null,
+   "raw": "EUCHARISTIC ADORATION: Wednesday: 6:00 pm-10:00 pm",
+   "source_url": "https://www.shcdavenport.org/adoration",
+   "fetched_at": "2026-11-02T04:42:03+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "08:00-17:00",
+   "language": null,
+   "raw": "EUCHARISTIC ADORATION: Thursday: 8:00 am-5:00 pm",
+   "source_url": "https://www.shcdavenport.org/adoration",
+   "fetched_at": "2026-11-02T04:42:03+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace",
+   "topup": true
   }
  ],
  "source_url": "http://shcdavenport.org/",
@@ -469,5 +545,30 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Saturday’s from 3:00-3:45 pm or anytime by appointment. For more information, contact:",
+   "phrase": "by appointment",
+   "source_url": "https://www.shcdavenport.org/reconciliation",
+   "fetched_at": "2026-11-02T04:42:02+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:04+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 5,
+  "mode": "merge"
  }
 }

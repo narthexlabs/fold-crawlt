@@ -75,6 +75,12 @@
    "url": "https://www.svparish.org/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.svparish.org/spiritual-life/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -556,6 +562,21 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "Sunday",
+   "time": "14:00",
+   "language": null,
+   "raw": "Children’s Rosary Holy Hour:: Second Sunday of each month at 2:00 p.m.",
+   "source_url": "https://www.svparish.org/spiritual-life/",
+   "fetched_at": "2026-11-02T04:43:24+00:00",
+   "needs_review": true,
+   "review_reason": "nth_of_month",
+   "confidence": "medium",
+   "template": "wordpress",
+   "nth": "second",
+   "topup": true
   }
  ],
  "source_url": "http://svparish.org/",
@@ -598,6 +619,24 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:28+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "secretary@svparish.org",
   "phone": "(717) 637-4625",
@@ -610,9 +649,5 @@
   },
   "fetched_at": "2026-11-01T03:59:24+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()",
-  "intentions_withheld": 1
  }
 }

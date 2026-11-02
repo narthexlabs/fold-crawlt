@@ -33,6 +33,18 @@
    "url": "https://saintandrewlithuanianparish.org/events/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://saintandrewlithuanianparish.org/reconciliation/",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://saintandrewlithuanianparish.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -51,19 +63,6 @@
   {
    "kind": "mass",
    "day": "Sunday",
-   "time": "09:00",
-   "language": "English",
-   "raw": "Sunday Mass Schedule: 9:00 AM at the Saint Casimir Worship Site (English)",
-   "source_url": "https://saintandrewlithuanianparish.org/",
-   "fetched_at": "2026-11-02T01:56:06+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress"
-  },
-  {
-   "kind": "mass",
-   "day": "Sunday",
    "time": "11:00",
    "language": "Lithuanian/English",
    "raw": "Sunday Mass Schedule: 11:00 AM at the Saint Andrew Church (Lithuanian and English)",
@@ -77,9 +76,19 @@
  ],
  "source_url": "https://saintandrewlithuanianparish.org/",
  "fetched_at": "2026-11-02T01:56:09+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:07+00:00",
+  "requests": 2,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -93,9 +102,13 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 2
  },
  "has_sunday": true,
+ "schedule_dropped": {
+  "other_location": 1
+ },
  "groups_dropped": {},
  "event_counts": {
   "window_start": "2026-11-02",

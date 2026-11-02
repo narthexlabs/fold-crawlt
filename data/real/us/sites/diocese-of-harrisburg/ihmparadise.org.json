@@ -81,6 +81,12 @@
    "url": "https://www.ihmparadise.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.ihmparadise.org/penance",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -442,6 +448,34 @@
    "confidence": "medium",
    "template": "generic_strict",
    "day_expanded_from": "Tuesday to Friday"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "16:00-16:45",
+   "language": null,
+   "raw": "Confessions are heard Saturdays from 4:00 - 4:45 PM and",
+   "source_url": "https://www.ihmparadise.org/penance",
+   "fetched_at": "2026-11-02T04:43:17+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "07:30-08:00",
+   "language": null,
+   "raw": "Penance: Sundays 7:30-8:00 AM or anytime by appointment by contacting Fr. Miller.",
+   "source_url": "https://www.ihmparadise.org/penance",
+   "fetched_at": "2026-11-02T04:43:17+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
   }
  ],
  "source_url": "http://www.ihmparadise.org/",
@@ -481,6 +515,32 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Sundays 7:30-8:00 AM or anytime by appointment by contacting Fr. Miller.",
+   "phrase": "by appointment",
+   "source_url": "https://www.ihmparadise.org/penance",
+   "fetched_at": "2026-11-02T04:43:17+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:17+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(717) 259-0611",
@@ -492,10 +552,5 @@
   },
   "fetched_at": "2026-11-01T03:58:54+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()",
-  "contacts_removed": 0,
-  "names_withheld": 1
  }
 }

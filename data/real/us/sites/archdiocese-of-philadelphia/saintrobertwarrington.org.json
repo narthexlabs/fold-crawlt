@@ -78,6 +78,18 @@
    "url": "https://saintrobertwarrington.org/ministries/liturgical/altar-servers-contact-information/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://saintrobertwarrington.org/sacraments/penance-and-reconciliation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://saintrobertwarrington.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -354,7 +366,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-02T01:59:02+00:00",
+    "fetched_at": "2026-11-02T04:49:49+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -371,7 +383,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-02T01:59:03+00:00",
+    "fetched_at": "2026-11-02T04:49:51+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -388,7 +400,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-02T01:59:04+00:00",
+    "fetched_at": "2026-11-02T04:49:52+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -405,7 +417,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-02T01:59:06+00:00",
+    "fetched_at": "2026-11-02T04:49:53+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -422,7 +434,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-02T01:59:07+00:00",
+    "fetched_at": "2026-11-02T04:49:55+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -439,7 +451,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-02T01:59:09+00:00",
+    "fetched_at": "2026-11-02T04:49:56+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -456,7 +468,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-02T01:59:10+00:00",
+    "fetched_at": "2026-11-02T04:49:58+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -473,7 +485,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-02T01:59:11+00:00",
+    "fetched_at": "2026-11-02T04:49:59+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -490,7 +502,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-02T01:59:13+00:00",
+    "fetched_at": "2026-11-02T04:50:01+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -617,9 +629,21 @@
  ],
  "source_url": "https://saintrobertwarrington.org/",
  "fetched_at": "2026-11-01T20:25:20+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:08+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -633,8 +657,18 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 9
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Anytime by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://saintrobertwarrington.org/sacraments/penance-and-reconciliation/",
+   "fetched_at": "2026-11-02T04:43:07+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "box_rows_added": 8

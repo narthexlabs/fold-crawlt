@@ -70,6 +70,12 @@
    "url": "https://ihmchurchlafayette.com/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://ihmchurchlafayette.com/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -475,6 +481,19 @@
  },
  "schedule_rows": [
   {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:15-15:45",
+   "language": null,
+   "raw": "Confession: Saturday 3:15 pm-3:45 pm or by Appointment",
+   "source_url": "https://ihmchurchlafayette.com/",
+   "fetched_at": "2026-11-01T17:28:05+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
    "kind": "adoration",
    "day": "Wednesday",
    "time": "17:00",
@@ -710,9 +729,19 @@
  ],
  "source_url": "https://ihmchurchlafayette.com/",
  "fetched_at": "2026-11-01T17:29:25+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:45+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -726,13 +755,22 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 17
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Saturday 3:15 pm-3:45 pm or by Appointment",
+   "phrase": "by Appointment",
+   "source_url": "https://ihmchurchlafayette.com/",
+   "fetched_at": "2026-11-01T17:28:05+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "not_a_service": 1,
-  "relative_time": 1,
-  "prose": 1
+  "relative_time": 1
  },
  "groups_dropped": {
   "noise": 2,
@@ -741,8 +779,8 @@
   "label_not_group": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

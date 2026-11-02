@@ -81,6 +81,18 @@
    "url": "https://www.mmotc.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.mmotc.org/reconciliation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.mmotc.org/adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -539,6 +551,62 @@
    "confidence": "low",
    "template": "generic_strict",
    "kind_parsed": "mass"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "16:30",
+   "language": null,
+   "raw": "Mass: Wednesdays: 4:30 PM, near the Chapel on the Lower Level",
+   "source_url": "https://www.mmotc.org/reconciliation",
+   "fetched_at": "2026-11-02T04:41:34+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Mass: Saturdays: 9:00 AM, Reconciliation Room, Main Church (Upper Lot)",
+   "source_url": "https://www.mmotc.org/reconciliation",
+   "fetched_at": "2026-11-02T04:41:34+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "10:00",
+   "language": null,
+   "raw": "Live Adoration Schedule: Tuesday: 10:00AM-Midnight, Chapel",
+   "source_url": "https://www.mmotc.org/adoration",
+   "fetched_at": "2026-11-02T04:41:36+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "15:00",
+   "language": null,
+   "raw": "Live Adoration Schedule: Wednesday: Midnight-3:00PM, 6:00PM-8:00PM Chapel",
+   "source_url": "https://www.mmotc.org/adoration",
+   "fetched_at": "2026-11-02T04:41:36+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
   }
  ],
  "source_url": "http://www.mmotc.org/",
@@ -580,6 +648,24 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:38+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 4,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(952) 890-0045",
@@ -591,8 +677,5 @@
   },
   "fetched_at": "2026-11-01T03:58:18+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

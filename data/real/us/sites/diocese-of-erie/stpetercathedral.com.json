@@ -500,6 +500,34 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Friday",
+   "time": "16:30-17:00",
+   "language": null,
+   "raw": "Confessions are heard daily Monday, thru Friday from and 4:30 to 5:00 PM. Saturdays after the 8:00 AM Mass, from 3:00 until 3:45 PM and after the 4:00 PM Mass.",
+   "source_url": "https://stpetercathedral.com/sacraments/",
+   "fetched_at": "2026-11-02T04:43:18+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "15:00",
+   "language": null,
+   "raw": "Confessions are heard daily Monday, thru Friday from and 4:30 to 5:00 PM. Saturdays after the 8:00 AM Mass, from 3:00 until 3:45 PM and after the 4:00 PM Mass.",
+   "source_url": "https://stpetercathedral.com/sacraments/",
+   "fetched_at": "2026-11-02T04:43:18+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "http://stpetercathedral.com/",
@@ -542,5 +570,19 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:23+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
  }
 }

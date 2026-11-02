@@ -75,6 +75,12 @@
    "url": "https://www.holyfaithcatholicchurch.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.holyfaithcatholicchurch.org/copy-of-eucharist-2",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -581,6 +587,34 @@
    "review_reason": null,
    "confidence": "high",
    "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Third Tuesday of the month",
+   "time": "09:30",
+   "language": null,
+   "raw": "- Seasonal Reconciliation Services -: by request, 3rd Tuesdays at 9:30am, 1st Fridays at 6pm Healing Mass",
+   "source_url": "https://www.holyfaithcatholicchurch.org/what-is-liturgical-prayer",
+   "fetched_at": "2026-11-02T04:42:10+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "First Friday of the month",
+   "time": "18:00",
+   "language": null,
+   "raw": "- Seasonal Reconciliation Services -: by request, 3rd Tuesdays at 9:30am, 1st Fridays at 6pm Healing Mass",
+   "source_url": "https://www.holyfaithcatholicchurch.org/what-is-liturgical-prayer",
+   "fetched_at": "2026-11-02T04:42:10+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
   }
  ],
  "source_url": "http://www.holyfaithcatholicchurch.org/",
@@ -627,5 +661,29 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "By appointment",
+   "phrase": "By appointment",
+   "source_url": "https://www.holyfaithcatholicchurch.org/copy-of-eucharist-2",
+   "fetched_at": "2026-11-02T04:42:09+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:10+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
  }
 }

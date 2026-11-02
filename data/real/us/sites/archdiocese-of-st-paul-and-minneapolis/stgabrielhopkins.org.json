@@ -63,6 +63,12 @@
    "url": "https://stgabrielhopkins.org/news/weekly-calendar",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stgabrielhopkins.org/worship/adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -379,6 +385,81 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "Monday",
+   "time": "07:00-17:00",
+   "language": null,
+   "raw": "The Adoration Chapel is open to the public 7am-5pm, Monday through Friday.",
+   "source_url": "https://stgabrielhopkins.org/worship/adoration",
+   "fetched_at": "2026-11-02T04:41:39+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday through Friday.",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "07:00-17:00",
+   "language": null,
+   "raw": "The Adoration Chapel is open to the public 7am-5pm, Monday through Friday.",
+   "source_url": "https://stgabrielhopkins.org/worship/adoration",
+   "fetched_at": "2026-11-02T04:41:39+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday through Friday.",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "07:00-17:00",
+   "language": null,
+   "raw": "The Adoration Chapel is open to the public 7am-5pm, Monday through Friday.",
+   "source_url": "https://stgabrielhopkins.org/worship/adoration",
+   "fetched_at": "2026-11-02T04:41:39+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday through Friday.",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "07:00-17:00",
+   "language": null,
+   "raw": "The Adoration Chapel is open to the public 7am-5pm, Monday through Friday.",
+   "source_url": "https://stgabrielhopkins.org/worship/adoration",
+   "fetched_at": "2026-11-02T04:41:39+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday through Friday.",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "07:00-17:00",
+   "language": null,
+   "raw": "The Adoration Chapel is open to the public 7am-5pm, Monday through Friday.",
+   "source_url": "https://stgabrielhopkins.org/worship/adoration",
+   "fetched_at": "2026-11-02T04:41:39+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday through Friday.",
+   "topup": true
   }
  ],
  "source_url": "http://stgabrielhopkins.org/",
@@ -417,6 +498,24 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:39+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 5,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "officereceptionist@stgabrielhopkins.org",
   "phone": null,
@@ -427,8 +526,5 @@
   },
   "fetched_at": "2026-11-01T03:58:04+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

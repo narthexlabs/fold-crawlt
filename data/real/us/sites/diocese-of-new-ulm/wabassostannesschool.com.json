@@ -54,7 +54,7 @@
    "feed_key": "bff35eee4058",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-02T01:56:37+00:00",
+    "fetched_at": "2026-11-02T04:55:45+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -70,41 +70,22 @@
   ]
  },
  "bulletin": null,
- "schedule_rows": [
-  {
-   "kind": "other",
-   "day": "Holy days",
-   "time": "13:45",
-   "language": null,
-   "raw": "Dec. 8 - Holy Day Mass-5th Grade Ministries: Dec. 16 - Christmas Program 1:45 & 7:00",
-   "source_url": "https://wabassostannesschool.com/",
-   "fetched_at": "2026-11-02T01:56:06+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "low",
-   "template": "generic_strict",
-   "kind_parsed": "mass"
-  },
-  {
-   "kind": "other",
-   "day": "Holy days",
-   "time": "07:00",
-   "language": null,
-   "raw": "Dec. 8 - Holy Day Mass-5th Grade Ministries: Dec. 16 - Christmas Program 1:45 & 7:00",
-   "source_url": "https://wabassostannesschool.com/",
-   "fetched_at": "2026-11-02T01:56:06+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "low",
-   "template": "generic_strict",
-   "kind_parsed": "mass"
-  }
- ],
+ "schedule_rows": [],
  "source_url": "http://www.wabassostannesschool.com/",
  "fetched_at": "2026-11-02T01:56:06+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:57+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -118,12 +99,13 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 0
  },
  "has_sunday": false,
- "schedule_partial": true,
  "schedule_dropped": {
-  "dated_line": 3
+  "dated_line": 3,
+  "dated_block": 2
  },
  "groups_dropped": {},
  "event_counts": {

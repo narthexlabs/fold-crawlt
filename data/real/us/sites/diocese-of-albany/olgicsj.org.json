@@ -89,6 +89,12 @@
    "url": "https://www.olgicsj.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.olgicsj.org/reconciliation",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -323,6 +329,80 @@
    "confidence": "low",
    "template": "wix",
    "kind_parsed": "mass"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:00",
+   "language": null,
+   "raw": "The Sacrament of Reconciliation is available at:: St. Joseph's Church | Saturdays at 3:00pm and Mondays at 5:00pm",
+   "source_url": "https://www.olgicsj.org/reconciliation",
+   "fetched_at": "2026-11-02T04:41:45+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Monday",
+   "time": "17:00",
+   "language": null,
+   "raw": "The Sacrament of Reconciliation is available at:: St. Joseph's Church | Saturdays at 3:00pm and Mondays at 5:00pm",
+   "source_url": "https://www.olgicsj.org/reconciliation",
+   "fetched_at": "2026-11-02T04:41:45+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "09:00",
+   "language": null,
+   "raw": "[Our Lady of Grace Church] Our Adoration Schedule: Thursdays following the 9:00 AM Mass",
+   "source_url": "https://www.olgicsj.org/worship-adoration",
+   "fetched_at": "2026-11-02T04:41:46+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wix",
+   "relative": "after",
+   "note": "[Our Lady of Grace Church] Our Adoration Schedule: Thursdays following the 9:00 AM Mass",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Sunday",
+   "time": "09:00-23:00",
+   "language": null,
+   "raw": "[St. Joseph's Church] Our Adoration Schedule: Sundays from 9:00 AM – 11:00 PM",
+   "source_url": "https://www.olgicsj.org/worship-adoration",
+   "fetched_at": "2026-11-02T04:41:46+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "[St. Joseph's Church] Our Adoration Schedule: following the 8:00 AM Sunday Mass",
+   "source_url": "https://www.olgicsj.org/worship-adoration",
+   "fetched_at": "2026-11-02T04:41:46+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wix",
+   "relative": "after",
+   "note": "[St. Joseph's Church] Our Adoration Schedule: following the 8:00 AM Sunday Mass",
+   "topup": true
   }
  ],
  "source_url": "https://www.olgicsj.org/",
@@ -367,5 +447,30 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Our Lady of Grace | By Appointment Only",
+   "phrase": "By Appointment",
+   "source_url": "https://www.olgicsj.org/reconciliation",
+   "fetched_at": "2026-11-02T04:41:45+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:47+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 5,
+  "mode": "merge"
  }
 }

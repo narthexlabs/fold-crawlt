@@ -75,6 +75,18 @@
    "url": "https://www.saintsusannachurch.com/contact-us.html",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.saintsusannachurch.com/reconciliation.html",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.saintsusannachurch.com/eucharistic-adoration.html",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -318,6 +330,22 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "weebly"
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "07:30",
+   "language": null,
+   "raw": "Saint Susanna offers Eucharist Adoration with exposition of the Blessed Sacrament every Friday following the 7:30 am Mass until 6:00 pm in the church.",
+   "source_url": "https://www.saintsusannachurch.com/eucharistic-adoration.html",
+   "fetched_at": "2026-11-02T04:47:53+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "weebly",
+   "relative": "after",
+   "note": "Saint Susanna offers Eucharist Adoration with exposition of the Blessed Sacrament every Friday following the 7:30 am Mas",
+   "topup": true
   }
  ],
  "source_url": "https://www.saintsusannachurch.com/",
@@ -355,6 +383,34 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "The Sacrament of Reconciliation is offered at St. Susanna on Saturday at 10 a.m. or by appointment. To make an appointment, please contact the",
+   "phrase": "by appointment",
+   "source_url": "https://www.saintsusannachurch.com/reconciliation.html",
+   "fetched_at": "2026-11-02T04:47:52+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:47:54+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "info@saintsusanna.com",
   "phone": "(317) 839-3333",
@@ -367,8 +423,5 @@
   },
   "fetched_at": "2026-11-01T09:05:05+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

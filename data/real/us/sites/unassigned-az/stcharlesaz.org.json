@@ -67,6 +67,12 @@
    "url": "https://www.stcharlesaz.org/findus",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stcharlesaz.org/penance",
+   "status": null,
+   "class": "ssl_error"
   }
  ],
  "cms_guess": {
@@ -362,7 +368,7 @@
    "feed_key": "85a2a69a46b6",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:31:28+00:00",
+    "fetched_at": "2026-11-02T04:44:12+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -384,6 +390,19 @@
    "time": "06:30",
    "language": null,
    "raw": "Mass - 6:30 am in Convent",
+   "source_url": "https://www.stcharlesaz.org/",
+   "fetched_at": "2026-11-01T17:27:17+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "devotion",
+   "day": "Tuesday",
+   "time": "16:15",
+   "language": null,
+   "raw": "Rosary - 4:15 pm",
    "source_url": "https://www.stcharlesaz.org/",
    "fetched_at": "2026-11-01T17:27:17+00:00",
    "needs_review": false,
@@ -498,9 +517,19 @@
  ],
  "source_url": "https://www.stcharlesaz.org/",
  "fetched_at": "2026-11-01T17:27:27+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:34+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -514,20 +543,18 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 11
  },
  "has_sunday": true,
- "schedule_dropped": {
-  "not_a_service": 1
- },
  "groups_dropped": {
   "noise": 3,
   "sacrament_prep": 1,
   "sentence": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

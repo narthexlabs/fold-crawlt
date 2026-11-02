@@ -43,6 +43,18 @@
    "url": "https://stmarystaroftheseari.org/upcoming-events/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stmarystaroftheseari.org/reconciliation/",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stmarystaroftheseari.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -77,6 +89,45 @@
   "source_url": "https://stmarystaroftheseari.org/"
  },
  "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "16:00",
+   "language": null,
+   "raw": "Current Mass Schedule: Saturday - 4:00 PM",
+   "source_url": "https://stmarystaroftheseari.org/",
+   "fetched_at": "2026-11-01T17:27:14+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "godaddy"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Current Mass Schedule: Sunday 8:00 AM and 10:30 AM",
+   "source_url": "https://stmarystaroftheseari.org/",
+   "fetched_at": "2026-11-01T17:27:14+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "godaddy"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:30",
+   "language": null,
+   "raw": "Current Mass Schedule: Sunday 8:00 AM and 10:30 AM",
+   "source_url": "https://stmarystaroftheseari.org/",
+   "fetched_at": "2026-11-01T17:27:14+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "godaddy"
+  },
   {
    "kind": "mass",
    "day": "Monday",
@@ -157,19 +208,6 @@
   },
   {
    "kind": "mass",
-   "day": "Saturday",
-   "time": "16:00",
-   "language": null,
-   "raw": "Mass: M - F 8:00AM, SATURDAY - 4:00 PM",
-   "source_url": "https://stmarystaroftheseari.org/mass-schedule/",
-   "fetched_at": "2026-11-01T17:27:16+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "godaddy"
-  },
-  {
-   "kind": "mass",
    "day": "Sunday (winter)",
    "time": "08:00",
    "language": null,
@@ -197,22 +235,33 @@
  ],
  "source_url": "https://stmarystaroftheseari.org/",
  "fetched_at": "2026-11-01T17:27:18+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:42+00:00",
+  "requests": 2,
+  "found": []
+ },
  "schedule_template": {
   "template": "godaddy",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
     "hours_ok": true,
     "counts_ok": true,
     "sunday_not_copied": true,
-    "no_daily_on_sunday": true,
+    "no_daily_on_sunday": false,
     "mostly_high": false
    },
    "score": "medium"
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 4
  },
  "has_sunday": true,
@@ -222,8 +271,8 @@
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

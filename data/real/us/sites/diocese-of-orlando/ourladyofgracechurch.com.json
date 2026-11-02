@@ -81,6 +81,18 @@
    "url": "https://ourladyofgracechurch.com/2contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://ourladyofgracechurch.com/reconciliation-penance/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://ourladyofgracechurch.com/series/exposition-of-the-blessed-sacrament/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -1544,7 +1556,92 @@
   "text": "If our latest bulletins do not appear in the window above you may also find them",
   "source_url": "https://ourladyofgracechurch.com/bulletins/"
  },
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "10:00",
+   "language": null,
+   "raw": "Adoration: 10:00 am",
+   "source_url": "https://ourladyofgracechurch.com/series/exposition-of-the-blessed-sacrament/",
+   "fetched_at": "2026-11-02T04:41:45+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "11:30",
+   "language": null,
+   "raw": "Adoration: 11:30 am",
+   "source_url": "https://ourladyofgracechurch.com/series/exposition-of-the-blessed-sacrament/",
+   "fetched_at": "2026-11-02T04:41:45+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "10:00",
+   "language": null,
+   "raw": "Exposition of the Blessed Sacrament: 10:00 am",
+   "source_url": "https://ourladyofgracechurch.com/series/exposition-of-the-blessed-sacrament/",
+   "fetched_at": "2026-11-02T04:41:45+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "11:30",
+   "language": null,
+   "raw": "Exposition of the Blessed Sacrament: 11:30 am",
+   "source_url": "https://ourladyofgracechurch.com/series/exposition-of-the-blessed-sacrament/",
+   "fetched_at": "2026-11-02T04:41:45+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "10:00",
+   "language": null,
+   "raw": "Exposition of the Blessed Sacrament: 10:00 am",
+   "source_url": "https://ourladyofgracechurch.com/series/exposition-of-the-blessed-sacrament/",
+   "fetched_at": "2026-11-02T04:41:45+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "11:30",
+   "language": null,
+   "raw": "Exposition of the Blessed Sacrament: 11:30 am",
+   "source_url": "https://ourladyofgracechurch.com/series/exposition-of-the-blessed-sacrament/",
+   "fetched_at": "2026-11-02T04:41:45+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  }
+ ],
  "source_url": "http://ourladyofgracechurch.com/",
  "fetched_at": "2026-11-01T02:28:17+00:00",
  "schedule_template": {
@@ -1581,5 +1678,36 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "During the week (by appointment)",
+   "phrase": "by appointment",
+   "source_url": "https://ourladyofgracechurch.com/reconciliation-penance/",
+   "fetched_at": "2026-11-02T04:41:43+00:00"
+  },
+  {
+   "kind": "adoration",
+   "text": "During the week (by appointment)",
+   "phrase": "by appointment",
+   "source_url": "https://ourladyofgracechurch.com/series/exposition-of-the-blessed-sacrament/",
+   "fetched_at": "2026-11-02T04:41:45+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:45+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 6,
+  "mode": "merge"
  }
 }

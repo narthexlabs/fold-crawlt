@@ -69,6 +69,18 @@
    "url": "https://www.tribecatholic.org/bulletin",
    "status": 404,
    "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.tribecatholic.org/adoration",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.tribecatholic.org/reconciliation",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -190,12 +202,12 @@
    "day": "Sunday",
    "time": "11:00",
    "language": null,
-   "raw": "Mass: 11:00 AM",
-   "source_url": "https://www.tribecatholic.org/liturgy-schedule",
-   "fetched_at": "2026-11-01T22:15:45+00:00",
+   "raw": "Mass schedule: 11:00 AM (year round)",
+   "source_url": "https://www.tribecatholic.org/",
+   "fetched_at": "2026-11-01T22:15:42+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "low",
+   "confidence": "medium",
    "template": "wix"
   },
   {
@@ -203,12 +215,12 @@
    "day": "Sunday",
    "time": "17:00",
    "language": null,
-   "raw": "Mass: 5:00 PM",
-   "source_url": "https://www.tribecatholic.org/liturgy-schedule",
-   "fetched_at": "2026-11-01T22:15:45+00:00",
+   "raw": "Mass schedule: 5:00 PM*",
+   "source_url": "https://www.tribecatholic.org/",
+   "fetched_at": "2026-11-01T22:15:42+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "low",
+   "confidence": "medium",
    "template": "wix"
   },
   {
@@ -216,12 +228,12 @@
    "day": "Sunday",
    "time": "21:00",
    "language": null,
-   "raw": "Mass: 9:00 PM",
-   "source_url": "https://www.tribecatholic.org/liturgy-schedule",
-   "fetched_at": "2026-11-01T22:15:45+00:00",
+   "raw": "Mass schedule: 9:00 PM*",
+   "source_url": "https://www.tribecatholic.org/",
+   "fetched_at": "2026-11-01T22:15:42+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "low",
+   "confidence": "medium",
    "template": "wix"
   },
   {
@@ -318,9 +330,21 @@
  ],
  "source_url": "https://www.tribecatholic.org/",
  "fetched_at": "2026-11-01T22:15:50+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:13+00:00",
+  "requests": 2,
+  "found": [
+   "adoration"
+  ]
+ },
  "schedule_template": {
   "template": "wix",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -334,16 +358,26 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 9
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Confession is also available by appointment. Contact",
+   "phrase": "by appointment",
+   "source_url": "https://www.tribecatholic.org/liturgy-schedule",
+   "fetched_at": "2026-11-01T22:15:45+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "range_not_a_mass": 2
+  "range_not_a_mass": 5
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

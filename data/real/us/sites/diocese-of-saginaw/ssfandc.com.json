@@ -249,6 +249,32 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Confessions can be heard 45 minutes prior to each Mass or by appointment.",
+   "phrase": "45 minutes prior to each Mass",
+   "source_url": "https://www.ssfandc.com/faith-formation/sacraments",
+   "fetched_at": "2026-11-02T04:41:45+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:45+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "ssfandcparishoffice@gmail.com",
   "phone": "(989) 624-9098",
@@ -261,8 +287,5 @@
   },
   "fetched_at": "2026-11-01T03:59:54+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

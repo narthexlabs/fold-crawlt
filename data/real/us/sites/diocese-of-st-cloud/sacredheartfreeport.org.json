@@ -70,6 +70,18 @@
    "url": "https://www.sacredheartfreeport.org/parish-calendar",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.sacredheartfreeport.org/adoration",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://www.sacredheartfreeport.org/rosary-schedule",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -245,6 +257,20 @@
    "confidence": "medium",
    "template": "wix",
    "kind_parsed": "confession"
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "09:00-13:00",
+   "language": null,
+   "raw": "[Freeport - Sacred Heart] Adoration: Fridays 9am-1pm, Sacred Heart, Freeport",
+   "source_url": "https://www.sacredheartfreeport.org/adoration",
+   "fetched_at": "2026-11-02T04:42:02+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "topup": true
   }
  ],
  "source_url": "http://www.sacredheartfreeport.org/",
@@ -282,5 +308,30 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Confessions are also available by appointment. Please contact the Tri-Parish Office to schedule a confession time.",
+   "phrase": "by appointment",
+   "source_url": "https://www.sacredheartfreeport.org/mass-and-confession",
+   "fetched_at": "2026-11-02T04:42:00+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:03+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

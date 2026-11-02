@@ -2,15 +2,18 @@
  "domain": "stspeterpaulbcc.com",
  "diocese": "unassigned-pa",
  "matched_church_ids": [
-  "brave:PA|peter and paul braddock|"
+  "brave:PA|peter and paul braddock|",
+  "ss-peter-and-paul-braddock-pa"
  ],
  "matched": {
   "directory": [],
   "discovermass": [
+   "ss-peter-and-paul-braddock-pa",
    "brave:PA|peter and paul braddock|"
   ]
  },
  "names": [
+  "Ss. Peter and Paul",
   "Sts Peter And Paul"
  ],
  "cities": [
@@ -39,6 +42,18 @@
    "url": "https://stspeterpaulbcc.com/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stspeterpaulbcc.com/reconciliation/",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stspeterpaulbcc.com/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -66,9 +81,19 @@
  "schedule_rows": [],
  "source_url": "https://stspeterpaulbcc.com/",
  "fetched_at": "2026-11-01T20:25:37+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:05+00:00",
+  "requests": 2,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -82,13 +107,14 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 0
  },
  "has_sunday": false,
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

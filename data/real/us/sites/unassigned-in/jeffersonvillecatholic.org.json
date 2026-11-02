@@ -81,6 +81,18 @@
    "url": "https://www.jeffersonvillecatholic.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.jeffersonvillecatholic.org/reconciliation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.jeffersonvillecatholic.org/adoration",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -158,7 +170,7 @@
    "note": "Google Calendar public feed (website-builder widget)",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:31:44+00:00",
+    "fetched_at": "2026-11-02T04:50:03+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -174,6 +186,47 @@
   "source_url": "https://www.jeffersonvillecatholic.org/"
  },
  "schedule_rows": [
+  {
+   "kind": "confession",
+   "day": "Tuesday",
+   "time": "16:30-17:15",
+   "language": null,
+   "raw": "Confessions:: 4:30 p.m.-5:15 p.m. on Tuesdays and Wednesdays as well as Saturdays from 2:30-3:30 p.m. at St.",
+   "source_url": "https://www.jeffersonvillecatholic.org/reconciliation",
+   "fetched_at": "2026-11-02T04:41:35+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Tuesdays and Wednesdays"
+  },
+  {
+   "kind": "confession",
+   "day": "Wednesday",
+   "time": "16:30-17:15",
+   "language": null,
+   "raw": "Confessions:: 4:30 p.m.-5:15 p.m. on Tuesdays and Wednesdays as well as Saturdays from 2:30-3:30 p.m. at St.",
+   "source_url": "https://www.jeffersonvillecatholic.org/reconciliation",
+   "fetched_at": "2026-11-02T04:41:35+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Tuesdays and Wednesdays"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "14:30-15:30",
+   "language": null,
+   "raw": "Confessions:: 4:30 p.m.-5:15 p.m. on Tuesdays and Wednesdays as well as Saturdays from 2:30-3:30 p.m. at St.",
+   "source_url": "https://www.jeffersonvillecatholic.org/reconciliation",
+   "fetched_at": "2026-11-02T04:41:35+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
   {
    "kind": "mass",
    "day": "Saturday",
@@ -258,45 +311,6 @@
    "time": "08:15",
    "language": null,
    "raw": "Weekday Masses: Friday | 8:15 a.m. | Sacred Heart",
-   "source_url": "https://www.jeffersonvillecatholic.org/home-church",
-   "fetched_at": "2026-11-01T20:25:06+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
-  {
-   "kind": "confession",
-   "day": "Tuesday",
-   "time": "16:30-17:15",
-   "language": null,
-   "raw": "Confession Schedule: | 4:30-5:15 p.m. | St. Augustine",
-   "source_url": "https://www.jeffersonvillecatholic.org/home-church",
-   "fetched_at": "2026-11-01T20:25:06+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
-  {
-   "kind": "confession",
-   "day": "Wednesday",
-   "time": "16:30-17:15",
-   "language": null,
-   "raw": "Confession Schedule: Wednesday | 4:30 - 5:15 p.m. | Sacred Heart",
-   "source_url": "https://www.jeffersonvillecatholic.org/home-church",
-   "fetched_at": "2026-11-01T20:25:06+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
-  {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "14:30-15:30",
-   "language": null,
-   "raw": "Confession Schedule: Saturday | 2:30 - 3:30 p.m. | St. Augustine",
    "source_url": "https://www.jeffersonvillecatholic.org/home-church",
    "fetched_at": "2026-11-01T20:25:06+00:00",
    "needs_review": false,
@@ -398,9 +412,21 @@
  ],
  "source_url": "https://www.jeffersonvillecatholic.org/",
  "fetched_at": "2026-11-01T20:25:13+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:36+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -414,15 +440,19 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
-  "generic_rows": 59
+  "trusted_kinds": [],
+  "generic_rows": 61
  },
  "has_sunday": true,
+ "schedule_dropped": {
+  "no_day": 1
+ },
  "groups_dropped": {
   "label_not_group": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

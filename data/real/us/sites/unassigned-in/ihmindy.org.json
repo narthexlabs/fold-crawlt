@@ -81,6 +81,18 @@
    "url": "https://ihmindy.org/cyo-athletics/list-of-sports-contacts/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://ihmindy.org/sacraments/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://ihmindy.org/events/eucharistic-adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -338,7 +350,7 @@
    "note": "The Events Calendar (WordPress) REST API",
    "last_fetch": {
     "status": 200,
-    "fetched_at": "2026-11-01T23:31:42+00:00",
+    "fetched_at": "2026-11-02T04:50:01+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -507,9 +519,22 @@
  ],
  "source_url": "https://ihmindy.org/",
  "fetched_at": "2026-11-01T20:25:16+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:37+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -523,6 +548,7 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 30
  },
  "has_sunday": true,
@@ -530,6 +556,7 @@
   "dated_line": 2,
   "other_location": 8,
   "relative_time": 1,
+  "dated_block": 2,
   "prose": 1
  },
  "groups_dropped": {
@@ -538,8 +565,8 @@
   "noise": 8
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

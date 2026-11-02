@@ -63,6 +63,18 @@
    "url": "https://www.svsc.info/parish-calendar",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.svsc.info/reconciliation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.svsc.info/weekly-adoration-preaching",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -830,6 +842,32 @@
    "template": "squarespace"
   },
   {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "18:30-20:00",
+   "language": null,
+   "raw": "Holy Hour: 6:30 - 8 PM",
+   "source_url": "https://www.svsc.info/weekly-adoration-preaching",
+   "fetched_at": "2026-11-02T04:41:35+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace"
+  },
+  {
+   "kind": "adoration",
+   "day": "First Friday of the month",
+   "time": "18:30-20:00",
+   "language": null,
+   "raw": "Holy Hour: 6:30 - 8 PM",
+   "source_url": "https://www.svsc.info/weekly-adoration-preaching",
+   "fetched_at": "2026-11-02T04:41:35+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace"
+  },
+  {
    "kind": "mass",
    "day": "Monday",
    "time": "07:25",
@@ -912,13 +950,110 @@
    "confidence": "medium",
    "template": "squarespace",
    "day_expanded_from": "Daily"
+  },
+  {
+   "kind": "devotion",
+   "day": "Monday",
+   "time": "17:25",
+   "language": null,
+   "raw": "5:25 PM Rosary and Vespers",
+   "source_url": "https://www.svsc.info/home",
+   "fetched_at": "2026-11-01T17:21:25+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace",
+   "day_expanded_from": "Daily"
+  },
+  {
+   "kind": "devotion",
+   "day": "Tuesday",
+   "time": "17:25",
+   "language": null,
+   "raw": "5:25 PM Rosary and Vespers",
+   "source_url": "https://www.svsc.info/home",
+   "fetched_at": "2026-11-01T17:21:25+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace",
+   "day_expanded_from": "Daily"
+  },
+  {
+   "kind": "devotion",
+   "day": "Wednesday",
+   "time": "17:25",
+   "language": null,
+   "raw": "5:25 PM Rosary and Vespers",
+   "source_url": "https://www.svsc.info/home",
+   "fetched_at": "2026-11-01T17:21:25+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace",
+   "day_expanded_from": "Daily"
+  },
+  {
+   "kind": "devotion",
+   "day": "Thursday",
+   "time": "17:25",
+   "language": null,
+   "raw": "5:25 PM Rosary and Vespers",
+   "source_url": "https://www.svsc.info/home",
+   "fetched_at": "2026-11-01T17:21:25+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace",
+   "day_expanded_from": "Daily"
+  },
+  {
+   "kind": "devotion",
+   "day": "Friday",
+   "time": "17:25",
+   "language": null,
+   "raw": "5:25 PM Rosary and Vespers",
+   "source_url": "https://www.svsc.info/home",
+   "fetched_at": "2026-11-01T17:21:25+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace",
+   "day_expanded_from": "Daily"
+  },
+  {
+   "kind": "devotion",
+   "day": "Saturday",
+   "time": "17:25",
+   "language": null,
+   "raw": "5:25 PM Rosary and Vespers",
+   "source_url": "https://www.svsc.info/home",
+   "fetched_at": "2026-11-01T17:21:25+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace",
+   "day_expanded_from": "Daily"
   }
  ],
  "source_url": "https://www.svsc.info/mass-times",
  "fetched_at": "2026-11-01T17:21:37+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:35+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "squarespace",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -932,13 +1067,15 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 9
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 31,
-  "range_not_a_mass": 9,
-  "not_a_service": 1
+  "other_location": 36,
+  "range_not_a_mass": 16,
+  "no_day": 1,
+  "skipped_section": 1
  },
  "groups_dropped": {
   "unmatched": 3,
@@ -947,8 +1084,8 @@
   "sentence": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

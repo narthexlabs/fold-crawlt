@@ -72,6 +72,18 @@
    "url": "https://www.stpatricks.org/contact-the-cathedral",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stpatricks.org/the-sacrament-of-penance",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stpatricks.org/adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -459,5 +471,30 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Other times by appointment. Contact the parish office at",
+   "phrase": "by appointment",
+   "source_url": "https://www.stpatricks.org/mass-and-confession-schedule",
+   "fetched_at": "2026-11-02T04:41:41+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:42+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
  }
 }

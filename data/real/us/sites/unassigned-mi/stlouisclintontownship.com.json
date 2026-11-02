@@ -75,6 +75,12 @@
    "url": "https://www.stlouisclintontownship.com/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stlouisclintontownship.com/Reconciliation",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -230,13 +236,90 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "devotion",
+   "day": "Saturday",
+   "time": "16:00",
+   "language": null,
+   "raw": "Saturday 4:00pm",
+   "source_url": "https://www.stlouisclintontownship.com/",
+   "fetched_at": "2026-11-01T22:15:28+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "devotion",
+   "day": "Saturday",
+   "time": "18:15",
+   "language": "Spanish",
+   "raw": "Saturday 6:15pm Spanish",
+   "source_url": "https://www.stlouisclintontownship.com/",
+   "fetched_at": "2026-11-01T22:15:28+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "devotion",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Sunday 9:00am",
+   "source_url": "https://www.stlouisclintontownship.com/",
+   "fetched_at": "2026-11-01T22:15:28+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "devotion",
+   "day": "Tuesday",
+   "time": "08:30",
+   "language": null,
+   "raw": "Tuesday 8:30am",
+   "source_url": "https://www.stlouisclintontownship.com/",
+   "fetched_at": "2026-11-01T22:15:28+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "devotion",
+   "day": "Wednesday",
+   "time": "08:30",
+   "language": null,
+   "raw": "Wednesday 8:30am",
+   "source_url": "https://www.stlouisclintontownship.com/",
+   "fetched_at": "2026-11-01T22:15:28+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
   }
  ],
  "source_url": "https://www.stlouisclintontownship.com/",
  "fetched_at": "2026-11-01T22:16:46+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:33+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -250,18 +333,16 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 6
  },
  "has_sunday": true,
- "schedule_dropped": {
-  "not_a_service": 5
- },
  "groups_dropped": {
   "noise": 2
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

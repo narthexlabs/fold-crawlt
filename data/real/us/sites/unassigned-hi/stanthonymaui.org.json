@@ -469,7 +469,7 @@
    "display_tz": "Pacific/Honolulu",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:39:00+00:00",
+    "fetched_at": "2026-11-02T04:53:50+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -488,7 +488,7 @@
    "feed_key": "5686219771ef",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:39:01+00:00",
+    "fetched_at": "2026-11-02T04:53:51+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -511,19 +511,6 @@
   "source_url": "https://www.stanthonymaui.org/bulletin"
  },
  "schedule_rows": [
-  {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "15:30",
-   "language": null,
-   "raw": "Reconciliation on Saturdays at 3:30pm or by appointment. To make an appointment contact us at or",
-   "source_url": "https://www.stanthonymaui.org/sacraments",
-   "fetched_at": "2026-11-01T17:28:04+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "generic_strict"
-  },
   {
    "kind": "mass",
    "day": "Saturday",
@@ -601,13 +588,75 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "First Friday of the month",
+   "time": "07:30-08:30",
+   "language": null,
+   "raw": "1st Friday Devotions with Adoration & Benediction: 7:30am to 8:30am",
+   "source_url": "https://www.stanthonymaui.org/",
+   "fetched_at": "2026-11-01T17:28:03+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "First and Third Friday of the month",
+   "time": "17:00-19:00",
+   "language": null,
+   "raw": "1st and 3rd Fridays of the month (w/ confessions):: 5:00pm to 7:00pm",
+   "source_url": "https://www.stanthonymaui.org/",
+   "fetched_at": "2026-11-01T17:28:03+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Second and Fourth Wednesday of the month",
+   "time": "18:00-19:00",
+   "language": null,
+   "raw": "1st and 3rd Fridays of the month (w/ confessions):: 6:00pm to 7:00pm",
+   "source_url": "https://www.stanthonymaui.org/",
+   "fetched_at": "2026-11-01T17:28:03+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:30",
+   "language": null,
+   "raw": "Reconciliation on Saturdays at 3:30pm or by appointment. To make an appointment contact us at or",
+   "source_url": "https://www.stanthonymaui.org/sacraments",
+   "fetched_at": "2026-11-01T17:28:04+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict"
   }
  ],
  "source_url": "https://www.stanthonymaui.org/",
  "fetched_at": "2026-11-01T17:28:10+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:46+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -621,12 +670,22 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 13
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Reconciliation on Saturdays at 3:30pm or by appointment. To make an appointment contact us at or",
+   "phrase": "by appointment",
+   "source_url": "https://www.stanthonymaui.org/sacraments",
+   "fetched_at": "2026-11-01T17:28:04+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "skipped_section": 1,
-  "not_a_service": 2,
+  "not_a_service": 1,
   "other_location": 1
  },
  "groups_dropped": {
@@ -635,8 +694,8 @@
   "schedule": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

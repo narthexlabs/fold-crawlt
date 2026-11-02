@@ -3,18 +3,24 @@
  "diocese": "diocese-of-camden",
  "matched_church_ids": [
   "diocese-of-camden:Holy Child Parish",
-  "gc-18829"
+  "gc-18829",
+  "st-maria-goretti-holy-child-parish-runnemede-nj",
+  "st-teresa-holy-child-parish-runnemede-nj"
  ],
  "matched": {
   "directory": [
    "diocese-of-camden:Holy Child Parish"
   ],
   "discovermass": [
+   "st-maria-goretti-holy-child-parish-runnemede-nj",
+   "st-teresa-holy-child-parish-runnemede-nj",
    "gc-18829"
   ]
  },
  "names": [
   "Holy Child Parish",
+  "St. Maria Goretti (Holy Child Parish)",
+  "St. Teresa (Holy Child Parish)",
   "St. Teresa"
  ],
  "cities": [
@@ -77,6 +83,18 @@
   {
    "category": "contact",
    "url": "https://www.holychildparish.net/contact",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.holychildparish.net/penance",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.holychildparish.net/adoration-chapel",
    "status": 200,
    "class": "ok"
   }
@@ -303,7 +321,7 @@
    "feed_key": "f92e03cff0b5",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:34:57+00:00",
+    "fetched_at": "2026-11-02T04:52:02+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -322,7 +340,7 @@
    "feed_key": "0f9ed88ef7f7",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:34:58+00:00",
+    "fetched_at": "2026-11-02T04:52:03+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -360,77 +378,159 @@
    "day": "Sunday",
    "time": "09:00",
    "language": null,
-   "raw": "[St. Teresa] Weekend Masses Weekend Mass: Saturday 4:30PM Sunday 9AM",
+   "raw": "[St. Maria Goretti (Holy Child Parish)] Weekend Masses Weekend Mass: Saturday 4:30PM Sunday 9AM",
    "source_url": "https://www.holychildparish.net/",
    "fetched_at": "2026-11-01T07:27:52+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict",
-   "location": "St. Teresa"
+   "location": "St. Maria Goretti (Holy Child Parish)"
   },
   {
    "kind": "mass",
    "day": "Sunday",
    "time": "07:00",
    "language": null,
-   "raw": "[St. Teresa] Weekend Masses Weekend Mass: Sunday 7AM, 11AM Confession Sundays 8:15AM-8:45AM",
+   "raw": "[St. Maria Goretti (Holy Child Parish)] Weekend Masses Weekend Mass: Sunday 7AM, 11AM Confession Sundays 8:15AM-8:45AM",
    "source_url": "https://www.holychildparish.net/",
    "fetched_at": "2026-11-01T07:27:52+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict",
-   "location": "St. Teresa"
+   "location": "St. Maria Goretti (Holy Child Parish)"
   },
   {
    "kind": "confession",
    "day": "Sunday",
    "time": "11:00",
    "language": null,
-   "raw": "[St. Teresa] Sunday 7AM, 11AM Confession Sundays 8:15AM-8:45AM",
+   "raw": "[St. Maria Goretti (Holy Child Parish)] Sunday 7AM, 11AM Confession Sundays 8:15AM-8:45AM",
    "source_url": "https://www.holychildparish.net/",
    "fetched_at": "2026-11-01T07:27:52+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "high",
    "template": "generic_strict",
-   "location": "St. Teresa"
+   "location": "St. Maria Goretti (Holy Child Parish)"
   },
   {
    "kind": "mass",
    "day": "Saturday",
    "time": "08:30",
    "language": null,
-   "raw": "[St. Teresa] Weekday Mass & Saturday's 8:30AM",
+   "raw": "[St. Maria Goretti (Holy Child Parish)] Weekday Mass & Saturday's 8:30AM",
    "source_url": "https://www.holychildparish.net/",
    "fetched_at": "2026-11-01T07:27:52+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "high",
    "template": "generic_strict",
-   "location": "St. Teresa"
+   "location": "St. Maria Goretti (Holy Child Parish)"
   },
   {
    "kind": "confession",
    "day": "Saturday",
    "time": "11:00-12:00",
    "language": null,
-   "raw": "[St. Teresa] Confession Saturdays 11AM-12PM",
+   "raw": "[St. Maria Goretti (Holy Child Parish)] Confession Saturdays 11AM-12PM",
    "source_url": "https://www.holychildparish.net/",
    "fetched_at": "2026-11-01T07:27:52+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "high",
    "template": "generic_strict",
-   "location": "St. Teresa"
+   "location": "St. Maria Goretti (Holy Child Parish)"
+  },
+  {
+   "kind": "adoration",
+   "day": "Monday",
+   "time": "16:00-19:00",
+   "language": null,
+   "raw": "Eucharistic Adoration Chapel: 4PM to 7PM",
+   "source_url": "https://www.holychildparish.net/adoration-chapel",
+   "fetched_at": "2026-11-02T04:47:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday and Wednesday"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "16:00-19:00",
+   "language": null,
+   "raw": "Eucharistic Adoration Chapel: 4PM to 7PM",
+   "source_url": "https://www.holychildparish.net/adoration-chapel",
+   "fetched_at": "2026-11-02T04:47:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday and Wednesday"
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "09:00-12:00",
+   "language": null,
+   "raw": "Eucharistic Adoration Chapel: 9AM to 12PM",
+   "source_url": "https://www.holychildparish.net/adoration-chapel",
+   "fetched_at": "2026-11-02T04:47:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Tuesday and Thursday"
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "09:00-12:00",
+   "language": null,
+   "raw": "Eucharistic Adoration Chapel: 9AM to 12PM",
+   "source_url": "https://www.holychildparish.net/adoration-chapel",
+   "fetched_at": "2026-11-02T04:47:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Tuesday and Thursday"
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "19:00-20:00",
+   "language": null,
+   "raw": "Eucharistic Adoration Chapel: Friday Evenings 7PM to 8PM",
+   "source_url": "https://www.holychildparish.net/adoration-chapel",
+   "fetched_at": "2026-11-02T04:47:54+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
   }
  ],
  "source_url": "http://www.holychildparish.net/",
  "fetched_at": "2026-11-01T07:28:00+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:47:54+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -438,25 +538,27 @@
     "counts_ok": true,
     "sunday_not_copied": true,
     "no_daily_on_sunday": true,
-    "mostly_high": true
+    "mostly_high": false
    },
-   "score": "high"
+   "score": "medium"
   },
   "passed_bar": true,
-  "trusted_candidate": true,
-  "generic_rows": 11
+  "trusted_candidate": false,
+  "trusted_kinds": [],
+  "generic_rows": 17
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "range_not_a_mass": 1
+  "range_not_a_mass": 1,
+  "prose": 3
  },
  "groups_dropped": {
   "noise": 2,
   "label_not_group": 2
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

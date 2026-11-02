@@ -69,6 +69,12 @@
    "url": "https://catholicyooperfaithful.org/contact.htm",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://catholicyooperfaithful.org/adoration-times.htm",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -258,6 +264,97 @@
  "schedule_rows": [
   {
    "kind": "confession",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Confessions:: Sunday: 8:00 AM",
+   "source_url": "https://catholicyooperfaithful.org/",
+   "fetched_at": "2026-11-01T20:25:00+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Thursday",
+   "time": "17:30",
+   "language": null,
+   "raw": "Confessions:: Thursday: 5:30 PM",
+   "source_url": "https://catholicyooperfaithful.org/",
+   "fetched_at": "2026-11-01T20:25:00+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Friday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Confessions:: Friday: 8:00 AM",
+   "source_url": "https://catholicyooperfaithful.org/",
+   "fetched_at": "2026-11-01T20:25:00+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "First Thursday of the month",
+   "time": "18:00",
+   "language": null,
+   "raw": "1st Thursday Adoration at 6:00 PM",
+   "source_url": "https://catholicyooperfaithful.org/",
+   "fetched_at": "2026-11-01T20:25:00+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "09:00-10:00",
+   "language": null,
+   "raw": "Confessions:: Saturdays 9:00-10:00 AM",
+   "source_url": "https://catholicyooperfaithful.org/",
+   "fetched_at": "2026-11-01T20:25:00+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "Saturday",
+   "time": "15:00-15:45",
+   "language": null,
+   "raw": "Adoration: Saturday: 3:00-3:45 PM",
+   "source_url": "https://catholicyooperfaithful.org/",
+   "fetched_at": "2026-11-01T20:25:00+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:00-15:45",
+   "language": null,
+   "raw": "Confessions:: Saturday: 3:00-3:45 PM",
+   "source_url": "https://catholicyooperfaithful.org/",
+   "fetched_at": "2026-11-01T20:25:00+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
    "day": "Saturday",
    "time": "17:45-18:05",
    "language": null,
@@ -296,32 +393,6 @@
    "template": "generic_strict"
   },
   {
-   "kind": "adoration",
-   "day": "First Thursday of the month",
-   "time": "18:00",
-   "language": null,
-   "raw": "1st Thursday Adoration at 6:00 PM",
-   "source_url": "https://catholicyooperfaithful.org/",
-   "fetched_at": "2026-11-01T20:25:00+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "generic_strict"
-  },
-  {
-   "kind": "adoration",
-   "day": "Saturday",
-   "time": "15:00-15:45",
-   "language": null,
-   "raw": "Adoration: Saturday: 3:00-3:45 PM",
-   "source_url": "https://catholicyooperfaithful.org/",
-   "fetched_at": "2026-11-01T20:25:00+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
-  {
    "kind": "mass",
    "day": "Saturday",
    "time": "18:15",
@@ -346,9 +417,21 @@
  ],
  "source_url": "https://catholicyooperfaithful.org/",
  "fetched_at": "2026-11-01T20:25:07+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:31+00:00",
+  "requests": 1,
+  "found": [
+   "adoration"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -362,11 +445,30 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 12
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Anytime by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://catholicyooperfaithful.org/",
+   "fetched_at": "2026-11-01T20:25:00+00:00"
+  }
+ ],
+ "schedule_none": [
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "text": "NO confessions on Saturday morning at St. Cecilia",
+   "source_url": "https://catholicyooperfaithful.org/confession-times.htm",
+   "fetched_at": "2026-11-01T20:25:02+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 23,
+  "other_location": 27,
   "weekend_rescue_added": 2
  },
  "groups_dropped": {
@@ -376,8 +478,8 @@
   "private_name_risk": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

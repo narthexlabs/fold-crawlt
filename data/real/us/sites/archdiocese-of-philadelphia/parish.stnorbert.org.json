@@ -67,6 +67,18 @@
    "url": "https://parish.stnorbert.org/about/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://parish.stnorbert.org/reconciliation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://parish.stnorbert.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -432,7 +444,7 @@
    "note": "The Events Calendar (WordPress) REST API",
    "last_fetch": {
     "status": 200,
-    "fetched_at": "2026-11-02T01:58:24+00:00",
+    "fetched_at": "2026-11-02T04:49:19+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -458,6 +470,32 @@
   "source_url": "https://parish.stnorbert.org/"
  },
  "schedule_rows": [
+  {
+   "kind": "confession",
+   "day": "Thursday",
+   "time": "18:00-19:00",
+   "language": null,
+   "raw": "Reconciliation Schedule: Thursdays: 6:00pm - 7:00pm",
+   "source_url": "https://parish.stnorbert.org/",
+   "fetched_at": "2026-11-02T01:56:07+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:30-16:40",
+   "language": null,
+   "raw": "Reconciliation Schedule: Saturdays: 3:30pm – 4:40pm",
+   "source_url": "https://parish.stnorbert.org/",
+   "fetched_at": "2026-11-02T01:56:07+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
   {
    "kind": "mass",
    "day": "Monday",
@@ -1030,37 +1068,65 @@
    "kind_parsed": "mass"
   },
   {
-   "kind": "confession",
-   "day": "Thursday",
-   "time": "18:00-19:00",
+   "kind": "other",
+   "day": "Holy days",
+   "time": "12:15",
    "language": null,
-   "raw": "Reconciliation Schedule: Thursdays: 6:00pm - 7:00pm",
+   "raw": "12:15pm Mass",
    "source_url": "https://parish.stnorbert.org/about/schedule-events-directions/",
    "fetched_at": "2026-11-02T01:56:09+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress"
+   "confidence": "high",
+   "template": "wordpress",
+   "kind_parsed": "mass"
   },
   {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "15:30-16:40",
+   "kind": "other",
+   "day": "Holy days",
+   "time": "18:00",
    "language": null,
-   "raw": "Reconciliation Schedule: Saturdays: 3:30pm – 4:40pm",
+   "raw": "6:00 PM Mass",
    "source_url": "https://parish.stnorbert.org/about/schedule-events-directions/",
    "fetched_at": "2026-11-02T01:56:09+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress"
+   "confidence": "high",
+   "template": "wordpress",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "19:30",
+   "language": "Spanish",
+   "raw": "7:30pm Mass (Spanish)",
+   "source_url": "https://parish.stnorbert.org/about/schedule-events-directions/",
+   "fetched_at": "2026-11-02T01:56:09+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "kind_parsed": "mass"
   }
  ],
  "source_url": "https://parish.stnorbert.org/",
  "fetched_at": "2026-11-02T01:56:15+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:10+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -1074,14 +1140,24 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 18
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "By appointment:",
+   "phrase": "By appointment",
+   "source_url": "https://parish.stnorbert.org/reconciliation/",
+   "fetched_at": "2026-11-02T04:43:07+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "no_kind": 7,
-  "dated_block": 23,
-  "dated_line": 32,
-  "other_location": 44
+  "dated_block": 35,
+  "dated_line": 74,
+  "other_location": 16
  },
  "groups_dropped": {
   "unmatched": 5,

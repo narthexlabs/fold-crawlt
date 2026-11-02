@@ -69,6 +69,12 @@
    "url": "https://www.holyinn.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.holyinn.org/penance",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -539,6 +545,48 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Sunday Mass:: 8am, 10:30am - Holy Innocents",
+   "source_url": "https://www.holyinn.org/penance",
+   "fetched_at": "2026-11-02T04:41:44+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:30",
+   "language": null,
+   "raw": "Sunday Mass:: 8am, 10:30am - Holy Innocents",
+   "source_url": "https://www.holyinn.org/penance",
+   "fetched_at": "2026-11-02T04:41:44+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": null,
+   "raw": "5pm Saturday Vigil Mass - St. Anthony, Carnation",
+   "source_url": "https://www.holyinn.org/penance",
+   "fetched_at": "2026-11-02T04:41:44+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
   }
  ],
  "source_url": "http://www.holyinn.org/",
@@ -575,6 +623,23 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:44+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ],
+  "rows_added": 3,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "office@holyinn.org",
   "phone": "(425) 788-1400",
@@ -587,8 +652,5 @@
   },
   "fetched_at": "2026-11-01T03:58:25+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

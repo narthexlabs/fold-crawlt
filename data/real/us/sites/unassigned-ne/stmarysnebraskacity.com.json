@@ -73,6 +73,12 @@
    "url": "https://www.stmarysnebraskacity.com/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stmarysnebraskacity.com/penance",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -188,7 +194,7 @@
    "feed_key": "9f655d3c506e",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:33:10+00:00",
+    "fetched_at": "2026-11-02T04:45:19+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -206,7 +212,7 @@
    "feed_key": "85a2a69a46b6",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:33:11+00:00",
+    "fetched_at": "2026-11-02T04:45:20+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -449,6 +455,99 @@
   {
    "kind": "adoration",
    "day": "Monday",
+   "time": "06:20",
+   "language": null,
+   "raw": "EUCHARISTIC ADORATION: Monday-Friday following 6:20 a.m.",
+   "source_url": "https://www.stmarysnebraskacity.com/",
+   "fetched_at": "2026-11-01T17:27:01+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "after",
+   "note": "EUCHARISTIC ADORATION: Monday-Friday following 6:20 a.m.",
+   "day_expanded_from": "Monday-Friday",
+   "relative_resolved": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "06:20",
+   "language": null,
+   "raw": "EUCHARISTIC ADORATION: Monday-Friday following 6:20 a.m.",
+   "source_url": "https://www.stmarysnebraskacity.com/",
+   "fetched_at": "2026-11-01T17:27:01+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "after",
+   "note": "EUCHARISTIC ADORATION: Monday-Friday following 6:20 a.m.",
+   "day_expanded_from": "Monday-Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "relative_resolved": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "06:20",
+   "language": null,
+   "raw": "EUCHARISTIC ADORATION: Monday-Friday following 6:20 a.m.",
+   "source_url": "https://www.stmarysnebraskacity.com/",
+   "fetched_at": "2026-11-01T17:27:01+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "after",
+   "note": "EUCHARISTIC ADORATION: Monday-Friday following 6:20 a.m.",
+   "day_expanded_from": "Monday-Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "relative_resolved": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "06:20",
+   "language": null,
+   "raw": "EUCHARISTIC ADORATION: Monday-Friday following 6:20 a.m.",
+   "source_url": "https://www.stmarysnebraskacity.com/",
+   "fetched_at": "2026-11-01T17:27:01+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "after",
+   "note": "EUCHARISTIC ADORATION: Monday-Friday following 6:20 a.m.",
+   "day_expanded_from": "Monday-Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "relative_resolved": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "06:20",
+   "language": null,
+   "raw": "EUCHARISTIC ADORATION: Monday-Friday following 6:20 a.m.",
+   "source_url": "https://www.stmarysnebraskacity.com/",
+   "fetched_at": "2026-11-01T17:27:01+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "after",
+   "note": "EUCHARISTIC ADORATION: Monday-Friday following 6:20 a.m.",
+   "day_expanded_from": "Monday-Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "relative_resolved": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Monday",
    "time": "06:00",
    "language": null,
    "raw": "EUCHARISTIC ADORATION: Monday - 6:00 a.m. through",
@@ -475,9 +574,21 @@
  ],
  "source_url": "https://www.stmarysnebraskacity.com/",
  "fetched_at": "2026-11-01T17:27:09+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:33+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -491,18 +602,28 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 23
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Sunday, 20 minutes before Mass",
+   "phrase": "20 minutes before Mass",
+   "source_url": "https://www.stmarysnebraskacity.com/",
+   "fetched_at": "2026-11-01T17:27:01+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "relative_time": 2
+  "relative_time": 1
  },
  "groups_dropped": {
   "private_name_risk": 3
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

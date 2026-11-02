@@ -69,6 +69,12 @@
    "url": "https://www.stmaryporthuron.com/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stmaryporthuron.com/eucharistic-adoration-first-fridays",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -285,25 +291,65 @@
   },
   {
    "kind": "confession",
-   "day": "First Friday of the month (lent)",
+   "day": "First Friday of the month",
    "time": "19:00-20:00",
    "language": null,
-   "raw": "The Sacrament of Reconciliation (Confession) is available:: *First Fridays of the month from 7:00-8:00 p.m., except during Lent. Check the bulletin for times.",
+   "raw": "The Sacrament of Reconciliation (Confession) is available:: *First Fridays of the month from 7:00-8:00 p.m.",
    "source_url": "https://www.stmaryporthuron.com/sacraments",
    "fetched_at": "2026-11-01T18:51:44+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "note": "except during Lent. Check the bulletin for times."
+  },
+  {
+   "kind": "adoration",
+   "day": "First Friday of the month",
+   "time": "19:00",
+   "language": null,
+   "raw": "First Friday Adoration: 7pm-Midnight",
+   "source_url": "https://www.stmaryporthuron.com/eucharistic-adoration-first-fridays",
+   "fetched_at": "2026-11-02T04:41:42+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
    "template": "wix"
   },
   {
-   "kind": "confession",
-   "day": "First Friday of the month",
-   "time": "19:00-20:00",
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "09:00-12:00",
    "language": null,
-   "raw": "The Sacrament of Reconciliation is offered at the following : First Fridays of the Month: 7:00-8:00 p.m.",
-   "source_url": "https://www.stmaryporthuron.com/confession-101",
-   "fetched_at": "2026-11-01T18:51:46+00:00",
+   "raw": "Adoration is also held on Thursdays from 9am-12pm.",
+   "source_url": "https://www.stmaryporthuron.com/eucharistic-adoration-first-fridays",
+   "fetched_at": "2026-11-02T04:41:42+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wix"
+  },
+  {
+   "kind": "adoration",
+   "day": "First Friday of the month",
+   "time": "20:00-08:00",
+   "language": null,
+   "raw": "Overnight Adoration is offered on the first Friday of every month, from 8 pm – 8 am Saturday morning.",
+   "source_url": "https://www.stmaryporthuron.com/eucharistic-adoration-first-fridays",
+   "fetched_at": "2026-11-02T04:41:42+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wix"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "20:00-21:00",
+   "language": null,
+   "raw": "The Sacrament of Reconciliation will also be offered from 8:00 pm-9:00 pm , during the first hour of Adoration.",
+   "source_url": "https://www.stmaryporthuron.com/eucharistic-adoration-first-fridays",
+   "fetched_at": "2026-11-02T04:41:42+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -345,9 +391,21 @@
  ],
  "source_url": "http://stmaryporthuron.com/",
  "fetched_at": "2026-11-01T18:51:50+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:42+00:00",
+  "requests": 1,
+  "found": [
+   "adoration"
+  ]
+ },
  "schedule_template": {
   "template": "wix",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -361,12 +419,23 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 3
+  "trusted_kinds": [],
+  "generic_rows": 8
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Confessions are heard in the confessional in the back of the sanctuary. It is also available by appointment. Please call . Other times for reconciliation are offered during Lent and Advent.",
+   "phrase": "by appointment",
+   "source_url": "https://www.stmaryporthuron.com/sacraments",
+   "fetched_at": "2026-11-01T18:51:44+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "skipped_section": 2,
-  "no_day": 2,
+  "no_day": 3,
+  "dated_line": 1,
   "box_rows_added": 3
  },
  "groups_dropped": {
@@ -374,8 +443,8 @@
   "noise": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

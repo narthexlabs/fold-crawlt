@@ -2,18 +2,22 @@
  "domain": "stignatiusreading.org",
  "diocese": "diocese-of-allentown",
  "matched_church_ids": [
-  "gc-23660"
+  "gc-23660",
+  "st-ignatius-loyola-reading-pa"
  ],
  "matched": {
   "directory": [],
   "discovermass": [
+   "st-ignatius-loyola-reading-pa",
    "gc-23660"
   ]
  },
  "names": [
+  "St. Ignatius Loyola",
   "St. Ignatius of Loyola"
  ],
  "cities": [
+  "Reading",
   "Sinking Spring"
  ],
  "home_url": "http://www.stignatiusreading.org/",
@@ -55,6 +59,12 @@
   {
    "category": "contact",
    "url": "https://www.stignatiusreading.org/contact-us",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stignatiusreading.org/copy-of-eucharistic-exposition",
    "status": 200,
    "class": "ok"
   }
@@ -518,6 +528,19 @@
   {
    "kind": "mass",
    "day": "Monday",
+   "time": "09:00",
+   "language": null,
+   "raw": "9:00 AM (School Mass)",
+   "source_url": "https://www.stignatiusreading.org/",
+   "fetched_at": "2026-11-01T18:52:05+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
    "time": "06:30",
    "language": null,
    "raw": "Weekday Masses: 6:30 AM",
@@ -747,6 +770,75 @@
    "template": "wix"
   },
   {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:30",
+   "language": null,
+   "raw": "Holy Day Vigil: 5:30 PM",
+   "source_url": "https://www.stignatiusreading.org/mass-schedule",
+   "fetched_at": "2026-11-01T18:52:07+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "06:30",
+   "language": null,
+   "raw": "Holy Day Vigil: 6:30 AM",
+   "source_url": "https://www.stignatiusreading.org/mass-schedule",
+   "fetched_at": "2026-11-01T18:52:07+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "08:00",
+   "language": null,
+   "raw": "Holy Day Vigil: 8:00 AM",
+   "source_url": "https://www.stignatiusreading.org/mass-schedule",
+   "fetched_at": "2026-11-01T18:52:07+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "12:00",
+   "language": null,
+   "raw": "Holy Day Vigil: 12:00 PM",
+   "source_url": "https://www.stignatiusreading.org/mass-schedule",
+   "fetched_at": "2026-11-01T18:52:07+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "19:00",
+   "language": null,
+   "raw": "Holy Day Vigil: 7:00 PM",
+   "source_url": "https://www.stignatiusreading.org/mass-schedule",
+   "fetched_at": "2026-11-01T18:52:07+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "kind_parsed": "mass"
+  },
+  {
    "kind": "confession",
    "day": "Saturday",
    "time": "15:00-16:00",
@@ -762,9 +854,21 @@
  ],
  "source_url": "http://www.stignatiusreading.org/",
  "fetched_at": "2026-11-01T18:52:12+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:15+00:00",
+  "requests": 1,
+  "found": [
+   "adoration"
+  ]
+ },
  "schedule_template": {
   "template": "wix",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -778,19 +882,20 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 21
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "relative_time": 2,
-  "other_location": 5
+  "no_day": 1,
+  "relative_time": 1
  },
  "groups_dropped": {
   "noise": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

@@ -78,6 +78,18 @@
    "url": "https://www.stpaulcl.com/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stpaulcl.com/reconciliation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stpaulcl.com/eucharistic-adoration-2",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -391,13 +403,72 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "First Saturday of the month",
+   "time": "08:30",
+   "language": null,
+   "raw": "RECONCILIATION TIMES: First Saturday After 8:30 a.m. Mass",
+   "source_url": "https://www.stpaulcl.com/mass-schedule",
+   "fetched_at": "2026-11-01T08:35:00+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "after",
+   "note": "RECONCILIATION TIMES: First Saturday After 8:30 a.m. Mass",
+   "relative_resolved": true
+  },
+  {
+   "kind": "adoration",
+   "day": "First Friday of the month",
+   "time": "08:30",
+   "language": null,
+   "raw": "Eucharistic Adoration is available at St. Paul Parish:: First Friday of each month following 8:30 a.m. Mass until 3:00 p.m.",
+   "source_url": "https://www.stpaulcl.com/eucharistic-adoration-2",
+   "fetched_at": "2026-11-02T04:41:54+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "after",
+   "note": "Eucharistic Adoration is available at St. Paul Parish:: First Friday of each month following 8:30 a.m. Mass until 3:00 p",
+   "relative_resolved": false
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "18:00-19:00",
+   "language": null,
+   "raw": "Second Wednesday of the month Holy Hour from 6:00 p.m. to 7:00 p.m.",
+   "source_url": "https://www.stpaulcl.com/eucharistic-adoration-2",
+   "fetched_at": "2026-11-02T04:41:54+00:00",
+   "needs_review": true,
+   "review_reason": "nth_of_month",
+   "confidence": "high",
+   "template": "generic_strict",
+   "nth": "second"
   }
  ],
  "source_url": "https://www.stpaulcl.com/",
  "fetched_at": "2026-11-01T08:35:07+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:55+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -411,7 +482,8 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
-  "generic_rows": 5
+  "trusted_kinds": [],
+  "generic_rows": 6
  },
  "has_sunday": true,
  "schedule_dropped": {
@@ -422,8 +494,8 @@
   "unmatched": 2
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

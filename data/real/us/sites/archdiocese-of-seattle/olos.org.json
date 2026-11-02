@@ -69,6 +69,12 @@
    "url": "https://www.olos.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.olos.org/penance",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -268,6 +274,20 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:30-16:30",
+   "language": null,
+   "raw": "Reconciliation is held on: Saturdays at 3:30-4:30 pm or by appointment.",
+   "source_url": "https://www.olos.org/penance",
+   "fetched_at": "2026-11-02T04:41:43+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
   }
  ],
  "source_url": "http://www.olos.org/",
@@ -305,6 +325,32 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "or by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://www.olos.org/penance",
+   "fetched_at": "2026-11-02T04:41:43+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:44+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(425) 888-2974",
@@ -316,8 +362,5 @@
   },
   "fetched_at": "2026-11-01T03:58:29+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

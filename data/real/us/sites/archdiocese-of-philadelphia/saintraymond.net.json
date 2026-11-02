@@ -67,6 +67,12 @@
    "url": "https://www.saintraymond.net/events",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.saintraymond.net/sacraments",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -136,6 +142,19 @@
   "source_url": "https://www.saintraymond.net/prayer-worship"
  },
  "schedule_rows": [
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "16:00-16:45",
+   "language": null,
+   "raw": "Confession: Saturday: 4-4:45 PM",
+   "source_url": "https://www.saintraymond.net/",
+   "fetched_at": "2026-11-02T01:56:06+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix"
+  },
   {
    "kind": "mass",
    "day": "Saturday",
@@ -241,19 +260,6 @@
    "time": "08:00",
    "language": null,
    "raw": "MASS TIMES: Monday, Tuesday,Thursday, Friday,& Saturday: 8 AM",
-   "source_url": "https://www.saintraymond.net/prayer-worship",
-   "fetched_at": "2026-11-02T01:56:08+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wix"
-  },
-  {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "16:00-16:45",
-   "language": null,
-   "raw": "Confession: Saturday 4-4:45 PM",
    "source_url": "https://www.saintraymond.net/prayer-worship",
    "fetched_at": "2026-11-02T01:56:08+00:00",
    "needs_review": false,
@@ -473,9 +479,21 @@
  ],
  "source_url": "https://www.saintraymond.net/",
  "fetched_at": "2026-11-02T01:56:12+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:08+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wix",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -489,8 +507,18 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 4
+  "trusted_kinds": [],
+  "generic_rows": 5
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Confession is available the first Monday of every month from 7-8 PM, Saturday 4-4:45 PM, or by appointment by emailing",
+   "phrase": "by appointment",
+   "source_url": "https://www.saintraymond.net/sacraments",
+   "fetched_at": "2026-11-02T04:43:08+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "no_kind": 4

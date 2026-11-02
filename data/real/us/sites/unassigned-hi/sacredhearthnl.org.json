@@ -67,6 +67,12 @@
    "url": "https://www.sacredhearthnl.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.sacredhearthnl.org/eucharistic-adoration",
+   "status": null,
+   "class": "ssl_error"
   }
  ],
  "cms_guess": {
@@ -380,7 +386,7 @@
    "feed_key": "21d0ca4b2dfe",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:38:49+00:00",
+    "fetched_at": "2026-11-02T04:53:36+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -404,32 +410,6 @@
  },
  "schedule_rows": [
   {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "09:00-10:00",
-   "language": null,
-   "raw": "Confession Times: Saturdays 9-10am ; Third Thursdays of the Month: 7pm-8pm or by appointment.",
-   "source_url": "https://www.sacredhearthnl.org/penance",
-   "fetched_at": "2026-11-01T17:28:03+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "generic_strict"
-  },
-  {
-   "kind": "confession",
-   "day": "Third Thursday of the month",
-   "time": "19:00-20:00",
-   "language": null,
-   "raw": "Confession Times: Saturdays 9-10am ; Third Thursdays of the Month: 7pm-8pm or by appointment.",
-   "source_url": "https://www.sacredhearthnl.org/penance",
-   "fetched_at": "2026-11-01T17:28:03+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "generic_strict"
-  },
-  {
    "kind": "adoration",
    "day": "First Friday of the month",
    "time": "07:00",
@@ -448,6 +428,19 @@
    "time": "08:00",
    "language": null,
    "raw": "Eucharistic Adoration & Benediction: 7:00 AM - 8:00 AM (Immediately Following the 6:30AM Mass)",
+   "source_url": "https://www.sacredhearthnl.org/",
+   "fetched_at": "2026-11-01T17:28:02+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Third Thursday of the month",
+   "time": "19:00-20:00",
+   "language": null,
+   "raw": "7:00 PM - 8:00 PM (Confession available)",
    "source_url": "https://www.sacredhearthnl.org/",
    "fetched_at": "2026-11-01T17:28:02+00:00",
    "needs_review": false,
@@ -602,13 +595,36 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "09:00-10:00",
+   "language": null,
+   "raw": "Reconciliation (Confession): 9:00 AM - 10:00 AM",
+   "source_url": "https://www.sacredhearthnl.org/",
+   "fetched_at": "2026-11-01T17:28:02+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
   }
  ],
  "source_url": "https://www.sacredhearthnl.org/",
  "fetched_at": "2026-11-01T17:28:09+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:47+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -622,8 +638,18 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 24
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Confession Times: Saturdays 9-10am ; Third Thursdays of the Month: 7pm-8pm or by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://www.sacredhearthnl.org/penance",
+   "fetched_at": "2026-11-01T17:28:03+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "relative_time": 1,
@@ -636,8 +662,8 @@
   "label_not_group": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

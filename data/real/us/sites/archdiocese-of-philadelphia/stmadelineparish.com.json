@@ -61,6 +61,12 @@
    "url": "https://www.stmadelineparish.com/news",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://www.stmadelineparish.com/worship-and-prayer",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -231,7 +237,7 @@
    "feed_key": "ee6ab57d2ac7",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-02T02:00:32+00:00",
+    "fetched_at": "2026-11-02T04:51:04+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -430,9 +436,21 @@
  ],
  "source_url": "https://www.stmadelineparish.com/",
  "fetched_at": "2026-11-01T20:25:32+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:08+00:00",
+  "requests": 1,
+  "found": [
+   "liturgy"
+  ]
+ },
  "schedule_template": {
   "template": "squarespace",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -446,8 +464,18 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 11
+  "trusted_kinds": [],
+  "generic_rows": 12
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "or by appointment -",
+   "phrase": "by appointment",
+   "source_url": "https://www.stmadelineparish.com/",
+   "fetched_at": "2026-11-01T20:25:27+00:00"
+  }
+ ],
  "has_sunday": true,
  "groups_dropped": {
   "noise": 1,

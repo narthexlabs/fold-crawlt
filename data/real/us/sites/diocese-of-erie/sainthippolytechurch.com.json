@@ -4,25 +4,31 @@
  "matched_church_ids": [
   "brave:PA|hippolyte guys mills|",
   "gc-24453",
-  "gc-24510"
+  "gc-24510",
+  "our-lady-of-lourdes-mission-cochranton-pa",
+  "st-hippolyte-guys-mills-pa"
  ],
  "matched": {
   "directory": [],
   "discovermass": [
+   "st-hippolyte-guys-mills-pa",
+   "our-lady-of-lourdes-mission-cochranton-pa",
    "brave:PA|hippolyte guys mills|",
    "gc-24453",
    "gc-24510"
   ]
  },
  "names": [
+  "St Hippolyte",
+  "Our Lady of Lourdes Mission",
   "St Hippolyte Guys",
   "Our Lady of Lourdes",
   "St. Hippolyte"
  ],
  "cities": [
-  "Mills",
+  "Guys Mills",
   "Cochranton",
-  "Guys Mills"
+  "Mills"
  ],
  "home_url": "https://sainthippolytechurch.com/",
  "final_url": "https://sainthippolytechurch.com/",
@@ -206,13 +212,51 @@
    "confidence": "high",
    "template": "generic_strict",
    "location": "St Hippolyte Guys"
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "08:30",
+   "language": null,
+   "raw": "Friday: 8:30 a.m. Adoration and Rosary at Our Lady of Lourdes Secondary Church, Cochranton",
+   "source_url": "https://sainthippolytechurch.com/",
+   "fetched_at": "2026-11-01T20:25:09+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "18:00",
+   "language": null,
+   "raw": "[St Hippolyte Guys] 6 p.m. Mass at St. Hippolyte, Guys Mills",
+   "source_url": "https://sainthippolytechurch.com/",
+   "fetched_at": "2026-11-01T20:25:09+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "kind_parsed": "mass",
+   "location": "St Hippolyte Guys"
   }
  ],
  "source_url": "https://sainthippolytechurch.com/",
  "fetched_at": "2026-11-01T20:25:14+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:11+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -226,20 +270,31 @@
   },
   "passed_bar": true,
   "trusted_candidate": true,
+  "trusted_kinds": [
+   "weekend",
+   "weekday",
+   "confession",
+   "adoration"
+  ],
   "generic_rows": 2
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "By appointment call",
+   "phrase": "By appointment",
+   "source_url": "https://sainthippolytechurch.com/",
+   "fetched_at": "2026-11-01T20:25:09+00:00"
+  }
+ ],
  "has_sunday": true,
- "schedule_dropped": {
-  "other_location": 1,
-  "prose": 1
- },
  "groups_dropped": {
   "noise": 3,
   "unmatched": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

@@ -75,6 +75,12 @@
    "url": "https://stjosephparishhanover.org",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stjosephparishhanover.org/sacraments",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -426,6 +432,22 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Adoration begins immediately following the 9:00am Mass on Friday and continues until noon with Benediction.",
+   "source_url": "https://stjosephparishhanover.org/get_involved/worship",
+   "fetched_at": "2026-11-02T04:43:21+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "after",
+   "note": "Adoration begins immediately following the 9:00am Mass on Friday and continues until noon with Benediction.",
+   "topup": true
   }
  ],
  "source_url": "http://www.stjosephparishhanover.org/",
@@ -466,6 +488,41 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Any time by request",
+   "phrase": "by request",
+   "source_url": "https://stjosephparishhanover.org/sacraments",
+   "fetched_at": "2026-11-02T04:43:20+00:00"
+  },
+  {
+   "kind": "adoration",
+   "text": "Any time by request",
+   "phrase": "by request",
+   "source_url": "https://stjosephparishhanover.org",
+   "fetched_at": "2026-11-02T04:43:22+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:22+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(717) 637-5236",
@@ -477,8 +534,5 @@
   },
   "fetched_at": "2026-11-01T03:58:44+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

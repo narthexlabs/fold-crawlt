@@ -33,6 +33,18 @@
    "url": "https://sttheresa.ptdiocese.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://sttheresa.ptdiocese.org/reconciliation/",
+   "status": 504,
+   "class": "http_5xx"
+  },
+  {
+   "category": "adoration",
+   "url": "https://sttheresa.ptdiocese.org/adoration/",
+   "status": 504,
+   "class": "http_5xx"
   }
  ],
  "cms_guess": {
@@ -129,9 +141,19 @@
  ],
  "source_url": "https://sttheresa.ptdiocese.org/",
  "fetched_at": "2026-11-01T22:16:10+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:20+00:00",
+  "requests": 2,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -145,13 +167,23 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 6
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Up to 15 minutes before any Mass and by Appointment.",
+   "phrase": "15 minutes before any Mass",
+   "source_url": "https://sttheresa.ptdiocese.org/",
+   "fetched_at": "2026-11-01T22:15:41+00:00"
+  }
+ ],
  "has_sunday": true,
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

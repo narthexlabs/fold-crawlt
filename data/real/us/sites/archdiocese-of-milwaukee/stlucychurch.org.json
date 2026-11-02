@@ -69,6 +69,12 @@
    "url": "https://www.stlucychurch.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stlucychurch.org/divine-mercy-holy-hour/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -133,6 +139,22 @@
  "schedule_rows": [
   {
    "kind": "confession",
+   "day": "Friday",
+   "time": "08:15",
+   "language": null,
+   "raw": "Confessions Held on: Fridays after 8:15am Mass",
+   "source_url": "https://www.stlucychurch.org/confession/",
+   "fetched_at": "2026-11-02T01:56:47+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "Confessions Held on: Fridays after 8:15am Mass",
+   "relative_resolved": true
+  },
+  {
+   "kind": "confession",
    "day": "Saturday",
    "time": "15:00-15:30",
    "language": null,
@@ -168,7 +190,7 @@
    "fetched_at": "2026-11-02T01:57:07+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "medium",
+   "confidence": "high",
    "template": "wordpress",
    "day_expanded_from": "Daily"
   },
@@ -182,7 +204,7 @@
    "fetched_at": "2026-11-02T01:57:07+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "medium",
+   "confidence": "high",
    "template": "wordpress",
    "day_expanded_from": "Daily"
   },
@@ -196,7 +218,7 @@
    "fetched_at": "2026-11-02T01:57:07+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "medium",
+   "confidence": "high",
    "template": "wordpress",
    "day_expanded_from": "Daily"
   },
@@ -210,7 +232,7 @@
    "fetched_at": "2026-11-02T01:57:07+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "medium",
+   "confidence": "high",
    "template": "wordpress",
    "day_expanded_from": "Daily"
   },
@@ -224,7 +246,7 @@
    "fetched_at": "2026-11-02T01:57:07+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "medium",
+   "confidence": "high",
    "template": "wordpress",
    "day_expanded_from": "Daily"
   },
@@ -238,24 +260,22 @@
    "fetched_at": "2026-11-02T01:57:07+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "medium",
+   "confidence": "high",
    "template": "wordpress",
    "day_expanded_from": "Daily"
   },
   {
    "kind": "mass",
-   "day": "Saturday",
+   "day": "Sunday",
    "time": "16:00",
    "language": null,
-   "raw": "Saturday Masses: 4:00pm Sunday Vigil",
+   "raw": "4:00pm Sunday Vigil",
    "source_url": "https://www.stlucychurch.org/mass-times/",
    "fetched_at": "2026-11-02T01:57:07+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress",
-   "day_parsed": "Sunday",
-   "day_bound_from_line": true
+   "confidence": "high",
+   "template": "wordpress"
   },
   {
    "kind": "mass",
@@ -341,6 +361,34 @@
   {
    "kind": "other",
    "day": "Holy days",
+   "time": "08:00",
+   "language": null,
+   "raw": "St. Lucy’s: 8am and 11:00am (no 5pm Mass)",
+   "source_url": "https://www.stlucychurch.org/mass-times/",
+   "fetched_at": "2026-11-02T01:57:07+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "11:00",
+   "language": null,
+   "raw": "St. Lucy’s: 8am and 11:00am (no 5pm Mass)",
+   "source_url": "https://www.stlucychurch.org/mass-times/",
+   "fetched_at": "2026-11-02T01:57:07+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
    "time": "15:00",
    "language": null,
    "raw": "Divine Mercy Holy Hour is held on the Sunday following Easter at 3:00pm (St. Lucy’s).",
@@ -355,9 +403,21 @@
  ],
  "source_url": "http://www.stlucychurch.org/",
  "fetched_at": "2026-11-02T02:46:54+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:40+00:00",
+  "requests": 1,
+  "found": [
+   "adoration"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -371,13 +431,13 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 20
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "relative_time": 1,
   "no_kind": 1,
-  "other_location": 5
+  "other_location": 2
  },
  "groups_dropped": {
   "noise": 1

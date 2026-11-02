@@ -57,6 +57,18 @@
    "url": "https://www.stmichaelplymouth.org/contact-us.html",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stmichaelplymouth.org/reconciliation.html",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stmichaelplymouth.org/adoration-of-the-blessed-sacrament.html",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -509,6 +521,66 @@
    "review_reason": null,
    "confidence": "high",
    "template": "weebly"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "09:00-10:00",
+   "language": null,
+   "raw": "Confession Times:: 9:00 a.m. to 10:00 a.m.",
+   "source_url": "https://www.stmichaelplymouth.org/reconciliation.html",
+   "fetched_at": "2026-11-02T04:41:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Thursday",
+   "time": "18:00",
+   "language": null,
+   "raw": "Confession Times:: Thursday after 6:00 p.m. Mass",
+   "source_url": "https://www.stmichaelplymouth.org/reconciliation.html",
+   "fetched_at": "2026-11-02T04:41:41+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "weebly",
+   "relative": "after",
+   "note": "Confession Times:: Thursday after 6:00 p.m. Mass",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "08:30",
+   "language": null,
+   "raw": "Eucharistic Adoration Schedule: Wednesday - After the 8:30 AM Mass until 5:00 p.m. (please see signups below)",
+   "source_url": "https://www.stmichaelplymouth.org/adoration-of-the-blessed-sacrament.html",
+   "fetched_at": "2026-11-02T04:41:44+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "weebly",
+   "relative": "after",
+   "note": "Eucharistic Adoration Schedule: Wednesday - After the 8:30 AM Mass until 5:00 p.m. (please see signups below)",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "First Friday of the month",
+   "time": "08:00-23:00",
+   "language": null,
+   "raw": "Eucharistic Adoration Schedule: First Friday of Each Month - 8:00 a.m. to 11:00 p.m.",
+   "source_url": "https://www.stmichaelplymouth.org/adoration-of-the-blessed-sacrament.html",
+   "fetched_at": "2026-11-02T04:41:44+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "weebly",
+   "topup": true
   }
  ],
  "source_url": "https://www.stmichaelplymouth.org/",
@@ -549,6 +621,24 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:44+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 4,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "secretary@saintmichaelplymouth.org",
   "phone": "(574) 936-4935",
@@ -561,8 +651,5 @@
   },
   "fetched_at": "2026-11-01T03:59:21+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

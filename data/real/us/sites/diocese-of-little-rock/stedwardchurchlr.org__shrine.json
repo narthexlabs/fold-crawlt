@@ -69,6 +69,18 @@
    "url": "https://www.stedwardchurchlr.org/contact-our-office/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stedwardchurchlr.org/reconciliation-confession/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stedwardchurchlr.org/eucharistic-adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -423,6 +435,90 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "17:00-18:00",
+   "language": null,
+   "raw": "Exposition and Benediction: Tuesday: 5:00 - 6:00 pm",
+   "source_url": "https://www.stedwardchurchlr.org/eucharistic-adoration/",
+   "fetched_at": "2026-11-02T04:42:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "17:00-18:00",
+   "language": null,
+   "raw": "Exposition and Benediction: Wednesday: 5:00 - 6:00 pm",
+   "source_url": "https://www.stedwardchurchlr.org/eucharistic-adoration/",
+   "fetched_at": "2026-11-02T04:42:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "17:00-18:00",
+   "language": null,
+   "raw": "Exposition and Benediction: Thursday: 5:00 - 6:00 pm",
+   "source_url": "https://www.stedwardchurchlr.org/eucharistic-adoration/",
+   "fetched_at": "2026-11-02T04:42:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "15:00-16:00",
+   "language": null,
+   "raw": "Exposition and Benediction: Friday: 3:00 - 4:00 pm",
+   "source_url": "https://www.stedwardchurchlr.org/eucharistic-adoration/",
+   "fetched_at": "2026-11-02T04:42:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Saturday",
+   "time": "15:00-16:00",
+   "language": null,
+   "raw": "Exposition and Benediction: Saturday: 3:00 - 4:00 pm",
+   "source_url": "https://www.stedwardchurchlr.org/eucharistic-adoration/",
+   "fetched_at": "2026-11-02T04:42:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Sunday",
+   "time": "15:00-16:00",
+   "language": null,
+   "raw": "Exposition and Benediction: Sunday: 3:00 - 4:00 pm",
+   "source_url": "https://www.stedwardchurchlr.org/eucharistic-adoration/",
+   "fetched_at": "2026-11-02T04:42:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "http://stedwardchurchlr.org/shrine",
@@ -466,5 +562,21 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:01+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 6,
+  "mode": "merge"
  }
 }

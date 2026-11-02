@@ -66,6 +66,18 @@
    "url": "https://allsaintsafc.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://allsaintsafc.org/sacraments",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://allsaintsafc.org/adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -119,9 +131,22 @@
  "schedule_rows": [],
  "source_url": "https://allsaintsafc.org/",
  "fetched_at": "2026-11-01T22:15:28+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:01+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "squarespace",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -135,9 +160,14 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 0
  },
  "has_sunday": false,
+ "schedule_dropped": {
+  "relative_time": 2,
+  "range_not_a_mass": 3
+ },
  "groups_dropped": {},
  "event_counts": {
   "window_start": "2026-11-02",

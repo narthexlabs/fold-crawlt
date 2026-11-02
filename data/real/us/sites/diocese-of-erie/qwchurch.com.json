@@ -3,20 +3,23 @@
  "diocese": "diocese-of-erie",
  "matched_church_ids": [
   "brave:PA|queen world marys|",
-  "gc-24461"
+  "gc-24461",
+  "queen-of-the-world-saint-marys-pa"
  ],
  "matched": {
   "directory": [],
   "discovermass": [
+   "queen-of-the-world-saint-marys-pa",
    "brave:PA|queen world marys|",
    "gc-24461"
   ]
  },
  "names": [
-  "Queen Of The World",
-  "Queen of the World"
+  "Queen of the World",
+  "Queen Of The World"
  ],
  "cities": [
+  "Saint Marys",
   "St Marys",
   "St. Marys"
  ],
@@ -71,6 +74,12 @@
   {
    "category": "contact",
    "url": "https://www.qwchurch.com/contact-us",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.qwchurch.com/penance",
    "status": 200,
    "class": "ok"
   }
@@ -278,7 +287,7 @@
    "feed_key": "85a2a69a46b6",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:38:15+00:00",
+    "fetched_at": "2026-11-02T04:52:00+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -463,9 +472,21 @@
  ],
  "source_url": "https://www.qwchurch.com/",
  "fetched_at": "2026-11-01T20:25:13+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:12+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -479,6 +500,7 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 11
  },
  "has_sunday": true,
@@ -491,8 +513,8 @@
   "private_name_risk": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

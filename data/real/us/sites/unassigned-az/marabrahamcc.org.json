@@ -43,6 +43,12 @@
    "url": "https://www.marabrahamcc.org/faithformation.html",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.marabrahamcc.org/sacraments.html",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -111,28 +117,111 @@
  "schedule_rows": [
   {
    "kind": "mass",
-   "day": "Saturday",
-   "time": "18:30",
-   "language": null,
-   "raw": "6:30 PM Mass",
-   "source_url": "https://www.marabrahamcc.org/events.html",
-   "fetched_at": "2026-11-01T17:27:20+00:00",
+   "day": "Sunday",
+   "time": "11:30",
+   "language": "Chaldean",
+   "raw": "Sunday Mass Schedule: 11:30 AMChaldean",
+   "source_url": "https://www.marabrahamcc.org/",
+   "fetched_at": "2026-11-01T17:27:18+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "medium",
+   "confidence": "low",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "devotion",
+   "day": "Monday",
+   "time": "18:00",
+   "language": "English",
+   "raw": "Vespers (Ramsha) is prayed at 6 PM Monday through Friday, before the evening Mass.",
+   "source_url": "https://www.marabrahamcc.org/",
+   "fetched_at": "2026-11-01T17:27:18+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday through Friday"
+  },
+  {
+   "kind": "devotion",
+   "day": "Tuesday",
+   "time": "18:00",
+   "language": "English",
+   "raw": "Vespers (Ramsha) is prayed at 6 PM Monday through Friday, before the evening Mass.",
+   "source_url": "https://www.marabrahamcc.org/",
+   "fetched_at": "2026-11-01T17:27:18+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday through Friday"
+  },
+  {
+   "kind": "devotion",
+   "day": "Wednesday",
+   "time": "18:00",
+   "language": "English",
+   "raw": "Vespers (Ramsha) is prayed at 6 PM Monday through Friday, before the evening Mass.",
+   "source_url": "https://www.marabrahamcc.org/",
+   "fetched_at": "2026-11-01T17:27:18+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday through Friday"
+  },
+  {
+   "kind": "devotion",
+   "day": "Thursday",
+   "time": "18:00",
+   "language": "English",
+   "raw": "Vespers (Ramsha) is prayed at 6 PM Monday through Friday, before the evening Mass.",
+   "source_url": "https://www.marabrahamcc.org/",
+   "fetched_at": "2026-11-01T17:27:18+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday through Friday"
+  },
+  {
+   "kind": "devotion",
+   "day": "Friday",
+   "time": "18:00",
+   "language": "English",
+   "raw": "Vespers (Ramsha) is prayed at 6 PM Monday through Friday, before the evening Mass.",
+   "source_url": "https://www.marabrahamcc.org/",
+   "fetched_at": "2026-11-01T17:27:18+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday through Friday"
+  },
+  {
+   "kind": "mass",
+   "day": "Third Wednesday of the month",
+   "time": "18:30",
+   "language": null,
+   "raw": "3rd Wed:4:45–5:45 PMOnly Third Wednesdays of the Month – Sodality of Mary, followed by Mass at 6:30 PM",
+   "source_url": "https://www.marabrahamcc.org/",
+   "fetched_at": "2026-11-01T17:27:18+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
    "template": "generic_strict"
   },
   {
    "kind": "mass",
-   "day": "Saturday",
-   "time": "19:00",
+   "day": "First Friday of the month",
+   "time": "18:30",
    "language": null,
-   "raw": "Mass: 7:00 PM Young Adult",
-   "source_url": "https://www.marabrahamcc.org/events.html",
-   "fetched_at": "2026-11-01T17:27:20+00:00",
+   "raw": "1st Fri:4:45–5:45 PMEucharistic Adoration – Sacred Heart Sodality, followed by Mass at 6:30 PM",
+   "source_url": "https://www.marabrahamcc.org/",
+   "fetched_at": "2026-11-01T17:27:18+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "low",
+   "confidence": "high",
    "template": "generic_strict"
   },
   {
@@ -160,13 +249,64 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "devotion",
+   "day": "Saturday",
+   "time": "18:00",
+   "language": null,
+   "raw": "6:00 PM Vespers (Ramsha)",
+   "source_url": "https://www.marabrahamcc.org/events.html",
+   "fetched_at": "2026-11-01T17:27:20+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "18:30",
+   "language": null,
+   "raw": "6:30 PM Mass",
+   "source_url": "https://www.marabrahamcc.org/events.html",
+   "fetched_at": "2026-11-01T17:27:20+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "19:00",
+   "language": null,
+   "raw": "Mass: 7:00 PM Young Adult",
+   "source_url": "https://www.marabrahamcc.org/events.html",
+   "fetched_at": "2026-11-01T17:27:20+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "generic_strict"
   }
  ],
  "source_url": "https://marabrahamcc.org/",
  "fetched_at": "2026-11-01T17:27:21+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:33+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -180,12 +320,22 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 9
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "By appointment",
+   "phrase": "By appointment",
+   "source_url": "https://www.marabrahamcc.org/",
+   "fetched_at": "2026-11-01T17:27:18+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "not_a_service": 7,
-  "other_location": 81
+  "other_location": 83,
+  "not_a_service": 4
  },
  "groups_dropped": {
   "noise": 1,
@@ -193,8 +343,8 @@
   "unmatched": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

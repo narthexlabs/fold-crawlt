@@ -81,6 +81,24 @@
    "url": "https://saintpaulseminary.org/about/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://saintpaulseminary.org/about/st-marys-chapel/",
+   "status": 202,
+   "class": "http_202"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://saintpaulseminary.org/ci/learn-to-pray-liturgy-hours/",
+   "status": 202,
+   "class": "http_202"
+  },
+  {
+   "category": "confession",
+   "url": "https://saintpaulseminary.org/reconciliation/",
+   "status": 202,
+   "class": "http_202"
   }
  ],
  "cms_guess": {
@@ -105,7 +123,11 @@
     "status": 200,
     "fetched_at": "2026-11-01T23:35:10+00:00",
     "events_in_window": 8,
-    "kept": 8
+    "kept": 8,
+    "carried_over": {
+     "reason": "re-read answered 202",
+     "re_read_at": "2026-11-02T04:53:12+00:00"
+    }
    }
   }
  ],
@@ -240,13 +262,79 @@
    "review_reason": null,
    "confidence": "high",
    "template": "wordpress"
+  },
+  {
+   "kind": "devotion",
+   "day": "Monday (during the school year)",
+   "time": "17:00",
+   "language": null,
+   "raw": "During the school year, guests are also welcome to participate in Evening Prayer at 5 p.m. Monday-Thursday in St. Mary's Chapel.",
+   "source_url": "https://saintpaulseminary.org/about/directions-and-mass-times/",
+   "fetched_at": "2026-11-01T22:15:27+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "Monday-Thursday"
+  },
+  {
+   "kind": "devotion",
+   "day": "Tuesday (during the school year)",
+   "time": "17:00",
+   "language": null,
+   "raw": "During the school year, guests are also welcome to participate in Evening Prayer at 5 p.m. Monday-Thursday in St. Mary's Chapel.",
+   "source_url": "https://saintpaulseminary.org/about/directions-and-mass-times/",
+   "fetched_at": "2026-11-01T22:15:27+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "Monday-Thursday"
+  },
+  {
+   "kind": "devotion",
+   "day": "Wednesday (during the school year)",
+   "time": "17:00",
+   "language": null,
+   "raw": "During the school year, guests are also welcome to participate in Evening Prayer at 5 p.m. Monday-Thursday in St. Mary's Chapel.",
+   "source_url": "https://saintpaulseminary.org/about/directions-and-mass-times/",
+   "fetched_at": "2026-11-01T22:15:27+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "Monday-Thursday"
+  },
+  {
+   "kind": "devotion",
+   "day": "Thursday (during the school year)",
+   "time": "17:00",
+   "language": null,
+   "raw": "During the school year, guests are also welcome to participate in Evening Prayer at 5 p.m. Monday-Thursday in St. Mary's Chapel.",
+   "source_url": "https://saintpaulseminary.org/about/directions-and-mass-times/",
+   "fetched_at": "2026-11-01T22:15:27+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "day_expanded_from": "Monday-Thursday"
   }
  ],
  "source_url": "https://saintpaulseminary.org/",
  "fetched_at": "2026-11-01T22:15:37+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:49+00:00",
+  "requests": 3,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -260,12 +348,13 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 23
  },
  "has_sunday": true,
  "schedule_dropped": {
   "no_kind": 1,
-  "not_a_service": 3
+  "not_a_service": 2
  },
  "groups_dropped": {
   "unmatched": 1
@@ -278,7 +367,10 @@
   "kept_after_privacy": 8,
   "stored": 8,
   "liturgy_and_confession_instances_total": 0,
-  "excluded_by_reason": {}
+  "excluded_by_reason": {},
+  "carried_over_feeds": [
+   "saintpaulseminary.org:tribe_rest:80a1ba46"
+  ]
  },
  "office_contact": {
   "email": "info@saintpaulseminary.org",

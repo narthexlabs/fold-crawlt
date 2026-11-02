@@ -146,7 +146,90 @@
   "text": "Current Bulletin",
   "source_url": "https://transtans.org/"
  },
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "09:30",
+   "language": null,
+   "raw": "Sunday Vigil (Saturday): 9:30am – Transfiguration",
+   "source_url": "https://transtans.org/mass-schedule/",
+   "fetched_at": "2026-11-02T04:41:42+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_parsed": "Sunday",
+   "day_bound_from_line": true,
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "11:00",
+   "language": null,
+   "raw": "[Transfiguration – St. Stanislaus Kostka] Sunday Vigil (Saturday): 11:00am – St. Stanislaus",
+   "source_url": "https://transtans.org/mass-schedule/",
+   "fetched_at": "2026-11-02T04:41:42+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_parsed": "Sunday",
+   "day_bound_from_line": true,
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "12:30",
+   "language": "Latin",
+   "raw": "Sunday Vigil (Saturday): 12:30pm -Transfiguration (Latin)",
+   "source_url": "https://transtans.org/mass-schedule/",
+   "fetched_at": "2026-11-02T04:41:42+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_parsed": "Sunday",
+   "day_bound_from_line": true,
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "08:30",
+   "language": null,
+   "raw": "[Transfiguration – St. Stanislaus Kostka] Sunday Vigil (Saturday): 8:30 am – St. Stanislaus (Monday – Saturday)",
+   "source_url": "https://transtans.org/mass-schedule/",
+   "fetched_at": "2026-11-02T04:41:42+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Monday – Saturday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "12:00",
+   "language": null,
+   "raw": "[Transfiguration – St. Stanislaus Kostka] Sunday Vigil (Saturday): 12 Noon – St. Stanislaus (Monday – Friday)",
+   "source_url": "https://transtans.org/mass-schedule/",
+   "fetched_at": "2026-11-02T04:41:42+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "day_expanded_from": "Monday – Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "topup": true
+  }
+ ],
  "source_url": "https://transtans.org/",
  "fetched_at": "2026-11-01T02:00:06+00:00",
  "schedule_template": {
@@ -208,5 +291,19 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:45+00:00",
+  "requests": 3,
+  "found": [
+   "liturgy"
+  ],
+  "rows_added": 5,
+  "mode": "merge"
  }
 }

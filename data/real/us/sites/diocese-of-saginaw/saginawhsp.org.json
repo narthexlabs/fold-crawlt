@@ -75,6 +75,12 @@
    "url": "https://saginawhsp.org/events-calendar/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://saginawhsp.org/reconciliation/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -410,6 +416,20 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "16:00",
+   "language": null,
+   "raw": "Reconciliation at Holy Spirit Parish: Private celebration every Saturday at 4:00 p.m. Other times by request.",
+   "source_url": "https://saginawhsp.org/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:56+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "http://www.saginawhsp.org/",
@@ -450,6 +470,33 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Private celebration every Saturday at 4:00 p.m. Other times by request.",
+   "phrase": "by request",
+   "source_url": "https://saginawhsp.org/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:56+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:05+00:00",
+  "requests": 3,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(989) 781-2457",
@@ -461,8 +508,5 @@
   },
   "fetched_at": "2026-11-01T03:59:46+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

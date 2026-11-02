@@ -81,6 +81,12 @@
    "url": "https://stauva.org/contact-us-2/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stauva.org/events/wednesday-adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -659,6 +665,20 @@
    "confidence": "medium",
    "template": "wordpress",
    "day_expanded_from": "Monday, Tuesday, Thursday, Friday"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "20:45",
+   "language": null,
+   "raw": "1PM 9PM 8:45PM [Mass intention withheld]",
+   "source_url": "https://stauva.org/events/wednesday-adoration/",
+   "fetched_at": "2026-11-02T04:41:51+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "http://www.stauva.org/",
@@ -700,6 +720,22 @@
   "excluded_by_reason": {}
  },
  "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
+  "screened_by": "ingest/public/privacy.py screen()",
+  "intentions_withheld": 1
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:51+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

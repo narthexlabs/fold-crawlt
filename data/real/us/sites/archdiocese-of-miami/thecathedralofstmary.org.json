@@ -84,6 +84,12 @@
    "url": "https://www.thecathedralofstmary.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.thecathedralofstmary.org/sacraments/reconciliation/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -358,6 +364,62 @@
    "confidence": "low",
    "template": "wordpress",
    "day_expanded_from": "Daily"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Confession Schedule: Saturday: 5:00 pm",
+   "source_url": "https://www.thecathedralofstmary.org/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:39+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "07:30",
+   "language": null,
+   "raw": "Confession Schedule: Sunday: 7:30 am",
+   "source_url": "https://www.thecathedralofstmary.org/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:39+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "09:30",
+   "language": null,
+   "raw": "Confession Schedule:  9:30 am",
+   "source_url": "https://www.thecathedralofstmary.org/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:39+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "11:30",
+   "language": null,
+   "raw": "Confession Schedule:  11:30 am",
+   "source_url": "https://www.thecathedralofstmary.org/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:39+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "https://www.thecathedralofstmary.org/",
@@ -393,5 +455,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:43+00:00",
+  "requests": 3,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 4,
+  "mode": "merge"
  }
 }

@@ -184,6 +184,62 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:30",
+   "language": "English",
+   "raw": "Mass in English at 8:30 a.m.",
+   "source_url": "https://guadalupe-stpatrick.com/masses-confessions",
+   "fetched_at": "2026-11-02T04:41:39+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "17:00",
+   "language": "Spanish",
+   "raw": "Misa en español: a las 10:30 a.m. y 5 p.m.",
+   "source_url": "https://guadalupe-stpatrick.com/masses-confessions",
+   "fetched_at": "2026-11-02T04:41:39+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "First Friday of the month",
+   "time": "17:30",
+   "language": null,
+   "raw": "Adoración Eucarística: a las 5:30 p.m.",
+   "source_url": "https://guadalupe-stpatrick.com/masses-confessions",
+   "fetched_at": "2026-11-02T04:41:39+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "First Friday of the month",
+   "time": "18:30",
+   "language": null,
+   "raw": "Misa a las 6:30 p.m.",
+   "source_url": "https://guadalupe-stpatrick.com/masses-confessions",
+   "fetched_at": "2026-11-02T04:41:39+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
   }
  ],
  "source_url": "http://www.guadalupe-stpatrick.com/",
@@ -225,5 +281,19 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:39+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ],
+  "rows_added": 4,
+  "mode": "merge"
  }
 }

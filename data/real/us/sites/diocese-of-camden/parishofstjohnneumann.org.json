@@ -3,22 +3,29 @@
  "diocese": "diocese-of-camden",
  "matched_church_ids": [
   "diocese-of-camden:St. John Neumann Parish",
-  "gc-18898"
+  "gc-18898",
+  "parish-of-saint-john-neumann-north-cape-may-nj",
+  "parish-of-st-john-neuman-st-raymond-north-cape-may-nj"
  ],
  "matched": {
   "directory": [
    "diocese-of-camden:St. John Neumann Parish"
   ],
   "discovermass": [
+   "parish-of-saint-john-neumann-north-cape-may-nj",
+   "parish-of-st-john-neuman-st-raymond-north-cape-may-nj",
    "gc-18898"
   ]
  },
  "names": [
   "St. John Neumann Parish",
+  "Parish of Saint John Neumann",
+  "Parish of St. John Neuman (St. Raymond)",
   "St. John of God"
  ],
  "cities": [
-  "North Cape May"
+  "North Cape May",
+  "Villas"
  ],
  "home_url": "http://www.parishofstjohnneumann.org/",
  "final_url": "https://www.parishofstjohnneumann.org/",
@@ -65,6 +72,18 @@
   {
    "category": "bulletin",
    "url": "https://www.parishofstjohnneumann.org/index.php/sunday-bulletins",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.parishofstjohnneumann.org/index.php/sacraments/the-sacrament-of-reconciliation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.parishofstjohnneumann.org/index.php/ministries/eucharistic-adoration",
    "status": 200,
    "class": "ok"
   }
@@ -558,6 +577,38 @@
    "template": "generic_strict"
   },
   {
+   "kind": "confession",
+   "day": "Wednesday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Confession:: Wednesday Prior to 9am Mass;",
+   "source_url": "https://www.parishofstjohnneumann.org/",
+   "fetched_at": "2026-11-01T07:27:53+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "before",
+   "note": "Confession:: Wednesday Prior to 9am Mass;",
+   "relative_resolved": true
+  },
+  {
+   "kind": "confession",
+   "day": "Thursday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Confession:: Thursday Following 9am Mass, and by appointment.",
+   "source_url": "https://www.parishofstjohnneumann.org/",
+   "fetched_at": "2026-11-01T07:27:53+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "after",
+   "note": "Confession:: Thursday Following 9am Mass, and by appointment.",
+   "relative_resolved": true
+  },
+  {
    "kind": "mass",
    "day": "Sunday",
    "time": "08:00",
@@ -869,13 +920,112 @@
    "confidence": "medium",
    "template": "generic_strict",
    "day_expanded_from": "Daily"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "09:00",
+   "language": null,
+   "raw": "The Sacrament of Reconciliation: Also, prior to 9 a.m.",
+   "source_url": "https://www.parishofstjohnneumann.org/index.php/sacraments/the-sacrament-of-reconciliation",
+   "fetched_at": "2026-11-02T04:47:54+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "before",
+   "note": "The Sacrament of Reconciliation: Also, prior to 9 a.m.",
+   "relative_resolved": false
+  },
+  {
+   "kind": "adoration",
+   "day": "Monday",
+   "time": "09:30-14:00",
+   "language": null,
+   "raw": "Eucharistic Adoration Schedule: Monday-Friday, 9:30am until 2pm",
+   "source_url": "https://www.parishofstjohnneumann.org/index.php/ministries/eucharistic-adoration",
+   "fetched_at": "2026-11-02T04:47:55+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday-Friday"
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "09:30-14:00",
+   "language": null,
+   "raw": "Eucharistic Adoration Schedule: Monday-Friday, 9:30am until 2pm",
+   "source_url": "https://www.parishofstjohnneumann.org/index.php/ministries/eucharistic-adoration",
+   "fetched_at": "2026-11-02T04:47:55+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday-Friday"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "09:30-14:00",
+   "language": null,
+   "raw": "Eucharistic Adoration Schedule: Monday-Friday, 9:30am until 2pm",
+   "source_url": "https://www.parishofstjohnneumann.org/index.php/ministries/eucharistic-adoration",
+   "fetched_at": "2026-11-02T04:47:55+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday-Friday"
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "09:30-14:00",
+   "language": null,
+   "raw": "Eucharistic Adoration Schedule: Monday-Friday, 9:30am until 2pm",
+   "source_url": "https://www.parishofstjohnneumann.org/index.php/ministries/eucharistic-adoration",
+   "fetched_at": "2026-11-02T04:47:55+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday-Friday"
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "09:30-14:00",
+   "language": null,
+   "raw": "Eucharistic Adoration Schedule: Monday-Friday, 9:30am until 2pm",
+   "source_url": "https://www.parishofstjohnneumann.org/index.php/ministries/eucharistic-adoration",
+   "fetched_at": "2026-11-02T04:47:55+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Monday-Friday"
   }
  ],
  "source_url": "http://www.parishofstjohnneumann.org/",
  "fetched_at": "2026-11-01T07:27:59+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:47:55+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -889,13 +1039,44 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 15
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Thursday Following 9am Mass, and by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://www.parishofstjohnneumann.org/index.php/sacraments/the-sacrament-of-reconciliation",
+   "fetched_at": "2026-11-02T04:47:54+00:00"
+  },
+  {
+   "kind": "confession",
+   "text": "upon request of the family",
+   "phrase": "upon request",
+   "source_url": "https://www.parishofstjohnneumann.org/index.php/sacraments/the-sacrament-of-reconciliation",
+   "fetched_at": "2026-11-02T04:47:54+00:00"
+  },
+  {
+   "kind": "adoration",
+   "text": "Thursday Following 9am Mass, and by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://www.parishofstjohnneumann.org/index.php/ministries/eucharistic-adoration",
+   "fetched_at": "2026-11-02T04:47:55+00:00"
+  },
+  {
+   "kind": "adoration",
+   "text": "upon request of the family",
+   "phrase": "upon request",
+   "source_url": "https://www.parishofstjohnneumann.org/index.php/ministries/eucharistic-adoration",
+   "fetched_at": "2026-11-02T04:47:55+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "relative_time": 3,
+  "relative_time": 2,
   "benediction_end": 1,
-  "other_location": 64
+  "other_location": 108
  },
  "groups_dropped": {
   "fragment": 1,
@@ -903,8 +1084,8 @@
   "unmatched": 2
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

@@ -42,6 +42,18 @@
    "url": "https://sainteugenechurch.net/organizations/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://sainteugenechurch.net/reconciliation/",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://sainteugenechurch.net/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -308,9 +320,19 @@
  ],
  "source_url": "https://sainteugenechurch.net/",
  "fetched_at": "2026-11-01T20:25:29+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:11+00:00",
+  "requests": 2,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -324,8 +346,18 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 9
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "4:00 to 4:30 PM on Saturdays, or by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://sainteugenechurch.net/",
+   "fetched_at": "2026-11-01T20:25:15+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "not_a_service": 1,

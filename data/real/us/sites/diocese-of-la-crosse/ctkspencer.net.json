@@ -78,6 +78,12 @@
    "url": "https://www.ctkspencer.net/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.ctkspencer.net/reconciliation",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -427,6 +433,20 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "First Friday of the month",
+   "time": "08:30",
+   "language": null,
+   "raw": "First Fridays after Mass: 8:30 - 9:15 AM",
+   "source_url": "https://www.ctkspencer.net/reconciliation",
+   "fetched_at": "2026-11-02T04:41:55+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "topup": true
   }
  ],
  "source_url": "https://ctkspencer.net/",
@@ -468,6 +488,32 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "also available by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://www.ctkspencer.net/reconciliation",
+   "fetched_at": "2026-11-02T04:41:55+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:56+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "office@ctk.diolcparish.org",
   "phone": "(715) 659-4480",
@@ -480,8 +526,5 @@
   },
   "fetched_at": "2026-11-01T05:11:52+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

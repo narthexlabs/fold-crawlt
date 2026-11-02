@@ -73,6 +73,18 @@
    "url": "https://stblase.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stblase.org/reconciliation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stblase.org/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -586,9 +598,21 @@
  ],
  "source_url": "http://www.stblase.org/",
  "fetched_at": "2026-11-01T18:52:05+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:45+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -602,10 +626,21 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 5
+  "trusted_kinds": [],
+  "generic_rows": 6
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Communal celebrations of this sacrament are scheduled during Advent and Lent; watch the bulletin for these dates and times. The Sacrament of Penance may also be made by appointment by calling Fr. Rand",
+   "phrase": "by appointment",
+   "source_url": "https://stblase.org/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:42+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
+  "prose": 1,
   "box_rows_added": 7
  },
  "groups_dropped": {
@@ -613,8 +648,8 @@
   "unmatched": 3
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

@@ -73,6 +73,18 @@
    "url": "https://jamcc.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://jamcc.org/liturgy/reconciliation/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://jamcc.org/liturgy/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -136,6 +148,20 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "16:30",
+   "language": null,
+   "raw": "The Sacrament of Reconciliation is currently celebrated at 4:30 pm on Saturday at St.",
+   "source_url": "https://jamcc.org/liturgy/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:59+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "http://www.jamcc.org/",
@@ -174,5 +200,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:21+00:00",
+  "requests": 3,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

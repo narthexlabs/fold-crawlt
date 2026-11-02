@@ -81,6 +81,12 @@
    "url": "https://saint-anne.org/our-parish/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://saint-anne.org/sacraments-rites/reconciliation",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -399,6 +405,36 @@
    "review_reason": null,
    "confidence": "high",
    "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Wednesday",
+   "time": "07:30-08:30",
+   "language": null,
+   "raw": "Confession times are Wednesday, Friday and Saturday 7:30-8:30 a.m. or by appointment.",
+   "source_url": "https://saint-anne.org/sacraments-rites/reconciliation",
+   "fetched_at": "2026-11-02T04:41:39+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "day_expanded_from": "Wednesday, Friday and Saturday",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Friday",
+   "time": "07:30-08:30",
+   "language": null,
+   "raw": "Confession times are Wednesday, Friday and Saturday 7:30-8:30 a.m. or by appointment.",
+   "source_url": "https://saint-anne.org/sacraments-rites/reconciliation",
+   "fetched_at": "2026-11-02T04:41:39+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "day_expanded_from": "Wednesday, Friday and Saturday",
+   "topup": true
   }
  ],
  "source_url": "http://www.saint-anne.org/",
@@ -438,5 +474,29 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Confession times are Wednesday, Friday and Saturday 7:30-8:30 a.m. or by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://saint-anne.org/sacraments-rites/reconciliation",
+   "fetched_at": "2026-11-02T04:41:39+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:42+00:00",
+  "requests": 3,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
  }
 }

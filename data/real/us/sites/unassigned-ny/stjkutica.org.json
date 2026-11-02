@@ -146,6 +146,34 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "19:00",
+   "language": null,
+   "raw": "St. Job of Pochaev at 2:45 pm, Vigil at 7:00 pm on Saturday, and on Sunday morning,",
+   "source_url": "https://stjkutica.org/schedule",
+   "fetched_at": "2026-11-02T04:42:13+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Hierarchical Divine Liturgy with our Metropolitan followed by the Procession of the Cross at 9:00 am.",
+   "source_url": "https://stjkutica.org/schedule",
+   "fetched_at": "2026-11-02T04:42:13+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
   }
  ],
  "source_url": "http://stjkutica.org/",
@@ -190,5 +218,19 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:13+00:00",
+  "requests": 1,
+  "found": [
+   "liturgy"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
  }
 }

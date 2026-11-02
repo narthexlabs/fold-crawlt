@@ -79,6 +79,12 @@
    "url": "https://www.svdpomaha.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.svdpomaha.org/mass/adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -4225,6 +4231,34 @@
    "names_person": 3
   }
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Reconciliation can also be made by appointment. Email",
+   "phrase": "by appointment",
+   "source_url": "https://www.svdpomaha.org/sacraments/reconciliation/",
+   "fetched_at": "2026-11-02T04:42:00+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:02+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "parishoffice@svdpomaha.org",
   "phone": "(402) 493-1642",
@@ -4237,8 +4271,5 @@
   },
   "fetched_at": "2026-11-01T05:13:35+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

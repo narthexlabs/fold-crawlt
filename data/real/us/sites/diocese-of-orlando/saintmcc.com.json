@@ -75,6 +75,18 @@
    "url": "https://www.saintmcc.com/staff",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.saintmcc.com/saintschapel",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://www.saintmcc.com/liturgical-donations",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -387,6 +399,42 @@
    "confidence": "medium",
    "template": "generic_strict",
    "day_expanded_from": "Wednesday - Friday"
+  },
+  {
+   "kind": "confession",
+   "day": "Monday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Confession Times: Monday & Friday: after the 9:00 a.m. Mass",
+   "source_url": "https://www.saintmcc.com/confession",
+   "fetched_at": "2026-11-02T04:41:43+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "after",
+   "note": "Confession Times: Monday & Friday: after the 9:00 a.m. Mass",
+   "day_expanded_from": "Monday & Friday",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Friday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Confession Times: Monday & Friday: after the 9:00 a.m. Mass",
+   "source_url": "https://www.saintmcc.com/confession",
+   "fetched_at": "2026-11-02T04:41:43+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "after",
+   "note": "Confession Times: Monday & Friday: after the 9:00 a.m. Mass",
+   "day_expanded_from": "Monday & Friday",
+   "day_parsed": "Monday",
+   "day_bound_from_line": true,
+   "topup": true
   }
  ],
  "source_url": "https://www.saintmcc.com/",
@@ -430,5 +478,30 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "and by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://www.saintmcc.com/confession",
+   "fetched_at": "2026-11-02T04:41:43+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:46+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 2,
+  "mode": "merge"
  }
 }

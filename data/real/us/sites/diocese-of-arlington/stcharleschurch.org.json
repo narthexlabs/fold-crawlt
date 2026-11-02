@@ -63,6 +63,12 @@
    "url": "https://www.stcharleschurch.org/staff",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stcharleschurch.org/40hours",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -335,6 +341,21 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "squarespace"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "07:00",
+   "language": null,
+   "raw": "7:00am: Daily Mass",
+   "source_url": "https://www.stcharleschurch.org/40hours",
+   "fetched_at": "2026-11-02T04:42:02+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "squarespace",
+   "day_expanded_from": "Daily",
+   "topup": true
   }
  ],
  "source_url": "https://www.stcharleschurch.org/",
@@ -378,5 +399,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:02+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

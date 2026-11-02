@@ -67,6 +67,18 @@
    "url": "https://www.goodshepherdchurchdenver.org/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.goodshepherdchurchdenver.org/reconciliation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://www.goodshepherdchurchdenver.org/liturgy",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -558,6 +570,62 @@
    "confidence": "high",
    "template": "generic_strict",
    "kind_parsed": "mass"
+  },
+  {
+   "kind": "adoration",
+   "day": "Saturday",
+   "time": "16:00",
+   "language": null,
+   "raw": "Adoration: Saturday at 4:00 p.m. and",
+   "source_url": "https://www.goodshepherdchurchdenver.org/mass--confession-and-adoration-changes",
+   "fetched_at": "2026-11-02T04:41:50+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Sunday",
+   "time": "08:30",
+   "language": null,
+   "raw": "Adoration: Sunday at 8:30 a.m., 10:30 a.m., and 5:00 p.m.",
+   "source_url": "https://www.goodshepherdchurchdenver.org/mass--confession-and-adoration-changes",
+   "fetched_at": "2026-11-02T04:41:50+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Sunday",
+   "time": "10:30",
+   "language": null,
+   "raw": "Adoration: Sunday at 8:30 a.m., 10:30 a.m., and 5:00 p.m.",
+   "source_url": "https://www.goodshepherdchurchdenver.org/mass--confession-and-adoration-changes",
+   "fetched_at": "2026-11-02T04:41:50+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Sunday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Adoration: Sunday at 8:30 a.m., 10:30 a.m., and 5:00 p.m.",
+   "source_url": "https://www.goodshepherdchurchdenver.org/mass--confession-and-adoration-changes",
+   "fetched_at": "2026-11-02T04:41:50+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
   }
  ],
  "source_url": "https://www.goodshepherdchurchdenver.org/",
@@ -603,6 +671,25 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:52+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 4,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(303) 322-7706",
@@ -614,8 +701,5 @@
   },
   "fetched_at": "2026-11-01T05:11:08+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

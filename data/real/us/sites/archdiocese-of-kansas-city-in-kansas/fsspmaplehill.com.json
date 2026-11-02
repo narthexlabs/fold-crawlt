@@ -30,6 +30,18 @@
    "url": "https://www.fsspmaplehill.com/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.fsspmaplehill.com/photos/nggallery/album/st-john-vianney-chapel",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.fsspmaplehill.com/reconciliation/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -268,9 +280,21 @@
  ],
  "source_url": "https://www.fsspmaplehill.com/",
  "fetched_at": "2026-11-01T17:28:12+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:50+00:00",
+  "requests": 2,
+  "found": [
+   "adoration"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -284,8 +308,18 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 9
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "45 minutes before Mass until 15 minutes before Mass, specifically:",
+   "phrase": "45 minutes before Mass",
+   "source_url": "https://www.fsspmaplehill.com/",
+   "fetched_at": "2026-11-01T17:28:10+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "range_not_a_mass": 3,
@@ -295,8 +329,8 @@
   "unmatched": 2
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

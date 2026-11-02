@@ -2,15 +2,18 @@
  "domain": "holyghostjessup.weebly.com",
  "diocese": "unassigned-pa",
  "matched_church_ids": [
-  "brave:PA|ghost jessup|"
+  "brave:PA|ghost jessup|",
+  "holy-ghost-byzantine-jessup-pa"
  ],
  "matched": {
   "directory": [],
   "discovermass": [
+   "holy-ghost-byzantine-jessup-pa",
    "brave:PA|ghost jessup|"
   ]
  },
  "names": [
+  "Holy Ghost (Byzantine)",
   "Holy Ghost"
  ],
  "cities": [
@@ -108,20 +111,6 @@
   {
    "kind": "other",
    "day": "Holy days",
-   "time": "18:00",
-   "language": null,
-   "raw": "Divine Liturgies for holy days will be on the day of the observance, at 6 p.m., unless the holy day falls on a Saturday. For holy days that fall on a Saturday, Divine Liturgy will be at 10 a.m.",
-   "source_url": "https://holyghostjessup.weebly.com/",
-   "fetched_at": "2026-11-01T20:25:01+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "weebly",
-   "kind_parsed": "mass"
-  },
-  {
-   "kind": "other",
-   "day": "Holy days",
    "time": "10:00",
    "language": null,
    "raw": "Divine Liturgies for holy days will be on the day of the observance, at 6 p.m., unless the holy day falls on a Saturday. For holy days that fall on a Saturday, Divine Liturgy will be at 10 a.m.",
@@ -136,9 +125,19 @@
  ],
  "source_url": "https://holyghostjessup.weebly.com/",
  "fetched_at": "2026-11-01T20:25:04+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:01+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "weebly",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -152,13 +151,26 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 1
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "The Mystery of Holy Confession (Reconciliation) will be made available between 3-4 p.m. on Saturdays or by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://holyghostjessup.weebly.com/",
+   "fetched_at": "2026-11-01T20:25:01+00:00"
+  }
+ ],
  "has_sunday": true,
+ "schedule_dropped": {
+  "other_location": 1
+ },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

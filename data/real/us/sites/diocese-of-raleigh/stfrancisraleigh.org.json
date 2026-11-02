@@ -81,6 +81,12 @@
    "url": "https://www.stfrancisraleigh.org/livestream/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stfrancisraleigh.org/reconciliation/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -640,6 +646,20 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "16:00-16:45",
+   "language": null,
+   "raw": "The sacrament of reconciliation for individuals is celebrated most Saturdays of the year between 4:00-4:45pm in the main church.",
+   "source_url": "https://www.stfrancisraleigh.org/reconciliation/",
+   "fetched_at": "2026-11-02T04:41:50+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "https://www.stfrancisraleigh.org/",
@@ -682,6 +702,24 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:11+00:00",
+  "requests": 3,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(919) 847-8205",
@@ -693,8 +731,5 @@
   },
   "fetched_at": "2026-11-01T03:58:32+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

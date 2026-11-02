@@ -79,6 +79,12 @@
    "url": "https://stjohn-frederick.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stjohn-frederick.org/adoration-schedule/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -867,6 +873,20 @@
    "review_reason": null,
    "confidence": "high",
    "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "15:00-20:00",
+   "language": null,
+   "raw": "Eucharistic Exposition (Adoration) is available weekly at St. John on Wednesdays from 3:00 pm – 8:00 pm.",
+   "source_url": "https://stjohn-frederick.org/adoration-schedule/",
+   "fetched_at": "2026-11-02T04:41:36+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "https://www.stjohn-frederick.org/",
@@ -913,5 +933,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:36+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

@@ -78,6 +78,18 @@
    "url": "https://www.stbernardstulsa.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stbernardstulsa.org/adoration",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://www.stbernardstulsa.org/worship-and-liturgy",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -240,19 +252,6 @@
  },
  "schedule_rows": [
   {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "15:30-16:45",
-   "language": null,
-   "raw": "Reconciliation: Saturdays | 3:30 pm-4:45 pm",
-   "source_url": "https://www.stbernardstulsa.org/reconciliation",
-   "fetched_at": "2026-11-01T07:19:46+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "generic_strict"
-  },
-  {
    "kind": "mass",
    "day": "Monday",
    "time": "08:30",
@@ -413,6 +412,19 @@
    "template": "generic_strict"
   },
   {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:30-16:45",
+   "language": null,
+   "raw": "Confession: Saturdays | 3:30 pm - 4:45 pm",
+   "source_url": "https://www.stbernardstulsa.org/",
+   "fetched_at": "2026-11-01T07:19:43+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
    "kind": "mass",
    "day": "Saturday",
    "time": "17:00",
@@ -467,9 +479,22 @@
  ],
  "source_url": "https://www.stbernardstulsa.org/",
  "fetched_at": "2026-11-01T07:19:52+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:48:02+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "liturgy"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -483,22 +508,32 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
-  "generic_rows": 15
+  "trusted_kinds": [],
+  "generic_rows": 18
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Sundays | 30 minutes before Mass",
+   "phrase": "30 minutes before Mass",
+   "source_url": "https://www.stbernardstulsa.org/",
+   "fetched_at": "2026-11-01T07:19:43+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "dated_line": 7,
-  "range_not_a_mass": 1,
-  "not_a_service": 3,
-  "other_location": 6,
-  "skipped_section": 9
+  "dated_line": 8,
+  "dated_block": 2,
+  "not_a_service": 7,
+  "skipped_section": 9,
+  "other_location": 1
  },
  "groups_dropped": {
   "unmatched": 2
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

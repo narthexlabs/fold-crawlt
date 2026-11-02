@@ -72,6 +72,18 @@
    "url": "https://www.saintmmchurch.org/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.saintmmchurch.org/reconciliation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.saintmmchurch.org/eucharistic-adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -474,7 +486,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:33:22+00:00",
+    "fetched_at": "2026-11-02T04:45:01+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -793,13 +805,119 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "squarespace"
+  },
+  {
+   "kind": "adoration",
+   "day": "Monday",
+   "time": "09:00-18:30",
+   "language": null,
+   "raw": "Our adoration chapel is currently open for adoration Monday : Monday 9:00 AM to 6:30 PM",
+   "source_url": "https://www.saintmmchurch.org/eucharistic-adoration",
+   "fetched_at": "2026-11-02T04:41:37+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace"
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "09:00-18:30",
+   "language": null,
+   "raw": "Our adoration chapel is currently open for adoration Monday : Tuesday 9:00 AM to 6:30 PM",
+   "source_url": "https://www.saintmmchurch.org/eucharistic-adoration",
+   "fetched_at": "2026-11-02T04:41:37+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "09:00-21:00",
+   "language": null,
+   "raw": "Our adoration chapel is currently open for adoration Monday : Wednesday 9:00 AM to 9:00 PM",
+   "source_url": "https://www.saintmmchurch.org/eucharistic-adoration",
+   "fetched_at": "2026-11-02T04:41:37+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace"
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "09:00-18:30",
+   "language": null,
+   "raw": "Our adoration chapel is currently open for adoration Monday : Thursday 9:00 AM to 6:30 PM",
+   "source_url": "https://www.saintmmchurch.org/eucharistic-adoration",
+   "fetched_at": "2026-11-02T04:41:37+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace"
+  },
+  {
+   "kind": "adoration",
+   "day": "Monday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Our adoration chapel is currently open for adoration Monday : Friday 9:00 AM to Saturday 8:30 AM",
+   "source_url": "https://www.saintmmchurch.org/eucharistic-adoration",
+   "fetched_at": "2026-11-02T04:41:37+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace",
+   "day_parsed": "Friday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Our adoration chapel is currently open for adoration Monday : Friday 9:00 AM to Saturday 8:30 AM",
+   "source_url": "https://www.saintmmchurch.org/eucharistic-adoration",
+   "fetched_at": "2026-11-02T04:41:37+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace"
+  },
+  {
+   "kind": "adoration",
+   "day": "Saturday",
+   "time": "08:30",
+   "language": null,
+   "raw": "Our adoration chapel is currently open for adoration Monday : Friday 9:00 AM to Saturday 8:30 AM",
+   "source_url": "https://www.saintmmchurch.org/eucharistic-adoration",
+   "fetched_at": "2026-11-02T04:41:37+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace"
   }
  ],
  "source_url": "https://saintmmchurch.org/",
  "fetched_at": "2026-11-01T17:27:41+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:37+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "squarespace",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -813,11 +931,21 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 21
+  "trusted_kinds": [],
+  "generic_rows": 28
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Confession is also available by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://www.saintmmchurch.org/masstimes",
+   "fetched_at": "2026-11-01T17:27:36+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "no_day": 1,
+  "no_day": 2,
   "relative_time": 1,
   "other_location": 1
  },
@@ -825,8 +953,8 @@
   "noise": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

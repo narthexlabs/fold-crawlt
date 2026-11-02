@@ -27,6 +27,18 @@
    "url": "https://stmarysdumont.org/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stmarysdumont.org/?p=115",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://stmarysdumont.org/?page_id=17",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -106,7 +118,22 @@
   "text": "Bulletin & Worship Aids",
   "source_url": "https://stmarysdumont.org/"
  },
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:30",
+   "language": null,
+   "raw": "The Roman Catholic community of St. Mary’s in Dumont, N.J., : 5:30 p.m.",
+   "source_url": "https://stmarysdumont.org/?page_id=17",
+   "fetched_at": "2026-11-02T04:47:49+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  }
+ ],
  "source_url": "https://stmarysdumont.org/",
  "fetched_at": "2026-11-01T01:58:28+00:00",
  "schedule_template": {
@@ -142,5 +169,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:47:50+00:00",
+  "requests": 3,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

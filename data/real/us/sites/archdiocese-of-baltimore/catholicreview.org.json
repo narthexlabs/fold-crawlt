@@ -55,6 +55,12 @@
    "url": "https://catholicreview.org/bulletin",
    "status": 404,
    "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://catholicreview.org/adoration-anchors-ones-life-in-jesus-pope-says/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -132,6 +138,23 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:35+00:00",
+  "requests": 2,
+  "found": [
+   "adoration"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "mail@catholicreview.org",
   "phone": "(443) 524-3150",
@@ -144,8 +167,5 @@
   },
   "fetched_at": "2026-11-01T03:58:37+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

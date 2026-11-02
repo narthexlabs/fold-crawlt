@@ -69,6 +69,12 @@
    "url": "https://saintsharbelnj.org/contact-1",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://saintsharbelnj.org/reconciliation",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -309,7 +315,7 @@
    "display_tz": "America/New_York",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:31:13+00:00",
+    "fetched_at": "2026-11-02T04:50:03+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -332,7 +338,7 @@
    "time": "17:00",
    "language": "English",
    "raw": "Regular Mass Times: Saturday - 5 PM (English)",
-   "source_url": "https://saintsharbelnj.org/divine-liturgy",
+   "source_url": "https://saintsharbelnj.org/",
    "fetched_at": "2026-11-01T22:16:30+00:00",
    "needs_review": false,
    "review_reason": null,
@@ -345,7 +351,7 @@
    "time": "11:00",
    "language": "English/Arabic",
    "raw": "Regular Mass Times: Sunday - 11 AM (English & Arabic)",
-   "source_url": "https://saintsharbelnj.org/divine-liturgy",
+   "source_url": "https://saintsharbelnj.org/",
    "fetched_at": "2026-11-01T22:16:30+00:00",
    "needs_review": false,
    "review_reason": null,
@@ -371,6 +377,19 @@
    "time": "20:00",
    "language": null,
    "raw": "Eucharist Adoration takes place the first Thursday of every : in the Church for one hour 7 pm-8 pm",
+   "source_url": "https://saintsharbelnj.org/divine-liturgy",
+   "fetched_at": "2026-11-01T22:16:30+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "godaddy"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "19:00",
+   "language": null,
+   "raw": "Divine Liturgy is celebrated in the Vigil of the Feast Day: (the evening before) 7:00 PM",
    "source_url": "https://saintsharbelnj.org/divine-liturgy",
    "fetched_at": "2026-11-01T22:16:30+00:00",
    "needs_review": false,
@@ -407,9 +426,21 @@
  ],
  "source_url": "https://saintsharbelnj.org/",
  "fetched_at": "2026-11-01T22:16:36+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:47:47+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "godaddy",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -423,11 +454,21 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
-  "generic_rows": 4
+  "trusted_kinds": [],
+  "generic_rows": 6
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Also Available by Appointment",
+   "phrase": "by Appointment",
+   "source_url": "https://saintsharbelnj.org/reconciliation",
+   "fetched_at": "2026-11-02T04:47:47+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 1
+  "range_not_a_mass": 1
  },
  "groups_dropped": {
   "unmatched": 13,
@@ -435,8 +476,8 @@
   "noise": 8
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

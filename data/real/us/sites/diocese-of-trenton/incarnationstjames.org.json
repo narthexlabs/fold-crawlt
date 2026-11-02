@@ -217,19 +217,6 @@
  },
  "schedule_rows": [
   {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "15:00-15:45",
-   "language": null,
-   "raw": "Confessions are available every Saturday afternoon at the Incarnation worship site from 3:00 – 3:45 p.m. or by appointment.",
-   "source_url": "https://www.incarnationstjames.org/reconciliation",
-   "fetched_at": "2026-11-01T08:05:14+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "high",
-   "template": "generic_strict"
-  },
-  {
    "kind": "mass",
    "day": "Saturday",
    "time": "16:00",
@@ -350,13 +337,36 @@
    "confidence": "medium",
    "template": "generic_strict",
    "day_expanded_from": "WEEKDAY"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:00-15:45",
+   "language": null,
+   "raw": "Confessions: 3:00 - 3:45 | Incarnation",
+   "source_url": "https://www.incarnationstjames.org/",
+   "fetched_at": "2026-11-01T08:04:55+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "generic_strict"
   }
  ],
  "source_url": "https://www.incarnationstjames.org/",
  "fetched_at": "2026-11-01T08:06:24+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:47:53+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -370,6 +380,7 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 5
  },
  "has_sunday": true,
@@ -381,8 +392,8 @@
   "fragment": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

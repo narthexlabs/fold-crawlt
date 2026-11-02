@@ -75,6 +75,12 @@
    "url": "https://www.saintraphaelparish.org/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.saintraphaelparish.org/reconciliation",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -320,6 +326,20 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:00-15:45",
+   "language": null,
+   "raw": "Reconciliation: Available Saturdays from 3:00-3:45 PM or anytime upon request.",
+   "source_url": "https://www.saintraphaelparish.org/reconciliation",
+   "fetched_at": "2026-11-02T04:41:33+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "topup": true
   }
  ],
  "source_url": "http://saintraphaelparish.org/",
@@ -355,6 +375,33 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Available Saturdays from 3:00-3:45 PM or anytime upon request.",
+   "phrase": "upon request",
+   "source_url": "https://www.saintraphaelparish.org/reconciliation",
+   "fetched_at": "2026-11-02T04:41:33+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:34+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(781) 488-5444",
@@ -366,8 +413,5 @@
   },
   "fetched_at": "2026-11-01T05:09:27+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

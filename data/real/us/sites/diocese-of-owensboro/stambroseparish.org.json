@@ -69,6 +69,12 @@
    "url": "https://www.stambroseparish.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stambroseparish.org/sacraments/reconciliation",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -345,5 +351,36 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Saturdays: Following Mass or 30 minutes before Mass",
+   "phrase": "30 minutes before Mass",
+   "source_url": "https://www.stambroseparish.org/sacraments/reconciliation",
+   "fetched_at": "2026-11-02T04:48:00+00:00"
+  },
+  {
+   "kind": "confession",
+   "text": "Other times by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://www.stambroseparish.org/sacraments/reconciliation",
+   "fetched_at": "2026-11-02T04:48:00+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:48:01+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
  }
 }

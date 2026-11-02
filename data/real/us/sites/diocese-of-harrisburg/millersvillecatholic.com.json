@@ -69,6 +69,18 @@
    "url": "https://www.millersvillecatholic.com/bulletin",
    "status": 404,
    "class": "not_found"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.millersvillecatholic.com/reconciliation",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.millersvillecatholic.com/adoration",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -112,13 +124,39 @@
  "bulletin": null,
  "schedule_rows": [
   {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "14:00-14:50",
+   "language": null,
+   "raw": "Confessions at 2-2:50 PM",
+   "source_url": "https://www.millersvillecatholic.com/",
+   "fetched_at": "2026-11-02T00:05:48+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace"
+  },
+  {
    "kind": "mass",
    "day": "Sunday",
-   "time": "12:00",
+   "time": "15:00",
    "language": null,
-   "raw": "Sunday Mass: -12:00pm",
-   "source_url": "https://www.millersvillecatholic.com/schedule",
-   "fetched_at": "2026-11-02T00:05:49+00:00",
+   "raw": "Mass at 3-4:00 PM",
+   "source_url": "https://www.millersvillecatholic.com/",
+   "fetched_at": "2026-11-02T00:05:48+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace"
+  },
+  {
+   "kind": "mass",
+   "day": "Monday",
+   "time": "21:00",
+   "language": null,
+   "raw": "9:00 PM Mass",
+   "source_url": "https://www.millersvillecatholic.com/",
+   "fetched_at": "2026-11-02T00:05:48+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -129,7 +167,20 @@
    "day": "Wednesday",
    "time": "17:30",
    "language": null,
-   "raw": "- Mass 5:30pm",
+   "raw": "5:30 PM Mass",
+   "source_url": "https://www.millersvillecatholic.com/",
+   "fetched_at": "2026-11-02T00:05:48+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "squarespace"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "12:00",
+   "language": null,
+   "raw": "Sunday Mass: -12:00pm",
    "source_url": "https://www.millersvillecatholic.com/schedule",
    "fetched_at": "2026-11-02T00:05:49+00:00",
    "needs_review": false,
@@ -166,9 +217,19 @@
  ],
  "source_url": "http://www.millersvillecatholic.com/",
  "fetched_at": "2026-11-02T00:05:55+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:16+00:00",
+  "requests": 2,
+  "found": []
+ },
  "schedule_template": {
   "template": "squarespace",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -182,6 +243,7 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 21
  },
  "has_sunday": true,

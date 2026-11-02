@@ -63,6 +63,12 @@
    "url": "https://stleosatu.org/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://stleosatu.org/go/liturgy-of-the-hours/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -341,5 +347,36 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Confessions available 30 minutes before each Sunday Mass.",
+   "phrase": "30 minutes before each Sunday Mass",
+   "source_url": "https://stleosatu.org/worship/",
+   "fetched_at": "2026-11-02T04:42:03+00:00"
+  },
+  {
+   "kind": "confession",
+   "text": "Confessions are also available by appointment. Contact our offices to set up a time.",
+   "phrase": "by appointment",
+   "source_url": "https://stleosatu.org/worship/",
+   "fetched_at": "2026-11-02T04:42:03+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:04+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
  }
 }

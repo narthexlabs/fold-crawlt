@@ -77,6 +77,12 @@
    "url": "https://www.imconeida.org/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.imconeida.org/reconciliation",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -173,7 +179,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:34:42+00:00",
+    "fetched_at": "2026-11-02T04:50:46+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -190,7 +196,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:34:43+00:00",
+    "fetched_at": "2026-11-02T04:50:47+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -281,7 +287,7 @@
   },
   {
    "kind": "adoration",
-   "day": "First Tuesday of the month",
+   "day": "First Tuesday of the month (during the school year)",
    "time": "08:30",
    "language": null,
    "raw": "Eucharistic Adoration: The months of September through May the first Tuesday of the month at 8:30 am after 8:00 am Mass.",
@@ -331,13 +337,38 @@
    "review_reason": null,
    "confidence": "high",
    "template": "generic_strict"
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "07:30",
+   "language": null,
+   "raw": "The Sacrament of Reconciliation/confession, is offered by appointment or every Sunday at 7:30 am before mass.",
+   "source_url": "https://www.imconeida.org/reconciliation",
+   "fetched_at": "2026-11-02T04:41:50+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict"
   }
  ],
  "source_url": "https://www.imconeida.org/",
  "fetched_at": "2026-11-01T20:25:25+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:50+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -345,26 +376,41 @@
     "counts_ok": true,
     "sunday_not_copied": true,
     "no_daily_on_sunday": true,
-    "mostly_high": false
+    "mostly_high": true
    },
-   "score": "medium"
+   "score": "high"
   },
   "passed_bar": true,
-  "trusted_candidate": false,
-  "generic_rows": 3
+  "trusted_candidate": true,
+  "trusted_kinds": [
+   "weekend",
+   "weekday",
+   "confession",
+   "adoration"
+  ],
+  "generic_rows": 4
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "The Sacrament of Reconciliation/confession, is offered by appointment or every Sunday at 7:30 am before mass.",
+   "phrase": "by appointment",
+   "source_url": "https://www.imconeida.org/reconciliation",
+   "fetched_at": "2026-11-02T04:41:50+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "relative_time": 1,
-  "not_a_service": 1
+  "no_day": 1
  },
  "groups_dropped": {
   "unmatched": 1,
   "noise": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

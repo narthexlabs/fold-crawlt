@@ -81,6 +81,18 @@
    "url": "https://www.stthomasmoredc.org/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stthomasmoredc.org/reconciliation",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stthomasmoredc.org/adoration",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -176,7 +188,7 @@
    "note": "iCal link on page",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:40:28+00:00",
+    "fetched_at": "2026-11-02T04:51:44+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -192,6 +204,19 @@
   "source_url": "https://www.stthomasmoredc.org/bulletins"
  },
  "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "16:00",
+   "language": "English",
+   "raw": "Saturday Vigil: 4:00 PM English Rectory Chapel",
+   "source_url": "https://www.stthomasmoredc.org/",
+   "fetched_at": "2026-11-01T17:27:23+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "ecatholic"
+  },
   {
    "kind": "mass",
    "day": "Sunday",
@@ -234,9 +259,19 @@
  ],
  "source_url": "https://www.stthomasmoredc.org/",
  "fetched_at": "2026-11-01T17:29:03+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:14+00:00",
+  "requests": 2,
+  "found": []
+ },
  "schedule_template": {
   "template": "ecatholic",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -248,22 +283,34 @@
    },
    "score": "high"
   },
-  "passed_bar": false,
-  "trusted_candidate": false,
+  "passed_bar": true,
+  "trusted_candidate": true,
+  "trusted_kinds": [
+   "weekend",
+   "weekday",
+   "confession",
+   "adoration"
+  ],
   "generic_rows": 3
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "After Sunday Masses by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://www.stthomasmoredc.org/sacraments",
+   "fetched_at": "2026-11-01T17:27:43+00:00"
+  }
+ ],
  "has_sunday": true,
- "schedule_dropped": {
-  "other_location": 1
- },
  "groups_dropped": {
   "unmatched": 1,
   "label_not_group": 1,
   "fragment": 3
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

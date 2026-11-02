@@ -3,6 +3,7 @@
  "diocese": "diocese-of-erie",
  "matched_church_ids": [
   "brave:PA|michael fryburg|",
+  "saint-ann-marienville-pa",
   "st-mary-crown-pa",
   "st-michael-fryburg-pa"
  ],
@@ -11,16 +12,19 @@
   "discovermass": [
    "st-michael-fryburg-pa",
    "st-mary-crown-pa",
+   "saint-ann-marienville-pa",
    "brave:PA|michael fryburg|"
   ]
  },
  "names": [
   "St Michael",
-  "St Mary"
+  "St Mary",
+  "Saint Ann"
  ],
  "cities": [
   "Fryburg",
-  "Crown"
+  "Crown",
+  "Marienville"
  ],
  "home_url": "https://www.watch4deercatholic.church/",
  "final_url": "https://www.watch4deercatholic.church/",
@@ -73,6 +77,12 @@
   {
    "category": "calendar",
    "url": "https://www.watch4deercatholic.church/mass-calendar",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.watch4deercatholic.church/reconciliation",
    "status": 200,
    "class": "ok"
   }
@@ -241,13 +251,39 @@
    "confidence": "medium",
    "template": "wix",
    "location": "St Michael"
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "18:00",
+   "language": null,
+   "raw": "[Saint Ann] Saturday Vigil: Thursday 6:00 PM at St. Ann (Marienville)",
+   "source_url": "https://www.watch4deercatholic.church/",
+   "fetched_at": "2026-11-01T20:25:39+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "location": "Saint Ann"
   }
  ],
  "source_url": "https://www.watch4deercatholic.church/",
  "fetched_at": "2026-11-01T20:25:48+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:15+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wix",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -261,11 +297,12 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 17
  },
  "has_sunday": true,
  "schedule_dropped": {
-  "other_location": 3
+  "other_location": 2
  },
  "groups_dropped": {},
  "event_counts": {

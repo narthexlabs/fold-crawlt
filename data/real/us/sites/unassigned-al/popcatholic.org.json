@@ -63,6 +63,18 @@
    "url": "https://www.popcatholic.org/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.popcatholic.org/reconciliation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.popcatholic.org/eucharistic-adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -591,6 +603,20 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wix"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "08:00-08:25",
+   "language": null,
+   "raw": "CONFESSION TIMES: 8AM–8:25AM",
+   "source_url": "https://www.popcatholic.org/reconciliation",
+   "fetched_at": "2026-11-02T04:42:09+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wix",
+   "topup": true
   }
  ],
  "source_url": "https://www.popcatholic.org/",
@@ -627,6 +653,25 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:10+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "church.office@popcatholic.org",
   "phone": "(205) 822-9125",
@@ -639,8 +684,5 @@
   },
   "fetched_at": "2026-11-01T08:35:10+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

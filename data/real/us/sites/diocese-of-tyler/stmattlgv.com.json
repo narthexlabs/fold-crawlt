@@ -369,6 +369,66 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Friday",
+   "time": "12:05",
+   "language": null,
+   "raw": "Mass Schedule: Friday: 12:05 pm",
+   "source_url": "https://www.stmattlgv.com/schedule/mass-schedule/",
+   "fetched_at": "2026-11-02T04:41:41+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "note": "except during Lent",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday (during the school year)",
+   "time": "07:30-17:00",
+   "language": null,
+   "raw": "ADORATION HOURS:: Wednesdays: 7:30 am to 5:00 pm (Sept - May)",
+   "source_url": "https://www.stmattlgv.com/schedule/mass-schedule/",
+   "fetched_at": "2026-11-02T04:41:41+00:00",
+   "needs_review": true,
+   "review_reason": "seasonal",
+   "confidence": "medium",
+   "template": "generic_strict",
+   "season": "Sept - May",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Tuesday (summer, jun-jul)",
+   "time": "17:00-18:45",
+   "language": null,
+   "raw": "CONFESSIONS:: Tuesdays: 5:00 - 6:45 pm, June-July: 6pm-7pm",
+   "source_url": "https://www.stmattlgv.com/schedule/mass-schedule/",
+   "fetched_at": "2026-11-02T04:41:41+00:00",
+   "needs_review": true,
+   "review_reason": "seasonal",
+   "confidence": "medium",
+   "template": "generic_strict",
+   "season": "June-July",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Tuesday (summer, jun-jul)",
+   "time": "18:00-19:00",
+   "language": null,
+   "raw": "CONFESSIONS:: Tuesdays: 5:00 - 6:45 pm, June-July: 6pm-7pm",
+   "source_url": "https://www.stmattlgv.com/schedule/mass-schedule/",
+   "fetched_at": "2026-11-02T04:41:41+00:00",
+   "needs_review": true,
+   "review_reason": "seasonal",
+   "confidence": "medium",
+   "template": "generic_strict",
+   "season": "June-July",
+   "topup": true
   }
  ],
  "source_url": "http://www.stmattlgv.com/",
@@ -412,5 +472,19 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:41+00:00",
+  "requests": 1,
+  "found": [
+   "liturgy"
+  ],
+  "rows_added": 4,
+  "mode": "merge"
  }
 }

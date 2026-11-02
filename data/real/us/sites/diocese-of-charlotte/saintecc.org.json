@@ -303,6 +303,20 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:00-16:00",
+   "language": null,
+   "raw": "Confession: Elizabeth every Wednesday from 11:45 AM–12:00 PM and 5:00 PM–6:00 PM, Thursday from 9:00 AM–9:25 AM, and every Saturday from 3:00 PM–4:00 PM. They are also offered every Friday from 9:00 A",
+   "source_url": "https://saintecc.org/confession/",
+   "fetched_at": "2026-11-02T04:41:39+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "https://saintecc.org/",
@@ -344,5 +358,19 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:42+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }

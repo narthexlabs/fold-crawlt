@@ -75,6 +75,18 @@
    "url": "https://www.stclementpc.org/contact-us",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stclementpc.org/adoration",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://www.stclementpc.org/liturgies",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -462,6 +474,112 @@
    "confidence": "high",
    "template": "generic_strict",
    "day_expanded_from": "Daily"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Eucharistic adoration: every Wednesday after the 8:00 am Daily Mass,",
+   "source_url": "https://www.stclementpc.org/adoration",
+   "fetched_at": "2026-11-02T04:41:56+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "generic_strict",
+   "relative": "after",
+   "note": "Eucharistic adoration: every Wednesday after the 8:00 am Daily Mass,",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Monday",
+   "time": "08:30-12:00",
+   "language": null,
+   "raw": "Eucharistic adoration: from 8:30 am to 12:00 pm.",
+   "source_url": "https://www.stclementpc.org/adoration",
+   "fetched_at": "2026-11-02T04:41:56+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "generic_strict",
+   "day_expanded_from": "Daily",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Tuesday",
+   "time": "08:30-12:00",
+   "language": null,
+   "raw": "Eucharistic adoration: from 8:30 am to 12:00 pm.",
+   "source_url": "https://www.stclementpc.org/adoration",
+   "fetched_at": "2026-11-02T04:41:56+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "generic_strict",
+   "day_expanded_from": "Daily",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "08:30-12:00",
+   "language": null,
+   "raw": "Eucharistic adoration: from 8:30 am to 12:00 pm.",
+   "source_url": "https://www.stclementpc.org/adoration",
+   "fetched_at": "2026-11-02T04:41:56+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "generic_strict",
+   "day_expanded_from": "Daily",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Friday",
+   "time": "08:30-12:00",
+   "language": null,
+   "raw": "Eucharistic adoration: from 8:30 am to 12:00 pm.",
+   "source_url": "https://www.stclementpc.org/adoration",
+   "fetched_at": "2026-11-02T04:41:56+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "generic_strict",
+   "day_expanded_from": "Daily",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Saturday",
+   "time": "08:30-12:00",
+   "language": null,
+   "raw": "Eucharistic adoration: from 8:30 am to 12:00 pm.",
+   "source_url": "https://www.stclementpc.org/adoration",
+   "fetched_at": "2026-11-02T04:41:56+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "generic_strict",
+   "day_expanded_from": "Daily",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Sunday",
+   "time": "08:30-12:00",
+   "language": null,
+   "raw": "Eucharistic adoration: from 8:30 am to 12:00 pm.",
+   "source_url": "https://www.stclementpc.org/adoration",
+   "fetched_at": "2026-11-02T04:41:56+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "low",
+   "template": "generic_strict",
+   "day_expanded_from": "Daily",
+   "topup": true
   }
  ],
  "source_url": "http://stclementpc.org/",
@@ -505,6 +623,25 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:57+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 7,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(813) 752-8251",
@@ -516,8 +653,5 @@
   },
   "fetched_at": "2026-11-01T05:13:59+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

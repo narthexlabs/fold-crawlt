@@ -78,6 +78,12 @@
    "url": "https://stmaryholysavior.com/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stmaryholysavior.com/adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -1810,6 +1816,20 @@
    "confidence": "high",
    "template": "wordpress",
    "day_expanded_from": "Monday, Tuesday, Wednesday & Thursday"
+  },
+  {
+   "kind": "mass",
+   "day": "Wednesday",
+   "time": "12:00",
+   "language": null,
+   "raw": "Eucharistic Adoration is available from Fall to Spring on Wednesdays following 8:30am Mass to Noon.",
+   "source_url": "https://stmaryholysavior.com/adoration/",
+   "fetched_at": "2026-11-02T04:41:56+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "https://stmarystaroftheseaocmd.com/",
@@ -1847,6 +1867,33 @@
   "liturgy_and_confession_instances_total": 54,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Confession is on Saturday from 3:30 p.m. to 4:30 p.m. at Holy Savior Church or by appointment at",
+   "phrase": "by appointment",
+   "source_url": "https://stmaryholysavior.com/confession/",
+   "fetched_at": "2026-11-02T04:41:54+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:57+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "office@stmarystaroftheseaocmd.com",
   "phone": "(410) 289-0652",
@@ -1859,8 +1906,5 @@
   },
   "fetched_at": "2026-11-01T03:59:46+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

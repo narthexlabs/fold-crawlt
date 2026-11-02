@@ -81,6 +81,18 @@
    "url": "https://stjohnpa.org/christmas-events/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stjohnpa.org/penance/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stjohnpa.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -356,7 +368,7 @@
    "note": "CalendarWiz RSS (next ~100 items)",
    "last_fetch": {
     "status": 200,
-    "fetched_at": "2026-11-02T02:00:17+00:00",
+    "fetched_at": "2026-11-02T04:50:53+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -375,7 +387,7 @@
    "feed_key": "e3914e2512ba",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-02T02:00:17+00:00",
+    "fetched_at": "2026-11-02T04:50:53+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -428,9 +440,21 @@
  ],
  "source_url": "https://stjohnpa.org/",
  "fetched_at": "2026-11-01T20:25:58+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:15+00:00",
+  "requests": 2,
+  "found": [
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": false,
@@ -438,16 +462,30 @@
     "counts_ok": true,
     "sunday_not_copied": true,
     "no_daily_on_sunday": true,
-    "mostly_high": false
+    "mostly_high": true
    },
    "score": "low"
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 11
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "No office hours on Saturday or Sunday, except by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://stjohnpa.org/penance/",
+   "fetched_at": "2026-11-02T04:43:12+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
+  "no_day": 1,
+  "relative_time": 1,
+  "other_location": 1,
+  "prose": 1,
   "weekend_rescue_added": 1
  },
  "groups_dropped": {},

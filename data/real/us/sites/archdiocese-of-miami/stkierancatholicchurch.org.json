@@ -57,6 +57,12 @@
    "url": "https://stkieranmiami.org/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stkieranmiami.org/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -441,6 +447,20 @@
    "day_expanded_from": "Monday-Friday"
   },
   {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "10:00",
+   "language": null,
+   "raw": "Holy Days occurring on weekdays follow the weekday schedule. Mass on Thanksgiving at 10:00 AM.",
+   "source_url": "https://stkieranmiami.org/mass-schedule/",
+   "fetched_at": "2026-11-01T22:15:34+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "godaddy",
+   "kind_parsed": "mass"
+  },
+  {
    "kind": "mass",
    "day": "Third Friday of the month",
    "time": "19:00",
@@ -452,14 +472,37 @@
    "review_reason": null,
    "confidence": "high",
    "template": "godaddy"
+  },
+  {
+   "kind": "devotion",
+   "day": "First Saturday of the month",
+   "time": "06:00",
+   "language": null,
+   "raw": "We also invite you to join us for the Rosary at Dawn (in Spanish) on the first Saturday of every month at 6:00 a.m., followed by breakfast.",
+   "source_url": "https://stkieranmiami.org/mass-schedule/",
+   "fetched_at": "2026-11-01T22:15:34+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "godaddy"
   }
  ],
  "source_url": "https://www.stkierancatholicchurch.org/",
  "fetched_at": "2026-11-01T22:15:41+00:00",
  "redirected_off_host": "stkieranmiami.org",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:36+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "godaddy",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -473,16 +516,15 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 5
  },
  "has_sunday": true,
  "schedule_dropped": {
   "implausible_hour": 1,
   "range_not_a_mass": 1,
-  "other_location": 1,
   "no_day": 3,
   "relative_time": 2,
-  "not_a_service": 1,
   "prose": 3
  },
  "groups_dropped": {
@@ -491,8 +533,8 @@
   "unmatched": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

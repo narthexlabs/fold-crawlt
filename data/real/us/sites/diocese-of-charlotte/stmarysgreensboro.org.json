@@ -75,6 +75,12 @@
    "url": "https://stmarysgreensboro.org/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stmarysgreensboro.org/sacrements/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -552,6 +558,50 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Friday",
+   "time": "19:00",
+   "language": "Spanish",
+   "raw": "Reconciliation: Fridays 7:00 PM (Spanish).",
+   "source_url": "https://stmarysgreensboro.org/sacrements/",
+   "fetched_at": "2026-11-02T04:41:39+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "16:30",
+   "language": "English",
+   "raw": "Reconciliation: Saturdays 4:30 PM (English).",
+   "source_url": "https://stmarysgreensboro.org/sacrements/",
+   "fetched_at": "2026-11-02T04:41:39+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "13:30",
+   "language": "Vietnamese",
+   "raw": "Reconciliation: Sundays before 1:30 PM Mass (Vietnamese).",
+   "source_url": "https://stmarysgreensboro.org/sacrements/",
+   "fetched_at": "2026-11-02T04:41:39+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "before",
+   "note": "Reconciliation: Sundays before 1:30 PM Mass (Vietnamese).",
+   "topup": true
   }
  ],
  "source_url": "http://www.stmarysgreensboro.org/",
@@ -591,6 +641,24 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:41+00:00",
+  "requests": 3,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 3,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "info@stmarysgreensboro.org",
   "phone": "(336) 272-8650",
@@ -603,8 +671,5 @@
   },
   "fetched_at": "2026-11-01T03:59:32+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

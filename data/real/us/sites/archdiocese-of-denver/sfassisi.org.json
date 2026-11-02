@@ -79,6 +79,12 @@
    "url": "https://sfassisi.org/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://sfassisi.org/events/adoration-music-fall2026",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -513,6 +519,28 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "social_shared_links_removed": [
+  "https://www.facebook.com/2008"
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:59+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "info@sfassisi.org",
   "phone": "(303) 772-6322",
@@ -525,11 +553,5 @@
   },
   "fetched_at": "2026-11-01T05:11:31+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
- },
- "social_shared_links_removed": [
-  "https://www.facebook.com/2008"
- ]
+ }
 }

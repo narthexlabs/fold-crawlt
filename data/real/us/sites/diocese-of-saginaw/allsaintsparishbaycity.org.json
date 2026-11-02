@@ -75,6 +75,18 @@
    "url": "https://www.allsaintsparishbaycity.org/index.php/contact",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.allsaintsparishbaycity.org/index.php/sacraments/reconciliation",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://www.allsaintsparishbaycity.org/index.php/featured-item-schedules",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -366,6 +378,24 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:46+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(989) 893-4693",
@@ -376,8 +406,5 @@
   },
   "fetched_at": "2026-11-01T03:59:55+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

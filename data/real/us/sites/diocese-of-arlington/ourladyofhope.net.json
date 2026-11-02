@@ -84,6 +84,12 @@
    "url": "https://ourladyofhope.net/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://ourladyofhope.net/activity/adoration/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -395,7 +401,7 @@
    "note": "Google Calendar public feed (embedded on page)",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-01T23:38:34+00:00",
+    "fetched_at": "2026-11-02T04:50:00+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -447,45 +453,6 @@
   "source_url": "https://ourladyofhope.net/activity/live-stream/"
  },
  "schedule_rows": [
-  {
-   "kind": "confession",
-   "day": "Thursday",
-   "time": "19:00",
-   "language": null,
-   "raw": "Thursday: 7:00 p.m. until the last confession is heard",
-   "source_url": "https://ourladyofhope.net/sacraments/confession/",
-   "fetched_at": "2026-11-01T18:51:39+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress"
-  },
-  {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "09:00",
-   "language": null,
-   "raw": "Saturday: 9:00 a.m. until the last confession is heard",
-   "source_url": "https://ourladyofhope.net/sacraments/confession/",
-   "fetched_at": "2026-11-01T18:51:39+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress"
-  },
-  {
-   "kind": "confession",
-   "day": "Saturday",
-   "time": "15:30-16:30",
-   "language": null,
-   "raw": "Confession: Saturday: 3:30-4:30 p.m.",
-   "source_url": "https://ourladyofhope.net/sacraments/confession/",
-   "fetched_at": "2026-11-01T18:51:39+00:00",
-   "needs_review": false,
-   "review_reason": null,
-   "confidence": "medium",
-   "template": "wordpress"
-  },
   {
    "kind": "mass",
    "day": "Monday",
@@ -667,13 +634,93 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Thursday",
+   "time": "19:00",
+   "language": null,
+   "raw": "Confessions: Thursday: 7 p.m.",
+   "source_url": "https://ourladyofhope.net/",
+   "fetched_at": "2026-11-01T18:51:38+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Confessions: Saturday: 9 a.m. & 3:30 p.m.",
+   "source_url": "https://ourladyofhope.net/",
+   "fetched_at": "2026-11-01T18:51:38+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:30",
+   "language": null,
+   "raw": "Confessions: Saturday: 9 a.m. & 3:30 p.m.",
+   "source_url": "https://ourladyofhope.net/",
+   "fetched_at": "2026-11-01T18:51:38+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "08:30",
+   "language": null,
+   "raw": "We offer Adoration in the Church beginning each Thursday after the 8:30 a.m.",
+   "source_url": "https://ourladyofhope.net/activity/adoration/",
+   "fetched_at": "2026-11-02T04:41:58+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "We offer Adoration in the Church beginning each Thursday after the 8:30 a.m.",
+   "relative_resolved": true
+  },
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "20:00",
+   "language": null,
+   "raw": "Mass and ending at 8:00 p.m. with Benediction at 7:45 p.m.",
+   "source_url": "https://ourladyofhope.net/activity/adoration/",
+   "fetched_at": "2026-11-02T04:41:58+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
   }
  ],
  "source_url": "https://ourladyofhope.net/",
  "fetched_at": "2026-11-01T18:51:49+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:58+00:00",
+  "requests": 1,
+  "found": [
+   "adoration"
+  ]
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -687,20 +734,31 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 35
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Confession is offered on Thursdays at 7:00 p.m., Saturday mornings at 9:00 a.m., and from 3:30-4:30 p.m. on Saturday afternoons. Confession is also available by appointment. Please contact the Parish ",
+   "phrase": "by appointment",
+   "source_url": "https://ourladyofhope.net/sacraments/confession/",
+   "fetched_at": "2026-11-01T18:51:39+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "no_day": 12,
   "not_a_service": 1,
+  "benediction_end": 1,
   "prose": 3
  },
  "groups_dropped": {
   "noise": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

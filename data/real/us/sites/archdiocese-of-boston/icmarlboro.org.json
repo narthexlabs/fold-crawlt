@@ -786,6 +786,33 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Monday through Thursday, 6:00pm - 7:00pm in Upper Church, Saturday's - 1:00 P.M - 3:00 P.M. in Lower Church and by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://www.icmarlboro.org/confessions",
+   "fetched_at": "2026-11-02T04:41:33+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:34+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "parish@icmarlboro.org",
   "phone": "(508) 485-0016",
@@ -798,8 +825,5 @@
   },
   "fetched_at": "2026-11-01T05:09:12+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

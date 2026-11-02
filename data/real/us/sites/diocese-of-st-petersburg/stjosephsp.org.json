@@ -81,6 +81,12 @@
    "url": "https://stjosephsp.org/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stjosephsp.org/reconciliation/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -261,6 +267,22 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": null,
+   "raw": "Confessions are heard at St. Joseph on Sundays after the 10:00 am Mass.",
+   "source_url": "https://stjosephsp.org/reconciliation/",
+   "fetched_at": "2026-11-02T04:42:06+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "Confessions are heard at St. Joseph on Sundays after the 10:00 am Mass.",
+   "topup": true
   }
  ],
  "source_url": "https://stjosephsp.org/",
@@ -299,6 +321,24 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:28+00:00",
+  "requests": 3,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": "office@stjosephsp.org",
   "phone": "(727) 498-6056",
@@ -311,8 +351,5 @@
   },
   "fetched_at": "2026-11-01T05:14:02+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

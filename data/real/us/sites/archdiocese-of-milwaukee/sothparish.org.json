@@ -258,7 +258,7 @@
    "display_tz": "America/Chicago",
    "last_fetch": {
     "status": "parse_error:ModuleNotFoundError",
-    "fetched_at": "2026-11-02T01:59:01+00:00",
+    "fetched_at": "2026-11-02T04:47:54+00:00",
     "events_in_window": 0,
     "kept": 0
    }
@@ -279,9 +279,9 @@
    "day": "Saturday",
    "time": "16:00",
    "language": null,
-   "raw": "Weekend Masses: 4:00 pm",
-   "source_url": "https://www.sothparish.org/mass-schedule",
-   "fetched_at": "2026-11-01T22:15:26+00:00",
+   "raw": "Weekend massES: Saturday: 4:00 pm",
+   "source_url": "https://www.sothparish.org/",
+   "fetched_at": "2026-11-01T22:15:25+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -292,12 +292,12 @@
    "day": "Sunday",
    "time": "08:15",
    "language": null,
-   "raw": "Weekend Masses: 8:15 and 10:30 am",
-   "source_url": "https://www.sothparish.org/mass-schedule",
-   "fetched_at": "2026-11-01T22:15:26+00:00",
+   "raw": "Weekend massES: Sunday: 8:15 am and 10:30 am",
+   "source_url": "https://www.sothparish.org/",
+   "fetched_at": "2026-11-01T22:15:25+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "low",
+   "confidence": "medium",
    "template": "generic_strict"
   },
   {
@@ -305,9 +305,9 @@
    "day": "Sunday",
    "time": "10:30",
    "language": null,
-   "raw": "Weekend Masses: 8:15 and 10:30 am",
-   "source_url": "https://www.sothparish.org/mass-schedule",
-   "fetched_at": "2026-11-01T22:15:26+00:00",
+   "raw": "Weekend massES: Sunday: 8:15 am and 10:30 am",
+   "source_url": "https://www.sothparish.org/",
+   "fetched_at": "2026-11-01T22:15:25+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -318,9 +318,9 @@
    "day": "Wednesday",
    "time": "08:30",
    "language": null,
-   "raw": "Weekday Masses: 8:30 am",
-   "source_url": "https://www.sothparish.org/mass-schedule",
-   "fetched_at": "2026-11-01T22:15:26+00:00",
+   "raw": "weekday massES: Wednesday: 8:30 am",
+   "source_url": "https://www.sothparish.org/",
+   "fetched_at": "2026-11-01T22:15:25+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -331,9 +331,9 @@
    "day": "Friday",
    "time": "08:30",
    "language": null,
-   "raw": "All School Mass: 8:30 am",
-   "source_url": "https://www.sothparish.org/mass-schedule",
-   "fetched_at": "2026-11-01T22:15:26+00:00",
+   "raw": "weekday massES: Friday: 8:30 am",
+   "source_url": "https://www.sothparish.org/",
+   "fetched_at": "2026-11-01T22:15:25+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -344,9 +344,9 @@
    "day": "Wednesday",
    "time": "09:00-10:30",
    "language": null,
-   "raw": "Adoration: 9:00 - 10:30 am",
-   "source_url": "https://www.sothparish.org/mass-schedule",
-   "fetched_at": "2026-11-01T22:15:26+00:00",
+   "raw": "adoration: Wednesday: 9:00 - 10:30 am",
+   "source_url": "https://www.sothparish.org/",
+   "fetched_at": "2026-11-01T22:15:25+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -357,9 +357,9 @@
    "day": "Saturday",
    "time": "15:00-15:30",
    "language": null,
-   "raw": "Reconciliation: 3:00 - 3:30 pm",
-   "source_url": "https://www.sothparish.org/mass-schedule",
-   "fetched_at": "2026-11-01T22:15:26+00:00",
+   "raw": "Reconciliation: Saturday: 3:00 - 3:30 pm",
+   "source_url": "https://www.sothparish.org/",
+   "fetched_at": "2026-11-01T22:15:25+00:00",
    "needs_review": false,
    "review_reason": null,
    "confidence": "medium",
@@ -381,9 +381,19 @@
  ],
  "source_url": "https://www.sothparish.org/",
  "fetched_at": "2026-11-01T22:15:35+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:37+00:00",
+  "requests": 0,
+  "found": []
+ },
  "schedule_template": {
   "template": "generic_strict",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -397,8 +407,18 @@
   },
   "passed_bar": true,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 8
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Or By Request: Call Fr. Mark at",
+   "phrase": "By Request",
+   "source_url": "https://www.sothparish.org/",
+   "fetched_at": "2026-11-01T22:15:25+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "relative_time": 1

@@ -73,6 +73,12 @@
    "url": "https://www.nativity-bvm.org/events.html",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.nativity-bvm.org/adoration.html",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -625,9 +631,21 @@
  ],
  "source_url": "https://www.nativity-bvm.org/",
  "fetched_at": "2026-11-01T20:25:10+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:06+00:00",
+  "requests": 1,
+  "found": [
+   "adoration"
+  ]
+ },
  "schedule_template": {
   "template": "weebly",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -641,6 +659,7 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 23
  },
  "has_sunday": true,

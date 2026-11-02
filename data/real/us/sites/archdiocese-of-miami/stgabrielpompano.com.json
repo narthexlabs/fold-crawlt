@@ -66,6 +66,18 @@
    "url": "https://stgabrielpompano.com/st-gabriel-catholic-church-contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stgabrielpompano.com/reconciliation/",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stgabrielpompano.com/adoration/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -486,9 +498,19 @@
  ],
  "source_url": "https://stgabrielpompano.com/",
  "fetched_at": "2026-11-01T23:31:09+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:07+00:00",
+  "requests": 2,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -502,15 +524,26 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 12
  },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Saturday’s 3:00 -3:30 in the Church or by Appointment",
+   "phrase": "by Appointment",
+   "source_url": "https://stgabrielpompano.com/",
+   "fetched_at": "2026-11-01T22:15:33+00:00"
+  }
+ ],
  "has_sunday": true,
  "schedule_dropped": {
   "other_location": 1,
+  "no_day": 1,
   "implausible_hour": 1,
   "dated_line": 1,
   "relative_time": 3,
-  "prose": 7
+  "prose": 2
  },
  "groups_dropped": {
   "noise": 5,
@@ -519,8 +552,8 @@
   "sentence": 1
  },
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 0,
   "kept_after_privacy": 0,

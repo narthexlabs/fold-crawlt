@@ -81,6 +81,12 @@
    "url": "https://bcs.edu/contact-us/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://bcs.edu/reconciliation/",
+   "status": 404,
+   "class": "not_found"
   }
  ],
  "cms_guess": {
@@ -122,7 +128,7 @@
    "note": "The Events Calendar (WordPress) REST API",
    "last_fetch": {
     "status": 200,
-    "fetched_at": "2026-11-01T23:38:08+00:00",
+    "fetched_at": "2026-11-02T04:53:07+00:00",
     "events_in_window": 4,
     "kept": 4
    }
@@ -140,7 +146,7 @@
    "recurring": false,
    "source_url": "https://bcs.edu/event-date/come-and-see-2024/",
    "feed_id": "bcs.edu:tribe_rest:7c25a801",
-   "fetched_at": "2026-11-01T23:38:08+00:00"
+   "fetched_at": "2026-11-02T04:53:07+00:00"
   },
   {
    "id": "c2f24889c6c10e70",
@@ -153,7 +159,7 @@
    "recurring": false,
    "source_url": "https://bcs.edu/event-date/orthros-3rd-class-m/",
    "feed_id": "bcs.edu:tribe_rest:7c25a801",
-   "fetched_at": "2026-11-01T23:38:08+00:00"
+   "fetched_at": "2026-11-02T04:53:07+00:00"
   },
   {
    "id": "da503722e02cbbcb",
@@ -166,7 +172,7 @@
    "recurring": false,
    "source_url": "https://bcs.edu/event-date/divine-liturgy-r-7/",
    "feed_id": "bcs.edu:tribe_rest:7c25a801",
-   "fetched_at": "2026-11-01T23:38:08+00:00"
+   "fetched_at": "2026-11-02T04:53:07+00:00"
   },
   {
    "id": "9217492b81ac4e81",
@@ -179,7 +185,7 @@
    "recurring": false,
    "source_url": "https://bcs.edu/event-date/st-nicholas-molben-and-charity-dinner/",
    "feed_id": "bcs.edu:tribe_rest:7c25a801",
-   "fetched_at": "2026-11-01T23:38:08+00:00"
+   "fetched_at": "2026-11-02T04:53:07+00:00"
   }
  ],
  "social": {
@@ -257,25 +263,25 @@
    "day": "Thursday",
    "time": "07:00",
    "language": null,
-   "raw": "Mass: THU 29 7AM — DIVINE LITURGY (M)",
+   "raw": "THU 29 7AM — DIVINE LITURGY (M)",
    "source_url": "https://bcs.edu/chapel-worship/",
    "fetched_at": "2026-11-01T13:02:45+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "medium",
+   "confidence": "high",
    "template": "wordpress"
   },
   {
-   "kind": "mass",
+   "kind": "devotion",
    "day": "Friday",
    "time": "18:00",
    "language": null,
-   "raw": "Mass: FRI 29 6PM — DAILY VESPERS (M)",
+   "raw": "FRI 29 6PM — DAILY VESPERS (M)",
    "source_url": "https://bcs.edu/chapel-worship/",
    "fetched_at": "2026-11-01T13:02:45+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "medium",
+   "confidence": "high",
    "template": "wordpress"
   },
   {
@@ -309,12 +315,12 @@
    "day": "Monday",
    "time": "08:00",
    "language": null,
-   "raw": "Mass: MON 2 8:00 AM — DIVINE LITURGY (R)",
+   "raw": "MON 2 8:00 AM — DIVINE LITURGY (R)",
    "source_url": "https://bcs.edu/chapel-worship/",
    "fetched_at": "2026-11-01T13:02:45+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "low",
+   "confidence": "high",
    "template": "wordpress"
   },
   {
@@ -322,12 +328,12 @@
    "day": "Tuesday",
    "time": "07:00",
    "language": null,
-   "raw": "Mass: TUE 3 7:00 AM — DIVINE LITURGY (R)",
+   "raw": "TUE 3 7:00 AM — DIVINE LITURGY (R)",
    "source_url": "https://bcs.edu/chapel-worship/",
    "fetched_at": "2026-11-01T13:02:45+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "medium",
+   "confidence": "high",
    "template": "wordpress"
   },
   {
@@ -348,12 +354,12 @@
    "day": "Saturday",
    "time": "09:00",
    "language": null,
-   "raw": "Mass: SAT 21 9:00 AM — DIVINE LITURGY (R) [Live Stream on YouTube]",
+   "raw": "SAT 21 9:00 AM — DIVINE LITURGY (R) [Live Stream on YouTube]",
    "source_url": "https://bcs.edu/chapel-worship/",
    "fetched_at": "2026-11-01T13:02:45+00:00",
    "needs_review": false,
    "review_reason": null,
-   "confidence": "medium",
+   "confidence": "high",
    "template": "wordpress"
   },
   {
@@ -398,9 +404,19 @@
  ],
  "source_url": "http://www.bcs.edu/",
  "fetched_at": "2026-11-01T13:02:53+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:43:18+00:00",
+  "requests": 1,
+  "found": []
+ },
  "schedule_template": {
   "template": "wordpress",
-  "version": "ca-sites/2",
+  "version": "ca-sites/3",
   "parse_quality": {
    "checks": {
     "has_sunday": true,
@@ -414,6 +430,7 @@
   },
   "passed_bar": false,
   "trusted_candidate": false,
+  "trusted_kinds": [],
   "generic_rows": 10
  },
  "has_sunday": true,
@@ -423,8 +440,8 @@
  },
  "groups_dropped": {},
  "event_counts": {
-  "window_start": "2026-11-01",
-  "window_end_exclusive": "2027-01-30",
+  "window_start": "2026-11-02",
+  "window_end_exclusive": "2027-01-31",
   "days": 90,
   "in_window": 4,
   "kept_after_privacy": 4,

@@ -75,6 +75,18 @@
    "url": "https://st-raphaels.com/news/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://st-raphaels.com/liturgy/eucharistic-exposition-benediction/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://st-raphaels.com/liturgy/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -523,6 +535,63 @@
    "review_reason": null,
    "confidence": "medium",
    "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "20:30",
+   "language": null,
+   "raw": "One Wednesday a month Adoration will be extented to 8:30pm as part of EXALT.",
+   "source_url": "https://st-raphaels.com/liturgy/eucharistic-exposition-benediction/",
+   "fetched_at": "2026-11-02T04:41:59+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "15:30-16:15",
+   "language": null,
+   "raw": "Confession Times: Saturday: 3:30 PM to 4:15 PM",
+   "source_url": "https://st-raphaels.com/liturgy/eucharistic-exposition-benediction/",
+   "fetched_at": "2026-11-02T04:41:59+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday (during the school year)",
+   "time": "09:00-19:30",
+   "language": null,
+   "raw": "Wednesday 9:00 AM 7:30 PM [Mass intention withheld]",
+   "source_url": "https://st-raphaels.com/liturgy/eucharistic-exposition-benediction/",
+   "fetched_at": "2026-11-02T04:41:59+00:00",
+   "needs_review": true,
+   "review_reason": "seasonal",
+   "confidence": "medium",
+   "template": "wordpress",
+   "season": "September-May",
+   "topup": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "19:00",
+   "language": null,
+   "raw": "One Wednesday a Month, Adoration is extended 8:30pm for XLT Praise and Worship at 7pm",
+   "source_url": "https://st-raphaels.com/liturgy/eucharistic-exposition-benediction/",
+   "fetched_at": "2026-11-02T04:41:59+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "topup": true
   }
  ],
  "source_url": "http://www.st-raphaels.com/",
@@ -565,6 +634,35 @@
   "liturgy_and_confession_instances_total": 0,
   "excluded_by_reason": {}
  },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()",
+  "intentions_withheld": 1
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Confessions also available by appt. contact the parish office",
+   "phrase": "by appt.",
+   "source_url": "https://st-raphaels.com/liturgy/eucharistic-exposition-benediction/",
+   "fetched_at": "2026-11-02T04:41:59+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:00+00:00",
+  "requests": 3,
+  "found": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 4,
+  "mode": "merge"
+ },
  "office_contact": {
   "email": null,
   "phone": "(727) 821-7989",
@@ -575,8 +673,5 @@
   },
   "fetched_at": "2026-11-01T05:13:50+00:00",
   "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
- },
- "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()"
  }
 }

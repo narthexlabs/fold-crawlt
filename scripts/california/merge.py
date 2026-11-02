@@ -219,9 +219,12 @@ def tier(source: str | None) -> int:
     hand-checked Oakland rows, so a parish-site template that meets the bar outranks it):
     0 hand-checked · 1 the parish bulletin read by hand · 2 an archived copy read by hand · 3 the parish website read by a
     trusted template ('site-<template>-<date>': the template passed its bar, the site's parse is high quality and agrees
-    with DiscoverMass on Sunday) · 4 DiscoverMass · 5 the diocese's directory, read automatically · 6 the parish website,
+    with DiscoverMass on Sunday; passed as of 2026-11-01: generic_strict (Oakland truth, 92.8% precision, 85.7% Sunday
+    recall) and ecatholic (live US truth, held-out 12: weekend 90.0% precision, 87.1% Sunday recall; weekday 95.3%,
+    confession 96.4%, adoration 100% pooled precision; templates/grades.json `live`, `kinds`) · 4 DiscoverMass · 5 the diocese's directory, read automatically · 6 the parish website,
     read automatically and untrusted (crawled-, sidedoor-, and the site crawl's own bulletin-PDF and archived-page
-    readings, crawled-bulletin- / crawled-wayback-)."""
+    readings, crawled-bulletin- / crawled-wayback-) · 7 weekly entries repeated in the parish's own calendar feed
+    (calendar-; 2026-11-01), used only for a kind and day bucket no posted schedule lists."""
     s = source or ""
     if s == CURATED_SOURCE or s.startswith("curated-"):
         return 0
@@ -235,12 +238,15 @@ def tier(source: str | None) -> int:
         return 3
     if s.startswith("secondary-"):
         return 4
+    if s.startswith("calendar-"):
+        return 7   # a weekly entry repeated in the parish's calendar feed (parse_site.calendar_rows): below every posted schedule
     return 5  # the diocese's directory ('oakdiocese.org directory', 'directory-<slug>-<date>')
 
 
-T_TRUSTED, T_DM, T_DIR, T_AUTO = 3, 4, 5, 6
-AUTO_TIERS = {T_TRUSTED, T_DIR, T_AUTO}   # read by a program, not a person: the not-a-Mass and conflict checks apply
-TIER_TEXT = {0: "checked", 1: "bulletin", 2: "wayback", 3: "site", 4: "secondary", 5: "directory", 6: "own"}
+CALENDAR_ROWS = False   # see the calendar loop in build_diocese; True once lib/find.ts has the 'calendar-' tier (7)
+T_TRUSTED, T_DM, T_DIR, T_AUTO, T_CAL = 3, 4, 5, 6, 7
+AUTO_TIERS = {T_TRUSTED, T_DIR, T_AUTO, T_CAL}   # read by a program, not a person: the not-a-Mass and conflict checks apply
+TIER_TEXT = {0: "checked", 1: "bulletin", 2: "wayback", 3: "site", 4: "secondary", 5: "directory", 6: "own", 7: "calendar"}
 RANGE = re.compile(r"\d(?::\d\d)?\s*(?:a\.?m\.?|p\.?m\.?)?\s*[-–]\s*\d{1,2}(?::\d\d|\s*[ap]\.?\s?m\b)", re.I)  # lib/schedule.ts RANGE
 
 
@@ -1037,6 +1043,47 @@ def wayback_for(slug_: str) -> dict:
     return {s["domain"]: s for s in d.get("sites", []) if s.get("domain")}
 
 
+def wayback_site_records(sites: list[dict], wb_by_dom: dict) -> int:
+    """Site files recovered by fold-crawlt's `wayback` job (crawl_status 'wayback-<capture date>', crawl_env 'wayback',
+    copied over a challenged/dead read) are archived copies, not live reads: their groups, social and bulletin link are
+    moved into the wayback record shape (so the 540-day capture rule and the 'archived copy' labels apply), and their
+    schedule rows are dropped here (every one is needs_review; a Wayback schedule is shown only after a person reads it,
+    via the hand-checked file). The site record stays listed with its non-ok status. Returns how many were adapted."""
+    n = 0
+    for s in sites:
+        st = str(s.get("crawl_status") or "")
+        if not st.startswith("wayback") or not s.get("domain"):
+            continue
+        w = s.get("wayback") or {}
+        cap0 = w.get("capture_date") or st[len("wayback-"):][:10] or None
+        caps = w.get("captures") or []
+        cap_of = {c.get("original"): c for c in caps if c.get("original")}
+        groups = []
+        for g in s.get("groups") or []:
+            c = cap_of.get(g.get("source_url")) or {}
+            groups.append({**g, "fetched_at": c.get("capture") or c.get("capture_date") or cap0})
+        b = s.get("bulletin") or None
+        bul = None
+        if b and b.get("url"):
+            bc = cap_of.get(b.get("source_url")) or {}
+            bul = {"page_url": b.get("source_url"), "page_archive_url": bc.get("archive_url"), "best_link": b}
+        rec = {"domain": s["domain"], "groups": groups, "social": s.get("social") or {}, "bulletin": bul,
+               "wayback": {"captures": [{"capture_date": c.get("capture") or c.get("capture_date"),
+                                         "roles": [c.get("kind")] + (["bulletin"] if bul and c.get("original") == bul["page_url"] else []),
+                                         "archive_url": c.get("archive_url")} for c in caps],
+                           "capture_age_days": w.get("capture_age_days")}}
+        if bul and not any("bulletin" in c["roles"] for c in rec["wayback"]["captures"]):
+            rec["wayback"]["captures"].append({"capture_date": cap0, "roles": ["bulletin"], "archive_url": None})
+        old = wb_by_dom.get(s["domain"])
+        old_cap = max([c.get("capture_date") or "" for c in ((old or {}).get("wayback") or {}).get("captures", [])] or [""])
+        if not old or (cap0 or "") >= old_cap:
+            wb_by_dom[s["domain"]] = rec
+        s["wayback_rows_held"] = len(s.get("schedule_rows") or [])
+        s["groups"], s["social"], s["bulletin"], s["schedule_rows"] = [], {}, None, []
+        n += 1
+    return n
+
+
 GROUP_STOP = re.compile(r"\b(ministry|ministries|group|groups|society|the|of|st|saint|parish)\b")
 BULLETIN_MAX_AGE = 180      # days: a group last seen in an older issue is not shown (the bulletin README's integration note)
 WAYBACK_MAX_AGE = 540       # days: groups from an archived page captured longer ago than this are not shown
@@ -1277,6 +1324,7 @@ def build_diocese(slug_: str, geocode: bool = True) -> dict:
     sites = sites_for(slug_)
     bul_by_file, bul_by_pid = bulletins_for(slug_)
     wb_by_dom = wayback_for(slug_)
+    wayback_site_records(sites, wb_by_dom)
     has_dir = bool(directory)
 
     # ---- the list: the directory, else DiscoverMass
@@ -1445,6 +1493,14 @@ def build_diocese(slug_: str, geocode: bool = True) -> dict:
                 rows.append(holy_day_check(sanity({"kind": x.get("kind"), "day": x.get("day"), "time": x.get("time"), "language": x.get("language"),
                                     "raw": x.get("raw"), "source": label, "source_url": u or s.get("source_url"), "fetched_at": x.get("fetched_at"),
                                     "needs_review": bool(x.get("needs_review")), "review_reason": x.get("review_reason")}), s["domain"]))
+            # weekly calendar entries: tier 7, below every posted schedule. Off until lib/find.ts sourceTier() knows 'calendar-'
+            # (docs/patches/2026-11-01-find-calendar-tier.patch: it could not be built in the sandbox, which has no npm registry
+            # access; unpatched, find.ts would read 'calendar-' as tier 5 and rank it above the parish's own posted rows).
+            for x in (s.get("calendar_schedule_rows") or []) if CALENDAR_ROWS else []:
+                rows.append(sanity({"kind": x.get("kind"), "day": x.get("day"), "time": x.get("time"), "language": x.get("language"),
+                                    "raw": x.get("raw"), "source": f"calendar-{(x.get('fetched_at') or '')[:10]}",
+                                    "source_url": x.get("source_url") or s.get("source_url"), "fetched_at": x.get("fetched_at"),
+                                    "needs_review": bool(x.get("needs_review")), "review_reason": x.get("review_reason")}))
         p = r["dir"] or {}
         mt = p.get("mass_times")
         if isinstance(mt, dict) and mt:

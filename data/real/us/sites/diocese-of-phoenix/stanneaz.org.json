@@ -30,6 +30,18 @@
    "url": "https://stanneaz.org/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stanneaz.org/times",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://stanneaz.org/times",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -42,7 +54,22 @@
  "events": [],
  "social": {},
  "bulletin": null,
- "schedule_rows": [],
+ "schedule_rows": [
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Holy Hour at 5pm on Thursdays.",
+   "source_url": "https://stanneaz.org/times",
+   "fetched_at": "2026-11-02T04:42:05+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "topup": true
+  }
+ ],
  "source_url": "https://stanneaz.org/",
  "fetched_at": "2026-11-01T07:19:46+00:00",
  "schedule_template": {
@@ -77,5 +104,20 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:24+00:00",
+  "requests": 2,
+  "found": [
+   "confession",
+   "liturgy"
+  ],
+  "rows_added": 1,
+  "mode": "merge"
  }
 }
