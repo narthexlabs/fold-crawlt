@@ -1,9 +1,12 @@
 """Shared helpers for the California YouTube catalog (ingest/california/media_*.py).
 
 * YouTube link parsing (channel ids, @handles, /c/, /user/, bare vanity names, single videos).
-* A polite fetcher for youtube.com: the HTTP library's plain default User-Agent, robots.txt read and honoured
-  (/feeds/videos.xml, /results, /api/, /youtubei/ are disallowed and never requested), at most one network request every
-  2 seconds across the whole process, answers cached under data/raw/california/youtube/cache/ (gitignored).
+* A polite fetcher for youtube.com: the honest FindTheChurch user agent (2026-11-02: with the HTTP library's plain default
+  User-Agent YouTube no longer serves the ytInitialData the parsers read; the honest name gets the normal page), robots.txt
+  read and honoured (/feeds/videos.xml, /results, /api/, /youtubei/ are disallowed and never requested), at most one network
+  request every 2 seconds across the whole process, answers cached under data/raw/california/youtube/cache/ (gitignored).
+  A consent page or a "confirm you're not a bot" page stops the run (never worked around); it is written to
+  RAW/blocked.json. MEDIA_DEADLINE (epoch seconds) stops cleanly at a time limit (GitHub runner chunks).
 * Parsers for the public channel /about page (ytInitialData: title, handle, description, About links) and for the
   /videos and /streams tabs (same lockupViewModel reading as ingest/public/media/feed_build.py).
 * Name / city / domain matching used by the ownership check.
@@ -24,15 +27,22 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from urllib.parse import parse_qs, unquote, urlparse
 
+import os
+
 import requests
 
 ROOT = Path(__file__).resolve().parents[2]
 CA = ROOT / "data" / "real" / "california"
-OUT = CA / "media"
-RAW = ROOT / "data" / "raw" / "california" / "youtube"
+# MEDIA_OUT / MEDIA_RAW let the national run (ingest/us/media/) reuse this module with its own folders
+OUT = Path(os.environ["MEDIA_OUT"]) if os.environ.get("MEDIA_OUT") else CA / "media"
+RAW = Path(os.environ["MEDIA_RAW"]) if os.environ.get("MEDIA_RAW") else ROOT / "data" / "raw" / "california" / "youtube"
 CACHE = RAW / "cache"
 for _d in (OUT, RAW, CACHE):
     _d.mkdir(parents=True, exist_ok=True)
+USER_AGENT = "FindTheChurch/0.1 (+https://oakland-diocese-dashboard.vercel.app/about)"
+HEADERS = {"User-Agent": USER_AGENT, "Accept-Language": "en-US,en;q=0.8"}
+DEADLINE = float(os.environ["MEDIA_DEADLINE"]) if os.environ.get("MEDIA_DEADLINE") else None
+BOT_PAGE = re.compile(r"confirm you(?:'|’|&#39;)?re not a bot|Sign in to confirm|unusual traffic from your computer", re.I)
 
 NOW = datetime.now(timezone.utc)
 MIN_GAP_S = 2.0
@@ -216,7 +226,7 @@ class YouTube:
             body = rf.read_text()
         else:
             self._wait()
-            body = requests.get("https://www.youtube.com/robots.txt", timeout=20).text
+            body = requests.get("https://www.youtube.com/robots.txt", headers=HEADERS, timeout=20).text
             self.requests_made += 1
             rf.write_text(body)
         self.rp.parse(body.splitlines())
@@ -239,6 +249,8 @@ class YouTube:
             d = json.loads(gzip.decompress(f.read_bytes()))
             d["cached"] = True
             return d
+        if DEADLINE and time.time() > DEADLINE and not self.stopped:
+            self.stopped = "deadline"
         if self.stopped:
             return {"status": None, "final_url": None, "data": None, "fetched_at": None, "cached": False, "error": self.stopped}
         if not self.allowed(url):
@@ -248,7 +260,7 @@ class YouTube:
         for attempt in range(2):
             self._wait()
             try:
-                r = requests.get(url, timeout=25)  # plain default User-Agent
+                r = requests.get(url, headers=HEADERS, timeout=25)  # honest user agent, never a browser's
                 self.requests_made += 1
             except requests.RequestException as e:
                 err = type(e).__name__
@@ -266,6 +278,13 @@ class YouTube:
         if r is None or r.status_code in (429,) or r.status_code >= 500:
             return {"status": r.status_code if r is not None else None, "final_url": None, "data": None,
                     "fetched_at": now_iso(), "cached": False, "error": err or "failed"}
+        fu = (r.url or "").lower()
+        if "consent.youtube.com" in fu or "consent.google." in fu or "google.com/sorry" in fu or "accounts.google.com" in fu \
+                or (kind == "page" and r.status_code == 200 and "ytInitialData" not in r.text[:3_000_000] and BOT_PAGE.search(r.text[:300_000])):
+            self.stopped = "consent_or_bot_page"
+            (RAW / "blocked.json").write_text(json.dumps({"at": now_iso(), "url": url, "final_url": r.url, "status": r.status_code,
+                                                          "note": "YouTube served a consent / bot-check page: run stopped, not worked around"}) + "\n")
+            return {"status": r.status_code, "final_url": r.url, "data": None, "fetched_at": now_iso(), "cached": False, "error": self.stopped}
         data = None
         if r.status_code == 200:
             if kind == "json":

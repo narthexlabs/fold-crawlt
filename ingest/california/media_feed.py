@@ -119,6 +119,9 @@ def main() -> None:
             owner_id, owner_name, org_type, slug, parish_id = c["owner_id"], c["owner_name"], c["owner_type"], c["diocese"], c["owner_id"]
         vids: list[dict] = []
         tab_status = {}
+        if getattr(yt, "stopped", None):  # deadline or a consent / bot page: the rest waits for the next run
+            counts[f"channels_not_read_{yt.stopped}"] += 1
+            continue
         if API_KEY and not OFFLINE:
             vids = api_uploads(cid)
             tab_status["api"] = bool(vids)
@@ -126,6 +129,12 @@ def main() -> None:
             rv = yt.get(f"https://www.youtube.com/channel/{cid}/videos")
             rs = yt.get(f"https://www.youtube.com/channel/{cid}/streams")
             tab_status = {"videos": rv["status"], "streams": rs["status"]}
+            if getattr(yt, "stopped", None) and yt.stopped in (rv.get("error"), rs.get("error")):
+                counts[f"channels_not_read_{yt.stopped}"] += 1
+                continue
+            if OFFLINE and "offline_not_cached" in (rv.get("error"), rs.get("error")):
+                counts["channels_not_read_not_cached"] += 1
+                continue
             ups = parse_tab(rv["data"], "videos")[:UPLOADS]
             strs = parse_tab(rs["data"], "streams")
             vids = ups + strs
@@ -200,6 +209,11 @@ def main() -> None:
         if n % 20 == 0:
             print(f"  {n}/{len(all_ch)} channels; {len(items)} items; requests {yt.requests_made}, cache hits {yt.cache_hits}", flush=True)
     print(f"read {len(all_ch)} channels; {len(items)} items; {len(quarantine)} quarantined", flush=True)
+    if getattr(yt, "stopped", None):
+        # deadline or a consent / bot page: keep the cache, do not overwrite the published files with a partial read;
+        # the next run reads the cached tabs again and continues
+        print(f"stopped ({yt.stopped}): {dict(counts)}; outputs not written this run", flush=True)
+        return
     (RAW / "feed_items.json").write_text(json.dumps({"items": items, "quarantine": quarantine, "stats": stat_by_channel,
                                                       "counts": dict(counts)}, ensure_ascii=False) + "\n")
     build_outputs(items, quarantine, stat_by_channel, counts, ver, yt)
@@ -300,15 +314,23 @@ def build_outputs(items, quarantine, stat_by_channel, counts, ver, yt) -> None:
             "Titles passed ingest/public/media/media_privacy.py; the ones dropped are in quarantine.json with a redacted title and the reason.",
             "Not ranked here. ranked_heuristic.json holds the HEURISTIC candidate lists.",
         ],
-        "items": items_sorted}
+        "items_files": "feed/<diocese>.json (one file per diocese, to keep files small)"}
     (OUT / "feed.json").write_text(json.dumps(feed, indent=1, ensure_ascii=False) + "\n")
+    (OUT / "feed").mkdir(exist_ok=True)
+    per = collections.defaultdict(list)
+    for it in items_sorted:
+        per[it["diocese"] or "unknown"].append(it)
+    for slug, its in per.items():
+        (OUT / "feed" / f"{slug}.json").write_text(json.dumps({
+            "generated_at": ts, "generated_by": "ingest/california/media_feed.py", "diocese": slug, "count": len(its),
+            "notes": feed["notes"], "items": its}, indent=1, ensure_ascii=False) + "\n")
     (OUT / "quarantine.json").write_text(json.dumps({
         "generated_at": ts, "note": "Titles dropped by ingest/public/media/media_privacy.py (private people, funerals of lay people, Mass intentions...). "
                                     "Titles are redacted; links are opaque video ids.", "count": len(quarantine),
         "by_reason": dict(collections.Counter(q["reason"] for q in quarantine)), "items": quarantine}, indent=1, ensure_ascii=False) + "\n")
     print("wrote feed.json, ranked_heuristic.json, quarantine.json", flush=True)
     from media_report import write_channels_and_readme  # noqa: PLC0415
-    write_channels_and_readme(items, quarantine, stat_by_channel, counts, ver, ranked, ts, yt)
+    write_channels_and_readme(items, quarantine, stat_by_channel, counts, ver, ranked, ts, yt, dioceses=DIOCESES)
 
 
 if __name__ == "__main__":

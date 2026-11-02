@@ -15,7 +15,7 @@ on:
   workflow_dispatch:
     inputs:
       job:
-        description: 'which job (sites | reparse | render | discovermass | gcatholic | commoncrawl | osm | wayback | bulletins | movements | all)'
+        description: 'which job (sites | reparse | render | discovermass | gcatholic | commoncrawl | osm | wayback | bulletins | movements | media | all)'
         default: 'all'
       minutes:
         description: 'minutes per chunk'
@@ -305,6 +305,32 @@ jobs:
             git push -q origin HEAD:main && break
             sleep $((RANDOM % 20 + 5))
           done
+
+  media:
+    # Dispatch only (job=media; not in job=all). YouTube media catalog: parish / diocese channels found on parish and diocese
+    # websites -> ownership check (verified / probable only) -> each channel's public /videos and /streams tabs -> privacy
+    # screen (funerals, Mass intentions, weddings, baptisms, private names -> quarantine) -> HEURISTIC ranking per diocese.
+    # ONE job, ever (one host = youtube.com): one request every 2 s, robots.txt honoured (/feeds/videos.xml and /results are
+    # disallowed and never requested), honest FindTheChurch user agent, no API key. A consent or "confirm you're not a bot"
+    # page stops the run and is committed as _blocked.json; never worked around. California (11 dioceses) first, then national.
+    if: ${{ github.event.inputs.job == 'media' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    concurrency: { group: crawl-media, cancel-in-progress: false }
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 1 }
+      - run: git config user.name "Matthew" && git config user.email "mcolt4@gmail.com"
+      - run: sudo pip3 install -q --break-system-packages requests   # system site: visible to python3 -I
+      - uses: actions/cache@v4
+        with:
+          path: |
+            data/raw/california/youtube
+            data/raw/us/youtube
+          key: raw-youtube-${{ github.run_id }}
+          restore-keys: raw-youtube-
+      - name: YouTube catalog chunk (California, then national), commit, push
+        run: bash scripts/us/media_chunk.sh "$MINUTES"
 
   bulletins:
     if: ${{ github.event_name == 'schedule' || github.event.inputs.job == 'all' || github.event.inputs.job == 'bulletins' }}
