@@ -216,7 +216,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-sioux-falls | 32 | 32 | 18 | 14 | 0 | 0 | 0 |
 | diocese-of-colorado-springs | 32 | 32 | 14 | 4 | 0 | 14 | 0 |
 | unassigned-md | 32 | 63 | 34 | 8 | 2 | 19 | 0 |
-| eparchy-of-parma | 31 | 28 | 18 | 4 | 0 | 4 | 2 |
+| eparchy-of-parma | 31 | 31 | 19 | 4 | 0 | 5 | 3 |
 | diocese-of-oakland | 30 | 34 | 20 | 9 | 1 | 4 | 0 |
 | diocese-of-lafayette-in-indiana | 29 | 29 | 0 | 18 | 1 | 10 | 0 |
 | diocese-of-tulsa | 29 | 29 | 15 | 2 | 0 | 12 | 0 |
@@ -287,4 +287,4 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-03T16:11:29+00:00: top-up ('confession', 'adoration', 'liturgy'): {'sites': 24, 'requests': 2, 'found_confession': 1, 'found_liturgy': 1}; 0 sites left
 - 2026-11-03T21:43:22+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-03T21:43:30+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
-- 2026-11-03T21:43:51+00:00: fetched {'ok': 1, 'done': 1, 'halted_egress': 0}; parsed 1 dioceses
+- 2026-11-03T21:44:04+00:00: fetched {'ssl_error': 1, 'done': 2, 'ok': 1, 'halted_egress': 0}; parsed 1 dioceses
