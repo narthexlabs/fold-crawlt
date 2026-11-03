@@ -1,0 +1,175 @@
+{
+ "domain": "srstrinity.com",
+ "diocese": "diocese-of-cleveland",
+ "matched_church_ids": [
+  "brave:OH|lourdes euclid|",
+  "national-shrine-of-our-lady-of-lourdes-euclid-oh"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "national-shrine-of-our-lady-of-lourdes-euclid-oh",
+   "brave:OH|lourdes euclid|"
+  ]
+ },
+ "names": [
+  "National Shrine of Our Lady of Lourdes",
+  "Our Lady Of Lourdes"
+ ],
+ "cities": [
+  "Euclid"
+ ],
+ "home_url": "https://www.srstrinity.com/",
+ "final_url": "https://www.srstrinity.com/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://www.srstrinity.com/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://www.srstrinity.com/contact",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.srstrinity.com/reconciliation",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.srstrinity.com/adoration",
+   "status": 404,
+   "class": "not_found"
+  }
+ ],
+ "cms_guess": {
+  "cms": "duda",
+  "evidence": [
+   "irp.cdn-website"
+  ]
+ },
+ "template": "generic-html:duda",
+ "groups": [],
+ "calendar_feeds": [],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/profile.php?id=61551059917150"
+  ],
+  "instagram": [
+   "https://www.instagram.com/ourladyoflourdes_shrine/"
+  ]
+ },
+ "bulletin": null,
+ "schedule_rows": [
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "22:00",
+   "language": null,
+   "raw": "Christmas Eve Mass :: 10:00 PM",
+   "source_url": "https://www.srstrinity.com/",
+   "fetched_at": "2026-11-01T22:15:22+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "08:00",
+   "language": null,
+   "raw": "Christmas Day Mass :: 8:00 AM",
+   "source_url": "https://www.srstrinity.com/",
+   "fetched_at": "2026-11-01T22:15:22+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "kind_parsed": "mass"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Sunday Mass: 8:00 AM",
+   "source_url": "https://www.srstrinity.com/",
+   "fetched_at": "2026-11-01T22:15:22+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  }
+ ],
+ "source_url": "https://www.srstrinity.com/",
+ "fetched_at": "2026-11-01T22:15:28+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:52:27+00:00",
+  "requests": 2,
+  "found": []
+ },
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/3",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "trusted_kinds": [],
+  "generic_rows": 8
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "no_day": 12,
+  "benediction_end": 1,
+  "box_rows_added": 1
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-03",
+  "window_end_exclusive": "2027-02-01",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(216) 481-8232",
+  "address": null,
+  "source_url": "https://www.srstrinity.com/contact",
+  "sources": {
+   "phone": "https://www.srstrinity.com/contact"
+  },
+  "fetched_at": "2026-11-01T22:15:26+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}

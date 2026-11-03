@@ -1,0 +1,232 @@
+{
+ "domain": "lorainstmarychurch.org",
+ "diocese": "diocese-of-cleveland",
+ "matched_church_ids": [
+  "mary-mother-of-god-lorain-oh"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "mary-mother-of-god-lorain-oh"
+  ]
+ },
+ "names": [
+  "Mary Mother of God"
+ ],
+ "cities": [
+  "Lorain"
+ ],
+ "home_url": "https://lorainstmarychurch.org/",
+ "final_url": "https://lorainstmarychurch.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://lorainstmarychurch.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://lorainstmarychurch.org/ministries/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://lorainstmarychurch.org/events/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://lorainstmarychurch.org/contact-us/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://lorainstmarychurch.org/reconciliation/",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://lorainstmarychurch.org/adoration/",
+   "status": 404,
+   "class": "not_found"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-json"
+  ]
+ },
+ "template": "wordpress-rest+html",
+ "groups": [
+  {
+   "id": "lorainstmarychurch.org:children_ff",
+   "name": "Children’s Faith Formation (CFF)",
+   "category": "formation",
+   "category_label": "Formation",
+   "subcategory": "children_faith_formation",
+   "audience": "families",
+   "language": "en",
+   "language_assumed": true,
+   "meets": "Each Sunday, 10am",
+   "description": null,
+   "meeting": {
+    "day": "Each Sunday",
+    "time": null,
+    "time_24": null,
+    "frequency": "weekly",
+    "place": null,
+    "from": [
+     "listing line"
+    ],
+    "meets": "Each Sunday"
+   },
+   "contact_url": "https://lorainstmarychurch.org/contact-us/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://lorainstmarychurch.org/ministries/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-03T06:29:54+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "lorainstmarychurch.org:food",
+   "name": "Food Pantry Information",
+   "category": "service_mercy",
+   "category_label": "Service & mercy",
+   "subcategory": "food_ministry",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "meeting": null,
+   "contact_url": "https://lorainstmarychurch.org/contact-us/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://lorainstmarychurch.org/ministries/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-03T06:29:54+00:00",
+   "confidence": "medium"
+  }
+ ],
+ "calendar_feeds": [
+  {
+   "feed_id": "lorainstmarychurch.org:tribe_rest:e7885fbb",
+   "type": "tribe_rest",
+   "platform": "The Events Calendar (WordPress)",
+   "url": "https://lorainstmarychurch.org/wp-json/tribe/events/v1/events",
+   "page_url": "https://lorainstmarychurch.org/",
+   "label": null,
+   "status": "active",
+   "note": "The Events Calendar (WordPress) REST API",
+   "last_fetch": {
+    "status": 200,
+    "fetched_at": "2026-11-03T06:32:48+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
+ "events": [],
+ "social": {
+  "livestream": [
+   {
+    "url": "https://lorainstmarychurch.org/2020/01/09/health-ministries-council/",
+    "label": "Facebook-NEW link to watch Mass",
+    "platform": "lorainstmarychurch.org",
+    "kind": "link"
+   }
+  ]
+ },
+ "bulletin": {
+  "url": "https://lorainstmarychurch.org/2025/10/10/bulletin/",
+  "date": "2025-10-10",
+  "kind": "page",
+  "text": "Bulletin News",
+  "source_url": "https://lorainstmarychurch.org/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "16:30",
+   "language": null,
+   "raw": "Saturday 4:30 pm",
+   "source_url": "https://lorainstmarychurch.org/",
+   "fetched_at": "2026-11-03T06:29:51+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": null,
+   "raw": "Sunday 10:00 am",
+   "source_url": "https://lorainstmarychurch.org/",
+   "fetched_at": "2026-11-03T06:29:51+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  }
+ ],
+ "source_url": "https://lorainstmarychurch.org/",
+ "fetched_at": "2026-11-03T06:30:00+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/3",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "trusted_kinds": [],
+  "generic_rows": 3
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "box_rows_added": 2
+ },
+ "groups_dropped": {
+  "noise": 1
+ },
+ "event_counts": {
+  "window_start": "2026-11-03",
+  "window_end_exclusive": "2027-02-01",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(440) 245-5283",
+  "address": "309 W 7th St., Lorain, OH 44052",
+  "source_url": "https://lorainstmarychurch.org/contact-us/",
+  "sources": {
+   "phone": "https://lorainstmarychurch.org/contact-us/",
+   "address": "https://lorainstmarychurch.org/contact-us/"
+  },
+  "fetched_at": "2026-11-03T06:29:57+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}
