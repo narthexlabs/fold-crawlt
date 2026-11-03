@@ -37,7 +37,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | unassigned-pa | 295 | 626 | 433 | 88 | 7 | 80 | 18 |
 | archdiocese-of-philadelphia | 255 | 255 | 171 | 15 | 0 | 24 | 2 |
 | diocese-of-cleveland | 250 | 286 | 170 | 57 | 1 | 58 | 0 |
-| diocese-of-brooklyn | 243 | 242 | 180 | 14 | 2 | 41 | 5 |
+| diocese-of-brooklyn | 243 | 243 | 181 | 14 | 2 | 41 | 5 |
 | unassigned-nm | 231 | 263 | 163 | 50 | 4 | 46 | 0 |
 | archdiocese-of-milwaukee | 213 | 214 | 140 | 5 | 2 | 51 | 0 |
 | unassigned-wi | 213 | 265 | 164 | 46 | 6 | 49 | 0 |
@@ -283,8 +283,4 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-03T16:06:47+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-03T16:07:19+00:00: fetched {'challenge': 13, 'done': 40, 'conn_error': 1, 'ssl_error': 1, 'ok': 24, 'timeout': 1, 'halted_egress': 0}; parsed 8 dioceses
 - 2026-11-03T16:11:29+00:00: top-up ('confession', 'adoration', 'liturgy'): {'sites': 24, 'requests': 2, 'found_confession': 1, 'found_liturgy': 1}; 0 sites left
-- 2026-11-03T21:43:22+00:00: fetched {}; parsed 0 dioceses
-- 2026-11-03T21:43:30+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
-- 2026-11-03T21:44:04+00:00: fetched {'ssl_error': 1, 'done': 2, 'ok': 1, 'halted_egress': 0}; parsed 1 dioceses
-- 2026-11-03T21:44:17+00:00: top-up ('confession', 'adoration', 'liturgy'): {'sites': 1, 'requests': 0}; 0 sites left
-- 2026-11-03T21:45:14+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-03T21:42:50+00:00: fetched {'ok': 1, 'done': 1, 'halted_egress': 0}; parsed 1 dioceses
