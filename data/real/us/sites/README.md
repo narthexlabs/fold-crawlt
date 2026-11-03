@@ -66,7 +66,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-providence | 139 | 139 | 75 | 23 | 2 | 39 | 0 |
 | unassigned-tx | 139 | 183 | 84 | 68 | 4 | 25 | 2 |
 | unassigned-az | 139 | 180 | 122 | 40 | 2 | 16 | 0 |
-| diocese-of-peoria | 138 | 140 | 98 | 8 | 2 | 32 | 0 |
+| diocese-of-peoria | 138 | 141 | 99 | 8 | 2 | 32 | 0 |
 | diocese-of-springfield-in-illinois | 138 | 138 | 87 | 21 | 1 | 28 | 1 |
 | diocese-of-syracuse | 137 | 138 | 83 | 13 | 1 | 41 | 0 |
 | unassigned-ct | 137 | 152 | 107 | 6 | 1 | 36 | 2 |
@@ -273,8 +273,6 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 
 ## Chunk log
 
-- 2026-11-02T23:25:51+00:00: fetched {}; parsed 0 dioceses
-- 2026-11-02T23:25:58+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-02T23:26:27+00:00: fetched {'ok': 2, 'done': 2, 'halted_egress': 0}; parsed 1 dioceses
 - 2026-11-02T23:26:47+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-02T23:26:54+00:00: fetched {}; parsed 0 dioceses
@@ -288,3 +286,5 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-03T06:28:36+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-03T06:28:44+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-03T06:29:03+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-03T06:29:10+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
+- 2026-11-03T06:29:38+00:00: fetched {'ok': 1, 'done': 1, 'halted_egress': 0}; parsed 1 dioceses
