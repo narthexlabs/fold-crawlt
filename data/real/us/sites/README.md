@@ -80,7 +80,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | unassigned-ks | 126 | 161 | 92 | 34 | 12 | 23 | 0 |
 | diocese-of-orlando | 122 | 123 | 88 | 6 | 0 | 28 | 1 |
 | diocese-of-joliet | 121 | 121 | 80 | 22 | 0 | 19 | 0 |
-| unassigned-ky | 121 | 146 | 82 | 25 | 3 | 36 | 0 |
+| unassigned-ky | 121 | 147 | 82 | 25 | 3 | 37 | 0 |
 | diocese-of-worcester | 120 | 121 | 17 | 74 | 0 | 30 | 0 |
 | unassigned-nj | 120 | 172 | 102 | 25 | 10 | 30 | 5 |
 | diocese-of-metuchen | 118 | 119 | 43 | 46 | 0 | 30 | 0 |
@@ -273,8 +273,6 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 
 ## Chunk log
 
-- 2026-11-02T23:27:14+00:00: fetched {}; parsed 0 dioceses
-- 2026-11-02T23:27:18+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-02T23:27:35+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-02T23:27:39+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-02T23:27:57+00:00: fetched {'dns': 10, 'done': 176, 'challenge': 76, 'not_found': 7, 'ssl_error': 2, 'ok': 78, 'robots_disallowed': 1, 'conn_error': 1, 'timeout': 2, 'cut': 1, 'halted_egress': 0}; parsed 5 dioceses
@@ -288,3 +286,5 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-03T06:30:12+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-03T06:30:16+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-03T06:30:29+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-03T06:30:36+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
+- 2026-11-03T06:30:52+00:00: fetched {'not_found': 1, 'done': 1, 'halted_egress': 0}; parsed 1 dioceses

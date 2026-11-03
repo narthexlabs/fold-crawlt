@@ -1,17 +1,6 @@
 {
  "chunks": [
   {
-   "started_at": "2026-11-02T07:40:27+00:00",
-   "ended_at": "2026-11-02T07:40:28+00:00",
-   "result": "fetched {}; parsed 0 dioceses",
-   "touched": []
-  },
-  {
-   "started_at": "2026-11-02T07:40:31+00:00",
-   "result": "top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left",
-   "touched": []
-  },
-  {
    "started_at": "2026-11-02T07:40:48+00:00",
    "ended_at": "2026-11-02T07:40:49+00:00",
    "result": "fetched {}; parsed 0 dioceses",
@@ -345,6 +334,19 @@
   },
   {
    "started_at": "2026-11-03T06:30:36+00:00",
+   "result": "top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left",
+   "touched": []
+  },
+  {
+   "started_at": "2026-11-03T06:30:52+00:00",
+   "ended_at": "2026-11-03T06:30:56+00:00",
+   "result": "fetched {'not_found': 1, 'done': 1, 'halted_egress': 0}; parsed 1 dioceses",
+   "touched": [
+    "unassigned-ky"
+   ]
+  },
+  {
+   "started_at": "2026-11-03T06:30:59+00:00",
    "result": "top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left",
    "touched": []
   }
@@ -1322,7 +1324,7 @@
   },
   "unassigned-ky": {
    "sites_in_list": 121,
-   "records": 146,
+   "records": 147,
    "finished": true,
    "ok": 82,
    "by_status": {
@@ -1330,11 +1332,11 @@
     "challenge": 25,
     "dns": 19,
     "ssl_error": 7,
+    "not_found": 3,
     "timeout": 3,
     "blocked_403": 2,
     "conn_error": 2,
     "parked": 2,
-    "not_found": 2,
     "unreachable_via_proxy": 1,
     "blocked_429": 1
    }
@@ -3984,9 +3986,9 @@
  },
  "totals": {
   "sites_in_list": 20435,
-  "records": 21447,
+  "records": 21448,
   "ok": 11324
  },
  "us_parish_pages_discovermass": 20147,
- "updated_at": "2026-11-03T06:30:38+00:00"
+ "updated_at": "2026-11-03T06:31:01+00:00"
 }
