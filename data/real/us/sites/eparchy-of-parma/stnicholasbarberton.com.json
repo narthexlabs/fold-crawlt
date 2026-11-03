@@ -1,0 +1,157 @@
+{
+ "domain": "stnicholasbarberton.com",
+ "diocese": "eparchy-of-parma",
+ "matched_church_ids": [
+  "brave:OH|nicholas barberton|",
+  "st-nicholas-byzantine-barberton-oh"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "st-nicholas-byzantine-barberton-oh",
+   "brave:OH|nicholas barberton|"
+  ]
+ },
+ "names": [
+  "St. Nicholas (Byzantine)",
+  "St Nicholas"
+ ],
+ "cities": [
+  "Barberton"
+ ],
+ "home_url": "https://stnicholasbarberton.com/",
+ "final_url": "https://stnicholasbarberton.com/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "not_found",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://stnicholasbarberton.com/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "liturgy",
+   "url": "https://stnicholasbarberton.com/?page_id=8",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stnicholasbarberton.com/reconciliation/",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stnicholasbarberton.com/adoration/",
+   "status": 404,
+   "class": "not_found"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-content"
+  ]
+ },
+ "template": "wordpress-html",
+ "groups": [],
+ "calendar_feeds": [],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/St-Nicholas-Byzantine-Catholic-Church-Barberton-OH-47524303017"
+  ],
+  "youtube": [
+   "https://www.youtube.com/@stnickbyz"
+  ]
+ },
+ "bulletin": null,
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "05:00",
+   "language": null,
+   "raw": "Divine Liturgies:: Saturdays: 5:00 Sundays: 9:30 AM",
+   "source_url": "https://stnicholasbarberton.com/",
+   "fetched_at": "2026-11-01T22:15:29+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:30",
+   "language": null,
+   "raw": "Divine Liturgies:: Saturdays: 5:00 Sundays: 9:30 AM",
+   "source_url": "https://stnicholasbarberton.com/",
+   "fetched_at": "2026-11-01T22:15:29+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  }
+ ],
+ "source_url": "https://stnicholasbarberton.com/",
+ "fetched_at": "2026-11-01T22:15:32+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:52:36+00:00",
+  "requests": 3,
+  "found": [
+   "liturgy"
+  ]
+ },
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/3",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "trusted_kinds": [],
+  "generic_rows": 2
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "One hour before all Divine Liturgies & by appointment",
+   "phrase": "by appointment",
+   "source_url": "https://stnicholasbarberton.com/",
+   "fetched_at": "2026-11-01T22:15:29+00:00"
+  }
+ ],
+ "has_sunday": true,
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-03",
+  "window_end_exclusive": "2027-02-01",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}
