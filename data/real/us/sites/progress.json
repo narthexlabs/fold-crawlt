@@ -1,6 +1,17 @@
 {
  "chunks": [
   {
+   "started_at": "2026-11-02T07:41:49+00:00",
+   "ended_at": "2026-11-02T07:41:50+00:00",
+   "result": "fetched {}; parsed 0 dioceses",
+   "touched": []
+  },
+  {
+   "started_at": "2026-11-02T07:41:53+00:00",
+   "result": "top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left",
+   "touched": []
+  },
+  {
    "started_at": "2026-11-02T07:42:09+00:00",
    "ended_at": "2026-11-02T07:42:12+00:00",
    "result": "fetched {}; parsed 0 dioceses",
@@ -335,43 +346,31 @@
    "touched": []
   },
   {
-   "started_at": "2026-11-03T16:06:54+00:00",
-   "ended_at": "2026-11-03T16:09:00+00:00",
-   "result": "fetched {'robots_disallowed': 1, 'done': 49, 'dns': 5, 'challenge': 8, 'ssl_error': 5, 'not_found': 5, 'parked': 1, 'ok': 19, 'http_202': 1, 'http_4xx': 1, 'timeout': 3, 'halted_egress': 0}; parsed 8 dioceses",
+   "started_at": "2026-11-03T16:07:19+00:00",
+   "ended_at": "2026-11-03T16:10:43+00:00",
+   "result": "fetched {'challenge': 13, 'done': 40, 'conn_error': 1, 'ssl_error': 1, 'ok': 24, 'timeout': 1, 'halted_egress': 0}; parsed 8 dioceses",
    "touched": [
-    "unassigned-oh",
-    "diocese-of-cleveland",
-    "archdiocese-of-cincinnati",
-    "diocese-of-columbus",
-    "diocese-of-youngstown",
-    "diocese-of-steubenville",
-    "eparchy-of-parma",
-    "diocese-of-toledo"
+    "unassigned-mi",
+    "archdiocese-of-detroit",
+    "diocese-of-grand-rapids",
+    "diocese-of-lansing",
+    "diocese-of-saginaw",
+    "diocese-of-kalamazoo",
+    "diocese-of-gaylord",
+    "diocese-of-marquette"
    ]
   },
   {
-   "started_at": "2026-11-03T16:09:24+00:00",
-   "result": "top-up ('confession', 'adoration', 'liturgy'): {'sites': 20, 'requests': 0}; 0 sites left",
+   "started_at": "2026-11-03T16:11:29+00:00",
+   "result": "top-up ('confession', 'adoration', 'liturgy'): {'sites': 24, 'requests': 2, 'found_confession': 1, 'found_liturgy': 1}; 0 sites left",
    "touched": [
-    "archdiocese-of-cincinnati",
-    "diocese-of-columbus",
-    "diocese-of-steubenville",
-    "unassigned-oh"
-   ]
-  },
-  {
-   "started_at": "2026-11-03T16:09:31+00:00",
-   "ended_at": "2026-11-03T16:11:07+00:00",
-   "result": "fetched {'ok': 1, 'done': 1, 'halted_egress': 0}; parsed 1 dioceses",
-   "touched": [
-    "maronite-eparchy-of-our-lady-of-lebanon"
-   ]
-  },
-  {
-   "started_at": "2026-11-03T16:11:15+00:00",
-   "result": "top-up ('confession', 'adoration', 'liturgy'): {'sites': 1, 'requests': 0}; 0 sites left",
-   "touched": [
-    "maronite-eparchy-of-our-lady-of-lebanon"
+    "archdiocese-of-detroit",
+    "diocese-of-gaylord",
+    "diocese-of-grand-rapids",
+    "diocese-of-kalamazoo",
+    "diocese-of-lansing",
+    "diocese-of-saginaw",
+    "unassigned-mi"
    ]
   }
  ],
@@ -616,12 +615,12 @@
   },
   "unassigned-mi": {
    "sites_in_list": 215,
-   "records": 260,
+   "records": 263,
    "finished": true,
-   "ok": 162,
+   "ok": 164,
    "by_status": {
-    "ok": 162,
-    "challenge": 66,
+    "ok": 164,
+    "challenge": 67,
     "ssl_error": 9,
     "dns": 7,
     "timeout": 6,
@@ -656,18 +655,19 @@
   },
   "archdiocese-of-detroit": {
    "sites_in_list": 211,
-   "records": 181,
-   "finished": false,
-   "ok": 73,
+   "records": 212,
+   "finished": true,
+   "ok": 92,
    "by_status": {
-    "ok": 73,
+    "ok": 92,
     "dns": 36,
     "wayback": 29,
+    "challenge": 23,
     "ssl_error": 18,
-    "challenge": 12,
     "timeout": 5,
     "conn_error": 4,
     "parked": 3,
+    "social_only": 1,
     "unreachable_via_proxy": 1
    }
   },
@@ -2070,18 +2070,19 @@
   },
   "diocese-of-grand-rapids": {
    "sites_in_list": 83,
-   "records": 76,
-   "finished": false,
-   "ok": 57,
+   "records": 83,
+   "finished": true,
+   "ok": 63,
    "by_status": {
-    "ok": 57,
+    "ok": 63,
     "ssl_error": 6,
     "challenge": 5,
     "timeout": 3,
     "dns": 2,
     "not_found": 1,
     "http_202": 1,
-    "conn_error": 1
+    "conn_error": 1,
+    "http_5xx": 1
    }
   },
   "diocese-of-youngstown": {
@@ -2446,17 +2447,17 @@
   },
   "diocese-of-lansing": {
    "sites_in_list": 69,
-   "records": 43,
-   "finished": false,
-   "ok": 16,
+   "records": 69,
+   "finished": true,
+   "ok": 31,
    "by_status": {
-    "ok": 16,
-    "challenge": 14,
-    "dns": 6,
+    "ok": 31,
+    "challenge": 22,
+    "dns": 7,
     "ssl_error": 4,
-    "timeout": 1,
-    "not_found": 1,
-    "conn_error": 1
+    "timeout": 2,
+    "conn_error": 2,
+    "not_found": 1
    }
   },
   "diocese-of-palm-beach": {
@@ -2759,13 +2760,14 @@
   },
   "diocese-of-saginaw": {
    "sites_in_list": 56,
-   "records": 54,
-   "finished": false,
-   "ok": 37,
+   "records": 57,
+   "finished": true,
+   "ok": 38,
    "by_status": {
-    "ok": 37,
-    "challenge": 16,
-    "robots_disallowed": 1
+    "ok": 38,
+    "challenge": 17,
+    "robots_disallowed": 1,
+    "ssl_error": 1
    }
   },
   "diocese-of-des-moines": {
@@ -2815,13 +2817,13 @@
   },
   "diocese-of-kalamazoo": {
    "sites_in_list": 54,
-   "records": 48,
-   "finished": false,
-   "ok": 4,
+   "records": 54,
+   "finished": true,
+   "ok": 5,
    "by_status": {
-    "challenge": 40,
-    "ok": 4,
-    "ssl_error": 3,
+    "challenge": 44,
+    "ok": 5,
+    "ssl_error": 4,
     "dns": 1
    }
   },
@@ -2929,14 +2931,16 @@
   },
   "diocese-of-gaylord": {
    "sites_in_list": 49,
-   "records": 46,
-   "finished": false,
-   "ok": 39,
+   "records": 50,
+   "finished": true,
+   "ok": 41,
    "by_status": {
-    "ok": 39,
+    "ok": 41,
     "dns": 4,
     "ssl_error": 2,
-    "challenge": 1
+    "challenge": 1,
+    "social_only": 1,
+    "timeout": 1
    }
   },
   "diocese-of-evansville": {
@@ -3553,13 +3557,13 @@
   },
   "diocese-of-marquette": {
    "sites_in_list": 24,
-   "records": 23,
-   "finished": false,
-   "ok": 9,
+   "records": 25,
+   "finished": true,
+   "ok": 10,
    "by_status": {
-    "ok": 9,
+    "ok": 10,
     "dns": 6,
-    "challenge": 2,
+    "challenge": 3,
     "not_found": 2,
     "ssl_error": 2,
     "conn_error": 1,
@@ -4025,9 +4029,9 @@
  },
  "totals": {
   "sites_in_list": 20522,
-  "records": 21757,
-  "ok": 11501
+  "records": 21765,
+  "ok": 11518
  },
  "us_parish_pages_discovermass": 20147,
- "updated_at": "2026-11-03T16:11:18+00:00"
+ "updated_at": "2026-11-03T16:11:31+00:00"
 }
