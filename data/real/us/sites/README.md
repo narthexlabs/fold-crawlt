@@ -241,7 +241,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-jackson | 13 | 13 | 5 | 6 | 0 | 2 | 0 |
 | diocese-of-dodge-city | 12 | 12 | 9 | 1 | 0 | 2 | 0 |
 | diocese-of-lubbock | 12 | 13 | 4 | 3 | 0 | 4 | 2 |
-| maronite-eparchy-of-our-lady-of-lebanon | 10 | 8 | 8 | 0 | 0 | 0 | 0 |
+| maronite-eparchy-of-our-lady-of-lebanon | 10 | 10 | 9 | 0 | 0 | 0 | 1 |
 | unassigned-xx | 10 | 1 | 0 | 0 | 0 | 1 | 0 |
 | diocese-of-fairbanks | 9 | 9 | 3 | 4 | 0 | 2 | 0 |
 | diocese-of-st-thomas-vi | 9 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -273,8 +273,6 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 
 ## Chunk log
 
-- 2026-11-03T16:05:57+00:00: fetched {}; parsed 0 dioceses
-- 2026-11-03T16:06:01+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-03T16:06:15+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-03T16:06:23+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-03T16:06:39+00:00: fetched {}; parsed 0 dioceses
@@ -288,3 +286,5 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-03T21:45:35+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-03T21:45:43+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-03T21:46:20+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-03T21:46:27+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
+- 2026-11-03T21:46:51+00:00: fetched {'ok': 1, 'done': 1, 'halted_egress': 0}; parsed 1 dioceses
