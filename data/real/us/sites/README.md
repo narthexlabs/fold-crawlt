@@ -30,7 +30,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | archdiocese-of-chicago | 479 | 483 | 248 | 17 | 8 | 152 | 3 |
 | unassigned-ca | 465 | 56 | 36 | 8 | 1 | 11 | 0 |
 | archdiocese-of-new-york | 457 | 459 | 94 | 40 | 3 | 102 | 0 |
-| archdiocese-of-boston | 415 | 417 | 155 | 85 | 2 | 135 | 0 |
+| archdiocese-of-boston | 415 | 418 | 156 | 85 | 2 | 135 | 0 |
 | unassigned-oh | 307 | 397 | 258 | 74 | 5 | 60 | 0 |
 | archdiocese-of-newark | 299 | 302 | 160 | 11 | 2 | 88 | 1 |
 | unassigned-pa | 298 | 626 | 433 | 88 | 7 | 80 | 18 |
@@ -273,8 +273,6 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 
 ## Chunk log
 
-- 2026-11-02T23:27:35+00:00: fetched {}; parsed 0 dioceses
-- 2026-11-02T23:27:39+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-02T23:27:57+00:00: fetched {'dns': 10, 'done': 176, 'challenge': 76, 'not_found': 7, 'ssl_error': 2, 'ok': 78, 'robots_disallowed': 1, 'conn_error': 1, 'timeout': 2, 'cut': 1, 'halted_egress': 0}; parsed 5 dioceses
 - 2026-11-02T23:35:08+00:00: top-up ('confession', 'adoration', 'liturgy'): {'sites': 78, 'requests': 0}; 0 sites left
 - 2026-11-03T06:28:36+00:00: fetched {}; parsed 0 dioceses
@@ -288,3 +286,5 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-03T06:30:29+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-03T06:30:36+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-03T06:31:02+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-03T06:31:07+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
+- 2026-11-03T06:31:32+00:00: fetched {'ok': 1, 'done': 1, 'halted_egress': 0}; parsed 1 dioceses
