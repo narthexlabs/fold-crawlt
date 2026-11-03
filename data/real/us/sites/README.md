@@ -247,7 +247,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-lake-charles | 9 | 9 | 4 | 3 | 1 | 1 | 0 |
 | unassigned-unresolved | 9 | 9 | 6 | 0 | 0 | 3 | 0 |
 | chaldean-eparchy-of-saint-thomas-the-apostle | 8 | 8 | 8 | 0 | 0 | 0 | 0 |
-| maronite-eparchy-of-our-lady-of-lebanon | 8 | 3 | 3 | 0 | 0 | 0 | 0 |
+| maronite-eparchy-of-our-lady-of-lebanon | 8 | 7 | 7 | 0 | 0 | 0 | 0 |
 | diocese-of-toledo | 7 | 12 | 12 | 0 | 0 | 0 | 0 |
 | ukrainian-catholic-eparchy-of-st-josaphat-parma-oh | 7 | 7 | 6 | 0 | 1 | 0 | 0 |
 | archdiocese-of-indianapolis | 7 | 7 | 3 | 0 | 0 | 3 | 0 |
@@ -287,4 +287,4 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-03T06:32:00+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-03T06:32:15+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-03T06:32:19+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
-- 2026-11-03T06:32:53+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-03T06:32:32+00:00: fetched {'ok': 5, 'done': 4, 'cut': 1, 'halted_egress': 0}; parsed 1 dioceses
