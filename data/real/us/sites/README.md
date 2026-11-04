@@ -60,7 +60,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | unassigned-wi | 153 | 268 | 165 | 47 | 6 | 50 | 0 |
 | diocese-of-la-crosse | 152 | 154 | 97 | 25 | 4 | 26 | 2 |
 | unassigned-co | 150 | 185 | 108 | 21 | 7 | 49 | 0 |
-| archdiocese-of-new-orleans | 149 | 133 | 21 | 12 | 0 | 19 | 0 |
+| archdiocese-of-new-orleans | 149 | 149 | 27 | 19 | 0 | 22 | 0 |
 | diocese-of-trenton | 147 | 147 | 61 | 30 | 3 | 53 | 0 |
 | diocese-of-austin | 145 | 146 | 31 | 86 | 0 | 28 | 1 |
 | archdiocese-of-denver | 142 | 142 | 105 | 0 | 0 | 28 | 0 |
@@ -89,7 +89,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-charlotte | 117 | 118 | 62 | 16 | 0 | 40 | 0 |
 | diocese-of-richmond | 114 | 124 | 89 | 19 | 1 | 15 | 0 |
 | diocese-of-jefferson-city | 113 | 73 | 28 | 4 | 0 | 41 | 0 |
-| unassigned-la | 112 | 253 | 86 | 123 | 0 | 42 | 2 |
+| unassigned-la | 112 | 267 | 91 | 126 | 1 | 44 | 5 |
 | diocese-of-dallas | 111 | 112 | 47 | 46 | 0 | 19 | 0 |
 | unassigned-wv | 110 | 119 | 97 | 3 | 3 | 16 | 0 |
 | diocese-of-scranton | 107 | 110 | 80 | 11 | 0 | 19 | 0 |
@@ -139,7 +139,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-duluth | 76 | 76 | 24 | 33 | 0 | 19 | 0 |
 | diocese-of-phoenix | 76 | 76 | 49 | 11 | 1 | 15 | 0 |
 | diocese-of-fresno | 75 | 49 | 13 | 15 | 1 | 20 | 0 |
-| diocese-of-lafayette-in-louisiana | 75 | 76 | 33 | 15 | 2 | 26 | 0 |
+| diocese-of-lafayette-in-louisiana | 75 | 77 | 33 | 15 | 2 | 27 | 0 |
 | unassigned-il | 75 | 144 | 101 | 17 | 0 | 25 | 1 |
 | diocese-of-las-cruces | 73 | 73 | 12 | 1 | 0 | 60 | 0 |
 | diocese-of-norwich | 73 | 77 | 29 | 8 | 2 | 38 | 0 |
@@ -224,12 +224,12 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-tulsa | 29 | 29 | 15 | 2 | 0 | 12 | 0 |
 | unassigned-de | 29 | 41 | 30 | 7 | 1 | 3 | 0 |
 | unassigned-wy | 28 | 33 | 17 | 12 | 0 | 4 | 0 |
-| diocese-of-shreveport | 27 | 20 | 8 | 9 | 0 | 3 | 0 |
+| diocese-of-shreveport | 27 | 27 | 9 | 12 | 0 | 6 | 0 |
 | diocese-of-portland-in-maine | 27 | 27 | 4 | 15 | 0 | 8 | 0 |
 | unassigned-id | 27 | 38 | 23 | 6 | 1 | 8 | 0 |
 | diocese-of-bismarck | 26 | 26 | 7 | 14 | 1 | 4 | 0 |
 | holy-protection-of-mary-byzantine-catholic-eparchy-of-phoenix | 26 | 26 | 20 | 0 | 0 | 6 | 0 |
-| diocese-of-lake-charles | 25 | 10 | 5 | 3 | 1 | 1 | 0 |
+| diocese-of-lake-charles | 25 | 25 | 12 | 10 | 1 | 2 | 0 |
 | diocese-of-stockton | 23 | 11 | 0 | 7 | 0 | 4 | 0 |
 | eparchy-of-st-maron-of-brooklyn | 22 | 22 | 17 | 0 | 1 | 3 | 1 |
 | diocese-of-cheyenne | 22 | 22 | 8 | 7 | 0 | 7 | 0 |
@@ -287,4 +287,4 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-04T23:35:24+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-04T23:35:59+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-04T23:36:07+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
-- 2026-11-04T23:37:06+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-04T23:36:18+00:00: fetched {'robots_disallowed': 1, 'done': 30, 'dns': 4, 'challenge': 10, 'ok': 12, 'http_4xx': 1, 'not_found': 2, 'halted_egress': 0}; parsed 5 dioceses
