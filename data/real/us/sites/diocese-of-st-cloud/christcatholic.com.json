@@ -92,6 +92,18 @@
    "url": "https://christcatholic.com/contact/",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://christcatholic.com/parishes/assumption-chapel/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://christcatholic.com/event/reconciliation-cccc/",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -2576,7 +2588,21 @@
   }
  },
  "privacy": {
-  "screened_by": "ingest/public/privacy.py screen()",
-  "intentions_withheld": 2
+  "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-04T09:10:20+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
  }
 }
