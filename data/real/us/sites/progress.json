@@ -1,61 +1,6 @@
 {
  "chunks": [
   {
-   "started_at": "2026-11-02T15:33:48+00:00",
-   "ended_at": "2026-11-02T15:33:51+00:00",
-   "result": "fetched {}; parsed 0 dioceses",
-   "touched": []
-  },
-  {
-   "started_at": "2026-11-02T15:33:56+00:00",
-   "result": "top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left",
-   "touched": []
-  },
-  {
-   "started_at": "2026-11-02T15:34:11+00:00",
-   "ended_at": "2026-11-02T15:34:13+00:00",
-   "result": "fetched {}; parsed 0 dioceses",
-   "touched": []
-  },
-  {
-   "started_at": "2026-11-02T15:34:17+00:00",
-   "result": "top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left",
-   "touched": []
-  },
-  {
-   "started_at": "2026-11-02T15:34:29+00:00",
-   "ended_at": "2026-11-02T15:34:31+00:00",
-   "result": "fetched {}; parsed 0 dioceses",
-   "touched": []
-  },
-  {
-   "started_at": "2026-11-02T15:34:34+00:00",
-   "result": "top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left",
-   "touched": []
-  },
-  {
-   "started_at": "2026-11-02T15:34:46+00:00",
-   "ended_at": "2026-11-02T15:34:49+00:00",
-   "result": "fetched {}; parsed 0 dioceses",
-   "touched": []
-  },
-  {
-   "started_at": "2026-11-02T15:34:53+00:00",
-   "result": "top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left",
-   "touched": []
-  },
-  {
-   "started_at": "2026-11-02T15:35:24+00:00",
-   "ended_at": "2026-11-02T15:35:26+00:00",
-   "result": "fetched {}; parsed 0 dioceses",
-   "touched": []
-  },
-  {
-   "started_at": "2026-11-02T15:35:30+00:00",
-   "result": "top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left",
-   "touched": []
-  },
-  {
    "started_at": "2026-11-02T15:35:36+00:00",
    "ended_at": "2026-11-02T15:35:39+00:00",
    "result": "fetched {}; parsed 0 dioceses",
@@ -439,6 +384,17 @@
     "diocese-of-saginaw",
     "unassigned-mi"
    ]
+  },
+  {
+   "started_at": "2026-11-04T02:07:04+00:00",
+   "ended_at": "2026-11-04T02:07:06+00:00",
+   "result": "fetched {}; parsed 0 dioceses",
+   "touched": []
+  },
+  {
+   "started_at": "2026-11-04T02:07:09+00:00",
+   "result": "top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left",
+   "touched": []
   }
  ],
  "dioceses": {
@@ -680,9 +636,9 @@
    }
   },
   "archdiocese-of-milwaukee": {
-   "sites_in_list": 213,
+   "sites_in_list": 226,
    "records": 214,
-   "finished": true,
+   "finished": false,
    "ok": 140,
    "by_status": {
     "ok": 140,
@@ -699,25 +655,6 @@
     "unreachable_via_proxy": 1,
     "not_html": 1,
     "blocked_403": 1
-   }
-  },
-  "unassigned-wi": {
-   "sites_in_list": 213,
-   "records": 265,
-   "finished": true,
-   "ok": 164,
-   "by_status": {
-    "ok": 164,
-    "challenge": 46,
-    "dns": 25,
-    "ssl_error": 10,
-    "not_found": 7,
-    "robots_disallowed": 3,
-    "blocked_403": 3,
-    "timeout": 3,
-    "unreachable_via_proxy": 2,
-    "parked": 1,
-    "conn_error": 1
    }
   },
   "archdiocese-of-galveston-houston": {
@@ -833,8 +770,24 @@
     "blocked_403": 1
    }
   },
+  "diocese-of-green-bay": {
+   "sites_in_list": 179,
+   "records": 122,
+   "finished": false,
+   "ok": 52,
+   "by_status": {
+    "ok": 52,
+    "dns": 29,
+    "challenge": 26,
+    "ssl_error": 8,
+    "not_found": 3,
+    "timeout": 2,
+    "http_5xx": 1,
+    "parked": 1
+   }
+  },
   "unassigned-ne": {
-   "sites_in_list": 178,
+   "sites_in_list": 177,
    "records": 222,
    "finished": true,
    "ok": 161,
@@ -1015,6 +968,25 @@
     "robots_disallowed": 1
    }
   },
+  "unassigned-wi": {
+   "sites_in_list": 155,
+   "records": 265,
+   "finished": true,
+   "ok": 164,
+   "by_status": {
+    "ok": 164,
+    "challenge": 46,
+    "dns": 25,
+    "ssl_error": 10,
+    "not_found": 7,
+    "robots_disallowed": 3,
+    "blocked_403": 3,
+    "timeout": 3,
+    "unreachable_via_proxy": 2,
+    "parked": 1,
+    "conn_error": 1
+   }
+  },
   "unassigned-co": {
    "sites_in_list": 150,
    "records": 185,
@@ -1104,6 +1076,23 @@
     "not_found": 3,
     "unreachable_via_proxy": 2,
     "http_5xx": 1
+   }
+  },
+  "diocese-of-la-crosse": {
+   "sites_in_list": 140,
+   "records": 119,
+   "finished": false,
+   "ok": 71,
+   "by_status": {
+    "ok": 71,
+    "challenge": 21,
+    "dns": 9,
+    "ssl_error": 6,
+    "timeout": 4,
+    "conn_error": 3,
+    "robots_disallowed": 2,
+    "blocked_403": 2,
+    "not_found": 1
    }
   },
   "diocese-of-peoria": {
@@ -1404,22 +1393,6 @@
     "unreachable_via_proxy": 1
    }
   },
-  "diocese-of-green-bay": {
-   "sites_in_list": 121,
-   "records": 122,
-   "finished": true,
-   "ok": 52,
-   "by_status": {
-    "ok": 52,
-    "dns": 29,
-    "challenge": 26,
-    "ssl_error": 8,
-    "not_found": 3,
-    "timeout": 2,
-    "http_5xx": 1,
-    "parked": 1
-   }
-  },
   "diocese-of-joliet": {
    "sites_in_list": 121,
    "records": 121,
@@ -1472,7 +1445,7 @@
    }
   },
   "unassigned-ky": {
-   "sites_in_list": 120,
+   "sites_in_list": 119,
    "records": 147,
    "finished": true,
    "ok": 82,
@@ -1533,23 +1506,6 @@
     "ssl_error": 4,
     "conn_error": 2,
     "parked": 1
-   }
-  },
-  "diocese-of-la-crosse": {
-   "sites_in_list": 117,
-   "records": 119,
-   "finished": true,
-   "ok": 71,
-   "by_status": {
-    "ok": 71,
-    "challenge": 21,
-    "dns": 9,
-    "ssl_error": 6,
-    "timeout": 4,
-    "conn_error": 3,
-    "robots_disallowed": 2,
-    "blocked_403": 2,
-    "not_found": 1
    }
   },
   "diocese-of-richmond": {
@@ -2029,6 +1985,22 @@
     "http_5xx": 1
    }
   },
+  "diocese-of-madison": {
+   "sites_in_list": 88,
+   "records": 78,
+   "finished": false,
+   "ok": 14,
+   "by_status": {
+    "challenge": 38,
+    "ok": 14,
+    "dns": 10,
+    "ssl_error": 8,
+    "parked": 5,
+    "timeout": 1,
+    "blocked_403": 1,
+    "conn_error": 1
+   }
+  },
   "diocese-of-raleigh": {
    "sites_in_list": 88,
    "records": 93,
@@ -2079,7 +2051,7 @@
    }
   },
   "diocese-of-altoona-johnstown": {
-   "sites_in_list": 86,
+   "sites_in_list": 85,
    "records": 86,
    "finished": true,
    "ok": 48,
@@ -2242,22 +2214,6 @@
     "robots_disallowed": 1,
     "social_only": 1,
     "parked": 1
-   }
-  },
-  "diocese-of-madison": {
-   "sites_in_list": 78,
-   "records": 78,
-   "finished": true,
-   "ok": 14,
-   "by_status": {
-    "challenge": 38,
-    "ok": 14,
-    "dns": 10,
-    "ssl_error": 8,
-    "parked": 5,
-    "timeout": 1,
-    "blocked_403": 1,
-    "conn_error": 1
    }
   },
   "unassigned-al": {
@@ -3157,6 +3113,15 @@
     "conn_error": 2,
     "not_found": 1,
     "parked": 1
+   }
+  },
+  "diocese-of-superior": {
+   "sites_in_list": 41,
+   "records": 1,
+   "finished": false,
+   "ok": 1,
+   "by_status": {
+    "ok": 1
    }
   },
   "unassigned-ut": {
@@ -4078,15 +4043,6 @@
     "challenge": 1
    }
   },
-  "diocese-of-superior": {
-   "sites_in_list": 1,
-   "records": 1,
-   "finished": true,
-   "ok": 1,
-   "by_status": {
-    "ok": 1
-   }
-  },
   "diocese-of-wheeling-charleston": {
    "sites_in_list": 1,
    "records": 1,
@@ -4098,10 +4054,10 @@
   }
  },
  "totals": {
-  "sites_in_list": 20600,
-  "records": 22008,
-  "ok": 11639
+  "sites_in_list": 20683,
+  "records": 22019,
+  "ok": 11647
  },
  "us_parish_pages_discovermass": 20147,
- "updated_at": "2026-11-03T21:49:43+00:00"
+ "updated_at": "2026-11-04T02:07:11+00:00"
 }
