@@ -1,0 +1,164 @@
+{
+ "domain": "stlouisbyzantine.com",
+ "diocese": "eparchy-of-parma",
+ "matched_church_ids": [
+  "st-louis-byzantine-catholic-mission-saint-louis-mo"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "st-louis-byzantine-catholic-mission-saint-louis-mo"
+  ]
+ },
+ "names": [
+  "St. Louis Byzantine Catholic Mission"
+ ],
+ "cities": [
+  "Saint Louis"
+ ],
+ "home_url": "http://stlouisbyzantine.com/",
+ "final_url": "https://stlouisbyzantine.com/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://stlouisbyzantine.com/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stlouisbyzantine.com/join-us/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://stlouisbyzantine.com/reconciliation/",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stlouisbyzantine.com/adoration/",
+   "status": 404,
+   "class": "not_found"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-content"
+  ]
+ },
+ "template": "wordpress-rest+html",
+ "groups": [],
+ "calendar_feeds": [
+  {
+   "feed_id": "stlouisbyzantine.com:tribe_rest:9d4325d3",
+   "type": "tribe_rest",
+   "platform": "The Events Calendar (WordPress)",
+   "url": "https://stlouisbyzantine.com/wp-json/tribe/events/v1/events",
+   "page_url": "https://stlouisbyzantine.com/",
+   "label": null,
+   "status": "active",
+   "note": "The Events Calendar (WordPress) REST API",
+   "last_fetch": {
+    "status": 200,
+    "fetched_at": "2026-11-04T23:34:26+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/stanthonythegreatbyzantine"
+  ]
+ },
+ "bulletin": null,
+ "schedule_rows": [
+  {
+   "kind": "devotion",
+   "day": "Saturday",
+   "time": "17:30",
+   "language": null,
+   "raw": "5:30 PM: Vespers",
+   "source_url": "https://stlouisbyzantine.com/",
+   "fetched_at": "2026-11-04T23:34:16+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "18:30",
+   "language": null,
+   "raw": "6:30 PM: Vespers or Vigil Divine Liturgy",
+   "source_url": "https://stlouisbyzantine.com/",
+   "fetched_at": "2026-11-04T23:34:16+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress",
+   "kind_parsed": "devotion"
+  }
+ ],
+ "source_url": "http://stlouisbyzantine.com/",
+ "fetched_at": "2026-11-04T23:34:24+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/3",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": true
+   },
+   "score": "high"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "trusted_kinds": [],
+  "generic_rows": 1
+ },
+ "has_sunday": false,
+ "schedule_partial": true,
+ "schedule_dropped": {
+  "other_location": 2,
+  "prose": 2
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-04",
+  "window_end_exclusive": "2027-02-02",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": null,
+  "address": "221 1st Capitol Dr, St Charles, MO 63301",
+  "source_url": "https://stlouisbyzantine.com/",
+  "sources": {
+   "address": "https://stlouisbyzantine.com/"
+  },
+  "fetched_at": "2026-11-04T23:34:16+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}
