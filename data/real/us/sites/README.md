@@ -75,7 +75,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-paterson | 134 | 135 | 15 | 107 | 1 | 12 | 0 |
 | archdiocese-of-atlanta | 133 | 135 | 94 | 5 | 2 | 21 | 0 |
 | archdiocese-of-new-orleans | 131 | 131 | 21 | 10 | 0 | 19 | 0 |
-| unassigned-mi | 131 | 269 | 168 | 67 | 4 | 30 | 0 |
+| unassigned-mi | 131 | 270 | 168 | 67 | 4 | 31 | 0 |
 | unassigned-la | 131 | 245 | 82 | 123 | 0 | 40 | 0 |
 | archdiocese-of-los-angeles | 130 | 41 | 23 | 2 | 5 | 5 | 0 |
 | diocese-of-columbus | 130 | 130 | 55 | 33 | 2 | 40 | 0 |
@@ -273,8 +273,6 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 
 ## Chunk log
 
-- 2026-11-04T02:08:22+00:00: fetched {}; parsed 0 dioceses
-- 2026-11-04T02:08:28+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-04T02:08:41+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-04T02:08:48+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-04T02:09:04+00:00: fetched {'dns': 4, 'done': 77, 'challenge': 25, 'ok': 44, 'ssl_error': 2, 'not_found': 1, 'blocked_429': 1, 'halted_egress': 0}; parsed 6 dioceses
@@ -288,3 +286,5 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-04T09:03:17+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-04T09:03:23+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-04T09:03:35+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-04T09:03:40+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
+- 2026-11-04T09:04:03+00:00: fetched {'not_found': 1, 'done': 1, 'halted_egress': 0}; parsed 1 dioceses
