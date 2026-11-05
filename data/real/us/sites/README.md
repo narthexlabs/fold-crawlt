@@ -77,7 +77,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | unassigned-ct | 135 | 152 | 107 | 6 | 1 | 36 | 2 |
 | diocese-of-paterson | 134 | 135 | 15 | 107 | 1 | 12 | 0 |
 | archdiocese-of-atlanta | 133 | 135 | 94 | 5 | 2 | 21 | 0 |
-| diocese-of-raleigh | 133 | 93 | 61 | 24 | 1 | 7 | 0 |
+| diocese-of-raleigh | 133 | 138 | 68 | 28 | 1 | 41 | 0 |
 | unassigned-mi | 131 | 270 | 168 | 67 | 4 | 31 | 0 |
 | archdiocese-of-los-angeles | 130 | 41 | 23 | 2 | 5 | 5 | 0 |
 | diocese-of-columbus | 130 | 130 | 55 | 33 | 2 | 40 | 0 |
@@ -242,7 +242,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-helena | 19 | 19 | 14 | 4 | 0 | 1 | 0 |
 | diocese-of-rapid-city | 19 | 21 | 14 | 2 | 0 | 5 | 0 |
 | diocese-of-reno | 19 | 2 | 0 | 2 | 0 | 0 | 0 |
-| unassigned-nc | 17 | 22 | 14 | 0 | 0 | 8 | 0 |
+| unassigned-nc | 17 | 23 | 14 | 0 | 0 | 9 | 0 |
 | diocese-of-grand-island | 17 | 17 | 7 | 1 | 0 | 8 | 1 |
 | diocese-of-jackson | 13 | 13 | 5 | 6 | 0 | 2 | 0 |
 | diocese-of-dodge-city | 12 | 12 | 9 | 1 | 0 | 2 | 0 |
@@ -273,8 +273,6 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 
 ## Chunk log
 
-- 2026-11-04T23:34:47+00:00: fetched {}; parsed 0 dioceses
-- 2026-11-04T23:34:54+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-04T23:35:16+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-04T23:35:24+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-04T23:35:59+00:00: fetched {}; parsed 0 dioceses
@@ -288,3 +286,5 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-05T06:27:33+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-05T06:27:40+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-05T06:28:40+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-05T06:28:49+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
+- 2026-11-05T06:29:16+00:00: fetched {'dns': 28, 'done': 43, 'challenge': 4, 'ok': 7, 'ssl_error': 2, 'parked': 1, 'not_found': 1, 'halted_egress': 0}; parsed 2 dioceses
