@@ -125,14 +125,14 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | unassigned-ct | 89 | 152 | 107 | 6 | 1 | 36 | 2 |
 | archdiocese-of-san-francisco | 87 | 53 | 26 | 6 | 0 | 16 | 0 |
 | archdiocese-of-omaha | 86 | 86 | 67 | 1 | 2 | 9 | 0 |
-| diocese-of-wichita | 86 | 83 | 36 | 6 | 34 | 7 | 0 |
+| diocese-of-wichita | 86 | 90 | 39 | 6 | 37 | 8 | 0 |
 | diocese-of-altoona-johnstown | 85 | 86 | 48 | 12 | 1 | 19 | 6 |
 | unassigned-ok | 85 | 114 | 58 | 34 | 4 | 18 | 0 |
 | diocese-of-corpus-christi | 84 | 84 | 37 | 27 | 1 | 16 | 3 |
 | unassigned-ms | 84 | 98 | 45 | 31 | 1 | 21 | 0 |
 | unassigned-sd | 84 | 110 | 69 | 17 | 1 | 23 | 0 |
 | diocese-of-venice | 83 | 83 | 60 | 9 | 0 | 14 | 0 |
-| archdiocese-of-kansas-city-in-kansas | 82 | 74 | 28 | 4 | 1 | 23 | 3 |
+| archdiocese-of-kansas-city-in-kansas | 82 | 83 | 33 | 7 | 2 | 23 | 3 |
 | diocese-of-toledo | 81 | 84 | 59 | 3 | 1 | 21 | 0 |
 | diocese-of-st-augustine | 80 | 85 | 48 | 16 | 0 | 21 | 0 |
 | diocese-of-arlington | 79 | 80 | 54 | 11 | 1 | 14 | 0 |
@@ -204,7 +204,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | unassigned-nh | 43 | 99 | 56 | 33 | 0 | 10 | 0 |
 | diocese-of-springfield-massachusetts | 42 | 42 | 19 | 3 | 0 | 20 | 0 |
 | unassigned-ut | 41 | 47 | 35 | 2 | 0 | 10 | 0 |
-| diocese-of-salina | 40 | 32 | 29 | 3 | 0 | 0 | 0 |
+| diocese-of-salina | 40 | 40 | 35 | 3 | 2 | 0 | 0 |
 | diocese-of-nashville | 40 | 40 | 13 | 11 | 0 | 16 | 0 |
 | diocese-of-monterey | 39 | 21 | 5 | 7 | 0 | 9 | 0 |
 | diocese-of-wheeling-charleston | 39 | 39 | 24 | 1 | 1 | 13 | 0 |
@@ -225,7 +225,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-colorado-springs | 32 | 32 | 14 | 4 | 0 | 14 | 0 |
 | unassigned-md | 32 | 63 | 34 | 8 | 2 | 19 | 0 |
 | eparchy-of-parma | 31 | 32 | 20 | 4 | 0 | 5 | 3 |
-| diocese-of-dodge-city | 30 | 12 | 9 | 1 | 0 | 2 | 0 |
+| diocese-of-dodge-city | 30 | 30 | 18 | 3 | 3 | 5 | 1 |
 | diocese-of-oakland | 30 | 34 | 20 | 9 | 1 | 4 | 0 |
 | diocese-of-tulsa | 29 | 29 | 15 | 2 | 0 | 12 | 0 |
 | unassigned-de | 28 | 41 | 30 | 7 | 1 | 3 | 0 |
@@ -287,4 +287,4 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-05T23:35:19+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-05T23:35:35+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-05T23:35:41+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
-- 2026-11-05T23:36:35+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-05T23:35:58+00:00: fetched {'challenge': 2, 'done': 19, 'blocked_429': 6, 'not_found': 1, 'ok': 10, 'halted_egress': 0}; parsed 4 dioceses

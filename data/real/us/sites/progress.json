@@ -396,15 +396,25 @@
    "touched": []
   },
   {
-   "started_at": "2026-11-05T23:36:35+00:00",
-   "ended_at": "2026-11-05T23:36:38+00:00",
-   "result": "fetched {}; parsed 0 dioceses",
-   "touched": []
+   "started_at": "2026-11-05T23:35:58+00:00",
+   "ended_at": "2026-11-05T23:37:37+00:00",
+   "result": "fetched {'challenge': 2, 'done': 19, 'blocked_429': 6, 'not_found': 1, 'ok': 10, 'halted_egress': 0}; parsed 4 dioceses",
+   "touched": [
+    "diocese-of-wichita",
+    "archdiocese-of-kansas-city-in-kansas",
+    "diocese-of-salina",
+    "diocese-of-dodge-city"
+   ]
   },
   {
-   "started_at": "2026-11-05T23:36:44+00:00",
-   "result": "top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left",
-   "touched": []
+   "started_at": "2026-11-05T23:38:32+00:00",
+   "result": "top-up ('confession', 'adoration', 'liturgy'): {'sites': 12, 'requests': 2, 'found_adoration': 1, 'found_confession': 1}; 0 sites left",
+   "touched": [
+    "archdiocese-of-kansas-city-in-kansas",
+    "diocese-of-dodge-city",
+    "diocese-of-salina",
+    "diocese-of-wichita"
+   ]
   }
  ],
  "dioceses": {
@@ -2167,16 +2177,17 @@
   },
   "diocese-of-wichita": {
    "sites_in_list": 86,
-   "records": 83,
-   "finished": false,
-   "ok": 36,
+   "records": 90,
+   "finished": true,
+   "ok": 39,
    "by_status": {
-    "ok": 36,
-    "blocked_429": 34,
+    "ok": 39,
+    "blocked_429": 37,
     "challenge": 6,
     "dns": 5,
     "timeout": 1,
-    "ssl_error": 1
+    "ssl_error": 1,
+    "not_found": 1
    }
   },
   "diocese-of-altoona-johnstown": {
@@ -2285,19 +2296,19 @@
   },
   "archdiocese-of-kansas-city-in-kansas": {
    "sites_in_list": 82,
-   "records": 74,
-   "finished": false,
-   "ok": 28,
+   "records": 83,
+   "finished": true,
+   "ok": 33,
    "by_status": {
-    "ok": 28,
+    "ok": 33,
     "wayback": 15,
     "dns": 13,
-    "challenge": 4,
+    "challenge": 7,
     "not_found": 4,
     "social_only": 3,
     "ssl_error": 3,
+    "blocked_429": 2,
     "parked": 1,
-    "blocked_429": 1,
     "not_html": 1,
     "timeout": 1
    }
@@ -3385,12 +3396,13 @@
   },
   "diocese-of-salina": {
    "sites_in_list": 40,
-   "records": 32,
-   "finished": false,
-   "ok": 29,
+   "records": 40,
+   "finished": true,
+   "ok": 35,
    "by_status": {
-    "ok": 29,
-    "challenge": 3
+    "ok": 35,
+    "challenge": 3,
+    "blocked_429": 2
    }
   },
   "diocese-of-nashville": {
@@ -3678,13 +3690,16 @@
   },
   "diocese-of-dodge-city": {
    "sites_in_list": 30,
-   "records": 12,
-   "finished": false,
-   "ok": 9,
+   "records": 30,
+   "finished": true,
+   "ok": 18,
    "by_status": {
-    "ok": 9,
+    "ok": 18,
+    "timeout": 3,
+    "challenge": 3,
+    "blocked_429": 3,
     "unreachable_via_proxy": 2,
-    "challenge": 1
+    "social_only": 1
    }
   },
   "diocese-of-oakland": {
@@ -4183,9 +4198,9 @@
  },
  "totals": {
   "sites_in_list": 21810,
-  "records": 23679,
-  "ok": 12358
+  "records": 23721,
+  "ok": 12381
  },
  "us_parish_pages_discovermass": 20147,
- "updated_at": "2026-11-05T23:36:46+00:00"
+ "updated_at": "2026-11-05T23:38:34+00:00"
 }
