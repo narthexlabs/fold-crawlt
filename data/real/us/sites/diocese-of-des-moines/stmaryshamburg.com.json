@@ -1,0 +1,184 @@
+{
+ "domain": "stmaryshamburg.com",
+ "diocese": "diocese-of-des-moines",
+ "matched_church_ids": [
+  "saint-mary-hamburg-ia"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "saint-mary-hamburg-ia"
+  ]
+ },
+ "names": [
+  "Saint Mary"
+ ],
+ "cities": [
+  "Hamburg"
+ ],
+ "home_url": "https://www.stmaryshamburg.com/",
+ "final_url": "https://www.stmaryshamburg.com/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "not_found",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://www.stmaryshamburg.com/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.stmaryshamburg.com/home",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.stmaryshamburg.com/worship",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.stmaryshamburg.com/worship/sacraments",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.stmaryshamburg.com/youth-ministry",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://www.stmaryshamburg.com/weekly-bulletins",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "google_sites",
+  "evidence": [
+   "sites.google.com"
+  ]
+ },
+ "template": "generic-html:google_sites",
+ "groups": [
+  {
+   "id": "stmaryshamburg.com:youth_ministry",
+   "name": "Youth Ministry",
+   "category": "youth",
+   "category_label": "Youth",
+   "subcategory": "youth_ministry",
+   "audience": "youth",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "meeting": null,
+   "contact_url": "https://www.stmaryshamburg.com/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://www.stmaryshamburg.com/youth-ministry",
+   "source_kind": "website",
+   "fetched_at": "2026-11-05T06:30:46+00:00",
+   "confidence": "medium"
+  }
+ ],
+ "calendar_feeds": [],
+ "events": [],
+ "social": {},
+ "bulletin": {
+  "url": "https://www.stmaryshamburg.com/weekly-bulletins",
+  "date": null,
+  "kind": "page",
+  "text": "Weekly Bulletins",
+  "source_url": "https://www.stmaryshamburg.com/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "confession",
+   "day": "Sunday",
+   "time": "07:45-08:15",
+   "language": null,
+   "raw": "Father Lee will offer Confessions before Sunday Mass: 7:45 a.m.-8:15 a.m.",
+   "source_url": "https://www.stmaryshamburg.com/",
+   "fetched_at": "2026-11-05T06:30:42+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:30",
+   "language": null,
+   "raw": "Mass Times: Sunday 8:30 AM",
+   "source_url": "https://www.stmaryshamburg.com/worship",
+   "fetched_at": "2026-11-05T06:30:44+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  }
+ ],
+ "source_url": "https://www.stmaryshamburg.com/",
+ "fetched_at": "2026-11-05T06:30:47+00:00",
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/3",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": true,
+  "trusted_candidate": false,
+  "trusted_kinds": [],
+  "generic_rows": 2
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "By appointment",
+   "phrase": "By appointment",
+   "source_url": "https://www.stmaryshamburg.com/worship",
+   "fetched_at": "2026-11-05T06:30:44+00:00"
+  }
+ ],
+ "has_sunday": true,
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-05",
+  "window_end_exclusive": "2027-02-03",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": null,
+  "address": "1306 Washington St, Hamburg, IA 51640",
+  "source_url": "https://www.stmaryshamburg.com/",
+  "sources": {
+   "address": "https://www.stmaryshamburg.com/"
+  },
+  "fetched_at": "2026-11-05T06:30:42+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}
