@@ -1,36 +1,39 @@
 {
  "slug": "diocese-of-rockville-centre",
- "generated_at": "2026-11-02T23:29:48+00:00",
- "run_date": "2026-11-02",
+ "generated_at": "2026-11-05T06:26:58+00:00",
+ "run_date": "2026-11-05",
  "input": {
   "directory_records": 126,
-  "discovermass_records": 109,
+  "discovermass_records": 227,
   "directory_without_website": 0,
   "discovermass_without_website": 0
  },
- "sites_in_list": 167,
+ "sites_in_list": 198,
  "social_only": 0,
  "crawl": {
-  "ok_total": 112,
-  "ok_via_sandbox": 112,
+  "ok_total": 117,
+  "ok_via_sandbox": 117,
   "ok_via_laptop": 0,
   "partial_via_side_doors": 0,
-  "challenge": 14,
+  "challenge": 15,
   "blocked_403_429": 9,
-  "robots_disallowed": 0,
-  "laptop_pending": 46,
-  "dead": 32,
+  "robots_disallowed": 1,
+  "laptop_pending": 70,
+  "dead": 56,
   "not_fetched": 0,
   "by_status": {
-   "ok": 112,
-   "challenge": 14,
+   "ok": 117,
+   "dns": 15,
+   "challenge": 15,
    "unreachable_via_proxy": 13,
+   "ssl_error": 9,
    "http_202": 9,
-   "ssl_error": 6,
+   "parked": 5,
    "not_found": 5,
-   "parked": 4,
+   "timeout": 4,
+   "conn_error": 2,
    "http_5xx": 2,
-   "conn_error": 1,
+   "robots_disallowed": 1,
    "http_4xx": 1
   }
  },
@@ -70,19 +73,19 @@
   "sites_with_events": 5,
   "events_stored": 1017,
   "events_in_window_before_privacy": 1355,
-  "window": "2026-11-02 + 90 days"
+  "window": "2026-11-05 + 90 days"
  },
  "social": {
   "sites_by_platform": {
-   "facebook": 79,
+   "facebook": 82,
+   "instagram": 41,
    "livestream": 39,
-   "instagram": 39,
    "youtube": 35,
-   "x": 11,
+   "x": 12,
    "flocknote": 5,
    "tiktok": 1
   },
-  "sites_with_any_social": 85,
+  "sites_with_any_social": 88,
   "shared_links_removed_as_diocesan": []
  },
  "bulletin": {
@@ -95,41 +98,43 @@
   "with_date": 22
  },
  "schedule": {
-  "sites_with_own_site_rows": 99,
-  "rows_total": 1447,
+  "sites_with_own_site_rows": 101,
+  "rows_total": 1459,
   "rows_needs_review": 20,
   "sites_with_schedule_image_only": 1,
   "by_kind": {
-   "mass": 1144,
+   "mass": 1150,
    "confession": 156,
-   "adoration": 93,
+   "adoration": 94,
    "other": 49,
-   "devotion": 5
+   "devotion": 10
   }
  },
  "cms_guess": {
   "joomla": 37,
-  "wordpress": 35,
-  "unknown": 8,
+  "wordpress": 37,
+  "unknown": 10,
   "duda": 7,
   "parishsoft": 6,
   "wix": 6,
   "weebly": 4,
   "squarespace": 4,
   "godaddy": 4,
+  "google_sites": 1,
   "drupal": 1
  },
  "template": {
   "generic-html:joomla": 37,
   "wordpress-html": 22,
-  "wordpress-rest+html": 13,
-  "generic-html:unknown": 8,
+  "wordpress-rest+html": 15,
+  "generic-html:unknown": 10,
   "generic-html:duda": 7,
   "generic-html:parishsoft": 6,
   "generic-html:wix": 6,
   "generic-html:weebly": 4,
   "generic-html:squarespace": 4,
   "generic-html:godaddy": 4,
+  "generic-html:google_sites": 1,
   "generic-html:drupal": 1
  }
 }
