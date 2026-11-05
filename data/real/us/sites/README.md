@@ -95,8 +95,8 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-dallas | 111 | 112 | 47 | 46 | 0 | 19 | 0 |
 | diocese-of-fort-wayne-south-bend | 111 | 100 | 52 | 22 | 0 | 26 | 0 |
 | unassigned-la | 111 | 267 | 91 | 126 | 1 | 44 | 5 |
-| diocese-of-youngstown | 108 | 82 | 50 | 9 | 0 | 20 | 3 |
-| unassigned-wa | 108 | 143 | 80 | 33 | 1 | 29 | 0 |
+| diocese-of-youngstown | 108 | 108 | 57 | 10 | 0 | 38 | 3 |
+| unassigned-wa | 108 | 142 | 80 | 33 | 1 | 28 | 0 |
 | diocese-of-st-petersburg | 107 | 109 | 68 | 27 | 1 | 13 | 0 |
 | diocese-of-erie | 107 | 107 | 70 | 6 | 3 | 28 | 0 |
 | diocese-of-kansas-city-st-joseph | 106 | 104 | 52 | 26 | 0 | 22 | 4 |
@@ -129,8 +129,8 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | unassigned-ok | 85 | 114 | 58 | 34 | 4 | 18 | 0 |
 | diocese-of-corpus-christi | 84 | 84 | 37 | 27 | 1 | 16 | 3 |
 | unassigned-ms | 84 | 98 | 45 | 31 | 1 | 21 | 0 |
-| diocese-of-venice | 83 | 83 | 60 | 9 | 0 | 14 | 0 |
-| diocese-of-toledo | 81 | 13 | 13 | 0 | 0 | 0 | 0 |
+| diocese-of-venice | 83 | 72 | 55 | 7 | 0 | 10 | 0 |
+| diocese-of-toledo | 81 | 84 | 59 | 3 | 1 | 21 | 0 |
 | diocese-of-st-augustine | 80 | 85 | 48 | 16 | 0 | 21 | 0 |
 | diocese-of-arlington | 79 | 80 | 54 | 11 | 1 | 14 | 0 |
 | diocese-of-wichita | 79 | 74 | 33 | 6 | 34 | 1 | 0 |
@@ -283,8 +283,8 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-05T06:30:04+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-05T06:30:21+00:00: fetched {'dns': 18, 'done': 54, 'challenge': 2, 'ssl_error': 3, 'parked': 1, 'not_found': 9, 'ok': 23, 'timeout': 1, 'cut': 3, 'halted_egress': 0}; parsed 5 dioceses
 - 2026-11-05T06:35:19+00:00: top-up ('confession', 'adoration', 'liturgy'): {'sites': 26, 'requests': 1, 'found_confession': 1}; 0 sites left
-- 2026-11-05T16:24:21+00:00: fetched {'robots_disallowed': 1, 'done': 19, 'dns': 3, 'challenge': 1, 'conn_error': 1, 'parked': 1, 'ssl_error': 2, 'ok': 6, 'not_found': 1, 'http_5xx': 1, 'timeout': 2, 'halted_egress': 0}; parsed 1 dioceses
-- 2026-11-05T16:25:23+00:00: top-up ('confession', 'adoration', 'liturgy'): {'sites': 6, 'requests': 0}; 0 sites left
-- 2026-11-05T16:25:36+00:00: fetched {'dns': 1, 'done': 7, 'challenge': 2, 'ok': 4, 'halted_egress': 0}; parsed 1 dioceses
-- 2026-11-05T16:27:22+00:00: top-up ('confession', 'adoration', 'liturgy'): {'sites': 4, 'requests': 0}; 0 sites left
-- 2026-11-05T16:27:32+00:00: fetched {'dns': 1, 'done': 10, 'ssl_error': 2, 'parked': 1, 'challenge': 1, 'ok': 5, 'halted_egress': 0}; parsed 1 dioceses
+- 2026-11-05T16:24:00+00:00: fetched {'ok': 1, 'done': 1, 'halted_egress': 0}; parsed 1 dioceses
+- 2026-11-05T16:24:16+00:00: top-up ('confession', 'adoration', 'liturgy'): {'sites': 1, 'requests': 0}; 0 sites left
+- 2026-11-05T16:24:38+00:00: fetched {'dns': 13, 'done': 15, 'conn_error': 1, 'parked': 1, 'halted_egress': 0}; parsed 1 dioceses
+- 2026-11-05T16:24:52+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
+- 2026-11-05T16:25:21+00:00: fetched {'dns': 24, 'done': 46, 'conn_error': 1, 'challenge': 3, 'ssl_error': 3, 'not_found': 2, 'parked': 1, 'ok': 9, 'blocked_403': 1, 'timeout': 2, 'halted_egress': 0}; parsed 2 dioceses
