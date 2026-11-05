@@ -1,6 +1,17 @@
 {
  "chunks": [
   {
+   "started_at": "2026-11-04T09:03:35+00:00",
+   "ended_at": "2026-11-04T09:03:37+00:00",
+   "result": "fetched {}; parsed 0 dioceses",
+   "touched": []
+  },
+  {
+   "started_at": "2026-11-04T09:03:40+00:00",
+   "result": "top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left",
+   "touched": []
+  },
+  {
    "started_at": "2026-11-04T09:04:03+00:00",
    "ended_at": "2026-11-04T09:04:08+00:00",
    "result": "fetched {'not_found': 1, 'done': 1, 'halted_egress': 0}; parsed 1 dioceses",
@@ -359,33 +370,22 @@
    "touched": []
   },
   {
-   "started_at": "2026-11-05T06:28:40+00:00",
-   "ended_at": "2026-11-05T06:28:44+00:00",
-   "result": "fetched {}; parsed 0 dioceses",
-   "touched": []
-  },
-  {
-   "started_at": "2026-11-05T06:28:49+00:00",
-   "result": "top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left",
-   "touched": []
-  },
-  {
-   "started_at": "2026-11-05T06:29:47+00:00",
-   "ended_at": "2026-11-05T06:31:06+00:00",
-   "result": "fetched {'robots_disallowed': 2, 'done': 59, 'dns': 24, 'http_5xx': 2, 'challenge': 6, 'ssl_error': 3, 'not_found': 3, 'parked': 1, 'conn_error': 1, 'ok': 16, 'timeout': 1, 'halted_egress': 0}; parsed 3 dioceses",
+   "started_at": "2026-11-05T06:28:01+00:00",
+   "ended_at": "2026-11-05T06:31:30+00:00",
+   "result": "fetched {'dns': 29, 'done': 43, 'ssl_error': 3, 'challenge': 2, 'ok': 9, 'not_found': 1, 'cut': 1, 'halted_egress': 0}; parsed 3 dioceses",
    "touched": [
-    "diocese-of-richmond",
-    "diocese-of-st-petersburg",
-    "diocese-of-st-augustine"
+    "diocese-of-saginaw",
+    "archdiocese-of-santa-fe",
+    "diocese-of-reno"
    ]
   },
   {
-   "started_at": "2026-11-05T06:31:35+00:00",
-   "result": "top-up ('confession', 'adoration', 'liturgy'): {'sites': 16, 'requests': 0}; 0 sites left",
+   "started_at": "2026-11-05T06:31:51+00:00",
+   "result": "top-up ('confession', 'adoration', 'liturgy'): {'sites': 9, 'requests': 1, 'found_confession': 1}; 0 sites left",
    "touched": [
-    "diocese-of-richmond",
-    "diocese-of-st-augustine",
-    "diocese-of-st-petersburg"
+    "archdiocese-of-santa-fe",
+    "diocese-of-reno",
+    "diocese-of-saginaw"
    ]
   }
  ],
@@ -2071,13 +2071,14 @@
   },
   "diocese-of-saginaw": {
    "sites_in_list": 89,
-   "records": 61,
-   "finished": false,
-   "ok": 41,
+   "records": 90,
+   "finished": true,
+   "ok": 43,
    "by_status": {
-    "ok": 41,
+    "ok": 43,
+    "dns": 26,
     "challenge": 17,
-    "ssl_error": 2,
+    "ssl_error": 3,
     "robots_disallowed": 1
    }
   },
@@ -3113,17 +3114,18 @@
   },
   "archdiocese-of-santa-fe": {
    "sites_in_list": 49,
-   "records": 42,
-   "finished": false,
-   "ok": 18,
+   "records": 53,
+   "finished": true,
+   "ok": 22,
    "by_status": {
-    "ok": 18,
+    "ok": 22,
+    "challenge": 9,
     "unreachable_via_proxy": 8,
-    "challenge": 7,
     "conn_error": 4,
-    "ssl_error": 2,
+    "ssl_error": 4,
+    "dns": 3,
     "wayback": 1,
-    "dns": 1,
+    "not_found": 1,
     "blocked_403": 1
    }
   },
@@ -3831,11 +3833,13 @@
   },
   "diocese-of-reno": {
    "sites_in_list": 19,
-   "records": 2,
-   "finished": false,
-   "ok": 0,
+   "records": 19,
+   "finished": true,
+   "ok": 8,
    "by_status": {
-    "challenge": 2
+    "challenge": 9,
+    "ok": 8,
+    "dns": 2
    }
   },
   "unassigned-nc": {
@@ -4104,9 +4108,9 @@
  },
  "totals": {
   "sites_in_list": 21472,
-  "records": 22752,
-  "ok": 11993
+  "records": 22714,
+  "ok": 11982
  },
  "us_parish_pages_discovermass": 20147,
- "updated_at": "2026-11-05T06:31:37+00:00"
+ "updated_at": "2026-11-05T06:31:54+00:00"
 }

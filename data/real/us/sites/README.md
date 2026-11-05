@@ -121,7 +121,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | unassigned-sd | 91 | 110 | 69 | 17 | 1 | 23 | 0 |
 | diocese-of-lansing | 90 | 91 | 39 | 29 | 1 | 22 | 0 |
 | diocese-of-little-rock | 89 | 89 | 54 | 11 | 1 | 23 | 0 |
-| diocese-of-saginaw | 89 | 61 | 41 | 17 | 1 | 2 | 0 |
+| diocese-of-saginaw | 89 | 90 | 43 | 17 | 1 | 29 | 0 |
 | archdiocese-of-san-francisco | 87 | 53 | 26 | 6 | 0 | 16 | 0 |
 | archdiocese-of-omaha | 86 | 86 | 67 | 1 | 2 | 9 | 0 |
 | diocese-of-altoona-johnstown | 85 | 86 | 48 | 12 | 1 | 19 | 6 |
@@ -189,7 +189,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-beaumont | 50 | 52 | 15 | 20 | 1 | 14 | 2 |
 | diocese-of-crookston | 50 | 52 | 23 | 20 | 0 | 9 | 0 |
 | unassigned-vt | 50 | 60 | 18 | 31 | 1 | 10 | 0 |
-| archdiocese-of-santa-fe | 49 | 42 | 18 | 7 | 1 | 15 | 0 |
+| archdiocese-of-santa-fe | 49 | 53 | 22 | 9 | 1 | 20 | 0 |
 | diocese-of-covington | 49 | 49 | 30 | 5 | 0 | 14 | 0 |
 | diocese-of-san-jose | 48 | 5 | 3 | 1 | 0 | 1 | 0 |
 | diocese-of-evansville | 47 | 47 | 20 | 3 | 2 | 22 | 0 |
@@ -240,9 +240,9 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | unassigned-ak | 20 | 28 | 11 | 7 | 2 | 5 | 3 |
 | unassigned-ri | 20 | 45 | 14 | 22 | 0 | 9 | 0 |
 | diocese-of-helena | 19 | 19 | 14 | 4 | 0 | 1 | 0 |
-| diocese-of-rapid-city | 19 | 23 | 15 | 2 | 0 | 6 | 0 |
-| diocese-of-reno | 19 | 2 | 0 | 2 | 0 | 0 | 0 |
-| unassigned-nc | 17 | 23 | 14 | 0 | 0 | 9 | 0 |
+| diocese-of-rapid-city | 19 | 21 | 14 | 2 | 0 | 5 | 0 |
+| diocese-of-reno | 19 | 19 | 8 | 9 | 0 | 2 | 0 |
+| unassigned-nc | 17 | 22 | 14 | 0 | 0 | 8 | 0 |
 | diocese-of-grand-island | 17 | 17 | 7 | 1 | 0 | 8 | 1 |
 | diocese-of-jackson | 13 | 13 | 5 | 6 | 0 | 2 | 0 |
 | diocese-of-dodge-city | 12 | 12 | 9 | 1 | 0 | 2 | 0 |
@@ -273,6 +273,8 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 
 ## Chunk log
 
+- 2026-11-04T23:34:47+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-04T23:34:54+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-04T23:35:16+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-04T23:35:24+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-04T23:35:59+00:00: fetched {}; parsed 0 dioceses
@@ -285,6 +287,4 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-05T06:27:17+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-05T06:27:33+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-05T06:27:40+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
-- 2026-11-05T06:28:40+00:00: fetched {}; parsed 0 dioceses
-- 2026-11-05T06:28:49+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
-- 2026-11-05T06:29:47+00:00: fetched {'robots_disallowed': 2, 'done': 59, 'dns': 24, 'http_5xx': 2, 'challenge': 6, 'ssl_error': 3, 'not_found': 3, 'parked': 1, 'conn_error': 1, 'ok': 16, 'timeout': 1, 'halted_egress': 0}; parsed 3 dioceses
+- 2026-11-05T06:28:01+00:00: fetched {'dns': 29, 'done': 43, 'ssl_error': 3, 'challenge': 2, 'ok': 9, 'not_found': 1, 'cut': 1, 'halted_egress': 0}; parsed 3 dioceses
