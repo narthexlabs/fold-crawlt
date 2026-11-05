@@ -1,54 +1,56 @@
 {
  "slug": "diocese-of-st-cloud",
- "generated_at": "2026-11-04T18:01:02+00:00",
- "run_date": "2026-11-04",
+ "generated_at": "2026-11-05T06:29:58+00:00",
+ "run_date": "2026-11-05",
  "input": {
   "directory_records": 95,
-  "discovermass_records": 147,
+  "discovermass_records": 247,
   "directory_without_website": 0,
   "discovermass_without_website": 0
  },
- "sites_in_list": 102,
+ "sites_in_list": 141,
  "social_only": 1,
  "crawl": {
-  "ok_total": 74,
-  "ok_via_sandbox": 74,
+  "ok_total": 84,
+  "ok_via_sandbox": 84,
   "ok_via_laptop": 0,
   "partial_via_side_doors": 0,
-  "challenge": 3,
-  "blocked_403_429": 0,
+  "challenge": 5,
+  "blocked_403_429": 1,
   "robots_disallowed": 0,
-  "laptop_pending": 17,
-  "dead": 24,
+  "laptop_pending": 45,
+  "dead": 50,
   "not_fetched": 0,
   "by_status": {
-   "ok": 74,
-   "not_found": 10,
+   "ok": 84,
+   "dns": 19,
+   "not_found": 11,
+   "ssl_error": 9,
    "conn_error": 5,
+   "challenge": 5,
    "unreachable_via_proxy": 4,
-   "challenge": 3,
-   "dns": 3,
-   "ssl_error": 1,
    "social_only": 1,
-   "http_5xx": 1
+   "http_5xx": 1,
+   "blocked_429": 1,
+   "timeout": 1
   }
  },
  "laptop_attempted": 0,
  "groups": {
-  "total": 184,
-  "sites_with_groups": 44,
+  "total": 202,
+  "sites_with_groups": 48,
   "by_category": {
-   "liturgical": 67,
-   "youth": 23,
-   "formation": 17,
-   "prayer_devotion": 16,
-   "service_mercy": 16,
+   "liturgical": 72,
+   "youth": 24,
+   "formation": 18,
+   "service_mercy": 18,
+   "prayer_devotion": 17,
    "fraternal_orders": 16,
-   "other": 10,
+   "other": 15,
    "grief_support": 7,
+   "young_adults": 5,
    "families": 4,
-   "young_adults": 3,
-   "scripture_study": 2,
+   "scripture_study": 3,
    "women": 1,
    "men": 1,
    "language_cultural": 1
@@ -56,10 +58,10 @@
   "with_meeting_time": 17
  },
  "calendar": {
-  "sites_with_active_feed": 19,
-  "active_feeds": 34,
+  "sites_with_active_feed": 20,
+  "active_feeds": 36,
   "feeds_by_platform": {
-   "Google Calendar": 26,
+   "Google Calendar": 28,
    "The Events Calendar (WordPress)": 4,
    "CCB / Pushpay ChMS": 2,
    "Microsoft 365 (Outlook)": 2
@@ -67,48 +69,48 @@
   "sites_with_events": 3,
   "events_stored": 347,
   "events_in_window_before_privacy": 945,
-  "window": "2026-11-04 + 90 days"
+  "window": "2026-11-05 + 90 days"
  },
  "social": {
   "sites_by_platform": {
-   "facebook": 42,
-   "youtube": 32,
-   "livestream": 28,
-   "instagram": 21,
+   "facebook": 48,
+   "youtube": 36,
+   "livestream": 32,
+   "instagram": 25,
    "flocknote": 4,
-   "tiktok": 3,
-   "x": 2
+   "x": 4,
+   "tiktok": 4
   },
-  "sites_with_any_social": 55,
+  "sites_with_any_social": 62,
   "shared_links_removed_as_diocesan": []
  },
  "bulletin": {
-  "sites_with_bulletin_url": 63,
+  "sites_with_bulletin_url": 68,
   "by_kind": {
-   "lpi": 27,
-   "page": 25,
+   "lpi": 30,
+   "page": 27,
    "pdf": 11
   },
   "with_date": 6
  },
  "schedule": {
-  "sites_with_own_site_rows": 62,
-  "rows_total": 642,
-  "rows_needs_review": 24,
-  "sites_with_schedule_image_only": 2,
+  "sites_with_own_site_rows": 69,
+  "rows_total": 680,
+  "rows_needs_review": 27,
+  "sites_with_schedule_image_only": 3,
   "by_kind": {
-   "mass": 479,
-   "confession": 107,
-   "adoration": 38,
+   "mass": 509,
+   "confession": 114,
+   "adoration": 39,
    "devotion": 13,
    "other": 5
   }
  },
  "cms_guess": {
-  "wix": 26,
+  "wix": 30,
+  "wordpress": 16,
   "duda": 15,
-  "wordpress": 11,
-  "unknown": 5,
+  "unknown": 6,
   "godaddy": 4,
   "parishsoft": 4,
   "squarespace": 4,
@@ -117,14 +119,14 @@
   "drupal": 1
  },
  "template": {
-  "generic-html:wix": 26,
+  "generic-html:wix": 30,
   "generic-html:duda": 15,
-  "wordpress-rest+html": 8,
-  "generic-html:unknown": 5,
+  "wordpress-rest+html": 11,
+  "generic-html:unknown": 6,
+  "wordpress-html": 5,
   "generic-html:godaddy": 4,
   "generic-html:parishsoft": 4,
   "generic-html:squarespace": 4,
-  "wordpress-html": 3,
   "generic-html:weebly": 2,
   "generic-html:google_sites": 2,
   "generic-html:drupal": 1
