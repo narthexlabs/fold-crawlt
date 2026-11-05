@@ -59,7 +59,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | archdiocese-of-miami | 156 | 156 | 103 | 0 | 1 | 42 | 1 |
 | unassigned-wi | 153 | 268 | 165 | 47 | 6 | 50 | 0 |
 | diocese-of-la-crosse | 152 | 154 | 97 | 25 | 4 | 26 | 2 |
-| diocese-of-richmond | 152 | 124 | 89 | 19 | 1 | 15 | 0 |
+| diocese-of-richmond | 152 | 162 | 103 | 24 | 2 | 33 | 0 |
 | archdiocese-of-new-orleans | 149 | 149 | 27 | 19 | 0 | 22 | 0 |
 | diocese-of-trenton | 147 | 147 | 61 | 30 | 3 | 53 | 0 |
 | diocese-of-austin | 145 | 146 | 31 | 86 | 0 | 28 | 1 |
@@ -97,7 +97,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-dallas | 111 | 112 | 47 | 46 | 0 | 19 | 0 |
 | unassigned-wv | 109 | 119 | 97 | 3 | 3 | 16 | 0 |
 | diocese-of-scranton | 107 | 110 | 80 | 11 | 0 | 19 | 0 |
-| diocese-of-st-petersburg | 107 | 92 | 63 | 26 | 0 | 3 | 0 |
+| diocese-of-st-petersburg | 107 | 109 | 68 | 27 | 1 | 13 | 0 |
 | diocese-of-erie | 107 | 107 | 70 | 6 | 3 | 28 | 0 |
 | diocese-of-kansas-city-st-joseph | 106 | 91 | 49 | 23 | 0 | 18 | 1 |
 | diocese-of-camden | 104 | 104 | 54 | 5 | 2 | 43 | 0 |
@@ -129,7 +129,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-corpus-christi | 84 | 84 | 37 | 27 | 1 | 16 | 3 |
 | unassigned-ms | 84 | 98 | 45 | 31 | 1 | 21 | 0 |
 | diocese-of-youngstown | 82 | 82 | 50 | 9 | 0 | 20 | 3 |
-| diocese-of-st-augustine | 80 | 71 | 45 | 15 | 0 | 11 | 0 |
+| diocese-of-st-augustine | 80 | 85 | 48 | 16 | 0 | 21 | 0 |
 | diocese-of-arlington | 79 | 80 | 54 | 11 | 1 | 14 | 0 |
 | diocese-of-manchester | 79 | 79 | 28 | 32 | 1 | 17 | 1 |
 | unassigned-al | 78 | 96 | 37 | 41 | 1 | 17 | 0 |
@@ -287,4 +287,4 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-05T06:27:40+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-05T06:28:40+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-05T06:28:49+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
-- 2026-11-05T06:29:00+00:00: fetched {'dns': 30, 'done': 79, 'ssl_error': 16, 'challenge': 7, 'conn_error': 1, 'ok': 16, 'parked': 2, 'not_found': 2, 'http_5xx': 1, 'timeout': 4, 'halted_egress': 0}; parsed 3 dioceses
+- 2026-11-05T06:29:47+00:00: fetched {'robots_disallowed': 2, 'done': 59, 'dns': 24, 'http_5xx': 2, 'challenge': 6, 'ssl_error': 3, 'not_found': 3, 'parked': 1, 'conn_error': 1, 'ok': 16, 'timeout': 1, 'halted_egress': 0}; parsed 3 dioceses

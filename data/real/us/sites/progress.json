@@ -370,21 +370,22 @@
    "touched": []
   },
   {
-   "started_at": "2026-11-05T06:29:00+00:00",
-   "ended_at": "2026-11-05T06:30:00+00:00",
-   "result": "fetched {'dns': 30, 'done': 79, 'ssl_error': 16, 'challenge': 7, 'conn_error': 1, 'ok': 16, 'parked': 2, 'not_found': 2, 'http_5xx': 1, 'timeout': 4, 'halted_egress': 0}; parsed 3 dioceses",
+   "started_at": "2026-11-05T06:29:47+00:00",
+   "ended_at": "2026-11-05T06:31:06+00:00",
+   "result": "fetched {'robots_disallowed': 2, 'done': 59, 'dns': 24, 'http_5xx': 2, 'challenge': 6, 'ssl_error': 3, 'not_found': 3, 'parked': 1, 'conn_error': 1, 'ok': 16, 'timeout': 1, 'halted_egress': 0}; parsed 3 dioceses",
    "touched": [
-    "archdiocese-of-st-paul-and-minneapolis",
-    "diocese-of-st-cloud",
-    "diocese-of-rapid-city"
+    "diocese-of-richmond",
+    "diocese-of-st-petersburg",
+    "diocese-of-st-augustine"
    ]
   },
   {
-   "started_at": "2026-11-05T06:30:21+00:00",
+   "started_at": "2026-11-05T06:31:35+00:00",
    "result": "top-up ('confession', 'adoration', 'liturgy'): {'sites': 16, 'requests': 0}; 0 sites left",
    "touched": [
-    "archdiocese-of-st-paul-and-minneapolis",
-    "diocese-of-st-cloud"
+    "diocese-of-richmond",
+    "diocese-of-st-augustine",
+    "diocese-of-st-petersburg"
    ]
   }
  ],
@@ -1008,16 +1009,19 @@
   },
   "diocese-of-richmond": {
    "sites_in_list": 152,
-   "records": 124,
-   "finished": false,
-   "ok": 89,
+   "records": 162,
+   "finished": true,
+   "ok": 103,
    "by_status": {
-    "ok": 89,
-    "challenge": 19,
+    "ok": 103,
+    "challenge": 24,
+    "dns": 13,
     "not_found": 12,
+    "robots_disallowed": 2,
+    "ssl_error": 2,
+    "timeout": 2,
     "conn_error": 2,
-    "robots_disallowed": 1,
-    "ssl_error": 1
+    "http_5xx": 2
    }
   },
   "archdiocese-of-new-orleans": {
@@ -1664,15 +1668,18 @@
   },
   "diocese-of-st-petersburg": {
    "sites_in_list": 107,
-   "records": 92,
-   "finished": false,
-   "ok": 63,
+   "records": 109,
+   "finished": true,
+   "ok": 68,
    "by_status": {
-    "ok": 63,
-    "challenge": 26,
-    "dns": 1,
-    "ssl_error": 1,
-    "not_found": 1
+    "ok": 68,
+    "challenge": 27,
+    "dns": 5,
+    "not_found": 4,
+    "ssl_error": 2,
+    "parked": 1,
+    "conn_error": 1,
+    "robots_disallowed": 1
    }
   },
   "diocese-of-erie": {
@@ -2203,18 +2210,18 @@
   },
   "diocese-of-st-augustine": {
    "sites_in_list": 80,
-   "records": 71,
-   "finished": false,
-   "ok": 45,
+   "records": 85,
+   "finished": true,
+   "ok": 48,
    "by_status": {
-    "ok": 45,
-    "challenge": 15,
+    "ok": 48,
+    "challenge": 16,
+    "dns": 10,
     "conn_error": 3,
-    "ssl_error": 2,
+    "ssl_error": 3,
     "timeout": 2,
     "unreachable_via_proxy": 2,
-    "not_found": 1,
-    "dns": 1
+    "not_found": 1
    }
   },
   "diocese-of-arlington": {
@@ -4097,9 +4104,9 @@
  },
  "totals": {
   "sites_in_list": 21472,
-  "records": 22772,
-  "ok": 11990
+  "records": 22752,
+  "ok": 11993
  },
  "us_parish_pages_discovermass": 20147,
- "updated_at": "2026-11-05T06:30:23+00:00"
+ "updated_at": "2026-11-05T06:31:37+00:00"
 }
