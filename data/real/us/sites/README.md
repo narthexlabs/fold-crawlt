@@ -236,7 +236,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-bismarck | 26 | 26 | 7 | 14 | 1 | 4 | 0 |
 | holy-protection-of-mary-byzantine-catholic-eparchy-of-phoenix | 26 | 26 | 20 | 0 | 0 | 6 | 0 |
 | diocese-of-lake-charles | 25 | 25 | 12 | 10 | 1 | 2 | 0 |
-| eparchy-of-st-maron-of-brooklyn | 24 | 24 | 18 | 0 | 2 | 3 | 1 |
+| eparchy-of-st-maron-of-brooklyn | 24 | 22 | 17 | 0 | 1 | 3 | 1 |
 | unassigned-nv | 24 | 51 | 27 | 19 | 0 | 5 | 0 |
 | diocese-of-stockton | 23 | 11 | 0 | 7 | 0 | 4 | 0 |
 | diocese-of-cheyenne | 22 | 22 | 8 | 7 | 0 | 7 | 0 |
@@ -287,4 +287,4 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-05T16:32:19+00:00: top-up ('confession', 'adoration', 'liturgy'): {'sites': 14, 'requests': 0}; 0 sites left
 - 2026-11-05T16:28:16+00:00: fetched {'dns': 4, 'done': 89, 'challenge': 32, 'ssl_error': 2, 'parked': 1, 'ok': 42, 'not_found': 2, 'blocked_403': 1, 'timeout': 5, 'halted_egress': 0}; parsed 7 dioceses
 - 2026-11-05T16:33:02+00:00: top-up ('confession', 'adoration', 'liturgy'): {'sites': 40, 'requests': 0}; 0 sites left
-- 2026-11-05T23:32:16+00:00: fetched {'robots_disallowed': 1, 'done': 2, 'ok': 1, 'halted_egress': 0}; parsed 1 dioceses
+- 2026-11-05T23:32:36+00:00: fetched {}; parsed 0 dioceses
