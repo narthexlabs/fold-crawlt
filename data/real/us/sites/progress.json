@@ -1,6 +1,19 @@
 {
  "chunks": [
   {
+   "started_at": "2026-11-04T09:04:03+00:00",
+   "ended_at": "2026-11-04T09:04:08+00:00",
+   "result": "fetched {'not_found': 1, 'done': 1, 'halted_egress': 0}; parsed 1 dioceses",
+   "touched": [
+    "unassigned-mi"
+   ]
+  },
+  {
+   "started_at": "2026-11-04T09:04:12+00:00",
+   "result": "top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left",
+   "touched": []
+  },
+  {
    "started_at": "2026-11-04T09:04:25+00:00",
    "ended_at": "2026-11-04T09:05:32+00:00",
    "result": "fetched {'dns': 2, 'done': 41, 'challenge': 12, 'parked': 1, 'not_found': 1, 'ssl_error': 2, 'ok': 21, 'timeout': 2, 'halted_egress': 0}; parsed 6 dioceses",
@@ -357,31 +370,22 @@
    "touched": []
   },
   {
-   "started_at": "2026-11-05T06:29:16+00:00",
-   "ended_at": "2026-11-05T06:29:38+00:00",
-   "result": "fetched {'dns': 28, 'done': 43, 'challenge': 4, 'ok': 7, 'ssl_error': 2, 'parked': 1, 'not_found': 1, 'halted_egress': 0}; parsed 2 dioceses",
-   "touched": [
-    "diocese-of-raleigh",
-    "unassigned-nc"
-   ]
-  },
-  {
-   "started_at": "2026-11-05T06:29:49+00:00",
-   "result": "top-up ('confession', 'adoration', 'liturgy'): {'sites': 7, 'requests': 0}; 0 sites left",
-   "touched": [
-    "diocese-of-raleigh"
-   ]
-  },
-  {
-   "started_at": "2026-11-05T06:29:57+00:00",
+   "started_at": "2026-11-05T06:29:00+00:00",
    "ended_at": "2026-11-05T06:30:00+00:00",
-   "result": "fetched {}; parsed 0 dioceses",
-   "touched": []
+   "result": "fetched {'dns': 30, 'done': 79, 'ssl_error': 16, 'challenge': 7, 'conn_error': 1, 'ok': 16, 'parked': 2, 'not_found': 2, 'http_5xx': 1, 'timeout': 4, 'halted_egress': 0}; parsed 3 dioceses",
+   "touched": [
+    "archdiocese-of-st-paul-and-minneapolis",
+    "diocese-of-st-cloud",
+    "diocese-of-rapid-city"
+   ]
   },
   {
-   "started_at": "2026-11-05T06:30:04+00:00",
-   "result": "top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left",
-   "touched": []
+   "started_at": "2026-11-05T06:30:21+00:00",
+   "result": "top-up ('confession', 'adoration', 'liturgy'): {'sites': 16, 'requests': 0}; 0 sites left",
+   "touched": [
+    "archdiocese-of-st-paul-and-minneapolis",
+    "diocese-of-st-cloud"
+   ]
   }
  ],
  "dioceses": {
@@ -549,19 +553,21 @@
   },
   "archdiocese-of-st-paul-and-minneapolis": {
    "sites_in_list": 269,
-   "records": 221,
-   "finished": false,
-   "ok": 127,
+   "records": 269,
+   "finished": true,
+   "ok": 135,
    "by_status": {
-    "ok": 127,
-    "challenge": 71,
-    "conn_error": 6,
-    "ssl_error": 5,
-    "dns": 5,
+    "ok": 135,
+    "challenge": 76,
+    "dns": 20,
+    "ssl_error": 15,
+    "conn_error": 8,
+    "timeout": 4,
     "social_only": 3,
+    "not_found": 3,
     "unreachable_via_proxy": 2,
-    "not_found": 1,
-    "timeout": 1
+    "parked": 2,
+    "http_5xx": 1
    }
   },
   "archdiocese-of-philadelphia": {
@@ -1109,18 +1115,20 @@
   },
   "diocese-of-st-cloud": {
    "sites_in_list": 140,
-   "records": 102,
-   "finished": false,
-   "ok": 74,
+   "records": 141,
+   "finished": true,
+   "ok": 84,
    "by_status": {
-    "ok": 74,
-    "not_found": 10,
+    "ok": 84,
+    "dns": 19,
+    "not_found": 11,
+    "ssl_error": 9,
+    "challenge": 5,
     "conn_error": 5,
     "unreachable_via_proxy": 4,
-    "dns": 3,
-    "challenge": 3,
-    "ssl_error": 1,
+    "timeout": 1,
     "http_5xx": 1,
+    "blocked_429": 1,
     "social_only": 1
    }
   },
@@ -3803,14 +3811,15 @@
   },
   "diocese-of-rapid-city": {
    "sites_in_list": 19,
-   "records": 21,
+   "records": 23,
    "finished": true,
-   "ok": 14,
+   "ok": 15,
    "by_status": {
-    "ok": 14,
+    "ok": 15,
     "ssl_error": 3,
     "timeout": 2,
-    "challenge": 2
+    "challenge": 2,
+    "dns": 1
    }
   },
   "diocese-of-reno": {
@@ -4088,9 +4097,9 @@
  },
  "totals": {
   "sites_in_list": 21472,
-  "records": 22729,
-  "ok": 11978
+  "records": 22772,
+  "ok": 11990
  },
  "us_parish_pages_discovermass": 20147,
- "updated_at": "2026-11-05T06:30:06+00:00"
+ "updated_at": "2026-11-05T06:30:23+00:00"
 }
