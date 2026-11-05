@@ -67,6 +67,12 @@
    "url": "https://www.johnxxiiicc.org/calendar",
    "status": 200,
    "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.johnxxiiicc.org/penance",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -409,5 +415,28 @@
  },
  "privacy": {
   "screened_by": "ingest/public/privacy.py screen()"
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Confessions are held in the Church, Saturdays from 4:00 - 5:00 pm or by Appointment",
+   "phrase": "by Appointment",
+   "source_url": "https://www.johnxxiiicc.org/penance",
+   "fetched_at": "2026-11-05T06:31:37+00:00"
+  }
+ ],
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-05T06:31:37+00:00",
+  "requests": 1,
+  "found": [
+   "confession"
+  ],
+  "rows_added": 0,
+  "mode": "merge"
  }
 }
