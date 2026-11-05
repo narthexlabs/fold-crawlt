@@ -81,7 +81,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | unassigned-mi | 131 | 270 | 168 | 67 | 4 | 31 | 0 |
 | archdiocese-of-los-angeles | 130 | 41 | 23 | 2 | 5 | 5 | 0 |
 | diocese-of-columbus | 130 | 130 | 55 | 33 | 2 | 40 | 0 |
-| archdiocese-of-dubuque | 128 | 87 | 24 | 5 | 0 | 34 | 0 |
+| archdiocese-of-dubuque | 128 | 128 | 33 | 23 | 0 | 47 | 1 |
 | unassigned-ks | 123 | 161 | 92 | 34 | 12 | 23 | 0 |
 | diocese-of-orlando | 122 | 123 | 88 | 6 | 0 | 28 | 1 |
 | diocese-of-joliet | 121 | 121 | 80 | 22 | 0 | 19 | 0 |
@@ -137,7 +137,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | archdiocese-of-louisville | 77 | 82 | 46 | 0 | 0 | 24 | 0 |
 | diocese-of-brownsville | 77 | 77 | 30 | 16 | 1 | 19 | 11 |
 | diocese-of-duluth | 76 | 76 | 24 | 33 | 0 | 19 | 0 |
-| diocese-of-davenport | 76 | 40 | 22 | 3 | 0 | 15 | 0 |
+| diocese-of-davenport | 76 | 76 | 49 | 7 | 0 | 20 | 0 |
 | diocese-of-phoenix | 76 | 76 | 49 | 11 | 1 | 15 | 0 |
 | diocese-of-fresno | 75 | 49 | 13 | 15 | 1 | 20 | 0 |
 | diocese-of-lafayette-in-louisiana | 75 | 77 | 33 | 15 | 2 | 27 | 0 |
@@ -150,7 +150,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | archdiocese-of-kansas-city-in-kansas | 73 | 74 | 28 | 4 | 1 | 23 | 3 |
 | diocese-of-venice | 72 | 72 | 55 | 7 | 0 | 10 | 0 |
 | unassigned-or | 72 | 152 | 45 | 88 | 1 | 18 | 0 |
-| diocese-of-des-moines | 71 | 57 | 35 | 13 | 2 | 7 | 0 |
+| diocese-of-des-moines | 71 | 71 | 45 | 13 | 2 | 9 | 2 |
 | unassigned-hi | 71 | 76 | 54 | 12 | 3 | 7 | 0 |
 | unassigned-dc | 71 | 83 | 59 | 14 | 4 | 6 | 0 |
 | diocese-of-wichita | 70 | 74 | 33 | 6 | 34 | 1 | 0 |
@@ -162,7 +162,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-memphis | 65 | 65 | 39 | 3 | 0 | 23 | 0 |
 | diocese-of-owensboro | 65 | 65 | 34 | 12 | 1 | 18 | 0 |
 | unassigned-ga | 65 | 80 | 56 | 8 | 3 | 13 | 0 |
-| diocese-of-sioux-city | 64 | 52 | 6 | 30 | 0 | 16 | 0 |
+| diocese-of-sioux-city | 64 | 64 | 7 | 37 | 0 | 19 | 1 |
 | diocese-of-pensacola-tallahassee | 64 | 64 | 34 | 16 | 1 | 12 | 1 |
 | diocese-of-boise | 63 | 65 | 33 | 17 | 0 | 15 | 0 |
 | diocese-of-tyler | 63 | 65 | 23 | 26 | 0 | 12 | 4 |
@@ -273,10 +273,6 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 
 ## Chunk log
 
-- 2026-11-04T23:34:47+00:00: fetched {}; parsed 0 dioceses
-- 2026-11-04T23:34:54+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
-- 2026-11-04T23:35:16+00:00: fetched {}; parsed 0 dioceses
-- 2026-11-04T23:35:24+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-04T23:35:59+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-04T23:36:07+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-04T23:36:47+00:00: fetched {'robots_disallowed': 1, 'done': 36, 'dns': 5, 'not_found': 4, 'ssl_error': 5, 'challenge': 2, 'http_5xx': 2, 'ok': 17, 'halted_egress': 0}; parsed 5 dioceses
@@ -287,4 +283,8 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-05T06:27:17+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-05T06:27:33+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-05T06:27:40+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
-- 2026-11-05T06:28:01+00:00: fetched {'dns': 29, 'done': 43, 'ssl_error': 3, 'challenge': 2, 'ok': 9, 'not_found': 1, 'cut': 1, 'halted_egress': 0}; parsed 3 dioceses
+- 2026-11-05T06:28:40+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-05T06:28:49+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
+- 2026-11-05T06:29:00+00:00: fetched {'dns': 30, 'done': 79, 'ssl_error': 16, 'challenge': 7, 'conn_error': 1, 'ok': 16, 'parked': 2, 'not_found': 2, 'http_5xx': 1, 'timeout': 4, 'halted_egress': 0}; parsed 3 dioceses
+- 2026-11-05T06:30:21+00:00: top-up ('confession', 'adoration', 'liturgy'): {'sites': 16, 'requests': 0}; 0 sites left
+- 2026-11-05T06:30:38+00:00: fetched {'dns': 6, 'done': 73, 'challenge': 20, 'ssl_error': 4, 'parked': 2, 'ok': 34, 'http_5xx': 2, 'not_found': 1, 'timeout': 4, 'halted_egress': 0}; parsed 4 dioceses
