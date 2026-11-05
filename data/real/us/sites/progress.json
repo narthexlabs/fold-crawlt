@@ -406,6 +406,23 @@
     "diocese-of-toledo",
     "diocese-of-youngstown"
    ]
+  },
+  {
+   "started_at": "2026-11-05T16:27:48+00:00",
+   "ended_at": "2026-11-05T16:28:54+00:00",
+   "result": "fetched {'dns': 16, 'done': 20, 'ssl_error': 1, 'ok': 2, 'timeout': 1, 'halted_egress': 0}; parsed 3 dioceses",
+   "touched": [
+    "diocese-of-wichita",
+    "diocese-of-wheeling-charleston",
+    "diocese-of-shreveport"
+   ]
+  },
+  {
+   "started_at": "2026-11-05T16:29:01+00:00",
+   "result": "top-up ('confession', 'adoration', 'liturgy'): {'sites': 2, 'requests': 0}; 0 sites left",
+   "touched": [
+    "diocese-of-wichita"
+   ]
   }
  ],
  "dioceses": {
@@ -2297,14 +2314,16 @@
   },
   "diocese-of-wichita": {
    "sites_in_list": 79,
-   "records": 74,
-   "finished": false,
-   "ok": 33,
+   "records": 83,
+   "finished": true,
+   "ok": 36,
    "by_status": {
+    "ok": 36,
     "blocked_429": 34,
-    "ok": 33,
     "challenge": 6,
-    "timeout": 1
+    "dns": 5,
+    "timeout": 1,
+    "ssl_error": 1
    }
   },
   "diocese-of-manchester": {
@@ -3403,11 +3422,17 @@
   },
   "diocese-of-wheeling-charleston": {
    "sites_in_list": 39,
-   "records": 1,
-   "finished": false,
-   "ok": 1,
+   "records": 39,
+   "finished": true,
+   "ok": 24,
    "by_status": {
-    "ok": 1
+    "ok": 24,
+    "dns": 9,
+    "timeout": 2,
+    "ssl_error": 1,
+    "conn_error": 1,
+    "blocked_403": 1,
+    "challenge": 1
    }
   },
   "diocese-of-houma-thibodaux": {
@@ -3538,16 +3563,16 @@
   },
   "diocese-of-shreveport": {
    "sites_in_list": 33,
-   "records": 27,
-   "finished": false,
+   "records": 33,
+   "finished": true,
    "ok": 9,
    "by_status": {
     "challenge": 12,
     "ok": 9,
+    "dns": 7,
     "ssl_error": 3,
     "timeout": 1,
-    "unreachable_via_proxy": 1,
-    "dns": 1
+    "unreachable_via_proxy": 1
    }
   },
   "unassigned-ar": {
@@ -4168,9 +4193,9 @@
  },
  "totals": {
   "sites_in_list": 21745,
-  "records": 23272,
-  "ok": 12188
+  "records": 23273,
+  "ok": 12173
  },
  "us_parish_pages_discovermass": 20147,
- "updated_at": "2026-11-05T16:28:30+00:00"
+ "updated_at": "2026-11-05T16:29:02+00:00"
 }
