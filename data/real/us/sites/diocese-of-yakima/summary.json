@@ -1,36 +1,46 @@
 {
  "slug": "diocese-of-yakima",
- "generated_at": "2026-11-02T23:30:47+00:00",
- "run_date": "2026-11-02",
+ "generated_at": "2026-11-05T16:27:40+00:00",
+ "run_date": "2026-11-05",
  "input": {
   "directory_records": 0,
-  "discovermass_records": 2,
+  "discovermass_records": 20,
   "directory_without_website": 0,
   "discovermass_without_website": 0
  },
- "sites_in_list": 1,
+ "sites_in_list": 13,
  "social_only": 0,
  "crawl": {
-  "ok_total": 0,
-  "ok_via_sandbox": 0,
+  "ok_total": 3,
+  "ok_via_sandbox": 3,
   "ok_via_laptop": 0,
   "partial_via_side_doors": 0,
-  "challenge": 1,
+  "challenge": 3,
   "blocked_403_429": 0,
   "robots_disallowed": 0,
-  "laptop_pending": 1,
-  "dead": 0,
+  "laptop_pending": 10,
+  "dead": 7,
   "not_fetched": 0,
   "by_status": {
-   "challenge": 1
+   "dns": 5,
+   "challenge": 3,
+   "ok": 3,
+   "ssl_error": 2
   }
  },
  "laptop_attempted": 0,
  "groups": {
-  "total": 0,
-  "sites_with_groups": 0,
-  "by_category": {},
-  "with_meeting_time": 0
+  "total": 16,
+  "sites_with_groups": 1,
+  "by_category": {
+   "liturgical": 8,
+   "prayer_devotion": 3,
+   "service_mercy": 2,
+   "women": 1,
+   "youth": 1,
+   "fraternal_orders": 1
+  },
+  "with_meeting_time": 1
  },
  "calendar": {
   "sites_with_active_feed": 0,
@@ -39,25 +49,43 @@
   "sites_with_events": 0,
   "events_stored": 0,
   "events_in_window_before_privacy": 0,
-  "window": "2026-11-02 + 90 days"
+  "window": "2026-11-05 + 90 days"
  },
  "social": {
-  "sites_by_platform": {},
-  "sites_with_any_social": 0,
+  "sites_by_platform": {
+   "facebook": 3,
+   "youtube": 2
+  },
+  "sites_with_any_social": 3,
   "shared_links_removed_as_diocesan": []
  },
  "bulletin": {
-  "sites_with_bulletin_url": 0,
-  "by_kind": {},
-  "with_date": 0
+  "sites_with_bulletin_url": 3,
+  "by_kind": {
+   "pdf": 2,
+   "lpi": 1
+  },
+  "with_date": 1
  },
  "schedule": {
-  "sites_with_own_site_rows": 0,
-  "rows_total": 0,
+  "sites_with_own_site_rows": 3,
+  "rows_total": 47,
   "rows_needs_review": 0,
   "sites_with_schedule_image_only": 0,
-  "by_kind": {}
+  "by_kind": {
+   "mass": 40,
+   "confession": 5,
+   "adoration": 2
+  }
  },
- "cms_guess": {},
- "template": {}
+ "cms_guess": {
+  "blogger": 1,
+  "google_sites": 1,
+  "wordpress": 1
+ },
+ "template": {
+  "generic-html:blogger": 1,
+  "generic-html:google_sites": 1,
+  "wordpress-rest+html": 1
+ }
 }
