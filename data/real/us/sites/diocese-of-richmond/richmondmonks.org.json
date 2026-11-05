@@ -1,0 +1,150 @@
+{
+ "domain": "richmondmonks.org",
+ "diocese": "diocese-of-richmond",
+ "matched_church_ids": [
+  "brave:VA|mary mother richmond|",
+  "gc-39126"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "brave:VA|mary mother richmond|",
+   "gc-39126"
+  ]
+ },
+ "names": [
+  "Mary Mother Of The Church",
+  "Mary Mother of the Church"
+ ],
+ "cities": [
+  "Richmond"
+ ],
+ "home_url": "https://richmondmonks.org/",
+ "final_url": "https://richmondmonks.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://richmondmonks.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://richmondmonks.org/contact/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://richmondmonks.org/reconciliation/",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://richmondmonks.org/event/adoration-chapel-is-open/",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-content"
+  ]
+ },
+ "template": "wordpress-rest+html",
+ "groups": [],
+ "calendar_feeds": [
+  {
+   "feed_id": "richmondmonks.org:tribe_rest:4971b530",
+   "type": "tribe_rest",
+   "platform": "The Events Calendar (WordPress)",
+   "url": "https://richmondmonks.org/wp-json/tribe/events/v1/events",
+   "page_url": "https://richmondmonks.org/",
+   "label": null,
+   "status": "active",
+   "note": "The Events Calendar (WordPress) REST API",
+   "last_fetch": {
+    "status": 200,
+    "fetched_at": "2026-11-05T06:30:32+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/RichmondBenedictineMonks"
+  ],
+  "x": [
+   "https://x.com/richmondmonks"
+  ]
+ },
+ "bulletin": null,
+ "schedule_rows": [],
+ "source_url": "https://richmondmonks.org/",
+ "fetched_at": "2026-11-01T22:15:45+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:42:13+00:00",
+  "requests": 2,
+  "found": [
+   "adoration"
+  ]
+ },
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/3",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "trusted_kinds": [],
+  "generic_rows": 0
+ },
+ "has_sunday": false,
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-05",
+  "window_end_exclusive": "2027-02-03",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(804) 784-3508",
+  "address": "12829 River Road, Richmond, VA 23238-7206",
+  "source_url": "https://richmondmonks.org/contact/",
+  "sources": {
+   "phone": "https://richmondmonks.org/contact/",
+   "address": "https://richmondmonks.org/contact/"
+  },
+  "fetched_at": "2026-11-01T22:15:44+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}
