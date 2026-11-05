@@ -236,7 +236,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-bismarck | 26 | 26 | 7 | 14 | 1 | 4 | 0 |
 | holy-protection-of-mary-byzantine-catholic-eparchy-of-phoenix | 26 | 26 | 20 | 0 | 0 | 6 | 0 |
 | diocese-of-lake-charles | 25 | 25 | 12 | 10 | 1 | 2 | 0 |
-| eparchy-of-st-maron-of-brooklyn | 24 | 22 | 17 | 0 | 1 | 3 | 1 |
+| eparchy-of-st-maron-of-brooklyn | 24 | 24 | 18 | 0 | 2 | 3 | 1 |
 | unassigned-nv | 24 | 51 | 27 | 19 | 0 | 5 | 0 |
 | diocese-of-stockton | 23 | 11 | 0 | 7 | 0 | 4 | 0 |
 | diocese-of-cheyenne | 22 | 22 | 8 | 7 | 0 | 7 | 0 |
@@ -273,8 +273,6 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 
 ## Chunk log
 
-- 2026-11-05T06:30:21+00:00: fetched {'dns': 18, 'done': 54, 'challenge': 2, 'ssl_error': 3, 'parked': 1, 'not_found': 9, 'ok': 23, 'timeout': 1, 'cut': 3, 'halted_egress': 0}; parsed 5 dioceses
-- 2026-11-05T06:35:19+00:00: top-up ('confession', 'adoration', 'liturgy'): {'sites': 26, 'requests': 1, 'found_confession': 1}; 0 sites left
 - 2026-11-05T16:24:21+00:00: fetched {'robots_disallowed': 1, 'done': 19, 'dns': 3, 'challenge': 1, 'conn_error': 1, 'parked': 1, 'ssl_error': 2, 'ok': 6, 'not_found': 1, 'http_5xx': 1, 'timeout': 2, 'halted_egress': 0}; parsed 1 dioceses
 - 2026-11-05T16:25:23+00:00: top-up ('confession', 'adoration', 'liturgy'): {'sites': 6, 'requests': 0}; 0 sites left
 - 2026-11-05T16:25:36+00:00: fetched {'dns': 1, 'done': 7, 'challenge': 2, 'ok': 4, 'halted_egress': 0}; parsed 1 dioceses
@@ -288,3 +286,5 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-05T16:28:16+00:00: fetched {'dns': 4, 'done': 89, 'challenge': 32, 'ssl_error': 2, 'parked': 1, 'ok': 42, 'not_found': 2, 'blocked_403': 1, 'timeout': 5, 'halted_egress': 0}; parsed 7 dioceses
 - 2026-11-05T16:33:02+00:00: top-up ('confession', 'adoration', 'liturgy'): {'sites': 40, 'requests': 0}; 0 sites left
 - 2026-11-05T23:32:36+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-05T23:32:42+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
+- 2026-11-05T23:33:03+00:00: fetched {}; parsed 0 dioceses
