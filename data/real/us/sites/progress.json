@@ -1,24 +1,6 @@
 {
  "chunks": [
   {
-   "started_at": "2026-11-04T09:04:25+00:00",
-   "ended_at": "2026-11-04T09:05:32+00:00",
-   "result": "fetched {'dns': 2, 'done': 41, 'challenge': 12, 'parked': 1, 'not_found': 1, 'ssl_error': 2, 'ok': 21, 'timeout': 2, 'halted_egress': 0}; parsed 6 dioceses",
-   "touched": [
-    "archdiocese-of-milwaukee",
-    "diocese-of-green-bay",
-    "unassigned-wi",
-    "diocese-of-la-crosse",
-    "diocese-of-madison",
-    "diocese-of-superior"
-   ]
-  },
-  {
-   "started_at": "2026-11-04T09:04:54+00:00",
-   "result": "top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left",
-   "touched": []
-  },
-  {
    "started_at": "2026-11-04T09:05:21+00:00",
    "ended_at": "2026-11-04T09:05:24+00:00",
    "result": "fetched {}; parsed 0 dioceses",
@@ -376,12 +358,30 @@
    ]
   },
   {
-   "started_at": "2026-11-05T06:33:24+00:00",
-   "result": "top-up ('confession', 'adoration', 'liturgy'): {'sites': 33, 'requests': 1, 'found_liturgy': 1}; 0 sites left",
+   "started_at": "2026-11-05T06:30:04+00:00",
+   "result": "top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left",
+   "touched": []
+  },
+  {
+   "started_at": "2026-11-05T06:30:21+00:00",
+   "ended_at": "2026-11-05T06:34:42+00:00",
+   "result": "fetched {'dns': 18, 'done': 54, 'challenge': 2, 'ssl_error': 3, 'parked': 1, 'not_found': 9, 'ok': 23, 'timeout': 1, 'cut': 3, 'halted_egress': 0}; parsed 5 dioceses",
    "touched": [
-    "archdiocese-of-dubuque",
-    "diocese-of-davenport",
-    "diocese-of-des-moines"
+    "archdiocese-of-st-louis",
+    "diocese-of-jefferson-city",
+    "diocese-of-kansas-city-st-joseph",
+    "unassigned-mo",
+    "diocese-of-springfield-cape-girardeau"
+   ]
+  },
+  {
+   "started_at": "2026-11-05T06:35:19+00:00",
+   "result": "top-up ('confession', 'adoration', 'liturgy'): {'sites': 26, 'requests': 1, 'found_confession': 1}; 0 sites left",
+   "touched": [
+    "archdiocese-of-st-louis",
+    "diocese-of-jefferson-city",
+    "diocese-of-kansas-city-st-joseph",
+    "diocese-of-springfield-cape-girardeau"
    ]
   }
  ],
@@ -606,21 +606,21 @@
   },
   "archdiocese-of-st-louis": {
    "sites_in_list": 247,
-   "records": 193,
-   "finished": false,
-   "ok": 103,
+   "records": 248,
+   "finished": true,
+   "ok": 124,
    "by_status": {
-    "ok": 103,
-    "challenge": 50,
-    "dns": 13,
-    "ssl_error": 8,
+    "ok": 124,
+    "challenge": 52,
+    "dns": 32,
+    "ssl_error": 11,
+    "not_found": 10,
+    "social_only": 4,
     "wayback": 3,
-    "social_only": 3,
-    "not_found": 3,
-    "timeout": 2,
+    "timeout": 3,
+    "parked": 3,
     "conn_error": 2,
     "http_5xx": 2,
-    "parked": 2,
     "robots_disallowed": 1,
     "unreachable_via_proxy": 1
    }
@@ -1509,11 +1509,11 @@
   },
   "diocese-of-jefferson-city": {
    "sites_in_list": 119,
-   "records": 113,
-   "finished": false,
-   "ok": 64,
+   "records": 119,
+   "finished": true,
+   "ok": 70,
    "by_status": {
-    "ok": 64,
+    "ok": 70,
     "dns": 24,
     "not_found": 8,
     "ssl_error": 6,
@@ -1702,19 +1702,19 @@
   },
   "diocese-of-kansas-city-st-joseph": {
    "sites_in_list": 106,
-   "records": 91,
+   "records": 104,
    "finished": false,
-   "ok": 49,
+   "ok": 52,
    "by_status": {
-    "ok": 49,
-    "challenge": 23,
-    "dns": 8,
-    "not_found": 3,
+    "ok": 52,
+    "challenge": 26,
+    "dns": 9,
+    "social_only": 4,
+    "not_found": 4,
+    "parked": 3,
     "timeout": 2,
-    "parked": 2,
     "ssl_error": 2,
-    "social_only": 1,
-    "http_5xx": 1
+    "http_5xx": 2
    }
   },
   "diocese-of-camden": {
@@ -2002,14 +2002,14 @@
   },
   "unassigned-mo": {
    "sites_in_list": 92,
-   "records": 221,
+   "records": 222,
    "finished": true,
    "ok": 150,
    "by_status": {
     "ok": 150,
     "challenge": 25,
     "dns": 21,
-    "not_found": 6,
+    "not_found": 7,
     "ssl_error": 6,
     "timeout": 4,
     "parked": 3,
@@ -2421,18 +2421,19 @@
   },
   "diocese-of-springfield-cape-girardeau": {
    "sites_in_list": 75,
-   "records": 39,
-   "finished": false,
-   "ok": 19,
+   "records": 76,
+   "finished": true,
+   "ok": 43,
    "by_status": {
-    "ok": 19,
+    "ok": 43,
     "dns": 14,
+    "challenge": 9,
+    "social_only": 5,
     "conn_error": 1,
     "unreachable_via_proxy": 1,
     "not_found": 1,
     "timeout": 1,
-    "ssl_error": 1,
-    "challenge": 1
+    "ssl_error": 1
    }
   },
   "diocese-of-san-diego": {
@@ -4114,9 +4115,9 @@
  },
  "totals": {
   "sites_in_list": 21472,
-  "records": 22921,
-  "ok": 12044
+  "records": 22841,
+  "ok": 12032
  },
  "us_parish_pages_discovermass": 20147,
- "updated_at": "2026-11-05T06:33:26+00:00"
+ "updated_at": "2026-11-05T06:35:21+00:00"
 }
