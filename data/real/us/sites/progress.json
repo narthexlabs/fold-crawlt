@@ -358,6 +358,55 @@
    "touched": [
     "archdiocese-of-santa-fe"
    ]
+  },
+  {
+   "started_at": "2026-11-05T16:25:46+00:00",
+   "result": "top-up ('confession', 'adoration', 'liturgy'): {'sites': 3, 'requests': 0}; 0 sites left",
+   "touched": [
+    "diocese-of-savannah"
+   ]
+  },
+  {
+   "started_at": "2026-11-05T16:26:06+00:00",
+   "ended_at": "2026-11-05T16:26:09+00:00",
+   "result": "fetched {}; parsed 0 dioceses",
+   "touched": []
+  },
+  {
+   "started_at": "2026-11-05T16:26:13+00:00",
+   "result": "top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left",
+   "touched": []
+  },
+  {
+   "started_at": "2026-11-05T16:26:18+00:00",
+   "ended_at": "2026-11-05T16:26:20+00:00",
+   "result": "fetched {}; parsed 0 dioceses",
+   "touched": []
+  },
+  {
+   "started_at": "2026-11-05T16:26:23+00:00",
+   "result": "top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left",
+   "touched": []
+  },
+  {
+   "started_at": "2026-11-05T16:26:34+00:00",
+   "ended_at": "2026-11-05T16:27:40+00:00",
+   "result": "fetched {'robots_disallowed': 1, 'done': 64, 'dns': 25, 'challenge': 7, 'ssl_error': 5, 'blocked_403': 1, 'not_found': 3, 'parked': 1, 'ok': 13, 'http_4xx': 1, 'http_5xx': 4, 'timeout': 3, 'halted_egress': 0}; parsed 5 dioceses",
+   "touched": [
+    "archdiocese-of-seattle",
+    "unassigned-wa",
+    "diocese-of-sioux-falls",
+    "diocese-of-spokane",
+    "diocese-of-yakima"
+   ]
+  },
+  {
+   "started_at": "2026-11-05T16:27:59+00:00",
+   "result": "top-up ('confession', 'adoration', 'liturgy'): {'sites': 13, 'requests': 0}; 0 sites left",
+   "touched": [
+    "archdiocese-of-seattle",
+    "diocese-of-sioux-falls"
+   ]
   }
  ],
  "dioceses": {
@@ -762,16 +811,21 @@
   },
   "archdiocese-of-seattle": {
    "sites_in_list": 182,
-   "records": 117,
-   "finished": false,
-   "ok": 81,
+   "records": 183,
+   "finished": true,
+   "ok": 96,
    "by_status": {
-    "ok": 81,
-    "challenge": 27,
-    "not_found": 3,
+    "ok": 96,
+    "challenge": 39,
+    "dns": 18,
+    "ssl_error": 7,
+    "not_found": 6,
+    "http_5xx": 6,
+    "timeout": 3,
     "wayback": 3,
-    "conn_error": 1,
-    "http_5xx": 1,
+    "conn_error": 2,
+    "parked": 1,
+    "http_4xx": 1,
     "unreachable_via_proxy": 1
    }
   },
@@ -1629,7 +1683,7 @@
   },
   "unassigned-wa": {
    "sites_in_list": 108,
-   "records": 142,
+   "records": 143,
    "finished": true,
    "ok": 80,
    "by_status": {
@@ -1637,7 +1691,7 @@
     "challenge": 33,
     "ssl_error": 12,
     "dns": 10,
-    "not_found": 3,
+    "not_found": 4,
     "http_5xx": 1,
     "conn_error": 1,
     "blocked_403": 1,
@@ -3187,12 +3241,16 @@
   },
   "diocese-of-sioux-falls": {
    "sites_in_list": 49,
-   "records": 32,
-   "finished": false,
-   "ok": 18,
+   "records": 49,
+   "finished": true,
+   "ok": 25,
    "by_status": {
-    "ok": 18,
-    "challenge": 14
+    "ok": 25,
+    "challenge": 15,
+    "dns": 5,
+    "blocked_403": 2,
+    "robots_disallowed": 1,
+    "conn_error": 1
    }
   },
   "diocese-of-san-jose": {
@@ -3403,13 +3461,14 @@
   },
   "diocese-of-spokane": {
    "sites_in_list": 37,
-   "records": 37,
+   "records": 38,
    "finished": true,
    "ok": 12,
    "by_status": {
     "challenge": 24,
     "ok": 12,
-    "ssl_error": 1
+    "ssl_error": 1,
+    "dns": 1
    }
   },
   "archdiocese-of-mobile": {
@@ -3902,11 +3961,14 @@
   },
   "diocese-of-yakima": {
    "sites_in_list": 13,
-   "records": 1,
-   "finished": false,
-   "ok": 0,
+   "records": 13,
+   "finished": true,
+   "ok": 3,
    "by_status": {
-    "challenge": 1
+    "dns": 5,
+    "challenge": 3,
+    "ok": 3,
+    "ssl_error": 2
    }
   },
   "diocese-of-dodge-city": {
@@ -4098,9 +4160,9 @@
  },
  "totals": {
   "sites_in_list": 21745,
-  "records": 23204,
-  "ok": 12145
+  "records": 23310,
+  "ok": 12168
  },
  "us_parish_pages_discovermass": 20147,
- "updated_at": "2026-11-05T16:27:25+00:00"
+ "updated_at": "2026-11-05T16:28:00+00:00"
 }
