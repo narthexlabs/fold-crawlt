@@ -39,6 +39,18 @@
    "url": "https://www.holyspiritgoddard.com/news/ministry-schedule",
    "status": 429,
    "class": "blocked_429"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.holyspiritgoddard.com/sacraments",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.holyspiritgoddard.com/parish-life/perpetual-adoration",
+   "status": 200,
+   "class": "ok"
   }
  ],
  "cms_guess": {
@@ -417,6 +429,19 @@
  ],
  "source_url": "https://www.holyspiritgoddard.com/",
  "fetched_at": "2026-11-05T23:36:04+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-05T23:37:43+00:00",
+  "requests": 2,
+  "found": [
+   "adoration",
+   "confession"
+  ]
+ },
  "schedule_template": {
   "template": "generic_strict",
   "version": "ca-sites/3",
@@ -441,7 +466,10 @@
   "no_day": 3,
   "range_not_a_mass": 3
  },
- "groups_dropped": {},
+ "groups_dropped": {
+  "noise": 3,
+  "unmatched": 1
+ },
  "event_counts": {
   "window_start": "2026-11-05",
   "window_end_exclusive": "2027-02-03",
