@@ -1,17 +1,6 @@
 {
  "chunks": [
   {
-   "started_at": "2026-11-04T09:05:41+00:00",
-   "ended_at": "2026-11-04T09:05:43+00:00",
-   "result": "fetched {}; parsed 0 dioceses",
-   "touched": []
-  },
-  {
-   "started_at": "2026-11-04T09:05:46+00:00",
-   "result": "top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left",
-   "touched": []
-  },
-  {
    "started_at": "2026-11-04T09:06:03+00:00",
    "ended_at": "2026-11-04T09:06:06+00:00",
    "result": "fetched {}; parsed 0 dioceses",
@@ -386,6 +375,34 @@
    "result": "top-up ('confession', 'adoration', 'liturgy'): {'sites': 6, 'requests': 0}; 0 sites left",
    "touched": [
     "diocese-of-scranton"
+   ]
+  },
+  {
+   "started_at": "2026-11-05T16:24:38+00:00",
+   "ended_at": "2026-11-05T16:24:49+00:00",
+   "result": "fetched {'dns': 13, 'done': 15, 'conn_error': 1, 'parked': 1, 'halted_egress': 0}; parsed 1 dioceses",
+   "touched": [
+    "diocese-of-tyler"
+   ]
+  },
+  {
+   "started_at": "2026-11-05T16:24:52+00:00",
+   "result": "top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left",
+   "touched": []
+  },
+  {
+   "started_at": "2026-11-05T16:25:00+00:00",
+   "ended_at": "2026-11-05T16:25:38+00:00",
+   "result": "fetched {'dns': 7, 'done': 16, 'conn_error': 1, 'challenge': 2, 'ssl_error': 1, 'not_found': 1, 'ok': 2, 'http_5xx': 1, 'timeout': 1, 'halted_egress': 0}; parsed 1 dioceses",
+   "touched": [
+    "diocese-of-savannah"
+   ]
+  },
+  {
+   "started_at": "2026-11-05T16:25:46+00:00",
+   "result": "top-up ('confession', 'adoration', 'liturgy'): {'sites': 3, 'requests': 0}; 0 sites left",
+   "touched": [
+    "diocese-of-savannah"
    ]
   }
  ],
@@ -2291,17 +2308,20 @@
   },
   "diocese-of-savannah": {
    "sites_in_list": 78,
-   "records": 62,
-   "finished": false,
-   "ok": 31,
+   "records": 78,
+   "finished": true,
+   "ok": 33,
    "by_status": {
-    "ok": 31,
-    "challenge": 24,
-    "conn_error": 2,
+    "ok": 33,
+    "challenge": 26,
+    "dns": 8,
+    "conn_error": 3,
+    "ssl_error": 2,
     "robots_disallowed": 2,
-    "ssl_error": 1,
+    "http_5xx": 1,
     "blocked_429": 1,
-    "dns": 1
+    "timeout": 1,
+    "not_found": 1
    }
   },
   "diocese-of-tyler": {
@@ -4122,9 +4142,9 @@
  },
  "totals": {
   "sites_in_list": 21745,
-  "records": 23181,
-  "ok": 12140
+  "records": 23191,
+  "ok": 12137
  },
  "us_parish_pages_discovermass": 20147,
- "updated_at": "2026-11-05T16:25:26+00:00"
+ "updated_at": "2026-11-05T16:25:48+00:00"
 }
