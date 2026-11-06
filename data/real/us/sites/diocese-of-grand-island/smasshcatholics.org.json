@@ -1,0 +1,167 @@
+{
+ "domain": "smasshcatholics.org",
+ "diocese": "diocese-of-grand-island",
+ "matched_church_ids": [
+  "all-souls-bridgeport-ne",
+  "brave:NE|all souls bridgeport|",
+  "sacred-heart-bayard-ne",
+  "sacred-heart-lyman-ne",
+  "st-mary-dalton-ne"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "all-souls-bridgeport-ne",
+   "sacred-heart-bayard-ne",
+   "st-mary-dalton-ne",
+   "sacred-heart-lyman-ne",
+   "brave:NE|all souls bridgeport|"
+  ]
+ },
+ "names": [
+  "All Souls",
+  "Sacred Heart",
+  "St. Mary",
+  "All Souls Bridgeport"
+ ],
+ "cities": [
+  "Bridgeport",
+  "Bayard",
+  "Dalton",
+  "Lyman"
+ ],
+ "home_url": "https://smasshcatholics.org/",
+ "final_url": "https://smasshcatholics.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://smasshcatholics.org/",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "unknown",
+  "evidence": []
+ },
+ "template": "generic-html:unknown",
+ "groups": [],
+ "calendar_feeds": [],
+ "events": [],
+ "social": {},
+ "bulletin": {
+  "url": "https://smasshcatholics.org/bulletins/2026-10-11-bulletin.pdf",
+  "date": "2026-10-11",
+  "kind": "pdf",
+  "text": "Download the Full Bulletin (PDF)",
+  "source_url": "https://smasshcatholics.org/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "09:30",
+   "language": null,
+   "raw": "[All Souls Bridgeport] ConfessionSunday · 9:30–9:45 AM",
+   "source_url": "https://smasshcatholics.org/",
+   "fetched_at": "2026-11-01T17:26:56+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict",
+   "kind_parsed": "confession",
+   "location": "All Souls Bridgeport"
+  },
+  {
+   "kind": "confession",
+   "day": "Friday",
+   "time": "17:00-17:15",
+   "language": null,
+   "raw": "[Sacred Heart] ConfessionSaturday · 5:00–5:15 PM",
+   "source_url": "https://smasshcatholics.org/",
+   "fetched_at": "2026-11-01T17:26:56+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "location": "Sacred Heart"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": null,
+   "raw": "Sunday 10:00 AM",
+   "source_url": "https://smasshcatholics.org/",
+   "fetched_at": "2026-11-01T17:26:56+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  }
+ ],
+ "source_url": "https://smasshcatholics.org/",
+ "fetched_at": "2026-11-01T17:26:57+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:32+00:00",
+  "requests": 0,
+  "found": []
+ },
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/3",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": true,
+  "trusted_candidate": false,
+  "trusted_kinds": [],
+  "generic_rows": 4
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "no_kind": 4,
+  "other_location": 3,
+  "weekend_rescue_added": 1
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-06",
+  "window_end_exclusive": "2027-02-04",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(308) 262-0709",
+  "address": "701 P Street, Bridgeport, NE 69336",
+  "source_url": "https://smasshcatholics.org/",
+  "sources": {
+   "phone": "https://smasshcatholics.org/",
+   "address": "https://smasshcatholics.org/"
+  },
+  "fetched_at": "2026-11-01T17:26:56+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}
