@@ -1,6 +1,23 @@
 {
  "chunks": [
   {
+   "started_at": "2026-11-05T16:27:48+00:00",
+   "ended_at": "2026-11-05T16:28:54+00:00",
+   "result": "fetched {'dns': 16, 'done': 20, 'ssl_error': 1, 'ok': 2, 'timeout': 1, 'halted_egress': 0}; parsed 3 dioceses",
+   "touched": [
+    "diocese-of-wichita",
+    "diocese-of-wheeling-charleston",
+    "diocese-of-shreveport"
+   ]
+  },
+  {
+   "started_at": "2026-11-05T16:29:01+00:00",
+   "result": "top-up ('confession', 'adoration', 'liturgy'): {'sites': 2, 'requests': 0}; 0 sites left",
+   "touched": [
+    "diocese-of-wichita"
+   ]
+  },
+  {
    "started_at": "2026-11-05T16:28:07+00:00",
    "ended_at": "2026-11-05T16:31:40+00:00",
    "result": "fetched {'challenge': 2, 'done': 17, 'ok': 15, 'not_found': 1, 'cut': 1, 'halted_egress': 0}; parsed 2 dioceses",
@@ -361,26 +378,25 @@
    "touched": []
   },
   {
-   "started_at": "2026-11-06T21:29:04+00:00",
-   "ended_at": "2026-11-06T21:29:07+00:00",
-   "result": "fetched {}; parsed 0 dioceses",
-   "touched": []
+   "started_at": "2026-11-06T21:28:03+00:00",
+   "ended_at": "2026-11-06T21:29:12+00:00",
+   "result": "fetched {'challenge': 10, 'done': 38, 'ssl_error': 1, 'ok': 25, 'not_found': 1, 'dns': 1, 'halted_egress': 0}; parsed 4 dioceses",
+   "touched": [
+    "unassigned-nm",
+    "diocese-of-las-cruces",
+    "archdiocese-of-santa-fe",
+    "diocese-of-gallup"
+   ]
   },
   {
-   "started_at": "2026-11-06T21:29:11+00:00",
-   "result": "top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left",
-   "touched": []
-  },
-  {
-   "started_at": "2026-11-06T21:29:24+00:00",
-   "ended_at": "2026-11-06T21:29:27+00:00",
-   "result": "fetched {}; parsed 0 dioceses",
-   "touched": []
-  },
-  {
-   "started_at": "2026-11-06T21:29:32+00:00",
-   "result": "top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left",
-   "touched": []
+   "started_at": "2026-11-06T21:29:36+00:00",
+   "result": "top-up ('confession', 'adoration', 'liturgy'): {'sites': 25, 'requests': 0}; 0 sites left",
+   "touched": [
+    "archdiocese-of-santa-fe",
+    "diocese-of-gallup",
+    "diocese-of-las-cruces",
+    "unassigned-nm"
+   ]
   }
  ],
  "dioceses": {
@@ -789,11 +805,11 @@
   },
   "unassigned-nm": {
    "sites_in_list": 193,
-   "records": 263,
+   "records": 264,
    "finished": true,
-   "ok": 163,
+   "ok": 164,
    "by_status": {
-    "ok": 163,
+    "ok": 164,
     "challenge": 50,
     "dns": 25,
     "ssl_error": 10,
@@ -2107,15 +2123,17 @@
   },
   "diocese-of-las-cruces": {
    "sites_in_list": 87,
-   "records": 73,
-   "finished": false,
-   "ok": 12,
+   "records": 87,
+   "finished": true,
+   "ok": 20,
    "by_status": {
     "timeout": 52,
-    "ok": 12,
+    "ok": 20,
     "dns": 6,
+    "challenge": 4,
+    "social_only": 2,
     "unreachable_via_proxy": 2,
-    "challenge": 1
+    "ssl_error": 1
    }
   },
   "archdiocese-of-san-francisco": {
@@ -2309,18 +2327,19 @@
   },
   "archdiocese-of-santa-fe": {
    "sites_in_list": 79,
-   "records": 60,
-   "finished": false,
-   "ok": 26,
+   "records": 84,
+   "finished": true,
+   "ok": 39,
    "by_status": {
-    "ok": 26,
-    "challenge": 11,
+    "ok": 39,
+    "challenge": 18,
     "unreachable_via_proxy": 8,
     "conn_error": 4,
     "ssl_error": 4,
     "dns": 4,
+    "social_only": 3,
+    "not_found": 2,
     "wayback": 1,
-    "not_found": 1,
     "blocked_403": 1
    }
   },
@@ -4064,11 +4083,12 @@
   },
   "diocese-of-gallup": {
    "sites_in_list": 9,
-   "records": 6,
-   "finished": false,
-   "ok": 6,
+   "records": 10,
+   "finished": true,
+   "ok": 9,
    "by_status": {
-    "ok": 6
+    "ok": 9,
+    "dns": 1
    }
   },
   "diocese-of-st-thomas-vi": {
@@ -4178,9 +4198,9 @@
  },
  "totals": {
   "sites_in_list": 22005,
-  "records": 24099,
-  "ok": 12612
+  "records": 24142,
+  "ok": 12637
  },
  "us_parish_pages_discovermass": 20147,
- "updated_at": "2026-11-06T21:29:35+00:00"
+ "updated_at": "2026-11-06T21:29:38+00:00"
 }

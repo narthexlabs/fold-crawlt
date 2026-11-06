@@ -47,7 +47,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | archdiocese-of-hartford | 200 | 201 | 107 | 0 | 1 | 90 | 0 |
 | archdiocese-of-baltimore | 199 | 199 | 93 | 10 | 1 | 55 | 0 |
 | diocese-of-rockville-centre | 198 | 198 | 117 | 15 | 10 | 56 | 0 |
-| unassigned-nm | 193 | 263 | 163 | 50 | 4 | 46 | 0 |
+| unassigned-nm | 193 | 264 | 164 | 50 | 4 | 46 | 0 |
 | unassigned-ny | 190 | 215 | 138 | 19 | 6 | 52 | 0 |
 | archdiocese-of-washington | 187 | 187 | 36 | 140 | 0 | 11 | 0 |
 | diocese-of-green-bay | 181 | 183 | 85 | 42 | 0 | 50 | 6 |
@@ -123,7 +123,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-little-rock | 89 | 89 | 54 | 11 | 1 | 23 | 0 |
 | diocese-of-saginaw | 89 | 90 | 43 | 17 | 1 | 29 | 0 |
 | unassigned-ct | 89 | 155 | 109 | 6 | 1 | 37 | 2 |
-| diocese-of-las-cruces | 87 | 73 | 12 | 1 | 0 | 60 | 0 |
+| diocese-of-las-cruces | 87 | 87 | 20 | 4 | 0 | 61 | 2 |
 | archdiocese-of-san-francisco | 87 | 53 | 26 | 6 | 0 | 16 | 0 |
 | diocese-of-altoona-johnstown | 85 | 86 | 48 | 12 | 1 | 19 | 6 |
 | unassigned-ok | 85 | 114 | 58 | 34 | 4 | 18 | 0 |
@@ -135,7 +135,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-toledo | 81 | 84 | 59 | 3 | 1 | 21 | 0 |
 | diocese-of-owensboro | 80 | 65 | 34 | 12 | 1 | 18 | 0 |
 | diocese-of-st-augustine | 80 | 85 | 48 | 16 | 0 | 21 | 0 |
-| archdiocese-of-santa-fe | 79 | 60 | 26 | 11 | 1 | 21 | 0 |
+| archdiocese-of-santa-fe | 79 | 84 | 39 | 18 | 1 | 22 | 3 |
 | diocese-of-arlington | 79 | 80 | 54 | 11 | 1 | 14 | 0 |
 | diocese-of-manchester | 79 | 79 | 28 | 32 | 1 | 17 | 1 |
 | diocese-of-savannah | 78 | 78 | 33 | 26 | 3 | 16 | 0 |
@@ -256,7 +256,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | maronite-eparchy-of-our-lady-of-lebanon | 10 | 10 | 9 | 0 | 0 | 0 | 1 |
 | unassigned-xx | 10 | 1 | 0 | 0 | 0 | 1 | 0 |
 | diocese-of-fairbanks | 9 | 9 | 3 | 4 | 0 | 2 | 0 |
-| diocese-of-gallup | 9 | 6 | 6 | 0 | 0 | 0 | 0 |
+| diocese-of-gallup | 9 | 10 | 9 | 0 | 0 | 1 | 0 |
 | diocese-of-st-thomas-vi | 9 | 0 | 0 | 0 | 0 | 0 | 0 |
 | unassigned-unresolved | 9 | 9 | 6 | 0 | 0 | 3 | 0 |
 | chaldean-eparchy-of-saint-thomas-the-apostle | 8 | 8 | 8 | 0 | 0 | 0 | 0 |
@@ -273,6 +273,8 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 
 ## Chunk log
 
+- 2026-11-06T15:52:44+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-06T15:52:51+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-06T15:53:03+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-06T15:53:11+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-06T15:53:23+00:00: fetched {}; parsed 0 dioceses
@@ -285,6 +287,4 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-06T21:26:33+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-06T21:27:32+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-06T21:27:38+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
-- 2026-11-06T21:29:04+00:00: fetched {}; parsed 0 dioceses
-- 2026-11-06T21:29:11+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
-- 2026-11-06T21:29:24+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-06T21:28:03+00:00: fetched {'challenge': 10, 'done': 38, 'ssl_error': 1, 'ok': 25, 'not_found': 1, 'dns': 1, 'halted_egress': 0}; parsed 4 dioceses
