@@ -1,0 +1,154 @@
+{
+ "domain": "nctc.net",
+ "diocese": "unassigned-ne",
+ "matched_church_ids": [
+  "st-gabriel-hazard-ne"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "st-gabriel-hazard-ne"
+  ]
+ },
+ "names": [
+  "St. Gabriel"
+ ],
+ "cities": [
+  "112 Market St. Hazard"
+ ],
+ "home_url": "http://www.nctc.net/hazard/catholic/",
+ "final_url": "https://hamilton.net/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://hamilton.net/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://hamilton.net/about/enewsletter/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://hamilton.net/looking-ahead-to-fall-fun/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "live",
+   "url": "https://hamilton.net/cobalt-streaming/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://hamilton.net/contact-us/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://hamilton.net/reconciliation/",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://hamilton.net/adoration/",
+   "status": 404,
+   "class": "not_found"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-content"
+  ]
+ },
+ "template": "wordpress-rest+html",
+ "groups": [],
+ "calendar_feeds": [
+  {
+   "feed_id": "nctc.net:tribe_rest:48604c12",
+   "type": "tribe_rest",
+   "platform": "The Events Calendar (WordPress)",
+   "url": "https://hamilton.net/wp-json/tribe/events/v1/events",
+   "page_url": "https://hamilton.net/",
+   "label": null,
+   "status": "no_public_feed",
+   "note": "The Events Calendar markers on the site, but its REST route is not available"
+  }
+ ],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/hamiltontelecom"
+  ],
+  "livestream": [
+   {
+    "url": "https://hamilton.net/cobalt-streaming/",
+    "label": "Cobalt TV Streaming",
+    "platform": "hamilton.net",
+    "kind": "link"
+   }
+  ]
+ },
+ "bulletin": null,
+ "schedule_rows": [],
+ "source_url": "http://www.nctc.net/hazard/catholic/",
+ "fetched_at": "2026-11-06T06:24:07+00:00",
+ "redirected_off_host": "hamilton.net",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/3",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "trusted_kinds": [],
+  "generic_rows": 0
+ },
+ "has_sunday": false,
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-06",
+  "window_end_exclusive": "2027-02-04",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": "info@hamilton.net",
+  "phone": "(402) 694-5101",
+  "address": "1006 12th St., Aurora, NE 68818",
+  "source_url": "https://hamilton.net/contact-us/",
+  "sources": {
+   "email": "https://hamilton.net/contact-us/",
+   "phone": "https://hamilton.net/contact-us/",
+   "address": "https://hamilton.net/contact-us/"
+  },
+  "fetched_at": "2026-11-06T06:24:03+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}
