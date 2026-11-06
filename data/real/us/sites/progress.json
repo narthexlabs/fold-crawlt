@@ -1,28 +1,6 @@
 {
  "chunks": [
   {
-   "started_at": "2026-11-05T06:30:21+00:00",
-   "ended_at": "2026-11-05T06:34:42+00:00",
-   "result": "fetched {'dns': 18, 'done': 54, 'challenge': 2, 'ssl_error': 3, 'parked': 1, 'not_found': 9, 'ok': 23, 'timeout': 1, 'cut': 3, 'halted_egress': 0}; parsed 5 dioceses",
-   "touched": [
-    "archdiocese-of-st-louis",
-    "diocese-of-jefferson-city",
-    "diocese-of-kansas-city-st-joseph",
-    "unassigned-mo",
-    "diocese-of-springfield-cape-girardeau"
-   ]
-  },
-  {
-   "started_at": "2026-11-05T06:35:19+00:00",
-   "result": "top-up ('confession', 'adoration', 'liturgy'): {'sites': 26, 'requests': 1, 'found_confession': 1}; 0 sites left",
-   "touched": [
-    "archdiocese-of-st-louis",
-    "diocese-of-jefferson-city",
-    "diocese-of-kansas-city-st-joseph",
-    "diocese-of-springfield-cape-girardeau"
-   ]
-  },
-  {
    "started_at": "2026-11-05T16:24:21+00:00",
    "ended_at": "2026-11-05T16:25:07+00:00",
    "result": "fetched {'robots_disallowed': 1, 'done': 19, 'dns': 3, 'challenge': 1, 'conn_error': 1, 'parked': 1, 'ssl_error': 2, 'ok': 6, 'not_found': 1, 'http_5xx': 1, 'timeout': 2, 'halted_egress': 0}; parsed 1 dioceses",
@@ -404,6 +382,21 @@
    "started_at": "2026-11-06T15:53:51+00:00",
    "result": "top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left",
    "touched": []
+  },
+  {
+   "started_at": "2026-11-06T15:55:08+00:00",
+   "ended_at": "2026-11-06T15:55:18+00:00",
+   "result": "fetched {'dns': 1, 'done': 7, 'challenge': 4, 'ssl_error': 1, 'ok': 1, 'halted_egress': 0}; parsed 1 dioceses",
+   "touched": [
+    "archdiocese-of-washington"
+   ]
+  },
+  {
+   "started_at": "2026-11-06T15:55:24+00:00",
+   "result": "top-up ('confession', 'adoration', 'liturgy'): {'sites': 1, 'requests': 0}; 0 sites left",
+   "touched": [
+    "archdiocese-of-washington"
+   ]
   }
  ],
  "dioceses": {
@@ -849,14 +842,14 @@
   },
   "archdiocese-of-washington": {
    "sites_in_list": 187,
-   "records": 177,
-   "finished": false,
-   "ok": 35,
+   "records": 187,
+   "finished": true,
+   "ok": 36,
    "by_status": {
-    "challenge": 133,
-    "ok": 35,
-    "ssl_error": 3,
-    "dns": 2,
+    "challenge": 140,
+    "ok": 36,
+    "ssl_error": 4,
+    "dns": 3,
     "unreachable_via_proxy": 2,
     "not_found": 1,
     "parked": 1
@@ -4196,9 +4189,9 @@
  },
  "totals": {
   "sites_in_list": 21933,
-  "records": 23983,
-  "ok": 12546
+  "records": 23993,
+  "ok": 12547
  },
  "us_parish_pages_discovermass": 20147,
- "updated_at": "2026-11-06T15:53:53+00:00"
+ "updated_at": "2026-11-06T15:55:26+00:00"
 }

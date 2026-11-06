@@ -49,7 +49,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | archdiocese-of-baltimore | 199 | 192 | 88 | 8 | 1 | 55 | 0 |
 | diocese-of-rockville-centre | 198 | 198 | 117 | 15 | 10 | 56 | 0 |
 | unassigned-ny | 190 | 215 | 138 | 19 | 6 | 52 | 0 |
-| archdiocese-of-washington | 187 | 177 | 35 | 133 | 0 | 9 | 0 |
+| archdiocese-of-washington | 187 | 187 | 36 | 140 | 0 | 11 | 0 |
 | diocese-of-green-bay | 181 | 183 | 85 | 42 | 0 | 50 | 6 |
 | diocese-of-albany | 169 | 173 | 92 | 26 | 4 | 50 | 1 |
 | archdiocese-of-san-antonio | 167 | 168 | 75 | 27 | 2 | 34 | 9 |
@@ -273,8 +273,6 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 
 ## Chunk log
 
-- 2026-11-06T06:23:56+00:00: fetched {'robots_disallowed': 1, 'done': 31, 'dns': 2, 'challenge': 2, 'ssl_error': 1, 'ok': 22, 'timeout': 3, 'halted_egress': 0}; parsed 5 dioceses
-- 2026-11-06T06:27:56+00:00: top-up ('confession', 'adoration', 'liturgy'): {'sites': 32, 'requests': 3, 'found_adoration': 1, 'found_confession': 1}; 0 sites left
 - 2026-11-06T15:51:43+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-06T15:51:51+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-06T15:52:03+00:00: fetched {}; parsed 0 dioceses
@@ -288,3 +286,5 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-06T15:53:23+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-06T15:53:32+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-06T15:53:44+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-06T15:53:51+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
+- 2026-11-06T15:55:08+00:00: fetched {'dns': 1, 'done': 7, 'challenge': 4, 'ssl_error': 1, 'ok': 1, 'halted_egress': 0}; parsed 1 dioceses
