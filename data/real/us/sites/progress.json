@@ -1,6 +1,34 @@
 {
  "chunks": [
   {
+   "started_at": "2026-11-05T16:24:21+00:00",
+   "ended_at": "2026-11-05T16:25:07+00:00",
+   "result": "fetched {'robots_disallowed': 1, 'done': 19, 'dns': 3, 'challenge': 1, 'conn_error': 1, 'parked': 1, 'ssl_error': 2, 'ok': 6, 'not_found': 1, 'http_5xx': 1, 'timeout': 2, 'halted_egress': 0}; parsed 1 dioceses",
+   "touched": [
+    "diocese-of-scranton"
+   ]
+  },
+  {
+   "started_at": "2026-11-05T16:25:23+00:00",
+   "result": "top-up ('confession', 'adoration', 'liturgy'): {'sites': 6, 'requests': 0}; 0 sites left",
+   "touched": [
+    "diocese-of-scranton"
+   ]
+  },
+  {
+   "started_at": "2026-11-05T16:25:36+00:00",
+   "ended_at": "2026-11-05T16:27:13+00:00",
+   "result": "fetched {'dns': 1, 'done': 7, 'challenge': 2, 'ok': 4, 'halted_egress': 0}; parsed 1 dioceses",
+   "touched": [
+    "archdiocese-of-santa-fe"
+   ]
+  },
+  {
+   "started_at": "2026-11-05T16:24:52+00:00",
+   "result": "top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left",
+   "touched": []
+  },
+  {
    "started_at": "2026-11-05T16:25:21+00:00",
    "ended_at": "2026-11-05T16:28:02+00:00",
    "result": "fetched {'dns': 24, 'done': 46, 'conn_error': 1, 'challenge': 3, 'ssl_error': 3, 'not_found': 2, 'parked': 1, 'ok': 9, 'blocked_403': 1, 'timeout': 2, 'halted_egress': 0}; parsed 2 dioceses",
@@ -356,41 +384,23 @@
    "touched": []
   },
   {
-   "started_at": "2026-11-06T15:55:21+00:00",
-   "ended_at": "2026-11-06T15:55:28+00:00",
-   "result": "fetched {'ok': 1, 'done': 1, 'halted_egress': 0}; parsed 1 dioceses",
+   "started_at": "2026-11-06T15:54:23+00:00",
+   "ended_at": "2026-11-06T15:55:51+00:00",
+   "result": "fetched {'dns': 3, 'done': 29, 'challenge': 5, 'ssl_error': 1, 'not_found': 1, 'ok': 19, 'halted_egress': 0}; parsed 3 dioceses",
    "touched": [
-    "holy-protection-of-mary-byzantine-catholic-eparchy-of-phoenix"
+    "archdiocese-of-seattle",
+    "diocese-of-spokane",
+    "diocese-of-yakima"
    ]
   },
   {
-   "started_at": "2026-11-06T15:55:33+00:00",
-   "result": "top-up ('confession', 'adoration', 'liturgy'): {'sites': 1, 'requests': 0}; 0 sites left",
+   "started_at": "2026-11-06T15:56:30+00:00",
+   "result": "top-up ('confession', 'adoration', 'liturgy'): {'sites': 19, 'requests': 0}; 0 sites left",
    "touched": [
-    "holy-protection-of-mary-byzantine-catholic-eparchy-of-phoenix"
+    "archdiocese-of-seattle",
+    "diocese-of-spokane",
+    "diocese-of-yakima"
    ]
-  },
-  {
-   "started_at": "2026-11-06T15:55:47+00:00",
-   "ended_at": "2026-11-06T15:55:50+00:00",
-   "result": "fetched {}; parsed 0 dioceses",
-   "touched": []
-  },
-  {
-   "started_at": "2026-11-06T15:55:54+00:00",
-   "result": "top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left",
-   "touched": []
-  },
-  {
-   "started_at": "2026-11-06T15:56:06+00:00",
-   "ended_at": "2026-11-06T15:56:08+00:00",
-   "result": "fetched {}; parsed 0 dioceses",
-   "touched": []
-  },
-  {
-   "started_at": "2026-11-06T15:56:12+00:00",
-   "result": "top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left",
-   "touched": []
   }
  ],
  "dioceses": {
@@ -713,14 +723,14 @@
   },
   "archdiocese-of-seattle": {
    "sites_in_list": 208,
-   "records": 183,
-   "finished": false,
-   "ok": 96,
+   "records": 209,
+   "finished": true,
+   "ok": 113,
    "by_status": {
-    "ok": 96,
-    "challenge": 39,
-    "dns": 18,
-    "ssl_error": 7,
+    "ok": 113,
+    "challenge": 41,
+    "dns": 21,
+    "ssl_error": 11,
     "not_found": 6,
     "http_5xx": 6,
     "timeout": 3,
@@ -3231,13 +3241,14 @@
   },
   "diocese-of-spokane": {
    "sites_in_list": 50,
-   "records": 38,
-   "finished": false,
-   "ok": 12,
+   "records": 51,
+   "finished": true,
+   "ok": 20,
    "by_status": {
-    "challenge": 24,
-    "ok": 12,
+    "challenge": 28,
+    "ok": 20,
     "ssl_error": 1,
+    "not_found": 1,
     "dns": 1
    }
   },
@@ -3602,14 +3613,14 @@
   },
   "diocese-of-yakima": {
    "sites_in_list": 34,
-   "records": 13,
-   "finished": false,
-   "ok": 3,
+   "records": 34,
+   "finished": true,
+   "ok": 13,
    "by_status": {
+    "ok": 13,
+    "challenge": 12,
     "dns": 5,
-    "challenge": 3,
-    "ok": 3,
-    "ssl_error": 2
+    "ssl_error": 4
    }
   },
   "diocese-of-shreveport": {
@@ -4183,9 +4194,9 @@
  },
  "totals": {
   "sites_in_list": 21933,
-  "records": 23995,
-  "ok": 12549
+  "records": 24043,
+  "ok": 12581
  },
  "us_parish_pages_discovermass": 20147,
- "updated_at": "2026-11-06T15:56:14+00:00"
+ "updated_at": "2026-11-06T15:56:32+00:00"
 }
