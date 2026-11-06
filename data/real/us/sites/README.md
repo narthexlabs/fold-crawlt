@@ -46,7 +46,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | archdiocese-of-seattle | 208 | 209 | 113 | 41 | 0 | 52 | 0 |
 | diocese-of-buffalo | 201 | 201 | 110 | 21 | 3 | 67 | 0 |
 | archdiocese-of-hartford | 200 | 201 | 107 | 0 | 1 | 90 | 0 |
-| archdiocese-of-baltimore | 199 | 192 | 88 | 8 | 1 | 55 | 0 |
+| archdiocese-of-baltimore | 199 | 199 | 93 | 10 | 1 | 55 | 0 |
 | diocese-of-rockville-centre | 198 | 198 | 117 | 15 | 10 | 56 | 0 |
 | unassigned-ny | 190 | 215 | 138 | 19 | 6 | 52 | 0 |
 | archdiocese-of-washington | 187 | 187 | 36 | 140 | 0 | 11 | 0 |
@@ -218,7 +218,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | archdiocese-of-mobile | 37 | 39 | 12 | 5 | 0 | 14 | 0 |
 | archdiocese-of-anchorage-juneau | 34 | 34 | 17 | 3 | 1 | 6 | 0 |
 | diocese-of-salt-lake-city | 34 | 40 | 28 | 2 | 0 | 10 | 0 |
-| unassigned-md | 34 | 63 | 34 | 8 | 2 | 19 | 0 |
+| unassigned-md | 34 | 67 | 36 | 8 | 2 | 21 | 0 |
 | diocese-of-san-angelo | 34 | 34 | 17 | 9 | 0 | 4 | 4 |
 | diocese-of-yakima | 34 | 34 | 13 | 12 | 0 | 9 | 0 |
 | diocese-of-shreveport | 33 | 33 | 9 | 12 | 0 | 12 | 0 |
@@ -287,4 +287,4 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-06T15:53:32+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-06T15:53:44+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-06T15:53:51+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
-- 2026-11-06T15:54:06+00:00: fetched {'dns': 1, 'done': 33, 'challenge': 10, 'blocked_429': 1, 'ok': 21, 'halted_egress': 0}; parsed 4 dioceses
+- 2026-11-06T15:54:41+00:00: fetched {'challenge': 1, 'done': 10, 'not_found': 1, 'ok': 7, 'timeout': 1, 'halted_egress': 0}; parsed 2 dioceses
