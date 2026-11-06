@@ -384,22 +384,23 @@
    "touched": []
   },
   {
-   "started_at": "2026-11-06T15:54:23+00:00",
-   "ended_at": "2026-11-06T15:55:51+00:00",
-   "result": "fetched {'dns': 3, 'done': 29, 'challenge': 5, 'ssl_error': 1, 'not_found': 1, 'ok': 19, 'halted_egress': 0}; parsed 3 dioceses",
+   "started_at": "2026-11-06T15:54:06+00:00",
+   "ended_at": "2026-11-06T15:56:05+00:00",
+   "result": "fetched {'dns': 1, 'done': 33, 'challenge': 10, 'blocked_429': 1, 'ok': 21, 'halted_egress': 0}; parsed 4 dioceses",
    "touched": [
-    "archdiocese-of-seattle",
-    "diocese-of-spokane",
-    "diocese-of-yakima"
+    "unassigned-ky",
+    "archdiocese-of-louisville",
+    "diocese-of-covington",
+    "diocese-of-lexington"
    ]
   },
   {
-   "started_at": "2026-11-06T15:56:30+00:00",
-   "result": "top-up ('confession', 'adoration', 'liturgy'): {'sites': 19, 'requests': 0}; 0 sites left",
+   "started_at": "2026-11-06T15:56:50+00:00",
+   "result": "top-up ('confession', 'adoration', 'liturgy'): {'sites': 23, 'found_confession': 3, 'requests': 5, 'found_liturgy': 1}; 0 sites left",
    "touched": [
-    "archdiocese-of-seattle",
-    "diocese-of-spokane",
-    "diocese-of-yakima"
+    "archdiocese-of-louisville",
+    "diocese-of-covington",
+    "diocese-of-lexington"
    ]
   }
  ],
@@ -2029,12 +2030,12 @@
   },
   "unassigned-ky": {
    "sites_in_list": 93,
-   "records": 147,
+   "records": 148,
    "finished": true,
    "ok": 82,
    "by_status": {
     "ok": 82,
-    "challenge": 25,
+    "challenge": 26,
     "dns": 19,
     "ssl_error": 7,
     "not_found": 3,
@@ -2150,17 +2151,19 @@
   },
   "archdiocese-of-louisville": {
    "sites_in_list": 88,
-   "records": 82,
-   "finished": false,
-   "ok": 46,
+   "records": 90,
+   "finished": true,
+   "ok": 52,
    "by_status": {
-    "ok": 46,
+    "ok": 52,
     "wayback": 12,
     "dns": 9,
     "ssl_error": 5,
     "timeout": 5,
     "parked": 3,
-    "conn_error": 2
+    "conn_error": 2,
+    "challenge": 1,
+    "blocked_429": 1
    }
   },
   "archdiocese-of-san-francisco": {
@@ -3025,14 +3028,14 @@
   },
   "diocese-of-covington": {
    "sites_in_list": 58,
-   "records": 49,
-   "finished": false,
-   "ok": 30,
+   "records": 58,
+   "finished": true,
+   "ok": 36,
    "by_status": {
-    "ok": 30,
-    "challenge": 5,
+    "ok": 36,
+    "challenge": 7,
+    "dns": 4,
     "ssl_error": 4,
-    "dns": 3,
     "http_5xx": 2,
     "conn_error": 2,
     "timeout": 1,
@@ -4016,11 +4019,12 @@
   },
   "diocese-of-lexington": {
    "sites_in_list": 16,
-   "records": 1,
-   "finished": false,
-   "ok": 0,
+   "records": 16,
+   "finished": true,
+   "ok": 9,
    "by_status": {
-    "challenge": 1
+    "ok": 9,
+    "challenge": 7
    }
   },
   "diocese-of-jackson": {
@@ -4194,9 +4198,9 @@
  },
  "totals": {
   "sites_in_list": 21933,
-  "records": 24043,
-  "ok": 12581
+  "records": 24016,
+  "ok": 12567
  },
  "us_parish_pages_discovermass": 20147,
- "updated_at": "2026-11-06T15:56:32+00:00"
+ "updated_at": "2026-11-06T15:56:53+00:00"
 }

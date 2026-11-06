@@ -117,14 +117,14 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-ogdensburg | 94 | 93 | 30 | 22 | 1 | 38 | 2 |
 | diocese-of-wichita | 94 | 98 | 44 | 6 | 39 | 9 | 0 |
 | diocese-of-grand-rapids | 93 | 94 | 68 | 5 | 2 | 19 | 0 |
-| unassigned-ky | 93 | 147 | 82 | 25 | 3 | 37 | 0 |
+| unassigned-ky | 93 | 148 | 82 | 26 | 3 | 37 | 0 |
 | diocese-of-madison | 92 | 92 | 16 | 49 | 1 | 26 | 0 |
 | unassigned-mo | 92 | 222 | 150 | 25 | 3 | 44 | 0 |
 | diocese-of-lansing | 90 | 91 | 39 | 29 | 1 | 22 | 0 |
 | diocese-of-little-rock | 89 | 89 | 54 | 11 | 1 | 23 | 0 |
 | diocese-of-saginaw | 89 | 90 | 43 | 17 | 1 | 29 | 0 |
 | unassigned-ct | 89 | 155 | 109 | 6 | 1 | 37 | 2 |
-| archdiocese-of-louisville | 88 | 82 | 46 | 0 | 0 | 24 | 0 |
+| archdiocese-of-louisville | 88 | 90 | 52 | 1 | 1 | 24 | 0 |
 | archdiocese-of-san-francisco | 87 | 53 | 26 | 6 | 0 | 16 | 0 |
 | diocese-of-altoona-johnstown | 85 | 86 | 48 | 12 | 1 | 19 | 6 |
 | unassigned-ok | 85 | 114 | 58 | 34 | 4 | 18 | 0 |
@@ -179,7 +179,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | unassigned-ia | 60 | 118 | 65 | 32 | 1 | 20 | 0 |
 | diocese-of-wilmington | 59 | 63 | 41 | 17 | 1 | 4 | 0 |
 | diocese-of-san-bernardino | 59 | 34 | 5 | 3 | 1 | 25 | 0 |
-| diocese-of-covington | 58 | 49 | 30 | 5 | 0 | 14 | 0 |
+| diocese-of-covington | 58 | 58 | 36 | 7 | 0 | 15 | 0 |
 | diocese-of-fargo | 58 | 58 | 21 | 28 | 0 | 9 | 0 |
 | diocese-of-lincoln | 58 | 58 | 33 | 7 | 0 | 18 | 0 |
 | diocese-of-kalamazoo | 57 | 57 | 5 | 46 | 0 | 6 | 0 |
@@ -250,7 +250,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-rapid-city | 19 | 23 | 15 | 2 | 0 | 6 | 0 |
 | diocese-of-reno | 19 | 19 | 8 | 9 | 0 | 2 | 0 |
 | unassigned-nc | 17 | 23 | 14 | 0 | 0 | 9 | 0 |
-| diocese-of-lexington | 16 | 1 | 0 | 1 | 0 | 0 | 0 |
+| diocese-of-lexington | 16 | 16 | 9 | 7 | 0 | 0 | 0 |
 | diocese-of-jackson | 13 | 13 | 5 | 6 | 0 | 2 | 0 |
 | diocese-of-lubbock | 12 | 13 | 4 | 3 | 0 | 4 | 2 |
 | maronite-eparchy-of-our-lady-of-lebanon | 10 | 10 | 9 | 0 | 0 | 0 | 1 |
@@ -287,4 +287,4 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-06T15:53:32+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-06T15:53:44+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-06T15:53:51+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
-- 2026-11-06T15:54:23+00:00: fetched {'dns': 3, 'done': 29, 'challenge': 5, 'ssl_error': 1, 'not_found': 1, 'ok': 19, 'halted_egress': 0}; parsed 3 dioceses
+- 2026-11-06T15:54:06+00:00: fetched {'dns': 1, 'done': 33, 'challenge': 10, 'blocked_429': 1, 'ok': 21, 'halted_egress': 0}; parsed 4 dioceses
