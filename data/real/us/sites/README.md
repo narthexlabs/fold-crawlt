@@ -231,7 +231,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-dodge-city | 30 | 30 | 18 | 3 | 3 | 5 | 1 |
 | diocese-of-oakland | 30 | 34 | 20 | 9 | 1 | 4 | 0 |
 | diocese-of-tulsa | 29 | 29 | 15 | 2 | 0 | 12 | 0 |
-| holy-protection-of-mary-byzantine-catholic-eparchy-of-phoenix | 28 | 26 | 20 | 0 | 0 | 6 | 0 |
+| holy-protection-of-mary-byzantine-catholic-eparchy-of-phoenix | 28 | 28 | 22 | 0 | 0 | 6 | 0 |
 | unassigned-de | 28 | 41 | 30 | 7 | 1 | 3 | 0 |
 | unassigned-wy | 28 | 33 | 17 | 12 | 0 | 4 | 0 |
 | diocese-of-portland-in-maine | 27 | 27 | 4 | 15 | 0 | 8 | 0 |
@@ -287,4 +287,4 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-06T15:53:32+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-06T15:53:44+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-06T15:53:51+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
-- 2026-11-06T15:55:08+00:00: fetched {'dns': 1, 'done': 7, 'challenge': 4, 'ssl_error': 1, 'ok': 1, 'halted_egress': 0}; parsed 1 dioceses
+- 2026-11-06T15:55:21+00:00: fetched {'ok': 1, 'done': 1, 'halted_egress': 0}; parsed 1 dioceses
