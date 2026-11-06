@@ -1,39 +1,42 @@
 {
  "slug": "archdiocese-of-omaha",
- "generated_at": "2026-11-02T23:35:33+00:00",
- "run_date": "2026-11-02",
+ "generated_at": "2026-11-06T06:25:53+00:00",
+ "run_date": "2026-11-06",
  "input": {
   "directory_records": 93,
-  "discovermass_records": 11,
+  "discovermass_records": 143,
   "directory_without_website": 0,
   "discovermass_without_website": 0
  },
- "sites_in_list": 86,
- "social_only": 0,
+ "sites_in_list": 111,
+ "social_only": 3,
  "crawl": {
-  "ok_total": 67,
-  "ok_via_sandbox": 67,
+  "ok_total": 80,
+  "ok_via_sandbox": 80,
   "ok_via_laptop": 0,
   "partial_via_side_doors": 0,
-  "challenge": 1,
+  "challenge": 4,
   "blocked_403_429": 1,
-  "robots_disallowed": 1,
-  "laptop_pending": 8,
-  "dead": 9,
+  "robots_disallowed": 2,
+  "laptop_pending": 16,
+  "dead": 14,
   "not_fetched": 0,
   "by_status": {
-   "ok": 67,
-   "ssl_error": 3,
+   "ok": 80,
+   "ssl_error": 5,
+   "challenge": 4,
+   "social_only": 3,
    "not_found": 3,
+   "robots_disallowed": 2,
+   "timeout": 2,
    "unreachable_via_proxy": 2,
-   "robots_disallowed": 1,
    "wayback-2026-02-02": 1,
    "wayback-2025-04-24": 1,
    "wayback-2026-04-04": 1,
-   "challenge": 1,
    "blocked_429": 1,
    "wayback-2026-04-20": 1,
    "wayback-2025-10-08": 1,
+   "dns": 1,
    "wayback-2025-04-08": 1,
    "wayback-2025-11-03": 1,
    "conn_error": 1
@@ -41,95 +44,99 @@
  },
  "laptop_attempted": 0,
  "groups": {
-  "total": 494,
-  "sites_with_groups": 56,
+  "total": 602,
+  "sites_with_groups": 64,
   "by_category": {
-   "liturgical": 134,
-   "formation": 69,
-   "other": 51,
-   "service_mercy": 46,
-   "prayer_devotion": 37,
-   "fraternal_orders": 33,
-   "youth": 31,
-   "grief_support": 24,
-   "scripture_study": 19,
-   "men": 15,
-   "women": 12,
+   "liturgical": 152,
+   "formation": 87,
+   "other": 62,
+   "service_mercy": 53,
+   "prayer_devotion": 46,
+   "fraternal_orders": 41,
+   "youth": 33,
+   "grief_support": 32,
+   "scripture_study": 26,
+   "men": 23,
+   "women": 15,
+   "families": 8,
+   "young_adults": 8,
    "movements": 6,
    "seniors": 6,
-   "young_adults": 5,
-   "families": 5,
-   "language_cultural": 1
+   "language_cultural": 4
   },
-  "with_meeting_time": 40
+  "with_meeting_time": 44
  },
  "calendar": {
-  "sites_with_active_feed": 30,
-  "active_feeds": 66,
+  "sites_with_active_feed": 38,
+  "active_feeds": 96,
   "feeds_by_platform": {
-   "Google Calendar": 59,
-   "The Events Calendar (WordPress)": 7
+   "Google Calendar": 88,
+   "The Events Calendar (WordPress)": 8
   },
   "sites_with_events": 4,
   "events_stored": 642,
   "events_in_window_before_privacy": 831,
-  "window": "2026-11-02 + 90 days"
+  "window": "2026-11-06 + 90 days"
  },
  "social": {
   "sites_by_platform": {
-   "facebook": 59,
-   "youtube": 30,
-   "flocknote": 23,
-   "instagram": 20,
-   "livestream": 16,
-   "x": 11
+   "facebook": 72,
+   "youtube": 35,
+   "flocknote": 26,
+   "instagram": 21,
+   "livestream": 17,
+   "x": 14
   },
-  "sites_with_any_social": 61,
-  "shared_links_removed_as_diocesan": []
+  "sites_with_any_social": 75,
+  "shared_links_removed_as_diocesan": [
+   "flocknote https://new.flocknote.com (5 sites)"
+  ]
  },
  "bulletin": {
-  "sites_with_bulletin_url": 60,
+  "sites_with_bulletin_url": 70,
   "by_kind": {
-   "page": 25,
-   "lpi": 21,
-   "pdf": 11,
+   "lpi": 28,
+   "page": 27,
+   "pdf": 12,
    "flipbook": 2,
    "ecatholic_pdf": 1
   },
-  "with_date": 11
+  "with_date": 12
  },
  "schedule": {
-  "sites_with_own_site_rows": 62,
-  "rows_total": 838,
-  "rows_needs_review": 30,
-  "sites_with_schedule_image_only": 4,
+  "sites_with_own_site_rows": 73,
+  "rows_total": 1050,
+  "rows_needs_review": 38,
+  "sites_with_schedule_image_only": 5,
   "by_kind": {
-   "mass": 597,
-   "confession": 157,
-   "adoration": 39,
-   "devotion": 38,
-   "other": 7
+   "mass": 707,
+   "confession": 205,
+   "adoration": 63,
+   "devotion": 41,
+   "other": 34
   }
  },
  "cms_guess": {
-  "wordpress": 27,
-  "joomla": 11,
+  "wordpress": 29,
+  "duda": 13,
+  "joomla": 12,
+  "unknown": 9,
   "squarespace": 7,
-  "duda": 7,
   "parishsoft": 6,
-  "unknown": 6,
   "weebly": 2,
+  "google_sites": 1,
   "wix": 1
  },
  "template": {
-  "wordpress-rest+html": 15,
-  "wordpress-html": 12,
-  "generic-html:joomla": 11,
+  "wordpress-rest+html": 16,
+  "wordpress-html": 13,
+  "generic-html:duda": 13,
+  "generic-html:joomla": 12,
+  "generic-html:unknown": 9,
   "generic-html:squarespace": 7,
-  "generic-html:duda": 7,
   "generic-html:parishsoft": 6,
-  "generic-html:unknown": 6,
   "generic-html:weebly": 2,
+  "generic-html:google_sites": 1,
   "generic-html:wix": 1
  }
 }
