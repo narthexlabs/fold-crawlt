@@ -46,7 +46,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-buffalo | 201 | 201 | 110 | 21 | 3 | 67 | 0 |
 | archdiocese-of-hartford | 200 | 201 | 107 | 0 | 1 | 90 | 0 |
 | diocese-of-rockville-centre | 198 | 198 | 117 | 15 | 10 | 56 | 0 |
-| archdiocese-of-baltimore | 192 | 182 | 83 | 5 | 1 | 53 | 0 |
+| archdiocese-of-baltimore | 192 | 192 | 88 | 8 | 1 | 55 | 0 |
 | unassigned-ny | 190 | 215 | 138 | 19 | 6 | 52 | 0 |
 | archdiocese-of-seattle | 182 | 183 | 96 | 39 | 0 | 45 | 0 |
 | diocese-of-green-bay | 181 | 183 | 85 | 42 | 0 | 50 | 6 |
@@ -273,8 +273,6 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 
 ## Chunk log
 
-- 2026-11-05T23:34:57+00:00: fetched {}; parsed 0 dioceses
-- 2026-11-05T23:35:03+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-05T23:35:15+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-05T23:35:19+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-05T23:35:35+00:00: fetched {}; parsed 0 dioceses
@@ -288,3 +286,5 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-06T06:22:59+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-06T06:23:07+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-06T06:23:16+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-06T06:23:23+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
+- 2026-11-06T06:23:37+00:00: fetched {'challenge': 3, 'done': 9, 'ok': 4, 'ssl_error': 1, 'not_found': 1, 'halted_egress': 0}; parsed 1 dioceses
