@@ -50,7 +50,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | unassigned-ny | 190 | 215 | 138 | 19 | 6 | 52 | 0 |
 | archdiocese-of-seattle | 182 | 183 | 96 | 39 | 0 | 45 | 0 |
 | diocese-of-green-bay | 181 | 183 | 85 | 42 | 0 | 50 | 6 |
-| archdiocese-of-washington | 177 | 176 | 35 | 132 | 0 | 9 | 0 |
+| archdiocese-of-washington | 177 | 177 | 35 | 133 | 0 | 9 | 0 |
 | diocese-of-albany | 169 | 173 | 92 | 26 | 4 | 50 | 1 |
 | archdiocese-of-san-antonio | 167 | 168 | 75 | 27 | 2 | 34 | 9 |
 | archdiocese-of-cincinnati | 165 | 166 | 108 | 39 | 2 | 13 | 1 |
@@ -93,7 +93,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-dallas | 111 | 112 | 47 | 46 | 0 | 19 | 0 |
 | diocese-of-fort-wayne-south-bend | 111 | 111 | 59 | 23 | 0 | 29 | 0 |
 | unassigned-la | 111 | 267 | 91 | 126 | 1 | 44 | 5 |
-| archdiocese-of-omaha | 110 | 86 | 67 | 1 | 2 | 9 | 0 |
+| archdiocese-of-omaha | 110 | 111 | 80 | 4 | 3 | 14 | 3 |
 | diocese-of-youngstown | 108 | 108 | 57 | 10 | 0 | 38 | 3 |
 | diocese-of-bridgeport | 108 | 108 | 76 | 13 | 0 | 17 | 2 |
 | unassigned-wa | 108 | 143 | 80 | 33 | 1 | 29 | 0 |
@@ -103,7 +103,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-camden | 104 | 104 | 54 | 5 | 2 | 43 | 0 |
 | diocese-of-allentown | 103 | 105 | 73 | 8 | 1 | 23 | 0 |
 | unassigned-ma | 103 | 159 | 68 | 64 | 3 | 24 | 0 |
-| unassigned-ne | 102 | 222 | 161 | 20 | 0 | 41 | 0 |
+| unassigned-ne | 102 | 225 | 163 | 20 | 0 | 42 | 0 |
 | diocese-of-fall-river | 100 | 101 | 53 | 22 | 0 | 26 | 0 |
 | diocese-of-harrisburg | 100 | 101 | 66 | 31 | 0 | 4 | 0 |
 | diocese-of-norwich | 100 | 104 | 52 | 8 | 2 | 41 | 1 |
@@ -180,7 +180,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-wilmington | 59 | 63 | 41 | 17 | 1 | 4 | 0 |
 | diocese-of-san-bernardino | 59 | 34 | 5 | 3 | 1 | 25 | 0 |
 | diocese-of-fargo | 58 | 58 | 21 | 28 | 0 | 9 | 0 |
-| diocese-of-lincoln | 58 | 3 | 1 | 0 | 0 | 2 | 0 |
+| diocese-of-lincoln | 58 | 58 | 33 | 7 | 0 | 18 | 0 |
 | diocese-of-kalamazoo | 57 | 57 | 5 | 46 | 0 | 6 | 0 |
 | diocese-of-new-ulm | 57 | 59 | 24 | 8 | 0 | 27 | 0 |
 | diocese-of-knoxville | 56 | 56 | 20 | 27 | 0 | 9 | 0 |
@@ -197,7 +197,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | unassigned-vt | 50 | 60 | 18 | 31 | 1 | 10 | 0 |
 | diocese-of-covington | 49 | 49 | 30 | 5 | 0 | 14 | 0 |
 | diocese-of-sioux-falls | 49 | 49 | 25 | 15 | 3 | 6 | 0 |
-| diocese-of-grand-island | 49 | 17 | 7 | 1 | 0 | 8 | 1 |
+| diocese-of-grand-island | 49 | 49 | 29 | 3 | 0 | 12 | 5 |
 | diocese-of-san-jose | 48 | 5 | 3 | 1 | 0 | 1 | 0 |
 | diocese-of-el-paso | 47 | 48 | 33 | 1 | 0 | 10 | 4 |
 | byzantine-catholic-eparchy-of-passaic | 45 | 45 | 39 | 4 | 0 | 2 | 0 |
@@ -273,6 +273,8 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 
 ## Chunk log
 
+- 2026-11-05T23:35:15+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-05T23:35:19+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-05T23:35:35+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-05T23:35:41+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-05T23:36:19+00:00: fetched {'dns': 9, 'done': 51, 'ssl_error': 3, 'challenge': 1, 'ok': 36, 'not_found': 2, 'halted_egress': 0}; parsed 4 dioceses
@@ -285,6 +287,4 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-06T06:23:07+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-06T06:23:16+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-06T06:23:23+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
-- 2026-11-06T06:23:37+00:00: fetched {'challenge': 3, 'done': 9, 'ok': 4, 'ssl_error': 1, 'not_found': 1, 'halted_egress': 0}; parsed 1 dioceses
-- 2026-11-06T06:24:02+00:00: top-up ('confession', 'adoration', 'liturgy'): {'sites': 4, 'requests': 0}; 0 sites left
-- 2026-11-06T06:24:16+00:00: fetched {'dns': 2, 'done': 16, 'challenge': 3, 'ssl_error': 1, 'http_4xx': 1, 'ok': 9, 'halted_egress': 0}; parsed 2 dioceses
+- 2026-11-06T06:23:56+00:00: fetched {'robots_disallowed': 1, 'done': 31, 'dns': 2, 'challenge': 2, 'ssl_error': 1, 'ok': 22, 'timeout': 3, 'halted_egress': 0}; parsed 5 dioceses
