@@ -49,7 +49,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-rockville-centre | 198 | 198 | 117 | 15 | 10 | 56 | 0 |
 | unassigned-ny | 190 | 215 | 138 | 19 | 6 | 52 | 0 |
 | archdiocese-of-washington | 187 | 187 | 36 | 140 | 0 | 11 | 0 |
-| archdiocese-of-portland-in-oregon | 182 | 157 | 55 | 25 | 2 | 31 | 0 |
+| archdiocese-of-portland-in-oregon | 182 | 182 | 68 | 33 | 2 | 35 | 0 |
 | diocese-of-green-bay | 181 | 183 | 85 | 42 | 0 | 50 | 6 |
 | diocese-of-albany | 169 | 173 | 92 | 26 | 4 | 50 | 1 |
 | diocese-of-richmond | 168 | 178 | 117 | 24 | 2 | 35 | 0 |
@@ -241,7 +241,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | unassigned-id | 27 | 38 | 23 | 6 | 1 | 8 | 0 |
 | diocese-of-great-falls-billings | 26 | 26 | 20 | 5 | 0 | 1 | 0 |
 | eparchy-of-st-maron-of-brooklyn | 26 | 26 | 20 | 0 | 2 | 3 | 1 |
-| diocese-of-baker | 26 | 2 | 2 | 0 | 0 | 0 | 0 |
+| diocese-of-baker | 26 | 26 | 18 | 4 | 0 | 2 | 2 |
 | diocese-of-lake-charles | 25 | 25 | 12 | 10 | 1 | 2 | 0 |
 | unassigned-nv | 24 | 51 | 27 | 19 | 0 | 5 | 0 |
 | diocese-of-stockton | 23 | 11 | 0 | 7 | 0 | 4 | 0 |
@@ -287,4 +287,4 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-07T08:39:26+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-07T08:40:46+00:00: fetched {'challenge': 2, 'done': 8, 'ok': 6, 'halted_egress': 0}; parsed 2 dioceses
 - 2026-11-07T08:41:34+00:00: top-up ('confession', 'adoration', 'liturgy'): {'sites': 8, 'requests': 0}; 0 sites left
-- 2026-11-07T08:43:28+00:00: fetched {'challenge': 5, 'done': 20, 'ok': 14, 'parked': 1, 'halted_egress': 0}; parsed 1 dioceses
+- 2026-11-07T08:43:07+00:00: fetched {'dns': 1, 'done': 20, 'challenge': 5, 'http_5xx': 1, 'ok': 11, 'parked': 1, 'not_found': 1, 'halted_egress': 0}; parsed 2 dioceses

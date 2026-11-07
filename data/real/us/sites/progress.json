@@ -380,18 +380,20 @@
    ]
   },
   {
-   "started_at": "2026-11-07T08:43:28+00:00",
-   "ended_at": "2026-11-07T08:44:07+00:00",
-   "result": "fetched {'challenge': 5, 'done': 20, 'ok': 14, 'parked': 1, 'halted_egress': 0}; parsed 1 dioceses",
+   "started_at": "2026-11-07T08:43:07+00:00",
+   "ended_at": "2026-11-07T08:44:03+00:00",
+   "result": "fetched {'dns': 1, 'done': 20, 'challenge': 5, 'http_5xx': 1, 'ok': 11, 'parked': 1, 'not_found': 1, 'halted_egress': 0}; parsed 2 dioceses",
    "touched": [
-    "diocese-of-great-falls-billings"
+    "archdiocese-of-portland-in-oregon",
+    "diocese-of-baker"
    ]
   },
   {
-   "started_at": "2026-11-07T08:44:23+00:00",
+   "started_at": "2026-11-07T08:44:27+00:00",
    "result": "top-up ('confession', 'adoration', 'liturgy'): {'sites': 13, 'requests': 0}; 0 sites left",
    "touched": [
-    "diocese-of-great-falls-billings"
+    "archdiocese-of-portland-in-oregon",
+    "diocese-of-baker"
    ]
   }
  ],
@@ -835,20 +837,21 @@
   },
   "archdiocese-of-portland-in-oregon": {
    "sites_in_list": 182,
-   "records": 157,
-   "finished": false,
-   "ok": 55,
+   "records": 182,
+   "finished": true,
+   "ok": 68,
    "by_status": {
-    "ok": 55,
+    "ok": 68,
     "wayback": 44,
-    "challenge": 25,
-    "dns": 20,
+    "challenge": 33,
+    "dns": 21,
     "timeout": 5,
     "ssl_error": 3,
+    "parked": 3,
     "not_found": 2,
     "robots_disallowed": 1,
     "blocked_403": 1,
-    "parked": 1
+    "http_5xx": 1
    }
   },
   "diocese-of-green-bay": {
@@ -3905,11 +3908,15 @@
   },
   "diocese-of-baker": {
    "sites_in_list": 26,
-   "records": 2,
-   "finished": false,
-   "ok": 2,
+   "records": 26,
+   "finished": true,
+   "ok": 18,
    "by_status": {
-    "ok": 2
+    "ok": 18,
+    "challenge": 4,
+    "social_only": 2,
+    "dns": 1,
+    "not_found": 1
    }
   },
   "diocese-of-lake-charles": {
@@ -4211,9 +4218,9 @@
  },
  "totals": {
   "sites_in_list": 22141,
-  "records": 24464,
-  "ok": 12785
+  "records": 24493,
+  "ok": 12800
  },
  "us_parish_pages_discovermass": 20147,
- "updated_at": "2026-11-07T08:44:25+00:00"
+ "updated_at": "2026-11-07T08:44:29+00:00"
 }
