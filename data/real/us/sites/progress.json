@@ -1,6 +1,39 @@
 {
  "chunks": [
   {
+   "started_at": "2026-11-05T23:33:03+00:00",
+   "ended_at": "2026-11-05T23:33:06+00:00",
+   "result": "fetched {}; parsed 0 dioceses",
+   "touched": []
+  },
+  {
+   "started_at": "2026-11-05T23:33:10+00:00",
+   "result": "top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left",
+   "touched": []
+  },
+  {
+   "started_at": "2026-11-05T23:33:20+00:00",
+   "ended_at": "2026-11-05T23:33:22+00:00",
+   "result": "fetched {}; parsed 0 dioceses",
+   "touched": []
+  },
+  {
+   "started_at": "2026-11-05T23:33:25+00:00",
+   "result": "top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left",
+   "touched": []
+  },
+  {
+   "started_at": "2026-11-05T23:33:44+00:00",
+   "ended_at": "2026-11-05T23:33:46+00:00",
+   "result": "fetched {}; parsed 0 dioceses",
+   "touched": []
+  },
+  {
+   "started_at": "2026-11-05T23:33:49+00:00",
+   "result": "top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left",
+   "touched": []
+  },
+  {
    "started_at": "2026-11-05T23:34:02+00:00",
    "ended_at": "2026-11-05T23:34:05+00:00",
    "result": "fetched {}; parsed 0 dioceses",
@@ -330,55 +363,20 @@
    "touched": []
   },
   {
-   "started_at": "2026-11-07T01:47:44+00:00",
-   "ended_at": "2026-11-07T01:49:20+00:00",
-   "result": "fetched {'challenge': 48, 'done': 58, 'ok': 9, 'not_found': 1, 'halted_egress': 0}; parsed 3 dioceses",
+   "started_at": "2026-11-07T01:48:01+00:00",
+   "ended_at": "2026-11-07T01:50:52+00:00",
+   "result": "fetched {'dns': 5, 'done': 41, 'challenge': 15, 'not_found': 2, 'ssl_error': 2, 'ok': 16, 'timeout': 2, 'cut': 1, 'halted_egress': 0}; parsed 2 dioceses",
    "touched": [
-    "diocese-of-fargo",
-    "diocese-of-bismarck",
-    "unassigned-nd"
+    "archdiocese-of-santa-fe",
+    "diocese-of-las-cruces"
    ]
   },
   {
-   "started_at": "2026-11-07T01:49:37+00:00",
-   "result": "top-up ('confession', 'adoration', 'liturgy'): {'sites': 9, 'requests': 0}; 0 sites left",
+   "started_at": "2026-11-07T01:51:13+00:00",
+   "result": "top-up ('confession', 'adoration', 'liturgy'): {'sites': 15, 'requests': 0}; 0 sites left",
    "touched": [
-    "diocese-of-bismarck",
-    "diocese-of-fargo"
+    "archdiocese-of-santa-fe"
    ]
-  },
-  {
-   "started_at": "2026-11-07T01:50:02+00:00",
-   "ended_at": "2026-11-07T01:50:06+00:00",
-   "result": "fetched {}; parsed 0 dioceses",
-   "touched": []
-  },
-  {
-   "started_at": "2026-11-07T01:50:11+00:00",
-   "result": "top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left",
-   "touched": []
-  },
-  {
-   "started_at": "2026-11-07T01:50:22+00:00",
-   "ended_at": "2026-11-07T01:50:26+00:00",
-   "result": "fetched {}; parsed 0 dioceses",
-   "touched": []
-  },
-  {
-   "started_at": "2026-11-07T01:50:32+00:00",
-   "result": "top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left",
-   "touched": []
-  },
-  {
-   "started_at": "2026-11-07T01:50:43+00:00",
-   "ended_at": "2026-11-07T01:50:47+00:00",
-   "result": "fetched {}; parsed 0 dioceses",
-   "touched": []
-  },
-  {
-   "started_at": "2026-11-07T01:50:52+00:00",
-   "result": "top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left",
-   "touched": []
   }
  ],
  "dioceses": {
@@ -1474,18 +1472,18 @@
   },
   "archdiocese-of-santa-fe": {
    "sites_in_list": 118,
-   "records": 84,
-   "finished": false,
-   "ok": 39,
+   "records": 121,
+   "finished": true,
+   "ok": 54,
    "by_status": {
-    "ok": 39,
-    "challenge": 18,
+    "ok": 54,
+    "challenge": 32,
     "unreachable_via_proxy": 8,
+    "dns": 7,
+    "ssl_error": 5,
+    "social_only": 5,
     "conn_error": 4,
-    "ssl_error": 4,
-    "dns": 4,
-    "social_only": 3,
-    "not_found": 2,
+    "not_found": 4,
     "wayback": 1,
     "blocked_403": 1
    }
@@ -2038,17 +2036,17 @@
   },
   "diocese-of-las-cruces": {
    "sites_in_list": 93,
-   "records": 87,
-   "finished": false,
+   "records": 93,
+   "finished": true,
    "ok": 20,
    "by_status": {
-    "timeout": 52,
+    "timeout": 54,
     "ok": 20,
-    "dns": 6,
-    "challenge": 4,
+    "dns": 8,
+    "challenge": 5,
     "social_only": 2,
     "unreachable_via_proxy": 2,
-    "ssl_error": 1
+    "ssl_error": 2
    }
   },
   "diocese-of-madison": {
@@ -4193,9 +4191,9 @@
  },
  "totals": {
   "sites_in_list": 22073,
-  "records": 24339,
-  "ok": 12719
+  "records": 24324,
+  "ok": 12725
  },
  "us_parish_pages_discovermass": 20147,
- "updated_at": "2026-11-07T01:50:54+00:00"
+ "updated_at": "2026-11-07T01:51:14+00:00"
 }
