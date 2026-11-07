@@ -61,7 +61,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | unassigned-wi | 153 | 268 | 165 | 47 | 6 | 50 | 0 |
 | diocese-of-la-crosse | 152 | 154 | 97 | 25 | 4 | 26 | 2 |
 | archdiocese-of-new-orleans | 149 | 149 | 27 | 19 | 0 | 22 | 0 |
-| diocese-of-raleigh | 147 | 138 | 68 | 28 | 1 | 41 | 0 |
+| diocese-of-raleigh | 147 | 150 | 74 | 30 | 1 | 45 | 0 |
 | diocese-of-trenton | 147 | 147 | 61 | 30 | 3 | 53 | 0 |
 | diocese-of-austin | 145 | 146 | 31 | 86 | 0 | 28 | 1 |
 | diocese-of-rochester | 143 | 143 | 70 | 22 | 2 | 49 | 0 |
@@ -77,7 +77,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | archdiocese-of-los-angeles | 130 | 41 | 23 | 2 | 5 | 5 | 0 |
 | diocese-of-columbus | 130 | 130 | 55 | 33 | 2 | 40 | 0 |
 | archdiocese-of-dubuque | 129 | 129 | 33 | 24 | 0 | 47 | 1 |
-| diocese-of-charlotte | 129 | 118 | 62 | 16 | 0 | 40 | 0 |
+| diocese-of-charlotte | 129 | 129 | 69 | 20 | 0 | 40 | 0 |
 | diocese-of-scranton | 128 | 132 | 86 | 13 | 1 | 32 | 0 |
 | archdiocese-of-kansas-city-in-kansas | 125 | 126 | 57 | 20 | 4 | 27 | 3 |
 | diocese-of-orlando | 122 | 123 | 88 | 6 | 0 | 28 | 1 |
@@ -287,4 +287,4 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-07T16:19:13+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-07T16:19:25+00:00: fetched {'challenge': 1, 'done': 1, 'halted_egress': 0}; parsed 1 dioceses
 - 2026-11-07T16:19:36+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
-- 2026-11-07T16:19:44+00:00: fetched {'dns': 4, 'done': 24, 'ssl_error': 2, 'challenge': 3, 'ok': 14, 'http_5xx': 1, 'halted_egress': 0}; parsed 2 dioceses
+- 2026-11-07T16:20:02+00:00: fetched {'http_4xx': 1, 'done': 23, 'dns': 2, 'http_5xx': 1, 'challenge': 6, 'ok': 13, 'halted_egress': 0}; parsed 2 dioceses
