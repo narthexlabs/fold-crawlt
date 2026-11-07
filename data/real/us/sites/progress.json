@@ -1,39 +1,6 @@
 {
  "chunks": [
   {
-   "started_at": "2026-11-06T21:27:32+00:00",
-   "ended_at": "2026-11-06T21:27:34+00:00",
-   "result": "fetched {}; parsed 0 dioceses",
-   "touched": []
-  },
-  {
-   "started_at": "2026-11-06T21:27:38+00:00",
-   "result": "top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left",
-   "touched": []
-  },
-  {
-   "started_at": "2026-11-06T21:28:35+00:00",
-   "ended_at": "2026-11-06T21:31:19+00:00",
-   "result": "fetched {'dns': 6, 'done': 48, 'challenge': 9, 'conn_error': 1, 'ssl_error': 7, 'not_found': 1, 'ok': 24, 'halted_egress': 0}; parsed 5 dioceses",
-   "touched": [
-    "archdiocese-of-louisville",
-    "diocese-of-owensboro",
-    "unassigned-ky",
-    "diocese-of-covington",
-    "diocese-of-lexington"
-   ]
-  },
-  {
-   "started_at": "2026-11-06T21:31:44+00:00",
-   "result": "top-up ('confession', 'adoration', 'liturgy'): {'sites': 24, 'requests': 0}; 0 sites left",
-   "touched": [
-    "archdiocese-of-louisville",
-    "diocese-of-lexington",
-    "diocese-of-owensboro",
-    "unassigned-ky"
-   ]
-  },
-  {
    "started_at": "2026-11-07T01:46:43+00:00",
    "ended_at": "2026-11-07T01:46:46+00:00",
    "result": "fetched {}; parsed 0 dioceses",
@@ -382,11 +349,37 @@
    ]
   },
   {
-   "started_at": "2026-11-07T21:46:33+00:00",
-   "result": "top-up ('confession', 'adoration', 'liturgy'): {'sites': 17, 'requests': 0}; 0 sites left",
+   "started_at": "2026-11-07T21:44:19+00:00",
+   "result": "top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left",
+   "touched": []
+  },
+  {
+   "started_at": "2026-11-07T21:44:32+00:00",
+   "ended_at": "2026-11-07T21:44:34+00:00",
+   "result": "fetched {}; parsed 0 dioceses",
+   "touched": []
+  },
+  {
+   "started_at": "2026-11-07T21:44:37+00:00",
+   "result": "top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left",
+   "touched": []
+  },
+  {
+   "started_at": "2026-11-07T21:44:52+00:00",
+   "ended_at": "2026-11-07T21:46:02+00:00",
+   "result": "fetched {'challenge': 33, 'done': 66, 'not_found': 3, 'ssl_error': 1, 'ok': 28, 'timeout': 1, 'halted_egress': 0}; parsed 3 dioceses",
    "touched": [
-    "archdiocese-of-atlanta",
-    "diocese-of-savannah"
+    "archdiocese-of-mobile",
+    "diocese-of-birmingham",
+    "unassigned-al"
+   ]
+  },
+  {
+   "started_at": "2026-11-07T21:46:41+00:00",
+   "result": "top-up ('confession', 'adoration', 'liturgy'): {'sites': 28, 'requests': 0}; 0 sites left",
+   "touched": [
+    "archdiocese-of-mobile",
+    "diocese-of-birmingham"
    ]
   }
  ],
@@ -2269,16 +2262,18 @@
   },
   "archdiocese-of-mobile": {
    "sites_in_list": 85,
-   "records": 39,
-   "finished": false,
-   "ok": 12,
+   "records": 87,
+   "finished": true,
+   "ok": 24,
    "by_status": {
-    "ok": 12,
+    "challenge": 37,
+    "ok": 24,
     "wayback": 8,
     "dns": 7,
-    "challenge": 5,
-    "ssl_error": 5,
-    "timeout": 2
+    "ssl_error": 6,
+    "social_only": 2,
+    "timeout": 2,
+    "not_found": 1
    }
   },
   "unassigned-co": {
@@ -2417,15 +2412,17 @@
   },
   "diocese-of-birmingham": {
    "sites_in_list": 78,
-   "records": 54,
-   "finished": false,
-   "ok": 34,
+   "records": 78,
+   "finished": true,
+   "ok": 50,
    "by_status": {
-    "ok": 34,
+    "ok": 50,
     "unreachable_via_proxy": 7,
     "dns": 6,
-    "challenge": 5,
-    "timeout": 1,
+    "challenge": 6,
+    "social_only": 4,
+    "not_found": 2,
+    "timeout": 2,
     "conn_error": 1
    }
   },
@@ -3851,7 +3848,7 @@
   },
   "unassigned-al": {
    "sites_in_list": 29,
-   "records": 96,
+   "records": 97,
    "finished": true,
    "ok": 37,
    "by_status": {
@@ -3863,7 +3860,8 @@
     "ssl_error": 2,
     "not_found": 1,
     "conn_error": 1,
-    "blocked_403": 1
+    "blocked_403": 1,
+    "social_only": 1
    }
   },
   "unassigned-de": {
@@ -4221,9 +4219,9 @@
  },
  "totals": {
   "sites_in_list": 22276,
-  "records": 24737,
-  "ok": 12959
+  "records": 24786,
+  "ok": 12970
  },
  "us_parish_pages_discovermass": 20147,
- "updated_at": "2026-11-07T21:46:35+00:00"
+ "updated_at": "2026-11-07T21:46:44+00:00"
 }
