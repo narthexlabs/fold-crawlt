@@ -1,39 +1,6 @@
 {
  "chunks": [
   {
-   "started_at": "2026-11-06T15:52:44+00:00",
-   "ended_at": "2026-11-06T15:52:47+00:00",
-   "result": "fetched {}; parsed 0 dioceses",
-   "touched": []
-  },
-  {
-   "started_at": "2026-11-06T15:52:51+00:00",
-   "result": "top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left",
-   "touched": []
-  },
-  {
-   "started_at": "2026-11-06T15:53:03+00:00",
-   "ended_at": "2026-11-06T15:53:06+00:00",
-   "result": "fetched {}; parsed 0 dioceses",
-   "touched": []
-  },
-  {
-   "started_at": "2026-11-06T15:53:11+00:00",
-   "result": "top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left",
-   "touched": []
-  },
-  {
-   "started_at": "2026-11-06T15:53:23+00:00",
-   "ended_at": "2026-11-06T15:53:26+00:00",
-   "result": "fetched {}; parsed 0 dioceses",
-   "touched": []
-  },
-  {
-   "started_at": "2026-11-06T15:53:32+00:00",
-   "result": "top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left",
-   "touched": []
-  },
-  {
    "started_at": "2026-11-06T15:53:44+00:00",
    "ended_at": "2026-11-06T15:53:46+00:00",
    "result": "fetched {}; parsed 0 dioceses",
@@ -378,11 +345,47 @@
    ]
   },
   {
-   "started_at": "2026-11-07T16:23:04+00:00",
-   "result": "top-up ('confession', 'adoration', 'liturgy'): {'sites': 14, 'requests': 2}; 0 sites left",
+   "started_at": "2026-11-07T16:20:33+00:00",
+   "result": "top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left",
+   "touched": []
+  },
+  {
+   "started_at": "2026-11-07T16:20:43+00:00",
+   "ended_at": "2026-11-07T16:20:45+00:00",
+   "result": "fetched {}; parsed 0 dioceses",
+   "touched": []
+  },
+  {
+   "started_at": "2026-11-07T16:20:49+00:00",
+   "result": "top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left",
+   "touched": []
+  },
+  {
+   "started_at": "2026-11-07T16:21:06+00:00",
+   "ended_at": "2026-11-07T16:21:09+00:00",
+   "result": "fetched {}; parsed 0 dioceses",
+   "touched": []
+  },
+  {
+   "started_at": "2026-11-07T16:21:13+00:00",
+   "result": "top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left",
+   "touched": []
+  },
+  {
+   "started_at": "2026-11-07T16:21:24+00:00",
+   "ended_at": "2026-11-07T16:22:46+00:00",
+   "result": "fetched {'dns': 1, 'done': 36, 'challenge': 9, 'blocked_403': 1, 'ssl_error': 2, 'ok': 23, 'halted_egress': 0}; parsed 2 dioceses",
    "touched": [
-    "diocese-of-charlotte",
-    "diocese-of-raleigh"
+    "diocese-of-helena",
+    "diocese-of-great-falls-billings"
+   ]
+  },
+  {
+   "started_at": "2026-11-07T16:23:18+00:00",
+   "result": "top-up ('confession', 'adoration', 'liturgy'): {'sites': 23, 'requests': 0}; 0 sites left",
+   "touched": [
+    "diocese-of-great-falls-billings",
+    "diocese-of-helena"
    ]
   }
  ],
@@ -3308,13 +3311,15 @@
   },
   "diocese-of-helena": {
    "sites_in_list": 47,
-   "records": 19,
-   "finished": false,
-   "ok": 14,
+   "records": 47,
+   "finished": true,
+   "ok": 30,
    "by_status": {
-    "ok": 14,
-    "challenge": 4,
-    "ssl_error": 1
+    "ok": 30,
+    "challenge": 13,
+    "ssl_error": 2,
+    "social_only": 1,
+    "dns": 1
    }
   },
   "diocese-of-el-paso": {
@@ -3622,13 +3627,15 @@
   },
   "diocese-of-great-falls-billings": {
    "sites_in_list": 35,
-   "records": 26,
-   "finished": false,
-   "ok": 20,
+   "records": 35,
+   "finished": true,
+   "ok": 27,
    "by_status": {
-    "ok": 20,
+    "ok": 27,
     "challenge": 5,
-    "parked": 1
+    "blocked_403": 1,
+    "parked": 1,
+    "ssl_error": 1
    }
   },
   "archdiocese-of-anchorage-juneau": {
@@ -4212,9 +4219,9 @@
  },
  "totals": {
   "sites_in_list": 22206,
-  "records": 24638,
-  "ok": 12896
+  "records": 24652,
+  "ok": 12906
  },
  "us_parish_pages_discovermass": 20147,
- "updated_at": "2026-11-07T16:23:06+00:00"
+ "updated_at": "2026-11-07T16:23:20+00:00"
 }

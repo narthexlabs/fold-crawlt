@@ -199,7 +199,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | unassigned-vt | 50 | 60 | 18 | 31 | 1 | 10 | 0 |
 | diocese-of-grand-island | 49 | 49 | 29 | 3 | 0 | 12 | 5 |
 | diocese-of-san-jose | 48 | 5 | 3 | 1 | 0 | 1 | 0 |
-| diocese-of-helena | 47 | 19 | 14 | 4 | 0 | 1 | 0 |
+| diocese-of-helena | 47 | 47 | 30 | 13 | 0 | 3 | 1 |
 | diocese-of-el-paso | 47 | 48 | 33 | 1 | 0 | 10 | 4 |
 | byzantine-catholic-eparchy-of-passaic | 45 | 45 | 39 | 4 | 0 | 2 | 0 |
 | unassigned-or | 45 | 152 | 45 | 88 | 1 | 18 | 0 |
@@ -220,8 +220,8 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | unassigned-nd | 38 | 100 | 48 | 47 | 1 | 4 | 0 |
 | diocese-of-laredo | 37 | 37 | 7 | 4 | 0 | 26 | 0 |
 | archdiocese-of-mobile | 37 | 39 | 12 | 5 | 0 | 14 | 0 |
-| diocese-of-rapid-city | 36 | 40 | 29 | 2 | 0 | 8 | 1 |
-| diocese-of-great-falls-billings | 35 | 26 | 20 | 5 | 0 | 1 | 0 |
+| diocese-of-rapid-city | 36 | 23 | 15 | 2 | 0 | 6 | 0 |
+| diocese-of-great-falls-billings | 35 | 35 | 27 | 5 | 1 | 2 | 0 |
 | archdiocese-of-anchorage-juneau | 34 | 34 | 17 | 3 | 1 | 6 | 0 |
 | diocese-of-salt-lake-city | 34 | 40 | 28 | 2 | 0 | 10 | 0 |
 | diocese-of-lexington | 34 | 35 | 17 | 11 | 0 | 6 | 1 |
@@ -273,12 +273,6 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 
 ## Chunk log
 
-- 2026-11-07T16:17:05+00:00: fetched {}; parsed 0 dioceses
-- 2026-11-07T16:17:10+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
-- 2026-11-07T16:17:35+00:00: fetched {}; parsed 0 dioceses
-- 2026-11-07T16:17:40+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
-- 2026-11-07T16:18:07+00:00: fetched {}; parsed 0 dioceses
-- 2026-11-07T16:18:15+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-07T16:18:29+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-07T16:18:37+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-07T16:18:43+00:00: fetched {}; parsed 0 dioceses
@@ -287,4 +281,10 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-07T16:19:13+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-07T16:19:25+00:00: fetched {'challenge': 1, 'done': 1, 'halted_egress': 0}; parsed 1 dioceses
 - 2026-11-07T16:19:36+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
-- 2026-11-07T16:20:02+00:00: fetched {'http_4xx': 1, 'done': 23, 'dns': 2, 'http_5xx': 1, 'challenge': 6, 'ok': 13, 'halted_egress': 0}; parsed 2 dioceses
+- 2026-11-07T16:20:24+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-07T16:20:33+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
+- 2026-11-07T16:20:43+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-07T16:20:49+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
+- 2026-11-07T16:21:06+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-07T16:21:13+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
+- 2026-11-07T16:21:24+00:00: fetched {'dns': 1, 'done': 36, 'challenge': 9, 'blocked_403': 1, 'ssl_error': 2, 'ok': 23, 'halted_egress': 0}; parsed 2 dioceses
