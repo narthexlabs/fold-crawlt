@@ -1,6 +1,39 @@
 {
  "chunks": [
   {
+   "started_at": "2026-11-05T23:34:57+00:00",
+   "ended_at": "2026-11-05T23:34:59+00:00",
+   "result": "fetched {}; parsed 0 dioceses",
+   "touched": []
+  },
+  {
+   "started_at": "2026-11-05T23:35:03+00:00",
+   "result": "top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left",
+   "touched": []
+  },
+  {
+   "started_at": "2026-11-05T23:35:15+00:00",
+   "ended_at": "2026-11-05T23:35:16+00:00",
+   "result": "fetched {}; parsed 0 dioceses",
+   "touched": []
+  },
+  {
+   "started_at": "2026-11-05T23:35:19+00:00",
+   "result": "top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left",
+   "touched": []
+  },
+  {
+   "started_at": "2026-11-05T23:35:35+00:00",
+   "ended_at": "2026-11-05T23:35:37+00:00",
+   "result": "fetched {}; parsed 0 dioceses",
+   "touched": []
+  },
+  {
+   "started_at": "2026-11-05T23:35:41+00:00",
+   "result": "top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left",
+   "touched": []
+  },
+  {
    "started_at": "2026-11-05T23:36:19+00:00",
    "ended_at": "2026-11-05T23:40:11+00:00",
    "result": "fetched {'dns': 9, 'done': 51, 'ssl_error': 3, 'challenge': 1, 'ok': 36, 'not_found': 2, 'halted_egress': 0}; parsed 4 dioceses",
@@ -341,54 +374,21 @@
    "touched": []
   },
   {
-   "started_at": "2026-11-07T08:40:22+00:00",
-   "ended_at": "2026-11-07T08:40:50+00:00",
-   "result": "fetched {'dns': 1, 'done': 15, 'blocked_403': 1, 'ok': 2, 'challenge': 11, 'halted_egress': 0}; parsed 2 dioceses",
+   "started_at": "2026-11-07T08:40:46+00:00",
+   "ended_at": "2026-11-07T08:41:24+00:00",
+   "result": "fetched {'challenge': 2, 'done': 8, 'ok': 6, 'halted_egress': 0}; parsed 2 dioceses",
    "touched": [
-    "diocese-of-fargo",
-    "diocese-of-bismarck"
+    "archdiocese-of-santa-fe",
+    "diocese-of-gallup"
    ]
   },
   {
-   "started_at": "2026-11-07T08:40:58+00:00",
-   "result": "top-up ('confession', 'adoration', 'liturgy'): {'sites': 2, 'requests': 0}; 0 sites left",
+   "started_at": "2026-11-07T08:41:34+00:00",
+   "result": "top-up ('confession', 'adoration', 'liturgy'): {'sites': 8, 'requests': 0}; 0 sites left",
    "touched": [
-    "diocese-of-bismarck",
-    "diocese-of-fargo"
+    "archdiocese-of-santa-fe",
+    "diocese-of-gallup"
    ]
-  },
-  {
-   "started_at": "2026-11-07T08:41:07+00:00",
-   "ended_at": "2026-11-07T08:41:11+00:00",
-   "result": "fetched {}; parsed 0 dioceses",
-   "touched": []
-  },
-  {
-   "started_at": "2026-11-07T08:41:16+00:00",
-   "result": "top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left",
-   "touched": []
-  },
-  {
-   "started_at": "2026-11-07T08:41:28+00:00",
-   "ended_at": "2026-11-07T08:41:30+00:00",
-   "result": "fetched {}; parsed 0 dioceses",
-   "touched": []
-  },
-  {
-   "started_at": "2026-11-07T08:41:33+00:00",
-   "result": "top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left",
-   "touched": []
-  },
-  {
-   "started_at": "2026-11-07T08:41:57+00:00",
-   "ended_at": "2026-11-07T08:42:00+00:00",
-   "result": "fetched {}; parsed 0 dioceses",
-   "touched": []
-  },
-  {
-   "started_at": "2026-11-07T08:42:04+00:00",
-   "result": "top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left",
-   "touched": []
   }
  ],
  "dioceses": {
@@ -1484,11 +1484,11 @@
   },
   "archdiocese-of-santa-fe": {
    "sites_in_list": 118,
-   "records": 121,
+   "records": 122,
    "finished": true,
-   "ok": 54,
+   "ok": 55,
    "by_status": {
-    "ok": 54,
+    "ok": 55,
     "challenge": 32,
     "unreachable_via_proxy": 8,
     "dns": 7,
@@ -4039,11 +4039,12 @@
   },
   "diocese-of-gallup": {
    "sites_in_list": 18,
-   "records": 10,
-   "finished": false,
-   "ok": 9,
+   "records": 18,
+   "finished": true,
+   "ok": 15,
    "by_status": {
-    "ok": 9,
+    "ok": 15,
+    "challenge": 2,
     "dns": 1
    }
   },
@@ -4204,9 +4205,9 @@
  },
  "totals": {
   "sites_in_list": 22141,
-  "records": 24435,
-  "ok": 12764
+  "records": 24428,
+  "ok": 12769
  },
  "us_parish_pages_discovermass": 20147,
- "updated_at": "2026-11-07T08:42:06+00:00"
+ "updated_at": "2026-11-07T08:41:36+00:00"
 }
