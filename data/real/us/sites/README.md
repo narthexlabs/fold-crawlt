@@ -287,4 +287,4 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-07T08:41:16+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-07T08:41:28+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-07T08:41:33+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
-- 2026-11-07T08:41:51+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-07T08:41:57+00:00: fetched {}; parsed 0 dioceses
