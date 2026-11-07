@@ -240,7 +240,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | unassigned-al | 29 | 96 | 37 | 41 | 1 | 17 | 0 |
 | unassigned-de | 28 | 41 | 30 | 7 | 1 | 3 | 0 |
 | unassigned-wy | 28 | 33 | 17 | 12 | 0 | 4 | 0 |
-| eparchy-of-st-maron-of-brooklyn | 27 | 27 | 21 | 0 | 2 | 3 | 1 |
+| eparchy-of-st-maron-of-brooklyn | 27 | 26 | 20 | 0 | 2 | 3 | 1 |
 | unassigned-id | 27 | 38 | 23 | 6 | 1 | 8 | 0 |
 | diocese-of-baker | 26 | 26 | 18 | 4 | 0 | 2 | 2 |
 | diocese-of-lake-charles | 25 | 25 | 12 | 10 | 1 | 2 | 0 |
@@ -287,4 +287,4 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-07T16:21:13+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-07T16:21:24+00:00: fetched {'dns': 1, 'done': 36, 'challenge': 9, 'blocked_403': 1, 'ssl_error': 2, 'ok': 23, 'halted_egress': 0}; parsed 2 dioceses
 - 2026-11-07T16:23:18+00:00: top-up ('confession', 'adoration', 'liturgy'): {'sites': 23, 'requests': 0}; 0 sites left
-- 2026-11-07T21:42:51+00:00: fetched {'ok': 1, 'done': 1, 'halted_egress': 0}; parsed 1 dioceses
+- 2026-11-07T21:43:04+00:00: fetched {}; parsed 0 dioceses
