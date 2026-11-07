@@ -1,0 +1,185 @@
+{
+ "domain": "stmargaretcatholiccommunity.org",
+ "diocese": "diocese-of-helena",
+ "matched_church_ids": [
+  "holy-cross-valier-mt",
+  "osm-way-897237708",
+  "st-francis-valier-mt"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "st-francis-valier-mt",
+   "holy-cross-valier-mt",
+   "osm-way-897237708"
+  ]
+ },
+ "names": [
+  "St. Francis",
+  "Holy Cross",
+  "Saint Margaret Catholic Church"
+ ],
+ "cities": [
+  "Valier",
+  "Dupuyer",
+  "Cut Bank"
+ ],
+ "home_url": "https://www.stmargaretcatholiccommunity.org/",
+ "final_url": "https://www.stmargaretcatholiccommunity.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "not_found",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://www.stmargaretcatholiccommunity.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.stmargaretcatholiccommunity.org/home",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.stmargaretcatholiccommunity.org/mass-times",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://www.stmargaretcatholiccommunity.org/bulletins",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://www.stmargaretcatholiccommunity.org/contact-us",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://www.stmargaretcatholiccommunity.org/ministries",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.stmargaretcatholiccommunity.org/reconciliation",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stmargaretcatholiccommunity.org/adoration",
+   "status": 404,
+   "class": "not_found"
+  }
+ ],
+ "cms_guess": {
+  "cms": "google_sites",
+  "evidence": [
+   "sites.google.com"
+  ]
+ },
+ "template": "generic-html:google_sites",
+ "groups": [],
+ "calendar_feeds": [],
+ "events": [],
+ "social": {},
+ "bulletin": {
+  "url": "https://www.stmargaretcatholiccommunity.org/bulletins",
+  "date": null,
+  "kind": "page",
+  "text": "Bulletins",
+  "source_url": "https://www.stmargaretcatholiccommunity.org/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "12:30",
+   "language": null,
+   "raw": "Sunday: 12:30 p.m",
+   "source_url": "https://www.stmargaretcatholiccommunity.org/mass-times",
+   "fetched_at": "2026-11-07T16:21:31+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  },
+  {
+   "kind": "mass",
+   "day": "Tuesday",
+   "time": "17:30",
+   "language": null,
+   "raw": "Tuesday: 5:30 p.m.",
+   "source_url": "https://www.stmargaretcatholiccommunity.org/mass-times",
+   "fetched_at": "2026-11-07T16:21:31+00:00",
+   "needs_review": false,
+   "review_reason": "schedule_box"
+  }
+ ],
+ "source_url": "https://www.stmargaretcatholiccommunity.org/",
+ "fetched_at": "2026-11-07T16:21:41+00:00",
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/3",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": true,
+  "trusted_candidate": false,
+  "trusted_kinds": [],
+  "generic_rows": 2
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "After mass or by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://www.stmargaretcatholiccommunity.org/mass-times",
+   "fetched_at": "2026-11-07T16:21:31+00:00"
+  }
+ ],
+ "has_sunday": true,
+ "schedule_dropped": {
+  "skipped_section": 2,
+  "box_rows_added": 2
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-07",
+  "window_end_exclusive": "2027-02-05",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(406) 873-4413",
+  "address": "P.O. Box 207, Cut Bank, MT 59427",
+  "source_url": "https://www.stmargaretcatholiccommunity.org/contact-us",
+  "sources": {
+   "phone": "https://www.stmargaretcatholiccommunity.org/contact-us",
+   "address": "https://www.stmargaretcatholiccommunity.org/contact-us"
+  },
+  "fetched_at": "2026-11-07T16:21:35+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}
