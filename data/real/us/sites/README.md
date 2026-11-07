@@ -51,7 +51,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | archdiocese-of-washington | 187 | 187 | 36 | 140 | 0 | 11 | 0 |
 | diocese-of-green-bay | 181 | 183 | 85 | 42 | 0 | 50 | 6 |
 | diocese-of-albany | 169 | 173 | 92 | 26 | 4 | 50 | 1 |
-| diocese-of-richmond | 168 | 162 | 103 | 24 | 2 | 33 | 0 |
+| diocese-of-richmond | 168 | 178 | 117 | 24 | 2 | 35 | 0 |
 | archdiocese-of-san-antonio | 167 | 168 | 75 | 27 | 2 | 34 | 9 |
 | unassigned-nm | 165 | 264 | 164 | 50 | 4 | 46 | 0 |
 | archdiocese-of-cincinnati | 165 | 166 | 108 | 39 | 2 | 13 | 1 |
@@ -111,7 +111,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-rockford | 99 | 99 | 45 | 33 | 1 | 20 | 0 |
 | diocese-of-belleville | 98 | 98 | 60 | 8 | 0 | 30 | 0 |
 | diocese-of-burlington | 98 | 101 | 13 | 59 | 1 | 28 | 0 |
-| diocese-of-arlington | 97 | 80 | 54 | 11 | 1 | 14 | 0 |
+| diocese-of-arlington | 97 | 97 | 66 | 14 | 1 | 16 | 0 |
 | archdiocese-of-indianapolis | 97 | 97 | 46 | 26 | 0 | 23 | 1 |
 | diocese-of-charleston | 95 | 96 | 69 | 10 | 1 | 16 | 0 |
 | diocese-of-fort-worth | 95 | 96 | 34 | 46 | 0 | 16 | 0 |
@@ -207,7 +207,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-steubenville | 43 | 44 | 23 | 10 | 1 | 8 | 2 |
 | unassigned-nh | 43 | 99 | 56 | 33 | 0 | 10 | 0 |
 | diocese-of-springfield-massachusetts | 42 | 42 | 19 | 3 | 0 | 20 | 0 |
-| unassigned-va | 42 | 94 | 67 | 10 | 1 | 16 | 0 |
+| unassigned-va | 42 | 97 | 68 | 11 | 1 | 17 | 0 |
 | unassigned-ut | 41 | 47 | 35 | 2 | 0 | 10 | 0 |
 | diocese-of-salina | 40 | 40 | 35 | 3 | 2 | 0 | 0 |
 | diocese-of-nashville | 40 | 40 | 13 | 11 | 0 | 16 | 0 |
@@ -273,18 +273,18 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 
 ## Chunk log
 
-- 2026-11-06T15:54:41+00:00: fetched {'challenge': 1, 'done': 10, 'not_found': 1, 'ok': 7, 'timeout': 1, 'halted_egress': 0}; parsed 2 dioceses
-- 2026-11-06T15:56:53+00:00: top-up ('confession', 'adoration', 'liturgy'): {'sites': 7, 'requests': 0}; 0 sites left
-- 2026-11-06T21:26:26+00:00: fetched {}; parsed 0 dioceses
-- 2026-11-06T21:26:33+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
-- 2026-11-06T21:27:32+00:00: fetched {}; parsed 0 dioceses
-- 2026-11-06T21:27:38+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
-- 2026-11-06T21:28:35+00:00: fetched {'dns': 6, 'done': 48, 'challenge': 9, 'conn_error': 1, 'ssl_error': 7, 'not_found': 1, 'ok': 24, 'halted_egress': 0}; parsed 5 dioceses
-- 2026-11-06T21:31:44+00:00: top-up ('confession', 'adoration', 'liturgy'): {'sites': 24, 'requests': 0}; 0 sites left
 - 2026-11-07T01:46:43+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-07T01:46:51+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-07T01:47:01+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-07T01:47:08+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-07T01:47:21+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-07T01:47:26+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
-- 2026-11-07T01:48:01+00:00: fetched {'dns': 5, 'done': 41, 'challenge': 15, 'not_found': 2, 'ssl_error': 2, 'ok': 16, 'timeout': 2, 'cut': 1, 'halted_egress': 0}; parsed 2 dioceses
+- 2026-11-07T01:48:22+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-07T01:48:30+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
+- 2026-11-07T01:48:42+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-07T01:48:50+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
+- 2026-11-07T01:49:01+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-07T01:49:10+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
+- 2026-11-07T01:49:22+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-07T01:49:28+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
+- 2026-11-07T01:49:43+00:00: fetched {'challenge': 1, 'done': 23, 'ssl_error': 1, 'ok': 20, 'timeout': 2, 'cut': 1, 'halted_egress': 0}; parsed 3 dioceses
