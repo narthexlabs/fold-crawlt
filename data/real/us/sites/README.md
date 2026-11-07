@@ -226,7 +226,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-salt-lake-city | 34 | 40 | 28 | 2 | 0 | 10 | 0 |
 | diocese-of-lexington | 34 | 35 | 17 | 11 | 0 | 6 | 1 |
 | diocese-of-yakima | 34 | 34 | 13 | 12 | 0 | 9 | 0 |
-| diocese-of-tulsa | 34 | 29 | 15 | 2 | 0 | 12 | 0 |
+| diocese-of-tulsa | 34 | 34 | 18 | 3 | 0 | 13 | 0 |
 | diocese-of-san-angelo | 34 | 34 | 17 | 9 | 0 | 4 | 4 |
 | diocese-of-shreveport | 33 | 33 | 9 | 12 | 0 | 12 | 0 |
 | unassigned-md | 33 | 67 | 36 | 8 | 2 | 21 | 0 |
@@ -273,8 +273,6 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 
 ## Chunk log
 
-- 2026-11-07T08:41:57+00:00: fetched {}; parsed 0 dioceses
-- 2026-11-07T08:42:04+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-07T08:42:39+00:00: fetched {'dns': 2, 'done': 21, 'challenge': 5, 'not_found': 2, 'ok': 12, 'halted_egress': 0}; parsed 4 dioceses
 - 2026-11-07T08:45:33+00:00: top-up ('confession', 'adoration', 'liturgy'): {'sites': 17, 'requests': 1, 'found_adoration': 1}; 0 sites left
 - 2026-11-07T16:17:05+00:00: fetched {}; parsed 0 dioceses
@@ -288,3 +286,5 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-07T16:18:43+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-07T16:18:51+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-07T16:19:05+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-07T16:19:13+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
+- 2026-11-07T16:19:25+00:00: fetched {'challenge': 1, 'done': 1, 'halted_egress': 0}; parsed 1 dioceses
