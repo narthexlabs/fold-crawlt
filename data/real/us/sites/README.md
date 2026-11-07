@@ -81,7 +81,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | archdiocese-of-kansas-city-in-kansas | 125 | 126 | 57 | 20 | 4 | 27 | 3 |
 | diocese-of-orlando | 122 | 123 | 88 | 6 | 0 | 28 | 1 |
 | diocese-of-joliet | 121 | 121 | 80 | 22 | 0 | 19 | 0 |
-| diocese-of-phoenix | 120 | 76 | 49 | 11 | 1 | 15 | 0 |
+| diocese-of-phoenix | 120 | 120 | 87 | 16 | 1 | 16 | 0 |
 | diocese-of-worcester | 120 | 121 | 17 | 74 | 0 | 30 | 0 |
 | diocese-of-jefferson-city | 119 | 119 | 70 | 4 | 0 | 45 | 0 |
 | unassigned-nj | 119 | 172 | 102 | 25 | 10 | 30 | 5 |
@@ -98,7 +98,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-st-petersburg | 107 | 109 | 68 | 27 | 1 | 13 | 0 |
 | diocese-of-erie | 107 | 107 | 70 | 6 | 3 | 28 | 0 |
 | diocese-of-kansas-city-st-joseph | 106 | 107 | 55 | 26 | 0 | 22 | 4 |
-| diocese-of-tucson | 106 | 60 | 24 | 12 | 0 | 21 | 3 |
+| diocese-of-tucson | 106 | 106 | 49 | 26 | 0 | 27 | 4 |
 | archdiocese-of-louisville | 104 | 106 | 60 | 5 | 1 | 28 | 0 |
 | diocese-of-camden | 104 | 104 | 54 | 5 | 2 | 43 | 0 |
 | diocese-of-allentown | 103 | 105 | 73 | 8 | 1 | 23 | 0 |
@@ -164,7 +164,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | unassigned-ky | 68 | 149 | 83 | 26 | 3 | 37 | 0 |
 | diocese-of-baton-rouge | 68 | 69 | 35 | 15 | 0 | 18 | 1 |
 | diocese-of-palm-beach | 67 | 67 | 45 | 8 | 0 | 12 | 2 |
-| unassigned-az | 67 | 180 | 122 | 40 | 2 | 16 | 0 |
+| unassigned-az | 67 | 183 | 123 | 41 | 2 | 17 | 0 |
 | unassigned-dc | 67 | 83 | 59 | 14 | 4 | 6 | 0 |
 | archdiocese-of-oklahoma-city | 66 | 66 | 28 | 6 | 2 | 12 | 0 |
 | diocese-of-bismarck | 66 | 66 | 14 | 45 | 2 | 4 | 1 |
@@ -233,7 +233,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | eparchy-of-parma | 31 | 32 | 20 | 4 | 0 | 5 | 3 |
 | diocese-of-dodge-city | 30 | 30 | 18 | 3 | 3 | 5 | 1 |
 | diocese-of-oakland | 30 | 34 | 20 | 9 | 1 | 4 | 0 |
-| holy-protection-of-mary-byzantine-catholic-eparchy-of-phoenix | 30 | 28 | 22 | 0 | 0 | 6 | 0 |
+| holy-protection-of-mary-byzantine-catholic-eparchy-of-phoenix | 30 | 30 | 23 | 1 | 0 | 6 | 0 |
 | diocese-of-tulsa | 29 | 29 | 15 | 2 | 0 | 12 | 0 |
 | unassigned-de | 28 | 41 | 30 | 7 | 1 | 3 | 0 |
 | unassigned-wy | 28 | 33 | 17 | 12 | 0 | 4 | 0 |
@@ -287,4 +287,4 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-07T08:41:33+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-07T08:41:57+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-07T08:42:04+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
-- 2026-11-07T08:42:27+00:00: fetched {'dns': 1, 'done': 2, 'ok': 1, 'halted_egress': 0}; parsed 2 dioceses
+- 2026-11-07T08:42:39+00:00: fetched {'dns': 2, 'done': 21, 'challenge': 5, 'not_found': 2, 'ok': 12, 'halted_egress': 0}; parsed 4 dioceses
