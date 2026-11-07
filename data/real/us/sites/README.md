@@ -123,7 +123,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-las-cruces | 93 | 93 | 20 | 5 | 0 | 66 | 2 |
 | diocese-of-madison | 92 | 92 | 16 | 49 | 1 | 26 | 0 |
 | unassigned-mo | 92 | 222 | 150 | 25 | 3 | 44 | 0 |
-| diocese-of-fargo | 91 | 78 | 24 | 44 | 0 | 10 | 0 |
+| diocese-of-fargo | 91 | 91 | 25 | 55 | 0 | 11 | 0 |
 | diocese-of-lansing | 90 | 91 | 39 | 29 | 1 | 22 | 0 |
 | diocese-of-little-rock | 89 | 89 | 54 | 11 | 1 | 23 | 0 |
 | diocese-of-saginaw | 89 | 90 | 43 | 17 | 1 | 29 | 0 |
@@ -167,7 +167,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | unassigned-az | 67 | 180 | 122 | 40 | 2 | 16 | 0 |
 | unassigned-dc | 67 | 83 | 59 | 14 | 4 | 6 | 0 |
 | archdiocese-of-oklahoma-city | 66 | 66 | 28 | 6 | 2 | 12 | 0 |
-| diocese-of-bismarck | 66 | 63 | 13 | 45 | 1 | 4 | 0 |
+| diocese-of-bismarck | 66 | 66 | 14 | 45 | 2 | 4 | 1 |
 | diocese-of-memphis | 65 | 65 | 39 | 3 | 0 | 23 | 0 |
 | diocese-of-pensacola-tallahassee | 64 | 64 | 34 | 16 | 1 | 12 | 1 |
 | unassigned-ga | 64 | 80 | 56 | 8 | 3 | 13 | 0 |
@@ -273,12 +273,6 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 
 ## Chunk log
 
-- 2026-11-07T01:47:01+00:00: fetched {}; parsed 0 dioceses
-- 2026-11-07T01:47:08+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
-- 2026-11-07T01:47:21+00:00: fetched {}; parsed 0 dioceses
-- 2026-11-07T01:47:26+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
-- 2026-11-07T01:48:01+00:00: fetched {'dns': 5, 'done': 41, 'challenge': 15, 'not_found': 2, 'ssl_error': 2, 'ok': 16, 'timeout': 2, 'cut': 1, 'halted_egress': 0}; parsed 2 dioceses
-- 2026-11-07T01:48:30+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-07T01:48:42+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-07T01:48:50+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-07T01:49:01+00:00: fetched {}; parsed 0 dioceses
@@ -287,4 +281,10 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-07T01:49:28+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-07T01:49:43+00:00: fetched {'challenge': 1, 'done': 23, 'ssl_error': 1, 'ok': 20, 'timeout': 2, 'cut': 1, 'halted_egress': 0}; parsed 3 dioceses
 - 2026-11-07T01:53:11+00:00: top-up ('confession', 'adoration', 'liturgy'): {'sites': 19, 'requests': 0}; 0 sites left
-- 2026-11-07T08:39:17+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-07T08:39:09+00:00: fetched {'ok': 1, 'done': 1, 'halted_egress': 0}; parsed 1 dioceses
+- 2026-11-07T08:39:24+00:00: top-up ('confession', 'adoration', 'liturgy'): {'sites': 1, 'requests': 0}; 0 sites left
+- 2026-11-07T08:39:39+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-07T08:39:46+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
+- 2026-11-07T08:39:58+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-07T08:40:03+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
+- 2026-11-07T08:40:22+00:00: fetched {'dns': 1, 'done': 15, 'blocked_403': 1, 'ok': 2, 'challenge': 11, 'halted_egress': 0}; parsed 2 dioceses
