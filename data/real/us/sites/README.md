@@ -160,7 +160,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-evansville | 70 | 70 | 38 | 5 | 3 | 24 | 0 |
 | diocese-of-winona-rochester | 70 | 70 | 32 | 15 | 0 | 23 | 0 |
 | unassigned-hi | 70 | 76 | 54 | 12 | 3 | 7 | 0 |
-| diocese-of-sioux-falls | 69 | 49 | 25 | 15 | 3 | 6 | 0 |
+| diocese-of-sioux-falls | 69 | 69 | 33 | 21 | 3 | 12 | 0 |
 | diocese-of-pueblo | 69 | 69 | 23 | 13 | 3 | 25 | 5 |
 | unassigned-ky | 68 | 149 | 83 | 26 | 3 | 37 | 0 |
 | diocese-of-baton-rouge | 68 | 69 | 35 | 15 | 0 | 18 | 1 |
@@ -220,7 +220,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | unassigned-nd | 38 | 100 | 48 | 47 | 1 | 4 | 0 |
 | diocese-of-laredo | 37 | 37 | 7 | 4 | 0 | 26 | 0 |
 | archdiocese-of-mobile | 37 | 39 | 12 | 5 | 0 | 14 | 0 |
-| diocese-of-rapid-city | 36 | 23 | 15 | 2 | 0 | 6 | 0 |
+| diocese-of-rapid-city | 36 | 40 | 29 | 2 | 0 | 8 | 1 |
 | diocese-of-great-falls-billings | 35 | 26 | 20 | 5 | 0 | 1 | 0 |
 | archdiocese-of-anchorage-juneau | 34 | 34 | 17 | 3 | 1 | 6 | 0 |
 | diocese-of-salt-lake-city | 34 | 40 | 28 | 2 | 0 | 10 | 0 |
@@ -273,6 +273,10 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 
 ## Chunk log
 
+- 2026-11-07T16:17:05+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-07T16:17:10+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
+- 2026-11-07T16:17:35+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-07T16:17:40+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-07T16:18:07+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-07T16:18:15+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-07T16:18:29+00:00: fetched {}; parsed 0 dioceses
@@ -283,8 +287,4 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-07T16:19:13+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-07T16:19:25+00:00: fetched {'challenge': 1, 'done': 1, 'halted_egress': 0}; parsed 1 dioceses
 - 2026-11-07T16:19:36+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
-- 2026-11-07T16:20:24+00:00: fetched {}; parsed 0 dioceses
-- 2026-11-07T16:20:33+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
-- 2026-11-07T16:20:43+00:00: fetched {}; parsed 0 dioceses
-- 2026-11-07T16:20:49+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
-- 2026-11-07T16:21:06+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-07T16:19:44+00:00: fetched {'dns': 4, 'done': 24, 'ssl_error': 2, 'challenge': 3, 'ok': 14, 'http_5xx': 1, 'halted_egress': 0}; parsed 2 dioceses
