@@ -1,0 +1,228 @@
+{
+ "domain": "stmonica-tulsa.org",
+ "diocese": "diocese-of-tulsa",
+ "matched_church_ids": [
+  "brave:OK|monica tulsa|",
+  "st-monica-tulsa-ok"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "st-monica-tulsa-ok",
+   "brave:OK|monica tulsa|"
+  ]
+ },
+ "names": [
+  "St. Monica",
+  "St Monica Tulsa"
+ ],
+ "cities": [
+  "Tulsa"
+ ],
+ "home_url": "https://www.stmonica-tulsa.org/",
+ "final_url": "https://www.stmonica-tulsa.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "not_found",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://www.stmonica-tulsa.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://www.stmonica-tulsa.org/bulletins.html",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.stmonica-tulsa.org/calendar.html",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://www.stmonica-tulsa.org/contact.html",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "unknown",
+  "evidence": []
+ },
+ "template": "generic-html:unknown",
+ "groups": [],
+ "calendar_feeds": [
+  {
+   "feed_id": "stmonica-tulsa.org:ics:c3ac7e7b",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": "https://calendar.google.com/calendar/ical/oc846u57e03hfktq1s6h65sbqs%40group.calendar.google.com/public/basic.ics",
+   "page_url": "https://www.stmonica-tulsa.org/calendar.html",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (embedded on page)",
+   "display_tz": "America/Chicago",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-07T21:47:58+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
+ "events": [],
+ "social": {},
+ "bulletin": {
+  "url": "https://www.stmonica-tulsa.org/files/Bulletin-10-11-26.pdf",
+  "date": "2026-10-11",
+  "kind": "pdf",
+  "text": "click here.",
+  "source_url": "https://www.stmonica-tulsa.org/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "devotion",
+   "day": "Sunday",
+   "time": "08:30",
+   "language": null,
+   "raw": "Sunday's @ 8:30 a.m. Rosary 8:00 a.m.",
+   "source_url": "https://www.stmonica-tulsa.org/",
+   "fetched_at": "2026-11-01T07:19:44+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": null,
+   "raw": "Sunday & Weekday Masses: Sunday's @ 8:30 a.m. Rosary 8:00 a.m.",
+   "source_url": "https://www.stmonica-tulsa.org/",
+   "fetched_at": "2026-11-01T07:19:44+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Sunday & Weekday Masses: 9 a.m Every Wednesday & Friday",
+   "source_url": "https://www.stmonica-tulsa.org/",
+   "fetched_at": "2026-11-01T07:19:44+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict",
+   "day_expanded_from": "Wednesday & Friday",
+   "day_parsed": "Wednesday",
+   "day_bound_from_line": true
+  },
+  {
+   "kind": "adoration",
+   "day": "Wednesday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Adoration of the Blessed Sacrament: 9:00 a.m.. Every Wednesday",
+   "source_url": "https://www.stmonica-tulsa.org/",
+   "fetched_at": "2026-11-01T07:19:44+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  },
+  {
+   "kind": "adoration",
+   "day": "First Friday of the month",
+   "time": "09:00-18:00",
+   "language": null,
+   "raw": "Adoration of the Blessed Sacrament: 1st Friday once a month selected timeframes from 9 a.m. to 6 p.m.",
+   "source_url": "https://www.stmonica-tulsa.org/",
+   "fetched_at": "2026-11-01T07:19:44+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "generic_strict"
+  }
+ ],
+ "source_url": "https://www.stmonica-tulsa.org/",
+ "fetched_at": "2026-11-01T07:19:47+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:47:55+00:00",
+  "requests": 0,
+  "found": []
+ },
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/3",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": true,
+  "trusted_candidate": false,
+  "trusted_kinds": [],
+  "generic_rows": 2
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Sunday before Mass or anytime by appointment.",
+   "phrase": "by appointment",
+   "source_url": "https://www.stmonica-tulsa.org/",
+   "fetched_at": "2026-11-01T07:19:44+00:00"
+  }
+ ],
+ "has_sunday": true,
+ "schedule_dropped": {
+  "other_location": 1,
+  "skipped_section": 2
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-07",
+  "window_end_exclusive": "2027-02-05",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": "stmonicachurch@aol.com",
+  "phone": null,
+  "address": null,
+  "source_url": "https://www.stmonica-tulsa.org/",
+  "sources": {
+   "email": "https://www.stmonica-tulsa.org/",
+   "address": "https://www.stmonica-tulsa.org/"
+  },
+  "fetched_at": "2026-11-01T07:19:44+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}
