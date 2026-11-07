@@ -239,7 +239,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | unassigned-wy | 28 | 33 | 17 | 12 | 0 | 4 | 0 |
 | diocese-of-portland-in-maine | 27 | 27 | 4 | 15 | 0 | 8 | 0 |
 | unassigned-id | 27 | 38 | 23 | 6 | 1 | 8 | 0 |
-| diocese-of-great-falls-billings | 26 | 6 | 6 | 0 | 0 | 0 | 0 |
+| diocese-of-great-falls-billings | 26 | 26 | 20 | 5 | 0 | 1 | 0 |
 | eparchy-of-st-maron-of-brooklyn | 26 | 26 | 20 | 0 | 2 | 3 | 1 |
 | diocese-of-baker | 26 | 2 | 2 | 0 | 0 | 0 | 0 |
 | diocese-of-lake-charles | 25 | 25 | 12 | 10 | 1 | 2 | 0 |
@@ -273,8 +273,6 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 
 ## Chunk log
 
-- 2026-11-07T01:47:21+00:00: fetched {}; parsed 0 dioceses
-- 2026-11-07T01:47:26+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-07T01:48:01+00:00: fetched {'dns': 5, 'done': 41, 'challenge': 15, 'not_found': 2, 'ssl_error': 2, 'ok': 16, 'timeout': 2, 'cut': 1, 'halted_egress': 0}; parsed 2 dioceses
 - 2026-11-07T01:48:30+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-07T01:48:42+00:00: fetched {}; parsed 0 dioceses
@@ -288,3 +286,5 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-07T08:39:17+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-07T08:39:26+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-07T08:40:46+00:00: fetched {'challenge': 2, 'done': 8, 'ok': 6, 'halted_egress': 0}; parsed 2 dioceses
+- 2026-11-07T08:41:34+00:00: top-up ('confession', 'adoration', 'liturgy'): {'sites': 8, 'requests': 0}; 0 sites left
+- 2026-11-07T08:43:28+00:00: fetched {'challenge': 5, 'done': 20, 'ok': 14, 'parked': 1, 'halted_egress': 0}; parsed 1 dioceses
