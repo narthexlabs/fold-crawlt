@@ -1,0 +1,213 @@
+{
+ "domain": "olacs.org/church",
+ "diocese": "archdiocese-of-santa-fe",
+ "matched_church_ids": [
+  "our-lady-of-the-assumption-albuquerque-nm"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "our-lady-of-the-assumption-albuquerque-nm"
+  ]
+ },
+ "names": [
+  "Our Lady of the Assumption"
+ ],
+ "cities": [
+  "Albuquerque"
+ ],
+ "home_url": "https://olacs.org/church/",
+ "final_url": "https://olacs.org/church/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://olacs.org/church/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://olacs.org/church/online-mass/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://olacs.org/church/outreach/casserole-cooking-ministry/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://olacs.org/church/bulletin/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://olacs.org/church/parish-news/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://olacs.org/reconciliation",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://olacs.org/adoration",
+   "status": 404,
+   "class": "not_found"
+  }
+ ],
+ "cms_guess": {
+  "cms": "ecatholic",
+  "evidence": [
+   "files.ecatholic"
+  ]
+ },
+ "template": "ecatholic-fastpath",
+ "groups": [],
+ "calendar_feeds": [
+  {
+   "feed_id": "olacs.org/church:tribe_rest:315c6b45",
+   "type": "tribe_rest",
+   "platform": "The Events Calendar (WordPress)",
+   "url": "https://olacs.org/wp-json/tribe/events/v1/events",
+   "page_url": "https://olacs.org/church/",
+   "label": null,
+   "status": "no_public_feed",
+   "note": "The Events Calendar markers on the site, but its REST route is not available"
+  }
+ ],
+ "events": [],
+ "social": {
+  "livestream": [
+   {
+    "url": "https://olacs.org/church/online-mass/",
+    "label": "Online Mass",
+    "platform": "olacs.org",
+    "kind": "link"
+   }
+  ]
+ },
+ "bulletin": {
+  "url": "https://olacs.org/church/wp-content/uploads/2024/03/Beige-Minimalist-Stay-Tuned-Coming-Soon-Instagram-Post.pdf",
+  "date": "2025-03-16",
+  "kind": "pdf",
+  "text": "Weekly Bulletin March 16, 2025",
+  "source_url": "https://olacs.org/church/bulletin/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "17:00",
+   "language": null,
+   "raw": "Saturday Anticipatory Mass: 5:00 pm",
+   "source_url": "https://olacs.org/church/",
+   "fetched_at": "2026-11-07T01:48:04+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "07:30",
+   "language": null,
+   "raw": "Sunday Mass Schedule: 7:30 am, 9:00 am (Bilingual), and 10:30 am",
+   "source_url": "https://olacs.org/church/",
+   "fetched_at": "2026-11-07T01:48:04+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": "Bilingual",
+   "raw": "Sunday Mass Schedule: 7:30 am, 9:00 am (Bilingual), and 10:30 am",
+   "source_url": "https://olacs.org/church/",
+   "fetched_at": "2026-11-07T01:48:04+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "10:30",
+   "language": null,
+   "raw": "Sunday Mass Schedule: 7:30 am, 9:00 am (Bilingual), and 10:30 am",
+   "source_url": "https://olacs.org/church/",
+   "fetched_at": "2026-11-07T01:48:04+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  }
+ ],
+ "source_url": "https://olacs.org/church/",
+ "fetched_at": "2026-11-07T08:41:18+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/3",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "trusted_kinds": [],
+  "generic_rows": 4
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "skipped_section": 4
+ },
+ "groups_dropped": {
+  "unmatched": 1
+ },
+ "event_counts": {
+  "window_start": "2026-11-07",
+  "window_end_exclusive": "2027-02-05",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(505) 256-9818",
+  "address": "811 Guaymas Place NE, Albuquerque, NM 87108",
+  "source_url": "https://olacs.org/church/",
+  "sources": {
+   "phone": "https://olacs.org/church/",
+   "address": "https://olacs.org/church/"
+  },
+  "fetched_at": "2026-11-07T01:48:04+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}
