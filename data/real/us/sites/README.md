@@ -54,13 +54,14 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-albany | 169 | 173 | 92 | 26 | 4 | 50 | 1 |
 | diocese-of-richmond | 168 | 178 | 117 | 24 | 2 | 35 | 0 |
 | archdiocese-of-san-antonio | 167 | 168 | 75 | 27 | 2 | 34 | 9 |
-| archdiocese-of-cincinnati | 165 | 166 | 108 | 39 | 2 | 13 | 1 |
 | archdiocese-of-denver | 164 | 164 | 123 | 1 | 0 | 31 | 0 |
+| archdiocese-of-cincinnati | 164 | 166 | 108 | 39 | 2 | 13 | 1 |
 | unassigned-nm | 159 | 264 | 164 | 50 | 4 | 46 | 0 |
 | archdiocese-of-miami | 156 | 156 | 103 | 0 | 1 | 42 | 1 |
 | unassigned-wi | 153 | 268 | 165 | 47 | 6 | 50 | 0 |
 | diocese-of-la-crosse | 152 | 154 | 97 | 25 | 4 | 26 | 2 |
 | archdiocese-of-new-orleans | 149 | 149 | 27 | 19 | 0 | 22 | 0 |
+| diocese-of-raleigh | 147 | 138 | 68 | 28 | 1 | 41 | 0 |
 | diocese-of-trenton | 147 | 147 | 61 | 30 | 3 | 53 | 0 |
 | diocese-of-austin | 145 | 146 | 31 | 86 | 0 | 28 | 1 |
 | diocese-of-rochester | 143 | 143 | 70 | 22 | 2 | 49 | 0 |
@@ -72,11 +73,11 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-syracuse | 137 | 138 | 83 | 13 | 1 | 41 | 0 |
 | diocese-of-paterson | 134 | 135 | 15 | 107 | 1 | 12 | 0 |
 | archdiocese-of-atlanta | 133 | 135 | 94 | 5 | 2 | 21 | 0 |
-| diocese-of-raleigh | 133 | 138 | 68 | 28 | 1 | 41 | 0 |
 | unassigned-mi | 131 | 270 | 168 | 67 | 4 | 31 | 0 |
 | archdiocese-of-los-angeles | 130 | 41 | 23 | 2 | 5 | 5 | 0 |
 | diocese-of-columbus | 130 | 130 | 55 | 33 | 2 | 40 | 0 |
 | archdiocese-of-dubuque | 129 | 129 | 33 | 24 | 0 | 47 | 1 |
+| diocese-of-charlotte | 129 | 118 | 62 | 16 | 0 | 40 | 0 |
 | diocese-of-scranton | 128 | 132 | 86 | 13 | 1 | 32 | 0 |
 | archdiocese-of-kansas-city-in-kansas | 125 | 126 | 57 | 20 | 4 | 27 | 3 |
 | diocese-of-orlando | 122 | 123 | 88 | 6 | 0 | 28 | 1 |
@@ -87,7 +88,6 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | unassigned-nj | 119 | 172 | 102 | 25 | 10 | 30 | 5 |
 | archdiocese-of-santa-fe | 118 | 122 | 55 | 32 | 1 | 28 | 5 |
 | diocese-of-metuchen | 118 | 119 | 43 | 46 | 0 | 30 | 0 |
-| diocese-of-charlotte | 117 | 118 | 62 | 16 | 0 | 40 | 0 |
 | diocese-of-sacramento | 114 | 83 | 45 | 36 | 0 | 2 | 0 |
 | diocese-of-dallas | 111 | 112 | 47 | 46 | 0 | 19 | 0 |
 | diocese-of-fort-wayne-south-bend | 111 | 111 | 59 | 23 | 0 | 29 | 0 |
@@ -103,7 +103,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-camden | 104 | 104 | 54 | 5 | 2 | 43 | 0 |
 | diocese-of-allentown | 103 | 105 | 73 | 8 | 1 | 23 | 0 |
 | unassigned-ma | 103 | 159 | 68 | 64 | 3 | 24 | 0 |
-| unassigned-ne | 102 | 225 | 163 | 20 | 0 | 42 | 0 |
+| unassigned-ne | 101 | 225 | 163 | 20 | 0 | 42 | 0 |
 | diocese-of-fall-river | 100 | 101 | 53 | 22 | 0 | 26 | 0 |
 | diocese-of-harrisburg | 100 | 101 | 66 | 31 | 0 | 4 | 0 |
 | diocese-of-norwich | 100 | 104 | 52 | 8 | 2 | 41 | 1 |
@@ -130,13 +130,12 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | unassigned-ct | 89 | 155 | 109 | 6 | 1 | 37 | 2 |
 | archdiocese-of-san-francisco | 88 | 53 | 26 | 6 | 0 | 16 | 0 |
 | diocese-of-altoona-johnstown | 85 | 86 | 48 | 12 | 1 | 19 | 6 |
-| unassigned-ok | 85 | 114 | 58 | 34 | 4 | 18 | 0 |
 | unassigned-co | 84 | 186 | 108 | 21 | 7 | 50 | 0 |
 | unassigned-ms | 84 | 98 | 45 | 31 | 1 | 21 | 0 |
-| unassigned-sd | 84 | 110 | 69 | 17 | 1 | 23 | 0 |
 | diocese-of-corpus-christi | 83 | 84 | 37 | 27 | 1 | 16 | 3 |
 | diocese-of-venice | 83 | 83 | 60 | 9 | 0 | 14 | 0 |
 | diocese-of-toledo | 81 | 84 | 59 | 3 | 1 | 21 | 0 |
+| unassigned-ok | 81 | 114 | 58 | 34 | 4 | 18 | 0 |
 | diocese-of-owensboro | 80 | 80 | 41 | 12 | 1 | 21 | 5 |
 | diocese-of-st-augustine | 80 | 85 | 48 | 16 | 0 | 21 | 0 |
 | diocese-of-manchester | 79 | 79 | 28 | 32 | 1 | 17 | 1 |
@@ -156,10 +155,12 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-springfield-cape-girardeau | 74 | 76 | 43 | 9 | 0 | 19 | 5 |
 | unassigned-in | 73 | 179 | 91 | 48 | 2 | 38 | 0 |
 | unassigned-mn | 73 | 167 | 99 | 36 | 5 | 27 | 0 |
+| unassigned-sd | 73 | 110 | 69 | 17 | 1 | 23 | 0 |
 | diocese-of-des-moines | 71 | 71 | 45 | 13 | 2 | 9 | 2 |
 | diocese-of-evansville | 70 | 70 | 38 | 5 | 3 | 24 | 0 |
 | diocese-of-winona-rochester | 70 | 70 | 32 | 15 | 0 | 23 | 0 |
 | unassigned-hi | 70 | 76 | 54 | 12 | 3 | 7 | 0 |
+| diocese-of-sioux-falls | 69 | 49 | 25 | 15 | 3 | 6 | 0 |
 | diocese-of-pueblo | 69 | 69 | 23 | 13 | 3 | 25 | 5 |
 | unassigned-ky | 68 | 149 | 83 | 26 | 3 | 37 | 0 |
 | diocese-of-baton-rouge | 68 | 69 | 35 | 15 | 0 | 18 | 1 |
@@ -175,7 +176,6 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-boise | 63 | 65 | 33 | 17 | 0 | 15 | 0 |
 | unassigned-tn | 63 | 113 | 54 | 49 | 1 | 9 | 0 |
 | diocese-of-orange | 62 | 20 | 20 | 0 | 0 | 0 | 0 |
-| unassigned-mt | 62 | 105 | 66 | 17 | 0 | 22 | 0 |
 | diocese-of-covington | 61 | 61 | 36 | 8 | 0 | 17 | 0 |
 | diocese-of-gary | 60 | 60 | 37 | 5 | 0 | 17 | 1 |
 | diocese-of-superior | 60 | 61 | 40 | 20 | 0 | 1 | 0 |
@@ -197,9 +197,9 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-colorado-springs | 50 | 50 | 22 | 4 | 1 | 23 | 0 |
 | diocese-of-crookston | 50 | 52 | 23 | 20 | 0 | 9 | 0 |
 | unassigned-vt | 50 | 60 | 18 | 31 | 1 | 10 | 0 |
-| diocese-of-sioux-falls | 49 | 49 | 25 | 15 | 3 | 6 | 0 |
 | diocese-of-grand-island | 49 | 49 | 29 | 3 | 0 | 12 | 5 |
 | diocese-of-san-jose | 48 | 5 | 3 | 1 | 0 | 1 | 0 |
+| diocese-of-helena | 47 | 19 | 14 | 4 | 0 | 1 | 0 |
 | diocese-of-el-paso | 47 | 48 | 33 | 1 | 0 | 10 | 4 |
 | byzantine-catholic-eparchy-of-passaic | 45 | 45 | 39 | 4 | 0 | 2 | 0 |
 | unassigned-or | 45 | 152 | 45 | 88 | 1 | 18 | 0 |
@@ -212,6 +212,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-salina | 40 | 40 | 35 | 3 | 2 | 0 | 0 |
 | diocese-of-nashville | 40 | 40 | 13 | 11 | 0 | 16 | 0 |
 | diocese-of-monterey | 39 | 21 | 5 | 7 | 0 | 9 | 0 |
+| unassigned-mt | 39 | 105 | 66 | 17 | 0 | 22 | 0 |
 | diocese-of-wheeling-charleston | 39 | 39 | 24 | 1 | 1 | 13 | 0 |
 | diocese-of-houma-thibodaux | 38 | 38 | 21 | 13 | 1 | 3 | 0 |
 | diocese-of-victoria | 38 | 38 | 1 | 31 | 0 | 6 | 0 |
@@ -219,10 +220,13 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | unassigned-nd | 38 | 100 | 48 | 47 | 1 | 4 | 0 |
 | diocese-of-laredo | 37 | 37 | 7 | 4 | 0 | 26 | 0 |
 | archdiocese-of-mobile | 37 | 39 | 12 | 5 | 0 | 14 | 0 |
+| diocese-of-rapid-city | 36 | 23 | 15 | 2 | 0 | 6 | 0 |
+| diocese-of-great-falls-billings | 35 | 26 | 20 | 5 | 0 | 1 | 0 |
 | archdiocese-of-anchorage-juneau | 34 | 34 | 17 | 3 | 1 | 6 | 0 |
 | diocese-of-salt-lake-city | 34 | 40 | 28 | 2 | 0 | 10 | 0 |
 | diocese-of-lexington | 34 | 35 | 17 | 11 | 0 | 6 | 1 |
 | diocese-of-yakima | 34 | 34 | 13 | 12 | 0 | 9 | 0 |
+| diocese-of-tulsa | 34 | 29 | 15 | 2 | 0 | 12 | 0 |
 | diocese-of-san-angelo | 34 | 34 | 17 | 9 | 0 | 4 | 4 |
 | diocese-of-shreveport | 33 | 33 | 9 | 12 | 0 | 12 | 0 |
 | unassigned-md | 33 | 67 | 36 | 8 | 2 | 21 | 0 |
@@ -234,12 +238,10 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-dodge-city | 30 | 30 | 18 | 3 | 3 | 5 | 1 |
 | diocese-of-oakland | 30 | 34 | 20 | 9 | 1 | 4 | 0 |
 | holy-protection-of-mary-byzantine-catholic-eparchy-of-phoenix | 30 | 30 | 23 | 1 | 0 | 6 | 0 |
-| diocese-of-tulsa | 29 | 29 | 15 | 2 | 0 | 12 | 0 |
 | unassigned-de | 28 | 41 | 30 | 7 | 1 | 3 | 0 |
 | unassigned-wy | 28 | 33 | 17 | 12 | 0 | 4 | 0 |
 | diocese-of-portland-in-maine | 27 | 27 | 4 | 15 | 0 | 8 | 0 |
 | unassigned-id | 27 | 38 | 23 | 6 | 1 | 8 | 0 |
-| diocese-of-great-falls-billings | 26 | 26 | 20 | 5 | 0 | 1 | 0 |
 | eparchy-of-st-maron-of-brooklyn | 26 | 26 | 20 | 0 | 2 | 3 | 1 |
 | diocese-of-baker | 26 | 26 | 18 | 4 | 0 | 2 | 2 |
 | diocese-of-lake-charles | 25 | 25 | 12 | 10 | 1 | 2 | 0 |
@@ -249,8 +251,6 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-alexandria | 21 | 21 | 10 | 6 | 0 | 5 | 0 |
 | unassigned-ak | 20 | 28 | 11 | 7 | 2 | 5 | 3 |
 | unassigned-ri | 20 | 45 | 14 | 22 | 0 | 9 | 0 |
-| diocese-of-helena | 19 | 19 | 14 | 4 | 0 | 1 | 0 |
-| diocese-of-rapid-city | 19 | 23 | 15 | 2 | 0 | 6 | 0 |
 | diocese-of-reno | 19 | 19 | 8 | 9 | 0 | 2 | 0 |
 | diocese-of-gallup | 18 | 18 | 15 | 2 | 0 | 1 | 0 |
 | unassigned-nc | 17 | 23 | 14 | 0 | 0 | 9 | 0 |
@@ -273,18 +273,18 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 
 ## Chunk log
 
-- 2026-11-07T01:49:22+00:00: fetched {}; parsed 0 dioceses
-- 2026-11-07T01:49:28+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-07T01:49:43+00:00: fetched {'challenge': 1, 'done': 23, 'ssl_error': 1, 'ok': 20, 'timeout': 2, 'cut': 1, 'halted_egress': 0}; parsed 3 dioceses
 - 2026-11-07T01:53:11+00:00: top-up ('confession', 'adoration', 'liturgy'): {'sites': 19, 'requests': 0}; 0 sites left
 - 2026-11-07T08:39:17+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-07T08:39:26+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
-- 2026-11-07T08:40:22+00:00: fetched {'dns': 1, 'done': 15, 'blocked_403': 1, 'ok': 2, 'challenge': 11, 'halted_egress': 0}; parsed 2 dioceses
-- 2026-11-07T08:40:58+00:00: top-up ('confession', 'adoration', 'liturgy'): {'sites': 2, 'requests': 0}; 0 sites left
-- 2026-11-07T08:41:07+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-07T08:40:46+00:00: fetched {'challenge': 2, 'done': 8, 'ok': 6, 'halted_egress': 0}; parsed 2 dioceses
+- 2026-11-07T08:41:34+00:00: top-up ('confession', 'adoration', 'liturgy'): {'sites': 8, 'requests': 0}; 0 sites left
+- 2026-11-07T08:43:07+00:00: fetched {'dns': 1, 'done': 20, 'challenge': 5, 'http_5xx': 1, 'ok': 11, 'parked': 1, 'not_found': 1, 'halted_egress': 0}; parsed 2 dioceses
 - 2026-11-07T08:41:16+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-07T08:41:28+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-07T08:41:33+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-07T08:41:57+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-07T08:42:04+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-07T08:42:39+00:00: fetched {'dns': 2, 'done': 21, 'challenge': 5, 'not_found': 2, 'ok': 12, 'halted_egress': 0}; parsed 4 dioceses
+- 2026-11-07T08:45:33+00:00: top-up ('confession', 'adoration', 'liturgy'): {'sites': 17, 'requests': 1, 'found_adoration': 1}; 0 sites left
+- 2026-11-07T16:17:05+00:00: fetched {}; parsed 0 dioceses
