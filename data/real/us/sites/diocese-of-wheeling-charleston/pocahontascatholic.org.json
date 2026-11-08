@@ -1,0 +1,218 @@
+{
+ "domain": "pocahontascatholic.org",
+ "diocese": "diocese-of-wheeling-charleston",
+ "matched_church_ids": [
+  "brave:WV|john neumann marlinton|",
+  "st-bernard-chapel-snowshoe-wv"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "st-bernard-chapel-snowshoe-wv",
+   "brave:WV|john neumann marlinton|"
+  ]
+ },
+ "names": [
+  "St. Bernard Chapel",
+  "St John Neumann Marlinton"
+ ],
+ "cities": [
+  "Snowshoe"
+ ],
+ "home_url": "https://pocahontascatholic.org/",
+ "final_url": "https://pocahontascatholic.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://pocahontascatholic.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://pocahontascatholic.org/download/bulletin-25-october-2026/?wpdmdl=392&refresh=6ae77688ed4ad1793554056",
+   "status": null,
+   "class": "robots_disallowed"
+  },
+  {
+   "category": "adoration",
+   "url": "https://pocahontascatholic.org/st-bernard-chapel/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://pocahontascatholic.org/reconciliation/",
+   "status": 404,
+   "class": "not_found"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-json"
+  ]
+ },
+ "template": "wordpress-rest+html",
+ "groups": [],
+ "calendar_feeds": [],
+ "events": [],
+ "social": {},
+ "bulletin": {
+  "url": "https://pocahontascatholic.org/download/bulletin-25-october-2026/?wpdmdl=392&refresh=6ae77688ed4ad1793554056",
+  "date": null,
+  "kind": "page",
+  "text": "Bulletin - 25 October 2026",
+  "source_url": "https://pocahontascatholic.org/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Mass Time:: Sunday 9:00 a.m.",
+   "source_url": "https://pocahontascatholic.org/",
+   "fetched_at": "2026-11-01T17:27:37+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday (winter, nov-apr)",
+   "time": "17:30",
+   "language": null,
+   "raw": "Mass Time:: Saturday 5:30 p.m. November to April",
+   "source_url": "https://pocahontascatholic.org/",
+   "fetched_at": "2026-11-01T17:27:37+00:00",
+   "needs_review": true,
+   "review_reason": "seasonal",
+   "confidence": "medium",
+   "template": "wordpress",
+   "season": "November to April"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday (summer, may-oct)",
+   "time": "18:30",
+   "language": null,
+   "raw": "Mass Time:: Saturday 6:30 p.m. May to October",
+   "source_url": "https://pocahontascatholic.org/",
+   "fetched_at": "2026-11-01T17:27:37+00:00",
+   "needs_review": true,
+   "review_reason": "seasonal",
+   "confidence": "medium",
+   "template": "wordpress",
+   "season": "May to October"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "11:30",
+   "language": null,
+   "raw": "Mass Time:: Sunday 11:30 a.m.",
+   "source_url": "https://pocahontascatholic.org/",
+   "fetched_at": "2026-11-01T17:27:37+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "21:00",
+   "language": null,
+   "raw": "[St. Bernard Chapel] CATHOLIC MASS: Christmas Eve 9:00 pm",
+   "source_url": "https://pocahontascatholic.org/st-bernard-chapel/",
+   "fetched_at": "2026-11-02T04:41:43+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "kind_parsed": "mass",
+   "location": "St. Bernard Chapel"
+  },
+  {
+   "kind": "other",
+   "day": "Holy days",
+   "time": "08:00",
+   "language": null,
+   "raw": "[St. Bernard Chapel] CATHOLIC MASS: Easter Sunday 8:00 a.m.",
+   "source_url": "https://pocahontascatholic.org/st-bernard-chapel/",
+   "fetched_at": "2026-11-02T04:41:43+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress",
+   "kind_parsed": "mass",
+   "note": "no Mass on Holy Saturday",
+   "location": "St. Bernard Chapel"
+  }
+ ],
+ "source_url": "https://pocahontascatholic.org/",
+ "fetched_at": "2026-11-01T17:27:43+00:00",
+ "topup": {
+  "kinds": [
+   "adoration",
+   "confession",
+   "liturgy"
+  ],
+  "at": "2026-11-02T04:41:46+00:00",
+  "requests": 2,
+  "found": [
+   "adoration"
+  ]
+ },
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/3",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "medium"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "trusted_kinds": [],
+  "generic_rows": 6
+ },
+ "has_sunday": true,
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-08",
+  "window_end_exclusive": "2027-02-06",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(304) 799-6778",
+  "address": "714 Tenth Avenue, Marlinton, WV 24954",
+  "source_url": "https://pocahontascatholic.org/",
+  "sources": {
+   "phone": "https://pocahontascatholic.org/",
+   "address": "https://pocahontascatholic.org/"
+  },
+  "fetched_at": "2026-11-01T17:27:37+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}
