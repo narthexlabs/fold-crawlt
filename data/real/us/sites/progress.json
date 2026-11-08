@@ -1,6 +1,45 @@
 {
  "chunks": [
   {
+   "started_at": "2026-11-07T16:21:06+00:00",
+   "ended_at": "2026-11-07T16:21:09+00:00",
+   "result": "fetched {}; parsed 0 dioceses",
+   "touched": []
+  },
+  {
+   "started_at": "2026-11-07T16:21:13+00:00",
+   "result": "top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left",
+   "touched": []
+  },
+  {
+   "started_at": "2026-11-07T16:21:24+00:00",
+   "ended_at": "2026-11-07T16:22:46+00:00",
+   "result": "fetched {'dns': 1, 'done': 36, 'challenge': 9, 'blocked_403': 1, 'ssl_error': 2, 'ok': 23, 'halted_egress': 0}; parsed 2 dioceses",
+   "touched": [
+    "diocese-of-helena",
+    "diocese-of-great-falls-billings"
+   ]
+  },
+  {
+   "started_at": "2026-11-07T16:23:18+00:00",
+   "result": "top-up ('confession', 'adoration', 'liturgy'): {'sites': 23, 'requests': 0}; 0 sites left",
+   "touched": [
+    "diocese-of-great-falls-billings",
+    "diocese-of-helena"
+   ]
+  },
+  {
+   "started_at": "2026-11-07T21:43:04+00:00",
+   "ended_at": "2026-11-07T21:43:08+00:00",
+   "result": "fetched {}; parsed 0 dioceses",
+   "touched": []
+  },
+  {
+   "started_at": "2026-11-07T21:43:13+00:00",
+   "result": "top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left",
+   "touched": []
+  },
+  {
    "started_at": "2026-11-07T21:43:29+00:00",
    "ended_at": "2026-11-07T21:43:31+00:00",
    "result": "fetched {}; parsed 0 dioceses",
@@ -326,34 +365,24 @@
    "touched": []
   },
   {
-   "started_at": "2026-11-08T16:38:52+00:00",
-   "ended_at": "2026-11-08T16:39:32+00:00",
-   "result": "fetched {'not_found': 1, 'done': 7, 'ok': 5, 'timeout': 1, 'halted_egress': 0}; parsed 1 dioceses",
+   "started_at": "2026-11-08T16:38:13+00:00",
+   "ended_at": "2026-11-08T16:40:40+00:00",
+   "result": "fetched {'challenge': 5, 'done': 17, 'ssl_error': 2, 'not_found': 1, 'dns': 2, 'ok': 7, 'halted_egress': 0}; parsed 5 dioceses",
    "touched": [
-    "diocese-of-little-rock"
+    "archdiocese-of-cincinnati",
+    "diocese-of-youngstown",
+    "archdiocese-of-anchorage-juneau",
+    "unassigned-ak",
+    "diocese-of-fairbanks"
    ]
   },
   {
-   "started_at": "2026-11-08T16:39:40+00:00",
-   "result": "top-up ('confession', 'adoration', 'liturgy'): {'sites': 5, 'requests': 0}; 0 sites left",
+   "started_at": "2026-11-08T16:40:54+00:00",
+   "result": "top-up ('confession', 'adoration', 'liturgy'): {'sites': 7, 'requests': 0}; 0 sites left",
    "touched": [
-    "diocese-of-little-rock"
-   ]
-  },
-  {
-   "started_at": "2026-11-08T16:40:15+00:00",
-   "ended_at": "2026-11-08T16:40:34+00:00",
-   "result": "fetched {'http_5xx': 1, 'done': 2, 'ok': 1, 'halted_egress': 0}; parsed 2 dioceses",
-   "touched": [
-    "archdiocese-of-washington",
-    "archdiocese-of-miami"
-   ]
-  },
-  {
-   "started_at": "2026-11-08T16:40:45+00:00",
-   "result": "top-up ('confession', 'adoration', 'liturgy'): {'sites': 1, 'requests': 0}; 0 sites left",
-   "touched": [
-    "archdiocese-of-washington"
+    "archdiocese-of-cincinnati",
+    "diocese-of-fairbanks",
+    "unassigned-ak"
    ]
   }
  ],
@@ -915,11 +944,11 @@
   },
   "archdiocese-of-cincinnati": {
    "sites_in_list": 166,
-   "records": 166,
+   "records": 168,
    "finished": true,
-   "ok": 108,
+   "ok": 110,
    "by_status": {
-    "ok": 108,
+    "ok": 110,
     "challenge": 39,
     "not_found": 5,
     "wayback": 3,
@@ -1637,11 +1666,11 @@
   },
   "diocese-of-youngstown": {
    "sites_in_list": 109,
-   "records": 108,
-   "finished": false,
-   "ok": 57,
+   "records": 109,
+   "finished": true,
+   "ok": 58,
    "by_status": {
-    "ok": 57,
+    "ok": 58,
     "dns": 15,
     "challenge": 10,
     "ssl_error": 8,
@@ -3602,7 +3631,7 @@
   },
   "archdiocese-of-anchorage-juneau": {
    "sites_in_list": 34,
-   "records": 34,
+   "records": 35,
    "finished": true,
    "ok": 17,
    "by_status": {
@@ -3610,10 +3639,10 @@
     "wayback": 7,
     "challenge": 3,
     "ssl_error": 3,
+    "dns": 2,
     "not_found": 1,
     "robots_disallowed": 1,
-    "unreachable_via_proxy": 1,
-    "dns": 1
+    "unreachable_via_proxy": 1
    }
   },
   "diocese-of-lexington": {
@@ -3808,17 +3837,17 @@
   },
   "unassigned-ak": {
    "sites_in_list": 28,
-   "records": 28,
+   "records": 37,
    "finished": true,
-   "ok": 11,
+   "ok": 14,
    "by_status": {
-    "ok": 11,
-    "challenge": 7,
-    "social_only": 3,
+    "ok": 14,
+    "challenge": 11,
+    "social_only": 4,
+    "dns": 2,
     "blocked_403": 2,
     "unreachable_via_proxy": 1,
     "conn_error": 1,
-    "dns": 1,
     "ssl_error": 1,
     "timeout": 1
    }
@@ -4017,13 +4046,15 @@
   },
   "diocese-of-fairbanks": {
    "sites_in_list": 17,
-   "records": 9,
-   "finished": false,
-   "ok": 3,
+   "records": 18,
+   "finished": true,
+   "ok": 6,
    "by_status": {
-    "challenge": 4,
-    "ok": 3,
-    "not_found": 1,
+    "challenge": 6,
+    "ok": 6,
+    "not_found": 2,
+    "ssl_error": 2,
+    "social_only": 1,
     "dns": 1
    }
   },
@@ -4218,9 +4249,9 @@
  },
  "totals": {
   "sites_in_list": 22452,
-  "records": 25248,
-  "ok": 13208
+  "records": 25226,
+  "ok": 13189
  },
  "us_parish_pages_discovermass": 20147,
- "updated_at": "2026-11-08T16:40:47+00:00"
+ "updated_at": "2026-11-08T16:40:57+00:00"
 }
