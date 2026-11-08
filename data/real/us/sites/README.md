@@ -235,7 +235,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-oakland | 30 | 34 | 20 | 9 | 1 | 4 | 0 |
 | holy-protection-of-mary-byzantine-catholic-eparchy-of-phoenix | 30 | 30 | 23 | 1 | 0 | 6 | 0 |
 | unassigned-al | 29 | 97 | 37 | 41 | 1 | 17 | 1 |
-| eparchy-of-st-maron-of-brooklyn | 28 | 27 | 21 | 0 | 2 | 3 | 1 |
+| eparchy-of-st-maron-of-brooklyn | 28 | 28 | 22 | 0 | 2 | 3 | 1 |
 | unassigned-de | 28 | 41 | 30 | 7 | 1 | 3 | 0 |
 | unassigned-wy | 28 | 33 | 17 | 12 | 0 | 4 | 0 |
 | diocese-of-baker | 26 | 26 | 18 | 4 | 0 | 2 | 2 |
@@ -287,4 +287,4 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-08T01:19:33+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-08T01:20:10+00:00: fetched {'robots_disallowed': 1, 'done': 47, 'dns': 1, 'challenge': 17, 'ssl_error': 5, 'ok': 22, 'conn_error': 1, 'halted_egress': 0}; parsed 4 dioceses
 - 2026-11-08T01:22:09+00:00: top-up ('confession', 'adoration', 'liturgy'): {'sites': 22, 'requests': 0}; 0 sites left
-- 2026-11-08T08:52:33+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-08T08:52:25+00:00: fetched {'ok': 1, 'done': 1, 'halted_egress': 0}; parsed 1 dioceses
