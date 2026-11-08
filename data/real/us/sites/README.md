@@ -113,7 +113,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-norwich | 100 | 104 | 52 | 8 | 2 | 41 | 1 |
 | diocese-of-pittsburgh | 100 | 100 | 12 | 59 | 0 | 9 | 1 |
 | diocese-of-rockford | 99 | 99 | 45 | 33 | 1 | 20 | 0 |
-| archdiocese-of-indianapolis | 99 | 97 | 46 | 26 | 0 | 23 | 1 |
+| archdiocese-of-indianapolis | 99 | 99 | 48 | 26 | 0 | 23 | 1 |
 | diocese-of-belleville | 98 | 98 | 60 | 8 | 0 | 30 | 0 |
 | unassigned-fl | 98 | 139 | 83 | 16 | 6 | 34 | 0 |
 | diocese-of-arlington | 97 | 98 | 67 | 14 | 1 | 16 | 0 |
@@ -171,7 +171,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | unassigned-az | 67 | 183 | 123 | 41 | 2 | 17 | 0 |
 | diocese-of-bismarck | 66 | 66 | 14 | 45 | 2 | 4 | 1 |
 | unassigned-dc | 66 | 83 | 59 | 14 | 4 | 6 | 0 |
-| diocese-of-wilmington | 64 | 63 | 41 | 17 | 1 | 4 | 0 |
+| diocese-of-wilmington | 64 | 68 | 45 | 17 | 1 | 5 | 0 |
 | diocese-of-pensacola-tallahassee | 64 | 64 | 34 | 16 | 1 | 12 | 1 |
 | unassigned-ks | 64 | 161 | 92 | 34 | 12 | 23 | 0 |
 | diocese-of-orange | 62 | 20 | 20 | 0 | 0 | 0 | 0 |
@@ -285,6 +285,6 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-08T16:37:11+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-08T16:37:25+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-08T16:37:33+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
-- 2026-11-08T16:38:52+00:00: fetched {'not_found': 1, 'done': 7, 'ok': 5, 'timeout': 1, 'halted_egress': 0}; parsed 1 dioceses
-- 2026-11-08T16:39:40+00:00: top-up ('confession', 'adoration', 'liturgy'): {'sites': 5, 'requests': 0}; 0 sites left
-- 2026-11-08T16:40:32+00:00: fetched {'robots_disallowed': 1, 'done': 9, 'challenge': 1, 'ok': 7, 'halted_egress': 0}; parsed 2 dioceses
+- 2026-11-08T16:38:13+00:00: fetched {'challenge': 5, 'done': 17, 'ssl_error': 2, 'not_found': 1, 'dns': 2, 'ok': 7, 'halted_egress': 0}; parsed 5 dioceses
+- 2026-11-08T16:40:54+00:00: top-up ('confession', 'adoration', 'liturgy'): {'sites': 7, 'requests': 0}; 0 sites left
+- 2026-11-08T16:41:14+00:00: fetched {'not_found': 1, 'done': 6, 'ok': 5, 'halted_egress': 0}; parsed 2 dioceses
