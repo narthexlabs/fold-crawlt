@@ -80,7 +80,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-charlotte | 129 | 129 | 69 | 20 | 0 | 40 | 0 |
 | diocese-of-scranton | 128 | 132 | 86 | 13 | 1 | 32 | 0 |
 | archdiocese-of-kansas-city-in-kansas | 125 | 126 | 57 | 20 | 4 | 27 | 3 |
-| diocese-of-charleston | 124 | 96 | 69 | 10 | 1 | 16 | 0 |
+| diocese-of-charleston | 124 | 124 | 81 | 15 | 1 | 27 | 0 |
 | diocese-of-orlando | 122 | 123 | 88 | 6 | 0 | 28 | 1 |
 | diocese-of-burlington | 121 | 124 | 13 | 81 | 1 | 29 | 0 |
 | diocese-of-joliet | 121 | 121 | 80 | 22 | 0 | 19 | 0 |
@@ -273,6 +273,8 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 
 ## Chunk log
 
+- 2026-11-08T01:20:10+00:00: fetched {'robots_disallowed': 1, 'done': 47, 'dns': 1, 'challenge': 17, 'ssl_error': 5, 'ok': 22, 'conn_error': 1, 'halted_egress': 0}; parsed 4 dioceses
+- 2026-11-08T01:22:09+00:00: top-up ('confession', 'adoration', 'liturgy'): {'sites': 22, 'requests': 0}; 0 sites left
 - 2026-11-08T08:52:25+00:00: fetched {'ok': 1, 'done': 1, 'halted_egress': 0}; parsed 1 dioceses
 - 2026-11-08T08:52:43+00:00: top-up ('confession', 'adoration', 'liturgy'): {'sites': 1, 'requests': 0}; 0 sites left
 - 2026-11-08T08:53:06+00:00: fetched {}; parsed 0 dioceses
@@ -285,6 +287,4 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-08T08:54:12+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-08T08:54:26+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-08T08:54:35+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
-- 2026-11-08T08:54:44+00:00: fetched {'challenge': 4, 'done': 11, 'blocked_403': 1, 'ssl_error': 1, 'conn_error': 1, 'ok': 4, 'halted_egress': 0}; parsed 2 dioceses
-- 2026-11-08T08:55:20+00:00: top-up ('confession', 'adoration', 'liturgy'): {'sites': 4, 'requests': 0}; 0 sites left
-- 2026-11-08T08:55:48+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-08T08:55:03+00:00: fetched {'dns': 1, 'done': 18, 'challenge': 4, 'ssl_error': 1, 'http_4xx': 1, 'ok': 10, 'timeout': 1, 'halted_egress': 0}; parsed 1 dioceses
