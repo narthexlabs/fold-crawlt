@@ -1,0 +1,169 @@
+{
+ "domain": "dhspriory.org",
+ "diocese": "archdiocese-of-washington",
+ "matched_church_ids": [
+  "dominican-house-of-studies-priory-of-the-immaculate-conception-washington-d-c"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "dominican-house-of-studies-priory-of-the-immaculate-conception-washington-d-c"
+  ]
+ },
+ "names": [
+  "Dominican House of Studies (Priory of the Immaculate Conception)"
+ ],
+ "cities": [
+  "washington"
+ ],
+ "home_url": "http://www.dhspriory.org/",
+ "final_url": "https://dhspriory.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://dhspriory.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://dhspriory.org/prayer/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://dhspriory.org/mass-intentions/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://dhspriory.org/news/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://dhspriory.org/calendar/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "contact",
+   "url": "https://dhspriory.org/contact-us/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://dhspriory.org/reconciliation/",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://dhspriory.org/adoration/",
+   "status": 404,
+   "class": "not_found"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-content"
+  ]
+ },
+ "template": "wordpress-rest+html",
+ "groups": [],
+ "calendar_feeds": [
+  {
+   "feed_id": "dhspriory.org:ics:29f35d8b",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": "https://calendar.google.com/calendar/ical/dhs.edu_mookpp5aarfvug3qo0p36nop9g%40group.calendar.google.com/public/basic.ics",
+   "page_url": "https://dhspriory.org/calendar/",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (embedded on page)",
+   "display_tz": "America/New_York",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-08T16:40:32+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/DominicanHouseofStudies",
+   "https://www.facebook.com/PFICatDHS"
+  ],
+  "instagram": [
+   "https://www.instagram.com/PFIC_DHS/"
+  ],
+  "youtube": [
+   "https://www.youtube.com/user/DHSPriory",
+   "https://www.youtube.com/channel/UClxioSKGNuArTmT49jAD8Fg"
+  ],
+  "x": [
+   "https://x.com/pficnews",
+   "https://x.com/PFIC_DHS"
+  ]
+ },
+ "bulletin": null,
+ "schedule_rows": [],
+ "source_url": "http://www.dhspriory.org/",
+ "fetched_at": "2026-11-08T16:40:28+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/3",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "trusted_kinds": [],
+  "generic_rows": 2
+ },
+ "has_sunday": false,
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-08",
+  "window_end_exclusive": "2027-02-06",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(202) 529-5300",
+  "address": "487 Michigan Ave. NE, Washington, DC 20017",
+  "source_url": "https://dhspriory.org/contact-us/",
+  "sources": {
+   "phone": "https://dhspriory.org/contact-us/",
+   "address": "https://dhspriory.org/contact-us/"
+  },
+  "fetched_at": "2026-11-08T16:40:26+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}
