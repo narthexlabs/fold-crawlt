@@ -1,0 +1,153 @@
+{
+ "domain": "diocesan.com",
+ "diocese": "diocese-of-grand-rapids",
+ "matched_church_ids": [
+  "mi-sample-church"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "mi-sample-church"
+  ]
+ },
+ "names": [
+  "MI Sample Church"
+ ],
+ "cities": [],
+ "home_url": "https://diocesan.com/",
+ "final_url": "https://diocesan.com/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://diocesan.com/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://diocesan.com/myparish-mass-intentions/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://diocesan.com/myparish-adoration/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://diocesan.com/myparish-ministries/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://diocesan.com/bulletin/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://auth.myparishoffice.com/login?response_type=code&client_id=7vv8jjd4o5t923faqmi4kuh1ha&redirect_uri=https%3A%2F%2Faccount.diocesan.com%2Fsimplesaml%2Fmodule.php%2Fcognito%2Fresume.php&scope=openid+profile+email&state=_0050584c37165cf837d6e5508794b0e7c80a0abee2%3Ahttps%3A%2F%2Faccount.diocesan.com%2Fsimplesaml%2Fsaml2%2Fidp%2FSSOService.php%3Fspentityid%3Dhttps%253A%252F%252Fdiocesan.com%252Fwp-content%252Fplugins%252Fminiorange-saml-20-single-sign-on%252F%26RelayState%3Dhttps%253A%252F%252Fdiocesan.com%252Fresource%252Freconciliation-1%252F%26cookieTime%3D1794175123&nonce=P0Hj-8xi06XK7Rx5JpuAXRnzYL3AcLnceXuFspIHYE4&code_challenge=cHrvBX_ITIGA5U_7ij1dCzsJANWLwyy3o-T4vOOpPr4&code_challenge_method=S256",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "diocesan",
+  "evidence": [
+   ".diocesan.com/"
+  ]
+ },
+ "template": "generic-html:diocesan",
+ "groups": [],
+ "calendar_feeds": [],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/DiocesanPublications"
+  ],
+  "instagram": [
+   "https://www.instagram.com/diocesan_/"
+  ],
+  "x": [
+   "https://x.com/Diocesan_Pub"
+  ]
+ },
+ "bulletin": {
+  "url": "https://diocesan.com",
+  "date": null,
+  "kind": "discovermass",
+  "text": "",
+  "source_url": "https://diocesan.com/"
+ },
+ "schedule_rows": [],
+ "source_url": "https://diocesan.com/",
+ "fetched_at": "2026-11-08T21:58:46+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/3",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "trusted_kinds": [],
+  "generic_rows": 0
+ },
+ "has_sunday": false,
+ "schedule_images": [
+  {
+   "url": "https://diocesan.com/wp-content/uploads/2025/12/Mass-Intentions.png",
+   "alt": "Icon",
+   "page": "https://diocesan.com/myparish-mass-intentions/"
+  },
+  {
+   "url": "https://diocesan.com/wp-content/uploads/2025/12/Mass-Intentions.png",
+   "alt": "",
+   "page": "https://diocesan.com/"
+  }
+ ],
+ "schedule_note": "schedule appears to be an image; times not read (needs_review)",
+ "groups_dropped": {
+  "sacrament_prep": 1,
+  "unmatched": 2,
+  "fragment": 1
+ },
+ "event_counts": {
+  "window_start": "2026-11-08",
+  "window_end_exclusive": "2027-02-06",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(800) 994-9817",
+  "address": null,
+  "source_url": "https://diocesan.com/",
+  "sources": {
+   "phone": "https://diocesan.com/"
+  },
+  "fetched_at": "2026-11-08T21:58:30+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}
