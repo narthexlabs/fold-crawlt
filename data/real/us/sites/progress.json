@@ -1,17 +1,6 @@
 {
  "chunks": [
   {
-   "started_at": "2026-11-07T16:21:06+00:00",
-   "ended_at": "2026-11-07T16:21:09+00:00",
-   "result": "fetched {}; parsed 0 dioceses",
-   "touched": []
-  },
-  {
-   "started_at": "2026-11-07T16:21:13+00:00",
-   "result": "top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left",
-   "touched": []
-  },
-  {
    "started_at": "2026-11-07T16:21:24+00:00",
    "ended_at": "2026-11-07T16:22:46+00:00",
    "result": "fetched {'dns': 1, 'done': 36, 'challenge': 9, 'blocked_403': 1, 'ssl_error': 2, 'ok': 23, 'halted_egress': 0}; parsed 2 dioceses",
@@ -400,6 +389,22 @@
    "touched": [
     "diocese-of-cheyenne",
     "maronite-eparchy-of-our-lady-of-lebanon"
+   ]
+  },
+  {
+   "started_at": "2026-11-08T16:40:32+00:00",
+   "ended_at": "2026-11-08T16:41:39+00:00",
+   "result": "fetched {'robots_disallowed': 1, 'done': 9, 'challenge': 1, 'ok': 7, 'halted_egress': 0}; parsed 2 dioceses",
+   "touched": [
+    "unassigned-la",
+    "diocese-of-honolulu"
+   ]
+  },
+  {
+   "started_at": "2026-11-08T16:41:57+00:00",
+   "result": "top-up ('confession', 'adoration', 'liturgy'): {'sites': 12, 'requests': 0}; 0 sites left",
+   "touched": [
+    "diocese-of-honolulu"
    ]
   }
  ],
@@ -1642,7 +1647,7 @@
   },
   "unassigned-la": {
    "sites_in_list": 111,
-   "records": 267,
+   "records": 268,
    "finished": true,
    "ok": 91,
    "by_status": {
@@ -1653,10 +1658,10 @@
     "unreachable_via_proxy": 7,
     "social_only": 5,
     "conn_error": 5,
+    "robots_disallowed": 2,
     "timeout": 2,
     "parked": 2,
     "http_5xx": 2,
-    "robots_disallowed": 1,
     "http_4xx": 1,
     "not_found": 1
    }
@@ -3127,12 +3132,13 @@
   },
   "diocese-of-honolulu": {
    "sites_in_list": 57,
-   "records": 6,
-   "finished": false,
-   "ok": 4,
+   "records": 57,
+   "finished": true,
+   "ok": 43,
    "by_status": {
-    "ok": 4,
-    "challenge": 2
+    "ok": 43,
+    "challenge": 13,
+    "blocked_429": 1
    }
   },
   "diocese-of-cheyenne": {
@@ -4269,9 +4275,9 @@
  },
  "totals": {
   "sites_in_list": 22452,
-  "records": 25296,
-  "ok": 13228
+  "records": 25308,
+  "ok": 13253
  },
  "us_parish_pages_discovermass": 20147,
- "updated_at": "2026-11-08T16:41:56+00:00"
+ "updated_at": "2026-11-08T16:42:00+00:00"
 }
