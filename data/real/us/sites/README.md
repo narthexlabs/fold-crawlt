@@ -211,7 +211,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | unassigned-va | 42 | 97 | 68 | 11 | 1 | 17 | 0 |
 | diocese-of-salina | 40 | 40 | 35 | 3 | 2 | 0 | 0 |
 | unassigned-ms | 40 | 99 | 45 | 31 | 2 | 21 | 0 |
-| archdiocese-of-las-vegas | 39 | 32 | 12 | 6 | 0 | 5 | 0 |
+| archdiocese-of-las-vegas | 39 | 39 | 14 | 10 | 0 | 5 | 1 |
 | eparchy-of-newton | 39 | 42 | 28 | 2 | 1 | 11 | 0 |
 | diocese-of-monterey | 39 | 21 | 5 | 7 | 0 | 9 | 0 |
 | diocese-of-houma-thibodaux | 38 | 38 | 21 | 13 | 1 | 3 | 0 |
@@ -233,7 +233,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-dodge-city | 30 | 30 | 18 | 3 | 3 | 5 | 1 |
 | diocese-of-oakland | 30 | 34 | 20 | 9 | 1 | 4 | 0 |
 | holy-protection-of-mary-byzantine-catholic-eparchy-of-phoenix | 30 | 30 | 23 | 1 | 0 | 6 | 0 |
-| diocese-of-reno | 30 | 19 | 8 | 9 | 0 | 2 | 0 |
+| diocese-of-reno | 30 | 30 | 12 | 15 | 0 | 2 | 1 |
 | unassigned-al | 29 | 97 | 37 | 41 | 1 | 17 | 1 |
 | unassigned-ak | 28 | 28 | 11 | 7 | 2 | 5 | 3 |
 | eparchy-of-st-maron-of-brooklyn | 28 | 28 | 22 | 0 | 2 | 3 | 1 |
@@ -273,8 +273,6 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 
 ## Chunk log
 
-- 2026-11-08T08:53:45+00:00: fetched {'dns': 1, 'done': 23, 'challenge': 22, 'halted_egress': 0}; parsed 1 dioceses
-- 2026-11-08T08:53:54+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-08T08:54:05+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-08T08:54:12+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-08T08:54:26+00:00: fetched {}; parsed 0 dioceses
@@ -288,3 +286,5 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-08T16:37:04+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-08T16:37:11+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-08T16:37:25+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-08T16:37:33+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
+- 2026-11-08T16:38:32+00:00: fetched {'challenge': 7, 'done': 9, 'ok': 2, 'halted_egress': 0}; parsed 2 dioceses
