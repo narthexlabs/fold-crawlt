@@ -52,7 +52,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | archdiocese-of-washington | 187 | 187 | 36 | 140 | 0 | 11 | 0 |
 | diocese-of-green-bay | 181 | 183 | 85 | 42 | 0 | 50 | 6 |
 | diocese-of-albany | 169 | 173 | 92 | 26 | 4 | 50 | 1 |
-| diocese-of-providence | 169 | 140 | 75 | 23 | 2 | 40 | 0 |
+| diocese-of-providence | 169 | 170 | 89 | 31 | 4 | 44 | 2 |
 | diocese-of-richmond | 168 | 178 | 117 | 24 | 2 | 35 | 0 |
 | archdiocese-of-san-antonio | 167 | 168 | 75 | 27 | 2 | 34 | 9 |
 | archdiocese-of-denver | 164 | 164 | 123 | 1 | 0 | 31 | 0 |
@@ -93,7 +93,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-fort-wayne-south-bend | 111 | 111 | 59 | 23 | 0 | 29 | 0 |
 | unassigned-la | 111 | 267 | 91 | 126 | 1 | 44 | 5 |
 | archdiocese-of-omaha | 110 | 111 | 80 | 4 | 3 | 14 | 3 |
-| diocese-of-st-petersburg | 108 | 109 | 68 | 27 | 1 | 13 | 0 |
+| diocese-of-st-petersburg | 108 | 110 | 68 | 27 | 1 | 14 | 0 |
 | diocese-of-youngstown | 108 | 108 | 57 | 10 | 0 | 38 | 3 |
 | diocese-of-bridgeport | 108 | 108 | 76 | 13 | 0 | 17 | 2 |
 | diocese-of-erie | 107 | 107 | 70 | 6 | 3 | 28 | 0 |
@@ -259,7 +259,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-portland-in-maine | 10 | 27 | 4 | 15 | 0 | 8 | 0 |
 | diocese-of-fairbanks | 9 | 9 | 3 | 4 | 0 | 2 | 0 |
 | diocese-of-st-thomas-vi | 9 | 0 | 0 | 0 | 0 | 0 | 0 |
-| unassigned-ri | 9 | 45 | 14 | 22 | 0 | 9 | 0 |
+| unassigned-ri | 9 | 46 | 15 | 22 | 0 | 9 | 0 |
 | unassigned-unresolved | 9 | 9 | 6 | 0 | 0 | 3 | 0 |
 | chaldean-eparchy-of-saint-thomas-the-apostle | 8 | 8 | 8 | 0 | 0 | 0 | 0 |
 | ukrainian-catholic-eparchy-of-st-josaphat-parma-oh | 7 | 7 | 6 | 0 | 1 | 0 | 0 |
@@ -287,4 +287,4 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-08T01:18:40+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-08T01:18:49+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-08T01:18:58+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
-- 2026-11-08T01:19:27+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-08T01:19:11+00:00: fetched {'robots_disallowed': 1, 'done': 18, 'dns': 3, 'blocked_403': 1, 'challenge': 4, 'ssl_error': 1, 'ok': 8, 'halted_egress': 0}; parsed 3 dioceses
