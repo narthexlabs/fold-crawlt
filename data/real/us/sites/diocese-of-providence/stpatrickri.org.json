@@ -1,0 +1,235 @@
+{
+ "domain": "stpatrickri.org",
+ "diocese": "diocese-of-providence",
+ "matched_church_ids": [
+  "st-patrick-harrisville-ri"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "st-patrick-harrisville-ri"
+  ]
+ },
+ "names": [
+  "St. Patrick"
+ ],
+ "cities": [
+  "Harrisville"
+ ],
+ "home_url": "https://stpatrickri.org/",
+ "final_url": "https://stpatrickri.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://stpatrickri.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stpatrickri.org/assist-at-mass-and-in-the-church/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://stpatrickri.org/sacraments/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "ministries",
+   "url": "https://stpatrickri.org/parishadministrator/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://stpatrickri.org/bulletin/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://stpatrickri.org/church-events/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://stpatrickri.org/adoration",
+   "status": 404,
+   "class": "not_found"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-json"
+  ]
+ },
+ "template": "wordpress-html",
+ "groups": [
+  {
+   "id": "stpatrickri.org:food",
+   "name": "St. Patrick’s Food Pantry",
+   "category": "service_mercy",
+   "category_label": "Service & mercy",
+   "subcategory": "food_ministry",
+   "audience": "all",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "meeting": null,
+   "contact_url": "https://stpatrickri.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stpatrickri.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-08T01:19:23+00:00",
+   "confidence": "medium"
+  },
+  {
+   "id": "stpatrickri.org:kofc",
+   "name": "Knights of Columbus",
+   "category": "fraternal_orders",
+   "category_label": "Fraternal & orders",
+   "subcategory": "knights_of_columbus",
+   "audience": "men",
+   "language": "en",
+   "language_assumed": true,
+   "meets": null,
+   "description": null,
+   "meeting": null,
+   "contact_url": "https://stpatrickri.org/",
+   "contact_role": "parish office (see contact page)",
+   "source_url": "https://stpatrickri.org/",
+   "source_kind": "website",
+   "fetched_at": "2026-11-08T01:19:23+00:00",
+   "confidence": "medium"
+  }
+ ],
+ "calendar_feeds": [],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/stjoesstpats"
+  ],
+  "livestream": [
+   {
+    "url": "https://www.facebook.com/stjoesstpats/live/",
+    "label": "Find Us on Facebook",
+    "platform": "facebook",
+    "kind": "link"
+   }
+  ]
+ },
+ "bulletin": {
+  "url": "https://www.jppc.net/onlinebulletins/9012template.pdf",
+  "date": null,
+  "kind": "pdf",
+  "text": "Current Parish Bulletin",
+  "source_url": "https://stpatrickri.org/bulletin/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "16:00",
+   "language": null,
+   "raw": "Saturday Vigil Mass- 4:00pm",
+   "source_url": "https://stpatrickri.org/",
+   "fetched_at": "2026-11-08T01:19:23+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:15",
+   "language": null,
+   "raw": "Sunday Mass- 9:15am",
+   "source_url": "https://stpatrickri.org/",
+   "fetched_at": "2026-11-08T01:19:23+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Friday",
+   "time": "08:30",
+   "language": null,
+   "raw": "Confession (Reconciliation or Penance): Fridays: St. Theresa Shrine (35 Dion Drive): following the 8:30a Mass",
+   "source_url": "https://stpatrickri.org/sacraments/",
+   "fetched_at": "2026-11-08T01:19:25+00:00",
+   "needs_review": true,
+   "review_reason": "relative_time",
+   "confidence": "low",
+   "template": "wordpress",
+   "relative": "after",
+   "note": "Confession (Reconciliation or Penance): Fridays: St. Theresa Shrine (35 Dion Drive): following the 8:30a Mass",
+   "relative_resolved": false
+  }
+ ],
+ "source_url": "https://stpatrickri.org/",
+ "fetched_at": "2026-11-08T01:19:37+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/3",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": true
+   },
+   "score": "high"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "trusted_kinds": [],
+  "generic_rows": 2
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "skipped_section": 1,
+  "dated_line": 2
+ },
+ "groups_dropped": {
+  "noise": 1
+ },
+ "event_counts": {
+  "window_start": "2026-11-08",
+  "window_end_exclusive": "2027-02-06",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(401) 568-5600",
+  "address": "45 Harrisville Main St., Harrisville, RI 02830",
+  "source_url": "https://stpatrickri.org/",
+  "sources": {
+   "phone": "https://stpatrickri.org/",
+   "address": "https://stpatrickri.org/"
+  },
+  "fetched_at": "2026-11-08T01:19:23+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}
