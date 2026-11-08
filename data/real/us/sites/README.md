@@ -144,7 +144,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-tyler | 78 | 80 | 23 | 26 | 0 | 27 | 4 |
 | unassigned-wv | 78 | 119 | 97 | 3 | 3 | 16 | 0 |
 | diocese-of-brownsville | 77 | 77 | 30 | 16 | 1 | 19 | 11 |
-| diocese-of-memphis | 77 | 65 | 39 | 3 | 0 | 23 | 0 |
+| diocese-of-memphis | 77 | 77 | 47 | 6 | 0 | 24 | 0 |
 | unassigned-wa | 77 | 143 | 80 | 33 | 1 | 29 | 0 |
 | diocese-of-duluth | 76 | 76 | 24 | 33 | 0 | 19 | 0 |
 | diocese-of-davenport | 76 | 76 | 49 | 7 | 0 | 20 | 0 |
@@ -158,7 +158,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | unassigned-mn | 73 | 167 | 99 | 36 | 5 | 27 | 0 |
 | unassigned-sd | 73 | 110 | 69 | 17 | 1 | 23 | 0 |
 | diocese-of-des-moines | 71 | 71 | 45 | 13 | 2 | 9 | 2 |
-| diocese-of-nashville | 71 | 40 | 13 | 11 | 0 | 16 | 0 |
+| diocese-of-nashville | 71 | 71 | 26 | 23 | 1 | 21 | 0 |
 | diocese-of-evansville | 70 | 70 | 38 | 5 | 3 | 24 | 0 |
 | diocese-of-winona-rochester | 70 | 70 | 32 | 15 | 0 | 23 | 0 |
 | unassigned-hi | 70 | 76 | 54 | 12 | 3 | 7 | 0 |
@@ -177,7 +177,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-orange | 62 | 20 | 20 | 0 | 0 | 0 | 0 |
 | diocese-of-covington | 61 | 61 | 36 | 8 | 0 | 17 | 0 |
 | diocese-of-gary | 60 | 60 | 37 | 5 | 0 | 17 | 1 |
-| diocese-of-knoxville | 60 | 56 | 20 | 27 | 0 | 9 | 0 |
+| diocese-of-knoxville | 60 | 60 | 21 | 28 | 0 | 10 | 1 |
 | diocese-of-superior | 60 | 61 | 40 | 20 | 0 | 1 | 0 |
 | unassigned-ia | 60 | 118 | 65 | 32 | 1 | 20 | 0 |
 | diocese-of-wilmington | 59 | 63 | 41 | 17 | 1 | 4 | 0 |
@@ -231,7 +231,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | unassigned-md | 33 | 67 | 36 | 8 | 2 | 21 | 0 |
 | unassigned-ar | 33 | 45 | 28 | 5 | 0 | 12 | 0 |
 | unassigned-sc | 33 | 40 | 31 | 3 | 1 | 5 | 0 |
-| unassigned-tn | 33 | 113 | 54 | 49 | 1 | 9 | 0 |
+| unassigned-tn | 33 | 114 | 54 | 50 | 1 | 9 | 0 |
 | archdiocese-of-las-vegas | 32 | 32 | 12 | 6 | 0 | 5 | 0 |
 | eparchy-of-parma | 31 | 32 | 20 | 4 | 0 | 5 | 3 |
 | diocese-of-dodge-city | 30 | 30 | 18 | 3 | 3 | 5 | 1 |
@@ -287,4 +287,4 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-08T01:18:58+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-08T01:19:27+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-08T01:19:33+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
-- 2026-11-08T01:19:49+00:00: fetched {'challenge': 14, 'done': 22, 'http_202': 1, 'ok': 5, 'timeout': 2, 'halted_egress': 0}; parsed 3 dioceses
+- 2026-11-08T01:20:10+00:00: fetched {'robots_disallowed': 1, 'done': 47, 'dns': 1, 'challenge': 17, 'ssl_error': 5, 'ok': 22, 'conn_error': 1, 'halted_egress': 0}; parsed 4 dioceses

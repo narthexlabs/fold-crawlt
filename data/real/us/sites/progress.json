@@ -355,22 +355,23 @@
    "touched": []
   },
   {
-   "started_at": "2026-11-08T01:19:49+00:00",
-   "ended_at": "2026-11-08T01:20:48+00:00",
-   "result": "fetched {'challenge': 14, 'done': 22, 'http_202': 1, 'ok': 5, 'timeout': 2, 'halted_egress': 0}; parsed 3 dioceses",
+   "started_at": "2026-11-08T01:20:10+00:00",
+   "ended_at": "2026-11-08T01:21:49+00:00",
+   "result": "fetched {'robots_disallowed': 1, 'done': 47, 'dns': 1, 'challenge': 17, 'ssl_error': 5, 'ok': 22, 'conn_error': 1, 'halted_egress': 0}; parsed 4 dioceses",
    "touched": [
-    "archdiocese-of-portland-in-oregon",
-    "diocese-of-biloxi",
-    "diocese-of-jackson"
+    "diocese-of-memphis",
+    "diocese-of-nashville",
+    "diocese-of-knoxville",
+    "unassigned-tn"
    ]
   },
   {
-   "started_at": "2026-11-08T01:21:01+00:00",
-   "result": "top-up ('confession', 'adoration', 'liturgy'): {'sites': 9, 'requests': 0}; 0 sites left",
+   "started_at": "2026-11-08T01:22:09+00:00",
+   "result": "top-up ('confession', 'adoration', 'liturgy'): {'sites': 22, 'requests': 0}; 0 sites left",
    "touched": [
-    "archdiocese-of-portland-in-oregon",
-    "diocese-of-biloxi",
-    "diocese-of-jackson"
+    "diocese-of-knoxville",
+    "diocese-of-memphis",
+    "diocese-of-nashville"
    ]
   }
  ],
@@ -2455,17 +2456,18 @@
   },
   "diocese-of-memphis": {
    "sites_in_list": 77,
-   "records": 65,
-   "finished": false,
-   "ok": 39,
+   "records": 77,
+   "finished": true,
+   "ok": 47,
    "by_status": {
-    "ok": 39,
+    "ok": 47,
     "dns": 14,
+    "challenge": 6,
     "unreachable_via_proxy": 4,
     "conn_error": 3,
-    "challenge": 3,
     "not_found": 1,
-    "timeout": 1
+    "timeout": 1,
+    "ssl_error": 1
    }
   },
   "unassigned-wa": {
@@ -2681,16 +2683,18 @@
   },
   "diocese-of-nashville": {
    "sites_in_list": 71,
-   "records": 40,
-   "finished": false,
-   "ok": 13,
+   "records": 71,
+   "finished": true,
+   "ok": 26,
    "by_status": {
-    "ok": 13,
-    "challenge": 11,
+    "ok": 26,
+    "challenge": 23,
     "dns": 11,
-    "ssl_error": 3,
+    "ssl_error": 7,
     "timeout": 1,
-    "not_found": 1
+    "robots_disallowed": 1,
+    "not_found": 1,
+    "conn_error": 1
    }
   },
   "diocese-of-evansville": {
@@ -2980,15 +2984,16 @@
   },
   "diocese-of-knoxville": {
    "sites_in_list": 60,
-   "records": 56,
-   "finished": false,
-   "ok": 20,
+   "records": 60,
+   "finished": true,
+   "ok": 21,
    "by_status": {
-    "challenge": 27,
-    "ok": 20,
-    "dns": 7,
+    "challenge": 28,
+    "ok": 21,
+    "dns": 8,
     "timeout": 1,
-    "ssl_error": 1
+    "ssl_error": 1,
+    "social_only": 1
    }
   },
   "diocese-of-superior": {
@@ -3764,12 +3769,12 @@
   },
   "unassigned-tn": {
    "sites_in_list": 33,
-   "records": 113,
+   "records": 114,
    "finished": true,
    "ok": 54,
    "by_status": {
     "ok": 54,
-    "challenge": 49,
+    "challenge": 50,
     "ssl_error": 4,
     "timeout": 2,
     "robots_disallowed": 1,
@@ -4222,9 +4227,9 @@
  },
  "totals": {
   "sites_in_list": 22323,
-  "records": 24965,
-  "ok": 13050
+  "records": 24944,
+  "ok": 13047
  },
  "us_parish_pages_discovermass": 20147,
- "updated_at": "2026-11-08T01:21:03+00:00"
+ "updated_at": "2026-11-08T01:22:11+00:00"
 }
