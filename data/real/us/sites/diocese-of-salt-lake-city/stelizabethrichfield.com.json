@@ -1,0 +1,169 @@
+{
+ "domain": "stelizabethrichfield.com",
+ "diocese": "diocese-of-salt-lake-city",
+ "matched_church_ids": [
+  "brave:UT|elizabeth central valley|",
+  "st-elizabeth-central-valley-ut"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "st-elizabeth-central-valley-ut",
+   "brave:UT|elizabeth central valley|"
+  ]
+ },
+ "names": [
+  "St. Elizabeth",
+  "St Elizabeth Central Valley"
+ ],
+ "cities": [
+  "Central Valley"
+ ],
+ "home_url": "https://www.stelizabethrichfield.com/",
+ "final_url": "https://www.stelizabethrichfield.com/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://www.stelizabethrichfield.com/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "mass_times",
+   "url": "https://www.stelizabethrichfield.com/sacraments/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.stelizabethrichfield.com/adoration/",
+   "status": 404,
+   "class": "not_found"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-json"
+  ]
+ },
+ "template": "wordpress-rest+html",
+ "groups": [],
+ "calendar_feeds": [
+  {
+   "feed_id": "stelizabethrichfield.com:ics:c84cb3ee",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": "https://calendar.google.com/calendar/ical/38c960b3f5b0e3edf456cbb5e1b5733168622529e2ab6a7e467d127940516a1d%40group.calendar.google.com/public/basic.ics",
+   "page_url": "https://www.stelizabethrichfield.com/",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (embedded on page)",
+   "display_tz": "America/Denver",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-08T16:38:41+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
+ "events": [],
+ "social": {},
+ "bulletin": null,
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Thursday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Thursday, 9:00 am Holy Mass",
+   "source_url": "https://www.stelizabethrichfield.com/",
+   "fetched_at": "2026-11-08T16:37:56+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "08:00",
+   "language": "English",
+   "raw": "Sunday, 8:00 am Holy Mass in English",
+   "source_url": "https://www.stelizabethrichfield.com/",
+   "fetched_at": "2026-11-08T16:37:56+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:20",
+   "language": "Spanish",
+   "raw": "Sunday, 9:20 am Holy Mass in Spanish",
+   "source_url": "https://www.stelizabethrichfield.com/",
+   "fetched_at": "2026-11-08T16:37:56+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "high",
+   "template": "wordpress"
+  }
+ ],
+ "source_url": "https://www.stelizabethrichfield.com/",
+ "fetched_at": "2026-11-08T16:38:34+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/3",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": true,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": true
+   },
+   "score": "high"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "trusted_kinds": [],
+  "generic_rows": 4
+ },
+ "schedule_notes": [
+  {
+   "kind": "confession",
+   "text": "Confession is available on Sundays before the English Mass when the priest is available, on Thursdays after the 9:00 AM Mass, and by appointment when needed.",
+   "phrase": "by appointment",
+   "source_url": "https://www.stelizabethrichfield.com/sacraments/",
+   "fetched_at": "2026-11-08T16:38:15+00:00"
+  }
+ ],
+ "has_sunday": true,
+ "schedule_dropped": {
+  "other_location": 2,
+  "not_a_service": 2,
+  "no_kind": 1,
+  "relative_time": 1
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-08",
+  "window_end_exclusive": "2027-02-06",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}
