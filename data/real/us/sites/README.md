@@ -188,7 +188,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-honolulu | 57 | 6 | 4 | 2 | 0 | 0 | 0 |
 | diocese-of-cheyenne | 57 | 22 | 8 | 7 | 0 | 7 | 0 |
 | diocese-of-lafayette-in-indiana | 55 | 55 | 0 | 44 | 1 | 10 | 0 |
-| diocese-of-salt-lake-city | 55 | 40 | 28 | 2 | 0 | 10 | 0 |
+| diocese-of-salt-lake-city | 55 | 56 | 43 | 3 | 0 | 10 | 0 |
 | diocese-of-gaylord | 54 | 55 | 46 | 1 | 0 | 7 | 1 |
 | diocese-of-marquette | 54 | 55 | 19 | 23 | 0 | 12 | 1 |
 | diocese-of-amarillo | 53 | 53 | 0 | 47 | 0 | 6 | 0 |
@@ -237,7 +237,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | unassigned-al | 29 | 97 | 37 | 41 | 1 | 17 | 1 |
 | unassigned-ak | 28 | 28 | 11 | 7 | 2 | 5 | 3 |
 | eparchy-of-st-maron-of-brooklyn | 28 | 28 | 22 | 0 | 2 | 3 | 1 |
-| unassigned-ut | 28 | 47 | 35 | 2 | 0 | 10 | 0 |
+| unassigned-ut | 28 | 48 | 35 | 2 | 0 | 11 | 0 |
 | unassigned-ar | 28 | 45 | 28 | 5 | 0 | 12 | 0 |
 | unassigned-hi | 28 | 76 | 54 | 12 | 3 | 7 | 0 |
 | unassigned-de | 27 | 41 | 30 | 7 | 1 | 3 | 0 |
@@ -287,4 +287,4 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-08T16:37:11+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-08T16:37:25+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-08T16:37:33+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
-- 2026-11-08T16:38:32+00:00: fetched {'challenge': 7, 'done': 9, 'ok': 2, 'halted_egress': 0}; parsed 2 dioceses
+- 2026-11-08T16:37:51+00:00: fetched {'challenge': 1, 'done': 17, 'ssl_error': 1, 'ok': 15, 'halted_egress': 0}; parsed 2 dioceses
