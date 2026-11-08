@@ -141,7 +141,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-toledo | 81 | 84 | 59 | 3 | 1 | 21 | 0 |
 | diocese-of-owensboro | 80 | 80 | 41 | 12 | 1 | 21 | 5 |
 | diocese-of-st-augustine | 80 | 85 | 48 | 16 | 0 | 21 | 0 |
-| diocese-of-boise | 79 | 75 | 37 | 21 | 0 | 17 | 0 |
+| diocese-of-boise | 79 | 79 | 40 | 21 | 0 | 17 | 1 |
 | diocese-of-birmingham | 78 | 78 | 50 | 6 | 0 | 18 | 4 |
 | diocese-of-tyler | 78 | 80 | 23 | 26 | 0 | 27 | 4 |
 | diocese-of-brownsville | 77 | 77 | 30 | 16 | 1 | 19 | 11 |
@@ -285,6 +285,6 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-08T16:37:11+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-08T16:37:25+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-08T16:37:33+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
-- 2026-11-08T16:37:51+00:00: fetched {'challenge': 1, 'done': 17, 'ssl_error': 1, 'ok': 15, 'halted_egress': 0}; parsed 2 dioceses
-- 2026-11-08T16:39:08+00:00: top-up ('confession', 'adoration', 'liturgy'): {'sites': 19, 'found_confession': 4, 'requests': 7, 'found_liturgy': 1}; 0 sites left
-- 2026-11-08T16:39:31+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-08T16:38:32+00:00: fetched {'challenge': 7, 'done': 9, 'ok': 2, 'halted_egress': 0}; parsed 2 dioceses
+- 2026-11-08T16:38:56+00:00: top-up ('confession', 'adoration', 'liturgy'): {'sites': 2, 'requests': 0}; 0 sites left
+- 2026-11-08T16:39:12+00:00: fetched {'ok': 3, 'done': 3, 'halted_egress': 0}; parsed 1 dioceses
