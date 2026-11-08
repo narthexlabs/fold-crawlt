@@ -1,0 +1,183 @@
+{
+ "domain": "holyrosarylander.org",
+ "diocese": "diocese-of-cheyenne",
+ "matched_church_ids": [
+  "holy-rosary-lander-wy"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "holy-rosary-lander-wy"
+  ]
+ },
+ "names": [
+  "Holy Rosary"
+ ],
+ "cities": [
+  "Lander"
+ ],
+ "home_url": "https://holyrosarylander.org/",
+ "final_url": "https://www.holyrosarylander.org/",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://www.holyrosarylander.org/",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "confession",
+   "url": "https://www.holyrosarylander.org/reconciliation/",
+   "status": 404,
+   "class": "not_found"
+  },
+  {
+   "category": "adoration",
+   "url": "https://www.holyrosarylander.org/adoration/",
+   "status": 404,
+   "class": "not_found"
+  }
+ ],
+ "cms_guess": {
+  "cms": "wordpress",
+  "evidence": [
+   "wp-content"
+  ]
+ },
+ "template": "wordpress-rest+html",
+ "groups": [],
+ "calendar_feeds": [],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/HolyRosaryLander"
+  ]
+ },
+ "bulletin": {
+  "url": "https://parishesonline.com/organization/holy-rosary-church-82520",
+  "date": null,
+  "kind": "lpi",
+  "text": "Learn More",
+  "source_url": "https://www.holyrosarylander.org/"
+ },
+ "schedule_rows": [
+  {
+   "kind": "devotion",
+   "day": "Sunday",
+   "time": "10:00",
+   "language": null,
+   "raw": "10:00 AM Holy Rosary Parish",
+   "source_url": "https://www.holyrosarylander.org/",
+   "fetched_at": "2026-11-08T16:40:57+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Wednesday",
+   "time": "16:00-18:00",
+   "language": null,
+   "raw": "Reconciliation: 4:00 PM – 6:00 PM",
+   "source_url": "https://www.holyrosarylander.org/",
+   "fetched_at": "2026-11-08T16:40:57+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "confession",
+   "day": "Saturday",
+   "time": "16:00-17:40",
+   "language": null,
+   "raw": "Reconciliation: 4:00 PM – 5:40 PM",
+   "source_url": "https://www.holyrosarylander.org/",
+   "fetched_at": "2026-11-08T16:40:57+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "adoration",
+   "day": "Thursday",
+   "time": "08:30-20:00",
+   "language": null,
+   "raw": "Eucharistic Adoration: 8:30 AM – 8:00 PM",
+   "source_url": "https://www.holyrosarylander.org/",
+   "fetched_at": "2026-11-08T16:40:57+00:00",
+   "needs_review": false,
+   "review_reason": null,
+   "confidence": "medium",
+   "template": "wordpress"
+  },
+  {
+   "kind": "mass",
+   "day": "Saturday",
+   "time": "18:00",
+   "language": null,
+   "raw": "Saturday 6:00 PM",
+   "source_url": "https://www.holyrosarylander.org/",
+   "fetched_at": "2026-11-08T16:40:57+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  }
+ ],
+ "source_url": "https://holyrosarylander.org/",
+ "fetched_at": "2026-11-08T16:41:04+00:00",
+ "schedule_template": {
+  "template": "wordpress",
+  "version": "ca-sites/3",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": false,
+  "trusted_candidate": false,
+  "trusted_kinds": [],
+  "generic_rows": 11
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "no_kind": 3,
+  "weekend_rescue_added": 1
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-08",
+  "window_end_exclusive": "2027-02-06",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(307) 332-4952",
+  "address": "163 Leedy Drive, Lander, WY 82520",
+  "source_url": "https://www.holyrosarylander.org/",
+  "sources": {
+   "phone": "https://www.holyrosarylander.org/",
+   "address": "https://www.holyrosarylander.org/"
+  },
+  "fetched_at": "2026-11-08T16:40:57+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}
