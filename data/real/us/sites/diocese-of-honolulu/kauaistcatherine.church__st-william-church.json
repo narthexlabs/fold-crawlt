@@ -1,0 +1,149 @@
+{
+ "domain": "kauaistcatherine.church/st-william-church",
+ "diocese": "diocese-of-honolulu",
+ "matched_church_ids": [
+  "st-william-hanalei-hi"
+ ],
+ "matched": {
+  "directory": [],
+  "discovermass": [
+   "st-william-hanalei-hi"
+  ]
+ },
+ "names": [
+  "St. William"
+ ],
+ "cities": [
+  "Hanalei"
+ ],
+ "home_url": "https://www.kauaistcatherine.church/st-william-church",
+ "final_url": "https://www.kauaistcatherine.church/st-william-church",
+ "crawl_status": "ok",
+ "crawl_env": "sandbox",
+ "robots_note": "ok",
+ "pages": [
+  {
+   "category": "home",
+   "url": "https://www.kauaistcatherine.church/st-william-church",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "bulletin",
+   "url": "https://www.kauaistcatherine.church/bulletins",
+   "status": 200,
+   "class": "ok"
+  },
+  {
+   "category": "calendar",
+   "url": "https://www.kauaistcatherine.church/calendar",
+   "status": 200,
+   "class": "ok"
+  }
+ ],
+ "cms_guess": {
+  "cms": "duda",
+  "evidence": [
+   "irp.cdn-website"
+  ]
+ },
+ "template": "generic-html:duda",
+ "groups": [],
+ "calendar_feeds": [
+  {
+   "feed_id": "kauaistcatherine.church/st-william-church:ics:4e6b58cb",
+   "type": "ics",
+   "platform": "Google Calendar",
+   "url": null,
+   "page_url": "https://www.kauaistcatherine.church/calendar",
+   "label": null,
+   "status": "active",
+   "note": "Google Calendar public feed (website-builder widget)",
+   "url_withheld": "calendar id is an e-mail address; not stored",
+   "feed_key": "4e6b58cb7617",
+   "last_fetch": {
+    "status": "parse_error:ModuleNotFoundError",
+    "fetched_at": "2026-11-08T16:41:08+00:00",
+    "events_in_window": 0,
+    "kept": 0
+   }
+  }
+ ],
+ "events": [],
+ "social": {
+  "facebook": [
+   "https://www.facebook.com/stcatherinekauai"
+  ]
+ },
+ "bulletin": {
+  "url": "https://www.kauaistcatherine.church/bulletins",
+  "date": null,
+  "kind": "page",
+  "text": "Bulletins",
+  "source_url": "https://www.kauaistcatherine.church/st-william-church"
+ },
+ "schedule_rows": [
+  {
+   "kind": "mass",
+   "day": "Sunday",
+   "time": "09:00",
+   "language": null,
+   "raw": "Mass: Sunday 9:00am",
+   "source_url": "https://www.kauaistcatherine.church/st-william-church",
+   "fetched_at": "2026-11-08T16:40:36+00:00",
+   "needs_review": true,
+   "review_reason": "weekend_rescue"
+  }
+ ],
+ "source_url": "https://www.kauaistcatherine.church/st-william-church",
+ "fetched_at": "2026-11-08T16:40:40+00:00",
+ "schedule_template": {
+  "template": "generic_strict",
+  "version": "ca-sites/3",
+  "parse_quality": {
+   "checks": {
+    "has_sunday": false,
+    "hours_ok": true,
+    "counts_ok": true,
+    "sunday_not_copied": true,
+    "no_daily_on_sunday": true,
+    "mostly_high": false
+   },
+   "score": "low"
+  },
+  "passed_bar": true,
+  "trusted_candidate": false,
+  "trusted_kinds": [],
+  "generic_rows": 4
+ },
+ "has_sunday": true,
+ "schedule_dropped": {
+  "weekend_rescue_added": 1
+ },
+ "groups_dropped": {},
+ "event_counts": {
+  "window_start": "2026-11-08",
+  "window_end_exclusive": "2027-02-06",
+  "days": 90,
+  "in_window": 0,
+  "kept_after_privacy": 0,
+  "stored": 0,
+  "liturgy_and_confession_instances_total": 0,
+  "excluded_by_reason": {}
+ },
+ "office_contact": {
+  "email": null,
+  "phone": "(808) 822-4804",
+  "address": "5292 Kuhio Hwy, Hanalei, HI, 96714",
+  "source_url": "https://www.kauaistcatherine.church/st-william-church",
+  "sources": {
+   "phone": "https://www.kauaistcatherine.church/st-william-church",
+   "address": "https://www.kauaistcatherine.church/st-william-church"
+  },
+  "fetched_at": "2026-11-08T16:40:36+00:00",
+  "kind": "parish office (institutional contact; named people's e-mails and phones are never kept)"
+ },
+ "privacy": {
+  "screened_by": "ingest/public/privacy.py screen()"
+ }
+}
