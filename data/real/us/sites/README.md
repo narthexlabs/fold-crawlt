@@ -119,7 +119,7 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-wheeling-charleston | 98 | 97 | 75 | 1 | 2 | 18 | 1 |
 | diocese-of-arlington | 97 | 98 | 67 | 14 | 1 | 16 | 0 |
 | diocese-of-fort-worth | 95 | 96 | 34 | 46 | 0 | 16 | 0 |
-| diocese-of-grand-rapids | 94 | 94 | 68 | 5 | 2 | 19 | 0 |
+| diocese-of-grand-rapids | 94 | 95 | 69 | 5 | 2 | 19 | 0 |
 | diocese-of-greensburg | 94 | 100 | 81 | 8 | 0 | 11 | 0 |
 | diocese-of-ogdensburg | 94 | 93 | 30 | 22 | 1 | 38 | 2 |
 | diocese-of-wichita | 94 | 98 | 44 | 6 | 39 | 9 | 0 |
@@ -187,10 +187,10 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | diocese-of-new-ulm | 57 | 59 | 24 | 8 | 0 | 27 | 0 |
 | diocese-of-honolulu | 57 | 57 | 43 | 13 | 1 | 0 | 0 |
 | diocese-of-cheyenne | 57 | 57 | 18 | 26 | 3 | 9 | 1 |
-| diocese-of-gaylord | 55 | 55 | 46 | 1 | 0 | 7 | 1 |
+| diocese-of-gaylord | 55 | 56 | 46 | 1 | 0 | 8 | 1 |
 | diocese-of-lafayette-in-indiana | 55 | 55 | 0 | 44 | 1 | 10 | 0 |
 | diocese-of-salt-lake-city | 55 | 56 | 43 | 3 | 0 | 10 | 0 |
-| diocese-of-marquette | 55 | 55 | 19 | 23 | 0 | 12 | 1 |
+| diocese-of-marquette | 55 | 56 | 20 | 23 | 0 | 12 | 1 |
 | diocese-of-amarillo | 53 | 53 | 0 | 47 | 0 | 6 | 0 |
 | diocese-of-santa-rosa | 53 | 13 | 0 | 1 | 1 | 11 | 0 |
 | diocese-of-beaumont | 50 | 52 | 15 | 20 | 1 | 14 | 2 |
@@ -287,4 +287,4 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-08T21:57:41+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-08T21:57:59+00:00: fetched {'ssl_error': 1, 'done': 1, 'halted_egress': 0}; parsed 2 dioceses
 - 2026-11-08T21:58:13+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
-- 2026-11-08T21:58:38+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-08T21:58:24+00:00: fetched {'ok': 2, 'done': 2, 'halted_egress': 0}; parsed 3 dioceses
