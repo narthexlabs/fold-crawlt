@@ -273,8 +273,6 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 
 ## Chunk log
 
-- 2026-11-12T00:31:39+00:00: fetched {}; parsed 0 dioceses
-- 2026-11-12T00:31:46+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-12T00:31:57+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-12T00:32:04+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-12T00:32:16+00:00: fetched {}; parsed 0 dioceses
@@ -288,3 +286,5 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-12T00:33:35+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-12T00:33:39+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-12T09:40:42+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-12T09:40:48+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
+- 2026-11-12T09:41:01+00:00: fetched {}; parsed 0 dioceses
