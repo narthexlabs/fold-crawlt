@@ -273,18 +273,18 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 
 ## Chunk log
 
-- 2026-11-17T23:29:28+00:00: fetched {}; parsed 0 dioceses
-- 2026-11-17T23:29:34+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
-- 2026-11-17T23:29:49+00:00: fetched {}; parsed 0 dioceses
-- 2026-11-17T23:29:54+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
-- 2026-11-17T23:30:12+00:00: fetched {}; parsed 0 dioceses
-- 2026-11-17T23:30:20+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
-- 2026-11-17T23:30:50+00:00: fetched {}; parsed 0 dioceses
-- 2026-11-17T23:30:54+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
-- 2026-11-17T23:31:16+00:00: fetched {}; parsed 0 dioceses
-- 2026-11-17T23:31:20+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
-- 2026-11-17T23:31:27+00:00: fetched {}; parsed 0 dioceses
-- 2026-11-17T23:31:31+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
-- 2026-11-18T07:07:03+00:00: fetched {}; parsed 0 dioceses
-- 2026-11-18T07:07:11+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
-- 2026-11-18T07:07:19+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-18T07:07:49+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-18T07:07:54+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
+- 2026-11-18T07:08:17+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-18T07:08:24+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
+- 2026-11-18T07:08:39+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-18T07:08:46+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
+- 2026-11-18T07:09:15+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-18T07:09:22+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
+- 2026-11-18T07:09:54+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-18T07:10:00+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
+- 2026-11-18T07:10:13+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-18T07:10:20+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
+- 2026-11-18T07:10:43+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-18T07:10:47+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
+- 2026-11-18T07:10:52+00:00: fetched {}; parsed 0 dioceses
