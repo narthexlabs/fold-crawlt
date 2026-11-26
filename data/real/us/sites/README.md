@@ -254,12 +254,12 @@ From a clean clone: `bash scripts/us/sites_chunk.sh` (pull, 100 minutes over the
 | unassigned-nc | 17 | 23 | 14 | 0 | 0 | 9 | 0 |
 | unassigned-nv | 17 | 51 | 27 | 19 | 0 | 5 | 0 |
 | unassigned-nh | 16 | 99 | 56 | 33 | 0 | 10 | 0 |
+| unassigned-xx | 16 | 1 | 0 | 0 | 0 | 1 | 0 |
 | unassigned-wy | 15 | 33 | 17 | 12 | 0 | 4 | 0 |
 | unassigned-unresolved | 13 | 9 | 6 | 0 | 0 | 3 | 0 |
 | maronite-eparchy-of-our-lady-of-lebanon | 12 | 12 | 11 | 0 | 0 | 0 | 1 |
 | diocese-of-lubbock | 12 | 13 | 4 | 3 | 0 | 4 | 2 |
 | diocese-of-portland-in-maine | 10 | 27 | 4 | 15 | 0 | 8 | 0 |
-| unassigned-xx | 10 | 1 | 0 | 0 | 0 | 1 | 0 |
 | diocese-of-st-thomas-vi | 9 | 0 | 0 | 0 | 0 | 0 | 0 |
 | unassigned-ri | 9 | 46 | 15 | 22 | 0 | 9 | 0 |
 | chaldean-eparchy-of-saint-thomas-the-apostle | 8 | 8 | 8 | 0 | 0 | 0 | 0 |
@@ -273,8 +273,6 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 
 ## Chunk log
 
-- 2026-11-26T00:11:09+00:00: fetched {}; parsed 0 dioceses
-- 2026-11-26T00:11:17+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-26T00:11:27+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-26T00:11:35+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-26T00:11:45+00:00: fetched {}; parsed 0 dioceses
@@ -288,3 +286,5 @@ Diocese directory probe: {'challenge': 73, 'rest-pages': 49, 'html': 41, 'open-r
 - 2026-11-26T00:13:06+00:00: fetched {}; parsed 0 dioceses
 - 2026-11-26T00:13:14+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
 - 2026-11-26T00:13:27+00:00: fetched {}; parsed 0 dioceses
+- 2026-11-26T00:13:34+00:00: top-up ('confession', 'adoration', 'liturgy'): {}; 0 sites left
+- 2026-11-26T10:43:54+00:00: fetched {}; parsed 0 dioceses
