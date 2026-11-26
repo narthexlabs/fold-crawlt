@@ -1,7 +1,7 @@
 {
  "source": "Common Crawl index",
  "attribution": "Common Crawl index (https://commoncrawl.org/terms-of-use): URLs only",
- "built_at": "2026-11-25T14:24:33+00:00",
+ "built_at": "2026-11-26T00:39:49+00:00",
  "crawls": [
   "CC-MAIN-2026-47",
   "CC-MAIN-2026-43",
@@ -38,24 +38,24 @@
    "sacraments",
    "sacrament"
   ],
-  "path_regex": "/(?:sacrament-of-reconciliation|holy-days-of-obligation|eucharistic-adoration|mass-and-confessions|mass-and-confession|confession-times|parish-bulletin|weekend-masses|mass-schedules|parish-office|mass-schedule|massschedule|parish-staff|daily-mass|mass-times|mass-time|masstimes|holy-days|holydays|masstime|masses|rcia)(?:[/._?#-]|$)",
+  "path_regex": "/(?:sacrament-of-reconciliation|holy-days-of-obligation|eucharistic-adoration|mass-and-confessions|mass-and-confession|confession-times|parish-bulletin|mass-schedules|weekend-masses|mass-schedule|parish-office|massschedule|parish-staff|daily-mass|mass-times|mass-time|masstimes|holy-days|masstime|holydays|masses|rcia)(?:[/._?#-]|$)",
   "host_regex": "^https?://[^/]*(?:church|parish|catholic|cathedral|basilica|shrine|saint|holy|sacred|immaculate|ourlady|our-lady|blessed|assumption|annunciation|nativity|transfiguration|ascension|epiphany|resurrection|christtheking|corpuschristi|mission|newman|rosary|trinity|angels|guadalupe|carmel|loyola|vianney|st[-_.]?(?:joseph|mary|marys|peter|paul|john|johns|anne|annes|ann|thomas|francis|michael|patrick|anthony|mark|luke|james|matthew|catherine|agnes|bernard|benedict|dominic|ignatius|jude|margaret|teresa|theresa|elizabeth|rose|gregory|cecilia|basil|monica|vincent|lawrence|charles|edward|george|philip|leo|jerome|martin|augustine|ambrose|andrew|bartholomew|boniface|brendan|bridget|casimir|clare|columba|cyril|denis|eugene|frances|gabriel|gerard|helen|hubert|isidore|joan|joachim|jean|justin|kateri|kevin|lucy|louis|maximilian|nicholas|norbert|pius|raphael|robert|stephen|sylvester|timothy|ursula|veronica|victor|vitus|wenceslaus|william|barnabas|blase|bonaventure|cornelius|damien|dismas|edmund|gertrude|hedwig|hyacinth|jane|julie|katharine|lucia|matilda|rita|scholastica|sebastian|simon|therese)|saint[-_]?(?:joseph|mary|marys|peter|paul|john|johns|anne|annes|ann|thomas|francis|michael|patrick|anthony|mark|luke|james|matthew|catherine|agnes|bernard|benedict|dominic|ignatius|jude|margaret|teresa|theresa|elizabeth|rose|gregory|cecilia|basil|monica|vincent|lawrence|charles|edward|george|philip|leo|jerome|martin|augustine|ambrose|andrew|bartholomew|boniface|brendan|bridget|casimir|clare|columba|cyril|denis|eugene|frances|gabriel|gerard|helen|hubert|isidore|joan|joachim|jean|justin|kateri|kevin|lucy|louis|maximilian|nicholas|norbert|pius|raphael|robert|stephen|sylvester|timothy|ursula|veronica|victor|vitus|wenceslaus|william|barnabas|blase|bonaventure|cornelius|damien|dismas|edmund|gertrude|hedwig|hyacinth|jane|julie|katharine|lucia|matilda|rita|scholastica|sebastian|simon|therese))"
  },
  "counts": {
-  "matched_urls_in_cache": 23,
-  "candidate_domains": 107,
+  "matched_urls_in_cache": 264,
+  "candidate_domains": 115,
   "excluded": {
-   "no_strong_catholic_page": 72,
+   "no_strong_catholic_page": 71,
    "other_denomination_or_non_parish_word": 11,
-   "already_known_or_crawled": 14
+   "already_known_or_crawled": 17
   },
-  "written_to_XX_websites": 10
+  "written_to_XX_websites": 16
  },
  "domains": [
   {
    "domain": "3churches.org",
    "hosts": {
-    "https://www.3churches.org": 110
+    "https://www.3churches.org": 112
    },
    "evidence_urls": [
     "https://www.3churches.org/tag/masses/"
@@ -294,7 +294,7 @@
   {
    "domain": "ap.church",
    "hosts": {
-    "https://www.ap.church": 134
+    "https://www.ap.church": 136
    },
    "evidence_urls": [
     "https://www.ap.church/sacrament/baptism-infant",
@@ -825,19 +825,26 @@
   {
    "domain": "clp.church",
    "hosts": {
-    "https://www.clp.church": 2
+    "https://www.clp.church": 4,
+    "https://clp.church": 2
    },
    "evidence_urls": [
-    "https://www.clp.church/worship/worship"
+    "https://www.clp.church/worship/worship",
+    "https://clp.church/podcasts/media/series/holy-days",
+    "https://www.clp.church/podcasts/media/series/holy-days"
    ],
    "patterns": [
+    "holy-days",
     "worship"
    ],
-   "strong_patterns": [],
-   "crawls": [
-    "CC-MAIN-2026-43"
+   "strong_patterns": [
+    "holy-days"
    ],
-   "kept": false
+   "crawls": [
+    "CC-MAIN-2026-43",
+    "CC-MAIN-2026-47"
+   ],
+   "kept": true
   },
   {
    "domain": "cnaz.church",
@@ -1175,7 +1182,7 @@
   {
    "domain": "cpg.church",
    "hosts": {
-    "https://www.cpg.church": 100
+    "https://www.cpg.church": 102
    },
    "evidence_urls": [
     "https://www.cpg.church/adoration.html",
@@ -1312,7 +1319,7 @@
   {
    "domain": "crossroadchristian.church",
    "hosts": {
-    "https://www.crossroadchristian.church": 4
+    "https://www.crossroadchristian.church": 6
    },
    "evidence_urls": [
     "https://www.crossroadchristian.church/series/holy-days/"
@@ -1708,26 +1715,30 @@
   {
    "domain": "nwv.church",
    "hosts": {
-    "https://www.nwv.church": 28
+    "https://www.nwv.church": 30
    },
    "evidence_urls": [
-    "https://www.nwv.church/holy-days-of-obligation"
+    "https://www.nwv.church/holy-days-of-obligation",
+    "https://www.nwv.church/parish-staff"
    ],
    "patterns": [
-    "holy-days-of-obligation"
+    "holy-days-of-obligation",
+    "parish-staff"
    ],
    "strong_patterns": [
-    "holy-days-of-obligation"
+    "holy-days-of-obligation",
+    "parish-staff"
    ],
    "crawls": [
-    "CC-MAIN-2026-43"
+    "CC-MAIN-2026-43",
+    "CC-MAIN-2026-47"
    ],
    "kept": false
   },
   {
    "domain": "olmc.church",
    "hosts": {
-    "https://www.olmc.church": 224
+    "https://www.olmc.church": 242
    },
    "evidence_urls": [
     "https://www.olmc.church/calendar/2019/10/9/eucharistic-adoration",
@@ -1744,7 +1755,8 @@
     "eucharistic-adoration"
    ],
    "crawls": [
-    "CC-MAIN-2026-43"
+    "CC-MAIN-2026-43",
+    "CC-MAIN-2026-47"
    ],
    "kept": false
   },
@@ -1770,26 +1782,68 @@
   {
    "domain": "olr.church",
    "hosts": {
-    "https://olr.church": 28
+    "https://olr.church": 30
    },
    "evidence_urls": [
-    "https://olr.church/parish-staff/"
+    "https://olr.church/parish-staff/",
+    "https://olr.church/eucharistic-adoration/"
    ],
    "patterns": [
+    "eucharistic-adoration",
     "parish-staff"
    ],
    "strong_patterns": [
+    "eucharistic-adoration",
     "parish-staff"
    ],
    "crawls": [
-    "CC-MAIN-2026-43"
+    "CC-MAIN-2026-43",
+    "CC-MAIN-2026-47"
    ],
    "kept": false
   },
   {
+   "domain": "ourladyofangels.church",
+   "hosts": {
+    "https://ourladyofangels.church": 2
+   },
+   "evidence_urls": [
+    "https://ourladyofangels.church/mass-times/"
+   ],
+   "patterns": [
+    "mass-times"
+   ],
+   "strong_patterns": [
+    "mass-times"
+   ],
+   "crawls": [
+    "CC-MAIN-2026-47"
+   ],
+   "kept": false
+  },
+  {
+   "domain": "ourladyoflourdesperth.church",
+   "hosts": {
+    "https://www.ourladyoflourdesperth.church": 2
+   },
+   "evidence_urls": [
+    "https://www.ourladyoflourdesperth.church/masstimes"
+   ],
+   "patterns": [
+    "masstimes"
+   ],
+   "strong_patterns": [
+    "masstimes"
+   ],
+   "crawls": [
+    "CC-MAIN-2026-47"
+   ],
+   "kept": true
+  },
+  {
    "domain": "philipminh.church",
    "hosts": {
-    "https://philipminh.church": 78
+    "https://philipminh.church": 80
    },
    "evidence_urls": [
     "https://philipminh.church/Home/MassSchedule",
@@ -1803,7 +1857,8 @@
     "massschedule"
    ],
    "crawls": [
-    "CC-MAIN-2026-43"
+    "CC-MAIN-2026-43",
+    "CC-MAIN-2026-47"
    ],
    "kept": false
   },
@@ -1827,21 +1882,49 @@
    "kept": false
   },
   {
-   "domain": "saintcyrils.church",
+   "domain": "saint-josephs.church",
    "hosts": {
-    "https://saintcyrils.church": 28
+    "https://www.saint-josephs.church": 2,
+    "https://es.saint-josephs.church": 2
    },
    "evidence_urls": [
-    "https://saintcyrils.church/discover/welcome/parish-office/"
+    "https://www.saint-josephs.church/rcia",
+    "https://es.saint-josephs.church/rcia"
    ],
    "patterns": [
-    "parish-office"
+    "rcia"
    ],
    "strong_patterns": [
-    "parish-office"
+    "rcia"
    ],
    "crawls": [
-    "CC-MAIN-2026-43"
+    "CC-MAIN-2026-47"
+   ],
+   "kept": true
+  },
+  {
+   "domain": "saintcyrils.church",
+   "hosts": {
+    "https://saintcyrils.church": 32
+   },
+   "evidence_urls": [
+    "https://saintcyrils.church/discover/welcome/parish-office/",
+    "https://saintcyrils.church/tag/mass-schedule/",
+    "https://saintcyrils.church/tag/rcia/"
+   ],
+   "patterns": [
+    "mass-schedule",
+    "parish-office",
+    "rcia"
+   ],
+   "strong_patterns": [
+    "mass-schedule",
+    "parish-office",
+    "rcia"
+   ],
+   "crawls": [
+    "CC-MAIN-2026-43",
+    "CC-MAIN-2026-47"
    ],
    "kept": false
   },
@@ -1886,21 +1969,79 @@
   {
    "domain": "stisidore.church",
    "hosts": {
-    "https://stisidore.church": 26
+    "https://stisidore.church": 34
    },
    "evidence_urls": [
-    "https://stisidore.church/tag/rcia/"
+    "https://stisidore.church/tag/rcia/",
+    "https://stisidore.church/mass-times/",
+    "https://stisidore.church/tag/mass-schedule/",
+    "https://stisidore.church/tag/masses/",
+    "https://stisidore.church/tag/rcia/page/2/"
    ],
    "patterns": [
+    "mass-schedule",
+    "mass-times",
+    "masses",
     "rcia"
    ],
    "strong_patterns": [
+    "mass-schedule",
+    "mass-times",
+    "masses",
     "rcia"
    ],
    "crawls": [
-    "CC-MAIN-2026-43"
+    "CC-MAIN-2026-43",
+    "CC-MAIN-2026-47"
    ],
    "kept": false
+  },
+  {
+   "domain": "stjosaphats.church",
+   "hosts": {
+    "http://www.stjosaphats.church": 2
+   },
+   "evidence_urls": [
+    "http://www.stjosaphats.church/mass-schedule/"
+   ],
+   "patterns": [
+    "mass-schedule"
+   ],
+   "strong_patterns": [
+    "mass-schedule"
+   ],
+   "crawls": [
+    "CC-MAIN-2026-47"
+   ],
+   "kept": false
+  },
+  {
+   "domain": "stjosephhamilton.church",
+   "hosts": {
+    "https://stjosephhamilton.church": 370
+   },
+   "evidence_urls": [
+    "https://stjosephhamilton.church/events/eucharistic-adoration/",
+    "https://stjosephhamilton.church/news/parish-bulletin/1065/",
+    "https://stjosephhamilton.church/news/parish-bulletin/740/",
+    "https://stjosephhamilton.church/news/parish-bulletin/758/",
+    "https://stjosephhamilton.church/news/parish-bulletin/april-13-2025/",
+    "https://stjosephhamilton.church/news/parish-bulletin/april-14-2024/"
+   ],
+   "patterns": [
+    "eucharistic-adoration",
+    "parish-bulletin",
+    "rcia"
+   ],
+   "strong_patterns": [
+    "eucharistic-adoration",
+    "parish-bulletin",
+    "rcia"
+   ],
+   "crawls": [
+    "CC-MAIN-2026-47"
+   ],
+   "kept": true
   },
   {
    "domain": "stjworker.church",
@@ -1941,6 +2082,25 @@
    "kept": false
   },
   {
+   "domain": "stpaulswhitesboro.church",
+   "hosts": {
+    "https://stpaulswhitesboro.church": 2
+   },
+   "evidence_urls": [
+    "https://stpaulswhitesboro.church/mass-times"
+   ],
+   "patterns": [
+    "mass-times"
+   ],
+   "strong_patterns": [
+    "mass-times"
+   ],
+   "crawls": [
+    "CC-MAIN-2026-47"
+   ],
+   "kept": true
+  },
+  {
    "domain": "stpeterswoolwich.church",
    "hosts": {
     "https://stpeterswoolwich.church": 26
@@ -1956,6 +2116,44 @@
    ],
    "crawls": [
     "CC-MAIN-2026-43"
+   ],
+   "kept": true
+  },
+  {
+   "domain": "stsimon.church",
+   "hosts": {
+    "https://stsimon.church": 2
+   },
+   "evidence_urls": [
+    "https://stsimon.church/liturgy/eucharistic-adoration/"
+   ],
+   "patterns": [
+    "eucharistic-adoration"
+   ],
+   "strong_patterns": [
+    "eucharistic-adoration"
+   ],
+   "crawls": [
+    "CC-MAIN-2026-47"
+   ],
+   "kept": false
+  },
+  {
+   "domain": "ststephenhamilton.church",
+   "hosts": {
+    "https://www.ststephenhamilton.church": 2
+   },
+   "evidence_urls": [
+    "https://www.ststephenhamilton.church/mass-times"
+   ],
+   "patterns": [
+    "mass-times"
+   ],
+   "strong_patterns": [
+    "mass-times"
+   ],
+   "crawls": [
+    "CC-MAIN-2026-47"
    ],
    "kept": true
   },
@@ -2000,19 +2198,24 @@
   {
    "domain": "westernborder.church",
    "hosts": {
-    "https://westernborder.church": 24
+    "https://westernborder.church": 28
    },
    "evidence_urls": [
-    "https://westernborder.church/mass-times/"
+    "https://westernborder.church/mass-times/",
+    "https://westernborder.church/mass-times/easter-2026/",
+    "https://westernborder.church/sacrament/rcia/"
    ],
    "patterns": [
-    "mass-times"
+    "mass-times",
+    "rcia"
    ],
    "strong_patterns": [
-    "mass-times"
+    "mass-times",
+    "rcia"
    ],
    "crawls": [
-    "CC-MAIN-2026-43"
+    "CC-MAIN-2026-43",
+    "CC-MAIN-2026-47"
    ],
    "kept": true
   },
